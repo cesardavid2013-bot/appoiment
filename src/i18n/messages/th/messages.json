@@ -1,0 +1,93 @@
+{
+  "youPrefix": "คุณ:",
+  "unread": "ยังไม่อ่าน",
+  "apptLine": "{service} · {date} เวลา {time}",
+  "list": {
+    "title": "ข้อความ",
+    "unread": "{count, plural, other {บทสนทนาที่ยังไม่อ่าน # รายการ}}",
+    "caughtUp": "คุณอ่านครบแล้ว",
+    "emptyTitle": "ยังไม่มีข้อความ",
+    "emptyBody": "มีคำถามเรื่องบริการ ราคา หรือเวลา? เปิดหน้าของมืออาชีพแล้วแตะ “ถามคำถาม” คำตอบจะมาที่นี่",
+    "findPro": "ค้นหามืออาชีพ"
+  },
+  "thread": {
+    "metaTitle": "บทสนทนา",
+    "placeholder": "ส่งข้อความถึง {business}"
+  },
+  "new": {
+    "metaTitle": "ข้อความใหม่",
+    "ownTitle": "นี่คือธุรกิจของคุณ",
+    "ownBody": "ข้อความจากลูกค้าถึง {business} จะไปที่กล่องข้อความธุรกิจของคุณ",
+    "ownButton": "เปิดกล่องข้อความธุรกิจ",
+    "placeholderBooking": "สอบถามเกี่ยวกับการจองนี้",
+    "placeholderQuestion": "ถามคำถาม",
+    "emptyBookingTitle": "ส่งข้อความถึง {business} เรื่องการจองของคุณ",
+    "emptyQuestionTitle": "ถาม {business} ก่อนจอง",
+    "emptyBookingBody": "มาสาย ต้องการเปลี่ยนอะไร หรือมีคำถาม? ข้อความของคุณจะส่งตรงถึงทีมของพวกเขา",
+    "emptyQuestionBody": "ราคา เวลา สิ่งที่ต้องเตรียม — {business} จะตอบที่นี่และเราจะแจ้งให้คุณทราบ เบอร์โทรและอีเมลของคุณจะถูกเก็บเป็นความลับ"
+  },
+  "shell": {
+    "allMessages": "ข้อความทั้งหมด",
+    "viewProfile": "ดูโปรไฟล์",
+    "book": "จอง"
+  },
+  "pro": {
+    "backToInbox": "กลับไปที่กล่องข้อความ"
+  },
+  "view": {
+    "label": "ข้อความ",
+    "you": "คุณ",
+    "loadingEarlier": "กำลังโหลดข้อความก่อนหน้า",
+    "showEarlier": "แสดงข้อความก่อนหน้า",
+    "seen": "อ่านแล้ว",
+    "sending": "กำลังส่ง…",
+    "notSent": "ส่งไม่สำเร็จ",
+    "retry": "ลองอีกครั้ง",
+    "discard": "ทิ้ง",
+    "newMessages": "{count, plural, other {ข้อความใหม่ # รายการ}}",
+    "openPhoto": "เปิดรูปภาพในแท็บใหม่",
+    "photo": "รูปภาพ"
+  },
+  "composer": {
+    "about": "เกี่ยวกับ {appointment}",
+    "unlink": "ไม่ต้องเชื่อมโยงนัดหมายนี้",
+    "processingPhoto": "กำลังประมวลผลรูปภาพ",
+    "removePhoto": "ลบรูปภาพ",
+    "attachPhoto": "แนบรูปภาพ",
+    "label": "ข้อความ",
+    "send": "ส่งข้อความ",
+    "hint": "กด Enter เพื่อส่ง กด Shift และ Enter เพื่อขึ้นบรรทัดใหม่"
+  },
+  "inbox": {
+    "title": "กล่องข้อความ",
+    "conversations": "บทสนทนา",
+    "unread": "ยังไม่อ่าน {count} รายการ",
+    "allCaughtUp": "อ่านครบแล้ว",
+    "searchLabel": "ค้นหาบทสนทนาตามชื่อลูกค้า",
+    "searchPlaceholder": "ค้นหาลูกค้า",
+    "clearSearch": "ล้างการค้นหา",
+    "show": "แสดง",
+    "all": "ทั้งหมด",
+    "unreadFilter": "ยังไม่อ่าน",
+    "noClientsNamed": "ไม่มีลูกค้าชื่อ “{term}”",
+    "nothingUnread": "ไม่มีข้อความที่ยังไม่อ่าน",
+    "noMessages": "ยังไม่มีข้อความ",
+    "tryDifferent": "ลองค้นหาด้วยคำอื่น หรือแสดงบทสนทนาทั้งหมด",
+    "emptyBody": "เมื่อลูกค้าถามคำถามจากหน้าของคุณหรือเกี่ยวกับการจอง ข้อความจะแสดงที่นี่"
+  },
+  "clientPanel": {
+    "client": "ลูกค้า",
+    "visits": "การมาใช้บริการ",
+    "noShows": "ไม่มาตามนัด",
+    "cancelled": "ยกเลิก",
+    "clientSince": "เป็นลูกค้าตั้งแต่ {date}",
+    "noVisits": "ยังไม่มีการมาใช้บริการที่เสร็จสิ้น",
+    "lastIn": "ครั้งล่าสุด {date}",
+    "tags": "แท็ก",
+    "clientProfile": "โปรไฟล์ลูกค้า",
+    "notBooked": "ยังไม่เคยจองกับคุณ — บทสนทนานี้เริ่มจากหน้าสาธารณะของคุณ",
+    "upcoming": "ที่จะมาถึง",
+    "nothingBooked": "ไม่มีการจอง",
+    "recent": "ล่าสุด"
+  }
+}

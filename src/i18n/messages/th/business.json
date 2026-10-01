@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "ออนไลน์",
+    "comesToYou": "บริการถึงที่",
+    "comesToYouIn": "บริการถึงที่ · {city}",
+    "lessThanOneKm": "<1 กม.",
+    "promoted": "โปรโมต",
+    "verified": "ธุรกิจที่ยืนยันแล้ว",
+    "instant": "ยืนยันทันที",
+    "request": "ส่งคำขอจอง",
+    "bookAt": "จอง {day} เวลา {time}",
+    "moreTimes": "เวลาอื่น",
+    "freeConsultation": "มีบริการปรึกษาฟรี",
+    "priceOnRequest": "สอบถามราคา",
+    "viewTimes": "ดูเวลาว่าง"
+  },
+  "rail": {
+    "seeAll": "ดูทั้งหมด"
+  },
+  "favorite": {
+    "save": "บันทึก",
+    "saved": "บันทึกแล้ว",
+    "remove": "นำออกจากที่บันทึกไว้",
+    "savedToast": "บันทึกแล้ว",
+    "savedToastHint": "ดูได้ทุกเมื่อในเมนูที่บันทึกไว้"
+  }
+}
