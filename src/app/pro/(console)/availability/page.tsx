@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { AvailabilityManager } from "@/components/pro/availability-manager";
 import { todayIn } from "@/domain/time";
+import { getT } from "@/i18n/server";
 import { requestNow } from "@/server/clock";
 import { proPage } from "@/server/pro-page";
 import { listTeam } from "@/server/services/pro";
 import { getWeeklyHours, listOverrides, listUpcomingBlocks } from "@/server/services/schedule";
 
-export const metadata: Metadata = { title: "Hours & time off" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSetup");
+  return { title: t("availability.title") };
+}
 
 export default async function AvailabilityPage({ searchParams }: PageProps<"/pro/availability">) {
   const { m } = await proPage(["schedule.manage_own", "schedule.manage_all"]);

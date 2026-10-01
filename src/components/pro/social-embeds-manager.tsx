@@ -11,6 +11,8 @@ import { ConfirmDialog, Dialog } from "@/components/ui/dialog";
 import { Field, FormError, Input, Select, Textarea } from "@/components/ui/field";
 import { Menu, MenuContent, MenuItem, MenuSeparator, MenuTrigger } from "@/components/ui/menu";
 import { embedShape, embedThumbnail, KIND_LABEL, MAX_EMBEDS, parseEmbedUrl, PROVIDER_LABEL, safeEmbedLink, type EmbedKind, type EmbedProvider, type EmbedShape } from "@/domain/social";
+import { useLocale, useT } from "@/i18n/client";
+import type { TFunction } from "@/i18n/translate";
 import { api, type ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 
@@ -31,8 +33,27 @@ type Opt = { id: string; name: string };
 
 const PREVIEW_WIDTH: Record<EmbedShape, string> = { portrait: "w-40 sm:w-44", landscape: "w-full sm:w-72", audio: "w-full sm:w-80" };
 
+/** Kind label ("Video", "Track") in the viewer's language; the English constant if a key is missing. */
+function kindLabel(tr: TFunction, kind: EmbedKind) {
+  const key = `profile.kind.${kind}`;
+  const v = tr(key);
+  return v === key ? KIND_LABEL[kind] : v;
+}
+/** "YouTube video" / "vídeo de YouTube", for use inside a sentence. Provider names are brands and stay as they are. */
+function embedName(tr: TFunction, intl: string, provider: EmbedProvider, kind: EmbedKind) {
+  return tr("proSetup.embeds.name", { provider: PROVIDER_LABEL[provider], kindLower: kindLabel(tr, kind).toLocaleLowerCase(intl) });
+}
+/** The same name standing on its own (a title or label): "YouTube video" / "Vídeo de YouTube". */
+function embedTitle(tr: TFunction, intl: string, provider: EmbedProvider, kind: EmbedKind) {
+  const s = embedName(tr, intl, provider, kind);
+  return s.charAt(0).toLocaleUpperCase(intl) + s.slice(1);
+}
+
 /** "From your socials": paste a link, preview it, feature it on the profile. */
 export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow[]; services: Opt[] }) {
+  const t = useT("proSetup");
+  const tr = useT();
+  const { intl } = useLocale();
   const router = useRouter();
   const [order, setOrder] = useState(() => items.map((i) => i.id));
   const [synced, setSynced] = useState(items);
@@ -70,7 +91,7 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
     setBusy(true);
     try {
       await api(`/api/pro/social-embeds/${deleting.id}`, { method: "DELETE" });
-      toast.success("Removed from your profile");
+      toast.success(t("embeds.removed"));
       setDeleting(null);
       router.refresh();
     } catch (err) {
@@ -84,18 +105,18 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
     <section id="socials" aria-labelledby="socials-h" className="scroll-mt-24">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
         <h2 id="socials-h" className="text-lg font-semibold tracking-[-0.01em] text-ink">
-          From your socials
+          {t("embeds.title")}
         </h2>
         <p className="text-[13px] text-ink-3 tabular">
-          {list.length} of {MAX_EMBEDS}
+          {t("embeds.count", { count: list.length, max: MAX_EMBEDS })}
         </p>
       </div>
       <p className="mt-1 max-w-2xl text-sm leading-relaxed text-ink-3">
-        Feature YouTube videos and Shorts, TikToks, Instagram posts and reels, Vimeo videos, SoundCloud tracks and Spotify releases in the Featured section of your profile. Players only load when a visitor presses play.
+        {t("embeds.description")}
       </p>
 
       {full ? (
-        <p className="mt-5 rounded-lg border border-line bg-surface-2 px-4 py-3 text-sm text-ink-2">You&apos;re featuring {MAX_EMBEDS} posts, the most a profile can show. Remove one to add another.</p>
+        <p className="mt-5 rounded-lg border border-line bg-surface-2 px-4 py-3 text-sm text-ink-2">{t("embeds.full", { max: MAX_EMBEDS })}</p>
       ) : (
         <AddEmbed services={services} />
       )}
@@ -105,13 +126,13 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
           {list.map((item, idx) => {
             const thumb = embedThumbnail(item.provider, item.kind, item.providerId);
             const link = safeEmbedLink(item.provider, item.url);
-            const label = item.caption ?? `${PROVIDER_LABEL[item.provider]} ${KIND_LABEL[item.kind].toLowerCase()}`;
+            const label = item.caption ?? embedTitle(tr, intl, item.provider, item.kind);
             return (
               <li key={item.id} className="flex items-center gap-3 px-3 py-3 sm:px-4">
-                <span className="w-6 shrink-0 text-right text-[13px] text-ink-3 tabular" aria-hidden>
+                <span className="w-6 shrink-0 text-end text-[13px] text-ink-3 tabular" aria-hidden>
                   {idx + 1}
                 </span>
-                <button type="button" onClick={() => setEditing(item)} className="flex min-w-0 flex-1 items-center gap-3 text-left" aria-label={`Edit ${label}`}>
+                <button type="button" onClick={() => setEditing(item)} className="flex min-w-0 flex-1 items-center gap-3 text-start" aria-label={t("embeds.editItem", { label })}>
                   <span className="relative flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-md bg-surface-2 text-ink-2">
                     {thumb ? (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -123,11 +144,11 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
                   <span className="min-w-0 flex-1">
                     <span className="flex items-center gap-1.5 text-[12px] font-medium text-ink-3">
                       <SocialIcon name={item.provider} className="size-3" />
-                      {PROVIDER_LABEL[item.provider]} · {KIND_LABEL[item.kind]}
+                      {PROVIDER_LABEL[item.provider]} · {kindLabel(tr, item.kind)}
                     </span>
-                    <span className={cn("mt-0.5 block truncate text-[15px]", item.caption ? "text-ink" : "text-ink-3")}>{item.caption ?? "No caption"}</span>
+                    <span className={cn("mt-0.5 block truncate text-[15px]", item.caption ? "text-ink" : "text-ink-3")}>{item.caption ?? t("portfolio.noCaption")}</span>
                     <span className="block truncate text-[12px] text-ink-3">
-                      {item.serviceName ? (item.serviceBookable ? `Book this: ${item.serviceName}` : `${item.serviceName} (not bookable)`) : "Not linked to a service"}
+                      {item.serviceName ? (item.serviceBookable ? t("portfolio.bookThis", { name: item.serviceName }) : t("portfolio.notBookable", { name: item.serviceName })) : t("portfolio.notLinked")}
                     </span>
                   </span>
                 </button>
@@ -137,7 +158,7 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
                     onClick={() => move(item, -1)}
                     disabled={idx === 0}
                     className="flex size-9 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink disabled:pointer-events-none disabled:opacity-35"
-                    aria-label={`Move ${label} up`}
+                    aria-label={t("embeds.moveItemUp", { label })}
                   >
                     <ArrowUp className="size-4" />
                   </button>
@@ -146,37 +167,37 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
                     onClick={() => move(item, 1)}
                     disabled={idx === list.length - 1}
                     className="flex size-9 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink disabled:pointer-events-none disabled:opacity-35"
-                    aria-label={`Move ${label} down`}
+                    aria-label={t("embeds.moveItemDown", { label })}
                   >
                     <ArrowDown className="size-4" />
                   </button>
                 </div>
                 <Menu>
-                  <MenuTrigger className="flex size-11 shrink-0 items-center justify-center rounded-md text-ink-2 hover:bg-surface-2 hover:text-ink sm:size-9" aria-label={`Actions for ${label}`}>
+                  <MenuTrigger className="flex size-11 shrink-0 items-center justify-center rounded-md text-ink-2 hover:bg-surface-2 hover:text-ink sm:size-9" aria-label={t("portfolio.actionsFor", { label })}>
                     <MoreHorizontal className="size-4" />
                   </MenuTrigger>
                   <MenuContent>
                     <MenuItem icon={<Pencil />} onSelect={() => setEditing(item)}>
-                      Edit caption &amp; service
+                      {t("embeds.editMenu")}
                     </MenuItem>
                     {idx > 0 && (
                       <MenuItem icon={<ArrowUp />} onSelect={() => move(item, -1)}>
-                        Move up
+                        {t("embeds.moveUp")}
                       </MenuItem>
                     )}
                     {idx < list.length - 1 && (
                       <MenuItem icon={<ArrowDown />} onSelect={() => move(item, 1)}>
-                        Move down
+                        {t("embeds.moveDown")}
                       </MenuItem>
                     )}
                     {link && (
                       <MenuItem icon={<ExternalLink />} onSelect={() => window.open(link, "_blank", "noopener,noreferrer")}>
-                        Open on {PROVIDER_LABEL[item.provider]}
+                        {t("embeds.openOn", { provider: PROVIDER_LABEL[item.provider] })}
                       </MenuItem>
                     )}
                     <MenuSeparator />
                     <MenuItem danger icon={<Trash2 />} onSelect={() => setDeleting(item)}>
-                      Remove
+                      {t("embeds.remove")}
                     </MenuItem>
                   </MenuContent>
                 </Menu>
@@ -190,9 +211,9 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
       <ConfirmDialog
         open={deleting != null}
         onOpenChange={(o) => !o && setDeleting(null)}
-        title="Remove this from your profile?"
-        description="It disappears from the Featured section right away. The post itself stays on your social account."
-        confirmLabel="Remove"
+        title={t("embeds.removeTitle")}
+        description={t("embeds.removeBody")}
+        confirmLabel={t("embeds.remove")}
         loading={busy}
         onConfirm={remove}
       />
@@ -201,9 +222,10 @@ export function SocialEmbedsManager({ items, services }: { items: SocialEmbedRow
 }
 
 function ServiceSelect({ value, onChange, services, id, ...aria }: { value: string; onChange: (v: string) => void; services: Opt[]; id: string; "aria-invalid"?: boolean; "aria-describedby"?: string }) {
+  const t = useT("proSetup");
   return (
     <Select id={id} {...aria} value={value} onChange={(e) => onChange(e.target.value)}>
-      <option value="">None</option>
+      <option value="">{t("portfolio.none")}</option>
       {services.map((s) => (
         <option key={s.id} value={s.id}>
           {s.name}
@@ -214,6 +236,9 @@ function ServiceSelect({ value, onChange, services, id, ...aria }: { value: stri
 }
 
 function AddEmbed({ services }: { services: Opt[] }) {
+  const t = useT("proSetup");
+  const tr = useT();
+  const { intl } = useLocale();
   const router = useRouter();
   const inputId = useId();
   const [url, setUrl] = useState("");
@@ -236,7 +261,7 @@ function AddEmbed({ services }: { services: Opt[] }) {
     setServerError(null);
     try {
       await api("/api/pro/social-embeds", { body: { url: preview.url, caption: caption.trim() || null, serviceId: serviceId || null } });
-      toast.success(`${PROVIDER_LABEL[preview.provider]} ${KIND_LABEL[preview.kind].toLowerCase()} added to your profile`);
+      toast.success(t("embeds.added", { name: embedName(tr, intl, preview.provider, preview.kind) }));
       setUrl("");
       setCaption("");
       setServiceId("");
@@ -253,10 +278,10 @@ function AddEmbed({ services }: { services: Opt[] }) {
   return (
     <form onSubmit={add} className="mt-5 rounded-lg border border-line bg-surface p-4 sm:p-5">
       <label htmlFor={inputId} className="text-sm font-medium text-ink">
-        Link to a video, post or track
+        {t("embeds.linkLabel")}
       </label>
       <div className="relative mt-1.5">
-        <Link2 className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
+        <Link2 className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
         <Input
           id={inputId}
           type="url"
@@ -270,13 +295,13 @@ function AddEmbed({ services }: { services: Opt[] }) {
           }}
           onBlur={() => url.trim() && setTouched(true)}
           placeholder="https://www.youtube.com/watch?v=…"
-          className="pl-9"
+          className="ps-9"
           aria-invalid={error ? true : undefined}
           aria-describedby={`${inputId}-status`}
         />
       </div>
       <p id={`${inputId}-status`} aria-live="polite" className={cn("mt-1.5 text-[13px] leading-snug", error ? "text-danger" : "text-ink-3")}>
-        {error ?? (preview ? `${PROVIDER_LABEL[preview.provider]} ${KIND_LABEL[preview.kind].toLowerCase()} found. Check the preview, then add it.` : "Copy the link from the Share button on YouTube, TikTok, Instagram, Vimeo, SoundCloud or Spotify.")}
+        {error ?? (preview ? t("embeds.found", { name: embedName(tr, intl, preview.provider, preview.kind) }) : t("embeds.linkHint"))}
       </p>
 
       {preview && (
@@ -285,15 +310,15 @@ function AddEmbed({ services }: { services: Opt[] }) {
             <EmbedPlayer key={`${preview.provider}:${preview.providerId}`} item={{ ...preview, caption: caption.trim() || null }} />
           </div>
           <div className="min-w-0 flex-1 space-y-4">
-            <Field label="Caption" optional hint="A line about it — e.g. “Mixed and mastered for Lina Vega”.">
+            <Field label={t("portfolio.caption")} optional hint={t("embeds.captionHint")}>
               {(p) => <Textarea {...p} rows={2} maxLength={200} value={caption} onChange={(e) => setCaption(e.target.value)} />}
             </Field>
-            <Field label="Service" optional hint="Adds a “Book this” link under the post.">
+            <Field label={t("portfolio.service")} optional hint={t("embeds.serviceHintAdd")}>
               {(p) => <ServiceSelect {...p} value={serviceId} onChange={setServiceId} services={services} />}
             </Field>
             <div className="flex flex-wrap gap-2">
               <Button type="submit" loading={saving}>
-                Add to profile
+                {t("embeds.add")}
               </Button>
               <Button
                 type="button"
@@ -306,7 +331,7 @@ function AddEmbed({ services }: { services: Opt[] }) {
                   setTouched(false);
                 }}
               >
-                Clear
+                {t("embeds.clear")}
               </Button>
             </div>
           </div>
@@ -317,6 +342,9 @@ function AddEmbed({ services }: { services: Opt[] }) {
 }
 
 function EditEmbed({ item, services, onClose }: { item: SocialEmbedRow; services: Opt[]; onClose: () => void }) {
+  const t = useT("proSetup");
+  const tr = useT();
+  const { intl } = useLocale();
   const router = useRouter();
   const [caption, setCaption] = useState(item.caption ?? "");
   const [serviceId, setServiceId] = useState(item.serviceId ?? "");
@@ -329,7 +357,7 @@ function EditEmbed({ item, services, onClose }: { item: SocialEmbedRow; services
     setError(null);
     try {
       await api(`/api/pro/social-embeds/${item.id}`, { method: "PUT", body: { caption: caption.trim() || null, serviceId: serviceId || null } });
-      toast.success("Saved");
+      toast.success(t("portfolio.saved"));
       router.refresh();
       onClose();
     } catch (err) {
@@ -343,15 +371,15 @@ function EditEmbed({ item, services, onClose }: { item: SocialEmbedRow; services
     <Dialog
       open
       onOpenChange={(o) => !o && onClose()}
-      title={`${PROVIDER_LABEL[item.provider]} ${KIND_LABEL[item.kind].toLowerCase()}`}
+      title={embedTitle(tr, intl, item.provider, item.kind)}
       locked={saving}
       footer={
         <>
           <Button variant="ghost" onClick={onClose} disabled={saving}>
-            Cancel
+            {t("portfolio.cancel")}
           </Button>
           <Button type="submit" form="embed-form" loading={saving}>
-            Save
+            {t("portfolio.save")}
           </Button>
         </>
       }
@@ -361,10 +389,10 @@ function EditEmbed({ item, services, onClose }: { item: SocialEmbedRow; services
           <EmbedPlayer item={{ ...item, caption: caption.trim() || null }} />
         </div>
         <FormError message={error} />
-        <Field label="Caption" optional>
+        <Field label={t("portfolio.caption")} optional>
           {(p) => <Textarea {...p} rows={2} maxLength={200} value={caption} onChange={(e) => setCaption(e.target.value)} />}
         </Field>
-        <Field label="Service" optional hint="Customers see a “Book this” link under the post.">
+        <Field label={t("portfolio.service")} optional hint={t("embeds.serviceHintEdit")}>
           {(p) => <ServiceSelect {...p} value={serviceId} onChange={setServiceId} services={services} />}
         </Field>
       </form>

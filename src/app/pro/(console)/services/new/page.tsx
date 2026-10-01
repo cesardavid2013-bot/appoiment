@@ -3,16 +3,21 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { ServiceEditor, type EditorInput } from "@/components/pro/service-editor";
 import { AppError } from "@/domain/errors";
+import { getT } from "@/i18n/server";
 import { proPage } from "@/server/pro-page";
 import { getServiceForEdit } from "@/server/services/catalog-admin";
 import { coverFor, serviceEditorContext } from "@/server/services/service-editor-data";
 
-export const metadata: Metadata = { title: "New service" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSetup");
+  return { title: t("services.new") };
+}
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 export default async function NewServicePage({ searchParams }: PageProps<"/pro/services/new">) {
   const { m } = await proPage("services.manage");
+  const t = await getT("proSetup");
   const { copy } = await searchParams;
   const ctx = await serviceEditorContext(m);
 
@@ -56,7 +61,7 @@ export default async function NewServicePage({ searchParams }: PageProps<"/pro/s
       const { id: _id, slug: _slug, archived: _archived, ...rest } = src;
       initial = {
         ...rest,
-        name: `${src.name} (copy)`.slice(0, 100),
+        name: t("services.copyName", { name: src.name }).slice(0, 100),
         status: "hidden",
         optionGroups: src.optionGroups.map(({ id: _g, ...g }) => ({ ...g, options: g.options.map(({ id: _o, ...o }) => o) })),
       };
@@ -68,10 +73,10 @@ export default async function NewServicePage({ searchParams }: PageProps<"/pro/s
   return (
     <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6 lg:px-10 lg:pt-10">
       <Link href="/pro/services" className="inline-flex items-center gap-1.5 text-sm text-ink-3 hover:text-ink">
-        <ArrowLeft className="size-4" /> Services
+        <ArrowLeft className="size-4" /> {t("services.title")}
       </Link>
-      <h1 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-ink">{copiedFrom ? `Duplicate “${copiedFrom}”` : "New service"}</h1>
-      {copiedFrom && <p className="mt-1 text-sm text-ink-3">The copy starts hidden so you can adjust it before customers see it.</p>}
+      <h1 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-ink">{copiedFrom ? t("services.duplicateTitle", { name: copiedFrom }) : t("services.new")}</h1>
+      {copiedFrom && <p className="mt-1 text-sm text-ink-3">{t("services.duplicateHint")}</p>}
       <div className="mt-8">
         <ServiceEditor initial={initial} serviceId={null} ctx={ctx} cover={await coverFor(initial.coverMediaId)} />
       </div>

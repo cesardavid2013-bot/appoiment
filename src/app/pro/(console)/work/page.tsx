@@ -5,16 +5,21 @@ import { PortfolioManager } from "@/components/pro/portfolio-manager";
 import { SocialEmbedsManager } from "@/components/pro/social-embeds-manager";
 import { ButtonLink } from "@/components/ui/button";
 import { PageHeader } from "@/components/ui/misc";
+import { getT } from "@/i18n/server";
 import { db } from "@/server/db/client";
 import { businessMembers, services } from "@/server/db/schema";
 import { proPage } from "@/server/pro-page";
 import { listPortfolio } from "@/server/services/portfolio";
 import { listSocialEmbeds } from "@/server/services/social-embeds";
 
-export const metadata: Metadata = { title: "Portfolio" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSetup");
+  return { title: t("portfolio.title") };
+}
 
 export default async function WorkPage() {
   const { m } = await proPage("portfolio.manage");
+  const t = await getT("proSetup");
   const [items, svc, team, embeds] = await Promise.all([
     listPortfolio(m.businessId),
     db
@@ -33,12 +38,12 @@ export default async function WorkPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:px-10 lg:pt-10">
       <PageHeader
-        title="Portfolio"
-        description="Photos and videos of your work, shown in the Work section of your profile. Link a piece to a service and customers can book it in one tap."
+        title={t("portfolio.title")}
+        description={t("portfolio.description")}
         actions={
           m.businessStatus === "active" ? (
             <ButtonLink href={`/${m.businessSlug}#work`} target="_blank" variant="ghost" size="sm" icon={<ExternalLink className="size-4" />}>
-              View on profile
+              {t("portfolio.viewOnProfile")}
             </ButtonLink>
           ) : undefined
         }

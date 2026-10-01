@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { eq } from "drizzle-orm";
 import { OnboardingWizard } from "@/components/pro/onboarding-wizard";
+import { getT } from "@/i18n/server";
 import { getActiveMembership } from "@/server/authz";
 import { getViewer } from "@/server/auth/session";
 import { db } from "@/server/db/client";
@@ -13,7 +14,10 @@ import { getWeeklyHours } from "@/server/services/schedule";
 import { listServicesForBusiness } from "@/server/services/catalog-admin";
 import { getMediaMap } from "@/server/services/media";
 
-export const metadata: Metadata = { title: "Set up your business" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSetup");
+  return { title: t("onboarding.metaTitle") };
+}
 
 export default async function OnboardingPage({ searchParams }: PageProps<"/pro/onboarding">) {
   const sp = await searchParams;

@@ -2,13 +2,17 @@ import type { Metadata } from "next";
 import { TeamManager } from "@/components/pro/team-manager";
 import { assignableRoles } from "@/domain/permissions";
 import { entitlements } from "@/domain/plans";
+import { getT } from "@/i18n/server";
 import { requestNow } from "@/server/clock";
 import { proPage } from "@/server/pro-page";
 import { listLocations } from "@/server/services/locations";
 import { getMediaMap } from "@/server/services/media";
 import { teamWithDetails } from "@/server/services/team";
 
-export const metadata: Metadata = { title: "Team" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSetup");
+  return { title: t("team.title") };
+}
 
 export default async function TeamPage() {
   const { m } = await proPage("team.manage");
