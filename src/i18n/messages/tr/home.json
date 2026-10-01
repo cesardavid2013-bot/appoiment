@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Tekrar hoş geldiniz, {name}",
+    "eyebrow": "Randevunuz, güvencede",
+    "title": "Haftanızı <em>güzelleştiren</em> insanlardan randevu alın.",
+    "lead": "Berberler, stilistler, antrenörler, özel öğretmenler, fotoğrafçılar ve daha fazlası — gerçek boş saatler, önceden belli fiyatlar ve yalnızca doğrulanmış ziyaretlerden yorumlarla.",
+    "points": {
+      "verified": "Yalnızca doğrulanmış yorumlar",
+      "prices": "Rezervasyondan önce fiyatlar",
+      "instant": "Anında onay"
+    }
+  },
+  "search": {
+    "placeholder": "Saç kesimi, masaj, fotoğrafçı…",
+    "label": "Ne için randevu almak istiyorsunuz?",
+    "category": "Kategori",
+    "submit": "Ara",
+    "sayIt": "Ya da sadece söyleyin —",
+    "sayItExample": "“yarın 5’ten sonra bir berber”"
+  },
+  "openings": {
+    "title": "Yakında boşalacak",
+    "live": "Takvimlerden canlı",
+    "appointment": "Randevu"
+  },
+  "index": {
+    "eyebrow": "Dizin",
+    "title": "Her türlü randevu",
+    "exploreAll": "Tümünü keşfet",
+    "pros": "{count, plural, one {# profesyonel} other {# profesyonel}}"
+  },
+  "next": {
+    "title": "Bir sonraki randevunuz",
+    "details": "Ayrıntılar"
+  },
+  "again": {
+    "title": "Yeniden rezervasyon yapın",
+    "rebook": "Yeniden al"
+  },
+  "rails": {
+    "availableSoon": "Yakında müsait",
+    "availableSoonNear": "{place} yakınında yakında müsait",
+    "availableSoonNearYou": "Yakınınızda yakında müsait",
+    "availableSoonSub": "Her profesyonelin takviminden canlı boş saatler.",
+    "recent": "Son görüntülenenler",
+    "topRated": "En yüksek puanlılar",
+    "topRatedSub": "Puanlar yalnızca tamamlanmış, doğrulanmış rezervasyonlardan gelir.",
+    "newcomers": "Kept’te yeni"
+  },
+  "how": {
+    "eyebrow": "Nasıl çalışır",
+    "title": "Üç adım, telefon trafiği yok",
+    "find": {
+      "title": "Doğru kişiyi bulun",
+      "body": "Neye, ne zaman ve nerede ihtiyacınız olduğuna göre arayın — ya da kendi cümlelerinizle sorun. Her profilde gerçek fiyatlar ve doğrulanmış yorumlar var."
+    },
+    "choose": {
+      "title": "Gerçek bir saat seçin",
+      "body": "Gördüğünüz saatler şu anda takvimlerinde boş. Birini seçin, istediğiniz seçenekleri ekleyin ve onaylayın."
+    },
+    "kept": {
+      "title": "Gerisini bize bırakın",
+      "body": "Bir onay, randevu gününden önce hatırlatmalar ve erteleme, mesajlaşma ya da yeniden rezervasyon için tek bir yer."
+    }
+  },
+  "pros": {
+    "eyebrow": "Profesyoneller için",
+    "title": "Ustalığınız <em>daha iyi</em> bir resepsiyonu hak ediyor.",
+    "body": "Online rezervasyon, çakışma yaşatmayan bir takvim, gelmeyenleri azaltan hatırlatmalar ve işinizi hak ettiği şekilde gösteren bir sayfa. Lansman boyunca ücretsiz.",
+    "cta": "Hizmetlerinizi sunun",
+    "howItWorks": "Nasıl çalıştığını görün",
+    "features": {
+      "any": {
+        "title": "Her hizmet",
+        "body": "Seçenekler fiyatı ve süreyi otomatik değiştirir."
+      },
+      "noDouble": {
+        "title": "Asla çakışma yok",
+        "body": "Her saat, rezervasyon anında kontrol edilir."
+      },
+      "noShows": {
+        "title": "Daha az gelmeyen",
+        "body": "Hatırlatmalar, kaporalar ve net politikalar."
+      },
+      "discovered": {
+        "title": "Keşfedilin",
+        "body": "Portfolyo, doğrulanmış yorumlar ve Spotlight."
+      }
+    }
+  }
+}

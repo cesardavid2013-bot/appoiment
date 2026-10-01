@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Çevrim içi",
+    "comesToYou": "Size gelir",
+    "comesToYouIn": "Size gelir · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Sponsorlu",
+    "verified": "Doğrulanmış işletme",
+    "instant": "Anında onay",
+    "request": "Talep ile rezervasyon",
+    "bookAt": "{day} {time} için rezervasyon yap",
+    "moreTimes": "Diğer saatler",
+    "freeConsultation": "Ücretsiz danışmanlık mevcut",
+    "priceOnRequest": "Fiyat için sorun",
+    "viewTimes": "Saatleri gör"
+  },
+  "rail": {
+    "seeAll": "Tümünü gör"
+  },
+  "favorite": {
+    "save": "Kaydet",
+    "saved": "Kaydedildi",
+    "remove": "Kaydedilenlerden çıkar",
+    "savedToast": "Kaydedildi",
+    "savedToastHint": "İstediğiniz zaman Kaydedilenler’de bulabilirsiniz."
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "loading": "Yükleniyor…",
+  "noEmail": "Kayıtlı e-posta yok",
+  "saveChanges": "Değişiklikleri kaydet",
+  "cancel": "İptal",
+  "checkFields": "Lütfen işaretli alanları kontrol edin.",
+  "nav": {
+    "label": "Hesap ayarları",
+    "account": "Hesap"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profil",
+      "description": "Ad, fotoğraf, telefon ve saat dilimi"
+    },
+    "security": {
+      "label": "Giriş ve güvenlik",
+      "description": "Şifre, e-posta onayı ve cihazlar"
+    },
+    "notifications": {
+      "label": "Bildirim ayarları",
+      "description": "Size hangi konularda e-posta veya SMS gönderileceğini seçin"
+    },
+    "addresses": {
+      "label": "Kayıtlı adresler",
+      "description": "Size gelen profesyoneller için"
+    },
+    "privacy": {
+      "label": "Gizlilik ve veriler",
+      "description": "Verilerinizi indirin veya hesabınızı silin"
+    }
+  },
+  "home": {
+    "memberSince": "Üyelik tarihi: {date}",
+    "confirmEmail": "<b>E-postanızı onaylayın.</b> İşletmelerin rezervasyonlarınızla ilgili size ulaşabilmesi için {email} adresine bir bağlantı gönderdik.",
+    "activity": "Etkinliğiniz",
+    "settings": "Ayarlar",
+    "more": "Diğer",
+    "signOut": "Çıkış yap",
+    "rows": {
+      "bookings": {
+        "label": "Rezervasyonlar",
+        "description": "Yaklaşan ve geçmiş randevular"
+      },
+      "saved": {
+        "label": "Kaydedilenler",
+        "description": "Kaydettiğiniz profesyoneller"
+      },
+      "messages": {
+        "label": "Mesajlar",
+        "description": "İşletmelerle yazışmalar"
+      },
+      "notifications": {
+        "label": "Bildirimler",
+        "description": "Rezervasyonlarınızla ilgili güncellemeler"
+      },
+      "business": {
+        "label": "İşletmenize geçin",
+        "description": "Takvim, hizmetler ve müşteriler"
+      },
+      "offer": {
+        "label": "Hizmetlerinizi Kept’te sunun",
+        "description": "Rezervasyon alın, işinizi büyütün — başlamak ücretsiz"
+      },
+      "support": {
+        "label": "Yardım ve destek",
+        "description": "Rezervasyon, ödeme veya hesabınızla ilgili yardım alın"
+      },
+      "legal": {
+        "label": "Koşullar ve gizlilik",
+        "description": "Kept nasıl çalışır ve verilerinizi nasıl işleriz"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Onay e-postası gönderildi",
+    "sentBody": "{email} adresini kontrol edin — bağlantı 3 gün geçerli.",
+    "sent": "E-posta gönderildi",
+    "resend": "Bağlantıyı yeniden gönder"
+  },
+  "profile": {
+    "description": "Randevu aldığınız profesyonellerin sizi nasıl gördüğü.",
+    "saved": "Profil kaydedildi",
+    "details": "Kişisel bilgiler",
+    "name": "Ad",
+    "email": "E-posta",
+    "changeEmail": "Giriş e-postanızı değiştirmek için <link>destekle iletişime geçin</link>; böylece sizin olduğunuzu doğrulayabiliriz.",
+    "phone": "Telefon",
+    "phoneHintSms": "Randevu aldığınız işletmeler randevularınızla ilgili sizi arayabilir; hatırlatmaları açarsanız biz de size SMS gönderebiliriz.",
+    "phoneHint": "Randevu aldığınız işletmeler bir randevuyla ilgili size ulaşmak için kullanabilir.",
+    "photo": {
+      "title": "Fotoğraf",
+      "description": "Randevu aldığınız profesyonellere adınızın yanında gösterilir.",
+      "updated": "Fotoğraf güncellendi",
+      "removed": "Fotoğraf kaldırıldı",
+      "change": "Fotoğrafı değiştir",
+      "upload": "Fotoğraf yükle",
+      "remove": "Kaldır",
+      "hint": "JPG, PNG veya WebP, en fazla 15 MB. Fotoğraflardaki konum bilgisini sileriz."
+    },
+    "timezone": {
+      "label": "Saat dilimi",
+      "hint": "Yaşadığınız yerin saat dilimi. Randevu saatleri her zaman işletmenin yerel saatiyle gösterilir.",
+      "notSet": "Belirlenmedi",
+      "detect": "Otomatik algıla",
+      "detectFailed": "Saat diliminizi algılayamadık. Listeden seçin."
+    },
+    "language": {
+      "title": "Dil",
+      "description": "Kept genelinde menüler, düğmeler ve tarihler için kullanılır. İşletme adları, hizmetler ve yorumlar işletmenin yazdığı şekilde görünür."
+    }
+  },
+  "security": {
+    "description": "Hesabınızı güvende ve kontrolünüzde tutun.",
+    "password": {
+      "title": "Şifre",
+      "setTitle": "Şifre belirleyin",
+      "description": "Şifrenizi değiştirdiğinizde diğer tüm cihazlarda oturumunuz kapanır.",
+      "setDescription": "Google ile giriş yapıyorsunuz. E-postanızla da giriş yapabilmek için bir şifre ekleyin.",
+      "change": "Şifreyi değiştir",
+      "setButton": "Şifre belirle",
+      "current": "Mevcut şifre",
+      "new": "Yeni şifre",
+      "newHint": "En az 8 karakter. Yaygın kelimelerden ve e-posta adresinizden kaçının.",
+      "confirm": "Yeni şifreyi onaylayın",
+      "tooShort": "En az 8 karakter kullanın.",
+      "mismatch": "Şifreler eşleşmiyor.",
+      "changed": "Şifre değiştirildi",
+      "set": "Şifre belirlendi",
+      "othersSignedOut": "Diğer tüm cihazlarda oturum kapatıldı."
+    },
+    "email": {
+      "title": "E-posta",
+      "description": "E-postanızı giriş yapmanız ve rezervasyon onaylarını göndermek için kullanırız.",
+      "confirmed": "Onaylandı",
+      "notConfirmed": "Henüz onaylanmadı",
+      "none": "Bu hesapta e-posta yok."
+    },
+    "devices": {
+      "title": "Cihazlar",
+      "description": "Ortak kullanılan veya kaybolan bir cihazda oturum açtıysanız buradan kapatın. Bu cihazda oturumunuz açık kalır.",
+      "status": "{count, plural, =0 {Yalnızca bu cihazda oturum açık} one {# başka cihazda oturum açık} other {# başka cihazda oturum açık}}",
+      "signOutOthers": "Diğer cihazlarda oturumu kapat",
+      "confirmTitle": "Diğer cihazlarda oturum kapatılsın mı?",
+      "confirmBody": "Hesabınızı başka bir telefon, tablet veya bilgisayarda kullanan herkesin yeniden giriş yapması gerekecek.",
+      "confirm": "Oturumları kapat",
+      "signedOutToast": "{count, plural, one {# başka cihazda oturum kapatıldı} other {# başka cihazda oturum kapatıldı}}"
+    }
+  },
+  "notifications": {
+    "description": "Sizi nasıl bilgilendireceğimizi seçin. Gereğinden fazlasını asla göndermeyiz.",
+    "saved": "Kaydedildi",
+    "emailAndText": "E-posta ve SMS bildirimleri",
+    "emailOnly": "E-posta bildirimleri",
+    "inboxNote": "Burada ne seçerseniz seçin, her şey Kept’teki Bildirimler kutunuzda da görünür.",
+    "addPhone": "SMS almak için <link>profilinize</link> bir telefon numarası ekleyin.",
+    "email": "E-posta",
+    "sms": "SMS",
+    "forTopic": "{topic} için",
+    "alwaysOn": {
+      "bookings": "Bir rezervasyon değişirse size ulaşabilmemiz için e-posta her zaman açıktır.",
+      "business": "Yeni bir rezervasyonu veya talebi asla kaçırmamanız için e-posta her zaman açıktır."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Rezervasyon güncellemeleri",
+        "description": "Onaylar, değişiklikler ve iptaller."
+      },
+      "reminders": {
+        "label": "Hatırlatmalar",
+        "description": "Yaklaşan randevulardan önce."
+      },
+      "messages": {
+        "label": "Mesajlar",
+        "description": "Bir işletme veya müşteri size mesaj gönderdiğinde."
+      },
+      "waitlist": {
+        "label": "Bekleme listesinde boşalan yerler",
+        "description": "İstediğiniz bir saat boşaldığında."
+      },
+      "reviews": {
+        "label": "Yorum talepleri",
+        "description": "Tamamlanan bir randevudan sonra kısa bir not."
+      },
+      "business": {
+        "label": "İşletme hareketleri",
+        "description": "İşletmeniz için yeni rezervasyonlar, talepler ve yorumlar."
+      },
+      "marketing": {
+        "label": "Haberler ve fırsatlar",
+        "description": "Randevu aldığınız işletmelerden ara sıra güncellemeler."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Size gelen mobil profesyoneller için — berberler, oto detaylandırma uzmanları, antrenörler ve daha fazlası.",
+    "defaultLabel": "Ev",
+    "saved": "Adres kaydedildi",
+    "removed": "Adres kaldırıldı",
+    "emptyTitle": "Kayıtlı adres yok",
+    "emptyBody": "Mobil hizmet aldığınız yerleri — ev veya ofis gibi — tek bir yerde el altında tutun.",
+    "add": "Adres ekle",
+    "removeLabel": "{label} adresini kaldır",
+    "count": "{count}/{max} kayıtlı",
+    "limit": "Sınıra ulaştınız. Başka bir adres eklemek için birini kaldırın.",
+    "dialogBody": "Yalnızca siz görürsünüz. Bir profesyonel adresi yalnızca orada bir hizmet için rezervasyon yaptığınızda görür.",
+    "save": "Adresi kaydet",
+    "fields": {
+      "name": "Ad",
+      "nameHint": "Örneğin Ev, İş veya Spor salonu.",
+      "line1": "Sokak adresi",
+      "line2": "Daire, ofis veya kat",
+      "city": "Şehir",
+      "region": "İl / bölge",
+      "postalCode": "Posta kodu",
+      "country": "Ülke"
+    },
+    "removeTitle": "“{label}” kaldırılsın mı?",
+    "removeBody": "Bu adres için önceden yaptığınız rezervasyonlar etkilenmez.",
+    "remove": "Adresi kaldır"
+  },
+  "privacy": {
+    "description": "Verileriniz size aittir. Nasıl kullandığımızı <link>gizlilik politikamızda</link> okuyun.",
+    "export": {
+      "title": "Verilerinizi indirin",
+      "description": "Profilinizin, kayıtlı adreslerinizin, randevularınızın, yorumlarınızın, mesajlarınızın, kaydettiğiniz profesyonellerin ve destek taleplerinizin bir kopyasını JSON dosyası olarak alın.",
+      "button": "Verilerimi indir",
+      "hint": "Anında hazırlanır. Dosyayı güvenli bir yerde saklayın — kişisel bilgiler içerir."
+    },
+    "delete": {
+      "title": "Hesabınızı silin",
+      "intro": "Bu işlem Kept hesabınızı kalıcı olarak kapatır. Olacaklar şunlar:",
+      "erased": "Adınız, e-postanız, telefonunuz, fotoğrafınız, kayıtlı adresleriniz ve kaydettiğiniz profesyoneller silinir ve her yerde oturumunuz kapatılır.",
+      "upcoming": "{count, plural, one {Yaklaşan randevunuz, izin verdiği iadeler dahil olmak üzere işletmenin iptal politikasına göre iptal edilir.} other {Yaklaşan # randevunuz, izin verdikleri iadeler dahil olmak üzere her işletmenin iptal politikasına göre iptal edilir.}}",
+      "upcomingNone": "Yaklaşan tüm randevular her işletmenin iptal politikasına göre iptal edilir.",
+      "records": "İşletmelerin ve vergi kurallarının dayandığı kayıtlar — geçmiş randevular, ödemeler ve yorumlar — saklanır, ancak “Silinmiş kullanıcı” adıyla gösterilir.",
+      "permanent": "Bu işlem geri alınamaz. Daha sonra aynı e-postayla yeniden kaydolup sıfırdan başlayabilirsiniz.",
+      "blocked": "{businesses} işletmesinin sahibisiniz. Hesabınızı silmeden önce, müşterileri yanıtsız kalmasın diye işletmeyi kapatın veya <link>işletme ayarlarından</link> başka birine devredin.",
+      "copyFirst": "Önce bir kopya mı istersiniz? Verilerinizi yukarıdan indirin.",
+      "open": "Hesabı sil…",
+      "confirmTitle": "Hesabınız silinsin mi?",
+      "confirmBody": "Bu işlem geri alınamaz.",
+      "keep": "Hesabımı koru",
+      "confirm": "Hesabımı sil",
+      "willCancel": "{count, plural, one {Yaklaşan # randevu iptal edilecek.} other {Yaklaşan # randevu iptal edilecek.}}",
+      "password": "Şifreniz",
+      "typeToConfirm": "Onaylamak için <word>{word}</word> yazın",
+      "deletedToast": "Hesabınız silindi",
+      "deletedBody": "Kept’i kullandığınız için teşekkürler."
+    }
+  },
+  "saved": {
+    "title": "Kaydedilenler",
+    "description": "{count, plural, one {Kaydettiğiniz # profesyonel.} other {Kaydettiğiniz # profesyonel.}} Aşağıdaki boş saatler doğrudan takvimlerinden gelir.",
+    "emptyTitle": "Henüz kaydedilen yok",
+    "emptyBody": "Herhangi bir profesyoneli burada tutmak için kalbe dokunun — düzenli gittiklerinize yeniden randevu almak veya karar vermeden önce birkaçını karşılaştırmak için idealdir.",
+    "explore": "Profesyonelleri keşfedin",
+    "loading": "Kaydedilen profesyoneller yükleniyor…"
+  },
+  "notificationList": {
+    "title": "Bildirimler",
+    "today": "Bugün",
+    "earlier": "Daha önce",
+    "emptyTitle": "Henüz bildirim yok",
+    "emptyBody": "Rezervasyon onayları, hatırlatmalar, yanıtlar ve bekleme listesinde boşalan yerler burada görünür.",
+    "unread": "{count} okunmamış",
+    "caughtUp": "Hepsini gördünüz",
+    "allCaughtUpToast": "Hepsi okundu",
+    "markAll": "Tümünü okundu olarak işaretle",
+    "unreadItem": "Okunmadı",
+    "loadOlder": "Daha eskileri yükle",
+    "end": "Hepsi bu kadar."
+  },
+  "invite": {
+    "eyebrow": "Ekip daveti",
+    "invalidTitle": "Bu davet kullanılamıyor",
+    "invalidBody": "Süresi dolmuş, iptal edilmiş veya zaten kabul edilmiş olabilir. Sizi davet eden kişiden yeni bir bağlantı göndermesini isteyin.",
+    "goHome": "Kept’e git",
+    "join": "{business} ekibine katılın",
+    "invitedAs": "<b>{role}</b> olarak davet edildiniz.",
+    "signInWith": "Kabul etmek için <b>{email}</b> ile giriş yapın veya hesap oluşturun.",
+    "createAccount": "Hesap oluştur",
+    "signIn": "Giriş yap",
+    "wrongAccount": "<b>{email}</b> olarak giriş yaptınız, ancak bu davet {invited} adresine gönderildi.",
+    "wrongAccountHint": "Çıkış yapıp o adresle giriş yapın veya {email} adresine davet gönderilmesini isteyin.",
+    "acceptingAs": "<b>{email}</b> olarak kabul ediyorsunuz.",
+    "accept": "Kabul et ve programımı aç",
+    "roles": {
+      "owner": {
+        "label": "Sahip",
+        "description": "Faturalandırma ve ekip dahil tam kontrol."
+      },
+      "manager": {
+        "label": "Yönetici",
+        "description": "Günlük işleri yürütür. Ekibi veya işletme ayarlarını değiştiremez."
+      },
+      "receptionist": {
+        "label": "Resepsiyon",
+        "description": "Herkes için randevu oluşturur ve yönetir."
+      },
+      "provider": {
+        "label": "Profesyonel",
+        "description": "Kendi randevularını ve programını görür ve yönetir."
+      },
+      "custom": {
+        "label": "Özel",
+        "description": "Bu kişinin tam olarak neler yapabileceğini seçin."
+      }
+    }
+  }
+}

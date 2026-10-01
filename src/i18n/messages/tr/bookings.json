@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "Ödeme bekleniyor",
+    "requested": "Talep gönderildi",
+    "confirmed": "Onaylandı",
+    "checked_in": "Giriş yapıldı",
+    "in_progress": "Devam ediyor",
+    "completed": "Tamamlandı",
+    "cancelled": "İptal edildi",
+    "declined": "Reddedildi",
+    "no_show": "Gelmedi",
+    "expired": "Süresi doldu"
+  },
+  "list": {
+    "title": "Rezervasyonlar",
+    "filters": "Rezervasyon filtreleri",
+    "tabs": {
+      "upcoming": "Yaklaşan",
+      "past": "Geçmiş",
+      "cancelled": "İptal edilen"
+    },
+    "howDidItGo": "Nasıl geçti?",
+    "review": "Yorum yap",
+    "empty": {
+      "upcoming": "Yaklaşan randevu yok",
+      "past": "Henüz geçmiş randevu yok",
+      "cancelled": "İptal edilen bir şey yok",
+      "upcomingBody": "Rezervasyon yaptığınızda randevularınız burada görünür — yol tarifi, hatırlatmalar ve kolay erteleme ile.",
+      "findPro": "Bir profesyonel bulun"
+    }
+  },
+  "detail": {
+    "metaTitle": "Randevu",
+    "allBookings": "Tüm rezervasyonlar",
+    "hero": {
+      "confirmedTitle": "Randevunuz hazır",
+      "confirmedBody": "Bir onay gönderdik ve randevunuzdan önce size hatırlatacağız.",
+      "requestedTitle": "Talep gönderildi",
+      "requestedBody": "{business} talebinizi inceleyecek. Yanıt verir vermez size haber vereceğiz — bu sırada saatiniz ayrılmış durumda.",
+      "paymentTitle": "Ödemeniz tamamlanıyor",
+      "paymentBody": "Az önce ödediyseniz bu sayfa birkaç saniye içinde kendiliğinden güncellenir. Ödeme tamamlanırken saatiniz ayrılmış durumda."
+    },
+    "calendarDetails": "Referans {reference}",
+    "ref": "Ref.",
+    "when": "Ne zaman",
+    "with": "Kiminle",
+    "where": "Nerede",
+    "atYourAddress": "Adresinizde",
+    "online": "Çevrim içi",
+    "virtualLink": "İşletme, seanstan önce bağlantıyı gönderecek.",
+    "yourReview": "Yorumunuz",
+    "payment": {
+      "title": "Ödeme",
+      "serviceFee": "Hizmet bedeli",
+      "tax": "Vergi",
+      "estimatedTotal": "Tahmini toplam",
+      "total": "Toplam",
+      "paid": "Ödenen",
+      "refunded": "İade edilen",
+      "balance": "Kalan",
+      "dueAtAppointment": "Randevuda ödenecek",
+      "tip": "Bahşiş"
+    },
+    "policy": {
+      "title": "İptal politikası",
+      "freeUntil": "Randevudan {hours, plural, one {# saat} other {# saat}} öncesine kadar ücretsiz iptal.",
+      "freeAnytime": "Randevudan önce istediğiniz zaman ücretsiz iptal.",
+      "lateFee": "Daha geç iptallerde: toplamın %{percent} kadarı.",
+      "depositNonRefundable": "Kaporalar iade edilmez.",
+      "cannotCancel": "Bu randevu artık iptal edilemez.",
+      "alreadyStarted": "Bu randevu zaten başladı.",
+      "cannotReschedule": "Bu randevu ertelenemez.",
+      "maxReschedules": "Bu randevu en fazla sayıda ertelendi. Lütfen işletmeyle iletişime geçin.",
+      "rescheduleWindow": "Değişiklikler randevudan en az {hours, plural, one {# saat} other {# saat}} önce yapılmalıdır. Lütfen işletmeyle iletişime geçin."
+    },
+    "refund": {
+      "noCharge": "Ücret alınmaz.",
+      "full": "Tam iade alacaksınız.",
+      "none": "Bu işletmenin politikasına göre ödemeniz iade edilmez.",
+      "partial": "Bu işletmenin politikasına göre kısmi iade alacaksınız."
+    },
+    "note": "Not: {reason}",
+    "problem": "Bu rezervasyonla ilgili bir sorun mu var? <link>Destekle iletişime geçin</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date}, {time}",
+    "cancelledToast": "Randevu iptal edildi",
+    "refundOnWay": "{amount} tutarındaki iadeniz yolda.",
+    "rescheduledToast": "Ertelendi",
+    "payToConfirm": "Onaylamak için {amount} öde",
+    "addToCalendar": "Takvime ekle",
+    "directions": "Yol tarifi",
+    "message": "Mesaj",
+    "bookAgain": "Yeniden rezervasyon yap",
+    "googleCalendar": "Google Takvim",
+    "leaveReview": "Yorum yap",
+    "reschedule": "Ertele",
+    "cancelAppointment": "Randevuyu iptal et",
+    "cancelTitle": "Bu randevu iptal edilsin mi?",
+    "insideWindow": "İşletmenin ücretsiz iptal süresi geçti.",
+    "refundAmount": "İade: {amount}.",
+    "keptAmount": "İşletmede kalan: {amount}.",
+    "reason": "Neden",
+    "reasonHint": "İşletmeyle paylaşılır.",
+    "chooseNewTime": "Yeni bir saat seçin",
+    "currently": "Şu anki: {when}",
+    "keepCurrentTime": "Mevcut saati koru",
+    "moveTo": "{time} saatine taşı",
+    "chooseTime": "Bir saat seçin"
+  },
+  "review": {
+    "ratings": {
+      "1": "Kötü",
+      "2": "İdare eder",
+      "3": "İyi",
+      "4": "Çok iyi",
+      "5": "Mükemmel"
+    },
+    "thanks": "Yorumunuz için teşekkürler",
+    "title": "{business} nasıldı?",
+    "subtitle": "Yorumunuz herkese açıktır ve doğrulanmış rezervasyon olarak işaretlenir.",
+    "rating": "Puan",
+    "stars": "{n, plural, one {# yıldız} other {# yıldız}}",
+    "bodyLabel": "Ziyaretinizi başkalarına anlatın",
+    "bodyPlaceholder": "Öne çıkan neydi? Tavsiye eder misiniz?",
+    "post": "Yorumu paylaş"
+  },
+  "slotPicker": {
+    "previousWeek": "Önceki hafta",
+    "nextWeek": "Sonraki hafta",
+    "noOpenings": "Bu gün boş saat yok.",
+    "selected": "Seçilen: {time}"
+  }
+}

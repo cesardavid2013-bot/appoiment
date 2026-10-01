@@ -1,0 +1,90 @@
+{
+  "language": "Dil",
+  "meta": {
+    "title": "Kept — Güvenilir yerel profesyonellerden randevu alın",
+    "description": "Berberleri, stilistleri, antrenörleri, fotoğrafçıları, özel öğretmenleri ve her türden yerel profesyoneli keşfedin, randevu alın — kendi randevularınızı da zahmetsizce yönetin."
+  },
+  "skipToContent": "İçeriğe geç",
+  "logoHome": "Kept ana sayfa",
+  "header": {
+    "mainNav": "Ana menü",
+    "search": "Hizmet veya profesyonel arayın",
+    "ask": "Sor",
+    "askKept": "Kept’e Sor",
+    "explore": "Keşfet",
+    "myBusiness": "İşletmem",
+    "forPros": "Profesyoneller için",
+    "bookings": "Rezervasyonlar",
+    "messages": "Mesajlar",
+    "notifications": "Bildirimler",
+    "unread": "okunmamış",
+    "accountMenu": "Hesap menüsü",
+    "logIn": "Giriş yap",
+    "signUp": "Kaydol"
+  },
+  "accountMenu": {
+    "bookings": "Rezervasyonlar",
+    "saved": "Kaydedilenler",
+    "messages": "Mesajlar",
+    "settings": "Hesap ayarları",
+    "help": "Yardım ve destek",
+    "switchToBusiness": "İşletmeye geç",
+    "offerServices": "Hizmetlerinizi sunun",
+    "admin": "Yönetim paneli",
+    "signOut": "Çıkış yap"
+  },
+  "tabs": {
+    "label": "Ana sekmeler",
+    "home": "Ana sayfa",
+    "explore": "Keşfet",
+    "bookings": "Rezervasyonlar",
+    "inbox": "Gelen kutusu",
+    "account": "Hesap"
+  },
+  "footer": {
+    "tagline": "Güvenilir profesyonellerden randevu alın. Randevularınızı daha az çabayla yönetin.",
+    "discover": "Keşfedin",
+    "explore": "Keşfet",
+    "hair": "Saç ve berber",
+    "wellness": "Wellness",
+    "fitness": "Fitness",
+    "forPros": "Profesyoneller için",
+    "howItWorks": "Nasıl çalışır",
+    "listServices": "Hizmetlerinizi listeleyin",
+    "dashboard": "İşletme paneli",
+    "help": "Yardım",
+    "support": "Destek",
+    "terms": "Koşullar",
+    "privacy": "Gizlilik",
+    "copyright": "© {year} Kept. Tüm hakları saklıdır."
+  },
+  "price": {
+    "free": "Ücretsiz",
+    "quote": "Fiyat görüşmeyle belirlenir",
+    "from": "{price} itibarıyla"
+  },
+  "rating": {
+    "new": "Yeni",
+    "summary": "{count, plural, one {# yoruma} other {# yoruma}} göre {avg} puan"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Ödeme bekleniyor",
+    "requested": "Talep gönderildi",
+    "confirmed": "Onaylandı",
+    "checked_in": "Giriş yapıldı",
+    "in_progress": "Devam ediyor",
+    "completed": "Tamamlandı",
+    "cancelled": "İptal edildi",
+    "declined": "Reddedildi",
+    "no_show": "Gelmedi",
+    "expired": "Süresi doldu"
+  },
+  "policy": {
+    "freeUntil": "{hours} saat öncesine kadar ücretsiz iptal. Daha geç iptallerde toplamın %{percent} kadarı tahsil edilir.",
+    "cancelAhead": "Lütfen randevunuzdan en az {hours} saat önce iptal edin.",
+    "freeAnyTime": "Randevunuzdan önce istediğiniz zaman ücretsiz iptal.",
+    "depositRefundable": "Zamanında iptal ederseniz kapora iade edilir.",
+    "depositNonRefundable": "Kaporalar iade edilmez.",
+    "reschedule": "{hours} saat öncesine kadar online erteleme."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Kept’e Sor",
+  "description": "Neye ve ne zaman ihtiyacınız olduğunu söyleyin. Gerçek boş saatlere bakarım.",
+  "newConversation": "Yeni sohbet",
+  "close": "Kapat",
+  "forExample": "Örneğin:",
+  "starters": {
+    "one": "Yarın öğleden sonra bir berber",
+    "two": "Bu hafta sonu 60 $ altında kalıcı oje",
+    "three": "Bu akşam yakınımda masaj",
+    "four": "Çevrim içi matematik dersi"
+  },
+  "searching": "Aranıyor",
+  "listening": "Dinliyorum…",
+  "placeholder": "Cumartesi sabahı bir berber…",
+  "yourMessage": "Mesajınız",
+  "stopListening": "Dinlemeyi durdur",
+  "speak": "Konuş",
+  "send": "Gönder",
+  "verified": "Doğrulanmış",
+  "online": "Çevrim içi"
+}

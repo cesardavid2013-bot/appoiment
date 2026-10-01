@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Profesyonelleri keşfedin",
+    "category": "{category} için randevu alın",
+    "query": "{q} — arama",
+    "description": "Profesyonelleri gerçek müsaitlik, fiyatlar ve doğrulanmış yorumlara göre karşılaştırın."
+  },
+  "bar": {
+    "placeholder": "Hizmet veya profesyonel arayın",
+    "label": "Ara",
+    "clear": "Aramayı temizle"
+  },
+  "location": {
+    "placeholder": "Her yer",
+    "label": "Konum",
+    "clear": "Konumu temizle",
+    "useMine": "Mevcut konumumu kullan",
+    "finding": "Konumunuz bulunuyor…",
+    "current": "Mevcut konum",
+    "selectedArea": "Seçilen bölge",
+    "unsupported": "Tarayıcınız konum paylaşamıyor. Bunun yerine bir şehir yazın.",
+    "denied": "Bu site için konum kapalı. Bunun yerine bir şehir yazın — ya da tarayıcı ayarlarınızdan konuma izin verin.",
+    "failed": "Konumunuzu alamadık. Bunun yerine bir şehir yazın."
+  },
+  "quick": {
+    "availableToday": "Bugün müsait",
+    "instant": "Anında rezervasyon",
+    "mobile": "Size gelir",
+    "virtual": "Çevrim içi"
+  },
+  "view": {
+    "label": "Görünüm",
+    "list": "Liste",
+    "map": "Harita"
+  },
+  "heading": {
+    "explore": "Keşfet",
+    "results": "Sonuçlar",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Güncelleniyor…",
+    "count": "{count, plural, one {# profesyonel} other {# profesyonel}}",
+    "countMore": "{count}+ profesyonel",
+    "near": "{place} yakınında {results}",
+    "nearYou": "Yakınınızda {results}"
+  },
+  "sort": {
+    "label": "Sırala",
+    "relevance": "En uygun",
+    "rating": "En yüksek puan",
+    "price": "En düşük fiyat",
+    "distance": "En yakın"
+  },
+  "categories": {
+    "label": "Kategoriler",
+    "all": "Tümü"
+  },
+  "empty": {
+    "title": "Henüz eşleşme yok",
+    "query": "Daha genel bir terim veya farklı bir yazım deneyin ya da bazı filtreleri kaldırın.",
+    "filters": "Bir filtreyi kaldırmayı veya daha geniş bir bölgede aramayı deneyin.",
+    "clear": "Tüm filtreleri temizle"
+  },
+  "showMore": "Daha fazla göster",
+  "filters": {
+    "button": "Filtreler",
+    "buttonCount": "Filtreler · {count}",
+    "title": "Filtreler",
+    "clearAll": "Tümünü temizle",
+    "show": "Sonuçları göster",
+    "availability": "Müsaitlik ve rezervasyon",
+    "rating": "Puan",
+    "minRating": "En düşük puan",
+    "any": "Fark etmez",
+    "price": "Başlangıç fiyatı en fazla",
+    "maxPrice": "En yüksek başlangıç fiyatı",
+    "distance": "Mesafe",
+    "provider": "Hizmet veren",
+    "providerType": "Hizmet veren türü",
+    "individual": "Bağımsız profesyoneller",
+    "business": "İşletmeler ve ekipler"
+  }
+}

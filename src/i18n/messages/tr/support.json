@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "Rezervasyon",
+      "hint": "Bir randevuyla ilgili değişiklikler, iptaller veya sorunlar."
+    },
+    "payment": {
+      "label": "Ödeme",
+      "hint": "Ücretler, kaporalar, iadeler veya bahşişler."
+    },
+    "account": {
+      "label": "Hesap",
+      "hint": "Giriş, profiliniz veya verileriniz."
+    },
+    "report": {
+      "label": "Bir işletmeyi bildir",
+      "hint": "Güvenlik endişeleri, yanıltıcı ilanlar veya uygunsuz davranış."
+    },
+    "other": {
+      "label": "Diğer",
+      "hint": "Yardımcı olabileceğimiz diğer her şey."
+    }
+  },
+  "status": {
+    "open": "Destek yanıtı bekleniyor",
+    "awaiting_customer": "Yanıtlandı",
+    "resolved": "Çözüldü",
+    "closed": "Kapatıldı"
+  },
+  "home": {
+    "title": "Yardım ve destek",
+    "description": "Bir rezervasyon, ödeme veya hesabınızla ilgili yardım alın.",
+    "newRequest": "Yeni talep",
+    "yourRequests": "Talepleriniz",
+    "emptyTitle": "Henüz talep yok",
+    "emptyBody": "Bir rezervasyon, ödeme veya hesabınızla ilgili bir sorun varsa bize anlatın, çözmenize yardımcı olalım.",
+    "contact": "Destekle iletişime geçin",
+    "ticketLine": "{category} · Güncellendi: {date} · {count, plural, one {# mesaj} other {# mesaj}}",
+    "quickAnswers": "Hızlı yanıtlar",
+    "stillStuck": "Hâlâ çözemediniz mi? <link>Destekle iletişime geçin</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Bir randevuyu nasıl iptal eder veya ertelerim?",
+      "a": "<link>Rezervasyonlar</link> bölümünü açın, randevuyu seçin ve Ertele veya İptal’e dokunun. Her işletme kendi iptal süresini belirler — onaylamadan önce varsa ücret veya iade dahil tam olarak neyin geçerli olduğunu görürsünüz."
+    },
+    "refund": {
+      "q": "İademi ne zaman alırım?",
+      "a": "İadeler, iptal onaylanır onaylanmaz ödeme yaptığınız karta gönderilir. Bankanıza bağlı olarak görünmeleri genellikle 5–10 iş günü sürer. Kaporanın iade edilip edilmeyeceği, rezervasyon sırasında gösterilen işletme politikasına bağlıdır."
+    },
+    "contactPro": {
+      "q": "Bir profesyonelle nasıl iletişime geçerim?",
+      "a": "Profilindeki veya rezervasyonunuzdaki Mesaj seçeneğini kullanın. Sohbetleriniz <link>Mesajlar</link> bölümünde durur. Hizmetin kendisiyle ilgili her şeyi — yol tarifi, hazırlık, yanınızda ne getireceğiniz — en hızlı işletme yanıtlar."
+    },
+    "report": {
+      "q": "Bir işletmeyle ilgili bir sorun yaşadım. Ne yapabilirim?",
+      "a": "Aşağıdan bir talep açın ve “Bir işletmeyi bildir”i seçin. Varsa randevuyu bağlayın. Her bildirimi okuruz; iadelerde devreye girebilir, gerektiğinde işletmeleri Kept’ten kaldırabiliriz."
+    },
+    "account": {
+      "q": "E-postamı nasıl değiştiririm veya hesabımı nasıl silerim?",
+      "a": "Sizin olduğunuzu doğrulayabilmemiz için e-posta değişiklikleri destek üzerinden yapılır. Verilerinizi indirmeyi veya hesabınızı silmeyi <link>Gizlilik ve veriler</link> bölümünden kendiniz yapabilirsiniz."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Destek talebi",
+    "allRequests": "Tüm talepler",
+    "opened": "{category} · Açılış: <date></date>",
+    "appointmentLine": "{date}, {time} · Ref. {reference}",
+    "conversation": "Yazışma",
+    "keptSupport": "Kept Destek",
+    "openImage": "Ekli görseli aç",
+    "attachedImage": "Ekli görsel",
+    "closed": "Bu talep kapatıldı. Hâlâ yardıma ihtiyacınız varsa <link>yeni bir talep açın</link>.",
+    "willReply": "Buradan yanıt verecek ve size haber vereceğiz.",
+    "sorted": "Sorun çözüldü mü? Bize bildirin."
+  },
+  "new": {
+    "title": "Destekle iletişime geçin",
+    "intro": "Neler olduğunu anlatın, Kept ekibinden gerçek bir kişi buradan yanıt versin. Hizmetin kendisiyle ilgili sorular için genellikle işletmeye mesaj atmak daha hızlıdır.",
+    "notFound": "Bu randevuyu hesabınızda bulamadık, bu yüzden eklenmedi. Yine de aşağıdan birini seçebilirsiniz."
+  },
+  "form": {
+    "topic": "Ne konuda yardıma ihtiyacınız var?",
+    "chooseTopic": "Bir konu seçin",
+    "addSubject": "Kısa bir konu başlığı ekleyin",
+    "moreDetail": "Biraz daha anlatın — en az bir cümle size yardımcı olmamızı kolaylaştırır",
+    "sent": "Talep gönderildi",
+    "checkFields": "Lütfen işaretli alanları kontrol edin.",
+    "related": "İlgili randevu",
+    "refHint": "Ref. {reference} · {business}",
+    "linkHint": "Bir rezervasyonu bağlamak, hemen incelememizi sağlar.",
+    "none": "Yok",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Konu",
+    "subjectPlaceholder": "ör. Kaporam iki kez tahsil edildi",
+    "details": "Ayrıntılar",
+    "detailsHint": "Ne oldu, ne zaman oldu ve bizden ne yapmamızı istiyorsunuz. Lütfen kart numarası veya şifre eklemeyin.",
+    "images": "Görseller",
+    "optional": "İsteğe bağlı",
+    "cancel": "İptal",
+    "uploadingImages": "Görseller yükleniyor…",
+    "send": "Talebi gönder"
+  },
+  "reply": {
+    "writeFirst": "Önce bir yanıt yazın.",
+    "sent": "Yanıt gönderildi",
+    "label": "Yanıt",
+    "reopens": "Yanıt vermek bu talebi yeniden açar.",
+    "placeholder": "Ayrıntı ekleyin veya sorumuzu yanıtlayın…",
+    "send": "Yanıtı gönder"
+  },
+  "resolve": {
+    "button": "Çözüldü olarak işaretle",
+    "done": "Çözüldü olarak işaretlendi",
+    "doneBody": "Sorunun çözülmesine sevindik. Bir şey olursa yine de yanıt verebilirsiniz.",
+    "confirmTitle": "Bu talep çözüldü olarak işaretlensin mi?",
+    "confirmBody": "Sorunun çözüldüğünü bize bildirin. Başka bir şey çıkarsa buradan yanıt verin, kaldığımız yerden devam edelim."
+  },
+  "attach": {
+    "tooMany": "En fazla {max} görsel ekleyebilirsiniz.",
+    "alt": "Destek eki",
+    "label": "Ekler",
+    "uploadingName": "{name} yükleniyor",
+    "remove": "{name} öğesini kaldır",
+    "add": "Görsel ekle",
+    "uploading": "{count, plural, one {# görsel yükleniyor…} other {# görsel yükleniyor…}}",
+    "hint": "Ekran görüntüleri veya fotoğraflar işe yarar. En fazla {max} görsel, her biri 15 MB."
+  }
+}

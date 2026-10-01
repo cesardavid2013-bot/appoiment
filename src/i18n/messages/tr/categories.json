@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Berber"
+  },
+  "hair": {
+    "name": "Saç ve berber",
+    "description": "Kesim, boya, şekillendirme, örgü ve bakım."
+  },
+  "lashes-brows": {
+    "name": "Kirpik ve kaş"
+  },
+  "massage": {
+    "name": "Masaj"
+  },
+  "personal-training": {
+    "name": "Kişisel antrenman"
+  },
+  "hair-salon": {
+    "name": "Kuaför"
+  },
+  "makeup": {
+    "name": "Makyaj"
+  },
+  "nails": {
+    "name": "Tırnak",
+    "description": "Manikür, pedikür, protez tırnak ve nail art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga ve pilates"
+  },
+  "beauty": {
+    "name": "Güzellik",
+    "description": "Kirpik, kaş, makyaj ve cilt."
+  },
+  "braids-locs": {
+    "name": "Örgü ve rasta"
+  },
+  "skincare": {
+    "name": "Cilt bakımı ve estetik"
+  },
+  "wellness": {
+    "name": "Wellness",
+    "description": "Masaj, spa ve vücut terapileri."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Kişisel antrenman, yoga, pilates ve koçluk."
+  },
+  "tattoo-piercing": {
+    "name": "Dövme ve piercing",
+    "description": "Kişiye özel dövmeler, hazır desenler ve piercing."
+  },
+  "photography": {
+    "name": "Fotoğraf ve video",
+    "description": "Portre, etkinlik, ürün çekimi ve video."
+  },
+  "education": {
+    "name": "Ders ve özel ders",
+    "description": "Özel öğretmenler, müzik öğretmenleri ve dil dersleri."
+  },
+  "home-services": {
+    "name": "Ev hizmetleri",
+    "description": "Temizlik, onarım ve tamirciler."
+  },
+  "automotive": {
+    "name": "Otomotiv",
+    "description": "Oto detaylı temizlik, araç yıkama ve mobil tamirciler."
+  },
+  "pets": {
+    "name": "Evcil hayvanlar",
+    "description": "Bakım, bakıcılık ve eğitim."
+  },
+  "events": {
+    "name": "Etkinlikler",
+    "description": "DJ’ler, organizatörler ve etkinlik profesyonelleri."
+  },
+  "professional": {
+    "name": "Profesyonel hizmetler",
+    "description": "Danışmanlar, koçlar ve uzmanlar."
+  },
+  "other": {
+    "name": "Diğer",
+    "description": "Rezervasyon yapabileceğiniz diğer her şey."
+  }
+}
