@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BookingFlow } from "@/components/booking/booking-flow";
 import { getViewer } from "@/server/auth/session";
+import { getT } from "@/i18n/server";
 import { features } from "@/server/env";
 import { getBookingServiceDetail, getPublicBusiness } from "@/server/services/catalog";
 
 export async function generateMetadata({ params }: PageProps<"/[slug]/book">): Promise<Metadata> {
   const { slug } = await params;
-  const b = await getPublicBusiness(slug);
-  return { title: b ? `Book with ${b.name}` : "Book", robots: { index: false } };
+  const [b, t] = await Promise.all([getPublicBusiness(slug), getT("booking.meta")]);
+  return { title: b ? t("title", { name: b.name }) : t("fallbackTitle"), robots: { index: false } };
 }
 
 export default async function BookPage({ params, searchParams }: PageProps<"/[slug]/book">) {
@@ -34,7 +35,7 @@ export default async function BookPage({ params, searchParams }: PageProps<"/[sl
         currency: b.currency,
         bookingMode: b.bookingMode,
         allowAnyStaff: b.allowAnyStaff,
-        policies: b.policies,
+        policy: b.policy,
         latePolicy: b.latePolicy,
         logo: b.logo,
         services: b.services,

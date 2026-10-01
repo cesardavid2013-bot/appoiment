@@ -3,22 +3,24 @@
 import { Checkbox, ChoiceCard } from "@/components/ui/controls";
 import { Field, Input, Textarea } from "@/components/ui/field";
 import type { FormField } from "@/domain/forms";
+import { useT } from "@/i18n/client";
 
 /**
  * One intake question exactly as clients see it while booking. Shared by the
  * booking flow and the form builder's preview so the two can't drift apart.
  */
 export function IntakeField({ field: f, value, onChange, error }: { field: FormField; value: unknown; onChange: (v: unknown) => void; error?: string }) {
+  const t = useT("booking.intake");
   if (f.type === "yes_no")
     return (
       <fieldset>
         <legend className="mb-2 text-sm font-medium text-ink">
-          {f.label} {!f.required && <span className="font-normal text-ink-3">(optional)</span>}
+          {f.label} {!f.required && <span className="font-normal text-ink-3">{t("optional")}</span>}
         </legend>
         {f.helpText && <p className="-mt-1 mb-2 text-[13px] text-ink-3">{f.helpText}</p>}
         <div className="grid max-w-xs grid-cols-2 gap-2">
           {[true, false].map((v) => (
-            <ChoiceCard key={String(v)} selected={value === v} onClick={() => onChange(v)} title={v ? "Yes" : "No"} />
+            <ChoiceCard key={String(v)} selected={value === v} onClick={() => onChange(v)} title={v ? t("yes") : t("no")} />
           ))}
         </div>
         {error && <p className="mt-1.5 text-[13px] text-danger">{error}</p>}
@@ -30,7 +32,7 @@ export function IntakeField({ field: f, value, onChange, error }: { field: FormF
     return (
       <fieldset>
         <legend className="mb-2 text-sm font-medium text-ink">
-          {f.label} {!f.required && <span className="font-normal text-ink-3">(optional)</span>}
+          {f.label} {!f.required && <span className="font-normal text-ink-3">{t("optional")}</span>}
         </legend>
         {f.helpText && <p className="-mt-1 mb-2 text-[13px] text-ink-3">{f.helpText}</p>}
         <div className="grid gap-2 sm:grid-cols-2">

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Reserva con {name}",
+    "fallbackTitle": "Reservar"
+  },
+  "steps": {
+    "service": "Elige un servicio",
+    "options": "Personaliza",
+    "who": "Con quién y dónde",
+    "time": "Elige un horario",
+    "details": "Algunos detalles",
+    "review": "Revisa y confirma"
+  },
+  "header": {
+    "backTo": "Volver a {name}",
+    "previousStep": "Paso anterior",
+    "stepOf": "Paso {current} de {total}",
+    "exit": "Salir de la reserva"
+  },
+  "service": {
+    "optionsAvailable": "Opciones disponibles",
+    "group": "Grupal · hasta {count}"
+  },
+  "options": {
+    "required": "Obligatorio",
+    "upTo": "Elige hasta {count}",
+    "optionalAny": "Opcional · elige las que quieras",
+    "optional": "Opcional",
+    "included": "Incluido",
+    "errorRequired": "Elige una opción para «{name}».",
+    "errorOnlyOne": "Elige solo una opción para «{name}».",
+    "errorUpTo": "Elige hasta {count} para «{name}».",
+    "errorUnavailable": "Una de las opciones seleccionadas ya no está disponible."
+  },
+  "who": {
+    "where": "Dónde",
+    "with": "Con",
+    "comesToYou": "Va a tu domicilio · a menos de {km} km de {city}",
+    "online": "Sesión en línea",
+    "anyPro": "Cualquier profesional",
+    "anyProHint": "Más horarios disponibles: te asignamos a quien esté libre."
+  },
+  "details": {
+    "addressLabel": "¿A dónde debemos ir?",
+    "addressHint": "A menos de {km} km de {city}. Solo se comparte con el negocio.",
+    "addressPlaceholder": "Calle y número, piso o depto., ciudad",
+    "consent": "He leído y acepto lo anterior",
+    "age": "Confirmo que tengo al menos {age} años",
+    "noteLabel": "¿Algo más que deban saber?",
+    "notePlaceholder": "Alergias, preferencias, indicaciones para estacionar…"
+  },
+  "review": {
+    "changeTime": "Cambiar horario",
+    "with": "Con",
+    "where": "Dónde",
+    "yourAddress": "Tu dirección",
+    "online": "En línea",
+    "noteLabel": "¿Algo que deban saber?",
+    "notePlaceholder": "Preferencias, preguntas, necesidades de accesibilidad…",
+    "promoApplied": "{code} aplicado",
+    "promoRemove": "Quitar",
+    "promoPlaceholder": "Código promocional",
+    "promoApply": "Aplicar",
+    "beforeYouBook": "Antes de reservar",
+    "bookingAs": "Reservando como {name}"
+  },
+  "confirm": {
+    "request": "Enviar solicitud de reserva",
+    "requestShort": "Enviar solicitud",
+    "pay": "Confirmar y pagar {amount}",
+    "payShort": "Pagar {amount}",
+    "confirm": "Confirmar reserva",
+    "confirmShort": "Confirmar"
+  },
+  "summary": {
+    "label": "Resumen de la reserva",
+    "instant": "Confirmación inmediata",
+    "request": "La confirma el negocio",
+    "total": "Total",
+    "estimatedTotal": "Total estimado",
+    "estimated": "Estimado",
+    "comesToYou": "Va a tu domicilio",
+    "online": "En línea",
+    "empty": "Elige un servicio para ver horarios y precios.",
+    "continue": "Continuar",
+    "signInToBook": "Inicia sesión para reservar"
+  },
+  "time": {
+    "preselectMissed": "El horario que elegiste ya no está disponible con estas opciones. Estos son los más cercanos.",
+    "previousWeeks": "Dos semanas anteriores",
+    "nextWeeks": "Dos semanas siguientes",
+    "chooseDate": "Elige una fecha",
+    "today": "Hoy",
+    "timesAvailable": "{count, plural, one {# horario disponible} other {# horarios disponibles}}",
+    "noAvailability": "Sin disponibilidad",
+    "noOpeningsOn": "No hay horarios el {date}",
+    "noOpeningsThisDay": "No hay horarios este día",
+    "nextOpening": "Próximo horario disponible: {date}.",
+    "tryLater": "Prueba con las dos semanas siguientes o únete a la lista de espera y te avisaremos si se libera algo.",
+    "joinWaitlist": "Unirme a la lista de espera de este día",
+    "morning": "Mañana",
+    "afternoon": "Tarde",
+    "evening": "Noche",
+    "morningTimes": "Horarios de la mañana",
+    "afternoonTimes": "Horarios de la tarde",
+    "eveningTimes": "Horarios de la noche",
+    "spotsLeft": "{count, plural, one {Queda #} other {Quedan #}}",
+    "timesIn": "Horarios en {abbr} ({zone}).",
+    "timesInLocal": "Horarios en {abbr} ({zone}): son las {time} donde estás."
+  },
+  "waitlist": {
+    "title": "Únete a la lista de espera",
+    "description": "Si se libera un horario el {date}, te avisaremos de inmediato. Los horarios son para quien reserve primero.",
+    "cancel": "Cancelar",
+    "notify": "Avísame",
+    "windowLabel": "Horarios que te vienen bien",
+    "any": "Cualquier hora ese día",
+    "morning": "Mañana (antes del mediodía)",
+    "afternoon": "Tarde (de 12:00 a 17:00)",
+    "evening": "Noche (después de las 17:00)",
+    "joined": "Estás en la lista de espera",
+    "joinedBody": "Te avisaremos en cuanto se libere un horario."
+  },
+  "price": {
+    "label": "Desglose del precio",
+    "total": "Total",
+    "estimatedTotal": "Total estimado",
+    "payNow": "Pagar ahora",
+    "depositNow": "Depósito a pagar ahora",
+    "remaining": "Resto a pagar en la cita",
+    "nothingNow": "No pagas nada ahora: paga en tu cita.",
+    "estimateNote": "El negocio confirma el precio final, que puede variar según el trabajo necesario.",
+    "tax": "Impuesto",
+    "serviceFee": "Tarifa de servicio"
+  },
+  "checkout": {
+    "title": "Pago",
+    "description": "Completa el pago para confirmar tu reserva.",
+    "pay": "Pagar {amount}",
+    "secured": "Pago seguro con Stripe. Tu horario queda reservado mientras pagas.",
+    "declined": "Tu tarjeta fue rechazada.",
+    "failed": "No pudimos completar el pago. No se hizo ningún cargo a tu tarjeta; inténtalo de nuevo."
+  },
+  "intake": {
+    "optional": "(opcional)",
+    "yes": "Sí",
+    "no": "No"
+  }
+}
