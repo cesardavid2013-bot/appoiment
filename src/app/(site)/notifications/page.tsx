@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/ui/misc";
 import { getT } from "@/i18n/server";
 import { listNotifications } from "@/server/services/engagement";
 import { requireViewerPage } from "@/server/viewer";
+import { LiveRefresh } from "@/components/shell/live-refresh";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getT("account");
@@ -24,6 +25,7 @@ export default async function NotificationsPage() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 pt-10 sm:px-6">
+      <LiveRefresh kinds={["notification"]} />
       <PageHeader title={t("notificationList.title")} />
       <NotificationList initial={items} serverNow={serverNow} fallbackZone={viewer.timezone ?? "UTC"} />
     </div>

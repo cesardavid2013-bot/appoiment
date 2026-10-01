@@ -10,6 +10,7 @@ import { cn } from "@/lib/cn";
 import { fmtDate, fmtTime } from "@/lib/format";
 import { listCustomerAppointments, pendingReviews } from "@/server/services/customer";
 import { requireViewerPage } from "@/server/viewer";
+import { LiveRefresh } from "@/components/shell/live-refresh";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getT("bookings");
@@ -27,6 +28,7 @@ export default async function BookingsPage({ searchParams }: PageProps<"/booking
 
   return (
     <div className="mx-auto max-w-3xl px-4 pt-10 sm:px-6">
+      <LiveRefresh kinds={["appointment"]} />
       <PageHeader title={t("list.title")} />
       <nav className="mt-6 flex gap-6 border-b border-line" aria-label={t("list.filters")}>
         {TABS.map((k) => (

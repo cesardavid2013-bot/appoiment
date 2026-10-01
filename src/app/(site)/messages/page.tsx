@@ -11,6 +11,7 @@ import { cn } from "@/lib/cn";
 import { requestNow } from "@/server/clock";
 import { listCustomerConversations } from "@/server/services/messaging";
 import { requireViewerPage } from "@/server/viewer";
+import { LiveRefresh } from "@/components/shell/live-refresh";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getT("messages");
@@ -32,6 +33,7 @@ export default async function MessagesPage({ searchParams }: PageProps<"/message
 
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
+      <LiveRefresh kinds={["message", "read"]} />
       <PageHeader title={t("list.title")} description={rows.length ? (unread ? t("list.unread", { count: unread }) : t("list.caughtUp")) : undefined} />
       {rows.length === 0 ? (
         <EmptyState

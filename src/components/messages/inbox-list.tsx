@@ -1,6 +1,6 @@
 "use client";
 
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Inbox, Search, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,6 +10,7 @@ import { Avatar, type MediaLike } from "@/components/ui/media";
 import { useT } from "@/i18n/client";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
+import { useRealtime, useRealtimeConnected } from "@/lib/realtime";
 import { ListTime } from "./list-time";
 
 export type InboxRow = {
@@ -42,13 +43,16 @@ export function InboxList({ initial, fallbackZone, serverNow }: { initial: Inbox
   }, [q]);
 
   const isDefault = term === "" && filter === "all";
+  const qc = useQueryClient();
+  const live = useRealtimeConnected();
+  useRealtime(["message", "read"], () => qc.invalidateQueries({ queryKey: ["inbox"] }));
   const { data, isFetching } = useQuery({
     queryKey: ["inbox", term, filter],
     queryFn: ({ signal }) => api<InboxRow[]>(`/api/pro/messages?${new URLSearchParams({ ...(term ? { q: term } : {}), filter })}`, { signal }),
     initialData: isDefault ? initial : undefined,
     initialDataUpdatedAt: isDefault ? serverNow : undefined,
     staleTime: 5_000,
-    refetchInterval: 10_000,
+    refetchInterval: live ? 60_000 : 10_000,
     refetchIntervalInBackground: false,
     placeholderData: (prev) => prev,
   });

@@ -15,6 +15,7 @@ import { cancellationPreview, reschedulePreview } from "@/server/services/bookin
 import { customerAppointmentDetail } from "@/server/services/customer";
 import { requireViewerPage } from "@/server/viewer";
 import { requestNow } from "@/server/clock";
+import { LiveRefresh } from "@/components/shell/live-refresh";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getT("bookings");
@@ -84,6 +85,7 @@ export default async function AppointmentPage({ params, searchParams }: PageProp
 
   return (
     <div className="mx-auto max-w-2xl px-4 pt-6 sm:px-6 sm:pt-8">
+      <LiveRefresh kinds={["appointment"]} />
       <Link href="/bookings" className="-ms-1 inline-flex h-10 items-center gap-1 pe-2 text-sm font-medium text-ink-3 hover:text-ink">
         <ChevronLeft className="size-4 rtl:-scale-x-100" aria-hidden />
         {t("detail.allBookings")}

@@ -12,12 +12,15 @@ import type { TFunction } from "@/i18n/translate";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { fmtTime, localDateKey } from "@/lib/format";
+import { useRealtime, useRealtimeConnected } from "@/lib/realtime";
 import { uploadMedia } from "@/lib/upload";
 import { useNow, useTimeZone } from "@/lib/use-client-time";
 import { apptLine, dayLabel } from "./time";
 import type { ThreadAppointment, ThreadMessage, ThreadPayload } from "./types";
 
+// Live events trigger an immediate fetch; polling is only the safety net.
 const POLL_MS = 6_000;
+const POLL_LIVE_MS = 30_000;
 const GROUP_GAP_MS = 5 * 60_000;
 const MAX_LEN = 2000;
 
@@ -142,6 +145,12 @@ export function ThreadView(p: ThreadViewProps) {
     cursorRef.current = lastCursor;
   }, [lastCursor]);
 
+  const live = useRealtimeConnected();
+  const pollNow = useRef<(() => void) | null>(null);
+  useRealtime(["message", "read"], (e) => {
+    if (e.conversationId && e.conversationId === convId) pollNow.current?.();
+  });
+
   useEffect(() => {
     if (!convId) return;
     let stopped = false;
@@ -167,15 +176,17 @@ export function ThreadView(p: ThreadViewProps) {
         inFlight = false;
       }
     }
-    const timer = setInterval(poll, POLL_MS);
+    pollNow.current = () => void poll();
+    const timer = setInterval(poll, live ? POLL_LIVE_MS : POLL_MS);
     const onVisible = () => document.visibilityState === "visible" && poll();
     document.addEventListener("visibilitychange", onVisible);
     return () => {
       stopped = true;
+      pollNow.current = null;
       clearInterval(timer);
       document.removeEventListener("visibilitychange", onVisible);
     };
-  }, [convId, p.endpoint, refreshBadges]);
+  }, [convId, p.endpoint, refreshBadges, live]);
 
   async function loadOlder() {
     if (!convId || !messages.length) return;

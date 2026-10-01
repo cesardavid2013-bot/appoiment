@@ -45,6 +45,17 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
   const [markingAll, setMarkingAll] = useState(false);
   // Items that were unread when shown keep their highlight for this visit, even once marked read.
   const [fresh, setFresh] = useState(() => new Set(initial.filter((n) => !n.readAt).map((n) => n.id)));
+  // A live refresh brings a new `initial`: put notifications we haven't shown yet on top.
+  const [seenInitial, setSeenInitial] = useState(initial);
+  if (initial !== seenInitial) {
+    setSeenInitial(initial);
+    const known = new Set(items.map((n) => n.id));
+    const added = initial.filter((n) => !known.has(n.id));
+    if (added.length) {
+      setItems([...added, ...items]);
+      setFresh(new Set([...fresh, ...added.filter((n) => !n.readAt).map((n) => n.id)]));
+    }
+  }
   const pending = useRef(new Set<string>());
   const sent = useRef(new Set<string>());
   const flushTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
