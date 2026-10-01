@@ -290,7 +290,7 @@ export async function listCustomers(m: Membership, p: z.infer<typeof customerQue
         totalSpentCents: businessCustomers.totalSpentCents,
         lastVisitAt: businessCustomers.lastVisitAt,
         createdAt: businessCustomers.createdAt,
-        nextVisit: sql<string | null>`(select min(a.starts_at) from appointments a where a.business_customer_id = business_customers.id and a.starts_at > now() and a.status in ${UPCOMING_SQL}${mine})`,
+        nextVisit: sql<string | null>`to_char((select min(a.starts_at) from appointments a where a.business_customer_id = business_customers.id and a.starts_at > now() and a.status in ${UPCOMING_SQL}${mine}) at time zone 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS"Z"')`,
       })
       .from(businessCustomers)
       .where(where)

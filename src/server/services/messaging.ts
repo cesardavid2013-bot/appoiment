@@ -41,7 +41,7 @@ async function assertAppointmentLink(appointmentId: string, businessId: string, 
     .select({ id: appointments.id })
     .from(appointments)
     .where(and(eq(appointments.id, appointmentId), eq(appointments.businessId, businessId), eq(appointments.customerUserId, customerUserId)));
-  if (!a) throw notFound("That appointment");
+  if (!a) throw new AppError("validation", "That appointment isn't part of this conversation.", { fields: { appointmentId: "Choose one of this client's appointments" } });
 }
 
 async function assertAttachable(mediaId: string, userId: string, businessId: string | null) {
@@ -202,6 +202,17 @@ export async function customerConversationWith(viewer: Viewer, businessId: strin
   return conv?.id ?? null;
 }
 
+/**
+ * Unread = a message from the other person newer than this side's last read.
+ * Automatic booking lines ("Appointment confirmed…") never make a thread unread;
+ * both sides already get a booking notification for those.
+ */
+function unreadFor(side: ThreadSide) {
+  return side === "customer"
+    ? sql<boolean>`exists (select 1 from messages um where um.conversation_id = conversations.id and um.deleted_at is null and um.sender_role = 'business' and um.created_at > coalesce(conversations.customer_last_read_at, '-infinity'::timestamptz))`
+    : sql<boolean>`exists (select 1 from messages um where um.conversation_id = conversations.id and um.deleted_at is null and um.sender_role = 'customer' and um.created_at > coalesce(conversations.business_last_read_at, '-infinity'::timestamptz))`;
+}
+
 const lastSenderSql = sql<"customer" | "business" | "system" | null>`(select m.sender_role from messages m where m.conversation_id = conversations.id and m.deleted_at is null order by m.created_at desc limit 1)`;
 
 export async function listCustomerConversations(viewer: Viewer) {
@@ -210,7 +221,7 @@ export async function listCustomerConversations(viewer: Viewer) {
       id: conversations.id,
       lastMessageAt: conversations.lastMessageAt,
       preview: conversations.lastMessagePreview,
-      unread: sql<boolean>`(${conversations.customerLastReadAt} is null or ${conversations.customerLastReadAt} < ${conversations.lastMessageAt})`,
+      unread: unreadFor("customer"),
       lastSender: lastSenderSql,
       businessId: businesses.id,
       businessName: businesses.name,
@@ -234,7 +245,7 @@ export const inboxQuerySchema = z.object({
 
 export async function listBusinessConversations(m: Membership, p: z.infer<typeof inboxQuerySchema> = { filter: "all" }) {
   if (!m.permissions.has("messages.manage")) throw new AppError("forbidden", "You don't have access to customer messages.");
-  const unread = sql<boolean>`(${conversations.businessLastReadAt} is null or ${conversations.businessLastReadAt} < ${conversations.lastMessageAt})`;
+  const unread = unreadFor("business");
   const term = p.q ? `%${p.q.replace(/[%_\\]/g, "")}%` : null;
   const rows = await db
     .select({
@@ -435,12 +446,32 @@ export async function unreadMessageCount(viewer: Viewer, m: Membership | null) {
       and(
         isNotNull(conversations.lastMessagePreview),
         or(
-          and(eq(conversations.customerUserId, viewer.id), sql`(${conversations.customerLastReadAt} is null or ${conversations.customerLastReadAt} < ${conversations.lastMessageAt})`),
+          and(eq(conversations.customerUserId, viewer.id), unreadFor("customer")),
           m && m.permissions.has("messages.manage")
-            ? and(eq(conversations.businessId, m.businessId), sql`(${conversations.businessLastReadAt} is null or ${conversations.businessLastReadAt} < ${conversations.lastMessageAt})`)
+            ? and(eq(conversations.businessId, m.businessId), unreadFor("business"))
             : sql`false`,
         ),
       ),
     );
   return c?.n ?? 0;
+}
+
+/**
+ * An appointment the composer may link ("About your booking …"), only if it is
+ * between this business and this customer.
+ */
+export async function appointmentRef(businessId: string, customerUserId: string, appointmentId: string) {
+  const [a] = await db
+    .select({ id: appointments.id, reference: appointments.reference, status: appointments.status, startsAt: appointments.startsAt, timezone: appointments.timezone, serviceName: sql<string>`${appointments.snapshot}->>'serviceName'` })
+    .from(appointments)
+    .where(and(eq(appointments.id, appointmentId), eq(appointments.businessId, businessId), eq(appointments.customerUserId, customerUserId)));
+  return a ? { ...a, startsAt: a.startsAt.toISOString() } : null;
+}
+
+/** Business header info for a new customer conversation. */
+export async function messageableBusiness(businessId: string) {
+  const [b] = await db.select({ id: businesses.id, name: businesses.name, slug: businesses.slug, status: businesses.status, timezone: businesses.timezone, logoMediaId: businesses.logoMediaId, ownerUserId: businesses.ownerUserId }).from(businesses).where(eq(businesses.id, businessId));
+  if (!b || b.status !== "active") return null;
+  const media = await getMediaMap([b.logoMediaId]);
+  return { ...b, logo: b.logoMediaId ? (media.get(b.logoMediaId) ?? null) : null };
 }

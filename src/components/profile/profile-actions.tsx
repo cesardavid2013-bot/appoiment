@@ -90,7 +90,7 @@ export function AskQuestionButton({ businessId, businessName, signedIn, classNam
         variant="secondary"
         className={className}
         icon={<MessageCircle className="size-4" />}
-        onClick={() => (signedIn ? setOpen(true) : router.push(`/login?next=${encodeURIComponent(window.location.pathname + "?ask=1")}`))}
+        onClick={() => (signedIn ? setOpen(true) : router.push(`/login?next=${encodeURIComponent(`/messages/new?business=${businessId}`)}`))}
       >
         Ask a question
       </Button>

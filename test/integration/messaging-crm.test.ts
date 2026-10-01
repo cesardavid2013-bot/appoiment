@@ -115,12 +115,18 @@ describe("messaging authorization", () => {
     const b = await makeUser();
     const apptB = await book(f, b, 4);
     const apptA = await book(f, a, 5);
-    expect(await errorCode(customerSend(a, f.biz.id, { body: "About this", appointmentId: apptB }))).toBe("not_found");
+    expect(await errorCode(customerSend(a, f.biz.id, { body: "About this", appointmentId: apptB }))).toBe("validation");
     expect(await errorCode(customerSend(a, f.biz.id, { body: "" }))).toBe("validation");
     const { conversationId } = await customerSend(a, f.biz.id, { body: "About my booking", appointmentId: apptA });
-    expect(await errorCode(businessSend(f.ownerMembership, f.owner.id, conversationId, { body: "Re", appointmentId: apptB }))).toBe("not_found");
+    expect(await errorCode(businessSend(f.ownerMembership, f.owner.id, conversationId, { body: "Re", appointmentId: apptB }))).toBe("validation");
+    // Another business's appointment for the same customer is rejected on both sides too.
+    const other = await makeBusiness();
+    const apptOther = await book(other, a, 6);
+    expect(await errorCode(customerSend(a, f.biz.id, { body: "x", appointmentId: apptOther }))).toBe("validation");
+    expect(await errorCode(businessStart(f.ownerMembership, f.owner.id, await clientIdOf(f, a.id), { body: "x", appointmentId: apptOther }))).toBe("validation");
+    expect(await db.select().from(messages).where(eq(messages.body, "x"))).toHaveLength(0);
     const t = await getThread({ conversationId, viewer: a, as: "customer" });
-    expect(t.messages[0].appointment?.id).toBe(apptA);
+    expect(t.messages.find((m) => m.senderRole === "customer")?.appointment?.id).toBe(apptA);
   });
 
   it("lets a business start a thread only with clients who booked with a Kept account", async () => {
@@ -169,6 +175,19 @@ describe("thread polling and read state", () => {
     const mine = await getThread({ conversationId, viewer: customer, as: "customer" });
     expect(mine.messages.at(-1)).toMatchObject({ body: "Yes we do", mine: false, senderName: f.biz.name });
     expect(await unreadMessageCount(customer, null)).toBe(0);
+  });
+
+  it("doesn't count automatic booking lines as unread", async () => {
+    const f = await makeBusiness();
+    const customer = await makeUser();
+    await book(f, customer, 2);
+    expect(await unreadMessageCount(customer, null)).toBe(0);
+    expect(await unreadMessageCount(f.owner, f.ownerMembership)).toBe(0);
+    const [row] = await listBusinessConversations(f.ownerMembership);
+    expect(row).toMatchObject({ unread: false, lastSender: "system" });
+    await customerSend(customer, f.biz.id, { body: "Is parking free?" });
+    expect(await unreadMessageCount(f.owner, f.ownerMembership)).toBe(1);
+    expect((await listBusinessConversations(f.ownerMembership, { filter: "unread" })).map((r) => r.customerUserId)).toEqual([customer.id]);
   });
 
   it("pages older messages with a before cursor", async () => {
