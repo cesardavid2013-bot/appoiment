@@ -196,8 +196,11 @@ export async function processVideo(mediaId: string) {
   if (!m || m.kind !== "video" || m.status === "ready") return;
   const dir = await mkdtemp(path.join(tmpdir(), "kept-vid-"));
   try {
-    const input = storage.absolutePath(m.originalKey);
-    if (!input) throw new Error("storage driver does not expose local files");
+    // Work on a local copy so ffmpeg can seek, whatever the storage backend.
+    const original = await storage.get(m.originalKey);
+    if (!original) throw new Error("original video missing from storage");
+    const input = path.join(dir, `in${path.extname(m.originalKey)}`);
+    await writeFile(input, original);
     const poster = path.join(dir, "poster.jpg");
     const out = path.join(dir, "web.mp4");
     const seek = Math.min(1, (m.durationSeconds ?? 2) / 3);

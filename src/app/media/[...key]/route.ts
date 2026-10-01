@@ -1,4 +1,3 @@
-import { Readable } from "node:stream";
 import type { NextRequest } from "next/server";
 import { eq } from "drizzle-orm";
 import { getViewer } from "@/server/auth/session";
@@ -62,9 +61,9 @@ export async function GET(req: NextRequest, ctx: RouteContext<"/media/[...key]">
     start = Math.max(0, start);
     end = Math.min(end, info.size - 1);
     if (start > end) return new Response(null, { status: 416, headers: { "content-range": `bytes */${info.size}` } });
-    const body = Readable.toWeb(storage.stream(key, { start, end }) as Readable) as ReadableStream;
+    const body = await storage.stream(key, { start, end });
     return new Response(body, { status: 206, headers: { ...headers, "content-range": `bytes ${start}-${end}/${info.size}`, "content-length": String(end - start + 1) } });
   }
-  const body = Readable.toWeb(storage.stream(key) as Readable) as ReadableStream;
+  const body = await storage.stream(key);
   return new Response(body, { headers: { ...headers, "content-length": String(info.size) } });
 }

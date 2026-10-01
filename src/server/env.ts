@@ -12,8 +12,14 @@ const schema = z.object({
   APP_URL: z.string().url().default("http://localhost:3000"),
   APP_SECRET: z.string().min(32, "APP_SECRET must be at least 32 characters"),
   CRON_SECRET: optional,
-  STORAGE_DRIVER: z.enum(["local"]).default("local"),
+  STORAGE_DRIVER: z.enum(["local", "s3"]).default("local"),
   STORAGE_DIR: z.string().default("./storage"),
+  S3_BUCKET: optional,
+  S3_REGION: z.string().default("auto"),
+  /** Custom endpoint for S3-compatible providers (R2, B2, MinIO). Leave empty for AWS. */
+  S3_ENDPOINT: optional,
+  S3_ACCESS_KEY_ID: optional,
+  S3_SECRET_ACCESS_KEY: optional,
   RESEND_API_KEY: optional,
   EMAIL_FROM: z.string().default("Kept <hello@example.com>"),
   TWILIO_ACCOUNT_SID: optional,
@@ -35,7 +41,12 @@ const schema = z.object({
 export type Env = z.infer<typeof schema>;
 
 function load(): Env {
-  const parsed = schema.safeParse(process.env);
+  const parsed = schema
+    .refine((e) => e.STORAGE_DRIVER !== "s3" || Boolean(e.S3_BUCKET && e.S3_ACCESS_KEY_ID && e.S3_SECRET_ACCESS_KEY), {
+      message: "STORAGE_DRIVER=s3 needs S3_BUCKET, S3_ACCESS_KEY_ID and S3_SECRET_ACCESS_KEY",
+      path: ["STORAGE_DRIVER"],
+    })
+    .safeParse(process.env);
   if (!parsed.success) {
     const issues = parsed.error.issues.map((i) => `  - ${i.path.join(".")}: ${i.message}`).join("\n");
     throw new Error(`Invalid environment configuration:\n${issues}`);
