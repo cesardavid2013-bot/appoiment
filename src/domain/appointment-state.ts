@@ -12,7 +12,7 @@ export type AppointmentStatus =
 
 const TRANSITIONS: Record<AppointmentStatus, readonly AppointmentStatus[]> = {
   pending_payment: ["confirmed", "requested", "expired", "cancelled"],
-  requested: ["confirmed", "declined", "cancelled", "expired"],
+  requested: ["confirmed", "pending_payment", "declined", "cancelled", "expired"],
   confirmed: ["checked_in", "in_progress", "completed", "cancelled", "no_show"],
   checked_in: ["in_progress", "completed", "cancelled"],
   in_progress: ["completed"],
