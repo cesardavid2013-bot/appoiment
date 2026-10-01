@@ -14,6 +14,7 @@ import { addDaysIso, instantToLocal, isoWeekday, localMinuteToInstant, todayIn }
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { fmtTime } from "@/lib/format";
+import { useRealtime, useRealtimeConnected } from "@/lib/realtime";
 import { AppointmentControls } from "./appointment-controls";
 import { BlockTimeDialog, NewAppointmentDialog } from "./pro-dialogs";
 
@@ -124,13 +125,16 @@ export function ProCalendar({
     const p = new URLSearchParams({ from: new Date(localMinuteToInstant(from, 0, timezone)!).toISOString(), to: new Date(localMinuteToInstant(to, 0, timezone)!).toISOString() });
     return api<CalData>(`/api/pro/calendar?${p}`);
   };
+  const live = useRealtimeConnected();
   const q = useQuery({
     queryKey: ["calendar", range.from, range.to],
     queryFn: () => fetchRange(range.from, range.to),
     initialData: range.from === rangeFor(initialView, initialDate).from && view === initialView ? initial : undefined,
     placeholderData: keepPreviousData,
-    refetchInterval: 60_000,
+    refetchInterval: live ? 300_000 : 60_000,
   });
+  // Bookings, cancellations and moves made anywhere show up immediately.
+  useRealtime(["appointment"], () => qc.invalidateQueries({ queryKey: ["calendar"] }));
   // Prefetch the neighbouring range so paging feels instant.
   useEffect(() => {
     const next = rangeFor(view, shift(view, date, 1));

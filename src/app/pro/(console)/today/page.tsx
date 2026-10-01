@@ -11,6 +11,7 @@ import { fmtDateLong, fmtTime } from "@/lib/format";
 import { env } from "@/server/env";
 import { launchChecklist } from "@/server/services/business";
 import { servicesForCalendar, todayOverview } from "@/server/services/pro";
+import { LiveRefresh } from "@/components/shell/live-refresh";
 import { proPage } from "@/server/pro-page";
 import { requestNow } from "@/server/clock";
 
@@ -39,6 +40,7 @@ export default async function TodayPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:px-10 lg:pt-10">
+      <LiveRefresh kinds={["appointment", "message"]} />
       <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-sm font-medium text-ink-3">{fmtDateLong(new Date(), tz)}</p>
