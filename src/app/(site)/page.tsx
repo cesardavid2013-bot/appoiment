@@ -58,12 +58,13 @@ export default async function HomePage() {
               const n = counts.get(c.slug) ?? 0;
               return (
                 <li key={c.slug} className="border-b border-r border-line">
-                  <Link href={`/explore?category=${c.slug}`} className="group flex h-full flex-col justify-between gap-6 p-4 transition-colors hover:bg-surface">
-                    <span className="text-[15px] font-medium leading-snug text-ink">{c.name}</span>
-                    <span className="flex items-center justify-between text-[12px] text-ink-3">
-                      {n > 0 ? `${n} ${n === 1 ? "pro" : "pros"}` : "Coming soon"}
-                      <ArrowRight className="size-3.5 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
+                  <Link href={`/explore?category=${c.slug}`} className="group flex h-full flex-col gap-1.5 p-4 transition-colors hover:bg-surface sm:p-5">
+                    <span className="flex items-baseline justify-between gap-2">
+                      <span className="text-[15px] font-medium leading-snug text-ink">{c.name}</span>
+                      {n > 0 && <span className="shrink-0 text-[12px] text-ink-3 tabular">{n}</span>}
                     </span>
+                    {c.description && <span className="line-clamp-2 text-[12.5px] leading-snug text-ink-3">{c.description}</span>}
+                    <ArrowRight className="mt-auto size-3.5 -translate-x-1 text-ink-3 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" aria-hidden />
                   </Link>
                 </li>
               );
