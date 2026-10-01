@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { Suspense } from "react";
 import { ExploreClient, ExploreSkeleton } from "@/components/search/explore-client";
+import { categoryName } from "@/i18n/helpers";
+import { getT } from "@/i18n/server";
 import { LOCATION_COOKIE, parseLocationCookie } from "@/lib/location";
 import { getViewer } from "@/server/auth/session";
 import { listCategories } from "@/server/services/catalog";
@@ -9,11 +11,10 @@ import { favoriteIds } from "@/server/services/engagement";
 import { searchBusinesses, searchSchema } from "@/server/services/search";
 
 export async function generateMetadata({ searchParams }: PageProps<"/explore">): Promise<Metadata> {
-  const sp = await searchParams;
-  const cats = await listCategories();
+  const [sp, cats, t, tr] = await Promise.all([searchParams, listCategories(), getT("search"), getT()]);
   const cat = cats.flatMap((c) => [c, ...c.children]).find((c) => c.slug === sp.category);
-  const title = cat ? `Book ${cat.name}` : typeof sp.q === "string" ? `${sp.q} — search` : "Explore professionals";
-  return { title, description: "Compare professionals by real availability, prices and verified reviews.", alternates: { canonical: cat ? `/explore?category=${cat.slug}` : "/explore" } };
+  const title = cat ? t("meta.category", { category: categoryName(tr, cat.slug, cat.name) }) : typeof sp.q === "string" ? t("meta.query", { q: sp.q }) : t("meta.title");
+  return { title, description: t("meta.description"), alternates: { canonical: cat ? `/explore?category=${cat.slug}` : "/explore" } };
 }
 
 async function Results({ sp }: { sp: Record<string, string | string[] | undefined> }) {

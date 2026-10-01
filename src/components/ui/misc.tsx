@@ -106,8 +106,9 @@ export function Stars({ value, size = 14, className }: { value: number; size?: n
   );
 }
 
-export function RatingInline({ avg, count, className }: { avg: number | null; count: number; className?: string }) {
-  if (!avg || count === 0) return <span className={cn("text-[13px] text-ink-3", className)}>New</span>;
+/** `labels` lets callers pass translated text; English is the default. */
+export function RatingInline({ avg, count, className, labels }: { avg: number | null; count: number; className?: string; labels?: { new: string; summary: string } }) {
+  if (!avg || count === 0) return <span className={cn("text-[13px] text-ink-3", className)}>{labels?.new ?? "New"}</span>;
   return (
     <span className={cn("inline-flex items-center gap-1 text-[13px] text-ink", className)}>
       <svg width="13" height="13" viewBox="0 0 20 20" aria-hidden className="text-ink">
@@ -115,9 +116,7 @@ export function RatingInline({ avg, count, className }: { avg: number | null; co
       </svg>
       <span className="font-semibold tabular">{avg.toFixed(1)}</span>
       <span className="text-ink-3 tabular">({count})</span>
-      <span className="sr-only">
-        rated {avg.toFixed(1)} from {count} reviews
-      </span>
+      <span className="sr-only">{labels?.summary ?? `rated ${avg.toFixed(1)} from ${count} reviews`}</span>
     </span>
   );
 }

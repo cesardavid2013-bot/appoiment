@@ -35,6 +35,8 @@ export type SearchResult = {
   tagline: string | null;
   city: string | null;
   categoryName: string | null;
+  /** Primary category slug, for showing the category name in the viewer's language. */
+  categorySlug: string | null;
   ratingAvg: number | null;
   ratingCount: number;
   priceMinCents: number | null;
@@ -190,6 +192,7 @@ export async function searchBusinesses(p: SearchParams) {
     coverMediaId: businesses.coverMediaId,
     timezone: businesses.timezone,
     categoryName: sql<string | null>`(select c.name from categories c where c.id = businesses.primary_category_id)`,
+    categorySlug: sql<string | null>`(select c.slug from categories c where c.id = businesses.primary_category_id)`,
     distanceKm: distance,
   };
 
@@ -247,6 +250,7 @@ async function hydrate(
     coverMediaId: string | null;
     timezone: string;
     categoryName: string | null;
+    categorySlug: string | null;
     distanceKm: number | null;
     promoted: boolean;
   }[],
@@ -294,6 +298,7 @@ async function hydrate(
         tagline: r.tagline,
         city: r.city,
         categoryName: r.categoryName,
+        categorySlug: r.categorySlug,
         ratingAvg: r.ratingAvg,
         ratingCount: r.ratingCount,
         priceMinCents: r.priceMinCents,
@@ -401,6 +406,7 @@ export async function hydrateIds(ids: string[]): Promise<SearchResult[]> {
       coverMediaId: businesses.coverMediaId,
       timezone: businesses.timezone,
       categoryName: sql<string | null>`(select c.name from categories c where c.id = businesses.primary_category_id)`,
+      categorySlug: sql<string | null>`(select c.slug from categories c where c.id = businesses.primary_category_id)`,
       distanceKm: sql<number | null>`null`,
     })
     .from(businesses)

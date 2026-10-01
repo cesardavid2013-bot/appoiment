@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Comes to you",
+    "comesToYouIn": "Comes to you · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Promoted",
+    "verified": "Verified business",
+    "instant": "Instant confirmation",
+    "request": "Request to book",
+    "bookAt": "Book {day} at {time}",
+    "moreTimes": "More times",
+    "freeConsultation": "Free consultation available",
+    "priceOnRequest": "Price on request",
+    "viewTimes": "View times"
+  },
+  "rail": {
+    "seeAll": "See all"
+  },
+  "favorite": {
+    "save": "Save",
+    "saved": "Saved",
+    "remove": "Remove from saved",
+    "savedToast": "Saved",
+    "savedToastHint": "Find it any time in Saved."
+  }
+}

@@ -1,6 +1,8 @@
 /** The user's chosen search location, remembered in a cookie so server pages can personalise. */
 export type SavedLocation = { label: string; lat: number; lng: number };
 export const LOCATION_COOKIE = "kept_loc";
+/** Stored label for "use my location"; shown translated, never as-is. */
+export const CURRENT_LOCATION_LABEL = "Current location";
 
 export function parseLocationCookie(raw: string | undefined | null): SavedLocation | null {
   if (!raw) return null;

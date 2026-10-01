@@ -1,23 +1,25 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { getT } from "@/i18n/server";
 import { BusinessCard, type CardBusiness } from "./business-card";
 
 /** A titled row of business cards: horizontal scroll on phones, grid on larger screens. */
-export function CardRail({ title, subtitle, href, items, favorites, signedIn }: { title: string; subtitle?: ReactNode; href?: string; items: CardBusiness[]; favorites: Set<string>; signedIn: boolean }) {
+export async function CardRail({ id, title, subtitle, href, items, favorites, signedIn }: { id: string; title: string; subtitle?: ReactNode; href?: string; items: CardBusiness[]; favorites: Set<string>; signedIn: boolean }) {
   if (!items.length) return null;
+  const t = await getT("business");
   return (
-    <section className="mx-auto mt-20 max-w-7xl" aria-labelledby={`rail-${title}`}>
+    <section className="mx-auto mt-20 max-w-7xl" aria-labelledby={`rail-${id}`}>
       <div className="mb-5 flex items-end justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <div>
-          <h2 id={`rail-${title}`} className="font-display text-[34px] leading-none text-ink sm:text-[40px]">
+          <h2 id={`rail-${id}`} className="font-display text-[34px] leading-none text-ink sm:text-[40px]">
             {title}
           </h2>
           {subtitle && <p className="mt-2 text-sm text-ink-3">{subtitle}</p>}
         </div>
         {href && (
           <Link href={href} className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-ink-2 hover:text-ink">
-            See all <ArrowRight className="size-4" />
+            {t("rail.seeAll")} <ArrowRight className="size-4" />
           </Link>
         )}
       </div>

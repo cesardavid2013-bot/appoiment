@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Welcome back, {name}",
+    "eyebrow": "The appointment, kept",
+    "title": "Book the people who make your week <em>better.</em>",
+    "lead": "Barbers, stylists, trainers, tutors, photographers and more — with real openings, upfront prices and reviews only from verified visits.",
+    "points": {
+      "verified": "Verified reviews only",
+      "prices": "Prices before you book",
+      "instant": "Instant confirmation"
+    }
+  },
+  "search": {
+    "placeholder": "Haircut, massage, photographer…",
+    "label": "What do you want to book?",
+    "category": "Category",
+    "submit": "Search",
+    "sayIt": "Or just say it —",
+    "sayItExample": "“a barber tomorrow after 5”"
+  },
+  "openings": {
+    "title": "Opening soon",
+    "live": "Live from calendars",
+    "appointment": "Appointment"
+  },
+  "index": {
+    "eyebrow": "The index",
+    "title": "Every kind of appointment",
+    "exploreAll": "Explore all",
+    "pros": "{count, plural, one {# pro} other {# pros}}"
+  },
+  "next": {
+    "title": "Your next appointment",
+    "details": "Details"
+  },
+  "again": {
+    "title": "Book again",
+    "rebook": "Rebook"
+  },
+  "rails": {
+    "availableSoon": "Available soon",
+    "availableSoonNear": "Available soon near {place}",
+    "availableSoonNearYou": "Available soon near you",
+    "availableSoonSub": "Live openings from each professional's calendar.",
+    "recent": "Recently viewed",
+    "topRated": "Highly rated",
+    "topRatedSub": "Ratings come only from completed, verified bookings.",
+    "newcomers": "New on Kept"
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Three steps, no phone tag",
+    "find": {
+      "title": "Find your person",
+      "body": "Search by what you need, when and where — or just ask in your own words. Every profile shows real prices and verified reviews."
+    },
+    "choose": {
+      "title": "Choose a real time",
+      "body": "The times you see are free on their calendar right now. Pick one, add any options, and confirm."
+    },
+    "kept": {
+      "title": "Consider it kept",
+      "body": "You get a confirmation, reminders before the day, and one place to reschedule, message or rebook."
+    }
+  },
+  "pros": {
+    "eyebrow": "For professionals",
+    "title": "Your craft deserves a <em>better</em> front desk.",
+    "body": "Online booking, a calendar that can’t double-book, reminders that cut no-shows, and a page that shows your work the way it deserves. Free while we launch.",
+    "cta": "Offer your services",
+    "howItWorks": "See how it works",
+    "features": {
+      "any": {
+        "title": "Any service",
+        "body": "Options change price and time automatically."
+      },
+      "noDouble": {
+        "title": "Never double-booked",
+        "body": "Every time is checked at the moment of booking."
+      },
+      "noShows": {
+        "title": "Fewer no-shows",
+        "body": "Reminders, deposits and clear policies."
+      },
+      "discovered": {
+        "title": "Get discovered",
+        "body": "Portfolio, verified reviews and Spotlight."
+      }
+    }
+  }
+}

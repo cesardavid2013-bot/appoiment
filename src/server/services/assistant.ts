@@ -29,6 +29,7 @@ export type AssistantResult = {
   slug: string;
   name: string;
   categoryName: string | null;
+  categorySlug: string | null;
   city: string | null;
   ratingAvg: number | null;
   ratingCount: number;
@@ -38,7 +39,8 @@ export type AssistantResult = {
   offersMobile: boolean;
   offersVirtual: boolean;
   timezone: string;
-  service: { id: string; name: string; price: string; durationMinutes: number } | null;
+  /** `price` is an English label; the raw fields let the panel format it in the viewer's language. */
+  service: { id: string; name: string; price: string; durationMinutes: number; priceType: string; priceCents: number; salePriceCents: number | null; priceMaxCents: number | null; currency: string } | null;
   /** Openings that match what was asked for (ISO instants). */
   slots: string[];
 };
@@ -123,6 +125,7 @@ async function runSearch(intent: SearchIntent, ctx: { lat?: number; lng?: number
         slug: r.slug,
         name: r.name,
         categoryName: r.categoryName,
+        categorySlug: r.categorySlug,
         city: r.city,
         ratingAvg: r.ratingAvg,
         ratingCount: r.ratingCount,
@@ -132,7 +135,7 @@ async function runSearch(intent: SearchIntent, ctx: { lat?: number; lng?: number
         offersMobile: r.offersMobile,
         offersVirtual: r.offersVirtual,
         timezone: r.timezone,
-        service: svc ? { id: svc.id, name: svc.name, price: formatPriceLabel(svc, r.currency), durationMinutes: svc.durationMinutes } : null,
+        service: svc ? { id: svc.id, name: svc.name, price: formatPriceLabel(svc, r.currency), durationMinutes: svc.durationMinutes, priceType: svc.priceType, priceCents: svc.priceCents, salePriceCents: svc.salePriceCents, priceMaxCents: svc.priceMaxCents, currency: r.currency } : null,
         slots,
         score: (slots.length ? 10 : 0) + (svc ? scoreService(svc.name, intent.terms) : 0),
       };
