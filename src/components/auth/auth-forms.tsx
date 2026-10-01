@@ -1,12 +1,33 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Field, FormError, Input } from "@/components/ui/field";
 import { safeRelativePath } from "@/domain/safe-path";
+import { useT } from "@/i18n/client";
+import { rich } from "@/i18n/rich";
+import type { TFunction } from "@/i18n/translate";
 import { api, ApiError } from "@/lib/api";
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+/**
+ * Catches the common mistakes before a round-trip so the message reads in the
+ * visitor's language. The server re-validates with the same rules. `t` is scoped to "auth".
+ */
+export function authFieldErrors(t: TFunction, mode: "login" | "signup" | "reset" | "forgot", v: { name?: string; email?: string; password?: string }) {
+  const out: Record<string, string> = {};
+  const newPassword = mode === "signup" || mode === "reset";
+  if (mode === "signup" && !v.name?.trim()) out.name = t("validation.name");
+  if (mode !== "reset" && !EMAIL_RE.test(v.email?.trim() ?? "")) out.email = t("validation.email");
+  if (mode === "login" && !v.password) out.password = t("validation.passwordLogin");
+  if (newPassword && !v.password) out.password = t("validation.passwordNew");
+  else if (newPassword && (v.password?.length ?? 0) < 8) out.password = t("validation.passwordShort");
+  return out;
+}
 
 function useNext() {
   const params = useSearchParams();
@@ -15,6 +36,7 @@ function useNext() {
 }
 
 function GoogleButton({ next }: { next: string }) {
+  const t = useT("auth");
   return (
     <a
       href={`/api/auth/google?next=${encodeURIComponent(next)}`}
@@ -26,36 +48,42 @@ function GoogleButton({ next }: { next: string }) {
         <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z" />
         <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z" />
       </svg>
-      Continue with Google
+      {t("google.continue")}
     </a>
   );
 }
 
 function OrDivider() {
+  const t = useT("auth");
   return (
     <div className="my-5 flex items-center gap-3 text-xs text-ink-3">
       <span className="h-px flex-1 bg-line" />
-      or
+      {t("or")}
       <span className="h-px flex-1 bg-line" />
     </div>
   );
 }
 
+const inlineLink = "font-medium text-ink underline-offset-4 hover:underline";
+
 export function LoginForm({ google }: { google: boolean }) {
+  const t = useT("auth");
   const router = useRouter();
   const next = useNext();
   const params = useSearchParams();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState<string | null>(params.get("error") === "google_failed" ? "Google sign-in didn't complete. Please try again." : null);
+  const [error, setError] = useState<string | null>(params.get("error") === "google_failed" ? t("google.failed") : null);
   const [fields, setFields] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    setLoading(true);
     setError(null);
-    setFields({});
+    const local = authFieldErrors(t, "login", { email, password });
+    setFields(local);
+    if (Object.keys(local).length) return;
+    setLoading(true);
     try {
       await api("/api/auth/login", { body: { email, password } });
       router.replace(next);
@@ -70,9 +98,9 @@ export function LoginForm({ google }: { google: boolean }) {
 
   return (
     <div>
-      <p className="eyebrow">Sign in</p>
-      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">Welcome back</h1>
-      <p className="mt-2 text-[15px] text-ink-3">Your appointments, messages and business — all in one place.</p>
+      <p className="eyebrow">{t("login.eyebrow")}</p>
+      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">{t("login.title")}</h1>
+      <p className="mt-2 text-[15px] text-ink-3">{t("login.lede")}</p>
       <div className="mt-7">
         {google && (
           <>
@@ -82,57 +110,64 @@ export function LoginForm({ google }: { google: boolean }) {
         )}
         <form onSubmit={onSubmit} className="space-y-4" noValidate>
           <FormError message={error} />
-          <Field label="Email" error={fields.email}>
+          <Field label={t("fields.email")} error={fields.email}>
             {(p) => <Input {...p} type="email" autoComplete="email" inputMode="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />}
           </Field>
-          <Field label="Password" error={fields.password}>
+          <Field label={t("fields.password")} error={fields.password}>
             {(p) => <Input {...p} type="password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required />}
           </Field>
           <div className="flex justify-end">
             <Link href="/forgot-password" className="text-sm font-medium text-ink-2 underline-offset-4 hover:text-ink hover:underline">
-              Forgot password?
+              {t("login.forgot")}
             </Link>
           </div>
           <Button type="submit" size="lg" className="w-full" loading={loading}>
-            Sign in
+            {t("login.submit")}
           </Button>
         </form>
         <p className="mt-6 text-center text-sm text-ink-3">
-          New to Kept?{" "}
-          <Link href={`/signup${next !== "/" ? `?next=${encodeURIComponent(next)}` : ""}`} className="font-medium text-ink underline-offset-4 hover:underline">
-            Create an account
-          </Link>
+          {rich(t("login.newHere"), {
+            link: (c) => (
+              <Link href={`/signup${next !== "/" ? `?next=${encodeURIComponent(next)}` : ""}`} className={inlineLink}>
+                {c}
+              </Link>
+            ),
+          })}
         </p>
       </div>
     </div>
   );
 }
 
+function SignInInstead({ next, className }: { next: string; className: string }) {
+  const t = useT("auth");
+  return (
+    <p className={className}>
+      {rich(t("signup.haveAccount"), {
+        link: (c) => (
+          <Link href={`/login${next !== "/" ? `?next=${encodeURIComponent(next)}` : ""}`} className={inlineLink}>
+            {c}
+          </Link>
+        ),
+      })}
+    </p>
+  );
+}
+
 /** First step of sign-up: are you booking, or offering services? Each path is tailored after. */
 function AccountTypeChooser({ onChoose }: { onChoose: (t: "client" | "pro") => void }) {
+  const t = useT("auth");
   const next = useNext();
   const options = [
-    {
-      key: "client" as const,
-      eyebrow: "For clients",
-      title: "I'm booking",
-      body: "Find professionals, book real openings, and keep every appointment in one place.",
-      points: ["Free, always", "Reschedule or cancel online", "Message before you book"],
-    },
-    {
-      key: "pro" as const,
-      eyebrow: "For professionals",
-      title: "I offer services",
-      body: "Get a booking page, a calendar that can't double-book, and clients who show up.",
-      points: ["Free while we launch", "Set up in about 10 minutes", "Solo or with a team"],
-    },
+    { key: "client" as const, points: ["free", "reschedule", "message"] },
+    { key: "pro" as const, points: ["free", "setup", "team"] },
   ];
   return (
     <div>
-      <p className="eyebrow">Create your account</p>
-      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">How will you use Kept?</h1>
-      <p className="mt-2 text-[15px] text-ink-3">You can do both later — professionals can book too.</p>
-      <div className="mt-8 grid gap-3" role="radiogroup" aria-label="Account type">
+      <p className="eyebrow">{t("chooser.eyebrow")}</p>
+      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">{t("chooser.title")}</h1>
+      <p className="mt-2 text-[15px] text-ink-3">{t("chooser.lede")}</p>
+      <div className="mt-8 grid gap-3" role="radiogroup" aria-label={t("chooser.label")}>
         {options.map((o) => (
           <button
             key={o.key}
@@ -142,34 +177,31 @@ function AccountTypeChooser({ onChoose }: { onChoose: (t: "client" | "pro") => v
             onClick={() => onChoose(o.key)}
             className="group relative rounded-xl border border-line bg-surface p-5 text-start transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-ink hover:shadow-md focus-visible:border-ink"
           >
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-text">{o.eyebrow}</p>
-            <p className="mt-2 font-display text-[28px] leading-none text-ink">{o.title}</p>
-            <p className="mt-2.5 text-[14px] leading-relaxed text-ink-2">{o.body}</p>
+            <p className="pe-8 text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-text">{t(`chooser.${o.key}.eyebrow`)}</p>
+            <p className="mt-2 pe-8 font-display text-[28px] leading-none text-ink">{t(`chooser.${o.key}.title`)}</p>
+            <p className="mt-2.5 text-[14px] leading-relaxed text-ink-2">{t(`chooser.${o.key}.body`)}</p>
             <ul className="mt-3.5 flex flex-wrap gap-x-4 gap-y-1 text-[12.5px] text-ink-3">
               {o.points.map((pt) => (
                 <li key={pt} className="inline-flex items-center gap-1.5">
                   <span className="size-1 rounded-full bg-gold" aria-hidden />
-                  {pt}
+                  {t(`chooser.${o.key}.points.${pt}`)}
                 </li>
               ))}
             </ul>
-            <span className="absolute end-5 top-5 text-ink-3 transition-transform group-hover:translate-x-0.5 group-hover:text-ink" aria-hidden>
-              →
-            </span>
+            <ArrowRight
+              className="absolute end-5 top-5 size-4 text-ink-3 transition-transform group-hover:translate-x-0.5 group-hover:text-ink rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5"
+              aria-hidden
+            />
           </button>
         ))}
       </div>
-      <p className="mt-8 text-center text-sm text-ink-3">
-        Already have an account?{" "}
-        <Link href={`/login${next !== "/" ? `?next=${encodeURIComponent(next)}` : ""}`} className="font-medium text-ink underline-offset-4 hover:underline">
-          Sign in
-        </Link>
-      </p>
+      <SignInInstead next={next} className="mt-8 text-center text-sm text-ink-3" />
     </div>
   );
 }
 
 export function SignupForm({ google, intent }: { google: boolean; intent?: string }) {
+  const t = useT("auth");
   const router = useRouter();
   const next = useNext();
   const [name, setName] = useState("");
@@ -185,9 +217,11 @@ export function SignupForm({ google, intent }: { google: boolean; intent?: strin
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    setLoading(true);
     setError(null);
-    setFields({});
+    const local = authFieldErrors(t, "signup", { name, email, password });
+    setFields(local);
+    if (Object.keys(local).length) return;
+    setLoading(true);
     try {
       await api("/api/auth/signup", { body: { name, email, password, timezone: Intl.DateTimeFormat().resolvedOptions().timeZone } });
       router.replace(pro ? "/pro/onboarding" : next);
@@ -203,15 +237,15 @@ export function SignupForm({ google, intent }: { google: boolean; intent?: strin
   return (
     <div>
       <div className="flex items-center justify-between gap-3">
-        <p className="eyebrow">{pro ? "Professional account · Step 1 of 4" : "Client account"}</p>
+        <p className="eyebrow">{pro ? t("signup.eyebrowPro") : t("signup.eyebrowClient")}</p>
         {intent !== "pro" && next === "/" && (
-          <button type="button" onClick={() => setType(null)} className="text-[13px] font-medium text-ink-3 hover:text-ink">
-            Change
+          <button type="button" onClick={() => setType(null)} aria-label={t("signup.changeLabel")} className="-my-2 py-2 text-[13px] font-medium text-ink-3 hover:text-ink">
+            {t("signup.change")}
           </button>
         )}
       </div>
-      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">{pro ? "Start taking bookings" : "Create your account"}</h1>
-      <p className="mt-2 text-[15px] text-ink-3">{pro ? "First your account — then your services, hours and booking page. Free while we launch." : "Book in seconds and keep every appointment in one place."}</p>
+      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">{pro ? t("signup.titlePro") : t("signup.titleClient")}</h1>
+      <p className="mt-2 text-[15px] text-ink-3">{pro ? t("signup.ledePro") : t("signup.ledeClient")}</p>
       <div className="mt-7">
         {google && (
           <>
@@ -221,50 +255,53 @@ export function SignupForm({ google, intent }: { google: boolean; intent?: strin
         )}
         <form onSubmit={onSubmit} className="space-y-4" noValidate>
           <FormError message={error} />
-          <Field label={pro ? "Your name" : "Full name"} hint={pro ? "You'll name your business in the next step." : undefined} error={fields.name}>
+          <Field label={pro ? t("fields.yourName") : t("fields.fullName")} hint={pro ? t("signup.nameHintPro") : undefined} error={fields.name}>
             {(p) => <Input {...p} autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} required autoFocus />}
           </Field>
-          <Field label="Email" error={fields.email}>
+          <Field label={t("fields.email")} error={fields.email}>
             {(p) => <Input {...p} type="email" autoComplete="email" inputMode="email" value={email} onChange={(e) => setEmail(e.target.value)} required />}
           </Field>
-          <Field label="Password" hint="At least 8 characters." error={fields.password}>
+          <Field label={t("fields.password")} hint={t("fields.passwordHint")} error={fields.password}>
             {(p) => <Input {...p} type="password" autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={8} />}
           </Field>
           <Button type="submit" size="lg" className="w-full" loading={loading}>
-            {pro ? "Continue to your business" : "Create account"}
+            {pro ? t("signup.submitPro") : t("signup.submitClient")}
           </Button>
           <p className="text-center text-xs leading-relaxed text-ink-3">
-            By continuing you agree to our{" "}
-            <Link href="/legal/terms" className="underline underline-offset-2">
-              Terms
-            </Link>{" "}
-            and{" "}
-            <Link href="/legal/privacy" className="underline underline-offset-2">
-              Privacy Policy
-            </Link>
-            .
+            {rich(t("signup.agree"), {
+              terms: (c) => (
+                <Link href="/legal/terms" className="underline underline-offset-2">
+                  {c}
+                </Link>
+              ),
+              privacy: (c) => (
+                <Link href="/legal/privacy" className="underline underline-offset-2">
+                  {c}
+                </Link>
+              ),
+            })}
           </p>
         </form>
-        <p className="mt-6 text-center text-sm text-ink-3">
-          Already have an account?{" "}
-          <Link href={`/login${next !== "/" ? `?next=${encodeURIComponent(next)}` : ""}`} className="font-medium text-ink underline-offset-4 hover:underline">
-            Sign in
-          </Link>
-        </p>
+        <SignInInstead next={next} className="mt-6 text-center text-sm text-ink-3" />
       </div>
     </div>
   );
 }
 
 export function ForgotForm() {
+  const t = useT("auth");
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [fieldError, setFieldError] = useState<string | undefined>();
   const [loading, setLoading] = useState(false);
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    setLoading(true);
     setError(null);
+    const local = authFieldErrors(t, "forgot", { email });
+    setFieldError(local.email);
+    if (local.email) return;
+    setLoading(true);
     try {
       await api("/api/auth/forgot-password", { body: { email } });
       setSent(true);
@@ -276,28 +313,30 @@ export function ForgotForm() {
   }
   if (sent)
     return (
-      <div>
-        <h1 className="font-display text-[40px] leading-[1.05] text-ink">Check your inbox</h1>
-        <p className="mt-2 text-[15px] leading-relaxed text-ink-3">If an account exists for {email}, you’ll get a link to reset your password in the next few minutes. The link expires in 1 hour.</p>
+      <div aria-live="polite">
+        <h1 className="font-display text-[40px] leading-[1.05] text-ink">{t("forgot.sentTitle")}</h1>
+        <p className="mt-2 text-[15px] leading-relaxed text-ink-3">{t("forgot.sentBody", { email })}</p>
         <Link href="/login" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
-          Back to sign in
+          {t("forgot.back")}
         </Link>
       </div>
     );
   return (
     <div>
-      <h1 className="font-display text-[40px] leading-[1.05] text-ink">Reset your password</h1>
-      <p className="mt-1.5 text-[15px] text-ink-3">Enter your email and we’ll send you a reset link.</p>
+      <h1 className="font-display text-[40px] leading-[1.05] text-ink">{t("forgot.title")}</h1>
+      <p className="mt-1.5 text-[15px] text-ink-3">{t("forgot.lede")}</p>
       <form onSubmit={onSubmit} className="mt-7 space-y-4" noValidate>
         <FormError message={error} />
-        <Field label="Email">{(p) => <Input {...p} type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />}</Field>
+        <Field label={t("fields.email")} error={fieldError}>
+          {(p) => <Input {...p} type="email" autoComplete="email" inputMode="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />}
+        </Field>
         <Button type="submit" size="lg" className="w-full" loading={loading}>
-          Send reset link
+          {t("forgot.submit")}
         </Button>
       </form>
       <p className="mt-6 text-center text-sm">
         <Link href="/login" className="font-medium text-ink-2 hover:text-ink">
-          Back to sign in
+          {t("forgot.back")}
         </Link>
       </p>
     </div>
@@ -305,14 +344,19 @@ export function ForgotForm() {
 }
 
 export function ResetForm({ token }: { token: string }) {
+  const t = useT("auth");
   const router = useRouter();
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [fieldError, setFieldError] = useState<string | undefined>();
   const [loading, setLoading] = useState(false);
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    setLoading(true);
     setError(null);
+    const local = authFieldErrors(t, "reset", { password });
+    setFieldError(local.password);
+    if (local.password) return;
+    setLoading(true);
     try {
       await api("/api/auth/reset-password", { body: { token, password } });
       router.replace("/");
@@ -324,15 +368,15 @@ export function ResetForm({ token }: { token: string }) {
   }
   return (
     <div>
-      <h1 className="font-display text-[40px] leading-[1.05] text-ink">Choose a new password</h1>
-      <p className="mt-1.5 text-[15px] text-ink-3">You’ll be signed out on other devices.</p>
+      <h1 className="font-display text-[40px] leading-[1.05] text-ink">{t("reset.title")}</h1>
+      <p className="mt-1.5 text-[15px] text-ink-3">{t("reset.lede")}</p>
       <form onSubmit={onSubmit} className="mt-7 space-y-4" noValidate>
         <FormError message={error} />
-        <Field label="New password" hint="At least 8 characters.">
+        <Field label={t("fields.newPassword")} hint={t("fields.passwordHint")} error={fieldError}>
           {(p) => <Input {...p} type="password" autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} required autoFocus />}
         </Field>
         <Button type="submit" size="lg" className="w-full" loading={loading}>
-          Save password
+          {t("reset.submit")}
         </Button>
       </form>
     </div>
@@ -340,8 +384,9 @@ export function ResetForm({ token }: { token: string }) {
 }
 
 export function VerifyEmail({ token }: { token: string | null }) {
+  const t = useT("auth");
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">(token ? "idle" : "error");
-  const [message, setMessage] = useState<string>("This link is missing its token.");
+  const [message, setMessage] = useState<string | null>(null);
   async function verify() {
     if (!token) return;
     setState("loading");
@@ -354,30 +399,30 @@ export function VerifyEmail({ token }: { token: string | null }) {
     }
   }
   return (
-    <div>
+    <div aria-live="polite">
       {state === "done" ? (
         <>
-          <h1 className="font-display text-[40px] leading-[1.05] text-ink">Email confirmed</h1>
-          <p className="mt-2 text-[15px] text-ink-3">Thanks — you’re all set.</p>
+          <h1 className="font-display text-[40px] leading-[1.05] text-ink">{t("verify.doneTitle")}</h1>
+          <p className="mt-2 text-[15px] text-ink-3">{t("verify.doneBody")}</p>
           <Link href="/" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
-            Continue to Kept
+            {t("verify.continue")}
           </Link>
         </>
       ) : state === "error" ? (
         <>
-          <h1 className="font-display text-[40px] leading-[1.05] text-ink">We couldn’t confirm that</h1>
-          <p className="mt-2 text-[15px] text-ink-3">{message}</p>
+          <h1 className="font-display text-[40px] leading-[1.05] text-ink">{t("verify.errorTitle")}</h1>
+          <p className="mt-2 text-[15px] text-ink-3">{message ?? t("verify.missingToken")}</p>
           <Link href="/account" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
-            Go to your account
+            {t("verify.account")}
           </Link>
         </>
       ) : (
         <>
-          <h1 className="font-display text-[40px] leading-[1.05] text-ink">Confirm your email</h1>
-          <p className="mt-2 text-[15px] text-ink-3">One tap and you’re done.</p>
+          <h1 className="font-display text-[40px] leading-[1.05] text-ink">{t("verify.title")}</h1>
+          <p className="mt-2 text-[15px] text-ink-3">{t("verify.lede")}</p>
           {/* An explicit click prevents email scanners from consuming the link. */}
           <Button size="lg" className="mt-6 w-full" onClick={verify} loading={state === "loading"}>
-            Confirm email
+            {t("verify.submit")}
           </Button>
         </>
       )}
