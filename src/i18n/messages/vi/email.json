@@ -1,0 +1,147 @@
+{
+  "footer": "Bạn nhận được email này vì có hoạt động trên tài khoản Kept của bạn. Quản lý thông báo tại Tài khoản → Thông báo.",
+  "details": {
+    "service": "Dịch vụ",
+    "when": "Thời gian",
+    "with": "Với",
+    "where": "Địa điểm",
+    "online": "Trực tuyến — doanh nghiệp sẽ chia sẻ liên kết",
+    "reference": "Mã tham chiếu",
+    "paid": "Đã thanh toán",
+    "balanceDue": "Số tiền còn lại"
+  },
+  "cta": {
+    "viewAppointment": "Xem lịch hẹn",
+    "viewRequest": "Xem yêu cầu",
+    "reviewRequest": "Xem xét yêu cầu",
+    "openAppointment": "Mở lịch hẹn",
+    "openCalendar": "Mở lịch",
+    "findAnotherTime": "Tìm giờ khác",
+    "payDeposit": "Thanh toán tiền cọc",
+    "leaveReview": "Viết đánh giá",
+    "bookThisTime": "Đặt giờ này"
+  },
+  "booked": {
+    "title": "Bạn đã đặt lịch với {business}",
+    "subject": "Đã xác nhận: {service} với {business}",
+    "heading": "Lịch hẹn của bạn đã được xác nhận",
+    "footnote": "Cần thay đổi kế hoạch? Bạn có thể đổi lịch hoặc hủy từ trang lịch hẹn, theo chính sách của doanh nghiệp.",
+    "sms": "Kept: {service} với {business} đã được xác nhận vào {when}. Mã {reference}"
+  },
+  "requested": {
+    "title": "Đã gửi yêu cầu đến {business}",
+    "body": "Chúng tôi sẽ báo ngay khi họ phản hồi.",
+    "subject": "Đã gửi yêu cầu: {service} với {business}",
+    "heading": "Yêu cầu của bạn đã được gửi",
+    "paragraph": "{business} xem xét yêu cầu trước khi xác nhận. Chúng tôi sẽ email cho bạn ngay khi họ phản hồi."
+  },
+  "bizBooked": {
+    "title": "Lịch hẹn mới",
+    "requestTitle": "Yêu cầu đặt lịch mới",
+    "subject": "Lịch hẹn mới: {service}",
+    "requestSubject": "Yêu cầu mới: {service}",
+    "heading": "Bạn có lịch hẹn mới",
+    "requestHeading": "Bạn có yêu cầu đặt lịch mới",
+    "requestParagraph": "Chấp nhận hoặc từ chối từ lịch của bạn. Yêu cầu không được phản hồi sẽ tự động hết hạn."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} không thể nhận yêu cầu của bạn",
+      "subject": "Yêu cầu bị từ chối: {service}",
+      "heading": "Yêu cầu của bạn không được chấp nhận"
+    },
+    "expired": {
+      "title": "Lịch hẹn của bạn đã hết hạn",
+      "subject": "Lịch hẹn của bạn đã hết hạn",
+      "heading": "Lịch hẹn của bạn đã hết hạn"
+    },
+    "cancelled": {
+      "title": "{business} đã hủy lịch hẹn của bạn",
+      "subject": "Đã hủy: {service}",
+      "heading": "Lịch hẹn của bạn đã bị hủy"
+    },
+    "note": "Ghi chú từ doanh nghiệp: “{note}”",
+    "refund": "Khoản hoàn tiền {amount} đang được chuyển về phương thức thanh toán ban đầu của bạn.",
+    "bookAgain": "Bạn có thể đặt giờ khác bất cứ khi nào bạn sẵn sàng."
+  },
+  "bizCancelled": {
+    "title": "Một khách hàng đã hủy",
+    "expiredTitle": "Một lịch hẹn đã hết hạn",
+    "subject": "Đã hủy: {service} · {when}",
+    "heading": "Một lịch hẹn đã bị hủy",
+    "reason": "Lý do: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} đã dời lịch hẹn của bạn",
+    "body": "Giờ mới: {when}",
+    "subject": "Giờ mới: {service} với {business}",
+    "heading": "Lịch hẹn của bạn có giờ mới",
+    "previously": "Trước đó: {when}.",
+    "changeIt": "Nếu giờ mới không phù hợp, bạn có thể đổi lịch hoặc hủy từ trang lịch hẹn."
+  },
+  "bizRescheduled": {
+    "title": "Một khách hàng đã đổi lịch",
+    "subject": "Đã đổi lịch: {service}",
+    "heading": "Một lịch hẹn đã được đổi lịch"
+  },
+  "approvedPay": {
+    "title": "{business} đã chấp nhận yêu cầu của bạn",
+    "body": "Thanh toán tiền cọc {amount} để xác nhận.",
+    "subject": "Đã chấp nhận — xác nhận {service} của bạn",
+    "heading": "Yêu cầu của bạn đã được chấp nhận",
+    "paragraph": "Thanh toán tiền cọc {amount} để giữ chỗ. Lịch hẹn chưa thanh toán sẽ tự động được giải phóng."
+  },
+  "reminder": {
+    "title": "Nhắc lịch: {service} {lead}",
+    "body": "{when} với {business}",
+    "subject": "Nhắc lịch: {service} {lead} lúc {time}",
+    "heading": "Hẹn gặp bạn {lead}",
+    "footnote": "Đến muộn hoặc không đến được? Hãy báo cho doanh nghiệp từ trang lịch hẹn.",
+    "sms": "Nhắc lịch: {service} với {business} {when}."
+  },
+  "review": {
+    "title": "{service} thế nào?",
+    "body": "Chia sẻ đánh giá ngắn về {business}.",
+    "subject": "Lần ghé {business} của bạn thế nào?",
+    "heading": "Trải nghiệm thế nào?",
+    "paragraph": "Đánh giá của bạn giúp {business} và những người đang chọn chuyên gia. Chỉ mất chưa đến một phút."
+  },
+  "waitlist": {
+    "title": "{business} vừa có chỗ trống",
+    "body": "{when} hiện đã trống. Đặt nhanh nhé — ai đến trước được phục vụ trước.",
+    "subject": "{business} vừa có giờ trống",
+    "heading": "Tin vui — vừa có giờ trống",
+    "paragraph": "{when} vừa có chỗ. Chỗ trống dành cho người đặt trước, nên hãy đặt sớm nếu giờ này phù hợp với bạn."
+  },
+  "thread": {
+    "confirmed": "Đã xác nhận lịch hẹn: {service}, {when}.",
+    "declined": "Đã từ chối lịch hẹn: {service}, {when}.",
+    "expired": "Lịch hẹn đã hết hạn: {service}, {when}.",
+    "cancelled": "Đã hủy lịch hẹn: {service}, {when}.",
+    "moved": "Lịch hẹn đã được dời từ {from} sang {to}."
+  },
+  "verify": {
+    "subject": "Xác nhận email của bạn",
+    "preheader": "Một chạm để xác nhận địa chỉ email.",
+    "heading": "Chào mừng, {name}",
+    "paragraph": "Xác nhận email để doanh nghiệp có thể liên hệ với bạn về lịch hẹn.",
+    "cta": "Xác nhận email",
+    "footnote": "Liên kết này hết hạn sau 3 ngày. Nếu bạn không tạo tài khoản, bạn có thể bỏ qua email này."
+  },
+  "reset": {
+    "subject": "Đặt lại mật khẩu",
+    "heading": "Đặt lại mật khẩu",
+    "paragraph": "Ai đó (hy vọng là bạn) đã yêu cầu đặt lại mật khẩu cho tài khoản Kept của bạn.",
+    "cta": "Chọn mật khẩu mới",
+    "footnote": "Liên kết này hết hạn sau 1 giờ. Nếu bạn không yêu cầu, bạn có thể yên tâm bỏ qua email này — mật khẩu của bạn sẽ không thay đổi."
+  },
+  "invite": {
+    "subject": "{inviter} mời bạn tham gia {business} trên Kept",
+    "reminderSubject": "Nhắc nhở: tham gia {business} trên Kept",
+    "heading": "Tham gia {business}",
+    "paragraph": "{inviter} mời bạn tham gia đội ngũ tại {business}. Bạn sẽ có thể xem lịch làm việc và quản lý lịch hẹn của mình.",
+    "cta": "Chấp nhận lời mời",
+    "footnote": "Lời mời này hết hạn sau {days} ngày.",
+    "reminderFootnote": "Lời mời này hết hạn sau {days} ngày. Các liên kết mời trước đây không còn hiệu lực."
+  }
+}

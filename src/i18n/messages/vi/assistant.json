@@ -1,0 +1,22 @@
+{
+  "title": "Hỏi Kept",
+  "description": "Hãy cho tôi biết bạn cần gì và khi nào. Tôi sẽ kiểm tra lịch trống thực tế.",
+  "newConversation": "Cuộc trò chuyện mới",
+  "close": "Đóng",
+  "forExample": "Ví dụ:",
+  "starters": {
+    "one": "Cắt tóc nam chiều mai",
+    "two": "Sơn gel cuối tuần này dưới 500.000đ",
+    "three": "Massage gần đây tối nay",
+    "four": "Gia sư toán trực tuyến"
+  },
+  "searching": "Đang tìm",
+  "listening": "Đang nghe…",
+  "placeholder": "Cắt tóc nam sáng thứ Bảy…",
+  "yourMessage": "Tin nhắn của bạn",
+  "stopListening": "Dừng nghe",
+  "speak": "Nói",
+  "send": "Gửi",
+  "verified": "Đã xác minh",
+  "online": "Trực tuyến"
+}

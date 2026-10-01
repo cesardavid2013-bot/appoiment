@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Khám phá chuyên gia",
+    "category": "Đặt lịch {category}",
+    "query": "{q} — tìm kiếm",
+    "description": "So sánh chuyên gia theo giờ trống thực tế, giá và đánh giá đã xác minh."
+  },
+  "bar": {
+    "placeholder": "Tìm dịch vụ hoặc chuyên gia",
+    "label": "Tìm kiếm",
+    "clear": "Xóa tìm kiếm"
+  },
+  "location": {
+    "placeholder": "Mọi nơi",
+    "label": "Vị trí",
+    "clear": "Xóa vị trí",
+    "useMine": "Dùng vị trí hiện tại",
+    "finding": "Đang tìm vị trí…",
+    "current": "Vị trí hiện tại",
+    "selectedArea": "Khu vực đã chọn",
+    "unsupported": "Trình duyệt của bạn không thể chia sẻ vị trí. Hãy nhập tên thành phố.",
+    "denied": "Quyền vị trí đang tắt cho trang này. Hãy nhập tên thành phố — hoặc cho phép vị trí trong cài đặt trình duyệt.",
+    "failed": "Chúng tôi không lấy được vị trí của bạn. Hãy nhập tên thành phố."
+  },
+  "quick": {
+    "availableToday": "Có chỗ hôm nay",
+    "instant": "Đặt ngay",
+    "mobile": "Phục vụ tận nơi",
+    "virtual": "Trực tuyến"
+  },
+  "view": {
+    "label": "Chế độ xem",
+    "list": "Danh sách",
+    "map": "Bản đồ"
+  },
+  "heading": {
+    "explore": "Khám phá",
+    "results": "Kết quả",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Đang cập nhật…",
+    "count": "{count, plural, other {# chuyên gia}}",
+    "countMore": "{count}+ chuyên gia",
+    "near": "{results} gần {place}",
+    "nearYou": "{results} gần bạn"
+  },
+  "sort": {
+    "label": "Sắp xếp theo",
+    "relevance": "Phù hợp nhất",
+    "rating": "Đánh giá cao nhất",
+    "price": "Giá thấp nhất",
+    "distance": "Gần nhất"
+  },
+  "categories": {
+    "label": "Danh mục",
+    "all": "Tất cả"
+  },
+  "empty": {
+    "title": "Chưa có kết quả phù hợp",
+    "query": "Thử từ khóa rộng hơn, cách viết khác hoặc bỏ bớt bộ lọc.",
+    "filters": "Thử bỏ một bộ lọc hoặc tìm ở khu vực rộng hơn.",
+    "clear": "Xóa tất cả bộ lọc"
+  },
+  "showMore": "Xem thêm",
+  "filters": {
+    "button": "Bộ lọc",
+    "buttonCount": "Bộ lọc · {count}",
+    "title": "Bộ lọc",
+    "clearAll": "Xóa tất cả",
+    "show": "Xem kết quả",
+    "availability": "Giờ trống & đặt lịch",
+    "rating": "Đánh giá",
+    "minRating": "Đánh giá tối thiểu",
+    "any": "Bất kỳ",
+    "price": "Giá khởi điểm đến",
+    "maxPrice": "Giá khởi điểm tối đa",
+    "distance": "Khoảng cách",
+    "provider": "Nhà cung cấp",
+    "providerType": "Loại nhà cung cấp",
+    "individual": "Chuyên gia độc lập",
+    "business": "Doanh nghiệp & đội ngũ"
+  }
+}

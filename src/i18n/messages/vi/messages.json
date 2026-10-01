@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Bạn:",
+  "unread": "Chưa đọc",
+  "apptLine": "{service} · {date} lúc {time}",
+  "list": {
+    "title": "Tin nhắn",
+    "unread": "{count, plural, other {# cuộc trò chuyện chưa đọc.}}",
+    "caughtUp": "Bạn đã xem hết.",
+    "emptyTitle": "Chưa có tin nhắn",
+    "emptyBody": "Có câu hỏi về dịch vụ, giá hay giờ hẹn? Mở trang của chuyên gia và chạm “Đặt câu hỏi”. Phản hồi của họ sẽ đến đây.",
+    "findPro": "Tìm chuyên gia"
+  },
+  "thread": {
+    "metaTitle": "Cuộc trò chuyện",
+    "placeholder": "Nhắn tin cho {business}"
+  },
+  "new": {
+    "metaTitle": "Tin nhắn mới",
+    "ownTitle": "Đây là doanh nghiệp của bạn",
+    "ownBody": "Tin nhắn của khách hàng gửi đến {business} sẽ về hộp thư doanh nghiệp của bạn.",
+    "ownButton": "Mở hộp thư doanh nghiệp",
+    "placeholderBooking": "Hỏi về lịch hẹn này",
+    "placeholderQuestion": "Đặt câu hỏi",
+    "emptyBookingTitle": "Nhắn cho {business} về lịch hẹn của bạn",
+    "emptyQuestionTitle": "Hỏi {business} trước khi đặt",
+    "emptyBookingBody": "Đến muộn, cần thay đổi gì đó hay có câu hỏi? Tin nhắn của bạn được gửi thẳng đến đội ngũ của họ.",
+    "emptyQuestionBody": "Giá, thời gian, cần mang gì — {business} sẽ trả lời tại đây và chúng tôi sẽ báo cho bạn. Số điện thoại và email của bạn được giữ kín."
+  },
+  "shell": {
+    "allMessages": "Tất cả tin nhắn",
+    "viewProfile": "Xem hồ sơ",
+    "book": "Đặt lịch"
+  },
+  "pro": {
+    "backToInbox": "Quay lại hộp thư"
+  },
+  "view": {
+    "label": "Tin nhắn",
+    "you": "Bạn",
+    "loadingEarlier": "Đang tải tin nhắn cũ hơn",
+    "showEarlier": "Xem tin nhắn cũ hơn",
+    "seen": "Đã xem",
+    "sending": "Đang gửi…",
+    "notSent": "Chưa gửi được.",
+    "retry": "Thử lại",
+    "discard": "Bỏ",
+    "newMessages": "{count, plural, other {# tin nhắn mới}}",
+    "openPhoto": "Mở ảnh trong tab mới",
+    "photo": "Ảnh"
+  },
+  "composer": {
+    "about": "Về {appointment}",
+    "unlink": "Không liên kết lịch hẹn này",
+    "processingPhoto": "Đang xử lý ảnh",
+    "removePhoto": "Xóa ảnh",
+    "attachPhoto": "Đính kèm ảnh",
+    "label": "Tin nhắn",
+    "send": "Gửi tin nhắn",
+    "hint": "Nhấn Enter để gửi, Shift + Enter để xuống dòng."
+  },
+  "inbox": {
+    "title": "Hộp thư",
+    "conversations": "Cuộc trò chuyện",
+    "unread": "{count} chưa đọc",
+    "allCaughtUp": "Đã xem hết",
+    "searchLabel": "Tìm cuộc trò chuyện theo tên khách hàng",
+    "searchPlaceholder": "Tìm khách hàng",
+    "clearSearch": "Xóa tìm kiếm",
+    "show": "Hiển thị",
+    "all": "Tất cả",
+    "unreadFilter": "Chưa đọc",
+    "noClientsNamed": "Không có khách hàng nào tên “{term}”",
+    "nothingUnread": "Không có tin chưa đọc",
+    "noMessages": "Chưa có tin nhắn",
+    "tryDifferent": "Thử tìm kiếm khác hoặc hiển thị tất cả cuộc trò chuyện.",
+    "emptyBody": "Khi khách hàng đặt câu hỏi từ trang của bạn hoặc về một lịch hẹn, tin nhắn sẽ hiển thị tại đây."
+  },
+  "clientPanel": {
+    "client": "Khách hàng",
+    "visits": "Lượt ghé",
+    "noShows": "Không đến",
+    "cancelled": "Đã hủy",
+    "clientSince": "Khách hàng từ {date}",
+    "noVisits": "Chưa có lượt ghé nào hoàn tất",
+    "lastIn": "lần gần nhất {date}",
+    "tags": "Thẻ",
+    "clientProfile": "Hồ sơ khách hàng",
+    "notBooked": "Chưa từng đặt lịch với bạn — cuộc trò chuyện này bắt đầu từ trang công khai của bạn.",
+    "upcoming": "Sắp tới",
+    "nothingBooked": "Chưa có lịch hẹn.",
+    "recent": "Gần đây"
+  }
+}

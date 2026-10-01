@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "Chờ thanh toán",
+    "requested": "Đã gửi yêu cầu",
+    "confirmed": "Đã xác nhận",
+    "checked_in": "Đã check-in",
+    "in_progress": "Đang thực hiện",
+    "completed": "Hoàn tất",
+    "cancelled": "Đã hủy",
+    "declined": "Bị từ chối",
+    "no_show": "Không đến",
+    "expired": "Hết hạn"
+  },
+  "list": {
+    "title": "Lịch hẹn",
+    "filters": "Bộ lọc lịch hẹn",
+    "tabs": {
+      "upcoming": "Sắp tới",
+      "past": "Đã qua",
+      "cancelled": "Đã hủy"
+    },
+    "howDidItGo": "Trải nghiệm thế nào?",
+    "review": "Đánh giá",
+    "empty": {
+      "upcoming": "Không có lịch hẹn sắp tới",
+      "past": "Chưa có lịch hẹn đã qua",
+      "cancelled": "Không có lịch hẹn bị hủy",
+      "upcomingBody": "Khi bạn đặt lịch, lịch hẹn sẽ hiển thị tại đây — kèm chỉ đường, nhắc lịch và đổi lịch dễ dàng.",
+      "findPro": "Tìm chuyên gia"
+    }
+  },
+  "detail": {
+    "metaTitle": "Lịch hẹn",
+    "allBookings": "Tất cả lịch hẹn",
+    "hero": {
+      "confirmedTitle": "Bạn đã đặt lịch thành công",
+      "confirmedBody": "Chúng tôi đã gửi xác nhận và sẽ nhắc bạn trước lịch hẹn.",
+      "requestedTitle": "Đã gửi yêu cầu",
+      "requestedBody": "{business} sẽ xem xét yêu cầu của bạn. Chúng tôi sẽ báo ngay khi họ phản hồi — trong lúc đó, khung giờ của bạn vẫn được giữ.",
+      "paymentTitle": "Đang hoàn tất thanh toán",
+      "paymentBody": "Nếu bạn vừa thanh toán, trang này sẽ tự cập nhật sau vài giây. Khung giờ của bạn được giữ trong lúc thanh toán hoàn tất."
+    },
+    "calendarDetails": "Mã tham chiếu {reference}",
+    "ref": "Mã",
+    "when": "Thời gian",
+    "with": "Với",
+    "where": "Địa điểm",
+    "atYourAddress": "Tại địa chỉ của bạn",
+    "online": "Trực tuyến",
+    "virtualLink": "Doanh nghiệp sẽ gửi liên kết trước buổi hẹn.",
+    "yourReview": "Đánh giá của bạn",
+    "payment": {
+      "title": "Thanh toán",
+      "serviceFee": "Phí dịch vụ",
+      "tax": "Thuế",
+      "estimatedTotal": "Tổng ước tính",
+      "total": "Tổng cộng",
+      "paid": "Đã thanh toán",
+      "refunded": "Đã hoàn tiền",
+      "balance": "Còn lại",
+      "dueAtAppointment": "Thanh toán tại buổi hẹn",
+      "tip": "Tiền tip"
+    },
+    "policy": {
+      "title": "Chính sách hủy",
+      "freeUntil": "Hủy miễn phí trước {hours, plural, other {# giờ}}.",
+      "freeAnytime": "Hủy miễn phí bất cứ lúc nào trước lịch hẹn.",
+      "lateFee": "Hủy muộn hơn: {percent}% tổng số tiền.",
+      "depositNonRefundable": "Tiền cọc không được hoàn lại.",
+      "cannotCancel": "Lịch hẹn này không thể hủy được nữa.",
+      "alreadyStarted": "Lịch hẹn này đã bắt đầu.",
+      "cannotReschedule": "Lịch hẹn này không thể đổi lịch.",
+      "maxReschedules": "Lịch hẹn này đã đổi lịch đến số lần tối đa. Vui lòng liên hệ doanh nghiệp.",
+      "rescheduleWindow": "Mọi thay đổi phải được thực hiện ít nhất {hours, plural, other {# giờ}} trước lịch hẹn. Vui lòng liên hệ doanh nghiệp."
+    },
+    "refund": {
+      "noCharge": "Không mất phí.",
+      "full": "Bạn sẽ được hoàn tiền toàn bộ.",
+      "none": "Khoản thanh toán của bạn không được hoàn lại theo chính sách của doanh nghiệp này.",
+      "partial": "Bạn sẽ được hoàn tiền một phần theo chính sách của doanh nghiệp này."
+    },
+    "note": "Ghi chú: {reason}",
+    "problem": "Có vấn đề với lịch hẹn này? <link>Liên hệ hỗ trợ</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} lúc {time}",
+    "cancelledToast": "Đã hủy lịch hẹn",
+    "refundOnWay": "Khoản hoàn tiền {amount} đang được xử lý.",
+    "rescheduledToast": "Đã đổi lịch",
+    "payToConfirm": "Thanh toán {amount} để xác nhận",
+    "addToCalendar": "Thêm vào lịch",
+    "directions": "Chỉ đường",
+    "message": "Nhắn tin",
+    "bookAgain": "Đặt lại",
+    "googleCalendar": "Lịch Google",
+    "leaveReview": "Viết đánh giá",
+    "reschedule": "Đổi lịch",
+    "cancelAppointment": "Hủy lịch hẹn",
+    "cancelTitle": "Hủy lịch hẹn này?",
+    "insideWindow": "Bạn đã quá thời hạn hủy miễn phí của doanh nghiệp.",
+    "refundAmount": "Hoàn tiền: {amount}.",
+    "keptAmount": "Doanh nghiệp giữ lại: {amount}.",
+    "reason": "Lý do",
+    "reasonHint": "Sẽ được chia sẻ với doanh nghiệp.",
+    "chooseNewTime": "Chọn giờ mới",
+    "currently": "Hiện tại: {when}",
+    "keepCurrentTime": "Giữ giờ hiện tại",
+    "moveTo": "Chuyển sang {time}",
+    "chooseTime": "Chọn giờ"
+  },
+  "review": {
+    "ratings": {
+      "1": "Tệ",
+      "2": "Tạm được",
+      "3": "Tốt",
+      "4": "Rất tốt",
+      "5": "Tuyệt vời"
+    },
+    "thanks": "Cảm ơn bạn đã đánh giá",
+    "title": "{business} thế nào?",
+    "subtitle": "Đánh giá của bạn được công khai và gắn nhãn lịch hẹn đã xác minh.",
+    "rating": "Xếp hạng",
+    "stars": "{n, plural, other {# sao}}",
+    "bodyLabel": "Kể cho mọi người về trải nghiệm của bạn",
+    "bodyPlaceholder": "Điều gì nổi bật? Bạn có giới thiệu họ không?",
+    "post": "Đăng đánh giá"
+  },
+  "slotPicker": {
+    "previousWeek": "Tuần trước",
+    "nextWeek": "Tuần sau",
+    "noOpenings": "Ngày này không còn giờ trống.",
+    "selected": "Đã chọn {time}"
+  }
+}

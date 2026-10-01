@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Cắt tóc nam"
+  },
+  "hair": {
+    "name": "Tóc & cắt tóc nam",
+    "description": "Cắt, nhuộm, tạo kiểu, tết tóc và chăm sóc."
+  },
+  "lashes-brows": {
+    "name": "Mi & chân mày"
+  },
+  "massage": {
+    "name": "Massage"
+  },
+  "personal-training": {
+    "name": "Huấn luyện cá nhân"
+  },
+  "hair-salon": {
+    "name": "Salon tóc"
+  },
+  "makeup": {
+    "name": "Trang điểm"
+  },
+  "nails": {
+    "name": "Làm móng",
+    "description": "Làm móng tay, móng chân, nối móng và vẽ móng."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga & pilates"
+  },
+  "beauty": {
+    "name": "Làm đẹp",
+    "description": "Mi, chân mày, trang điểm và chăm sóc da."
+  },
+  "braids-locs": {
+    "name": "Tết tóc & tóc dreadlock"
+  },
+  "skincare": {
+    "name": "Chăm sóc da"
+  },
+  "wellness": {
+    "name": "Chăm sóc sức khỏe",
+    "description": "Massage, spa và trị liệu cơ thể."
+  },
+  "fitness": {
+    "name": "Thể hình",
+    "description": "Huấn luyện cá nhân, yoga, pilates và coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Xăm & xỏ khuyên",
+    "description": "Hình xăm theo yêu cầu, hình xăm mẫu và xỏ khuyên."
+  },
+  "photography": {
+    "name": "Chụp ảnh & quay phim",
+    "description": "Chân dung, sự kiện, sản phẩm và video."
+  },
+  "education": {
+    "name": "Lớp học & gia sư",
+    "description": "Gia sư, giáo viên âm nhạc và lớp ngoại ngữ."
+  },
+  "home-services": {
+    "name": "Dịch vụ tại nhà",
+    "description": "Dọn dẹp, sửa chữa và thợ sửa đồ."
+  },
+  "automotive": {
+    "name": "Ô tô",
+    "description": "Chăm sóc xe, rửa xe và sửa xe lưu động."
+  },
+  "pets": {
+    "name": "Thú cưng",
+    "description": "Cắt tỉa, trông giữ và huấn luyện."
+  },
+  "events": {
+    "name": "Sự kiện",
+    "description": "DJ, người tổ chức và chuyên gia sự kiện."
+  },
+  "professional": {
+    "name": "Dịch vụ chuyên môn",
+    "description": "Chuyên gia tư vấn, huấn luyện viên và cố vấn."
+  },
+  "other": {
+    "name": "Khác",
+    "description": "Mọi thứ khác bạn có thể đặt lịch."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Chào mừng trở lại, {name}",
+    "eyebrow": "Lịch hẹn, luôn được giữ",
+    "title": "Đặt lịch với những người làm tuần của bạn <em>tốt hơn.</em>",
+    "lead": "Thợ cắt tóc, nhà tạo mẫu, huấn luyện viên, gia sư, nhiếp ảnh gia và nhiều hơn nữa — với giờ trống thật, giá rõ ràng từ đầu và đánh giá chỉ từ lượt ghé thăm đã xác minh.",
+    "points": {
+      "verified": "Chỉ đánh giá đã xác minh",
+      "prices": "Thấy giá trước khi đặt",
+      "instant": "Xác nhận ngay"
+    }
+  },
+  "search": {
+    "placeholder": "Cắt tóc, massage, nhiếp ảnh gia…",
+    "label": "Bạn muốn đặt gì?",
+    "category": "Danh mục",
+    "submit": "Tìm kiếm",
+    "sayIt": "Hoặc cứ nói ra —",
+    "sayItExample": "“cắt tóc nam ngày mai sau 5 giờ”"
+  },
+  "openings": {
+    "title": "Sắp có giờ trống",
+    "live": "Cập nhật trực tiếp từ lịch",
+    "appointment": "Lịch hẹn"
+  },
+  "index": {
+    "eyebrow": "Danh mục",
+    "title": "Mọi loại lịch hẹn",
+    "exploreAll": "Khám phá tất cả",
+    "pros": "{count, plural, other {# chuyên gia}}"
+  },
+  "next": {
+    "title": "Lịch hẹn tiếp theo",
+    "details": "Chi tiết"
+  },
+  "again": {
+    "title": "Đặt lại",
+    "rebook": "Đặt lại"
+  },
+  "rails": {
+    "availableSoon": "Sắp có chỗ",
+    "availableSoonNear": "Sắp có chỗ gần {place}",
+    "availableSoonNearYou": "Sắp có chỗ gần bạn",
+    "availableSoonSub": "Giờ trống trực tiếp từ lịch của từng chuyên gia.",
+    "recent": "Đã xem gần đây",
+    "topRated": "Được đánh giá cao",
+    "topRatedSub": "Xếp hạng chỉ đến từ lịch hẹn đã hoàn tất và xác minh.",
+    "newcomers": "Mới trên Kept"
+  },
+  "how": {
+    "eyebrow": "Cách hoạt động",
+    "title": "Ba bước, không cần gọi điện qua lại",
+    "find": {
+      "title": "Tìm đúng người",
+      "body": "Tìm theo nhu cầu, thời gian và địa điểm — hoặc cứ hỏi bằng lời của bạn. Mỗi hồ sơ đều có giá thật và đánh giá đã xác minh."
+    },
+    "choose": {
+      "title": "Chọn giờ thật",
+      "body": "Những khung giờ bạn thấy đang trống trên lịch của họ ngay lúc này. Chọn một giờ, thêm tùy chọn và xác nhận."
+    },
+    "kept": {
+      "title": "Cứ yên tâm, đã giữ chỗ",
+      "body": "Bạn nhận xác nhận, lời nhắc trước ngày hẹn và một nơi duy nhất để đổi lịch, nhắn tin hoặc đặt lại."
+    }
+  },
+  "pros": {
+    "eyebrow": "Dành cho chuyên gia",
+    "title": "Tay nghề của bạn xứng đáng có quầy lễ tân <em>tốt hơn</em>.",
+    "body": "Đặt lịch trực tuyến, lịch làm việc không bao giờ trùng, lời nhắc giúp giảm khách không đến và một trang giới thiệu tác phẩm của bạn đúng như nó xứng đáng. Miễn phí trong giai đoạn ra mắt.",
+    "cta": "Cung cấp dịch vụ",
+    "howItWorks": "Xem cách hoạt động",
+    "features": {
+      "any": {
+        "title": "Mọi loại dịch vụ",
+        "body": "Tùy chọn tự động thay đổi giá và thời lượng."
+      },
+      "noDouble": {
+        "title": "Không bao giờ trùng lịch",
+        "body": "Mỗi khung giờ được kiểm tra ngay lúc đặt."
+      },
+      "noShows": {
+        "title": "Ít khách bỏ hẹn hơn",
+        "body": "Nhắc lịch, tiền cọc và chính sách rõ ràng."
+      },
+      "discovered": {
+        "title": "Được nhiều người biết đến",
+        "body": "Portfolio, đánh giá đã xác minh và Spotlight."
+      }
+    }
+  }
+}

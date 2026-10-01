@@ -1,0 +1,90 @@
+{
+  "language": "Ngôn ngữ",
+  "meta": {
+    "title": "Kept — Đặt lịch với chuyên gia uy tín gần bạn",
+    "description": "Khám phá và đặt lịch với thợ cắt tóc nam, nhà tạo mẫu tóc, huấn luyện viên, nhiếp ảnh gia, gia sư và mọi chuyên gia gần bạn — đồng thời quản lý lịch hẹn của riêng bạn thật dễ dàng."
+  },
+  "skipToContent": "Chuyển đến nội dung",
+  "logoHome": "Trang chủ Kept",
+  "header": {
+    "mainNav": "Chính",
+    "search": "Tìm dịch vụ hoặc chuyên gia",
+    "ask": "Hỏi",
+    "askKept": "Hỏi Kept",
+    "explore": "Khám phá",
+    "myBusiness": "Doanh nghiệp của tôi",
+    "forPros": "Dành cho chuyên gia",
+    "bookings": "Lịch hẹn",
+    "messages": "Tin nhắn",
+    "notifications": "Thông báo",
+    "unread": "chưa đọc",
+    "accountMenu": "Menu tài khoản",
+    "logIn": "Đăng nhập",
+    "signUp": "Đăng ký"
+  },
+  "accountMenu": {
+    "bookings": "Lịch hẹn",
+    "saved": "Đã lưu",
+    "messages": "Tin nhắn",
+    "settings": "Cài đặt tài khoản",
+    "help": "Trợ giúp & hỗ trợ",
+    "switchToBusiness": "Chuyển sang doanh nghiệp",
+    "offerServices": "Cung cấp dịch vụ",
+    "admin": "Bảng quản trị",
+    "signOut": "Đăng xuất"
+  },
+  "tabs": {
+    "label": "Chính",
+    "home": "Trang chủ",
+    "explore": "Khám phá",
+    "bookings": "Lịch hẹn",
+    "inbox": "Hộp thư",
+    "account": "Tài khoản"
+  },
+  "footer": {
+    "tagline": "Đặt lịch với chuyên gia uy tín. Quản lý lịch hẹn nhẹ nhàng hơn.",
+    "discover": "Khám phá",
+    "explore": "Khám phá",
+    "hair": "Tóc & barber",
+    "wellness": "Chăm sóc sức khỏe",
+    "fitness": "Thể hình",
+    "forPros": "Dành cho chuyên gia",
+    "howItWorks": "Cách hoạt động",
+    "listServices": "Đăng dịch vụ của bạn",
+    "dashboard": "Bảng điều khiển doanh nghiệp",
+    "help": "Trợ giúp",
+    "support": "Hỗ trợ",
+    "terms": "Điều khoản",
+    "privacy": "Quyền riêng tư",
+    "copyright": "© {year} Kept. Bảo lưu mọi quyền."
+  },
+  "price": {
+    "free": "Miễn phí",
+    "quote": "Giá theo tư vấn",
+    "from": "Từ {price}"
+  },
+  "rating": {
+    "new": "Mới",
+    "summary": "đánh giá {avg} từ {count, plural, other {# nhận xét}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Chờ thanh toán",
+    "requested": "Đã gửi yêu cầu",
+    "confirmed": "Đã xác nhận",
+    "checked_in": "Đã check-in",
+    "in_progress": "Đang thực hiện",
+    "completed": "Hoàn tất",
+    "cancelled": "Đã hủy",
+    "declined": "Bị từ chối",
+    "no_show": "Không đến",
+    "expired": "Hết hạn"
+  },
+  "policy": {
+    "freeUntil": "Hủy miễn phí trước {hours} giờ. Hủy muộn hơn sẽ bị tính {percent}% tổng số tiền.",
+    "cancelAhead": "Vui lòng hủy ít nhất {hours} giờ trước lịch hẹn.",
+    "freeAnyTime": "Hủy miễn phí bất cứ lúc nào trước lịch hẹn.",
+    "depositRefundable": "Tiền cọc được hoàn lại khi bạn hủy đúng hạn.",
+    "depositNonRefundable": "Tiền cọc không được hoàn lại.",
+    "reschedule": "Đổi lịch trực tuyến trước tối đa {hours} giờ."
+  }
+}

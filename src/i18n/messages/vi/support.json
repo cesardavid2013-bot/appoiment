@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "Lịch hẹn",
+      "hint": "Thay đổi, hủy hoặc sự cố với lịch hẹn."
+    },
+    "payment": {
+      "label": "Thanh toán",
+      "hint": "Khoản phí, tiền cọc, hoàn tiền hoặc tiền tip."
+    },
+    "account": {
+      "label": "Tài khoản",
+      "hint": "Đăng nhập, hồ sơ hoặc dữ liệu của bạn."
+    },
+    "report": {
+      "label": "Báo cáo doanh nghiệp",
+      "hint": "Lo ngại về an toàn, thông tin sai lệch hoặc hành vi sai trái."
+    },
+    "other": {
+      "label": "Khác",
+      "hint": "Bất cứ điều gì khác chúng tôi có thể giúp."
+    }
+  },
+  "status": {
+    "open": "Đang chờ hỗ trợ",
+    "awaiting_customer": "Đã phản hồi",
+    "resolved": "Đã giải quyết",
+    "closed": "Đã đóng"
+  },
+  "home": {
+    "title": "Trợ giúp & hỗ trợ",
+    "description": "Được hỗ trợ về lịch hẹn, thanh toán hoặc tài khoản.",
+    "newRequest": "Yêu cầu mới",
+    "yourRequests": "Yêu cầu của bạn",
+    "emptyTitle": "Chưa có yêu cầu nào",
+    "emptyBody": "Nếu có gì chưa ổn với lịch hẹn, thanh toán hoặc tài khoản, hãy cho chúng tôi biết và chúng tôi sẽ giúp bạn giải quyết.",
+    "contact": "Liên hệ hỗ trợ",
+    "ticketLine": "{category} · Cập nhật {date} · {count, plural, other {# tin nhắn}}",
+    "quickAnswers": "Giải đáp nhanh",
+    "stillStuck": "Vẫn chưa được? <link>Liên hệ hỗ trợ</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Làm thế nào để hủy hoặc đổi lịch hẹn?",
+      "a": "Mở <link>Lịch hẹn</link>, chọn lịch hẹn và chạm Đổi lịch hoặc Hủy. Mỗi doanh nghiệp tự đặt thời hạn hủy — bạn sẽ thấy chính xác điều gì được áp dụng, kể cả phí hoặc khoản hoàn tiền, trước khi xác nhận."
+    },
+    "refund": {
+      "q": "Khi nào tôi nhận được tiền hoàn?",
+      "a": "Tiền hoàn được trả về thẻ bạn đã thanh toán ngay khi việc hủy được xác nhận. Tùy ngân hàng, thường mất 5–10 ngày làm việc để hiển thị. Tiền cọc có được hoàn hay không phụ thuộc vào chính sách của doanh nghiệp, được hiển thị khi bạn đặt lịch."
+    },
+    "contactPro": {
+      "q": "Làm thế nào để liên hệ với chuyên gia?",
+      "a": "Dùng nút Nhắn tin trên hồ sơ của họ hoặc trên lịch hẹn của bạn. Các cuộc trò chuyện nằm trong <link>Tin nhắn</link>. Với mọi câu hỏi về chính dịch vụ — chỉ đường, chuẩn bị, cần mang gì — doanh nghiệp sẽ trả lời nhanh nhất."
+    },
+    "report": {
+      "q": "Có sự cố với một doanh nghiệp. Tôi có thể làm gì?",
+      "a": "Mở một yêu cầu bên dưới và chọn “Báo cáo doanh nghiệp”. Liên kết lịch hẹn nếu có. Chúng tôi đọc mọi báo cáo, có thể can thiệp về hoàn tiền và, khi cần, gỡ doanh nghiệp khỏi Kept."
+    },
+    "account": {
+      "q": "Làm thế nào để đổi email hoặc xóa tài khoản?",
+      "a": "Việc đổi email được thực hiện qua bộ phận hỗ trợ để chúng tôi xác minh đó là bạn. Bạn có thể tự tải dữ liệu hoặc xóa tài khoản trong <link>Quyền riêng tư & dữ liệu</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Yêu cầu hỗ trợ",
+    "allRequests": "Tất cả yêu cầu",
+    "opened": "{category} · Mở ngày <date></date>",
+    "appointmentLine": "{date} lúc {time} · Mã {reference}",
+    "conversation": "Cuộc trò chuyện",
+    "keptSupport": "Hỗ trợ Kept",
+    "openImage": "Mở ảnh đính kèm",
+    "attachedImage": "Ảnh đính kèm",
+    "closed": "Yêu cầu này đã đóng. <link>Mở yêu cầu mới</link> nếu bạn vẫn cần giúp đỡ.",
+    "willReply": "Chúng tôi sẽ trả lời tại đây và báo cho bạn khi có phản hồi.",
+    "sorted": "Đã ổn chưa? Hãy cho chúng tôi biết."
+  },
+  "new": {
+    "title": "Liên hệ hỗ trợ",
+    "intro": "Hãy cho chúng tôi biết chuyện gì đang xảy ra và một thành viên thật của đội ngũ Kept sẽ trả lời tại đây. Với câu hỏi về chính dịch vụ, nhắn tin cho doanh nghiệp thường là nhanh nhất.",
+    "notFound": "Chúng tôi không tìm thấy lịch hẹn đó trong tài khoản của bạn nên chưa đính kèm. Bạn vẫn có thể chọn một lịch hẹn bên dưới."
+  },
+  "form": {
+    "topic": "Bạn cần giúp gì?",
+    "chooseTopic": "Chọn chủ đề",
+    "addSubject": "Thêm tiêu đề ngắn",
+    "moreDetail": "Hãy kể thêm một chút — ít nhất một câu sẽ giúp chúng tôi hỗ trợ bạn tốt hơn",
+    "sent": "Đã gửi yêu cầu",
+    "checkFields": "Vui lòng kiểm tra các trường được đánh dấu.",
+    "related": "Lịch hẹn liên quan",
+    "refHint": "Mã {reference} · {business}",
+    "linkHint": "Liên kết lịch hẹn giúp chúng tôi kiểm tra ngay lập tức.",
+    "none": "Không có",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Tiêu đề",
+    "subjectPlaceholder": "VD: Tôi bị trừ tiền cọc hai lần",
+    "details": "Chi tiết",
+    "detailsHint": "Chuyện gì đã xảy ra, khi nào và bạn muốn chúng tôi làm gì. Vui lòng không ghi số thẻ hoặc mật khẩu.",
+    "images": "Hình ảnh",
+    "optional": "Không bắt buộc",
+    "cancel": "Hủy",
+    "uploadingImages": "Đang tải ảnh lên…",
+    "send": "Gửi yêu cầu"
+  },
+  "reply": {
+    "writeFirst": "Hãy viết phản hồi trước.",
+    "sent": "Đã gửi phản hồi",
+    "label": "Phản hồi",
+    "reopens": "Phản hồi sẽ mở lại yêu cầu này.",
+    "placeholder": "Thêm chi tiết hoặc trả lời câu hỏi của chúng tôi…",
+    "send": "Gửi phản hồi"
+  },
+  "resolve": {
+    "button": "Đánh dấu đã giải quyết",
+    "done": "Đã đánh dấu là đã giải quyết",
+    "doneBody": "Thật vui vì mọi chuyện đã ổn. Bạn vẫn có thể phản hồi nếu có gì phát sinh.",
+    "confirmTitle": "Đánh dấu yêu cầu này là đã giải quyết?",
+    "confirmBody": "Hãy cho chúng tôi biết mọi việc đã ổn. Nếu có gì khác phát sinh, hãy phản hồi tại đây và chúng tôi sẽ tiếp tục hỗ trợ."
+  },
+  "attach": {
+    "tooMany": "Bạn có thể đính kèm tối đa {max} ảnh.",
+    "alt": "Tệp đính kèm hỗ trợ",
+    "label": "Tệp đính kèm",
+    "uploadingName": "Đang tải lên {name}",
+    "remove": "Xóa {name}",
+    "add": "Thêm ảnh",
+    "uploading": "{count, plural, other {Đang tải lên # ảnh…}}",
+    "hint": "Ảnh chụp màn hình hoặc ảnh sẽ hữu ích. Tối đa {max} ảnh, mỗi ảnh 15 MB."
+  }
+}
