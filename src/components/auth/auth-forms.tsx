@@ -70,8 +70,9 @@ export function LoginForm({ google }: { google: boolean }) {
 
   return (
     <div>
-      <h1 className="font-display text-[34px] leading-tight text-ink">Welcome back</h1>
-      <p className="mt-1.5 text-[15px] text-ink-3">Sign in to manage your bookings and messages.</p>
+      <p className="eyebrow">Sign in</p>
+      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">Welcome back</h1>
+      <p className="mt-2 text-[15px] text-ink-3">Your appointments, messages and business — all in one place.</p>
       <div className="mt-7">
         {google && (
           <>
@@ -107,6 +108,67 @@ export function LoginForm({ google }: { google: boolean }) {
   );
 }
 
+/** First step of sign-up: are you booking, or offering services? Each path is tailored after. */
+function AccountTypeChooser({ onChoose }: { onChoose: (t: "client" | "pro") => void }) {
+  const next = useNext();
+  const options = [
+    {
+      key: "client" as const,
+      eyebrow: "For clients",
+      title: "I'm booking",
+      body: "Find professionals, book real openings, and keep every appointment in one place.",
+      points: ["Free, always", "Reschedule or cancel online", "Message before you book"],
+    },
+    {
+      key: "pro" as const,
+      eyebrow: "For professionals",
+      title: "I offer services",
+      body: "Get a booking page, a calendar that can't double-book, and clients who show up.",
+      points: ["Free while we launch", "Set up in about 10 minutes", "Solo or with a team"],
+    },
+  ];
+  return (
+    <div>
+      <p className="eyebrow">Create your account</p>
+      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">How will you use Kept?</h1>
+      <p className="mt-2 text-[15px] text-ink-3">You can do both later — professionals can book too.</p>
+      <div className="mt-8 grid gap-3" role="radiogroup" aria-label="Account type">
+        {options.map((o) => (
+          <button
+            key={o.key}
+            type="button"
+            role="radio"
+            aria-checked={false}
+            onClick={() => onChoose(o.key)}
+            className="group relative rounded-xl border border-line bg-surface p-5 text-left transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-ink hover:shadow-md focus-visible:border-ink"
+          >
+            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-text">{o.eyebrow}</p>
+            <p className="mt-2 font-display text-[28px] leading-none text-ink">{o.title}</p>
+            <p className="mt-2.5 text-[14px] leading-relaxed text-ink-2">{o.body}</p>
+            <ul className="mt-3.5 flex flex-wrap gap-x-4 gap-y-1 text-[12.5px] text-ink-3">
+              {o.points.map((pt) => (
+                <li key={pt} className="inline-flex items-center gap-1.5">
+                  <span className="size-1 rounded-full bg-gold" aria-hidden />
+                  {pt}
+                </li>
+              ))}
+            </ul>
+            <span className="absolute right-5 top-5 text-ink-3 transition-transform group-hover:translate-x-0.5 group-hover:text-ink" aria-hidden>
+              →
+            </span>
+          </button>
+        ))}
+      </div>
+      <p className="mt-8 text-center text-sm text-ink-3">
+        Already have an account?{" "}
+        <Link href={`/login${next !== "/" ? `?next=${encodeURIComponent(next)}` : ""}`} className="font-medium text-ink underline-offset-4 hover:underline">
+          Sign in
+        </Link>
+      </p>
+    </div>
+  );
+}
+
 export function SignupForm({ google, intent }: { google: boolean; intent?: string }) {
   const router = useRouter();
   const next = useNext();
@@ -116,7 +178,10 @@ export function SignupForm({ google, intent }: { google: boolean; intent?: strin
   const [error, setError] = useState<string | null>(null);
   const [fields, setFields] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
-  const pro = intent === "pro";
+  // Someone mid-booking (a ?next= destination) is clearly a client; otherwise ask.
+  const [type, setType] = useState<"client" | "pro" | null>(intent === "pro" ? "pro" : intent === "client" || next !== "/" ? "client" : null);
+  const pro = type === "pro";
+  if (!type) return <AccountTypeChooser onChoose={setType} />;
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
@@ -137,8 +202,16 @@ export function SignupForm({ google, intent }: { google: boolean; intent?: strin
 
   return (
     <div>
-      <h1 className="font-display text-[34px] leading-tight text-ink">{pro ? "Start taking bookings" : "Create your account"}</h1>
-      <p className="mt-1.5 text-[15px] text-ink-3">{pro ? "Set up your profile in a few minutes. It's free to start." : "Book in seconds, manage everything in one place."}</p>
+      <div className="flex items-center justify-between gap-3">
+        <p className="eyebrow">{pro ? "Professional account · Step 1 of 4" : "Client account"}</p>
+        {intent !== "pro" && next === "/" && (
+          <button type="button" onClick={() => setType(null)} className="text-[13px] font-medium text-ink-3 hover:text-ink">
+            Change
+          </button>
+        )}
+      </div>
+      <h1 className="mt-3 font-display text-[40px] leading-[1.05] text-ink">{pro ? "Start taking bookings" : "Create your account"}</h1>
+      <p className="mt-2 text-[15px] text-ink-3">{pro ? "First your account — then your services, hours and booking page. Free while we launch." : "Book in seconds and keep every appointment in one place."}</p>
       <div className="mt-7">
         {google && (
           <>
@@ -148,7 +221,7 @@ export function SignupForm({ google, intent }: { google: boolean; intent?: strin
         )}
         <form onSubmit={onSubmit} className="space-y-4" noValidate>
           <FormError message={error} />
-          <Field label="Full name" error={fields.name}>
+          <Field label={pro ? "Your name" : "Full name"} hint={pro ? "You'll name your business in the next step." : undefined} error={fields.name}>
             {(p) => <Input {...p} autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} required autoFocus />}
           </Field>
           <Field label="Email" error={fields.email}>
@@ -158,7 +231,7 @@ export function SignupForm({ google, intent }: { google: boolean; intent?: strin
             {(p) => <Input {...p} type="password" autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={8} />}
           </Field>
           <Button type="submit" size="lg" className="w-full" loading={loading}>
-            {pro ? "Continue" : "Create account"}
+            {pro ? "Continue to your business" : "Create account"}
           </Button>
           <p className="text-center text-xs leading-relaxed text-ink-3">
             By continuing you agree to our{" "}
@@ -204,7 +277,7 @@ export function ForgotForm() {
   if (sent)
     return (
       <div>
-        <h1 className="font-display text-[34px] leading-tight text-ink">Check your inbox</h1>
+        <h1 className="font-display text-[40px] leading-[1.05] text-ink">Check your inbox</h1>
         <p className="mt-2 text-[15px] leading-relaxed text-ink-3">If an account exists for {email}, you’ll get a link to reset your password in the next few minutes. The link expires in 1 hour.</p>
         <Link href="/login" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
           Back to sign in
@@ -213,7 +286,7 @@ export function ForgotForm() {
     );
   return (
     <div>
-      <h1 className="font-display text-[34px] leading-tight text-ink">Reset your password</h1>
+      <h1 className="font-display text-[40px] leading-[1.05] text-ink">Reset your password</h1>
       <p className="mt-1.5 text-[15px] text-ink-3">Enter your email and we’ll send you a reset link.</p>
       <form onSubmit={onSubmit} className="mt-7 space-y-4" noValidate>
         <FormError message={error} />
@@ -251,7 +324,7 @@ export function ResetForm({ token }: { token: string }) {
   }
   return (
     <div>
-      <h1 className="font-display text-[34px] leading-tight text-ink">Choose a new password</h1>
+      <h1 className="font-display text-[40px] leading-[1.05] text-ink">Choose a new password</h1>
       <p className="mt-1.5 text-[15px] text-ink-3">You’ll be signed out on other devices.</p>
       <form onSubmit={onSubmit} className="mt-7 space-y-4" noValidate>
         <FormError message={error} />
@@ -284,7 +357,7 @@ export function VerifyEmail({ token }: { token: string | null }) {
     <div>
       {state === "done" ? (
         <>
-          <h1 className="font-display text-[34px] leading-tight text-ink">Email confirmed</h1>
+          <h1 className="font-display text-[40px] leading-[1.05] text-ink">Email confirmed</h1>
           <p className="mt-2 text-[15px] text-ink-3">Thanks — you’re all set.</p>
           <Link href="/" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
             Continue to Kept
@@ -292,7 +365,7 @@ export function VerifyEmail({ token }: { token: string | null }) {
         </>
       ) : state === "error" ? (
         <>
-          <h1 className="font-display text-[34px] leading-tight text-ink">We couldn’t confirm that</h1>
+          <h1 className="font-display text-[40px] leading-[1.05] text-ink">We couldn’t confirm that</h1>
           <p className="mt-2 text-[15px] text-ink-3">{message}</p>
           <Link href="/account" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
             Go to your account
@@ -300,7 +373,7 @@ export function VerifyEmail({ token }: { token: string | null }) {
         </>
       ) : (
         <>
-          <h1 className="font-display text-[34px] leading-tight text-ink">Confirm your email</h1>
+          <h1 className="font-display text-[40px] leading-[1.05] text-ink">Confirm your email</h1>
           <p className="mt-2 text-[15px] text-ink-3">One tap and you’re done.</p>
           {/* An explicit click prevents email scanners from consuming the link. */}
           <Button size="lg" className="mt-6 w-full" onClick={verify} loading={state === "loading"}>
