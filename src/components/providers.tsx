@@ -3,9 +3,11 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState, type ReactNode } from "react";
 import { Toaster } from "sonner";
+import { useT } from "@/i18n/client";
 import { ApiError } from "@/lib/api";
 
 export function Providers({ children }: { children: ReactNode }) {
+  const t = useT("common.ui");
   const [client] = useState(
     () =>
       new QueryClient({
@@ -23,6 +25,7 @@ export function Providers({ children }: { children: ReactNode }) {
       {children}
       <Toaster
         position="top-center"
+        containerAriaLabel={t("notifications")}
         toastOptions={{
           classNames: {
             toast: "!rounded-lg !border !border-line !bg-surface !text-ink !shadow-lg !font-sans",

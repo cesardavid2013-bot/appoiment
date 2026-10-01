@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
+import { StarsLabel } from "./stars-label";
 
 export function Card({ className, children, as: As = "div" }: { className?: string; children: ReactNode; as?: "div" | "section" | "article" | "li" }) {
   return <As className={cn("rounded-lg border border-line bg-surface", className)}>{children}</As>;
@@ -97,11 +98,14 @@ export function Stars({ value, size = 14, className }: { value: number; size?: n
     </span>
   );
   return (
-    <span className={cn("relative inline-flex text-ink", className)} role="img" aria-label={`${value.toFixed(1)} out of 5 stars`}>
-      {row("opacity-20")}
-      <span className="absolute inset-y-0 start-0 overflow-hidden" style={{ width: `${pct}%` }}>
-        {row("")}
+    <span className={cn("relative inline-flex text-ink", className)}>
+      <span aria-hidden className="contents">
+        {row("opacity-20")}
+        <span className="absolute inset-y-0 start-0 overflow-hidden" style={{ width: `${pct}%` }}>
+          {row("")}
+        </span>
       </span>
+      <StarsLabel value={value} />
     </span>
   );
 }

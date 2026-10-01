@@ -30,10 +30,11 @@ await page.getByRole("radio", { name: "Closed" }).click().catch(() => page.getBy
 await page.getByRole("dialog").getByRole("button", { name: "Save" }).click();
 await page.getByText(/Marked as closed/).waitFor();
 await page.waitForLoadState("networkidle");
-ok("override listed", await page.getByRole("button", { name: `Remove the change on ${d}` }).waitFor().then(() => true, () => false));
-await page.getByRole("button", { name: `Remove the change on ${d}` }).click();
+ok("override listed", await page.getByRole("button", { name: `Remove the change on ${new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(`${d}T12:00:00Z`))}` }).waitFor().then(() => true, () => false));
+await page.getByRole("button", { name: `Remove the change on ${new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(`${d}T12:00:00Z`))}` }).click();
 await page.getByRole("alertdialog").getByRole("button", { name: "Remove" }).or(page.getByRole("dialog").getByRole("button", { name: "Remove" })).click();
-await page.getByText("Back to regular hours").waitFor();
+await page.getByText("Back to regular hours for that day").waitFor();
+await page.waitForLoadState("networkidle");
 
 // Time off: whole days.
 await page.getByRole("button", { name: "Add time off" }).first().click();

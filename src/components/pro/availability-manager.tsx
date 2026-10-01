@@ -101,7 +101,11 @@ export function AvailabilityManager(props: {
       setRemoving(null);
       router.refresh();
     } catch (err) {
-      toast.error((err as ApiError).message);
+      // Already gone (removed in another tab or replaced by a newer change): just show the current list.
+      if ((err as ApiError).status === 404) {
+        setRemoving(null);
+        router.refresh();
+      } else toast.error((err as ApiError).message);
     } finally {
       setBusy(false);
     }

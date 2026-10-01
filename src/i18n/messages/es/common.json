@@ -90,6 +90,8 @@
   "ui": {
     "close": "Cerrar",
     "keepIt": "Mejor no",
-    "optional": "Opcional"
+    "optional": "Opcional",
+    "stars": "{value} de 5 estrellas",
+    "notifications": "Notificaciones"
   }
 }
