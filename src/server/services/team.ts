@@ -96,6 +96,31 @@ export async function inviteMember(m: Membership, actor: Viewer, input: z.infer<
   return { id: member.id };
 }
 
+/** Issues a fresh link for a pending invite (the old link stops working). */
+export async function resendInvite(m: Membership, actor: Viewer, memberId: string) {
+  requireTeamManager(m);
+  await rateLimit("invite", actor.id);
+  const [target] = await db.select().from(businessMembers).where(and(eq(businessMembers.id, memberId), eq(businessMembers.businessId, m.businessId)));
+  if (!target || target.status !== "invited" || !target.inviteEmail) throw notFound("That invitation");
+  const token = randomToken(32);
+  await db
+    .update(businessMembers)
+    .set({ inviteTokenHash: sha256(token), inviteExpiresAt: new Date(Date.now() + INVITE_DAYS * 86_400_000) })
+    .where(eq(businessMembers.id, memberId));
+  await sendSystemEmail(
+    target.inviteEmail,
+    {
+      subject: `Reminder: join ${m.businessName} on Kept`,
+      heading: `Join ${m.businessName}`,
+      paragraphs: [`${actor.name} invited you to join the team at ${m.businessName}. You'll be able to see your schedule and manage your appointments.`],
+      cta: { label: "Accept invitation", url: `/invite/${token}` },
+      footnote: `This invitation expires in ${INVITE_DAYS} days. Earlier invitation links no longer work.`,
+    },
+    "team.invite",
+  );
+  await audit({ actorUserId: actor.id, actorType: "business", businessId: m.businessId, action: "team.invite_resent", targetType: "member", targetId: memberId });
+}
+
 export async function getInvite(token: string) {
   const [row] = await db
     .select({ id: businessMembers.id, email: businessMembers.inviteEmail, expiresAt: businessMembers.inviteExpiresAt, status: businessMembers.status, role: businessMembers.role, businessName: businesses.name, businessId: businesses.id })
@@ -136,6 +161,10 @@ export async function updateMember(m: Membership, actorUserId: string, memberId:
     if (input.role && !assignableRoles(m.role).includes(input.role)) throw forbidden("You can't assign that role.");
   }
   if (!target.isBookable && input.isBookable) await assertSeat(m, true);
+  if (input.avatarMediaId) {
+    const { assertMediaOwned } = await import("./media");
+    await assertMediaOwned(input.avatarMediaId, { businessId: m.businessId });
+  }
   if (input.locationIds) {
     const valid = input.locationIds.length ? await db.select({ id: locations.id }).from(locations).where(and(eq(locations.businessId, m.businessId), inArray(locations.id, input.locationIds))) : [];
     if (valid.length !== new Set(input.locationIds).size) throw new AppError("validation", "One of those locations isn't part of this business.");

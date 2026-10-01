@@ -27,8 +27,9 @@ export const POST = route({ auth: true }, async ({ req, viewer }) => {
   const businessIdRaw = form.get("businessId");
   const businessId = typeof businessIdRaw === "string" && businessIdRaw ? z.string().uuid().parse(businessIdRaw) : null;
   if (businessId) {
-    const perm = purpose === "portfolio" || purpose === "service" ? (["portfolio.manage", "services.manage"] as const) : purpose === "message" ? (["messages.manage"] as const) : (["business.manage"] as const);
-    await requireMember(viewer, businessId, [...perm]);
+    // Staff photos: any active member may upload (their own); attaching to someone else is checked by team.manage on save.
+    const perm = purpose === "portfolio" || purpose === "service" ? (["portfolio.manage", "services.manage"] as const) : purpose === "message" ? (["messages.manage"] as const) : purpose === "avatar" ? null : (["business.manage"] as const);
+    await requireMember(viewer, businessId, perm ? [...perm] : undefined);
   } else if (!["avatar", "support", "message"].includes(purpose)) {
     throw new AppError("validation", "Choose a business for this upload.");
   }

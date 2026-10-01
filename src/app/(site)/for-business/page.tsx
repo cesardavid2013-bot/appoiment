@@ -15,7 +15,7 @@ import {
 } from "@/components/marketing/product-demos";
 import { ServiceOptionsDemo } from "@/components/marketing/service-options-demo";
 import { buttonClass } from "@/components/ui/button";
-import { PLANS, type PlanTier } from "@/domain/plans";
+import { LAUNCH_PLAN, PLANS, type PlanTier } from "@/domain/plans";
 import { cn } from "@/lib/cn";
 import { env } from "@/server/env";
 import { listCategories } from "@/server/services/catalog";
@@ -55,7 +55,7 @@ export default async function ForBusinessPage() {
   const faqs: { q: string; a: ReactNode }[] = [
     {
       q: "What does Kept cost?",
-      a: `The Solo plan has no monthly fee. When a client pays online — a deposit or the full price — Kept keeps ${pct(PLANS.free.applicationFeeBps)} of that payment. Appointments paid in person carry no Kept fee at all.`,
+      a: `There's no monthly fee: while Kept is launching, new businesses get the ${PLANS[LAUNCH_PLAN].label} plan free. When a client pays online — a deposit or the full price — Kept keeps ${pct(PLANS[LAUNCH_PLAN].applicationFeeBps)} of that payment. Appointments paid in person carry no Kept fee at all.`,
     },
     {
       q: "Do my clients pay to book?",
@@ -223,21 +223,22 @@ export default async function ForBusinessPage() {
             Plans
           </h2>
           <p className="mt-4 text-[15px] leading-relaxed text-ink-3">
-            Every business starts on Solo, which has no monthly fee. Pro and Business aren&apos;t available to purchase yet — their prices will be announced before they open, and nobody is moved onto a paid plan without choosing it.
+            While Kept is launching, every new business starts on {PLANS[LAUNCH_PLAN].label} with no monthly fee. Prices for paid plans will be announced well before they apply, and nobody is charged without choosing a plan.
           </p>
         </div>
         <ul className="mt-10 grid gap-4 lg:grid-cols-3">
           {tiers.map((t) => {
             const p = PLANS[t];
-            const available = t === "free";
+            const available = t === "free" || t === LAUNCH_PLAN;
+            const launch = t === LAUNCH_PLAN && t !== "free";
             return (
-              <li key={t} className={cn("flex flex-col rounded-xl border p-6", available ? "border-ink bg-surface shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface")}>
+              <li key={t} className={cn("flex flex-col rounded-xl border p-6", t === LAUNCH_PLAN ? "border-ink bg-surface shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface")}>
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="text-lg font-semibold text-ink">{p.label}</h3>
-                  <span className={cn("rounded-sm px-2 py-0.5 text-xs font-medium", available ? "bg-accent-soft text-accent-text" : "bg-surface-2 text-ink-3")}>{available ? "Available now" : "Not yet available"}</span>
+                  <span className={cn("rounded-sm px-2 py-0.5 text-xs font-medium", available ? "bg-accent-soft text-accent-text" : "bg-surface-2 text-ink-3")}>{launch ? "Free during launch" : available ? "Available now" : "Not yet available"}</span>
                 </div>
                 <p className="mt-4 font-display text-4xl text-ink">{available ? "$0" : "—"}</p>
-                <p className="text-[13px] text-ink-3">{available ? "per month" : "Pricing to be announced"}</p>
+                <p className="text-[13px] text-ink-3">{launch ? "per month while we launch" : available ? "per month" : "Pricing to be announced"}</p>
                 <dl className="mt-6 divide-y divide-line border-y border-line text-sm">
                   {[
                     ["Bookable team members", p.maxBookableMembers === 1 ? "1 (just you)" : `Up to ${p.maxBookableMembers}`],
@@ -253,16 +254,18 @@ export default async function ForBusinessPage() {
                   ))}
                 </dl>
                 <p className="mt-4 text-[13px] leading-relaxed text-ink-3">
-                  {available
+                  {t === "free"
                     ? "Online booking, calendar, reminders, deposits, client records, intake forms, portfolio and Spotlight are all included."
-                    : "Everything in Solo, for teams that need more people, more locations and finer control."}
+                    : launch
+                      ? "Everything in Solo, plus a team of up to 10, more locations, custom roles and lower fees. What new businesses get today."
+                      : "For larger teams and multi-location businesses."}
                 </p>
               </li>
             );
           })}
         </ul>
         <p className="mt-5 text-[13px] leading-relaxed text-ink-3">
-          The fee applies only to payments clients make online through Kept. Appointments paid in person have no Kept fee. Need more than one bookable person or location today?{" "}
+          The fee applies only to payments clients make online through Kept. Appointments paid in person have no Kept fee. Need more people or locations than your plan allows?{" "}
           <Link href="/support/new?category=other" className="font-medium text-ink underline underline-offset-4">
             Tell us
           </Link>

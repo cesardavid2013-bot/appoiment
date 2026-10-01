@@ -5,6 +5,7 @@ import { AppError, notFound } from "@/domain/errors";
 import { displayPriceRange } from "@/domain/pricing";
 import { isValidSlug, normalizeSearch, slugify } from "@/domain/slugs";
 import { isValidTimeZone } from "@/domain/time";
+import { LAUNCH_PLAN } from "@/domain/plans";
 import { db, type Executor } from "../db/client";
 import {
   availabilityRules,
@@ -60,6 +61,7 @@ export async function createBusiness(viewer: Viewer, input: z.infer<typeof creat
         name: input.name,
         slug,
         kind: input.kind,
+        plan: LAUNCH_PLAN,
         ownerUserId: viewer.id,
         primaryCategoryId: input.categoryId ?? null,
         timezone: input.timezone,

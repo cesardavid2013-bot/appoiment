@@ -30,6 +30,7 @@ import {
 import { hashPassword } from "../src/server/auth/password";
 import { refreshSearchIndex } from "../src/server/services/business";
 import { bookingReference, randomToken } from "../src/server/crypto";
+import { LAUNCH_PLAN } from "../src/domain/plans";
 
 type Cat = { slug: string; name: string; description: string; keywords: string[]; children?: { slug: string; name: string; keywords: string[] }[] };
 
@@ -316,6 +317,7 @@ async function seedDemo() {
         slug: d.slug,
         name: d.name,
         kind: d.kind,
+        plan: LAUNCH_PLAN,
         ownerUserId: owner.id,
         primaryCategoryId: catId(d.category),
         tagline: d.tagline,

@@ -53,3 +53,10 @@ export const PLANS: Record<PlanTier, Entitlements> = {
 export function entitlements(plan: PlanTier): Entitlements {
   return PLANS[plan];
 }
+
+/**
+ * Plan every new business starts on. Paid plans can't be purchased yet, so
+ * during launch new businesses get Pro at no charge — otherwise a shop with a
+ * team couldn't add a second bookable professional at all.
+ */
+export const LAUNCH_PLAN: PlanTier = "pro";
