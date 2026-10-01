@@ -119,3 +119,18 @@ export const zOptText = (max: number) =>
     .optional()
     .nullable()
     .transform((v) => (v ? v : null));
+
+/**
+ * Business-console endpoint: resolves the viewer's active business server-side
+ * (cookie-selected, validated against real memberships) and checks permission.
+ */
+export function proRoute<P = Record<string, string>>(
+  permission: import("@/domain/permissions").Permission | import("@/domain/permissions").Permission[] | null,
+  fn: (args: { req: NextRequest; params: P; viewer: Viewer; m: import("./authz").Membership }) => Promise<unknown>,
+) {
+  return route<P>({ auth: true }, async ({ req, params, viewer }) => {
+    const { requireActiveMember } = await import("./authz");
+    const m = await requireActiveMember(viewer, permission ?? undefined);
+    return fn({ req, params, viewer, m });
+  });
+}

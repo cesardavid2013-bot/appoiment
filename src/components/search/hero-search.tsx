@@ -18,10 +18,7 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
   const wrap = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (q.trim().length < 2) {
-      setSugg(null);
-      return;
-    }
+    if (q.trim().length < 2) return;
     const ctrl = new AbortController();
     const t = setTimeout(() => api<Suggestions>(`/api/search/suggest?q=${encodeURIComponent(q)}`, { signal: ctrl.signal }).then(setSugg).catch(() => undefined), 150);
     return () => {
@@ -48,7 +45,8 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
     router.push(`/explore${params.size ? `?${params}` : ""}`);
   }
 
-  const hasSugg = sugg && (sugg.businesses.length > 0 || sugg.categories.length > 0);
+  const shown = q.trim().length >= 2 ? sugg : null;
+  const hasSugg = shown && (shown.businesses.length > 0 || shown.categories.length > 0);
 
   return (
     <form onSubmit={submit} role="search" className="relative w-full max-w-2xl">
@@ -69,13 +67,13 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
           />
           {open && hasSugg && (
             <div className="absolute left-0 right-0 top-[calc(100%+10px)] z-30 overflow-hidden rounded-lg border border-line bg-surface p-1.5 text-left shadow-lg animate-rise">
-              {sugg!.categories.map((c) => (
+              {shown!.categories.map((c) => (
                 <button key={c.slug} type="button" onClick={() => router.push(`/explore?category=${c.slug}`)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm text-ink hover:bg-surface-2">
                   {c.name}
                   <span className="text-xs text-ink-3">Category</span>
                 </button>
               ))}
-              {sugg!.businesses.map((b) => (
+              {shown!.businesses.map((b) => (
                 <button key={b.slug} type="button" onClick={() => router.push(`/${b.slug}`)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm text-ink hover:bg-surface-2">
                   {b.name}
                   <span className="text-xs text-ink-3">{b.city}</span>

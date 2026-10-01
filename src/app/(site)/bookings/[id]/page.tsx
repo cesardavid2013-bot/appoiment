@@ -11,6 +11,7 @@ import { fmtDateLong, fmtTime, tzAbbr } from "@/lib/format";
 import { cancellationPreview, reschedulePreview } from "@/server/services/booking";
 import { customerAppointmentDetail } from "@/server/services/customer";
 import { requireViewerPage } from "@/server/viewer";
+import { requestNow } from "@/server/clock";
 
 export const metadata: Metadata = { title: "Appointment", robots: { index: false } };
 
@@ -27,7 +28,7 @@ export default async function AppointmentPage({ params, searchParams }: PageProp
   const isNew = sp.new === "1";
   const cancel = cancellationPreview(a);
   const move = reschedulePreview(a);
-  const canReview = a.status === "completed" && !d.review && a.startsAt.getTime() > Date.now() - 90 * 86_400_000;
+  const canReview = a.status === "completed" && !d.review && a.startsAt.getTime() > requestNow() - 90 * 86_400_000;
   const showReviewForm = canReview && sp.review === "1";
   const remaining = Math.max(0, a.totalCents - a.amountPaidCents + a.amountRefundedCents);
   const tz = a.timezone;

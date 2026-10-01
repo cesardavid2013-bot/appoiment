@@ -3,7 +3,7 @@
 import { List, Map as MapIcon, Search, SlidersHorizontal, X } from "lucide-react";
 import dynamic from "next/dynamic";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useRef, useState, useTransition } from "react";
+import { useMemo, useRef, useState, useTransition } from "react";
 import { BusinessCard, BusinessCardSkeleton, type CardBusiness } from "@/components/business/business-card";
 import { Button } from "@/components/ui/button";
 import { Checkbox, Segmented } from "@/components/ui/controls";
@@ -58,11 +58,13 @@ export function ExploreClient({
   const listRef = useRef<HTMLDivElement>(null);
 
   // New server results (after a filter change) replace the list.
-  useEffect(() => {
+  const [prevInitial, setPrevInitial] = useState(initial);
+  if (initial !== prevInitial) {
+    setPrevInitial(initial);
     setItems(initial);
     setHasMore(hasMoreInitial);
     setPage(1);
-  }, [initial, hasMoreInitial]);
+  }
 
   function update(patch: Record<string, string | null>) {
     const next = new URLSearchParams(params.toString());

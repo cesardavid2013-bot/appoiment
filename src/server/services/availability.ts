@@ -325,6 +325,8 @@ export type SlotsRequest = {
   optionIds: string[];
   /** Discovery hints only: fill required choices with the default (or shortest) option. */
   autoDefaults?: boolean;
+  /** Business-side view: allows draft businesses and hidden services, ignores notice/horizon. */
+  asBusinessId?: string;
 };
 
 /** Default choice per required group: the provider's default, else the shortest option. */
@@ -344,7 +346,8 @@ export function defaultOptionIds(svc: BookableService): string[] {
 export async function getSlots(req: SlotsRequest) {
   if (req.toDate < req.fromDate) throw new AppError("validation", "The end date must be after the start date.");
   if (addDaysIso(req.fromDate, MAX_SLOT_RANGE_DAYS) < req.toDate) throw new AppError("validation", "Choose a shorter date range.");
-  const svc = await loadBookableService(req.serviceId);
+  const svc = await loadBookableService(req.serviceId, db, { includeHidden: Boolean(req.asBusinessId) });
+  if (req.asBusinessId && svc.business.id !== req.asBusinessId) throw notFound("That service");
   const selected = selectOptions(svc, req.autoDefaults && req.optionIds.length === 0 ? defaultOptionIds(svc) : req.optionIds);
   const loc = resolveLocation(svc, req.locationId);
   const members = candidateMembers(svc, selected, loc?.id ?? null, req.memberId);
@@ -355,6 +358,7 @@ export async function getSlots(req: SlotsRequest) {
     memberIds: members.map((m) => m.memberId),
     fromDate: req.fromDate,
     toDate: req.toDate,
+    ignoreBookingWindow: Boolean(req.asBusinessId),
   });
   const days = mergeDays(
     queries.map((q) => computeSlots(q)),

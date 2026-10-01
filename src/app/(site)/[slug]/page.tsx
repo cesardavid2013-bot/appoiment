@@ -20,6 +20,7 @@ import { getSlots } from "@/server/services/availability";
 import { getPublicBusiness, listReviews, ratingBreakdown, type PublicBusiness } from "@/server/services/catalog";
 import { isFavorite, recordView } from "@/server/services/engagement";
 import { recordClick } from "@/server/services/spotlight";
+import { requestNow } from "@/server/clock";
 
 type Props = PageProps<"/[slug]">;
 
@@ -51,8 +52,8 @@ function fmtClock(m: number) {
   return mm ? `${hh}:${String(mm).padStart(2, "0")} ${ap}` : `${hh} ${ap}`;
 }
 
-function openStatus(b: PublicBusiness) {
-  const now = instantToLocal(Date.now(), b.timezone);
+function openStatus(b: PublicBusiness, nowMs: number) {
+  const now = instantToLocal(nowMs, b.timezone);
   const today = b.weeklyHours.find((d) => d.weekday === now.weekday)?.windows ?? [];
   const current = today.find((w) => now.minute >= w.start && now.minute < w.end);
   if (current) return { open: true, label: `Open · until ${fmtClock(current.end)}` };
@@ -89,12 +90,13 @@ export default async function ProfilePage({ params, searchParams }: Props) {
   const b = await getPublicBusiness(slug, { allowDraftFor: viewer?.id });
   if (!b) notFound();
 
+  const now = requestNow();
   const topService = b.services[0];
   const [reviews, breakdown, fav, slots, qrSvg] = await Promise.all([
     listReviews(b.id, { limit: 6 }),
     ratingBreakdown(b.id),
     viewer ? isFavorite(viewer.id, b.id) : Promise.resolve(false),
-    topService ? getSlots({ serviceId: topService.id, memberId: "any", fromDate: todayIn(b.timezone), toDate: todayIn(b.timezone, new Date(Date.now() + 13 * 86_400_000)), optionIds: [], autoDefaults: true }).catch(() => null) : Promise.resolve(null),
+    topService ? getSlots({ serviceId: topService.id, memberId: "any", fromDate: todayIn(b.timezone), toDate: todayIn(b.timezone, new Date(now + 13 * 86_400_000)), optionIds: [], autoDefaults: true }).catch(() => null) : Promise.resolve(null),
     QRCode.toString(`${env.APP_URL}/${b.slug}`, { type: "svg", margin: 1, color: { dark: "#1a1814", light: "#ffffff" } }),
   ]);
   if (viewer) after(() => recordView(viewer.id, b.id).catch(() => undefined));
@@ -107,17 +109,17 @@ export default async function ProfilePage({ params, searchParams }: Props) {
     if (!last || new Date(s.start).getTime() - new Date(last.start).getTime() >= 30 * 60_000) nextSlots.push(s);
     if (nextSlots.length === 6) break;
   }
-  const status = openStatus(b);
+  const status = openStatus(b, now);
   const primary = b.locations.find((l) => l.isPrimary) ?? b.locations[0];
   const physical = b.locations.filter((l) => l.kind === "physical");
   const mobile = b.locations.find((l) => l.kind === "mobile");
   const virtual = b.locations.some((l) => l.kind === "virtual");
   const sections = [...new Set(b.services.map((s) => s.menuSection ?? ""))];
   const portfolio = b.portfolio.map((p) => ({ ...p, media: p.media!, serviceName: b.services.find((s) => s.id === p.serviceId)?.name ?? null }));
-  const todayWeekday = instantToLocal(Date.now(), b.timezone).weekday;
+  const todayWeekday = instantToLocal(now, b.timezone).weekday;
   const isOwnerPreview = b.status !== "active";
   const shareUrl = `${env.APP_URL}/${b.slug}`;
-  const dayLabel = nextDay ? (nextDay.date === todayIn(b.timezone) ? "Today" : nextDay.date === localDateKey(new Date(Date.now() + 86_400_000), b.timezone) ? "Tomorrow" : new Intl.DateTimeFormat("en-US", { weekday: "long", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(nextDay.date))) : null;
+  const dayLabel = nextDay ? (nextDay.date === todayIn(b.timezone) ? "Today" : nextDay.date === localDateKey(new Date(now + 86_400_000), b.timezone) ? "Tomorrow" : new Intl.DateTimeFormat("en-US", { weekday: "long", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(nextDay.date))) : null;
 
   const nav = [
     { id: "services", label: "Services" },
@@ -219,7 +221,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                 Services
               </h2>
               {b.services.length === 0 ? (
-                <p className="mt-4 text-sm text-ink-3">This business hasn't published services yet.</p>
+                <p className="mt-4 text-sm text-ink-3">This business hasn’t published services yet.</p>
               ) : (
                 sections.map((section) => (
                   <div key={section || "default"} className="mt-6">
@@ -461,7 +463,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                     <div className="rounded-xl border border-line bg-surface p-5">
                       <p className="text-[15px] font-medium text-ink">Comes to you</p>
                       <p className="mt-1 text-sm leading-relaxed text-ink-3">
-                        Based in {mobile.city}. Travels up to {mobile.serviceRadiusKm} km — you'll add your address when booking.
+                        Based in {mobile.city}. Travels up to {mobile.serviceRadiusKm} km — you’ll add your address when booking.
                       </p>
                     </div>
                   )}
@@ -514,7 +516,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                   </ul>
                 </>
               ) : (
-                <p className="text-sm text-ink-3">This business isn't taking bookings yet.</p>
+                <p className="text-sm text-ink-3">This business isn’t taking bookings yet.</p>
               )}
             </div>
           </aside>

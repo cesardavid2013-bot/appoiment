@@ -40,7 +40,7 @@ export default async function HomePage() {
           <h1 className="font-display text-[44px] leading-[1.02] tracking-[-0.02em] text-ink text-balance sm:text-6xl lg:text-[72px]">
             Book the people who make your week better.
           </h1>
-          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-ink-3 text-pretty">Real openings, upfront prices and reviews from verified visits. Pick a time and you're booked.</p>
+          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-ink-3 text-pretty">Real openings, upfront prices and reviews from verified visits. Pick a time and you’re booked.</p>
           <div className="mt-8">
             <HeroSearch initialLocation={loc} />
           </div>

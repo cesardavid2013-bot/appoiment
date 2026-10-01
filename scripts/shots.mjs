@@ -17,8 +17,18 @@ async function ctxFor(device, login) {
       : { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 },
   );
   if (login) {
-    const res = await ctx.request.post(`${base}/api/auth/login`, { data: { email: accounts[login], password: "kept-demo-2026" }, headers: { origin: base } });
-    if (!res.ok()) console.error("login failed", login, await res.text());
+    // Reuse a saved session per account so repeated runs don't trip the login rate limiter.
+    const statePath = `/tmp/claude-0/.auth-${login}-${new URL(base).port}.json`;
+    let ok = false;
+    if (fs.existsSync(statePath)) {
+      await ctx.addCookies(JSON.parse(fs.readFileSync(statePath, "utf8")).cookies);
+      ok = (await ctx.request.get(`${base}/api/me/badges`)).ok();
+    }
+    if (!ok) {
+      const res = await ctx.request.post(`${base}/api/auth/login`, { data: { email: accounts[login], password: "kept-demo-2026" }, headers: { origin: base } });
+      if (!res.ok()) console.error("login failed", login, await res.text());
+      else fs.writeFileSync(statePath, JSON.stringify(await ctx.storageState()));
+    }
   }
   contexts[key] = ctx;
   return ctx;

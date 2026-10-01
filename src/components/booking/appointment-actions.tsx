@@ -14,6 +14,7 @@ import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { fmtDateLong, fmtTime } from "@/lib/format";
 import { SlotPicker } from "./slot-picker";
+import { useNow } from "@/lib/use-now";
 
 const StripeCheckout = dynamic(() => import("./stripe-checkout"), { ssr: false });
 
@@ -60,7 +61,8 @@ export function AppointmentActions({
   const [moveError, setMoveError] = useState<string | null>(null);
   const [checkout, setCheckout] = useState<{ clientSecret: string; publishableKey: string } | null>(null);
   const [paying, setPaying] = useState(false);
-  const upcoming = ["confirmed", "requested", "pending_payment", "checked_in"].includes(a.status) && new Date(a.startsAt).getTime() > Date.now() - 3600_000;
+  const now = useNow();
+  const upcoming = ["confirmed", "requested", "pending_payment", "checked_in"].includes(a.status) && new Date(a.startsAt).getTime() > now - 3600_000;
 
   async function doCancel() {
     setCancelling(true);

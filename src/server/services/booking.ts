@@ -95,7 +95,7 @@ async function customerHistory(exec: Executor, businessId: string, userId: strin
   return { priorVisits: bc ? bc.appointments - bc.cancelled : 0, redemptions };
 }
 
-function quoteFor(svc: BookableService, selected: SelectedOption[], memberId: string | null, promo: PromotionInput | null): Quote {
+export function quoteFor(svc: BookableService, selected: SelectedOption[], memberId: string | null, promo: PromotionInput | null): Quote {
   const staff = memberId ? svc.staff.find((s) => s.memberId === memberId) : null;
   return computeQuote({
     currency: svc.business.currency,
@@ -189,7 +189,7 @@ async function loadIntake(svc: BookableService, raw: Record<string, unknown>): P
   return res.answers;
 }
 
-function buildSnapshot(svc: BookableService, selected: SelectedOption[], memberId: string, loc: BookableService["locations"][number] | null, quote: Quote, durationMinutes: number): AppointmentSnapshot {
+export function buildSnapshot(svc: BookableService, selected: SelectedOption[], memberId: string, loc: BookableService["locations"][number] | null, quote: Quote, durationMinutes: number): AppointmentSnapshot {
   const member = svc.staff.find((s) => s.memberId === memberId);
   const address =
     loc && loc.kind === "physical"

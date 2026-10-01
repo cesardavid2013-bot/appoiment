@@ -204,7 +204,7 @@ export function ForgotForm() {
     return (
       <div>
         <h1 className="font-display text-[34px] leading-tight text-ink">Check your inbox</h1>
-        <p className="mt-2 text-[15px] leading-relaxed text-ink-3">If an account exists for {email}, you'll get a link to reset your password in the next few minutes. The link expires in 1 hour.</p>
+        <p className="mt-2 text-[15px] leading-relaxed text-ink-3">If an account exists for {email}, you’ll get a link to reset your password in the next few minutes. The link expires in 1 hour.</p>
         <Link href="/login" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
           Back to sign in
         </Link>
@@ -213,7 +213,7 @@ export function ForgotForm() {
   return (
     <div>
       <h1 className="font-display text-[34px] leading-tight text-ink">Reset your password</h1>
-      <p className="mt-1.5 text-[15px] text-ink-3">Enter your email and we'll send you a reset link.</p>
+      <p className="mt-1.5 text-[15px] text-ink-3">Enter your email and we’ll send you a reset link.</p>
       <form onSubmit={onSubmit} className="mt-7 space-y-4" noValidate>
         <FormError message={error} />
         <Field label="Email">{(p) => <Input {...p} type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />}</Field>
@@ -251,7 +251,7 @@ export function ResetForm({ token }: { token: string }) {
   return (
     <div>
       <h1 className="font-display text-[34px] leading-tight text-ink">Choose a new password</h1>
-      <p className="mt-1.5 text-[15px] text-ink-3">You'll be signed out on other devices.</p>
+      <p className="mt-1.5 text-[15px] text-ink-3">You’ll be signed out on other devices.</p>
       <form onSubmit={onSubmit} className="mt-7 space-y-4" noValidate>
         <FormError message={error} />
         <Field label="New password" hint="At least 8 characters.">
@@ -284,14 +284,14 @@ export function VerifyEmail({ token }: { token: string | null }) {
       {state === "done" ? (
         <>
           <h1 className="font-display text-[34px] leading-tight text-ink">Email confirmed</h1>
-          <p className="mt-2 text-[15px] text-ink-3">Thanks — you're all set.</p>
+          <p className="mt-2 text-[15px] text-ink-3">Thanks — you’re all set.</p>
           <Link href="/" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
             Continue to Kept
           </Link>
         </>
       ) : state === "error" ? (
         <>
-          <h1 className="font-display text-[34px] leading-tight text-ink">We couldn't confirm that</h1>
+          <h1 className="font-display text-[34px] leading-tight text-ink">We couldn’t confirm that</h1>
           <p className="mt-2 text-[15px] text-ink-3">{message}</p>
           <Link href="/account" className="mt-6 inline-block text-sm font-medium text-ink underline underline-offset-4">
             Go to your account
@@ -300,7 +300,7 @@ export function VerifyEmail({ token }: { token: string | null }) {
       ) : (
         <>
           <h1 className="font-display text-[34px] leading-tight text-ink">Confirm your email</h1>
-          <p className="mt-2 text-[15px] text-ink-3">One tap and you're done.</p>
+          <p className="mt-2 text-[15px] text-ink-3">One tap and you’re done.</p>
           {/* An explicit click prevents email scanners from consuming the link. */}
           <Button size="lg" className="mt-6 w-full" onClick={verify} loading={state === "loading"}>
             Confirm email

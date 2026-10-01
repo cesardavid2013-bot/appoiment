@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FormError } from "@/components/ui/field";
 import { Skeleton } from "@/components/ui/misc";
 import { addDaysIso, todayIn } from "@/domain/time";
@@ -22,6 +22,7 @@ export function SlotPicker({
   value,
   onChange,
   exclude,
+  endpoint = "/api/slots",
 }: {
   serviceId: string;
   memberId: string;
@@ -32,31 +33,30 @@ export function SlotPicker({
   onChange: (start: string) => void;
   /** Hide this start (e.g. the appointment's current time). */
   exclude?: string;
+  endpoint?: string;
 }) {
   const today = todayIn(timezone);
   const [from, setFrom] = useState(today);
   const to = addDaysIso(from, 6);
   const [date, setDate] = useState<string | null>(null);
   const q = useQuery({
-    queryKey: ["slots-picker", serviceId, memberId, locationId, optionIds.join(","), from],
+    queryKey: ["slots-picker", endpoint, serviceId, memberId, locationId, optionIds.join(","), from],
     queryFn: ({ signal }) => {
       const p = new URLSearchParams({ serviceId, memberId, from, to });
       if (locationId) p.set("locationId", locationId);
       optionIds.forEach((o) => p.append("options", o));
-      return api<SlotsResponse>(`/api/slots?${p}`, { signal });
+      return api<SlotsResponse>(`${endpoint}?${p}`, { signal });
     },
   });
-  useEffect(() => {
-    if (!q.data) return;
-    if (!date || date < from || date > to) setDate(q.data.days.find((d) => d.slots.length)?.date ?? from);
-  }, [q.data, date, from, to]);
   const days = Array.from({ length: 7 }, (_, i) => addDaysIso(from, i));
-  const slots = (q.data?.days.find((d) => d.date === date)?.slots ?? []).filter((s) => s.start !== exclude);
+  // Default to the first day with openings in the visible week.
+  const activeDate = date && date >= from && date <= to ? date : (q.data?.days.find((d) => d.slots.length)?.date ?? from);
+  const slots = (q.data?.days.find((d) => d.date === activeDate)?.slots ?? []).filter((s) => s.start !== exclude);
 
   return (
     <div>
       <div className="mb-3 flex items-center justify-between">
-        <span className="text-sm font-medium text-ink">{new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" }).format(new Date(`${date ?? from}T12:00:00Z`))}</span>
+        <span className="text-sm font-medium text-ink">{new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" }).format(new Date(`${activeDate}T12:00:00Z`))}</span>
         <div className="flex gap-1">
           <button type="button" disabled={from <= today} onClick={() => setFrom(addDaysIso(from, -7) < today ? today : addDaysIso(from, -7))} className="flex size-8 items-center justify-center rounded-md border border-line disabled:opacity-40" aria-label="Previous week">
             <ChevronLeft className="size-4" />
@@ -75,8 +75,8 @@ export function SlotPicker({
               key={d}
               type="button"
               onClick={() => setDate(d)}
-              aria-pressed={date === d}
-              className={cn("flex h-14 flex-col items-center justify-center rounded-md border text-xs", date === d ? "border-ink bg-ink text-bg" : has ? "border-line bg-surface text-ink" : "border-transparent text-ink-3")}
+              aria-pressed={activeDate === d}
+              className={cn("flex h-14 flex-col items-center justify-center rounded-md border text-xs", activeDate === d ? "border-ink bg-ink text-bg" : has ? "border-line bg-surface text-ink" : "border-transparent text-ink-3")}
             >
               <span className="uppercase">{new Intl.DateTimeFormat("en-US", { weekday: "narrow", timeZone: "UTC" }).format(dt)}</span>
               <span className="text-[15px] font-semibold">{dt.getUTCDate()}</span>

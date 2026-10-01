@@ -111,33 +111,47 @@ export const profileSchema = z.object({
   timezone: zTz.optional(),
 });
 
-export async function updateProfile(m: Membership, actorUserId: string, input: z.infer<typeof profileSchema>) {
-  const social: Record<string, string> = {};
-  for (const [k, v] of Object.entries(input.socialLinks)) if (v) social[k] = v.replace(/^@/, "").replace(/^https?:\/\/[^/]+\//, "");
-  await db
-    .update(businesses)
-    .set({
-      name: input.name,
-      tagline: input.tagline,
-      about: input.about,
-      primaryCategoryId: input.primaryCategoryId ?? null,
-      contactEmail: input.contactEmail ?? null,
-      contactPhone: input.contactPhone,
-      website: input.website ?? null,
-      socialLinks: social,
-      languages: input.languages,
-      amenities: input.amenities,
-      yearsExperience: input.yearsExperience ?? null,
-      ...(input.logoMediaId !== undefined ? { logoMediaId: input.logoMediaId } : {}),
-      ...(input.coverMediaId !== undefined ? { coverMediaId: input.coverMediaId } : {}),
-      ...(input.timezone ? { timezone: input.timezone } : {}),
-    })
-    .where(eq(businesses.id, m.businessId));
-  if (m.businessKind === "individual") {
+/** Patch semantics: only fields present in the input change. */
+export const profilePatchSchema = profileSchema.partial().extend({
+  // `.partial()` keeps `.default()` values, which would wipe these on partial saves.
+  socialLinks: z.partialRecord(z.enum(["instagram", "tiktok", "facebook", "youtube", "x", "linkedin"]), z.string().trim().max(100)).optional(),
+  languages: z.array(z.string().trim().min(1).max(30)).max(10).optional(),
+  amenities: z.array(z.string().trim().min(1).max(40)).max(20).optional(),
+});
+
+export async function updateProfile(m: Membership, actorUserId: string, input: z.infer<typeof profilePatchSchema>) {
+  const set: Partial<typeof businesses.$inferInsert> = {};
+  if (input.name !== undefined) set.name = input.name;
+  if (input.tagline !== undefined) set.tagline = input.tagline;
+  if (input.about !== undefined) set.about = input.about;
+  if (input.primaryCategoryId !== undefined) set.primaryCategoryId = input.primaryCategoryId ?? null;
+  if (input.contactEmail !== undefined) set.contactEmail = input.contactEmail ?? null;
+  if (input.contactPhone !== undefined) set.contactPhone = input.contactPhone;
+  if (input.website !== undefined) set.website = input.website ?? null;
+  if (input.socialLinks !== undefined) {
+    const social: Record<string, string> = {};
+    for (const [k, v] of Object.entries(input.socialLinks)) if (v) social[k] = v.replace(/^@/, "").replace(/^https?:\/\/[^/]+\//, "");
+    set.socialLinks = social;
+  }
+  if (input.languages !== undefined) set.languages = input.languages;
+  if (input.amenities !== undefined) set.amenities = input.amenities;
+  if (input.yearsExperience !== undefined) set.yearsExperience = input.yearsExperience ?? null;
+  if (input.logoMediaId !== undefined) set.logoMediaId = input.logoMediaId;
+  if (input.coverMediaId !== undefined) set.coverMediaId = input.coverMediaId;
+  if (input.timezone !== undefined) set.timezone = input.timezone;
+  for (const key of ["logoMediaId", "coverMediaId"] as const) {
+    const v = set[key];
+    if (v) {
+      const { assertMediaOwned } = await import("./media");
+      await assertMediaOwned(v, { businessId: m.businessId });
+    }
+  }
+  if (Object.keys(set).length) await db.update(businesses).set(set).where(eq(businesses.id, m.businessId));
+  if (m.businessKind === "individual" && input.name) {
     await db.update(businessMembers).set({ displayName: input.name }).where(eq(businessMembers.id, m.memberId));
   }
   await refreshSearchIndex(m.businessId);
-  await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "business.profile_updated", targetType: "business", targetId: m.businessId });
+  await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "business.profile_updated", targetType: "business", targetId: m.businessId, metadata: { fields: Object.keys(set) } });
 }
 
 export const bookingRulesSchema = z.object({
@@ -161,16 +175,14 @@ export const policiesSchema = z.object({
   taxLabel: zOptText(40),
 });
 
-export async function updateBookingRules(m: Membership, actorUserId: string, input: z.infer<typeof bookingRulesSchema>) {
-  await db
-    .update(businesses)
-    .set({ ...input, reminderOffsetsMinutes: [...new Set(input.reminderOffsetsMinutes)].sort((a, b) => b - a) })
-    .where(eq(businesses.id, m.businessId));
+export async function updateBookingRules(m: Membership, actorUserId: string, input: Partial<z.infer<typeof bookingRulesSchema>>) {
+  const set = { ...input, ...(input.reminderOffsetsMinutes ? { reminderOffsetsMinutes: [...new Set(input.reminderOffsetsMinutes)].sort((a, b) => b - a) } : {}) };
+  if (Object.keys(set).length) await db.update(businesses).set(set).where(eq(businesses.id, m.businessId));
   await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "business.booking_rules_updated", metadata: input });
 }
 
-export async function updatePolicies(m: Membership, actorUserId: string, input: z.infer<typeof policiesSchema>) {
-  await db.update(businesses).set(input).where(eq(businesses.id, m.businessId));
+export async function updatePolicies(m: Membership, actorUserId: string, input: Partial<z.infer<typeof policiesSchema>>) {
+  if (Object.keys(input).length) await db.update(businesses).set(input).where(eq(businesses.id, m.businessId));
   await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "business.policies_updated", metadata: input });
 }
 

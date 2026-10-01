@@ -75,11 +75,10 @@ export function BookingFlow({
   const [detail, setDetail] = useState<BookingServiceDetail | null>(initialDetail);
   const [loadingService, setLoadingService] = useState(false);
   const [optionIds, setOptionIds] = useState<string[]>(() => defaultOptions(initialDetail));
-  const [memberId, setMemberId] = useState<string>("any");
+  const [memberChoice, setMemberChoice] = useState<string>("any");
   const [locationId, setLocationId] = useState<string | null>(null);
-  const [date, setDate] = useState<string | null>(initialDate ?? (initialStart ? localDateKey(initialStart, b.timezone) : null));
-  const [start, setStart] = useState<string | null>(initialStart);
-  const [preselectMissed, setPreselectMissed] = useState(false);
+  const [dateChoice, setDate] = useState<string | null>(initialDate ?? (initialStart ? localDateKey(initialStart, b.timezone) : null));
+  const [startChoice, setStart] = useState<string | null>(initialStart);
   const [intake, setIntake] = useState<Record<string, unknown>>({});
   const [note, setNote] = useState("");
   const [address, setAddress] = useState("");
@@ -95,10 +94,6 @@ export function BookingFlow({
 
   const service = detail ? b.services.find((s) => s.id === detail.id) ?? null : null;
 
-  // Any change to what is being booked invalidates the previous submit attempt.
-  useEffect(() => {
-    idemKey.current = newIdempotencyKey();
-  }, [detail?.id, optionIds, memberId, locationId, start, promoCode]);
 
   /* ── Derived: locations, staff eligibility, selection ── */
   const serviceLocations = useMemo(() => {
@@ -124,9 +119,8 @@ export function BookingFlow({
     return b.team.filter((t) => ids.includes(t.id));
   }, [detail, effectiveLocationId, selection, b.team]);
 
-  useEffect(() => {
-    if (memberId !== "any" && !eligibleStaff.some((s) => s.id === memberId)) setMemberId(b.allowAnyStaff || eligibleStaff.length !== 1 ? "any" : eligibleStaff[0]?.id ?? "any");
-  }, [eligibleStaff, memberId, b.allowAnyStaff]);
+  // A chosen professional who can't do the current options/location falls back to "any".
+  const memberId = memberChoice !== "any" && !eligibleStaff.some((s) => s.id === memberChoice) ? (b.allowAnyStaff || eligibleStaff.length !== 1 ? "any" : (eligibleStaff[0]?.id ?? "any")) : memberChoice;
 
   const staffPick = memberId === "any" && !b.allowAnyStaff && eligibleStaff.length > 1 ? null : memberId;
 
@@ -206,7 +200,7 @@ export function BookingFlow({
   }
 
   /* ── Time ── */
-  const [windowStart, setWindowStart] = useState(() => (date && date > todayIn(b.timezone) ? date : todayIn(b.timezone)));
+  const [windowStart, setWindowStart] = useState(() => (dateChoice && dateChoice > todayIn(b.timezone) ? dateChoice : todayIn(b.timezone)));
   const windowEnd = addDaysIso(windowStart, 13);
   const slotsKey = ["slots", detail?.id, staffPick, effectiveLocationId, optionIds.slice().sort().join(","), windowStart] as const;
   const slotsQuery = useQuery({
@@ -223,27 +217,19 @@ export function BookingFlow({
   });
   const tz = slotsQuery.data?.timezone ?? effectiveLocation?.timezone ?? b.timezone;
   const days = slotsQuery.data?.days ?? [];
+  // Default the date to the first day with openings.
+  const date = dateChoice ?? (slotsQuery.data ? (days.find((d) => d.slots.length)?.date ?? windowStart) : null);
   const daySlots = days.find((d) => d.date === date)?.slots ?? [];
 
-  // Keep the selected time honest: if it disappears from availability, clear it.
-  useEffect(() => {
-    if (!slotsQuery.data || !start) return;
-    const key = localDateKey(start, tz);
-    if (key < windowStart || key > windowEnd) return;
-    const still = slotsQuery.data.days.some((d) => d.slots.some((s) => s.start === start));
-    if (!still) {
-      setStart(null);
-      if (initialStart && start === initialStart) setPreselectMissed(true);
-    }
-  }, [slotsQuery.data, start, tz, windowStart, windowEnd, initialStart]);
-
-  // Default the date to the first day with openings.
-  useEffect(() => {
-    if (!slotsQuery.data || date) return;
-    const first = slotsQuery.data.days.find((d) => d.slots.length);
-    if (first) setDate(first.date);
-    else setDate(windowStart);
-  }, [slotsQuery.data, date, windowStart]);
+  // Keep the selected time honest: a time that vanished from availability is no longer selected.
+  const startStillOpen = (() => {
+    if (!startChoice || !slotsQuery.data) return true;
+    const key = localDateKey(startChoice, tz);
+    if (key < windowStart || key > windowEnd) return true;
+    return slotsQuery.data.days.some((d) => d.slots.some((s) => s.start === startChoice));
+  })();
+  const start = startStillOpen ? startChoice : null;
+  const preselectMissed = Boolean(initialStart && startChoice === initialStart && !startStillOpen);
 
   /* ── Quote (authoritative, from the server) ── */
   const quoteQuery = useQuery({
@@ -252,12 +238,15 @@ export function BookingFlow({
     queryFn: () =>
       api<QuoteResponse>("/api/quote", { body: { serviceId: detail!.id, memberId, locationId: effectiveLocationId, optionIds, promoCode } }),
   });
+  // A code the server rejects is shown as an error and never sent with the booking.
+  const promoRejected = Boolean(promoCode && quoteQuery.data?.promoError);
+  const appliedPromo = promoRejected ? null : promoCode;
+  const promoError = fieldErrors.promoCode || (promoRejected ? quoteQuery.data!.promoError : null);
+
+  // Any change to what is being booked invalidates the previous submit attempt.
   useEffect(() => {
-    if (quoteQuery.data?.promoError && promoCode) {
-      setFieldErrors((f) => ({ ...f, promoCode: quoteQuery.data!.promoError! }));
-      setPromoCode(null);
-    }
-  }, [quoteQuery.data, promoCode]);
+    idemKey.current = newIdempotencyKey();
+  }, [detail?.id, optionIds, memberId, locationId, start, appliedPromo]);
 
   /* ── Submit ── */
   async function submit() {
@@ -278,7 +267,7 @@ export function BookingFlow({
           ageConfirmed: detail.minAge ? ageConfirmed : undefined,
           customerNote: note.trim() || null,
           serviceAddress: effectiveLocation?.kind === "mobile" ? address.trim() : null,
-          promoCode,
+          promoCode: appliedPromo,
           idempotencyKey: idemKey.current,
           source: document.referrer.includes(window.location.host) ? "marketplace" : "direct_link",
         },
@@ -425,7 +414,7 @@ export function BookingFlow({
                   <legend className="mb-3 text-[17px] font-semibold text-ink">With</legend>
                   <div className="grid gap-2 sm:grid-cols-2">
                     {b.allowAnyStaff && (
-                      <ChoiceCard selected={memberId === "any"} onClick={() => { setMemberId("any"); setStart(null); }} title="Any available professional" description="Most openings — we'll match you with whoever is free." />
+                      <ChoiceCard selected={memberId === "any"} onClick={() => { setMemberChoice("any"); setStart(null); }} title="Any available professional" description="Most openings — we'll match you with whoever is free." />
                     )}
                     {eligibleStaff.map((s) => {
                       const st = detail.staff.find((x) => x.memberId === s.id);
@@ -433,7 +422,7 @@ export function BookingFlow({
                         <ChoiceCard
                           key={s.id}
                           selected={memberId === s.id}
-                          onClick={() => { setMemberId(s.id); setStart(null); }}
+                          onClick={() => { setMemberChoice(s.id); setStart(null); }}
                           title={
                             <span className="flex items-center gap-2.5">
                               <Avatar name={s.name} media={s.avatar} size={28} />
@@ -464,7 +453,7 @@ export function BookingFlow({
               setDate={(d) => { setDate(d); }}
               slots={daySlots}
               start={start}
-              setStart={(s) => { setStart(s); setPreselectMissed(false); }}
+              setStart={(s) => setStart(s)}
               preselectMissed={preselectMissed}
               showStaff={showStaffInfo && memberId === "any"}
               team={b.team}
@@ -542,10 +531,10 @@ export function BookingFlow({
               <PriceBreakdown quoteQuery={quoteQuery} currency={b.currency} />
 
               <div>
-                {promoCode ? (
+                {appliedPromo ? (
                   <div className="flex items-center justify-between rounded-md border border-accent/30 bg-accent-soft px-3.5 py-2.5 text-sm">
                     <span className="inline-flex items-center gap-2 font-medium text-accent-text">
-                      <Tag className="size-4" /> {promoCode} applied
+                      <Tag className="size-4" /> {appliedPromo} {quoteQuery.isFetching ? "…" : "applied"}
                     </span>
                     <button type="button" onClick={() => setPromoCode(null)} className="text-accent-text underline underline-offset-2">
                       Remove
@@ -566,7 +555,7 @@ export function BookingFlow({
                     </Button>
                   </form>
                 )}
-                {fieldErrors.promoCode && <p className="mt-1.5 text-[13px] text-danger">{fieldErrors.promoCode}</p>}
+                {promoError && <p className="mt-1.5 text-[13px] text-danger">{promoError}</p>}
               </div>
 
               <section className="rounded-lg bg-surface-2 p-4 text-sm leading-relaxed text-ink-2">
@@ -808,7 +797,7 @@ function TimeStep(p: {
     <div>
       {p.preselectMissed && (
         <div className="mb-5 rounded-md border border-warn/25 bg-warn-soft px-3.5 py-3 text-sm text-warn" role="status">
-          The time you picked isn't available with these choices anymore. Here are the closest openings.
+          The time you picked isn’t available with these choices anymore. Here are the closest openings.
         </div>
       )}
       <div className="mb-4 flex items-center justify-between">

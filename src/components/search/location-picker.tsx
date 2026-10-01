@@ -19,13 +19,16 @@ export function LocationPicker({ value, onChange, className, compact }: { value:
   const [locating, setLocating] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => setText(value?.label ?? ""), [value?.label]);
+  // Keep the input in sync when the chosen location changes from outside.
+  const [prevLabel, setPrevLabel] = useState(value?.label);
+  if (value?.label !== prevLabel) {
+    setPrevLabel(value?.label);
+    setText(value?.label ?? "");
+  }
+  const searching = open && text.trim().length >= 2 && text !== value?.label;
 
   useEffect(() => {
-    if (!open || text.trim().length < 2 || text === value?.label) {
-      setPlaces([]);
-      return;
-    }
+    if (!searching) return;
     const ctrl = new AbortController();
     const t = setTimeout(() => {
       api<SavedLocation[]>(`/api/places?q=${encodeURIComponent(text.trim())}`, { signal: ctrl.signal })
@@ -36,7 +39,7 @@ export function LocationPicker({ value, onChange, className, compact }: { value:
       clearTimeout(t);
       ctrl.abort();
     };
-  }, [text, open, value?.label]);
+  }, [text, searching]);
 
   useEffect(() => {
     function onDoc(e: MouseEvent) {
@@ -101,7 +104,7 @@ export function LocationPicker({ value, onChange, className, compact }: { value:
             <LocateFixed className="size-4 text-accent" />
             {locating ? "Finding you…" : "Use my current location"}
           </button>
-          {places.map((p) => (
+          {(searching ? places : []).map((p) => (
             <button key={`${p.label}-${p.lat}`} type="button" onClick={() => choose(p)} className="flex w-full items-center gap-2.5 rounded-md px-3 py-2.5 text-left text-sm text-ink hover:bg-surface-2">
               <MapPin className="size-4 text-ink-3" />
               {p.label}
