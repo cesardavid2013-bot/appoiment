@@ -5,22 +5,27 @@ import { ClientsToolbar } from "@/components/pro/clients-toolbar";
 import { ButtonLink } from "@/components/ui/button";
 import { EmptyState, PageHeader } from "@/components/ui/misc";
 import { formatMoney } from "@/domain/money";
+import { getI18n, getT } from "@/i18n/server";
 import { cn } from "@/lib/cn";
 import { fmtDate, fmtTime } from "@/lib/format";
 import { requestNow } from "@/server/clock";
 import { CLIENT_SEGMENTS, customerListMeta, customerQuerySchema, listCustomers, type ClientSegment } from "@/server/services/pro";
 import { proPage } from "@/server/pro-page";
 
-export const metadata: Metadata = { title: "Clients" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("pro");
+  return { title: t("nav.clients") };
+}
 
-function lastVisit(iso: Date | string | null, tz: string, now: number) {
+function lastVisit(iso: Date | string | null, tz: string, now: number, intl: string) {
   if (!iso) return null;
   const sameYear = fmtDate(iso, tz, { year: "numeric" }) === fmtDate(new Date(now), tz, { year: "numeric" });
-  return fmtDate(iso, tz, sameYear ? { month: "short", day: "numeric" } : { month: "short", day: "numeric", year: "numeric" });
+  return fmtDate(iso, tz, sameYear ? { month: "short", day: "numeric" } : { month: "short", day: "numeric", year: "numeric" }, intl);
 }
 
 export default async function ClientsPage({ searchParams }: PageProps<"/pro/clients">) {
   const { m } = await proPage("customers.view");
+  const [t, { intl }] = await Promise.all([getT("pro"), getI18n()]);
   const sp = await searchParams;
   const raw = Object.fromEntries(Object.entries(sp).map(([k, v]) => [k, Array.isArray(v) ? v[0] : v]).filter(([, v]) => v != null && v !== ""));
   const parsed = customerQuerySchema.safeParse(raw);
@@ -40,8 +45,8 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
   };
 
   const segments: { key: ClientSegment | null; label: string; count: number }[] = [
-    { key: null, label: "All", count: meta.counts.all },
-    ...(Object.keys(CLIENT_SEGMENTS) as ClientSegment[]).map((k) => ({ key: k, label: CLIENT_SEGMENTS[k], count: meta.counts[k] })),
+    { key: null, label: t("clients.segments.all"), count: meta.counts.all },
+    ...(Object.keys(CLIENT_SEGMENTS) as ClientSegment[]).map((k) => ({ key: k, label: t(`clients.segments.${k}`), count: meta.counts[k] })),
   ];
   const from = (list.page - 1) * list.pageSize + 1;
   const to = from + list.customers.length - 1;
@@ -50,11 +55,11 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:px-10 lg:pt-10">
       <PageHeader
-        title="Clients"
+        title={t("nav.clients")}
         description={
           meta.counts.all === 0
             ? undefined
-            : `${meta.counts.all.toLocaleString()} ${meta.counts.all === 1 ? "client" : "clients"}${scopedToOwn ? " you've served" : ""}${lapsed > 0 ? ` · ${lapsed} ${lapsed === 1 ? "hasn't" : "haven't"} been back in 60 days` : ""}`
+            : [t(scopedToOwn ? "clients.countOwn" : "clients.count", { count: meta.counts.all }), ...(lapsed > 0 ? [t("clients.lapsed", { count: lapsed })] : [])].join(" · ")
         }
       />
 
@@ -62,17 +67,13 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
         <EmptyState
           className="mt-8 rounded-xl border border-line"
           icon={<Users />}
-          title={scopedToOwn ? "No clients yet" : "Your client list starts with your first booking"}
-          description={
-            scopedToOwn
-              ? "Clients appear here once you've had an appointment with them."
-              : "Everyone who books online or that you add to the calendar gets a profile here, with their visits, notes and spend."
-          }
-          action={<ButtonLink href="/pro/calendar">Open calendar</ButtonLink>}
+          title={scopedToOwn ? t("clients.emptyOwnTitle") : t("clients.emptyTitle")}
+          description={scopedToOwn ? t("clients.emptyOwnBody") : t("clients.emptyBody")}
+          action={<ButtonLink href="/pro/calendar">{t("clients.openCalendar")}</ButtonLink>}
         />
       ) : (
         <>
-          <nav className="relative mt-6 border-b border-line" aria-label="Client segments">
+          <nav className="relative mt-6 border-b border-line" aria-label={t("clients.segmentsLabel")}>
             <ul className="-mb-px flex gap-6 overflow-x-auto scrollbar-none">
               {segments.map((s) => {
                 const active = (query.segment ?? null) === s.key;
@@ -84,7 +85,7 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
                       className={cn("flex h-11 items-center gap-1.5 border-b-2 text-sm font-medium transition-colors", active ? "border-ink text-ink" : "border-transparent text-ink-3 hover:text-ink")}
                     >
                       {s.label}
-                      <span className={cn("text-[12px] tabular", active ? "text-ink-2" : "text-ink-3")}>{s.count.toLocaleString()}</span>
+                      <span className={cn("text-[12px] tabular", active ? "text-ink-2" : "text-ink-3")}>{s.count.toLocaleString(intl)}</span>
                     </Link>
                   </li>
                 );
@@ -98,11 +99,11 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
 
           {list.customers.length === 0 ? (
             <div className="mt-6 rounded-xl border border-line px-6 py-12 text-center">
-              <p className="text-[15px] font-semibold text-ink">No clients match</p>
-              <p className="mt-1 text-sm text-ink-3">{query.q ? `Nobody matches “${query.q}”${query.tag || query.segment ? " with these filters" : ""}.` : "Nobody is in this view right now."}</p>
+              <p className="text-[15px] font-semibold text-ink">{t("clients.noMatchTitle")}</p>
+              <p className="mt-1 text-sm text-ink-3">{query.q ? t(query.tag || query.segment ? "clients.noMatchQueryFiltered" : "clients.noMatchQuery", { query: query.q }) : t("clients.noMatchView")}</p>
               {filtered && (
                 <ButtonLink href="/pro/clients" variant="secondary" size="sm" className="mt-4">
-                  Clear filters
+                  {t("clients.clearFilters")}
                 </ButtonLink>
               )}
             </div>
@@ -114,27 +115,27 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
                   <thead className="bg-surface-2/60 text-start text-[12px] font-medium text-ink-3">
                     <tr>
                       <th scope="col" className="px-4 py-2.5 font-medium">
-                        Client
+                        {t("clients.columns.client")}
                       </th>
                       <th scope="col" className="px-4 py-2.5 font-medium">
-                        Contact
+                        {t("clients.columns.contact")}
                       </th>
                       <th scope="col" className="px-4 py-2.5 text-end font-medium">
-                        Visits
+                        {t("clients.columns.visits")}
                       </th>
                       <th scope="col" className="px-4 py-2.5 text-end font-medium">
-                        No-shows
+                        {t("clients.columns.noShows")}
                       </th>
                       {list.canSeeSpend && (
                         <th scope="col" className="px-4 py-2.5 text-end font-medium">
-                          Spent
+                          {t("clients.columns.spent")}
                         </th>
                       )}
                       <th scope="col" className="px-4 py-2.5 font-medium">
-                        Last visit
+                        {t("clients.columns.lastVisit")}
                       </th>
                       <th scope="col" className="px-4 py-2.5 font-medium">
-                        Next visit
+                        {t("clients.columns.nextVisit")}
                       </th>
                     </tr>
                   </thead>
@@ -151,14 +152,14 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
                           <span className="block truncate">{c.phone ?? c.email ?? <span className="text-ink-3">—</span>}</span>
                           {c.phone && c.email && <span className="block truncate text-[12px] text-ink-3">{c.email}</span>}
                         </td>
-                        <td className="px-4 py-3 text-end text-ink tabular">{c.completedCount}</td>
-                        <td className={cn("px-4 py-3 text-end tabular", c.noShowCount > 0 ? "font-medium text-danger" : "text-ink-3")}>{c.noShowCount}</td>
-                        {list.canSeeSpend && <td className="px-4 py-3 text-end text-ink tabular">{formatMoney(c.totalSpentCents ?? 0, m.currency)}</td>}
-                        <td className="whitespace-nowrap px-4 py-3 text-ink-2 tabular">{lastVisit(c.lastVisitAt, tz, now) ?? <span className="text-ink-3">Never</span>}</td>
+                        <td className="px-4 py-3 text-end text-ink tabular">{c.completedCount.toLocaleString(intl)}</td>
+                        <td className={cn("px-4 py-3 text-end tabular", c.noShowCount > 0 ? "font-medium text-danger" : "text-ink-3")}>{c.noShowCount.toLocaleString(intl)}</td>
+                        {list.canSeeSpend && <td className="px-4 py-3 text-end text-ink tabular">{formatMoney(c.totalSpentCents ?? 0, m.currency, { intl })}</td>}
+                        <td className="whitespace-nowrap px-4 py-3 text-ink-2 tabular">{lastVisit(c.lastVisitAt, tz, now, intl) ?? <span className="text-ink-3">{t("clients.never")}</span>}</td>
                         <td className="whitespace-nowrap px-4 py-3 tabular">
                           {c.nextVisit ? (
                             <span className="text-ink">
-                              {fmtDate(c.nextVisit, tz, { weekday: "short", month: "short", day: "numeric" })} <span className="text-ink-3">{fmtTime(c.nextVisit, tz)}</span>
+                              {fmtDate(c.nextVisit, tz, { weekday: "short", month: "short", day: "numeric" }, intl)} <span className="text-ink-3">{fmtTime(c.nextVisit, tz, intl)}</span>
                             </span>
                           ) : (
                             <span className="text-ink-3">—</span>
@@ -178,14 +179,14 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-[15px] font-medium text-ink">{c.name}</span>
                         <span className="mt-0.5 block truncate text-[13px] text-ink-3">
-                          {c.completedCount} {c.completedCount === 1 ? "visit" : "visits"}
-                          {c.lastVisitAt && ` · last ${lastVisit(c.lastVisitAt, tz, now)}`}
-                          {c.noShowCount > 0 && <span className="text-danger"> · {c.noShowCount} no-show{c.noShowCount === 1 ? "" : "s"}</span>}
+                          {t("newAppt.visits", { count: c.completedCount })}
+                          {c.lastVisitAt && ` · ${t("clients.lastOn", { date: lastVisit(c.lastVisitAt, tz, now, intl) })}`}
+                          {c.noShowCount > 0 && <span className="text-danger"> · {t("clients.noShowCount", { count: c.noShowCount })}</span>}
                         </span>
                       </span>
                       <span className="shrink-0 text-end">
-                        {list.canSeeSpend && <span className="block text-sm font-medium text-ink tabular">{formatMoney(c.totalSpentCents ?? 0, m.currency)}</span>}
-                        {c.nextVisit && <span className="block text-[12px] text-accent-text tabular">Next {fmtDate(c.nextVisit, tz, { month: "short", day: "numeric" })}</span>}
+                        {list.canSeeSpend && <span className="block text-sm font-medium text-ink tabular">{formatMoney(c.totalSpentCents ?? 0, m.currency, { intl })}</span>}
+                        {c.nextVisit && <span className="block text-[12px] text-accent-text tabular">{t("clients.nextOn", { date: fmtDate(c.nextVisit, tz, { month: "short", day: "numeric" }, intl) })}</span>}
                       </span>
                       <ChevronRight className="size-4 shrink-0 text-ink-3" aria-hidden />
                     </Link>
@@ -195,18 +196,18 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
 
               <div className="mt-4 flex items-center justify-between gap-4 text-sm">
                 <p className="text-ink-3 tabular" aria-live="polite">
-                  {from.toLocaleString()}–{to.toLocaleString()} of {list.total.toLocaleString()}
+                  {t("clients.range", { from: from.toLocaleString(intl), to: to.toLocaleString(intl), total: list.total.toLocaleString(intl) })}
                 </p>
                 {(list.page > 1 || list.hasMore) && (
-                  <nav className="flex gap-2" aria-label="Pages">
+                  <nav className="flex gap-2" aria-label={t("clients.pages")}>
                     {list.page > 1 ? (
                       <ButtonLink href={href({ page: list.page - 1 > 1 ? list.page - 1 : null })} variant="secondary" size="sm" icon={<ChevronLeft className="size-4" />}>
-                        Previous
+                        {t("calendar.previous")}
                       </ButtonLink>
                     ) : null}
                     {list.hasMore ? (
                       <ButtonLink href={href({ page: list.page + 1 })} variant="secondary" size="sm">
-                        Next <ChevronRight className="size-4" />
+                        {t("calendar.next")} <ChevronRight className="size-4" />
                       </ButtonLink>
                     ) : null}
                   </nav>

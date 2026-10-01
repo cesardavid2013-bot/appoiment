@@ -5,20 +5,25 @@ import { notFound } from "next/navigation";
 import { BookClientButton, ClientNotes, ClientTags, EditClientButton, type ClientData } from "@/components/pro/client-profile";
 import { ButtonLink } from "@/components/ui/button";
 import { Badge } from "@/components/ui/misc";
-import { STATUS_LABELS, STATUS_TONE, UPCOMING_STATUSES } from "@/domain/appointment-state";
+import { STATUS_TONE, UPCOMING_STATUSES } from "@/domain/appointment-state";
 import { AppError } from "@/domain/errors";
 import { formatMoney } from "@/domain/money";
+import { getI18n, getT } from "@/i18n/server";
+import type { TFunction } from "@/i18n/translate";
 import { cn } from "@/lib/cn";
 import { fmtDate, fmtTime } from "@/lib/format";
 import { requestNow } from "@/server/clock";
 import { customerDetail, customerListMeta, listTeam, servicesForCalendar } from "@/server/services/pro";
 import { proPage } from "@/server/pro-page";
 
-export const metadata: Metadata = { title: "Client" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("pro");
+  return { title: t("client.title") };
+}
 
 type HistoryRow = Awaited<ReturnType<typeof customerDetail>>["history"][number];
 
-function AppointmentList({ rows, showStaff, thisYear }: { rows: HistoryRow[]; showStaff: boolean; thisYear: string }) {
+function AppointmentList({ rows, showStaff, thisYear, t, tRoot, intl }: { rows: HistoryRow[]; showStaff: boolean; thisYear: string; t: TFunction; tRoot: TFunction; intl: string }) {
   return (
     <ul className="divide-y divide-line border-y border-line">
       {rows.map((a) => (
@@ -26,19 +31,19 @@ function AppointmentList({ rows, showStaff, thisYear }: { rows: HistoryRow[]; sh
           <Link href={`/pro/appointments/${a.id}`} className="-mx-2 flex items-center gap-3 rounded-md px-2 py-3 transition-colors hover:bg-surface-2 sm:gap-4">
             <span className="w-[4.5rem] shrink-0 sm:w-24">
               <span className="block text-sm font-medium text-ink tabular">
-                {fmtDate(a.startsAt, a.timezone, fmtDate(a.startsAt, a.timezone, { year: "numeric" }) === thisYear ? { month: "short", day: "numeric" } : { month: "short", day: "numeric", year: "numeric" })}
+                {fmtDate(a.startsAt, a.timezone, fmtDate(a.startsAt, a.timezone, { year: "numeric" }) === thisYear ? { month: "short", day: "numeric" } : { month: "short", day: "numeric", year: "numeric" }, intl)}
               </span>
               <span className="block whitespace-nowrap text-[12px] text-ink-3 tabular">
-                {fmtDate(a.startsAt, a.timezone, { weekday: "short" })} {fmtTime(a.startsAt, a.timezone)}
+                {fmtDate(a.startsAt, a.timezone, { weekday: "short" }, intl)} {fmtTime(a.startsAt, a.timezone, intl)}
               </span>
             </span>
             <span className="min-w-0 flex-1">
               <span className="block truncate text-[15px] text-ink">{a.serviceName}</span>
-              {showStaff && a.memberName && <span className="block truncate text-[12px] text-ink-3">with {a.memberName}</span>}
+              {showStaff && a.memberName && <span className="block truncate text-[12px] text-ink-3">{t("client.withMember", { name: a.memberName })}</span>}
             </span>
-            <span className="hidden shrink-0 text-end text-sm text-ink-2 tabular sm:block">{formatMoney(a.totalCents, a.currency)}</span>
+            <span className="hidden shrink-0 text-end text-sm text-ink-2 tabular sm:block">{formatMoney(a.totalCents, a.currency, { intl })}</span>
             <Badge tone={STATUS_TONE[a.status]} className="shrink-0">
-              {STATUS_LABELS[a.status]}
+              {tRoot(`common.appointmentStatus.${a.status}`)}
             </Badge>
             <ChevronRight className="hidden size-4 shrink-0 text-ink-3 sm:block" aria-hidden />
           </Link>
@@ -51,6 +56,7 @@ function AppointmentList({ rows, showStaff, thisYear }: { rows: HistoryRow[]; sh
 export default async function ClientPage({ params }: PageProps<"/pro/clients/[id]">) {
   const { id } = await params;
   const { viewer, m } = await proPage("customers.view");
+  const [t, tRoot, { intl }] = await Promise.all([getT("pro"), getT(), getI18n()]);
   if (!/^[0-9a-f-]{36}$/i.test(id)) notFound();
   let d;
   try {
@@ -78,18 +84,18 @@ export default async function ClientPage({ params }: PageProps<"/pro/clients/[id
   const scopedToOwn = !(m.permissions.has("appointments.view_all") || m.permissions.has("appointments.manage_all"));
 
   const stats: [string, string, string?][] = [
-    ["Visits", String(c.completedCount)],
-    ...(d.canSeeSpend && c.totalSpentCents != null ? ([["Spent", formatMoney(c.totalSpentCents, m.currency)]] as [string, string][]) : []),
-    ["No-shows", String(c.noShowCount), c.noShowCount > 0 ? "text-danger" : undefined],
-    ["Cancellations", String(c.cancelledCount)],
-    ["Last visit", c.lastVisitAt ? fmtDate(c.lastVisitAt, tz, { month: "short", day: "numeric", year: "numeric" }) : "Never"],
-    ["Next visit", upcoming[0] ? `${fmtDate(upcoming[0].startsAt, upcoming[0].timezone, { month: "short", day: "numeric" })}, ${fmtTime(upcoming[0].startsAt, upcoming[0].timezone)}` : "Not booked"],
+    [t("clients.columns.visits"), c.completedCount.toLocaleString(intl)],
+    ...(d.canSeeSpend && c.totalSpentCents != null ? ([[t("clients.columns.spent"), formatMoney(c.totalSpentCents, m.currency, { intl })]] as [string, string][]) : []),
+    [t("clients.columns.noShows"), c.noShowCount.toLocaleString(intl), c.noShowCount > 0 ? "text-danger" : undefined],
+    [t("client.cancellations"), c.cancelledCount.toLocaleString(intl)],
+    [t("clients.columns.lastVisit"), c.lastVisitAt ? fmtDate(c.lastVisitAt, tz, { month: "short", day: "numeric", year: "numeric" }, intl) : t("clients.never")],
+    [t("clients.columns.nextVisit"), upcoming[0] ? fmtDate(upcoming[0].startsAt, upcoming[0].timezone, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }, intl) : t("client.notBooked")],
   ];
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-16 pt-6 sm:px-6 lg:px-10 lg:pt-8">
       <Link href="/pro/clients" className="inline-flex h-10 items-center gap-1.5 text-sm font-medium text-ink-3 hover:text-ink">
-        <ArrowLeft className="size-4" aria-hidden /> Clients
+        <ArrowLeft className="size-4" aria-hidden /> {t("nav.clients")}
       </Link>
 
       <header className="mt-3 flex flex-col gap-5 border-b border-line pb-6 sm:flex-row sm:items-end sm:justify-between">
@@ -108,23 +114,23 @@ export default async function ClientPage({ params }: PageProps<"/pro/clients/[id
                 <span className="truncate">{c.email}</span>
               </a>
             )}
-            {!c.phone && !c.email && <span className="text-ink-3">No contact details</span>}
+            {!c.phone && !c.email && <span className="text-ink-3">{t("client.noContact")}</span>}
           </div>
           <p className="mt-1.5 text-[13px] text-ink-3">
-            {c.userId ? "Books on Kept" : "Added by your team"} · client since {fmtDate(c.firstVisitAt ?? c.createdAt, tz, { month: "long", year: "numeric" })}
+            {c.userId ? t("client.booksOnKept") : t("client.addedByTeam")} · {t("client.since", { date: fmtDate(c.firstVisitAt ?? c.createdAt, tz, { month: "long", year: "numeric" }, intl) })}
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
           {canMessage && (
             <ButtonLink href={d.conversationId ? `/pro/messages/${d.conversationId}` : `/pro/messages/new?customer=${c.id}`} variant="secondary" icon={<MessageCircle className="size-4" />}>
-              Message
+              {t("appointment.message")}
             </ButtonLink>
           )}
           {canManage && <EditClientButton client={client} />}
           {canBook && activeServices.length > 0 ? (
             <BookClientButton client={client} services={activeServices} team={team.map((t) => ({ id: t.id, name: t.name }))} timezone={tz} canAssignOthers={m.permissions.has("appointments.manage_all")} selfMemberId={m.memberId} />
           ) : canBook ? (
-            <ButtonLink href="/pro/services/new">Add a service to book</ButtonLink>
+            <ButtonLink href="/pro/services/new">{t("client.addService")}</ButtonLink>
           ) : null}
         </div>
       </header>
@@ -142,16 +148,16 @@ export default async function ClientPage({ params }: PageProps<"/pro/clients/[id
         <div className="min-w-0 space-y-10">
           <section aria-labelledby="up-h">
             <h2 id="up-h" className="mb-3 text-[15px] font-semibold text-ink">
-              Upcoming
+              {t("client.upcoming")}
             </h2>
-            {upcoming.length ? <AppointmentList rows={upcoming} showStaff={team.length > 1} thisYear={thisYear} /> : <p className="text-sm text-ink-3">Nothing booked{canBook ? " — use “Book appointment” to add their next visit." : "."}</p>}
+            {upcoming.length ? <AppointmentList rows={upcoming} showStaff={team.length > 1} thisYear={thisYear} t={t} tRoot={tRoot} intl={intl} /> : <p className="text-sm text-ink-3">{canBook ? t("client.nothingBookedCanBook") : t("client.nothingBooked")}</p>}
           </section>
           <section aria-labelledby="hist-h">
             <h2 id="hist-h" className="mb-3 text-[15px] font-semibold text-ink">
-              History {past.length > 0 && <span className="font-normal text-ink-3 tabular">· {past.length}</span>}
+              {t("appointment.history")} {past.length > 0 && <span className="font-normal text-ink-3 tabular">· {past.length.toLocaleString(intl)}</span>}
             </h2>
-            {scopedToOwn && <p className="-mt-1 mb-3 text-[12px] text-ink-3">Showing appointments with you.</p>}
-            {past.length ? <AppointmentList rows={past} showStaff={team.length > 1} thisYear={thisYear} /> : <p className="text-sm text-ink-3">No past appointments.</p>}
+            {scopedToOwn && <p className="-mt-1 mb-3 text-[12px] text-ink-3">{t("client.scopedToOwn")}</p>}
+            {past.length ? <AppointmentList rows={past} showStaff={team.length > 1} thisYear={thisYear} t={t} tRoot={tRoot} intl={intl} /> : <p className="text-sm text-ink-3">{t("client.noPast")}</p>}
           </section>
         </div>
 
@@ -159,14 +165,14 @@ export default async function ClientPage({ params }: PageProps<"/pro/clients/[id
           {(c.preferences || canManage) && (
             <section aria-labelledby="pref-h">
               <h2 id="pref-h" className="text-[15px] font-semibold text-ink">
-                Preferences
+                {t("client.preferences")}
               </h2>
-              <p className={cn("mt-2 whitespace-pre-line text-sm leading-relaxed", c.preferences ? "text-ink-2" : "text-ink-3")}>{c.preferences || "Nothing saved. Use Edit to note allergies, favourite products or who they like to see."}</p>
+              <p className={cn("mt-2 whitespace-pre-line text-sm leading-relaxed", c.preferences ? "text-ink-2" : "text-ink-3")}>{c.preferences || t("client.preferencesEmpty")}</p>
             </section>
           )}
           <section aria-labelledby="tags-h">
             <h2 id="tags-h" className="mb-2.5 text-[15px] font-semibold text-ink">
-              Tags
+              {t("client.tags")}
             </h2>
             <ClientTags client={client} canEdit={canManage} suggestions={meta?.tags.map((t) => t.tag) ?? []} />
           </section>

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { BusinessHub } from "@/components/pro/business-hub";
+import { getT } from "@/i18n/server";
 import { listMemberships } from "@/server/authz";
 import { proPage } from "@/server/pro-page";
 
-export const metadata: Metadata = { title: "Business" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("pro");
+  return { title: t("nav.business") };
+}
 
 /** Mobile "Business" tab. On desktop the sidebar already lists all of this, but the page still works there. */
 export default async function BusinessHubPage() {
