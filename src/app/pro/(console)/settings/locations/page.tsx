@@ -2,15 +2,19 @@ import type { Metadata } from "next";
 import { LocationsManager, type ManagedLocation } from "@/components/pro/locations-manager";
 import { SettingsCard, SettingsShell } from "@/components/pro/settings-shell";
 import { entitlements } from "@/domain/plans";
+import { getT } from "@/i18n/server";
 import { features } from "@/server/env";
 import { proPage } from "@/server/pro-page";
 import { listLocations, locationUsage } from "@/server/services/locations";
 
-export const metadata: Metadata = { title: "Locations" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSettings");
+  return { title: t("locations.title") };
+}
 
 export default async function LocationsSettingsPage() {
   const { m } = await proPage("locations.manage");
-  const [rows, usage] = await Promise.all([listLocations(m.businessId), locationUsage(m.businessId)]);
+  const [rows, usage, t] = await Promise.all([listLocations(m.businessId), locationUsage(m.businessId), getT("proSettings")]);
   const plan = entitlements(m.plan);
   const locations: ManagedLocation[] = rows
     .sort((a, b) => Number(b.isPrimary) - Number(a.isPrimary))
@@ -35,23 +39,21 @@ export default async function LocationsSettingsPage() {
     }));
 
   return (
-    <SettingsShell title="Locations" description="Where clients book you: your shop, the area you travel to, or online. Each service and team member can be limited to some of them." perms={[...m.permissions]}>
+    <SettingsShell title={t("locations.title")} description={t("locations.description")} perms={[...m.permissions]}>
       <LocationsManager locations={locations} businessTimezone={m.timezone} maxLocations={plan.maxLocations} planLabel={plan.label} geocoding={features.geocoding} />
-      <SettingsCard id="privacy" title="What clients can see">
+      <SettingsCard id="privacy" title={t("locations.privacy.title")}>
         <dl className="space-y-3 text-sm leading-relaxed">
           <div>
-            <dt className="font-medium text-ink">At your place</dt>
-            <dd className="text-ink-3">The full address and a map, so clients can find you.</dd>
+            <dt className="font-medium text-ink">{t("locations.privacy.atPlace")}</dt>
+            <dd className="text-ink-3">{t("locations.privacy.atPlaceBody")}</dd>
           </div>
           <div>
-            <dt className="font-medium text-ink">Travelling to clients</dt>
-            <dd className="text-ink-3">
-              Only your city and how far you travel. If you work from home, your home address and exact pin are never shown — search places you within about 5 km. Clients give you their address when they book.
-            </dd>
+            <dt className="font-medium text-ink">{t("locations.privacy.travel")}</dt>
+            <dd className="text-ink-3">{t("locations.privacy.travelBody")}</dd>
           </div>
           <div>
-            <dt className="font-medium text-ink">Online</dt>
-            <dd className="text-ink-3">No address at all, just that sessions happen online.</dd>
+            <dt className="font-medium text-ink">{t("locations.privacy.online")}</dt>
+            <dd className="text-ink-3">{t("locations.privacy.onlineBody")}</dd>
           </div>
         </dl>
       </SettingsCard>
