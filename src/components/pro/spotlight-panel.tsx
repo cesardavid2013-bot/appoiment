@@ -96,8 +96,7 @@ export function SpotlightPanel({ current, past, categories, blockedReason, timez
                 )}
               </div>
               <p className="mt-1 text-sm text-ink-3">
-                {target(current)} · {range(current)} ·{" "}
-                <span className="text-ink-2">{daysLeft === 0 ? "ends today" : `${daysLeft} ${daysLeft === 1 ? "day" : "days"} left`}</span>
+                {target(current)} · {range(current)} · <span className="text-ink-2">{daysLeft === 0 ? "ends today" : `${daysLeft} ${daysLeft === 1 ? "day" : "days"} left`}</span>
               </p>
               {current.status === "paused" && <p className="mt-1 text-[13px] text-ink-3">Pausing doesn&apos;t extend the end date.</p>}
             </div>

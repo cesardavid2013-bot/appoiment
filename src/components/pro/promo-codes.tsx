@@ -97,7 +97,9 @@ export function PromoCodes({ items, services, currency }: { items: PromoRow[]; s
   async function toggle(p: PromoRow) {
     try {
       await api(`/api/pro/promotions/${p.id}`, { method: "PATCH", body: { isActive: !p.isActive } });
-      toast.success(p.isActive ? `${p.code} turned off` : `${p.code} turned back on`, { description: p.isActive ? "Customers can no longer apply it. Existing bookings keep their discount." : undefined });
+      toast.success(p.isActive ? `${p.code} turned off` : `${p.code} turned back on`, {
+        description: p.isActive ? "Customers can no longer apply it. Existing bookings keep their discount." : undefined,
+      });
       router.refresh();
     } catch (err) {
       toast.error((err as ApiError).message);
@@ -145,7 +147,10 @@ export function PromoCodes({ items, services, currency }: { items: PromoRow[]; s
       ) : (
         <ul className="divide-y divide-line rounded-lg border border-line bg-surface">
           {items.map((p) => (
-            <li key={p.id} className={cn("grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-3 gap-y-2 px-4 py-3.5 sm:grid-cols-[minmax(0,1fr)_110px_120px_auto] sm:items-center", !p.isActive && "opacity-75")}>
+            <li
+              key={p.id}
+              className={cn("grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-3 gap-y-2 px-4 py-3.5 sm:grid-cols-[minmax(0,1fr)_110px_120px_auto] sm:items-center", !p.isActive && "opacity-75")}
+            >
               <div className="min-w-0">
                 <div className="flex min-w-0 flex-wrap items-center gap-2">
                   <CopyCode code={p.code} />
@@ -168,7 +173,10 @@ export function PromoCodes({ items, services, currency }: { items: PromoRow[]; s
                 {p.discountCents > 0 && <p className="text-[12px] text-ink-3 tabular">{formatMoney(p.discountCents, currency)} given</p>}
               </div>
               <Menu>
-                <MenuTrigger className="col-start-2 row-start-1 -mr-2 -mt-1 flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink sm:col-start-4 sm:mr-0 sm:mt-0 sm:size-9" aria-label={`Actions for ${p.code}`}>
+                <MenuTrigger
+                  className="col-start-2 row-start-1 -mr-2 -mt-1 flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink sm:col-start-4 sm:mr-0 sm:mt-0 sm:size-9"
+                  aria-label={`Actions for ${p.code}`}
+                >
                   <MoreHorizontal className="size-4" />
                 </MenuTrigger>
                 <MenuContent>
@@ -291,7 +299,11 @@ function PromoDialog({ promo, services, currency, onClose }: { promo: PromoRow |
       open
       onOpenChange={(o) => !o && onClose()}
       title={promo ? `Edit ${promo.code}` : "New promo code"}
-      description={promo && promo.redemptionCount > 0 ? `Used ${promo.redemptionCount} ${promo.redemptionCount === 1 ? "time" : "times"}. Changes apply to future bookings only.` : "Customers enter the code at checkout. Discounts come off the service price before tax."}
+      description={
+        promo && promo.redemptionCount > 0
+          ? `Used ${promo.redemptionCount} ${promo.redemptionCount === 1 ? "time" : "times"}. Changes apply to future bookings only.`
+          : "Customers enter the code at checkout. Discounts come off the service price before tax."
+      }
       size="lg"
       locked={saving}
       footer={
@@ -309,7 +321,19 @@ function PromoDialog({ promo, services, currency, onClose }: { promo: PromoRow |
         <FormError message={error && !Object.keys(fields).length ? error : null} />
         <div className="grid gap-4 sm:grid-cols-2">
           <Field label="Code" hint="Letters, numbers and dashes. Not case-sensitive." error={fields.code}>
-            {(p) => <Input {...p} value={code} onChange={(e) => setCode(e.target.value.toUpperCase().replace(/\s+/g, ""))} maxLength={24} autoCapitalize="characters" autoComplete="off" spellCheck={false} placeholder="SPRING20" className="font-mono uppercase tracking-wide" />}
+            {(p) => (
+              <Input
+                {...p}
+                value={code}
+                onChange={(e) => setCode(e.target.value.toUpperCase().replace(/\s+/g, ""))}
+                maxLength={24}
+                autoCapitalize="characters"
+                autoComplete="off"
+                spellCheck={false}
+                placeholder="SPRING20"
+                className="font-mono uppercase tracking-wide"
+              />
+            )}
           </Field>
           <Field label="Name" hint="Shown at checkout next to the discount." error={fields.name}>
             {(p) => <Input {...p} value={name} onChange={(e) => setName(e.target.value)} maxLength={60} placeholder="Spring welcome" />}

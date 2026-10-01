@@ -45,8 +45,7 @@ export default async function PromotePage() {
               <div>
                 <dt className="font-medium text-ink-2">Where you appear</dt>
                 <dd>
-                  At the top of the first page of search and category results you already match — location and filters still apply. At most {MAX_PROMOTED_PER_SEARCH} promoted
-                  profiles per search.
+                  At the top of the first page of search and category results you already match — location and filters still apply. At most {MAX_PROMOTED_PER_SEARCH} promoted profiles per search.
                 </dd>
               </div>
               <div>
