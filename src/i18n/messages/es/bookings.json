@@ -27,7 +27,11 @@
       "cancelled": "No hay nada cancelado",
       "upcomingBody": "Cuando reserves, tus citas aparecerán aquí, con indicaciones para llegar, recordatorios y cambios de horario fáciles.",
       "findPro": "Buscar un profesional"
-    }
+    },
+    "nextUp": "Próxima · {when}",
+    "nextUpOn": "Próxima · {day}",
+    "details": "Detalles",
+    "directions": "Cómo llegar"
   },
   "detail": {
     "metaTitle": "Cita",

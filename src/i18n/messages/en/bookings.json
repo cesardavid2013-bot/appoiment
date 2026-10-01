@@ -27,7 +27,11 @@
       "cancelled": "Nothing cancelled",
       "upcomingBody": "When you book, your appointments show up here — with directions, reminders and easy rescheduling.",
       "findPro": "Find a professional"
-    }
+    },
+    "nextUp": "Next up · {when}",
+    "nextUpOn": "Next up · {day}",
+    "details": "Details",
+    "directions": "Directions"
   },
   "detail": {
     "metaTitle": "Appointment",
