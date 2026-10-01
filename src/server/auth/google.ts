@@ -2,7 +2,7 @@ import "server-only";
 import { Google, decodeIdToken, generateCodeVerifier, generateState } from "arctic";
 import { and, eq } from "drizzle-orm";
 import { db } from "../db/client";
-import { oauthAccounts, users } from "../db/schema";
+import { oauthAccounts, sessions, users } from "../db/schema";
 import { env, features } from "../env";
 
 export function googleClient(): Google | null {
@@ -27,9 +27,15 @@ export async function upsertGoogleUser(idToken: string): Promise<string> {
   return db.transaction(async (tx) => {
     let userId: string | undefined;
     if (email && claims.email_verified) {
-      const [existing] = await tx.select({ id: users.id }).from(users).where(eq(users.email, email));
+      const [existing] = await tx.select({ id: users.id, emailVerifiedAt: users.emailVerifiedAt }).from(users).where(eq(users.email, email));
       userId = existing?.id;
-      if (userId) await tx.update(users).set({ emailVerifiedAt: new Date() }).where(eq(users.id, userId));
+      if (existing && !existing.emailVerifiedAt) {
+        // Nobody proved they own this address before. Someone may have registered it to
+        // squat the account, so the password and every session they hold are revoked:
+        // the Google identity (the verified owner) takes over a clean account.
+        await tx.update(users).set({ emailVerifiedAt: new Date(), passwordHash: null }).where(eq(users.id, existing.id));
+        await tx.delete(sessions).where(eq(sessions.userId, existing.id));
+      }
     }
     if (!userId) {
       const [created] = await tx

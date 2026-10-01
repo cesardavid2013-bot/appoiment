@@ -56,7 +56,7 @@ export async function signup(input: z.infer<typeof signupSchema>) {
 export async function login(input: z.infer<typeof loginSchema>) {
   const ip = await ipHash();
   await rateLimit("login", ip);
-  await rateLimit("login", `email:${input.email}`);
+  await rateLimit("loginAccount", input.email);
   const [user] = await db
     .select({ id: users.id, passwordHash: users.passwordHash, status: users.status })
     .from(users)

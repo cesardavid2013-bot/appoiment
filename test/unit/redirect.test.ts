@@ -9,6 +9,12 @@ describe("safeNext", () => {
     ["//evil.com", "/"],
     ["/\\evil.com", "/"],
     ["/api/auth/logout", "/"],
+    ["/\t/evil.example", "/"],
+    ["/\u0009/evil.example", "/"],
+    ["/\r\n/evil.example", "/"],
+    ["/a\\b", "/"],
+    ["/%09/evil.example", "/%09/evil.example"],
+    ["/bookings#top", "/bookings#top"],
     [null, "/"],
   ])("%s → %s", (input, expected) => expect(safeNext(input as string | null)).toBe(expected));
 });

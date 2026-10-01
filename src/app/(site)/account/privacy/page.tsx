@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AccountShell } from "@/components/account/account-shell";
 import { DeleteAccountCard, ExportCard } from "@/components/account/privacy-settings";
+import { eq, sql } from "drizzle-orm";
+import { db } from "@/server/db/client";
+import { users } from "@/server/db/schema";
 import { deletionCheck } from "@/server/services/account";
 import { requireViewerPage } from "@/server/viewer";
 
@@ -9,7 +12,7 @@ export const metadata: Metadata = { title: "Privacy & data", robots: { index: fa
 
 export default async function PrivacyPage() {
   const viewer = await requireViewerPage("/account/privacy");
-  const check = await deletionCheck(viewer.id);
+  const [check, [cred]] = await Promise.all([deletionCheck(viewer.id), db.select({ hasPassword: sql<boolean>`${users.passwordHash} is not null` }).from(users).where(eq(users.id, viewer.id))]);
   return (
     <AccountShell
       title="Privacy & data"
@@ -25,7 +28,7 @@ export default async function PrivacyPage() {
     >
       <div className="space-y-6">
         <ExportCard />
-        <DeleteAccountCard blockingBusinesses={check.blockingBusinesses} upcomingCount={check.upcomingCount} />
+        <DeleteAccountCard blockingBusinesses={check.blockingBusinesses} upcomingCount={check.upcomingCount} hasPassword={Boolean(cred?.hasPassword)} />
       </div>
     </AccountShell>
   );

@@ -29,6 +29,13 @@
       "when": 1790814694070,
       "tag": "0003_spotlight",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1790819478650,
+      "tag": "0004_media_visibility",
+      "breakpoints": true
     }
   ]
 }

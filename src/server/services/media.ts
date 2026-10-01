@@ -4,7 +4,7 @@ import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { promisify } from "node:util";
-import { and, eq, inArray, isNull } from "drizzle-orm";
+import { and, eq, inArray, isNull, sql } from "drizzle-orm";
 import { fileTypeFromBuffer } from "file-type";
 import sharp from "sharp";
 import { AppError, notFound } from "@/domain/errors";
@@ -74,13 +74,13 @@ async function imageVariants(buf: Buffer, prefix: string): Promise<{ variants: M
     await storage.put(key, out.data, "image/webp");
     variants[`w${w}`] = { key, width: out.info.width, height: out.info.height, mime: "image/webp" };
   }
-  const tiny = await sharp(buf).rotate().resize({ width: 16 }).blur(1).webp({ quality: 40 }).toBuffer();
+  const tiny = await sharp(buf, { limitInputPixels: 60_000_000 }).rotate().resize({ width: 16 }).blur(1).webp({ quality: 40 }).toBuffer();
   return { variants, width, height, placeholder: `data:image/webp;base64,${tiny.toString("base64")}` };
 }
 
 async function probeDuration(file: string): Promise<number | null> {
   try {
-    const { stdout } = await run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", file], { timeout: 20_000 });
+    const { stdout } = await run("ffprobe", ["-v", "error", "-protocol_whitelist", "file", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", file], { timeout: 20_000 });
     const d = Number(stdout.trim());
     return Number.isFinite(d) ? d : null;
   } catch {
@@ -89,6 +89,40 @@ async function probeDuration(file: string): Promise<number | null> {
 }
 
 export type UploadPurpose = "portfolio" | "logo" | "cover" | "avatar" | "service" | "support" | "message" | "verification";
+
+/** Attachments that are only for the people in a conversation, ticket or review. */
+const PRIVATE_PURPOSES = new Set<UploadPurpose>(["support", "message", "verification"]);
+
+/** The media id embedded in a storage key ("b|u/<owner>/<uuid>-<rand>/<file>"). */
+export function mediaIdFromKey(key: string): string | null {
+  const m = /^[bu]\/[0-9a-f-]{36}\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})-/i.exec(key);
+  return m?.[1] ?? null;
+}
+
+/**
+ * Whether a viewer may download a stored file. Public media is anyone's; a
+ * private attachment only its uploader, the other side of the conversation or
+ * ticket it was sent in, platform staff, or the business it was uploaded for
+ * (verification documents need business.manage).
+ */
+export async function canViewMedia(row: { id: string; visibility: string; ownerUserId: string; businessId: string | null; deletedAt: Date | null }, viewer: { id: string; platformRole: string } | null) {
+  if (row.deletedAt) return false;
+  if (row.visibility === "public") return true;
+  if (!viewer) return false;
+  if (viewer.id === row.ownerUserId || viewer.platformRole === "admin" || viewer.platformRole === "support") return true;
+  const allowed = await db.execute<{ ok: boolean }>(sql`
+    select exists (
+      select 1 from messages m join conversations c on c.id = m.conversation_id
+      where m.media_id = ${row.id} and m.deleted_at is null and (
+        c.customer_user_id = ${viewer.id}
+        or exists (select 1 from business_members bm where bm.business_id = c.business_id and bm.user_id = ${viewer.id} and bm.status = 'active')
+      )
+    ) or exists (
+      select 1 from support_messages sm join support_tickets t on t.id = sm.ticket_id
+      where ${row.id} = any(sm.media_ids) and t.user_id = ${viewer.id}
+    ) as ok`);
+  return Boolean([...allowed][0]?.ok);
+}
 
 /**
  * Validates and stores an upload. Type is detected from the file's bytes —
@@ -100,6 +134,7 @@ export async function ingestUpload(args: { ownerUserId: string; businessId: stri
   const isImage = IMAGE_TYPES.has(mime);
   const isVideo = VIDEO_TYPES.has(mime);
   const allowVideo = args.purpose === "portfolio" || args.purpose === "service";
+  const visibility = PRIVATE_PURPOSES.has(args.purpose) ? ("private" as const) : ("public" as const);
   if (!isImage && !(isVideo && allowVideo)) {
     throw new AppError("validation", allowVideo ? "Upload a JPG, PNG, WebP image or an MP4/MOV/WebM video." : "Upload a JPG, PNG or WebP image.");
   }
@@ -129,6 +164,7 @@ export async function ingestUpload(args: { ownerUserId: string; businessId: stri
         variants: processed.variants,
         placeholder: processed.placeholder,
         alt: args.alt ?? null,
+        visibility,
       })
       .returning();
     return row;
@@ -145,7 +181,7 @@ export async function ingestUpload(args: { ownerUserId: string; businessId: stri
     await storage.put(originalKey, args.data, mime);
     const [row] = await db
       .insert(media)
-      .values({ id, ownerUserId: args.ownerUserId, businessId: args.businessId, kind: "video", status: "processing", originalKey, mime, bytes: args.data.length, durationSeconds: duration, alt: args.alt ?? null })
+      .values({ id, ownerUserId: args.ownerUserId, businessId: args.businessId, kind: "video", status: "processing", originalKey, mime, bytes: args.data.length, durationSeconds: duration, alt: args.alt ?? null, visibility })
       .returning();
     await enqueue("media.process_video", { mediaId: id }, { dedupeKey: `video:${id}`, maxAttempts: 3 });
     return row;
@@ -165,10 +201,10 @@ export async function processVideo(mediaId: string) {
     const poster = path.join(dir, "poster.jpg");
     const out = path.join(dir, "web.mp4");
     const seek = Math.min(1, (m.durationSeconds ?? 2) / 3);
-    await run("ffmpeg", ["-y", "-ss", String(seek), "-i", input, "-frames:v", "1", "-q:v", "3", poster], { timeout: 60_000 });
+    await run("ffmpeg", ["-y", "-protocol_whitelist", "file", "-ss", String(seek), "-i", input, "-frames:v", "1", "-q:v", "3", poster], { timeout: 60_000 });
     await run(
       "ffmpeg",
-      ["-y", "-i", input, "-vf", "scale='min(1280,iw)':-2", "-c:v", "libx264", "-preset", "veryfast", "-crf", "26", "-profile:v", "main", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", out],
+      ["-y", "-protocol_whitelist", "file", "-i", input, "-vf", "scale='min(1280,iw)':-2", "-c:v", "libx264", "-preset", "veryfast", "-crf", "26", "-profile:v", "main", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", out],
       { timeout: 10 * 60_000 },
     );
     const prefix = m.originalKey.replace(/\/original\.[a-z0-9]+$/i, "");

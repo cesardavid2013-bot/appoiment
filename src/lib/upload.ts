@@ -31,7 +31,7 @@ async function shrinkImage(file: File): Promise<Blob> {
 /** Uploads one file with progress. Rejects with a human-readable message. */
 export async function uploadMedia(file: File, opts: { purpose: string; businessId?: string | null; onProgress?: (pct: number) => void; alt?: string }): Promise<UploadResult> {
   const isVideo = file.type.startsWith("video/");
-  const maxBytes = isVideo ? 150 * 1024 * 1024 : 25 * 1024 * 1024;
+  const maxBytes = isVideo ? 150 * 1024 * 1024 : 40 * 1024 * 1024;
   if (file.size > maxBytes) throw new Error(isVideo ? "Videos must be under 150 MB." : "That image is too large.");
   const body = new FormData();
   const data = isVideo ? file : await shrinkImage(file);
@@ -41,7 +41,7 @@ export async function uploadMedia(file: File, opts: { purpose: string; businessI
   if (opts.alt) body.set("alt", opts.alt);
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "/api/media");
+    xhr.open("POST", `/api/media?purpose=${encodeURIComponent(opts.purpose)}`);
     xhr.responseType = "json";
     xhr.upload.onprogress = (e) => e.lengthComputable && opts.onProgress?.(Math.round((e.loaded / e.total) * 100));
     xhr.onload = () => {

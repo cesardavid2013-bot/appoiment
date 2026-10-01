@@ -28,14 +28,15 @@ export function ExportCard() {
   );
 }
 
-export function DeleteAccountCard({ blockingBusinesses, upcomingCount }: { blockingBusinesses: { id: string; name: string }[]; upcomingCount: number }) {
+export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPassword }: { blockingBusinesses: { id: string; name: string }[]; upcomingCount: number; hasPassword: boolean }) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [typed, setTyped] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const blocked = blockingBusinesses.length > 0;
-  const ready = typed.trim() === DELETE_CONFIRMATION;
+  const ready = typed.trim() === DELETE_CONFIRMATION && (!hasPassword || password.length > 0);
 
   async function onConfirm(e: FormEvent) {
     e.preventDefault();
@@ -43,7 +44,7 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount }: { block
     setLoading(true);
     setError(null);
     try {
-      await api("/api/me/account", { method: "DELETE", body: { confirm: typed.trim() } });
+      await api("/api/me/account", { method: "DELETE", body: { confirm: typed.trim(), password } });
       toast.success("Your account has been deleted", { description: "Thanks for using Kept." });
       router.replace("/");
       router.refresh();
@@ -142,6 +143,11 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount }: { block
             <p className="rounded-md bg-surface-2 px-3.5 py-3 text-sm text-ink-2">
               {upcomingCount === 1 ? "1 upcoming appointment" : `${upcomingCount} upcoming appointments`} will be cancelled.
             </p>
+          )}
+          {hasPassword && (
+            <Field label="Your password">
+              {(p) => <Input {...p} type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" />}
+            </Field>
           )}
           <Field label={<>Type <span className="font-mono font-semibold">{DELETE_CONFIRMATION}</span> to confirm</>}>
             {(p) => <Input {...p} value={typed} onChange={(e) => setTyped(e.target.value)} autoComplete="off" autoCapitalize="characters" spellCheck={false} />}

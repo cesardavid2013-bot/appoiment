@@ -10,6 +10,7 @@ export async function proPage(permission?: Permission | Permission[]): Promise<{
   if (!viewer) redirect("/login?next=/pro");
   const m = await getActiveMembership(viewer);
   if (!m) redirect("/pro/onboarding");
+  if (m.businessStatus === "suspended") notFound(); // the console layout explains the suspension
   if (permission) {
     const need = Array.isArray(permission) ? permission : [permission];
     if (!need.some((p) => m.permissions.has(p))) notFound();

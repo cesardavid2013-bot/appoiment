@@ -358,6 +358,10 @@ export async function createBooking(viewer: Viewer, input: z.infer<typeof create
       if (input.promoCode) {
         promo = await findPromotion(tx, svc.business.id, input.promoCode);
         if (!promo) throw new AppError("validation", "We couldn't find that code.", { fields: { promoCode: "Invalid code" } });
+        // Lock order is always: customer row → promotion row → staff time. Taking the
+        // promotion before any occupancy means a booking never holds staff time while
+        // waiting for the code, which is what let two promo bookings deadlock.
+        [promo] = await tx.select().from(promotions).where(eq(promotions.id, promo.id)).for("update");
       }
 
       // 3. Try candidates in order; the exclusion constraint is the final arbiter.
@@ -657,7 +661,21 @@ export async function reschedule(
     const svc = await loadBookableService(a.serviceId, tx, { includeHidden: actor.type === "business" });
     const selected = selectOptions(svc, a.selectedOptionIds);
     const preferred = input.memberId === "same" ? a.memberId! : input.memberId;
-    const candidates = candidateMembers(svc, selected, a.locationId, preferred === "any" ? "any" : preferred);
+    let candidates = candidateMembers(svc, selected, a.locationId, preferred === "any" ? "any" : preferred);
+    if (actor.type === "customer") {
+      // The booking was priced for its professional. A customer may only move to
+      // someone whose price and duration for this selection are identical —
+      // otherwise rescheduling would be a way around per-staff pricing.
+      const durationMin = Math.round((a.endsAt.getTime() - a.startsAt.getTime()) / 60_000);
+      const samePrice = candidates.filter((c) => {
+        if (c.memberId === a.memberId) return true;
+        const q = quoteFor(svc, selected, c.memberId, null);
+        return q.subtotalCents === a.subtotalCents && q.durationMinutes === durationMin;
+      });
+      if (preferred !== "any" && preferred !== a.memberId && samePrice.length === 0)
+        throw new AppError("conflict", "That professional has a different price for this service. Cancel and book with them instead.");
+      candidates = samePrice;
+    }
     const tz = a.timezone;
     const localDate = instantToLocal(start.getTime(), tz).date;
     const durationMs = a.endsAt.getTime() - a.startsAt.getTime();

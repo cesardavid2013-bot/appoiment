@@ -7,8 +7,13 @@ import { rateLimits } from "./db/schema";
 export type RateRule = { limit: number; windowSeconds: number };
 
 export const RATE_RULES = {
-  login: { limit: 10, windowSeconds: 15 * 60 },
-  signup: { limit: 5, windowSeconds: 60 * 60 },
+  // Per-IP limits allow for carrier NAT, where many people share one address.
+  login: { limit: 40, windowSeconds: 15 * 60 },
+  // Per-account: enough for genuine retries, low enough to stop guessing one password.
+  loginAccount: { limit: 15, windowSeconds: 15 * 60 },
+  passwordCheck: { limit: 10, windowSeconds: 60 * 60 },
+  promo: { limit: 30, windowSeconds: 10 * 60 },
+  signup: { limit: 20, windowSeconds: 60 * 60 },
   passwordReset: { limit: 5, windowSeconds: 60 * 60 },
   booking: { limit: 20, windowSeconds: 60 * 60 },
   message: { limit: 60, windowSeconds: 10 * 60 },

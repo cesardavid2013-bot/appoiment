@@ -316,6 +316,7 @@ export const businesses = pgTable(
     index("businesses_geo_idx").on(t.lat, t.lng),
     check("businesses_slot_interval_ck", sql`${t.slotIntervalMinutes} between 5 and 240`),
     check("businesses_fee_pct_ck", sql`${t.lateCancelFeePercent} between 0 and 100 and ${t.noShowFeePercent} between 0 and 100`),
+    check("businesses_currency_ck", sql`${t.currency} ~ '^[A-Z]{3}$'`),
   ],
 );
 
@@ -1231,10 +1232,12 @@ export const media = pgTable(
     /** Tiny base64 placeholder for blur-up loading. */
     placeholder: text("placeholder"),
     alt: text("alt"),
+    /** Private files (support, message, verification attachments) are only served to people allowed to see them. */
+    visibility: text("visibility", { enum: ["public", "private"] }).notNull().default("public"),
     deletedAt: ts("deleted_at"),
     createdAt: createdAt(),
   },
-  (t) => [index().on(t.businessId), index().on(t.ownerUserId)],
+  (t) => [index().on(t.businessId), index().on(t.ownerUserId), check("media_visibility_ck", sql`${t.visibility} in ('public', 'private')`)],
 );
 
 export const portfolioItems = pgTable(

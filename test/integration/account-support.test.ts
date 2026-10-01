@@ -6,6 +6,7 @@ import { appointments, auditLogs, businesses, favorites, notifications, sessions
 import { addAddress, deleteAccount, deleteAddress, deletionCheck, exportMyData, updateNotificationPrefs, updateProfile } from "@/server/services/account";
 import { createBooking } from "@/server/services/booking";
 import { createTicket, getMyTicket, listAllTickets, replyToTicket, resolveMyTicket, setTicketStatus, staffReply } from "@/server/services/support";
+import { hashPassword } from "@/server/auth/password";
 import { makeBusiness, makeUser, nyTime, resetDb } from "../support/factory";
 
 async function errorCode(p: Promise<unknown>): Promise<string> {
@@ -78,14 +79,20 @@ describe("account", () => {
   it("refuses to delete an account that owns an active business", async () => {
     const f = await makeBusiness();
     expect((await deletionCheck(f.owner.id)).blockingBusinesses).toHaveLength(1);
-    expect(await errorCode(deleteAccount(f.owner, { confirm: "DELETE" }))).toBe("conflict");
+    expect(await errorCode(deleteAccount(f.owner, { confirm: "DELETE", password: "" }))).toBe("conflict");
     await db.update(businesses).set({ status: "closed" }).where(eq(businesses.id, f.biz.id));
-    expect(await errorCode(deleteAccount(f.owner, { confirm: "DELETE" }))).toBe("ok");
+    expect(await errorCode(deleteAccount(f.owner, { confirm: "DELETE", password: "" }))).toBe("ok");
   });
 
   it("requires typing DELETE", async () => {
     const u = await makeUser();
-    expect(await errorCode(deleteAccount(u, { confirm: "delete" }))).toBe("validation");
+    expect(await errorCode(deleteAccount(u, { confirm: "delete", password: "" }))).toBe("validation");
+  });
+
+  it("requires the current password when the account has one", async () => {
+    const u = await makeUser({ passwordHash: await hashPassword("correct horse battery") });
+    expect(await errorCode(deleteAccount(u, { confirm: "DELETE", password: "wrong" }))).toBe("validation");
+    expect(await errorCode(deleteAccount(u, { confirm: "DELETE", password: "correct horse battery" }))).toBe("ok");
   });
 
   it("anonymises the user, cancels future bookings and keeps history", async () => {
@@ -96,7 +103,7 @@ describe("account", () => {
     await db.insert(favorites).values({ userId: u.id, businessId: f.biz.id });
     await addAddress(u, { label: "Home", line1: "1 Main St", line2: null, city: "Brooklyn", region: null, postalCode: null, country: "US" });
 
-    const res = await deleteAccount(u, { confirm: "DELETE" });
+    const res = await deleteAccount(u, { confirm: "DELETE", password: "" });
     expect(res.cancelledAppointments).toBe(1);
 
     const [row] = await db.select().from(users).where(eq(users.id, u.id));

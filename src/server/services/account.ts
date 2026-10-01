@@ -1,4 +1,6 @@
 import "server-only";
+import { verifyPassword } from "../auth/password";
+import { rateLimit } from "../rate-limit";
 import { and, asc, desc, eq, gt, inArray, isNull, ne, sql } from "drizzle-orm";
 import { z } from "zod";
 import { DELETE_CONFIRMATION, isValidTimeZone, MAX_SAVED_ADDRESSES, mergeNotificationPrefs, normalizePhone } from "@/domain/account";
@@ -130,6 +132,7 @@ export const changePasswordSchema = z.object({
 });
 
 export async function changePassword(viewer: Viewer, input: z.infer<typeof changePasswordSchema>) {
+  await rateLimit("passwordCheck", viewer.id);
   const [u] = await db.select({ hasPassword: sql<boolean>`${users.passwordHash} is not null` }).from(users).where(eq(users.id, viewer.id));
   if (u?.hasPassword && !input.currentPassword) {
     throw new AppError("validation", "Enter your current password.", { fields: { currentPassword: "Enter your current password" } });
@@ -349,6 +352,7 @@ export async function deletionCheck(userId: string) {
 
 export const deleteAccountSchema = z.object({
   confirm: z.string().trim(),
+  password: z.string().max(200).default(""),
 });
 
 /**
@@ -360,6 +364,12 @@ export const deleteAccountSchema = z.object({
 export async function deleteAccount(viewer: Viewer, input: z.infer<typeof deleteAccountSchema>) {
   if (input.confirm !== DELETE_CONFIRMATION) {
     throw new AppError("validation", `Type ${DELETE_CONFIRMATION} to confirm.`, { fields: { confirm: `Type ${DELETE_CONFIRMATION} to confirm` } });
+  }
+  // Re-authenticate: a borrowed unlocked phone shouldn't be enough to erase an account.
+  await rateLimit("passwordCheck", viewer.id);
+  const [cred] = await db.select({ hash: users.passwordHash }).from(users).where(eq(users.id, viewer.id));
+  if (cred?.hash && !(await verifyPassword(cred.hash, input.password))) {
+    throw new AppError("validation", "That password isn't right.", { fields: { password: "That password isn't right" } });
   }
   const check = await deletionCheck(viewer.id);
   if (check.blockingBusinesses.length) {

@@ -2,7 +2,7 @@ import { and, eq, sql } from "drizzle-orm";
 import { beforeEach, describe, expect, it } from "vitest";
 import { AppError } from "@/domain/errors";
 import { db } from "@/server/db/client";
-import { appointments, businesses, jobs, notifications, occupancies, payments, promotions, timeBlocks } from "@/server/db/schema";
+import { appointments, businesses, jobs, notifications, occupancies, payments, promotions, serviceStaff, timeBlocks } from "@/server/db/schema";
 import { getSlots } from "@/server/services/availability";
 import { businessCancel, businessTransition, createBooking, customerCancel, expireRequest, getQuote, reschedule } from "@/server/services/booking";
 import { markPaymentSucceeded } from "@/server/services/payments";
@@ -168,6 +168,21 @@ describe("cancellation & rescheduling", () => {
     expect(await errorCode(createBooking(c3, base(f, nyTime(10, "10:00"))))).toBe("ok");
     const [a] = await db.select().from(appointments).where(eq(appointments.id, r1.appointmentId));
     expect(a.rescheduleCount).toBe(1);
+  });
+
+  it("customers can't reschedule onto a professional with a different price", async () => {
+    const f = await makeBusiness({ staff: 2 });
+    await db.update(serviceStaff).set({ priceCentsOverride: 9000 }).where(and(eq(serviceStaff.serviceId, f.svc.id), eq(serviceStaff.memberId, f.members[1].id)));
+    const c = await makeUser();
+    const r = await createBooking(c, base(f, nyTime(10, "10:00"), { memberId: f.members[0].id }));
+    const actor = { type: "customer" as const, userId: c.id };
+    expect(await errorCode(reschedule(actor, r.appointmentId, { start: nyTime(10, "10:00"), memberId: f.members[1].id }))).toBe("conflict");
+    // "Anyone" never lands on the pricier professional, even when the cheaper one is busy.
+    await createBooking(await makeUser(), base(f, nyTime(10, "14:00"), { memberId: f.members[0].id }));
+    expect(await errorCode(reschedule(actor, r.appointmentId, { start: nyTime(10, "14:00"), memberId: "any" }))).toBe("slot_unavailable");
+    // The business can still move it (they decide what to charge).
+    const moved = await reschedule({ type: "business", userId: f.owner.id }, r.appointmentId, { start: nyTime(10, "10:00"), memberId: f.members[1].id }, { businessId: f.biz.id });
+    expect(moved.moved).toBe(true);
   });
 
   it("a reschedule racing a new booking for the same time yields exactly one winner", async () => {

@@ -5,12 +5,13 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Field, FormError, Input } from "@/components/ui/field";
+import { safeRelativePath } from "@/domain/safe-path";
 import { api, ApiError } from "@/lib/api";
 
 function useNext() {
   const params = useSearchParams();
   const raw = params.get("next");
-  return raw && raw.startsWith("/") && !raw.startsWith("//") ? raw : "/";
+  return safeRelativePath(raw);
 }
 
 function GoogleButton({ next }: { next: string }) {

@@ -1,12 +1,17 @@
 export function formatMoney(cents: number, currency = "USD", opts: { compact?: boolean } = {}): string {
   const value = cents / 100;
   const whole = Number.isInteger(value);
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency,
-    minimumFractionDigits: opts.compact && whole ? 0 : 2,
-    maximumFractionDigits: 2,
-  }).format(value);
+  try {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency,
+      minimumFractionDigits: opts.compact && whole ? 0 : 2,
+      maximumFractionDigits: 2,
+    }).format(value);
+  } catch {
+    // A bad currency code must never take a page down.
+    return `${value.toFixed(opts.compact && whole ? 0 : 2)} ${String(currency).slice(0, 3).toUpperCase()}`;
+  }
 }
 
 export function formatPriceLabel(

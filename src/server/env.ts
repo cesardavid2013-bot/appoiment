@@ -26,6 +26,10 @@ const schema = z.object({
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: optional,
   PLATFORM_CUSTOMER_FEE_BPS: z.coerce.number().int().min(0).max(2000).default(0),
   GEOCODER_URL: optional,
+  /** Header your edge overwrites with the real client IP (e.g. cf-connecting-ip, x-vercel-forwarded-for). Takes precedence. */
+  CLIENT_IP_HEADER: optional,
+  /** Number of reverse proxies in front of the app that append to X-Forwarded-For. */
+  TRUSTED_PROXY_HOPS: z.coerce.number().int().min(0).max(5).default(1),
 });
 
 export type Env = z.infer<typeof schema>;

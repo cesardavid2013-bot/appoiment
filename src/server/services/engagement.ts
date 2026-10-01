@@ -3,7 +3,7 @@ import { and, desc, eq, gt, isNull, lt, sql } from "drizzle-orm";
 import { z } from "zod";
 import { AppError, notFound } from "@/domain/errors";
 import { db } from "../db/client";
-import { appointments, businesses, favorites, notifications, recentViews, reports, reviews, services, waitlistEntries } from "../db/schema";
+import { appointments, businessMembers, businesses, favorites, notifications, recentViews, reports, reviews, serviceStaff, services, waitlistEntries } from "../db/schema";
 import type { Viewer } from "../auth/session";
 import type { Membership } from "../authz";
 import { audit } from "../audit";
@@ -169,6 +169,14 @@ export async function joinWaitlist(viewer: Viewer, input: z.infer<typeof waitlis
     .innerJoin(businesses, eq(businesses.id, services.businessId))
     .where(and(eq(services.id, input.serviceId), eq(businesses.status, "active")));
   if (!svc || svc.status !== "active") throw notFound("That service");
+  if (input.memberId) {
+    const [staff] = await db
+      .select({ id: serviceStaff.memberId })
+      .from(serviceStaff)
+      .innerJoin(businessMembers, eq(businessMembers.id, serviceStaff.memberId))
+      .where(and(eq(serviceStaff.serviceId, input.serviceId), eq(serviceStaff.memberId, input.memberId), eq(businessMembers.status, "active")));
+    if (!staff) throw notFound("That professional");
+  }
   const [{ n }] = await db
     .select({ n: sql<number>`count(*)::int` })
     .from(waitlistEntries)

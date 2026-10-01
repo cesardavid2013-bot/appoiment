@@ -4,7 +4,8 @@ import { env } from "@/server/env";
 import { getCustomerAppointment } from "@/server/services/booking";
 
 const icsDate = (d: Date) => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
-const esc = (s: string) => s.replace(/\\/g, "\\\\").replace(/;/g, "\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+/** RFC 5545 TEXT escaping. CRs are dropped so business-supplied text can't start new properties. */
+const esc = (s: string) => s.replace(/\r/g, "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
 
 /** Calendar file for the customer's own appointment. */
 export const GET = route<{ id: string }>({ auth: true }, async ({ viewer, params }) => {

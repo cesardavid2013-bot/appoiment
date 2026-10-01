@@ -143,6 +143,8 @@ export async function acceptInvite(viewer: Viewer, token: string) {
       .update(businessMembers)
       .set({ userId: viewer.id, status: "active", inviteTokenHash: null, inviteExpiresAt: null, joinedAt: new Date() })
       .where(eq(businessMembers.id, invite.id));
+    // The token only ever went to this inbox, so holding it proves the address.
+    await tx.update(users).set({ emailVerifiedAt: sql`coalesce(${users.emailVerifiedAt}, now())` }).where(eq(users.id, viewer.id));
     await audit({ actorUserId: viewer.id, actorType: "business", businessId: invite.businessId, action: "team.invite_accepted", targetType: "member", targetId: invite.id }, tx);
   });
   await refreshSearchIndex(invite.businessId);

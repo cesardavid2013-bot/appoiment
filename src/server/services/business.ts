@@ -25,13 +25,19 @@ export const ONBOARDING_STEPS = ["category", "kind", "name", "branding", "locati
 export type OnboardingStep = (typeof ONBOARDING_STEPS)[number];
 
 const zTz = z.string().refine(isValidTimeZone, "Choose a valid time zone");
+const SUPPORTED_CURRENCIES = new Set(Intl.supportedValuesOf("currency"));
+const zCurrency = z
+  .string()
+  .trim()
+  .toUpperCase()
+  .refine((c) => /^[A-Z]{3}$/.test(c) && SUPPORTED_CURRENCIES.has(c), "Choose a supported currency");
 
 export const createBusinessSchema = z.object({
   name: z.string().trim().min(2, "Use at least 2 characters").max(80),
   kind: z.enum(["individual", "business"]),
   categoryId: z.string().uuid().nullable().optional(),
   timezone: zTz,
-  currency: z.string().length(3).default("USD"),
+  currency: zCurrency.default("USD"),
 });
 
 async function uniqueSlug(exec: Executor, base: string, excludeId?: string): Promise<string> {
@@ -305,9 +311,21 @@ export async function refreshSearchIndex(businessId: string, exec: Executor = db
       priceMaxCents: prices.length ? Math.max(...prices.map((p) => p.max)) : null,
       offersMobile: locs.some((l) => l.kind === "mobile"),
       offersVirtual: locs.some((l) => l.kind === "virtual"),
-      lat: primary?.lat ?? null,
-      lng: primary?.lng ?? null,
+      lat: publicCoord(primary, "lat"),
+      lng: publicCoord(primary, "lng"),
       city: primary?.city ?? null,
     })
     .where(eq(businesses.id, businessId));
+}
+
+/**
+ * Coordinates that go on the public listing. Shop addresses are public; a
+ * mobile or online pro's point is usually their home, so it's snapped to a
+ * ~5 km grid — good enough for "near me" and the map, useless for finding them.
+ */
+function publicCoord(loc: { kind: string; lat: number | null; lng: number | null } | undefined, axis: "lat" | "lng") {
+  const v = loc?.[axis];
+  if (v == null) return null;
+  if (loc!.kind === "physical") return v;
+  return Math.round(v / 0.05) * 0.05;
 }

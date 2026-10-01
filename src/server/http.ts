@@ -86,12 +86,45 @@ export function route<P>(a: unknown, b?: unknown) {
   };
 }
 
+const MAX_JSON_BYTES = 256 * 1024;
+
+/**
+ * Reads the request body, aborting as soon as it exceeds `max` bytes. Doesn't
+ * rely on Content-Length, which chunked requests can omit or lie about.
+ */
+export async function readBodyLimited(req: Request, max: number, tooLarge = "That request is too large."): Promise<Uint8Array<ArrayBuffer>> {
+  const declared = Number(req.headers.get("content-length") ?? 0);
+  if (declared > max) throw new AppError("validation", tooLarge);
+  if (!req.body) return new Uint8Array(new ArrayBuffer(0));
+  const reader = req.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    total += value.byteLength;
+    if (total > max) {
+      await reader.cancel().catch(() => {});
+      throw new AppError("validation", tooLarge);
+    }
+    chunks.push(value);
+  }
+  const out = new Uint8Array(new ArrayBuffer(total));
+  let offset = 0;
+  for (const c of chunks) {
+    out.set(c, offset);
+    offset += c.byteLength;
+  }
+  return out;
+}
+
 export async function readJson<T extends ZodType>(req: NextRequest, schema: T): Promise<z.infer<T>> {
   const type = req.headers.get("content-type") ?? "";
   if (!type.includes("application/json")) throw new AppError("bad_request", "Expected a JSON request body.");
   let raw: unknown;
+  const bytes = await readBodyLimited(req, MAX_JSON_BYTES);
   try {
-    raw = await req.json();
+    raw = JSON.parse(new TextDecoder().decode(bytes));
   } catch {
     throw new AppError("bad_request", "The request body couldn't be read.");
   }

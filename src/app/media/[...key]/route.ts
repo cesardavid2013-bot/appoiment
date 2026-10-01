@@ -1,5 +1,10 @@
 import { Readable } from "node:stream";
 import type { NextRequest } from "next/server";
+import { eq } from "drizzle-orm";
+import { getViewer } from "@/server/auth/session";
+import { db } from "@/server/db/client";
+import { media } from "@/server/db/schema";
+import { canViewMedia, mediaIdFromKey } from "@/server/services/media";
 import { storage } from "@/server/storage";
 
 const TYPES: Record<string, string> = {
@@ -24,6 +29,17 @@ export async function GET(req: NextRequest, ctx: RouteContext<"/media/[...key]">
   const key = parts.join("/");
   const type = TYPES[key.split(".").pop()?.toLowerCase() ?? ""];
   if (!type) return new Response("Not found", { status: 404 });
+  // Every file belongs to a media row: deleted files stop being served and
+  // private attachments are only served to people allowed to see them.
+  const mediaId = mediaIdFromKey(key);
+  if (!mediaId) return new Response("Not found", { status: 404 });
+  const [row] = await db
+    .select({ id: media.id, visibility: media.visibility, ownerUserId: media.ownerUserId, businessId: media.businessId, deletedAt: media.deletedAt })
+    .from(media)
+    .where(eq(media.id, mediaId));
+  if (!row) return new Response("Not found", { status: 404 });
+  const isPrivate = row.visibility === "private";
+  if (!(await canViewMedia(row, isPrivate ? await getViewer() : null))) return new Response("Not found", { status: 404 });
   let info: { size: number } | null;
   try {
     info = await storage.stat(key);
@@ -35,7 +51,7 @@ export async function GET(req: NextRequest, ctx: RouteContext<"/media/[...key]">
   const headers: Record<string, string> = {
     "content-type": type,
     "accept-ranges": "bytes",
-    "cache-control": "public, max-age=31536000, immutable",
+    "cache-control": isPrivate ? "private, no-store" : "public, max-age=31536000, immutable",
     "x-content-type-options": "nosniff",
     "content-security-policy": "default-src 'none'; media-src 'self'; img-src 'self'",
   };
