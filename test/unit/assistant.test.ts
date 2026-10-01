@@ -21,6 +21,21 @@ describe("assistant: understanding requests", () => {
     expect(search("uñas por la mañana").when).toMatchObject({ part: "morning", dates: ["2026-10-01", "2026-10-02", "2026-10-03"] });
   });
 
+  it("new categories: producers, studios, creators, design, health, home", () => {
+    expect(search("busco un productor musical para mi canción este sábado").category).toBe("music-production");
+    expect(search("need a music producer for mixing and mastering").category).toBe("music-production");
+    expect(search("estudio de grabación mañana en la noche").category).toBe("recording-studio");
+    expect(search("vocal coach this week").category).toBe("vocal-coaching");
+    expect(search("creador de contenido ugc").category).toBe("content-creation");
+    expect(search("video editor for my reels").category).toBe("video-editing");
+    expect(search("diseñador gráfico para un logo").category).toBe("graphic-design");
+    expect(search("fisioterapeuta cerca de mí").category).toBe("physio");
+    expect(search("nutritionist online").category).toBe("nutrition");
+    expect(search("limpieza profunda de casa el viernes").category).toBe("cleaning");
+    expect(search("plomero hoy").category).toBe("handyman");
+    expect(search("jardinero para el césped").category).toBe("gardening");
+  });
+
   it("English nails this weekend, best rated", () => {
     const s = search("best rated gel nails this weekend");
     expect(s).toMatchObject({ lang: "en", category: "nails", sort: "rating" });

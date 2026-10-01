@@ -62,8 +62,8 @@
     "description": "Tutors, music teachers and language lessons."
   },
   "home-services": {
-    "name": "Home services",
-    "description": "Cleaning, repairs and handymen."
+    "name": "Home & garden",
+    "description": "Cleaning, repairs, handymen and gardening."
   },
   "automotive": {
     "name": "Automotive",
@@ -84,5 +84,66 @@
   "other": {
     "name": "Other",
     "description": "Everything else you can book."
+  },
+  "music-audio": {
+    "name": "Music & audio",
+    "description": "Producers, recording studios, mixing and vocal coaching."
+  },
+  "music-production": {
+    "name": "Music production"
+  },
+  "recording-studio": {
+    "name": "Recording studios"
+  },
+  "vocal-coaching": {
+    "name": "Vocal coaching"
+  },
+  "creators": {
+    "name": "Creators & content",
+    "description": "Content creators, UGC, social media and video editing."
+  },
+  "content-creation": {
+    "name": "Content creation"
+  },
+  "video-editing": {
+    "name": "Video editing"
+  },
+  "social-media": {
+    "name": "Social media management"
+  },
+  "design": {
+    "name": "Design & creative",
+    "description": "Graphic, brand, web and interior design."
+  },
+  "graphic-design": {
+    "name": "Graphic & brand design"
+  },
+  "web-design": {
+    "name": "Web design"
+  },
+  "interior-design": {
+    "name": "Interior design"
+  },
+  "health": {
+    "name": "Health & care",
+    "description": "Physio, nutrition, therapy and holistic care."
+  },
+  "physio": {
+    "name": "Physio & chiropractic"
+  },
+  "nutrition": {
+    "name": "Nutrition"
+  },
+  "therapy": {
+    "name": "Therapy & counseling"
+  },
+  "cleaning": {
+    "name": "Cleaning"
+  },
+  "handyman": {
+    "name": "Handyman & repairs"
+  },
+  "gardening": {
+    "name": "Gardening"
   }
 }

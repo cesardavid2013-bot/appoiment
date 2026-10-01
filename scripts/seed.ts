@@ -57,7 +57,31 @@ export const TAXONOMY: Cat[] = [
   { slug: "tattoo-piercing", name: "Tattoo & piercing", description: "Custom tattoos, flash and piercings.", keywords: ["tattoo", "piercing", "flash", "fine line"] },
   { slug: "photography", name: "Photo & video", description: "Portraits, events, products and video.", keywords: ["photographer", "photoshoot", "headshots", "videographer", "wedding photography"] },
   { slug: "education", name: "Lessons & tutoring", description: "Tutors, music teachers and language lessons.", keywords: ["tutor", "lessons", "music", "piano", "guitar", "math", "language"] },
-  { slug: "home-services", name: "Home services", description: "Cleaning, repairs and handymen.", keywords: ["cleaning", "cleaner", "handyman", "repair", "plumber", "assembly"] },
+  { slug: "music-audio", name: "Music & audio", description: "Producers, recording studios, mixing and vocal coaching.", keywords: ["music", "producer", "studio", "recording", "beats", "mixing", "mastering"], children: [
+    { slug: "music-production", name: "Music production", keywords: ["producer", "beat", "beats", "beatmaker", "mixing", "mastering", "songwriting"] },
+    { slug: "recording-studio", name: "Recording studios", keywords: ["studio time", "recording", "vocal booth", "podcast recording", "rehearsal"] },
+    { slug: "vocal-coaching", name: "Vocal coaching", keywords: ["vocal coach", "singing lessons", "voice"] },
+  ] },
+  { slug: "creators", name: "Creators & content", description: "Content creators, UGC, social media and video editing.", keywords: ["content creator", "ugc", "influencer", "social media", "reels", "tiktok"], children: [
+    { slug: "content-creation", name: "Content creation", keywords: ["ugc", "reels", "tiktok", "brand content", "influencer"] },
+    { slug: "video-editing", name: "Video editing", keywords: ["video editor", "editing", "color grading", "motion graphics"] },
+    { slug: "social-media", name: "Social media management", keywords: ["social media manager", "community manager", "instagram"] },
+  ] },
+  { slug: "design", name: "Design & creative", description: "Graphic, brand, web and interior design.", keywords: ["designer", "design", "logo", "branding"], children: [
+    { slug: "graphic-design", name: "Graphic & brand design", keywords: ["logo", "branding", "graphic designer", "flyer"] },
+    { slug: "web-design", name: "Web design", keywords: ["website", "web designer", "landing page"] },
+    { slug: "interior-design", name: "Interior design", keywords: ["interior designer", "decor", "home staging"] },
+  ] },
+  { slug: "health", name: "Health & care", description: "Physio, nutrition, therapy and holistic care.", keywords: ["health", "therapy", "physio", "nutrition"], children: [
+    { slug: "physio", name: "Physio & chiropractic", keywords: ["physiotherapy", "physical therapy", "chiropractor", "rehab"] },
+    { slug: "nutrition", name: "Nutrition", keywords: ["nutritionist", "dietitian", "meal plan"] },
+    { slug: "therapy", name: "Therapy & counseling", keywords: ["therapist", "counselor", "psychologist", "counseling"] },
+  ] },
+  { slug: "home-services", name: "Home & garden", description: "Cleaning, repairs, handymen and gardening.", keywords: ["cleaning", "cleaner", "handyman", "repair", "plumber", "assembly", "garden"], children: [
+    { slug: "cleaning", name: "Cleaning", keywords: ["house cleaning", "deep clean", "move-out clean", "cleaner"] },
+    { slug: "handyman", name: "Handyman & repairs", keywords: ["handyman", "repair", "assembly", "plumber", "electrician", "painting"] },
+    { slug: "gardening", name: "Gardening", keywords: ["gardener", "landscaping", "lawn", "yard work"] },
+  ] },
   { slug: "automotive", name: "Automotive", description: "Detailing, car wash and mobile mechanics.", keywords: ["car detailing", "detailer", "car wash", "ceramic coating", "mechanic"] },
   { slug: "pets", name: "Pets", description: "Grooming, sitting and training.", keywords: ["dog grooming", "groomer", "pet sitter", "dog walker", "dog training"] },
   { slug: "events", name: "Events", description: "DJs, planners and event pros.", keywords: ["dj", "event planner", "party", "wedding"] },

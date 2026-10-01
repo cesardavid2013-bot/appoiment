@@ -71,6 +71,74 @@ export const SERVICE_TEMPLATES: Record<string, ServiceTemplate[]> = {
     { name: "1:1 lesson", durationMinutes: 60 },
     { name: "Trial lesson", durationMinutes: 30 },
   ],
+  "music-production": [
+    { name: "Beat / instrumental production", durationMinutes: 180 },
+    { name: "Mixing (per song)", durationMinutes: 120 },
+    { name: "Mastering (per song)", durationMinutes: 60 },
+    { name: "Production consultation", durationMinutes: 30 },
+  ],
+  "recording-studio": [
+    { name: "Studio session — 2 hours", durationMinutes: 120 },
+    { name: "Studio session with engineer — 4 hours", durationMinutes: 240 },
+    { name: "Podcast recording", durationMinutes: 90 },
+  ],
+  "vocal-coaching": [
+    { name: "Vocal lesson", durationMinutes: 60 },
+    { name: "Audition preparation", durationMinutes: 45 },
+  ],
+  "content-creation": [
+    { name: "UGC video package", durationMinutes: 120 },
+    { name: "Content day (half day)", durationMinutes: 240 },
+    { name: "Strategy call", durationMinutes: 45 },
+  ],
+  "video-editing": [
+    { name: "Short-form edit (reel / TikTok)", durationMinutes: 60 },
+    { name: "YouTube video edit", durationMinutes: 240 },
+  ],
+  "social-media": [
+    { name: "Social media audit", durationMinutes: 60 },
+    { name: "Monthly content planning", durationMinutes: 90 },
+  ],
+  "graphic-design": [
+    { name: "Logo design consultation", durationMinutes: 60 },
+    { name: "Brand identity workshop", durationMinutes: 120 },
+  ],
+  "web-design": [
+    { name: "Website discovery call", durationMinutes: 45 },
+    { name: "Landing page design session", durationMinutes: 120 },
+  ],
+  "interior-design": [
+    { name: "In-home design consultation", durationMinutes: 90 },
+    { name: "Virtual room styling", durationMinutes: 60 },
+  ],
+  physio: [
+    { name: "Initial assessment", durationMinutes: 60 },
+    { name: "Follow-up treatment", durationMinutes: 45 },
+    { name: "Chiropractic adjustment", durationMinutes: 30 },
+  ],
+  nutrition: [
+    { name: "Initial nutrition consultation", durationMinutes: 60 },
+    { name: "Follow-up & meal plan review", durationMinutes: 30 },
+  ],
+  therapy: [
+    { name: "Initial consultation", durationMinutes: 30 },
+    { name: "Individual session", durationMinutes: 50 },
+    { name: "Couples session", durationMinutes: 80 },
+  ],
+  cleaning: [
+    { name: "Standard home cleaning", durationMinutes: 180 },
+    { name: "Deep cleaning", durationMinutes: 300 },
+    { name: "Move-out cleaning", durationMinutes: 360 },
+  ],
+  handyman: [
+    { name: "Handyman — first hour", durationMinutes: 60 },
+    { name: "Furniture assembly", durationMinutes: 120 },
+    { name: "TV mounting", durationMinutes: 60 },
+  ],
+  gardening: [
+    { name: "Lawn mowing & edging", durationMinutes: 60 },
+    { name: "Garden maintenance", durationMinutes: 120 },
+  ],
   "home-services": [
     { name: "Standard cleaning", durationMinutes: 120 },
     { name: "Deep cleaning", durationMinutes: 240 },

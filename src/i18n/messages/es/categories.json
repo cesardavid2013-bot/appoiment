@@ -62,8 +62,8 @@
     "description": "Tutores, profesores de música y clases de idiomas."
   },
   "home-services": {
-    "name": "Servicios para el hogar",
-    "description": "Limpieza, reparaciones y mantenimiento."
+    "name": "Hogar y jardín",
+    "description": "Limpieza, reparaciones, mantenimiento y jardinería."
   },
   "automotive": {
     "name": "Automotriz",
@@ -84,5 +84,66 @@
   "other": {
     "name": "Otros",
     "description": "Todo lo demás que puedes reservar."
+  },
+  "music-audio": {
+    "name": "Música y audio",
+    "description": "Productores, estudios de grabación, mezcla y coaching vocal."
+  },
+  "music-production": {
+    "name": "Producción musical"
+  },
+  "recording-studio": {
+    "name": "Estudios de grabación"
+  },
+  "vocal-coaching": {
+    "name": "Coaching vocal"
+  },
+  "creators": {
+    "name": "Creadores y contenido",
+    "description": "Creadores de contenido, UGC, redes sociales y edición de video."
+  },
+  "content-creation": {
+    "name": "Creación de contenido"
+  },
+  "video-editing": {
+    "name": "Edición de video"
+  },
+  "social-media": {
+    "name": "Gestión de redes sociales"
+  },
+  "design": {
+    "name": "Diseño y creatividad",
+    "description": "Diseño gráfico, de marca, web y de interiores."
+  },
+  "graphic-design": {
+    "name": "Diseño gráfico y de marca"
+  },
+  "web-design": {
+    "name": "Diseño web"
+  },
+  "interior-design": {
+    "name": "Diseño de interiores"
+  },
+  "health": {
+    "name": "Salud y cuidado",
+    "description": "Fisioterapia, nutrición, terapia y cuidado integral."
+  },
+  "physio": {
+    "name": "Fisioterapia y quiropráctica"
+  },
+  "nutrition": {
+    "name": "Nutrición"
+  },
+  "therapy": {
+    "name": "Terapia y orientación"
+  },
+  "cleaning": {
+    "name": "Limpieza"
+  },
+  "handyman": {
+    "name": "Reparaciones y mantenimiento"
+  },
+  "gardening": {
+    "name": "Jardinería"
   }
 }
