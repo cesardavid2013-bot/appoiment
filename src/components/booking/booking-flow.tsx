@@ -235,6 +235,8 @@ export function BookingFlow({
   const quoteQuery = useQuery({
     queryKey: ["quote", detail?.id, memberId, effectiveLocationId, optionIds.slice().sort().join(","), promoCode],
     enabled: Boolean(detail && selection?.ok && step === "review"),
+    // Prices and codes can change while someone is booking; always re-check on return to review.
+    staleTime: 0,
     queryFn: () =>
       api<QuoteResponse>("/api/quote", { body: { serviceId: detail!.id, memberId, locationId: effectiveLocationId, optionIds, promoCode } }),
   });
@@ -546,7 +548,11 @@ export function BookingFlow({
                     onSubmit={(e) => {
                       e.preventDefault();
                       setFieldErrors((f) => ({ ...f, promoCode: "" }));
-                      if (promoInput.trim()) setPromoCode(promoInput.trim().toUpperCase());
+                      const code = promoInput.trim().toUpperCase();
+                      if (!code) return;
+                      // Re-applying the same code re-checks it (the business may have just switched it on).
+                      if (code === promoCode) void quoteQuery.refetch();
+                      else setPromoCode(code);
                     }}
                   >
                     <Input value={promoInput} onChange={(e) => setPromoInput(e.target.value)} placeholder="Promo code" aria-label="Promo code" className="uppercase" maxLength={40} />

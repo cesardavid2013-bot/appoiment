@@ -54,7 +54,7 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
         description={
           meta.counts.all === 0
             ? undefined
-            : `${meta.counts.all.toLocaleString()} ${meta.counts.all === 1 ? "client" : "clients"}${scopedToOwn ? " you've served" : ""}${lapsed > 0 ? ` · ${lapsed} ${lapsed === 1 ? "hasn't" : "haven't"} been back in 60 days` : ""}.`
+            : `${meta.counts.all.toLocaleString()} ${meta.counts.all === 1 ? "client" : "clients"}${scopedToOwn ? " you've served" : ""}${lapsed > 0 ? ` · ${lapsed} ${lapsed === 1 ? "hasn't" : "haven't"} been back in 60 days` : ""}`
         }
       />
 

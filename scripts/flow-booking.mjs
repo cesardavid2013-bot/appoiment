@@ -1,5 +1,5 @@
 import { chromium } from "@playwright/test";
-const base = "http://localhost:3000";
+const base = process.env.BASE ?? "http://localhost:3000";
 const out = process.argv[2] ?? "/tmp/claude-0/flow";
 const device = process.argv[3] ?? "desktop";
 import fs from "node:fs";
