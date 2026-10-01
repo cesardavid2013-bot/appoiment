@@ -110,6 +110,10 @@ export async function canViewMedia(row: { id: string; visibility: string; ownerU
   if (row.visibility === "public") return true;
   if (!viewer) return false;
   if (viewer.id === row.ownerUserId || viewer.platformRole === "admin" || viewer.platformRole === "support") return true;
+  if (row.businessId && (await isVerificationDocument(row.id, row.businessId))) {
+    const { listMemberships } = await import("../authz");
+    if ((await listMemberships(viewer.id)).some((m) => m.businessId === row.businessId && m.permissions.has("business.manage"))) return true;
+  }
   const allowed = await db.execute<{ ok: boolean }>(sql`
     select exists (
       select 1 from messages m join conversations c on c.id = m.conversation_id
@@ -122,6 +126,13 @@ export async function canViewMedia(row: { id: string; visibility: string; ownerU
       where ${row.id} = any(sm.media_ids) and t.user_id = ${viewer.id}
     ) as ok`);
   return Boolean([...allowed][0]?.ok);
+}
+
+async function isVerificationDocument(mediaId: string, businessId: string) {
+  const rows = await db.execute<{ ok: boolean }>(
+    sql`select exists (select 1 from verification_requests where business_id = ${businessId} and ${mediaId}::uuid = any(document_media_ids)) as ok`,
+  );
+  return Boolean([...rows][0]?.ok);
 }
 
 /**
