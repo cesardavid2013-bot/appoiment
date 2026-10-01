@@ -9,6 +9,7 @@ import {
   appointments,
   businessMembers,
   businesses,
+  categories,
   intakeForms,
   locations,
   serviceLocations,
@@ -116,6 +117,16 @@ async function assertOwnedIds(tx: Tx, businessId: string, input: ServiceInput) {
     const [f] = await tx.select({ id: intakeForms.id }).from(intakeForms).where(and(eq(intakeForms.id, input.intakeFormId), eq(intakeForms.businessId, businessId)));
     if (!f) throw new AppError("validation", "That intake form doesn't exist.");
   }
+  if (input.coverMediaId) {
+    const { assertMediaOwned } = await import("./media");
+    await assertMediaOwned(input.coverMediaId, { businessId });
+  }
+  if (input.categoryId) {
+    const [c] = await tx.select({ id: categories.id }).from(categories).where(eq(categories.id, input.categoryId));
+    if (!c) throw new AppError("validation", "That category doesn't exist.");
+  }
+  const staffIds = new Set(input.memberIds);
+  if (input.staffOverrides.some((o) => !staffIds.has(o.memberId))) throw new AppError("validation", "Price overrides must be for people who perform this service.");
 }
 
 async function uniqueServiceSlug(tx: Tx, businessId: string, name: string, excludeId?: string) {

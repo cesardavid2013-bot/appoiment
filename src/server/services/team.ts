@@ -201,7 +201,7 @@ export async function teamWithDetails(businessId: string) {
       avatarMediaId: businessMembers.avatarMediaId,
       email: users.email,
       joinedAt: businessMembers.joinedAt,
-      upcoming: sql<number>`(select count(*)::int from appointments a where a.member_id = ${businessMembers.id} and a.starts_at > now() and a.status in ('confirmed','requested','pending_payment'))`,
+      upcoming: sql<number>`(select count(*)::int from appointments a where a.member_id = business_members.id and a.starts_at > now() and a.status in ('confirmed','requested','pending_payment'))`,
     })
     .from(businessMembers)
     .leftJoin(users, eq(users.id, businessMembers.userId))

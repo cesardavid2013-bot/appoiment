@@ -14,7 +14,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, ComponentProps<"textarea
 
 export const Select = forwardRef<HTMLSelectElement, ComponentProps<"select">>(function Select({ className, children, ...props }, ref) {
   return (
-    <div className="relative">
+    <div className={cn("relative", /\bw-(?!full)/.test(className ?? "") && "w-fit")}>
       <select ref={ref} className={cn(control, "h-11 md:h-10 appearance-none pr-9 cursor-pointer", className)} {...props}>
         {children}
       </select>

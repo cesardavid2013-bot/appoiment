@@ -220,7 +220,7 @@ export async function listCustomers(m: Membership, p: z.infer<typeof customerQue
       cancelledCount: businessCustomers.cancelledCount,
       totalSpentCents: businessCustomers.totalSpentCents,
       lastVisitAt: businessCustomers.lastVisitAt,
-      nextVisit: sql<string | null>`(select min(starts_at) from appointments a where a.business_customer_id = ${businessCustomers.id} and a.starts_at > now() and a.status in ('confirmed','requested'))`,
+      nextVisit: sql<string | null>`(select min(starts_at) from appointments a where a.business_customer_id = business_customers.id and a.starts_at > now() and a.status in ('confirmed','requested'))`,
     })
     .from(businessCustomers)
     .where(

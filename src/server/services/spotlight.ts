@@ -64,7 +64,7 @@ export async function setSpotlightStatus(m: Membership, actorUserId: string, id:
 
 /** Business ids with a live campaign matching the search category (or any). */
 export function activeSpotlightCondition(categoryIds: string[] | null) {
-  return sql`exists (select 1 from spotlight_campaigns sc where sc.business_id = ${businesses.id} and sc.status = 'active' and sc.starts_at <= now() and sc.ends_at > now() and (sc.category_id is null ${
+  return sql`exists (select 1 from spotlight_campaigns sc where sc.business_id = businesses.id and sc.status = 'active' and sc.starts_at <= now() and sc.ends_at > now() and (sc.category_id is null ${
     categoryIds && categoryIds.length ? sql`or ${inArray(sql`sc.category_id`, categoryIds)}` : sql``
   }))`;
 }

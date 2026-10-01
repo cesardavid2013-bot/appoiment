@@ -23,7 +23,7 @@ const apptSelect = {
   businessName: businesses.name,
   businessSlug: businesses.slug,
   logoMediaId: businesses.logoMediaId,
-  hasReview: sql<boolean>`exists (select 1 from reviews r where r.appointment_id = ${appointments.id})`,
+  hasReview: sql<boolean>`exists (select 1 from reviews r where r.appointment_id = appointments.id)`,
 };
 
 export type CustomerAppointment = Awaited<ReturnType<typeof listCustomerAppointments>>[number];

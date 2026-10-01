@@ -318,7 +318,7 @@ export async function listReviews(businessId: string, opts: { limit?: number; be
       responseBody: reviews.responseBody,
       respondedAt: reviews.respondedAt,
       createdAt: reviews.createdAt,
-      serviceName: sql<string | null>`(select name from services where services.id = ${reviews.serviceId})`,
+      serviceName: sql<string | null>`(select s.name from services s where s.id = reviews.service_id)`,
       authorName: users.name,
     })
     .from(reviews)

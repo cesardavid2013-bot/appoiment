@@ -111,7 +111,7 @@ async function nextSlotsForService(businessId: string, serviceId: string | undef
 }
 
 export async function searchBusinesses(p: SearchParams) {
-  const conds: SQL[] = [eq(businesses.status, "active"), sql`exists (select 1 from services s join service_staff ss on ss.service_id = s.id where s.business_id = ${businesses.id} and s.status = 'active')`];
+  const conds: SQL[] = [eq(businesses.status, "active"), sql`exists (select 1 from services s join service_staff ss on ss.service_id = s.id where s.business_id = businesses.id and s.status = 'active')`];
   const tsq = p.q ? toTsQuery(p.q) : null;
   const norm = p.q ? normalizeSearch(p.q) : "";
 
@@ -124,7 +124,7 @@ export async function searchBusinesses(p: SearchParams) {
     const ids = await categoryIds(p.category);
     catIds = ids;
     if (ids.length)
-      conds.push(sql`(${inArray(businesses.primaryCategoryId, ids)} or exists (select 1 from services s where s.business_id = ${businesses.id} and s.status = 'active' and ${inArray(sql`s.category_id`, ids)}))`);
+      conds.push(sql`(${inArray(businesses.primaryCategoryId, ids)} or exists (select 1 from services s where s.business_id = businesses.id and s.status = 'active' and ${inArray(sql`s.category_id`, ids)}))`);
     else conds.push(sql`false`);
   }
   if (p.minRating) conds.push(sql`${businesses.ratingAvg} >= ${p.minRating}`);
@@ -189,7 +189,7 @@ export async function searchBusinesses(p: SearchParams) {
     logoMediaId: businesses.logoMediaId,
     coverMediaId: businesses.coverMediaId,
     timezone: businesses.timezone,
-    categoryName: sql<string | null>`(select name from categories c where c.id = ${businesses.primaryCategoryId})`,
+    categoryName: sql<string | null>`(select c.name from categories c where c.id = businesses.primary_category_id)`,
     distanceKm: distance,
   };
 
@@ -267,7 +267,7 @@ async function hydrate(
       sortOrder: services.sortOrder,
     })
     .from(services)
-    .where(and(inArray(services.businessId, ids), eq(services.status, "active"), sql`exists (select 1 from service_staff ss where ss.service_id = ${services.id})`))
+    .where(and(inArray(services.businessId, ids), eq(services.status, "active"), sql`exists (select 1 from service_staff ss where ss.service_id = services.id)`))
     .orderBy(asc(services.sortOrder));
   // Fall back to the latest portfolio image when no cover is set — real work beats a blank card.
   const fallbackCovers = await db
@@ -400,7 +400,7 @@ export async function hydrateIds(ids: string[]): Promise<SearchResult[]> {
       logoMediaId: businesses.logoMediaId,
       coverMediaId: businesses.coverMediaId,
       timezone: businesses.timezone,
-      categoryName: sql<string | null>`(select name from categories c where c.id = ${businesses.primaryCategoryId})`,
+      categoryName: sql<string | null>`(select c.name from categories c where c.id = businesses.primary_category_id)`,
       distanceKm: sql<number | null>`null`,
     })
     .from(businesses)
