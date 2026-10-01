@@ -33,6 +33,14 @@ describe("assistant: understanding requests", () => {
     expect(parseWhen(normalizeSearch("friday 6:30 pm"), TODAY)).toMatchObject({ dates: ["2026-10-02"], minute: 18 * 60 + 30 });
   });
 
+  it("after / before bounds", () => {
+    expect(parseWhen(normalizeSearch("a barber tomorrow after 5"), TODAY)).toMatchObject({ dates: ["2026-10-02"], after: 17 * 60 });
+    expect(parseWhen(normalizeSearch("hoy después de las 6"), TODAY)).toMatchObject({ dates: ["2026-10-01"], after: 18 * 60 });
+    expect(parseWhen(normalizeSearch("saturday before 11am"), TODAY)).toMatchObject({ before: 11 * 60 });
+    expect(matchesWhen(17 * 60 + 30, { after: 17 * 60 })).toBe(true);
+    expect(matchesWhen(16 * 60, { after: 17 * 60 })).toBe(false);
+  });
+
   it("weekday names resolve to the next occurrence", () => {
     expect(search("personal trainer on monday").when?.dates).toEqual(["2026-10-05"]);
     expect(search("clases de piano el sábado").when?.dates).toEqual(["2026-10-03"]);

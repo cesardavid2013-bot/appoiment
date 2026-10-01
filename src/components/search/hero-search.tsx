@@ -2,6 +2,7 @@
 
 import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useAssistant } from "@/components/assistant/assistant";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { api } from "@/lib/api";
 import type { SavedLocation } from "@/lib/location";
@@ -12,6 +13,7 @@ type Suggestions = { businesses: { slug: string; name: string; city: string | nu
 export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation | null }) {
   const router = useRouter();
   const [q, setQ] = useState("");
+  const assistant = useAssistant();
   const [loc, setLoc] = useState<SavedLocation | null>(initialLocation);
   const [sugg, setSugg] = useState<Suggestions | null>(null);
   const [open, setOpen] = useState(false);
@@ -35,6 +37,11 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
 
   function submit(e?: FormEvent) {
     e?.preventDefault();
+    // A sentence ("barber tomorrow after 5", "uñas el sábado") is a request, not a keyword: hand it to the assistant.
+    if (looksLikeRequest(q)) {
+      assistant.open(q);
+      return;
+    }
     const params = new URLSearchParams();
     if (q.trim()) params.set("q", q.trim());
     if (loc) {
@@ -89,6 +96,18 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
           Search
         </button>
       </div>
+      <p className="mt-3 text-[13px] text-ink-3">
+        Or just say it —{" "}
+        <button type="button" onClick={() => assistant.open(q.trim() || undefined)} className="font-medium text-ink underline decoration-line-strong underline-offset-4 hover:decoration-ink">
+          “a barber tomorrow after 5”
+        </button>
+      </p>
     </form>
   );
+}
+
+const REQUEST_HINT = /\b(today|tonight|tomorrow|weekend|monday|tuesday|wednesday|thursday|friday|saturday|sunday|morning|afternoon|evening|near me|under \$?\d|after \d|before \d|hoy|mañana|manana|tarde|noche|sábado|sabado|domingo|lunes|martes|miércoles|miercoles|jueves|viernes|cerca|menos de|quiero|necesito|busco)\b/i;
+function looksLikeRequest(q: string) {
+  const t = q.trim();
+  return t.split(/\s+/).length >= 3 && REQUEST_HINT.test(t);
 }

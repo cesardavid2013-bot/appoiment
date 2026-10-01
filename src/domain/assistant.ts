@@ -15,6 +15,9 @@ export type When = {
   part?: DayPart;
   /** Local minute of day the person asked for ("at 5" → 1020). */
   minute?: number;
+  /** "after 5" / "después de las 5" and "before noon" bounds, local minutes. */
+  after?: number;
+  before?: number;
   label: { en: string; es: string };
 };
 
@@ -157,10 +160,26 @@ export function parseWhen(n: string, today: string): When | undefined {
   else if (/\b(afternoon|after lunch|tarde|por la tarde|lunchtime|mediodia|lunch)\b/.test(n)) part = "afternoon";
   else if (/\b(evening|tonight|night|after work|noche|despues del trabajo|esta noche)\b/.test(n)) part = "evening";
 
+  const hourOf = (h: string, ap?: string) => {
+    let v = Number(h);
+    if (ap?.startsWith("p") && v < 12) v += 12;
+    if (ap?.startsWith("a") && v === 12) v = 0;
+    if (!ap && v >= 1 && v <= 7) v += 12;
+    return v * 60;
+  };
+  let after: number | undefined;
+  let before: number | undefined;
+  const af = /\b(?:after|from|despues de las?|desde las?|a partir de las?)\s*(\d{1,2})\s*(am|pm)?\b/.exec(n);
+  if (af) after = hourOf(af[1], af[2]);
+  const bf = /\b(?:before|antes de las?)\s*(\d{1,2})\s*(am|pm)?\b/.exec(n);
+  if (bf) before = hourOf(bf[1], bf[2]);
+  if (/\b(after work|despues del trabajo)\b/.test(n)) after ??= 17 * 60;
+  if (/\b(before noon|antes del mediodia)\b/.test(n)) before ??= 12 * 60;
+
   let minute: number | undefined;
   // Text is normalized, so "6:30" arrives as "6 30".
   const t = /\b(?:at|a las?|@)\s*(\d{1,2})(?:[: ]([0-5]\d))?\s*(am|pm|a m|p m)?\b/.exec(n) ?? /\b(\d{1,2})(?:[: ]([0-5]\d))?\s*(am|pm)\b/.exec(n);
-  if (t) {
+  if (t && !af && !bf) {
     let h = Number(t[1]);
     const m = Number(t[2] ?? 0);
     const ap = (t[3] ?? "").replace(/\s/g, "");
@@ -173,7 +192,7 @@ export function parseWhen(n: string, today: string): When | undefined {
     }
   }
 
-  if (!dates && !part && minute == null) return undefined;
+  if (!dates && !part && minute == null && after == null && before == null) return undefined;
   if (!dates) {
     dates = [today, isoAdd(today, 1), isoAdd(today, 2)];
     label = { en: "in the next few days", es: "en los próximos días" };
@@ -186,11 +205,17 @@ export function parseWhen(n: string, today: string): When | undefined {
     const clock = `${hh % 12 || 12}${mm ? `:${String(mm).padStart(2, "0")}` : ""} ${hh < 12 ? "AM" : "PM"}`;
     label = { en: `${label.en} around ${clock}`, es: `${label.es} cerca de las ${clock}` };
   }
-  return { dates, part, minute, label };
+  const clockOf = (mins: number) => `${Math.floor(mins / 60) % 12 || 12}${mins % 60 ? `:${String(mins % 60).padStart(2, "0")}` : ""} ${mins < 720 ? "AM" : "PM"}`;
+  if (after != null) label = { en: `${label.en} after ${clockOf(after)}`, es: `${label.es} después de las ${clockOf(after)}` };
+  if (before != null) label = { en: `${label.en} before ${clockOf(before)}`, es: `${label.es} antes de las ${clockOf(before)}` };
+  return { dates, part, minute, after, before, label };
 }
 
 /** Does a local minute-of-day satisfy the requested part/time? */
-export function matchesWhen(localMinute: number, when: Pick<When, "part" | "minute">): boolean {
+export function matchesWhen(localMinute: number, when: Pick<When, "part" | "minute" | "after" | "before">): boolean {
+  if (when.after != null && localMinute < when.after) return false;
+  if (when.before != null && localMinute >= when.before) return false;
+  if (when.after != null || when.before != null) return true;
   if (when.minute != null) return Math.abs(localMinute - when.minute) <= 90;
   if (when.part === "morning") return localMinute < 12 * 60;
   if (when.part === "afternoon") return localMinute >= 12 * 60 && localMinute < 17 * 60;
@@ -207,9 +232,11 @@ export function parseRequest(text: string, today: string): { intent: Intent; lan
 
   let rest = ` ${n} `;
   let category: string | undefined;
+  const matched: string[] = [];
   for (const [phrase, slug] of PHRASE_INDEX) {
     if (rest.includes(` ${phrase} `)) {
       category ??= slug;
+      matched.push(phrase);
       rest = rest.replace(` ${phrase} `, " ");
     }
   }
@@ -231,9 +258,10 @@ export function parseRequest(text: string, today: string): { intent: Intent; lan
   const virtual = /\b(online|virtual|zoom|remote|remoto|en linea|por video)\b/.test(n) || undefined;
   const city = /\b(?:in|en)\s+([a-z][a-z ]{2,30}?)(?=\s+(?:for|para|under|menos|tomorrow|manana|today|hoy|this|esta|at|a las|near|cerca)\b|$)/.exec(n)?.[1]?.trim();
 
-  const terms = rest
-    .split(" ")
-    .filter((w) => w.length > 2 && !STOP.has(w) && !/^\d+$/.test(w) && !(w in WEEKDAYS) && w !== city);
+  // Matched phrases stay useful for picking the right service ("skin fade", "retratos").
+  const terms = [...new Set([...rest.split(" "), ...matched.flatMap((p) => p.split(" "))])].filter(
+    (w) => w.length > 2 && !STOP.has(w) && !/^\d+$/.test(w) && !(w in WEEKDAYS) && w !== city,
+  );
 
   if (!category && terms.length === 0 && !when && !maxPriceCents && !nearMe && !mobile && !virtual) {
     if (/^(hi|hello|hey|hola|buenas|buenos dias|buenas tardes|buenas noches|que tal)\b/.test(n)) return { intent: { kind: "greeting" }, lang };
@@ -249,3 +277,51 @@ export function parseRequest(text: string, today: string): { intent: Intent; lan
 }
 
 const CITY_STOP = new Set(["the morning", "the afternoon", "the evening", "la manana", "la tarde", "la noche", "linea", "line", "person", "persona"]);
+
+/** How a category reads inside a sentence ("Here are 3 barbers…"). */
+export const CATEGORY_LABELS: Record<string, { en: string; es: string }> = {
+  barber: { en: "barbers", es: "barbería" },
+  "hair-salon": { en: "hair stylists", es: "peluquería" },
+  "braids-locs": { en: "braid & loc specialists", es: "trenzas y locs" },
+  hair: { en: "hair professionals", es: "cabello" },
+  nails: { en: "nail artists", es: "uñas" },
+  "lashes-brows": { en: "lash & brow artists", es: "pestañas y cejas" },
+  makeup: { en: "makeup artists", es: "maquillaje" },
+  skincare: { en: "skincare specialists", es: "cuidado de la piel" },
+  beauty: { en: "beauty professionals", es: "belleza" },
+  massage: { en: "massage therapists", es: "masajes" },
+  spa: { en: "spas", es: "spa" },
+  wellness: { en: "wellness professionals", es: "bienestar" },
+  "personal-training": { en: "personal trainers", es: "entrenadores personales" },
+  "yoga-pilates": { en: "yoga & pilates teachers", es: "yoga y pilates" },
+  fitness: { en: "fitness coaches", es: "fitness" },
+  education: { en: "tutors & teachers", es: "clases y tutorías" },
+  photography: { en: "photographers", es: "fotografía" },
+  "tattoo-piercing": { en: "tattoo & piercing artists", es: "tatuajes y piercing" },
+  "home-services": { en: "home service pros", es: "servicios del hogar" },
+  automotive: { en: "detailers & mechanics", es: "autos" },
+  pets: { en: "pet care pros", es: "mascotas" },
+  events: { en: "event pros", es: "eventos" },
+  professional: { en: "consultants & coaches", es: "asesoría" },
+};
+
+/** A follow-up like "and Saturday?" keeps what was asked before. */
+export function mergeFollowUp(current: SearchIntent, previousTexts: string[], today: string): SearchIntent {
+  if (current.category || current.terms.length) return current;
+  for (const text of [...previousTexts].reverse()) {
+    const prev = parseRequest(text, today).intent;
+    if (prev.kind === "search" && (prev.category || prev.terms.length)) {
+      return {
+        ...prev,
+        when: current.when ?? prev.when,
+        maxPriceCents: current.maxPriceCents ?? prev.maxPriceCents,
+        nearMe: current.nearMe || prev.nearMe,
+        mobile: current.mobile ?? prev.mobile,
+        virtual: current.virtual ?? prev.virtual,
+        sort: current.sort ?? prev.sort,
+        city: current.city ?? prev.city,
+      };
+    }
+  }
+  return current;
+}

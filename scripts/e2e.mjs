@@ -38,6 +38,7 @@ const flows = [
   ["Hours & time off", "scripts/flow-availability.mjs", [out]],
   ["Team invite", "scripts/flow-team-invite.mjs", [out]],
   ["Settings", "scripts/flow-settings.mjs", [out]],
+  ["Assistant", "scripts/flow-assistant.mjs", [out]],
   ["Accessibility", "scripts/a11y.mjs", []],
 ];
 let failed = 0;

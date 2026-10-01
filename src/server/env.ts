@@ -32,6 +32,9 @@ const schema = z.object({
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: optional,
   PLATFORM_CUSTOMER_FEE_BPS: z.coerce.number().int().min(0).max(2000).default(0),
   GEOCODER_URL: optional,
+  /** Optional: turns on the assistant's open-ended answers (Claude). Without it the assistant runs fully locally. */
+  ANTHROPIC_API_KEY: optional,
+  ASSISTANT_MODEL: z.string().default("claude-sonnet-5-5"),
   /** Header your edge overwrites with the real client IP (e.g. cf-connecting-ip, x-vercel-forwarded-for). Takes precedence. */
   CLIENT_IP_HEADER: optional,
   /** Number of reverse proxies in front of the app that append to X-Forwarded-For. */
@@ -63,4 +66,5 @@ export const features = {
   sms: Boolean(env.TWILIO_ACCOUNT_SID && env.TWILIO_AUTH_TOKEN && env.TWILIO_FROM_NUMBER),
   google: Boolean(env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET),
   geocoding: Boolean(env.GEOCODER_URL),
+  assistantAi: Boolean(env.ANTHROPIC_API_KEY),
 };

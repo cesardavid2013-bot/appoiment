@@ -13,6 +13,7 @@ export const RATE_RULES = {
   loginAccount: { limit: 15, windowSeconds: 15 * 60 },
   passwordCheck: { limit: 10, windowSeconds: 60 * 60 },
   promo: { limit: 30, windowSeconds: 10 * 60 },
+  assistant: { limit: 40, windowSeconds: 10 * 60 },
   signup: { limit: 20, windowSeconds: 60 * 60 },
   passwordReset: { limit: 5, windowSeconds: 60 * 60 },
   booking: { limit: 20, windowSeconds: 60 * 60 },

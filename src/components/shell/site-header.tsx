@@ -9,9 +9,20 @@ import { Avatar } from "@/components/ui/media";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { Logo } from "./logo";
+import { useAssistant } from "@/components/assistant/assistant";
 import { useBadges } from "./use-badges";
 
 export type ShellViewer = { id: string; name: string; email: string | null; hasBusiness: boolean; isAdmin: boolean } | null;
+
+/** Speech mark with a check — "ask, get it handled". Drawn to match the logo, not a generic AI sparkle. */
+function AskIcon() {
+  return (
+    <svg viewBox="0 0 20 20" className="size-[18px]" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M4 15.5V6.5a2.5 2.5 0 0 1 2.5-2.5h7A2.5 2.5 0 0 1 16 6.5v4.5a2.5 2.5 0 0 1-2.5 2.5H8l-4 2Z" />
+      <path d="m7.5 9 1.8 1.8L12.8 7.4" />
+    </svg>
+  );
+}
 
 function CountDot({ n }: { n: number }) {
   if (!n) return null;
@@ -27,6 +38,7 @@ export function SiteHeader({ viewer }: { viewer: ShellViewer }) {
   const pathname = usePathname();
   const router = useRouter();
   const { data: badges } = useBadges(Boolean(viewer));
+  const assistant = useAssistant();
   const next = encodeURIComponent(pathname ?? "/");
 
   async function logout() {
@@ -47,6 +59,11 @@ export function SiteHeader({ viewer }: { viewer: ShellViewer }) {
           <span>Search services or professionals</span>
         </Link>
         <nav className="ml-auto flex items-center gap-1" aria-label="Main">
+          <button type="button" onClick={() => assistant.open()} className={cn(buttonClass("ghost", "sm"), "gap-1.5")} aria-haspopup="dialog">
+            <AskIcon />
+            <span className="hidden sm:inline">Ask</span>
+            <span className="sr-only sm:hidden">Ask Kept</span>
+          </button>
           <Link href="/explore" className={cn(buttonClass("ghost", "sm"), "hidden md:inline-flex", pathname?.startsWith("/explore") && "text-ink")}>
             Explore
           </Link>
