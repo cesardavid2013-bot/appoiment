@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept pour les professionnels — la réservation en ligne et un agenda qui travaille pour vous",
+    "description": "Recevez des réservations en ligne, mettez fin aux doublons et aux absences, et faites-vous connaître des clients près de chez vous. Gratuit pour démarrer pour les indépendants."
+  },
+  "cta": {
+    "dashboard": "Accéder à votre activité",
+    "setup": "Configurer votre activité",
+    "start": "Commencer — c'est gratuit"
+  },
+  "hero": {
+    "eyebrow": "Kept pour les professionnels",
+    "title": "Un agenda plein. Des soirées libres.",
+    "lede": "La réservation en ligne, un agenda qui ne peut pas faire de doublons, des rappels qui réduisent les absences et un profil visible par les gens près de chez vous qui cherchent exactement ce que vous faites. Gratuit pour démarrer.",
+    "howItWorks": "Comment ça marche",
+    "note": "Aucune carte bancaire requise. Votre profil reste privé jusqu'à ce que vous le publiiez."
+  },
+  "sides": {
+    "heading": "Comment Kept fonctionne pour vos clients et pour vous",
+    "clients": {
+      "eyebrow": "Pour vos clients",
+      "title": "Découvrir et réserver d'excellents professionnels.",
+      "points": {
+        "search": "Une recherche par prestation, lieu et horaire, avec de vrais créneaux — pas un formulaire de contact.",
+        "prices": "Des prix clairs, vos règles et des avis vérifiés avant de réserver.",
+        "reminders": "Des rappels, l'itinéraire et des modifications sans passer un coup de fil."
+      }
+    },
+    "you": {
+      "eyebrow": "Pour vous",
+      "title": "Gérez vos rendez-vous et développez votre activité.",
+      "points": {
+        "calendar": "Un seul agenda pour les réservations, les pauses et les congés — sur votre téléphone.",
+        "deposits": "Des acomptes et des règles d'annulation appliqués automatiquement.",
+        "clients": "Un historique client, des notes et des avis qui font revenir."
+      }
+    }
+  },
+  "steps": {
+    "heading": "En ligne en trois étapes",
+    "profile": {
+      "title": "Créez votre profil",
+      "body": "Ajoutez vos prestations avec leurs prix et durées, vos horaires, votre lieu d'exercice et quelques photos de votre travail. Nous vous guidons pas à pas."
+    },
+    "share": {
+      "title": "Partagez votre lien",
+      "body": "Mettez {host}/votre-nom dans votre bio et sur vos cartes. Une fois publié, vous apparaissez aussi dans les recherches des gens à proximité."
+    },
+    "book": {
+      "title": "Recevez des réservations",
+      "body": "Les clients choisissent un vrai créneau et réservent en quelques secondes. Vous êtes prévenu, ils reçoivent des rappels, et votre agenda reste juste."
+    }
+  },
+  "industries": {
+    "heading": "Conçu pour toute prestation qui se réserve à l'heure",
+    "lede": "Si vos clients réservent du temps avec vous, Kept vous convient — que vous travailliez seul dans un fauteuil ou dirigiez une équipe sur plusieurs adresses."
+  },
+  "features": {
+    "heading": "Tout ce dont la journée a besoin",
+    "booking": {
+      "title": "La réservation en ligne avec de vraies disponibilités",
+      "p1": "Les clients ne voient que les horaires que vous pouvez réellement assurer — vos horaires, moins les réservations existantes, les pauses, les temps tampons et les congés, avec un délai minimum de prévenance et une limite de réservation à l'avance.",
+      "p2": "Chaque réservation est revérifiée au moment où elle est faite : deux personnes ne peuvent jamais obtenir le même créneau, même si elles appuient à la même seconde."
+    },
+    "services": {
+      "title": "Des prestations à votre façon de facturer",
+      "p1": "Prix fixe, à partir de, fourchette, gratuit ou sur consultation. Ajoutez des options comme la longueur, la taille ou des suppléments : chacune ajuste à la fois le prix et le temps bloqué dans votre agenda.",
+      "p2": "Ajoutez des temps tampons avant ou après, réservez certaines prestations à certains membres de l'équipe ou adresses, et posez des questions avant la première visite."
+    },
+    "policies": {
+      "title": "Acomptes et règles, appliqués pour vous",
+      "p1": "Demandez un acompte ou le paiement intégral à l'avance, fixez un délai d'annulation et des frais d'annulation tardive ou d'absence. Les clients voient les règles avant de réserver, et les remboursements les suivent automatiquement."
+    },
+    "reminders": {
+      "title": "Des rappels qui réduisent les absences",
+      "p1": "Confirmations et rappels partent tout seuls — par défaut la veille et deux heures avant — avec un lien pour déplacer le rendez-vous dans le respect de vos règles, plutôt que de ne pas venir.",
+      "p2": "Quand quelqu'un annule, les clients inscrits sur votre liste d'attente pour ce jour-là sont prévenus du créneau libéré."
+    },
+    "clients": {
+      "title": "Connaissez vos clients",
+      "p1": "Chaque client a une fiche avec ses visites, ses dépenses, ses annulations et ses absences, ainsi que des notes privées visibles par votre seule équipe. Écrivez à vos clients depuis le même endroit."
+    },
+    "team": {
+      "title": "Du fauteuil en solo à l'équipe multi-adresses",
+      "p1": "Ajoutez des membres d'équipe avec leurs propres horaires et prestations, et des rôles qui définissent ce que chacun peut voir et faire. Gérez plusieurs adresses, chacune avec son fuseau horaire et ses horaires."
+    },
+    "portfolio": {
+      "title": "Un portfolio qui fait réserver",
+      "p1": "Montrez des photos et de courtes vidéos de votre travail. Associez chacune à une prestation : les clients peuvent toucher « Réserver ceci » pour réserver exactement ce qu'ils ont vu."
+    },
+    "spotlight": {
+      "title": "Spotlight — gratuit pendant le lancement",
+      "p1": "Mettez votre profil en avant dans les recherches et les pages de catégorie près de chez vous. Les résultats sponsorisés sont toujours signalés, limités à deux par page, et affichent toujours vos vraies notes et disponibilités.",
+      "p2": "Spotlight ne coûte rien pendant le lancement de Kept. Si cela change un jour, nous vous préviendrons avant toute facturation — il ne devient jamais payant de lui-même."
+    }
+  },
+  "plans": {
+    "heading": "Formules",
+    "lede": "Pendant le lancement de Kept, chaque nouvel établissement démarre avec la formule {plan}, sans abonnement mensuel. Les prix des formules payantes seront annoncés bien avant leur application, et personne n'est facturé sans avoir choisi une formule.",
+    "badge": {
+      "launch": "Gratuit pendant le lancement",
+      "available": "Disponible",
+      "unavailable": "Bientôt disponible"
+    },
+    "period": {
+      "launch": "par mois pendant le lancement",
+      "available": "par mois",
+      "unavailable": "Tarif à venir"
+    },
+    "rows": {
+      "members": "Membres d'équipe réservables",
+      "locations": "Adresses",
+      "fee": "Frais sur les paiements en ligne",
+      "roles": "Rôles d'équipe personnalisés",
+      "analytics": "Statistiques avancées"
+    },
+    "justYou": "1 (vous seul)",
+    "upTo": "Jusqu'à {n}",
+    "included": "Inclus",
+    "notIncluded": "Non inclus",
+    "summary": {
+      "free": "Réservation en ligne, agenda, rappels, acomptes, fiches clients, questionnaires, portfolio et Spotlight : tout est inclus.",
+      "launch": "Tout ce que comprend {base}, plus une équipe jusqu'à {members}, davantage d'adresses, des rôles personnalisés et des frais réduits. C'est ce que reçoivent aujourd'hui les nouveaux établissements.",
+      "other": "Pour les équipes plus grandes et les établissements multi-adresses."
+    },
+    "footnote": "Les frais s'appliquent uniquement aux paiements effectués en ligne par les clients via Kept. Les rendez-vous réglés sur place ne donnent lieu à aucuns frais Kept. Besoin de plus de personnes ou d'adresses que votre formule ne le permet ? <link>Dites-le-nous</link>."
+  },
+  "faq": {
+    "heading": "Questions",
+    "cost": {
+      "q": "Combien coûte Kept ?",
+      "a": "Il n'y a pas d'abonnement mensuel : pendant le lancement de Kept, les nouveaux établissements bénéficient gratuitement de la formule {plan}. Quand un client paie en ligne — un acompte ou le prix total —, Kept conserve {fee} de ce paiement. Les rendez-vous réglés sur place ne donnent lieu à aucuns frais Kept."
+    },
+    "clientFee": {
+      "q": "Mes clients paient-ils pour réserver ?",
+      "aFee": "Les clients voient des frais de service de {fee} au moment du paiement, affichés avant de confirmer. Rien n'est jamais ajouté après coup.",
+      "aFree": "Non. Les clients réservent gratuitement et voient votre prix exact avant de confirmer."
+    },
+    "payments": {
+      "q": "Dois-je accepter les paiements en ligne ?",
+      "a": "Non. Vous pouvez laisser vos clients payer sur place, ou exiger un acompte ou le paiement intégral à la réservation. Les paiements en ligne sont traités par Stripe et versés sur votre propre compte bancaire."
+    },
+    "approve": {
+      "q": "Puis-je valider les réservations avant qu'elles soient confirmées ?",
+      "a": "Oui. Choisissez la réservation immédiate, ou le mode sur demande dans lequel chaque réservation attend votre validation. Le créneau est bloqué pendant que vous décidez, et les demandes sans réponse expirent d'elles-mêmes."
+    },
+    "where": {
+      "q": "Je travaille chez moi, je me déplace chez mes clients ou j'enseigne en ligne. Est-ce que ça marche ?",
+      "a": "Oui. Chaque lieu peut être une adresse physique, une zone d'intervention à domicile où les clients indiquent leur adresse, ou une séance en ligne. Vous pouvez proposer toutes les combinaisons."
+    },
+    "spotlight": {
+      "q": "Comment fonctionne Spotlight ?",
+      "a": "Spotlight affiche votre profil comme résultat « Sponsorisé », clairement signalé, dans les recherches et les pages de catégorie, avec au plus deux par page. C'est gratuit pendant le lancement — activez-le ou arrêtez-le à tout moment depuis votre tableau de bord."
+    },
+    "link": {
+      "q": "Puis-je utiliser mon propre lien ?",
+      "a": "Oui. Chaque établissement dispose d'un profil à l'adresse {host}/votre-nom, à partager sur Instagram, dans votre bio ou via un QR code. Les clients qui réservent par ce lien n'ont pas besoin de vous chercher."
+    }
+  },
+  "closing": {
+    "title": "Votre prochain client vous cherche déjà.",
+    "body": "Configurez vos prestations et vos horaires, publiez votre profil et commencez à recevoir des réservations dès aujourd'hui."
+  },
+  "demo": {
+    "example": "Exemple",
+    "today": {
+      "label": "Exemple du planning du jour que voit un professionnel",
+      "title": "Aujourd'hui",
+      "summary": "{count, plural, one {# rendez-vous} other {# rendez-vous}} · {amount} réservés",
+      "skinFade": "Dégradé américain",
+      "beardTrim": "Taille de barbe et contours",
+      "lunch": "Déjeuner",
+      "signatureCut": "Coupe signature",
+      "kidsCut": "Coupe enfant",
+      "firstVisit": "{name} · première visite",
+      "confirmed": "Confirmé",
+      "depositPaid": "Acompte payé",
+      "needsApproval": "À valider",
+      "checkedIn": "Arrivé"
+    },
+    "reminder": {
+      "label": "Exemple de rappel automatique reçu par un client",
+      "when": "24 h avant",
+      "title": "Rappel : {service} demain",
+      "body": "{time} avec Dre chez North Fade Studio. Besoin de changer ? Déplacez votre rendez-vous jusqu'à 24 h avant."
+    },
+    "grid": {
+      "label": "Exemple du sélecteur d'horaires où les clients réservent, avec uniquement les créneaux libres",
+      "title": "Choisissez un horaire",
+      "instant": "Confirmation immédiate",
+      "note": "Les créneaux pris disparaissent dès qu'une réservation est faite. Deux personnes ne peuvent jamais obtenir le même créneau."
+    },
+    "policy": {
+      "label": "Exemple de règles d'acompte et d'annulation",
+      "title": "Conditions de réservation",
+      "deposit": "Acompte",
+      "depositValue": "{pct} à la réservation",
+      "freeCancel": "Annulation gratuite",
+      "freeCancelValue": "Jusqu'à 24 h avant",
+      "lateCancel": "Annulation tardive",
+      "lateCancelValue": "{pct} du total",
+      "noShow": "Absence",
+      "noShowValue": "Acompte conservé",
+      "dueNow": "À payer maintenant",
+      "dueValue": "{due} sur {total}"
+    },
+    "client": {
+      "label": "Exemple de fiche client",
+      "since": "Client depuis {month} · {visits, plural, one {# visite} other {# visites}}",
+      "spent": "Dépensé",
+      "noShows": "Absences",
+      "gap": "Fréquence habituelle",
+      "gapValue": "{weeks} sem.",
+      "note": "Note privée : cuir chevelu sensible — utiliser le shampooing doux."
+    },
+    "team": {
+      "label": "Exemple d'équipe sur deux adresses",
+      "title": "Équipe",
+      "senior": "Barbier senior",
+      "barber": "Barbier",
+      "frontDesk": "Accueil"
+    },
+    "portfolio": {
+      "label": "Exemple de publications du portfolio associées à une prestation réservable",
+      "skinFade": "Dégradé américain",
+      "taper": "Contour dégradé et barbe",
+      "bookThis": "Réserver ceci",
+      "note": "Vos photos et vidéos s'affichent ici — touchez-en une pour réserver exactement cette prestation."
+    },
+    "spotlight": {
+      "label": "Exemple de fiche sponsorisée dans les résultats de recherche",
+      "category": "Barbier",
+      "promoted": "Sponsorisé"
+    },
+    "options": {
+      "service": "Tresses knotless",
+      "hint": "Prestation d'exemple · essayez les options",
+      "length": "Longueur",
+      "shoulder": "Aux épaules",
+      "mid": "Mi-dos",
+      "waist": "À la taille",
+      "addons": "Suppléments",
+      "wash": "Shampooing et brushing",
+      "beads": "Perles et bagues",
+      "included": "Inclus",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

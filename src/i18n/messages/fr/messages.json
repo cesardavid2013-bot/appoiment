@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Vous :",
+  "unread": "Non lu",
+  "apptLine": "{service} · {date} à {time}",
+  "list": {
+    "title": "Messages",
+    "unread": "{count, plural, one {# conversation non lue.} other {# conversations non lues.}}",
+    "caughtUp": "Vous êtes à jour.",
+    "emptyTitle": "Aucun message pour l'instant",
+    "emptyBody": "Une question sur une prestation, un prix ou un horaire ? Ouvrez la page d'un professionnel et touchez « Poser une question ». Ses réponses arriveront ici.",
+    "findPro": "Trouver un professionnel"
+  },
+  "thread": {
+    "metaTitle": "Conversation",
+    "placeholder": "Écrire à {business}"
+  },
+  "new": {
+    "metaTitle": "Nouveau message",
+    "ownTitle": "C'est votre établissement",
+    "ownBody": "Les messages des clients à {business} arrivent dans la messagerie de votre activité.",
+    "ownButton": "Ouvrir la messagerie pro",
+    "placeholderBooking": "Une question sur cette réservation",
+    "placeholderQuestion": "Posez une question",
+    "emptyBookingTitle": "Écrire à {business} au sujet de votre réservation",
+    "emptyQuestionTitle": "Posez vos questions à {business} avant de réserver",
+    "emptyBookingBody": "En retard, un changement à faire ou une question ? Votre message arrive directement à leur équipe.",
+    "emptyQuestionBody": "Prix, horaires, ce qu'il faut apporter — {business} vous répondra ici et nous vous préviendrons. Votre numéro et votre e-mail restent privés."
+  },
+  "shell": {
+    "allMessages": "Tous les messages",
+    "viewProfile": "Voir le profil",
+    "book": "Réserver"
+  },
+  "pro": {
+    "backToInbox": "Retour à la messagerie"
+  },
+  "view": {
+    "label": "Messages",
+    "you": "Vous",
+    "loadingEarlier": "Chargement des messages précédents",
+    "showEarlier": "Afficher les messages précédents",
+    "seen": "Vu",
+    "sending": "Envoi…",
+    "notSent": "Non envoyé.",
+    "retry": "Réessayer",
+    "discard": "Supprimer",
+    "newMessages": "{count, plural, one {# nouveau message} other {# nouveaux messages}}",
+    "openPhoto": "Ouvrir la photo dans un nouvel onglet",
+    "photo": "Photo"
+  },
+  "composer": {
+    "about": "Au sujet de {appointment}",
+    "unlink": "Ne pas associer ce rendez-vous",
+    "processingPhoto": "Traitement de la photo",
+    "removePhoto": "Retirer la photo",
+    "attachPhoto": "Joindre une photo",
+    "label": "Message",
+    "send": "Envoyer le message",
+    "hint": "Appuyez sur Entrée pour envoyer, Maj + Entrée pour aller à la ligne."
+  },
+  "inbox": {
+    "title": "Messagerie",
+    "conversations": "Conversations",
+    "unread": "{count} non lues",
+    "allCaughtUp": "Tout est lu",
+    "searchLabel": "Rechercher des conversations par nom de client",
+    "searchPlaceholder": "Rechercher un client",
+    "clearSearch": "Effacer la recherche",
+    "show": "Afficher",
+    "all": "Toutes",
+    "unreadFilter": "Non lues",
+    "noClientsNamed": "Aucun client nommé « {term} »",
+    "nothingUnread": "Aucun message non lu",
+    "noMessages": "Aucun message pour l'instant",
+    "tryDifferent": "Essayez une autre recherche ou affichez toutes les conversations.",
+    "emptyBody": "Quand des clients posent une question depuis votre page ou au sujet d'une réservation, elle s'affiche ici."
+  },
+  "clientPanel": {
+    "client": "Client",
+    "visits": "Visites",
+    "noShows": "Absences",
+    "cancelled": "Annulés",
+    "clientSince": "Client depuis {date}",
+    "noVisits": "Aucune visite terminée pour l'instant",
+    "lastIn": "dernière en {date}",
+    "tags": "Étiquettes",
+    "clientProfile": "Fiche client",
+    "notBooked": "N'a pas encore réservé chez vous — cette conversation a commencé depuis votre page publique.",
+    "upcoming": "À venir",
+    "nothingBooked": "Aucune réservation.",
+    "recent": "Récents"
+  }
+}

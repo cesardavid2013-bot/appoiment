@@ -1,0 +1,147 @@
+{
+  "footer": "Vous recevez ce message en raison d'une activité sur votre compte Kept. Gérez vos notifications dans Compte → Notifications.",
+  "details": {
+    "service": "Prestation",
+    "when": "Quand",
+    "with": "Avec",
+    "where": "Où",
+    "online": "En ligne — le lien vous sera envoyé par l'établissement",
+    "reference": "Référence",
+    "paid": "Payé",
+    "balanceDue": "Reste à payer"
+  },
+  "cta": {
+    "viewAppointment": "Voir le rendez-vous",
+    "viewRequest": "Voir la demande",
+    "reviewRequest": "Examiner la demande",
+    "openAppointment": "Ouvrir le rendez-vous",
+    "openCalendar": "Ouvrir l'agenda",
+    "findAnotherTime": "Trouver un autre créneau",
+    "payDeposit": "Payer l'acompte",
+    "leaveReview": "Laisser un avis",
+    "bookThisTime": "Réserver ce créneau"
+  },
+  "booked": {
+    "title": "C'est réservé chez {business}",
+    "subject": "Confirmé : {service} chez {business}",
+    "heading": "Votre rendez-vous est confirmé",
+    "footnote": "Un changement de programme ? Vous pouvez déplacer ou annuler depuis la page du rendez-vous, selon la politique de l'établissement.",
+    "sms": "Kept : {service} chez {business} confirmé pour {when}. Réf. {reference}"
+  },
+  "requested": {
+    "title": "Demande envoyée à {business}",
+    "body": "Nous vous préviendrons dès qu'il y aura une réponse.",
+    "subject": "Demande envoyée : {service} chez {business}",
+    "heading": "Votre demande a été envoyée",
+    "paragraph": "{business} examine les demandes avant de les confirmer. Nous vous écrirons dès qu'il y aura une réponse."
+  },
+  "bizBooked": {
+    "title": "Nouvelle réservation",
+    "requestTitle": "Nouvelle demande de réservation",
+    "subject": "Nouvelle réservation : {service}",
+    "requestSubject": "Nouvelle demande : {service}",
+    "heading": "Vous avez une nouvelle réservation",
+    "requestHeading": "Vous avez une nouvelle demande de réservation",
+    "requestParagraph": "Acceptez-la ou refusez-la depuis votre agenda. Les demandes sans réponse expirent automatiquement."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} n'a pas pu accepter votre demande",
+      "subject": "Demande refusée : {service}",
+      "heading": "Votre demande n'a pas été acceptée"
+    },
+    "expired": {
+      "title": "Votre réservation a expiré",
+      "subject": "Votre réservation a expiré",
+      "heading": "Votre réservation a expiré"
+    },
+    "cancelled": {
+      "title": "{business} a annulé votre rendez-vous",
+      "subject": "Annulé : {service}",
+      "heading": "Votre rendez-vous a été annulé"
+    },
+    "note": "Message de l'établissement : « {note} »",
+    "refund": "Un remboursement de {amount} est en cours vers votre moyen de paiement d'origine.",
+    "bookAgain": "Vous pouvez réserver un autre créneau quand vous le souhaitez."
+  },
+  "bizCancelled": {
+    "title": "Un client a annulé",
+    "expiredTitle": "Une réservation a expiré",
+    "subject": "Annulé : {service} · {when}",
+    "heading": "Un rendez-vous a été annulé",
+    "reason": "Motif : « {reason} »"
+  },
+  "rescheduled": {
+    "title": "{business} a déplacé votre rendez-vous",
+    "body": "Désormais : {when}",
+    "subject": "Nouvel horaire : {service} chez {business}",
+    "heading": "Votre rendez-vous a un nouvel horaire",
+    "previously": "Auparavant : {when}.",
+    "changeIt": "Si le nouvel horaire ne vous convient pas, vous pouvez le déplacer ou l'annuler depuis la page du rendez-vous."
+  },
+  "bizRescheduled": {
+    "title": "Un client a déplacé son rendez-vous",
+    "subject": "Déplacé : {service}",
+    "heading": "Un rendez-vous a été déplacé"
+  },
+  "approvedPay": {
+    "title": "{business} a accepté votre demande",
+    "body": "Réglez l'acompte de {amount} pour confirmer.",
+    "subject": "Acceptée — confirmez votre {service}",
+    "heading": "Votre demande a été acceptée",
+    "paragraph": "Réglez l'acompte de {amount} pour garantir votre créneau. Les réservations non payées sont libérées automatiquement."
+  },
+  "reminder": {
+    "title": "Rappel : {service} {lead}",
+    "body": "{when} avec {business}",
+    "subject": "Rappel : {service} {lead} à {time}",
+    "heading": "À {lead}",
+    "footnote": "Un retard ou un empêchement ? Prévenez l'établissement depuis la page du rendez-vous.",
+    "sms": "Rappel : {service} chez {business} {when}."
+  },
+  "review": {
+    "title": "Qu'avez-vous pensé de « {service} » ?",
+    "body": "Laissez un petit avis sur {business}.",
+    "subject": "Comment s'est passée votre visite chez {business} ?",
+    "heading": "Comment ça s'est passé ?",
+    "paragraph": "Votre avis aide {business} et tous ceux qui cherchent un professionnel. Cela prend moins d'une minute."
+  },
+  "waitlist": {
+    "title": "Une place s'est libérée chez {business}",
+    "body": "{when} est désormais disponible. Faites vite — premier arrivé, premier servi.",
+    "subject": "Un créneau s'est libéré chez {business}",
+    "heading": "Bonne nouvelle — un créneau s'est libéré",
+    "paragraph": "{when} vient de se libérer. Les places partent au premier arrivé : réservez vite si cela vous convient."
+  },
+  "thread": {
+    "confirmed": "Rendez-vous confirmé : {service}, {when}.",
+    "declined": "Rendez-vous refusé : {service}, {when}.",
+    "expired": "Rendez-vous expiré : {service}, {when}.",
+    "cancelled": "Rendez-vous annulé : {service}, {when}.",
+    "moved": "Rendez-vous déplacé du {from} au {to}."
+  },
+  "verify": {
+    "subject": "Confirmez votre adresse e-mail",
+    "preheader": "Un geste pour confirmer votre adresse e-mail.",
+    "heading": "Bienvenue, {name}",
+    "paragraph": "Confirmez votre adresse e-mail pour que les professionnels puissent vous joindre au sujet de vos rendez-vous.",
+    "cta": "Confirmer l'e-mail",
+    "footnote": "Ce lien expire dans 3 jours. Si vous n'avez pas créé de compte, vous pouvez ignorer cet e-mail."
+  },
+  "reset": {
+    "subject": "Réinitialisez votre mot de passe",
+    "heading": "Réinitialisez votre mot de passe",
+    "paragraph": "Quelqu'un (vous, nous l'espérons) a demandé à réinitialiser le mot de passe de votre compte Kept.",
+    "cta": "Choisir un nouveau mot de passe",
+    "footnote": "Ce lien expire dans 1 heure. Si vous n'êtes pas à l'origine de cette demande, ignorez simplement cet e-mail — votre mot de passe ne changera pas."
+  },
+  "invite": {
+    "subject": "{inviter} vous invite à rejoindre {business} sur Kept",
+    "reminderSubject": "Rappel : rejoignez {business} sur Kept",
+    "heading": "Rejoignez {business}",
+    "paragraph": "{inviter} vous invite à rejoindre l'équipe de {business}. Vous pourrez consulter votre planning et gérer vos rendez-vous.",
+    "cta": "Accepter l'invitation",
+    "footnote": "Cette invitation expire dans {days} jours.",
+    "reminderFootnote": "Cette invitation expire dans {days} jours. Les liens d'invitation précédents ne fonctionnent plus."
+  }
+}
