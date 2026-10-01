@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, count, eq, gt, inArray, notInArray, sql } from "drizzle-orm";
+import { and, asc, count, eq, gt, inArray, isNull, notInArray, sql } from "drizzle-orm";
 import { z } from "zod";
 import { AppError, notFound } from "@/domain/errors";
 import { entitlements } from "@/domain/plans";
@@ -114,7 +114,10 @@ async function assertOwnedIds(tx: Tx, businessId: string, input: ServiceInput) {
     if (locs.length !== new Set(input.locationIds).size) throw new AppError("validation", "One of the selected locations isn't part of this business.");
   }
   if (input.intakeFormId) {
-    const [f] = await tx.select({ id: intakeForms.id }).from(intakeForms).where(and(eq(intakeForms.id, input.intakeFormId), eq(intakeForms.businessId, businessId)));
+    const [f] = await tx
+      .select({ id: intakeForms.id })
+      .from(intakeForms)
+      .where(and(eq(intakeForms.id, input.intakeFormId), eq(intakeForms.businessId, businessId), isNull(intakeForms.archivedAt)));
     if (!f) throw new AppError("validation", "That intake form doesn't exist.");
   }
   if (input.coverMediaId) {

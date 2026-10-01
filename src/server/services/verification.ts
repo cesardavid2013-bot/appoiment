@@ -6,7 +6,7 @@ import { db } from "../db/client";
 import { businesses, verificationRequests } from "../db/schema";
 import type { Membership } from "../authz";
 import { audit } from "../audit";
-import { assertMediaOwned } from "./media";
+import { assertMediaOwned, getMediaMap, type PublicMedia } from "./media";
 
 /**
  * Business-side identity/licence verification. A business submits details and
@@ -53,7 +53,11 @@ export async function getVerificationState(businessId: string) {
       .orderBy(desc(verificationRequests.createdAt))
       .limit(1),
   ]);
-  return { status: b?.status ?? "not_submitted", latest: latest ?? null };
+  const docs = latest?.documentMediaIds.length ? await getMediaMap(latest.documentMediaIds) : new Map<string, PublicMedia>();
+  return {
+    status: b?.status ?? "not_submitted",
+    latest: latest ? { ...latest, documents: latest.documentMediaIds.map((id) => docs.get(id)).filter((d): d is PublicMedia => Boolean(d)) } : null,
+  };
 }
 
 export async function submitVerification(membership: Membership, actorUserId: string, input: SubmitVerificationInput) {
@@ -76,10 +80,24 @@ export async function submitVerification(membership: Membership, actorUserId: st
       .limit(1);
     if (pending) throw new AppError("conflict", "Your verification is already being reviewed. We'll let you know as soon as it's done.");
 
-    const [request] = await tx
-      .insert(verificationRequests)
-      .values({ businessId: b.id, submittedByUserId: actorUserId, details: data.details, documentMediaIds: data.documentMediaIds, status: "pending" })
-      .returning();
+    // A request we asked more questions about is reopened with the new answers, so the
+    // reviewer sees their earlier note (kept, with who wrote it) next to the reply.
+    const [waiting] = await tx
+      .select({ id: verificationRequests.id })
+      .from(verificationRequests)
+      .where(and(eq(verificationRequests.businessId, b.id), eq(verificationRequests.status, "needs_info")))
+      .orderBy(desc(verificationRequests.createdAt))
+      .limit(1);
+    const [request] = waiting
+      ? await tx
+          .update(verificationRequests)
+          .set({ submittedByUserId: actorUserId, details: data.details, documentMediaIds: data.documentMediaIds, status: "pending" })
+          .where(eq(verificationRequests.id, waiting.id))
+          .returning()
+      : await tx
+          .insert(verificationRequests)
+          .values({ businessId: b.id, submittedByUserId: actorUserId, details: data.details, documentMediaIds: data.documentMediaIds, status: "pending" })
+          .returning();
     await tx.update(businesses).set({ verificationStatus: "pending" }).where(eq(businesses.id, b.id));
     await audit(
       {
@@ -89,7 +107,7 @@ export async function submitVerification(membership: Membership, actorUserId: st
         action: "verification.submitted",
         targetType: "verification_request",
         targetId: request.id,
-        metadata: { documents: data.documentMediaIds.length, previous: b.verificationStatus },
+        metadata: { documents: data.documentMediaIds.length, previous: b.verificationStatus, reopened: Boolean(waiting) },
       },
       tx,
     );

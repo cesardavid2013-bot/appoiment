@@ -636,7 +636,7 @@ export function ServiceEditor({ initial, serviceId, ctx, cover: initialCover }: 
               </Field>
             ) : (
               <p className="text-sm text-ink-3">
-                Create reusable question sets in <Link href="/pro/settings/forms" className="font-medium text-ink underline underline-offset-2">Settings → Questions</Link>.
+                Create reusable question sets in <Link href="/pro/settings/forms" className="font-medium text-ink underline underline-offset-2">Settings → Client questions</Link>.
               </p>
             )}
             <Field label="Instructions for the customer" optional hint="Shown before they confirm, e.g. “Arrive with clean, dry hair”.">

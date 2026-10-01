@@ -9,7 +9,7 @@ export const SETTINGS_SECTIONS: SettingsSection[] = [
   { href: "/pro/settings/booking", label: "Booking rules", description: "Instant or approved bookings, notice, reminders.", permission: "business.manage" },
   { href: "/pro/settings/policies", label: "Cancellations & fees", description: "Cancellation window, no-show fees, tax.", permission: "business.manage" },
   { href: "/pro/settings/payments", label: "Payments", description: "Take deposits and card payments online.", permission: "business.manage" },
-  { href: "/pro/settings/forms", label: "Client questions", description: "Intake forms clients fill in when they book.", permission: "business.manage" },
+  { href: "/pro/settings/forms", label: "Client questions", description: "Intake forms clients fill in when they book.", permission: "services.manage" },
   { href: "/pro/settings/link", label: "Booking link", description: "Your web address, QR code and going live.", permission: "business.manage" },
   { href: "/pro/settings/verification", label: "Verification", description: "Get the verified badge on your profile.", permission: "business.manage" },
 ];
