@@ -21,5 +21,13 @@
     "free": "Gratis",
     "quote": "Precio a consultar",
     "from": "Desde {price}"
+  },
+  "policy": {
+    "freeUntil": "Cancelación gratuita hasta {hours} h antes. Las cancelaciones posteriores tienen un cargo del {percent} % del total.",
+    "cancelAhead": "Cancela al menos {hours} h antes de tu cita.",
+    "freeAnyTime": "Cancelación gratuita en cualquier momento antes de tu cita.",
+    "depositRefundable": "Los depósitos se reembolsan si cancelas a tiempo.",
+    "depositNonRefundable": "Los depósitos no son reembolsables.",
+    "reschedule": "Reprograma en línea hasta {hours} h antes."
   }
 }

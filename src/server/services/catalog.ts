@@ -193,6 +193,12 @@ export const getPublicBusiness = cache(async (slug: string, opts: { allowDraftFo
     bookingMode: b.bookingMode,
     allowAnyStaff: b.allowAnyStaff,
     paymentsEnabled: b.paymentsEnabled,
+    policy: {
+      cancellationWindowHours: b.cancellationWindowHours,
+      rescheduleWindowHours: b.rescheduleWindowHours,
+      lateCancelFeePercent: b.lateCancelFeePercent,
+      depositRefundable: b.depositRefundable,
+    },
     policies: describeCancellationPolicy({
       cancellationWindowHours: b.cancellationWindowHours,
       rescheduleWindowHours: b.rescheduleWindowHours,

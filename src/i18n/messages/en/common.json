@@ -21,5 +21,13 @@
     "free": "Free",
     "quote": "Price on consultation",
     "from": "From {price}"
+  },
+  "policy": {
+    "freeUntil": "Free cancellation up to {hours}h before. Later cancellations are charged {percent}% of the total.",
+    "cancelAhead": "Please cancel at least {hours}h before your appointment.",
+    "freeAnyTime": "Free cancellation any time before your appointment.",
+    "depositRefundable": "Deposits are refundable when you cancel in time.",
+    "depositNonRefundable": "Deposits are non-refundable.",
+    "reschedule": "Reschedule online up to {hours}h before."
   }
 }

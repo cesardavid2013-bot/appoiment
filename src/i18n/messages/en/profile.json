@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Not found",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} in {city}",
+    "bookOnline": "Book {name} online."
+  },
+  "preview": {
+    "notice": "Preview — only you can see this page until you publish it.",
+    "goLive": "Go live"
+  },
+  "verified": "Verified by Kept",
+  "verifiedLabel": "Verified business",
+  "reviewsCount": "{count, plural, one {# verified review} other {# verified reviews}}",
+  "newOnKept": "New on Kept",
+  "travels": "{city} · travels up to {km} km",
+  "status": {
+    "openUntil": "Open · until {time}",
+    "opensAt": "Opens at {time}",
+    "opensTomorrow": "Opens tomorrow at {time}",
+    "opensDay": "Opens {day} at {time}",
+    "notSet": "Hours not set",
+    "closed": "Closed"
+  },
+  "nav": {
+    "label": "Profile sections",
+    "services": "Services",
+    "work": "Work",
+    "featured": "Featured",
+    "reviews": "Reviews",
+    "about": "About"
+  },
+  "services": {
+    "eyebrow": "The menu",
+    "title": "Services",
+    "empty": "This business hasn’t published services yet.",
+    "sale": "Sale",
+    "group": "Group · up to {count}",
+    "request": "Request to book",
+    "options": "Options available",
+    "deposit": "Deposit at booking",
+    "book": "Book",
+    "bookService": "Book {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Recent work"
+  },
+  "featured": {
+    "eyebrow": "On social",
+    "title": "Featured",
+    "allProfiles": "All social profiles",
+    "bookThis": "Book this · {service}",
+    "newTab": "(opens in a new tab)",
+    "footnote": "Players load from each platform only when you press play.",
+    "play": "Play {title}",
+    "loadsFrom": "Loads from {host}"
+  },
+  "team": {
+    "eyebrow": "The people",
+    "title": "Team"
+  },
+  "reviews": {
+    "eyebrow": "Word of mouth",
+    "title": "Reviews",
+    "empty": "No reviews yet. Reviews can only be left by customers after a completed visit.",
+    "distribution": "Rating distribution",
+    "onlyCustomers": "Only customers with a completed booking can leave a review.",
+    "response": "Response from {name}",
+    "stars": "{value} out of 5 stars"
+  },
+  "about": {
+    "eyebrow": "The house",
+    "title": "About",
+    "hours": "Hours",
+    "timesIn": "Times shown in {zone}.",
+    "policies": "Policies",
+    "noShow": "Missed appointments may be charged {percent}% of the total.",
+    "experience": "{years}+ years experience",
+    "amenities": "Amenities",
+    "online": "Online",
+    "directions": "Directions",
+    "comesToYou": "Comes to you",
+    "mobileBody": "Based in {city}. Travels up to {km} km — you’ll add your address when booking.",
+    "onlineSessions": "Online sessions",
+    "onlineBody": "Join from anywhere. The link is shared after booking."
+  },
+  "panel": {
+    "label": "Book",
+    "eyebrow": "Reserve",
+    "freeOptions": "Free options available",
+    "from": "Services from {price}",
+    "onConsultation": "Prices on consultation",
+    "nextToday": "Next opening today",
+    "nextTomorrow": "Next opening tomorrow",
+    "nextOn": "Next opening on {day}",
+    "none": "No openings in the next two weeks",
+    "bookNow": "Book now",
+    "requestToBook": "Request to book",
+    "instant": "Instant confirmation",
+    "confirms": "The business confirms your request",
+    "notTaking": "This business isn’t taking bookings yet.",
+    "mobileFrom": "From {price}",
+    "mobileNext": "Next: {day} {time}",
+    "seeAvailability": "See availability",
+    "request": "Request"
+  },
+  "actions": {
+    "share": "Share",
+    "shareTitle": "Share {name}",
+    "shareBody": "Send the link, or scan the code to open the booking page.",
+    "copy": "Copy",
+    "copied": "Copied",
+    "downloadQr": "Download QR code",
+    "ask": "Ask a question",
+    "messageTitle": "Message {name}",
+    "messageBody": "Ask about services, availability or anything else before you book. Your phone number and email stay private.",
+    "cancel": "Cancel",
+    "send": "Send message",
+    "yourMessage": "Your message",
+    "placeholder": "Hi! Do you have time for a skin fade this Saturday afternoon?",
+    "sent": "Message sent",
+    "sentBody": "{name} will reply in your inbox."
+  },
+  "portfolio": {
+    "compare": "Compare before and after",
+    "portfolio": "Portfolio",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "before": "Before",
+    "after": "After",
+    "beforeAfter": "Before / after",
+    "video": "Video",
+    "openItem": "Open item {n}",
+    "browse": "Use arrow keys to browse",
+    "bookThis": "Book this",
+    "bookThisService": "Book this — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Post",
+    "reel": "Reel",
+    "track": "Track",
+    "album": "Album",
+    "artist": "Artist",
+    "playlist": "Playlist",
+    "episode": "Episode",
+    "show": "Podcast"
+  }
+}

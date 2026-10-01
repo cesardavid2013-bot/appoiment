@@ -5,12 +5,14 @@ import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { Dialog as D } from "radix-ui";
 import { MediaImage, MediaVideo, type MediaLike } from "@/components/ui/media";
+import { useT } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 
 export type PortfolioEntry = { id: string; kind: "image" | "video" | "before_after"; caption: string | null; serviceId: string | null; serviceName: string | null; media: MediaLike; before: MediaLike | null };
 
 function BeforeAfter({ before, after, className }: { before: MediaLike; after: MediaLike; className?: string }) {
   const [pos, setPos] = useState(50);
+  const t = useT("profile.portfolio");
   return (
     <div className={cn("relative select-none overflow-hidden", className)}>
       <MediaImage media={after} className="absolute inset-0 size-full" sizes="(min-width: 1024px) 60vw, 100vw" />
@@ -18,9 +20,9 @@ function BeforeAfter({ before, after, className }: { before: MediaLike; after: M
         <MediaImage media={before} className="size-full" sizes="(min-width: 1024px) 60vw, 100vw" />
       </div>
       <div className="pointer-events-none absolute inset-y-0 w-0.5 bg-white shadow" style={{ left: `${pos}%` }} />
-      <span className="pointer-events-none absolute start-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">Before</span>
-      <span className="pointer-events-none absolute end-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">After</span>
-      <input type="range" min={0} max={100} value={pos} onChange={(e) => setPos(Number(e.target.value))} aria-label="Compare before and after" className="absolute inset-0 size-full cursor-ew-resize opacity-0" />
+      <span className="pointer-events-none absolute start-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">{t("before")}</span>
+      <span className="pointer-events-none absolute end-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">{t("after")}</span>
+      <input type="range" min={0} max={100} value={pos} onChange={(e) => setPos(Number(e.target.value))} aria-label={t("compare")} className="absolute inset-0 size-full cursor-ew-resize opacity-0" />
     </div>
   );
 }
@@ -30,6 +32,7 @@ function BeforeAfter({ before, after, className }: { before: MediaLike; after: M
  * service it shows — discovery content that converts.
  */
 export function PortfolioGrid({ items, slug }: { items: PortfolioEntry[]; slug: string }) {
+  const t = useT("profile.portfolio");
   const [index, setIndex] = useState<number | null>(null);
   const current = index != null ? items[index] : null;
   const go = useCallback((d: number) => setIndex((i) => (i == null ? i : (i + d + items.length) % items.length)), [items.length]);
@@ -49,10 +52,10 @@ export function PortfolioGrid({ items, slug }: { items: PortfolioEntry[]; slug: 
       <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3">
         {items.map((p, i) => (
           <li key={p.id} className={cn(i === 0 && items.length > 4 && "col-span-2 row-span-2")}>
-            <button type="button" onClick={() => setIndex(i)} className="group relative block aspect-square w-full overflow-hidden rounded-lg" aria-label={p.caption ?? `Open item ${i + 1}`}>
+            <button type="button" onClick={() => setIndex(i)} className="group relative block aspect-square w-full overflow-hidden rounded-lg" aria-label={p.caption ?? t("openItem", { n: i + 1 })}>
               <MediaImage media={p.media} alt={p.caption ?? ""} sizes="(min-width: 1024px) 22vw, 45vw" className="size-full transition-transform duration-500 group-hover:scale-[1.03]" />
-              {p.kind === "video" && <span className="absolute bottom-2 start-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Video</span>}
-              {p.kind === "before_after" && <span className="absolute bottom-2 start-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Before / after</span>}
+              {p.kind === "video" && <span className="absolute bottom-2 start-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{t("video")}</span>}
+              {p.kind === "before_after" && <span className="absolute bottom-2 start-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{t("beforeAfter")}</span>}
             </button>
           </li>
         ))}
@@ -61,11 +64,11 @@ export function PortfolioGrid({ items, slug }: { items: PortfolioEntry[]; slug: 
         <D.Portal>
           <D.Overlay className="fixed inset-0 z-50 bg-black/90 data-[state=open]:animate-fade-in" />
           <D.Content className="fixed inset-0 z-50 flex flex-col outline-none">
-            <D.Title className="sr-only">{current?.caption ?? "Portfolio"}</D.Title>
-            <D.Description className="sr-only">Use arrow keys to browse</D.Description>
+            <D.Title className="sr-only">{current?.caption ?? t("portfolio")}</D.Title>
+            <D.Description className="sr-only">{t("browse")}</D.Description>
             <div className="flex items-center justify-between p-3 text-white">
               <span className="text-sm text-white/70 tabular">{index != null ? `${index + 1} / ${items.length}` : ""}</span>
-              <D.Close className="flex size-10 items-center justify-center rounded-full hover:bg-white/10" aria-label="Close">
+              <D.Close className="flex size-10 items-center justify-center rounded-full hover:bg-white/10" aria-label={t("close")}>
                 <X className="size-5" />
               </D.Close>
             </div>
@@ -80,10 +83,10 @@ export function PortfolioGrid({ items, slug }: { items: PortfolioEntry[]; slug: 
                 ))}
               {items.length > 1 && (
                 <>
-                  <button type="button" onClick={() => go(-1)} className="absolute start-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label="Previous">
+                  <button type="button" onClick={() => go(-1)} className="absolute start-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label={t("previous")}>
                     <ChevronLeft className="size-5" />
                   </button>
-                  <button type="button" onClick={() => go(1)} className="absolute end-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label="Next">
+                  <button type="button" onClick={() => go(1)} className="absolute end-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label={t("next")}>
                     <ChevronRight className="size-5" />
                   </button>
                 </>
@@ -93,7 +96,7 @@ export function PortfolioGrid({ items, slug }: { items: PortfolioEntry[]; slug: 
               <p className="min-w-0 text-sm text-white/80">{current?.caption}</p>
               {current?.serviceId && (
                 <Link href={`/${slug}/book?service=${current.serviceId}`} className="shrink-0 rounded-md bg-white px-4 py-2.5 text-sm font-medium text-ink hover:bg-white/90">
-                  Book this{current.serviceName ? ` — ${current.serviceName}` : ""}
+                  {current.serviceName ? t("bookThisService", { service: current.serviceName }) : t("bookThis")}
                 </Link>
               )}
             </div>

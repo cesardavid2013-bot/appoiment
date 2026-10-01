@@ -2,6 +2,7 @@
  * Cancellation / reschedule / refund rules (pure).
  * The customer sees the outcome of these rules *before* confirming an action.
  */
+import type { TFunction } from "@/i18n/translate";
 import type { AppointmentStatus } from "./appointment-state";
 
 export type PolicyAppointment = {
@@ -83,18 +84,26 @@ export function customerReschedule(a: PolicyAppointment, now: Date): { allowed: 
   return { allowed: true };
 }
 
-export function describeCancellationPolicy(p: PolicyAppointment["policy"]): string[] {
+export function describeCancellationPolicy(p: PolicyAppointment["policy"], t?: TFunction): string[] {
+  // Without a translator (tests, scripts) the English wording is used.
+  const say = (key: keyof typeof POLICY_EN, vars: Record<string, number> = {}) =>
+    t ? t(`common.policy.${key}`, vars) : POLICY_EN[key].replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k]));
   const out: string[] = [];
   if (p.cancellationWindowHours > 0) {
-    out.push(
-      p.lateCancelFeePercent > 0
-        ? `Free cancellation up to ${p.cancellationWindowHours}h before. Later cancellations are charged ${p.lateCancelFeePercent}% of the total.`
-        : `Please cancel at least ${p.cancellationWindowHours}h before your appointment.`,
-    );
+    out.push(p.lateCancelFeePercent > 0 ? say("freeUntil", { hours: p.cancellationWindowHours, percent: p.lateCancelFeePercent }) : say("cancelAhead", { hours: p.cancellationWindowHours }));
   } else {
-    out.push("Free cancellation any time before your appointment.");
+    out.push(say("freeAnyTime"));
   }
-  out.push(p.depositRefundable ? "Deposits are refundable when you cancel in time." : "Deposits are non-refundable.");
-  if (p.rescheduleWindowHours > 0) out.push(`Reschedule online up to ${p.rescheduleWindowHours}h before.`);
+  out.push(say(p.depositRefundable ? "depositRefundable" : "depositNonRefundable"));
+  if (p.rescheduleWindowHours > 0) out.push(say("reschedule", { hours: p.rescheduleWindowHours }));
   return out;
 }
+
+export const POLICY_EN = {
+  freeUntil: "Free cancellation up to {hours}h before. Later cancellations are charged {percent}% of the total.",
+  cancelAhead: "Please cancel at least {hours}h before your appointment.",
+  freeAnyTime: "Free cancellation any time before your appointment.",
+  depositRefundable: "Deposits are refundable when you cancel in time.",
+  depositNonRefundable: "Deposits are non-refundable.",
+  reschedule: "Reschedule online up to {hours}h before.",
+};
