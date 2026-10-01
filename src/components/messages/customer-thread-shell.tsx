@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { ButtonLink } from "@/components/ui/button";
 import { Avatar, type MediaLike } from "@/components/ui/media";
+import { ScrollLock } from "./scroll-lock";
 
 /**
  * Full-height messenger frame for the customer site: pinned between the site
@@ -10,7 +11,8 @@ import { Avatar, type MediaLike } from "@/components/ui/media";
  */
 export function CustomerThreadShell({ business, children }: { business: { name: string; slug: string; logo: MediaLike | null }; children: ReactNode }) {
   return (
-    <div className="fixed inset-x-0 bottom-[calc(58px+env(safe-area-inset-bottom))] top-[calc(4rem+env(safe-area-inset-top))] z-30 flex flex-col bg-bg md:bottom-0">
+    <div className="fixed inset-x-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top))] z-30 flex flex-col bg-bg pb-[calc(58px+env(safe-area-inset-bottom))] md:pb-0">
+      <ScrollLock />
       <header className="shrink-0 border-b border-line">
         <div className="mx-auto flex h-16 max-w-3xl items-center gap-2 px-2 sm:px-6">
           <Link href="/messages" className="flex size-11 shrink-0 items-center justify-center rounded-md text-ink-2 hover:bg-surface-2 hover:text-ink sm:-ml-3" aria-label="All messages">

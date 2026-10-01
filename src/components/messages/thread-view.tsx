@@ -4,7 +4,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { AlertCircle, ArrowDown, ArrowUp, CalendarDays, ImagePlus, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { MediaImage, type MediaLike } from "@/components/ui/media";
 import { Spinner } from "@/components/ui/spinner";
 import { api, ApiError } from "@/lib/api";
@@ -110,6 +110,19 @@ export function ThreadView(p: ThreadViewProps) {
       stickToBottom.current = false;
     }
   }, [messages, pending]);
+
+  // Late layout changes (fonts, photos) shouldn't push the newest message out of view.
+  const content = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = content.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const ro = new ResizeObserver(() => {
+      const s = scroller.current;
+      if (s && nearBottom.current && prependFrom.current == null) s.scrollTop = s.scrollHeight;
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   function onScroll() {
     const el = scroller.current;
@@ -257,7 +270,7 @@ export function ThreadView(p: ThreadViewProps) {
   return (
     <div className="flex min-h-0 flex-1 flex-col">
       <div ref={scroller} onScroll={onScroll} className="relative min-h-0 flex-1 overflow-y-auto overscroll-contain" role="log" aria-live="polite" aria-relevant="additions" aria-label="Messages">
-        <div className="mx-auto flex min-h-full max-w-3xl flex-col justify-end px-4 pb-4 pt-6 sm:px-6">
+        <div ref={content} className="mx-auto flex min-h-full max-w-3xl flex-col justify-end px-4 pb-4 pt-6 sm:px-6">
           {hasMore && (
             <div className="mb-4 flex justify-center">
               <button type="button" onClick={loadOlder} disabled={loadingOlder} className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-[13px] font-medium text-ink-2 hover:bg-surface-2 hover:text-ink disabled:opacity-60">
@@ -288,8 +301,8 @@ export function ThreadView(p: ThreadViewProps) {
                       <Bubble key={m.id} m={m} mine={g.mine} first={i === 0} last={i === g.items.length - 1} appointmentHref={p.appointmentHref} />
                     ))}
                     <p className="mt-0.5 px-1 text-[11px] text-ink-3 tabular">
-                      <time dateTime={g.items.at(-1)!.createdAt}>{fmtTime(g.items.at(-1)!.createdAt, tz)}</time>
-                      {seen && g.items.includes(lastMine!) && <span> · Seen</span>}
+                      <time dateTime={g.items[g.items.length - 1].createdAt}>{fmtTime(g.items[g.items.length - 1].createdAt, tz)}</time>
+                      {seen && lastMine && g.items.includes(lastMine) && <span> · Seen</span>}
                     </p>
                   </div>
                 ),
@@ -373,8 +386,11 @@ function Bubble({ m, mine, first, last, dim, failed, appointmentHref }: { m: Thr
   return (
     <div className={cn("flex max-w-[82%] flex-col gap-1 sm:max-w-[70%]", mine ? "items-end" : "items-start", dim && "opacity-70")}>
       {m.media && (
-        <a href={m.media.sources.at(-1)?.url} target="_blank" rel="noreferrer" className={cn("block w-56 overflow-hidden border border-line sm:w-64", radius)} aria-label="Open photo in a new tab">
-          <MediaImage media={m.media} alt="Photo" sizes="256px" className="w-full" fit="cover" />
+        <a href={m.media.sources.at(-1)?.url} target="_blank" rel="noreferrer" className={cn("block w-56 overflow-hidden border border-line sm:w-64", radius)}
+          style={{ aspectRatio: m.media.width && m.media.height ? Math.min(1.8, Math.max(0.6, m.media.width / m.media.height)) : 4 / 3 }}
+          aria-label="Open photo in a new tab"
+        >
+          <MediaImage media={m.media} alt="Photo" sizes="256px" className="size-full" fit="cover" />
         </a>
       )}
       {(m.body || m.appointment) && (
@@ -402,6 +418,7 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
   const [appointment, setAppointment] = useState<ThreadAppointment | null>(attach);
   const area = useRef<HTMLTextAreaElement>(null);
   const fileInput = useRef<HTMLInputElement>(null);
+  const inputId = useId();
 
   // Grow with the text up to ~6 lines.
   useLayoutEffect(() => {
@@ -494,9 +511,13 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
             <ImagePlus className="size-5" />
           </button>
           <input ref={fileInput} type="file" accept="image/jpeg,image/png,image/webp,image/avif,image/gif" className="sr-only" tabIndex={-1} aria-hidden onChange={(e) => pick(e.target.files?.[0])} />
-          <label className="min-w-0 flex-1">
-            <span className="sr-only">Message</span>
+          <div className="min-w-0 flex-1">
+            <label htmlFor={inputId} className="sr-only">
+              Message
+            </label>
             <textarea
+              id={inputId}
+              aria-describedby={`${inputId}-hint`}
               ref={area}
               rows={1}
               value={body}
@@ -512,7 +533,7 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
               maxLength={MAX_LEN + 200}
               className="block max-h-40 min-h-11 w-full resize-none rounded-[22px] border border-line-strong bg-surface px-4 py-2.5 text-[15px] leading-[1.45] text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15"
             />
-          </label>
+          </div>
           <button
             type="submit"
             disabled={!canSend}
@@ -527,7 +548,7 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
             {body.length.toLocaleString()} / {MAX_LEN.toLocaleString()}
           </p>
         )}
-        <p className="sr-only">Press Enter to send, Shift and Enter for a new line.</p>
+        <p id={`${inputId}-hint`} className="sr-only">Press Enter to send, Shift and Enter for a new line.</p>
       </div>
     </div>
   );

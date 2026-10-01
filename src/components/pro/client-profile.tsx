@@ -23,11 +23,6 @@ export type ClientData = {
   completedCount: number;
 };
 
-function payload(c: ClientData, over: Partial<ClientData> = {}) {
-  const x = { ...c, ...over };
-  return { name: x.name, email: x.email ?? "", phone: x.phone || null, tags: x.tags, preferences: x.preferences || null };
-}
-
 export function EditClientButton({ client }: { client: ClientData }) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -51,7 +46,7 @@ export function EditClientButton({ client }: { client: ClientData }) {
     setSaving(true);
     setError(null);
     try {
-      await api(`/api/pro/customers/${client.id}`, { method: "PUT", body: payload(client, { name: name.trim(), email: email.trim() || null, phone: phone.trim() || null, preferences: preferences.trim() || null }) });
+      await api(`/api/pro/customers/${client.id}`, { method: "PUT", body: client.hasAccount ? { preferences: preferences.trim() || null } : { name: name.trim(), email: email.trim() || null, phone: phone.trim() || null, preferences: preferences.trim() || null } });
       toast.success("Client updated");
       setOpen(false);
       router.refresh();
@@ -157,7 +152,7 @@ export function ClientTags({ client, canEdit, suggestions }: { client: ClientDat
     setSaving(true);
     setError(null);
     try {
-      await api(`/api/pro/customers/${client.id}`, { method: "PUT", body: payload(client, { tags: next }) });
+      await api(`/api/pro/customers/${client.id}`, { method: "PUT", body: { tags: next } });
       router.refresh();
     } catch (err) {
       setTags(prev);

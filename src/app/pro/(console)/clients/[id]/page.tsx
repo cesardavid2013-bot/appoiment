@@ -18,16 +18,18 @@ export const metadata: Metadata = { title: "Client" };
 
 type HistoryRow = Awaited<ReturnType<typeof customerDetail>>["history"][number];
 
-function AppointmentList({ rows, showStaff }: { rows: HistoryRow[]; showStaff: boolean }) {
+function AppointmentList({ rows, showStaff, thisYear }: { rows: HistoryRow[]; showStaff: boolean; thisYear: string }) {
   return (
     <ul className="divide-y divide-line border-y border-line">
       {rows.map((a) => (
         <li key={a.id}>
           <Link href={`/pro/appointments/${a.id}`} className="-mx-2 flex items-center gap-3 rounded-md px-2 py-3 transition-colors hover:bg-surface-2 sm:gap-4">
             <span className="w-[4.5rem] shrink-0 sm:w-24">
-              <span className="block text-sm font-medium text-ink tabular">{fmtDate(a.startsAt, a.timezone, { month: "short", day: "numeric" })}</span>
-              <span className="block text-[12px] text-ink-3 tabular">
-                {fmtDate(a.startsAt, a.timezone, { year: "numeric" })} · {fmtTime(a.startsAt, a.timezone)}
+              <span className="block text-sm font-medium text-ink tabular">
+                {fmtDate(a.startsAt, a.timezone, fmtDate(a.startsAt, a.timezone, { year: "numeric" }) === thisYear ? { month: "short", day: "numeric" } : { month: "short", day: "numeric", year: "numeric" })}
+              </span>
+              <span className="block whitespace-nowrap text-[12px] text-ink-3 tabular">
+                {fmtDate(a.startsAt, a.timezone, { weekday: "short" })} {fmtTime(a.startsAt, a.timezone)}
               </span>
             </span>
             <span className="min-w-0 flex-1">
@@ -69,6 +71,7 @@ export default async function ClientPage({ params }: PageProps<"/pro/clients/[id
   const c = d.customer;
   const now = requestNow();
   const tz = m.timezone;
+  const thisYear = fmtDate(new Date(now), tz, { year: "numeric" });
   const upcoming = d.history.filter((a) => new Date(a.startsAt).getTime() >= now && (UPCOMING_STATUSES as readonly string[]).includes(a.status)).reverse();
   const past = d.history.filter((a) => !upcoming.includes(a));
   const client: ClientData = { id: c.id, name: c.name, email: c.email, phone: c.phone, tags: c.tags, preferences: c.preferences, hasAccount: Boolean(c.userId), completedCount: c.completedCount };
@@ -80,7 +83,7 @@ export default async function ClientPage({ params }: PageProps<"/pro/clients/[id
     ["No-shows", String(c.noShowCount), c.noShowCount > 0 ? "text-danger" : undefined],
     ["Cancellations", String(c.cancelledCount)],
     ["Last visit", c.lastVisitAt ? fmtDate(c.lastVisitAt, tz, { month: "short", day: "numeric", year: "numeric" }) : "Never"],
-    ["Next visit", upcoming[0] ? `${fmtDate(upcoming[0].startsAt, upcoming[0].timezone, { weekday: "short", month: "short", day: "numeric" })}, ${fmtTime(upcoming[0].startsAt, upcoming[0].timezone)}` : "Not booked"],
+    ["Next visit", upcoming[0] ? `${fmtDate(upcoming[0].startsAt, upcoming[0].timezone, { month: "short", day: "numeric" })}, ${fmtTime(upcoming[0].startsAt, upcoming[0].timezone)}` : "Not booked"],
   ];
 
   return (
@@ -141,14 +144,14 @@ export default async function ClientPage({ params }: PageProps<"/pro/clients/[id
             <h2 id="up-h" className="mb-3 text-[15px] font-semibold text-ink">
               Upcoming
             </h2>
-            {upcoming.length ? <AppointmentList rows={upcoming} showStaff={team.length > 1} /> : <p className="text-sm text-ink-3">Nothing booked{canBook ? " — use “Book appointment” to add their next visit." : "."}</p>}
+            {upcoming.length ? <AppointmentList rows={upcoming} showStaff={team.length > 1} thisYear={thisYear} /> : <p className="text-sm text-ink-3">Nothing booked{canBook ? " — use “Book appointment” to add their next visit." : "."}</p>}
           </section>
           <section aria-labelledby="hist-h">
             <h2 id="hist-h" className="mb-3 text-[15px] font-semibold text-ink">
               History {past.length > 0 && <span className="font-normal text-ink-3 tabular">· {past.length}</span>}
             </h2>
             {scopedToOwn && <p className="-mt-1 mb-3 text-[12px] text-ink-3">Showing appointments with you.</p>}
-            {past.length ? <AppointmentList rows={past} showStaff={team.length > 1} /> : <p className="text-sm text-ink-3">No past appointments.</p>}
+            {past.length ? <AppointmentList rows={past} showStaff={team.length > 1} thisYear={thisYear} /> : <p className="text-sm text-ink-3">No past appointments.</p>}
           </section>
         </div>
 

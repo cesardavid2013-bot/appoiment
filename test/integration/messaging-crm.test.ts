@@ -262,6 +262,9 @@ describe("clients CRM", () => {
     expect(booked.customers[0].nextVisit).not.toBeNull();
     // Account holders keep their own name.
     expect((await customerDetail(f.ownerMembership, bId)).customer.name).toBe("Bob Booked");
+    // Partial updates: saving preferences leaves tags alone.
+    await updateCustomer(f.ownerMembership, f.owner.id, bId, { preferences: "Morning slots" });
+    expect((await customerDetail(f.ownerMembership, bId)).customer).toMatchObject({ tags: ["vip", "beard"], preferences: "Morning slots" });
 
     const note = await addCustomerNote(f.ownerMembership, f.owner.id, bId, "Prefers a #2 on the sides");
     expect((await customerDetail(f.ownerMembership, bId)).notes).toHaveLength(1);

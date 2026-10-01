@@ -377,23 +377,29 @@ export async function customerDetail(m: Membership, id: string) {
   };
 }
 
+/** Partial update: only the fields sent are changed, so the tag editor and the edit form never overwrite each other. */
 export const updateCustomerSchema = z.object({
-  name: z.string().trim().min(1, "Add a name").max(80),
+  name: z.string().trim().min(1, "Add a name").max(80).optional(),
   email: z.string().trim().toLowerCase().email("Enter a valid email").max(254).nullable().optional().or(z.literal("").transform(() => null)),
   phone: z.string().trim().max(40).nullable().optional(),
-  tags: z.array(z.string().trim().min(1).max(30)).max(12, "Up to 12 tags").default([]),
+  tags: z.array(z.string().trim().min(1).max(30)).max(12, "Up to 12 tags").optional(),
   preferences: z.string().trim().max(2000).nullable().optional(),
 });
 
 export async function updateCustomer(m: Membership, actorUserId: string, id: string, input: z.infer<typeof updateCustomerSchema>) {
   if (!m.permissions.has("customers.manage")) throw forbidden();
   const c = await assertClientVisible(m, id);
+  const set: Partial<typeof businessCustomers.$inferInsert> = {};
   // Contact details of customers with their own account come from their profile.
-  const contact = c.userId ? {} : { name: input.name, email: input.email ?? null, phone: input.phone || null };
-  await db
-    .update(businessCustomers)
-    .set({ ...contact, tags: [...new Set(input.tags.map((t) => t.toLowerCase()))], preferences: input.preferences || null })
-    .where(eq(businessCustomers.id, id));
+  if (!c.userId) {
+    if (input.name !== undefined) set.name = input.name;
+    if (input.email !== undefined) set.email = input.email ?? null;
+    if (input.phone !== undefined) set.phone = input.phone || null;
+  }
+  if (input.tags !== undefined) set.tags = [...new Set(input.tags.map((t) => t.toLowerCase()))];
+  if (input.preferences !== undefined) set.preferences = input.preferences || null;
+  if (Object.keys(set).length === 0) return;
+  await db.update(businessCustomers).set(set).where(eq(businessCustomers.id, id));
   await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "customer.updated", targetType: "business_customer", targetId: id });
 }
 
