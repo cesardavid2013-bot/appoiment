@@ -6,6 +6,7 @@ import { displayPriceRange } from "@/domain/pricing";
 import { isValidSlug, normalizeSearch, slugify } from "@/domain/slugs";
 import { isValidTimeZone } from "@/domain/time";
 import { LAUNCH_PLAN } from "@/domain/plans";
+import { normalizeSocial, SOCIAL_KEYS, type SocialKey } from "@/domain/social";
 import { db, type Executor } from "../db/client";
 import {
   availabilityRules,
@@ -95,6 +96,24 @@ export async function createBusiness(viewer: Viewer, input: z.infer<typeof creat
   });
 }
 
+/**
+ * Social profiles: each value may be typed as "@handle", "handle" or a full
+ * profile link. Links must be on that network's own host; what's stored is the
+ * normalized handle/path (see domain/social.ts), never the raw input. An empty
+ * string removes the network.
+ */
+const zSocialLinks = z.partialRecord(z.enum(SOCIAL_KEYS), z.string().trim().max(200)).transform((links, ctx) => {
+  const out: Partial<Record<SocialKey, string>> = {};
+  for (const key of SOCIAL_KEYS) {
+    const raw = links[key];
+    if (raw === undefined) continue;
+    const r = normalizeSocial(key, raw);
+    if (!r.ok) ctx.addIssue({ code: "custom", path: [key], message: r.error });
+    else out[key] = r.value;
+  }
+  return out;
+});
+
 export const profileSchema = z.object({
   name: z.string().trim().min(2).max(80),
   tagline: zOptText(140),
@@ -110,7 +129,7 @@ export const profileSchema = z.object({
     .optional()
     .transform((v) => (v ? (/^https?:\/\//i.test(v) ? v : `https://${v}`) : null))
     .refine((v) => v == null || /^https?:\/\/[^\s/$.?#].[^\s]*$/i.test(v), "Enter a valid website"),
-  socialLinks: z.partialRecord(z.enum(["instagram", "tiktok", "facebook", "youtube", "x", "linkedin"]), z.string().trim().max(100)).default({}),
+  socialLinks: zSocialLinks.default({}),
   languages: z.array(z.string().trim().min(1).max(30)).max(10).default([]),
   amenities: z.array(z.string().trim().min(1).max(40)).max(20).default([]),
   yearsExperience: z.number().int().min(0).max(80).nullable().optional(),
@@ -122,7 +141,7 @@ export const profileSchema = z.object({
 /** Patch semantics: only fields present in the input change. */
 export const profilePatchSchema = profileSchema.partial().extend({
   // `.partial()` keeps `.default()` values, which would wipe these on partial saves.
-  socialLinks: z.partialRecord(z.enum(["instagram", "tiktok", "facebook", "youtube", "x", "linkedin"]), z.string().trim().max(100)).optional(),
+  socialLinks: zSocialLinks.optional(),
   languages: z.array(z.string().trim().min(1).max(30)).max(10).optional(),
   amenities: z.array(z.string().trim().min(1).max(40)).max(20).optional(),
 });
@@ -138,7 +157,7 @@ export async function updateProfile(m: Membership, actorUserId: string, input: z
   if (input.website !== undefined) set.website = input.website ?? null;
   if (input.socialLinks !== undefined) {
     const social: Record<string, string> = {};
-    for (const [k, v] of Object.entries(input.socialLinks)) if (v) social[k] = v.replace(/^@/, "").replace(/^https?:\/\/[^/]+\//, "");
+    for (const [k, v] of Object.entries(input.socialLinks)) if (v) social[k] = v;
     set.socialLinks = social;
   }
   if (input.languages !== undefined) set.languages = input.languages;

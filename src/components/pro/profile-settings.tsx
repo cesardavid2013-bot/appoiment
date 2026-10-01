@@ -9,6 +9,9 @@ import { MonogramCover } from "@/components/business/monogram";
 import { Button } from "@/components/ui/button";
 import { Field, FormError, Input, Select, Textarea } from "@/components/ui/field";
 import { MediaImage, type MediaLike } from "@/components/ui/media";
+import { SocialIcon } from "@/components/profile/social-icons";
+import { normalizeSocial, SOCIAL, SOCIAL_KEYS, socialHref, type SocialKey } from "@/domain/social";
+import { cn } from "@/lib/cn";
 import { api, ApiError } from "@/lib/api";
 import { uploadMedia } from "@/lib/upload";
 import { SettingsCard } from "./settings-shell";
@@ -30,14 +33,6 @@ type Values = {
   coverMediaId: string | null;
 };
 
-const SOCIAL = [
-  ["instagram", "Instagram"],
-  ["tiktok", "TikTok"],
-  ["facebook", "Facebook"],
-  ["youtube", "YouTube"],
-  ["x", "X"],
-  ["linkedin", "LinkedIn"],
-] as const;
 
 const LANGUAGE_SUGGESTIONS = ["English", "Spanish", "French", "Portuguese", "Mandarin", "Cantonese", "Arabic", "Russian", "Haitian Creole", "Korean", "Vietnamese", "Hindi", "Italian", "German", "Polish", "Tagalog"];
 const AMENITY_SUGGESTIONS = ["Wheelchair accessible", "Street parking", "Free parking", "Wi-Fi", "Card payments", "Walk-ins welcome", "Kid friendly", "Restroom", "Air conditioning", "Drinks offered", "Gender-neutral", "Pet friendly"];
@@ -234,25 +229,7 @@ export function ProfileSettings(props: {
         <Field label="Website" optional error={errors.website}>
           {(p) => <Input {...p} type="url" inputMode="url" value={v.website} onChange={(e) => set("website", e.target.value)} placeholder="yourdomain.com" />}
         </Field>
-        <fieldset>
-          <legend className="text-sm font-medium text-ink">Social profiles</legend>
-          <p className="mt-0.5 text-[13px] text-ink-3">Your handle or profile link.</p>
-          <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            {SOCIAL.map(([k, label]) => (
-              <label key={k} className="flex h-11 items-center overflow-hidden rounded-md border border-line-strong bg-surface focus-within:border-accent focus-within:ring-3 focus-within:ring-accent/15 md:h-10">
-                <span className="w-24 shrink-0 border-r border-line bg-surface-2 px-3 text-[13px] text-ink-3">{label}</span>
-                <input
-                  value={v.socialLinks[k] ?? ""}
-                  onChange={(e) => set("socialLinks", { ...v.socialLinks, [k]: e.target.value })}
-                  maxLength={100}
-                  className="h-full min-w-0 flex-1 bg-transparent px-3 text-ink outline-none"
-                  aria-label={`${label} handle`}
-                  placeholder="@handle"
-                />
-              </label>
-            ))}
-          </div>
-        </fieldset>
+        <SocialInputs values={v.socialLinks} onChange={(x) => set("socialLinks", x)} serverErrors={errors} />
       </SettingsCard>
 
       <div className="mt-6" />
@@ -346,5 +323,75 @@ function TagField({ label, values, onChange, suggestions, max }: { label: string
         </div>
       )}
     </div>
+  );
+}
+
+/** Shows stored values the way people type them: Spotify artists as their link, the rest as handles. */
+function displaySocial(key: SocialKey, value: string) {
+  if (key === "spotify" && /^(artist|user)\//.test(value)) return socialHref(key, value) ?? value;
+  if (key === "linkedin" && value.startsWith("in/")) return value.slice(3);
+  return value;
+}
+
+function SocialInputs({ values, onChange, serverErrors }: { values: Record<string, string>; onChange: (v: Record<string, string>) => void; serverErrors: Record<string, string> }) {
+  const [blurErrors, setBlurErrors] = useState<Partial<Record<SocialKey, string>>>({});
+  return (
+    <fieldset>
+      <legend className="text-sm font-medium text-ink">Social profiles</legend>
+      <p className="mt-0.5 text-[13px] text-ink-3">
+        Type your handle or paste your profile link. To feature specific videos, posts or tracks on your page, add them in{" "}
+        <Link href="/pro/work#socials" className="font-medium text-ink-2 underline underline-offset-2 hover:text-ink">
+          Portfolio
+        </Link>
+        .
+      </p>
+      <div className="mt-3 grid gap-x-3 gap-y-2.5 sm:grid-cols-2">
+        {SOCIAL_KEYS.map((k) => {
+          const spec = SOCIAL[k];
+          const error = serverErrors[`socialLinks.${k}`] ?? blurErrors[k];
+          const id = `social-${k}`;
+          return (
+            <div key={k} className="min-w-0">
+              <div
+                className={cn(
+                  "flex h-11 items-center overflow-hidden rounded-md border bg-surface focus-within:ring-3 md:h-10",
+                  error ? "border-danger focus-within:ring-danger/15" : "border-line-strong focus-within:border-accent focus-within:ring-accent/15",
+                )}
+              >
+                <label htmlFor={id} className="flex h-full w-[118px] shrink-0 items-center gap-2 border-r border-line bg-surface-2 px-3 text-[13px] text-ink-2">
+                  <SocialIcon name={k} className="size-3.5 shrink-0 text-ink-3" />
+                  {spec.label}
+                </label>
+                <input
+                  id={id}
+                  value={displaySocial(k, values[k] ?? "")}
+                  onChange={(e) => {
+                    onChange({ ...values, [k]: e.target.value });
+                    if (blurErrors[k]) setBlurErrors((s) => ({ ...s, [k]: undefined }));
+                  }}
+                  onBlur={(e) => {
+                    const r = normalizeSocial(k, e.target.value);
+                    setBlurErrors((s) => ({ ...s, [k]: r.ok ? undefined : r.error }));
+                  }}
+                  maxLength={200}
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  className="h-full min-w-0 flex-1 bg-transparent px-3 text-ink outline-none placeholder:text-ink-3"
+                  aria-invalid={error ? true : undefined}
+                  aria-describedby={error ? `${id}-err` : undefined}
+                  placeholder={spec.placeholder}
+                />
+              </div>
+              {error && (
+                <p id={`${id}-err`} className="mt-1 text-[13px] text-danger">
+                  {error}
+                </p>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </fieldset>
   );
 }
