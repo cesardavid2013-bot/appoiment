@@ -14,6 +14,9 @@ const EMBED_FRAME_ORIGINS = [
   "https://player.vimeo.com",
   "https://w.soundcloud.com",
   "https://open.spotify.com",
+  "https://embed.music.apple.com",
+  "https://embed.podcasts.apple.com",
+  "https://www.mixcloud.com",
 ].join(" ");
 
 /**

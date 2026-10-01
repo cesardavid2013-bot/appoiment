@@ -1,0 +1,2 @@
+ALTER TABLE "social_embeds" DROP CONSTRAINT "social_embeds_provider_ck";--> statement-breakpoint
+ALTER TABLE "social_embeds" ADD CONSTRAINT "social_embeds_provider_ck" CHECK ("social_embeds"."provider" in ('youtube', 'tiktok', 'instagram', 'vimeo', 'soundcloud', 'spotify', 'applemusic', 'applepodcasts', 'mixcloud'));

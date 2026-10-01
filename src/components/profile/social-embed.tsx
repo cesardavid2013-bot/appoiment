@@ -27,6 +27,9 @@ const PROVIDER_HOST: Record<EmbedProvider, string> = {
   vimeo: "vimeo.com",
   soundcloud: "soundcloud.com",
   spotify: "spotify.com",
+  applemusic: "music.apple.com",
+  applepodcasts: "podcasts.apple.com",
+  mixcloud: "mixcloud.com",
 };
 
 /**

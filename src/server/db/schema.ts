@@ -1414,7 +1414,7 @@ export const socialEmbeds = pgTable(
   (t) => [
     uniqueIndex("social_embeds_item_uq").on(t.businessId, t.provider, t.providerId),
     index().on(t.businessId, t.sortOrder),
-    check("social_embeds_provider_ck", sql`${t.provider} in ('youtube', 'tiktok', 'instagram', 'vimeo', 'soundcloud', 'spotify')`),
+    check("social_embeds_provider_ck", sql`${t.provider} in ('youtube', 'tiktok', 'instagram', 'vimeo', 'soundcloud', 'spotify', 'applemusic', 'applepodcasts', 'mixcloud')`),
     check("social_embeds_caption_ck", sql`char_length(${t.caption}) <= 200`),
   ],
 );

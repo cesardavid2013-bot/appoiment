@@ -525,7 +525,7 @@
     "added": "{name} added to your profile",
     "linkLabel": "Link to a video, post or track",
     "found": "{name} found. Check the preview, then add it.",
-    "linkHint": "Copy the link from the Share button on YouTube, TikTok, Instagram, Vimeo, SoundCloud or Spotify.",
+    "linkHint": "Copy the link from the Share button on YouTube, TikTok, Instagram, Vimeo, SoundCloud, Spotify, Apple Music, Apple Podcasts or Mixcloud.",
     "captionHint": "A line about it — e.g. “Mixed and mastered for Lina Vega”.",
     "serviceHintAdd": "Adds a “Book this” link under the post.",
     "serviceHintEdit": "Customers see a “Book this” link under the post.",

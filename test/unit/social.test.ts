@@ -47,3 +47,34 @@ describe("social embeds: strict URL parsing", () => {
     expect(normalizeSocial("instagram", "javascript:alert(1)").ok).toBe(false);
   });
 });
+
+describe("social embeds: Apple Music, Apple Podcasts, Mixcloud", () => {
+  it("parses and rebuilds canonical links", () => {
+    expect(ok("https://music.apple.com/us/album/blonde/1146195596")).toMatchObject({ provider: "applemusic", kind: "album", providerId: "us/blonde/1146195596" });
+    const song = ok("https://music.apple.com/us/album/blonde/1146195596?i=1146195611");
+    expect(song).toMatchObject({ kind: "track", providerId: "us/blonde/1146195596:1146195611", url: "https://music.apple.com/us/album/blonde/1146195596?i=1146195611" });
+    expect(ok("https://music.apple.com/es/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb")).toMatchObject({ kind: "playlist" });
+    expect(ok("https://music.apple.com/us/artist/frank-ocean/368183298")).toMatchObject({ kind: "artist" });
+    expect(ok("https://podcasts.apple.com/us/podcast/the-daily/id1200361736")).toMatchObject({ provider: "applepodcasts", kind: "show" });
+    expect(ok("https://podcasts.apple.com/us/podcast/the-daily/id1200361736?i=1000500000001")).toMatchObject({ kind: "episode" });
+    expect(ok("https://www.mixcloud.com/NTSRadio/floating-points-2020/")).toMatchObject({ provider: "mixcloud", providerId: "NTSRadio/floating-points-2020" });
+  });
+
+  it("builds players only on the providers' embed hosts", () => {
+    const album = ok("https://music.apple.com/us/album/blonde/1146195596");
+    expect(embedFrame(album.provider, album.kind, album.providerId)?.src).toBe("https://embed.music.apple.com/us/album/blonde/1146195596");
+    const pod = ok("https://podcasts.apple.com/us/podcast/the-daily/id1200361736?i=1000500000001");
+    expect(embedFrame(pod.provider, pod.kind, pod.providerId)?.src).toBe("https://embed.podcasts.apple.com/us/podcast/the-daily/id1200361736?i=1000500000001");
+    const mix = ok("https://www.mixcloud.com/NTSRadio/floating-points-2020/");
+    expect(embedFrame(mix.provider, mix.kind, mix.providerId)?.src).toContain("https://www.mixcloud.com/widget/iframe/");
+  });
+
+  it("rejects look-alike hosts, odd paths and tampered stored ids", () => {
+    for (const url of ["https://music.apple.com.evil.test/us/album/x/1146195596", "https://music.apple.com/us/album/x/abc", "https://music.apple.com/us/station/x/1146195596", "https://podcasts.apple.com/us/show/x/id1", "https://www.mixcloud.com/discover/x/", "https://www.mixcloud.com/a/b/c/"]) {
+      expect(parseEmbedUrl(url).ok, url).toBe(false);
+    }
+    expect(embedFrame("applemusic", "album", "us/../1146195596")).toBeNull();
+    expect(embedFrame("applemusic", "album", "us/x/1146195596:5")).toBeNull();
+    expect(embedFrame("mixcloud", "track", "a/b/c")).toBeNull();
+  });
+});

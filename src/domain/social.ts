@@ -270,7 +270,7 @@ export function socialList(links: Record<string, string> | null | undefined) {
 
 /* ───────────────────────────── Embedded posts ───────────────────────────── */
 
-export const EMBED_PROVIDERS = ["youtube", "tiktok", "instagram", "vimeo", "soundcloud", "spotify"] as const;
+export const EMBED_PROVIDERS = ["youtube", "tiktok", "instagram", "vimeo", "soundcloud", "spotify", "applemusic", "applepodcasts", "mixcloud"] as const;
 export type EmbedProvider = (typeof EMBED_PROVIDERS)[number];
 export const EMBED_KINDS = ["video", "short", "post", "reel", "track", "album", "artist", "playlist", "episode", "show"] as const;
 export type EmbedKind = (typeof EMBED_KINDS)[number];
@@ -283,6 +283,9 @@ export const PROVIDER_LABEL: Record<EmbedProvider, string> = {
   vimeo: "Vimeo",
   soundcloud: "SoundCloud",
   spotify: "Spotify",
+  applemusic: "Apple Music",
+  applepodcasts: "Apple Podcasts",
+  mixcloud: "Mixcloud",
 };
 
 export const KIND_LABEL: Record<EmbedKind, string> = {
@@ -307,6 +310,14 @@ const IG_CODE = /^[A-Za-z0-9_-]{5,40}$/;
 const VIMEO_ID = /^\d{5,12}$/;
 const VIMEO_HASH = /^[0-9a-f]{6,20}$/;
 const SC_SLUG = /^[a-z0-9][a-z0-9_-]{0,99}$/;
+/** Apple lists carry a storefront ("us"), a readable slug and the numeric (or pl.…) id. */
+const APPLE_STORE = /^[a-z]{2}$/;
+const APPLE_SLUG = /^[A-Za-z0-9%][A-Za-z0-9%_.~-]{0,119}$/;
+const APPLE_ID = /^\d{5,12}$/;
+const APPLE_PLAYLIST = /^pl\.[A-Za-z0-9-]{8,48}$/;
+const APPLE_SONG = /^\d{5,16}$/;
+const MC_SLUG = /^[A-Za-z0-9_.%-]{1,100}$/;
+const MC_RESERVED = new Set(["discover", "upload", "select", "dashboard", "settings", "tag", "search", "pro", "notifications", "messages", "about", "terms", "privacy", "help", "player", "widget"]);
 const SPOTIFY_KINDS = ["track", "album", "artist", "playlist", "episode", "show"] as const;
 
 const HOSTS: Record<EmbedProvider, string[]> = {
@@ -316,9 +327,12 @@ const HOSTS: Record<EmbedProvider, string[]> = {
   vimeo: ["vimeo.com", "www.vimeo.com", "player.vimeo.com"],
   soundcloud: ["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"],
   spotify: ["open.spotify.com"],
+  applemusic: ["music.apple.com", "embed.music.apple.com"],
+  applepodcasts: ["podcasts.apple.com", "embed.podcasts.apple.com"],
+  mixcloud: ["mixcloud.com", "www.mixcloud.com"],
 };
 const SHORT_LINK_HOSTS = ["vm.tiktok.com", "vt.tiktok.com", "on.soundcloud.com", "spotify.link", "instagr.am", "fb.watch"];
-const SUPPORTED = "Paste a link to a YouTube, TikTok, Instagram, Vimeo, SoundCloud or Spotify post.";
+const SUPPORTED = "Paste a link to a YouTube, TikTok, Instagram, Vimeo, SoundCloud, Spotify, Apple Music, Apple Podcasts or Mixcloud post.";
 
 function providerFor(host: string): EmbedProvider | null {
   for (const p of EMBED_PROVIDERS) if (HOSTS[p].includes(host)) return p;
@@ -395,6 +409,32 @@ export function parseEmbedUrl(raw: string): EmbedResult {
       if ((SPOTIFY_KINDS as readonly string[]).includes(kind ?? "") && SPOTIFY_ID.test(id ?? "")) return build("spotify", kind as EmbedKind, id);
       return bad("a track, album, artist or playlist");
     }
+    case "applemusic": {
+      // music.apple.com/us/album/<slug>/<id>[?i=<song>] · /playlist/<slug>/pl.<id> · /artist/<slug>/<id>
+      const [store, type, slug, id] = segs;
+      if (!store || !APPLE_STORE.test(store.toLowerCase()) || !slug || !APPLE_SLUG.test(slug)) return bad("an album, song, playlist or artist");
+      const cc = store.toLowerCase();
+      const song = u.searchParams.get("i");
+      if (type === "album" && APPLE_ID.test(id ?? "")) return song && APPLE_SONG.test(song) ? build("applemusic", "track", `${cc}/${slug}/${id}:${song}`) : build("applemusic", "album", `${cc}/${slug}/${id}`);
+      if (type === "song" && APPLE_ID.test(id ?? "")) return build("applemusic", "track", `${cc}/${slug}/${id}:${id}`);
+      if (type === "playlist" && APPLE_PLAYLIST.test(id ?? "")) return build("applemusic", "playlist", `${cc}/${slug}/${id}`);
+      if (type === "artist" && APPLE_ID.test(id ?? "")) return build("applemusic", "artist", `${cc}/${slug}/${id}`);
+      return bad("an album, song, playlist or artist");
+    }
+    case "applepodcasts": {
+      // podcasts.apple.com/us/podcast/<slug>/id<show>[?i=<episode>]
+      const [store, type, slug, idSeg] = segs;
+      const m = /^id(\d{5,12})$/.exec(idSeg ?? "");
+      if (!store || !APPLE_STORE.test(store.toLowerCase()) || type !== "podcast" || !slug || !APPLE_SLUG.test(slug) || !m) return bad("a podcast or episode");
+      const cc = store.toLowerCase();
+      const ep = u.searchParams.get("i");
+      return ep && APPLE_SONG.test(ep) ? build("applepodcasts", "episode", `${cc}/${slug}/${m[1]}:${ep}`) : build("applepodcasts", "show", `${cc}/${slug}/${m[1]}`);
+    }
+    case "mixcloud": {
+      const [user, mix] = segs;
+      if (!user || !mix || segs.length > 2 || MC_RESERVED.has(user.toLowerCase()) || !MC_SLUG.test(user) || !MC_SLUG.test(mix)) return bad("a mix");
+      return build("mixcloud", "track", `${user}/${mix}`);
+    }
   }
 }
 
@@ -425,6 +465,25 @@ export function isValidEmbed(provider: string, kind: string, id: string): provid
     }
     case "spotify":
       return (SPOTIFY_KINDS as readonly string[]).includes(kind) && SPOTIFY_ID.test(id);
+    case "applemusic": {
+      const [path, song] = id.split(":");
+      const [cc, slug, rid] = path.split("/");
+      if (!cc || !slug || !rid || path.split("/").length !== 3 || !APPLE_STORE.test(cc) || !APPLE_SLUG.test(slug)) return false;
+      if (kind === "track") return APPLE_ID.test(rid) && APPLE_SONG.test(song ?? "");
+      if (song !== undefined) return false;
+      if (kind === "album" || kind === "artist") return APPLE_ID.test(rid);
+      return kind === "playlist" && APPLE_PLAYLIST.test(rid);
+    }
+    case "applepodcasts": {
+      const [path, ep] = id.split(":");
+      const [cc, slug, rid] = path.split("/");
+      if (!cc || !slug || !rid || path.split("/").length !== 3 || !APPLE_STORE.test(cc) || !APPLE_SLUG.test(slug) || !APPLE_ID.test(rid)) return false;
+      return kind === "show" ? ep === undefined : kind === "episode" && APPLE_SONG.test(ep ?? "");
+    }
+    case "mixcloud": {
+      const parts = id.split("/");
+      return kind === "track" && parts.length === 2 && parts.every((x) => MC_SLUG.test(x)) && !MC_RESERVED.has(parts[0].toLowerCase());
+    }
     default:
       return false;
   }
@@ -447,6 +506,19 @@ function canonicalUrl(provider: EmbedProvider, kind: EmbedKind, id: string, tikt
       return `https://soundcloud.com/${id}`;
     case "spotify":
       return `https://open.spotify.com/${kind}/${id}`;
+    case "applemusic": {
+      const [path, song] = id.split(":");
+      const [cc, slug, rid] = path.split("/");
+      const type = kind === "track" ? "album" : kind;
+      return `https://music.apple.com/${cc}/${type}/${slug}/${rid}${kind === "track" ? `?i=${song}` : ""}`;
+    }
+    case "applepodcasts": {
+      const [path, ep] = id.split(":");
+      const [cc, slug, rid] = path.split("/");
+      return `https://podcasts.apple.com/${cc}/podcast/${slug}/id${rid}${kind === "episode" ? `?i=${ep}` : ""}`;
+    }
+    case "mixcloud":
+      return `https://www.mixcloud.com/${id}/`;
   }
 }
 
@@ -481,6 +553,29 @@ export function embedFrame(provider: string, kind: string, id: string): EmbedFra
       };
     case "spotify":
       return { src: `https://open.spotify.com/embed/${kind}/${id}`, shape: "audio", height: kind === "track" || kind === "episode" ? 152 : 352, allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" };
+    case "applemusic": {
+      const [path, song] = id.split(":");
+      const [cc, slug, rid] = path.split("/");
+      const type = kind === "track" ? "album" : kind;
+      return {
+        src: `https://embed.music.apple.com/${cc}/${type}/${slug}/${rid}${kind === "track" ? `?i=${song}` : ""}`,
+        shape: "audio",
+        height: kind === "track" ? 175 : 450,
+        allow: "autoplay *; encrypted-media *; fullscreen *; clipboard-write",
+      };
+    }
+    case "applepodcasts": {
+      const [path, ep] = id.split(":");
+      const [cc, slug, rid] = path.split("/");
+      return {
+        src: `https://embed.podcasts.apple.com/${cc}/podcast/${slug}/id${rid}${kind === "episode" ? `?i=${ep}` : ""}`,
+        shape: "audio",
+        height: kind === "episode" ? 175 : 450,
+        allow: "autoplay *; encrypted-media *; clipboard-write",
+      };
+    }
+    case "mixcloud":
+      return { src: `https://www.mixcloud.com/widget/iframe/?hide_cover=1&autoplay=1&feed=${encodeURIComponent(`/${id}/`)}`, shape: "audio", height: 120, allow: "autoplay; encrypted-media" };
     default:
       return null;
   }
@@ -505,7 +600,7 @@ export function safeEmbedLink(provider: string, url: string): string | null {
 }
 
 export function embedShape(provider: string, kind: string): EmbedShape {
-  if (provider === "spotify" || provider === "soundcloud") return "audio";
+  if (provider === "spotify" || provider === "soundcloud" || provider === "applemusic" || provider === "applepodcasts" || provider === "mixcloud") return "audio";
   if (provider === "tiktok" || provider === "instagram" || (provider === "youtube" && kind === "short")) return "portrait";
   return "landscape";
 }

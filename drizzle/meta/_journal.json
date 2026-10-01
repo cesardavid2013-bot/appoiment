@@ -50,6 +50,13 @@
       "when": 1790824275478,
       "tag": "0006_social_embeds_realtime",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1790862948603,
+      "tag": "0007_apple_embeds",
+      "breakpoints": true
     }
   ]
 }
