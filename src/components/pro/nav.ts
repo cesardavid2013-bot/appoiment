@@ -15,7 +15,7 @@ export const PRO_NAV: ProNavItem[] = [
   { href: "/pro/reviews", label: "Reviews", icon: "star", any: ["reviews.respond"], group: "business" },
   { href: "/pro/promote", label: "Promote", icon: "megaphone", any: ["promotions.manage"], group: "growth" },
   { href: "/pro/insights", label: "Insights", icon: "chart", any: ["analytics.view"], group: "growth" },
-  { href: "/pro/settings", label: "Settings", icon: "settings", any: ["business.manage", "locations.manage"], group: "settings" },
+  { href: "/pro/settings", label: "Settings", icon: "settings", any: ["business.manage", "locations.manage", "services.manage"], group: "settings" },
 ];
 
 export const GROUP_LABELS = { main: "", business: "Your business", growth: "Grow", settings: "" } as const;

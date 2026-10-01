@@ -8,7 +8,7 @@ import { proPage } from "@/server/pro-page";
 export const metadata: Metadata = { title: "Settings" };
 
 export default async function SettingsHome() {
-  const { m } = await proPage(["business.manage", "locations.manage"]);
+  const { m } = await proPage(["business.manage", "locations.manage", "services.manage"]);
   const sections = SETTINGS_SECTIONS.filter((s) => m.permissions.has(s.permission));
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16 pt-8 sm:px-6 lg:px-10 lg:pt-10">
