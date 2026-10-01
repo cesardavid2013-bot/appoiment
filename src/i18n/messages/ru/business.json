@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Онлайн",
+    "comesToYou": "Выезд к вам",
+    "comesToYouIn": "Выезд к вам · {city}",
+    "lessThanOneKm": "<1 км",
+    "promoted": "Реклама",
+    "verified": "Проверенная компания",
+    "instant": "Мгновенное подтверждение",
+    "request": "Запись по заявке",
+    "bookAt": "Записаться: {day}, {time}",
+    "moreTimes": "Другое время",
+    "freeConsultation": "Есть бесплатная консультация",
+    "priceOnRequest": "Цена по запросу",
+    "viewTimes": "Посмотреть время"
+  },
+  "rail": {
+    "seeAll": "Смотреть все"
+  },
+  "favorite": {
+    "save": "Сохранить",
+    "saved": "В избранном",
+    "remove": "Убрать из избранного",
+    "savedToast": "Добавлено в избранное",
+    "savedToastHint": "Найдёте в разделе «Избранное»."
+  }
+}
