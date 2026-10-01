@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "Menunggu pembayaran",
+    "requested": "Permintaan terkirim",
+    "confirmed": "Dikonfirmasi",
+    "checked_in": "Sudah check-in",
+    "in_progress": "Sedang berlangsung",
+    "completed": "Selesai",
+    "cancelled": "Dibatalkan",
+    "declined": "Ditolak",
+    "no_show": "Tidak hadir",
+    "expired": "Kedaluwarsa"
+  },
+  "list": {
+    "title": "Pemesanan",
+    "filters": "Filter pemesanan",
+    "tabs": {
+      "upcoming": "Mendatang",
+      "past": "Sebelumnya",
+      "cancelled": "Dibatalkan"
+    },
+    "howDidItGo": "Bagaimana pengalamannya?",
+    "review": "Ulas",
+    "empty": {
+      "upcoming": "Tidak ada janji temu mendatang",
+      "past": "Belum ada janji temu sebelumnya",
+      "cancelled": "Tidak ada yang dibatalkan",
+      "upcomingBody": "Saat Anda memesan, janji temu akan muncul di sini — lengkap dengan petunjuk arah, pengingat, dan penjadwalan ulang yang mudah.",
+      "findPro": "Cari profesional"
+    }
+  },
+  "detail": {
+    "metaTitle": "Janji temu",
+    "allBookings": "Semua pemesanan",
+    "hero": {
+      "confirmedTitle": "Pemesanan Anda berhasil",
+      "confirmedBody": "Kami telah mengirim konfirmasi dan akan mengingatkan Anda sebelum janji temu.",
+      "requestedTitle": "Permintaan terkirim",
+      "requestedBody": "{business} akan meninjau permintaan Anda. Kami akan memberi tahu Anda begitu mereka menanggapi — sementara itu, waktu Anda tetap ditahan.",
+      "paymentTitle": "Menyelesaikan pembayaran Anda",
+      "paymentBody": "Jika Anda baru saja membayar, halaman ini akan diperbarui otomatis dalam beberapa detik. Waktu Anda ditahan selama pembayaran diproses."
+    },
+    "calendarDetails": "Referensi {reference}",
+    "ref": "Ref",
+    "when": "Kapan",
+    "with": "Dengan",
+    "where": "Di mana",
+    "atYourAddress": "Di alamat Anda",
+    "online": "Online",
+    "virtualLink": "Bisnis akan mengirimkan tautan sebelum sesi Anda.",
+    "yourReview": "Ulasan Anda",
+    "payment": {
+      "title": "Pembayaran",
+      "serviceFee": "Biaya layanan",
+      "tax": "Pajak",
+      "estimatedTotal": "Perkiraan total",
+      "total": "Total",
+      "paid": "Dibayar",
+      "refunded": "Dikembalikan",
+      "balance": "Sisa tagihan",
+      "dueAtAppointment": "Dibayar saat janji temu",
+      "tip": "Tip"
+    },
+    "policy": {
+      "title": "Kebijakan pembatalan",
+      "freeUntil": "Pembatalan gratis hingga {hours, plural, other {# jam}} sebelumnya.",
+      "freeAnytime": "Pembatalan gratis kapan saja sebelum janji temu.",
+      "lateFee": "Pembatalan setelahnya: {percent}% dari total.",
+      "depositNonRefundable": "Uang muka tidak dapat dikembalikan.",
+      "cannotCancel": "Janji temu ini tidak dapat dibatalkan lagi.",
+      "alreadyStarted": "Janji temu ini sudah dimulai.",
+      "cannotReschedule": "Janji temu ini tidak dapat dijadwalkan ulang.",
+      "maxReschedules": "Janji temu ini sudah dijadwalkan ulang sebanyak batas maksimum. Silakan hubungi bisnis.",
+      "rescheduleWindow": "Perubahan harus dilakukan setidaknya {hours, plural, other {# jam}} sebelum janji temu. Silakan hubungi bisnis."
+    },
+    "refund": {
+      "noCharge": "Tanpa biaya.",
+      "full": "Anda akan menerima pengembalian dana penuh.",
+      "none": "Pembayaran Anda tidak dapat dikembalikan sesuai kebijakan bisnis ini.",
+      "partial": "Anda akan menerima pengembalian dana sebagian sesuai kebijakan bisnis ini."
+    },
+    "note": "Catatan: {reason}",
+    "problem": "Ada masalah dengan pemesanan ini? <link>Hubungi dukungan</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} pukul {time}",
+    "cancelledToast": "Janji temu dibatalkan",
+    "refundOnWay": "Pengembalian dana {amount} sedang diproses.",
+    "rescheduledToast": "Dijadwalkan ulang",
+    "payToConfirm": "Bayar {amount} untuk konfirmasi",
+    "addToCalendar": "Tambahkan ke kalender",
+    "directions": "Petunjuk arah",
+    "message": "Kirim pesan",
+    "bookAgain": "Pesan lagi",
+    "googleCalendar": "Google Kalender",
+    "leaveReview": "Tulis ulasan",
+    "reschedule": "Jadwalkan ulang",
+    "cancelAppointment": "Batalkan janji temu",
+    "cancelTitle": "Batalkan janji temu ini?",
+    "insideWindow": "Batas waktu pembatalan gratis dari bisnis ini sudah lewat.",
+    "refundAmount": "Pengembalian dana: {amount}.",
+    "keptAmount": "Ditahan oleh bisnis: {amount}.",
+    "reason": "Alasan",
+    "reasonHint": "Akan dibagikan kepada bisnis.",
+    "chooseNewTime": "Pilih waktu baru",
+    "currently": "Saat ini {when}",
+    "keepCurrentTime": "Tetap di waktu sekarang",
+    "moveTo": "Pindah ke {time}",
+    "chooseTime": "Pilih waktu"
+  },
+  "review": {
+    "ratings": {
+      "1": "Buruk",
+      "2": "Cukup",
+      "3": "Baik",
+      "4": "Sangat baik",
+      "5": "Luar biasa"
+    },
+    "thanks": "Terima kasih atas ulasan Anda",
+    "title": "Bagaimana {business}?",
+    "subtitle": "Ulasan Anda bersifat publik dan ditandai sebagai pemesanan terverifikasi.",
+    "rating": "Rating",
+    "stars": "{n, plural, other {# bintang}}",
+    "bodyLabel": "Ceritakan kunjungan Anda kepada orang lain",
+    "bodyPlaceholder": "Apa yang paling berkesan? Apakah Anda akan merekomendasikannya?",
+    "post": "Kirim ulasan"
+  },
+  "slotPicker": {
+    "previousWeek": "Minggu sebelumnya",
+    "nextWeek": "Minggu berikutnya",
+    "noOpenings": "Tidak ada jadwal kosong hari ini.",
+    "selected": "{time} dipilih"
+  }
+}

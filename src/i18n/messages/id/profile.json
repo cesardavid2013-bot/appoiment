@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Tidak ditemukan",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} di {city}",
+    "bookOnline": "Pesan {name} secara online."
+  },
+  "preview": {
+    "notice": "Pratinjau — hanya Anda yang dapat melihat halaman ini sampai Anda menerbitkannya.",
+    "goLive": "Terbitkan"
+  },
+  "verified": "Diverifikasi oleh Kept",
+  "verifiedLabel": "Bisnis terverifikasi",
+  "reviewsCount": "{count, plural, other {# ulasan terverifikasi}}",
+  "newOnKept": "Baru di Kept",
+  "travels": "{city} · melayani hingga {km} km",
+  "status": {
+    "openUntil": "Buka · hingga {time}",
+    "opensAt": "Buka pukul {time}",
+    "opensTomorrow": "Buka besok pukul {time}",
+    "opensDay": "Buka {day} pukul {time}",
+    "notSet": "Jam buka belum diatur",
+    "closed": "Tutup"
+  },
+  "nav": {
+    "label": "Bagian profil",
+    "services": "Layanan",
+    "work": "Karya",
+    "featured": "Unggulan",
+    "reviews": "Ulasan",
+    "about": "Tentang"
+  },
+  "services": {
+    "eyebrow": "Menu",
+    "title": "Layanan",
+    "empty": "Bisnis ini belum menerbitkan layanan.",
+    "sale": "Promo",
+    "group": "Grup · hingga {count} orang",
+    "request": "Ajukan pemesanan",
+    "options": "Tersedia opsi",
+    "deposit": "Uang muka saat memesan",
+    "book": "Pesan",
+    "bookService": "Pesan {name}"
+  },
+  "work": {
+    "eyebrow": "Portofolio",
+    "title": "Karya terbaru"
+  },
+  "featured": {
+    "eyebrow": "Di media sosial",
+    "title": "Unggulan",
+    "allProfiles": "Semua profil media sosial",
+    "bookThis": "Pesan ini · {service}",
+    "newTab": "(terbuka di tab baru)",
+    "footnote": "Pemutar dimuat dari setiap platform hanya saat Anda menekan putar.",
+    "play": "Putar {title}",
+    "loadsFrom": "Dimuat dari {host}"
+  },
+  "team": {
+    "eyebrow": "Orang-orangnya",
+    "title": "Tim"
+  },
+  "reviews": {
+    "eyebrow": "Kata mereka",
+    "title": "Ulasan",
+    "empty": "Belum ada ulasan. Ulasan hanya bisa diberikan oleh pelanggan setelah kunjungan selesai.",
+    "distribution": "Sebaran rating",
+    "onlyCustomers": "Hanya pelanggan dengan pemesanan yang selesai yang dapat memberi ulasan.",
+    "response": "Tanggapan dari {name}",
+    "stars": "{value} dari 5 bintang"
+  },
+  "about": {
+    "eyebrow": "Tentang kami",
+    "title": "Tentang",
+    "hours": "Jam buka",
+    "timesIn": "Waktu ditampilkan dalam {zone}.",
+    "policies": "Kebijakan",
+    "noShow": "Janji temu yang terlewat dapat dikenakan {percent}% dari total.",
+    "experience": "Pengalaman {years}+ tahun",
+    "amenities": "Fasilitas",
+    "online": "Online",
+    "directions": "Petunjuk arah",
+    "comesToYou": "Datang ke lokasi Anda",
+    "mobileBody": "Berbasis di {city}. Melayani hingga {km} km — Anda akan menambahkan alamat saat memesan.",
+    "onlineSessions": "Sesi online",
+    "onlineBody": "Bergabung dari mana saja. Tautan dibagikan setelah pemesanan."
+  },
+  "panel": {
+    "label": "Pesan",
+    "eyebrow": "Reservasi",
+    "freeOptions": "Tersedia opsi gratis",
+    "from": "Layanan mulai {price}",
+    "onConsultation": "Harga setelah konsultasi",
+    "nextToday": "Jadwal kosong berikutnya hari ini",
+    "nextTomorrow": "Jadwal kosong berikutnya besok",
+    "nextOn": "Jadwal kosong berikutnya {day}",
+    "none": "Tidak ada jadwal kosong dalam dua minggu ke depan",
+    "bookNow": "Pesan sekarang",
+    "requestToBook": "Ajukan pemesanan",
+    "instant": "Konfirmasi instan",
+    "confirms": "Bisnis akan mengonfirmasi permintaan Anda",
+    "notTaking": "Bisnis ini belum menerima pemesanan.",
+    "mobileFrom": "Mulai {price}",
+    "mobileNext": "Berikutnya: {day} {time}",
+    "seeAvailability": "Lihat ketersediaan",
+    "request": "Ajukan"
+  },
+  "actions": {
+    "share": "Bagikan",
+    "shareTitle": "Bagikan {name}",
+    "shareBody": "Kirim tautannya, atau pindai kode untuk membuka halaman pemesanan.",
+    "copy": "Salin",
+    "copied": "Disalin",
+    "downloadQr": "Unduh kode QR",
+    "ask": "Ajukan pertanyaan",
+    "messageTitle": "Kirim pesan ke {name}",
+    "messageBody": "Tanyakan tentang layanan, ketersediaan, atau apa pun sebelum memesan. Nomor telepon dan email Anda tetap rahasia.",
+    "cancel": "Batal",
+    "send": "Kirim pesan",
+    "yourMessage": "Pesan Anda",
+    "placeholder": "Halo! Apakah ada waktu untuk potong skin fade Sabtu sore ini?",
+    "sent": "Pesan terkirim",
+    "sentBody": "{name} akan membalas di kotak masuk Anda."
+  },
+  "portfolio": {
+    "compare": "Bandingkan sebelum dan sesudah",
+    "portfolio": "Portofolio",
+    "close": "Tutup",
+    "previous": "Sebelumnya",
+    "next": "Berikutnya",
+    "before": "Sebelum",
+    "after": "Sesudah",
+    "beforeAfter": "Sebelum / sesudah",
+    "video": "Video",
+    "openItem": "Buka item {n}",
+    "browse": "Gunakan tombol panah untuk menjelajah",
+    "bookThis": "Pesan ini",
+    "bookThisService": "Pesan ini — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Video pendek",
+    "post": "Postingan",
+    "reel": "Reel",
+    "track": "Lagu",
+    "album": "Album",
+    "artist": "Artis",
+    "playlist": "Daftar putar",
+    "episode": "Episode",
+    "show": "Podcast"
+  }
+}

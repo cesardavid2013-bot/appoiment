@@ -1,0 +1,311 @@
+{
+  "loading": "Memuat…",
+  "noEmail": "Belum ada email",
+  "saveChanges": "Simpan perubahan",
+  "cancel": "Batal",
+  "checkFields": "Harap periksa kolom yang ditandai.",
+  "nav": {
+    "label": "Pengaturan akun",
+    "account": "Akun"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profil",
+      "description": "Nama, foto, telepon, dan zona waktu"
+    },
+    "security": {
+      "label": "Login & keamanan",
+      "description": "Kata sandi, konfirmasi email, dan perangkat"
+    },
+    "notifications": {
+      "label": "Pengaturan notifikasi",
+      "description": "Pilih apa yang kami kirimkan lewat email atau SMS"
+    },
+    "addresses": {
+      "label": "Alamat tersimpan",
+      "description": "Untuk profesional yang datang ke lokasi Anda"
+    },
+    "privacy": {
+      "label": "Privasi & data",
+      "description": "Unduh data Anda atau hapus akun"
+    }
+  },
+  "home": {
+    "memberSince": "Anggota sejak {date}",
+    "confirmEmail": "<b>Konfirmasi email Anda.</b> Kami telah mengirim tautan ke {email} agar bisnis bisa menghubungi Anda terkait pemesanan.",
+    "activity": "Aktivitas Anda",
+    "settings": "Pengaturan",
+    "more": "Lainnya",
+    "signOut": "Keluar",
+    "rows": {
+      "bookings": {
+        "label": "Pemesanan",
+        "description": "Janji temu mendatang dan sebelumnya"
+      },
+      "saved": {
+        "label": "Disimpan",
+        "description": "Profesional yang Anda simpan"
+      },
+      "messages": {
+        "label": "Pesan",
+        "description": "Percakapan dengan bisnis"
+      },
+      "notifications": {
+        "label": "Notifikasi",
+        "description": "Kabar terbaru tentang pemesanan Anda"
+      },
+      "business": {
+        "label": "Beralih ke bisnis Anda",
+        "description": "Kalender, layanan, dan klien"
+      },
+      "offer": {
+        "label": "Tawarkan layanan Anda di Kept",
+        "description": "Terima pemesanan dan kembangkan bisnis Anda — gratis untuk memulai"
+      },
+      "support": {
+        "label": "Bantuan & dukungan",
+        "description": "Dapatkan bantuan terkait pemesanan, pembayaran, atau akun Anda"
+      },
+      "legal": {
+        "label": "Ketentuan & privasi",
+        "description": "Cara kerja Kept dan cara kami menangani data Anda"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Email konfirmasi terkirim",
+    "sentBody": "Periksa {email} — tautan berlaku selama 3 hari.",
+    "sent": "Email terkirim",
+    "resend": "Kirim ulang tautan"
+  },
+  "profile": {
+    "description": "Bagaimana Anda tampil bagi profesional yang Anda pesan.",
+    "saved": "Profil disimpan",
+    "details": "Data pribadi",
+    "name": "Nama",
+    "email": "Email",
+    "changeEmail": "Untuk mengubah email login, <link>hubungi dukungan</link> agar kami bisa memastikan itu memang Anda.",
+    "phone": "Telepon",
+    "phoneHintSms": "Bisnis yang Anda pesan dapat menelepon Anda terkait janji temu, dan kami dapat mengirim pengingat via SMS jika Anda mengaktifkannya.",
+    "phoneHint": "Bisnis yang Anda pesan dapat menggunakannya untuk menghubungi Anda terkait janji temu.",
+    "photo": {
+      "title": "Foto",
+      "description": "Ditampilkan di samping nama Anda kepada profesional yang Anda pesan.",
+      "updated": "Foto diperbarui",
+      "removed": "Foto dihapus",
+      "change": "Ganti foto",
+      "upload": "Unggah foto",
+      "remove": "Hapus",
+      "hint": "JPG, PNG, atau WebP, maksimal 15 MB. Kami menghapus data lokasi dari foto."
+    },
+    "timezone": {
+      "label": "Zona waktu",
+      "hint": "Zona waktu tempat tinggal Anda. Waktu janji temu selalu ditampilkan dalam waktu setempat bisnis.",
+      "notSet": "Belum diatur",
+      "detect": "Deteksi otomatis",
+      "detectFailed": "Kami tidak dapat mendeteksi zona waktu Anda. Pilih dari daftar."
+    },
+    "language": {
+      "title": "Bahasa",
+      "description": "Digunakan untuk menu, tombol, dan tanggal di seluruh Kept. Nama bisnis, layanan, dan ulasan ditampilkan sesuai tulisan bisnis."
+    }
+  },
+  "security": {
+    "description": "Jaga akun Anda tetap aman dan dalam kendali Anda.",
+    "password": {
+      "title": "Kata sandi",
+      "setTitle": "Atur kata sandi",
+      "description": "Mengubah kata sandi akan mengeluarkan Anda dari semua perangkat lain.",
+      "setDescription": "Anda masuk dengan Google. Tambahkan kata sandi agar bisa masuk juga dengan email.",
+      "change": "Ubah kata sandi",
+      "setButton": "Atur kata sandi",
+      "current": "Kata sandi saat ini",
+      "new": "Kata sandi baru",
+      "newHint": "Minimal 8 karakter. Hindari kata umum dan email Anda.",
+      "confirm": "Konfirmasi kata sandi baru",
+      "tooShort": "Gunakan minimal 8 karakter.",
+      "mismatch": "Kata sandi tidak cocok.",
+      "changed": "Kata sandi diubah",
+      "set": "Kata sandi diatur",
+      "othersSignedOut": "Semua perangkat lain telah dikeluarkan."
+    },
+    "email": {
+      "title": "Email",
+      "description": "Kami menggunakan email Anda untuk login dan mengirim konfirmasi pemesanan.",
+      "confirmed": "Terkonfirmasi",
+      "notConfirmed": "Belum dikonfirmasi",
+      "none": "Akun ini tidak memiliki email."
+    },
+    "devices": {
+      "title": "Perangkat",
+      "description": "Jika Anda masuk di perangkat bersama atau yang hilang, keluarkan di sini. Perangkat ini tetap masuk.",
+      "status": "{count, plural, =0 {Hanya perangkat ini yang masuk} other {Masuk di # perangkat lain}}",
+      "signOutOthers": "Keluar dari perangkat lain",
+      "confirmTitle": "Keluar dari perangkat lain?",
+      "confirmBody": "Siapa pun yang menggunakan akun Anda di ponsel, tablet, atau komputer lain harus masuk kembali.",
+      "confirm": "Keluarkan",
+      "signedOutToast": "{count, plural, other {Keluar dari # perangkat lain}}"
+    }
+  },
+  "notifications": {
+    "description": "Pilih cara kami memberi kabar. Kami tidak pernah mengirim lebih dari yang perlu.",
+    "saved": "Disimpan",
+    "emailAndText": "Notifikasi email dan SMS",
+    "emailOnly": "Notifikasi email",
+    "inboxNote": "Apa pun pilihan Anda di sini, semuanya juga muncul di kotak Notifikasi Anda di Kept.",
+    "addPhone": "Tambahkan nomor telepon di <link>profil</link> Anda untuk menerima SMS.",
+    "email": "Email",
+    "sms": "SMS",
+    "forTopic": "untuk {topic}",
+    "alwaysOn": {
+      "bookings": "Email selalu aktif agar kami bisa menghubungi Anda jika pemesanan berubah.",
+      "business": "Email selalu aktif agar Anda tidak melewatkan pemesanan atau permintaan baru."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Kabar pemesanan",
+        "description": "Konfirmasi, perubahan, dan pembatalan."
+      },
+      "reminders": {
+        "label": "Pengingat",
+        "description": "Sebelum janji temu mendatang."
+      },
+      "messages": {
+        "label": "Pesan",
+        "description": "Saat bisnis atau pelanggan mengirimi Anda pesan."
+      },
+      "waitlist": {
+        "label": "Slot dari daftar tunggu",
+        "description": "Saat waktu yang Anda inginkan tersedia."
+      },
+      "reviews": {
+        "label": "Permintaan ulasan",
+        "description": "Pesan singkat setelah janji temu selesai."
+      },
+      "business": {
+        "label": "Aktivitas bisnis",
+        "description": "Pemesanan, permintaan, dan ulasan baru untuk bisnis Anda."
+      },
+      "marketing": {
+        "label": "Berita & penawaran",
+        "description": "Kabar sesekali dari bisnis yang pernah Anda pesan."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Untuk profesional panggilan yang datang ke lokasi Anda — barber, detailer, pelatih, dan lainnya.",
+    "defaultLabel": "Rumah",
+    "saved": "Alamat disimpan",
+    "removed": "Alamat dihapus",
+    "emptyTitle": "Belum ada alamat tersimpan",
+    "emptyBody": "Simpan tempat-tempat Anda memesan layanan panggilan — seperti rumah atau kantor — agar mudah dijangkau.",
+    "add": "Tambah alamat",
+    "removeLabel": "Hapus {label}",
+    "count": "{count} dari {max} tersimpan",
+    "limit": "Anda telah mencapai batas. Hapus satu alamat untuk menambah yang lain.",
+    "dialogBody": "Hanya Anda yang dapat melihatnya. Profesional hanya melihat alamat saat Anda memesan layanan di sana.",
+    "save": "Simpan alamat",
+    "fields": {
+      "name": "Nama",
+      "nameHint": "Misalnya Rumah, Kantor, atau Gym.",
+      "line1": "Alamat jalan",
+      "line2": "Apartemen, unit, atau lantai",
+      "city": "Kota",
+      "region": "Provinsi / wilayah",
+      "postalCode": "Kode pos",
+      "country": "Negara"
+    },
+    "removeTitle": "Hapus “{label}”?",
+    "removeBody": "Pemesanan yang sudah Anda buat di alamat ini tidak terpengaruh.",
+    "remove": "Hapus alamat"
+  },
+  "privacy": {
+    "description": "Data Anda adalah milik Anda. Baca cara kami menggunakannya di <link>kebijakan privasi</link> kami.",
+    "export": {
+      "title": "Unduh data Anda",
+      "description": "Dapatkan salinan profil, alamat tersimpan, janji temu, ulasan, pesan, profesional tersimpan, dan permintaan dukungan Anda dalam file JSON.",
+      "button": "Unduh data saya",
+      "hint": "Langsung siap. Simpan file di tempat yang aman — file ini berisi informasi pribadi."
+    },
+    "delete": {
+      "title": "Hapus akun Anda",
+      "intro": "Ini akan menutup akun Kept Anda secara permanen. Yang akan terjadi:",
+      "erased": "Nama, email, telepon, foto, alamat tersimpan, dan profesional tersimpan Anda dihapus, dan Anda dikeluarkan dari semua perangkat.",
+      "upcoming": "{count, plural, other {# janji temu mendatang Anda dibatalkan sesuai kebijakan pembatalan masing-masing bisnis, termasuk pengembalian dana yang diizinkan.}}",
+      "upcomingNone": "Janji temu mendatang dibatalkan sesuai kebijakan pembatalan masing-masing bisnis.",
+      "records": "Catatan yang dibutuhkan bisnis dan aturan pajak — janji temu sebelumnya, pembayaran, dan ulasan — tetap disimpan, tetapi ditampilkan sebagai dari “Pengguna terhapus”.",
+      "permanent": "Tindakan ini tidak dapat dibatalkan. Anda dapat mendaftar lagi nanti dengan email yang sama, mulai dari awal.",
+      "blocked": "Anda memiliki {businesses}. Tutup bisnis atau alihkan ke orang lain dari <link>pengaturan bisnis</link> sebelum menghapus akun, agar kliennya tidak ditinggalkan tanpa jawaban.",
+      "copyFirst": "Ingin salinan dulu? Unduh data Anda di atas.",
+      "open": "Hapus akun…",
+      "confirmTitle": "Hapus akun Anda?",
+      "confirmBody": "Tindakan ini tidak dapat dibatalkan.",
+      "keep": "Pertahankan akun",
+      "confirm": "Hapus akun saya",
+      "willCancel": "{count, plural, other {# janji temu mendatang akan dibatalkan.}}",
+      "password": "Kata sandi Anda",
+      "typeToConfirm": "Ketik <word>{word}</word> untuk mengonfirmasi",
+      "deletedToast": "Akun Anda telah dihapus",
+      "deletedBody": "Terima kasih telah menggunakan Kept."
+    }
+  },
+  "saved": {
+    "title": "Disimpan",
+    "description": "{count, plural, other {# profesional yang Anda simpan.}} Jadwal kosong di bawah diambil langsung dari kalender mereka.",
+    "emptyTitle": "Belum ada yang disimpan",
+    "emptyBody": "Ketuk ikon hati pada profesional mana pun untuk menyimpannya di sini — praktis untuk memesan ulang langganan Anda atau membandingkan beberapa sebelum memutuskan.",
+    "explore": "Jelajahi profesional",
+    "loading": "Memuat profesional tersimpan…"
+  },
+  "notificationList": {
+    "title": "Notifikasi",
+    "today": "Hari ini",
+    "earlier": "Sebelumnya",
+    "emptyTitle": "Belum ada notifikasi",
+    "emptyBody": "Konfirmasi pemesanan, pengingat, balasan, dan slot dari daftar tunggu akan muncul di sini.",
+    "unread": "{count} belum dibaca",
+    "caughtUp": "Semua sudah Anda baca",
+    "allCaughtUpToast": "Semua sudah dibaca",
+    "markAll": "Tandai semua sudah dibaca",
+    "unreadItem": "Belum dibaca",
+    "loadOlder": "Muat yang lebih lama",
+    "end": "Itu saja."
+  },
+  "invite": {
+    "eyebrow": "Undangan tim",
+    "invalidTitle": "Undangan ini tidak dapat digunakan",
+    "invalidBody": "Undangan mungkin sudah kedaluwarsa, dibatalkan, atau sudah diterima. Minta orang yang mengundang Anda untuk mengirim tautan baru.",
+    "goHome": "Buka Kept",
+    "join": "Bergabung dengan {business}",
+    "invitedAs": "Anda diundang sebagai <b>{role}</b>.",
+    "signInWith": "Masuk atau buat akun dengan <b>{email}</b> untuk menerima.",
+    "createAccount": "Buat akun",
+    "signIn": "Masuk",
+    "wrongAccount": "Anda masuk sebagai <b>{email}</b>, tetapi undangan ini dikirim ke {invited}.",
+    "wrongAccountHint": "Keluar lalu masuk dengan alamat tersebut, atau minta undangan untuk {email}.",
+    "acceptingAs": "Menerima sebagai <b>{email}</b>.",
+    "accept": "Terima dan buka jadwal saya",
+    "roles": {
+      "owner": {
+        "label": "Pemilik",
+        "description": "Kendali penuh, termasuk penagihan dan tim."
+      },
+      "manager": {
+        "label": "Manajer",
+        "description": "Menjalankan operasional sehari-hari. Tidak dapat mengubah tim atau pengaturan bisnis."
+      },
+      "receptionist": {
+        "label": "Resepsionis",
+        "description": "Memesan dan mengelola janji temu untuk semua orang."
+      },
+      "provider": {
+        "label": "Profesional",
+        "description": "Melihat dan mengelola janji temu serta jadwalnya sendiri."
+      },
+      "custom": {
+        "label": "Kustom",
+        "description": "Pilih dengan tepat apa yang bisa dilakukan orang ini."
+      }
+    }
+  }
+}

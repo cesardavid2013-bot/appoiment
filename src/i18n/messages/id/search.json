@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Jelajahi profesional",
+    "category": "Pesan {category}",
+    "query": "{q} — pencarian",
+    "description": "Bandingkan profesional berdasarkan ketersediaan nyata, harga, dan ulasan terverifikasi."
+  },
+  "bar": {
+    "placeholder": "Cari layanan atau profesional",
+    "label": "Cari",
+    "clear": "Hapus pencarian"
+  },
+  "location": {
+    "placeholder": "Di mana saja",
+    "label": "Lokasi",
+    "clear": "Hapus lokasi",
+    "useMine": "Gunakan lokasi saya saat ini",
+    "finding": "Mencari lokasi Anda…",
+    "current": "Lokasi saat ini",
+    "selectedArea": "Area terpilih",
+    "unsupported": "Browser Anda tidak dapat membagikan lokasi. Ketik nama kota saja.",
+    "denied": "Akses lokasi dimatikan untuk situs ini. Ketik nama kota — atau izinkan lokasi di pengaturan browser Anda.",
+    "failed": "Kami tidak dapat menemukan lokasi Anda. Ketik nama kota saja."
+  },
+  "quick": {
+    "availableToday": "Tersedia hari ini",
+    "instant": "Pemesanan instan",
+    "mobile": "Datang ke lokasi Anda",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Tampilan",
+    "list": "Daftar",
+    "map": "Peta"
+  },
+  "heading": {
+    "explore": "Jelajahi",
+    "results": "Hasil",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Memperbarui…",
+    "count": "{count, plural, other {# profesional}}",
+    "countMore": "{count}+ profesional",
+    "near": "{results} di dekat {place}",
+    "nearYou": "{results} di dekat Anda"
+  },
+  "sort": {
+    "label": "Urutkan",
+    "relevance": "Paling sesuai",
+    "rating": "Rating tertinggi",
+    "price": "Harga terendah",
+    "distance": "Terdekat"
+  },
+  "categories": {
+    "label": "Kategori",
+    "all": "Semua"
+  },
+  "empty": {
+    "title": "Belum ada yang cocok",
+    "query": "Coba kata yang lebih umum, ejaan lain, atau hapus beberapa filter.",
+    "filters": "Coba hapus filter atau cari di area yang lebih luas.",
+    "clear": "Hapus semua filter"
+  },
+  "showMore": "Tampilkan lainnya",
+  "filters": {
+    "button": "Filter",
+    "buttonCount": "Filter · {count}",
+    "title": "Filter",
+    "clearAll": "Hapus semua",
+    "show": "Tampilkan hasil",
+    "availability": "Ketersediaan & pemesanan",
+    "rating": "Rating",
+    "minRating": "Rating minimum",
+    "any": "Semua",
+    "price": "Harga awal hingga",
+    "maxPrice": "Harga awal maksimum",
+    "distance": "Jarak",
+    "provider": "Penyedia",
+    "providerType": "Jenis penyedia",
+    "individual": "Profesional independen",
+    "business": "Bisnis & tim"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "Pemesanan",
+      "hint": "Perubahan, pembatalan, atau masalah dengan janji temu."
+    },
+    "payment": {
+      "label": "Pembayaran",
+      "hint": "Tagihan, uang muka, pengembalian dana, atau tip."
+    },
+    "account": {
+      "label": "Akun",
+      "hint": "Login, profil, atau data Anda."
+    },
+    "report": {
+      "label": "Laporkan bisnis",
+      "hint": "Masalah keamanan, informasi menyesatkan, atau pelanggaran."
+    },
+    "other": {
+      "label": "Lainnya",
+      "hint": "Hal lain yang bisa kami bantu."
+    }
+  },
+  "status": {
+    "open": "Menunggu dukungan",
+    "awaiting_customer": "Sudah dibalas",
+    "resolved": "Terselesaikan",
+    "closed": "Ditutup"
+  },
+  "home": {
+    "title": "Bantuan & dukungan",
+    "description": "Dapatkan bantuan terkait pemesanan, pembayaran, atau akun Anda.",
+    "newRequest": "Permintaan baru",
+    "yourRequests": "Permintaan Anda",
+    "emptyTitle": "Belum ada permintaan",
+    "emptyBody": "Jika ada yang tidak beres dengan pemesanan, pembayaran, atau akun Anda, beri tahu kami dan kami akan membantu menyelesaikannya.",
+    "contact": "Hubungi dukungan",
+    "ticketLine": "{category} · Diperbarui {date} · {count, plural, other {# pesan}}",
+    "quickAnswers": "Jawaban cepat",
+    "stillStuck": "Masih butuh bantuan? <link>Hubungi dukungan</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Bagaimana cara membatalkan atau menjadwalkan ulang janji temu?",
+      "a": "Buka <link>Pemesanan</link>, pilih janji temu, lalu ketuk Jadwalkan ulang atau Batalkan. Setiap bisnis menetapkan batas waktu pembatalannya sendiri — Anda akan melihat dengan jelas apa yang berlaku, termasuk biaya atau pengembalian dana, sebelum mengonfirmasi."
+    },
+    "refund": {
+      "q": "Kapan saya menerima pengembalian dana?",
+      "a": "Pengembalian dana dikirim ke kartu yang Anda gunakan untuk membayar begitu pembatalan dikonfirmasi. Tergantung bank Anda, biasanya perlu 5–10 hari kerja hingga muncul. Apakah uang muka dapat dikembalikan bergantung pada kebijakan bisnis, yang ditampilkan saat Anda memesan."
+    },
+    "contactPro": {
+      "q": "Bagaimana cara menghubungi profesional?",
+      "a": "Gunakan Kirim pesan di profil mereka atau di pemesanan Anda. Percakapan Anda ada di <link>Pesan</link>. Untuk hal terkait layanan itu sendiri — petunjuk arah, persiapan, apa yang perlu dibawa — bisnislah yang bisa menjawab paling cepat."
+    },
+    "report": {
+      "q": "Ada masalah dengan sebuah bisnis. Apa yang bisa saya lakukan?",
+      "a": "Buka permintaan di bawah dan pilih “Laporkan bisnis”. Tautkan janji temu jika ada. Kami membaca setiap laporan, dan dapat turun tangan soal pengembalian dana serta, bila perlu, mengeluarkan bisnis dari Kept."
+    },
+    "account": {
+      "q": "Bagaimana cara mengubah email atau menghapus akun?",
+      "a": "Perubahan email dilakukan melalui dukungan agar kami bisa memastikan itu memang Anda. Anda dapat mengunduh data atau menghapus akun sendiri di <link>Privasi & data</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Permintaan dukungan",
+    "allRequests": "Semua permintaan",
+    "opened": "{category} · Dibuka <date></date>",
+    "appointmentLine": "{date} pukul {time} · Ref {reference}",
+    "conversation": "Percakapan",
+    "keptSupport": "Dukungan Kept",
+    "openImage": "Buka gambar lampiran",
+    "attachedImage": "Gambar lampiran",
+    "closed": "Permintaan ini sudah ditutup. <link>Buka permintaan baru</link> jika Anda masih butuh bantuan.",
+    "willReply": "Kami akan membalas di sini dan memberi tahu Anda.",
+    "sorted": "Sudah beres? Beri tahu kami."
+  },
+  "new": {
+    "title": "Hubungi dukungan",
+    "intro": "Ceritakan apa yang terjadi dan seseorang dari tim Kept akan membalas di sini. Untuk pertanyaan tentang layanan itu sendiri, mengirim pesan ke bisnis biasanya paling cepat.",
+    "notFound": "Kami tidak menemukan janji temu itu di akun Anda, jadi tidak dilampirkan. Anda tetap bisa memilih salah satu di bawah."
+  },
+  "form": {
+    "topic": "Apa yang bisa kami bantu?",
+    "chooseTopic": "Pilih topik",
+    "addSubject": "Tambahkan subjek singkat",
+    "moreDetail": "Ceritakan sedikit lebih banyak — minimal satu kalimat membantu kami membantu Anda",
+    "sent": "Permintaan terkirim",
+    "checkFields": "Harap periksa kolom yang ditandai.",
+    "related": "Janji temu terkait",
+    "refHint": "Ref {reference} · {business}",
+    "linkHint": "Menautkan pemesanan membantu kami langsung memeriksanya.",
+    "none": "Tidak ada",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Subjek",
+    "subjectPlaceholder": "mis. Uang muka saya ditagih dua kali",
+    "details": "Detail",
+    "detailsHint": "Apa yang terjadi, kapan, dan apa yang Anda ingin kami lakukan. Jangan sertakan nomor kartu atau kata sandi.",
+    "images": "Gambar",
+    "optional": "Opsional",
+    "cancel": "Batal",
+    "uploadingImages": "Mengunggah gambar…",
+    "send": "Kirim permintaan"
+  },
+  "reply": {
+    "writeFirst": "Tulis balasan terlebih dahulu.",
+    "sent": "Balasan terkirim",
+    "label": "Balasan",
+    "reopens": "Membalas akan membuka kembali permintaan ini.",
+    "placeholder": "Tambahkan detail atau jawab pertanyaan kami…",
+    "send": "Kirim balasan"
+  },
+  "resolve": {
+    "button": "Tandai terselesaikan",
+    "done": "Ditandai terselesaikan",
+    "doneBody": "Senang sudah beres. Anda masih bisa membalas jika ada hal lain.",
+    "confirmTitle": "Tandai permintaan ini terselesaikan?",
+    "confirmBody": "Beri tahu kami bahwa semuanya sudah beres. Jika ada hal lain, balas di sini dan kami akan melanjutkannya."
+  },
+  "attach": {
+    "tooMany": "Anda dapat melampirkan hingga {max} gambar.",
+    "alt": "Lampiran dukungan",
+    "label": "Lampiran",
+    "uploadingName": "Mengunggah {name}",
+    "remove": "Hapus {name}",
+    "add": "Tambah gambar",
+    "uploading": "{count, plural, other {Mengunggah # gambar…}}",
+    "hint": "Tangkapan layar atau foto sangat membantu. Maksimal {max} gambar, masing-masing 15 MB."
+  }
+}

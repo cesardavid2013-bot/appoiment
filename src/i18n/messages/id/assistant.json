@@ -1,0 +1,22 @@
+{
+  "title": "Tanya Kept",
+  "description": "Sebutkan apa yang Anda butuhkan dan kapan. Saya cek jadwal kosong yang sebenarnya.",
+  "newConversation": "Percakapan baru",
+  "close": "Tutup",
+  "forExample": "Contohnya:",
+  "starters": {
+    "one": "Barber besok sore",
+    "two": "Kuku gel akhir pekan ini di bawah Rp500.000",
+    "three": "Pijat di dekat saya malam ini",
+    "four": "Tutor matematika online"
+  },
+  "searching": "Mencari",
+  "listening": "Mendengarkan…",
+  "placeholder": "Barber Sabtu pagi…",
+  "yourMessage": "Pesan Anda",
+  "stopListening": "Berhenti mendengarkan",
+  "speak": "Bicara",
+  "send": "Kirim",
+  "verified": "Terverifikasi",
+  "online": "Online"
+}

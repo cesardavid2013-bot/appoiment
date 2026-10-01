@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept untuk profesional — pemesanan online dan kalender yang bekerja untuk Anda",
+    "description": "Terima pemesanan online, hentikan jadwal bentrok dan ketidakhadiran, dan temukan pelanggan di sekitar Anda. Gratis untuk memulai bagi profesional independen."
+  },
+  "cta": {
+    "dashboard": "Buka bisnis Anda",
+    "setup": "Siapkan bisnis Anda",
+    "start": "Mulai sekarang — gratis"
+  },
+  "hero": {
+    "eyebrow": "Kept untuk profesional",
+    "title": "Jadwal penuh. Malam tetap santai.",
+    "lede": "Pemesanan online, kalender yang tak pernah bentrok, pengingat yang mengurangi ketidakhadiran, dan profil yang tampil di depan orang-orang terdekat yang sedang mencari persis apa yang Anda kerjakan. Gratis untuk memulai.",
+    "howItWorks": "Cara kerjanya",
+    "note": "Tanpa kartu. Profil Anda tetap privat sampai Anda menerbitkannya."
+  },
+  "sides": {
+    "heading": "Cara Kept bekerja untuk klien dan untuk Anda",
+    "clients": {
+      "eyebrow": "Untuk klien Anda",
+      "title": "Temukan dan pesan profesional hebat.",
+      "points": {
+        "search": "Cari berdasarkan layanan, tempat, dan waktu, lalu lihat jadwal kosong yang nyata — bukan formulir kontak.",
+        "prices": "Harga di muka, kebijakan Anda, dan ulasan terverifikasi sebelum mereka memesan.",
+        "reminders": "Pengingat, petunjuk arah, dan penjadwalan ulang tanpa perlu menelepon."
+      }
+    },
+    "you": {
+      "eyebrow": "Untuk Anda",
+      "title": "Kelola janji temu dan kembangkan bisnis Anda.",
+      "points": {
+        "calendar": "Satu kalender untuk pemesanan, istirahat, dan cuti — di ponsel Anda.",
+        "deposits": "Uang muka dan aturan pembatalan yang diterapkan untuk Anda.",
+        "clients": "Riwayat klien, catatan, dan ulasan yang membuat orang kembali."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Aktif dalam tiga langkah",
+    "profile": {
+      "title": "Siapkan profil Anda",
+      "body": "Tambahkan layanan beserta harga dan durasinya, jam kerja, lokasi kerja, dan beberapa foto karya Anda. Kami pandu langkah demi langkah."
+    },
+    "share": {
+      "title": "Bagikan tautan Anda",
+      "body": "Pasang {host}/your-name di bio dan kartu nama Anda. Setelah diterbitkan, Anda juga muncul di pencarian orang-orang terdekat."
+    },
+    "book": {
+      "title": "Terima pemesanan",
+      "body": "Klien memilih jadwal kosong yang nyata dan memesan dalam hitungan detik. Anda mendapat notifikasi, mereka mendapat pengingat, dan kalender Anda selalu akurat."
+    }
+  },
+  "industries": {
+    "heading": "Dibuat untuk layanan apa pun yang dipesan per jam",
+    "lede": "Jika klien memesan waktu Anda, Kept cocok — baik Anda bekerja sendiri dari satu kursi maupun memimpin tim di beberapa lokasi."
+  },
+  "features": {
+    "heading": "Semua yang dibutuhkan setiap hari",
+    "booking": {
+      "title": "Pemesanan online dengan ketersediaan nyata",
+      "p1": "Klien hanya melihat waktu yang benar-benar bisa Anda layani — jam kerja Anda, dikurangi pemesanan yang ada, istirahat, jeda, dan cuti, dengan batas pemberitahuan minimum dan seberapa jauh ke depan mereka bisa memesan.",
+      "p2": "Setiap pemesanan diperiksa ulang saat dibuat, sehingga dua orang tidak akan pernah mendapat slot yang sama, bahkan jika mereka mengetuk di detik yang sama."
+    },
+    "services": {
+      "title": "Layanan yang mengikuti cara Anda menetapkan harga",
+      "p1": "Harga tetap, mulai dari, rentang harga, gratis, atau setelah konsultasi. Tambahkan opsi seperti panjang, ukuran, atau tambahan, dan masing-masing menyesuaikan harga sekaligus waktu yang dicadangkan di kalender Anda.",
+      "p2": "Tambahkan jeda sebelum atau sesudah, batasi layanan untuk anggota tim atau lokasi tertentu, dan ajukan pertanyaan awal sebelum kunjungan pertama."
+    },
+    "policies": {
+      "title": "Uang muka dan kebijakan, diterapkan untuk Anda",
+      "p1": "Minta uang muka atau pembayaran penuh di awal, tetapkan batas waktu pembatalan, serta biaya pembatalan terlambat atau ketidakhadiran. Klien melihat aturannya sebelum memesan, dan pengembalian dana otomatis mengikutinya."
+    },
+    "reminders": {
+      "title": "Pengingat yang mengurangi ketidakhadiran",
+      "p1": "Konfirmasi dan pengingat terkirim dengan sendirinya — secara default sehari sebelum dan dua jam sebelum — disertai tautan untuk menjadwalkan ulang sesuai aturan Anda, alih-alih tidak datang begitu saja.",
+      "p2": "Saat seseorang membatalkan, klien di daftar tunggu untuk hari itu akan diberi tahu ada slot kosong."
+    },
+    "clients": {
+      "title": "Kenali klien Anda",
+      "p1": "Setiap klien punya catatan kunjungan, pengeluaran, pembatalan, dan ketidakhadiran, plus catatan pribadi yang hanya bisa dilihat tim Anda. Kirim pesan ke klien dari tempat yang sama."
+    },
+    "team": {
+      "title": "Dari satu kursi hingga tim dan banyak lokasi",
+      "p1": "Tambahkan anggota tim dengan jam kerja dan layanannya sendiri, serta peran yang mengatur apa yang bisa dilihat dan dilakukan setiap orang. Kelola beberapa lokasi, masing-masing dengan zona waktu dan jam bukanya sendiri."
+    },
+    "portfolio": {
+      "title": "Portofolio yang mendatangkan pemesanan",
+      "p1": "Tampilkan foto dan video pendek karya Anda. Tautkan masing-masing ke sebuah layanan, dan klien dapat mengetuk “Pesan ini” untuk memesan persis apa yang mereka lihat."
+    },
+    "spotlight": {
+      "title": "Spotlight — gratis selama peluncuran",
+      "p1": "Promosikan profil Anda di hasil pencarian dan halaman kategori di sekitar Anda. Hasil yang dipromosikan selalu diberi label, dibatasi dua per halaman, dan tetap menampilkan rating serta jadwal kosong Anda yang sebenarnya.",
+      "p2": "Spotlight tidak dipungut biaya selama Kept masih dalam masa peluncuran. Jika suatu saat berubah, kami akan memberi tahu Anda sebelum ada biaya — Spotlight tidak akan pernah berubah menjadi berbayar dengan sendirinya."
+    }
+  },
+  "plans": {
+    "heading": "Paket",
+    "lede": "Selama masa peluncuran Kept, setiap bisnis baru memulai dengan {plan} tanpa biaya bulanan. Harga paket berbayar akan diumumkan jauh sebelum berlaku, dan tidak ada yang ditagih tanpa memilih paket.",
+    "badge": {
+      "launch": "Gratis selama peluncuran",
+      "available": "Tersedia sekarang",
+      "unavailable": "Belum tersedia"
+    },
+    "period": {
+      "launch": "per bulan selama peluncuran",
+      "available": "per bulan",
+      "unavailable": "Harga akan diumumkan"
+    },
+    "rows": {
+      "members": "Anggota tim yang bisa dipesan",
+      "locations": "Lokasi",
+      "fee": "Biaya pembayaran online",
+      "roles": "Peran tim kustom",
+      "analytics": "Analitik lanjutan"
+    },
+    "justYou": "1 (hanya Anda)",
+    "upTo": "Hingga {n}",
+    "included": "Termasuk",
+    "notIncluded": "Tidak termasuk",
+    "summary": {
+      "free": "Pemesanan online, kalender, pengingat, uang muka, catatan klien, formulir awal, portofolio, dan Spotlight sudah termasuk.",
+      "launch": "Semua yang ada di {base}, ditambah tim hingga {members} orang, lebih banyak lokasi, peran kustom, dan biaya lebih rendah. Inilah yang didapat bisnis baru saat ini.",
+      "other": "Untuk tim besar dan bisnis dengan banyak lokasi."
+    },
+    "footnote": "Biaya hanya berlaku untuk pembayaran yang dilakukan klien secara online melalui Kept. Janji temu yang dibayar langsung di tempat tidak dikenakan biaya Kept. Butuh lebih banyak orang atau lokasi dari yang diizinkan paket Anda? <link>Beri tahu kami</link>."
+  },
+  "faq": {
+    "heading": "Pertanyaan",
+    "cost": {
+      "q": "Berapa biaya Kept?",
+      "a": "Tidak ada biaya bulanan: selama masa peluncuran Kept, bisnis baru mendapat paket {plan} secara gratis. Saat klien membayar online — uang muka atau harga penuh — Kept mengambil {fee} dari pembayaran tersebut. Janji temu yang dibayar langsung di tempat sama sekali tidak dikenakan biaya Kept."
+    },
+    "clientFee": {
+      "q": "Apakah klien saya membayar untuk memesan?",
+      "aFee": "Klien melihat biaya layanan {fee} saat checkout, ditampilkan sebelum mereka mengonfirmasi. Tidak pernah ada biaya tambahan setelahnya.",
+      "aFree": "Tidak. Klien memesan secara gratis dan melihat harga pasti Anda sebelum mengonfirmasi."
+    },
+    "payments": {
+      "q": "Apakah saya harus menerima pembayaran online?",
+      "a": "Tidak. Anda bisa membiarkan klien membayar langsung di tempat, atau mewajibkan uang muka atau pembayaran penuh saat memesan. Pembayaran online diproses oleh Stripe dan dicairkan ke rekening bank Anda sendiri."
+    },
+    "approve": {
+      "q": "Bisakah saya menyetujui pemesanan sebelum dikonfirmasi?",
+      "a": "Bisa. Pilih pemesanan instan, atau mode permintaan di mana setiap pemesanan menunggu persetujuan Anda. Waktunya ditahan selama Anda memutuskan, dan permintaan yang tidak Anda jawab akan kedaluwarsa dengan sendirinya."
+    },
+    "where": {
+      "q": "Saya bekerja dari rumah, mendatangi klien, atau mengajar online. Apakah bisa?",
+      "a": "Bisa. Setiap lokasi dapat berupa alamat fisik, area layanan panggilan di mana klien memberikan alamatnya, atau sesi virtual. Anda bisa menawarkan kombinasi apa pun."
+    },
+    "spotlight": {
+      "q": "Bagaimana Spotlight bekerja?",
+      "a": "Spotlight menampilkan profil Anda sebagai hasil “Dipromosikan” yang diberi label jelas di halaman pencarian dan kategori, maksimal dua per halaman. Gratis selama peluncuran — mulai atau hentikan kapan saja dari dasbor Anda."
+    },
+    "link": {
+      "q": "Bisakah saya menggunakan tautan sendiri?",
+      "a": "Bisa. Setiap bisnis mendapat profil di {host}/your-name yang bisa Anda bagikan di Instagram, di bio, atau lewat kode QR. Klien yang memesan melalui tautan itu tidak perlu mencari Anda."
+    }
+  },
+  "closing": {
+    "title": "Klien Anda berikutnya sudah mencari.",
+    "body": "Siapkan layanan dan jam kerja, terbitkan profil Anda, dan mulai terima pemesanan hari ini."
+  },
+  "demo": {
+    "example": "Contoh",
+    "today": {
+      "label": "Contoh jadwal Hari Ini yang dilihat seorang profesional",
+      "title": "Hari ini",
+      "summary": "{count, plural, other {# janji temu}} · {amount} dipesan",
+      "skinFade": "Skin fade",
+      "beardTrim": "Rapikan jenggot & garis",
+      "lunch": "Makan siang",
+      "signatureCut": "Potongan khas",
+      "kidsCut": "Potong rambut anak",
+      "firstVisit": "{name} · kunjungan pertama",
+      "confirmed": "Dikonfirmasi",
+      "depositPaid": "Uang muka dibayar",
+      "needsApproval": "Perlu persetujuan",
+      "checkedIn": "Sudah check-in"
+    },
+    "reminder": {
+      "label": "Contoh pengingat otomatis yang diterima klien",
+      "when": "24 jam sebelumnya",
+      "title": "Pengingat: {service} besok",
+      "body": "{time} dengan Dre di North Fade Studio. Perlu mengubahnya? Jadwalkan ulang hingga 24 jam sebelumnya."
+    },
+    "grid": {
+      "label": "Contoh pemilih waktu yang digunakan pelanggan untuk memesan, hanya menampilkan waktu kosong",
+      "title": "Pilih waktu",
+      "instant": "Konfirmasi instan",
+      "note": "Waktu yang sudah dipesan langsung hilang begitu ada yang memesan. Dua orang tidak akan pernah mendapat slot yang sama."
+    },
+    "policy": {
+      "label": "Contoh kebijakan uang muka dan pembatalan",
+      "title": "Kebijakan pemesanan",
+      "deposit": "Uang muka",
+      "depositValue": "{pct} saat memesan",
+      "freeCancel": "Pembatalan gratis",
+      "freeCancelValue": "Hingga 24 jam sebelumnya",
+      "lateCancel": "Pembatalan terlambat",
+      "lateCancelValue": "{pct} dari total",
+      "noShow": "Tidak hadir",
+      "noShowValue": "Uang muka hangus",
+      "dueNow": "Bayar sekarang",
+      "dueValue": "{due} dari {total}"
+    },
+    "client": {
+      "label": "Contoh catatan klien",
+      "since": "Klien sejak {month} · {visits, plural, other {# kunjungan}}",
+      "spent": "Pengeluaran",
+      "noShows": "Tidak hadir",
+      "gap": "Jeda biasanya",
+      "gapValue": "{weeks} mgg",
+      "note": "Catatan pribadi: kulit kepala sensitif — gunakan sampo yang lembut."
+    },
+    "team": {
+      "label": "Contoh tim di dua lokasi",
+      "title": "Tim",
+      "senior": "Barber senior",
+      "barber": "Barber",
+      "frontDesk": "Resepsionis"
+    },
+    "portfolio": {
+      "label": "Contoh unggahan portofolio yang ditautkan ke layanan yang bisa dipesan",
+      "skinFade": "Skin fade",
+      "taper": "Taper & jenggot",
+      "bookThis": "Pesan ini",
+      "note": "Foto dan video Anda muncul di sini — ketuk salah satunya untuk memesan layanan yang sama persis."
+    },
+    "spotlight": {
+      "label": "Contoh listing yang dipromosikan di hasil pencarian",
+      "category": "Barbershop",
+      "promoted": "Dipromosikan"
+    },
+    "options": {
+      "service": "Kepang knotless",
+      "hint": "Contoh layanan · coba opsinya",
+      "length": "Panjang",
+      "shoulder": "Sebahu",
+      "mid": "Sepunggung",
+      "waist": "Sepinggang",
+      "addons": "Tambahan",
+      "wash": "Cuci & blow",
+      "beads": "Manik & cincin",
+      "included": "Termasuk",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

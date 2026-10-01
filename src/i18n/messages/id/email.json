@@ -1,0 +1,147 @@
+{
+  "footer": "Anda menerima email ini karena ada aktivitas di akun Kept Anda. Kelola notifikasi di Akun → Notifikasi.",
+  "details": {
+    "service": "Layanan",
+    "when": "Kapan",
+    "with": "Dengan",
+    "where": "Di mana",
+    "online": "Online — tautan akan dibagikan oleh bisnis",
+    "reference": "Referensi",
+    "paid": "Dibayar",
+    "balanceDue": "Sisa tagihan"
+  },
+  "cta": {
+    "viewAppointment": "Lihat janji temu",
+    "viewRequest": "Lihat permintaan",
+    "reviewRequest": "Tinjau permintaan",
+    "openAppointment": "Buka janji temu",
+    "openCalendar": "Buka kalender",
+    "findAnotherTime": "Cari waktu lain",
+    "payDeposit": "Bayar uang muka",
+    "leaveReview": "Tulis ulasan",
+    "bookThisTime": "Pesan waktu ini"
+  },
+  "booked": {
+    "title": "Pemesanan Anda di {business} berhasil",
+    "subject": "Dikonfirmasi: {service} dengan {business}",
+    "heading": "Janji temu Anda sudah dikonfirmasi",
+    "footnote": "Rencana berubah? Anda dapat menjadwalkan ulang atau membatalkan dari halaman janji temu, sesuai kebijakan bisnis.",
+    "sms": "Kept: {service} dengan {business} dikonfirmasi untuk {when}. Ref {reference}"
+  },
+  "requested": {
+    "title": "Permintaan terkirim ke {business}",
+    "body": "Kami akan memberi tahu Anda begitu mereka menanggapi.",
+    "subject": "Permintaan terkirim: {service} dengan {business}",
+    "heading": "Permintaan Anda telah dikirim",
+    "paragraph": "{business} meninjau permintaan sebelum mengonfirmasi. Kami akan mengirim email kepada Anda begitu mereka menanggapi."
+  },
+  "bizBooked": {
+    "title": "Pemesanan baru",
+    "requestTitle": "Permintaan pemesanan baru",
+    "subject": "Pemesanan baru: {service}",
+    "requestSubject": "Permintaan baru: {service}",
+    "heading": "Anda mendapat pemesanan baru",
+    "requestHeading": "Anda mendapat permintaan pemesanan baru",
+    "requestParagraph": "Setujui atau tolak dari kalender Anda. Permintaan yang tidak dijawab akan kedaluwarsa otomatis."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} tidak dapat menerima permintaan Anda",
+      "subject": "Permintaan ditolak: {service}",
+      "heading": "Permintaan Anda tidak diterima"
+    },
+    "expired": {
+      "title": "Pemesanan Anda kedaluwarsa",
+      "subject": "Pemesanan Anda kedaluwarsa",
+      "heading": "Pemesanan Anda kedaluwarsa"
+    },
+    "cancelled": {
+      "title": "{business} membatalkan janji temu Anda",
+      "subject": "Dibatalkan: {service}",
+      "heading": "Janji temu Anda dibatalkan"
+    },
+    "note": "Catatan dari bisnis: “{note}”",
+    "refund": "Pengembalian dana {amount} sedang dikirim ke metode pembayaran awal Anda.",
+    "bookAgain": "Anda dapat memesan waktu lain kapan pun Anda siap."
+  },
+  "bizCancelled": {
+    "title": "Pelanggan membatalkan",
+    "expiredTitle": "Pemesanan kedaluwarsa",
+    "subject": "Dibatalkan: {service} · {when}",
+    "heading": "Sebuah janji temu dibatalkan",
+    "reason": "Alasan: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} memindahkan janji temu Anda",
+    "body": "Sekarang {when}",
+    "subject": "Waktu baru: {service} dengan {business}",
+    "heading": "Janji temu Anda punya waktu baru",
+    "previously": "Sebelumnya {when}.",
+    "changeIt": "Jika waktu baru tidak cocok, Anda dapat menjadwalkan ulang atau membatalkan dari halaman janji temu."
+  },
+  "bizRescheduled": {
+    "title": "Pelanggan menjadwalkan ulang",
+    "subject": "Dijadwalkan ulang: {service}",
+    "heading": "Sebuah janji temu dijadwalkan ulang"
+  },
+  "approvedPay": {
+    "title": "{business} menerima permintaan Anda",
+    "body": "Bayar uang muka {amount} untuk mengonfirmasi.",
+    "subject": "Diterima — konfirmasi {service} Anda",
+    "heading": "Permintaan Anda diterima",
+    "paragraph": "Bayar uang muka {amount} untuk mengamankan waktu Anda. Pemesanan yang belum dibayar akan dilepas otomatis."
+  },
+  "reminder": {
+    "title": "Pengingat: {service} {lead}",
+    "body": "{when} dengan {business}",
+    "subject": "Pengingat: {service} {lead} pukul {time}",
+    "heading": "Sampai jumpa {lead}",
+    "footnote": "Terlambat atau tidak bisa datang? Beri tahu bisnis dari halaman janji temu.",
+    "sms": "Pengingat: {service} dengan {business} {when}."
+  },
+  "review": {
+    "title": "Bagaimana {service} Anda?",
+    "body": "Bagikan ulasan singkat tentang {business}.",
+    "subject": "Bagaimana kunjungan Anda ke {business}?",
+    "heading": "Bagaimana pengalamannya?",
+    "paragraph": "Ulasan Anda membantu {business} dan orang lain yang sedang memilih profesional. Tidak sampai satu menit."
+  },
+  "waitlist": {
+    "title": "Ada slot kosong di {business}",
+    "body": "{when} kini tersedia. Pesan segera — siapa cepat dia dapat.",
+    "subject": "Ada waktu kosong di {business}",
+    "heading": "Kabar baik — ada waktu kosong",
+    "paragraph": "{when} baru saja tersedia. Slot berlaku siapa cepat dia dapat, jadi segera pesan jika waktunya cocok untuk Anda."
+  },
+  "thread": {
+    "confirmed": "Janji temu dikonfirmasi: {service}, {when}.",
+    "declined": "Janji temu ditolak: {service}, {when}.",
+    "expired": "Janji temu kedaluwarsa: {service}, {when}.",
+    "cancelled": "Janji temu dibatalkan: {service}, {when}.",
+    "moved": "Janji temu dipindahkan dari {from} ke {to}."
+  },
+  "verify": {
+    "subject": "Konfirmasi email Anda",
+    "preheader": "Satu ketukan untuk mengonfirmasi alamat email Anda.",
+    "heading": "Selamat datang, {name}",
+    "paragraph": "Konfirmasi email Anda agar bisnis bisa menghubungi Anda terkait janji temu.",
+    "cta": "Konfirmasi email",
+    "footnote": "Tautan ini berlaku selama 3 hari. Jika Anda tidak membuat akun, abaikan saja email ini."
+  },
+  "reset": {
+    "subject": "Atur ulang kata sandi Anda",
+    "heading": "Atur ulang kata sandi Anda",
+    "paragraph": "Seseorang (semoga Anda) meminta pengaturan ulang kata sandi untuk akun Kept Anda.",
+    "cta": "Pilih kata sandi baru",
+    "footnote": "Tautan ini berlaku selama 1 jam. Jika Anda tidak memintanya, abaikan saja email ini — kata sandi Anda tidak akan berubah."
+  },
+  "invite": {
+    "subject": "{inviter} mengundang Anda bergabung dengan {business} di Kept",
+    "reminderSubject": "Pengingat: bergabung dengan {business} di Kept",
+    "heading": "Bergabung dengan {business}",
+    "paragraph": "{inviter} mengundang Anda bergabung dengan tim di {business}. Anda akan dapat melihat jadwal dan mengelola janji temu Anda.",
+    "cta": "Terima undangan",
+    "footnote": "Undangan ini berlaku selama {days} hari.",
+    "reminderFootnote": "Undangan ini berlaku selama {days} hari. Tautan undangan sebelumnya tidak berlaku lagi."
+  }
+}
