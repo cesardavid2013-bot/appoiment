@@ -7,10 +7,13 @@ import { after } from "next/server";
 import { AskQuestionButton, FavoriteButton, ShareButton } from "@/components/profile/profile-actions";
 import { LazyLocationMap } from "@/components/profile/lazy-map";
 import { PortfolioGrid } from "@/components/profile/portfolio-grid";
+import { SocialIcon } from "@/components/profile/social-icons";
+import { SocialShowcase } from "@/components/profile/social-showcase";
 import { toneFor, initials } from "@/components/business/monogram";
 import { Avatar, MediaImage } from "@/components/ui/media";
 import { Badge, Stars } from "@/components/ui/misc";
 import { formatDuration, formatMoney, formatPriceLabel } from "@/domain/money";
+import { socialList } from "@/domain/social";
 import { instantToLocal, minutesToClock, todayIn, WEEKDAYS } from "@/domain/time";
 import { fmtTime, localDateKey } from "@/lib/format";
 import { cn } from "@/lib/cn";
@@ -19,6 +22,7 @@ import { env } from "@/server/env";
 import { getSlots } from "@/server/services/availability";
 import { getPublicBusiness, listReviews, ratingBreakdown, type PublicBusiness } from "@/server/services/catalog";
 import { isFavorite, recordView } from "@/server/services/engagement";
+import { listSocialEmbeds } from "@/server/services/social-embeds";
 import { recordClick } from "@/server/services/spotlight";
 import { requestNow } from "@/server/clock";
 
@@ -92,13 +96,15 @@ export default async function ProfilePage({ params, searchParams }: Props) {
 
   const now = requestNow();
   const topService = b.services[0];
-  const [reviews, breakdown, fav, slots, qrSvg] = await Promise.all([
+  const [reviews, breakdown, fav, slots, qrSvg, embeds] = await Promise.all([
     listReviews(b.id, { limit: 6 }),
     ratingBreakdown(b.id),
     viewer ? isFavorite(viewer.id, b.id) : Promise.resolve(false),
     topService ? getSlots({ serviceId: topService.id, memberId: "any", fromDate: todayIn(b.timezone), toDate: todayIn(b.timezone, new Date(now + 13 * 86_400_000)), optionIds: [], autoDefaults: true }).catch(() => null) : Promise.resolve(null),
     QRCode.toString(`${env.APP_URL}/${b.slug}`, { type: "svg", margin: 1, color: { dark: "#1a1814", light: "#ffffff" } }),
+    listSocialEmbeds(b.id),
   ]);
+  const socials = socialList(b.socialLinks);
   if (viewer) after(() => recordView(viewer.id, b.id).catch(() => undefined));
   if (sp.ref === "spotlight") after(() => recordClick(b.id).catch(() => undefined));
 
@@ -124,6 +130,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
   const nav = [
     { id: "services", label: "Services" },
     ...(portfolio.length ? [{ id: "work", label: "Work" }] : []),
+    ...(embeds.length ? [{ id: "featured", label: "Featured" }] : []),
     { id: "reviews", label: `Reviews${b.ratingCount ? ` (${b.ratingCount})` : ""}` },
     { id: "about", label: "About" },
   ];
@@ -277,6 +284,18 @@ export default async function ProfilePage({ params, searchParams }: Props) {
               </section>
             )}
 
+            {embeds.length > 0 && (
+              <section id="featured" aria-labelledby="featured-h" className="scroll-mt-32">
+                <div className="mb-5 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <h2 id="featured-h" className="text-xl font-semibold tracking-[-0.015em] text-ink">
+                    Featured
+                  </h2>
+                  {socials.length > 0 && <a href="#about" className="text-[13px] text-ink-3 hover:text-ink hover:underline">All social profiles</a>}
+                </div>
+                <SocialShowcase items={embeds} slug={b.slug} />
+              </section>
+            )}
+
             {b.team.length > 1 && (
               <section aria-labelledby="team-h">
                 <h2 id="team-h" className="mb-5 text-xl font-semibold tracking-[-0.015em] text-ink">
@@ -415,19 +434,30 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                       <div className="text-sm text-ink-2">{b.amenities.join(" · ")}</div>
                     </div>
                   )}
-                  {(b.website || Object.keys(b.socialLinks).length > 0) && (
-                    <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-                      {b.website && (
-                        <a href={b.website} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1.5 font-medium text-ink hover:underline">
-                          <Globe className="size-4 text-ink-3" />
-                          {b.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
-                        </a>
-                      )}
-                      {Object.entries(b.socialLinks).map(([k, v]) => (
-                        <a key={k} href={socialUrl(k, v)} target="_blank" rel="noopener noreferrer nofollow" className="font-medium capitalize text-ink hover:underline">
-                          {k === "x" ? "X" : k}
-                        </a>
-                      ))}
+                  {(b.website || socials.length > 0) && (
+                    <div>
+                      <h3 className="mb-2 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-3">Online</h3>
+                      <ul className="grid grid-cols-1 text-sm min-[420px]:grid-cols-2 sm:grid-cols-1 xl:grid-cols-2">
+                        {b.website && /^https?:\/\//i.test(b.website) && (
+                          <li className="min-w-0">
+                            <a href={b.website} target="_blank" rel="noopener noreferrer nofollow" className="group flex min-h-11 items-center gap-2.5 sm:min-h-9">
+                              <Globe className="size-4 shrink-0 text-ink-2" aria-hidden />
+                              <span className="truncate font-medium text-ink group-hover:underline">{b.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}</span>
+                            </a>
+                          </li>
+                        )}
+                        {socials.map((s) => (
+                          <li key={s.key} className="min-w-0">
+                            <a href={s.href} target="_blank" rel="noopener noreferrer nofollow" className="group flex min-h-11 items-center gap-2.5 sm:min-h-9">
+                              <SocialIcon name={s.key} className="size-4 shrink-0 text-ink-2" />
+                              <span className="min-w-0 truncate">
+                                <span className="font-medium text-ink group-hover:underline">{s.label}</span>
+                                {s.handle !== s.label && <span className="ml-1.5 text-ink-3">{s.handle}</span>}
+                              </span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>
@@ -539,24 +569,4 @@ export default async function ProfilePage({ params, searchParams }: Props) {
       )}
     </div>
   );
-}
-
-function socialUrl(kind: string, handle: string) {
-  const h = encodeURIComponent(handle);
-  switch (kind) {
-    case "instagram":
-      return `https://instagram.com/${h}`;
-    case "tiktok":
-      return `https://tiktok.com/@${h}`;
-    case "facebook":
-      return `https://facebook.com/${h}`;
-    case "youtube":
-      return `https://youtube.com/@${h}`;
-    case "x":
-      return `https://x.com/${h}`;
-    case "linkedin":
-      return `https://linkedin.com/in/${h}`;
-    default:
-      return "#";
-  }
 }

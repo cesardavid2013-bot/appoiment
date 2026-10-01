@@ -43,6 +43,13 @@
       "when": 1790823897630,
       "tag": "0005_user_locale",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1790824275478,
+      "tag": "0006_social_embeds_realtime",
+      "breakpoints": true
     }
   ]
 }

@@ -1385,3 +1385,36 @@ export const spotlightCampaigns = pgTable(
     uniqueIndex("spotlight_one_active_uq").on(t.businessId).where(sql`${t.status} = 'active'`),
   ],
 );
+
+/* ───────────────────────────── Social showcase ───────────────────── */
+
+/**
+ * Posts a business features from its social accounts (YouTube, TikTok,
+ * Instagram, Vimeo, SoundCloud, Spotify). Only the parsed parts are stored —
+ * provider, kind and provider id (validated by domain/social.ts) — and every
+ * link or player URL is rebuilt from them. The raw pasted URL is never kept.
+ */
+export const socialEmbeds = pgTable(
+  "social_embeds",
+  {
+    id: id(),
+    businessId: uuid("business_id")
+      .notNull()
+      .references(() => businesses.id),
+    provider: text("provider").notNull(),
+    kind: text("kind").notNull(),
+    providerId: text("provider_id").notNull(),
+    /** Canonical https link on the provider, rebuilt from the parsed id. */
+    url: text("url").notNull(),
+    caption: text("caption"),
+    serviceId: uuid("service_id").references(() => services.id),
+    sortOrder: integer("sort_order").notNull().default(0),
+    createdAt: createdAt(),
+  },
+  (t) => [
+    uniqueIndex("social_embeds_item_uq").on(t.businessId, t.provider, t.providerId),
+    index().on(t.businessId, t.sortOrder),
+    check("social_embeds_provider_ck", sql`${t.provider} in ('youtube', 'tiktok', 'instagram', 'vimeo', 'soundcloud', 'spotify')`),
+    check("social_embeds_caption_ck", sql`char_length(${t.caption}) <= 200`),
+  ],
+);
