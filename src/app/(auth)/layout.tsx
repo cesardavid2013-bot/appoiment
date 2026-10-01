@@ -7,9 +7,9 @@ export default async function AuthLayout({ children }: LayoutProps<"/">) {
   const t = await getT("auth");
   return (
     <div className="grid min-h-dvh lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)]">
-      <aside className="theme-noir relative hidden flex-col justify-between overflow-hidden p-12 lg:flex xl:p-16" aria-hidden>
-        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(900px_420px_at_0%_0%,rgb(201_168_101/0.12),transparent_60%)] rtl:[background:radial-gradient(900px_420px_at_100%_0%,rgb(201_168_101/0.12),transparent_60%)]" />
-        <div className="pointer-events-none absolute inset-6 border border-gold/20" />
+      <aside className="theme-noir relative hidden flex-col justify-between overflow-hidden p-12 lg:flex xl:p-16">
+        <div aria-hidden className="pointer-events-none absolute inset-0 [background:radial-gradient(900px_420px_at_0%_0%,rgb(201_168_101/0.12),transparent_60%)] rtl:[background:radial-gradient(900px_420px_at_100%_0%,rgb(201_168_101/0.12),transparent_60%)]" />
+        <div aria-hidden className="pointer-events-none absolute inset-6 border border-gold/20" />
         <div className="relative">
           <Logo />
         </div>

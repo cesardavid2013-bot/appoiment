@@ -10,7 +10,7 @@ for (const [device, opts] of [["mobile", { viewport: { width: 390, height: 844 }
   page.on("pageerror", (e) => errs.push(e.message));
   page.on("console", (m) => m.type() === "error" && !/TUNNEL/.test(m.text()) && errs.push(m.text()));
   await page.goto(base + "/", { waitUntil: "networkidle" });
-  await page.getByRole("button", { name: /Ask/ }).first().click();
+  await page.getByRole("button", { name: /Ask|Preg[uú]nt/ }).first().click();
   const dlg = page.getByRole("dialog");
   await dlg.waitFor();
   await page.screenshot({ path: `${out}/assistant-empty-${device}.png` });

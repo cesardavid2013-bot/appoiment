@@ -14,7 +14,7 @@ let n = 0;
 const shot = async (name) => page.screenshot({ path: `${out}/${String(++n).padStart(2, "0")}-${name}-${device}.png`, fullPage: false });
 
 await page.goto(`${base}/studio-lune-nails`);
-await page.getByRole("link", { name: "Book", exact: true }).first().click();
+await page.getByRole("link", { name: /^Book / }).first().click();
 await page.waitForURL(/\/book/);
 await page.waitForTimeout(800);
 await shot("options");
