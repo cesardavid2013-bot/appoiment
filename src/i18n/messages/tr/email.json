@@ -1,0 +1,147 @@
+{
+  "footer": "Bu e-postayı Kept hesabınızdaki bir işlem nedeniyle alıyorsunuz. Bildirimleri Hesap → Bildirimler bölümünden yönetebilirsiniz.",
+  "details": {
+    "service": "Hizmet",
+    "when": "Ne zaman",
+    "with": "Kiminle",
+    "where": "Nerede",
+    "online": "Çevrim içi — bağlantıyı işletme paylaşacak",
+    "reference": "Referans",
+    "paid": "Ödenen",
+    "balanceDue": "Kalan tutar"
+  },
+  "cta": {
+    "viewAppointment": "Randevuyu görüntüle",
+    "viewRequest": "Talebi görüntüle",
+    "reviewRequest": "Talebi incele",
+    "openAppointment": "Randevuyu aç",
+    "openCalendar": "Takvimi aç",
+    "findAnotherTime": "Başka bir saat bul",
+    "payDeposit": "Kaporayı öde",
+    "leaveReview": "Yorum yap",
+    "bookThisTime": "Bu saate rezervasyon yap"
+  },
+  "booked": {
+    "title": "{business} randevunuz hazır",
+    "subject": "Onaylandı: {business} – {service}",
+    "heading": "Randevunuz onaylandı",
+    "footnote": "Planlarınız mı değişti? İşletmenin politikasına bağlı olarak randevu sayfasından erteleyebilir veya iptal edebilirsiniz.",
+    "sms": "Kept: {business} – {service} randevunuz {when} için onaylandı. Ref. {reference}"
+  },
+  "requested": {
+    "title": "Talep {business} işletmesine gönderildi",
+    "body": "Yanıt verir vermez size haber vereceğiz.",
+    "subject": "Talep gönderildi: {business} – {service}",
+    "heading": "Talebiniz gönderildi",
+    "paragraph": "{business}, talepleri onaylamadan önce inceler. Yanıt verir vermez size e-posta göndereceğiz."
+  },
+  "bizBooked": {
+    "title": "Yeni rezervasyon",
+    "requestTitle": "Yeni rezervasyon talebi",
+    "subject": "Yeni rezervasyon: {service}",
+    "requestSubject": "Yeni talep: {service}",
+    "heading": "Yeni bir rezervasyonunuz var",
+    "requestHeading": "Yeni bir rezervasyon talebiniz var",
+    "requestParagraph": "Takviminizden onaylayın veya reddedin. Yanıtlanmayan taleplerin süresi otomatik olarak dolar."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} talebinizi kabul edemedi",
+      "subject": "Talep reddedildi: {service}",
+      "heading": "Talebiniz kabul edilmedi"
+    },
+    "expired": {
+      "title": "Rezervasyonunuzun süresi doldu",
+      "subject": "Rezervasyonunuzun süresi doldu",
+      "heading": "Rezervasyonunuzun süresi doldu"
+    },
+    "cancelled": {
+      "title": "{business} randevunuzu iptal etti",
+      "subject": "İptal edildi: {service}",
+      "heading": "Randevunuz iptal edildi"
+    },
+    "note": "İşletmenin notu: “{note}”",
+    "refund": "{amount} tutarındaki iadeniz, ödemede kullandığınız yönteme gönderiliyor.",
+    "bookAgain": "Hazır olduğunuzda başka bir saate rezervasyon yapabilirsiniz."
+  },
+  "bizCancelled": {
+    "title": "Bir müşteri iptal etti",
+    "expiredTitle": "Bir rezervasyonun süresi doldu",
+    "subject": "İptal edildi: {service} · {when}",
+    "heading": "Bir randevu iptal edildi",
+    "reason": "Neden: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} randevunuzu taşıdı",
+    "body": "Yeni saat: {when}",
+    "subject": "Yeni saat: {business} – {service}",
+    "heading": "Randevunuzun saati değişti",
+    "previously": "Önceki saat: {when}.",
+    "changeIt": "Yeni saat size uymuyorsa randevu sayfasından erteleyebilir veya iptal edebilirsiniz."
+  },
+  "bizRescheduled": {
+    "title": "Bir müşteri randevusunu erteledi",
+    "subject": "Ertelendi: {service}",
+    "heading": "Bir randevu ertelendi"
+  },
+  "approvedPay": {
+    "title": "{business} talebinizi kabul etti",
+    "body": "Onaylamak için {amount} kapora ödeyin.",
+    "subject": "Kabul edildi — {service} randevunuzu onaylayın",
+    "heading": "Talebiniz kabul edildi",
+    "paragraph": "Saatinizi kesinleştirmek için {amount} kapora ödeyin. Ödenmeyen rezervasyonlar otomatik olarak serbest bırakılır."
+  },
+  "reminder": {
+    "title": "Hatırlatma: {service} {lead}",
+    "body": "{when} · {business}",
+    "subject": "Hatırlatma: {service} {lead}, saat {time}",
+    "heading": "{lead} görüşmek üzere",
+    "footnote": "Gecikecek misiniz veya gelemeyecek misiniz? Randevu sayfasından işletmeye haber verin.",
+    "sms": "Hatırlatma: {business} – {service}, {when}."
+  },
+  "review": {
+    "title": "{service} nasıldı?",
+    "body": "{business} hakkında kısa bir yorum paylaşın.",
+    "subject": "{business} ziyaretiniz nasıldı?",
+    "heading": "Nasıl geçti?",
+    "paragraph": "Yorumunuz hem {business} işletmesine hem de profesyonel seçen diğer kişilere yardımcı olur. Bir dakikadan kısa sürer."
+  },
+  "waitlist": {
+    "title": "{business} işletmesinde yer açıldı",
+    "body": "{when} artık müsait. Hızlı davranın — ilk gelen alır.",
+    "subject": "{business} işletmesinde bir saat boşaldı",
+    "heading": "Güzel haber — bir saat boşaldı",
+    "paragraph": "{when} az önce müsait oldu. Yerler ilk gelene verilir; size uyuyorsa hemen rezervasyon yapın."
+  },
+  "thread": {
+    "confirmed": "Randevu onaylandı: {service}, {when}.",
+    "declined": "Randevu reddedildi: {service}, {when}.",
+    "expired": "Randevunun süresi doldu: {service}, {when}.",
+    "cancelled": "Randevu iptal edildi: {service}, {when}.",
+    "moved": "Randevu taşındı: {from} → {to}."
+  },
+  "verify": {
+    "subject": "E-postanızı onaylayın",
+    "preheader": "E-posta adresinizi onaylamak için tek dokunuş.",
+    "heading": "Hoş geldiniz, {name}",
+    "paragraph": "İşletmelerin randevularınızla ilgili size ulaşabilmesi için e-postanızı onaylayın.",
+    "cta": "E-postayı onayla",
+    "footnote": "Bu bağlantı 3 gün geçerlidir. Hesap oluşturmadıysanız bu e-postayı yok sayabilirsiniz."
+  },
+  "reset": {
+    "subject": "Şifrenizi sıfırlayın",
+    "heading": "Şifrenizi sıfırlayın",
+    "paragraph": "Birisi (umarız sizsiniz) Kept hesabınızın şifresini sıfırlamak istedi.",
+    "cta": "Yeni şifre belirle",
+    "footnote": "Bu bağlantı 1 saat geçerlidir. Bunu siz istemediyseniz bu e-postayı güvenle yok sayabilirsiniz — şifreniz değişmez."
+  },
+  "invite": {
+    "subject": "{inviter} sizi Kept’te {business} ekibine davet etti",
+    "reminderSubject": "Hatırlatma: Kept’te {business} ekibine katılın",
+    "heading": "{business} ekibine katılın",
+    "paragraph": "{inviter} sizi {business} ekibine davet etti. Programınızı görebilecek ve randevularınızı yönetebileceksiniz.",
+    "cta": "Daveti kabul et",
+    "footnote": "Bu davetin süresi {days} gün içinde dolar.",
+    "reminderFootnote": "Bu davetin süresi {days} gün içinde dolar. Önceki davet bağlantıları artık çalışmaz."
+  }
+}

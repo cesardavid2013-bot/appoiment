@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "Se așteaptă plata",
+    "requested": "Cerere trimisă",
+    "confirmed": "Confirmată",
+    "checked_in": "Client sosit",
+    "in_progress": "În desfășurare",
+    "completed": "Finalizată",
+    "cancelled": "Anulată",
+    "declined": "Refuzată",
+    "no_show": "Neprezentare",
+    "expired": "Expirată"
+  },
+  "list": {
+    "title": "Rezervări",
+    "filters": "Filtre pentru rezervări",
+    "tabs": {
+      "upcoming": "Viitoare",
+      "past": "Trecute",
+      "cancelled": "Anulate"
+    },
+    "howDidItGo": "Cum a fost?",
+    "review": "Recenzie",
+    "empty": {
+      "upcoming": "Nicio programare viitoare",
+      "past": "Nicio programare trecută încă",
+      "cancelled": "Nimic anulat",
+      "upcomingBody": "Când rezervați, programările apar aici — cu indicații de traseu, mementouri și reprogramare ușoară.",
+      "findPro": "Găsiți un profesionist"
+    }
+  },
+  "detail": {
+    "metaTitle": "Programare",
+    "allBookings": "Toate rezervările",
+    "hero": {
+      "confirmedTitle": "Rezervarea e făcută",
+      "confirmedBody": "V-am trimis o confirmare și vă vom reaminti înainte de programare.",
+      "requestedTitle": "Cerere trimisă",
+      "requestedBody": "{business} vă va analiza cererea. Vă anunțăm imediat ce răspunde — între timp, ora vă este rezervată.",
+      "paymentTitle": "Se finalizează plata",
+      "paymentBody": "Dacă tocmai ați plătit, pagina se actualizează automat în câteva secunde. Ora vă este rezervată cât timp se finalizează plata."
+    },
+    "calendarDetails": "Referință {reference}",
+    "ref": "Ref.",
+    "when": "Când",
+    "with": "Cu",
+    "where": "Unde",
+    "atYourAddress": "La adresa dumneavoastră",
+    "online": "Online",
+    "virtualLink": "Firma vă va trimite linkul înainte de ședință.",
+    "yourReview": "Recenzia dumneavoastră",
+    "payment": {
+      "title": "Plată",
+      "serviceFee": "Taxă de serviciu",
+      "tax": "Taxe",
+      "estimatedTotal": "Total estimat",
+      "total": "Total",
+      "paid": "Plătit",
+      "refunded": "Rambursat",
+      "balance": "Rest de plată",
+      "dueAtAppointment": "De plătit la programare",
+      "tip": "Bacșiș"
+    },
+    "policy": {
+      "title": "Politica de anulare",
+      "freeUntil": "Anulare gratuită cu până la {hours, plural, one {# oră} few {# ore} other {# de ore}} înainte.",
+      "freeAnytime": "Anulare gratuită oricând înainte de programare.",
+      "lateFee": "Anulări mai târzii: {percent}% din total.",
+      "depositNonRefundable": "Avansurile nu se rambursează.",
+      "cannotCancel": "Această programare nu mai poate fi anulată.",
+      "alreadyStarted": "Această programare a început deja.",
+      "cannotReschedule": "Această programare nu poate fi reprogramată.",
+      "maxReschedules": "Această programare a fost reprogramată de numărul maxim de ori. Contactați firma.",
+      "rescheduleWindow": "Modificările trebuie făcute cu cel puțin {hours, plural, one {# oră} few {# ore} other {# de ore}} înainte de programare. Contactați firma."
+    },
+    "refund": {
+      "noCharge": "Fără cost.",
+      "full": "Veți primi o rambursare integrală.",
+      "none": "Conform politicii acestei firme, plata nu se rambursează.",
+      "partial": "Conform politicii acestei firme, veți primi o rambursare parțială."
+    },
+    "note": "Notă: {reason}",
+    "problem": "Aveți o problemă cu această rezervare? <link>Contactați asistența</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date}, la {time}",
+    "cancelledToast": "Programare anulată",
+    "refundOnWay": "O rambursare de {amount} este pe drum.",
+    "rescheduledToast": "Reprogramată",
+    "payToConfirm": "Plătiți {amount} pentru confirmare",
+    "addToCalendar": "Adăugați în calendar",
+    "directions": "Indicații de traseu",
+    "message": "Mesaj",
+    "bookAgain": "Rezervați din nou",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "Lăsați o recenzie",
+    "reschedule": "Reprogramați",
+    "cancelAppointment": "Anulați programarea",
+    "cancelTitle": "Anulați această programare?",
+    "insideWindow": "Ați depășit termenul de anulare gratuită al firmei.",
+    "refundAmount": "Rambursare: {amount}.",
+    "keptAmount": "Reținut de firmă: {amount}.",
+    "reason": "Motiv",
+    "reasonHint": "Va fi transmis firmei.",
+    "chooseNewTime": "Alegeți o oră nouă",
+    "currently": "În prezent: {when}",
+    "keepCurrentTime": "Păstrați ora actuală",
+    "moveTo": "Mutați la {time}",
+    "chooseTime": "Alegeți o oră"
+  },
+  "review": {
+    "ratings": {
+      "1": "Slab",
+      "2": "Acceptabil",
+      "3": "Bun",
+      "4": "Foarte bun",
+      "5": "Excelent"
+    },
+    "thanks": "Vă mulțumim pentru recenzie",
+    "title": "Cum a fost la {business}?",
+    "subtitle": "Recenzia este publică și marcată ca rezervare verificată.",
+    "rating": "Evaluare",
+    "stars": "{n, plural, one {# stea} few {# stele} other {# de stele}}",
+    "bodyLabel": "Povestiți-le altora despre vizită",
+    "bodyPlaceholder": "Ce v-a impresionat? I-ați recomanda?",
+    "post": "Publicați recenzia"
+  },
+  "slotPicker": {
+    "previousWeek": "Săptămâna anterioară",
+    "nextWeek": "Săptămâna următoare",
+    "noOpenings": "Nicio oră liberă în această zi.",
+    "selected": "Selectat: {time}"
+  }
+}

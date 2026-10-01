@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Bulunamadı",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} · {city}",
+    "bookOnline": "{name} için online rezervasyon yapın."
+  },
+  "preview": {
+    "notice": "Önizleme — yayınlayana kadar bu sayfayı yalnızca siz görebilirsiniz.",
+    "goLive": "Yayına al"
+  },
+  "verified": "Kept tarafından doğrulandı",
+  "verifiedLabel": "Doğrulanmış işletme",
+  "reviewsCount": "{count, plural, one {# doğrulanmış yorum} other {# doğrulanmış yorum}}",
+  "newOnKept": "Kept’te yeni",
+  "travels": "{city} · {km} km’ye kadar gelir",
+  "status": {
+    "openUntil": "Açık · {time} saatine kadar",
+    "opensAt": "{time} saatinde açılır",
+    "opensTomorrow": "Yarın {time} saatinde açılır",
+    "opensDay": "{day} {time} saatinde açılır",
+    "notSet": "Çalışma saatleri belirtilmedi",
+    "closed": "Kapalı"
+  },
+  "nav": {
+    "label": "Profil bölümleri",
+    "services": "Hizmetler",
+    "work": "Çalışmalar",
+    "featured": "Öne çıkanlar",
+    "reviews": "Yorumlar",
+    "about": "Hakkında"
+  },
+  "services": {
+    "eyebrow": "Menü",
+    "title": "Hizmetler",
+    "empty": "Bu işletme henüz hizmet yayınlamadı.",
+    "sale": "İndirim",
+    "group": "Grup · en fazla {count} kişi",
+    "request": "Talep ile rezervasyon",
+    "options": "Seçenekler mevcut",
+    "deposit": "Rezervasyonda kapora",
+    "book": "Rezervasyon yap",
+    "bookService": "{name} için rezervasyon yap"
+  },
+  "work": {
+    "eyebrow": "Portfolyo",
+    "title": "Son çalışmalar"
+  },
+  "featured": {
+    "eyebrow": "Sosyal medyada",
+    "title": "Öne çıkanlar",
+    "allProfiles": "Tüm sosyal medya profilleri",
+    "bookThis": "Bunu rezerve et · {service}",
+    "newTab": "(yeni sekmede açılır)",
+    "footnote": "Oynatıcılar yalnızca oynat’a bastığınızda ilgili platformdan yüklenir.",
+    "play": "Oynat: {title}",
+    "loadsFrom": "{host} üzerinden yüklenir"
+  },
+  "team": {
+    "eyebrow": "Ekip",
+    "title": "Ekip"
+  },
+  "reviews": {
+    "eyebrow": "Kulaktan kulağa",
+    "title": "Yorumlar",
+    "empty": "Henüz yorum yok. Yorumları yalnızca ziyareti tamamlanmış müşteriler yapabilir.",
+    "distribution": "Puan dağılımı",
+    "onlyCustomers": "Yalnızca tamamlanmış rezervasyonu olan müşteriler yorum yapabilir.",
+    "response": "{name} yanıtı",
+    "stars": "5 üzerinden {value} yıldız"
+  },
+  "about": {
+    "eyebrow": "Mekân",
+    "title": "Hakkında",
+    "hours": "Çalışma saatleri",
+    "timesIn": "Saatler {zone} saat dilimindedir.",
+    "policies": "Politikalar",
+    "noShow": "Kaçırılan randevularda toplamın %{percent} kadarı tahsil edilebilir.",
+    "experience": "{years}+ yıl deneyim",
+    "amenities": "Olanaklar",
+    "online": "Çevrim içi",
+    "directions": "Yol tarifi",
+    "comesToYou": "Size gelir",
+    "mobileBody": "{city} merkezli. {km} km’ye kadar gelir — adresinizi rezervasyon sırasında eklersiniz.",
+    "onlineSessions": "Çevrim içi seanslar",
+    "onlineBody": "Her yerden katılın. Bağlantı rezervasyondan sonra paylaşılır."
+  },
+  "panel": {
+    "label": "Rezervasyon",
+    "eyebrow": "Rezervasyon",
+    "freeOptions": "Ücretsiz seçenekler mevcut",
+    "from": "Hizmetler {price} itibarıyla",
+    "onConsultation": "Fiyatlar görüşmeyle belirlenir",
+    "nextToday": "İlk boş saat bugün",
+    "nextTomorrow": "İlk boş saat yarın",
+    "nextOn": "İlk boş saat: {day}",
+    "none": "Önümüzdeki iki hafta boş saat yok",
+    "bookNow": "Hemen rezervasyon yap",
+    "requestToBook": "Rezervasyon talep et",
+    "instant": "Anında onay",
+    "confirms": "Talebinizi işletme onaylar",
+    "notTaking": "Bu işletme henüz rezervasyon almıyor.",
+    "mobileFrom": "{price} itibarıyla",
+    "mobileNext": "Sıradaki: {day} {time}",
+    "seeAvailability": "Müsaitliği gör",
+    "request": "Talep et"
+  },
+  "actions": {
+    "share": "Paylaş",
+    "shareTitle": "{name} profilini paylaş",
+    "shareBody": "Bağlantıyı gönderin veya rezervasyon sayfasını açmak için kodu okutun.",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı",
+    "downloadQr": "QR kodunu indir",
+    "ask": "Soru sor",
+    "messageTitle": "{name} için mesaj",
+    "messageBody": "Rezervasyondan önce hizmetler, müsaitlik veya başka herhangi bir konuda soru sorun. Telefon numaranız ve e-postanız gizli kalır.",
+    "cancel": "İptal",
+    "send": "Mesajı gönder",
+    "yourMessage": "Mesajınız",
+    "placeholder": "Merhaba! Bu cumartesi öğleden sonra skin fade için yeriniz var mı?",
+    "sent": "Mesaj gönderildi",
+    "sentBody": "{name} gelen kutunuzdan yanıt verecek."
+  },
+  "portfolio": {
+    "compare": "Öncesi ve sonrasını karşılaştır",
+    "portfolio": "Portfolyo",
+    "close": "Kapat",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "before": "Önce",
+    "after": "Sonra",
+    "beforeAfter": "Önce / sonra",
+    "video": "Video",
+    "openItem": "{n}. öğeyi aç",
+    "browse": "Gezinmek için ok tuşlarını kullanın",
+    "bookThis": "Bunu rezerve et",
+    "bookThisService": "Bunu rezerve et — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Kısa video",
+    "post": "Gönderi",
+    "reel": "Reels",
+    "track": "Parça",
+    "album": "Albüm",
+    "artist": "Sanatçı",
+    "playlist": "Çalma listesi",
+    "episode": "Bölüm",
+    "show": "Podcast"
+  }
+}

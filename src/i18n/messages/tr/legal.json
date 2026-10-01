@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Çeviriler arasında farklılık olması durumunda İngilizce sürüm geçerlidir.",
+  "nav": {
+    "label": "Yasal belgeler",
+    "terms": "Hizmet koşulları",
+    "privacy": "Gizlilik politikası"
+  },
+  "doc": {
+    "lastUpdated": "Son güncelleme: {date}",
+    "counselNote": "Bu, sade bir dille yazılmış bir başlangıç belgesidir. Kept herkese açık olarak kullanıma sunulmadan önce hukuk danışmanlarınca incelenecek ve bunun sonucunda değişebilir. Haklarınızı etkileyen herhangi bir değişiklik yürürlüğe girmeden önce size bildireceğiz.",
+    "contents": "İçindekiler"
+  },
+  "terms": {
+    "meta": {
+      "title": "Hizmet koşulları",
+      "description": "Kept’i profesyonellerden randevu almak veya işletmenizi yönetmek için kullanmaya ilişkin sade dille yazılmış koşullar."
+    },
+    "title": "Hizmet koşulları",
+    "intro": "Bu koşullar Kept’in nasıl çalıştığını ve onu kullanan herkesten ne beklediğimizi açıklar. Kısa ve okunabilir tutmaya çalıştık. Burada anlaşılmayan bir şey varsa <support>bize sorun</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Kept nedir",
+        "body": {
+          "p1": "Kept bir pazar yeri ve rezervasyon aracıdır. Müşteriler onu profesyonelleri — berberleri, stilistleri, antrenörleri, özel öğretmenleri, oto detaylandırma uzmanlarını ve daha birçoğunu — bulmak ve onlardan randevu almak için kullanır. Profesyoneller ve işletmeler onu hizmetlerini yayınlamak, takvimlerini yönetmek ve ödeme almak için kullanır.",
+          "p2": "<b>Hizmeti Kept değil, randevu aldığınız profesyonel veya işletme sunar.</b> Rezervasyon yaptığınızda hizmete ilişkin anlaşmanız o işletmeyle olur. Biz sizi birbirinize bağlayan, size onların fiyatlarını ve politikalarını gösteren ve her iki tarafın da randevuya sadık kalmasına yardımcı olan platformu işletiriz."
+        }
+      },
+      "account": {
+        "title": "Hesabınız",
+        "body": {
+          "li1": "Hesap oluşturmak için en az 18 yaşında (veya yaşadığınız yerdeki reşit olma yaşında) olmanız gerekir. Çocuğunuz gibi sorumluluğunu taşıdığınız başka biri için rezervasyon yapabilirsiniz.",
+          "li2": "Doğru bilgiler verin ve bunları güncel tutun — işletmeler randevularınızla ilgili size ulaşmak için bunlara güvenir.",
+          "li3": "Şifrenizi kimseyle paylaşmayın. Hesabınızda olan her şeyden siz sorumlusunuz. Başka birinin erişimi olduğunu düşünüyorsanız şifrenizi değiştirin ve Giriş ve güvenlik bölümünden diğer cihazlarda oturumu kapatın.",
+          "li4": "Her hesap bir kişiye aittir. İşletmeler ekip üyelerini ortak bir giriş paylaşmak yerine ayrı kişiler olarak ekler."
+        }
+      },
+      "booking": {
+        "title": "Müşteri olarak rezervasyon",
+        "body": {
+          "p1": "Bir rezervasyonu onaylamadan önce fiyatı (veya nasıl tahmin edildiğini), süreyi, varsa kaporayı ve işletmenin iptal ve randevuya gelmeme politikasını görürsünüz. Rezervasyon yaparak bu koşulları kabul etmiş olursunuz.",
+          "li1": "<b>Anında rezervasyonlar</b> hemen onaylanır. <b>Talepler</b> ise yalnızca işletme kabul ettiğinde onaylanır; o zamana kadar saatiniz ayrılmış durumdadır ve yanıtlanmayan taleplerin süresi dolar.",
+          "li2": "İşletmenin kuralları dahilinde rezervasyon sayfanızdan iptal edebilir veya erteleyebilirsiniz. Geç iptaller ve randevuya gelmemek, rezervasyon sırasında gösterildiği şekliyle kaporanın bir kısmına veya tamamına ya da bir ücrete mal olabilir.",
+          "li3": "Bir hizmet tahmini olarak fiyatlandırılmışsa (örneğin “itibarıyla” veya bir aralık), nihai fiyat randevunuzda işletmeyle kararlaştırılır.",
+          "li4": "Kept bir rezervasyon için hizmet bedeli alıyorsa, bu bedel onaylamadan önce gösterilir. Sonradan asla ek ücret eklemeyiz."
+        }
+      },
+      "payments": {
+        "title": "Ödemeler ve iadeler",
+        "body": {
+          "p1": "Online ödemeler Stripe tarafından işlenir. Kept tam kart numaranızı asla görmez ve saklamaz. Bazı işletmeler bunun yerine yüz yüze ödeme alır; bu durumda ödemeyi doğrudan onlara yaparsınız.",
+          "li1": "İadeler, rezervasyon sırasında gösterilen işletme politikasına uyar ve ödeme yaptığınız karta yapılır. Bankanızın bunları göstermesi birkaç iş günü sürebilir.",
+          "li2": "Bir işletme randevunuzu iptal eder veya reddederse, bunun için online olarak ödediğiniz her şey iade edilir.",
+          "li3": "Bir ödemeyle ilgili sorun yaşadıysanız, bankanıza itiraz başvurusu yapmadan önce <supportPayment>bizimle iletişime geçin</supportPayment> — genellikle daha hızlıdır."
+        }
+      },
+      "businesses": {
+        "title": "Profesyoneller ve işletmeler için",
+        "body": {
+          "li1": "İlanınız doğru olmalıdır: kim olduğunuz, ne sunduğunuz, fiyatlarınız, nerede çalıştığınız ve politikalarınız. Fotoğraflar ve videolar kendi çalışmalarınıza ait olmalı ya da izinle kullanılmalıdır.",
+          "li2": "İşinizin gerektirdiği tüm lisans, izin, sigorta ve yeterliliklere sahip olmaktan ve vergi yükümlülüklerinizi yerine getirmekten siz sorumlusunuz.",
+          "li3": "Kabul ettiğiniz rezervasyonlara ve yayınladığınız politikalara uyun. Tekrarlanan son dakika iptalleri, randevuya gelmemeler veya yanıltıcı ilanlar profilinizin askıya alınmasına yol açabilir.",
+          "li4": "Planlar, limitler ve ücretler <pricing>fiyatlandırma sayfamızda</pricing> listelenir. Platform ücreti yalnızca müşterilerin Kept üzerinden online yaptığı ödemelere uygulanır. Ödemeler Stripe tarafından kendi hesabınıza aktarılır ve Stripe’ın koşullarına da tabidir.",
+          "li5": "Kept aracılığıyla aldığınız müşteri bilgileri, hizmetlerinizi sunmak ve takibini yapmak için kullanılabilir. Pazarlama iletilerini yalnızca bunları almayı kabul eden müşterilere gönderin.",
+          "li6": "Yüklediğiniz içeriklerin sahipliği sizde kalır ve ilanınız aktif olduğu sürece Kept’e bunları Kept’te ve profilinizin tanıtımında gösterme izni verirsiniz.",
+          "li7": "Spotlight yerleşimleri her zaman sponsorlu olarak etiketlenir. Lansman süresince ücretsizdir; bu değişirse herhangi bir ücret alınmadan önce size bildiririz."
+        }
+      },
+      "reviews": {
+        "title": "Yorumlar",
+        "body": {
+          "p1": "Yalnızca tamamlanmış bir randevusu olan müşteriler, her randevu için bir kez yorum yapabilir. Yorumlar dürüst olmalı ve kendi deneyiminizle ilgili olmalıdır. İşletmeler herkese açık olarak yanıt verebilir.",
+          "p2": "Yorum karşılığında veya bir yorumun kaldırılması karşılığında herhangi bir şey teklif etmek yasaktır. Bu koşulları ihlal eden yorumları — örneğin spam, nefret söylemi, kişisel bilgiler veya çıkar çatışmaları — gizleyebilir veya kaldırabiliriz; ancak yorumları sırf olumsuz oldukları için kaldırmayız."
+        }
+      },
+      "conduct": {
+        "title": "Kept’te yapamayacaklarınız",
+        "body": {
+          "li1": "Yasa dışı herhangi bir şey, cinsel hizmetler veya insanları riske atan herhangi bir şey sunmak ya da bunlar için rezervasyon yapmak.",
+          "li2": "Herhangi birini — müşterileri, profesyonelleri veya ekibimizi — taciz etmek, tehdit etmek veya ayrımcılığa uğratmak.",
+          "li3": "Sahte hesaplar, ilanlar, rezervasyonlar veya yorumlar oluşturmak ya da başka birinin kimliğine bürünmek.",
+          "li4": "Paylaşma hakkınız olmayan veya izin alınmadan başkalarının kişisel bilgilerini içeren içerikler yüklemek.",
+          "li5": "Hizmeti kazımak, aşırı yüklemek, yoklamak veya işleyişine müdahale etmek ya da güvenliğini veya ücretlerini aşmaya çalışmak."
+        }
+      },
+      "ourRole": {
+        "title": "Rolümüz ve sınırları",
+        "body": {
+          "p1": "Kept’i güvenli ve güvenilir tutmak için çalışır, bildirimler üzerine harekete geçeriz. Ancak Kept’teki işletmeler bağımsızdır — çalışanlarımız veya temsilcilerimiz değildir ve hizmetlerinin kalitesini, güvenliğini veya yasallığını garanti etmeyiz. “Doğrulanmış” rozeti, işletmenin sağladığı belgeleri incelediğimiz anlamına gelir; bir onay veya tavsiye değildir.",
+          "p2": "Kept “olduğu gibi” sunulur. Yasanın izin verdiği ölçüde, dolaylı veya sonuç olarak ortaya çıkan zararlardan ya da bir hizmet sırasında sizinle işletme arasında yaşananlardan sorumlu değiliz. Bu koşullardaki hiçbir şey, tüketicinin korunması mevzuatı kapsamında sahip olduğunuz ve hariç tutulamayan hakları sınırlamaz."
+        }
+      },
+      "ending": {
+        "title": "Askıya alma ve hesabınızı kapatma",
+        "body": {
+          "p1": "Hesabınızı istediğiniz zaman <privacyData>Gizlilik ve veriler</privacyData> bölümünden silebilirsiniz. Yaklaşan randevular her işletmenin politikasına göre iptal edilir ve işletmelerin ihtiyaç duyduğu kayıtlar — geçmiş randevular ve ödemeler gibi — anonimleştirilmiş biçimde saklanır.",
+          "p2": "Bu koşulları ihlal eden veya başkalarını riske atan hesapları askıya alabilir veya kapatabiliriz. Mümkün olduğunda nedenini size bildirir ve yanıt verme fırsatı tanırız."
+        }
+      },
+      "changes": {
+        "title": "Değişiklikler, uyuşmazlıklar ve iletişim",
+        "body": {
+          "p1": "Bu koşullarda önemli bir değişiklik yaptığımızda, size önceden e-postayla veya uygulama içinde bildiririz. Bir değişiklik yürürlüğe girdikten sonra Kept’i kullanmaya devam etmeniz, onu kabul ettiğiniz anlamına gelir.",
+          "p2": "Uygulanacak hukuk ve uyuşmazlıkların çözüm süreci, hukuki incelemenin ardından ve Kept herkese açık olarak kullanıma sunulmadan önce buraya eklenecektir.",
+          "p3": "Bu koşullarla ilgili sorularınız mı var? <support>Bizimle iletişime geçin</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Gizlilik politikası",
+      "description": "Kept hangi kişisel verileri topluyor, neden, kimler görüyor ve bunları nasıl indirebilir veya silebilirsiniz."
+    },
+    "title": "Gizlilik politikası",
+    "intro": "Bu politika, Kept’in hangi kişisel verileri topladığını, bunlara neden ihtiyaç duyduğumuzu, kimlerin görebileceğini ve sahip olduğunuz seçenekleri — müşteriler ve profesyoneller için aynı şekilde — açıklar.",
+    "sections": {
+      "summary": {
+        "title": "Kısaca",
+        "body": {
+          "li1": "Rezervasyonları yürütmek için gerekenleri toplarız: kim olduğunuz, ne için rezervasyon yaptığınız ve size nasıl ulaşılacağı.",
+          "li2": "Randevu aldığınız işletmeler, size hizmet vermek için ihtiyaç duydukları bilgileri görür. Kept’i işletmemize yardımcı olan hizmet sağlayıcılar dışında başka kimse görmez.",
+          "li3": "Kişisel verilerinizi satmayız ve reklam izleyicileri kullanmayız.",
+          "li4": "Verilerinizin bir kopyasını indirebilir veya hesabınızı istediğiniz zaman <privacyData>Gizlilik ve veriler</privacyData> bölümünden kendiniz silebilirsiniz."
+        }
+      },
+      "youGive": {
+        "title": "Bize verdiğiniz bilgiler",
+        "body": {
+          "li1": "<b>Hesap:</b> adınız, e-postanız, şifreniz (yalnızca tek yönlü bir hash olarak saklanır) ve isteğe bağlı olarak telefon numaranız, fotoğrafınız ve saat diliminiz. Google ile giriş yaparsanız adınızı ve e-postanızı Google’dan alırız.",
+          "li2": "<b>Rezervasyonlar:</b> hizmet, saat, işletme ve fiyat; eklediğiniz notlar; bir işletmenin ön bilgi sorularına verdiğiniz yanıtlar ve bir profesyonel size geliyorsa adresiniz.",
+          "li3": "<b>Ödemeler:</b> tutarlar, durum ve iadeler. Kart bilgileri doğrudan Stripe’a gider — tam kart numaranızı asla almayız.",
+          "li4": "<b>Mesajlar, yorumlar ve destek talepleri</b>, eklediğiniz görseller dahil, ve kaydettiğiniz adresler.",
+          "li5": "<b>İşletmeler</b> ayrıca bize işletme bilgilerini, ekip üyelerini, hizmetleri, programları, portfolyo medyasını, ödeme alma bilgilerini (Stripe’ta tutulur) ve tuttukları müşteri kayıtlarını verir."
+        }
+      },
+      "automatic": {
+        "title": "Otomatik olarak toplanan bilgiler",
+        "body": {
+          "li1": "<b>Oturumlar:</b> bir çerez oturumunuzun açık kalmasını sağlar. Cihazlarınızdaki oturumların güvenli şekilde kapatılabilmesi için oturumu tarayıcı türünüzle birlikte saklarız.",
+          "li2": "<b>Güvenlik:</b> kötüye kullanımı sınırlamak ve şüpheli etkinlikleri incelemek için IP adresinizin kendisini değil, anahtarlı ve tek yönlü bir hash’ini saklarız.",
+          "li3": "<b>Konum:</b> yakındakileri aramak için bir yer seçerseniz veya konumunuzu paylaşırsanız, tercihinizi hatırlamak için cihazınızdaki bir çerezde saklanır. Konumunuzu arka planda takip etmeyiz.",
+          "li4": "<b>Kept’teki etkinlik:</b> görüntülediğiniz ve kaydettiğiniz profesyoneller, size yeniden gösterebilmemiz için; ve sponsorlu ilanların görüntülenme ve tıklanma sayıları, işletmelere yalnızca toplamlar olarak raporlanır."
+        }
+      },
+      "use": {
+        "title": "Bilgileri nasıl kullanırız",
+        "body": {
+          "li1": "Rezervasyon oluşturmak, değiştirmek ve size hatırlatmak; ödemeleri ve iadeleri işlemek için.",
+          "li2": "Seçtiğiniz bildirimleri göndermek için. Rezervasyon onayları ve değişiklikleri her zaman gönderilir; diğer her şey Bildirim ayarlarından kapatılabilir.",
+          "li3": "Size yakınınızdaki ilgili profesyonelleri ve boş saatleri göstermek için.",
+          "li4": "Kept’i güvende tutmak için: dolandırıcılığı, spam’i ve kötüye kullanımı önlemek ve bildirimler üzerine harekete geçmek.",
+          "li5": "Destek taleplerini yanıtlamak ve Kept’i geliştirmek için.",
+          "li6": "Vergi ve muhasebe kayıtları gibi yasal yükümlülükleri yerine getirmek için."
+        }
+      },
+      "businesses": {
+        "title": "İşletmelerin gördükleri",
+        "body": {
+          "p1": "Rezervasyon yaptığınızda işletme adınızı, e-postanızı ve telefon numaranızı (eklediyseniz), rezervasyonu ve onunla paylaştığınız her şeyi — notlar, ön bilgi yanıtları, hizmet adresi — ve o işletmedeki önceki ziyaretlerinizi görür. Müşteri kaydınıza özel notlar ekleyebilir.",
+          "p2": "Her işletme, müşteri kayıtlarını nasıl kullandığından kendisi sorumludur ve size yalnızca kabul ettiyseniz pazarlama iletisi gönderebilir. Yorumlar herkese açıktır ve adınızı ve soyadınızın baş harfini gösterir."
+        }
+      },
+      "sharing": {
+        "title": "Başka kimlerle paylaşırız",
+        "body": {
+          "p1": "Bizim adımıza veri işleyen, verilerle neler yapabileceklerini sınırlayan sözleşmelere tabi az sayıda sağlayıcıyla çalışırız:",
+          "li1": "Ödemeler ve ödeme aktarımları için Stripe.",
+          "li2": "E-posta sağlayıcımız ve SMS etkinse bir SMS sağlayıcısı.",
+          "li3": "Yalnızca Google ile giriş yapmayı seçerseniz Google.",
+          "li4": "Harita göstermek ve aradığınız yerleri bulmak için harita ve adres arama hizmetleri.",
+          "li5": "Barındırma ve altyapı sağlayıcılarımız.",
+          "p2": "Ayrıca yasa gerektirdiğinde, birinin güvenliğini korumak için veya bir birleşme ya da devralmanın parçası olarak bilgileri açıklayabiliriz — bu durumda bu politika geçerli olmaya devam eder. Kişisel verileri asla satmayız."
+        }
+      },
+      "rights": {
+        "title": "Seçenekleriniz ve haklarınız",
+        "body": {
+          "li1": "<b>Erişim:</b> verilerinizin bir kopyasını <privacyData>Gizlilik ve veriler</privacyData> bölümünden indirin.",
+          "li2": "<b>Düzeltme:</b> bilgilerinizi <profile>Profil</profile> bölümünden güncelleyin veya bizden isteyin.",
+          "li3": "<b>Silme:</b> hesabınızı Gizlilik ve veriler bölümünden silin. Neleri sakladığımızı aşağıda görebilirsiniz.",
+          "li4": "<b>Bildirimler:</b> ne göndereceğimizi <notifications>Bildirim ayarlarından</notifications> seçin.",
+          "li5": "Yaşadığınız yere bağlı olarak, belirli kullanımlara itiraz etmek veya bir veri koruma otoritesine şikâyette bulunmak gibi başka haklarınız da olabilir. <supportAccount>Bizimle iletişime geçin</supportAccount>, yardımcı olalım."
+        }
+      },
+      "retention": {
+        "title": "Ne kadar süre saklarız",
+        "body": {
+          "p1": "Hesabınız açık olduğu sürece bilgilerinizi saklarız.",
+          "p2": "Hesabınızı sildiğinizde adınızı, e-postanızı, telefonunuzu, fotoğrafınızı, kayıtlı adreslerinizi, kaydettiğiniz profesyonelleri, bildirimleri ve giriş yöntemlerinizi derhal sileriz. İşletmelerin ve muhasebenin dayandığı kayıtlar — geçmiş randevular, ödemeler ve yorumlar — saklanır, ancak size değil “Silinmiş kullanıcı”ya bağlanır. Bir işletmeyle yazıştığınız mesajlar o işletmenin sohbet geçmişinde kalır."
+        }
+      },
+      "security": {
+        "title": "Güvenlik",
+        "body": {
+          "p1": "Şifreler Argon2 ile hash’lenir, oturumlar sunucu tarafında saklanır ve iptal edilebilir, bağlantılar şifrelenir ve yüklenen fotoğraflar gizli konum verileri silinecek şekilde yeniden kodlanır. Hiçbir sistem kusursuz derecede güvenli değildir; sizi etkileyen bir ihlalden haberdar olursak size derhal bildiririz."
+        }
+      },
+      "children": {
+        "title": "Çocuklar",
+        "body": {
+          "p1": "Kept hesapları yetişkinler içindir. Bir ebeveyn veya veli, çocuğu için hizmet rezervasyonu yapabilir; çocuklardan doğrudan bilerek kişisel veri toplamayız."
+        }
+      },
+      "changes": {
+        "title": "Değişiklikler ve iletişim",
+        "body": {
+          "p1": "Bu politikada önemli bir değişiklik yaparsak, yürürlüğe girmeden önce size bildiririz.",
+          "p2": "Verilerinizle ilgili sorularınız veya talepleriniz mi var? <supportAccount>Bizimle iletişime geçin</supportAccount>."
+        }
+      }
+    }
+  }
+}

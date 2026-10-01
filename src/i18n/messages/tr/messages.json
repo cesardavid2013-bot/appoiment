@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Siz:",
+  "unread": "Okunmadı",
+  "apptLine": "{service} · {date}, {time}",
+  "list": {
+    "title": "Mesajlar",
+    "unread": "{count, plural, one {# okunmamış sohbet.} other {# okunmamış sohbet.}}",
+    "caughtUp": "Hepsini okudunuz.",
+    "emptyTitle": "Henüz mesaj yok",
+    "emptyBody": "Bir hizmet, fiyat veya saatle ilgili sorunuz mu var? Bir profesyonelin sayfasını açıp “Soru sor”a dokunun. Yanıtları buraya gelir.",
+    "findPro": "Bir profesyonel bulun"
+  },
+  "thread": {
+    "metaTitle": "Sohbet",
+    "placeholder": "{business} için mesaj"
+  },
+  "new": {
+    "metaTitle": "Yeni mesaj",
+    "ownTitle": "Bu sizin işletmeniz",
+    "ownBody": "{business} için müşteri mesajları işletmenizin gelen kutusuna düşer.",
+    "ownButton": "İşletme gelen kutusunu aç",
+    "placeholderBooking": "Bu rezervasyon hakkında sorun",
+    "placeholderQuestion": "Soru sorun",
+    "emptyBookingTitle": "Rezervasyonunuz hakkında {business} ile yazışın",
+    "emptyQuestionTitle": "Rezervasyondan önce {business} işletmesine sorun",
+    "emptyBookingBody": "Gecikiyor musunuz, bir şeyi değiştirmeniz mi gerekiyor ya da bir sorunuz mu var? Mesajınız doğrudan ekiplerine gider.",
+    "emptyQuestionBody": "Fiyatlar, zamanlama, yanınızda ne getireceğiniz — {business} burada yanıtlar, biz de size haber veririz. Telefon numaranız ve e-postanız gizli kalır."
+  },
+  "shell": {
+    "allMessages": "Tüm mesajlar",
+    "viewProfile": "Profili görüntüle",
+    "book": "Rezervasyon yap"
+  },
+  "pro": {
+    "backToInbox": "Gelen kutusuna dön"
+  },
+  "view": {
+    "label": "Mesajlar",
+    "you": "Siz",
+    "loadingEarlier": "Önceki mesajlar yükleniyor",
+    "showEarlier": "Önceki mesajları göster",
+    "seen": "Görüldü",
+    "sending": "Gönderiliyor…",
+    "notSent": "Gönderilemedi.",
+    "retry": "Tekrar dene",
+    "discard": "Sil",
+    "newMessages": "{count, plural, one {# yeni mesaj} other {# yeni mesaj}}",
+    "openPhoto": "Fotoğrafı yeni sekmede aç",
+    "photo": "Fotoğraf"
+  },
+  "composer": {
+    "about": "Konu: {appointment}",
+    "unlink": "Bu randevuyu bağlama",
+    "processingPhoto": "Fotoğraf işleniyor",
+    "removePhoto": "Fotoğrafı kaldır",
+    "attachPhoto": "Fotoğraf ekle",
+    "label": "Mesaj",
+    "send": "Mesajı gönder",
+    "hint": "Göndermek için Enter, yeni satır için Shift ve Enter tuşlarına basın."
+  },
+  "inbox": {
+    "title": "Gelen kutusu",
+    "conversations": "Sohbetler",
+    "unread": "{count} okunmamış",
+    "allCaughtUp": "Hepsi okundu",
+    "searchLabel": "Sohbetleri müşteri adına göre arayın",
+    "searchPlaceholder": "Müşteri ara",
+    "clearSearch": "Aramayı temizle",
+    "show": "Göster",
+    "all": "Tümü",
+    "unreadFilter": "Okunmamış",
+    "noClientsNamed": "“{term}” adında müşteri yok",
+    "nothingUnread": "Okunmamış bir şey yok",
+    "noMessages": "Henüz mesaj yok",
+    "tryDifferent": "Farklı bir arama deneyin veya tüm sohbetleri gösterin.",
+    "emptyBody": "Müşteriler sayfanızdan veya bir rezervasyonla ilgili soru sorduğunda burada görünür."
+  },
+  "clientPanel": {
+    "client": "Müşteri",
+    "visits": "Ziyaretler",
+    "noShows": "Gelmedi",
+    "cancelled": "İptal",
+    "clientSince": "{date} tarihinden beri müşteri",
+    "noVisits": "Henüz tamamlanmış ziyaret yok",
+    "lastIn": "son ziyaret {date}",
+    "tags": "Etiketler",
+    "clientProfile": "Müşteri profili",
+    "notBooked": "Henüz sizden randevu almadı — bu sohbet herkese açık sayfanızdan başladı.",
+    "upcoming": "Yaklaşan",
+    "nothingBooked": "Rezervasyon yok.",
+    "recent": "Son"
+  }
+}

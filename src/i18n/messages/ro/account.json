@@ -1,0 +1,311 @@
+{
+  "loading": "Se încarcă…",
+  "noEmail": "Nicio adresă de e-mail înregistrată",
+  "saveChanges": "Salvați modificările",
+  "cancel": "Anulați",
+  "checkFields": "Verificați câmpurile evidențiate.",
+  "nav": {
+    "label": "Setările contului",
+    "account": "Cont"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profil",
+      "description": "Nume, fotografie, telefon și fus orar"
+    },
+    "security": {
+      "label": "Autentificare și securitate",
+      "description": "Parolă, confirmarea e-mailului și dispozitive"
+    },
+    "notifications": {
+      "label": "Setări pentru notificări",
+      "description": "Alegeți despre ce vă scriem pe e-mail sau prin SMS"
+    },
+    "addresses": {
+      "label": "Adrese salvate",
+      "description": "Pentru profesioniștii care vin la dumneavoastră"
+    },
+    "privacy": {
+      "label": "Confidențialitate și date",
+      "description": "Descărcați datele sau ștergeți contul"
+    }
+  },
+  "home": {
+    "memberSince": "Membru din {date}",
+    "confirmEmail": "<b>Confirmați adresa de e-mail.</b> Am trimis un link la {email}, ca firmele să vă poată contacta în legătură cu rezervările.",
+    "activity": "Activitatea dumneavoastră",
+    "settings": "Setări",
+    "more": "Mai multe",
+    "signOut": "Deconectare",
+    "rows": {
+      "bookings": {
+        "label": "Rezervări",
+        "description": "Programări viitoare și trecute"
+      },
+      "saved": {
+        "label": "Salvate",
+        "description": "Profesioniștii pe care i-ați salvat"
+      },
+      "messages": {
+        "label": "Mesaje",
+        "description": "Conversații cu firmele"
+      },
+      "notifications": {
+        "label": "Notificări",
+        "description": "Noutăți despre rezervările dumneavoastră"
+      },
+      "business": {
+        "label": "Treceți la contul firmei",
+        "description": "Calendar, servicii și clienți"
+      },
+      "offer": {
+        "label": "Oferiți-vă serviciile pe Kept",
+        "description": "Primiți rezervări și dezvoltați-vă afacerea — începutul e gratuit"
+      },
+      "support": {
+        "label": "Ajutor și asistență",
+        "description": "Ajutor pentru o rezervare, o plată sau contul dumneavoastră"
+      },
+      "legal": {
+        "label": "Termeni și confidențialitate",
+        "description": "Cum funcționează Kept și cum vă tratăm datele"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "E-mailul de confirmare a fost trimis",
+    "sentBody": "Verificați {email} — linkul este valabil 3 zile.",
+    "sent": "E-mail trimis",
+    "resend": "Retrimiteți linkul"
+  },
+  "profile": {
+    "description": "Cum vă văd profesioniștii la care faceți rezervări.",
+    "saved": "Profil salvat",
+    "details": "Date personale",
+    "name": "Nume",
+    "email": "E-mail",
+    "changeEmail": "Pentru a schimba adresa de e-mail de autentificare, <link>contactați asistența</link>, ca să putem confirma că sunteți dumneavoastră.",
+    "phone": "Telefon",
+    "phoneHintSms": "Firmele la care faceți rezervări vă pot suna în legătură cu programările, iar noi vă putem trimite mementouri prin SMS, dacă le activați.",
+    "phoneHint": "Firmele la care faceți rezervări îl pot folosi pentru a vă contacta în legătură cu o programare.",
+    "photo": {
+      "title": "Fotografie",
+      "description": "Apare lângă numele dumneavoastră pentru profesioniștii la care faceți rezervări.",
+      "updated": "Fotografie actualizată",
+      "removed": "Fotografie eliminată",
+      "change": "Schimbați fotografia",
+      "upload": "Încărcați o fotografie",
+      "remove": "Eliminați",
+      "hint": "JPG, PNG sau WebP, maximum 15 MB. Eliminăm datele de localizare din fotografii."
+    },
+    "timezone": {
+      "label": "Fus orar",
+      "hint": "Fusul orar de acasă. Orele programărilor sunt afișate întotdeauna în ora locală a firmei.",
+      "notSet": "Nesetat",
+      "detect": "Detectare automată",
+      "detectFailed": "Nu am putut detecta fusul orar. Alegeți-l din listă."
+    },
+    "language": {
+      "title": "Limbă",
+      "description": "Folosită pentru meniuri, butoane și date în tot Kept. Numele firmelor, serviciile și recenziile apar așa cum le-a scris firma."
+    }
+  },
+  "security": {
+    "description": "Păstrați-vă contul în siguranță și sub controlul dumneavoastră.",
+    "password": {
+      "title": "Parolă",
+      "setTitle": "Setați o parolă",
+      "description": "Schimbarea parolei vă deconectează de pe toate celelalte dispozitive.",
+      "setDescription": "Vă autentificați cu Google. Adăugați o parolă ca să vă puteți autentifica și cu adresa de e-mail.",
+      "change": "Schimbați parola",
+      "setButton": "Setați parola",
+      "current": "Parola actuală",
+      "new": "Parola nouă",
+      "newHint": "Cel puțin 8 caractere. Evitați cuvintele uzuale și adresa de e-mail.",
+      "confirm": "Confirmați parola nouă",
+      "tooShort": "Folosiți cel puțin 8 caractere.",
+      "mismatch": "Parolele nu coincid.",
+      "changed": "Parola a fost schimbată",
+      "set": "Parola a fost setată",
+      "othersSignedOut": "Toate celelalte dispozitive au fost deconectate."
+    },
+    "email": {
+      "title": "E-mail",
+      "description": "Folosim adresa de e-mail pentru autentificare și pentru confirmările rezervărilor.",
+      "confirmed": "Confirmat",
+      "notConfirmed": "Neconfirmat încă",
+      "none": "Acest cont nu are o adresă de e-mail."
+    },
+    "devices": {
+      "title": "Dispozitive",
+      "description": "Dacă v-ați autentificat pe un dispozitiv comun sau pierdut, deconectați-l de aici. Acest dispozitiv rămâne conectat.",
+      "status": "{count, plural, =0 {Sunteți conectat doar pe acest dispozitiv} one {Sunteți conectat pe încă # dispozitiv} few {Sunteți conectat pe încă # dispozitive} other {Sunteți conectat pe încă # de dispozitive}}",
+      "signOutOthers": "Deconectați celelalte dispozitive",
+      "confirmTitle": "Deconectați celelalte dispozitive?",
+      "confirmBody": "Oricine vă folosește contul pe alt telefon, tabletă sau computer va trebui să se autentifice din nou.",
+      "confirm": "Deconectați-le",
+      "signedOutToast": "{count, plural, one {A fost deconectat # alt dispozitiv} few {Au fost deconectate # alte dispozitive} other {Au fost deconectate # de alte dispozitive}}"
+    }
+  },
+  "notifications": {
+    "description": "Alegeți cum vă ținem la curent. Nu trimitem niciodată mai mult decât e nevoie.",
+    "saved": "Salvat",
+    "emailAndText": "Alerte pe e-mail și prin SMS",
+    "emailOnly": "Alerte pe e-mail",
+    "inboxNote": "Orice ați alege aici, totul apare și în secțiunea Notificări din Kept.",
+    "addPhone": "Adăugați un număr de telefon în <link>profil</link> pentru a primi SMS-uri.",
+    "email": "E-mail",
+    "sms": "SMS",
+    "forTopic": "pentru {topic}",
+    "alwaysOn": {
+      "bookings": "E-mailul este mereu activ, ca să vă putem anunța dacă se schimbă o rezervare.",
+      "business": "E-mailul este mereu activ, ca să nu ratați nicio rezervare sau cerere nouă."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Noutăți despre rezervări",
+        "description": "Confirmări, modificări și anulări."
+      },
+      "reminders": {
+        "label": "Mementouri",
+        "description": "Înainte de programările viitoare."
+      },
+      "messages": {
+        "label": "Mesaje",
+        "description": "Când vă scrie o firmă sau un client."
+      },
+      "waitlist": {
+        "label": "Locuri eliberate",
+        "description": "Când se eliberează o oră pe care o doreați."
+      },
+      "reviews": {
+        "label": "Solicitări de recenzii",
+        "description": "Un mesaj scurt după o programare finalizată."
+      },
+      "business": {
+        "label": "Activitatea firmei",
+        "description": "Rezervări, cereri și recenzii noi pentru firma dumneavoastră."
+      },
+      "marketing": {
+        "label": "Noutăți și oferte",
+        "description": "Vești ocazionale de la firmele la care ați rezervat."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Pentru profesioniștii mobili care vin la dumneavoastră — frizeri, specialiști în detailing auto, antrenori și alții.",
+    "defaultLabel": "Acasă",
+    "saved": "Adresă salvată",
+    "removed": "Adresă eliminată",
+    "emptyTitle": "Nicio adresă salvată",
+    "emptyBody": "Păstrați la îndemână, într-un singur loc, adresele unde rezervați servicii la domiciliu — de exemplu acasă sau la birou.",
+    "add": "Adăugați o adresă",
+    "removeLabel": "Eliminați {label}",
+    "count": "{count} din {max} salvate",
+    "limit": "Ați atins limita. Eliminați o adresă pentru a adăuga alta.",
+    "dialogBody": "Vizibilă doar pentru dumneavoastră. Un profesionist vede adresa doar când rezervați un serviciu acolo.",
+    "save": "Salvați adresa",
+    "fields": {
+      "name": "Denumire",
+      "nameHint": "De exemplu Acasă, Serviciu sau Sală.",
+      "line1": "Stradă și număr",
+      "line2": "Apartament, birou sau etaj",
+      "city": "Oraș",
+      "region": "Județ / regiune",
+      "postalCode": "Cod poștal",
+      "country": "Țară"
+    },
+    "removeTitle": "Eliminați „{label}”?",
+    "removeBody": "Rezervările deja făcute la această adresă nu sunt afectate.",
+    "remove": "Eliminați adresa"
+  },
+  "privacy": {
+    "description": "Datele dumneavoastră vă aparțin. Aflați cum le folosim din <link>politica de confidențialitate</link>.",
+    "export": {
+      "title": "Descărcați-vă datele",
+      "description": "Primiți o copie a profilului, a adreselor salvate, a programărilor, recenziilor, mesajelor, profesioniștilor salvați și solicitărilor de asistență, sub forma unui fișier JSON.",
+      "button": "Descărcați datele mele",
+      "hint": "Se pregătește instantaneu. Păstrați fișierul într-un loc sigur — conține informații personale."
+    },
+    "delete": {
+      "title": "Ștergeți contul",
+      "intro": "Această acțiune închide definitiv contul Kept. Iată ce se întâmplă:",
+      "erased": "Numele, adresa de e-mail, telefonul, fotografia, adresele salvate și profesioniștii salvați sunt șterși, iar dumneavoastră sunteți deconectat de pe toate dispozitivele.",
+      "upcoming": "{count, plural, one {Programarea viitoare este anulată conform politicii de anulare a firmei, inclusiv orice rambursare permisă de aceasta.} few {Cele # programări viitoare sunt anulate conform politicii de anulare a fiecărei firme, inclusiv orice rambursare permisă de aceasta.} other {Cele # de programări viitoare sunt anulate conform politicii de anulare a fiecărei firme, inclusiv orice rambursare permisă de aceasta.}}",
+      "upcomingNone": "Toate programările viitoare sunt anulate conform politicii de anulare a fiecărei firme.",
+      "records": "Înregistrările de care depind firmele și regulile fiscale — programări trecute, plăți și recenzii — sunt păstrate, dar apar ca provenind de la „Utilizator șters”.",
+      "permanent": "Această acțiune nu poate fi anulată. Vă puteți înregistra din nou mai târziu cu aceeași adresă de e-mail, de la zero.",
+      "blocked": "Dețineți {businesses}. Înainte de a vă șterge contul, închideți firma sau transferați-o altei persoane din <link>setările firmei</link>, ca să nu rămână clienții fără răspunsuri.",
+      "copyFirst": "Preferați mai întâi o copie? Descărcați-vă datele mai sus.",
+      "open": "Ștergeți contul…",
+      "confirmTitle": "Ștergeți contul?",
+      "confirmBody": "Această acțiune nu poate fi anulată.",
+      "keep": "Păstrez contul",
+      "confirm": "Șterg contul",
+      "willCancel": "{count, plural, one {# programare viitoare va fi anulată.} few {# programări viitoare vor fi anulate.} other {# de programări viitoare vor fi anulate.}}",
+      "password": "Parola dumneavoastră",
+      "typeToConfirm": "Tastați <word>{word}</word> pentru confirmare",
+      "deletedToast": "Contul a fost șters",
+      "deletedBody": "Vă mulțumim că ați folosit Kept."
+    }
+  },
+  "saved": {
+    "title": "Salvate",
+    "description": "{count, plural, one {# profesionist salvat.} few {# profesioniști salvați.} other {# de profesioniști salvați.}} Orele libere de mai jos vin direct din calendarele lor.",
+    "emptyTitle": "Nimic salvat încă",
+    "emptyBody": "Atingeți inima de pe orice profesionist ca să-l păstrați aici — util pentru a reveni la cei obișnuiți sau pentru a compara câțiva înainte să decideți.",
+    "explore": "Explorați profesioniștii",
+    "loading": "Se încarcă profesioniștii salvați…"
+  },
+  "notificationList": {
+    "title": "Notificări",
+    "today": "Astăzi",
+    "earlier": "Mai devreme",
+    "emptyTitle": "Nicio notificare încă",
+    "emptyBody": "Confirmările de rezervare, mementourile, răspunsurile și locurile eliberate din lista de așteptare vor apărea aici.",
+    "unread": "{count} necitite",
+    "caughtUp": "Ați văzut tot",
+    "allCaughtUpToast": "Totul e citit",
+    "markAll": "Marcați toate ca citite",
+    "unreadItem": "Necitit",
+    "loadOlder": "Încărcați mai vechi",
+    "end": "Asta e tot."
+  },
+  "invite": {
+    "eyebrow": "Invitație în echipă",
+    "invalidTitle": "Această invitație nu poate fi folosită",
+    "invalidBody": "Este posibil să fi expirat, să fi fost anulată sau deja acceptată. Rugați persoana care v-a invitat să vă trimită un link nou.",
+    "goHome": "Mergeți la Kept",
+    "join": "Alăturați-vă echipei {business}",
+    "invitedAs": "Ați fost invitat ca <b>{role}</b>.",
+    "signInWith": "Autentificați-vă sau creați un cont cu <b>{email}</b> pentru a accepta.",
+    "createAccount": "Creați un cont",
+    "signIn": "Autentificare",
+    "wrongAccount": "Sunteți autentificat ca <b>{email}</b>, dar invitația a fost trimisă la {invited}.",
+    "wrongAccountHint": "Deconectați-vă și autentificați-vă cu acea adresă sau cereți o invitație pentru {email}.",
+    "acceptingAs": "Acceptați ca <b>{email}</b>.",
+    "accept": "Accept și deschid programul",
+    "roles": {
+      "owner": {
+        "label": "Proprietar",
+        "description": "Control total, inclusiv facturare și echipă."
+      },
+      "manager": {
+        "label": "Manager",
+        "description": "Se ocupă de activitatea zilnică. Nu poate modifica echipa sau setările firmei."
+      },
+      "receptionist": {
+        "label": "Recepție",
+        "description": "Face și gestionează programări pentru toată lumea."
+      },
+      "provider": {
+        "label": "Profesionist",
+        "description": "Își vede și își gestionează propriile programări și programul."
+      },
+      "custom": {
+        "label": "Personalizat",
+        "description": "Alegeți exact ce poate face această persoană."
+      }
+    }
+  }
+}

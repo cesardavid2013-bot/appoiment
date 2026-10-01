@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Онлайн",
+    "comesToYou": "Виїзд до вас",
+    "comesToYouIn": "Виїзд до вас · {city}",
+    "lessThanOneKm": "<1 км",
+    "promoted": "Реклама",
+    "verified": "Перевірена компанія",
+    "instant": "Миттєве підтвердження",
+    "request": "Запис за заявкою",
+    "bookAt": "Записатися: {day}, {time}",
+    "moreTimes": "Інший час",
+    "freeConsultation": "Є безкоштовна консультація",
+    "priceOnRequest": "Ціна за запитом",
+    "viewTimes": "Переглянути час"
+  },
+  "rail": {
+    "seeAll": "Дивитися всі"
+  },
+  "favorite": {
+    "save": "Зберегти",
+    "saved": "Збережено",
+    "remove": "Прибрати зі збереженого",
+    "savedToast": "Збережено",
+    "savedToastHint": "Знайдете в розділі «Збережене»."
+  }
+}

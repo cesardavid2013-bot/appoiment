@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Vine la dumneavoastră",
+    "comesToYouIn": "Vine la dumneavoastră · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Promovat",
+    "verified": "Firmă verificată",
+    "instant": "Confirmare instantanee",
+    "request": "Rezervare la cerere",
+    "bookAt": "Rezervați {day}, la {time}",
+    "moreTimes": "Alte ore",
+    "freeConsultation": "Consultație gratuită disponibilă",
+    "priceOnRequest": "Preț la cerere",
+    "viewTimes": "Vedeți orele"
+  },
+  "rail": {
+    "seeAll": "Vedeți tot"
+  },
+  "favorite": {
+    "save": "Salvați",
+    "saved": "Salvat",
+    "remove": "Eliminați din salvate",
+    "savedToast": "Salvat",
+    "savedToastHint": "Îl găsiți oricând în Salvate."
+  }
+}

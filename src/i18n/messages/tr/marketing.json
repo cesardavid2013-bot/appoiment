@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Profesyoneller için Kept — online rezervasyon ve sizin için çalışan bir takvim",
+    "description": "Online rezervasyon alın, çakışmalara ve gelmeyen müşterilere son verin, yakınınızdaki müşteriler tarafından keşfedilin. Bağımsız profesyoneller için başlamak ücretsiz."
+  },
+  "cta": {
+    "dashboard": "İşletmenize gidin",
+    "setup": "İşletmenizi kurun",
+    "start": "Hemen başlayın — ücretsiz"
+  },
+  "hero": {
+    "eyebrow": "Profesyoneller için Kept",
+    "title": "Takviminiz dolsun. Akşamlarınız size kalsın.",
+    "lede": "Online rezervasyon, çakışma yaşatmayan bir takvim, gelmeyenleri azaltan hatırlatmalar ve yakınınızda tam olarak yaptığınız işi arayan insanların karşısına çıkan bir profil. Başlamak ücretsiz.",
+    "howItWorks": "Nasıl çalışır",
+    "note": "Kart gerekmez. Profiliniz siz yayınlayana kadar gizli kalır."
+  },
+  "sides": {
+    "heading": "Kept müşterileriniz ve sizin için nasıl çalışır",
+    "clients": {
+      "eyebrow": "Müşterileriniz için",
+      "title": "Harika profesyonelleri keşfedip randevu alın.",
+      "points": {
+        "search": "Hizmete, yere ve saate göre arayın ve gerçek boş saatleri görün — bir iletişim formu değil.",
+        "prices": "Rezervasyondan önce net fiyatlar, politikalarınız ve doğrulanmış yorumlar.",
+        "reminders": "Hatırlatmalar, yol tarifi ve telefon açmadan erteleme."
+      }
+    },
+    "you": {
+      "eyebrow": "Sizin için",
+      "title": "Randevularınızı yönetin, işinizi büyütün.",
+      "points": {
+        "calendar": "Rezervasyonlar, molalar ve izinler için tek takvim — telefonunuzda.",
+        "deposits": "Sizin yerinize uygulanan kapora ve iptal kuralları.",
+        "clients": "Müşterileri geri getiren müşteri geçmişi, notlar ve yorumlar."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Üç adımda yayında",
+    "profile": {
+      "title": "Profilinizi oluşturun",
+      "body": "Hizmetlerinizi fiyat ve süreleriyle, çalışma saatlerinizi, nerede çalıştığınızı ve işlerinizden birkaç fotoğraf ekleyin. Size adım adım yol gösteririz."
+    },
+    "share": {
+      "title": "Bağlantınızı paylaşın",
+      "body": "{host}/your-name adresini biyografinize ve kartvizitlerinize ekleyin. Yayınladığınızda yakındaki kişilerin aramalarında da görünürsünüz."
+    },
+    "book": {
+      "title": "Rezervasyon alın",
+      "body": "Müşteriler gerçek bir boş saat seçer ve saniyeler içinde rezervasyon yapar. Siz bildirim alırsınız, onlar hatırlatma alır ve takviminiz hep doğru kalır."
+    }
+  },
+  "industries": {
+    "heading": "Saatlik randevuyla sunulan her hizmet için",
+    "lede": "Müşteriler sizden zaman ayırtıyorsa Kept size uyar — ister tek başınıza bir koltukta çalışın, ister birkaç şubede bir ekip yönetin."
+  },
+  "features": {
+    "heading": "Günün ihtiyacı olan her şey",
+    "booking": {
+      "title": "Gerçek müsaitlikle online rezervasyon",
+      "p1": "Müşteriler yalnızca gerçekten müsait olduğunuz saatleri görür — çalışma saatlerinizden mevcut rezervasyonlar, molalar, ara süreler ve izinler düşülerek; en kısa bildirim süresi ve ne kadar ileriye rezervasyon yapılabileceği de dikkate alınarak.",
+      "p2": "Her rezervasyon yapıldığı anda yeniden kontrol edilir; böylece aynı saniyede dokunsalar bile iki kişi asla aynı saate denk gelmez."
+    },
+    "services": {
+      "title": "Fiyatlandırma şeklinize uyan hizmetler",
+      "p1": "Sabit, başlangıç fiyatlı, aralıklı, ücretsiz veya görüşmeyle. Uzunluk, boyut veya ekstralar gibi seçenekler ekleyin; her biri hem fiyatı hem de takviminizde ayrılan süreyi ayarlar.",
+      "p2": "Öncesine veya sonrasına ara süre ekleyin, hizmetleri belirli ekip üyeleri veya şubelerle sınırlayın ve ilk ziyaretten önce ön bilgi soruları sorun."
+    },
+    "policies": {
+      "title": "Sizin yerinize uygulanan kaporalar ve politikalar",
+      "p1": "Peşin kapora veya tam ödeme isteyin, iptal süresi ile geç iptal veya randevuya gelmeme ücretleri belirleyin. Müşteriler kuralları rezervasyondan önce görür ve iadeler bu kurallara göre otomatik yapılır."
+    },
+    "reminders": {
+      "title": "Gelmeyenleri azaltan hatırlatmalar",
+      "p1": "Onaylar ve hatırlatmalar kendiliğinden gönderilir — varsayılan olarak bir gün ve iki saat önce — ve müşterinin hiç gelmemek yerine kurallarınız dahilinde erteleyebileceği bir bağlantı içerir.",
+      "p2": "Biri iptal ettiğinde, o gün için bekleme listenizdeki müşteriler boşalan yerden haberdar olur."
+    },
+    "clients": {
+      "title": "Müşterilerinizi tanıyın",
+      "p1": "Her müşterinin ziyaret, harcama, iptal ve gelmeme geçmişini içeren bir kaydı ve yalnızca ekibinizin görebileceği özel notları vardır. Müşterilere aynı yerden mesaj gönderin."
+    },
+    "team": {
+      "title": "Tek koltuktan ekibe ve şubelere",
+      "p1": "Kendi çalışma saatleri ve hizmetleri olan ekip üyeleri ekleyin; her kişinin neyi görüp yapabileceğini belirleyen roller tanımlayın. Her biri kendi saat dilimi ve çalışma saatlerine sahip birden fazla şube yönetin."
+    },
+    "portfolio": {
+      "title": "Rezervasyon getiren bir portfolyo",
+      "p1": "İşlerinizin fotoğraflarını ve kısa videolarını gösterin. Her birini bir hizmete bağlayın; müşteriler “Bunu rezerve et”e dokunarak tam olarak gördükleri hizmet için rezervasyon yapabilsin."
+    },
+    "spotlight": {
+      "title": "Spotlight — lansman boyunca ücretsiz",
+      "p1": "Profilinizi yakınınızdaki arama sonuçlarında ve kategori sayfalarında öne çıkarın. Sponsorlu sonuçlar her zaman etiketlenir, sayfa başına ikiyle sınırlıdır ve gerçek puanlarınızı ve boş saatlerinizi göstermeye devam eder.",
+      "p2": "Kept lansman aşamasındayken Spotlight ücretsizdir. Bu bir gün değişirse, herhangi bir ücret alınmadan önce size bildiririz — asla kendiliğinden ücretliye geçmez."
+    }
+  },
+  "plans": {
+    "heading": "Planlar",
+    "lede": "Kept lansman aşamasındayken her yeni işletme aylık ücret ödemeden {plan} planıyla başlar. Ücretli planların fiyatları yürürlüğe girmeden çok önce duyurulacak ve kimseden bir plan seçmeden ücret alınmayacak.",
+    "badge": {
+      "launch": "Lansman boyunca ücretsiz",
+      "available": "Şimdi kullanılabilir",
+      "unavailable": "Henüz kullanılamıyor"
+    },
+    "period": {
+      "launch": "aylık, lansman süresince",
+      "available": "aylık",
+      "unavailable": "Fiyat daha sonra duyurulacak"
+    },
+    "rows": {
+      "members": "Rezervasyon alabilen ekip üyeleri",
+      "locations": "Şubeler",
+      "fee": "Online ödemelerde ücret",
+      "roles": "Özel ekip rolleri",
+      "analytics": "Gelişmiş analizler"
+    },
+    "justYou": "1 (yalnızca siz)",
+    "upTo": "En fazla {n}",
+    "included": "Dahil",
+    "notIncluded": "Dahil değil",
+    "summary": {
+      "free": "Online rezervasyon, takvim, hatırlatmalar, kaporalar, müşteri kayıtları, ön bilgi formları, portfolyo ve Spotlight dahildir.",
+      "launch": "{base} planındaki her şey, ayrıca en fazla {members} kişilik ekip, daha fazla şube, özel roller ve daha düşük ücretler. Yeni işletmelerin bugün aldığı plan budur.",
+      "other": "Büyük ekipler ve çok şubeli işletmeler için."
+    },
+    "footnote": "Ücret yalnızca müşterilerin Kept üzerinden online yaptığı ödemelere uygulanır. Yüz yüze ödenen randevular için Kept ücreti yoktur. Planınızın izin verdiğinden daha fazla kişiye veya şubeye mi ihtiyacınız var? <link>Bize yazın</link>."
+  },
+  "faq": {
+    "heading": "Sorular",
+    "cost": {
+      "q": "Kept’in maliyeti nedir?",
+      "a": "Aylık ücret yoktur: Kept lansman aşamasındayken yeni işletmeler {plan} planını ücretsiz alır. Bir müşteri online ödeme yaptığında — kapora veya tam fiyat — Kept bu ödemenin {fee} kadarını alır. Yüz yüze ödenen randevular için hiçbir Kept ücreti yoktur."
+    },
+    "clientFee": {
+      "q": "Müşterilerim rezervasyon için ödeme yapar mı?",
+      "aFee": "Müşteriler ödeme sırasında {fee} hizmet bedelini, onaylamadan önce görür. Sonradan asla bir şey eklenmez.",
+      "aFree": "Hayır. Müşteriler ücretsiz rezervasyon yapar ve onaylamadan önce kesin fiyatınızı görür."
+    },
+    "payments": {
+      "q": "Online ödeme almam gerekiyor mu?",
+      "a": "Hayır. Müşterilerin yüz yüze ödemesine izin verebilir ya da rezervasyon sırasında kapora veya tam ödeme isteyebilirsiniz. Online ödemeler Stripe tarafından işlenir ve kendi banka hesabınıza aktarılır."
+    },
+    "approve": {
+      "q": "Rezervasyonları onaylanmadan önce kabul edebilir miyim?",
+      "a": "Evet. Anında rezervasyonu ya da her rezervasyonun onayınızı beklediği talep modunu seçin. Siz karar verirken saat ayrılmış kalır ve yanıtlamadığınız taleplerin süresi kendiliğinden dolar."
+    },
+    "where": {
+      "q": "Evden çalışıyorum, müşterilere gidiyorum veya online ders veriyorum. Bu işe yarar mı?",
+      "a": "Evet. Her konum fiziksel bir adres, müşterilerin size adreslerini verdiği bir mobil hizmet bölgesi veya çevrim içi bir seans olabilir. İstediğiniz kombinasyonu sunabilirsiniz."
+    },
+    "spotlight": {
+      "q": "Spotlight nasıl çalışır?",
+      "a": "Spotlight, profilinizi arama sonuçlarında ve kategori sayfalarında açıkça “Sponsorlu” olarak etiketlenmiş bir sonuç olarak gösterir; sayfa başına en fazla iki tane. Lansman boyunca ücretsizdir — panelinizden istediğiniz zaman başlatıp durdurabilirsiniz."
+    },
+    "link": {
+      "q": "Kendi bağlantımı kullanabilir miyim?",
+      "a": "Evet. Her işletme, Instagram’da, biyografinizde veya bir QR kodla paylaşabileceğiniz {host}/your-name adresinde bir profil alır. Bu bağlantı üzerinden rezervasyon yapan müşterilerin sizi aramasına gerek kalmaz."
+    }
+  },
+  "closing": {
+    "title": "Bir sonraki müşteriniz sizi şimdiden arıyor.",
+    "body": "Hizmetlerinizi ve çalışma saatlerinizi ayarlayın, profilinizi yayınlayın ve bugün rezervasyon almaya başlayın."
+  },
+  "demo": {
+    "example": "Örnek",
+    "today": {
+      "label": "Bir profesyonelin gördüğü Bugün programı örneği",
+      "title": "Bugün",
+      "summary": "{count, plural, one {# randevu} other {# randevu}} · {amount} rezervasyon",
+      "skinFade": "Skin fade",
+      "beardTrim": "Sakal düzeltme ve kontür",
+      "lunch": "Öğle arası",
+      "signatureCut": "İmza kesim",
+      "kidsCut": "Çocuk kesimi",
+      "firstVisit": "{name} · ilk ziyaret",
+      "confirmed": "Onaylandı",
+      "depositPaid": "Kapora ödendi",
+      "needsApproval": "Onay bekliyor",
+      "checkedIn": "Giriş yapıldı"
+    },
+    "reminder": {
+      "label": "Bir müşterinin aldığı otomatik hatırlatma örneği",
+      "when": "24 saat önce",
+      "title": "Hatırlatma: yarın {service}",
+      "body": "{time}, North Fade Studio’da Dre ile. Değiştirmeniz mi gerekiyor? 24 saat öncesine kadar erteleyebilirsiniz."
+    },
+    "grid": {
+      "label": "Müşterilerin rezervasyon yaptığı, yalnızca boş saatleri gösteren saat seçici örneği",
+      "title": "Bir saat seçin",
+      "instant": "Anında onay",
+      "note": "Dolu saatler biri rezervasyon yaptığı anda kaybolur. İki kişi asla aynı saati alamaz."
+    },
+    "policy": {
+      "label": "Kapora ve iptal politikası örneği",
+      "title": "Rezervasyon politikası",
+      "deposit": "Kapora",
+      "depositValue": "Rezervasyonda {pct}",
+      "freeCancel": "Ücretsiz iptal",
+      "freeCancelValue": "24 saat öncesine kadar",
+      "lateCancel": "Geç iptal",
+      "lateCancelValue": "Toplamın {pct} kadarı",
+      "noShow": "Gelmeme",
+      "noShowValue": "Kapora iade edilmez",
+      "dueNow": "Şimdi ödenecek",
+      "dueValue": "{total} tutarın {due} kadarı"
+    },
+    "client": {
+      "label": "Müşteri kaydı örneği",
+      "since": "{month} tarihinden beri müşteri · {visits, plural, one {# ziyaret} other {# ziyaret}}",
+      "spent": "Harcama",
+      "noShows": "Gelmeme",
+      "gap": "Olağan aralık",
+      "gapValue": "{weeks} hf",
+      "note": "Özel not: hassas saç derisi — hafif şampuan kullanın."
+    },
+    "team": {
+      "label": "İki şubeye yayılmış ekip örneği",
+      "title": "Ekip",
+      "senior": "Kıdemli berber",
+      "barber": "Berber",
+      "frontDesk": "Resepsiyon"
+    },
+    "portfolio": {
+      "label": "Rezerve edilebilir bir hizmete bağlı portfolyo gönderileri örneği",
+      "skinFade": "Skin fade",
+      "taper": "Taper ve sakal",
+      "bookThis": "Bunu rezerve et",
+      "note": "Fotoğraflarınız ve videolarınız burada görünür — o hizmetin aynısını rezerve etmek için birine dokunun."
+    },
+    "spotlight": {
+      "label": "Arama sonuçlarındaki sponsorlu ilan örneği",
+      "category": "Berber",
+      "promoted": "Sponsorlu"
+    },
+    "options": {
+      "service": "Düğümsüz örgü",
+      "hint": "Örnek hizmet · seçenekleri deneyin",
+      "length": "Uzunluk",
+      "shoulder": "Omuz hizası",
+      "mid": "Sırt ortası",
+      "waist": "Bel hizası",
+      "addons": "Ekstralar",
+      "wash": "Yıkama ve fön",
+      "beads": "Boncuk ve halkalar",
+      "included": "Dahil",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

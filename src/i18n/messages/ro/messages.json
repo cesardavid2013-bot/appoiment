@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Dvs.:",
+  "unread": "Necitit",
+  "apptLine": "{service} · {date}, la {time}",
+  "list": {
+    "title": "Mesaje",
+    "unread": "{count, plural, one {# conversație necitită.} few {# conversații necitite.} other {# de conversații necitite.}}",
+    "caughtUp": "Ați citit tot.",
+    "emptyTitle": "Niciun mesaj încă",
+    "emptyBody": "Aveți întrebări despre un serviciu, un preț sau o oră? Deschideți pagina unui profesionist și atingeți „Puneți o întrebare”. Răspunsurile ajung aici.",
+    "findPro": "Găsiți un profesionist"
+  },
+  "thread": {
+    "metaTitle": "Conversație",
+    "placeholder": "Mesaj pentru {business}"
+  },
+  "new": {
+    "metaTitle": "Mesaj nou",
+    "ownTitle": "Aceasta este firma dumneavoastră",
+    "ownBody": "Mesajele clienților pentru {business} ajung în căsuța de mesaje a firmei.",
+    "ownButton": "Deschideți mesajele firmei",
+    "placeholderBooking": "Întrebați despre această rezervare",
+    "placeholderQuestion": "Puneți o întrebare",
+    "emptyBookingTitle": "Scrieți-i lui {business} despre rezervare",
+    "emptyQuestionTitle": "Întrebați {business} înainte să rezervați",
+    "emptyBookingBody": "Întârziați, trebuie să schimbați ceva sau aveți o întrebare? Mesajul ajunge direct la echipa lor.",
+    "emptyQuestionBody": "Prețuri, durată, ce să aduceți — {business} vă răspunde aici, iar noi vă anunțăm. Numărul de telefon și adresa de e-mail rămân private."
+  },
+  "shell": {
+    "allMessages": "Toate mesajele",
+    "viewProfile": "Vedeți profilul",
+    "book": "Rezervați"
+  },
+  "pro": {
+    "backToInbox": "Înapoi la mesaje"
+  },
+  "view": {
+    "label": "Mesaje",
+    "you": "Dvs.",
+    "loadingEarlier": "Se încarcă mesajele anterioare",
+    "showEarlier": "Afișați mesajele anterioare",
+    "seen": "Văzut",
+    "sending": "Se trimite…",
+    "notSent": "Netrimis.",
+    "retry": "Reîncercați",
+    "discard": "Renunțați",
+    "newMessages": "{count, plural, one {# mesaj nou} few {# mesaje noi} other {# de mesaje noi}}",
+    "openPhoto": "Deschideți fotografia într-o filă nouă",
+    "photo": "Fotografie"
+  },
+  "composer": {
+    "about": "Despre {appointment}",
+    "unlink": "Nu atașați această programare",
+    "processingPhoto": "Se procesează fotografia",
+    "removePhoto": "Eliminați fotografia",
+    "attachPhoto": "Atașați o fotografie",
+    "label": "Mesaj",
+    "send": "Trimiteți mesajul",
+    "hint": "Apăsați Enter pentru a trimite, Shift și Enter pentru un rând nou."
+  },
+  "inbox": {
+    "title": "Mesaje",
+    "conversations": "Conversații",
+    "unread": "{count} necitite",
+    "allCaughtUp": "Totul e citit",
+    "searchLabel": "Căutați conversații după numele clientului",
+    "searchPlaceholder": "Căutați clienți",
+    "clearSearch": "Ștergeți căutarea",
+    "show": "Afișați",
+    "all": "Toate",
+    "unreadFilter": "Necitite",
+    "noClientsNamed": "Niciun client cu numele „{term}”",
+    "nothingUnread": "Nimic necitit",
+    "noMessages": "Niciun mesaj încă",
+    "tryDifferent": "Încercați altă căutare sau afișați toate conversațiile.",
+    "emptyBody": "Când clienții pun o întrebare de pe pagina dumneavoastră sau despre o rezervare, aceasta apare aici."
+  },
+  "clientPanel": {
+    "client": "Client",
+    "visits": "Vizite",
+    "noShows": "Neprezentări",
+    "cancelled": "Anulate",
+    "clientSince": "Client din {date}",
+    "noVisits": "Nicio vizită finalizată încă",
+    "lastIn": "ultima în {date}",
+    "tags": "Etichete",
+    "clientProfile": "Profilul clientului",
+    "notBooked": "Nu a rezervat încă la dumneavoastră — conversația a pornit de pe pagina publică.",
+    "upcoming": "Viitoare",
+    "nothingBooked": "Nicio rezervare.",
+    "recent": "Recente"
+  }
+}

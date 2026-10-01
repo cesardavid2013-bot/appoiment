@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Bine ați revenit, {name}",
+    "eyebrow": "Programarea, respectată",
+    "title": "Rezervați oamenii care vă fac săptămâna <em>mai bună.</em>",
+    "lead": "Frizeri, stiliști, antrenori, meditatori, fotografi și mulți alții — cu ore libere reale, prețuri afișate dinainte și recenzii doar din vizite verificate.",
+    "points": {
+      "verified": "Doar recenzii verificate",
+      "prices": "Prețuri înainte de rezervare",
+      "instant": "Confirmare instantanee"
+    }
+  },
+  "search": {
+    "placeholder": "Tuns, masaj, fotograf…",
+    "label": "Ce doriți să rezervați?",
+    "category": "Categorie",
+    "submit": "Căutați",
+    "sayIt": "Sau spuneți pur și simplu —",
+    "sayItExample": "„un frizer mâine după ora 5”"
+  },
+  "openings": {
+    "title": "Disponibil în curând",
+    "live": "Direct din calendare",
+    "appointment": "Programare"
+  },
+  "index": {
+    "eyebrow": "Indexul",
+    "title": "Orice fel de programare",
+    "exploreAll": "Explorați tot",
+    "pros": "{count, plural, one {# profesionist} few {# profesioniști} other {# de profesioniști}}"
+  },
+  "next": {
+    "title": "Următoarea programare",
+    "details": "Detalii"
+  },
+  "again": {
+    "title": "Rezervați din nou",
+    "rebook": "Rezervați iar"
+  },
+  "rails": {
+    "availableSoon": "Disponibili în curând",
+    "availableSoonNear": "Disponibili în curând lângă {place}",
+    "availableSoonNearYou": "Disponibili în curând lângă dumneavoastră",
+    "availableSoonSub": "Ore libere în timp real, din calendarul fiecărui profesionist.",
+    "recent": "Văzute recent",
+    "topRated": "Cele mai bine evaluate",
+    "topRatedSub": "Evaluările provin doar din rezervări finalizate și verificate.",
+    "newcomers": "Noi pe Kept"
+  },
+  "how": {
+    "eyebrow": "Cum funcționează",
+    "title": "Trei pași, fără telefoane nesfârșite",
+    "find": {
+      "title": "Găsiți persoana potrivită",
+      "body": "Căutați după ce vă trebuie, când și unde — sau întrebați pur și simplu, cu cuvintele dumneavoastră. Fiecare profil arată prețuri reale și recenzii verificate."
+    },
+    "choose": {
+      "title": "Alegeți o oră reală",
+      "body": "Orele pe care le vedeți sunt libere chiar acum în calendarul lor. Alegeți una, adăugați opțiunile dorite și confirmați."
+    },
+    "kept": {
+      "title": "Considerați-o rezolvată",
+      "body": "Primiți o confirmare, mementouri înainte de ziua programării și un singur loc unde reprogramați, scrieți mesaje sau rezervați din nou."
+    }
+  },
+  "pros": {
+    "eyebrow": "Pentru profesioniști",
+    "title": "Meseria dumneavoastră merită o recepție <em>mai bună</em>.",
+    "body": "Rezervări online, un calendar care nu permite suprapuneri, mementouri care reduc neprezentările și o pagină care vă prezintă munca așa cum merită. Gratuit pe perioada lansării.",
+    "cta": "Oferiți-vă serviciile",
+    "howItWorks": "Vedeți cum funcționează",
+    "features": {
+      "any": {
+        "title": "Orice serviciu",
+        "body": "Opțiunile modifică automat prețul și durata."
+      },
+      "noDouble": {
+        "title": "Fără suprapuneri",
+        "body": "Fiecare oră este verificată în momentul rezervării."
+      },
+      "noShows": {
+        "title": "Mai puține neprezentări",
+        "body": "Mementouri, avansuri și reguli clare."
+      },
+      "discovered": {
+        "title": "Fiți descoperit",
+        "body": "Portofoliu, recenzii verificate și Spotlight."
+      }
+    }
+  }
+}
