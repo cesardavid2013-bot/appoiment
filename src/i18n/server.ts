@@ -49,6 +49,32 @@ export async function getI18n() {
   return { locale, intl: info.intl, dir: info.dir, messages: await getMessages(locale) };
 }
 
+/** Namespaces only the professional console or the admin use; the rest of the site never ships them. */
+const CONSOLE_ONLY = new Set(["pro", "proSetup", "proSettings", "admin"]);
+/** Server-rendered only: never sent to the browser. */
+const SERVER_ONLY = new Set(["email"]);
+
+/**
+ * The messages a client bundle needs for one area of the app. The console
+ * namespaces are large, so public pages leave them out; legal text stays on the
+ * server apart from its tab labels.
+ */
+export async function getClientMessages(area: "site" | "console"): Promise<Messages> {
+  const locale = await getLocale();
+  const all = await getMessages(locale);
+  const out: Messages = {};
+  for (const [ns, v] of Object.entries(all)) {
+    if (SERVER_ONLY.has(ns)) continue;
+    if (area === "site" && CONSOLE_ONLY.has(ns)) continue;
+    if (ns === "legal") {
+      out.legal = { nav: (v as Messages).nav ?? {} };
+      continue;
+    }
+    out[ns] = v;
+  }
+  return out;
+}
+
 /** Same, for a known language (emails, notifications) instead of the current request's. */
 export async function getTFor(locale: Locale, namespace?: string) {
   return makeT(await getMessages(locale), localeInfo(locale).intl, namespace);
