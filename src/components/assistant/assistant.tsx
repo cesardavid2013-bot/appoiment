@@ -7,15 +7,21 @@ import { Dialog as D } from "radix-ui";
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { MonogramCover } from "@/components/business/monogram";
 import { MediaImage } from "@/components/ui/media";
+import { formatPriceLabel } from "@/domain/money";
+import { useLocale, useT } from "@/i18n/client";
+import { categoryName, priceWords } from "@/i18n/helpers";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
-import { localDateKey } from "@/lib/format";
+import { fmtDate, fmtTime, relativeDayWord } from "@/lib/format";
+import { useNow } from "@/lib/use-now";
 
 type Result = {
   id: string;
   slug: string;
   name: string;
   categoryName: string | null;
+  /** Missing on conversations saved before it was added. */
+  categorySlug?: string | null;
   city: string | null;
   ratingAvg: number | null;
   ratingCount: number;
@@ -25,7 +31,7 @@ type Result = {
   offersMobile: boolean;
   offersVirtual: boolean;
   timezone: string;
-  service: { id: string; name: string; price: string; durationMinutes: number } | null;
+  service: { id: string; name: string; price: string; durationMinutes: number; priceType?: string; priceCents?: number; salePriceCents?: number | null; priceMaxCents?: number | null; currency?: string } | null;
   slots: string[];
 };
 type Reply = { reply: string; lang: "en" | "es"; results: Result[]; links: { label: string; href: string }[]; suggestions: string[]; mode: "local" | "ai" };
@@ -72,6 +78,8 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
   const recognizer = useRef<{ stop: () => void } | null>(null);
   const pathname = usePathname();
   const loaded = useRef(false);
+  const t = useT("assistant");
+  const { intl } = useLocale();
 
   useEffect(() => {
     if (!open || loaded.current) return;
@@ -148,7 +156,8 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
     if (!speech) return;
     const R = speech as new () => { lang: string; interimResults: boolean; onresult: (e: { results: ArrayLike<ArrayLike<{ transcript: string }> & { isFinal: boolean }> }) => void; onend: () => void; onerror: () => void; start: () => void; stop: () => void };
     const r = new R();
-    r.lang = navigator.language || "en-US";
+    // Listen in the interface language; the assistant answers in the language it hears.
+    r.lang = intl;
     r.interimResults = true;
     r.onresult = (e) => {
       const parts = Array.from(e.results);
@@ -166,8 +175,7 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
     r.start();
   }
 
-  const lang = turns.findLast((t) => t.role === "assistant")?.role === "assistant" ? (turns.findLast((t) => t.role === "assistant") as Extract<Turn, { role: "assistant" }>).data.lang : typeof navigator !== "undefined" && navigator.language?.startsWith("es") ? "es" : "en";
-  const starters = lang === "es" ? ["Barbero mañana por la tarde", "Uñas de gel este fin de semana", "Masaje cerca de mí hoy", "Clases de inglés en línea"] : ["A barber tomorrow afternoon", "Gel nails this weekend under $60", "Massage near me tonight", "Math tutor online"];
+  const starters = (["one", "two", "three", "four"] as const).map((k) => t(`starters.${k}`));
 
   return (
     <D.Root open={open} onOpenChange={onOpenChange}>
@@ -183,16 +191,16 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
           <div className="mx-auto mt-2.5 h-1 w-10 rounded-full bg-line-strong sm:hidden" aria-hidden />
           <header className="flex items-start justify-between gap-3 border-b border-line px-5 pb-3.5 pt-3 sm:pt-5">
             <div>
-              <D.Title className="font-display text-[26px] leading-none text-ink">Ask Kept</D.Title>
-              <D.Description className="mt-1.5 text-[13px] text-ink-3">{lang === "es" ? "Dime qué necesitas y cuándo. Busco horarios reales." : "Say what you need and when. I check real openings."}</D.Description>
+              <D.Title className="font-display text-[26px] leading-none text-ink">{t("title")}</D.Title>
+              <D.Description className="mt-1.5 text-[13px] text-ink-3">{t("description")}</D.Description>
             </div>
             <div className="flex items-center gap-1">
               {turns.length > 0 && (
-                <button type="button" onClick={() => setTurns([])} className="flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={lang === "es" ? "Nueva conversación" : "New conversation"}>
+                <button type="button" onClick={() => setTurns([])} className="flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={t("newConversation")}>
                   <RotateCcw className="size-4" />
                 </button>
               )}
-              <D.Close className="flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Close">
+              <D.Close className="flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={t("close")}>
                 <X className="size-5" />
               </D.Close>
             </div>
@@ -201,7 +209,7 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
           <div ref={scroller} className="flex-1 space-y-5 overflow-y-auto overscroll-contain px-5 py-5" aria-live="polite">
             {turns.length === 0 && (
               <div>
-                <p className="text-[15px] leading-relaxed text-ink-2">{lang === "es" ? "Por ejemplo:" : "For example:"}</p>
+                <p className="text-[15px] leading-relaxed text-ink-2">{t("forExample")}</p>
                 <div className="mt-3 flex flex-col items-start gap-2">
                   {starters.map((s) => (
                     <button key={s} type="button" onClick={() => send(s)} className="rounded-lg border border-line bg-surface px-3.5 py-2 text-start text-sm text-ink hover:border-line-strong">
@@ -211,21 +219,21 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
                 </div>
               </div>
             )}
-            {turns.map((t, i) =>
-              t.role === "user" ? (
+            {turns.map((turn, i) =>
+              turn.role === "user" ? (
                 <div key={i} className="flex justify-end">
-                  <p className="max-w-[85%] rounded-2xl rounded-ee-md bg-ink px-3.5 py-2 text-[15px] text-bg">{t.text}</p>
+                  <p className="max-w-[85%] rounded-2xl rounded-ee-md bg-ink px-3.5 py-2 text-[15px] text-bg">{turn.text}</p>
                 </div>
-              ) : t.role === "error" ? (
+              ) : turn.role === "error" ? (
                 <p key={i} className="text-sm text-danger">
-                  {t.text}
+                  {turn.text}
                 </p>
               ) : (
-                <AnswerView key={i} data={t.data} onAsk={send} />
+                <AnswerView key={i} data={turn.data} onAsk={send} />
               ),
             )}
             {busy && (
-              <div className="flex gap-1 py-2" aria-label={lang === "es" ? "Buscando" : "Searching"}>
+              <div className="flex gap-1 py-2" role="status" aria-label={t("searching")}>
                 {[0, 1, 2].map((i) => (
                   <span key={i} className="size-1.5 animate-pulse rounded-full bg-ink-3" style={{ animationDelay: `${i * 150}ms` }} />
                 ))}
@@ -253,16 +261,16 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
                 }}
                 rows={1}
                 maxLength={500}
-                placeholder={listening ? (lang === "es" ? "Te escucho…" : "Listening…") : lang === "es" ? "Barbero el sábado por la mañana…" : "A barber Saturday morning…"}
-                aria-label={lang === "es" ? "Tu mensaje" : "Your message"}
+                placeholder={listening ? t("listening") : t("placeholder")}
+                aria-label={t("yourMessage")}
                 className="max-h-32 min-h-[28px] flex-1 resize-none bg-transparent py-1 text-[15px] text-ink outline-none placeholder:text-ink-3 [field-sizing:content]"
               />
               {Boolean(speech) && (
-                <button type="button" onClick={toggleVoice} className={cn("flex size-9 shrink-0 items-center justify-center rounded-lg", listening ? "bg-danger-soft text-danger" : "text-ink-3 hover:bg-surface-2 hover:text-ink")} aria-label={listening ? "Stop listening" : "Speak"} aria-pressed={listening}>
+                <button type="button" onClick={toggleVoice} className={cn("flex size-9 shrink-0 items-center justify-center rounded-lg", listening ? "bg-danger-soft text-danger" : "text-ink-3 hover:bg-surface-2 hover:text-ink")} aria-label={listening ? t("stopListening") : t("speak")} aria-pressed={listening}>
                   {listening ? <MicOff className="size-[18px]" /> : <Mic className="size-[18px]" />}
                 </button>
               )}
-              <button type="submit" disabled={!text.trim() || busy} className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-ink text-bg disabled:opacity-30" aria-label="Send">
+              <button type="submit" disabled={!text.trim() || busy} className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-ink text-bg disabled:opacity-30" aria-label={t("send")}>
                 <ArrowUp className="size-[18px]" />
               </button>
             </div>
@@ -273,19 +281,23 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
   );
 }
 
-/** "Tomorrow 3:30 PM" / "mañana 15:30" in the conversation's language and the business's zone. */
-function slotLabel(iso: string, tz: string, lang: "en" | "es") {
-  const locale = lang === "es" ? "es" : "en-US";
-  const now = new Date();
-  const day = localDateKey(iso, tz);
-  const time = new Intl.DateTimeFormat(locale, { hour: "numeric", minute: "2-digit", timeZone: tz }).format(new Date(iso));
-  if (day === localDateKey(now, tz)) return `${lang === "es" ? "Hoy" : "Today"} ${time}`;
-  if (day === localDateKey(new Date(now.getTime() + 86_400_000), tz)) return `${lang === "es" ? "Mañana" : "Tomorrow"} ${time}`;
-  const wd = new Intl.DateTimeFormat(locale, { weekday: "short", timeZone: tz }).format(new Date(iso));
-  return `${wd.charAt(0).toUpperCase()}${wd.slice(1).replace(".", "")} ${time}`;
+/** "Tomorrow 3:30 PM" / "Mañana 15:30" in the interface language and the business's zone. */
+function slotLabel(iso: string, tz: string, intl: string, now: number) {
+  const time = fmtTime(iso, tz, intl);
+  const word = relativeDayWord(iso, tz, intl, new Date(now));
+  if (word) return `${word} ${time}`;
+  const wd = fmtDate(iso, tz, { weekday: "short" }, intl);
+  return `${wd.charAt(0).toLocaleUpperCase()}${wd.slice(1).replace(".", "")} ${time}`;
 }
 
 function AnswerView({ data, onAsk }: { data: Reply; onAsk: (s: string) => void }) {
+  const t = useT("assistant");
+  const tr = useT();
+  const { intl } = useLocale();
+  const now = useNow();
+  const words = priceWords(tr);
+  const km = (n: number) => new Intl.NumberFormat(intl, { style: "unit", unit: "kilometer", minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(n);
+  const price = (s: NonNullable<Result["service"]>) => (s.priceType != null && s.priceCents != null ? formatPriceLabel({ priceType: s.priceType, priceCents: s.priceCents, salePriceCents: s.salePriceCents, priceMaxCents: s.priceMaxCents }, s.currency, { intl, words }) : s.price);
   return (
     <div className="space-y-3">
       <p className="whitespace-pre-line text-[15px] leading-relaxed text-ink">{data.reply}</p>
@@ -298,7 +310,7 @@ function AnswerView({ data, onAsk }: { data: Reply; onAsk: (s: string) => void }
                 <span className="min-w-0 flex-1">
                   <span className="flex items-center gap-1 truncate text-[15px] font-medium text-ink">
                     {r.name}
-                    {r.verified && <BadgeCheck className="size-4 shrink-0 text-accent" aria-label="Verified" />}
+                    {r.verified && <BadgeCheck className="size-4 shrink-0 text-accent" aria-label={t("verified")} />}
                   </span>
                   <span className="flex items-center gap-1.5 truncate text-[12px] text-ink-3">
                     {r.ratingCount > 0 && (
@@ -308,21 +320,21 @@ function AnswerView({ data, onAsk }: { data: Reply; onAsk: (s: string) => void }
                         <span aria-hidden>·</span>
                       </>
                     )}
-                    {[r.categoryName, r.offersVirtual && !r.city ? "Online" : r.city, r.distanceKm != null ? `${r.distanceKm.toFixed(1)} km` : null].filter(Boolean).join(" · ")}
+                    {[r.categoryName ? categoryName(tr, r.categorySlug, r.categoryName) : null, r.offersVirtual && !r.city ? t("online") : r.city, r.distanceKm != null ? km(r.distanceKm) : null].filter(Boolean).join(" · ")}
                   </span>
                 </span>
               </Link>
               {r.service && (
                 <p className="mt-2.5 flex justify-between gap-3 border-t border-line pt-2.5 text-[13px]">
                   <span className="truncate text-ink-2">{r.service.name}</span>
-                  <span className="shrink-0 font-medium text-ink tabular">{r.service.price}</span>
+                  <span className="shrink-0 font-medium text-ink tabular">{price(r.service)}</span>
                 </p>
               )}
               {r.slots.length > 0 && r.service && (
                 <div className="mt-2.5 flex flex-wrap gap-1.5">
                   {r.slots.map((s) => (
                     <Link key={s} href={`/${r.slug}/book?service=${r.service!.id}&start=${encodeURIComponent(s)}`} className="inline-flex h-8 items-center rounded-md bg-accent-soft px-2.5 text-[13px] font-medium text-accent-text hover:bg-accent hover:text-accent-ink">
-                      {slotLabel(s, r.timezone, data.lang)}
+                      {slotLabel(s, r.timezone, intl, now)}
                     </Link>
                   ))}
                 </div>

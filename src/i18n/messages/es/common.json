@@ -1,5 +1,46 @@
 {
   "language": "Idioma",
+  "meta": {
+    "title": "Kept — Reserva con profesionales de confianza cerca de ti",
+    "description": "Encuentra y reserva barberos, estilistas, entrenadores, fotógrafos, tutores y todo tipo de profesionales cerca de ti, y gestiona tus propias citas sin complicaciones."
+  },
+  "skipToContent": "Ir al contenido",
+  "logoHome": "Inicio de Kept",
+  "header": {
+    "mainNav": "Principal",
+    "search": "Busca servicios o profesionales",
+    "ask": "Pregunta",
+    "askKept": "Pregúntale a Kept",
+    "explore": "Explorar",
+    "myBusiness": "Mi negocio",
+    "forPros": "Para profesionales",
+    "bookings": "Reservas",
+    "messages": "Mensajes",
+    "notifications": "Notificaciones",
+    "unread": "sin leer",
+    "accountMenu": "Menú de la cuenta",
+    "logIn": "Iniciar sesión",
+    "signUp": "Crear cuenta"
+  },
+  "accountMenu": {
+    "bookings": "Reservas",
+    "saved": "Guardados",
+    "messages": "Mensajes",
+    "settings": "Configuración de la cuenta",
+    "help": "Ayuda y soporte",
+    "switchToBusiness": "Cambiar a mi negocio",
+    "offerServices": "Ofrece tus servicios",
+    "admin": "Consola de administración",
+    "signOut": "Cerrar sesión"
+  },
+  "tabs": {
+    "label": "Navegación",
+    "home": "Inicio",
+    "explore": "Explorar",
+    "bookings": "Reservas",
+    "inbox": "Mensajes",
+    "account": "Cuenta"
+  },
   "footer": {
     "tagline": "Reserva con profesionales de confianza. Gestiona tus citas sin esfuerzo.",
     "discover": "Descubrir",
@@ -21,5 +62,21 @@
     "free": "Gratis",
     "quote": "Precio a consultar",
     "from": "Desde {price}"
+  },
+  "rating": {
+    "new": "Nuevo",
+    "summary": "calificación de {avg} en {count, plural, one {# reseña} other {# reseñas}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Pendiente de pago",
+    "requested": "Solicitud enviada",
+    "confirmed": "Confirmada",
+    "checked_in": "Registrada",
+    "in_progress": "En curso",
+    "completed": "Completada",
+    "cancelled": "Cancelada",
+    "declined": "Rechazada",
+    "no_show": "No asistió",
+    "expired": "Vencida"
   }
 }

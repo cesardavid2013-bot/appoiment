@@ -4,10 +4,12 @@ import { Heart } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useT } from "@/i18n/client";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
 
 export function FavoriteButton({ businessId, initial, signedIn, variant = "overlay", className }: { businessId: string; initial: boolean; signedIn: boolean; variant?: "overlay" | "plain" | "ghost"; className?: string }) {
+  const t = useT("business");
   const [on, setOn] = useState(initial);
   const [pop, setPop] = useState(false);
   const router = useRouter();
@@ -24,7 +26,7 @@ export function FavoriteButton({ businessId, initial, signedIn, variant = "overl
     if (next) setPop(true);
     try {
       await api("/api/favorites", { body: { businessId, on: next } });
-      if (next) toast.success("Saved", { description: "Find it any time in Saved.", duration: 2500 });
+      if (next) toast.success(t("favorite.savedToast"), { description: t("favorite.savedToastHint"), duration: 2500 });
     } catch (err) {
       setOn(!next);
       toast.error((err as Error).message);
@@ -36,7 +38,7 @@ export function FavoriteButton({ businessId, initial, signedIn, variant = "overl
       type="button"
       onClick={toggle}
       aria-pressed={on}
-      aria-label={on ? "Remove from saved" : "Save"}
+      aria-label={on ? t("favorite.remove") : t("favorite.save")}
       onAnimationEnd={() => setPop(false)}
       className={cn(
         "flex items-center justify-center transition-colors",
@@ -45,7 +47,7 @@ export function FavoriteButton({ businessId, initial, signedIn, variant = "overl
       )}
     >
       <Heart className={cn("size-[18px]", on && "fill-[#c2410c] text-[#c2410c]", pop && "animate-pop")} />
-      {variant === "plain" && (on ? "Saved" : "Save")}
+      {variant === "plain" && (on ? t("favorite.saved") : t("favorite.save"))}
     </button>
   );
 }

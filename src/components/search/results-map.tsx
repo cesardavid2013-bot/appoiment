@@ -5,7 +5,10 @@ import L from "leaflet";
 import { useEffect, useMemo, useRef } from "react";
 import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
 import { formatMoney } from "@/domain/money";
+import { useLocale, useT } from "@/i18n/client";
 import type { CardBusiness } from "@/components/business/business-card";
+
+const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 const TILE = process.env.NEXT_PUBLIC_MAP_TILE_URL || "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 const ATTR = process.env.NEXT_PUBLIC_MAP_ATTRIBUTION || "© OpenStreetMap contributors";
@@ -13,7 +16,7 @@ const ATTR = process.env.NEXT_PUBLIC_MAP_ATTRIBUTION || "© OpenStreetMap contri
 function pin(label: string, active: boolean) {
   return L.divIcon({
     className: "",
-    html: `<div style="transform:translate(-50%,-100%);display:inline-flex;align-items:center;height:28px;padding:0 10px;border-radius:14px;font:600 12px/1 var(--font-ui),system-ui;white-space:nowrap;box-shadow:0 2px 8px rgb(0 0 0 / .18);background:${active ? "var(--ink)" : "var(--surface)"};color:${active ? "var(--bg)" : "var(--ink)"};border:1px solid ${active ? "var(--ink)" : "var(--line-strong)"};transition:all .15s">${label}</div>`,
+    html: `<div style="transform:translate(-50%,-100%);display:inline-flex;align-items:center;height:28px;padding:0 10px;border-radius:14px;font:600 12px/1 var(--font-ui),system-ui;white-space:nowrap;box-shadow:0 2px 8px rgb(0 0 0 / .18);background:${active ? "var(--ink)" : "var(--surface)"};color:${active ? "var(--bg)" : "var(--ink)"};border:1px solid ${active ? "var(--ink)" : "var(--line-strong)"};transition:all .15s">${escapeHtml(label)}</div>`,
     iconSize: [0, 0],
   });
 }
@@ -31,6 +34,8 @@ function Fit({ points, center }: { points: [number, number][]; center: [number, 
 }
 
 export default function ResultsMap({ items, activeId, onSelect, center }: { items: CardBusiness[]; activeId: string | null; onSelect: (id: string) => void; center: [number, number] | null }) {
+  const tr = useT();
+  const { intl } = useLocale();
   const located = useMemo(() => items.filter((b): b is CardBusiness & { lat: number; lng: number } => (b as { lat?: number | null }).lat != null && (b as { lng?: number | null }).lng != null), [items]);
   const points = located.map((b) => [b.lat, b.lng] as [number, number]);
   const ref = useRef<L.Map | null>(null);
@@ -42,7 +47,7 @@ export default function ResultsMap({ items, activeId, onSelect, center }: { item
         <Marker
           key={b.id}
           position={[b.lat, b.lng]}
-          icon={pin(b.priceMinCents != null ? (b.priceMinCents === 0 ? "Free" : formatMoney(b.priceMinCents, b.currency, { compact: true })) : b.name.split(" ")[0], activeId === b.id)}
+          icon={pin(b.priceMinCents != null ? (b.priceMinCents === 0 ? tr("common.price.free") : formatMoney(b.priceMinCents, b.currency, { compact: true, intl })) : b.name.split(" ")[0], activeId === b.id)}
           zIndexOffset={activeId === b.id ? 1000 : 0}
           eventHandlers={{ click: () => onSelect(b.id) }}
           title={b.name}

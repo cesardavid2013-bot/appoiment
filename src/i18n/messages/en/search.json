@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Explore professionals",
+    "category": "Book {category}",
+    "query": "{q} — search",
+    "description": "Compare professionals by real availability, prices and verified reviews."
+  },
+  "bar": {
+    "placeholder": "Search services or professionals",
+    "label": "Search",
+    "clear": "Clear search"
+  },
+  "location": {
+    "placeholder": "Anywhere",
+    "label": "Location",
+    "clear": "Clear location",
+    "useMine": "Use my current location",
+    "finding": "Finding you…",
+    "current": "Current location",
+    "selectedArea": "Selected area",
+    "unsupported": "Your browser can't share location. Type a city instead.",
+    "denied": "Location is turned off for this site. Type a city instead — or allow location in your browser settings.",
+    "failed": "We couldn't get your location. Type a city instead."
+  },
+  "quick": {
+    "availableToday": "Available today",
+    "instant": "Instant booking",
+    "mobile": "Comes to you",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "View",
+    "list": "List",
+    "map": "Map"
+  },
+  "heading": {
+    "explore": "Explore",
+    "results": "Results",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Updating…",
+    "count": "{count, plural, one {# professional} other {# professionals}}",
+    "countMore": "{count}+ professionals",
+    "near": "{results} near {place}",
+    "nearYou": "{results} near you"
+  },
+  "sort": {
+    "label": "Sort by",
+    "relevance": "Best match",
+    "rating": "Highest rated",
+    "price": "Lowest price",
+    "distance": "Nearest"
+  },
+  "categories": {
+    "label": "Categories",
+    "all": "All"
+  },
+  "empty": {
+    "title": "No matches yet",
+    "query": "Try a broader term, a different spelling, or remove some filters.",
+    "filters": "Try removing a filter or searching a wider area.",
+    "clear": "Clear all filters"
+  },
+  "showMore": "Show more",
+  "filters": {
+    "button": "Filters",
+    "buttonCount": "Filters · {count}",
+    "title": "Filters",
+    "clearAll": "Clear all",
+    "show": "Show results",
+    "availability": "Availability & booking",
+    "rating": "Rating",
+    "minRating": "Minimum rating",
+    "any": "Any",
+    "price": "Starting price up to",
+    "maxPrice": "Maximum starting price",
+    "distance": "Distance",
+    "provider": "Provider",
+    "providerType": "Provider type",
+    "individual": "Independent pros",
+    "business": "Businesses & teams"
+  }
+}

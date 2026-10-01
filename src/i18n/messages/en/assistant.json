@@ -1,0 +1,22 @@
+{
+  "title": "Ask Kept",
+  "description": "Say what you need and when. I check real openings.",
+  "newConversation": "New conversation",
+  "close": "Close",
+  "forExample": "For example:",
+  "starters": {
+    "one": "A barber tomorrow afternoon",
+    "two": "Gel nails this weekend under $60",
+    "three": "Massage near me tonight",
+    "four": "Math tutor online"
+  },
+  "searching": "Searching",
+  "listening": "Listening…",
+  "placeholder": "A barber Saturday morning…",
+  "yourMessage": "Your message",
+  "stopListening": "Stop listening",
+  "speak": "Speak",
+  "send": "Send",
+  "verified": "Verified",
+  "online": "Online"
+}

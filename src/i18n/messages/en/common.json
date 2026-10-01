@@ -1,5 +1,46 @@
 {
   "language": "Language",
+  "meta": {
+    "title": "Kept — Book trusted local professionals",
+    "description": "Discover and book barbers, stylists, trainers, photographers, tutors and every kind of local professional — and run your own appointments with ease."
+  },
+  "skipToContent": "Skip to content",
+  "logoHome": "Kept home",
+  "header": {
+    "mainNav": "Main",
+    "search": "Search services or professionals",
+    "ask": "Ask",
+    "askKept": "Ask Kept",
+    "explore": "Explore",
+    "myBusiness": "My business",
+    "forPros": "For professionals",
+    "bookings": "Bookings",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "unread": "unread",
+    "accountMenu": "Account menu",
+    "logIn": "Log in",
+    "signUp": "Sign up"
+  },
+  "accountMenu": {
+    "bookings": "Bookings",
+    "saved": "Saved",
+    "messages": "Messages",
+    "settings": "Account settings",
+    "help": "Help & support",
+    "switchToBusiness": "Switch to business",
+    "offerServices": "Offer your services",
+    "admin": "Admin console",
+    "signOut": "Sign out"
+  },
+  "tabs": {
+    "label": "Primary",
+    "home": "Home",
+    "explore": "Explore",
+    "bookings": "Bookings",
+    "inbox": "Inbox",
+    "account": "Account"
+  },
   "footer": {
     "tagline": "Book trusted professionals. Run your appointments with less effort.",
     "discover": "Discover",
@@ -21,5 +62,21 @@
     "free": "Free",
     "quote": "Price on consultation",
     "from": "From {price}"
+  },
+  "rating": {
+    "new": "New",
+    "summary": "rated {avg} from {count, plural, one {# review} other {# reviews}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Awaiting payment",
+    "requested": "Request sent",
+    "confirmed": "Confirmed",
+    "checked_in": "Checked in",
+    "in_progress": "In progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "declined": "Declined",
+    "no_show": "No-show",
+    "expired": "Expired"
   }
 }

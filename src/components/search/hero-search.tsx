@@ -4,14 +4,19 @@ import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useAssistant } from "@/components/assistant/assistant";
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import { useT } from "@/i18n/client";
+import { categoryName } from "@/i18n/helpers";
 import { api } from "@/lib/api";
 import type { SavedLocation } from "@/lib/location";
+import { looksLikeRequest } from "@/lib/request-hint";
 import { LocationPicker } from "./location-picker";
 
 type Suggestions = { businesses: { slug: string; name: string; city: string | null }[]; categories: { slug: string; name: string }[] };
 
 export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation | null }) {
   const router = useRouter();
+  const t = useT("home");
+  const tr = useT();
   const [q, setQ] = useState("");
   const assistant = useAssistant();
   const [loc, setLoc] = useState<SavedLocation | null>(initialLocation);
@@ -22,9 +27,9 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
   useEffect(() => {
     if (q.trim().length < 2) return;
     const ctrl = new AbortController();
-    const t = setTimeout(() => api<Suggestions>(`/api/search/suggest?q=${encodeURIComponent(q)}`, { signal: ctrl.signal }).then(setSugg).catch(() => undefined), 150);
+    const timer = setTimeout(() => api<Suggestions>(`/api/search/suggest?q=${encodeURIComponent(q)}`, { signal: ctrl.signal }).then(setSugg).catch(() => undefined), 150);
     return () => {
-      clearTimeout(t);
+      clearTimeout(timer);
       ctrl.abort();
     };
   }, [q]);
@@ -67,21 +72,21 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
               setOpen(true);
             }}
             onFocus={() => setOpen(true)}
-            placeholder="Haircut, massage, photographer…"
-            aria-label="What do you want to book?"
+            placeholder={t("search.placeholder")}
+            aria-label={t("search.label")}
             className="h-full min-w-0 flex-1 bg-transparent text-[15px] text-ink placeholder:text-ink-3 focus:outline-none"
             autoComplete="off"
           />
           {open && hasSugg && (
             <div className="absolute start-0 end-0 top-[calc(100%+10px)] z-30 overflow-hidden rounded-lg border border-line bg-surface p-1.5 text-start shadow-lg animate-rise">
               {shown!.categories.map((c) => (
-                <button key={c.slug} type="button" onClick={() => router.push(`/explore?category=${c.slug}`)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm text-ink hover:bg-surface-2">
-                  {c.name}
-                  <span className="text-xs text-ink-3">Category</span>
+                <button key={c.slug} type="button" onClick={() => router.push(`/explore?category=${c.slug}`)} className="flex w-full items-center justify-between gap-3 rounded-md px-3 py-2.5 text-start text-sm text-ink hover:bg-surface-2">
+                  {categoryName(tr, c.slug, c.name)}
+                  <span className="text-xs text-ink-3">{t("search.category")}</span>
                 </button>
               ))}
               {shown!.businesses.map((b) => (
-                <button key={b.slug} type="button" onClick={() => router.push(`/${b.slug}`)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm text-ink hover:bg-surface-2">
+                <button key={b.slug} type="button" onClick={() => router.push(`/${b.slug}`)} className="flex w-full items-center justify-between gap-3 rounded-md px-3 py-2.5 text-start text-sm text-ink hover:bg-surface-2">
                   {b.name}
                   <span className="text-xs text-ink-3">{b.city}</span>
                 </button>
@@ -93,21 +98,15 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
         <LocationPicker value={loc} onChange={setLoc} className="h-12 px-3.5 sm:h-full sm:w-56" />
         <button type="submit" className="mt-1.5 flex h-12 items-center justify-center gap-2 rounded-lg bg-ink px-6 text-[15px] font-medium text-bg transition-colors hover:bg-ink/90 sm:mt-0 sm:h-full">
           <Search className="size-4 sm:hidden" />
-          Search
+          {t("search.submit")}
         </button>
       </div>
       <p className="mt-3 text-[13px] text-ink-3">
-        Or just say it —{" "}
+        {t("search.sayIt")}{" "}
         <button type="button" onClick={() => assistant.open(q.trim() || undefined)} className="font-medium text-ink underline decoration-line-strong underline-offset-4 hover:decoration-ink">
-          “a barber tomorrow after 5”
+          {t("search.sayItExample")}
         </button>
       </p>
     </form>
   );
-}
-
-const REQUEST_HINT = /\b(today|tonight|tomorrow|weekend|monday|tuesday|wednesday|thursday|friday|saturday|sunday|morning|afternoon|evening|near me|under \$?\d|after \d|before \d|hoy|mañana|manana|tarde|noche|sábado|sabado|domingo|lunes|martes|miércoles|miercoles|jueves|viernes|cerca|menos de|quiero|necesito|busco)\b/i;
-function looksLikeRequest(q: string) {
-  const t = q.trim();
-  return t.split(/\s+/).length >= 3 && REQUEST_HINT.test(t);
 }

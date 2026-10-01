@@ -10,9 +10,12 @@ import { Checkbox, Segmented } from "@/components/ui/controls";
 import { Dialog } from "@/components/ui/dialog";
 import { Select } from "@/components/ui/field";
 import { EmptyState } from "@/components/ui/misc";
+import { formatMoney } from "@/domain/money";
+import { useLocale, useT } from "@/i18n/client";
+import { categoryName } from "@/i18n/helpers";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
-import type { SavedLocation } from "@/lib/location";
+import { CURRENT_LOCATION_LABEL, type SavedLocation } from "@/lib/location";
 import { LocationPicker } from "./location-picker";
 
 const ResultsMap = dynamic(() => import("./results-map"), { ssr: false, loading: () => <div className="skeleton size-full" /> });
@@ -20,12 +23,7 @@ const ResultsMap = dynamic(() => import("./results-map"), { ssr: false, loading:
 type Result = CardBusiness & { lat: number | null; lng: number | null };
 type Category = { slug: string; name: string; children: { slug: string; name: string }[] };
 
-const QUICK = [
-  { key: "availableToday", label: "Available today" },
-  { key: "instant", label: "Instant booking" },
-  { key: "mobile", label: "Comes to you" },
-  { key: "virtual", label: "Online" },
-] as const;
+const QUICK = ["availableToday", "instant", "mobile", "virtual"] as const;
 
 export function ExploreClient({
   initial,
@@ -45,6 +43,9 @@ export function ExploreClient({
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
+  const t = useT("search");
+  const tr = useT();
+  const { intl } = useLocale();
   const [pending, startTransition] = useTransition();
   const [items, setItems] = useState(initial);
   const [hasMore, setHasMore] = useState(hasMoreInitial);
@@ -98,8 +99,14 @@ export function ExploreClient({
   const activeFilters = ["minRating", "maxPrice", "kind", "availableToday", "instant", "mobile", "virtual"].filter((k) => params.get(k)).length;
   const category = params.get("category");
   const center: [number, number] | null = params.get("lat") && params.get("lng") ? [Number(params.get("lat")), Number(params.get("lng"))] : location ? [location.lat, location.lng] : null;
-  const locValue: SavedLocation | null = params.get("lat") ? { label: params.get("near") ?? "Selected area", lat: Number(params.get("lat")), lng: Number(params.get("lng")) } : null;
-  const heading = category ? (categories.flatMap((c) => [c, ...c.children]).find((c) => c.slug === category)?.name ?? "Results") : params.get("q") ? `“${params.get("q")}”` : "Explore";
+  const locValue: SavedLocation | null = params.get("lat") ? { label: params.get("near") ?? t("location.selectedArea"), lat: Number(params.get("lat")), lng: Number(params.get("lng")) } : null;
+  const currentCategory = category ? categories.flatMap((c) => [c, ...c.children]).find((c) => c.slug === category) : null;
+  const heading = category ? (currentCategory ? categoryName(tr, currentCategory.slug, currentCategory.name) : t("heading.results")) : params.get("q") ? t("heading.query", { q: params.get("q") }) : t("heading.explore");
+  const countText = hasMore ? t("summary.countMore", { count: items.length }) : t("summary.count", { count: items.length });
+  const summary = !locValue ? countText : locValue.label === CURRENT_LOCATION_LABEL ? t("summary.nearYou", { results: countText }) : t("summary.near", { results: countText, place: locValue.label });
+  const money = (cents: number) => formatMoney(cents, "USD", { compact: true, intl });
+  const km = (n: number) => new Intl.NumberFormat(intl, { style: "unit", unit: "kilometer" }).format(n);
+  const number = (n: number) => new Intl.NumberFormat(intl, { maximumFractionDigits: 1 }).format(n);
 
   return (
     <div className="mx-auto max-w-[1600px]">
@@ -114,11 +121,11 @@ export function ExploreClient({
             }}
             role="search"
           >
-            <label className="flex h-full flex-1 items-center gap-2 px-3">
-              <Search className="size-4 text-ink-3" aria-hidden />
-              <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search services or professionals" aria-label="Search" className="h-full min-w-0 flex-1 bg-transparent text-[15px] focus:outline-none md:text-sm" />
+            <label className="flex h-full min-w-0 flex-1 items-center gap-2 px-3">
+              <Search className="size-4 shrink-0 text-ink-3" aria-hidden />
+              <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t("bar.placeholder")} aria-label={t("bar.label")} className="h-full min-w-0 flex-1 bg-transparent text-[15px] focus:outline-none md:text-sm" />
               {q && (
-                <button type="button" onClick={() => { setQ(""); update({ q: null }); }} aria-label="Clear search" className="text-ink-3 hover:text-ink">
+                <button type="button" onClick={() => { setQ(""); update({ q: null }); }} aria-label={t("bar.clear")} className="text-ink-3 hover:text-ink">
                   <X className="size-4" />
                 </button>
               )}
@@ -133,31 +140,31 @@ export function ExploreClient({
           </form>
           <div className="relative -mx-4 flex items-center gap-2 overflow-x-auto px-4 scrollbar-none sm:mx-0 sm:px-0">
             <Button variant="secondary" size="sm" onClick={() => setFiltersOpen(true)} icon={<SlidersHorizontal className="size-4" />} className="shrink-0">
-              Filters{activeFilters ? ` · ${activeFilters}` : ""}
+              {activeFilters ? t("filters.buttonCount", { count: activeFilters }) : t("filters.button")}
             </Button>
-            {QUICK.map((f) => {
-              const on = params.get(f.key) === "true";
+            {QUICK.map((key) => {
+              const on = params.get(key) === "true";
               return (
                 <button
-                  key={f.key}
+                  key={key}
                   type="button"
                   aria-pressed={on}
-                  onClick={() => update({ [f.key]: on ? null : "true" })}
+                  onClick={() => update({ [key]: on ? null : "true" })}
                   className={cn("h-8 shrink-0 rounded-md border px-3 text-[13px] font-medium transition-colors", on ? "border-ink bg-ink text-bg" : "border-line-strong bg-surface text-ink-2 hover:text-ink")}
                 >
-                  {f.label}
+                  {t(`quick.${key}`)}
                 </button>
               );
             })}
             <div className="ms-auto hidden shrink-0 lg:block">
               <Segmented
-                label="View"
+                label={t("view.label")}
                 size="sm"
                 value={view}
                 onChange={(v) => setView(v)}
                 options={[
-                  { value: "list", label: <span className="inline-flex items-center gap-1.5"><List className="size-3.5" />List</span> },
-                  { value: "map", label: <span className="inline-flex items-center gap-1.5"><MapIcon className="size-3.5" />Map</span> },
+                  { value: "list", label: <span className="inline-flex items-center gap-1.5"><List className="size-3.5" />{t("view.list")}</span> },
+                  { value: "map", label: <span className="inline-flex items-center gap-1.5"><MapIcon className="size-3.5" />{t("view.map")}</span> },
                 ]}
               />
             </div>
@@ -168,28 +175,28 @@ export function ExploreClient({
       <div className={cn("px-4 pt-6 sm:px-6 lg:px-8", view === "map" && "lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-6 lg:pe-0")}>
         <div>
           <div className="mb-5 flex items-end justify-between gap-4">
-            <div>
+            <div className="min-w-0">
               <h1 className="font-display text-3xl leading-tight tracking-[-0.01em] text-ink sm:text-4xl">{heading}</h1>
               <p className="mt-1 text-sm text-ink-3" aria-live="polite">
-                {pending ? "Updating…" : `${items.length}${hasMore ? "+" : ""} ${items.length === 1 ? "professional" : "professionals"}${locValue ? ` near ${locValue.label === "Current location" ? "you" : locValue.label}` : ""}`}
+                {pending ? t("summary.updating") : summary}
               </p>
             </div>
-            <Select aria-label="Sort by" value={params.get("sort") ?? "relevance"} onChange={(e) => update({ sort: e.target.value === "relevance" ? null : e.target.value })} className="h-9 w-auto text-sm">
-              <option value="relevance">Best match</option>
-              <option value="rating">Highest rated</option>
-              <option value="price">Lowest price</option>
-              {center && <option value="distance">Nearest</option>}
+            <Select aria-label={t("sort.label")} value={params.get("sort") ?? "relevance"} onChange={(e) => update({ sort: e.target.value === "relevance" ? null : e.target.value })} className="h-9 w-auto shrink-0 text-sm">
+              <option value="relevance">{t("sort.relevance")}</option>
+              <option value="rating">{t("sort.rating")}</option>
+              <option value="price">{t("sort.price")}</option>
+              {center && <option value="distance">{t("sort.distance")}</option>}
             </Select>
           </div>
 
           {/* Category row */}
-          <nav aria-label="Categories" className="relative -mx-4 mb-6 flex gap-5 overflow-x-auto border-b border-line px-4 scrollbar-none sm:mx-0 sm:px-0">
+          <nav aria-label={t("categories.label")} className="relative -mx-4 mb-6 flex gap-5 overflow-x-auto border-b border-line px-4 scrollbar-none sm:mx-0 sm:px-0">
             <button type="button" onClick={() => update({ category: null })} className={cn("-mb-px shrink-0 border-b-2 pb-3 text-sm font-medium", !category ? "border-ink text-ink" : "border-transparent text-ink-3 hover:text-ink")}>
-              All
+              {t("categories.all")}
             </button>
             {categories.map((c) => (
               <button key={c.slug} type="button" onClick={() => update({ category: c.slug })} className={cn("-mb-px shrink-0 border-b-2 pb-3 text-sm font-medium", category === c.slug || c.children.some((x) => x.slug === category) ? "border-ink text-ink" : "border-transparent text-ink-3 hover:text-ink")}>
-                {c.name}
+                {categoryName(tr, c.slug, c.name)}
               </button>
             ))}
           </nav>
@@ -198,11 +205,11 @@ export function ExploreClient({
             {items.length === 0 ? (
               <EmptyState
                 icon={<Search />}
-                title="No matches yet"
-                description={params.get("q") ? "Try a broader term, a different spelling, or remove some filters." : "Try removing a filter or searching a wider area."}
+                title={t("empty.title")}
+                description={params.get("q") ? t("empty.query") : t("empty.filters")}
                 action={
                   <Button variant="secondary" onClick={() => startTransition(() => router.replace(pathname))}>
-                    Clear all filters
+                    {t("empty.clear")}
                   </Button>
                 }
               />
@@ -219,7 +226,7 @@ export function ExploreClient({
             {hasMore && !loadingMore && (
               <div className="mt-12 flex justify-center">
                 <Button variant="secondary" onClick={loadMore}>
-                  Show more
+                  {t("showMore")}
                 </Button>
               </div>
             )}
@@ -249,67 +256,67 @@ export function ExploreClient({
         className="fixed bottom-24 left-1/2 z-30 flex h-11 -translate-x-1/2 items-center gap-2 rounded-full bg-ink px-5 text-sm font-medium text-bg shadow-lg lg:hidden"
       >
         {view === "map" ? <List className="size-4" /> : <MapIcon className="size-4" />}
-        {view === "map" ? "List" : "Map"}
+        {view === "map" ? t("view.list") : t("view.map")}
       </button>
 
       <Dialog
         open={filtersOpen}
         onOpenChange={setFiltersOpen}
-        title="Filters"
+        title={t("filters.title")}
         footer={
           <>
             <Button variant="ghost" onClick={() => { update({ minRating: null, maxPrice: null, kind: null, availableToday: null, instant: null, mobile: null, virtual: null, radiusKm: null }); setFiltersOpen(false); }}>
-              Clear all
+              {t("filters.clearAll")}
             </Button>
-            <Button onClick={() => setFiltersOpen(false)}>Show results</Button>
+            <Button onClick={() => setFiltersOpen(false)}>{t("filters.show")}</Button>
           </>
         }
       >
         <div className="space-y-7 pb-2">
           <fieldset>
-            <legend className="mb-3 text-sm font-semibold text-ink">Availability & booking</legend>
+            <legend className="mb-3 text-sm font-semibold text-ink">{t("filters.availability")}</legend>
             <div className="space-y-1">
-              {QUICK.map((f) => (
-                <Checkbox key={f.key} checked={params.get(f.key) === "true"} onCheckedChange={(v) => update({ [f.key]: v ? "true" : null })} label={f.label} />
+              {QUICK.map((key) => (
+                <Checkbox key={key} checked={params.get(key) === "true"} onCheckedChange={(v) => update({ [key]: v ? "true" : null })} label={t(`quick.${key}`)} />
               ))}
             </div>
           </fieldset>
           <fieldset>
-            <legend className="mb-3 text-sm font-semibold text-ink">Rating</legend>
+            <legend className="mb-3 text-sm font-semibold text-ink">{t("filters.rating")}</legend>
             <Segmented
-              label="Minimum rating"
+              label={t("filters.minRating")}
               value={params.get("minRating") ?? "any"}
               onChange={(v) => update({ minRating: v === "any" ? null : v })}
-              options={[{ value: "any", label: "Any" }, { value: "4", label: "4+" }, { value: "4.5", label: "4.5+" }]}
+              options={[{ value: "any", label: t("filters.any") }, { value: "4", label: `${number(4)}+` }, { value: "4.5", label: `${number(4.5)}+` }]}
             />
           </fieldset>
           <fieldset>
-            <legend className="mb-3 text-sm font-semibold text-ink">Starting price up to</legend>
+            <legend className="mb-3 text-sm font-semibold text-ink">{t("filters.price")}</legend>
             <Segmented
-              label="Maximum starting price"
+              label={t("filters.maxPrice")}
               value={params.get("maxPrice") ?? "any"}
               onChange={(v) => update({ maxPrice: v === "any" ? null : v })}
-              options={[{ value: "any", label: "Any" }, { value: "3000", label: "$30" }, { value: "6000", label: "$60" }, { value: "12000", label: "$120" }]}
+              options={[{ value: "any", label: t("filters.any") }, { value: "3000", label: money(3000) }, { value: "6000", label: money(6000) }, { value: "12000", label: money(12000) }]}
             />
           </fieldset>
           {center && (
             <fieldset>
-              <legend className="mb-3 text-sm font-semibold text-ink">Distance</legend>
+              <legend className="mb-3 text-sm font-semibold text-ink">{t("filters.distance")}</legend>
               <Segmented
-                label="Distance"
+                label={t("filters.distance")}
                 value={params.get("radiusKm") ?? "25"}
                 onChange={(v) => update({ radiusKm: v })}
-                options={[{ value: "5", label: "5 km" }, { value: "10", label: "10 km" }, { value: "25", label: "25 km" }, { value: "50", label: "50 km" }]}
+                options={[5, 10, 25, 50].map((n) => ({ value: String(n), label: km(n) }))}
               />
             </fieldset>
           )}
           <fieldset>
-            <legend className="mb-3 text-sm font-semibold text-ink">Provider</legend>
+            <legend className="mb-3 text-sm font-semibold text-ink">{t("filters.provider")}</legend>
             <Segmented
-              label="Provider type"
+              label={t("filters.providerType")}
               value={params.get("kind") ?? "any"}
               onChange={(v) => update({ kind: v === "any" ? null : v })}
-              options={[{ value: "any", label: "Any" }, { value: "individual", label: "Independent pros" }, { value: "business", label: "Businesses & teams" }]}
+              options={[{ value: "any", label: t("filters.any") }, { value: "individual", label: t("filters.individual") }, { value: "business", label: t("filters.business") }]}
             />
           </fieldset>
         </div>

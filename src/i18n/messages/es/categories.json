@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Barbería"
+  },
+  "hair": {
+    "name": "Cabello y barberías",
+    "description": "Cortes, color, peinados, trenzas y arreglo personal."
+  },
+  "lashes-brows": {
+    "name": "Pestañas y cejas"
+  },
+  "massage": {
+    "name": "Masajes"
+  },
+  "personal-training": {
+    "name": "Entrenamiento personal"
+  },
+  "hair-salon": {
+    "name": "Salón de belleza"
+  },
+  "makeup": {
+    "name": "Maquillaje"
+  },
+  "nails": {
+    "name": "Uñas",
+    "description": "Manicure, pedicure, extensiones y nail art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga y pilates"
+  },
+  "beauty": {
+    "name": "Belleza",
+    "description": "Pestañas, cejas, maquillaje y cuidado de la piel."
+  },
+  "braids-locs": {
+    "name": "Trenzas y rastas"
+  },
+  "skincare": {
+    "name": "Piel y estética"
+  },
+  "wellness": {
+    "name": "Bienestar",
+    "description": "Masajes, spa y terapias corporales."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Entrenamiento personal, yoga, pilates y coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tatuajes y piercing",
+    "description": "Tatuajes personalizados, flash y perforaciones."
+  },
+  "photography": {
+    "name": "Foto y video",
+    "description": "Retratos, eventos, productos y video."
+  },
+  "education": {
+    "name": "Clases y tutorías",
+    "description": "Tutores, profesores de música y clases de idiomas."
+  },
+  "home-services": {
+    "name": "Servicios para el hogar",
+    "description": "Limpieza, reparaciones y mantenimiento."
+  },
+  "automotive": {
+    "name": "Automotriz",
+    "description": "Detallado, lavado de autos y mecánicos a domicilio."
+  },
+  "pets": {
+    "name": "Mascotas",
+    "description": "Estética, cuidado y adiestramiento."
+  },
+  "events": {
+    "name": "Eventos",
+    "description": "DJs, organizadores y profesionales de eventos."
+  },
+  "professional": {
+    "name": "Servicios profesionales",
+    "description": "Consultores, coaches y asesores."
+  },
+  "other": {
+    "name": "Otros",
+    "description": "Todo lo demás que puedes reservar."
+  }
+}

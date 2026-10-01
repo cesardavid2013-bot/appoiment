@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Explora profesionales",
+    "category": "{category}: reserva en línea",
+    "query": "{q} — búsqueda",
+    "description": "Compara profesionales por disponibilidad real, precios y reseñas verificadas."
+  },
+  "bar": {
+    "placeholder": "Busca servicios o profesionales",
+    "label": "Buscar",
+    "clear": "Borrar búsqueda"
+  },
+  "location": {
+    "placeholder": "Cualquier lugar",
+    "label": "Ubicación",
+    "clear": "Quitar ubicación",
+    "useMine": "Usar mi ubicación actual",
+    "finding": "Buscando tu ubicación…",
+    "current": "Ubicación actual",
+    "selectedArea": "Zona seleccionada",
+    "unsupported": "Tu navegador no puede compartir la ubicación. Escribe una ciudad.",
+    "denied": "La ubicación está desactivada para este sitio. Escribe una ciudad o permite la ubicación en la configuración de tu navegador.",
+    "failed": "No pudimos obtener tu ubicación. Escribe una ciudad."
+  },
+  "quick": {
+    "availableToday": "Disponible hoy",
+    "instant": "Reserva inmediata",
+    "mobile": "A domicilio",
+    "virtual": "En línea"
+  },
+  "view": {
+    "label": "Vista",
+    "list": "Lista",
+    "map": "Mapa"
+  },
+  "heading": {
+    "explore": "Explorar",
+    "results": "Resultados",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Actualizando…",
+    "count": "{count, plural, one {# profesional} other {# profesionales}}",
+    "countMore": "Más de {count} profesionales",
+    "near": "{results} cerca de {place}",
+    "nearYou": "{results} cerca de ti"
+  },
+  "sort": {
+    "label": "Ordenar por",
+    "relevance": "Más relevantes",
+    "rating": "Mejor calificados",
+    "price": "Menor precio",
+    "distance": "Más cercanos"
+  },
+  "categories": {
+    "label": "Categorías",
+    "all": "Todas"
+  },
+  "empty": {
+    "title": "Aún no hay resultados",
+    "query": "Prueba con un término más general, otra forma de escribirlo o quita algunos filtros.",
+    "filters": "Prueba quitando un filtro o buscando en una zona más amplia.",
+    "clear": "Quitar todos los filtros"
+  },
+  "showMore": "Ver más",
+  "filters": {
+    "button": "Filtros",
+    "buttonCount": "Filtros · {count}",
+    "title": "Filtros",
+    "clearAll": "Quitar todo",
+    "show": "Ver resultados",
+    "availability": "Disponibilidad y reserva",
+    "rating": "Calificación",
+    "minRating": "Calificación mínima",
+    "any": "Cualquiera",
+    "price": "Precio inicial hasta",
+    "maxPrice": "Precio inicial máximo",
+    "distance": "Distancia",
+    "provider": "Proveedor",
+    "providerType": "Tipo de proveedor",
+    "individual": "Profesionales independientes",
+    "business": "Negocios y equipos"
+  }
+}

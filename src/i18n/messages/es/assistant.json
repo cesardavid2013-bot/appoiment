@@ -1,0 +1,22 @@
+{
+  "title": "Pregúntale a Kept",
+  "description": "Dime qué necesitas y cuándo. Busco horarios reales.",
+  "newConversation": "Nueva conversación",
+  "close": "Cerrar",
+  "forExample": "Por ejemplo:",
+  "starters": {
+    "one": "Barbero mañana por la tarde",
+    "two": "Uñas de gel este fin de semana",
+    "three": "Masaje cerca de mí hoy",
+    "four": "Clases de inglés en línea"
+  },
+  "searching": "Buscando",
+  "listening": "Te escucho…",
+  "placeholder": "Barbero el sábado por la mañana…",
+  "yourMessage": "Tu mensaje",
+  "stopListening": "Dejar de escuchar",
+  "speak": "Hablar",
+  "send": "Enviar",
+  "verified": "Verificado",
+  "online": "En línea"
+}
