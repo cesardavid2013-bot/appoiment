@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "Awaiting payment",
+    "requested": "Request sent",
+    "confirmed": "Confirmed",
+    "checked_in": "Checked in",
+    "in_progress": "In progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "declined": "Declined",
+    "no_show": "No-show",
+    "expired": "Expired"
+  },
+  "list": {
+    "title": "Bookings",
+    "filters": "Booking filters",
+    "tabs": {
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "cancelled": "Cancelled"
+    },
+    "howDidItGo": "How did it go?",
+    "review": "Review",
+    "empty": {
+      "upcoming": "No upcoming appointments",
+      "past": "No past appointments yet",
+      "cancelled": "Nothing cancelled",
+      "upcomingBody": "When you book, your appointments show up here — with directions, reminders and easy rescheduling.",
+      "findPro": "Find a professional"
+    }
+  },
+  "detail": {
+    "metaTitle": "Appointment",
+    "allBookings": "All bookings",
+    "hero": {
+      "confirmedTitle": "You're booked",
+      "confirmedBody": "We've sent a confirmation and will remind you before your appointment.",
+      "requestedTitle": "Request sent",
+      "requestedBody": "{business} will review your request. We'll notify you as soon as they respond — your time is held meanwhile.",
+      "paymentTitle": "Finishing up your payment",
+      "paymentBody": "If you've just paid, this updates automatically in a few seconds. Your time is held while payment completes."
+    },
+    "calendarDetails": "Reference {reference}",
+    "ref": "Ref",
+    "when": "When",
+    "with": "With",
+    "where": "Where",
+    "atYourAddress": "At your address",
+    "online": "Online",
+    "virtualLink": "The business will send the link before your session.",
+    "yourReview": "Your review",
+    "payment": {
+      "title": "Payment",
+      "serviceFee": "Service fee",
+      "tax": "Tax",
+      "estimatedTotal": "Estimated total",
+      "total": "Total",
+      "paid": "Paid",
+      "refunded": "Refunded",
+      "balance": "Balance",
+      "dueAtAppointment": "Due at appointment",
+      "tip": "Tip"
+    },
+    "policy": {
+      "title": "Cancellation policy",
+      "freeUntil": "Free cancellation up to {hours, plural, one {# hour} other {# hours}} before.",
+      "freeAnytime": "Free cancellation any time before the appointment.",
+      "lateFee": "Later cancellations: {percent}% of the total.",
+      "depositNonRefundable": "Deposits are non-refundable.",
+      "cannotCancel": "This appointment can no longer be cancelled.",
+      "alreadyStarted": "This appointment has already started.",
+      "cannotReschedule": "This appointment can't be rescheduled.",
+      "maxReschedules": "This appointment has been rescheduled the maximum number of times. Please contact the business.",
+      "rescheduleWindow": "Changes must be made at least {hours, plural, one {# hour} other {# hours}} before the appointment. Please contact the business."
+    },
+    "refund": {
+      "noCharge": "No charge.",
+      "full": "You'll get a full refund.",
+      "none": "Your payment is non-refundable under this business's policy.",
+      "partial": "You'll get a partial refund under this business's policy."
+    },
+    "note": "Note: {reason}",
+    "problem": "Problem with this booking? <link>Contact support</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} at {time}",
+    "cancelledToast": "Appointment cancelled",
+    "refundOnWay": "A refund of {amount} is on its way.",
+    "rescheduledToast": "Rescheduled",
+    "payToConfirm": "Pay {amount} to confirm",
+    "addToCalendar": "Add to calendar",
+    "directions": "Directions",
+    "message": "Message",
+    "bookAgain": "Book again",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "Leave a review",
+    "reschedule": "Reschedule",
+    "cancelAppointment": "Cancel appointment",
+    "cancelTitle": "Cancel this appointment?",
+    "insideWindow": "You're inside the business's cancellation window.",
+    "refundAmount": "Refund: {amount}.",
+    "keptAmount": "Kept by the business: {amount}.",
+    "reason": "Reason",
+    "reasonHint": "Shared with the business.",
+    "chooseNewTime": "Choose a new time",
+    "currently": "Currently {when}",
+    "keepCurrentTime": "Keep current time",
+    "moveTo": "Move to {time}",
+    "chooseTime": "Choose a time"
+  },
+  "review": {
+    "ratings": {
+      "1": "Poor",
+      "2": "Fair",
+      "3": "Good",
+      "4": "Great",
+      "5": "Excellent"
+    },
+    "thanks": "Thanks for your review",
+    "title": "How was {business}?",
+    "subtitle": "Your review is public and marked as a verified booking.",
+    "rating": "Rating",
+    "stars": "{n, plural, one {# star} other {# stars}}",
+    "bodyLabel": "Tell others about your visit",
+    "bodyPlaceholder": "What stood out? Would you recommend them?",
+    "post": "Post review"
+  },
+  "slotPicker": {
+    "previousWeek": "Previous week",
+    "nextWeek": "Next week",
+    "noOpenings": "No openings this day.",
+    "selected": "Selected {time}"
+  }
+}
