@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+.claude
+storage
+storage-test
+.env
+.env.*
+*.log
+test

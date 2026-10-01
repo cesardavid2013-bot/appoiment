@@ -1,0 +1,50 @@
+# Everything needed to run Kept on one machine: database, web app and background worker.
+#   cp .env.example .env     # set APP_URL, APP_SECRET and any keys you have
+#   docker compose up -d --build
+#   docker compose exec web npm run db:seed -- --demo   # optional: demo businesses (development only)
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: kept
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-kept-change-me}
+      POSTGRES_DB: kept
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kept"]
+      interval: 5s
+      retries: 10
+
+  web:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://kept:${DB_PASSWORD:-kept-change-me}@db:5432/kept
+      STORAGE_DIR: /app/storage
+    ports:
+      - "3000:3000"
+    volumes:
+      - files:/app/storage
+
+  worker:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - web
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://kept:${DB_PASSWORD:-kept-change-me}@db:5432/kept
+      STORAGE_DIR: /app/storage
+    command: ["npm", "run", "worker"]
+    volumes:
+      - files:/app/storage
+
+volumes:
+  dbdata:
+  files:

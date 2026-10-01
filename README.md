@@ -51,6 +51,20 @@ Everything optional degrades gracefully, but for a real launch set these in prod
 
 Deploy steps: `npm ci && npm run build`, run `npm run db:migrate` once per release, then `npm start` (plus the worker). Seed categories in production with `npm run db:seed` (no `--demo`). Realtime uses one Postgres `LISTEN` connection per app instance, so it works across several instances without extra infrastructure; make sure your proxy doesn't buffer `text/event-stream` responses on `/api/events`.
 
+## Put it online
+
+The quickest path is one machine with Docker (a small VPS is enough):
+
+```bash
+cp .env.example .env            # set APP_URL (your https domain), APP_SECRET and any keys you have
+docker compose up -d --build    # database + web + background worker; migrations run on start
+docker compose exec web npm run db:seed          # categories (safe in production)
+```
+
+Put a reverse proxy with TLS in front (Caddy, nginx, Cloudflare) and set `TRUSTED_PROXY_HOPS=1`. Disable response buffering for `/api/events` (live updates). Then run `npm run launch:check` against the production `.env`: it lists exactly what still blocks taking payments. `GET /api/health` is there for uptime monitors.
+
+To let people try everything, run `docker compose exec web npm run db:seed -- --demo` on a **staging** copy only (it refuses in production) and share the demo logins from the section above.
+
 ## Security model (short)
 
 Prices, discounts, roles and ids from the browser are never trusted; every mutation checks ownership and permissions on the server. Cookie-authenticated writes require same-origin requests. Bookings are protected against double-booking by database exclusion constraints. Passwords use Argon2id; sessions are revocable; uploads are type-sniffed, size-capped and private by default. Realtime events carry ids only and are routed per viewer. Rate limits cover login, signup, password checks, promo codes and the assistant.

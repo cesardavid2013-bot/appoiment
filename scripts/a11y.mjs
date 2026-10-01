@@ -8,7 +8,7 @@ const pages = [
   ["/", null], ["/explore", null], ["/north-fade-studio", null], ["/north-fade-studio/book", null], ["/login", null], ["/signup", null], ["/for-business", null],
   ["/bookings", "customer"], ["/account", "customer"], ["/messages", "customer"],
   ["/pro/today", "pro"], ["/pro/calendar", "pro"], ["/pro/services", "pro"], ["/pro/availability", "pro"], ["/pro/team", "pro"], ["/pro/clients", "pro"],
-  ["/pro/messages", "pro"], ["/pro/insights", "pro"], ["/pro/promote", "pro"], ["/pro/reviews", "pro"], ["/pro/work", "pro"], ["/pro/settings/profile", "pro"], ["/pro/settings/booking", "pro"],
+  ["/pro/messages", "pro"], ["/pro/insights", "pro"], ["/pro/promote", "pro"], ["/pro/reviews", "pro"], ["/pro/work", "pro"], ["/pro/settings/profile", "pro"], ["/pro/settings/appearance", "pro"], ["/pro/settings/booking", "pro"],
 ];
 const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const ctxs = {};
