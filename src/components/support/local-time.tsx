@@ -1,6 +1,7 @@
 "use client";
 
 import { fmtDate, fmtTime } from "@/lib/format";
+import { useLocale } from "@/i18n/client";
 import { useTimeZone } from "@/lib/use-client-time";
 
 /**
@@ -9,9 +10,10 @@ import { useTimeZone } from "@/lib/use-client-time";
  */
 export function LocalTime({ iso, fallbackZone, className, format = "datetime" }: { iso: string; fallbackZone: string; className?: string; format?: "datetime" | "date" }) {
   const tz = useTimeZone(fallbackZone);
+  const { intl } = useLocale();
   return (
     <time dateTime={iso} className={className}>
-      {format === "date" ? fmtDate(iso, tz, { month: "long", day: "numeric", year: "numeric" }) : `${fmtDate(iso, tz, { month: "short", day: "numeric" })}, ${fmtTime(iso, tz)}`}
+      {format === "date" ? fmtDate(iso, tz, { month: "long", day: "numeric", year: "numeric" }, intl) : `${fmtDate(iso, tz, { month: "short", day: "numeric" }, intl)}, ${fmtTime(iso, tz, intl)}`}
     </time>
   );
 }

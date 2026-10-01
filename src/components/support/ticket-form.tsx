@@ -5,7 +5,8 @@ import { useState, type FormEvent } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Field, FormError, Input, Select, Textarea } from "@/components/ui/field";
-import { MAX_TICKET_ATTACHMENTS, SUPPORT_CATEGORIES, SUPPORT_CATEGORY_KEYS, type SupportCategory } from "@/domain/support";
+import { MAX_TICKET_ATTACHMENTS, SUPPORT_CATEGORY_KEYS, type SupportCategory } from "@/domain/support";
+import { useLocale, useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 import { fmtDate, fmtTime } from "@/lib/format";
 import { AttachmentPicker, type Attachment } from "./attachment-picker";
@@ -14,6 +15,8 @@ export type AttachableAppointment = { id: string; reference: string; startsAt: s
 
 export function TicketForm({ appointments, initialAppointmentId, initialCategory }: { appointments: AttachableAppointment[]; initialAppointmentId: string | null; initialCategory: SupportCategory | null }) {
   const router = useRouter();
+  const t = useT("support");
+  const { intl } = useLocale();
   const [category, setCategory] = useState<SupportCategory | "">(initialCategory ?? (initialAppointmentId ? "booking" : ""));
   const [appointmentId, setAppointmentId] = useState(initialAppointmentId ?? "");
   const [subject, setSubject] = useState("");
@@ -27,9 +30,9 @@ export function TicketForm({ appointments, initialAppointmentId, initialCategory
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
     const local: Record<string, string> = {};
-    if (!category) local.category = "Choose a topic";
-    if (subject.trim().length < 4) local.subject = "Add a short subject";
-    if (body.trim().length < 10) local.body = "Tell us a little more — at least a sentence helps us help you";
+    if (!category) local.category = t("form.chooseTopic");
+    if (subject.trim().length < 4) local.subject = t("form.addSubject");
+    if (body.trim().length < 10) local.body = t("form.moreDetail");
     setFields(local);
     setError(null);
     if (Object.keys(local).length) return;
@@ -38,12 +41,12 @@ export function TicketForm({ appointments, initialAppointmentId, initialCategory
       const res = await api<{ id: string }>("/api/support", {
         body: { category, subject, body, appointmentId: appointmentId || null, mediaIds: files.map((f) => f.id).filter(Boolean) },
       });
-      toast.success("Request sent", { description: "We'll reply here and let you know when we do." });
+      toast.success(t("form.sent"), { description: t("ticket.willReply") });
       router.push(`/support/${res.id}`);
     } catch (err) {
       const e2 = err as ApiError;
       setFields(e2.fields ?? {});
-      setError(e2.fields ? "Please check the highlighted fields." : e2.message);
+      setError(e2.fields ? t("form.checkFields") : e2.message);
       setSaving(false);
     }
   }
@@ -53,15 +56,15 @@ export function TicketForm({ appointments, initialAppointmentId, initialCategory
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-5">
       <FormError message={error} />
-      <Field label="What do you need help with?" error={fields.category} hint={category ? SUPPORT_CATEGORIES[category].hint : undefined}>
+      <Field label={t("form.topic")} error={fields.category} hint={category ? t(`categories.${category}.hint`) : undefined}>
         {(p) => (
           <Select {...p} value={category} onChange={(e) => setCategory(e.target.value as SupportCategory)} required>
             <option value="" disabled>
-              Choose a topic
+              {t("form.chooseTopic")}
             </option>
             {SUPPORT_CATEGORY_KEYS.map((k) => (
               <option key={k} value={k}>
-                {SUPPORT_CATEGORIES[k].label}
+                {t(`categories.${k}.label`)}
               </option>
             ))}
           </Select>
@@ -69,13 +72,13 @@ export function TicketForm({ appointments, initialAppointmentId, initialCategory
       </Field>
 
       {appointments.length > 0 && (
-        <Field label="Related appointment" optional error={fields.appointmentId} hint={selected ? `Ref ${selected.reference} · ${selected.businessName}` : "Linking a booking lets us look into it straight away."}>
+        <Field label={t("form.related")} optional error={fields.appointmentId} hint={selected ? t("form.refHint", { reference: selected.reference, business: selected.businessName }) : t("form.linkHint")}>
           {(p) => (
             <Select {...p} value={appointmentId} onChange={(e) => setAppointmentId(e.target.value)}>
-              <option value="">None</option>
+              <option value="">{t("form.none")}</option>
               {appointments.map((a) => (
                 <option key={a.id} value={a.id}>
-                  {fmtDate(a.startsAt, a.timezone, { month: "short", day: "numeric" })}, {fmtTime(a.startsAt, a.timezone)} — {a.serviceName} · {a.businessName}
+                  {t("form.appointmentOption", { date: fmtDate(a.startsAt, a.timezone, { month: "short", day: "numeric" }, intl), time: fmtTime(a.startsAt, a.timezone, intl), service: a.serviceName, business: a.businessName })}
                 </option>
               ))}
             </Select>
@@ -83,17 +86,17 @@ export function TicketForm({ appointments, initialAppointmentId, initialCategory
         </Field>
       )}
 
-      <Field label="Subject" error={fields.subject}>
-        {(p) => <Input {...p} value={subject} onChange={(e) => setSubject(e.target.value)} maxLength={140} placeholder="e.g. I was charged twice for my deposit" required />}
+      <Field label={t("form.subject")} error={fields.subject}>
+        {(p) => <Input {...p} value={subject} onChange={(e) => setSubject(e.target.value)} maxLength={140} placeholder={t("form.subjectPlaceholder")} required />}
       </Field>
 
-      <Field label="Details" error={fields.body} hint="What happened, when, and what you'd like us to do. Please don't include card numbers or passwords.">
+      <Field label={t("form.details")} error={fields.body} hint={t("form.detailsHint")}>
         {(p) => <Textarea {...p} rows={6} value={body} onChange={(e) => setBody(e.target.value)} maxLength={5000} required />}
       </Field>
 
       <div className="space-y-1.5">
         <p className="flex items-baseline justify-between text-sm font-medium text-ink">
-          Images <span className="text-xs font-normal text-ink-3">Optional</span>
+          {t("form.images")} <span className="text-xs font-normal text-ink-3">{t("form.optional")}</span>
         </p>
         <AttachmentPicker value={files} onChange={setFiles} max={MAX_TICKET_ATTACHMENTS} disabled={saving} />
         {fields.mediaIds && <p className="text-[13px] text-danger">{fields.mediaIds}</p>}
@@ -101,10 +104,10 @@ export function TicketForm({ appointments, initialAppointmentId, initialCategory
 
       <div className="flex flex-col-reverse gap-2 border-t border-line pt-5 sm:flex-row sm:justify-end">
         <Button variant="ghost" className="h-11 sm:h-10" onClick={() => router.back()} disabled={saving}>
-          Cancel
+          {t("form.cancel")}
         </Button>
         <Button type="submit" className="h-11 sm:h-10" loading={saving} disabled={uploading}>
-          {uploading ? "Uploading images…" : "Send request"}
+          {uploading ? t("form.uploadingImages") : t("form.send")}
         </Button>
       </div>
     </form>
