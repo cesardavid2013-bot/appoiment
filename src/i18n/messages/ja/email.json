@@ -1,0 +1,147 @@
+{
+  "footer": "このメールは、Keptアカウントでのアクティビティに基づいてお送りしています。通知の設定は「アカウント → 通知」から変更できます。",
+  "details": {
+    "service": "サービス",
+    "when": "日時",
+    "with": "担当",
+    "where": "場所",
+    "online": "オンライン（リンクは事業者から共有されます）",
+    "reference": "予約番号",
+    "paid": "支払済み",
+    "balanceDue": "残額"
+  },
+  "cta": {
+    "viewAppointment": "予約を見る",
+    "viewRequest": "リクエストを見る",
+    "reviewRequest": "リクエストを確認",
+    "openAppointment": "予約を開く",
+    "openCalendar": "カレンダーを開く",
+    "findAnotherTime": "別の日時を探す",
+    "payDeposit": "デポジットを支払う",
+    "leaveReview": "レビューを書く",
+    "bookThisTime": "この日時で予約"
+  },
+  "booked": {
+    "title": "{business}の予約が確定しました",
+    "subject": "予約確定：{business}の{service}",
+    "heading": "ご予約が確定しました",
+    "footnote": "ご予定が変わりましたか？事業者のポリシーの範囲内で、予約ページから日時変更やキャンセルができます。",
+    "sms": "Kept：{business}の{service}、{when}で確定しました。予約番号 {reference}"
+  },
+  "requested": {
+    "title": "{business}にリクエストを送信しました",
+    "body": "返答があり次第お知らせします。",
+    "subject": "リクエスト送信済み：{business}の{service}",
+    "heading": "リクエストを送信しました",
+    "paragraph": "{business}はリクエストを確認してから予約を確定します。返答があり次第、メールでお知らせします。"
+  },
+  "bizBooked": {
+    "title": "新しい予約",
+    "requestTitle": "新しい予約リクエスト",
+    "subject": "新しい予約：{service}",
+    "requestSubject": "新しいリクエスト：{service}",
+    "heading": "新しい予約が入りました",
+    "requestHeading": "新しい予約リクエストが届きました",
+    "requestParagraph": "カレンダーから承認またはお断りしてください。返答のないリクエストは自動的に期限切れになります。"
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business}はリクエストをお受けできませんでした",
+      "subject": "リクエストお断り：{service}",
+      "heading": "リクエストは承認されませんでした"
+    },
+    "expired": {
+      "title": "予約の期限が切れました",
+      "subject": "予約の期限が切れました",
+      "heading": "予約の期限が切れました"
+    },
+    "cancelled": {
+      "title": "{business}が予約をキャンセルしました",
+      "subject": "キャンセル：{service}",
+      "heading": "ご予約はキャンセルされました"
+    },
+    "note": "事業者からのメッセージ：「{note}」",
+    "refund": "{amount}を元のお支払い方法に返金する手続きを行いました。",
+    "bookAgain": "ご都合のよいときに、いつでも別の日時でご予約いただけます。"
+  },
+  "bizCancelled": {
+    "title": "お客様がキャンセルしました",
+    "expiredTitle": "予約の期限が切れました",
+    "subject": "キャンセル：{service} · {when}",
+    "heading": "予約がキャンセルされました",
+    "reason": "理由：「{reason}」"
+  },
+  "rescheduled": {
+    "title": "{business}が予約の日時を変更しました",
+    "body": "新しい日時：{when}",
+    "subject": "日時変更：{business}の{service}",
+    "heading": "ご予約の日時が変更されました",
+    "previously": "変更前：{when}。",
+    "changeIt": "新しい日時のご都合が悪い場合は、予約ページから日時変更やキャンセルができます。"
+  },
+  "bizRescheduled": {
+    "title": "お客様が日時を変更しました",
+    "subject": "日時変更：{service}",
+    "heading": "予約の日時が変更されました"
+  },
+  "approvedPay": {
+    "title": "{business}がリクエストを承認しました",
+    "body": "{amount}のデポジットを支払って確定してください。",
+    "subject": "承認されました — {service}を確定してください",
+    "heading": "リクエストが承認されました",
+    "paragraph": "{amount}のデポジットを支払うと、お時間が確保されます。未払いの予約は自動的に解放されます。"
+  },
+  "reminder": {
+    "title": "リマインダー：{service}（{lead}）",
+    "body": "{when}・{business}",
+    "subject": "リマインダー：{service}（{lead} {time}〜）",
+    "heading": "{lead}お待ちしています",
+    "footnote": "遅れそう、または行けなくなった場合は、予約ページから事業者にお知らせください。",
+    "sms": "リマインダー：{when}、{business}で{service}のご予約があります。"
+  },
+  "review": {
+    "title": "{service}はいかがでしたか？",
+    "body": "{business}のレビューをひとこと。",
+    "subject": "{business}へのご来店はいかがでしたか？",
+    "heading": "いかがでしたか？",
+    "paragraph": "あなたのレビューは{business}と、プロを選ぶ他の方々の役に立ちます。1分もかかりません。"
+  },
+  "waitlist": {
+    "title": "{business}に空きが出ました",
+    "body": "{when}が空きました。先着順ですので、お早めにご予約ください。",
+    "subject": "{business}に空きが出ました",
+    "heading": "朗報です — 空きが出ました",
+    "paragraph": "{when}が空きました。先着順ですので、ご都合がよければお早めにご予約ください。"
+  },
+  "thread": {
+    "confirmed": "予約確定：{service}、{when}。",
+    "declined": "予約お断り：{service}、{when}。",
+    "expired": "予約期限切れ：{service}、{when}。",
+    "cancelled": "予約キャンセル：{service}、{when}。",
+    "moved": "予約の日時を{from}から{to}に変更しました。"
+  },
+  "verify": {
+    "subject": "メールアドレスを確認してください",
+    "preheader": "ワンタップでメールアドレスの確認が完了します。",
+    "heading": "ようこそ、{name}さん",
+    "paragraph": "メールアドレスを確認すると、予約について事業者から連絡を受け取れるようになります。",
+    "cta": "メールアドレスを確認",
+    "footnote": "このリンクの有効期限は3日間です。アカウントを作成した覚えがない場合は、このメールを無視してください。"
+  },
+  "reset": {
+    "subject": "パスワードのリセット",
+    "heading": "パスワードのリセット",
+    "paragraph": "Keptアカウントのパスワードのリセットがリクエストされました（ご本人によるものであれば問題ありません）。",
+    "cta": "新しいパスワードを設定",
+    "footnote": "このリンクの有効期限は1時間です。お心当たりがない場合は、このメールを無視してください。パスワードは変更されません。"
+  },
+  "invite": {
+    "subject": "{inviter}さんがKeptで{business}への参加にあなたを招待しました",
+    "reminderSubject": "リマインダー：Keptで{business}に参加しましょう",
+    "heading": "{business}に参加",
+    "paragraph": "{inviter}さんが{business}のチームにあなたを招待しました。参加すると、スケジュールの確認や予約の管理ができるようになります。",
+    "cta": "招待を承諾",
+    "footnote": "この招待の有効期限は{days}日間です。",
+    "reminderFootnote": "この招待の有効期限は{days}日間です。以前の招待リンクは無効になっています。"
+  }
+}

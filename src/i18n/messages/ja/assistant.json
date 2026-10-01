@@ -1,0 +1,22 @@
+{
+  "title": "Keptに聞く",
+  "description": "ご希望の内容と日時を伝えてください。実際の空き枠をお調べします。",
+  "newConversation": "新しい会話",
+  "close": "閉じる",
+  "forExample": "例：",
+  "starters": {
+    "one": "明日の午後にバーバー",
+    "two": "今週末、60ドル以下でジェルネイル",
+    "three": "今夜、近くでマッサージ",
+    "four": "オンラインの数学家庭教師"
+  },
+  "searching": "検索中",
+  "listening": "聞き取り中…",
+  "placeholder": "土曜の午前にバーバー…",
+  "yourMessage": "メッセージ",
+  "stopListening": "聞き取りを停止",
+  "speak": "話す",
+  "send": "送信",
+  "verified": "認証済み",
+  "online": "オンライン"
+}

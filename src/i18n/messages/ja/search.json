@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "プロを探す",
+    "category": "{category}を予約",
+    "query": "{q} — 検索",
+    "description": "実際の空き状況、料金、認証済みのレビューでプロを比較。"
+  },
+  "bar": {
+    "placeholder": "サービスやプロを検索",
+    "label": "検索",
+    "clear": "検索をクリア"
+  },
+  "location": {
+    "placeholder": "どこでも",
+    "label": "場所",
+    "clear": "場所をクリア",
+    "useMine": "現在地を使用",
+    "finding": "現在地を取得中…",
+    "current": "現在地",
+    "selectedArea": "選択したエリア",
+    "unsupported": "お使いのブラウザは位置情報を共有できません。代わりに都市名を入力してください。",
+    "denied": "このサイトでは位置情報がオフになっています。都市名を入力するか、ブラウザの設定で位置情報を許可してください。",
+    "failed": "現在地を取得できませんでした。代わりに都市名を入力してください。"
+  },
+  "quick": {
+    "availableToday": "今日空きあり",
+    "instant": "即時予約",
+    "mobile": "出張対応",
+    "virtual": "オンライン"
+  },
+  "view": {
+    "label": "表示",
+    "list": "リスト",
+    "map": "地図"
+  },
+  "heading": {
+    "explore": "探す",
+    "results": "検索結果",
+    "query": "「{q}」"
+  },
+  "summary": {
+    "updating": "更新中…",
+    "count": "{count, plural, other {#人のプロ}}",
+    "countMore": "{count}人以上のプロ",
+    "near": "{place}周辺の{results}",
+    "nearYou": "お近くの{results}"
+  },
+  "sort": {
+    "label": "並び替え",
+    "relevance": "おすすめ順",
+    "rating": "評価が高い順",
+    "price": "料金が安い順",
+    "distance": "近い順"
+  },
+  "categories": {
+    "label": "カテゴリー",
+    "all": "すべて"
+  },
+  "empty": {
+    "title": "該当する結果がありません",
+    "query": "より広いキーワードや別の表記で検索するか、絞り込み条件を減らしてみてください。",
+    "filters": "絞り込み条件を外すか、より広いエリアで検索してみてください。",
+    "clear": "すべての条件をクリア"
+  },
+  "showMore": "もっと見る",
+  "filters": {
+    "button": "絞り込み",
+    "buttonCount": "絞り込み · {count}",
+    "title": "絞り込み",
+    "clearAll": "すべてクリア",
+    "show": "結果を表示",
+    "availability": "空き状況と予約方法",
+    "rating": "評価",
+    "minRating": "最低評価",
+    "any": "指定なし",
+    "price": "最低料金の上限",
+    "maxPrice": "最低料金の上限額",
+    "distance": "距離",
+    "provider": "提供者",
+    "providerType": "提供者の種類",
+    "individual": "個人のプロ",
+    "business": "店舗・チーム"
+  }
+}

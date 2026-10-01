@@ -1,0 +1,311 @@
+{
+  "loading": "読み込み中…",
+  "noEmail": "メールアドレス未登録",
+  "saveChanges": "変更を保存",
+  "cancel": "キャンセル",
+  "checkFields": "ハイライトされた項目をご確認ください。",
+  "nav": {
+    "label": "アカウント設定",
+    "account": "アカウント"
+  },
+  "sections": {
+    "profile": {
+      "label": "プロフィール",
+      "description": "名前、写真、電話番号、タイムゾーン"
+    },
+    "security": {
+      "label": "ログインとセキュリティ",
+      "description": "パスワード、メール確認、デバイス"
+    },
+    "notifications": {
+      "label": "通知設定",
+      "description": "メールやSMSで受け取るお知らせを選択"
+    },
+    "addresses": {
+      "label": "保存済みの住所",
+      "description": "出張してくれるプロのために"
+    },
+    "privacy": {
+      "label": "プライバシーとデータ",
+      "description": "データのダウンロードやアカウントの削除"
+    }
+  },
+  "home": {
+    "memberSince": "{date}からのメンバー",
+    "confirmEmail": "<b>メールアドレスを確認してください。</b>{email} にリンクをお送りしました。確認すると、予約について事業者から連絡を受け取れるようになります。",
+    "activity": "アクティビティ",
+    "settings": "設定",
+    "more": "その他",
+    "signOut": "ログアウト",
+    "rows": {
+      "bookings": {
+        "label": "予約",
+        "description": "今後の予約と過去の予約"
+      },
+      "saved": {
+        "label": "保存済み",
+        "description": "保存したプロ"
+      },
+      "messages": {
+        "label": "メッセージ",
+        "description": "事業者とのやり取り"
+      },
+      "notifications": {
+        "label": "通知",
+        "description": "予約に関するお知らせ"
+      },
+      "business": {
+        "label": "ビジネスに切り替え",
+        "description": "カレンダー、サービス、顧客"
+      },
+      "offer": {
+        "label": "Keptでサービスを提供する",
+        "description": "予約を受けてビジネスを成長させましょう。無料で始められます"
+      },
+      "support": {
+        "label": "ヘルプとサポート",
+        "description": "予約、お支払い、アカウントに関するサポート"
+      },
+      "legal": {
+        "label": "利用規約とプライバシー",
+        "description": "Keptの仕組みとデータの取り扱いについて"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "確認メールを送信しました",
+    "sentBody": "{email} をご確認ください。リンクの有効期限は3日間です。",
+    "sent": "送信済み",
+    "resend": "リンクを再送信"
+  },
+  "profile": {
+    "description": "予約するプロに表示されるあなたの情報です。",
+    "saved": "プロフィールを保存しました",
+    "details": "個人情報",
+    "name": "名前",
+    "email": "メールアドレス",
+    "changeEmail": "ログイン用メールアドレスを変更するには、ご本人確認のため<link>サポートにお問い合わせ</link>ください。",
+    "phone": "電話番号",
+    "phoneHintSms": "予約先の事業者が予約について電話でご連絡することがあります。また、オンにするとSMSでリマインダーをお送りします。",
+    "phoneHint": "予約先の事業者が、予約についてご連絡する際に使用します。",
+    "photo": {
+      "title": "写真",
+      "description": "予約するプロに、お名前と一緒に表示されます。",
+      "updated": "写真を更新しました",
+      "removed": "写真を削除しました",
+      "change": "写真を変更",
+      "upload": "写真をアップロード",
+      "remove": "削除",
+      "hint": "JPG、PNG、WebP形式、15 MBまで。写真の位置情報は削除されます。"
+    },
+    "timezone": {
+      "label": "タイムゾーン",
+      "hint": "お住まいのタイムゾーンです。予約時刻は常に事業者の現地時間で表示されます。",
+      "notSet": "未設定",
+      "detect": "自動で検出",
+      "detectFailed": "タイムゾーンを検出できませんでした。リストから選択してください。"
+    },
+    "language": {
+      "title": "言語",
+      "description": "Kept全体のメニュー、ボタン、日付に使用されます。事業者名、サービス、レビューは事業者が書いたとおりに表示されます。"
+    }
+  },
+  "security": {
+    "description": "アカウントを安全に、ご自身の手で管理しましょう。",
+    "password": {
+      "title": "パスワード",
+      "setTitle": "パスワードを設定",
+      "description": "パスワードを変更すると、他のすべてのデバイスからログアウトされます。",
+      "setDescription": "現在はGoogleでログインしています。パスワードを追加すると、メールアドレスでもログインできます。",
+      "change": "パスワードを変更",
+      "setButton": "パスワードを設定",
+      "current": "現在のパスワード",
+      "new": "新しいパスワード",
+      "newHint": "8文字以上。よくある単語やメールアドレスは避けてください。",
+      "confirm": "新しいパスワード（確認）",
+      "tooShort": "8文字以上で入力してください。",
+      "mismatch": "パスワードが一致しません。",
+      "changed": "パスワードを変更しました",
+      "set": "パスワードを設定しました",
+      "othersSignedOut": "他のデバイスはすべてログアウトされました。"
+    },
+    "email": {
+      "title": "メールアドレス",
+      "description": "メールアドレスはログインと予約確認の送信に使用します。",
+      "confirmed": "確認済み",
+      "notConfirmed": "未確認",
+      "none": "このアカウントにはメールアドレスが登録されていません。"
+    },
+    "devices": {
+      "title": "デバイス",
+      "description": "共有のデバイスや紛失したデバイスでログインした場合は、ここからログアウトできます。このデバイスはログインしたままです。",
+      "status": "{count, plural, =0 {ログイン中なのはこのデバイスのみです} other {他の#台のデバイスでログイン中}}",
+      "signOutOthers": "他のデバイスからログアウト",
+      "confirmTitle": "他のデバイスからログアウトしますか？",
+      "confirmBody": "別のスマートフォン、タブレット、パソコンでこのアカウントを使用している人は、再度ログインが必要になります。",
+      "confirm": "ログアウトする",
+      "signedOutToast": "{count, plural, other {他の#台のデバイスからログアウトしました}}"
+    }
+  },
+  "notifications": {
+    "description": "お知らせの受け取り方を選べます。必要以上の連絡はいたしません。",
+    "saved": "保存しました",
+    "emailAndText": "メールとSMSでの通知",
+    "emailOnly": "メールでの通知",
+    "inboxNote": "ここでの設定にかかわらず、すべてのお知らせはKeptの通知ボックスにも表示されます。",
+    "addPhone": "SMSを受け取るには、<link>プロフィール</link>で電話番号を追加してください。",
+    "email": "メール",
+    "sms": "SMS",
+    "forTopic": "{topic}について",
+    "alwaysOn": {
+      "bookings": "予約に変更があった際にご連絡できるよう、メールは常にオンです。",
+      "business": "新しい予約やリクエストを見逃さないよう、メールは常にオンです。"
+    },
+    "topics": {
+      "bookings": {
+        "label": "予約の更新",
+        "description": "予約確定、変更、キャンセル。"
+      },
+      "reminders": {
+        "label": "リマインダー",
+        "description": "予約日時の前にお知らせします。"
+      },
+      "messages": {
+        "label": "メッセージ",
+        "description": "事業者または顧客からメッセージが届いたとき。"
+      },
+      "waitlist": {
+        "label": "キャンセル待ちの空き",
+        "description": "希望の時間が空いたとき。"
+      },
+      "reviews": {
+        "label": "レビューのお願い",
+        "description": "予約完了後に短いメッセージをお送りします。"
+      },
+      "business": {
+        "label": "ビジネスのアクティビティ",
+        "description": "あなたのビジネスへの新しい予約、リクエスト、レビュー。"
+      },
+      "marketing": {
+        "label": "ニュースとお得な情報",
+        "description": "予約したことのある事業者からの不定期のお知らせ。"
+      }
+    }
+  },
+  "addresses": {
+    "description": "理容師、カーディテイリング、パーソナルトレーナーなど、出張サービスのプロのために。",
+    "defaultLabel": "自宅",
+    "saved": "住所を保存しました",
+    "removed": "住所を削除しました",
+    "emptyTitle": "保存済みの住所はありません",
+    "emptyBody": "自宅やオフィスなど、出張サービスを予約する場所をまとめて保存しておけます。",
+    "add": "住所を追加",
+    "removeLabel": "{label}を削除",
+    "count": "{max}件中{count}件を保存済み",
+    "limit": "上限に達しました。別の住所を追加するには、既存の住所を削除してください。",
+    "dialogBody": "あなただけに表示されます。プロに住所が表示されるのは、その場所でサービスを予約したときだけです。",
+    "save": "住所を保存",
+    "fields": {
+      "name": "名前",
+      "nameHint": "例：自宅、職場、ジム",
+      "line1": "番地・丁目",
+      "line2": "建物名・部屋番号",
+      "city": "市区町村",
+      "region": "都道府県・地域",
+      "postalCode": "郵便番号",
+      "country": "国"
+    },
+    "removeTitle": "「{label}」を削除しますか？",
+    "removeBody": "この住所ですでに予約済みの予約には影響しません。",
+    "remove": "住所を削除"
+  },
+  "privacy": {
+    "description": "あなたのデータはあなたのものです。利用方法については<link>プライバシーポリシー</link>をご覧ください。",
+    "export": {
+      "title": "データをダウンロード",
+      "description": "プロフィール、保存済みの住所、予約、レビュー、メッセージ、保存したプロ、サポートへのお問い合わせのコピーをJSONファイルで取得できます。",
+      "button": "データをダウンロード",
+      "hint": "すぐに作成されます。個人情報が含まれているため、ファイルは安全な場所に保管してください。"
+    },
+    "delete": {
+      "title": "アカウントを削除",
+      "intro": "Keptアカウントが完全に閉鎖されます。削除すると次のようになります：",
+      "erased": "名前、メールアドレス、電話番号、写真、保存済みの住所、保存したプロが消去され、すべてのデバイスからログアウトされます。",
+      "upcoming": "{count, plural, other {今後の#件の予約は、各事業者のキャンセルポリシーに基づいてキャンセルされます。ポリシーで認められている返金も含まれます。}}",
+      "upcomingNone": "今後の予約は、各事業者のキャンセルポリシーに基づいてキャンセルされます。",
+      "records": "事業者や税務上必要な記録（過去の予約、支払い、レビュー）は保持されますが、「削除済みユーザー」として表示されます。",
+      "permanent": "この操作は取り消せません。後日、同じメールアドレスで新たに登録し直すことはできます。",
+      "blocked": "あなたは{businesses}のオーナーです。顧客が困ることのないよう、アカウントを削除する前に<link>ビジネス設定</link>からビジネスを閉鎖するか、他の人に譲渡してください。",
+      "copyFirst": "先にコピーを保存しますか？上のボタンからデータをダウンロードできます。",
+      "open": "アカウントを削除…",
+      "confirmTitle": "アカウントを削除しますか？",
+      "confirmBody": "この操作は取り消せません。",
+      "keep": "アカウントを残す",
+      "confirm": "アカウントを削除",
+      "willCancel": "{count, plural, other {今後の予約#件がキャンセルされます。}}",
+      "password": "パスワード",
+      "typeToConfirm": "確認のため <word>{word}</word> と入力してください",
+      "deletedToast": "アカウントを削除しました",
+      "deletedBody": "Keptをご利用いただきありがとうございました。"
+    }
+  },
+  "saved": {
+    "title": "保存済み",
+    "description": "{count, plural, other {保存したプロ：#人。}}下の空き枠は各カレンダーからリアルタイムで表示しています。",
+    "emptyTitle": "まだ保存していません",
+    "emptyBody": "気になるプロのハートをタップすると、ここに保存されます。いつものプロへの再予約や、決める前の比較に便利です。",
+    "explore": "プロを探す",
+    "loading": "保存したプロを読み込み中…"
+  },
+  "notificationList": {
+    "title": "通知",
+    "today": "今日",
+    "earlier": "以前",
+    "emptyTitle": "通知はまだありません",
+    "emptyBody": "予約確定、リマインダー、返信、キャンセル待ちの空きがここに表示されます。",
+    "unread": "未読{count}件",
+    "caughtUp": "すべて確認済みです",
+    "allCaughtUpToast": "すべて確認済み",
+    "markAll": "すべて既読にする",
+    "unreadItem": "未読",
+    "loadOlder": "以前の通知を読み込む",
+    "end": "これですべてです。"
+  },
+  "invite": {
+    "eyebrow": "チームへの招待",
+    "invalidTitle": "この招待は使用できません",
+    "invalidBody": "有効期限切れ、取り消し済み、またはすでに承諾済みの可能性があります。招待した方に新しいリンクを送ってもらってください。",
+    "goHome": "Keptへ",
+    "join": "{business}に参加",
+    "invitedAs": "<b>{role}</b>として招待されています。",
+    "signInWith": "承諾するには、<b>{email}</b>でログインするか、アカウントを作成してください。",
+    "createAccount": "アカウントを作成",
+    "signIn": "ログイン",
+    "wrongAccount": "現在<b>{email}</b>でログインしていますが、この招待は{invited}宛てに送られています。",
+    "wrongAccountHint": "ログアウトしてそのアドレスでログインし直すか、{email}宛てに招待を送ってもらってください。",
+    "acceptingAs": "<b>{email}</b>として承諾します。",
+    "accept": "承諾してスケジュールを開く",
+    "roles": {
+      "owner": {
+        "label": "オーナー",
+        "description": "請求やチームを含め、すべてを管理できます。"
+      },
+      "manager": {
+        "label": "マネージャー",
+        "description": "日々の運営を担当します。チームやビジネスの設定は変更できません。"
+      },
+      "receptionist": {
+        "label": "受付",
+        "description": "全員の予約を受け付け、管理します。"
+      },
+      "provider": {
+        "label": "プロ",
+        "description": "自分の予約とスケジュールを確認・管理できます。"
+      },
+      "custom": {
+        "label": "カスタム",
+        "description": "このメンバーができることを細かく設定します。"
+      }
+    }
+  }
+}
