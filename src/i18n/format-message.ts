@@ -42,7 +42,9 @@ function renderPlaceholder(body: string, vars: Vars, intlLocale: string): string
   const parts = body.split(",");
   const name = parts[0].trim();
   const value = vars[name];
-  if (parts.length < 3) return value == null ? "" : typeof value === "number" ? new Intl.NumberFormat(intlLocale).format(value) : String(value);
+  // Plain variables are inserted as given (a year must stay "2026", not "2,026");
+  // counts get locale digits and grouping through plural's "#".
+  if (parts.length < 3) return value == null ? "" : String(value);
   const kind = parts[1].trim();
   const options = parseOptions(parts.slice(2).join(","));
   if (kind === "plural") {

@@ -18,6 +18,7 @@ describe("i18n", () => {
     expect(formatMessage("{n, plural, one {# pro} other {# pros}}", { n: 3 }, "en-US")).toBe("3 pros");
     expect(formatMessage("{n, plural, one {# cita} other {# citas}}", { n: 1200 }, "es")).toBe("1200 citas".replace("1200", new Intl.NumberFormat("es").format(1200)));
     expect(formatMessage("Hi {name}!", { name: "Ana" }, "en-US")).toBe("Hi Ana!");
+    expect(formatMessage("© {year} Kept", { year: 2026 }, "en-US")).toBe("© 2026 Kept");
     expect(formatMessage("{kind, select, pro {Business} other {Client}}", { kind: "pro" }, "en-US")).toBe("Business");
     expect(placeholders("From {price} · {n, plural, one {# day} other {# days}}")).toEqual(["n", "price"]);
   });
