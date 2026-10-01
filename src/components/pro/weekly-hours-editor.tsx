@@ -52,7 +52,7 @@ export function WeeklyHoursEditor({ value, onChange }: { value: DayHours[]; onCh
         const meta = WEEKDAYS[d.weekday - 1];
         return (
           <li key={d.weekday} className="flex flex-col gap-3 px-4 py-3.5 sm:flex-row sm:items-start">
-            <div className="flex w-36 shrink-0 items-center gap-3 pt-1.5">
+            <div className="flex w-full shrink-0 items-center gap-3 pt-1.5 sm:w-36">
               <S.Root
                 checked={open}
                 onCheckedChange={(v) => setDay(d.weekday, v ? [{ start: 540, end: 1020 }] : [])}
@@ -62,10 +62,11 @@ export function WeeklyHoursEditor({ value, onChange }: { value: DayHours[]; onCh
                 <S.Thumb className="block size-5 translate-x-0.5 rounded-full bg-white shadow-sm transition-transform duration-200 data-[state=checked]:translate-x-[18px]" />
               </S.Root>
               <span className={cn("text-sm font-medium", open ? "text-ink" : "text-ink-3")}>{meta.long}</span>
+              {!open && <span className="ml-auto text-sm text-ink-3 sm:hidden">Closed</span>}
             </div>
-            <div className="min-w-0 flex-1">
+            <div className={cn("min-w-0 flex-1", !open && "hidden sm:block")}>
               {!open ? (
-                <p className="pt-2 text-sm text-ink-3">Closed</p>
+                <p className="hidden pt-2 text-sm text-ink-3 sm:block">Closed</p>
               ) : (
                 <div className="space-y-2">
                   {d.windows.map((w, i) => {

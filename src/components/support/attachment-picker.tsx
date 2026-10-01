@@ -30,7 +30,7 @@ export function AttachmentPicker({ value, onChange, max, disabled }: { value: At
       picked.map(async (file, i) => {
         const key = drafts[i].key;
         try {
-          const up = await uploadMedia(file, "support", { alt: "Support attachment" });
+          const up = await uploadMedia(file, { purpose: "support", alt: "Support attachment" });
           onChange((prev) => prev.map((a) => (a.key === key ? { ...a, id: up.id, media: up.media } : a)));
         } catch (err) {
           toast.error(`${file.name}: ${(err as ApiError).message}`);

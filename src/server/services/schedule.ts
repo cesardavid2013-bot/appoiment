@@ -177,3 +177,13 @@ export async function deleteBlock(m: Membership, actorUserId: string, blockId: s
   await db.delete(timeBlocks).where(eq(timeBlocks.id, blockId));
   await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "schedule.block_removed", targetType: "time_block", targetId: blockId });
 }
+
+/** Upcoming blocked time for the given members, plus business-wide closures. */
+export async function listUpcomingBlocks(businessId: string, memberIds: string[], now: Date) {
+  return db
+    .select({ id: timeBlocks.id, memberId: timeBlocks.memberId, startsAt: timeBlocks.startsAt, endsAt: timeBlocks.endsAt, reason: timeBlocks.reason, note: timeBlocks.note })
+    .from(timeBlocks)
+    .where(and(eq(timeBlocks.businessId, businessId), gt(timeBlocks.endsAt, now), memberIds.length ? sql`(${timeBlocks.memberId} is null or ${inArray(timeBlocks.memberId, memberIds)})` : isNull(timeBlocks.memberId)))
+    .orderBy(asc(timeBlocks.startsAt))
+    .limit(100);
+}

@@ -257,7 +257,7 @@ export function NewAppointmentDialog({
   );
 }
 
-const REASONS = [
+export const REASONS = [
   ["break", "Break"],
   ["personal", "Personal"],
   ["vacation", "Vacation"],

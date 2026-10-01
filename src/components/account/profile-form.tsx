@@ -35,7 +35,7 @@ export function ProfileForm({ initial, zones, smsEnabled }: Props) {
     if (!file) return;
     setPhotoBusy("upload");
     try {
-      const up = await uploadMedia(file, "avatar", { alt: name });
+      const up = await uploadMedia(file, { purpose: "avatar", alt: name });
       await api("/api/me/profile", { method: "PATCH", body: { avatarMediaId: up.id } });
       setAvatar(up.media);
       toast.success("Photo updated");
