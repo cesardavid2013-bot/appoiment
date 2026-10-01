@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Explorați profesioniștii",
+    "category": "Rezervați {category}",
+    "query": "{q} — căutare",
+    "description": "Comparați profesioniștii după disponibilitatea reală, prețuri și recenzii verificate."
+  },
+  "bar": {
+    "placeholder": "Căutați servicii sau profesioniști",
+    "label": "Căutare",
+    "clear": "Ștergeți căutarea"
+  },
+  "location": {
+    "placeholder": "Oriunde",
+    "label": "Locație",
+    "clear": "Ștergeți locația",
+    "useMine": "Folosiți locația mea actuală",
+    "finding": "Vă localizăm…",
+    "current": "Locația actuală",
+    "selectedArea": "Zona selectată",
+    "unsupported": "Browserul nu poate partaja locația. Tastați un oraș.",
+    "denied": "Locația este dezactivată pentru acest site. Tastați un oraș — sau permiteți accesul la locație din setările browserului.",
+    "failed": "Nu v-am putut afla locația. Tastați un oraș."
+  },
+  "quick": {
+    "availableToday": "Disponibil azi",
+    "instant": "Rezervare instantanee",
+    "mobile": "Vine la dumneavoastră",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Vizualizare",
+    "list": "Listă",
+    "map": "Hartă"
+  },
+  "heading": {
+    "explore": "Explorați",
+    "results": "Rezultate",
+    "query": "„{q}”"
+  },
+  "summary": {
+    "updating": "Se actualizează…",
+    "count": "{count, plural, one {# profesionist} few {# profesioniști} other {# de profesioniști}}",
+    "countMore": "Peste {count} profesioniști",
+    "near": "{results} lângă {place}",
+    "nearYou": "{results} lângă dumneavoastră"
+  },
+  "sort": {
+    "label": "Sortați după",
+    "relevance": "Cele mai potrivite",
+    "rating": "Cele mai bine evaluate",
+    "price": "Cel mai mic preț",
+    "distance": "Cele mai apropiate"
+  },
+  "categories": {
+    "label": "Categorii",
+    "all": "Toate"
+  },
+  "empty": {
+    "title": "Niciun rezultat deocamdată",
+    "query": "Încercați un termen mai general, altă ortografie sau eliminați câteva filtre.",
+    "filters": "Încercați să eliminați un filtru sau să căutați într-o zonă mai largă.",
+    "clear": "Ștergeți toate filtrele"
+  },
+  "showMore": "Afișați mai multe",
+  "filters": {
+    "button": "Filtre",
+    "buttonCount": "Filtre · {count}",
+    "title": "Filtre",
+    "clearAll": "Ștergeți tot",
+    "show": "Afișați rezultatele",
+    "availability": "Disponibilitate și rezervare",
+    "rating": "Evaluare",
+    "minRating": "Evaluare minimă",
+    "any": "Oricare",
+    "price": "Preț de pornire de până la",
+    "maxPrice": "Preț maxim de pornire",
+    "distance": "Distanță",
+    "provider": "Furnizor",
+    "providerType": "Tipul furnizorului",
+    "individual": "Profesioniști independenți",
+    "business": "Firme și echipe"
+  }
+}

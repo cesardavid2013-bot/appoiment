@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "Rezervare",
+      "hint": "Modificări, anulări sau probleme cu o programare."
+    },
+    "payment": {
+      "label": "Plată",
+      "hint": "Debitări, avansuri, rambursări sau bacșișuri."
+    },
+    "account": {
+      "label": "Cont",
+      "hint": "Autentificare, profil sau datele dumneavoastră."
+    },
+    "report": {
+      "label": "Raportați o firmă",
+      "hint": "Probleme de siguranță, anunțuri înșelătoare sau comportament neadecvat."
+    },
+    "other": {
+      "label": "Altceva",
+      "hint": "Orice altceva cu care vă putem ajuta."
+    }
+  },
+  "status": {
+    "open": "Așteaptă asistența",
+    "awaiting_customer": "Răspuns primit",
+    "resolved": "Rezolvată",
+    "closed": "Închisă"
+  },
+  "home": {
+    "title": "Ajutor și asistență",
+    "description": "Ajutor pentru o rezervare, o plată sau contul dumneavoastră.",
+    "newRequest": "Solicitare nouă",
+    "yourRequests": "Solicitările dumneavoastră",
+    "emptyTitle": "Nicio solicitare încă",
+    "emptyBody": "Dacă ceva nu e în regulă cu o rezervare, o plată sau contul, spuneți-ne și vă ajutăm să rezolvați.",
+    "contact": "Contactați asistența",
+    "ticketLine": "{category} · Actualizat {date} · {count, plural, one {# mesaj} few {# mesaje} other {# de mesaje}}",
+    "quickAnswers": "Răspunsuri rapide",
+    "stillStuck": "Tot nu ați rezolvat? <link>Contactați asistența</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Cum anulez sau reprogramez o programare?",
+      "a": "Deschideți <link>Rezervări</link>, alegeți programarea și atingeți Reprogramați sau Anulați. Fiecare firmă își stabilește propriul termen de anulare — înainte să confirmați, vedeți exact ce se aplică, inclusiv eventuale taxe sau rambursări."
+    },
+    "refund": {
+      "q": "Când primesc rambursarea?",
+      "a": "Rambursările ajung pe cardul cu care ați plătit imediat ce anularea este confirmată. În funcție de bancă, de obicei apar în 5–10 zile lucrătoare. Dacă avansul se rambursează sau nu depinde de politica firmei, afișată la rezervare."
+    },
+    "contactPro": {
+      "q": "Cum contactez un profesionist?",
+      "a": "Folosiți opțiunea Mesaj din profilul său sau din rezervare. Conversațiile se află în <link>Mesaje</link>. Pentru orice ține de serviciul propriu-zis — indicații de traseu, pregătire, ce să aduceți — firma vă răspunde cel mai repede."
+    },
+    "report": {
+      "q": "Ceva nu a mers bine cu o firmă. Ce pot face?",
+      "a": "Deschideți o solicitare mai jos și alegeți „Raportați o firmă”. Atașați programarea, dacă există. Citim fiecare raport și putem interveni în privința rambursărilor și, la nevoie, putem elimina firme de pe Kept."
+    },
+    "account": {
+      "q": "Cum îmi schimb adresa de e-mail sau îmi șterg contul?",
+      "a": "Schimbarea adresei de e-mail se face prin asistență, ca să putem confirma că sunteți dumneavoastră. Vă puteți descărca datele sau șterge contul singur din <link>Confidențialitate și date</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Solicitare de asistență",
+    "allRequests": "Toate solicitările",
+    "opened": "{category} · Deschisă <date></date>",
+    "appointmentLine": "{date}, la {time} · Ref. {reference}",
+    "conversation": "Conversație",
+    "keptSupport": "Asistența Kept",
+    "openImage": "Deschideți imaginea atașată",
+    "attachedImage": "Imagine atașată",
+    "closed": "Această solicitare este închisă. <link>Deschideți o solicitare nouă</link> dacă mai aveți nevoie de ajutor.",
+    "willReply": "Vă răspundem aici și vă anunțăm când o facem.",
+    "sorted": "S-a rezolvat? Anunțați-ne."
+  },
+  "new": {
+    "title": "Contactați asistența",
+    "intro": "Spuneți-ne ce se întâmplă și o persoană reală din echipa Kept vă va răspunde aici. Pentru întrebări despre serviciul propriu-zis, de obicei e mai rapid să scrieți firmei.",
+    "notFound": "Nu am găsit această programare în contul dumneavoastră, așa că nu a fost atașată. Puteți alege una mai jos."
+  },
+  "form": {
+    "topic": "Cu ce vă putem ajuta?",
+    "chooseTopic": "Alegeți un subiect",
+    "addSubject": "Adăugați un subiect scurt",
+    "moreDetail": "Spuneți-ne puțin mai mult — măcar o propoziție ne ajută să vă ajutăm",
+    "sent": "Solicitare trimisă",
+    "checkFields": "Verificați câmpurile evidențiate.",
+    "related": "Programare asociată",
+    "refHint": "Ref. {reference} · {business}",
+    "linkHint": "Dacă atașați o rezervare, o putem verifica imediat.",
+    "none": "Niciuna",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Subiect",
+    "subjectPlaceholder": "ex. Mi s-a debitat avansul de două ori",
+    "details": "Detalii",
+    "detailsHint": "Ce s-a întâmplat, când și ce ați dori să facem. Nu includeți numere de card sau parole.",
+    "images": "Imagini",
+    "optional": "Opțional",
+    "cancel": "Anulați",
+    "uploadingImages": "Se încarcă imaginile…",
+    "send": "Trimiteți solicitarea"
+  },
+  "reply": {
+    "writeFirst": "Scrieți mai întâi un răspuns.",
+    "sent": "Răspuns trimis",
+    "label": "Răspuns",
+    "reopens": "Dacă răspundeți, solicitarea se redeschide.",
+    "placeholder": "Adăugați detalii sau răspundeți la întrebarea noastră…",
+    "send": "Trimiteți răspunsul"
+  },
+  "resolve": {
+    "button": "Marcați ca rezolvată",
+    "done": "Marcată ca rezolvată",
+    "doneBody": "Ne bucurăm că s-a rezolvat. Puteți răspunde în continuare dacă mai apare ceva.",
+    "confirmTitle": "Marcați această solicitare ca rezolvată?",
+    "confirmBody": "Anunțați-ne că s-a rezolvat. Dacă mai apare ceva, răspundeți aici și reluăm discuția."
+  },
+  "attach": {
+    "tooMany": "Puteți atașa cel mult {max} imagini.",
+    "alt": "Atașament la solicitare",
+    "label": "Atașamente",
+    "uploadingName": "Se încarcă {name}",
+    "remove": "Eliminați {name}",
+    "add": "Adăugați o imagine",
+    "uploading": "{count, plural, one {Se încarcă # imagine…} few {Se încarcă # imagini…} other {Se încarcă # de imagini…}}",
+    "hint": "Capturile de ecran sau fotografiile ajută. Cel mult {max} imagini, de câte 15 MB fiecare."
+  }
+}

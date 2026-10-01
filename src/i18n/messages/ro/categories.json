@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Frizerie"
+  },
+  "hair": {
+    "name": "Coafură și frizerie",
+    "description": "Tunsori, vopsit, coafat, împletituri și îngrijire."
+  },
+  "lashes-brows": {
+    "name": "Gene și sprâncene"
+  },
+  "massage": {
+    "name": "Masaj"
+  },
+  "personal-training": {
+    "name": "Antrenament personal"
+  },
+  "hair-salon": {
+    "name": "Salon de coafură"
+  },
+  "makeup": {
+    "name": "Machiaj"
+  },
+  "nails": {
+    "name": "Unghii",
+    "description": "Manichiură, pedichiură, extensii și nail art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga și pilates"
+  },
+  "beauty": {
+    "name": "Frumusețe",
+    "description": "Gene, sprâncene, machiaj și ten."
+  },
+  "braids-locs": {
+    "name": "Împletituri și dreaduri"
+  },
+  "skincare": {
+    "name": "Cosmetică și îngrijirea tenului"
+  },
+  "wellness": {
+    "name": "Wellness",
+    "description": "Masaj, spa și terapii corporale."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Antrenament personal, yoga, pilates și coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tatuaje și piercing",
+    "description": "Tatuaje personalizate, flash și piercinguri."
+  },
+  "photography": {
+    "name": "Foto și video",
+    "description": "Portrete, evenimente, produse și video."
+  },
+  "education": {
+    "name": "Cursuri și meditații",
+    "description": "Meditatori, profesori de muzică și lecții de limbi străine."
+  },
+  "home-services": {
+    "name": "Servicii pentru casă",
+    "description": "Curățenie, reparații și meseriași."
+  },
+  "automotive": {
+    "name": "Auto",
+    "description": "Detailing, spălătorie auto și mecanici la domiciliu."
+  },
+  "pets": {
+    "name": "Animale de companie",
+    "description": "Toaletaj, pet sitting și dresaj."
+  },
+  "events": {
+    "name": "Evenimente",
+    "description": "DJ, organizatori și profesioniști pentru evenimente."
+  },
+  "professional": {
+    "name": "Servicii profesionale",
+    "description": "Consultanți, coachi și consilieri."
+  },
+  "other": {
+    "name": "Altele",
+    "description": "Tot ce mai puteți rezerva."
+  }
+}

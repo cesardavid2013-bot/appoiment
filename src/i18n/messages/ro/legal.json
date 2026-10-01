@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Dacă traducerile diferă, se aplică versiunea în limba engleză.",
+  "nav": {
+    "label": "Documente juridice",
+    "terms": "Termeni și condiții",
+    "privacy": "Politica de confidențialitate"
+  },
+  "doc": {
+    "lastUpdated": "Ultima actualizare: {date}",
+    "counselNote": "Acesta este un document inițial, scris pe înțelesul tuturor. Va fi revizuit de consilieri juridici înainte ca Kept să fie lansat public și se poate modifica în urma acestei revizuiri. Vă vom anunța înainte să intre în vigoare orice modificare care vă afectează drepturile.",
+    "contents": "Cuprins"
+  },
+  "terms": {
+    "meta": {
+      "title": "Termeni și condiții",
+      "description": "Termenii, pe înțelesul tuturor, pentru folosirea Kept la rezervarea profesioniștilor sau la administrarea afacerii."
+    },
+    "title": "Termeni și condiții",
+    "intro": "Acești termeni explică cum funcționează Kept și ce așteptăm de la toți cei care îl folosesc. I-am păstrat scurți și ușor de citit. Dacă ceva nu este clar, <support>întrebați-ne</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Ce este Kept",
+        "body": {
+          "p1": "Kept este o platformă de tip marketplace și un instrument de rezervare. Clienții îl folosesc pentru a găsi și a rezerva profesioniști — frizeri, stiliști, antrenori, meditatori, specialiști în detailing auto și mulți alții. Profesioniștii și firmele îl folosesc pentru a-și publica serviciile, a-și gestiona calendarul și a încasa plăți.",
+          "p2": "<b>Serviciul este prestat de profesionistul sau firma la care rezervați, nu de Kept.</b> Când rezervați, acordul privind serviciul îl încheiați cu acea firmă. Noi administrăm platforma care vă pune în legătură, vă arată prețurile și regulile lor și ajută ambele părți să respecte programarea."
+        }
+      },
+      "account": {
+        "title": "Contul dumneavoastră",
+        "body": {
+          "li1": "Pentru a crea un cont trebuie să aveți cel puțin 18 ani (sau vârsta majoratului în țara în care locuiți). Puteți rezerva pentru altcineva, de exemplu pentru copilul dumneavoastră, dacă sunteți responsabil de acesta.",
+          "li2": "Furnizați informații corecte și mențineți-le actualizate — firmele se bazează pe ele pentru a vă contacta în legătură cu programările.",
+          "li3": "Nu vă dezvăluiți parola. Sunteți responsabil pentru tot ce se întâmplă în contul dumneavoastră. Dacă bănuiți că altcineva are acces, schimbați parola și deconectați celelalte dispozitive din Autentificare și securitate.",
+          "li4": "Un cont pentru o singură persoană. Firmele își adaugă membrii echipei ca persoane separate, nu folosesc o autentificare comună."
+        }
+      },
+      "booking": {
+        "title": "Rezervarea ca client",
+        "body": {
+          "p1": "Înainte de a confirma o rezervare, vedeți prețul (sau cum este estimat), durata, eventualul avans și politica firmei privind anularea și neprezentarea. Prin rezervare, acceptați aceste condiții.",
+          "li1": "<b>Rezervările instantanee</b> sunt confirmate imediat. <b>Cererile</b> sunt confirmate doar după ce firma le acceptă; până atunci ora vă este rezervată, iar cererile fără răspuns expiră.",
+          "li2": "Puteți anula sau reprograma din pagina rezervării, în limitele regulilor firmei. Anulările târzii și neprezentările vă pot costa o parte sau tot avansul ori o taxă, exact așa cum vi s-a arătat la rezervare.",
+          "li3": "Dacă prețul unui serviciu este estimativ (de exemplu „de la” sau un interval), prețul final se stabilește cu firma la programare.",
+          "li4": "Dacă Kept percepe o taxă de serviciu pentru o rezervare, aceasta este afișată înainte de confirmare. Nu adăugăm niciodată costuri ulterior."
+        }
+      },
+      "payments": {
+        "title": "Plăți și rambursări",
+        "body": {
+          "p1": "Plățile online sunt procesate de Stripe. Kept nu vede și nu stochează niciodată numărul complet al cardului dumneavoastră. Unele firme încasează plata la fața locului; în acest caz, le plătiți direct.",
+          "li1": "Rambursările respectă politica firmei afișată la rezervare și se fac pe cardul cu care ați plătit. Banca poate avea nevoie de câteva zile lucrătoare pentru a le afișa.",
+          "li2": "Dacă o firmă vă anulează sau vă refuză programarea, tot ce ați plătit online pentru aceasta vă este rambursat.",
+          "li3": "Dacă ceva nu a mers bine cu o plată, <supportPayment>contactați-ne</supportPayment> înainte de a deschide o contestație la bancă — de obicei este mai rapid."
+        }
+      },
+      "businesses": {
+        "title": "Pentru profesioniști și firme",
+        "body": {
+          "li1": "Anunțul dumneavoastră trebuie să fie corect: cine sunteți, ce oferiți, prețurile, unde lucrați și regulile. Fotografiile și videoclipurile trebuie să prezinte propria muncă sau să fie folosite cu permisiune.",
+          "li2": "Sunteți responsabil să dețineți toate licențele, autorizațiile, asigurările și calificările cerute de activitatea dumneavoastră și să vă îndepliniți obligațiile fiscale.",
+          "li3": "Respectați rezervările pe care le acceptați și regulile pe care le publicați. Anulările repetate în ultimul moment, neprezentările sau anunțurile înșelătoare pot duce la suspendarea profilului.",
+          "li4": "Planurile, limitele și taxele sunt prezentate pe <pricing>pagina de prețuri</pricing>. Comisionul platformei se aplică doar plăților pe care clienții le fac online prin Kept. Plățile către dumneavoastră sunt efectuate de Stripe în propriul cont și sunt supuse și termenilor Stripe.",
+          "li5": "Datele clienților primite prin Kept pot fi folosite pentru prestarea serviciilor și pentru comunicările ulterioare legate de acestea. Trimiteți mesaje de marketing doar clienților care au acceptat să le primească.",
+          "li6": "Rămâneți proprietarul conținutului pe care îl încărcați și îi acordați Kept permisiunea de a-l afișa pe Kept și în promovarea profilului dumneavoastră cât timp anunțul este activ.",
+          "li7": "Plasările Spotlight sunt întotdeauna marcate ca promovate. Sunt gratuite pe perioada lansării; dacă acest lucru se schimbă, vă anunțăm înainte de a percepe orice sumă."
+        }
+      },
+      "reviews": {
+        "title": "Recenzii",
+        "body": {
+          "p1": "Doar clienții cu o programare finalizată pot lăsa o recenzie, o singură dată per programare. Recenziile trebuie să fie oneste și să se refere la propria experiență. Firmele pot răspunde public.",
+          "p2": "Nu este permis să oferiți ceva în schimbul unei recenzii sau al eliminării uneia. Putem ascunde sau elimina recenziile care încalcă acești termeni — de exemplu spam, discurs instigator la ură, informații personale sau conflicte de interese —, dar nu eliminăm recenziile doar pentru că sunt negative."
+        }
+      },
+      "conduct": {
+        "title": "Ce nu aveți voie să faceți pe Kept",
+        "body": {
+          "li1": "Să oferiți sau să rezervați orice este ilegal, servicii sexuale sau orice pune oamenii în pericol.",
+          "li2": "Să hărțuiți, să amenințați sau să discriminați pe oricine — clienți, profesioniști sau echipa noastră.",
+          "li3": "Să creați conturi, anunțuri, rezervări sau recenzii false ori să vă dați drept altcineva.",
+          "li4": "Să încărcați conținut pe care nu aveți dreptul să îl distribuiți sau care conține informații personale ale altor persoane fără permisiunea lor.",
+          "li5": "Să extrageți automat date, să supraîncărcați, să sondați sau să perturbați serviciul ori să încercați să îi ocoliți securitatea sau taxele."
+        }
+      },
+      "ourRole": {
+        "title": "Rolul nostru și limitele lui",
+        "body": {
+          "p1": "Lucrăm pentru ca Kept să fie sigur și fiabil și luăm măsuri în urma rapoartelor. Însă firmele de pe Kept sunt independente — nu sunt angajații sau agenții noștri și nu garantăm calitatea, siguranța sau legalitatea serviciilor lor. Insigna „verificat” înseamnă că am analizat documentele furnizate de firmă; nu reprezintă o recomandare.",
+          "p2": "Kept este furnizat „ca atare”. În măsura permisă de lege, nu răspundem pentru pierderi indirecte sau subsecvente ori pentru ce se întâmplă în timpul unui serviciu între dumneavoastră și o firmă. Nimic din acești termeni nu limitează drepturile pe care le aveți în temeiul legislației privind protecția consumatorilor și care nu pot fi excluse."
+        }
+      },
+      "ending": {
+        "title": "Suspendarea și închiderea contului",
+        "body": {
+          "p1": "Vă puteți șterge contul oricând din <privacyData>Confidențialitate și date</privacyData>. Programările viitoare sunt anulate conform politicii fiecărei firme, iar înregistrările de care au nevoie firmele — precum programările și plățile trecute — sunt păstrate în formă anonimizată.",
+          "p2": "Putem suspenda sau închide conturile care încalcă acești termeni sau îi pun pe alții în pericol. Când este posibil, vă vom spune de ce și vă vom da ocazia să răspundeți."
+        }
+      },
+      "changes": {
+        "title": "Modificări, dispute și contact",
+        "body": {
+          "p1": "Când modificăm acești termeni într-un mod semnificativ, vă anunțăm din timp prin e-mail sau în aplicație. Dacă folosiți în continuare Kept după intrarea în vigoare a unei modificări, înseamnă că o acceptați.",
+          "p2": "Legea aplicabilă și procedura de soluționare a disputelor vor fi adăugate aici după revizuirea juridică, înainte ca Kept să fie lansat public.",
+          "p3": "Aveți întrebări despre acești termeni? <support>Contactați-ne</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politica de confidențialitate",
+      "description": "Ce date personale colectează Kept, de ce, cine le vede și cum le puteți descărca sau șterge."
+    },
+    "title": "Politica de confidențialitate",
+    "intro": "Această politică explică ce date personale colectează Kept, de ce avem nevoie de ele, cine le poate vedea și ce opțiuni aveți — atât pentru clienți, cât și pentru profesioniști.",
+    "sections": {
+      "summary": {
+        "title": "Pe scurt",
+        "body": {
+          "li1": "Colectăm ce ne trebuie pentru a gestiona rezervările: cine sunteți, ce rezervați și cum vă putem contacta.",
+          "li2": "Firmele la care rezervați văd detaliile de care au nevoie pentru a vă servi. Nimeni altcineva nu le vede, cu excepția furnizorilor de servicii care ne ajută să operăm Kept.",
+          "li3": "Nu vindem datele dumneavoastră personale și nu folosim instrumente de urmărire publicitară.",
+          "li4": "Puteți descărca o copie a datelor sau vă puteți șterge singur contul, oricând, din <privacyData>Confidențialitate și date</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Informațiile pe care ni le furnizați",
+        "body": {
+          "li1": "<b>Cont:</b> numele, adresa de e-mail, parola (stocată doar ca hash unidirecțional) și, opțional, numărul de telefon, fotografia și fusul orar. Dacă vă autentificați cu Google, primim numele și adresa de e-mail de la Google.",
+          "li2": "<b>Rezervări:</b> serviciul, ora, firma și prețul; notele pe care le adăugați; răspunsurile la întrebările preliminare ale firmei; și o adresă, dacă un profesionist vine la dumneavoastră.",
+          "li3": "<b>Plăți:</b> sume, stare și rambursări. Datele cardului ajung direct la Stripe — nu primim niciodată numărul complet al cardului.",
+          "li4": "<b>Mesaje, recenzii și solicitări de asistență</b>, inclusiv imaginile atașate, și adresele pe care le salvați.",
+          "li5": "<b>Firmele</b> ne furnizează și detalii despre firmă, membrii echipei, servicii, programe, conținut media de portofoliu, datele pentru plăți (păstrate de Stripe) și evidențele clienților pe care le țin."
+        }
+      },
+      "automatic": {
+        "title": "Informații colectate automat",
+        "body": {
+          "li1": "<b>Sesiuni de autentificare:</b> un cookie vă menține autentificat. Stocăm sesiunea împreună cu tipul browserului, astfel încât dispozitivele să poată fi deconectate în siguranță.",
+          "li2": "<b>Securitate:</b> stocăm un hash unidirecțional, cu cheie, al adresei IP — nu adresa în sine — pentru a limita abuzurile și a investiga activitățile suspecte.",
+          "li3": "<b>Locație:</b> dacă alegeți un loc sau vă partajați locația pentru a căuta în apropiere, aceasta este salvată într-un cookie pe dispozitiv, pentru a vă reține alegerea. Nu vă urmărim locația în fundal.",
+          "li4": "<b>Activitatea pe Kept:</b> profesioniștii pe care îi vizualizați și îi salvați, ca să vi-i putem arăta din nou; și numărul de vizualizări și clicuri pe anunțurile promovate, raportat firmelor doar sub formă de totaluri."
+        }
+      },
+      "use": {
+        "title": "Cum le folosim",
+        "body": {
+          "li1": "Pentru a face și modifica rezervări și a vă reaminti de ele, precum și pentru a procesa plăți și rambursări.",
+          "li2": "Pentru a trimite notificările pe care le-ați ales. Confirmările și modificările rezervărilor se trimit întotdeauna; tot restul poate fi dezactivat din Setări pentru notificări.",
+          "li3": "Pentru a vă arăta profesioniști relevanți și ore libere în apropiere.",
+          "li4": "Pentru a menține Kept sigur: prevenirea fraudei, a spamului și a abuzurilor și luarea de măsuri în urma rapoartelor.",
+          "li5": "Pentru a răspunde la solicitările de asistență și a îmbunătăți Kept.",
+          "li6": "Pentru a ne îndeplini obligațiile legale, cum ar fi evidențele fiscale și contabile."
+        }
+      },
+      "businesses": {
+        "title": "Ce văd firmele",
+        "body": {
+          "p1": "Când rezervați, firma vă vede numele, adresa de e-mail și numărul de telefon (dacă l-ați adăugat), rezervarea și tot ce i-ați transmis — note, răspunsuri la întrebările preliminare, o adresă pentru serviciu — plus vizitele anterioare la ea. Poate adăuga note private în fișa dumneavoastră de client.",
+          "p2": "Fiecare firmă răspunde de modul în care își folosește evidențele clienților și vă poate trimite mesaje de marketing doar dacă ați fost de acord. Recenziile sunt publice și afișează prenumele și inițiala numelui de familie."
+        }
+      },
+      "sharing": {
+        "title": "Cu cine le mai partajăm",
+        "body": {
+          "p1": "Folosim un număr mic de furnizori care prelucrează date în numele nostru, pe baza unor contracte care limitează ce pot face cu ele:",
+          "li1": "Stripe, pentru plăți și transferuri.",
+          "li2": "Furnizorul nostru de e-mail și un furnizor de SMS, dacă mesajele text sunt activate.",
+          "li3": "Google, doar dacă alegeți să vă autentificați cu Google.",
+          "li4": "Servicii de hărți și de căutare a adreselor, pentru a afișa hărți și a găsi locurile pe care le căutați.",
+          "li5": "Furnizorii noștri de găzduire și infrastructură.",
+          "p2": "Putem divulga informații și atunci când legea o cere, pentru a proteja siguranța cuiva sau în cadrul unei fuziuni ori achiziții — caz în care această politică ar continua să se aplice. Nu vindem niciodată date personale."
+        }
+      },
+      "rights": {
+        "title": "Opțiunile și drepturile dumneavoastră",
+        "body": {
+          "li1": "<b>Acces:</b> descărcați o copie a datelor din <privacyData>Confidențialitate și date</privacyData>.",
+          "li2": "<b>Rectificare:</b> actualizați-vă datele din <profile>Profil</profile> sau cereți-ne nouă să o facem.",
+          "li3": "<b>Ștergere:</b> ștergeți-vă contul din Confidențialitate și date. Vedeți mai jos ce păstrăm.",
+          "li4": "<b>Notificări:</b> alegeți ce vă trimitem din <notifications>Setări pentru notificări</notifications>.",
+          "li5": "În funcție de locul în care trăiți, puteți avea și alte drepturi, cum ar fi să vă opuneți anumitor utilizări sau să depuneți o plângere la o autoritate pentru protecția datelor. <supportAccount>Contactați-ne</supportAccount> și vă ajutăm."
+        }
+      },
+      "retention": {
+        "title": "Cât timp le păstrăm",
+        "body": {
+          "p1": "Vă păstrăm informațiile cât timp contul este deschis.",
+          "p2": "Când vă ștergeți contul, ștergem imediat numele, adresa de e-mail, telefonul, fotografia, adresele salvate, profesioniștii salvați, notificările și metodele de autentificare. Înregistrările de care depind firmele și contabilitatea — programări trecute, plăți și recenzii — sunt păstrate, dar asociate cu „Utilizator șters”, nu cu dumneavoastră. Mesajele schimbate cu o firmă rămân în istoricul conversațiilor acelei firme."
+        }
+      },
+      "security": {
+        "title": "Securitate",
+        "body": {
+          "p1": "Parolele sunt transformate în hash cu Argon2, sesiunile sunt stocate pe server și pot fi revocate, conexiunile sunt criptate, iar fotografiile încărcate sunt recodificate astfel încât datele de localizare ascunse să fie eliminate. Niciun sistem nu este perfect sigur; dacă aflăm de o breșă care vă afectează, vă anunțăm prompt."
+        }
+      },
+      "children": {
+        "title": "Copii",
+        "body": {
+          "p1": "Conturile Kept sunt pentru adulți. Un părinte sau tutore poate rezerva un serviciu pentru copilul său; nu colectăm în mod intenționat date personale direct de la copii."
+        }
+      },
+      "changes": {
+        "title": "Modificări și contact",
+        "body": {
+          "p1": "Dacă modificăm această politică într-un mod semnificativ, vă anunțăm înainte să intre în vigoare.",
+          "p2": "Aveți întrebări sau solicitări privind datele dumneavoastră? <supportAccount>Contactați-ne</supportAccount>."
+        }
+      }
+    }
+  }
+}

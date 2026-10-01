@@ -1,0 +1,22 @@
+{
+  "title": "Întreabă Kept",
+  "description": "Spuneți ce vă trebuie și când. Verific orele libere reale.",
+  "newConversation": "Conversație nouă",
+  "close": "Închideți",
+  "forExample": "De exemplu:",
+  "starters": {
+    "one": "Un frizer mâine după-amiază",
+    "two": "Unghii cu gel în weekend sub 60 $",
+    "three": "Masaj în apropiere în seara asta",
+    "four": "Meditații la matematică online"
+  },
+  "searching": "Caut",
+  "listening": "Ascult…",
+  "placeholder": "Un frizer sâmbătă dimineață…",
+  "yourMessage": "Mesajul dumneavoastră",
+  "stopListening": "Opriți ascultarea",
+  "speak": "Vorbiți",
+  "send": "Trimiteți",
+  "verified": "Verificat",
+  "online": "Online"
+}

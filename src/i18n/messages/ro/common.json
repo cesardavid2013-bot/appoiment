@@ -1,0 +1,90 @@
+{
+  "language": "Limbă",
+  "meta": {
+    "title": "Kept — Rezervați profesioniști locali de încredere",
+    "description": "Descoperiți și rezervați frizeri, stiliști, antrenori, fotografi, meditatori și orice fel de profesionist local — și gestionați-vă ușor propriile programări."
+  },
+  "skipToContent": "Salt la conținut",
+  "logoHome": "Kept — pagina principală",
+  "header": {
+    "mainNav": "Principal",
+    "search": "Căutați servicii sau profesioniști",
+    "ask": "Întreabă",
+    "askKept": "Întreabă Kept",
+    "explore": "Explorați",
+    "myBusiness": "Firma mea",
+    "forPros": "Pentru profesioniști",
+    "bookings": "Rezervări",
+    "messages": "Mesaje",
+    "notifications": "Notificări",
+    "unread": "necitite",
+    "accountMenu": "Meniul contului",
+    "logIn": "Autentificare",
+    "signUp": "Înregistrare"
+  },
+  "accountMenu": {
+    "bookings": "Rezervări",
+    "saved": "Salvate",
+    "messages": "Mesaje",
+    "settings": "Setările contului",
+    "help": "Ajutor și asistență",
+    "switchToBusiness": "Treceți la firmă",
+    "offerServices": "Oferiți-vă serviciile",
+    "admin": "Consolă de administrare",
+    "signOut": "Deconectare"
+  },
+  "tabs": {
+    "label": "Principal",
+    "home": "Acasă",
+    "explore": "Explorați",
+    "bookings": "Rezervări",
+    "inbox": "Mesaje",
+    "account": "Cont"
+  },
+  "footer": {
+    "tagline": "Rezervați profesioniști de încredere. Gestionați-vă programările cu mai puțin efort.",
+    "discover": "Descoperiți",
+    "explore": "Explorați",
+    "hair": "Coafură și frizerie",
+    "wellness": "Wellness",
+    "fitness": "Fitness",
+    "forPros": "Pentru profesioniști",
+    "howItWorks": "Cum funcționează",
+    "listServices": "Listați-vă serviciile",
+    "dashboard": "Panoul firmei",
+    "help": "Ajutor",
+    "support": "Asistență",
+    "terms": "Termeni",
+    "privacy": "Confidențialitate",
+    "copyright": "© {year} Kept. Toate drepturile rezervate."
+  },
+  "price": {
+    "free": "Gratuit",
+    "quote": "Preț după consultație",
+    "from": "De la {price}"
+  },
+  "rating": {
+    "new": "Nou",
+    "summary": "evaluare {avg} · {count, plural, one {# recenzie} few {# recenzii} other {# de recenzii}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Se așteaptă plata",
+    "requested": "Cerere trimisă",
+    "confirmed": "Confirmată",
+    "checked_in": "Client sosit",
+    "in_progress": "În desfășurare",
+    "completed": "Finalizată",
+    "cancelled": "Anulată",
+    "declined": "Refuzată",
+    "no_show": "Neprezentare",
+    "expired": "Expirată"
+  },
+  "policy": {
+    "freeUntil": "Anulare gratuită cu până la {hours} h înainte. Anulările mai târzii se taxează cu {percent}% din total.",
+    "cancelAhead": "Vă rugăm să anulați cu cel puțin {hours} h înainte de programare.",
+    "freeAnyTime": "Anulare gratuită oricând înainte de programare.",
+    "depositRefundable": "Avansurile se rambursează dacă anulați la timp.",
+    "depositNonRefundable": "Avansurile nu se rambursează.",
+    "reschedule": "Reprogramare online cu până la {hours} h înainte."
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Nu a fost găsit",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} în {city}",
+    "bookOnline": "Rezervați online la {name}."
+  },
+  "preview": {
+    "notice": "Previzualizare — doar dumneavoastră vedeți această pagină până o publicați.",
+    "goLive": "Publicați"
+  },
+  "verified": "Verificat de Kept",
+  "verifiedLabel": "Firmă verificată",
+  "reviewsCount": "{count, plural, one {# recenzie verificată} few {# recenzii verificate} other {# de recenzii verificate}}",
+  "newOnKept": "Nou pe Kept",
+  "travels": "{city} · se deplasează până la {km} km",
+  "status": {
+    "openUntil": "Deschis · până la {time}",
+    "opensAt": "Se deschide la {time}",
+    "opensTomorrow": "Se deschide mâine la {time}",
+    "opensDay": "Se deschide {day} la {time}",
+    "notSet": "Program nesetat",
+    "closed": "Închis"
+  },
+  "nav": {
+    "label": "Secțiunile profilului",
+    "services": "Servicii",
+    "work": "Lucrări",
+    "featured": "Recomandate",
+    "reviews": "Recenzii",
+    "about": "Despre"
+  },
+  "services": {
+    "eyebrow": "Meniul",
+    "title": "Servicii",
+    "empty": "Această firmă nu a publicat încă servicii.",
+    "sale": "Reducere",
+    "group": "Grup · până la {count}",
+    "request": "Rezervare la cerere",
+    "options": "Opțiuni disponibile",
+    "deposit": "Avans la rezervare",
+    "book": "Rezervați",
+    "bookService": "Rezervați {name}"
+  },
+  "work": {
+    "eyebrow": "Portofoliu",
+    "title": "Lucrări recente"
+  },
+  "featured": {
+    "eyebrow": "Pe rețelele sociale",
+    "title": "Recomandate",
+    "allProfiles": "Toate profilurile sociale",
+    "bookThis": "Rezervați asta · {service}",
+    "newTab": "(se deschide într-o filă nouă)",
+    "footnote": "Playerele se încarcă de pe fiecare platformă doar când apăsați redare.",
+    "play": "Redați {title}",
+    "loadsFrom": "Se încarcă de pe {host}"
+  },
+  "team": {
+    "eyebrow": "Oamenii",
+    "title": "Echipa"
+  },
+  "reviews": {
+    "eyebrow": "Din gură în gură",
+    "title": "Recenzii",
+    "empty": "Nicio recenzie încă. Recenziile pot fi lăsate doar de clienți, după o vizită finalizată.",
+    "distribution": "Distribuția evaluărilor",
+    "onlyCustomers": "Doar clienții cu o rezervare finalizată pot lăsa o recenzie.",
+    "response": "Răspuns de la {name}",
+    "stars": "{value} din 5 stele"
+  },
+  "about": {
+    "eyebrow": "Casa",
+    "title": "Despre",
+    "hours": "Program",
+    "timesIn": "Orele sunt afișate în fusul orar {zone}.",
+    "policies": "Reguli",
+    "noShow": "Programările ratate pot fi taxate cu {percent}% din total.",
+    "experience": "Peste {years} ani de experiență",
+    "amenities": "Facilități",
+    "online": "Online",
+    "directions": "Indicații de traseu",
+    "comesToYou": "Vine la dumneavoastră",
+    "mobileBody": "Cu sediul în {city}. Se deplasează până la {km} km — adăugați adresa la rezervare.",
+    "onlineSessions": "Ședințe online",
+    "onlineBody": "Participați de oriunde. Linkul este trimis după rezervare."
+  },
+  "panel": {
+    "label": "Rezervați",
+    "eyebrow": "Rezervare",
+    "freeOptions": "Opțiuni gratuite disponibile",
+    "from": "Servicii de la {price}",
+    "onConsultation": "Prețuri după consultație",
+    "nextToday": "Următoarea oră liberă: azi",
+    "nextTomorrow": "Următoarea oră liberă: mâine",
+    "nextOn": "Următoarea oră liberă: {day}",
+    "none": "Nicio oră liberă în următoarele două săptămâni",
+    "bookNow": "Rezervați acum",
+    "requestToBook": "Cereți o rezervare",
+    "instant": "Confirmare instantanee",
+    "confirms": "Firma vă confirmă cererea",
+    "notTaking": "Această firmă nu primește încă rezervări.",
+    "mobileFrom": "De la {price}",
+    "mobileNext": "Următoarea: {day} {time}",
+    "seeAvailability": "Vedeți disponibilitatea",
+    "request": "Cereți"
+  },
+  "actions": {
+    "share": "Distribuiți",
+    "shareTitle": "Distribuiți {name}",
+    "shareBody": "Trimiteți linkul sau scanați codul pentru a deschide pagina de rezervări.",
+    "copy": "Copiați",
+    "copied": "Copiat",
+    "downloadQr": "Descărcați codul QR",
+    "ask": "Puneți o întrebare",
+    "messageTitle": "Mesaj pentru {name}",
+    "messageBody": "Întrebați despre servicii, disponibilitate sau orice altceva înainte să rezervați. Numărul de telefon și adresa de e-mail rămân private.",
+    "cancel": "Anulați",
+    "send": "Trimiteți mesajul",
+    "yourMessage": "Mesajul dumneavoastră",
+    "placeholder": "Bună! Aveți loc pentru un skin fade sâmbăta asta după-amiază?",
+    "sent": "Mesaj trimis",
+    "sentBody": "{name} vă va răspunde în căsuța de mesaje."
+  },
+  "portfolio": {
+    "compare": "Comparați înainte și după",
+    "portfolio": "Portofoliu",
+    "close": "Închideți",
+    "previous": "Anterior",
+    "next": "Următor",
+    "before": "Înainte",
+    "after": "După",
+    "beforeAfter": "Înainte / după",
+    "video": "Video",
+    "openItem": "Deschideți elementul {n}",
+    "browse": "Folosiți tastele cu săgeți pentru a naviga",
+    "bookThis": "Rezervați asta",
+    "bookThisService": "Rezervați asta — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Clip scurt",
+    "post": "Postare",
+    "reel": "Reel",
+    "track": "Piesă",
+    "album": "Album",
+    "artist": "Artist",
+    "playlist": "Playlist",
+    "episode": "Episod",
+    "show": "Podcast"
+  }
+}

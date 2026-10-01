@@ -1,0 +1,147 @@
+{
+  "footer": "Primiți acest mesaj din cauza activității din contul dumneavoastră Kept. Gestionați notificările din Cont → Notificări.",
+  "details": {
+    "service": "Serviciu",
+    "when": "Când",
+    "with": "Cu",
+    "where": "Unde",
+    "online": "Online — linkul va fi trimis de firmă",
+    "reference": "Referință",
+    "paid": "Plătit",
+    "balanceDue": "Rest de plată"
+  },
+  "cta": {
+    "viewAppointment": "Vedeți programarea",
+    "viewRequest": "Vedeți cererea",
+    "reviewRequest": "Analizați cererea",
+    "openAppointment": "Deschideți programarea",
+    "openCalendar": "Deschideți calendarul",
+    "findAnotherTime": "Găsiți altă oră",
+    "payDeposit": "Plătiți avansul",
+    "leaveReview": "Lăsați o recenzie",
+    "bookThisTime": "Rezervați această oră"
+  },
+  "booked": {
+    "title": "Aveți rezervare la {business}",
+    "subject": "Confirmat: {service} la {business}",
+    "heading": "Programarea este confirmată",
+    "footnote": "S-au schimbat planurile? Puteți reprograma sau anula din pagina programării, conform politicii firmei.",
+    "sms": "Kept: {service} la {business} este confirmat pentru {when}. Ref. {reference}"
+  },
+  "requested": {
+    "title": "Cerere trimisă către {business}",
+    "body": "Vă anunțăm imediat ce primim un răspuns.",
+    "subject": "Cerere trimisă: {service} la {business}",
+    "heading": "Cererea a fost trimisă",
+    "paragraph": "{business} analizează cererile înainte de a le confirma. Vă scriem imediat ce primim un răspuns."
+  },
+  "bizBooked": {
+    "title": "Rezervare nouă",
+    "requestTitle": "Cerere nouă de rezervare",
+    "subject": "Rezervare nouă: {service}",
+    "requestSubject": "Cerere nouă: {service}",
+    "heading": "Aveți o rezervare nouă",
+    "requestHeading": "Aveți o cerere nouă de rezervare",
+    "requestParagraph": "Aprobați-o sau refuzați-o din calendar. Cererile fără răspuns expiră automat."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} nu v-a putut accepta cererea",
+      "subject": "Cerere refuzată: {service}",
+      "heading": "Cererea nu a fost acceptată"
+    },
+    "expired": {
+      "title": "Rezervarea a expirat",
+      "subject": "Rezervarea a expirat",
+      "heading": "Rezervarea a expirat"
+    },
+    "cancelled": {
+      "title": "{business} v-a anulat programarea",
+      "subject": "Anulat: {service}",
+      "heading": "Programarea a fost anulată"
+    },
+    "note": "Mesaj de la firmă: „{note}”",
+    "refund": "O rambursare de {amount} este în drum spre metoda de plată folosită inițial.",
+    "bookAgain": "Puteți rezerva altă oră oricând sunteți pregătit."
+  },
+  "bizCancelled": {
+    "title": "Un client a anulat",
+    "expiredTitle": "O rezervare a expirat",
+    "subject": "Anulat: {service} · {when}",
+    "heading": "O programare a fost anulată",
+    "reason": "Motiv: „{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} v-a mutat programarea",
+    "body": "Acum: {when}",
+    "subject": "Oră nouă: {service} la {business}",
+    "heading": "Programarea are o oră nouă",
+    "previously": "Anterior: {when}.",
+    "changeIt": "Dacă noua oră nu vă convine, puteți reprograma sau anula din pagina programării."
+  },
+  "bizRescheduled": {
+    "title": "Un client a reprogramat",
+    "subject": "Reprogramat: {service}",
+    "heading": "O programare a fost reprogramată"
+  },
+  "approvedPay": {
+    "title": "{business} v-a acceptat cererea",
+    "body": "Plătiți avansul de {amount} pentru confirmare.",
+    "subject": "Acceptat — confirmați {service}",
+    "heading": "Cererea a fost acceptată",
+    "paragraph": "Plătiți avansul de {amount} ca să vă asigurați ora. Rezervările neplătite sunt eliberate automat."
+  },
+  "reminder": {
+    "title": "Memento: {service} {lead}",
+    "body": "{when} la {business}",
+    "subject": "Memento: {service} {lead}, la {time}",
+    "heading": "Ne vedem {lead}",
+    "footnote": "Întârziați sau nu puteți ajunge? Anunțați firma din pagina programării.",
+    "sms": "Memento: {service} la {business}, {when}."
+  },
+  "review": {
+    "title": "Cum a fost {service}?",
+    "body": "Scrieți o recenzie scurtă despre {business}.",
+    "subject": "Cum a fost vizita la {business}?",
+    "heading": "Cum a fost?",
+    "paragraph": "Recenzia dumneavoastră ajută {business} și pe cei care își aleg un profesionist. Durează mai puțin de un minut."
+  },
+  "waitlist": {
+    "title": "S-a eliberat un loc la {business}",
+    "body": "{when} este acum disponibil. Rezervați repede — primul venit, primul servit.",
+    "subject": "S-a eliberat o oră la {business}",
+    "heading": "Vești bune — s-a eliberat o oră",
+    "paragraph": "{when} tocmai a devenit disponibil. Locurile se ocupă în ordinea rezervării, așa că rezervați curând dacă vă convine."
+  },
+  "thread": {
+    "confirmed": "Programare confirmată: {service}, {when}.",
+    "declined": "Programare refuzată: {service}, {when}.",
+    "expired": "Programare expirată: {service}, {when}.",
+    "cancelled": "Programare anulată: {service}, {when}.",
+    "moved": "Programare mutată de la {from} la {to}."
+  },
+  "verify": {
+    "subject": "Confirmați adresa de e-mail",
+    "preheader": "O atingere pentru a vă confirma adresa de e-mail.",
+    "heading": "Bun venit, {name}",
+    "paragraph": "Confirmați adresa de e-mail ca firmele să vă poată contacta în legătură cu programările.",
+    "cta": "Confirmați e-mailul",
+    "footnote": "Acest link expiră în 3 zile. Dacă nu ați creat un cont, puteți ignora acest e-mail."
+  },
+  "reset": {
+    "subject": "Resetați parola",
+    "heading": "Resetați parola",
+    "paragraph": "Cineva (sperăm că dumneavoastră) a cerut resetarea parolei contului Kept.",
+    "cta": "Alegeți o parolă nouă",
+    "footnote": "Acest link expiră într-o oră. Dacă nu ați cerut acest lucru, puteți ignora liniștit acest e-mail — parola nu se va schimba."
+  },
+  "invite": {
+    "subject": "{inviter} v-a invitat să vă alăturați echipei {business} pe Kept",
+    "reminderSubject": "Memento: alăturați-vă echipei {business} pe Kept",
+    "heading": "Alăturați-vă echipei {business}",
+    "paragraph": "{inviter} v-a invitat în echipa {business}. Vă veți putea vedea programul și gestiona programările.",
+    "cta": "Acceptați invitația",
+    "footnote": "Această invitație expiră în {days} zile.",
+    "reminderFootnote": "Această invitație expiră în {days} zile. Linkurile de invitație anterioare nu mai funcționează."
+  }
+}

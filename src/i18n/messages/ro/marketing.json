@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept pentru profesioniști — rezervări online și un calendar care lucrează pentru dumneavoastră",
+    "description": "Primiți rezervări online, scăpați de suprapuneri și neprezentări și fiți descoperit de clienții din zonă. Gratuit la început pentru profesioniștii independenți."
+  },
+  "cta": {
+    "dashboard": "Mergeți la firmă",
+    "setup": "Configurați-vă firma",
+    "start": "Începeți — este gratuit"
+  },
+  "hero": {
+    "eyebrow": "Kept pentru profesioniști",
+    "title": "Agenda plină. Serile libere.",
+    "lede": "Rezervări online, un calendar care nu permite suprapuneri, mementouri care reduc neprezentările și un profil vizibil pentru oamenii din apropiere care caută exact ce faceți dumneavoastră. Gratuit la început.",
+    "howItWorks": "Cum funcționează",
+    "note": "Nu este nevoie de card. Profilul rămâne privat până îl publicați."
+  },
+  "sides": {
+    "heading": "Cum funcționează Kept pentru clienți și pentru dumneavoastră",
+    "clients": {
+      "eyebrow": "Pentru clienții dumneavoastră",
+      "title": "Descoperă și rezervă profesioniști excelenți.",
+      "points": {
+        "search": "Caută după serviciu, loc și oră și vede ore libere reale — nu un formular de contact.",
+        "prices": "Prețuri clare, regulile dumneavoastră și recenzii verificate înainte de rezervare.",
+        "reminders": "Mementouri, indicații de traseu și reprogramare fără telefoane."
+      }
+    },
+    "you": {
+      "eyebrow": "Pentru dumneavoastră",
+      "title": "Gestionați programările și dezvoltați-vă afacerea.",
+      "points": {
+        "calendar": "Un singur calendar pentru rezervări, pauze și zile libere — pe telefon.",
+        "deposits": "Avansuri și reguli de anulare aplicate în locul dumneavoastră.",
+        "clients": "Istoricul clienților, note și recenzii care îi aduc înapoi."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Activ în trei pași",
+    "profile": {
+      "title": "Configurați-vă profilul",
+      "body": "Adăugați serviciile cu prețuri și durate, programul, locul unde lucrați și câteva fotografii cu lucrările dumneavoastră. Vă ghidăm pas cu pas."
+    },
+    "share": {
+      "title": "Distribuiți linkul",
+      "body": "Puneți {host}/your-name în biografie și pe cărțile de vizită. După publicare, apăreți și în căutările oamenilor din apropiere."
+    },
+    "book": {
+      "title": "Primiți rezervări",
+      "body": "Clienții aleg o oră liberă reală și rezervă în câteva secunde. Dumneavoastră primiți o notificare, ei primesc mementouri, iar calendarul rămâne mereu corect."
+    }
+  },
+  "industries": {
+    "heading": "Creat pentru orice serviciu rezervat pe oră",
+    "lede": "Dacă clienții vă rezervă timpul, Kept vi se potrivește — fie că lucrați singur la un scaun, fie că aveți o echipă în mai multe locații."
+  },
+  "features": {
+    "heading": "Tot ce vă trebuie într-o zi",
+    "booking": {
+      "title": "Rezervări online cu disponibilitate reală",
+      "p1": "Clienții văd doar orele pe care le puteți onora cu adevărat — programul dumneavoastră, minus rezervările existente, pauzele, intervalele tampon și zilele libere, ținând cont de preavizul minim și de cât de departe în viitor se poate rezerva.",
+      "p2": "Fiecare rezervare este verificată din nou în momentul în care se face, așa că două persoane nu pot ajunge niciodată pe aceeași oră, nici dacă apasă în aceeași secundă."
+    },
+    "services": {
+      "title": "Servicii care urmează felul în care stabiliți prețurile",
+      "p1": "Preț fix, de la, interval, gratuit sau după consultație. Adăugați opțiuni precum lungime, mărime sau extra, iar fiecare ajustează atât prețul, cât și timpul rezervat în calendar.",
+      "p2": "Adăugați intervale tampon înainte sau după, limitați serviciile la anumiți membri ai echipei sau la anumite locații și puneți întrebări preliminare înainte de prima vizită."
+    },
+    "policies": {
+      "title": "Avansuri și reguli aplicate în locul dumneavoastră",
+      "p1": "Cereți un avans sau plata integrală în avans, stabiliți un termen de anulare și taxe pentru anulare târzie sau neprezentare. Clienții văd regulile înainte să rezerve, iar rambursările le respectă automat."
+    },
+    "reminders": {
+      "title": "Mementouri care reduc neprezentările",
+      "p1": "Confirmările și mementourile pleacă singure — implicit cu o zi și cu două ore înainte — cu un link de reprogramare în limitele regulilor dumneavoastră, în loc ca clientul pur și simplu să nu mai vină.",
+      "p2": "Când cineva anulează, clienții de pe lista de așteptare pentru ziua respectivă află de locul eliberat."
+    },
+    "clients": {
+      "title": "Cunoașteți-vă clienții",
+      "p1": "Fiecare client are o fișă cu vizite, sume cheltuite, anulări și neprezentări, plus note private pe care doar echipa dumneavoastră le vede. Scrieți-le clienților din același loc."
+    },
+    "team": {
+      "title": "De la un singur scaun la echipă și locații",
+      "p1": "Adăugați membri ai echipei cu program și servicii proprii și roluri care stabilesc ce poate vedea și face fiecare. Gestionați mai multe locații, fiecare cu propriul fus orar și program."
+    },
+    "portfolio": {
+      "title": "Un portofoliu care aduce rezervări",
+      "p1": "Arătați fotografii și videoclipuri scurte cu lucrările dumneavoastră. Legați fiecare de un serviciu, iar clienții pot atinge „Rezervați asta” pentru a rezerva exact ce au văzut."
+    },
+    "spotlight": {
+      "title": "Spotlight — gratuit pe perioada lansării",
+      "p1": "Promovați-vă profilul în căutări și pe paginile de categorii din zona dumneavoastră. Rezultatele promovate sunt întotdeauna marcate, limitate la două pe pagină și afișează în continuare evaluările și orele libere reale.",
+      "p2": "Spotlight nu costă nimic cât timp Kept este în lansare. Dacă acest lucru se va schimba vreodată, vă vom anunța înainte de a percepe orice sumă — nu devine niciodată plătit de la sine."
+    }
+  },
+  "plans": {
+    "heading": "Planuri",
+    "lede": "Cât timp Kept este în lansare, fiecare firmă nouă începe cu planul {plan}, fără abonament lunar. Prețurile planurilor plătite vor fi anunțate cu mult înainte să se aplice și nimeni nu plătește fără să aleagă un plan.",
+    "badge": {
+      "launch": "Gratuit pe perioada lansării",
+      "available": "Disponibil acum",
+      "unavailable": "Încă indisponibil"
+    },
+    "period": {
+      "launch": "pe lună, pe perioada lansării",
+      "available": "pe lună",
+      "unavailable": "Preț în curând"
+    },
+    "rows": {
+      "members": "Membri ai echipei rezervabili",
+      "locations": "Locații",
+      "fee": "Comision la plățile online",
+      "roles": "Roluri personalizate în echipă",
+      "analytics": "Statistici avansate"
+    },
+    "justYou": "1 (doar dumneavoastră)",
+    "upTo": "Până la {n}",
+    "included": "Inclus",
+    "notIncluded": "Neinclus",
+    "summary": {
+      "free": "Rezervări online, calendar, mementouri, avansuri, fișe de client, formulare preliminare, portofoliu și Spotlight — toate incluse.",
+      "launch": "Tot ce include {base}, plus o echipă de până la {members} persoane, mai multe locații, roluri personalizate și comisioane mai mici. Ce primesc astăzi firmele noi.",
+      "other": "Pentru echipe mai mari și firme cu mai multe locații."
+    },
+    "footnote": "Comisionul se aplică doar plăților pe care clienții le fac online prin Kept. Programările plătite la fața locului nu au comision Kept. Aveți nevoie de mai multe persoane sau locații decât permite planul? <link>Spuneți-ne</link>."
+  },
+  "faq": {
+    "heading": "Întrebări",
+    "cost": {
+      "q": "Cât costă Kept?",
+      "a": "Nu există abonament lunar: cât timp Kept este în lansare, firmele noi primesc gratuit planul {plan}. Când un client plătește online — un avans sau prețul integral — Kept reține {fee} din plata respectivă. Programările plătite la fața locului nu au niciun comision Kept."
+    },
+    "clientFee": {
+      "q": "Clienții mei plătesc ca să rezerve?",
+      "aFee": "Clienții văd o taxă de serviciu de {fee} la finalizarea rezervării, înainte să confirme. Nimic nu se adaugă ulterior.",
+      "aFree": "Nu. Clienții rezervă gratuit și văd prețul exact înainte să confirme."
+    },
+    "payments": {
+      "q": "Trebuie să accept plăți online?",
+      "a": "Nu. Puteți lăsa clienții să plătească la fața locului sau puteți cere un avans ori plata integrală la rezervare. Plățile online sunt procesate de Stripe și virate în propriul cont bancar."
+    },
+    "approve": {
+      "q": "Pot aproba rezervările înainte să fie confirmate?",
+      "a": "Da. Alegeți rezervarea instantanee sau modul cu cerere, în care fiecare rezervare așteaptă aprobarea dumneavoastră. Ora rămâne rezervată cât timp decideți, iar cererile la care nu răspundeți expiră de la sine."
+    },
+    "where": {
+      "q": "Lucrez de acasă, merg la clienți sau predau online. Funcționează?",
+      "a": "Da. Fiecare locație poate fi o adresă fizică, o zonă de deplasare în care clienții vă dau adresa lor sau o ședință online. Puteți oferi orice combinație."
+    },
+    "spotlight": {
+      "q": "Cum funcționează Spotlight?",
+      "a": "Spotlight vă afișează profilul ca rezultat marcat clar „Promovat” în căutări și pe paginile de categorii, cel mult două pe pagină. Este gratuit pe perioada lansării — îl porniți sau opriți oricând din panou."
+    },
+    "link": {
+      "q": "Pot folosi propriul link?",
+      "a": "Da. Fiecare firmă primește un profil la {host}/your-name, pe care îl puteți distribui pe Instagram, în biografie sau printr-un cod QR. Clienții care rezervă prin el nu trebuie să vă caute."
+    }
+  },
+  "closing": {
+    "title": "Următorul dumneavoastră client vă caută deja.",
+    "body": "Configurați serviciile și programul, publicați profilul și începeți să primiți rezervări chiar azi."
+  },
+  "demo": {
+    "example": "Exemplu",
+    "today": {
+      "label": "Exemplu al programului de Azi pe care îl vede un profesionist",
+      "title": "Azi",
+      "summary": "{count, plural, one {# programare} few {# programări} other {# de programări}} · {amount} rezervat",
+      "skinFade": "Skin fade",
+      "beardTrim": "Aranjat barba și contur",
+      "lunch": "Prânz",
+      "signatureCut": "Tunsoarea casei",
+      "kidsCut": "Tuns copii",
+      "firstVisit": "{name} · prima vizită",
+      "confirmed": "Confirmată",
+      "depositPaid": "Avans plătit",
+      "needsApproval": "Necesită aprobare",
+      "checkedIn": "Client sosit"
+    },
+    "reminder": {
+      "label": "Exemplu de memento automat primit de un client",
+      "when": "Cu 24 h înainte",
+      "title": "Memento: {service} mâine",
+      "body": "{time} cu Dre la North Fade Studio. Trebuie să schimbați? Reprogramați cu până la 24 h înainte."
+    },
+    "grid": {
+      "label": "Exemplu de selector de oră din care rezervă clienții, cu doar orele libere",
+      "title": "Alegeți o oră",
+      "instant": "Confirmare instantanee",
+      "note": "Orele ocupate dispar în momentul rezervării. Două persoane nu pot primi niciodată aceeași oră."
+    },
+    "policy": {
+      "label": "Exemplu de politică privind avansul și anularea",
+      "title": "Reguli de rezervare",
+      "deposit": "Avans",
+      "depositValue": "{pct} la rezervare",
+      "freeCancel": "Anulare gratuită",
+      "freeCancelValue": "Cu până la 24 h înainte",
+      "lateCancel": "Anulare târzie",
+      "lateCancelValue": "{pct} din total",
+      "noShow": "Neprezentare",
+      "noShowValue": "Avansul este reținut",
+      "dueNow": "De plată acum",
+      "dueValue": "{due} din {total}"
+    },
+    "client": {
+      "label": "Exemplu de fișă de client",
+      "since": "Client din {month} · {visits, plural, one {# vizită} few {# vizite} other {# de vizite}}",
+      "spent": "Cheltuit",
+      "noShows": "Neprezentări",
+      "gap": "Interval obișnuit",
+      "gapValue": "{weeks} săpt.",
+      "note": "Notă privată: scalp sensibil — folosiți șamponul blând."
+    },
+    "team": {
+      "label": "Exemplu de echipă în două locații",
+      "title": "Echipa",
+      "senior": "Frizer senior",
+      "barber": "Frizer",
+      "frontDesk": "Recepție"
+    },
+    "portfolio": {
+      "label": "Exemplu de postări din portofoliu legate de un serviciu rezervabil",
+      "skinFade": "Skin fade",
+      "taper": "Taper și barbă",
+      "bookThis": "Rezervați asta",
+      "note": "Fotografiile și videoclipurile dumneavoastră apar aici — atingeți una pentru a rezerva exact acel serviciu."
+    },
+    "spotlight": {
+      "label": "Exemplu de anunț promovat în rezultatele căutării",
+      "category": "Frizer",
+      "promoted": "Promovat"
+    },
+    "options": {
+      "service": "Împletituri fără noduri",
+      "hint": "Serviciu de exemplu · încercați opțiunile",
+      "length": "Lungime",
+      "shoulder": "Până la umeri",
+      "mid": "Până la mijlocul spatelui",
+      "waist": "Până la talie",
+      "addons": "Extra",
+      "wash": "Spălat și coafat",
+      "beads": "Mărgele și inele",
+      "included": "Inclus",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}
