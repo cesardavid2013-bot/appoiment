@@ -1,0 +1,147 @@
+{
+  "footer": "You're receiving this because of activity on your Kept account. Manage notifications in Account → Notifications.",
+  "details": {
+    "service": "Service",
+    "when": "When",
+    "with": "With",
+    "where": "Where",
+    "online": "Online — the link will be shared by the business",
+    "reference": "Reference",
+    "paid": "Paid",
+    "balanceDue": "Balance due"
+  },
+  "cta": {
+    "viewAppointment": "View appointment",
+    "viewRequest": "View request",
+    "reviewRequest": "Review request",
+    "openAppointment": "Open appointment",
+    "openCalendar": "Open calendar",
+    "findAnotherTime": "Find another time",
+    "payDeposit": "Pay deposit",
+    "leaveReview": "Leave a review",
+    "bookThisTime": "Book this time"
+  },
+  "booked": {
+    "title": "You're booked with {business}",
+    "subject": "Confirmed: {service} with {business}",
+    "heading": "Your appointment is confirmed",
+    "footnote": "Need to change plans? You can reschedule or cancel from the appointment page, subject to the business's policy.",
+    "sms": "Kept: {service} with {business} is confirmed for {when}. Ref {reference}"
+  },
+  "requested": {
+    "title": "Request sent to {business}",
+    "body": "We'll let you know as soon as they respond.",
+    "subject": "Request sent: {service} with {business}",
+    "heading": "Your request has been sent",
+    "paragraph": "{business} reviews requests before confirming. We'll email you as soon as they respond."
+  },
+  "bizBooked": {
+    "title": "New booking",
+    "requestTitle": "New booking request",
+    "subject": "New booking: {service}",
+    "requestSubject": "New request: {service}",
+    "heading": "You have a new booking",
+    "requestHeading": "You have a new booking request",
+    "requestParagraph": "Approve or decline it from your calendar. Unanswered requests expire automatically."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} couldn't take your request",
+      "subject": "Request declined: {service}",
+      "heading": "Your request wasn't accepted"
+    },
+    "expired": {
+      "title": "Your booking expired",
+      "subject": "Your booking expired",
+      "heading": "Your booking expired"
+    },
+    "cancelled": {
+      "title": "{business} cancelled your appointment",
+      "subject": "Cancelled: {service}",
+      "heading": "Your appointment was cancelled"
+    },
+    "note": "Note from the business: “{note}”",
+    "refund": "A refund of {amount} is on its way to your original payment method.",
+    "bookAgain": "You can book another time whenever you're ready."
+  },
+  "bizCancelled": {
+    "title": "A customer cancelled",
+    "expiredTitle": "A booking expired",
+    "subject": "Cancelled: {service} · {when}",
+    "heading": "An appointment was cancelled",
+    "reason": "Reason: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} moved your appointment",
+    "body": "Now {when}",
+    "subject": "New time: {service} with {business}",
+    "heading": "Your appointment has a new time",
+    "previously": "Previously {when}.",
+    "changeIt": "If the new time doesn't work, you can reschedule or cancel from the appointment page."
+  },
+  "bizRescheduled": {
+    "title": "A customer rescheduled",
+    "subject": "Rescheduled: {service}",
+    "heading": "An appointment was rescheduled"
+  },
+  "approvedPay": {
+    "title": "{business} accepted your request",
+    "body": "Pay the {amount} deposit to confirm.",
+    "subject": "Accepted — confirm your {service}",
+    "heading": "Your request was accepted",
+    "paragraph": "Pay the {amount} deposit to lock in your time. Unpaid bookings are released automatically."
+  },
+  "reminder": {
+    "title": "Reminder: {service} {lead}",
+    "body": "{when} with {business}",
+    "subject": "Reminder: {service} {lead} at {time}",
+    "heading": "See you {lead}",
+    "footnote": "Running late or can't make it? Let the business know from the appointment page.",
+    "sms": "Reminder: {service} with {business} {when}."
+  },
+  "review": {
+    "title": "How was {service}?",
+    "body": "Share a quick review of {business}.",
+    "subject": "How was your visit to {business}?",
+    "heading": "How did it go?",
+    "paragraph": "Your review helps {business} and others choosing a professional. It takes less than a minute."
+  },
+  "waitlist": {
+    "title": "A spot opened at {business}",
+    "body": "{when} is now available. Book quickly — first come, first served.",
+    "subject": "A time opened up at {business}",
+    "heading": "Good news — a time opened up",
+    "paragraph": "{when} just became available. Spots are first come, first served, so book soon if it works for you."
+  },
+  "thread": {
+    "confirmed": "Appointment confirmed: {service}, {when}.",
+    "declined": "Appointment declined: {service}, {when}.",
+    "expired": "Appointment expired: {service}, {when}.",
+    "cancelled": "Appointment cancelled: {service}, {when}.",
+    "moved": "Appointment moved from {from} to {to}."
+  },
+  "verify": {
+    "subject": "Confirm your email",
+    "preheader": "One tap to confirm your email address.",
+    "heading": "Welcome, {name}",
+    "paragraph": "Confirm your email so businesses can reach you about your appointments.",
+    "cta": "Confirm email",
+    "footnote": "This link expires in 3 days. If you didn't create an account, you can ignore this email."
+  },
+  "reset": {
+    "subject": "Reset your password",
+    "heading": "Reset your password",
+    "paragraph": "Someone (hopefully you) asked to reset the password for your Kept account.",
+    "cta": "Choose a new password",
+    "footnote": "This link expires in 1 hour. If you didn't ask for this, you can safely ignore this email — your password won't change."
+  },
+  "invite": {
+    "subject": "{inviter} invited you to join {business} on Kept",
+    "reminderSubject": "Reminder: join {business} on Kept",
+    "heading": "Join {business}",
+    "paragraph": "{inviter} invited you to join the team at {business}. You'll be able to see your schedule and manage your appointments.",
+    "cta": "Accept invitation",
+    "footnote": "This invitation expires in {days} days.",
+    "reminderFootnote": "This invitation expires in {days} days. Earlier invitation links no longer work."
+  }
+}

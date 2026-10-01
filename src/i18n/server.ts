@@ -53,3 +53,12 @@ export async function getI18n() {
 export async function getTFor(locale: Locale, namespace?: string) {
   return makeT(await getMessages(locale), localeInfo(locale).intl, namespace);
 }
+
+/** The current request's language, or English when there is no request (jobs, scripts, tests). */
+export async function getLocaleSafe(): Promise<Locale> {
+  try {
+    return await getLocale();
+  } catch {
+    return DEFAULT_LOCALE;
+  }
+}

@@ -1,4 +1,5 @@
 import "server-only";
+import { getLocale } from "@/i18n/server";
 import { and, eq, gt, isNull } from "drizzle-orm";
 import { z } from "zod";
 import { AppError } from "@/domain/errors";
@@ -42,7 +43,7 @@ export async function signup(input: z.infer<typeof signupSchema>) {
   const passwordHash = await hashPassword(input.password);
   const [user] = await db
     .insert(users)
-    .values({ name: input.name, email: input.email, passwordHash, timezone: input.timezone ?? null })
+    .values({ name: input.name, email: input.email, passwordHash, timezone: input.timezone ?? null, locale: await getLocale() })
     .onConflictDoNothing()
     .returning({ id: users.id, email: users.email, name: users.name });
   if (!user) throw new AppError("conflict", "An account with this email already exists. Try signing in instead.");
@@ -80,18 +81,21 @@ export async function login(input: z.infer<typeof loginSchema>) {
 export async function sendVerification(userId: string, email: string, name: string) {
   const token = randomToken(32);
   await db.insert(authTokens).values({ userId, kind: "email_verify", tokenHash: sha256(token), expiresAt: new Date(Date.now() + VERIFY_TTL_MS) });
+  const [u] = await db.select({ locale: users.locale }).from(users).where(eq(users.id, userId));
   await sendSystemEmail(
     email,
-    {
-      subject: "Confirm your email",
-      preheader: "One tap to confirm your email address.",
-      heading: `Welcome, ${name.split(" ")[0]}`,
-      paragraphs: ["Confirm your email so businesses can reach you about your appointments."],
-      cta: { label: "Confirm email", url: `/verify-email?token=${token}` },
-      footnote: "This link expires in 3 days. If you didn't create an account, you can ignore this email.",
-    },
+    (l) => ({
+      subject: l.t("email.verify.subject"),
+      preheader: l.t("email.verify.preheader"),
+      heading: l.t("email.verify.heading", { name: name.split(" ")[0] }),
+      paragraphs: [l.t("email.verify.paragraph")],
+      cta: { label: l.t("email.verify.cta"), url: `/verify-email?token=${token}` },
+      footnote: l.t("email.verify.footnote"),
+    }),
     "auth.verify_email",
     userId,
+    db,
+    u?.locale,
   );
 }
 
@@ -123,21 +127,23 @@ export async function verifyEmail(token: string) {
 export async function requestPasswordReset(email: string) {
   await rateLimit("passwordReset", await ipHash());
   await rateLimit("passwordReset", `email:${email}`);
-  const [user] = await db.select({ id: users.id, status: users.status }).from(users).where(eq(users.email, email)).limit(1);
+  const [user] = await db.select({ id: users.id, status: users.status, locale: users.locale }).from(users).where(eq(users.email, email)).limit(1);
   if (!user || user.status !== "active") return;
   const token = randomToken(32);
   await db.insert(authTokens).values({ userId: user.id, kind: "password_reset", tokenHash: sha256(token), expiresAt: new Date(Date.now() + RESET_TTL_MS) });
   await sendSystemEmail(
     email,
-    {
-      subject: "Reset your password",
-      heading: "Reset your password",
-      paragraphs: ["Someone (hopefully you) asked to reset the password for your Kept account."],
-      cta: { label: "Choose a new password", url: `/reset-password?token=${token}` },
-      footnote: "This link expires in 1 hour. If you didn't ask for this, you can safely ignore this email — your password won't change.",
-    },
+    (l) => ({
+      subject: l.t("email.reset.subject"),
+      heading: l.t("email.reset.heading"),
+      paragraphs: [l.t("email.reset.paragraph")],
+      cta: { label: l.t("email.reset.cta"), url: `/reset-password?token=${token}` },
+      footnote: l.t("email.reset.footnote"),
+    }),
     "auth.password_reset",
     user.id,
+    db,
+    user.locale ?? (await getLocale()),
   );
 }
 

@@ -140,6 +140,8 @@ export const users = pgTable(
     platformRole: platformRole("platform_role").notNull().default("user"),
     status: userStatus("status").notNull().default("active"),
     timezone: text("timezone"),
+    /** Preferred language for emails and notifications (one of src/i18n/locales.ts). */
+    locale: text("locale"),
     /** Per-channel/per-topic notification preferences, validated by domain/notifications.ts */
     notificationPrefs: jsonb("notification_prefs").$type<Record<string, unknown>>().notNull().default({}),
     lastLoginAt: ts("last_login_at"),

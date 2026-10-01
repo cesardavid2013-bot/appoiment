@@ -1,0 +1,147 @@
+{
+  "footer": "Recibes este correo por actividad en tu cuenta de Kept. Administra tus avisos en Cuenta → Notificaciones.",
+  "details": {
+    "service": "Servicio",
+    "when": "Cuándo",
+    "with": "Con",
+    "where": "Dónde",
+    "online": "En línea — el negocio compartirá el enlace",
+    "reference": "Referencia",
+    "paid": "Pagado",
+    "balanceDue": "Saldo pendiente"
+  },
+  "cta": {
+    "viewAppointment": "Ver cita",
+    "viewRequest": "Ver solicitud",
+    "reviewRequest": "Revisar solicitud",
+    "openAppointment": "Abrir cita",
+    "openCalendar": "Abrir calendario",
+    "findAnotherTime": "Buscar otro horario",
+    "payDeposit": "Pagar depósito",
+    "leaveReview": "Dejar una reseña",
+    "bookThisTime": "Reservar este horario"
+  },
+  "booked": {
+    "title": "Tienes cita con {business}",
+    "subject": "Confirmada: {service} con {business}",
+    "heading": "Tu cita está confirmada",
+    "footnote": "¿Cambio de planes? Puedes reprogramar o cancelar desde la página de la cita, según la política del negocio.",
+    "sms": "Kept: {service} con {business} confirmada para {when}. Ref {reference}"
+  },
+  "requested": {
+    "title": "Solicitud enviada a {business}",
+    "body": "Te avisaremos en cuanto respondan.",
+    "subject": "Solicitud enviada: {service} con {business}",
+    "heading": "Tu solicitud fue enviada",
+    "paragraph": "{business} revisa las solicitudes antes de confirmar. Te escribiremos en cuanto respondan."
+  },
+  "bizBooked": {
+    "title": "Nueva reserva",
+    "requestTitle": "Nueva solicitud de reserva",
+    "subject": "Nueva reserva: {service}",
+    "requestSubject": "Nueva solicitud: {service}",
+    "heading": "Tienes una nueva reserva",
+    "requestHeading": "Tienes una nueva solicitud de reserva",
+    "requestParagraph": "Apruébala o recházala desde tu calendario. Las solicitudes sin respuesta vencen automáticamente."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} no pudo aceptar tu solicitud",
+      "subject": "Solicitud rechazada: {service}",
+      "heading": "Tu solicitud no fue aceptada"
+    },
+    "expired": {
+      "title": "Tu reserva venció",
+      "subject": "Tu reserva venció",
+      "heading": "Tu reserva venció"
+    },
+    "cancelled": {
+      "title": "{business} canceló tu cita",
+      "subject": "Cancelada: {service}",
+      "heading": "Tu cita fue cancelada"
+    },
+    "note": "Nota del negocio: “{note}”",
+    "refund": "Un reembolso de {amount} va en camino a tu método de pago original.",
+    "bookAgain": "Puedes reservar otro horario cuando quieras."
+  },
+  "bizCancelled": {
+    "title": "Un cliente canceló",
+    "expiredTitle": "Una reserva venció",
+    "subject": "Cancelada: {service} · {when}",
+    "heading": "Se canceló una cita",
+    "reason": "Motivo: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} cambió tu cita",
+    "body": "Ahora: {when}",
+    "subject": "Nuevo horario: {service} con {business}",
+    "heading": "Tu cita tiene un nuevo horario",
+    "previously": "Antes: {when}.",
+    "changeIt": "Si el nuevo horario no te funciona, puedes reprogramar o cancelar desde la página de la cita."
+  },
+  "bizRescheduled": {
+    "title": "Un cliente reprogramó",
+    "subject": "Reprogramada: {service}",
+    "heading": "Se reprogramó una cita"
+  },
+  "approvedPay": {
+    "title": "{business} aceptó tu solicitud",
+    "body": "Paga el depósito de {amount} para confirmar.",
+    "subject": "Aceptada — confirma tu {service}",
+    "heading": "Tu solicitud fue aceptada",
+    "paragraph": "Paga el depósito de {amount} para asegurar tu horario. Las reservas sin pagar se liberan automáticamente."
+  },
+  "reminder": {
+    "title": "Recordatorio: {service} {lead}",
+    "body": "{when} con {business}",
+    "subject": "Recordatorio: {service} {lead} a las {time}",
+    "heading": "Nos vemos {lead}",
+    "footnote": "¿Vas tarde o no podrás ir? Avísale al negocio desde la página de la cita.",
+    "sms": "Recordatorio: {service} con {business} {when}."
+  },
+  "review": {
+    "title": "¿Qué tal estuvo {service}?",
+    "body": "Deja una reseña rápida de {business}.",
+    "subject": "¿Qué tal tu visita a {business}?",
+    "heading": "¿Cómo te fue?",
+    "paragraph": "Tu reseña ayuda a {business} y a otras personas a elegir profesional. Toma menos de un minuto."
+  },
+  "waitlist": {
+    "title": "Se liberó un lugar en {business}",
+    "body": "{when} ya está disponible. Reserva rápido: el primero que llega se lo queda.",
+    "subject": "Se liberó un horario en {business}",
+    "heading": "Buenas noticias: se liberó un horario",
+    "paragraph": "{when} acaba de quedar disponible. Los lugares se asignan por orden de llegada, así que reserva pronto si te sirve."
+  },
+  "thread": {
+    "confirmed": "Cita confirmada: {service}, {when}.",
+    "declined": "Cita rechazada: {service}, {when}.",
+    "expired": "Cita vencida: {service}, {when}.",
+    "cancelled": "Cita cancelada: {service}, {when}.",
+    "moved": "Cita movida de {from} a {to}."
+  },
+  "verify": {
+    "subject": "Confirma tu correo",
+    "preheader": "Un toque para confirmar tu correo.",
+    "heading": "Te damos la bienvenida, {name}",
+    "paragraph": "Confirma tu correo para que los negocios puedan contactarte sobre tus citas.",
+    "cta": "Confirmar correo",
+    "footnote": "Este enlace vence en 3 días. Si no creaste una cuenta, puedes ignorar este correo."
+  },
+  "reset": {
+    "subject": "Restablece tu contraseña",
+    "heading": "Restablece tu contraseña",
+    "paragraph": "Alguien (esperamos que tú) pidió restablecer la contraseña de tu cuenta de Kept.",
+    "cta": "Elegir una nueva contraseña",
+    "footnote": "Este enlace vence en 1 hora. Si no lo pediste, ignora este correo: tu contraseña no cambiará."
+  },
+  "invite": {
+    "subject": "{inviter} te invitó a unirte a {business} en Kept",
+    "reminderSubject": "Recordatorio: únete a {business} en Kept",
+    "heading": "Únete a {business}",
+    "paragraph": "{inviter} te invitó a unirte al equipo de {business}. Podrás ver tu agenda y gestionar tus citas.",
+    "cta": "Aceptar invitación",
+    "footnote": "Esta invitación vence en {days} días.",
+    "reminderFootnote": "Esta invitación vence en {days} días. Los enlaces anteriores ya no funcionan."
+  }
+}

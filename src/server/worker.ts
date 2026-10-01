@@ -1,11 +1,10 @@
 import "server-only";
 import { and, eq, inArray, sql } from "drizzle-orm";
-import { formatMoney } from "@/domain/money";
 import { localMinuteToInstant } from "@/domain/time";
 import { db } from "./db/client";
 import { appointments, businesses, jobs, notifications, reviews, waitlistEntries, webhookEvents } from "./db/schema";
 import { sendEmail } from "./email";
-import { formatWhen, formatTimeOnly } from "./format";
+import { formatTimeOnly } from "./format";
 import { claimJobs, completeJob, failJob, type JobType } from "./jobs";
 import { log } from "./logger";
 import { notify } from "./notify";
@@ -42,28 +41,34 @@ const handlers: Record<JobType, Handler> = {
     if (!row || row.a.status !== "confirmed" || row.a.startsAt.toISOString() !== p.startsAt || !row.a.customerUserId) return;
     const a = row.a;
     const minutes = Number(p.offsetMinutes);
-    const lead = minutes >= 1440 ? "tomorrow" : minutes >= 60 ? `in ${Math.round(minutes / 60)} hour${minutes >= 120 ? "s" : ""}` : `in ${minutes} minutes`;
-    await notify(a.customerUserId!, {
-      topic: "reminders",
-      type: "appointment.reminder",
-      title: `Reminder: ${a.snapshot.serviceName} ${lead}`,
-      body: `${formatWhen(a.startsAt, a.timezone)} with ${row.businessName}`,
-      href: `/bookings/${a.id}`,
-      email: {
-        subject: `Reminder: ${a.snapshot.serviceName} ${lead} at ${formatTimeOnly(a.startsAt, a.timezone)}`,
-        heading: `See you ${lead}`,
-        details: [
-          ["Service", a.snapshot.serviceName],
-          ["When", formatWhen(a.startsAt, a.timezone)],
-          ["With", row.businessName],
-          ...(a.snapshot.address ? ([["Where", a.snapshot.address]] as [string, string][]) : []),
-          ...(a.totalCents - a.amountPaidCents > 0 && !a.isEstimate ? ([["Balance due", formatMoney(a.totalCents - a.amountPaidCents, a.currency)]] as [string, string][]) : []),
-        ],
-        cta: { label: "View appointment", url: `/bookings/${a.id}` },
-        footnote: "Running late or can't make it? Let the business know from the appointment page.",
-      },
-      sms: `Reminder: ${a.snapshot.serviceName} with ${row.businessName} ${formatWhen(a.startsAt, a.timezone)}.`,
-      dedupeKey: `reminder:${a.id}:${minutes}:${a.startsAt.getTime()}`,
+    const balance = a.totalCents - a.amountPaidCents > 0 && !a.isEstimate ? a.totalCents - a.amountPaidCents : 0;
+    await notify(a.customerUserId!, (l) => {
+      // "tomorrow" / "in 2 hours" / "dentro de 2 horas" straight from Intl, in the recipient's language.
+      const rtf = new Intl.RelativeTimeFormat(l.intl, { numeric: "auto" });
+      const lead = minutes >= 1440 ? rtf.format(1, "day") : minutes >= 60 ? rtf.format(Math.round(minutes / 60), "hour") : rtf.format(minutes, "minute");
+      const vars = { service: a.snapshot.serviceName, business: row.businessName, lead, when: l.when(a.startsAt, a.timezone), time: formatTimeOnly(a.startsAt, a.timezone, l.intl) };
+      return {
+        topic: "reminders",
+        type: "appointment.reminder",
+        title: l.t("email.reminder.title", vars),
+        body: l.t("email.reminder.body", vars),
+        href: `/bookings/${a.id}`,
+        email: {
+          subject: l.t("email.reminder.subject", vars),
+          heading: l.t("email.reminder.heading", vars),
+          details: [
+            [l.t("email.details.service"), a.snapshot.serviceName],
+            [l.t("email.details.when"), vars.when],
+            [l.t("email.details.with"), row.businessName],
+            ...(a.snapshot.address ? ([[l.t("email.details.where"), a.snapshot.address]] as [string, string][]) : []),
+            ...(balance ? ([[l.t("email.details.balanceDue"), l.money(balance, a.currency)]] as [string, string][]) : []),
+          ],
+          cta: { label: l.t("email.cta.viewAppointment"), url: `/bookings/${a.id}` },
+          footnote: l.t("email.reminder.footnote"),
+        },
+        sms: l.t("email.reminder.sms", vars),
+        dedupeKey: `reminder:${a.id}:${minutes}:${a.startsAt.getTime()}`,
+      };
     });
   },
   "appointment.review_request": async (p) => {
@@ -75,20 +80,21 @@ const handlers: Record<JobType, Handler> = {
     if (!row || row.a.status !== "completed" || !row.a.customerUserId) return;
     const [existing] = await db.select({ id: reviews.id }).from(reviews).where(eq(reviews.appointmentId, row.a.id));
     if (existing) return;
-    await notify(row.a.customerUserId, {
+    const vars = { service: row.a.snapshot.serviceName, business: row.businessName };
+    await notify(row.a.customerUserId, (l) => ({
       topic: "reviews",
       type: "review.request",
-      title: `How was ${row.a.snapshot.serviceName}?`,
-      body: `Share a quick review of ${row.businessName}.`,
+      title: l.t("email.review.title", vars),
+      body: l.t("email.review.body", vars),
       href: `/bookings/${row.a.id}?review=1`,
       email: {
-        subject: `How was your visit to ${row.businessName}?`,
-        heading: "How did it go?",
-        paragraphs: [`Your review helps ${row.businessName} and others choosing a professional. It takes less than a minute.`],
-        cta: { label: "Leave a review", url: `/bookings/${row.a.id}?review=1` },
+        subject: l.t("email.review.subject", vars),
+        heading: l.t("email.review.heading"),
+        paragraphs: [l.t("email.review.paragraph", vars)],
+        cta: { label: l.t("email.cta.leaveReview"), url: `/bookings/${row.a.id}?review=1` },
       },
       dedupeKey: `review-request:${row.a.id}`,
-    });
+    }));
   },
   "waitlist.check": async (p) => {
     const businessId = String(p.businessId);
@@ -128,21 +134,23 @@ const handlers: Record<JobType, Handler> = {
         .where(and(eq(waitlistEntries.id, e.id), eq(waitlistEntries.status, "active")))
         .returning({ id: waitlistEntries.id });
       if (!claimed.length) continue;
-      const when = formatWhen(new Date(match.start), res.timezone);
       const href = `/${biz.slug}/book?service=${serviceId}&date=${date}`;
-      await notify(e.customerUserId, {
-        topic: "waitlist",
-        type: "waitlist.opening",
-        title: `A spot opened at ${biz.name}`,
-        body: `${when} is now available. Book quickly — first come, first served.`,
-        href,
-        email: {
-          subject: `A time opened up at ${biz.name}`,
-          heading: "Good news — a time opened up",
-          paragraphs: [`${when} just became available. Spots are first come, first served, so book soon if it works for you.`],
-          cta: { label: "Book this time", url: href },
-        },
-        dedupeKey: `waitlist:${e.id}`,
+      await notify(e.customerUserId, (l) => {
+        const vars = { business: biz.name, when: l.when(new Date(match.start), res.timezone) };
+        return {
+          topic: "waitlist",
+          type: "waitlist.opening",
+          title: l.t("email.waitlist.title", vars),
+          body: l.t("email.waitlist.body", vars),
+          href,
+          email: {
+            subject: l.t("email.waitlist.subject", vars),
+            heading: l.t("email.waitlist.heading"),
+            paragraphs: [l.t("email.waitlist.paragraph", vars)],
+            cta: { label: l.t("email.cta.bookThisTime"), url: href },
+          },
+          dedupeKey: `waitlist:${e.id}`,
+        };
       });
     }
   },

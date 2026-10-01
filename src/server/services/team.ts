@@ -1,4 +1,5 @@
 import "server-only";
+import { getLocaleSafe } from "@/i18n/server";
 import { and, count, eq, gt, inArray, ne, sql } from "drizzle-orm";
 import { z } from "zod";
 import { AppError, forbidden, notFound } from "@/domain/errors";
@@ -81,16 +82,23 @@ export async function inviteMember(m: Membership, actor: Viewer, input: z.infer<
       status: "invited",
     })
     .returning();
+  // The invitee has no account yet: write in the language the inviter is using.
   await sendSystemEmail(
     input.email,
-    {
-      subject: `${actor.name} invited you to join ${m.businessName} on Kept`,
-      heading: `Join ${m.businessName}`,
-      paragraphs: [`${actor.name} invited you to join the team at ${m.businessName}. You'll be able to see your schedule and manage your appointments.`],
-      cta: { label: "Accept invitation", url: `/invite/${token}` },
-      footnote: `This invitation expires in ${INVITE_DAYS} days.`,
+    (l) => {
+      const vars = { inviter: actor.name, business: m.businessName, days: INVITE_DAYS };
+      return {
+        subject: l.t("email.invite.subject", vars),
+        heading: l.t("email.invite.heading", vars),
+        paragraphs: [l.t("email.invite.paragraph", vars)],
+        cta: { label: l.t("email.invite.cta"), url: `/invite/${token}` },
+        footnote: l.t("email.invite.footnote", vars),
+      };
     },
     "team.invite",
+    null,
+    db,
+    await getLocaleSafe(),
   );
   await audit({ actorUserId: actor.id, actorType: "business", businessId: m.businessId, action: "team.invited", targetType: "member", targetId: member.id, metadata: { role: input.role } });
   return { id: member.id };
@@ -107,16 +115,23 @@ export async function resendInvite(m: Membership, actor: Viewer, memberId: strin
     .update(businessMembers)
     .set({ inviteTokenHash: sha256(token), inviteExpiresAt: new Date(Date.now() + INVITE_DAYS * 86_400_000) })
     .where(eq(businessMembers.id, memberId));
+  // The invitee has no account yet: write in the language the inviter is using.
   await sendSystemEmail(
     target.inviteEmail,
-    {
-      subject: `Reminder: join ${m.businessName} on Kept`,
-      heading: `Join ${m.businessName}`,
-      paragraphs: [`${actor.name} invited you to join the team at ${m.businessName}. You'll be able to see your schedule and manage your appointments.`],
-      cta: { label: "Accept invitation", url: `/invite/${token}` },
-      footnote: `This invitation expires in ${INVITE_DAYS} days. Earlier invitation links no longer work.`,
+    (l) => {
+      const vars = { inviter: actor.name, business: m.businessName, days: INVITE_DAYS };
+      return {
+        subject: l.t("email.invite.reminderSubject", vars),
+        heading: l.t("email.invite.heading", vars),
+        paragraphs: [l.t("email.invite.paragraph", vars)],
+        cta: { label: l.t("email.invite.cta"), url: `/invite/${token}` },
+        footnote: l.t("email.invite.reminderFootnote", vars),
+      };
     },
     "team.invite",
+    null,
+    db,
+    await getLocaleSafe(),
   );
   await audit({ actorUserId: actor.id, actorType: "business", businessId: m.businessId, action: "team.invite_resent", targetType: "member", targetId: memberId });
 }

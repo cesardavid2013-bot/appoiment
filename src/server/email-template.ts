@@ -9,6 +9,10 @@ export type EmailContent = {
   details?: [string, string][];
   cta?: { label: string; url: string };
   footnote?: string;
+  /** Recipient's language: html lang/dir and the footer line. */
+  lang?: string;
+  dir?: "ltr" | "rtl";
+  footer?: string;
 };
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -28,19 +32,19 @@ export function renderEmail(c: EmailContent): { subject: string; html: string; t
         )
         .join("")}</table>`
     : "";
-  const html = `<!doctype html><html><body style="margin:0;background:#f6f4ef;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+  const html = `<!doctype html><html lang="${esc(c.lang ?? "en")}" dir="${c.dir ?? "ltr"}"><body style="margin:0;background:#f6f2ea;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
 <span style="display:none;max-height:0;overflow:hidden">${esc(c.preheader ?? "")}</span>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:32px 16px">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background:#ffffff;border:1px solid #e7e3dc;border-radius:12px">
-<tr><td style="padding:28px 32px 8px;font-size:15px;font-weight:600;letter-spacing:-0.01em;color:#1c1a17">Kept</td></tr>
-<tr><td style="padding:8px 32px 28px">
-<h1 style="margin:0 0 12px;font-size:22px;line-height:1.3;color:#1c1a17;font-weight:600">${esc(c.heading)}</h1>
-${(c.paragraphs ?? []).map((p) => `<p style="margin:0 0 12px;font-size:15px;line-height:1.55;color:#3d3a34">${esc(p)}</p>`).join("")}
-${details}
-${cta ? `<a href="${esc(cta.url)}" style="display:inline-block;margin-top:8px;background:#1c1a17;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;padding:12px 20px;border-radius:8px">${esc(cta.label)}</a>` : ""}
-${c.footnote ? `<p style="margin:24px 0 0;font-size:13px;line-height:1.5;color:#6b665e">${esc(c.footnote)}</p>` : ""}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:540px;background:#fffdf8;border:1px solid #e2d9ca;border-radius:12px;overflow:hidden">
+<tr><td style="background:#0e0d0b;padding:22px 32px;font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-size:26px;color:#f3ede2;letter-spacing:0.01em">Kept</td></tr>
+<tr><td style="padding:28px 32px">
+<h1 style="margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-size:30px;line-height:1.15;color:#14120e;font-weight:500">${esc(c.heading)}</h1>
+${(c.paragraphs ?? []).map((p) => `<p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:#3d372f">${esc(p)}</p>`).join("")}
+${details.replaceAll("#e7e3dc", "#e2d9ca").replaceAll("#6b665e", "#625a4e").replaceAll("#1c1a17", "#14120e")}
+${cta ? `<a href="${esc(cta.url)}" style="display:inline-block;margin-top:10px;background:#14120e;color:#f3ede2;text-decoration:none;font-size:15px;font-weight:600;padding:13px 22px;border-radius:8px">${esc(cta.label)}</a>` : ""}
+${c.footnote ? `<p style="margin:24px 0 0;font-size:13px;line-height:1.55;color:#625a4e">${esc(c.footnote)}</p>` : ""}
 </td></tr></table>
-<p style="font-size:12px;color:#8a857c;margin:16px 0 0">You're receiving this because of activity on your Kept account. Manage notifications in Account → Notifications.</p>
+<p style="font-size:12px;color:#7d7466;margin:16px 0 0;max-width:540px">${esc(c.footer ?? "You're receiving this because of activity on your Kept account. Manage notifications in Account → Notifications.")}</p>
 </td></tr></table></body></html>`;
   const text = [
     c.heading,
