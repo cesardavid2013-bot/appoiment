@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { eq } from "drizzle-orm";
 import { OnboardingWizard } from "@/components/pro/onboarding-wizard";
 import { getT } from "@/i18n/server";
+import { env } from "@/server/env";
 import { getActiveMembership } from "@/server/authz";
 import { getViewer } from "@/server/auth/session";
 import { db } from "@/server/db/client";
@@ -19,18 +20,44 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: t("onboarding.metaTitle") };
 }
 
-export default async function OnboardingPage({ searchParams }: PageProps<"/pro/onboarding">) {
+export default async function OnboardingPage({
+  searchParams,
+}: PageProps<"/pro/onboarding">) {
   const sp = await searchParams;
   const viewer = (await getViewer())!;
   const cats = await listCategories();
   const m = sp.new === "1" ? null : await getActiveMembership(viewer);
 
   if (!m) {
-    return <OnboardingWizard categories={cats} user={{ name: viewer.name }} business={null} stripe={features.stripe} initialStep={typeof sp.step === "string" ? sp.step : undefined} />;
+    return (
+      <OnboardingWizard
+        host={new URL(env.APP_URL).host}
+        categories={cats}
+        user={{ name: viewer.name }}
+        business={null}
+        stripe={features.stripe}
+        initialStep={typeof sp.step === "string" ? sp.step : undefined}
+      />
+    );
   }
-  const [b] = await db.select().from(businesses).where(eq(businesses.id, m.businessId));
-  const [cat] = b.primaryCategoryId ? await db.select().from(categories).where(eq(categories.id, b.primaryCategoryId)) : [];
-  const parent = cat?.parentId ? (await db.select().from(categories).where(eq(categories.id, cat.parentId)))[0] : undefined;
+  const [b] = await db
+    .select()
+    .from(businesses)
+    .where(eq(businesses.id, m.businessId));
+  const [cat] = b.primaryCategoryId
+    ? await db
+        .select()
+        .from(categories)
+        .where(eq(categories.id, b.primaryCategoryId))
+    : [];
+  const parent = cat?.parentId
+    ? (
+        await db
+          .select()
+          .from(categories)
+          .where(eq(categories.id, cat.parentId))
+      )[0]
+    : undefined;
   const [locs, svcs, hours, checklist, media] = await Promise.all([
     listLocations(m.businessId),
     listServicesForBusiness(m.businessId),
@@ -40,6 +67,7 @@ export default async function OnboardingPage({ searchParams }: PageProps<"/pro/o
   ]);
   return (
     <OnboardingWizard
+      host={new URL(env.APP_URL).host}
       categories={cats}
       user={{ name: viewer.name }}
       stripe={features.stripe}
@@ -65,9 +93,26 @@ export default async function OnboardingPage({ searchParams }: PageProps<"/pro/o
         minNoticeMinutes: b.minNoticeMinutes,
         paymentsEnabled: b.paymentsEnabled,
         onboarding: b.onboarding,
-        locations: locs.map((l) => ({ id: l.id, kind: l.kind, name: l.name, line1: l.line1, city: l.city, region: l.region, postalCode: l.postalCode })),
-        services: svcs.map((s) => ({ id: s.id, name: s.name, durationMinutes: s.durationMinutes, priceCents: s.priceCents, priceType: s.priceType })),
-        hours: hours.map((h) => ({ weekday: h.weekday, windows: h.windows.map((w) => ({ start: w.start, end: w.end })) })),
+        locations: locs.map((l) => ({
+          id: l.id,
+          kind: l.kind,
+          name: l.name,
+          line1: l.line1,
+          city: l.city,
+          region: l.region,
+          postalCode: l.postalCode,
+        })),
+        services: svcs.map((s) => ({
+          id: s.id,
+          name: s.name,
+          durationMinutes: s.durationMinutes,
+          priceCents: s.priceCents,
+          priceType: s.priceType,
+        })),
+        hours: hours.map((h) => ({
+          weekday: h.weekday,
+          windows: h.windows.map((w) => ({ start: w.start, end: w.end })),
+        })),
         checklist: checklist.items,
       }}
     />

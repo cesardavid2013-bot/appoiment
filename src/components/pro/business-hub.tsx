@@ -21,7 +21,7 @@ const BLURBS = new Set(["services", "availability", "team", "portfolio", "review
 const ROW = "flex min-h-14 w-full items-center gap-3.5 px-4 py-3 text-start hover:bg-surface-2/60 sm:px-5";
 
 /** The mobile "Business" tab: every console section that isn't in the tab bar, plus business and account switching. */
-export function BusinessHub({ business, businesses, perms, user }: { business: ShellBusiness; businesses: ShellBusiness[]; perms: string[]; user: { name: string; email: string | null } }) {
+export function BusinessHub({ business, businesses, perms, user, host }: { business: ShellBusiness; businesses: ShellBusiness[]; perms: string[]; user: { name: string; email: string | null }; host: string }) {
   const router = useRouter();
   const t = useT("pro");
   const [switching, setSwitching] = useState<string | null>(null);
@@ -76,7 +76,7 @@ export function BusinessHub({ business, businesses, perms, user }: { business: S
               <ExternalLink className="size-5 shrink-0 text-ink-3" strokeWidth={1.8} aria-hidden />
               <span className="min-w-0 flex-1">
                 <span className="block text-[15px] font-medium text-ink">{t("shell.viewPublicPage")}</span>
-                <span className="block truncate text-[13px] text-ink-3 tabular">kept.app/{business.slug}</span>
+                <span className="block truncate text-[13px] text-ink-3 tabular">{host}/{business.slug}</span>
               </span>
             </Link>
           </li>

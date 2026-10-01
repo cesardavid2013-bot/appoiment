@@ -72,7 +72,7 @@ function tOr(t: TFunction, key: string, fallback: string) {
   return v === `proSetup.${key}` ? fallback : v;
 }
 
-export function OnboardingWizard({ categories, user, business: b, stripe, initialStep }: { categories: Category[]; user: { name: string }; business: WizardBusiness | null; stripe: boolean; initialStep?: string }) {
+export function OnboardingWizard({ categories, user, business: b, stripe, initialStep, host }: { categories: Category[]; user: { name: string }; business: WizardBusiness | null; stripe: boolean; initialStep?: string; host: string }) {
   const t = useT("proSetup");
   const tr = useT();
   const router = useRouter();
@@ -217,7 +217,7 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
             </StepFrame>
           )}
 
-          {step === "name" && <NameStep kind={kind ?? "individual"} userName={user.name} categoryId={categoryId} onBack={() => go("kind")} onCreated={() => { router.refresh(); go("branding"); }} />}
+          {step === "name" && <NameStep host={host} kind={kind ?? "individual"} userName={user.name} categoryId={categoryId} onBack={() => go("kind")} onCreated={() => { router.refresh(); go("branding"); }} />}
 
           {b && step === "branding" && <BrandingStep b={b} onDone={() => complete("branding")} onSkip={() => complete("branding", "skipped")} />}
           {b && step === "location" && <LocationStep b={b} onDone={() => complete("location")} />}
@@ -225,7 +225,7 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
           {b && step === "availability" && <HoursStep b={b} onDone={() => complete("availability")} />}
           {b && step === "policies" && <PoliciesStep b={b} onDone={() => complete("policies")} onSkip={() => complete("policies", "skipped")} />}
           {b && step === "payments" && <PaymentsStep b={b} stripe={stripe} onDone={() => complete("payments")} onSkip={() => complete("payments", "skipped")} />}
-          {b && step === "preview" && <PreviewStep b={b} goTo={go} />}
+          {b && step === "preview" && <PreviewStep b={b} goTo={go} host={host} />}
         </div>
       </div>
     </div>
@@ -263,7 +263,7 @@ function Actions({ children, back, skip }: { children: ReactNode; back?: () => v
   );
 }
 
-function NameStep({ kind, userName, categoryId, onBack, onCreated }: { kind: "individual" | "business"; userName: string; categoryId: string | null; onBack: () => void; onCreated: () => void }) {
+function NameStep({ kind, userName, categoryId, onBack, onCreated, host }: { kind: "individual" | "business"; userName: string; categoryId: string | null; onBack: () => void; onCreated: () => void; host: string }) {
   const t = useT("proSetup");
   const [name, setName] = useState(kind === "individual" ? userName : "");
   const detected = typeof Intl !== "undefined" ? Intl.DateTimeFormat().resolvedOptions().timeZone : "UTC";
@@ -293,7 +293,7 @@ function NameStep({ kind, userName, categoryId, onBack, onCreated }: { kind: "in
     <StepFrame title={kind === "individual" ? t("onboarding.name.titleIndividual") : t("onboarding.name.titleBusiness")} lead={t("onboarding.name.lead")}>
       <div className="space-y-5">
         <FormError message={error} />
-        <Field label={kind === "individual" ? t("onboarding.name.labelIndividual") : t("onboarding.name.labelBusiness")} hint={name.trim().length >= 2 ? t("onboarding.name.pageHint", { url: `kept.app/${slugify(name) || "…"}` }) : undefined}>
+        <Field label={kind === "individual" ? t("onboarding.name.labelIndividual") : t("onboarding.name.labelBusiness")} hint={name.trim().length >= 2 ? t("onboarding.name.pageHint", { url: `${host}/${slugify(name) || "…"}` }) : undefined}>
           {(p) => <Input {...p} value={name} onChange={(e) => setName(e.target.value)} maxLength={80} autoFocus placeholder={kind === "individual" ? t("onboarding.name.placeholderIndividual") : t("onboarding.name.placeholderBusiness")} />}
         </Field>
         <div className="grid gap-5 sm:grid-cols-2">
@@ -815,7 +815,7 @@ function PaymentsStep({ b, stripe, onDone, onSkip }: { b: WizardBusiness; stripe
   );
 }
 
-function PreviewStep({ b, goTo }: { b: WizardBusiness; goTo: (s: StepKey) => void }) {
+function PreviewStep({ b, goTo, host }: { b: WizardBusiness; goTo: (s: StepKey) => void; host: string }) {
   const t = useT("proSetup");
   const router = useRouter();
   const [publishing, setPublishing] = useState(false);
@@ -853,7 +853,7 @@ function PreviewStep({ b, goTo }: { b: WizardBusiness; goTo: (s: StepKey) => voi
         ))}
       </ul>
       <div className="mt-6 flex items-center justify-between gap-4 rounded-lg bg-surface-2 px-4 py-3.5">
-        <span className="min-w-0 truncate text-sm text-ink-2">kept.app/{b.slug}</span>
+        <span className="min-w-0 truncate text-sm text-ink-2">{host}/{b.slug}</span>
         <a href={`/${b.slug}`} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-ink hover:underline">
           {t("onboarding.preview.preview")} <ExternalLink className="size-3.5" />
         </a>
