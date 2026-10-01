@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Anda:",
+  "unread": "Belum dibaca",
+  "apptLine": "{service} · {date} pukul {time}",
+  "list": {
+    "title": "Pesan",
+    "unread": "{count, plural, other {# percakapan belum dibaca.}}",
+    "caughtUp": "Semua sudah Anda baca.",
+    "emptyTitle": "Belum ada pesan",
+    "emptyBody": "Ada pertanyaan tentang layanan, harga, atau waktu? Buka halaman profesional dan ketuk “Ajukan pertanyaan”. Balasan mereka akan masuk ke sini.",
+    "findPro": "Cari profesional"
+  },
+  "thread": {
+    "metaTitle": "Percakapan",
+    "placeholder": "Kirim pesan ke {business}"
+  },
+  "new": {
+    "metaTitle": "Pesan baru",
+    "ownTitle": "Ini bisnis Anda",
+    "ownBody": "Pesan pelanggan untuk {business} masuk ke kotak masuk bisnis Anda.",
+    "ownButton": "Buka kotak masuk bisnis",
+    "placeholderBooking": "Tanyakan tentang pemesanan ini",
+    "placeholderQuestion": "Ajukan pertanyaan",
+    "emptyBookingTitle": "Kirim pesan ke {business} tentang pemesanan Anda",
+    "emptyQuestionTitle": "Tanyakan ke {business} sebelum memesan",
+    "emptyBookingBody": "Terlambat, perlu mengubah sesuatu, atau punya pertanyaan? Pesan Anda langsung sampai ke tim mereka.",
+    "emptyQuestionBody": "Harga, waktu, apa yang perlu dibawa — {business} akan membalas di sini dan kami akan memberi tahu Anda. Nomor telepon dan email Anda tetap rahasia."
+  },
+  "shell": {
+    "allMessages": "Semua pesan",
+    "viewProfile": "Lihat profil",
+    "book": "Pesan"
+  },
+  "pro": {
+    "backToInbox": "Kembali ke kotak masuk"
+  },
+  "view": {
+    "label": "Pesan",
+    "you": "Anda",
+    "loadingEarlier": "Memuat pesan sebelumnya",
+    "showEarlier": "Tampilkan pesan sebelumnya",
+    "seen": "Dilihat",
+    "sending": "Mengirim…",
+    "notSent": "Tidak terkirim.",
+    "retry": "Coba lagi",
+    "discard": "Buang",
+    "newMessages": "{count, plural, other {# pesan baru}}",
+    "openPhoto": "Buka foto di tab baru",
+    "photo": "Foto"
+  },
+  "composer": {
+    "about": "Tentang {appointment}",
+    "unlink": "Jangan tautkan janji temu ini",
+    "processingPhoto": "Memproses foto",
+    "removePhoto": "Hapus foto",
+    "attachPhoto": "Lampirkan foto",
+    "label": "Pesan",
+    "send": "Kirim pesan",
+    "hint": "Tekan Enter untuk mengirim, Shift dan Enter untuk baris baru."
+  },
+  "inbox": {
+    "title": "Kotak masuk",
+    "conversations": "Percakapan",
+    "unread": "{count} belum dibaca",
+    "allCaughtUp": "Semua sudah dibaca",
+    "searchLabel": "Cari percakapan berdasarkan nama klien",
+    "searchPlaceholder": "Cari klien",
+    "clearSearch": "Hapus pencarian",
+    "show": "Tampilkan",
+    "all": "Semua",
+    "unreadFilter": "Belum dibaca",
+    "noClientsNamed": "Tidak ada klien bernama “{term}”",
+    "nothingUnread": "Tidak ada yang belum dibaca",
+    "noMessages": "Belum ada pesan",
+    "tryDifferent": "Coba pencarian lain atau tampilkan semua percakapan.",
+    "emptyBody": "Saat klien bertanya dari halaman Anda atau tentang pemesanan, pesannya akan muncul di sini."
+  },
+  "clientPanel": {
+    "client": "Klien",
+    "visits": "Kunjungan",
+    "noShows": "Tidak hadir",
+    "cancelled": "Dibatalkan",
+    "clientSince": "Klien sejak {date}",
+    "noVisits": "Belum ada kunjungan yang selesai",
+    "lastIn": "terakhir {date}",
+    "tags": "Tag",
+    "clientProfile": "Profil klien",
+    "notBooked": "Belum pernah memesan dengan Anda — percakapan ini dimulai dari halaman publik Anda.",
+    "upcoming": "Mendatang",
+    "nothingBooked": "Belum ada pemesanan.",
+    "recent": "Terbaru"
+  }
+}

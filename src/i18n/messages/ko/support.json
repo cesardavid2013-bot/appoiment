@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "예약",
+      "hint": "예약 변경, 취소 또는 문제."
+    },
+    "payment": {
+      "label": "결제",
+      "hint": "청구, 예약금, 환불 또는 팁."
+    },
+    "account": {
+      "label": "계정",
+      "hint": "로그인, 프로필 또는 데이터."
+    },
+    "report": {
+      "label": "비즈니스 신고",
+      "hint": "안전 문제, 허위 정보 또는 부적절한 행동."
+    },
+    "other": {
+      "label": "기타",
+      "hint": "그 밖에 도움이 필요한 모든 것."
+    }
+  },
+  "status": {
+    "open": "지원팀 답변 대기",
+    "awaiting_customer": "답변 완료",
+    "resolved": "해결됨",
+    "closed": "종료됨"
+  },
+  "home": {
+    "title": "도움말 및 지원",
+    "description": "예약, 결제, 계정 관련 도움을 받으세요.",
+    "newRequest": "새 문의",
+    "yourRequests": "내 문의",
+    "emptyTitle": "아직 문의 내역이 없어요",
+    "emptyBody": "예약, 결제, 계정에 문제가 있다면 알려 주세요. 해결을 도와드릴게요.",
+    "contact": "고객지원 문의",
+    "ticketLine": "{category} · {date} 업데이트 · {count, plural, other {메시지 #개}}",
+    "quickAnswers": "빠른 답변",
+    "stillStuck": "아직 해결되지 않았나요? <link>고객지원에 문의</link>하세요."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "예약을 취소하거나 변경하려면 어떻게 하나요?",
+      "a": "<link>예약</link>을 열고 해당 예약을 선택한 뒤 일정 변경 또는 취소를 탭하세요. 취소 기한은 비즈니스마다 다르며, 확정하기 전에 수수료나 환불을 포함해 적용되는 내용을 정확히 확인할 수 있어요."
+    },
+    "refund": {
+      "q": "환불은 언제 받을 수 있나요?",
+      "a": "취소가 확정되면 결제한 카드로 바로 환불돼요. 은행에 따라 보통 영업일 기준 5–10일 후에 반영돼요. 예약금 환불 여부는 예약할 때 안내되는 비즈니스 정책에 따라 달라져요."
+    },
+    "contactPro": {
+      "q": "전문가에게 어떻게 연락하나요?",
+      "a": "프로필이나 예약에서 메시지를 사용하세요. 대화는 <link>메시지</link>에서 볼 수 있어요. 길 안내, 준비 사항, 준비물 등 서비스 자체에 관한 질문은 비즈니스가 가장 빨리 답할 수 있어요."
+    },
+    "report": {
+      "q": "비즈니스와 문제가 생겼어요. 어떻게 해야 하나요?",
+      "a": "아래에서 문의를 열고 “비즈니스 신고”를 선택하세요. 관련 예약이 있다면 연결해 주세요. 모든 신고를 확인하며, 환불에 개입하거나 필요한 경우 비즈니스를 Kept에서 퇴출할 수 있어요."
+    },
+    "account": {
+      "q": "이메일을 변경하거나 계정을 삭제하려면 어떻게 하나요?",
+      "a": "이메일 변경은 본인 확인을 위해 고객지원을 통해 진행돼요. 데이터 다운로드와 계정 삭제는 <link>개인정보 및 데이터</link>에서 직접 할 수 있어요."
+    }
+  },
+  "ticket": {
+    "metaTitle": "지원 문의",
+    "allRequests": "전체 문의",
+    "opened": "{category} · <date></date> 접수",
+    "appointmentLine": "{date} {time} · 예약 번호 {reference}",
+    "conversation": "대화",
+    "keptSupport": "Kept 고객지원",
+    "openImage": "첨부 이미지 열기",
+    "attachedImage": "첨부 이미지",
+    "closed": "이 문의는 종료됐어요. 도움이 더 필요하면 <link>새 문의를 열어</link> 주세요.",
+    "willReply": "여기에 답변을 드리고 알려 드릴게요.",
+    "sorted": "해결되셨나요? 알려 주세요."
+  },
+  "new": {
+    "title": "고객지원 문의",
+    "intro": "어떤 일인지 알려 주시면 Kept 팀의 담당자가 직접 여기에 답변드려요. 서비스 자체에 대한 질문은 비즈니스에 메시지를 보내는 게 보통 가장 빨라요.",
+    "notFound": "계정에서 해당 예약을 찾지 못해 첨부하지 않았어요. 아래에서 다시 선택할 수 있어요."
+  },
+  "form": {
+    "topic": "어떤 도움이 필요하세요?",
+    "chooseTopic": "주제 선택",
+    "addSubject": "짧은 제목을 입력하세요",
+    "moreDetail": "조금 더 알려 주세요 — 한 문장 이상이면 더 잘 도와드릴 수 있어요",
+    "sent": "문의를 보냈어요",
+    "checkFields": "표시된 항목을 확인해 주세요.",
+    "related": "관련 예약",
+    "refHint": "예약 번호 {reference} · {business}",
+    "linkHint": "예약을 연결하면 바로 확인할 수 있어요.",
+    "none": "없음",
+    "appointmentOption": "{date} {time} — {service} · {business}",
+    "subject": "제목",
+    "subjectPlaceholder": "예: 예약금이 두 번 결제됐어요",
+    "details": "상세 내용",
+    "detailsHint": "무슨 일이 언제 있었는지, 어떻게 해 드리면 좋을지 적어 주세요. 카드 번호나 비밀번호는 적지 마세요.",
+    "images": "이미지",
+    "optional": "선택 사항",
+    "cancel": "취소",
+    "uploadingImages": "이미지 업로드 중…",
+    "send": "문의 보내기"
+  },
+  "reply": {
+    "writeFirst": "먼저 답장을 작성해 주세요.",
+    "sent": "답장을 보냈어요",
+    "label": "답장",
+    "reopens": "답장하면 이 문의가 다시 열려요.",
+    "placeholder": "내용을 추가하거나 질문에 답해 주세요…",
+    "send": "답장 보내기"
+  },
+  "resolve": {
+    "button": "해결됨으로 표시",
+    "done": "해결됨으로 표시했어요",
+    "doneBody": "해결돼서 다행이에요. 다른 일이 생기면 언제든 답장할 수 있어요.",
+    "confirmTitle": "이 문의를 해결됨으로 표시할까요?",
+    "confirmBody": "해결됐다면 알려 주세요. 다른 일이 생기면 여기에 답장하시면 다시 이어서 도와드릴게요."
+  },
+  "attach": {
+    "tooMany": "이미지는 최대 {max}개까지 첨부할 수 있어요.",
+    "alt": "지원 첨부 파일",
+    "label": "첨부 파일",
+    "uploadingName": "{name} 업로드 중",
+    "remove": "{name} 삭제",
+    "add": "이미지 추가",
+    "uploading": "{count, plural, other {이미지 #개 업로드 중…}}",
+    "hint": "스크린샷이나 사진이 도움이 돼요. 이미지 최대 {max}개, 각 15MB."
+  }
+}

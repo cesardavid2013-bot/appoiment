@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Datang ke lokasi Anda",
+    "comesToYouIn": "Datang ke lokasi Anda · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Dipromosikan",
+    "verified": "Bisnis terverifikasi",
+    "instant": "Konfirmasi instan",
+    "request": "Ajukan pemesanan",
+    "bookAt": "Pesan {day} pukul {time}",
+    "moreTimes": "Waktu lain",
+    "freeConsultation": "Tersedia konsultasi gratis",
+    "priceOnRequest": "Harga sesuai permintaan",
+    "viewTimes": "Lihat jadwal"
+  },
+  "rail": {
+    "seeAll": "Lihat semua"
+  },
+  "favorite": {
+    "save": "Simpan",
+    "saved": "Disimpan",
+    "remove": "Hapus dari simpanan",
+    "savedToast": "Disimpan",
+    "savedToastHint": "Temukan kapan saja di Disimpan."
+  }
+}

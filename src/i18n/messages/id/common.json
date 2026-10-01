@@ -1,0 +1,90 @@
+{
+  "language": "Bahasa",
+  "meta": {
+    "title": "Kept — Pesan profesional tepercaya di sekitar Anda",
+    "description": "Temukan dan pesan barber, penata rambut, pelatih, fotografer, tutor, dan berbagai profesional di sekitar Anda — serta kelola janji temu Anda sendiri dengan mudah."
+  },
+  "skipToContent": "Langsung ke konten",
+  "logoHome": "Beranda Kept",
+  "header": {
+    "mainNav": "Utama",
+    "search": "Cari layanan atau profesional",
+    "ask": "Tanya",
+    "askKept": "Tanya Kept",
+    "explore": "Jelajahi",
+    "myBusiness": "Bisnis saya",
+    "forPros": "Untuk profesional",
+    "bookings": "Pemesanan",
+    "messages": "Pesan",
+    "notifications": "Notifikasi",
+    "unread": "belum dibaca",
+    "accountMenu": "Menu akun",
+    "logIn": "Masuk",
+    "signUp": "Daftar"
+  },
+  "accountMenu": {
+    "bookings": "Pemesanan",
+    "saved": "Disimpan",
+    "messages": "Pesan",
+    "settings": "Pengaturan akun",
+    "help": "Bantuan & dukungan",
+    "switchToBusiness": "Beralih ke bisnis",
+    "offerServices": "Tawarkan layanan Anda",
+    "admin": "Konsol admin",
+    "signOut": "Keluar"
+  },
+  "tabs": {
+    "label": "Utama",
+    "home": "Beranda",
+    "explore": "Jelajahi",
+    "bookings": "Pemesanan",
+    "inbox": "Kotak masuk",
+    "account": "Akun"
+  },
+  "footer": {
+    "tagline": "Pesan profesional tepercaya. Kelola janji temu dengan lebih ringan.",
+    "discover": "Temukan",
+    "explore": "Jelajahi",
+    "hair": "Rambut & barber",
+    "wellness": "Relaksasi & kesehatan",
+    "fitness": "Kebugaran",
+    "forPros": "Untuk profesional",
+    "howItWorks": "Cara kerjanya",
+    "listServices": "Daftarkan layanan Anda",
+    "dashboard": "Dasbor bisnis",
+    "help": "Bantuan",
+    "support": "Dukungan",
+    "terms": "Ketentuan",
+    "privacy": "Privasi",
+    "copyright": "© {year} Kept. Hak cipta dilindungi undang-undang."
+  },
+  "price": {
+    "free": "Gratis",
+    "quote": "Harga setelah konsultasi",
+    "from": "Mulai {price}"
+  },
+  "rating": {
+    "new": "Baru",
+    "summary": "rating {avg} dari {count, plural, other {# ulasan}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Menunggu pembayaran",
+    "requested": "Permintaan terkirim",
+    "confirmed": "Dikonfirmasi",
+    "checked_in": "Sudah check-in",
+    "in_progress": "Sedang berlangsung",
+    "completed": "Selesai",
+    "cancelled": "Dibatalkan",
+    "declined": "Ditolak",
+    "no_show": "Tidak hadir",
+    "expired": "Kedaluwarsa"
+  },
+  "policy": {
+    "freeUntil": "Pembatalan gratis hingga {hours} jam sebelumnya. Pembatalan setelahnya dikenakan {percent}% dari total.",
+    "cancelAhead": "Harap batalkan setidaknya {hours} jam sebelum janji temu Anda.",
+    "freeAnyTime": "Pembatalan gratis kapan saja sebelum janji temu Anda.",
+    "depositRefundable": "Uang muka dapat dikembalikan jika Anda membatalkan tepat waktu.",
+    "depositNonRefundable": "Uang muka tidak dapat dikembalikan.",
+    "reschedule": "Jadwalkan ulang secara online hingga {hours} jam sebelumnya."
+  }
+}

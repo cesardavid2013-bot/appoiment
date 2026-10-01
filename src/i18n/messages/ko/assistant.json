@@ -1,0 +1,22 @@
+{
+  "title": "Kept에게 물어보기",
+  "description": "필요한 것과 원하는 시간을 말씀해 주세요. 실제 빈 시간을 확인해 드릴게요.",
+  "newConversation": "새 대화",
+  "close": "닫기",
+  "forExample": "예를 들면:",
+  "starters": {
+    "one": "내일 오후에 바버샵",
+    "two": "이번 주말 6만 원 이하 젤네일",
+    "three": "오늘 밤 근처 마사지",
+    "four": "온라인 수학 과외"
+  },
+  "searching": "찾는 중",
+  "listening": "듣는 중…",
+  "placeholder": "토요일 오전에 바버샵…",
+  "yourMessage": "메시지",
+  "stopListening": "듣기 중지",
+  "speak": "말하기",
+  "send": "보내기",
+  "verified": "인증됨",
+  "online": "온라인"
+}

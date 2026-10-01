@@ -1,0 +1,93 @@
+{
+  "youPrefix": "나:",
+  "unread": "읽지 않음",
+  "apptLine": "{service} · {date} {time}",
+  "list": {
+    "title": "메시지",
+    "unread": "{count, plural, other {읽지 않은 대화 #개.}}",
+    "caughtUp": "모두 확인했어요.",
+    "emptyTitle": "아직 메시지가 없어요",
+    "emptyBody": "서비스, 가격, 시간이 궁금하신가요? 전문가 페이지에서 “질문하기”를 탭하세요. 답장은 여기로 와요.",
+    "findPro": "전문가 찾기"
+  },
+  "thread": {
+    "metaTitle": "대화",
+    "placeholder": "{business}에 메시지 보내기"
+  },
+  "new": {
+    "metaTitle": "새 메시지",
+    "ownTitle": "내 비즈니스예요",
+    "ownBody": "{business}에 온 고객 메시지는 비즈니스 받은함으로 도착해요.",
+    "ownButton": "비즈니스 받은함 열기",
+    "placeholderBooking": "이 예약에 대해 문의하기",
+    "placeholderQuestion": "질문하기",
+    "emptyBookingTitle": "예약에 대해 {business}에 메시지 보내기",
+    "emptyQuestionTitle": "예약 전에 {business}에 물어보세요",
+    "emptyBookingBody": "늦으시거나, 변경할 게 있거나, 궁금한 게 있나요? 메시지는 팀에게 바로 전달돼요.",
+    "emptyQuestionBody": "가격, 소요 시간, 준비물 등 — {business}이(가) 여기에 답하면 알려 드릴게요. 전화번호와 이메일은 공개되지 않아요."
+  },
+  "shell": {
+    "allMessages": "전체 메시지",
+    "viewProfile": "프로필 보기",
+    "book": "예약"
+  },
+  "pro": {
+    "backToInbox": "받은함으로 돌아가기"
+  },
+  "view": {
+    "label": "메시지",
+    "you": "나",
+    "loadingEarlier": "이전 메시지 불러오는 중",
+    "showEarlier": "이전 메시지 보기",
+    "seen": "읽음",
+    "sending": "보내는 중…",
+    "notSent": "전송 실패.",
+    "retry": "다시 시도",
+    "discard": "삭제",
+    "newMessages": "{count, plural, other {새 메시지 #개}}",
+    "openPhoto": "새 탭에서 사진 열기",
+    "photo": "사진"
+  },
+  "composer": {
+    "about": "{appointment} 관련",
+    "unlink": "이 예약 연결 안 함",
+    "processingPhoto": "사진 처리 중",
+    "removePhoto": "사진 삭제",
+    "attachPhoto": "사진 첨부",
+    "label": "메시지",
+    "send": "메시지 보내기",
+    "hint": "Enter로 보내기, Shift+Enter로 줄 바꿈."
+  },
+  "inbox": {
+    "title": "받은함",
+    "conversations": "대화",
+    "unread": "읽지 않음 {count}개",
+    "allCaughtUp": "모두 확인했어요",
+    "searchLabel": "고객 이름으로 대화 검색",
+    "searchPlaceholder": "고객 검색",
+    "clearSearch": "검색 지우기",
+    "show": "보기",
+    "all": "전체",
+    "unreadFilter": "읽지 않음",
+    "noClientsNamed": "“{term}” 이름의 고객이 없어요",
+    "nothingUnread": "읽지 않은 메시지 없음",
+    "noMessages": "아직 메시지가 없어요",
+    "tryDifferent": "다른 검색어를 입력하거나 전체 대화를 보세요.",
+    "emptyBody": "고객이 페이지나 예약에 대해 질문하면 여기에 표시돼요."
+  },
+  "clientPanel": {
+    "client": "고객",
+    "visits": "방문",
+    "noShows": "노쇼",
+    "cancelled": "취소",
+    "clientSince": "{date}부터 고객",
+    "noVisits": "아직 완료된 방문이 없어요",
+    "lastIn": "최근 방문 {date}",
+    "tags": "태그",
+    "clientProfile": "고객 프로필",
+    "notBooked": "아직 예약한 적이 없어요 — 공개 페이지에서 시작된 대화예요.",
+    "upcoming": "예정",
+    "nothingBooked": "예약 없음.",
+    "recent": "최근"
+  }
+}

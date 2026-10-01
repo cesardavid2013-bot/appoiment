@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "결제 대기 중",
+    "requested": "요청 전송됨",
+    "confirmed": "확정됨",
+    "checked_in": "체크인 완료",
+    "in_progress": "진행 중",
+    "completed": "완료",
+    "cancelled": "취소됨",
+    "declined": "거절됨",
+    "no_show": "노쇼",
+    "expired": "만료됨"
+  },
+  "list": {
+    "title": "예약",
+    "filters": "예약 필터",
+    "tabs": {
+      "upcoming": "예정",
+      "past": "지난 예약",
+      "cancelled": "취소됨"
+    },
+    "howDidItGo": "어떠셨나요?",
+    "review": "리뷰",
+    "empty": {
+      "upcoming": "예정된 예약이 없어요",
+      "past": "아직 지난 예약이 없어요",
+      "cancelled": "취소된 예약이 없어요",
+      "upcomingBody": "예약하면 여기에 표시돼요 — 길 안내, 리마인더, 간편한 일정 변경까지.",
+      "findPro": "전문가 찾기"
+    }
+  },
+  "detail": {
+    "metaTitle": "예약",
+    "allBookings": "전체 예약",
+    "hero": {
+      "confirmedTitle": "예약이 완료됐어요",
+      "confirmedBody": "확인 메일을 보냈고, 예약 전에 다시 알려 드릴게요.",
+      "requestedTitle": "요청을 보냈어요",
+      "requestedBody": "{business}에서 요청을 검토할 거예요. 답변이 오면 바로 알려 드릴게요 — 그동안 시간은 확보해 둘게요.",
+      "paymentTitle": "결제를 마무리하는 중",
+      "paymentBody": "방금 결제하셨다면 몇 초 안에 자동으로 업데이트돼요. 결제가 완료될 때까지 시간은 확보되어 있어요."
+    },
+    "calendarDetails": "예약 번호 {reference}",
+    "ref": "예약 번호",
+    "when": "일시",
+    "with": "담당",
+    "where": "장소",
+    "atYourAddress": "고객님 주소",
+    "online": "온라인",
+    "virtualLink": "세션 전에 비즈니스가 링크를 보내 드려요.",
+    "yourReview": "내 리뷰",
+    "payment": {
+      "title": "결제",
+      "serviceFee": "서비스 수수료",
+      "tax": "세금",
+      "estimatedTotal": "예상 총액",
+      "total": "총액",
+      "paid": "결제 완료",
+      "refunded": "환불됨",
+      "balance": "잔액",
+      "dueAtAppointment": "방문 시 결제",
+      "tip": "팁"
+    },
+    "policy": {
+      "title": "취소 정책",
+      "freeUntil": "예약 {hours, plural, other {#시간}} 전까지 무료 취소.",
+      "freeAnytime": "예약 전이라면 언제든 무료 취소.",
+      "lateFee": "이후 취소: 총액의 {percent}%.",
+      "depositNonRefundable": "예약금은 환불되지 않아요.",
+      "cannotCancel": "이 예약은 더 이상 취소할 수 없어요.",
+      "alreadyStarted": "이 예약은 이미 시작됐어요.",
+      "cannotReschedule": "이 예약은 일정을 변경할 수 없어요.",
+      "maxReschedules": "이 예약은 최대 변경 횟수에 도달했어요. 비즈니스에 문의해 주세요.",
+      "rescheduleWindow": "변경은 예약 {hours, plural, other {#시간}} 전까지만 가능해요. 비즈니스에 문의해 주세요."
+    },
+    "refund": {
+      "noCharge": "청구 금액 없음.",
+      "full": "전액 환불돼요.",
+      "none": "이 비즈니스의 정책에 따라 결제 금액은 환불되지 않아요.",
+      "partial": "이 비즈니스의 정책에 따라 일부 환불돼요."
+    },
+    "note": "메모: {reason}",
+    "problem": "예약에 문제가 있나요? <link>고객지원에 문의</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} {time}",
+    "cancelledToast": "예약을 취소했어요",
+    "refundOnWay": "{amount}이(가) 환불될 예정이에요.",
+    "rescheduledToast": "일정을 변경했어요",
+    "payToConfirm": "{amount} 결제하고 확정하기",
+    "addToCalendar": "캘린더에 추가",
+    "directions": "길 안내",
+    "message": "메시지",
+    "bookAgain": "다시 예약",
+    "googleCalendar": "Google 캘린더",
+    "leaveReview": "리뷰 남기기",
+    "reschedule": "일정 변경",
+    "cancelAppointment": "예약 취소",
+    "cancelTitle": "이 예약을 취소할까요?",
+    "insideWindow": "비즈니스의 무료 취소 기한이 지났어요.",
+    "refundAmount": "환불: {amount}.",
+    "keptAmount": "비즈니스 보유 금액: {amount}.",
+    "reason": "사유",
+    "reasonHint": "비즈니스에 전달돼요.",
+    "chooseNewTime": "새 시간 선택",
+    "currently": "현재 {when}",
+    "keepCurrentTime": "현재 시간 유지",
+    "moveTo": "{time}(으)로 변경",
+    "chooseTime": "시간 선택"
+  },
+  "review": {
+    "ratings": {
+      "1": "별로예요",
+      "2": "보통이에요",
+      "3": "좋아요",
+      "4": "아주 좋아요",
+      "5": "최고예요"
+    },
+    "thanks": "리뷰를 남겨 주셔서 감사해요",
+    "title": "{business}은(는) 어떠셨나요?",
+    "subtitle": "리뷰는 공개되며 인증된 예약으로 표시돼요.",
+    "rating": "평점",
+    "stars": "{n, plural, other {별 #개}}",
+    "bodyLabel": "방문 경험을 들려주세요",
+    "bodyPlaceholder": "어떤 점이 좋았나요? 추천하시겠어요?",
+    "post": "리뷰 등록"
+  },
+  "slotPicker": {
+    "previousWeek": "이전 주",
+    "nextWeek": "다음 주",
+    "noOpenings": "이날은 빈 시간이 없어요.",
+    "selected": "{time} 선택됨"
+  }
+}

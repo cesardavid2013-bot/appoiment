@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Không tìm thấy",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} tại {city}",
+    "bookOnline": "Đặt lịch {name} trực tuyến."
+  },
+  "preview": {
+    "notice": "Xem trước — chỉ bạn thấy trang này cho đến khi bạn xuất bản.",
+    "goLive": "Xuất bản"
+  },
+  "verified": "Được Kept xác minh",
+  "verifiedLabel": "Doanh nghiệp đã xác minh",
+  "reviewsCount": "{count, plural, other {# đánh giá đã xác minh}}",
+  "newOnKept": "Mới trên Kept",
+  "travels": "{city} · phục vụ trong bán kính {km} km",
+  "status": {
+    "openUntil": "Đang mở cửa · đến {time}",
+    "opensAt": "Mở cửa lúc {time}",
+    "opensTomorrow": "Mở cửa ngày mai lúc {time}",
+    "opensDay": "Mở cửa {day} lúc {time}",
+    "notSet": "Chưa đặt giờ mở cửa",
+    "closed": "Đã đóng cửa"
+  },
+  "nav": {
+    "label": "Các mục hồ sơ",
+    "services": "Dịch vụ",
+    "work": "Tác phẩm",
+    "featured": "Nổi bật",
+    "reviews": "Đánh giá",
+    "about": "Giới thiệu"
+  },
+  "services": {
+    "eyebrow": "Thực đơn dịch vụ",
+    "title": "Dịch vụ",
+    "empty": "Doanh nghiệp này chưa đăng dịch vụ nào.",
+    "sale": "Giảm giá",
+    "group": "Nhóm · tối đa {count}",
+    "request": "Gửi yêu cầu đặt lịch",
+    "options": "Có tùy chọn",
+    "deposit": "Đặt cọc khi đặt lịch",
+    "book": "Đặt lịch",
+    "bookService": "Đặt {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Tác phẩm gần đây"
+  },
+  "featured": {
+    "eyebrow": "Trên mạng xã hội",
+    "title": "Nổi bật",
+    "allProfiles": "Tất cả hồ sơ mạng xã hội",
+    "bookThis": "Đặt dịch vụ này · {service}",
+    "newTab": "(mở trong tab mới)",
+    "footnote": "Trình phát chỉ tải từ mỗi nền tảng khi bạn nhấn phát.",
+    "play": "Phát {title}",
+    "loadsFrom": "Tải từ {host}"
+  },
+  "team": {
+    "eyebrow": "Con người",
+    "title": "Đội ngũ"
+  },
+  "reviews": {
+    "eyebrow": "Lời truyền miệng",
+    "title": "Đánh giá",
+    "empty": "Chưa có đánh giá. Chỉ khách hàng đã hoàn tất lịch hẹn mới có thể đánh giá.",
+    "distribution": "Phân bố xếp hạng",
+    "onlyCustomers": "Chỉ khách hàng có lịch hẹn đã hoàn tất mới có thể viết đánh giá.",
+    "response": "Phản hồi từ {name}",
+    "stars": "{value}/5 sao"
+  },
+  "about": {
+    "eyebrow": "Về chúng tôi",
+    "title": "Giới thiệu",
+    "hours": "Giờ mở cửa",
+    "timesIn": "Giờ hiển thị theo {zone}.",
+    "policies": "Chính sách",
+    "noShow": "Lịch hẹn bị bỏ lỡ có thể bị tính {percent}% tổng số tiền.",
+    "experience": "Hơn {years} năm kinh nghiệm",
+    "amenities": "Tiện nghi",
+    "online": "Trực tuyến",
+    "directions": "Chỉ đường",
+    "comesToYou": "Phục vụ tận nơi",
+    "mobileBody": "Có trụ sở tại {city}. Phục vụ trong bán kính {km} km — bạn sẽ nhập địa chỉ khi đặt lịch.",
+    "onlineSessions": "Buổi trực tuyến",
+    "onlineBody": "Tham gia từ bất cứ đâu. Liên kết được chia sẻ sau khi đặt lịch."
+  },
+  "panel": {
+    "label": "Đặt lịch",
+    "eyebrow": "Giữ chỗ",
+    "freeOptions": "Có tùy chọn miễn phí",
+    "from": "Dịch vụ từ {price}",
+    "onConsultation": "Giá theo tư vấn",
+    "nextToday": "Giờ trống gần nhất hôm nay",
+    "nextTomorrow": "Giờ trống gần nhất ngày mai",
+    "nextOn": "Giờ trống gần nhất vào {day}",
+    "none": "Không có giờ trống trong hai tuần tới",
+    "bookNow": "Đặt ngay",
+    "requestToBook": "Gửi yêu cầu đặt lịch",
+    "instant": "Xác nhận ngay",
+    "confirms": "Doanh nghiệp sẽ xác nhận yêu cầu của bạn",
+    "notTaking": "Doanh nghiệp này chưa nhận đặt lịch.",
+    "mobileFrom": "Từ {price}",
+    "mobileNext": "Gần nhất: {day} {time}",
+    "seeAvailability": "Xem giờ trống",
+    "request": "Yêu cầu"
+  },
+  "actions": {
+    "share": "Chia sẻ",
+    "shareTitle": "Chia sẻ {name}",
+    "shareBody": "Gửi liên kết hoặc quét mã để mở trang đặt lịch.",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "downloadQr": "Tải mã QR",
+    "ask": "Đặt câu hỏi",
+    "messageTitle": "Nhắn tin cho {name}",
+    "messageBody": "Hỏi về dịch vụ, giờ trống hoặc bất cứ điều gì trước khi đặt. Số điện thoại và email của bạn được giữ kín.",
+    "cancel": "Hủy",
+    "send": "Gửi tin nhắn",
+    "yourMessage": "Tin nhắn của bạn",
+    "placeholder": "Chào bạn! Chiều thứ Bảy này bạn có rảnh để cắt fade sát da không?",
+    "sent": "Đã gửi tin nhắn",
+    "sentBody": "{name} sẽ trả lời trong hộp thư của bạn."
+  },
+  "portfolio": {
+    "compare": "So sánh trước và sau",
+    "portfolio": "Portfolio",
+    "close": "Đóng",
+    "previous": "Trước",
+    "next": "Tiếp",
+    "before": "Trước",
+    "after": "Sau",
+    "beforeAfter": "Trước / sau",
+    "video": "Video",
+    "openItem": "Mở mục {n}",
+    "browse": "Dùng phím mũi tên để duyệt",
+    "bookThis": "Đặt dịch vụ này",
+    "bookThisService": "Đặt dịch vụ này — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Video ngắn",
+    "post": "Bài đăng",
+    "reel": "Reel",
+    "track": "Bài hát",
+    "album": "Album",
+    "artist": "Nghệ sĩ",
+    "playlist": "Danh sách phát",
+    "episode": "Tập",
+    "show": "Podcast"
+  }
+}

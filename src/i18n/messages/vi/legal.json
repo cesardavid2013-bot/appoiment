@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Nếu các bản dịch có khác biệt, bản tiếng Anh sẽ được áp dụng.",
+  "nav": {
+    "label": "Văn bản pháp lý",
+    "terms": "Điều khoản dịch vụ",
+    "privacy": "Chính sách quyền riêng tư"
+  },
+  "doc": {
+    "lastUpdated": "Cập nhật lần cuối {date}",
+    "counselNote": "Đây là văn bản khởi đầu được viết bằng ngôn ngữ dễ hiểu. Văn bản sẽ được luật sư xem xét trước khi Kept ra mắt chính thức và có thể thay đổi theo đó. Chúng tôi sẽ thông báo cho bạn trước khi bất kỳ thay đổi nào ảnh hưởng đến quyền của bạn có hiệu lực.",
+    "contents": "Mục lục"
+  },
+  "terms": {
+    "meta": {
+      "title": "Điều khoản dịch vụ",
+      "description": "Các điều khoản dễ hiểu khi dùng Kept để đặt lịch với chuyên gia hoặc vận hành doanh nghiệp của bạn."
+    },
+    "title": "Điều khoản dịch vụ",
+    "intro": "Các điều khoản này giải thích cách Kept hoạt động và những gì chúng tôi mong đợi ở mọi người sử dụng. Chúng tôi đã viết ngắn gọn và dễ đọc. Nếu có điều gì chưa rõ, <support>hãy hỏi chúng tôi</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Kept là gì",
+        "body": {
+          "p1": "Kept là một sàn giao dịch và công cụ đặt lịch. Khách hàng dùng Kept để tìm và đặt lịch với các chuyên gia — thợ cắt tóc, nhà tạo mẫu, huấn luyện viên, gia sư, thợ chăm sóc xe và nhiều hơn nữa. Chuyên gia và doanh nghiệp dùng Kept để đăng dịch vụ, quản lý lịch và nhận thanh toán.",
+          "p2": "<b>Dịch vụ do chuyên gia hoặc doanh nghiệp bạn đặt lịch cung cấp, không phải Kept.</b> Khi bạn đặt lịch, thỏa thuận về dịch vụ là giữa bạn và doanh nghiệp đó. Chúng tôi vận hành nền tảng kết nối hai bên, hiển thị giá và chính sách của họ, và giúp cả hai bên giữ đúng lịch hẹn."
+        }
+      },
+      "account": {
+        "title": "Tài khoản của bạn",
+        "body": {
+          "li1": "Bạn phải từ 18 tuổi trở lên (hoặc đủ tuổi thành niên nơi bạn sống) để tạo tài khoản. Bạn có thể đặt lịch cho người khác, chẳng hạn con của bạn, nếu bạn chịu trách nhiệm về họ.",
+          "li2": "Cung cấp thông tin chính xác và luôn cập nhật — doanh nghiệp dựa vào đó để liên hệ với bạn về lịch hẹn.",
+          "li3": "Giữ kín mật khẩu của bạn. Bạn chịu trách nhiệm về những gì diễn ra trên tài khoản của mình. Nếu nghĩ rằng người khác có quyền truy cập, hãy đổi mật khẩu và đăng xuất các thiết bị khác trong Đăng nhập & bảo mật.",
+          "li4": "Mỗi người một tài khoản. Doanh nghiệp thêm thành viên đội ngũ như những người riêng biệt thay vì dùng chung thông tin đăng nhập."
+        }
+      },
+      "booking": {
+        "title": "Đặt lịch với tư cách khách hàng",
+        "body": {
+          "p1": "Trước khi xác nhận lịch hẹn, bạn sẽ thấy giá (hoặc cách ước tính giá), thời lượng, tiền cọc nếu có, cùng chính sách hủy và không đến của doanh nghiệp. Khi đặt lịch, bạn đồng ý với các điều khoản đó.",
+          "li1": "<b>Đặt lịch tức thì</b> được xác nhận ngay. <b>Yêu cầu</b> chỉ được xác nhận khi doanh nghiệp chấp nhận; trong lúc đó khung giờ của bạn được giữ, và yêu cầu không được trả lời sẽ hết hạn.",
+          "li2": "Bạn có thể hủy hoặc đổi lịch từ trang lịch hẹn trong phạm vi quy tắc của doanh nghiệp. Hủy muộn và không đến có thể khiến bạn mất một phần hoặc toàn bộ tiền cọc, hoặc bị tính phí, đúng như đã hiển thị khi bạn đặt.",
+          "li3": "Nếu dịch vụ được định giá theo ước tính (ví dụ “từ” hoặc một khoảng giá), giá cuối cùng sẽ được thỏa thuận với doanh nghiệp tại buổi hẹn.",
+          "li4": "Nếu Kept tính phí dịch vụ cho một lịch hẹn, phí đó được hiển thị trước khi bạn xác nhận. Chúng tôi không bao giờ cộng thêm khoản phí nào sau đó."
+        }
+      },
+      "payments": {
+        "title": "Thanh toán và hoàn tiền",
+        "body": {
+          "p1": "Thanh toán trực tuyến được Stripe xử lý. Kept không bao giờ nhìn thấy hay lưu trữ số thẻ đầy đủ của bạn. Một số doanh nghiệp nhận thanh toán trực tiếp; khi đó bạn thanh toán thẳng cho họ.",
+          "li1": "Việc hoàn tiền tuân theo chính sách của doanh nghiệp hiển thị khi đặt lịch, và được hoàn về thẻ bạn đã dùng để thanh toán. Ngân hàng của bạn có thể mất vài ngày làm việc để hiển thị.",
+          "li2": "Nếu doanh nghiệp hủy hoặc từ chối lịch hẹn của bạn, mọi khoản bạn đã thanh toán trực tuyến cho lịch hẹn đó sẽ được hoàn lại.",
+          "li3": "Nếu có sự cố với một khoản thanh toán, hãy <supportPayment>liên hệ với chúng tôi</supportPayment> trước khi khiếu nại với ngân hàng — thường sẽ nhanh hơn."
+        }
+      },
+      "businesses": {
+        "title": "Dành cho chuyên gia và doanh nghiệp",
+        "body": {
+          "li1": "Thông tin đăng của bạn phải chính xác: bạn là ai, bạn cung cấp gì, giá, nơi làm việc và chính sách. Ảnh và video phải là tác phẩm của chính bạn, hoặc được sử dụng với sự cho phép.",
+          "li2": "Bạn chịu trách nhiệm có đủ giấy phép, chứng nhận, bảo hiểm và bằng cấp mà công việc của bạn yêu cầu, và thực hiện nghĩa vụ thuế của mình.",
+          "li3": "Tôn trọng các lịch hẹn bạn đã chấp nhận và chính sách bạn đã công bố. Liên tục hủy vào phút chót, không đến hoặc đăng thông tin sai lệch có thể khiến hồ sơ của bạn bị tạm ngưng.",
+          "li4": "Các gói, giới hạn và phí được liệt kê trên <pricing>trang bảng giá</pricing>. Phí nền tảng chỉ áp dụng cho các khoản khách hàng thanh toán trực tuyến qua Kept. Tiền được Stripe chi trả vào tài khoản của bạn và cũng tuân theo điều khoản của Stripe.",
+          "li5": "Thông tin khách hàng bạn nhận được qua Kept có thể được dùng để cung cấp và chăm sóc sau dịch vụ. Chỉ gửi nội dung tiếp thị cho khách hàng đã đồng ý nhận.",
+          "li6": "Bạn giữ quyền sở hữu những gì bạn tải lên, và cho phép Kept hiển thị chúng trên Kept và để quảng bá hồ sơ của bạn trong thời gian thông tin đăng còn hoạt động.",
+          "li7": "Vị trí Spotlight luôn được gắn nhãn là được quảng bá. Chúng miễn phí trong giai đoạn ra mắt; nếu điều đó thay đổi, chúng tôi sẽ báo trước khi tính bất kỳ khoản phí nào."
+        }
+      },
+      "reviews": {
+        "title": "Đánh giá",
+        "body": {
+          "p1": "Chỉ khách hàng có lịch hẹn đã hoàn tất mới có thể viết đánh giá, mỗi lịch hẹn một lần. Đánh giá phải trung thực và nói về trải nghiệm của chính bạn. Doanh nghiệp có thể trả lời công khai.",
+          "p2": "Không được đưa ra bất cứ thứ gì để đổi lấy một đánh giá hoặc để gỡ một đánh giá. Chúng tôi có thể ẩn hoặc gỡ những đánh giá vi phạm các điều khoản này — ví dụ spam, thù ghét, thông tin cá nhân hoặc xung đột lợi ích — nhưng chúng tôi không gỡ đánh giá chỉ vì đánh giá đó tiêu cực."
+        }
+      },
+      "conduct": {
+        "title": "Những điều bạn không được làm trên Kept",
+        "body": {
+          "li1": "Cung cấp hoặc đặt bất cứ thứ gì bất hợp pháp, dịch vụ tình dục, hoặc bất cứ điều gì gây nguy hiểm cho người khác.",
+          "li2": "Quấy rối, đe dọa hoặc phân biệt đối xử với bất kỳ ai — khách hàng, chuyên gia hay đội ngũ của chúng tôi.",
+          "li3": "Tạo tài khoản, thông tin đăng, lịch hẹn hoặc đánh giá giả, hoặc mạo danh người khác.",
+          "li4": "Tải lên nội dung bạn không có quyền chia sẻ, hoặc chứa thông tin cá nhân của người khác mà không được phép.",
+          "li5": "Thu thập dữ liệu tự động, làm quá tải, dò quét hoặc can thiệp vào dịch vụ, hoặc tìm cách vượt qua cơ chế bảo mật hay phí của dịch vụ."
+        }
+      },
+      "ourRole": {
+        "title": "Vai trò của chúng tôi và giới hạn",
+        "body": {
+          "p1": "Chúng tôi nỗ lực giữ Kept an toàn và đáng tin cậy, và xử lý các báo cáo. Nhưng các doanh nghiệp trên Kept là độc lập — họ không phải nhân viên hay đại lý của chúng tôi, và chúng tôi không bảo đảm chất lượng, độ an toàn hay tính hợp pháp của dịch vụ họ cung cấp. Huy hiệu “đã xác minh” nghĩa là chúng tôi đã xem xét giấy tờ doanh nghiệp cung cấp; đó không phải là sự chứng thực.",
+          "p2": "Kept được cung cấp “nguyên trạng”. Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm về các tổn thất gián tiếp hoặc hệ quả, hay về những gì xảy ra trong quá trình cung cấp dịch vụ giữa bạn và doanh nghiệp. Không điều gì trong các điều khoản này hạn chế những quyền của bạn theo luật bảo vệ người tiêu dùng mà không thể loại trừ."
+        }
+      },
+      "ending": {
+        "title": "Tạm ngưng và đóng tài khoản",
+        "body": {
+          "p1": "Bạn có thể xóa tài khoản bất cứ lúc nào trong <privacyData>Quyền riêng tư & dữ liệu</privacyData>. Các lịch hẹn sắp tới sẽ bị hủy theo chính sách của từng doanh nghiệp, và những hồ sơ doanh nghiệp cần — như lịch hẹn và thanh toán trước đây — được giữ ở dạng ẩn danh.",
+          "p2": "Chúng tôi có thể tạm ngưng hoặc đóng các tài khoản vi phạm điều khoản này hoặc gây nguy hiểm cho người khác. Khi có thể, chúng tôi sẽ cho bạn biết lý do và cho bạn cơ hội phản hồi."
+        }
+      },
+      "changes": {
+        "title": "Thay đổi, tranh chấp và liên hệ",
+        "body": {
+          "p1": "Khi chúng tôi thay đổi các điều khoản này theo cách quan trọng, chúng tôi sẽ thông báo trước cho bạn qua email hoặc trong ứng dụng. Việc tiếp tục sử dụng Kept sau khi thay đổi có hiệu lực đồng nghĩa với việc bạn chấp nhận thay đổi đó.",
+          "p2": "Luật điều chỉnh và quy trình giải quyết tranh chấp sẽ được bổ sung tại đây sau khi rà soát pháp lý, trước khi Kept ra mắt chính thức.",
+          "p3": "Có câu hỏi về các điều khoản này? <support>Liên hệ với chúng tôi</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Chính sách quyền riêng tư",
+      "description": "Kept thu thập dữ liệu cá nhân nào, vì sao, ai nhìn thấy, và cách tải xuống hoặc xóa dữ liệu."
+    },
+    "title": "Chính sách quyền riêng tư",
+    "intro": "Chính sách này giải thích Kept thu thập dữ liệu cá nhân nào, vì sao chúng tôi cần, ai có thể xem, và những lựa chọn bạn có — áp dụng cho cả khách hàng lẫn chuyên gia.",
+    "sections": {
+      "summary": {
+        "title": "Tóm tắt",
+        "body": {
+          "li1": "Chúng tôi thu thập những gì cần để vận hành việc đặt lịch: bạn là ai, bạn đặt gì và cách liên hệ với bạn.",
+          "li2": "Doanh nghiệp bạn đặt lịch thấy những thông tin họ cần để phục vụ bạn. Không ai khác được thấy, ngoại trừ các nhà cung cấp dịch vụ giúp chúng tôi vận hành Kept.",
+          "li3": "Chúng tôi không bán dữ liệu cá nhân của bạn và không dùng công cụ theo dõi quảng cáo.",
+          "li4": "Bạn có thể tự tải bản sao dữ liệu hoặc xóa tài khoản bất cứ lúc nào trong <privacyData>Quyền riêng tư & dữ liệu</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Thông tin bạn cung cấp cho chúng tôi",
+        "body": {
+          "li1": "<b>Tài khoản:</b> tên, email, mật khẩu (chỉ lưu dưới dạng băm một chiều), và tùy chọn số điện thoại, ảnh và múi giờ. Nếu bạn đăng nhập bằng Google, chúng tôi nhận tên và email của bạn từ Google.",
+          "li2": "<b>Lịch hẹn:</b> dịch vụ, thời gian, doanh nghiệp và giá; ghi chú bạn thêm; câu trả lời cho câu hỏi sơ bộ của doanh nghiệp; và địa chỉ nếu chuyên gia đến tận nơi.",
+          "li3": "<b>Thanh toán:</b> số tiền, trạng thái và hoàn tiền. Thông tin thẻ được chuyển thẳng đến Stripe — chúng tôi không bao giờ nhận số thẻ đầy đủ của bạn.",
+          "li4": "<b>Tin nhắn, đánh giá và yêu cầu hỗ trợ</b>, bao gồm mọi hình ảnh bạn đính kèm, và các địa chỉ bạn lưu.",
+          "li5": "<b>Doanh nghiệp</b> còn cung cấp cho chúng tôi thông tin doanh nghiệp, thành viên đội ngũ, dịch vụ, lịch làm việc, nội dung portfolio, thông tin nhận tiền (do Stripe lưu giữ) và hồ sơ khách hàng mà họ quản lý."
+        }
+      },
+      "automatic": {
+        "title": "Thông tin được thu thập tự động",
+        "body": {
+          "li1": "<b>Phiên đăng nhập:</b> một cookie giữ cho bạn luôn đăng nhập. Chúng tôi lưu phiên cùng loại trình duyệt của bạn để các thiết bị có thể được đăng xuất an toàn.",
+          "li2": "<b>Bảo mật:</b> chúng tôi lưu một giá trị băm một chiều có khóa của địa chỉ IP — không phải chính địa chỉ đó — để giới hạn hành vi lạm dụng và điều tra hoạt động đáng ngờ.",
+          "li3": "<b>Vị trí:</b> nếu bạn chọn một địa điểm hoặc chia sẻ vị trí để tìm kiếm gần đó, thông tin được lưu trong cookie trên thiết bị của bạn để ghi nhớ lựa chọn. Chúng tôi không theo dõi vị trí của bạn trong nền.",
+          "li4": "<b>Hoạt động trên Kept:</b> những chuyên gia bạn xem và lưu, để có thể hiển thị lại cho bạn; và số lượt xem, lượt nhấp vào kết quả được quảng bá, chỉ báo cáo cho doanh nghiệp dưới dạng tổng số."
+        }
+      },
+      "use": {
+        "title": "Cách chúng tôi sử dụng thông tin",
+        "body": {
+          "li1": "Để tạo, thay đổi và nhắc bạn về lịch hẹn, cũng như xử lý thanh toán và hoàn tiền.",
+          "li2": "Để gửi các thông báo bạn đã chọn. Xác nhận và thay đổi lịch hẹn luôn được gửi; mọi thông báo khác có thể tắt trong Cài đặt thông báo.",
+          "li3": "Để hiển thị cho bạn các chuyên gia và giờ trống phù hợp gần bạn.",
+          "li4": "Để giữ Kept an toàn: ngăn chặn gian lận, spam và lạm dụng, và xử lý các báo cáo.",
+          "li5": "Để trả lời yêu cầu hỗ trợ và cải thiện Kept.",
+          "li6": "Để đáp ứng nghĩa vụ pháp lý, như hồ sơ thuế và kế toán."
+        }
+      },
+      "businesses": {
+        "title": "Doanh nghiệp thấy những gì",
+        "body": {
+          "p1": "Khi bạn đặt lịch, doanh nghiệp thấy tên, email và số điện thoại của bạn (nếu bạn đã thêm), lịch hẹn và mọi thứ bạn chia sẻ — ghi chú, câu trả lời sơ bộ, địa chỉ phục vụ — cùng các lần ghé trước đây của bạn tại đó. Họ có thể thêm ghi chú riêng vào hồ sơ khách hàng của mình.",
+          "p2": "Mỗi doanh nghiệp chịu trách nhiệm về cách họ sử dụng hồ sơ khách hàng, và chỉ được gửi nội dung tiếp thị cho bạn nếu bạn đã đồng ý. Đánh giá được công khai và hiển thị tên cùng chữ cái đầu của họ bạn."
+        }
+      },
+      "sharing": {
+        "title": "Chúng tôi chia sẻ với ai khác",
+        "body": {
+          "p1": "Chúng tôi sử dụng một số ít nhà cung cấp xử lý dữ liệu thay mặt chúng tôi, theo hợp đồng giới hạn những gì họ được làm với dữ liệu:",
+          "li1": "Stripe, cho thanh toán và chi trả.",
+          "li2": "Nhà cung cấp email của chúng tôi, và nhà cung cấp SMS nếu tin nhắn văn bản được bật.",
+          "li3": "Google, chỉ khi bạn chọn đăng nhập bằng Google.",
+          "li4": "Dịch vụ bản đồ và tra cứu địa chỉ, để hiển thị bản đồ và tìm địa điểm bạn tìm kiếm.",
+          "li5": "Các nhà cung cấp lưu trữ và hạ tầng của chúng tôi.",
+          "p2": "Chúng tôi cũng có thể tiết lộ thông tin khi pháp luật yêu cầu, để bảo vệ sự an toàn của ai đó, hoặc trong khuôn khổ sáp nhập hay mua lại — khi đó chính sách này vẫn tiếp tục được áp dụng. Chúng tôi không bao giờ bán dữ liệu cá nhân."
+        }
+      },
+      "rights": {
+        "title": "Lựa chọn và quyền của bạn",
+        "body": {
+          "li1": "<b>Truy cập:</b> tải bản sao dữ liệu của bạn từ <privacyData>Quyền riêng tư & dữ liệu</privacyData>.",
+          "li2": "<b>Chỉnh sửa:</b> cập nhật thông tin trong <profile>Hồ sơ</profile>, hoặc yêu cầu chúng tôi làm.",
+          "li3": "<b>Xóa:</b> xóa tài khoản trong Quyền riêng tư & dữ liệu. Xem bên dưới để biết những gì chúng tôi giữ lại.",
+          "li4": "<b>Thông báo:</b> chọn những gì chúng tôi gửi trong <notifications>Cài đặt thông báo</notifications>.",
+          "li5": "Tùy nơi bạn sống, bạn có thể có thêm các quyền khác, như phản đối một số cách sử dụng hoặc khiếu nại lên cơ quan bảo vệ dữ liệu. <supportAccount>Liên hệ với chúng tôi</supportAccount> và chúng tôi sẽ hỗ trợ."
+        }
+      },
+      "retention": {
+        "title": "Chúng tôi giữ thông tin bao lâu",
+        "body": {
+          "p1": "Chúng tôi giữ thông tin của bạn trong thời gian tài khoản còn mở.",
+          "p2": "Khi bạn xóa tài khoản, chúng tôi xóa ngay tên, email, số điện thoại, ảnh, địa chỉ đã lưu, chuyên gia đã lưu, thông báo và phương thức đăng nhập của bạn. Những hồ sơ mà doanh nghiệp và kế toán phụ thuộc — lịch hẹn đã qua, thanh toán và đánh giá — được giữ lại, liên kết với “Người dùng đã xóa” thay vì với bạn. Tin nhắn bạn đã trao đổi với doanh nghiệp vẫn nằm trong lịch sử trò chuyện của doanh nghiệp đó."
+        }
+      },
+      "security": {
+        "title": "Bảo mật",
+        "body": {
+          "p1": "Mật khẩu được băm bằng Argon2, phiên đăng nhập được lưu phía máy chủ và có thể thu hồi, kết nối được mã hóa, và ảnh tải lên được mã hóa lại để xóa dữ liệu vị trí ẩn. Không hệ thống nào an toàn tuyệt đối; nếu biết về một vụ xâm phạm ảnh hưởng đến bạn, chúng tôi sẽ thông báo cho bạn kịp thời."
+        }
+      },
+      "children": {
+        "title": "Trẻ em",
+        "body": {
+          "p1": "Tài khoản Kept dành cho người lớn. Cha mẹ hoặc người giám hộ có thể đặt dịch vụ cho con mình; chúng tôi không cố ý thu thập dữ liệu cá nhân trực tiếp từ trẻ em."
+        }
+      },
+      "changes": {
+        "title": "Thay đổi và liên hệ",
+        "body": {
+          "p1": "Nếu chúng tôi thay đổi chính sách này theo cách quan trọng, chúng tôi sẽ thông báo cho bạn trước khi thay đổi có hiệu lực.",
+          "p2": "Có câu hỏi hoặc yêu cầu về dữ liệu của bạn? <supportAccount>Liên hệ với chúng tôi</supportAccount>."
+        }
+      }
+    }
+  }
+}

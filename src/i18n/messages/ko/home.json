@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "{name}님, 다시 오신 걸 환영해요",
+    "eyebrow": "약속은 Kept가 지킵니다",
+    "title": "한 주를 <em>더 좋게</em> 만들어 줄 사람을 예약하세요.",
+    "lead": "바버, 헤어 디자이너, 트레이너, 과외 선생님, 사진작가까지 — 실제 빈 시간, 미리 보는 가격, 인증된 방문 고객의 리뷰만.",
+    "points": {
+      "verified": "인증된 리뷰만",
+      "prices": "예약 전 가격 확인",
+      "instant": "즉시 확정"
+    }
+  },
+  "search": {
+    "placeholder": "헤어컷, 마사지, 사진작가…",
+    "label": "무엇을 예약하고 싶으세요?",
+    "category": "카테고리",
+    "submit": "검색",
+    "sayIt": "아니면 그냥 말해 보세요 —",
+    "sayItExample": "“내일 5시 이후 바버샵”"
+  },
+  "openings": {
+    "title": "곧 가능한 시간",
+    "live": "캘린더 실시간 반영",
+    "appointment": "예약"
+  },
+  "index": {
+    "eyebrow": "인덱스",
+    "title": "모든 종류의 예약",
+    "exploreAll": "전체 둘러보기",
+    "pros": "{count, plural, other {전문가 #명}}"
+  },
+  "next": {
+    "title": "다음 예약",
+    "details": "자세히"
+  },
+  "again": {
+    "title": "다시 예약",
+    "rebook": "재예약"
+  },
+  "rails": {
+    "availableSoon": "곧 예약 가능",
+    "availableSoonNear": "{place} 근처 곧 예약 가능",
+    "availableSoonNearYou": "내 주변 곧 예약 가능",
+    "availableSoonSub": "각 전문가의 캘린더에서 실시간으로 가져온 빈 시간.",
+    "recent": "최근 본 곳",
+    "topRated": "높은 평점",
+    "topRatedSub": "평점은 완료된 인증 예약에서만 나와요.",
+    "newcomers": "Kept 신규"
+  },
+  "how": {
+    "eyebrow": "이용 방법",
+    "title": "세 단계면 끝, 전화 돌릴 필요 없이",
+    "find": {
+      "title": "나에게 맞는 사람 찾기",
+      "body": "필요한 것, 시간, 장소로 검색하거나 평소 말투로 물어보세요. 모든 프로필에 실제 가격과 인증된 리뷰가 있어요."
+    },
+    "choose": {
+      "title": "실제 시간 고르기",
+      "body": "보이는 시간은 지금 캘린더에서 비어 있는 시간이에요. 하나를 고르고 옵션을 추가한 뒤 확정하세요."
+    },
+    "kept": {
+      "title": "약속은 Kept가 지켜요",
+      "body": "확정 알림과 전날 리마인더를 받고, 일정 변경·메시지·재예약을 한곳에서 해결하세요."
+    }
+  },
+  "pros": {
+    "eyebrow": "전문가용",
+    "title": "당신의 실력에 걸맞은 <em>더 나은</em> 프런트 데스크.",
+    "body": "온라인 예약, 중복 예약이 없는 캘린더, 노쇼를 줄여 주는 리마인더, 그리고 당신의 작업을 제대로 보여 주는 페이지. 출시 기간 동안 무료예요.",
+    "cta": "서비스 제공하기",
+    "howItWorks": "이용 방법 보기",
+    "features": {
+      "any": {
+        "title": "어떤 서비스든",
+        "body": "옵션에 따라 가격과 시간이 자동으로 바뀌어요."
+      },
+      "noDouble": {
+        "title": "중복 예약 없음",
+        "body": "예약하는 순간 모든 시간을 다시 확인해요."
+      },
+      "noShows": {
+        "title": "노쇼 감소",
+        "body": "리마인더, 예약금, 명확한 정책."
+      },
+      "discovered": {
+        "title": "더 많은 고객에게 노출",
+        "body": "포트폴리오, 인증된 리뷰, Spotlight."
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept cho chuyên gia — đặt lịch trực tuyến và lịch làm việc phục vụ bạn",
+    "description": "Nhận đặt lịch trực tuyến, chấm dứt trùng lịch và khách bỏ hẹn, và được khách hàng quanh bạn tìm thấy. Miễn phí khi bắt đầu cho chuyên gia độc lập."
+  },
+  "cta": {
+    "dashboard": "Đến doanh nghiệp của bạn",
+    "setup": "Thiết lập doanh nghiệp",
+    "start": "Bắt đầu — miễn phí"
+  },
+  "hero": {
+    "eyebrow": "Kept cho chuyên gia",
+    "title": "Kín lịch hẹn. Rảnh buổi tối.",
+    "lede": "Đặt lịch trực tuyến, lịch làm việc không bao giờ trùng, lời nhắc giúp giảm khách bỏ hẹn và một hồ sơ hiện ra trước những người gần bạn đang tìm đúng điều bạn làm. Miễn phí khi bắt đầu.",
+    "howItWorks": "Cách hoạt động",
+    "note": "Không cần thẻ. Hồ sơ của bạn được giữ riêng tư cho đến khi bạn xuất bản."
+  },
+  "sides": {
+    "heading": "Kept hoạt động thế nào cho khách hàng và cho bạn",
+    "clients": {
+      "eyebrow": "Cho khách hàng của bạn",
+      "title": "Khám phá và đặt lịch với những chuyên gia tuyệt vời.",
+      "points": {
+        "search": "Tìm theo dịch vụ, địa điểm và thời gian, và thấy giờ trống thật — không phải một biểu mẫu liên hệ.",
+        "prices": "Giá rõ ràng, chính sách của bạn và đánh giá đã xác minh trước khi họ đặt.",
+        "reminders": "Nhắc lịch, chỉ đường và đổi lịch mà không cần gọi điện."
+      }
+    },
+    "you": {
+      "eyebrow": "Cho bạn",
+      "title": "Quản lý lịch hẹn và phát triển doanh nghiệp.",
+      "points": {
+        "calendar": "Một lịch duy nhất cho lịch hẹn, giờ nghỉ và ngày nghỉ — ngay trên điện thoại.",
+        "deposits": "Tiền cọc và quy tắc hủy được áp dụng tự động cho bạn.",
+        "clients": "Lịch sử khách hàng, ghi chú và đánh giá giúp khách quay lại."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Hoạt động chỉ sau ba bước",
+    "profile": {
+      "title": "Thiết lập hồ sơ",
+      "body": "Thêm dịch vụ với giá và thời lượng, giờ làm việc, nơi bạn làm và vài tấm ảnh tác phẩm. Chúng tôi sẽ hướng dẫn bạn từng bước."
+    },
+    "share": {
+      "title": "Chia sẻ liên kết",
+      "body": "Đặt {host}/your-name vào phần tiểu sử và danh thiếp. Khi xuất bản, bạn cũng xuất hiện trong kết quả tìm kiếm của những người ở gần."
+    },
+    "book": {
+      "title": "Nhận đặt lịch",
+      "body": "Khách chọn giờ trống thật và đặt trong vài giây. Bạn nhận thông báo, họ nhận lời nhắc, và lịch của bạn luôn chính xác."
+    }
+  },
+  "industries": {
+    "heading": "Dành cho mọi dịch vụ đặt theo giờ",
+    "lede": "Nếu khách hàng đặt thời gian với bạn, Kept đều phù hợp — dù bạn làm một mình với một chiếc ghế hay điều hành đội ngũ ở nhiều chi nhánh."
+  },
+  "features": {
+    "heading": "Mọi thứ một ngày làm việc cần",
+    "booking": {
+      "title": "Đặt lịch trực tuyến với giờ trống thật",
+      "p1": "Khách chỉ thấy những giờ bạn thực sự làm được — giờ làm việc của bạn, trừ đi lịch hẹn hiện có, giờ nghỉ, thời gian đệm và ngày nghỉ, cùng thời gian báo trước tối thiểu và khoảng thời gian có thể đặt trước.",
+      "p2": "Mỗi lịch hẹn được kiểm tra lại ngay lúc tạo, nên hai người không bao giờ rơi vào cùng một khung giờ, kể cả khi họ chạm cùng một giây."
+    },
+    "services": {
+      "title": "Dịch vụ vận hành đúng cách bạn định giá",
+      "p1": "Giá cố định, giá khởi điểm, khoảng giá, miễn phí hoặc theo tư vấn. Thêm tùy chọn như độ dài, kích cỡ hay dịch vụ kèm theo, và mỗi tùy chọn sẽ điều chỉnh cả giá lẫn thời gian giữ trên lịch.",
+      "p2": "Thêm thời gian đệm trước hoặc sau, giới hạn dịch vụ cho một số thành viên hoặc chi nhánh, và đặt câu hỏi sơ bộ trước lần ghé đầu tiên."
+    },
+    "policies": {
+      "title": "Tiền cọc và chính sách, áp dụng tự động",
+      "p1": "Yêu cầu đặt cọc hoặc thanh toán toàn bộ trước, đặt thời hạn hủy và phí hủy muộn hoặc không đến. Khách thấy quy tắc trước khi đặt, và việc hoàn tiền tự động tuân theo quy tắc đó."
+    },
+    "reminders": {
+      "title": "Lời nhắc giúp giảm khách bỏ hẹn",
+      "p1": "Xác nhận và lời nhắc được gửi tự động — mặc định trước một ngày và trước hai giờ — kèm liên kết để đổi lịch trong phạm vi quy tắc của bạn thay vì lặng lẽ không đến.",
+      "p2": "Khi có người hủy, khách trong danh sách chờ của ngày đó sẽ được báo có chỗ trống."
+    },
+    "clients": {
+      "title": "Hiểu khách hàng của bạn",
+      "p1": "Mỗi khách hàng có hồ sơ về lượt ghé, chi tiêu, số lần hủy và không đến, cùng ghi chú riêng chỉ đội ngũ của bạn thấy. Nhắn tin cho khách ngay tại cùng một nơi."
+    },
+    "team": {
+      "title": "Từ một chiếc ghế đến đội ngũ và nhiều chi nhánh",
+      "p1": "Thêm thành viên với giờ làm việc và dịch vụ riêng, cùng vai trò quy định mỗi người được xem và làm gì. Vận hành nhiều chi nhánh, mỗi nơi có múi giờ và giờ mở cửa riêng."
+    },
+    "portfolio": {
+      "title": "Portfolio biết mang về lịch hẹn",
+      "p1": "Trưng bày ảnh và video ngắn về tác phẩm của bạn. Liên kết mỗi tác phẩm với một dịch vụ, và khách có thể chạm “Đặt dịch vụ này” để đặt đúng điều họ vừa thấy."
+    },
+    "spotlight": {
+      "title": "Spotlight — miễn phí trong giai đoạn ra mắt",
+      "p1": "Quảng bá hồ sơ của bạn trong kết quả tìm kiếm và trang danh mục gần bạn. Kết quả quảng bá luôn được gắn nhãn, giới hạn hai kết quả mỗi trang và vẫn hiển thị xếp hạng cùng giờ trống thật của bạn.",
+      "p2": "Spotlight hoàn toàn miễn phí trong giai đoạn Kept ra mắt. Nếu điều đó thay đổi, chúng tôi sẽ báo trước khi tính bất kỳ khoản phí nào — Spotlight không bao giờ tự chuyển sang trả phí."
+    }
+  },
+  "plans": {
+    "heading": "Gói dịch vụ",
+    "lede": "Trong giai đoạn Kept ra mắt, mọi doanh nghiệp mới đều bắt đầu với gói {plan} mà không mất phí hằng tháng. Giá các gói trả phí sẽ được công bố từ rất lâu trước khi áp dụng, và không ai bị tính phí nếu chưa chọn gói.",
+    "badge": {
+      "launch": "Miễn phí giai đoạn ra mắt",
+      "available": "Có sẵn ngay",
+      "unavailable": "Chưa có"
+    },
+    "period": {
+      "launch": "mỗi tháng trong giai đoạn ra mắt",
+      "available": "mỗi tháng",
+      "unavailable": "Giá sẽ được công bố"
+    },
+    "rows": {
+      "members": "Thành viên nhận lịch hẹn",
+      "locations": "Chi nhánh",
+      "fee": "Phí trên thanh toán trực tuyến",
+      "roles": "Vai trò tùy chỉnh",
+      "analytics": "Phân tích nâng cao"
+    },
+    "justYou": "1 (chỉ bạn)",
+    "upTo": "Tối đa {n}",
+    "included": "Bao gồm",
+    "notIncluded": "Không bao gồm",
+    "summary": {
+      "free": "Bao gồm đặt lịch trực tuyến, lịch làm việc, nhắc lịch, tiền cọc, hồ sơ khách hàng, biểu mẫu sơ bộ, portfolio và Spotlight.",
+      "launch": "Mọi thứ trong {base}, cộng thêm đội ngũ tối đa {members} người, nhiều chi nhánh hơn, vai trò tùy chỉnh và phí thấp hơn. Đây là gói doanh nghiệp mới nhận được hôm nay.",
+      "other": "Dành cho đội ngũ lớn và doanh nghiệp nhiều chi nhánh."
+    },
+    "footnote": "Phí chỉ áp dụng cho các khoản khách hàng thanh toán trực tuyến qua Kept. Lịch hẹn thanh toán trực tiếp không mất phí Kept. Cần nhiều người hoặc chi nhánh hơn mức gói cho phép? <link>Hãy cho chúng tôi biết</link>."
+  },
+  "faq": {
+    "heading": "Câu hỏi",
+    "cost": {
+      "q": "Kept tốn bao nhiêu?",
+      "a": "Không có phí hằng tháng: trong giai đoạn Kept ra mắt, doanh nghiệp mới được dùng miễn phí gói {plan}. Khi khách thanh toán trực tuyến — tiền cọc hoặc toàn bộ — Kept giữ lại {fee} của khoản thanh toán đó. Lịch hẹn thanh toán trực tiếp hoàn toàn không mất phí Kept."
+    },
+    "clientFee": {
+      "q": "Khách hàng của tôi có phải trả phí để đặt lịch không?",
+      "aFee": "Khách sẽ thấy phí dịch vụ {fee} khi thanh toán, hiển thị trước khi họ xác nhận. Không bao giờ có khoản phí nào được cộng thêm sau đó.",
+      "aFree": "Không. Khách đặt lịch miễn phí và thấy chính xác giá của bạn trước khi xác nhận."
+    },
+    "payments": {
+      "q": "Tôi có cần nhận thanh toán trực tuyến không?",
+      "a": "Không. Bạn có thể để khách thanh toán trực tiếp, hoặc yêu cầu đặt cọc hay thanh toán toàn bộ khi đặt lịch. Thanh toán trực tuyến được Stripe xử lý và chuyển vào tài khoản ngân hàng của chính bạn."
+    },
+    "approve": {
+      "q": "Tôi có thể duyệt lịch hẹn trước khi xác nhận không?",
+      "a": "Có. Chọn đặt lịch tức thì, hoặc chế độ yêu cầu, trong đó mọi lịch hẹn đều chờ bạn duyệt. Khung giờ được giữ trong lúc bạn quyết định, và những yêu cầu bạn không trả lời sẽ tự hết hạn."
+    },
+    "where": {
+      "q": "Tôi làm tại nhà, đến tận nơi khách hoặc dạy trực tuyến. Có dùng được không?",
+      "a": "Được. Mỗi địa điểm có thể là một địa chỉ thực, một khu vực phục vụ lưu động nơi khách cung cấp địa chỉ, hoặc một buổi trực tuyến. Bạn có thể kết hợp tùy ý."
+    },
+    "spotlight": {
+      "q": "Spotlight hoạt động thế nào?",
+      "a": "Spotlight hiển thị hồ sơ của bạn như một kết quả “Được quảng bá” được gắn nhãn rõ ràng trong trang tìm kiếm và danh mục, tối đa hai kết quả mỗi trang. Miễn phí trong giai đoạn ra mắt — bật hoặc tắt bất cứ lúc nào từ bảng điều khiển."
+    },
+    "link": {
+      "q": "Tôi có thể dùng liên kết riêng không?",
+      "a": "Có. Mỗi doanh nghiệp có một hồ sơ tại {host}/your-name để chia sẻ trên Instagram, trong phần tiểu sử hoặc qua mã QR. Khách đặt lịch qua liên kết này không cần tìm kiếm bạn."
+    }
+  },
+  "closing": {
+    "title": "Khách hàng tiếp theo của bạn đang tìm kiếm rồi.",
+    "body": "Thiết lập dịch vụ và giờ làm việc, xuất bản hồ sơ và bắt đầu nhận lịch hẹn ngay hôm nay."
+  },
+  "demo": {
+    "example": "Ví dụ",
+    "today": {
+      "label": "Ví dụ về lịch Hôm nay mà chuyên gia nhìn thấy",
+      "title": "Hôm nay",
+      "summary": "{count, plural, other {# lịch hẹn}} · đã đặt {amount}",
+      "skinFade": "Fade sát da",
+      "beardTrim": "Tỉa râu & tạo viền",
+      "lunch": "Nghỉ trưa",
+      "signatureCut": "Kiểu cắt đặc trưng",
+      "kidsCut": "Cắt tóc trẻ em",
+      "firstVisit": "{name} · lần đầu ghé",
+      "confirmed": "Đã xác nhận",
+      "depositPaid": "Đã đặt cọc",
+      "needsApproval": "Cần duyệt",
+      "checkedIn": "Đã check-in"
+    },
+    "reminder": {
+      "label": "Ví dụ về lời nhắc tự động khách hàng nhận được",
+      "when": "Trước 24 giờ",
+      "title": "Nhắc lịch: {service} ngày mai",
+      "body": "{time} với Dre tại North Fade Studio. Cần thay đổi? Đổi lịch trước tối đa 24 giờ."
+    },
+    "grid": {
+      "label": "Ví dụ về bộ chọn giờ khách dùng để đặt lịch, chỉ hiển thị giờ trống",
+      "title": "Chọn giờ",
+      "instant": "Xác nhận ngay",
+      "note": "Giờ đã có người đặt sẽ biến mất ngay lập tức. Hai người không bao giờ có cùng một khung giờ."
+    },
+    "policy": {
+      "label": "Ví dụ về chính sách đặt cọc và hủy lịch",
+      "title": "Chính sách đặt lịch",
+      "deposit": "Tiền cọc",
+      "depositValue": "{pct} khi đặt",
+      "freeCancel": "Hủy miễn phí",
+      "freeCancelValue": "Trước tối đa 24 giờ",
+      "lateCancel": "Hủy muộn",
+      "lateCancelValue": "{pct} tổng số tiền",
+      "noShow": "Không đến",
+      "noShowValue": "Mất tiền cọc",
+      "dueNow": "Thanh toán ngay",
+      "dueValue": "{due} trên {total}"
+    },
+    "client": {
+      "label": "Ví dụ về hồ sơ khách hàng",
+      "since": "Khách hàng từ {month} · {visits, plural, other {# lượt ghé}}",
+      "spent": "Đã chi",
+      "noShows": "Không đến",
+      "gap": "Khoảng cách thường lệ",
+      "gapValue": "{weeks} tuần",
+      "note": "Ghi chú riêng: da đầu nhạy cảm — dùng dầu gội dịu nhẹ."
+    },
+    "team": {
+      "label": "Ví dụ về đội ngũ ở hai chi nhánh",
+      "title": "Đội ngũ",
+      "senior": "Thợ cắt tóc chính",
+      "barber": "Thợ cắt tóc",
+      "frontDesk": "Lễ tân"
+    },
+    "portfolio": {
+      "label": "Ví dụ về bài đăng portfolio liên kết với dịch vụ có thể đặt",
+      "skinFade": "Fade sát da",
+      "taper": "Taper & râu",
+      "bookThis": "Đặt dịch vụ này",
+      "note": "Ảnh và video của bạn hiển thị tại đây — chạm vào một tác phẩm để đặt đúng dịch vụ đó."
+    },
+    "spotlight": {
+      "label": "Ví dụ về kết quả được quảng bá trong trang tìm kiếm",
+      "category": "Cắt tóc nam",
+      "promoted": "Được quảng bá"
+    },
+    "options": {
+      "service": "Tết tóc knotless",
+      "hint": "Dịch vụ mẫu · thử các tùy chọn",
+      "length": "Độ dài",
+      "shoulder": "Ngang vai",
+      "mid": "Giữa lưng",
+      "waist": "Ngang eo",
+      "addons": "Dịch vụ thêm",
+      "wash": "Gội & sấy",
+      "beads": "Hạt & khoen",
+      "included": "Bao gồm",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

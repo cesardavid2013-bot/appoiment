@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Trực tuyến",
+    "comesToYou": "Phục vụ tận nơi",
+    "comesToYouIn": "Phục vụ tận nơi · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Được quảng bá",
+    "verified": "Doanh nghiệp đã xác minh",
+    "instant": "Xác nhận ngay",
+    "request": "Gửi yêu cầu đặt lịch",
+    "bookAt": "Đặt {day} lúc {time}",
+    "moreTimes": "Giờ khác",
+    "freeConsultation": "Có tư vấn miễn phí",
+    "priceOnRequest": "Giá theo yêu cầu",
+    "viewTimes": "Xem giờ trống"
+  },
+  "rail": {
+    "seeAll": "Xem tất cả"
+  },
+  "favorite": {
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "remove": "Bỏ khỏi mục đã lưu",
+    "savedToast": "Đã lưu",
+    "savedToastHint": "Bạn có thể tìm lại bất cứ lúc nào trong mục Đã lưu."
+  }
+}

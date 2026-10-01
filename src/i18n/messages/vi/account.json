@@ -1,0 +1,311 @@
+{
+  "loading": "Đang tải…",
+  "noEmail": "Chưa có email",
+  "saveChanges": "Lưu thay đổi",
+  "cancel": "Hủy",
+  "checkFields": "Vui lòng kiểm tra các trường được đánh dấu.",
+  "nav": {
+    "label": "Cài đặt tài khoản",
+    "account": "Tài khoản"
+  },
+  "sections": {
+    "profile": {
+      "label": "Hồ sơ",
+      "description": "Tên, ảnh, số điện thoại và múi giờ"
+    },
+    "security": {
+      "label": "Đăng nhập & bảo mật",
+      "description": "Mật khẩu, xác nhận email và thiết bị"
+    },
+    "notifications": {
+      "label": "Cài đặt thông báo",
+      "description": "Chọn những gì chúng tôi gửi qua email hoặc tin nhắn"
+    },
+    "addresses": {
+      "label": "Địa chỉ đã lưu",
+      "description": "Dành cho chuyên gia phục vụ tận nơi"
+    },
+    "privacy": {
+      "label": "Quyền riêng tư & dữ liệu",
+      "description": "Tải dữ liệu hoặc xóa tài khoản"
+    }
+  },
+  "home": {
+    "memberSince": "Thành viên từ {date}",
+    "confirmEmail": "<b>Xác nhận email của bạn.</b> Chúng tôi đã gửi liên kết đến {email} để doanh nghiệp có thể liên hệ với bạn về lịch hẹn.",
+    "activity": "Hoạt động của bạn",
+    "settings": "Cài đặt",
+    "more": "Thêm",
+    "signOut": "Đăng xuất",
+    "rows": {
+      "bookings": {
+        "label": "Lịch hẹn",
+        "description": "Lịch hẹn sắp tới và đã qua"
+      },
+      "saved": {
+        "label": "Đã lưu",
+        "description": "Chuyên gia bạn đã lưu"
+      },
+      "messages": {
+        "label": "Tin nhắn",
+        "description": "Trò chuyện với doanh nghiệp"
+      },
+      "notifications": {
+        "label": "Thông báo",
+        "description": "Cập nhật về lịch hẹn của bạn"
+      },
+      "business": {
+        "label": "Chuyển sang doanh nghiệp của bạn",
+        "description": "Lịch, dịch vụ và khách hàng"
+      },
+      "offer": {
+        "label": "Cung cấp dịch vụ trên Kept",
+        "description": "Nhận lịch hẹn và phát triển doanh nghiệp — bắt đầu miễn phí"
+      },
+      "support": {
+        "label": "Trợ giúp & hỗ trợ",
+        "description": "Được hỗ trợ về lịch hẹn, thanh toán hoặc tài khoản"
+      },
+      "legal": {
+        "label": "Điều khoản & quyền riêng tư",
+        "description": "Cách Kept hoạt động và cách chúng tôi xử lý dữ liệu của bạn"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Đã gửi email xác nhận",
+    "sentBody": "Kiểm tra {email} — liên kết có hiệu lực trong 3 ngày.",
+    "sent": "Đã gửi email",
+    "resend": "Gửi lại liên kết"
+  },
+  "profile": {
+    "description": "Cách bạn hiển thị với các chuyên gia bạn đặt lịch.",
+    "saved": "Đã lưu hồ sơ",
+    "details": "Thông tin cá nhân",
+    "name": "Tên",
+    "email": "Email",
+    "changeEmail": "Để đổi email đăng nhập, hãy <link>liên hệ bộ phận hỗ trợ</link> để chúng tôi xác minh đó là bạn.",
+    "phone": "Số điện thoại",
+    "phoneHintSms": "Doanh nghiệp bạn đặt lịch có thể gọi cho bạn về lịch hẹn, và chúng tôi có thể nhắn tin nhắc lịch nếu bạn bật tính năng này.",
+    "phoneHint": "Doanh nghiệp bạn đặt lịch có thể dùng số này để liên hệ về lịch hẹn.",
+    "photo": {
+      "title": "Ảnh",
+      "description": "Hiển thị cạnh tên bạn với các chuyên gia bạn đặt lịch.",
+      "updated": "Đã cập nhật ảnh",
+      "removed": "Đã xóa ảnh",
+      "change": "Đổi ảnh",
+      "upload": "Tải ảnh lên",
+      "remove": "Xóa",
+      "hint": "JPG, PNG hoặc WebP, tối đa 15 MB. Chúng tôi xóa dữ liệu vị trí khỏi ảnh."
+    },
+    "timezone": {
+      "label": "Múi giờ",
+      "hint": "Múi giờ nơi bạn sống. Giờ hẹn luôn hiển thị theo giờ địa phương của doanh nghiệp.",
+      "notSet": "Chưa đặt",
+      "detect": "Tự động phát hiện",
+      "detectFailed": "Chúng tôi không phát hiện được múi giờ của bạn. Hãy chọn từ danh sách."
+    },
+    "language": {
+      "title": "Ngôn ngữ",
+      "description": "Áp dụng cho menu, nút và ngày tháng trên Kept. Tên doanh nghiệp, dịch vụ và đánh giá hiển thị đúng như doanh nghiệp đã viết."
+    }
+  },
+  "security": {
+    "description": "Giữ tài khoản an toàn và trong tầm tay bạn.",
+    "password": {
+      "title": "Mật khẩu",
+      "setTitle": "Đặt mật khẩu",
+      "description": "Đổi mật khẩu sẽ đăng xuất bạn trên mọi thiết bị khác.",
+      "setDescription": "Bạn đang đăng nhập bằng Google. Thêm mật khẩu để có thể đăng nhập bằng email.",
+      "change": "Đổi mật khẩu",
+      "setButton": "Đặt mật khẩu",
+      "current": "Mật khẩu hiện tại",
+      "new": "Mật khẩu mới",
+      "newHint": "Ít nhất 8 ký tự. Tránh từ thông dụng và email của bạn.",
+      "confirm": "Xác nhận mật khẩu mới",
+      "tooShort": "Dùng ít nhất 8 ký tự.",
+      "mismatch": "Mật khẩu không khớp.",
+      "changed": "Đã đổi mật khẩu",
+      "set": "Đã đặt mật khẩu",
+      "othersSignedOut": "Mọi thiết bị khác đã được đăng xuất."
+    },
+    "email": {
+      "title": "Email",
+      "description": "Chúng tôi dùng email để bạn đăng nhập và để gửi xác nhận lịch hẹn.",
+      "confirmed": "Đã xác nhận",
+      "notConfirmed": "Chưa xác nhận",
+      "none": "Tài khoản này chưa có email."
+    },
+    "devices": {
+      "title": "Thiết bị",
+      "description": "Nếu bạn đã đăng nhập trên thiết bị dùng chung hoặc bị mất, hãy đăng xuất tại đây. Thiết bị này vẫn được giữ đăng nhập.",
+      "status": "{count, plural, =0 {Chỉ thiết bị này đang đăng nhập} other {Đang đăng nhập trên # thiết bị khác}}",
+      "signOutOthers": "Đăng xuất khỏi thiết bị khác",
+      "confirmTitle": "Đăng xuất khỏi thiết bị khác?",
+      "confirmBody": "Bất kỳ ai đang dùng tài khoản của bạn trên điện thoại, máy tính bảng hoặc máy tính khác sẽ phải đăng nhập lại.",
+      "confirm": "Đăng xuất họ",
+      "signedOutToast": "{count, plural, other {Đã đăng xuất khỏi # thiết bị khác}}"
+    }
+  },
+  "notifications": {
+    "description": "Chọn cách chúng tôi cập nhật cho bạn. Chúng tôi không bao giờ gửi nhiều hơn mức cần thiết.",
+    "saved": "Đã lưu",
+    "emailAndText": "Thông báo qua email và tin nhắn",
+    "emailOnly": "Thông báo qua email",
+    "inboxNote": "Dù bạn chọn gì ở đây, mọi thông báo vẫn xuất hiện trong hộp Thông báo trên Kept.",
+    "addPhone": "Thêm số điện thoại trong <link>hồ sơ</link> để nhận tin nhắn SMS.",
+    "email": "Email",
+    "sms": "Tin nhắn SMS",
+    "forTopic": "cho {topic}",
+    "alwaysOn": {
+      "bookings": "Email luôn bật để chúng tôi có thể liên hệ khi lịch hẹn thay đổi.",
+      "business": "Email luôn bật để bạn không bỏ lỡ lịch hẹn hay yêu cầu mới."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Cập nhật lịch hẹn",
+        "description": "Xác nhận, thay đổi và hủy lịch."
+      },
+      "reminders": {
+        "label": "Nhắc lịch",
+        "description": "Trước các lịch hẹn sắp tới."
+      },
+      "messages": {
+        "label": "Tin nhắn",
+        "description": "Khi doanh nghiệp hoặc khách hàng nhắn cho bạn."
+      },
+      "waitlist": {
+        "label": "Chỗ trống từ danh sách chờ",
+        "description": "Khi khung giờ bạn muốn có chỗ."
+      },
+      "reviews": {
+        "label": "Yêu cầu đánh giá",
+        "description": "Một lời nhắn ngắn sau khi lịch hẹn hoàn tất."
+      },
+      "business": {
+        "label": "Hoạt động doanh nghiệp",
+        "description": "Lịch hẹn, yêu cầu và đánh giá mới cho doanh nghiệp của bạn."
+      },
+      "marketing": {
+        "label": "Tin tức & ưu đãi",
+        "description": "Thỉnh thoảng cập nhật từ những doanh nghiệp bạn đã đặt lịch."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Dành cho chuyên gia phục vụ tận nơi — thợ cắt tóc, chăm sóc xe, huấn luyện viên và nhiều hơn nữa.",
+    "defaultLabel": "Nhà",
+    "saved": "Đã lưu địa chỉ",
+    "removed": "Đã xóa địa chỉ",
+    "emptyTitle": "Chưa có địa chỉ nào",
+    "emptyBody": "Lưu những nơi bạn thường đặt dịch vụ tận nơi — như nhà hoặc văn phòng — ở một chỗ cho tiện.",
+    "add": "Thêm địa chỉ",
+    "removeLabel": "Xóa {label}",
+    "count": "Đã lưu {count}/{max}",
+    "limit": "Bạn đã đạt giới hạn. Hãy xóa một địa chỉ để thêm địa chỉ khác.",
+    "dialogBody": "Chỉ mình bạn thấy. Chuyên gia chỉ thấy địa chỉ khi bạn đặt dịch vụ tại đó.",
+    "save": "Lưu địa chỉ",
+    "fields": {
+      "name": "Tên",
+      "nameHint": "Ví dụ: Nhà, Công ty hoặc Phòng gym.",
+      "line1": "Địa chỉ",
+      "line2": "Căn hộ, phòng hoặc tầng",
+      "city": "Thành phố",
+      "region": "Tỉnh / khu vực",
+      "postalCode": "Mã bưu chính",
+      "country": "Quốc gia"
+    },
+    "removeTitle": "Xóa “{label}”?",
+    "removeBody": "Các lịch hẹn bạn đã đặt tại địa chỉ này không bị ảnh hưởng.",
+    "remove": "Xóa địa chỉ"
+  },
+  "privacy": {
+    "description": "Dữ liệu của bạn thuộc về bạn. Đọc cách chúng tôi sử dụng trong <link>chính sách quyền riêng tư</link>.",
+    "export": {
+      "title": "Tải dữ liệu của bạn",
+      "description": "Nhận bản sao hồ sơ, địa chỉ đã lưu, lịch hẹn, đánh giá, tin nhắn, chuyên gia đã lưu và yêu cầu hỗ trợ dưới dạng tệp JSON.",
+      "button": "Tải dữ liệu của tôi",
+      "hint": "Chuẩn bị ngay lập tức. Hãy cất tệp ở nơi an toàn — tệp chứa thông tin cá nhân."
+    },
+    "delete": {
+      "title": "Xóa tài khoản",
+      "intro": "Thao tác này đóng vĩnh viễn tài khoản Kept của bạn. Điều sẽ xảy ra:",
+      "erased": "Tên, email, số điện thoại, ảnh, địa chỉ đã lưu và chuyên gia đã lưu sẽ bị xóa, và bạn sẽ được đăng xuất ở mọi nơi.",
+      "upcoming": "{count, plural, other {# lịch hẹn sắp tới của bạn sẽ bị hủy theo chính sách hủy của từng doanh nghiệp, kèm theo mọi khoản hoàn tiền mà chính sách cho phép.}}",
+      "upcomingNone": "Mọi lịch hẹn sắp tới sẽ bị hủy theo chính sách hủy của từng doanh nghiệp.",
+      "records": "Các hồ sơ mà doanh nghiệp và quy định thuế cần — lịch hẹn đã qua, thanh toán và đánh giá — vẫn được giữ, nhưng hiển thị là từ “Người dùng đã xóa”.",
+      "permanent": "Không thể hoàn tác. Sau này bạn có thể đăng ký lại bằng cùng email và bắt đầu từ đầu.",
+      "blocked": "Bạn đang sở hữu {businesses}. Hãy đóng doanh nghiệp hoặc chuyển cho người khác trong <link>cài đặt doanh nghiệp</link> trước khi xóa tài khoản, để khách hàng không bị bỏ lại mà không có ai trả lời.",
+      "copyFirst": "Muốn có bản sao trước? Tải dữ liệu ở phía trên.",
+      "open": "Xóa tài khoản…",
+      "confirmTitle": "Xóa tài khoản của bạn?",
+      "confirmBody": "Không thể hoàn tác.",
+      "keep": "Giữ tài khoản",
+      "confirm": "Xóa tài khoản",
+      "willCancel": "{count, plural, other {# lịch hẹn sắp tới sẽ bị hủy.}}",
+      "password": "Mật khẩu của bạn",
+      "typeToConfirm": "Nhập <word>{word}</word> để xác nhận",
+      "deletedToast": "Tài khoản của bạn đã bị xóa",
+      "deletedBody": "Cảm ơn bạn đã sử dụng Kept."
+    }
+  },
+  "saved": {
+    "title": "Đã lưu",
+    "description": "{count, plural, other {# chuyên gia bạn đã lưu.}} Giờ trống bên dưới được lấy trực tiếp từ lịch của họ.",
+    "emptyTitle": "Chưa lưu gì",
+    "emptyBody": "Chạm vào biểu tượng trái tim trên bất kỳ chuyên gia nào để lưu tại đây — tiện để đặt lại người quen hoặc so sánh vài lựa chọn trước khi quyết định.",
+    "explore": "Khám phá chuyên gia",
+    "loading": "Đang tải chuyên gia đã lưu…"
+  },
+  "notificationList": {
+    "title": "Thông báo",
+    "today": "Hôm nay",
+    "earlier": "Trước đó",
+    "emptyTitle": "Chưa có thông báo",
+    "emptyBody": "Xác nhận lịch hẹn, nhắc lịch, phản hồi và chỗ trống từ danh sách chờ sẽ hiển thị tại đây.",
+    "unread": "{count} chưa đọc",
+    "caughtUp": "Bạn đã xem hết",
+    "allCaughtUpToast": "Đã xem hết",
+    "markAll": "Đánh dấu tất cả là đã đọc",
+    "unreadItem": "Chưa đọc",
+    "loadOlder": "Tải thông báo cũ hơn",
+    "end": "Đó là tất cả."
+  },
+  "invite": {
+    "eyebrow": "Lời mời tham gia đội ngũ",
+    "invalidTitle": "Không thể dùng lời mời này",
+    "invalidBody": "Lời mời có thể đã hết hạn, bị hủy hoặc đã được chấp nhận. Hãy nhờ người mời gửi liên kết mới.",
+    "goHome": "Đến Kept",
+    "join": "Tham gia {business}",
+    "invitedAs": "Bạn được mời với vai trò <b>{role}</b>.",
+    "signInWith": "Đăng nhập hoặc tạo tài khoản bằng <b>{email}</b> để chấp nhận.",
+    "createAccount": "Tạo tài khoản",
+    "signIn": "Đăng nhập",
+    "wrongAccount": "Bạn đang đăng nhập bằng <b>{email}</b>, nhưng lời mời này được gửi đến {invited}.",
+    "wrongAccountHint": "Đăng xuất và đăng nhập bằng địa chỉ đó, hoặc xin lời mời gửi đến {email}.",
+    "acceptingAs": "Chấp nhận với tư cách <b>{email}</b>.",
+    "accept": "Chấp nhận và mở lịch làm việc",
+    "roles": {
+      "owner": {
+        "label": "Chủ sở hữu",
+        "description": "Toàn quyền, bao gồm thanh toán và đội ngũ."
+      },
+      "manager": {
+        "label": "Quản lý",
+        "description": "Điều hành công việc hằng ngày. Không thể thay đổi đội ngũ hay cài đặt doanh nghiệp."
+      },
+      "receptionist": {
+        "label": "Lễ tân",
+        "description": "Đặt và quản lý lịch hẹn cho mọi người."
+      },
+      "provider": {
+        "label": "Chuyên gia",
+        "description": "Xem và quản lý lịch hẹn và lịch làm việc của riêng mình."
+      },
+      "custom": {
+        "label": "Tùy chỉnh",
+        "description": "Chọn chính xác những gì người này có thể làm."
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Selamat datang kembali, {name}",
+    "eyebrow": "Janji temu, terjaga",
+    "title": "Pesan orang-orang yang membuat minggu Anda <em>lebih baik.</em>",
+    "lead": "Barber, penata rambut, pelatih, tutor, fotografer, dan banyak lagi — dengan jadwal kosong yang nyata, harga di muka, dan ulasan hanya dari kunjungan terverifikasi.",
+    "points": {
+      "verified": "Hanya ulasan terverifikasi",
+      "prices": "Harga sebelum memesan",
+      "instant": "Konfirmasi instan"
+    }
+  },
+  "search": {
+    "placeholder": "Potong rambut, pijat, fotografer…",
+    "label": "Apa yang ingin Anda pesan?",
+    "category": "Kategori",
+    "submit": "Cari",
+    "sayIt": "Atau ucapkan saja —",
+    "sayItExample": "“barber besok setelah jam 5”"
+  },
+  "openings": {
+    "title": "Segera tersedia",
+    "live": "Langsung dari kalender",
+    "appointment": "Janji temu"
+  },
+  "index": {
+    "eyebrow": "Indeks",
+    "title": "Segala jenis janji temu",
+    "exploreAll": "Jelajahi semua",
+    "pros": "{count, plural, other {# profesional}}"
+  },
+  "next": {
+    "title": "Janji temu berikutnya",
+    "details": "Detail"
+  },
+  "again": {
+    "title": "Pesan lagi",
+    "rebook": "Pesan ulang"
+  },
+  "rails": {
+    "availableSoon": "Segera tersedia",
+    "availableSoonNear": "Segera tersedia di dekat {place}",
+    "availableSoonNearYou": "Segera tersedia di dekat Anda",
+    "availableSoonSub": "Jadwal kosong langsung dari kalender setiap profesional.",
+    "recent": "Baru dilihat",
+    "topRated": "Rating tinggi",
+    "topRatedSub": "Rating hanya berasal dari pemesanan yang selesai dan terverifikasi.",
+    "newcomers": "Baru di Kept"
+  },
+  "how": {
+    "eyebrow": "Cara kerjanya",
+    "title": "Tiga langkah, tanpa repot telepon sana-sini",
+    "find": {
+      "title": "Temukan orang yang tepat",
+      "body": "Cari berdasarkan kebutuhan, waktu, dan lokasi — atau tanyakan saja dengan kata-kata Anda sendiri. Setiap profil menampilkan harga nyata dan ulasan terverifikasi."
+    },
+    "choose": {
+      "title": "Pilih waktu yang nyata",
+      "body": "Waktu yang Anda lihat benar-benar kosong di kalender mereka saat ini. Pilih satu, tambahkan opsi, lalu konfirmasi."
+    },
+    "kept": {
+      "title": "Anggap saja beres",
+      "body": "Anda mendapat konfirmasi, pengingat sebelum harinya, dan satu tempat untuk menjadwalkan ulang, mengirim pesan, atau memesan ulang."
+    }
+  },
+  "pros": {
+    "eyebrow": "Untuk profesional",
+    "title": "Keahlian Anda layak mendapat meja depan yang <em>lebih baik</em>.",
+    "body": "Pemesanan online, kalender yang tak pernah bentrok, pengingat yang mengurangi ketidakhadiran, dan halaman yang menampilkan karya Anda sebagaimana mestinya. Gratis selama masa peluncuran.",
+    "cta": "Tawarkan layanan Anda",
+    "howItWorks": "Lihat cara kerjanya",
+    "features": {
+      "any": {
+        "title": "Layanan apa pun",
+        "body": "Opsi mengubah harga dan durasi secara otomatis."
+      },
+      "noDouble": {
+        "title": "Tak pernah bentrok",
+        "body": "Setiap waktu diperiksa saat pemesanan dilakukan."
+      },
+      "noShows": {
+        "title": "Lebih sedikit yang tidak hadir",
+        "body": "Pengingat, uang muka, dan kebijakan yang jelas."
+      },
+      "discovered": {
+        "title": "Mudah ditemukan",
+        "body": "Portofolio, ulasan terverifikasi, dan Spotlight."
+      }
+    }
+  }
+}

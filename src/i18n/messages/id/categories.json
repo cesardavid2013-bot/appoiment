@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Barbershop"
+  },
+  "hair": {
+    "name": "Rambut & Barber",
+    "description": "Potong, pewarnaan, penataan, kepang, dan perawatan."
+  },
+  "lashes-brows": {
+    "name": "Bulu mata & alis"
+  },
+  "massage": {
+    "name": "Pijat"
+  },
+  "personal-training": {
+    "name": "Personal trainer"
+  },
+  "hair-salon": {
+    "name": "Salon rambut"
+  },
+  "makeup": {
+    "name": "Rias wajah"
+  },
+  "nails": {
+    "name": "Kuku",
+    "description": "Manikur, pedikur, ekstensi, dan nail art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga & pilates"
+  },
+  "beauty": {
+    "name": "Kecantikan",
+    "description": "Bulu mata, alis, rias wajah, dan kulit."
+  },
+  "braids-locs": {
+    "name": "Kepang & gimbal"
+  },
+  "skincare": {
+    "name": "Perawatan kulit & estetika"
+  },
+  "wellness": {
+    "name": "Relaksasi & kesehatan",
+    "description": "Pijat, spa, dan terapi tubuh."
+  },
+  "fitness": {
+    "name": "Kebugaran",
+    "description": "Personal trainer, yoga, pilates, dan coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tato & tindik",
+    "description": "Tato kustom, flash, dan tindik."
+  },
+  "photography": {
+    "name": "Foto & video",
+    "description": "Potret, acara, produk, dan video."
+  },
+  "education": {
+    "name": "Kursus & les privat",
+    "description": "Tutor, guru musik, dan kursus bahasa."
+  },
+  "home-services": {
+    "name": "Jasa rumah tangga",
+    "description": "Kebersihan, perbaikan, dan tukang."
+  },
+  "automotive": {
+    "name": "Otomotif",
+    "description": "Detailing, cuci mobil, dan montir panggilan."
+  },
+  "pets": {
+    "name": "Hewan peliharaan",
+    "description": "Grooming, penitipan, dan pelatihan."
+  },
+  "events": {
+    "name": "Acara",
+    "description": "DJ, perencana acara, dan profesional acara."
+  },
+  "professional": {
+    "name": "Jasa profesional",
+    "description": "Konsultan, coach, dan penasihat."
+  },
+  "other": {
+    "name": "Lainnya",
+    "description": "Semua hal lain yang bisa Anda pesan."
+  }
+}
