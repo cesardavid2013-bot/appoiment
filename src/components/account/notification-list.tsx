@@ -7,6 +7,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/misc";
+import { useLocale, useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { localDateKey, timeAgo } from "@/lib/format";
@@ -34,6 +35,8 @@ function safeHref(href: string | null) {
 
 export function NotificationList({ initial, serverNow, fallbackZone }: { initial: NotificationItem[]; serverNow: number; fallbackZone: string }) {
   const qc = useQueryClient();
+  const t = useT("account");
+  const { intl } = useLocale();
   const now = useNow(serverNow);
   const tz = useTimeZone(fallbackZone);
   const [items, setItems] = useState(initial);
@@ -96,7 +99,7 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
       const at = new Date().toISOString();
       setItems((prev) => prev.map((n) => (n.readAt ? n : { ...n, readAt: at })));
       qc.invalidateQueries({ queryKey: ["badges"] });
-      toast.success("All caught up");
+      toast.success(t("notificationList.allCaughtUpToast"));
     } catch (err) {
       toast.error((err as ApiError).message);
     } finally {
@@ -123,8 +126,8 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
   const unread = items.filter((n) => !n.readAt).length;
   const today = localDateKey(new Date(now), tz);
   const groups = [
-    { key: "today", label: "Today", items: items.filter((n) => localDateKey(n.createdAt, tz) === today) },
-    { key: "earlier", label: "Earlier", items: items.filter((n) => localDateKey(n.createdAt, tz) !== today) },
+    { key: "today", label: t("notificationList.today"), items: items.filter((n) => localDateKey(n.createdAt, tz) === today) },
+    { key: "earlier", label: t("notificationList.earlier"), items: items.filter((n) => localDateKey(n.createdAt, tz) !== today) },
   ].filter((g) => g.items.length);
 
   if (!items.length) {
@@ -132,8 +135,8 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
       <EmptyState
         className="mt-6 rounded-xl border border-dashed border-line-strong"
         icon={<Bell />}
-        title="No notifications yet"
-        description="Booking confirmations, reminders, replies and waitlist openings will show up here."
+        title={t("notificationList.emptyTitle")}
+        description={t("notificationList.emptyBody")}
       />
     );
   }
@@ -142,10 +145,10 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
     <div className="mt-6">
       <div className="flex min-h-11 items-center justify-between gap-3 border-b border-line pb-3">
         <p className="text-sm text-ink-3" aria-live="polite">
-          {unread ? `${unread} unread` : "You're all caught up"}
+          {unread ? t("notificationList.unread", { count: unread }) : t("notificationList.caughtUp")}
         </p>
         <Button variant="ghost" size="sm" className="h-10 sm:h-8" onClick={markAll} loading={markingAll} disabled={!unread} icon={<CheckCheck className="size-4" />}>
-          Mark all as read
+          {t("notificationList.markAll")}
         </Button>
       </div>
 
@@ -169,7 +172,7 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
                     <span className="flex items-start justify-between gap-3">
                       <span className={cn("text-[15px] leading-snug text-ink", highlight ? "font-semibold" : "font-medium")}>{n.title}</span>
                       <time dateTime={n.createdAt} className="shrink-0 pt-0.5 text-[12px] text-ink-3 tabular" suppressHydrationWarning>
-                        {timeAgo(n.createdAt, now)}
+                        {timeAgo(n.createdAt, now, intl)}
                       </time>
                     </span>
                     {n.body && <span className="mt-0.5 line-clamp-2 block text-sm leading-relaxed text-ink-3">{n.body}</span>}
@@ -177,7 +180,7 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
                   {isUnread && (
                     <span className="mt-2 size-2 shrink-0 rounded-full bg-accent" aria-hidden />
                   )}
-                  {isUnread && <span className="sr-only">Unread</span>}
+                  {isUnread && <span className="sr-only">{t("notificationList.unreadItem")}</span>}
                 </>
               );
               const cls = cn("-mx-3 flex items-start gap-3.5 rounded-lg px-3 py-3.5", href && "transition-colors hover:bg-surface");
@@ -209,10 +212,10 @@ export function NotificationList({ initial, serverNow, fallbackZone }: { initial
       <div className="mt-6 flex justify-center">
         {hasMore ? (
           <Button variant="secondary" onClick={loadOlder} loading={loadingMore}>
-            Load older
+            {t("notificationList.loadOlder")}
           </Button>
         ) : (
-          items.length >= PAGE && <p className="text-sm text-ink-3">That&apos;s everything.</p>
+          items.length >= PAGE && <p className="text-sm text-ink-3">{t("notificationList.end")}</p>
         )}
       </div>
     </div>

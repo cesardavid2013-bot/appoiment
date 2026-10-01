@@ -1,11 +1,13 @@
 import { Skeleton } from "@/components/ui/misc";
+import { getT } from "@/i18n/server";
 
 /** Route-level loading placeholders that mirror the real page layouts. */
-export function ListPageSkeleton({ rows = 5, width = "max-w-2xl" }: { rows?: number; width?: string }) {
+export async function ListPageSkeleton({ rows = 5, width = "max-w-2xl" }: { rows?: number; width?: string }) {
+  const t = await getT("account");
   return (
     <div className={`mx-auto ${width} px-4 pt-10 sm:px-6`} aria-busy="true">
       <span className="sr-only" role="status">
-        Loading…
+        {t("loading")}
       </span>
       <Skeleton className="h-10 w-48" />
       <div className="mt-8 divide-y divide-line rounded-xl border border-line bg-surface">
@@ -23,11 +25,12 @@ export function ListPageSkeleton({ rows = 5, width = "max-w-2xl" }: { rows?: num
   );
 }
 
-export function SettingsPageSkeleton() {
+export async function SettingsPageSkeleton() {
+  const t = await getT("account");
   return (
     <div className="mx-auto max-w-5xl px-4 pt-6 sm:px-6 lg:grid lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-12 lg:px-8 lg:pt-12" aria-busy="true">
       <span className="sr-only" role="status">
-        Loading…
+        {t("loading")}
       </span>
       <div className="hidden space-y-2 lg:block">
         {Array.from({ length: 5 }, (_, i) => (
