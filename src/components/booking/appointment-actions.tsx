@@ -140,12 +140,12 @@ export function AppointmentActions({
       {upcoming && (
         <div className="flex flex-col gap-2 border-t border-line pt-5 sm:flex-row">
           {reschedule.allowed ? (
-            <Button variant="secondary" className="flex-1" onClick={() => setMoveOpen(true)} icon={<CalendarClock className="size-4" />}>
+            <Button variant="secondary" className="h-11 sm:h-10 sm:flex-1" onClick={() => setMoveOpen(true)} icon={<CalendarClock className="size-4" />}>
               {t("actions.reschedule")}
             </Button>
           ) : null}
           {cancel.allowed ? (
-            <Button variant="danger" className="flex-1" onClick={() => setCancelOpen(true)} icon={<XCircle className="size-4" />}>
+            <Button variant="danger" className="h-11 sm:h-10 sm:flex-1" onClick={() => setCancelOpen(true)} icon={<XCircle className="size-4" />}>
               {t("actions.cancelAppointment")}
             </Button>
           ) : null}

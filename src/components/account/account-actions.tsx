@@ -24,7 +24,7 @@ export function SignOutButton() {
     }
   }
   return (
-    <Button variant="secondary" size="lg" className="w-full" onClick={signOut} loading={loading} icon={<LogOut className="size-4" />}>
+    <Button variant="secondary" size="lg" className="w-full" onClick={signOut} loading={loading} icon={<LogOut className="size-4 rtl:-scale-x-100" />}>
       {t("home.signOut")}
     </Button>
   );

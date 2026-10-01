@@ -99,7 +99,7 @@ export function AddressBook({ initial, countries, max }: { initial: SavedAddress
                 <div className="min-w-0 flex-1">
                   <p className="text-[15px] font-medium text-ink">{a.label}</p>
                   <p className="mt-0.5 text-sm leading-relaxed text-ink-3">
-                    {formatAddress(a)}
+                    <bdi>{formatAddress(a)}</bdi>
                     <br />
                     {countryName(a.country)}
                   </p>

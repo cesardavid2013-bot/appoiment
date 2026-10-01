@@ -140,7 +140,7 @@ export default async function AppointmentPage({ params, searchParams }: PageProp
             <div>
               <dt className="sr-only">{t("detail.where")}</dt>
               <dd className="font-medium text-ink">
-                {a.snapshot.locationKind === "mobile" ? (a.serviceAddress ?? t("detail.atYourAddress")) : a.snapshot.locationKind === "virtual" ? t("detail.online") : (a.snapshot.address ?? a.snapshot.locationName ?? d.businessName)}
+                <bdi>{a.snapshot.locationKind === "mobile" ? (a.serviceAddress ?? t("detail.atYourAddress")) : a.snapshot.locationKind === "virtual" ? t("detail.online") : (a.snapshot.address ?? a.snapshot.locationName ?? d.businessName)}</bdi>
               </dd>
               {a.snapshot.locationKind === "virtual" && <dd className="text-sm text-ink-3">{t("detail.virtualLink")}</dd>}
               {d.location?.instructions && <dd className="text-sm text-ink-3">{d.location.instructions}</dd>}
