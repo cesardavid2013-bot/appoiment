@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "온라인",
+    "comesToYou": "출장 방문",
+    "comesToYouIn": "출장 방문 · {city}",
+    "lessThanOneKm": "1km 미만",
+    "promoted": "광고",
+    "verified": "인증된 비즈니스",
+    "instant": "즉시 확정",
+    "request": "예약 요청",
+    "bookAt": "{day} {time} 예약",
+    "moreTimes": "다른 시간",
+    "freeConsultation": "무료 상담 가능",
+    "priceOnRequest": "가격 문의",
+    "viewTimes": "시간 보기"
+  },
+  "rail": {
+    "seeAll": "전체 보기"
+  },
+  "favorite": {
+    "save": "저장",
+    "saved": "저장됨",
+    "remove": "저장 목록에서 삭제",
+    "savedToast": "저장했어요",
+    "savedToastHint": "저장됨에서 언제든 다시 볼 수 있어요."
+  }
+}

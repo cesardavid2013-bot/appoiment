@@ -1,0 +1,311 @@
+{
+  "loading": "불러오는 중…",
+  "noEmail": "등록된 이메일 없음",
+  "saveChanges": "변경사항 저장",
+  "cancel": "취소",
+  "checkFields": "표시된 항목을 확인해 주세요.",
+  "nav": {
+    "label": "계정 설정",
+    "account": "계정"
+  },
+  "sections": {
+    "profile": {
+      "label": "프로필",
+      "description": "이름, 사진, 전화번호, 시간대"
+    },
+    "security": {
+      "label": "로그인 및 보안",
+      "description": "비밀번호, 이메일 인증, 기기"
+    },
+    "notifications": {
+      "label": "알림 설정",
+      "description": "이메일이나 문자로 받을 알림 선택"
+    },
+    "addresses": {
+      "label": "저장된 주소",
+      "description": "출장 방문 전문가를 위한 주소"
+    },
+    "privacy": {
+      "label": "개인정보 및 데이터",
+      "description": "데이터 다운로드 또는 계정 삭제"
+    }
+  },
+  "home": {
+    "memberSince": "{date}부터 회원",
+    "confirmEmail": "<b>이메일을 인증해 주세요.</b> 비즈니스가 예약 관련 연락을 드릴 수 있도록 {email}(으)로 링크를 보냈어요.",
+    "activity": "내 활동",
+    "settings": "설정",
+    "more": "더 보기",
+    "signOut": "로그아웃",
+    "rows": {
+      "bookings": {
+        "label": "예약",
+        "description": "예정된 예약과 지난 예약"
+      },
+      "saved": {
+        "label": "저장됨",
+        "description": "저장한 전문가"
+      },
+      "messages": {
+        "label": "메시지",
+        "description": "비즈니스와의 대화"
+      },
+      "notifications": {
+        "label": "알림",
+        "description": "예약 관련 소식"
+      },
+      "business": {
+        "label": "내 비즈니스로 전환",
+        "description": "캘린더, 서비스, 고객"
+      },
+      "offer": {
+        "label": "Kept에서 서비스 제공하기",
+        "description": "예약을 받고 비즈니스를 키우세요 — 무료로 시작"
+      },
+      "support": {
+        "label": "도움말 및 지원",
+        "description": "예약, 결제, 계정 관련 도움 받기"
+      },
+      "legal": {
+        "label": "약관 및 개인정보",
+        "description": "Kept의 운영 방식과 데이터 처리 방법"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "인증 이메일을 보냈어요",
+    "sentBody": "{email}을(를) 확인해 주세요 — 링크는 3일간 유효해요.",
+    "sent": "이메일 전송됨",
+    "resend": "링크 다시 보내기"
+  },
+  "profile": {
+    "description": "예약한 전문가에게 보이는 내 모습이에요.",
+    "saved": "프로필을 저장했어요",
+    "details": "개인 정보",
+    "name": "이름",
+    "email": "이메일",
+    "changeEmail": "로그인 이메일을 변경하려면 본인 확인을 위해 <link>고객지원에 문의</link>해 주세요.",
+    "phone": "전화번호",
+    "phoneHintSms": "예약한 비즈니스가 예약 관련 전화를 드릴 수 있고, 설정을 켜면 문자로 알림도 보내 드려요.",
+    "phoneHint": "예약한 비즈니스가 예약 관련 연락을 할 때 사용해요.",
+    "photo": {
+      "title": "사진",
+      "description": "예약한 전문가에게 이름 옆에 표시돼요.",
+      "updated": "사진을 변경했어요",
+      "removed": "사진을 삭제했어요",
+      "change": "사진 변경",
+      "upload": "사진 업로드",
+      "remove": "삭제",
+      "hint": "JPG, PNG, WebP, 최대 15MB. 사진의 위치 정보는 삭제돼요."
+    },
+    "timezone": {
+      "label": "시간대",
+      "hint": "내 기본 시간대예요. 예약 시간은 항상 비즈니스 현지 시간으로 표시돼요.",
+      "notSet": "설정 안 됨",
+      "detect": "자동으로 감지",
+      "detectFailed": "시간대를 감지하지 못했어요. 목록에서 선택해 주세요."
+    },
+    "language": {
+      "title": "언어",
+      "description": "Kept 전체의 메뉴, 버튼, 날짜에 적용돼요. 비즈니스 이름, 서비스, 리뷰는 비즈니스가 작성한 그대로 표시돼요."
+    }
+  },
+  "security": {
+    "description": "계정을 안전하게, 직접 관리하세요.",
+    "password": {
+      "title": "비밀번호",
+      "setTitle": "비밀번호 설정",
+      "description": "비밀번호를 변경하면 다른 모든 기기에서 로그아웃돼요.",
+      "setDescription": "Google로 로그인하고 계세요. 비밀번호를 추가하면 이메일로도 로그인할 수 있어요.",
+      "change": "비밀번호 변경",
+      "setButton": "비밀번호 설정",
+      "current": "현재 비밀번호",
+      "new": "새 비밀번호",
+      "newHint": "8자 이상. 흔한 단어나 이메일은 피해 주세요.",
+      "confirm": "새 비밀번호 확인",
+      "tooShort": "8자 이상으로 입력해 주세요.",
+      "mismatch": "비밀번호가 일치하지 않아요.",
+      "changed": "비밀번호를 변경했어요",
+      "set": "비밀번호를 설정했어요",
+      "othersSignedOut": "다른 기기에서는 모두 로그아웃됐어요."
+    },
+    "email": {
+      "title": "이메일",
+      "description": "이메일은 로그인과 예약 확인 메일 발송에 사용돼요.",
+      "confirmed": "인증됨",
+      "notConfirmed": "아직 인증 안 됨",
+      "none": "이 계정에는 이메일이 없어요."
+    },
+    "devices": {
+      "title": "기기",
+      "description": "공용 기기나 분실한 기기에서 로그인했다면 여기서 로그아웃하세요. 이 기기는 로그인 상태로 유지돼요.",
+      "status": "{count, plural, =0 {이 기기에만 로그인되어 있어요} other {다른 기기 #대에 로그인되어 있어요}}",
+      "signOutOthers": "다른 기기에서 로그아웃",
+      "confirmTitle": "다른 기기에서 로그아웃할까요?",
+      "confirmBody": "다른 휴대폰, 태블릿, 컴퓨터에서 내 계정을 사용 중인 사람은 다시 로그인해야 해요.",
+      "confirm": "로그아웃하기",
+      "signedOutToast": "{count, plural, other {다른 기기 #대에서 로그아웃했어요}}"
+    }
+  },
+  "notifications": {
+    "description": "알림 받는 방법을 선택하세요. 꼭 필요한 것만 보내 드려요.",
+    "saved": "저장했어요",
+    "emailAndText": "이메일 및 문자 알림",
+    "emailOnly": "이메일 알림",
+    "inboxNote": "여기서 무엇을 선택하든 모든 알림은 Kept 알림함에도 표시돼요.",
+    "addPhone": "문자를 받으려면 <link>프로필</link>에 전화번호를 추가해 주세요.",
+    "email": "이메일",
+    "sms": "문자",
+    "forTopic": "{topic} 알림",
+    "alwaysOn": {
+      "bookings": "예약이 변경되면 연락드릴 수 있도록 이메일은 항상 켜져 있어요.",
+      "business": "새 예약이나 요청을 놓치지 않도록 이메일은 항상 켜져 있어요."
+    },
+    "topics": {
+      "bookings": {
+        "label": "예약 소식",
+        "description": "예약 확정, 변경, 취소."
+      },
+      "reminders": {
+        "label": "리마인더",
+        "description": "다가오는 예약 전에 알려 드려요."
+      },
+      "messages": {
+        "label": "메시지",
+        "description": "비즈니스나 고객이 메시지를 보냈을 때."
+      },
+      "waitlist": {
+        "label": "대기 명단 빈자리",
+        "description": "원하던 시간이 비었을 때."
+      },
+      "reviews": {
+        "label": "리뷰 요청",
+        "description": "예약 완료 후 짧은 안내."
+      },
+      "business": {
+        "label": "비즈니스 활동",
+        "description": "내 비즈니스의 새 예약, 요청, 리뷰."
+      },
+      "marketing": {
+        "label": "소식 및 혜택",
+        "description": "예약했던 비즈니스의 가끔 오는 소식."
+      }
+    }
+  },
+  "addresses": {
+    "description": "바버, 디테일러, 트레이너 등 출장 방문 전문가를 위한 주소예요.",
+    "defaultLabel": "집",
+    "saved": "주소를 저장했어요",
+    "removed": "주소를 삭제했어요",
+    "emptyTitle": "저장된 주소가 없어요",
+    "emptyBody": "집이나 사무실처럼 출장 서비스를 자주 받는 장소를 한곳에 저장해 두세요.",
+    "add": "주소 추가",
+    "removeLabel": "{label} 삭제",
+    "count": "{max}개 중 {count}개 저장됨",
+    "limit": "최대 개수에 도달했어요. 다른 주소를 추가하려면 기존 주소를 삭제해 주세요.",
+    "dialogBody": "나만 볼 수 있어요. 전문가는 그 주소로 서비스를 예약했을 때만 주소를 볼 수 있어요.",
+    "save": "주소 저장",
+    "fields": {
+      "name": "이름",
+      "nameHint": "예: 집, 회사, 헬스장.",
+      "line1": "도로명 주소",
+      "line2": "동·호수, 층",
+      "city": "시/군/구",
+      "region": "시/도",
+      "postalCode": "우편번호",
+      "country": "국가"
+    },
+    "removeTitle": "“{label}”을(를) 삭제할까요?",
+    "removeBody": "이 주소로 이미 한 예약에는 영향이 없어요.",
+    "remove": "주소 삭제"
+  },
+  "privacy": {
+    "description": "내 데이터는 내 것이에요. 데이터 이용 방법은 <link>개인정보 처리방침</link>에서 확인하세요.",
+    "export": {
+      "title": "데이터 다운로드",
+      "description": "프로필, 저장된 주소, 예약, 리뷰, 메시지, 저장한 전문가, 지원 요청을 JSON 파일로 받아 보세요.",
+      "button": "내 데이터 다운로드",
+      "hint": "바로 준비돼요. 개인정보가 담겨 있으니 안전한 곳에 보관하세요."
+    },
+    "delete": {
+      "title": "계정 삭제",
+      "intro": "Kept 계정이 영구적으로 해지돼요. 진행되는 내용은 다음과 같아요:",
+      "erased": "이름, 이메일, 전화번호, 사진, 저장된 주소와 저장한 전문가가 삭제되고, 모든 기기에서 로그아웃돼요.",
+      "upcoming": "{count, plural, other {예정된 예약 #건은 각 비즈니스의 취소 정책에 따라 취소되며, 정책에서 허용하는 환불도 함께 처리돼요.}}",
+      "upcomingNone": "예정된 예약은 각 비즈니스의 취소 정책에 따라 취소돼요.",
+      "records": "비즈니스와 세무 규정상 필요한 기록 — 지난 예약, 결제, 리뷰 — 은 보관되지만 “탈퇴한 사용자”로 표시돼요.",
+      "permanent": "되돌릴 수 없어요. 나중에 같은 이메일로 새로 가입할 수 있어요.",
+      "blocked": "{businesses}을(를) 소유하고 계세요. 고객이 답을 못 받는 일이 없도록, 계정을 삭제하기 전에 <link>비즈니스 설정</link>에서 비즈니스를 폐업하거나 다른 사람에게 이전해 주세요.",
+      "copyFirst": "사본을 먼저 받아 두시겠어요? 위에서 데이터를 다운로드하세요.",
+      "open": "계정 삭제…",
+      "confirmTitle": "계정을 삭제할까요?",
+      "confirmBody": "되돌릴 수 없어요.",
+      "keep": "계정 유지",
+      "confirm": "계정 삭제",
+      "willCancel": "{count, plural, other {예정된 예약 #건이 취소돼요.}}",
+      "password": "비밀번호",
+      "typeToConfirm": "확인을 위해 <word>{word}</word>을(를) 입력하세요",
+      "deletedToast": "계정이 삭제됐어요",
+      "deletedBody": "Kept를 이용해 주셔서 감사합니다."
+    }
+  },
+  "saved": {
+    "title": "저장됨",
+    "description": "{count, plural, other {저장한 전문가 #명.}} 아래 빈 시간은 각 캘린더에서 실시간으로 가져와요.",
+    "emptyTitle": "아직 저장한 곳이 없어요",
+    "emptyBody": "전문가의 하트를 탭해 여기에 저장하세요 — 단골을 다시 예약하거나 여러 곳을 비교할 때 편리해요.",
+    "explore": "전문가 둘러보기",
+    "loading": "저장한 전문가를 불러오는 중…"
+  },
+  "notificationList": {
+    "title": "알림",
+    "today": "오늘",
+    "earlier": "이전",
+    "emptyTitle": "아직 알림이 없어요",
+    "emptyBody": "예약 확정, 리마인더, 답장, 대기 명단 빈자리 소식이 여기에 표시돼요.",
+    "unread": "읽지 않음 {count}개",
+    "caughtUp": "모두 확인했어요",
+    "allCaughtUpToast": "모두 확인했어요",
+    "markAll": "모두 읽음으로 표시",
+    "unreadItem": "읽지 않음",
+    "loadOlder": "이전 알림 불러오기",
+    "end": "여기까지예요."
+  },
+  "invite": {
+    "eyebrow": "팀 초대",
+    "invalidTitle": "이 초대는 사용할 수 없어요",
+    "invalidBody": "만료되었거나 취소되었거나 이미 수락된 초대일 수 있어요. 초대한 분께 새 링크를 요청해 주세요.",
+    "goHome": "Kept로 가기",
+    "join": "{business} 합류하기",
+    "invitedAs": "<b>{role}</b>(으)로 초대받았어요.",
+    "signInWith": "수락하려면 <b>{email}</b>(으)로 로그인하거나 계정을 만드세요.",
+    "createAccount": "계정 만들기",
+    "signIn": "로그인",
+    "wrongAccount": "<b>{email}</b>(으)로 로그인되어 있지만, 이 초대는 {invited}(으)로 발송됐어요.",
+    "wrongAccountHint": "로그아웃한 뒤 해당 주소로 로그인하거나, {email}(으)로 초대를 다시 요청하세요.",
+    "acceptingAs": "<b>{email}</b>(으)로 수락합니다.",
+    "accept": "수락하고 내 일정 열기",
+    "roles": {
+      "owner": {
+        "label": "소유자",
+        "description": "결제와 팀을 포함한 모든 권한."
+      },
+      "manager": {
+        "label": "매니저",
+        "description": "일상 운영을 담당해요. 팀이나 비즈니스 설정은 변경할 수 없어요."
+      },
+      "receptionist": {
+        "label": "프런트 데스크",
+        "description": "모든 사람의 예약을 잡고 관리해요."
+      },
+      "provider": {
+        "label": "전문가",
+        "description": "본인의 예약과 일정을 확인하고 관리해요."
+      },
+      "custom": {
+        "label": "사용자 지정",
+        "description": "이 사람이 할 수 있는 일을 직접 선택하세요."
+      }
+    }
+  }
+}

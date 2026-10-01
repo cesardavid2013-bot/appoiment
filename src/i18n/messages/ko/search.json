@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "전문가 둘러보기",
+    "category": "{category} 예약",
+    "query": "{q} — 검색",
+    "description": "실제 예약 가능 시간, 가격, 인증된 리뷰로 전문가를 비교하세요."
+  },
+  "bar": {
+    "placeholder": "서비스 또는 전문가 검색",
+    "label": "검색",
+    "clear": "검색 지우기"
+  },
+  "location": {
+    "placeholder": "모든 지역",
+    "label": "위치",
+    "clear": "위치 지우기",
+    "useMine": "현재 위치 사용",
+    "finding": "위치 찾는 중…",
+    "current": "현재 위치",
+    "selectedArea": "선택한 지역",
+    "unsupported": "브라우저에서 위치를 공유할 수 없어요. 도시 이름을 입력해 주세요.",
+    "denied": "이 사이트의 위치 권한이 꺼져 있어요. 도시 이름을 입력하거나 브라우저 설정에서 위치를 허용해 주세요.",
+    "failed": "위치를 가져오지 못했어요. 도시 이름을 입력해 주세요."
+  },
+  "quick": {
+    "availableToday": "오늘 가능",
+    "instant": "즉시 예약",
+    "mobile": "출장 방문",
+    "virtual": "온라인"
+  },
+  "view": {
+    "label": "보기",
+    "list": "목록",
+    "map": "지도"
+  },
+  "heading": {
+    "explore": "둘러보기",
+    "results": "결과",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "업데이트 중…",
+    "count": "{count, plural, other {전문가 #명}}",
+    "countMore": "전문가 {count}명 이상",
+    "near": "{place} 근처 {results}",
+    "nearYou": "내 주변 {results}"
+  },
+  "sort": {
+    "label": "정렬",
+    "relevance": "추천순",
+    "rating": "평점 높은순",
+    "price": "가격 낮은순",
+    "distance": "가까운순"
+  },
+  "categories": {
+    "label": "카테고리",
+    "all": "전체"
+  },
+  "empty": {
+    "title": "아직 일치하는 결과가 없어요",
+    "query": "더 넓은 검색어나 다른 철자를 써 보거나 필터를 줄여 보세요.",
+    "filters": "필터를 줄이거나 더 넓은 지역을 검색해 보세요.",
+    "clear": "모든 필터 지우기"
+  },
+  "showMore": "더 보기",
+  "filters": {
+    "button": "필터",
+    "buttonCount": "필터 · {count}",
+    "title": "필터",
+    "clearAll": "모두 지우기",
+    "show": "결과 보기",
+    "availability": "예약 가능 여부 및 방식",
+    "rating": "평점",
+    "minRating": "최소 평점",
+    "any": "전체",
+    "price": "시작 가격 상한",
+    "maxPrice": "최대 시작 가격",
+    "distance": "거리",
+    "provider": "제공자",
+    "providerType": "제공자 유형",
+    "individual": "1인 전문가",
+    "business": "업체 및 팀"
+  }
+}

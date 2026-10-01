@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "바버샵"
+  },
+  "hair": {
+    "name": "헤어 & 바버",
+    "description": "커트, 염색, 스타일링, 브레이드, 그루밍."
+  },
+  "lashes-brows": {
+    "name": "속눈썹 & 눈썹"
+  },
+  "massage": {
+    "name": "마사지"
+  },
+  "personal-training": {
+    "name": "퍼스널 트레이닝"
+  },
+  "hair-salon": {
+    "name": "미용실"
+  },
+  "makeup": {
+    "name": "메이크업"
+  },
+  "nails": {
+    "name": "네일",
+    "description": "매니큐어, 페디큐어, 연장, 네일아트."
+  },
+  "spa": {
+    "name": "스파"
+  },
+  "yoga-pilates": {
+    "name": "요가 & 필라테스"
+  },
+  "beauty": {
+    "name": "뷰티",
+    "description": "속눈썹, 눈썹, 메이크업, 피부."
+  },
+  "braids-locs": {
+    "name": "브레이드 & 드레드락"
+  },
+  "skincare": {
+    "name": "피부관리"
+  },
+  "wellness": {
+    "name": "웰니스",
+    "description": "마사지, 스파, 바디케어."
+  },
+  "fitness": {
+    "name": "피트니스",
+    "description": "퍼스널 트레이닝, 요가, 필라테스, 코칭."
+  },
+  "tattoo-piercing": {
+    "name": "타투 & 피어싱",
+    "description": "커스텀 타투, 플래시 타투, 피어싱."
+  },
+  "photography": {
+    "name": "사진 & 영상",
+    "description": "프로필, 행사, 제품 촬영과 영상."
+  },
+  "education": {
+    "name": "레슨 & 과외",
+    "description": "과외, 음악 레슨, 외국어 수업."
+  },
+  "home-services": {
+    "name": "홈 서비스",
+    "description": "청소, 수리, 집수리 기사."
+  },
+  "automotive": {
+    "name": "자동차",
+    "description": "디테일링, 세차, 출장 정비."
+  },
+  "pets": {
+    "name": "반려동물",
+    "description": "미용, 펫시팅, 훈련."
+  },
+  "events": {
+    "name": "행사",
+    "description": "DJ, 플래너, 행사 전문가."
+  },
+  "professional": {
+    "name": "전문 서비스",
+    "description": "컨설턴트, 코치, 자문가."
+  },
+  "other": {
+    "name": "기타",
+    "description": "그 밖에 예약할 수 있는 모든 것."
+  }
+}
