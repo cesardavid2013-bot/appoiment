@@ -6,7 +6,7 @@ import { AppError, notFound } from "@/domain/errors";
 import { formatMoney } from "@/domain/money";
 import { entitlements } from "@/domain/plans";
 import { db, type Tx } from "../db/client";
-import { isExclusionViolation } from "../db/errors";
+import { isTimeConflict } from "../db/errors";
 import { appointmentEvents, appointments, businesses, occupancies, payments, refunds, webhookEvents } from "../db/schema";
 import { env, features } from "../env";
 import { audit } from "../audit";
@@ -210,7 +210,7 @@ async function tryReinstate(tx: Tx, a: Appt): Promise<boolean> {
     });
     return true;
   } catch (err) {
-    if (isExclusionViolation(err)) return false;
+    if (isTimeConflict(err)) return false;
     throw err;
   }
 }

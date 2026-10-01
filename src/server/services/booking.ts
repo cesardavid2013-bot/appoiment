@@ -9,7 +9,7 @@ import { checkPromotion, computeQuote, type PromotionInput, type Quote, type Sel
 import { businessCancellation, customerCancellation, customerReschedule, describeCancellationPolicy } from "@/domain/policies";
 import { instantToLocal } from "@/domain/time";
 import { db, type Executor, type Tx } from "../db/client";
-import { isExclusionViolation, isUniqueViolation } from "../db/errors";
+import { isTimeConflict, isUniqueViolation } from "../db/errors";
 import {
   appointmentEvents,
   appointments,
@@ -461,7 +461,7 @@ export async function createBooking(viewer: Viewer, input: z.infer<typeof create
             return { ...appt, groupSessionId };
           });
         } catch (err) {
-          if (isExclusionViolation(err)) {
+          if (isTimeConflict(err)) {
             log.info("booking.member_conflict", { memberId, start: start.toISOString() });
             continue; // savepoint rolled back; try the next available professional
           }
@@ -707,7 +707,7 @@ export async function reschedule(
         await sp.update(occupancies).set({ startsAt: blockStart, endsAt: blockEnd, memberId }).where(eq(occupancies.appointmentId, a.id));
       });
     } catch (err) {
-      if (isExclusionViolation(err)) throw new AppError("slot_unavailable", "Sorry — that time was just taken. Please pick another.");
+      if (isTimeConflict(err)) throw new AppError("slot_unavailable", "Sorry — that time was just taken. Please pick another.");
       throw err;
     }
     const memberName = svc.business.kind === "individual" ? null : (svc.staff.find((s) => s.memberId === memberId)?.displayName ?? a.snapshot.memberName);

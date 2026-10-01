@@ -5,7 +5,7 @@ import { computeSlots } from "@/domain/availability";
 import { AppError, notFound } from "@/domain/errors";
 import { instantToLocal } from "@/domain/time";
 import { db } from "../db/client";
-import { isExclusionViolation } from "../db/errors";
+import { isTimeConflict } from "../db/errors";
 import { appointmentEvents, appointments, businessCustomers } from "../db/schema";
 import type { Membership } from "../authz";
 import { audit } from "../audit";
@@ -135,7 +135,7 @@ export async function createManualBooking(m: Membership, actorUserId: string, in
           return appt;
         });
       } catch (err) {
-        if (isExclusionViolation(err)) continue;
+        if (isTimeConflict(err)) continue;
         throw err;
       }
     }
