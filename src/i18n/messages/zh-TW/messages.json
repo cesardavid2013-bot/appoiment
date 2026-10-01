@@ -1,0 +1,93 @@
+{
+  "youPrefix": "您：",
+  "unread": "未讀",
+  "apptLine": "{service} · {date} {time}",
+  "list": {
+    "title": "訊息",
+    "unread": "{count, plural, other {# 則未讀對話。}}",
+    "caughtUp": "您已看完所有訊息。",
+    "emptyTitle": "尚無訊息",
+    "emptyBody": "對服務、價格或時間有疑問嗎？開啟專業人士的頁面，輕觸「提問」。對方的回覆會出現在這裡。",
+    "findPro": "尋找專業人士"
+  },
+  "thread": {
+    "metaTitle": "對話",
+    "placeholder": "傳訊息給{business}"
+  },
+  "new": {
+    "metaTitle": "新訊息",
+    "ownTitle": "這是您的店家",
+    "ownBody": "顧客傳給{business}的訊息會送到您的店家收件匣。",
+    "ownButton": "開啟店家收件匣",
+    "placeholderBooking": "詢問此預約",
+    "placeholderQuestion": "提出問題",
+    "emptyBookingTitle": "就您的預約傳訊息給{business}",
+    "emptyQuestionTitle": "預約前先問問{business}",
+    "emptyBookingBody": "會遲到、需要變更或有問題嗎？您的訊息會直接送到對方團隊。",
+    "emptyQuestionBody": "價格、時間、需要帶什麼——{business}會在這裡回覆，我們也會通知您。您的電話號碼和電子郵件不會公開。"
+  },
+  "shell": {
+    "allMessages": "所有訊息",
+    "viewProfile": "查看頁面",
+    "book": "預約"
+  },
+  "pro": {
+    "backToInbox": "返回收件匣"
+  },
+  "view": {
+    "label": "訊息",
+    "you": "您",
+    "loadingEarlier": "正在載入較早的訊息",
+    "showEarlier": "顯示較早的訊息",
+    "seen": "已讀",
+    "sending": "傳送中…",
+    "notSent": "未傳送。",
+    "retry": "重試",
+    "discard": "捨棄",
+    "newMessages": "{count, plural, other {# 則新訊息}}",
+    "openPhoto": "在新分頁中開啟相片",
+    "photo": "相片"
+  },
+  "composer": {
+    "about": "關於{appointment}",
+    "unlink": "不連結此預約",
+    "processingPhoto": "正在處理相片",
+    "removePhoto": "移除相片",
+    "attachPhoto": "附加相片",
+    "label": "訊息",
+    "send": "傳送訊息",
+    "hint": "按 Enter 傳送，按 Shift + Enter 換行。"
+  },
+  "inbox": {
+    "title": "收件匣",
+    "conversations": "對話",
+    "unread": "{count} 則未讀",
+    "allCaughtUp": "已全部看完",
+    "searchLabel": "依顧客姓名搜尋對話",
+    "searchPlaceholder": "搜尋顧客",
+    "clearSearch": "清除搜尋",
+    "show": "顯示",
+    "all": "全部",
+    "unreadFilter": "未讀",
+    "noClientsNamed": "沒有名為「{term}」的顧客",
+    "nothingUnread": "沒有未讀訊息",
+    "noMessages": "尚無訊息",
+    "tryDifferent": "請換個關鍵字搜尋，或顯示所有對話。",
+    "emptyBody": "當顧客從您的頁面或就某筆預約提問時，訊息會顯示在這裡。"
+  },
+  "clientPanel": {
+    "client": "顧客",
+    "visits": "到店次數",
+    "noShows": "未到場",
+    "cancelled": "已取消",
+    "clientSince": "{date} 成為顧客",
+    "noVisits": "尚無完成的到店紀錄",
+    "lastIn": "最近一次：{date}",
+    "tags": "標籤",
+    "clientProfile": "顧客資料",
+    "notBooked": "尚未向您預約過——此對話來自您的公開頁面。",
+    "upcoming": "即將到來",
+    "nothingBooked": "沒有預約。",
+    "recent": "最近"
+  }
+}

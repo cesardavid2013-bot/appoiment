@@ -1,0 +1,90 @@
+{
+  "language": "語言",
+  "meta": {
+    "title": "Kept — 預約值得信賴的在地專業人士",
+    "description": "探索並預約理髮師、髮型設計師、教練、攝影師、家教等各類在地專業人士——也能輕鬆管理您自己的預約。"
+  },
+  "skipToContent": "跳至主要內容",
+  "logoHome": "Kept 首頁",
+  "header": {
+    "mainNav": "主要導覽",
+    "search": "搜尋服務或專業人士",
+    "ask": "提問",
+    "askKept": "問問 Kept",
+    "explore": "探索",
+    "myBusiness": "我的店家",
+    "forPros": "專業人士專區",
+    "bookings": "預約",
+    "messages": "訊息",
+    "notifications": "通知",
+    "unread": "未讀",
+    "accountMenu": "帳戶選單",
+    "logIn": "登入",
+    "signUp": "註冊"
+  },
+  "accountMenu": {
+    "bookings": "預約",
+    "saved": "收藏",
+    "messages": "訊息",
+    "settings": "帳戶設定",
+    "help": "說明與支援",
+    "switchToBusiness": "切換至店家",
+    "offerServices": "提供您的服務",
+    "admin": "管理主控台",
+    "signOut": "登出"
+  },
+  "tabs": {
+    "label": "主要",
+    "home": "首頁",
+    "explore": "探索",
+    "bookings": "預約",
+    "inbox": "收件匣",
+    "account": "帳戶"
+  },
+  "footer": {
+    "tagline": "預約值得信賴的專業人士。輕鬆管理您的預約。",
+    "discover": "探索",
+    "explore": "瀏覽",
+    "hair": "美髮與理髮",
+    "wellness": "身心舒壓",
+    "fitness": "健身",
+    "forPros": "專業人士專區",
+    "howItWorks": "使用方式",
+    "listServices": "刊登您的服務",
+    "dashboard": "店家後台",
+    "help": "說明",
+    "support": "客服支援",
+    "terms": "條款",
+    "privacy": "隱私權",
+    "copyright": "© {year} Kept。保留一切權利。"
+  },
+  "price": {
+    "free": "免費",
+    "quote": "價格依諮詢而定",
+    "from": "{price} 起"
+  },
+  "rating": {
+    "new": "新進",
+    "summary": "評分 {avg}，來自 {count, plural, other {# 則評價}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "等待付款",
+    "requested": "已送出申請",
+    "confirmed": "已確認",
+    "checked_in": "已報到",
+    "in_progress": "進行中",
+    "completed": "已完成",
+    "cancelled": "已取消",
+    "declined": "已婉拒",
+    "no_show": "未到場",
+    "expired": "已逾期"
+  },
+  "policy": {
+    "freeUntil": "最晚可在預約開始前 {hours} 小時免費取消。逾時取消將收取總額的 {percent}%。",
+    "cancelAhead": "請至少在預約開始前 {hours} 小時取消。",
+    "freeAnyTime": "預約開始前隨時可免費取消。",
+    "depositRefundable": "在期限內取消可退還訂金。",
+    "depositNonRefundable": "訂金恕不退還。",
+    "reschedule": "最晚可在預約開始前 {hours} 小時線上改期。"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "問問 Kept",
+  "description": "告訴我您需要什麼、什麼時候。我會查詢真實的空檔。",
+  "newConversation": "新對話",
+  "close": "關閉",
+  "forExample": "例如：",
+  "starters": {
+    "one": "明天下午找理髮師",
+    "two": "這週末 60 美元以內的凝膠美甲",
+    "three": "今晚附近的按摩",
+    "four": "線上數學家教"
+  },
+  "searching": "搜尋中",
+  "listening": "聆聽中…",
+  "placeholder": "週六上午找理髮師…",
+  "yourMessage": "您的訊息",
+  "stopListening": "停止聆聽",
+  "speak": "語音輸入",
+  "send": "傳送",
+  "verified": "已驗證",
+  "online": "線上"
+}

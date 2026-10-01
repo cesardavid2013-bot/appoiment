@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "歡迎回來，{name}",
+    "eyebrow": "每一次預約，都如約而至",
+    "title": "預約那些讓您每週都<em>更美好</em>的人。",
+    "lead": "理髮師、髮型設計師、教練、家教、攝影師等——真實空檔、價格透明，評價僅來自實際到店。",
+    "points": {
+      "verified": "僅限真實評價",
+      "prices": "預約前就知道價格",
+      "instant": "立即確認"
+    }
+  },
+  "search": {
+    "placeholder": "剪髮、按摩、攝影師…",
+    "label": "您想預約什麼？",
+    "category": "類別",
+    "submit": "搜尋",
+    "sayIt": "或者直接說——",
+    "sayItExample": "「明天 5 點後找理髮師」"
+  },
+  "openings": {
+    "title": "即將有空",
+    "live": "即時同步行事曆",
+    "appointment": "預約"
+  },
+  "index": {
+    "eyebrow": "索引",
+    "title": "各種預約，一應俱全",
+    "exploreAll": "全部探索",
+    "pros": "{count, plural, other {# 位專業人士}}"
+  },
+  "next": {
+    "title": "您的下一個預約",
+    "details": "詳細資訊"
+  },
+  "again": {
+    "title": "再次預約",
+    "rebook": "再約一次"
+  },
+  "rails": {
+    "availableSoon": "即將有空",
+    "availableSoonNear": "{place}附近即將有空",
+    "availableSoonNearYou": "您附近即將有空",
+    "availableSoonSub": "即時同步自每位專業人士的行事曆。",
+    "recent": "最近瀏覽",
+    "topRated": "高分推薦",
+    "topRatedSub": "評分僅來自已完成且經過驗證的預約。",
+    "newcomers": "Kept 新進"
+  },
+  "how": {
+    "eyebrow": "使用方式",
+    "title": "三個步驟，不必來回打電話",
+    "find": {
+      "title": "找到對的人",
+      "body": "依需求、時間和地點搜尋——或直接用自己的話提問。每個頁面都會顯示真實價格和經過驗證的評價。"
+    },
+    "choose": {
+      "title": "選擇真實時段",
+      "body": "您看到的時段，就是對方行事曆上此刻真正有空的時間。選好時段、加上選項，就能確認。"
+    },
+    "kept": {
+      "title": "一切交給我們",
+      "body": "您會收到確認通知和預約前的提醒，改期、傳訊息或再次預約，都在同一個地方完成。"
+    }
+  },
+  "pros": {
+    "eyebrow": "專業人士專區",
+    "title": "您的手藝，值得<em>更好</em>的櫃台。",
+    "body": "線上預約、絕不重複預約的行事曆、減少未到場的提醒，以及充分展現您作品的頁面。上線期間免費。",
+    "cta": "提供您的服務",
+    "howItWorks": "了解使用方式",
+    "features": {
+      "any": {
+        "title": "任何服務",
+        "body": "選項會自動調整價格和時間。"
+      },
+      "noDouble": {
+        "title": "絕不重複預約",
+        "body": "每個時段在預約當下都會再次確認。"
+      },
+      "noShows": {
+        "title": "減少未到場",
+        "body": "提醒、訂金和清楚的政策。"
+      },
+      "discovered": {
+        "title": "讓更多人看見您",
+        "body": "作品集、真實評價和 Spotlight。"
+      }
+    }
+  }
+}

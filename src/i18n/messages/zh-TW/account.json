@@ -1,0 +1,311 @@
+{
+  "loading": "載入中…",
+  "noEmail": "尚未登錄電子郵件",
+  "saveChanges": "儲存變更",
+  "cancel": "取消",
+  "checkFields": "請檢查標示的欄位。",
+  "nav": {
+    "label": "帳戶設定",
+    "account": "帳戶"
+  },
+  "sections": {
+    "profile": {
+      "label": "個人檔案",
+      "description": "姓名、相片、電話和時區"
+    },
+    "security": {
+      "label": "登入與安全性",
+      "description": "密碼、電子郵件驗證和裝置"
+    },
+    "notifications": {
+      "label": "通知設定",
+      "description": "選擇我們透過電子郵件或簡訊通知您的內容"
+    },
+    "addresses": {
+      "label": "已儲存的地址",
+      "description": "供到府服務的專業人士使用"
+    },
+    "privacy": {
+      "label": "隱私權與資料",
+      "description": "下載您的資料或刪除帳戶"
+    }
+  },
+  "home": {
+    "memberSince": "{date} 加入",
+    "confirmEmail": "<b>請驗證您的電子郵件。</b>我們已將連結寄至 {email}，驗證後店家才能就預約事宜與您聯絡。",
+    "activity": "我的動態",
+    "settings": "設定",
+    "more": "更多",
+    "signOut": "登出",
+    "rows": {
+      "bookings": {
+        "label": "預約",
+        "description": "即將到來和過去的預約"
+      },
+      "saved": {
+        "label": "收藏",
+        "description": "您收藏的專業人士"
+      },
+      "messages": {
+        "label": "訊息",
+        "description": "與店家的對話"
+      },
+      "notifications": {
+        "label": "通知",
+        "description": "預約相關的最新消息"
+      },
+      "business": {
+        "label": "切換至店家",
+        "description": "行事曆、服務和顧客"
+      },
+      "offer": {
+        "label": "在 Kept 上提供服務",
+        "description": "接受預約、拓展事業——免費開始"
+      },
+      "support": {
+        "label": "說明與支援",
+        "description": "取得預約、付款或帳戶方面的協助"
+      },
+      "legal": {
+        "label": "條款與隱私權",
+        "description": "Kept 如何運作，以及我們如何處理您的資料"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "驗證信已寄出",
+    "sentBody": "請查看 {email}，連結 3 天內有效。",
+    "sent": "已寄出",
+    "resend": "重新寄送連結"
+  },
+  "profile": {
+    "description": "您向預約的專業人士呈現的樣子。",
+    "saved": "個人檔案已儲存",
+    "details": "個人資料",
+    "name": "姓名",
+    "email": "電子郵件",
+    "changeEmail": "如需變更登入用的電子郵件，請<link>聯絡客服</link>，以便我們確認是您本人。",
+    "phone": "電話",
+    "phoneHintSms": "您預約的店家可以致電與您聯絡預約事宜；若您開啟此功能，我們也能以簡訊傳送提醒。",
+    "phoneHint": "您預約的店家可透過此號碼就預約事宜與您聯絡。",
+    "photo": {
+      "title": "相片",
+      "description": "會顯示在您的姓名旁，讓您預約的專業人士看到。",
+      "updated": "相片已更新",
+      "removed": "相片已移除",
+      "change": "更換相片",
+      "upload": "上傳相片",
+      "remove": "移除",
+      "hint": "JPG、PNG 或 WebP 格式，最大 15 MB。我們會移除相片中的位置資訊。"
+    },
+    "timezone": {
+      "label": "時區",
+      "hint": "您所在地的時區。預約時間一律以店家當地時間顯示。",
+      "notSet": "未設定",
+      "detect": "自動偵測",
+      "detectFailed": "無法偵測您的時區，請從清單中選擇。"
+    },
+    "language": {
+      "title": "語言",
+      "description": "用於 Kept 的選單、按鈕和日期。店家名稱、服務和評價會依店家撰寫的原文顯示。"
+    }
+  },
+  "security": {
+    "description": "確保帳戶安全，一切由您掌握。",
+    "password": {
+      "title": "密碼",
+      "setTitle": "設定密碼",
+      "description": "變更密碼後，您在其他所有裝置上都會被登出。",
+      "setDescription": "您目前使用 Google 登入。新增密碼後，也能以電子郵件登入。",
+      "change": "變更密碼",
+      "setButton": "設定密碼",
+      "current": "目前的密碼",
+      "new": "新密碼",
+      "newHint": "至少 8 個字元。請避免使用常見字詞和您的電子郵件。",
+      "confirm": "確認新密碼",
+      "tooShort": "請至少使用 8 個字元。",
+      "mismatch": "兩次輸入的密碼不一致。",
+      "changed": "密碼已變更",
+      "set": "密碼已設定",
+      "othersSignedOut": "其他裝置皆已登出。"
+    },
+    "email": {
+      "title": "電子郵件",
+      "description": "我們使用您的電子郵件讓您登入，並寄送預約確認信。",
+      "confirmed": "已驗證",
+      "notConfirmed": "尚未驗證",
+      "none": "此帳戶沒有電子郵件。"
+    },
+    "devices": {
+      "title": "裝置",
+      "description": "如果您曾在共用或遺失的裝置上登入，可以在這裡將其登出。這部裝置會維持登入狀態。",
+      "status": "{count, plural, =0 {只有這部裝置處於登入狀態} other {另有 # 部裝置處於登入狀態}}",
+      "signOutOthers": "登出其他裝置",
+      "confirmTitle": "要登出其他裝置嗎？",
+      "confirmBody": "在其他手機、平板或電腦上使用您帳戶的人都必須重新登入。",
+      "confirm": "全部登出",
+      "signedOutToast": "{count, plural, other {已登出另外 # 部裝置}}"
+    }
+  },
+  "notifications": {
+    "description": "選擇我們與您保持聯繫的方式。我們只傳送必要的通知。",
+    "saved": "已儲存",
+    "emailAndText": "電子郵件與簡訊通知",
+    "emailOnly": "電子郵件通知",
+    "inboxNote": "無論您在這裡如何選擇，所有通知都會顯示在 Kept 的通知收件匣中。",
+    "addPhone": "請在<link>個人檔案</link>中新增電話號碼，即可接收簡訊。",
+    "email": "電子郵件",
+    "sms": "簡訊",
+    "forTopic": "關於{topic}",
+    "alwaysOn": {
+      "bookings": "電子郵件通知一律開啟，以便預約有異動時我們能聯絡到您。",
+      "business": "電子郵件通知一律開啟，讓您不會錯過任何新預約或預約申請。"
+    },
+    "topics": {
+      "bookings": {
+        "label": "預約異動",
+        "description": "確認、變更和取消。"
+      },
+      "reminders": {
+        "label": "提醒",
+        "description": "在預約開始前提醒您。"
+      },
+      "messages": {
+        "label": "訊息",
+        "description": "店家或顧客傳訊息給您時。"
+      },
+      "waitlist": {
+        "label": "候補空檔",
+        "description": "您想要的時段有空檔時。"
+      },
+      "reviews": {
+        "label": "評價邀請",
+        "description": "預約完成後的簡短邀請。"
+      },
+      "business": {
+        "label": "店家動態",
+        "description": "您的店家收到的新預約、預約申請和評價。"
+      },
+      "marketing": {
+        "label": "最新消息與優惠",
+        "description": "您預約過的店家不定期發布的消息。"
+      }
+    }
+  },
+  "addresses": {
+    "description": "供到府服務的專業人士使用——理髮師、汽車美容師、私人教練等。",
+    "defaultLabel": "住家",
+    "saved": "地址已儲存",
+    "removed": "地址已移除",
+    "emptyTitle": "尚未儲存地址",
+    "emptyBody": "將您預約到府服務的地點（例如住家或辦公室）集中儲存，隨時取用。",
+    "add": "新增地址",
+    "removeLabel": "移除{label}",
+    "count": "已儲存 {count}/{max} 個",
+    "limit": "已達上限。請先移除一個地址再新增。",
+    "dialogBody": "僅限您本人查看。只有當您在該地址預約服務時，專業人士才會看到它。",
+    "save": "儲存地址",
+    "fields": {
+      "name": "名稱",
+      "nameHint": "例如：住家、公司或健身房。",
+      "line1": "街道地址",
+      "line2": "樓層、室或棟別",
+      "city": "城市",
+      "region": "縣市 / 地區",
+      "postalCode": "郵遞區號",
+      "country": "國家/地區"
+    },
+    "removeTitle": "要移除「{label}」嗎？",
+    "removeBody": "您已在此地址完成的預約不受影響。",
+    "remove": "移除地址"
+  },
+  "privacy": {
+    "description": "您的資料屬於您。請參閱我們的<link>隱私權政策</link>，了解我們如何使用這些資料。",
+    "export": {
+      "title": "下載您的資料",
+      "description": "以 JSON 檔案取得您的個人檔案、已儲存的地址、預約、評價、訊息、收藏的專業人士和客服申請的副本。",
+      "button": "下載我的資料",
+      "hint": "立即產生。檔案包含個人資訊，請妥善保管。"
+    },
+    "delete": {
+      "title": "刪除帳戶",
+      "intro": "這會永久關閉您的 Kept 帳戶。刪除後將發生以下情況：",
+      "erased": "您的姓名、電子郵件、電話、相片、已儲存的地址和收藏的專業人士將被清除，且您會在所有裝置上登出。",
+      "upcoming": "{count, plural, other {您即將到來的 # 個預約將依各店家的取消政策取消，包括政策允許的退款。}}",
+      "upcomingNone": "所有即將到來的預約都會依各店家的取消政策取消。",
+      "records": "店家和稅務規定所需的紀錄（過去的預約、付款和評價）會保留，但會顯示為來自「已刪除的使用者」。",
+      "permanent": "此動作無法復原。之後您可以使用相同的電子郵件重新註冊，從頭開始。",
+      "blocked": "您是{businesses}的擁有者。刪除帳戶前，請先在<link>店家設定</link>中關閉店家或轉讓給他人，以免顧客求助無門。",
+      "copyFirst": "想先保留一份副本？請在上方下載您的資料。",
+      "open": "刪除帳戶…",
+      "confirmTitle": "要刪除您的帳戶嗎？",
+      "confirmBody": "此動作無法復原。",
+      "keep": "保留我的帳戶",
+      "confirm": "刪除我的帳戶",
+      "willCancel": "{count, plural, other {將取消 # 個即將到來的預約。}}",
+      "password": "您的密碼",
+      "typeToConfirm": "輸入 <word>{word}</word> 以確認",
+      "deletedToast": "您的帳戶已刪除",
+      "deletedBody": "感謝您使用 Kept。"
+    }
+  },
+  "saved": {
+    "title": "收藏",
+    "description": "{count, plural, other {您收藏了 # 位專業人士。}}以下空檔即時取自他們的行事曆。",
+    "emptyTitle": "尚無收藏",
+    "emptyBody": "輕觸任一專業人士的愛心即可收藏在這裡——方便再次預約熟悉的人，或在決定前比較幾位。",
+    "explore": "探索專業人士",
+    "loading": "正在載入收藏的專業人士…"
+  },
+  "notificationList": {
+    "title": "通知",
+    "today": "今天",
+    "earlier": "較早",
+    "emptyTitle": "尚無通知",
+    "emptyBody": "預約確認、提醒、回覆和候補空檔都會顯示在這裡。",
+    "unread": "{count} 則未讀",
+    "caughtUp": "您已看完所有通知",
+    "allCaughtUpToast": "已全部看完",
+    "markAll": "全部標示為已讀",
+    "unreadItem": "未讀",
+    "loadOlder": "載入較早的通知",
+    "end": "已經到底了。"
+  },
+  "invite": {
+    "eyebrow": "團隊邀請",
+    "invalidTitle": "此邀請無法使用",
+    "invalidBody": "邀請可能已過期、已取消或已被接受。請邀請人重新傳送連結給您。",
+    "goHome": "前往 Kept",
+    "join": "加入{business}",
+    "invitedAs": "您受邀擔任<b>{role}</b>。",
+    "signInWith": "請使用 <b>{email}</b> 登入或建立帳戶以接受邀請。",
+    "createAccount": "建立帳戶",
+    "signIn": "登入",
+    "wrongAccount": "您目前以 <b>{email}</b> 登入，但此邀請是寄給 {invited}。",
+    "wrongAccountHint": "請登出後改用該地址登入，或請對方寄送邀請至 {email}。",
+    "acceptingAs": "將以 <b>{email}</b> 身分接受。",
+    "accept": "接受並開啟我的行程",
+    "roles": {
+      "owner": {
+        "label": "擁有者",
+        "description": "完整控制權，包括帳務和團隊。"
+      },
+      "manager": {
+        "label": "經理",
+        "description": "負責日常營運，無法變更團隊或店家設定。"
+      },
+      "receptionist": {
+        "label": "櫃台",
+        "description": "為所有人安排及管理預約。"
+      },
+      "provider": {
+        "label": "專業人士",
+        "description": "查看及管理自己的預約與行程。"
+      },
+      "custom": {
+        "label": "自訂",
+        "description": "精確選擇此人可執行的操作。"
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "預約",
+      "hint": "預約的變更、取消或問題。"
+    },
+    "payment": {
+      "label": "付款",
+      "hint": "扣款、訂金、退款或小費。"
+    },
+    "account": {
+      "label": "帳戶",
+      "hint": "登入、個人檔案或您的資料。"
+    },
+    "report": {
+      "label": "檢舉店家",
+      "hint": "安全疑慮、誤導性刊登或不當行為。"
+    },
+    "other": {
+      "label": "其他",
+      "hint": "其他任何我們能協助的事。"
+    }
+  },
+  "status": {
+    "open": "等待客服處理",
+    "awaiting_customer": "已回覆",
+    "resolved": "已解決",
+    "closed": "已結案"
+  },
+  "home": {
+    "title": "說明與支援",
+    "description": "取得預約、付款或帳戶方面的協助。",
+    "newRequest": "新申請",
+    "yourRequests": "您的申請",
+    "emptyTitle": "尚無申請",
+    "emptyBody": "如果預約、付款或帳戶出了問題，請告訴我們，我們會協助您解決。",
+    "contact": "聯絡客服",
+    "ticketLine": "{category} · 更新於 {date} · {count, plural, other {# 則訊息}}",
+    "quickAnswers": "快速解答",
+    "stillStuck": "仍無法解決嗎？<link>聯絡客服</link>。"
+  },
+  "faq": {
+    "reschedule": {
+      "q": "如何取消預約或改期？",
+      "a": "開啟<link>預約</link>，選擇該筆預約，然後輕觸「改期」或「取消」。每家店家都有各自的取消期限——在您確認之前，會清楚顯示適用的規定，包括任何費用或退款。"
+    },
+    "refund": {
+      "q": "我什麼時候會收到退款？",
+      "a": "取消一經確認，款項就會退回您付款時使用的卡片。視銀行而定，通常需要 5–10 個工作天才會入帳。訂金是否可退取決於店家的政策，預約時即會顯示。"
+    },
+    "contactPro": {
+      "q": "如何聯絡專業人士？",
+      "a": "在對方的頁面或您的預約中使用「傳訊息」。您的對話都在<link>訊息</link>中。關於服務本身的問題——路線、準備事項、需要帶什麼——由店家回答最快。"
+    },
+    "report": {
+      "q": "我和店家之間出了問題，該怎麼辦？",
+      "a": "請在下方提出申請並選擇「檢舉店家」。如有相關預約，請一併連結。我們會閱讀每一則檢舉，可以介入處理退款，必要時也會將店家從 Kept 下架。"
+    },
+    "account": {
+      "q": "如何變更電子郵件或刪除帳戶？",
+      "a": "電子郵件變更需透過客服辦理，以便我們確認是您本人。您可以在<link>隱私權與資料</link>中自行下載資料或刪除帳戶。"
+    }
+  },
+  "ticket": {
+    "metaTitle": "客服申請",
+    "allRequests": "所有申請",
+    "opened": "{category} · 建立於<date></date>",
+    "appointmentLine": "{date} {time} · 編號 {reference}",
+    "conversation": "對話",
+    "keptSupport": "Kept 客服",
+    "openImage": "開啟附加圖片",
+    "attachedImage": "附加圖片",
+    "closed": "此申請已結案。如仍需協助，請<link>提出新申請</link>。",
+    "willReply": "我們會在這裡回覆，並在回覆時通知您。",
+    "sorted": "問題解決了嗎？請告訴我們。"
+  },
+  "new": {
+    "title": "聯絡客服",
+    "intro": "告訴我們發生了什麼事，Kept 團隊的真人客服會在這裡回覆您。若是關於服務本身的問題，直接傳訊息給店家通常最快。",
+    "notFound": "我們在您的帳戶中找不到該筆預約，因此沒有附加。您仍可在下方選擇一筆預約。"
+  },
+  "form": {
+    "topic": "您需要哪方面的協助？",
+    "chooseTopic": "選擇主題",
+    "addSubject": "請加上簡短的主旨",
+    "moreDetail": "請再多說一點——就算只有一句話，也能幫助我們更好地協助您",
+    "sent": "申請已送出",
+    "checkFields": "請檢查標示的欄位。",
+    "related": "相關預約",
+    "refHint": "編號 {reference} · {business}",
+    "linkHint": "連結預約後，我們可以立即著手調查。",
+    "none": "無",
+    "appointmentOption": "{date} {time} — {service} · {business}",
+    "subject": "主旨",
+    "subjectPlaceholder": "例如：我的訂金被重複扣款",
+    "details": "詳細說明",
+    "detailsHint": "發生了什麼事、在什麼時候，以及您希望我們如何處理。請勿填寫卡號或密碼。",
+    "images": "圖片",
+    "optional": "選填",
+    "cancel": "取消",
+    "uploadingImages": "正在上傳圖片…",
+    "send": "送出申請"
+  },
+  "reply": {
+    "writeFirst": "請先輸入回覆內容。",
+    "sent": "回覆已送出",
+    "label": "回覆",
+    "reopens": "回覆後，此申請將重新開啟。",
+    "placeholder": "補充更多細節或回答我們的問題…",
+    "send": "送出回覆"
+  },
+  "resolve": {
+    "button": "標示為已解決",
+    "done": "已標示為已解決",
+    "doneBody": "很高興問題已解決。如有其他狀況，您仍可回覆。",
+    "confirmTitle": "要將此申請標示為已解決嗎？",
+    "confirmBody": "讓我們知道問題已解決。如有其他狀況，在這裡回覆，我們會繼續處理。"
+  },
+  "attach": {
+    "tooMany": "最多可附加 {max} 張圖片。",
+    "alt": "客服附件",
+    "label": "附件",
+    "uploadingName": "正在上傳 {name}",
+    "remove": "移除 {name}",
+    "add": "新增圖片",
+    "uploading": "{count, plural, other {正在上傳 # 張圖片…}}",
+    "hint": "螢幕截圖或相片會很有幫助。最多 {max} 張，每張不超過 15 MB。"
+  }
+}
