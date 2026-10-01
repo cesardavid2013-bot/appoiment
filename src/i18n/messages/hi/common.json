@@ -1,0 +1,90 @@
+{
+  "language": "भाषा",
+  "meta": {
+    "title": "Kept — भरोसेमंद स्थानीय प्रोफ़ेशनल्स बुक करें",
+    "description": "बार्बर, स्टाइलिस्ट, ट्रेनर, फ़ोटोग्राफ़र, ट्यूटर और हर तरह के स्थानीय प्रोफ़ेशनल खोजें और बुक करें — और अपनी अपॉइंटमेंट आसानी से संभालें।"
+  },
+  "skipToContent": "सामग्री पर जाएँ",
+  "logoHome": "Kept होम",
+  "header": {
+    "mainNav": "मुख्य",
+    "search": "सेवाएँ या प्रोफ़ेशनल खोजें",
+    "ask": "पूछें",
+    "askKept": "Kept से पूछें",
+    "explore": "खोजें",
+    "myBusiness": "मेरा व्यवसाय",
+    "forPros": "प्रोफ़ेशनल्स के लिए",
+    "bookings": "बुकिंग",
+    "messages": "संदेश",
+    "notifications": "सूचनाएँ",
+    "unread": "अपठित",
+    "accountMenu": "खाता मेन्यू",
+    "logIn": "लॉग इन करें",
+    "signUp": "साइन अप करें"
+  },
+  "accountMenu": {
+    "bookings": "बुकिंग",
+    "saved": "सहेजे गए",
+    "messages": "संदेश",
+    "settings": "खाता सेटिंग",
+    "help": "सहायता और सपोर्ट",
+    "switchToBusiness": "व्यवसाय पर जाएँ",
+    "offerServices": "अपनी सेवाएँ दें",
+    "admin": "एडमिन कंसोल",
+    "signOut": "साइन आउट करें"
+  },
+  "tabs": {
+    "label": "मुख्य",
+    "home": "होम",
+    "explore": "खोजें",
+    "bookings": "बुकिंग",
+    "inbox": "इनबॉक्स",
+    "account": "खाता"
+  },
+  "footer": {
+    "tagline": "भरोसेमंद प्रोफ़ेशनल्स बुक करें। कम मेहनत में अपनी अपॉइंटमेंट संभालें।",
+    "discover": "खोजें",
+    "explore": "ब्राउज़ करें",
+    "hair": "हेयर और बार्बर",
+    "wellness": "वेलनेस",
+    "fitness": "फ़िटनेस",
+    "forPros": "प्रोफ़ेशनल्स के लिए",
+    "howItWorks": "यह कैसे काम करता है",
+    "listServices": "अपनी सेवाएँ जोड़ें",
+    "dashboard": "व्यवसाय डैशबोर्ड",
+    "help": "सहायता",
+    "support": "सपोर्ट",
+    "terms": "शर्तें",
+    "privacy": "निजता",
+    "copyright": "© {year} Kept. सर्वाधिकार सुरक्षित।"
+  },
+  "price": {
+    "free": "मुफ़्त",
+    "quote": "कीमत परामर्श पर",
+    "from": "{price} से"
+  },
+  "rating": {
+    "new": "नया",
+    "summary": "{count, plural, one {# रिव्यू} other {# रिव्यू}} से {avg} रेटिंग"
+  },
+  "appointmentStatus": {
+    "pending_payment": "भुगतान बाकी",
+    "requested": "अनुरोध भेजा गया",
+    "confirmed": "पुष्टि हो गई",
+    "checked_in": "चेक-इन हो गया",
+    "in_progress": "जारी है",
+    "completed": "पूरी हुई",
+    "cancelled": "रद्द",
+    "declined": "अस्वीकार",
+    "no_show": "नहीं आए",
+    "expired": "समाप्त"
+  },
+  "policy": {
+    "freeUntil": "{hours} घंटे पहले तक मुफ़्त रद्दीकरण। इसके बाद रद्द करने पर कुल का {percent}% लिया जाता है।",
+    "cancelAhead": "कृपया अपनी अपॉइंटमेंट से कम से कम {hours} घंटे पहले रद्द करें।",
+    "freeAnyTime": "अपनी अपॉइंटमेंट से पहले कभी भी मुफ़्त रद्दीकरण।",
+    "depositRefundable": "समय पर रद्द करने पर डिपॉज़िट वापस मिलता है।",
+    "depositNonRefundable": "डिपॉज़िट वापस नहीं होता।",
+    "reschedule": "{hours} घंटे पहले तक ऑनलाइन समय बदलें।"
+  }
+}
