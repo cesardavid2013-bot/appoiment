@@ -1,0 +1,90 @@
+{
+  "language": "Sprache",
+  "meta": {
+    "title": "Kept — Vertrauenswürdige Profis in deiner Nähe buchen",
+    "description": "Finde und buche Barbiere, Friseure, Trainer, Fotografen, Nachhilfelehrer und Profis aller Art in deiner Nähe — und verwalte deine eigenen Termine ganz einfach."
+  },
+  "skipToContent": "Zum Inhalt springen",
+  "logoHome": "Kept Startseite",
+  "header": {
+    "mainNav": "Hauptmenü",
+    "search": "Leistungen oder Profis suchen",
+    "ask": "Fragen",
+    "askKept": "Frag Kept",
+    "explore": "Entdecken",
+    "myBusiness": "Mein Business",
+    "forPros": "Für Profis",
+    "bookings": "Buchungen",
+    "messages": "Nachrichten",
+    "notifications": "Benachrichtigungen",
+    "unread": "ungelesen",
+    "accountMenu": "Kontomenü",
+    "logIn": "Anmelden",
+    "signUp": "Registrieren"
+  },
+  "accountMenu": {
+    "bookings": "Buchungen",
+    "saved": "Gemerkt",
+    "messages": "Nachrichten",
+    "settings": "Kontoeinstellungen",
+    "help": "Hilfe & Support",
+    "switchToBusiness": "Zum Business wechseln",
+    "offerServices": "Biete deine Leistungen an",
+    "admin": "Admin-Konsole",
+    "signOut": "Abmelden"
+  },
+  "tabs": {
+    "label": "Hauptnavigation",
+    "home": "Start",
+    "explore": "Entdecken",
+    "bookings": "Buchungen",
+    "inbox": "Postfach",
+    "account": "Konto"
+  },
+  "footer": {
+    "tagline": "Vertrauenswürdige Profis buchen. Termine mit weniger Aufwand verwalten.",
+    "discover": "Entdecken",
+    "explore": "Entdecken",
+    "hair": "Friseure & Barbiere",
+    "wellness": "Wellness",
+    "fitness": "Fitness",
+    "forPros": "Für Profis",
+    "howItWorks": "So funktioniert's",
+    "listServices": "Leistungen anbieten",
+    "dashboard": "Business-Dashboard",
+    "help": "Hilfe",
+    "support": "Support",
+    "terms": "AGB",
+    "privacy": "Datenschutz",
+    "copyright": "© {year} Kept. Alle Rechte vorbehalten."
+  },
+  "price": {
+    "free": "Kostenlos",
+    "quote": "Preis nach Beratung",
+    "from": "Ab {price}"
+  },
+  "rating": {
+    "new": "Neu",
+    "summary": "mit {avg} bewertet ({count, plural, one {# Bewertung} other {# Bewertungen}})"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Zahlung ausstehend",
+    "requested": "Anfrage gesendet",
+    "confirmed": "Bestätigt",
+    "checked_in": "Eingecheckt",
+    "in_progress": "Läuft",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "declined": "Abgelehnt",
+    "no_show": "Nicht erschienen",
+    "expired": "Abgelaufen"
+  },
+  "policy": {
+    "freeUntil": "Kostenlose Stornierung bis {hours} Std. vorher. Spätere Stornierungen kosten {percent} % des Gesamtbetrags.",
+    "cancelAhead": "Bitte storniere mindestens {hours} Std. vor deinem Termin.",
+    "freeAnyTime": "Kostenlose Stornierung jederzeit vor deinem Termin.",
+    "depositRefundable": "Anzahlungen werden erstattet, wenn du rechtzeitig stornierst.",
+    "depositNonRefundable": "Anzahlungen werden nicht erstattet.",
+    "reschedule": "Online umbuchen bis {hours} Std. vorher."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Barbier"
+  },
+  "hair": {
+    "name": "Friseure & Barbiere",
+    "description": "Haarschnitte, Farbe, Styling, Zöpfe und Bartpflege."
+  },
+  "lashes-brows": {
+    "name": "Wimpern & Augenbrauen"
+  },
+  "massage": {
+    "name": "Massage"
+  },
+  "personal-training": {
+    "name": "Personal Training"
+  },
+  "hair-salon": {
+    "name": "Friseursalon"
+  },
+  "makeup": {
+    "name": "Make-up"
+  },
+  "nails": {
+    "name": "Nägel",
+    "description": "Maniküre, Pediküre, Verlängerungen und Nail-Art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga & Pilates"
+  },
+  "beauty": {
+    "name": "Beauty",
+    "description": "Wimpern, Augenbrauen, Make-up und Hautpflege."
+  },
+  "braids-locs": {
+    "name": "Braids & Locs"
+  },
+  "skincare": {
+    "name": "Kosmetik & Hautpflege"
+  },
+  "wellness": {
+    "name": "Wellness",
+    "description": "Massage, Spa und Körperbehandlungen."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Personal Training, Yoga, Pilates und Coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tattoo & Piercing",
+    "description": "Individuelle Tattoos, Flash-Motive und Piercings."
+  },
+  "photography": {
+    "name": "Foto & Video",
+    "description": "Porträts, Events, Produkte und Video."
+  },
+  "education": {
+    "name": "Unterricht & Nachhilfe",
+    "description": "Nachhilfe, Musikunterricht und Sprachkurse."
+  },
+  "home-services": {
+    "name": "Rund ums Haus",
+    "description": "Reinigung, Reparaturen und Handwerker."
+  },
+  "automotive": {
+    "name": "Auto",
+    "description": "Fahrzeugaufbereitung, Autowäsche und mobile Mechaniker."
+  },
+  "pets": {
+    "name": "Haustiere",
+    "description": "Pflege, Betreuung und Training."
+  },
+  "events": {
+    "name": "Events",
+    "description": "DJs, Planer und Event-Profis."
+  },
+  "professional": {
+    "name": "Beratung & Dienstleistungen",
+    "description": "Berater, Coaches und Experten."
+  },
+  "other": {
+    "name": "Sonstiges",
+    "description": "Alles andere, was du buchen kannst."
+  }
+}

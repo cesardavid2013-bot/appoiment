@@ -1,0 +1,311 @@
+{
+  "loading": "Wird geladen…",
+  "noEmail": "Keine E-Mail-Adresse hinterlegt",
+  "saveChanges": "Änderungen speichern",
+  "cancel": "Abbrechen",
+  "checkFields": "Bitte prüfe die markierten Felder.",
+  "nav": {
+    "label": "Kontoeinstellungen",
+    "account": "Konto"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profil",
+      "description": "Name, Foto, Telefon und Zeitzone"
+    },
+    "security": {
+      "label": "Anmeldung & Sicherheit",
+      "description": "Passwort, E-Mail-Bestätigung und Geräte"
+    },
+    "notifications": {
+      "label": "Benachrichtigungen",
+      "description": "Wähle, worüber wir dich per E-Mail oder SMS informieren"
+    },
+    "addresses": {
+      "label": "Gespeicherte Adressen",
+      "description": "Für Profis, die zu dir kommen"
+    },
+    "privacy": {
+      "label": "Datenschutz & Daten",
+      "description": "Lade deine Daten herunter oder lösche dein Konto"
+    }
+  },
+  "home": {
+    "memberSince": "Mitglied seit {date}",
+    "confirmEmail": "<b>Bestätige deine E-Mail-Adresse.</b> Wir haben einen Link an {email} geschickt, damit Unternehmen dich zu deinen Buchungen erreichen können.",
+    "activity": "Deine Aktivität",
+    "settings": "Einstellungen",
+    "more": "Mehr",
+    "signOut": "Abmelden",
+    "rows": {
+      "bookings": {
+        "label": "Buchungen",
+        "description": "Anstehende und vergangene Termine"
+      },
+      "saved": {
+        "label": "Gemerkt",
+        "description": "Profis, die du dir gemerkt hast"
+      },
+      "messages": {
+        "label": "Nachrichten",
+        "description": "Unterhaltungen mit Unternehmen"
+      },
+      "notifications": {
+        "label": "Benachrichtigungen",
+        "description": "Neuigkeiten zu deinen Buchungen"
+      },
+      "business": {
+        "label": "Zu deinem Business wechseln",
+        "description": "Kalender, Leistungen und Kunden"
+      },
+      "offer": {
+        "label": "Biete deine Leistungen auf Kept an",
+        "description": "Nimm Buchungen an und lass dein Business wachsen — kostenlos starten"
+      },
+      "support": {
+        "label": "Hilfe & Support",
+        "description": "Hilfe bei einer Buchung, einer Zahlung oder deinem Konto"
+      },
+      "legal": {
+        "label": "AGB & Datenschutz",
+        "description": "Wie Kept funktioniert und wie wir mit deinen Daten umgehen"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Bestätigungs-E-Mail gesendet",
+    "sentBody": "Sieh in {email} nach — der Link ist 3 Tage gültig.",
+    "sent": "E-Mail gesendet",
+    "resend": "Link erneut senden"
+  },
+  "profile": {
+    "description": "So sehen dich die Profis, bei denen du buchst.",
+    "saved": "Profil gespeichert",
+    "details": "Persönliche Angaben",
+    "name": "Name",
+    "email": "E-Mail",
+    "changeEmail": "Um deine Anmelde-E-Mail zu ändern, <link>kontaktiere den Support</link>, damit wir bestätigen können, dass du es bist.",
+    "phone": "Telefon",
+    "phoneHintSms": "Unternehmen, bei denen du buchst, können dich wegen deiner Termine anrufen, und wir können dir Erinnerungen per SMS schicken, wenn du sie aktivierst.",
+    "phoneHint": "Unternehmen, bei denen du buchst, können dich darüber wegen eines Termins erreichen.",
+    "photo": {
+      "title": "Foto",
+      "description": "Wird Profis, bei denen du buchst, neben deinem Namen angezeigt.",
+      "updated": "Foto aktualisiert",
+      "removed": "Foto entfernt",
+      "change": "Foto ändern",
+      "upload": "Foto hochladen",
+      "remove": "Entfernen",
+      "hint": "JPG, PNG oder WebP, bis zu 15 MB. Wir entfernen Standortdaten aus Fotos."
+    },
+    "timezone": {
+      "label": "Zeitzone",
+      "hint": "Deine Heimatzeitzone. Terminzeiten werden immer in der Ortszeit des Unternehmens angezeigt.",
+      "notSet": "Nicht festgelegt",
+      "detect": "Automatisch erkennen",
+      "detectFailed": "Wir konnten deine Zeitzone nicht erkennen. Wähle sie aus der Liste."
+    },
+    "language": {
+      "title": "Sprache",
+      "description": "Gilt für Menüs, Schaltflächen und Datumsangaben in Kept. Namen von Unternehmen, Leistungen und Bewertungen erscheinen so, wie sie verfasst wurden."
+    }
+  },
+  "security": {
+    "description": "Halte dein Konto sicher und in deinen Händen.",
+    "password": {
+      "title": "Passwort",
+      "setTitle": "Passwort festlegen",
+      "description": "Wenn du dein Passwort änderst, wirst du auf allen anderen Geräten abgemeldet.",
+      "setDescription": "Du meldest dich mit Google an. Lege ein Passwort fest, um dich auch mit deiner E-Mail-Adresse anzumelden.",
+      "change": "Passwort ändern",
+      "setButton": "Passwort festlegen",
+      "current": "Aktuelles Passwort",
+      "new": "Neues Passwort",
+      "newHint": "Mindestens 8 Zeichen. Vermeide gängige Wörter und deine E-Mail-Adresse.",
+      "confirm": "Neues Passwort bestätigen",
+      "tooShort": "Verwende mindestens 8 Zeichen.",
+      "mismatch": "Die Passwörter stimmen nicht überein.",
+      "changed": "Passwort geändert",
+      "set": "Passwort festgelegt",
+      "othersSignedOut": "Alle anderen Geräte wurden abgemeldet."
+    },
+    "email": {
+      "title": "E-Mail",
+      "description": "Wir nutzen deine E-Mail-Adresse für die Anmeldung und für Buchungsbestätigungen.",
+      "confirmed": "Bestätigt",
+      "notConfirmed": "Noch nicht bestätigt",
+      "none": "Für dieses Konto ist keine E-Mail-Adresse hinterlegt."
+    },
+    "devices": {
+      "title": "Geräte",
+      "description": "Wenn du auf einem geteilten oder verlorenen Gerät angemeldet bist, melde es hier ab. Dieses Gerät bleibt angemeldet.",
+      "status": "{count, plural, =0 {Nur dieses Gerät ist angemeldet} one {Auf # weiteren Gerät angemeldet} other {Auf # weiteren Geräten angemeldet}}",
+      "signOutOthers": "Andere Geräte abmelden",
+      "confirmTitle": "Andere Geräte abmelden?",
+      "confirmBody": "Wer dein Konto auf einem anderen Handy, Tablet oder Computer nutzt, muss sich erneut anmelden.",
+      "confirm": "Abmelden",
+      "signedOutToast": "{count, plural, one {# weiteres Gerät abgemeldet} other {# weitere Geräte abgemeldet}}"
+    }
+  },
+  "notifications": {
+    "description": "Wähle, wie wir dich auf dem Laufenden halten. Wir schicken nie mehr als nötig.",
+    "saved": "Gespeichert",
+    "emailAndText": "Benachrichtigungen per E-Mail und SMS",
+    "emailOnly": "Benachrichtigungen per E-Mail",
+    "inboxNote": "Alles erscheint außerdem in deinen Benachrichtigungen auf Kept, egal was du hier wählst.",
+    "addPhone": "Füge in deinem <link>Profil</link> eine Telefonnummer hinzu, um SMS zu erhalten.",
+    "email": "E-Mail",
+    "sms": "SMS",
+    "forTopic": "für {topic}",
+    "alwaysOn": {
+      "bookings": "E-Mail ist immer aktiv, damit wir dich erreichen, wenn sich eine Buchung ändert.",
+      "business": "E-Mail ist immer aktiv, damit du keine neue Buchung oder Anfrage verpasst."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Buchungs-Updates",
+        "description": "Bestätigungen, Änderungen und Stornierungen."
+      },
+      "reminders": {
+        "label": "Erinnerungen",
+        "description": "Vor anstehenden Terminen."
+      },
+      "messages": {
+        "label": "Nachrichten",
+        "description": "Wenn dir ein Unternehmen oder Kunde schreibt."
+      },
+      "waitlist": {
+        "label": "Freie Plätze auf der Warteliste",
+        "description": "Wenn eine gewünschte Zeit frei wird."
+      },
+      "reviews": {
+        "label": "Bewertungsanfragen",
+        "description": "Eine kurze Nachricht nach einem abgeschlossenen Termin."
+      },
+      "business": {
+        "label": "Business-Aktivität",
+        "description": "Neue Buchungen, Anfragen und Bewertungen für dein Business."
+      },
+      "marketing": {
+        "label": "Neuigkeiten & Angebote",
+        "description": "Gelegentliche Updates von Unternehmen, bei denen du gebucht hast."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Für mobile Profis, die zu dir kommen — Barbiere, Fahrzeugaufbereiter, Trainer und mehr.",
+    "defaultLabel": "Zuhause",
+    "saved": "Adresse gespeichert",
+    "removed": "Adresse entfernt",
+    "emptyTitle": "Keine gespeicherten Adressen",
+    "emptyBody": "Hab die Orte, an denen du mobile Leistungen buchst — etwa zu Hause oder im Büro —, gesammelt an einem Ort griffbereit.",
+    "add": "Adresse hinzufügen",
+    "removeLabel": "{label} entfernen",
+    "count": "{count} von {max} gespeichert",
+    "limit": "Du hast das Limit erreicht. Entferne eine Adresse, um eine neue hinzuzufügen.",
+    "dialogBody": "Nur für dich sichtbar. Profis sehen eine Adresse erst, wenn du dort eine Leistung buchst.",
+    "save": "Adresse speichern",
+    "fields": {
+      "name": "Name",
+      "nameHint": "Zum Beispiel Zuhause, Arbeit oder Fitnessstudio.",
+      "line1": "Straße und Hausnummer",
+      "line2": "Wohnung, Etage oder Zusatz",
+      "city": "Stadt",
+      "region": "Bundesland / Region",
+      "postalCode": "Postleitzahl",
+      "country": "Land"
+    },
+    "removeTitle": "„{label}“ entfernen?",
+    "removeBody": "Buchungen, die du bereits an dieser Adresse gemacht hast, sind davon nicht betroffen.",
+    "remove": "Adresse entfernen"
+  },
+  "privacy": {
+    "description": "Deine Daten gehören dir. Wie wir sie verwenden, erfährst du in unserer <link>Datenschutzerklärung</link>.",
+    "export": {
+      "title": "Deine Daten herunterladen",
+      "description": "Erhalte eine Kopie deines Profils, deiner gespeicherten Adressen, Termine, Bewertungen, Nachrichten, gemerkten Profis und Supportanfragen als JSON-Datei.",
+      "button": "Meine Daten herunterladen",
+      "hint": "Sofort bereit. Bewahre die Datei sicher auf — sie enthält persönliche Informationen."
+    },
+    "delete": {
+      "title": "Konto löschen",
+      "intro": "Damit wird dein Kept-Konto dauerhaft geschlossen. Das passiert:",
+      "erased": "Dein Name, deine E-Mail-Adresse, Telefonnummer, dein Foto, deine gespeicherten Adressen und gemerkten Profis werden gelöscht, und du wirst überall abgemeldet.",
+      "upcoming": "{count, plural, one {Dein anstehender Termin wird gemäß den Stornobedingungen des jeweiligen Unternehmens storniert, einschließlich einer dort vorgesehenen Erstattung.} other {Deine # anstehenden Termine werden gemäß den Stornobedingungen des jeweiligen Unternehmens storniert, einschließlich einer dort vorgesehenen Erstattung.}}",
+      "upcomingNone": "Anstehende Termine werden gemäß den Stornobedingungen des jeweiligen Unternehmens storniert.",
+      "records": "Daten, auf die Unternehmen und steuerliche Vorschriften angewiesen sind — vergangene Termine, Zahlungen und Bewertungen —, bleiben erhalten, werden aber als von „Gelöschter Nutzer“ angezeigt.",
+      "permanent": "Das kann nicht rückgängig gemacht werden. Du kannst dich später mit derselben E-Mail-Adresse neu registrieren und ganz von vorn beginnen.",
+      "blocked": "Du bist Inhaber von {businesses}. Schließe das Unternehmen oder übertrage es in deinen <link>Business-Einstellungen</link> an jemand anderen, bevor du dein Konto löschst, damit seine Kunden nicht ohne Ansprechpartner dastehen.",
+      "copyFirst": "Lieber zuerst eine Kopie? Lade deine Daten oben herunter.",
+      "open": "Konto löschen…",
+      "confirmTitle": "Dein Konto löschen?",
+      "confirmBody": "Das kann nicht rückgängig gemacht werden.",
+      "keep": "Konto behalten",
+      "confirm": "Mein Konto löschen",
+      "willCancel": "{count, plural, one {# anstehender Termin wird storniert.} other {# anstehende Termine werden storniert.}}",
+      "password": "Dein Passwort",
+      "typeToConfirm": "Gib zur Bestätigung <word>{word}</word> ein",
+      "deletedToast": "Dein Konto wurde gelöscht",
+      "deletedBody": "Danke, dass du Kept genutzt hast."
+    }
+  },
+  "saved": {
+    "title": "Gemerkt",
+    "description": "{count, plural, one {# gemerkter Profi.} other {# gemerkte Profis.}} Die freien Termine unten kommen live aus ihren Kalendern.",
+    "emptyTitle": "Noch nichts gemerkt",
+    "emptyBody": "Tippe bei einem Profi auf das Herz, um ihn hier zu speichern — praktisch, um deine Stammprofis erneut zu buchen oder ein paar zu vergleichen, bevor du dich entscheidest.",
+    "explore": "Profis entdecken",
+    "loading": "Gemerkte Profis werden geladen…"
+  },
+  "notificationList": {
+    "title": "Benachrichtigungen",
+    "today": "Heute",
+    "earlier": "Früher",
+    "emptyTitle": "Noch keine Benachrichtigungen",
+    "emptyBody": "Buchungsbestätigungen, Erinnerungen, Antworten und frei gewordene Plätze von der Warteliste erscheinen hier.",
+    "unread": "{count} ungelesen",
+    "caughtUp": "Du bist auf dem neuesten Stand",
+    "allCaughtUpToast": "Alles gelesen",
+    "markAll": "Alle als gelesen markieren",
+    "unreadItem": "Ungelesen",
+    "loadOlder": "Ältere laden",
+    "end": "Das ist alles."
+  },
+  "invite": {
+    "eyebrow": "Team-Einladung",
+    "invalidTitle": "Diese Einladung kann nicht verwendet werden",
+    "invalidBody": "Sie ist möglicherweise abgelaufen, wurde zurückgezogen oder bereits angenommen. Bitte die Person, die dich eingeladen hat, dir einen neuen Link zu schicken.",
+    "goHome": "Zu Kept",
+    "join": "{business} beitreten",
+    "invitedAs": "Du wurdest als <b>{role}</b> eingeladen.",
+    "signInWith": "Melde dich mit <b>{email}</b> an oder erstelle ein Konto, um die Einladung anzunehmen.",
+    "createAccount": "Konto erstellen",
+    "signIn": "Anmelden",
+    "wrongAccount": "Du bist als <b>{email}</b> angemeldet, aber diese Einladung wurde an {invited} gesendet.",
+    "wrongAccountHint": "Melde dich ab und mit dieser Adresse wieder an, oder bitte um eine Einladung an {email}.",
+    "acceptingAs": "Du nimmst als <b>{email}</b> an.",
+    "accept": "Annehmen und meinen Plan öffnen",
+    "roles": {
+      "owner": {
+        "label": "Inhaber",
+        "description": "Volle Kontrolle, inklusive Abrechnung und Team."
+      },
+      "manager": {
+        "label": "Manager",
+        "description": "Kümmert sich um das Tagesgeschäft. Kann Team und Business-Einstellungen nicht ändern."
+      },
+      "receptionist": {
+        "label": "Empfang",
+        "description": "Bucht und verwaltet Termine für alle."
+      },
+      "provider": {
+        "label": "Profi",
+        "description": "Sieht und verwaltet die eigenen Termine und den eigenen Plan."
+      },
+      "custom": {
+        "label": "Individuell",
+        "description": "Lege genau fest, was diese Person tun darf."
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Willkommen zurück, {name}",
+    "eyebrow": "Der Termin, gehalten",
+    "title": "Buche die Menschen, die deine Woche <em>besser</em> machen.",
+    "lead": "Barbiere, Friseure, Trainer, Nachhilfelehrer, Fotografen und mehr — mit echten freien Terminen, klaren Preisen und Bewertungen nur von verifizierten Besuchen.",
+    "points": {
+      "verified": "Nur verifizierte Bewertungen",
+      "prices": "Preise vor der Buchung",
+      "instant": "Sofortige Bestätigung"
+    }
+  },
+  "search": {
+    "placeholder": "Haarschnitt, Massage, Fotograf…",
+    "label": "Was möchtest du buchen?",
+    "category": "Kategorie",
+    "submit": "Suchen",
+    "sayIt": "Oder sag es einfach —",
+    "sayItExample": "„ein Barbier morgen nach 17 Uhr“"
+  },
+  "openings": {
+    "title": "Bald frei",
+    "live": "Live aus den Kalendern",
+    "appointment": "Termin"
+  },
+  "index": {
+    "eyebrow": "Der Index",
+    "title": "Termine jeder Art",
+    "exploreAll": "Alle entdecken",
+    "pros": "{count, plural, one {# Profi} other {# Profis}}"
+  },
+  "next": {
+    "title": "Dein nächster Termin",
+    "details": "Details"
+  },
+  "again": {
+    "title": "Erneut buchen",
+    "rebook": "Erneut buchen"
+  },
+  "rails": {
+    "availableSoon": "Bald verfügbar",
+    "availableSoonNear": "Bald verfügbar in der Nähe von {place}",
+    "availableSoonNearYou": "Bald verfügbar in deiner Nähe",
+    "availableSoonSub": "Freie Termine live aus dem Kalender der Profis.",
+    "recent": "Zuletzt angesehen",
+    "topRated": "Top bewertet",
+    "topRatedSub": "Bewertungen stammen nur von abgeschlossenen, verifizierten Buchungen.",
+    "newcomers": "Neu auf Kept"
+  },
+  "how": {
+    "eyebrow": "So funktioniert's",
+    "title": "Drei Schritte, kein Hin und Her am Telefon",
+    "find": {
+      "title": "Finde die richtige Person",
+      "body": "Suche nach dem, was du brauchst, wann und wo — oder frag einfach in deinen eigenen Worten. Jedes Profil zeigt echte Preise und verifizierte Bewertungen."
+    },
+    "choose": {
+      "title": "Wähle eine echte Zeit",
+      "body": "Die Zeiten, die du siehst, sind gerade wirklich frei im Kalender. Wähle eine aus, füge Optionen hinzu und bestätige."
+    },
+    "kept": {
+      "title": "Abgemacht",
+      "body": "Du erhältst eine Bestätigung, Erinnerungen vor dem Termin und einen Ort, um umzubuchen, zu schreiben oder erneut zu buchen."
+    }
+  },
+  "pros": {
+    "eyebrow": "Für Profis",
+    "title": "Dein Handwerk verdient einen <em>besseren</em> Empfang.",
+    "body": "Online-Buchung, ein Kalender ohne Doppelbuchungen, Erinnerungen gegen Nichterscheinen und eine Seite, die deine Arbeit so zeigt, wie sie es verdient. Kostenlos während der Startphase.",
+    "cta": "Biete deine Leistungen an",
+    "howItWorks": "So funktioniert's",
+    "features": {
+      "any": {
+        "title": "Jede Leistung",
+        "body": "Optionen passen Preis und Dauer automatisch an."
+      },
+      "noDouble": {
+        "title": "Nie doppelt gebucht",
+        "body": "Jede Zeit wird im Moment der Buchung geprüft."
+      },
+      "noShows": {
+        "title": "Weniger Ausfälle",
+        "body": "Erinnerungen, Anzahlungen und klare Regeln."
+      },
+      "discovered": {
+        "title": "Werde entdeckt",
+        "body": "Portfolio, verifizierte Bewertungen und Spotlight."
+      }
+    }
+  }
+}

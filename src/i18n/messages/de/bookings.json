@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "Zahlung ausstehend",
+    "requested": "Anfrage gesendet",
+    "confirmed": "Bestätigt",
+    "checked_in": "Eingecheckt",
+    "in_progress": "Läuft",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "declined": "Abgelehnt",
+    "no_show": "Nicht erschienen",
+    "expired": "Abgelaufen"
+  },
+  "list": {
+    "title": "Buchungen",
+    "filters": "Buchungsfilter",
+    "tabs": {
+      "upcoming": "Anstehend",
+      "past": "Vergangen",
+      "cancelled": "Storniert"
+    },
+    "howDidItGo": "Wie war's?",
+    "review": "Bewerten",
+    "empty": {
+      "upcoming": "Keine anstehenden Termine",
+      "past": "Noch keine vergangenen Termine",
+      "cancelled": "Nichts storniert",
+      "upcomingBody": "Sobald du buchst, erscheinen deine Termine hier — mit Wegbeschreibung, Erinnerungen und einfachem Umbuchen.",
+      "findPro": "Profi finden"
+    }
+  },
+  "detail": {
+    "metaTitle": "Termin",
+    "allBookings": "Alle Buchungen",
+    "hero": {
+      "confirmedTitle": "Du bist gebucht",
+      "confirmedBody": "Wir haben dir eine Bestätigung geschickt und erinnern dich vor deinem Termin.",
+      "requestedTitle": "Anfrage gesendet",
+      "requestedBody": "{business} prüft deine Anfrage. Wir melden uns, sobald eine Antwort da ist — deine Zeit bleibt so lange reserviert.",
+      "paymentTitle": "Deine Zahlung wird abgeschlossen",
+      "paymentBody": "Wenn du gerade bezahlt hast, aktualisiert sich das in wenigen Sekunden automatisch. Deine Zeit bleibt reserviert, bis die Zahlung abgeschlossen ist."
+    },
+    "calendarDetails": "Buchungsnummer {reference}",
+    "ref": "Nr.",
+    "when": "Wann",
+    "with": "Bei",
+    "where": "Wo",
+    "atYourAddress": "An deiner Adresse",
+    "online": "Online",
+    "virtualLink": "Das Unternehmen schickt dir den Link vor deiner Sitzung.",
+    "yourReview": "Deine Bewertung",
+    "payment": {
+      "title": "Zahlung",
+      "serviceFee": "Servicegebühr",
+      "tax": "Steuern",
+      "estimatedTotal": "Voraussichtlicher Gesamtbetrag",
+      "total": "Gesamt",
+      "paid": "Bezahlt",
+      "refunded": "Erstattet",
+      "balance": "Restbetrag",
+      "dueAtAppointment": "Zahlbar beim Termin",
+      "tip": "Trinkgeld"
+    },
+    "policy": {
+      "title": "Stornobedingungen",
+      "freeUntil": "Kostenlose Stornierung bis {hours, plural, one {# Stunde} other {# Stunden}} vorher.",
+      "freeAnytime": "Kostenlose Stornierung jederzeit vor dem Termin.",
+      "lateFee": "Spätere Stornierungen: {percent} % des Gesamtbetrags.",
+      "depositNonRefundable": "Anzahlungen werden nicht erstattet.",
+      "cannotCancel": "Dieser Termin kann nicht mehr storniert werden.",
+      "alreadyStarted": "Dieser Termin hat bereits begonnen.",
+      "cannotReschedule": "Dieser Termin kann nicht umgebucht werden.",
+      "maxReschedules": "Dieser Termin wurde bereits so oft wie möglich umgebucht. Bitte wende dich an das Unternehmen.",
+      "rescheduleWindow": "Änderungen sind bis spätestens {hours, plural, one {# Stunde} other {# Stunden}} vor dem Termin möglich. Bitte wende dich an das Unternehmen."
+    },
+    "refund": {
+      "noCharge": "Keine Kosten.",
+      "full": "Du erhältst eine volle Erstattung.",
+      "none": "Gemäß den Bedingungen dieses Unternehmens wird deine Zahlung nicht erstattet.",
+      "partial": "Gemäß den Bedingungen dieses Unternehmens erhältst du eine Teilerstattung."
+    },
+    "note": "Hinweis: {reason}",
+    "problem": "Problem mit dieser Buchung? <link>Support kontaktieren</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} um {time}",
+    "cancelledToast": "Termin storniert",
+    "refundOnWay": "Eine Erstattung von {amount} ist unterwegs.",
+    "rescheduledToast": "Umgebucht",
+    "payToConfirm": "{amount} zahlen und bestätigen",
+    "addToCalendar": "Zum Kalender hinzufügen",
+    "directions": "Route",
+    "message": "Nachricht",
+    "bookAgain": "Erneut buchen",
+    "googleCalendar": "Google Kalender",
+    "leaveReview": "Bewertung schreiben",
+    "reschedule": "Umbuchen",
+    "cancelAppointment": "Termin stornieren",
+    "cancelTitle": "Diesen Termin stornieren?",
+    "insideWindow": "Du befindest dich innerhalb der Stornofrist des Unternehmens.",
+    "refundAmount": "Erstattung: {amount}.",
+    "keptAmount": "Vom Unternehmen einbehalten: {amount}.",
+    "reason": "Grund",
+    "reasonHint": "Wird dem Unternehmen mitgeteilt.",
+    "chooseNewTime": "Neue Zeit wählen",
+    "currently": "Aktuell: {when}",
+    "keepCurrentTime": "Aktuelle Zeit behalten",
+    "moveTo": "Auf {time} verschieben",
+    "chooseTime": "Zeit wählen"
+  },
+  "review": {
+    "ratings": {
+      "1": "Schlecht",
+      "2": "Mäßig",
+      "3": "Gut",
+      "4": "Sehr gut",
+      "5": "Hervorragend"
+    },
+    "thanks": "Danke für deine Bewertung",
+    "title": "Wie war es bei {business}?",
+    "subtitle": "Deine Bewertung ist öffentlich und als verifizierte Buchung gekennzeichnet.",
+    "rating": "Bewertung",
+    "stars": "{n, plural, one {# Stern} other {# Sterne}}",
+    "bodyLabel": "Erzähl anderen von deinem Besuch",
+    "bodyPlaceholder": "Was ist dir besonders aufgefallen? Würdest du es weiterempfehlen?",
+    "post": "Bewertung veröffentlichen"
+  },
+  "slotPicker": {
+    "previousWeek": "Vorherige Woche",
+    "nextWeek": "Nächste Woche",
+    "noOpenings": "An diesem Tag keine freien Termine.",
+    "selected": "Ausgewählt: {time}"
+  }
+}

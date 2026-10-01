@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Du:",
+  "unread": "Ungelesen",
+  "apptLine": "{service} · {date} um {time}",
+  "list": {
+    "title": "Nachrichten",
+    "unread": "{count, plural, one {# ungelesene Unterhaltung.} other {# ungelesene Unterhaltungen.}}",
+    "caughtUp": "Du bist auf dem neuesten Stand.",
+    "emptyTitle": "Noch keine Nachrichten",
+    "emptyBody": "Fragen zu einer Leistung, einem Preis oder einer Uhrzeit? Öffne die Seite eines Profis und tippe auf „Frage stellen“. Die Antworten landen hier.",
+    "findPro": "Profi finden"
+  },
+  "thread": {
+    "metaTitle": "Unterhaltung",
+    "placeholder": "Nachricht an {business}"
+  },
+  "new": {
+    "metaTitle": "Neue Nachricht",
+    "ownTitle": "Das ist dein Business",
+    "ownBody": "Kundennachrichten an {business} kommen in deinem Business-Postfach an.",
+    "ownButton": "Business-Postfach öffnen",
+    "placeholderBooking": "Frage zu dieser Buchung",
+    "placeholderQuestion": "Stell eine Frage",
+    "emptyBookingTitle": "Schreib {business} zu deiner Buchung",
+    "emptyQuestionTitle": "Frag {business}, bevor du buchst",
+    "emptyBookingBody": "Du verspätest dich, musst etwas ändern oder hast eine Frage? Deine Nachricht geht direkt an das Team.",
+    "emptyQuestionBody": "Preise, Zeiten, was du mitbringen solltest — {business} antwortet hier, und wir sagen dir Bescheid. Deine Telefonnummer und E-Mail-Adresse bleiben privat."
+  },
+  "shell": {
+    "allMessages": "Alle Nachrichten",
+    "viewProfile": "Profil ansehen",
+    "book": "Buchen"
+  },
+  "pro": {
+    "backToInbox": "Zurück zum Postfach"
+  },
+  "view": {
+    "label": "Nachrichten",
+    "you": "Du",
+    "loadingEarlier": "Frühere Nachrichten werden geladen",
+    "showEarlier": "Frühere Nachrichten anzeigen",
+    "seen": "Gesehen",
+    "sending": "Wird gesendet…",
+    "notSent": "Nicht gesendet.",
+    "retry": "Erneut versuchen",
+    "discard": "Verwerfen",
+    "newMessages": "{count, plural, one {# neue Nachricht} other {# neue Nachrichten}}",
+    "openPhoto": "Foto in neuem Tab öffnen",
+    "photo": "Foto"
+  },
+  "composer": {
+    "about": "Zu {appointment}",
+    "unlink": "Diesen Termin nicht verknüpfen",
+    "processingPhoto": "Foto wird verarbeitet",
+    "removePhoto": "Foto entfernen",
+    "attachPhoto": "Foto anhängen",
+    "label": "Nachricht",
+    "send": "Nachricht senden",
+    "hint": "Enter zum Senden, Umschalt + Enter für eine neue Zeile."
+  },
+  "inbox": {
+    "title": "Postfach",
+    "conversations": "Unterhaltungen",
+    "unread": "{count} ungelesen",
+    "allCaughtUp": "Alles gelesen",
+    "searchLabel": "Unterhaltungen nach Kundenname durchsuchen",
+    "searchPlaceholder": "Kunden suchen",
+    "clearSearch": "Suche löschen",
+    "show": "Anzeigen",
+    "all": "Alle",
+    "unreadFilter": "Ungelesen",
+    "noClientsNamed": "Keine Kunden namens „{term}“",
+    "nothingUnread": "Nichts ungelesen",
+    "noMessages": "Noch keine Nachrichten",
+    "tryDifferent": "Versuch eine andere Suche oder zeig alle Unterhaltungen an.",
+    "emptyBody": "Wenn Kunden über deine Seite oder zu einer Buchung eine Frage stellen, erscheint sie hier."
+  },
+  "clientPanel": {
+    "client": "Kunde",
+    "visits": "Besuche",
+    "noShows": "Ausfälle",
+    "cancelled": "Storniert",
+    "clientSince": "Kunde seit {date}",
+    "noVisits": "Noch keine abgeschlossenen Besuche",
+    "lastIn": "zuletzt im {date}",
+    "tags": "Tags",
+    "clientProfile": "Kundenprofil",
+    "notBooked": "Hat noch nicht bei dir gebucht — diese Unterhaltung begann auf deiner öffentlichen Seite.",
+    "upcoming": "Anstehend",
+    "nothingBooked": "Nichts gebucht.",
+    "recent": "Zuletzt"
+  }
+}
