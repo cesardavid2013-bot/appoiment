@@ -8,6 +8,7 @@ import {
   appointments,
   businessCustomers,
   businessMembers,
+  conversations,
   customerNotes,
   locations,
   payments,
@@ -195,96 +196,203 @@ export async function proAppointmentDetail(m: Membership, id: string) {
 
 /* ─────────────────────────────── CRM ─────────────────────────────── */
 
+/**
+ * Which client records a member may see. Staff limited to their own
+ * appointments only see clients they have served (or are booked to serve).
+ * Correlated references are written fully qualified on purpose.
+ */
+function visibleClients(m: Membership) {
+  const scope = appointmentScope(m);
+  return and(
+    eq(businessCustomers.businessId, m.businessId),
+    scope.all ? sql`true` : sql`exists (select 1 from appointments a where a.business_customer_id = business_customers.id and a.member_id = ${scope.memberId})`,
+  )!;
+}
+
+/** Throws not_found unless the client exists in this business and is visible to the member. */
+async function assertClientVisible(m: Membership, id: string) {
+  const [c] = await db.select({ id: businessCustomers.id, userId: businessCustomers.userId }).from(businessCustomers).where(and(eq(businessCustomers.id, id), visibleClients(m)));
+  if (!c) throw notFound("That client");
+  return c;
+}
+
+const UPCOMING_SQL = sql.raw(`('requested','confirmed','checked_in','in_progress')`);
+const LAPSED_DAYS = 60;
+
+export const CLIENT_SEGMENTS = {
+  upcoming: "Booked",
+  lapsed: `Not back in ${LAPSED_DAYS}+ days`,
+  new: "New this month",
+  no_shows: "No-shows",
+} as const;
+export type ClientSegment = keyof typeof CLIENT_SEGMENTS;
+
+function segmentSql(m: Membership, segment: ClientSegment) {
+  const scope = appointmentScope(m);
+  const mine = scope.all ? sql`` : sql` and a.member_id = ${scope.memberId}`;
+  const hasUpcoming = sql`exists (select 1 from appointments a where a.business_customer_id = business_customers.id and a.starts_at > now() and a.status in ${UPCOMING_SQL}${mine})`;
+  switch (segment) {
+    case "upcoming":
+      return hasUpcoming;
+    case "lapsed":
+      return sql`(${businessCustomers.lastVisitAt} < now() - make_interval(days => ${LAPSED_DAYS}) and not ${hasUpcoming})`;
+    case "new":
+      // Calendar month in the business's own time zone.
+      return sql`${businessCustomers.createdAt} >= (date_trunc('month', now() at time zone ${m.timezone}) at time zone ${m.timezone})`;
+    case "no_shows":
+      return sql`${businessCustomers.noShowCount} > 0`;
+  }
+}
+
 export const customerQuerySchema = z.object({
   q: z.string().trim().max(100).optional(),
   sort: z.enum(["recent", "name", "visits", "spent"]).default("recent"),
   tag: z.string().trim().max(40).optional(),
+  segment: z.enum(["upcoming", "lapsed", "new", "no_shows"]).optional(),
   page: z.coerce.number().int().min(1).max(500).default(1),
 });
 
+export const CLIENT_PAGE_SIZE = 40;
+
 export async function listCustomers(m: Membership, p: z.infer<typeof customerQuerySchema>) {
   if (!m.permissions.has("customers.view")) throw forbidden();
-  const size = 40;
+  const canSeeSpend = m.permissions.has("payments.view");
+  const scope = appointmentScope(m);
+  const sort = p.sort === "spent" && !canSeeSpend ? "recent" : p.sort;
   const order =
-    p.sort === "name" ? [asc(businessCustomers.name)] : p.sort === "visits" ? [desc(businessCustomers.completedCount)] : p.sort === "spent" ? [desc(businessCustomers.totalSpentCents)] : [sql`${businessCustomers.lastVisitAt} desc nulls last`, desc(businessCustomers.createdAt)];
-  const term = p.q ? `%${p.q.replace(/[%_]/g, "")}%` : null;
-  const rows = await db
-    .select({
-      id: businessCustomers.id,
-      name: businessCustomers.name,
-      email: businessCustomers.email,
-      phone: businessCustomers.phone,
-      tags: businessCustomers.tags,
-      completedCount: businessCustomers.completedCount,
-      noShowCount: businessCustomers.noShowCount,
-      cancelledCount: businessCustomers.cancelledCount,
-      totalSpentCents: businessCustomers.totalSpentCents,
-      lastVisitAt: businessCustomers.lastVisitAt,
-      nextVisit: sql<string | null>`(select min(starts_at) from appointments a where a.business_customer_id = business_customers.id and a.starts_at > now() and a.status in ('confirmed','requested'))`,
-    })
-    .from(businessCustomers)
-    .where(
-      and(
-        eq(businessCustomers.businessId, m.businessId),
-        term ? or(ilike(businessCustomers.name, term), ilike(businessCustomers.email, term), ilike(businessCustomers.phone, term)) : sql`true`,
-        p.tag ? sql`${p.tag} = any(${businessCustomers.tags})` : sql`true`,
-      ),
-    )
-    .orderBy(...order)
-    .limit(size + 1)
-    .offset((p.page - 1) * size);
-  return { customers: rows.slice(0, size), hasMore: rows.length > size };
+    sort === "name"
+      ? [asc(businessCustomers.name), asc(businessCustomers.id)]
+      : sort === "visits"
+        ? [desc(businessCustomers.completedCount), asc(businessCustomers.name), asc(businessCustomers.id)]
+        : sort === "spent"
+          ? [desc(businessCustomers.totalSpentCents), asc(businessCustomers.name), asc(businessCustomers.id)]
+          : [sql`${businessCustomers.lastVisitAt} desc nulls last`, desc(businessCustomers.createdAt), asc(businessCustomers.id)];
+  const term = p.q ? `%${p.q.replace(/[%_\\]/g, "")}%` : null;
+  const where = and(
+    visibleClients(m),
+    term ? or(ilike(businessCustomers.name, term), ilike(businessCustomers.email, term), ilike(businessCustomers.phone, term)) : sql`true`,
+    p.tag ? sql`${p.tag} = any(${businessCustomers.tags})` : sql`true`,
+    p.segment ? segmentSql(m, p.segment) : sql`true`,
+  );
+  const mine = scope.all ? sql`` : sql` and a.member_id = ${scope.memberId}`;
+  const [rows, [{ total }]] = await Promise.all([
+    db
+      .select({
+        id: businessCustomers.id,
+        name: businessCustomers.name,
+        email: businessCustomers.email,
+        phone: businessCustomers.phone,
+        tags: businessCustomers.tags,
+        hasAccount: sql<boolean>`${businessCustomers.userId} is not null`,
+        completedCount: businessCustomers.completedCount,
+        noShowCount: businessCustomers.noShowCount,
+        cancelledCount: businessCustomers.cancelledCount,
+        totalSpentCents: businessCustomers.totalSpentCents,
+        lastVisitAt: businessCustomers.lastVisitAt,
+        createdAt: businessCustomers.createdAt,
+        nextVisit: sql<string | null>`(select min(a.starts_at) from appointments a where a.business_customer_id = business_customers.id and a.starts_at > now() and a.status in ${UPCOMING_SQL}${mine})`,
+      })
+      .from(businessCustomers)
+      .where(where)
+      .orderBy(...order)
+      .limit(CLIENT_PAGE_SIZE + 1)
+      .offset((p.page - 1) * CLIENT_PAGE_SIZE),
+    db.select({ total: sql<number>`count(*)::int` }).from(businessCustomers).where(where),
+  ]);
+  return {
+    customers: rows.slice(0, CLIENT_PAGE_SIZE).map((r) => ({ ...r, totalSpentCents: canSeeSpend ? r.totalSpentCents : null })),
+    hasMore: rows.length > CLIENT_PAGE_SIZE,
+    total,
+    page: p.page,
+    pageSize: CLIENT_PAGE_SIZE,
+    canSeeSpend,
+  };
+}
+
+/** Counts behind the quick filters and the tag filter, over the clients this member can see. */
+export async function customerListMeta(m: Membership) {
+  if (!m.permissions.has("customers.view")) throw forbidden();
+  const base = visibleClients(m);
+  const [[counts], tags] = await Promise.all([
+    db
+      .select({
+        all: sql<number>`count(*)::int`,
+        upcoming: sql<number>`(count(*) filter (where ${segmentSql(m, "upcoming")}))::int`,
+        lapsed: sql<number>`(count(*) filter (where ${segmentSql(m, "lapsed")}))::int`,
+        new: sql<number>`(count(*) filter (where ${segmentSql(m, "new")}))::int`,
+        no_shows: sql<number>`(count(*) filter (where ${segmentSql(m, "no_shows")}))::int`,
+      })
+      .from(businessCustomers)
+      .where(base),
+    db.execute<{ tag: string; count: number }>(
+      sql`select t.tag, count(*)::int as count from business_customers, unnest(business_customers.tags) as t(tag) where ${base} group by t.tag order by count(*) desc, t.tag limit 40`,
+    ),
+  ]);
+  return { counts, tags: [...tags] };
 }
 
 export async function customerDetail(m: Membership, id: string) {
   if (!m.permissions.has("customers.view")) throw forbidden();
-  const [c] = await db.select().from(businessCustomers).where(and(eq(businessCustomers.id, id), eq(businessCustomers.businessId, m.businessId)));
+  const [c] = await db.select().from(businessCustomers).where(and(eq(businessCustomers.id, id), visibleClients(m)));
   if (!c) throw notFound("That customer");
   const scope = appointmentScope(m);
-  const [history, notes] = await Promise.all([
+  const [history, notes, conv] = await Promise.all([
     db
       .select({
         id: appointments.id,
         status: appointments.status,
         startsAt: appointments.startsAt,
         timezone: appointments.timezone,
+        reference: appointments.reference,
         serviceName: sql<string>`${appointments.snapshot}->>'serviceName'`,
         memberName: sql<string | null>`${appointments.snapshot}->>'memberName'`,
         totalCents: appointments.totalCents,
         currency: appointments.currency,
       })
       .from(appointments)
-      .where(and(eq(appointments.businessCustomerId, id), scope.all ? sql`true` : eq(appointments.memberId, scope.memberId)))
+      .where(and(eq(appointments.businessCustomerId, id), eq(appointments.businessId, m.businessId), sql`${appointments.status} <> 'pending_payment'`, scope.all ? sql`true` : eq(appointments.memberId, scope.memberId)))
       .orderBy(desc(appointments.startsAt))
       .limit(100),
     db
       .select({ id: customerNotes.id, body: customerNotes.body, createdAt: customerNotes.createdAt, author: users.name, authorUserId: customerNotes.authorUserId })
       .from(customerNotes)
       .leftJoin(users, eq(users.id, customerNotes.authorUserId))
-      .where(and(eq(customerNotes.businessCustomerId, id), isNull(customerNotes.deletedAt)))
+      .where(and(eq(customerNotes.businessCustomerId, id), eq(customerNotes.businessId, m.businessId), isNull(customerNotes.deletedAt)))
       .orderBy(desc(customerNotes.createdAt))
       .limit(100),
+    c.userId && m.permissions.has("messages.manage")
+      ? db
+          .select({ id: conversations.id })
+          .from(conversations)
+          .where(and(eq(conversations.businessId, m.businessId), eq(conversations.customerUserId, c.userId), sql`${conversations.lastMessagePreview} is not null`))
+      : Promise.resolve([]),
   ]);
-  return { customer: c, history, notes };
+  const canSeeSpend = m.permissions.has("payments.view");
+  return {
+    customer: { ...c, totalSpentCents: canSeeSpend ? c.totalSpentCents : null },
+    history,
+    notes,
+    conversationId: conv[0]?.id ?? null,
+    canSeeSpend,
+  };
 }
 
 export const updateCustomerSchema = z.object({
-  name: z.string().trim().min(1).max(80),
-  email: z.string().trim().toLowerCase().email().max(254).nullable().optional().or(z.literal("").transform(() => null)),
+  name: z.string().trim().min(1, "Add a name").max(80),
+  email: z.string().trim().toLowerCase().email("Enter a valid email").max(254).nullable().optional().or(z.literal("").transform(() => null)),
   phone: z.string().trim().max(40).nullable().optional(),
-  tags: z.array(z.string().trim().min(1).max(30)).max(12).default([]),
+  tags: z.array(z.string().trim().min(1).max(30)).max(12, "Up to 12 tags").default([]),
   preferences: z.string().trim().max(2000).nullable().optional(),
 });
 
 export async function updateCustomer(m: Membership, actorUserId: string, id: string, input: z.infer<typeof updateCustomerSchema>) {
   if (!m.permissions.has("customers.manage")) throw forbidden();
-  const [c] = await db.select({ userId: businessCustomers.userId }).from(businessCustomers).where(and(eq(businessCustomers.id, id), eq(businessCustomers.businessId, m.businessId)));
-  if (!c) throw notFound("That customer");
+  const c = await assertClientVisible(m, id);
   // Contact details of customers with their own account come from their profile.
-  const contact = c.userId ? {} : { name: input.name, email: input.email ?? null, phone: input.phone ?? null };
+  const contact = c.userId ? {} : { name: input.name, email: input.email ?? null, phone: input.phone || null };
   await db
     .update(businessCustomers)
-    .set({ ...contact, tags: [...new Set(input.tags.map((t) => t.toLowerCase()))], preferences: input.preferences ?? null })
+    .set({ ...contact, tags: [...new Set(input.tags.map((t) => t.toLowerCase()))], preferences: input.preferences || null })
     .where(eq(businessCustomers.id, id));
   await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "customer.updated", targetType: "business_customer", targetId: id });
 }
@@ -293,15 +401,15 @@ export async function addCustomerNote(m: Membership, actorUserId: string, custom
   if (!m.permissions.has("customers.manage")) throw forbidden();
   const text = body.trim();
   if (!text || text.length > 2000) throw new AppError("validation", "Notes must be between 1 and 2,000 characters.");
-  const [c] = await db.select({ id: businessCustomers.id }).from(businessCustomers).where(and(eq(businessCustomers.id, customerId), eq(businessCustomers.businessId, m.businessId)));
-  if (!c) throw notFound("That customer");
+  await assertClientVisible(m, customerId);
   const [note] = await db.insert(customerNotes).values({ businessId: m.businessId, businessCustomerId: customerId, authorUserId: actorUserId, body: text }).returning();
   return note;
 }
 
 export async function deleteCustomerNote(m: Membership, actorUserId: string, noteId: string) {
-  const [n] = await db.select().from(customerNotes).where(and(eq(customerNotes.id, noteId), eq(customerNotes.businessId, m.businessId)));
+  const [n] = await db.select().from(customerNotes).where(and(eq(customerNotes.id, noteId), eq(customerNotes.businessId, m.businessId), isNull(customerNotes.deletedAt)));
   if (!n) throw notFound("That note");
+  await assertClientVisible(m, n.businessCustomerId);
   if (n.authorUserId !== actorUserId && !m.permissions.has("customers.manage")) throw forbidden();
   await db.update(customerNotes).set({ deletedAt: new Date() }).where(eq(customerNotes.id, noteId));
 }
@@ -309,11 +417,11 @@ export async function deleteCustomerNote(m: Membership, actorUserId: string, not
 /** Quick customer lookup for the manual booking form. */
 export async function searchCustomers(m: Membership, q: string) {
   if (!m.permissions.has("customers.view") && !m.permissions.has("appointments.manage_all")) throw forbidden();
-  const term = `%${q.replace(/[%_]/g, "")}%`;
+  const term = `%${q.replace(/[%_\\]/g, "")}%`;
   return db
     .select({ id: businessCustomers.id, name: businessCustomers.name, email: businessCustomers.email, phone: businessCustomers.phone, completedCount: businessCustomers.completedCount })
     .from(businessCustomers)
-    .where(and(eq(businessCustomers.businessId, m.businessId), or(ilike(businessCustomers.name, term), ilike(businessCustomers.email, term), ilike(businessCustomers.phone, term))))
+    .where(and(m.permissions.has("appointments.manage_all") ? eq(businessCustomers.businessId, m.businessId) : visibleClients(m), or(ilike(businessCustomers.name, term), ilike(businessCustomers.email, term), ilike(businessCustomers.phone, term))))
     .orderBy(sql`${businessCustomers.lastVisitAt} desc nulls last`)
     .limit(8);
 }
