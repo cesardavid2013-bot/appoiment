@@ -122,7 +122,7 @@ export function BookingGridPanel({ className }: { className?: string }) {
             key={s.t}
             className={cn(
               "flex h-10 items-center justify-center rounded-md border text-sm font-semibold tabular",
-              s.chosen ? "border-ink bg-ink text-bg" : s.taken ? "border-dashed border-line text-ink-3/50 line-through" : "border-line-strong bg-surface text-ink",
+              s.chosen ? "border-ink bg-ink text-bg" : s.taken ? "border-dashed border-line-strong text-ink-3 line-through" : "border-line-strong bg-surface text-ink",
             )}
           >
             {s.t}

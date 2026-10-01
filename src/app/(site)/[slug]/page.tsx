@@ -363,10 +363,10 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                 About
               </h2>
               {b.about && <p className="max-w-2xl whitespace-pre-line text-[15px] leading-relaxed text-ink-2 text-pretty">{b.about}</p>}
-              <dl className="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+              <div className="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2">
                 <div>
-                  <dt className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-3">Hours</dt>
-                  <dd>
+                  <h3 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-3">Hours</h3>
+                  <div>
                     <table className="w-full text-sm">
                       <tbody>
                         {WEEKDAYS.map((d) => {
@@ -384,12 +384,12 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                       </tbody>
                     </table>
                     <p className="mt-2 text-[12px] text-ink-3">Times shown in {b.timezone.replace(/_/g, " ")}.</p>
-                  </dd>
+                  </div>
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <dt className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-3">Policies</dt>
-                    <dd>
+                    <h3 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-3">Policies</h3>
+                    <div>
                       <ul className="space-y-1.5 text-sm leading-relaxed text-ink-2">
                         {b.policies.map((p) => (
                           <li key={p}>{p}</li>
@@ -397,7 +397,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                         {b.noShowFeePercent > 0 && <li>Missed appointments may be charged {b.noShowFeePercent}% of the total.</li>}
                         {b.latePolicy && <li>{b.latePolicy}</li>}
                       </ul>
-                    </dd>
+                    </div>
                   </div>
                   {(b.languages.length > 0 || b.yearsExperience) && (
                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-2">
@@ -411,8 +411,8 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                   )}
                   {b.amenities.length > 0 && (
                     <div>
-                      <dt className="mb-2 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-3">Amenities</dt>
-                      <dd className="text-sm text-ink-2">{b.amenities.join(" · ")}</dd>
+                      <h3 className="mb-2 text-[13px] font-semibold uppercase tracking-[0.06em] text-ink-3">Amenities</h3>
+                      <div className="text-sm text-ink-2">{b.amenities.join(" · ")}</div>
                     </div>
                   )}
                   {(b.website || Object.keys(b.socialLinks).length > 0) && (
@@ -431,7 +431,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                     </div>
                   )}
                 </div>
-              </dl>
+              </div>
 
               {(physical.length > 0 || mobile || virtual) && (
                 <div className="mt-10 grid gap-6 md:grid-cols-2">

@@ -363,7 +363,7 @@ function TimeGrid({
 
   return (
     <div className="relative">
-      <div ref={scroller} className="relative max-h-[calc(100dvh-190px)] overflow-auto overscroll-contain">
+      <div ref={scroller} tabIndex={0} role="region" aria-label="Schedule" className="relative max-h-[calc(100dvh-190px)] overflow-auto overscroll-contain focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent">
       <div className="sticky top-0 z-20 grid border-b border-line bg-bg" style={{ gridTemplateColumns: `56px repeat(${cols.length}, minmax(${cols.length > 3 ? 92 : 140}px, 1fr))` }}>
         <div />
         {cols.map((c) => (

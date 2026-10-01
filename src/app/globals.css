@@ -13,7 +13,7 @@
   --surface-3: #ebe8e1;
   --ink: #1a1814;
   --ink-2: #48443d;
-  --ink-3: #78736a;
+  --ink-3: #6c675e;
   --line: #e6e2da;
   --line-strong: #d3cec3;
   --accent: #2e5e4e;
@@ -183,4 +183,10 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Map attribution links must be distinguishable from surrounding text (WCAG 1.4.1). */
+.leaflet-control-attribution a {
+  color: var(--ink-2) !important;
+  text-decoration: underline !important;
 }
