@@ -51,6 +51,9 @@ export type SearchResult = {
   logo: PublicMedia | null;
   topServices: { id: string; name: string; priceType: string; priceCents: number; salePriceCents: number | null; priceMaxCents: number | null; durationMinutes: number }[];
   nextAvailable: string | null;
+  /** Real upcoming openings for `nextServiceId`, for one-tap booking from cards. */
+  nextSlots: string[];
+  nextServiceId: string | null;
   timezone: string;
   promoted: boolean;
 };
@@ -74,24 +77,33 @@ async function categoryIds(slug: string): Promise<string[]> {
   return [c.id, ...kids.map((k) => k.id)];
 }
 
-// Small in-process cache for "next available" so search stays fast.
-const nextCache = new Map<string, { at: number; value: string | null }>();
-async function nextAvailableForBusiness(businessId: string, serviceId: string | undefined, tz: string): Promise<string | null> {
-  if (!serviceId) return null;
+// Small in-process cache for availability hints so search stays fast.
+const nextCache = new Map<string, { at: number; value: string[] }>();
+
+/** Up to `count` well-spaced openings on the first day that has any (within two weeks). */
+async function nextSlotsForService(businessId: string, serviceId: string | undefined, tz: string, count = 4): Promise<string[]> {
+  if (!serviceId) return [];
   const key = `${businessId}:${serviceId}`;
   const hit = nextCache.get(key);
-  if (hit && Date.now() - hit.at < 120_000) return hit.value;
-  let value: string | null = null;
+  if (hit && Date.now() - hit.at < 90_000) return hit.value;
+  let value: string[] = [];
   try {
     const from = todayIn(tz);
-    const res = await getSlots({ serviceId, memberId: "any", fromDate: from, toDate: from, optionIds: [], autoDefaults: true });
-    value = res.days[0]?.slots[0]?.start ?? null;
-    if (!value) {
-      const week = await getSlots({ serviceId, memberId: "any", fromDate: addDaysIso(from, 1), toDate: addDaysIso(from, 13), optionIds: [], autoDefaults: true });
-      value = week.days.find((d) => d.slots.length)?.slots[0]?.start ?? null;
+    const res = await getSlots({ serviceId, memberId: "any", fromDate: from, toDate: addDaysIso(from, 13), optionIds: [], autoDefaults: true });
+    const day = res.days.find((d) => d.slots.length);
+    if (day) {
+      let last = -Infinity;
+      for (const s of day.slots) {
+        const t = new Date(s.start).getTime();
+        if (t - last >= 30 * 60_000) {
+          value.push(s.start);
+          last = t;
+        }
+        if (value.length >= count) break;
+      }
     }
   } catch {
-    value = null; // services with required options etc. simply show no hint
+    value = [];
   }
   if (nextCache.size > 5000) nextCache.clear();
   nextCache.set(key, { at: Date.now(), value });
@@ -272,6 +284,7 @@ async function hydrate(
       const ranked = opts.query
         ? [...svcs].sort((a, b) => Number(normalizeSearch(b.name).includes(opts.query.split(" ")[0])) - Number(normalizeSearch(a.name).includes(opts.query.split(" ")[0])))
         : svcs;
+      const nextSlots = await nextSlotsForService(r.id, ranked[0]?.id, r.timezone);
       const coverId = r.coverMediaId ?? fallbackCovers.find((f) => f.businessId === r.id)?.mediaId ?? null;
       return {
         id: r.id,
@@ -296,7 +309,9 @@ async function hydrate(
         cover: coverId ? (media.get(coverId) ?? null) : null,
         logo: r.logoMediaId ? (media.get(r.logoMediaId) ?? null) : null,
         topServices: ranked.slice(0, 3).map(({ id, name, priceType, priceCents, salePriceCents, priceMaxCents, durationMinutes }) => ({ id, name, priceType, priceCents, salePriceCents, priceMaxCents, durationMinutes })),
-        nextAvailable: await nextAvailableForBusiness(r.id, ranked[0]?.id, r.timezone),
+        nextAvailable: nextSlots[0] ?? null,
+        nextSlots,
+        nextServiceId: ranked[0]?.id ?? null,
         timezone: r.timezone,
         promoted: r.promoted,
       };

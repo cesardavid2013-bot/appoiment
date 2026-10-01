@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
 
-export function FavoriteButton({ businessId, initial, signedIn, variant = "overlay", className }: { businessId: string; initial: boolean; signedIn: boolean; variant?: "overlay" | "plain"; className?: string }) {
+export function FavoriteButton({ businessId, initial, signedIn, variant = "overlay", className }: { businessId: string; initial: boolean; signedIn: boolean; variant?: "overlay" | "plain" | "ghost"; className?: string }) {
   const [on, setOn] = useState(initial);
   const [pop, setPop] = useState(false);
   const router = useRouter();
@@ -40,7 +40,7 @@ export function FavoriteButton({ businessId, initial, signedIn, variant = "overl
       onAnimationEnd={() => setPop(false)}
       className={cn(
         "flex items-center justify-center transition-colors",
-        variant === "overlay" ? "size-9 rounded-full bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface" : "h-10 gap-2 rounded-md border border-line-strong bg-surface px-3.5 text-sm font-medium text-ink hover:bg-surface-2",
+        variant === "overlay" ? "size-9 rounded-full bg-surface/90 text-ink shadow-sm backdrop-blur hover:bg-surface" : variant === "ghost" ? "size-9 rounded-full text-ink-3 hover:bg-surface-2 hover:text-ink" : "h-10 gap-2 rounded-md border border-line-strong bg-surface px-3.5 text-sm font-medium text-ink hover:bg-surface-2",
         className,
       )}
     >

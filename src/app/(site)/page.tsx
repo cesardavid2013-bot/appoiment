@@ -3,13 +3,14 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 import { CardRail } from "@/components/business/card-rail";
 import { HeroSearch } from "@/components/search/hero-search";
+import { OpeningsBoard } from "@/components/search/openings-board";
 import { Avatar } from "@/components/ui/media";
 import { Badge } from "@/components/ui/misc";
 import { STATUS_LABELS, STATUS_TONE } from "@/domain/appointment-state";
 import { fmtDateLong, fmtTime } from "@/lib/format";
 import { LOCATION_COOKIE, parseLocationCookie } from "@/lib/location";
 import { getViewer } from "@/server/auth/session";
-import { listCategories } from "@/server/services/catalog";
+import { categoryCounts, listCategories } from "@/server/services/catalog";
 import { bookAgain, listCustomerAppointments, recentlyViewedCards } from "@/server/services/customer";
 import { favoriteIds } from "@/server/services/engagement";
 import { homeModules } from "@/server/services/search";
@@ -17,8 +18,9 @@ import { homeModules } from "@/server/services/search";
 export default async function HomePage() {
   const viewer = await getViewer();
   const loc = parseLocationCookie((await cookies()).get(LOCATION_COOKIE)?.value);
-  const [cats, modules, favs, upcoming, again, recent] = await Promise.all([
+  const [cats, counts, modules, favs, upcoming, again, recent] = await Promise.all([
     listCategories(),
+    categoryCounts(),
     homeModules(loc ? { lat: loc.lat, lng: loc.lng } : {}),
     viewer ? favoriteIds(viewer.id) : Promise.resolve([]),
     viewer ? listCustomerAppointments(viewer.id, "upcoming", 2) : Promise.resolve([]),
@@ -32,34 +34,45 @@ export default async function HomePage() {
 
   return (
     <div className="pb-8">
-      <section className="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 sm:pt-16 lg:px-8 lg:pt-20">
-        <div className="max-w-3xl">
+      <section className="mx-auto grid max-w-7xl gap-10 px-4 pb-4 pt-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-14 lg:px-8 lg:pt-16">
+        <div>
           <p className="mb-4 text-sm font-medium text-ink-3">{firstName ? `Good to see you, ${firstName}.` : "Barbers, stylists, trainers, tutors, detailers and more"}</p>
-          <h1 className="font-display text-[44px] leading-[1.02] tracking-[-0.02em] text-ink text-balance sm:text-6xl lg:text-[76px]">
+          <h1 className="font-display text-[44px] leading-[1.02] tracking-[-0.02em] text-ink text-balance sm:text-6xl lg:text-[72px]">
             Book the people who make your week better.
           </h1>
-          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-ink-3 text-pretty">See real availability, real prices and real reviews from verified visits — then book in a few taps.</p>
+          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-ink-3 text-pretty">Real openings, upfront prices and reviews from verified visits. Pick a time and you're booked.</p>
+          <div className="mt-8">
+            <HeroSearch initialLocation={loc} />
+          </div>
         </div>
-        <div className="mt-8">
-          <HeroSearch initialLocation={loc} />
-        </div>
-        <nav aria-label="Categories" className="-mx-4 mt-8 flex gap-2 overflow-x-auto px-4 pb-1 scrollbar-none sm:mx-0 sm:flex-wrap sm:px-0">
+        <OpeningsBoard items={modules.nearby} />
+      </section>
+
+      <section aria-labelledby="browse" className="mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 id="browse" className="sr-only">Browse by category</h2>
+        <ul className="grid grid-cols-2 border-l border-t border-line sm:grid-cols-3 lg:grid-cols-6">
           {cats
             .filter((c) => c.slug !== "other")
-            .map((c) => (
-              <Link
-                key={c.slug}
-                href={`/explore?category=${c.slug}`}
-                className="shrink-0 rounded-md border border-line bg-surface px-3.5 py-2 text-sm font-medium text-ink-2 transition-colors hover:border-line-strong hover:text-ink"
-              >
-                {c.name}
-              </Link>
-            ))}
-        </nav>
+            .slice(0, 12)
+            .map((c) => {
+              const n = counts.get(c.slug) ?? 0;
+              return (
+                <li key={c.slug} className="border-b border-r border-line">
+                  <Link href={`/explore?category=${c.slug}`} className="group flex h-full flex-col justify-between gap-6 p-4 transition-colors hover:bg-surface">
+                    <span className="text-[15px] font-medium leading-snug text-ink">{c.name}</span>
+                    <span className="flex items-center justify-between text-[12px] text-ink-3">
+                      {n > 0 ? `${n} ${n === 1 ? "pro" : "pros"}` : "Coming soon"}
+                      <ArrowRight className="size-3.5 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+        </ul>
       </section>
 
       {(next || again.length > 0) && (
-        <section className="mx-auto mt-8 grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1.1fr_1fr] lg:px-8">
+        <section className="mx-auto mt-12 grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1.1fr_1fr] lg:px-8">
           {next && (
             <Link href={`/bookings/${next.id}`} className="group flex flex-col justify-between gap-5 rounded-xl border border-line bg-surface p-5 transition-shadow hover:shadow-md sm:p-6">
               <div className="flex items-start justify-between gap-4">

@@ -347,3 +347,15 @@ export const listCategories = cache(async () => {
   const top = rows.filter((c) => !c.parentId);
   return top.map((c) => ({ id: c.id, slug: c.slug, name: c.name, description: c.description, children: rows.filter((x) => x.parentId === c.id).map((x) => ({ id: x.id, slug: x.slug, name: x.name })) }));
 });
+
+/** Active professionals per top-level category (primary category or any of its children). */
+export async function categoryCounts() {
+  const rows = await db.execute<{ slug: string; n: number }>(sql`
+    select coalesce(p.slug, c.slug) as slug, count(distinct b.id)::int as n
+    from businesses b
+    join categories c on c.id = b.primary_category_id
+    left join categories p on p.id = c.parent_id
+    where b.status = 'active'
+    group by 1`);
+  return new Map([...rows].map((r) => [r.slug, r.n]));
+}

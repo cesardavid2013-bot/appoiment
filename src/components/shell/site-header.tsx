@@ -41,7 +41,7 @@ export function SiteHeader({ viewer }: { viewer: ShellViewer }) {
         <Logo />
         <Link
           href="/explore"
-          className="ml-4 hidden h-10 max-w-sm flex-1 items-center gap-2.5 rounded-full border border-line bg-surface px-4 text-sm text-ink-3 shadow-sm transition-colors hover:border-line-strong md:flex"
+          className={cn("ml-4 hidden h-10 max-w-sm flex-1 items-center gap-2.5 rounded-full border border-line bg-surface px-4 text-sm text-ink-3 shadow-sm transition-colors hover:border-line-strong md:flex", pathname?.startsWith("/explore") && "md:hidden")}
         >
           <Search className="size-4" />
           <span>Search services or professionals</span>
