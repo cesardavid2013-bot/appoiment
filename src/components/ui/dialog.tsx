@@ -3,6 +3,7 @@
 import { Dialog as D } from "radix-ui";
 import { X } from "lucide-react";
 import type { ReactNode } from "react";
+import { useT } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 
 type Props = {
@@ -22,6 +23,7 @@ type Props = {
  * sheet on phones — with focus trap, escape handling and scroll locking.
  */
 export function Dialog({ open, onOpenChange, title, description, children, footer, size = "md", locked }: Props) {
+  const t = useT("common.ui");
   return (
     <D.Root open={open} onOpenChange={(o) => (!locked || o ? onOpenChange(o) : undefined)}>
       <D.Portal>
@@ -45,7 +47,7 @@ export function Dialog({ open, onOpenChange, title, description, children, foote
               {description ? <D.Description className="mt-1 text-sm leading-relaxed text-ink-3">{description}</D.Description> : <D.Description className="sr-only">{typeof title === "string" ? title : "Dialog"}</D.Description>}
             </div>
             {!locked && (
-              <D.Close className="-me-2 -mt-1 flex size-9 shrink-0 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Close">
+              <D.Close className="-me-2 -mt-1 flex size-9 shrink-0 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={t("close")}>
                 <X className="size-5" />
               </D.Close>
             )}
@@ -68,8 +70,11 @@ export function ConfirmDialog({
   onConfirm,
   loading,
   tone = "danger",
+  cancelLabel,
   children,
 }: {
+  /** Defaults to "Keep it" — the safe choice, worded as not doing the action. */
+  cancelLabel?: string;
   open: boolean;
   onOpenChange: (o: boolean) => void;
   title: string;
@@ -80,6 +85,7 @@ export function ConfirmDialog({
   tone?: "danger" | "primary";
   children?: ReactNode;
 }) {
+  const t = useT("common.ui");
   return (
     <Dialog
       open={open}
@@ -91,7 +97,7 @@ export function ConfirmDialog({
       footer={
         <>
           <button className="h-10 rounded-md px-4 text-sm font-medium text-ink-2 hover:bg-surface-2" onClick={() => onOpenChange(false)} disabled={loading}>
-            Keep it
+            {cancelLabel ?? t("keepIt")}
           </button>
           <button
             className={cn(

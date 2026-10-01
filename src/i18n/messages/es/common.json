@@ -86,5 +86,10 @@
     "depositRefundable": "Los depósitos se reembolsan si cancelas a tiempo.",
     "depositNonRefundable": "Los depósitos no son reembolsables.",
     "reschedule": "Reprograma en línea hasta {hours} h antes."
+  },
+  "ui": {
+    "close": "Cerrar",
+    "keepIt": "Mejor no",
+    "optional": "Opcional"
   }
 }

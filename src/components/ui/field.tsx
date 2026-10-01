@@ -1,5 +1,6 @@
 import { forwardRef, useId, type ComponentProps, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
+import { OptionalTag } from "./optional-tag";
 
 const control =
   "w-full rounded-md border border-line-strong bg-surface px-3 text-ink placeholder:text-ink-3 transition-colors hover:border-ink-3/50 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15 disabled:bg-surface-2 disabled:text-ink-3 aria-[invalid=true]:border-danger aria-[invalid=true]:focus:ring-danger/15";
@@ -42,7 +43,7 @@ export function Field({ label, hint, error, optional, className, children }: Fie
     <div className={cn("space-y-1.5", className)}>
       <label htmlFor={id} className="flex items-baseline justify-between gap-2 text-sm font-medium text-ink">
         <span>{label}</span>
-        {optional && <span className="text-xs font-normal text-ink-3">Optional</span>}
+        {optional && <OptionalTag />}
       </label>
       {children({ id, "aria-invalid": error ? true : undefined, "aria-describedby": describedBy })}
       {hint && !error && (
