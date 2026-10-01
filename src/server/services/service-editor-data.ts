@@ -31,7 +31,7 @@ export async function serviceEditorContext(m: Membership) {
     primaryCategoryId: biz.primaryCategoryId,
     team: team.filter((t) => t.isBookable).map((t) => ({ id: t.id, name: t.name })),
     locations: locs.map((l) => ({ id: l.id, name: l.name, kind: l.kind })),
-    categories: categories.map((c) => ({ id: c.id, name: c.name, children: c.children.map((x) => ({ id: x.id, name: x.name })) })),
+    categories: categories.map((c) => ({ id: c.id, slug: c.slug, name: c.name, children: c.children.map((x) => ({ id: x.id, slug: x.slug, name: x.name })) })),
     forms: forms.map((f) => ({ id: f.id, name: f.name })),
     sections: sections.map((s) => s.s!).filter(Boolean).sort(),
     plan: { intakeForms: entitlements(m.plan).intakeForms },

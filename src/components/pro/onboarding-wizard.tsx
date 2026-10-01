@@ -698,7 +698,7 @@ function HoursStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) {
 
 function PoliciesStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => void; onSkip: () => void }) {
   const t = useT("proSetup");
-  const noticeLabel = (m: number) => (m === 0 ? t("editor.none") : m < 60 ? t("onboarding.policies.minutes", { count: m }) : m < 1440 ? t("editor.notice.hours", { count: m / 60 }) : t("editor.notice.days", { count: m / 1440 }));
+  const noticeLabel = (m: number) => (m === 0 ? t("editor.notice.none") : m < 60 ? t("onboarding.policies.minutes", { count: m }) : m < 1440 ? t("editor.notice.hours", { count: m / 60 }) : t("editor.notice.days", { count: m / 1440 }));
   const [mode, setMode] = useState(b.bookingMode);
   const [notice, setNotice] = useState(String(b.minNoticeMinutes));
   const [window_, setWindow] = useState(String(b.cancellationWindowHours));

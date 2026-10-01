@@ -43,6 +43,7 @@
   "editor": {
     "none": "Ninguno",
     "notice": {
+      "none": "Sin antelación",
       "hours": "{count, plural, one {# hora} other {# horas}}",
       "days": "{count, plural, one {# día} other {# días}}",
       "weeks": "{count, plural, one {# semana} other {# semanas}}"
@@ -222,7 +223,7 @@
   "hours": {
     "midnight": "Medianoche",
     "midnightLower": "medianoche",
-    "openOn": "Abierto el {day}",
+    "openOn": "Abierto: {day}",
     "closed": "Cerrado",
     "startLabel": "{day}: inicio {n}",
     "endLabel": "{day}: fin {n}",

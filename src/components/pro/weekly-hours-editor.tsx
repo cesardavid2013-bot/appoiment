@@ -23,9 +23,10 @@ export function minutesLabel(m: number, intl: string, opts: { compact?: boolean;
   return new Intl.DateTimeFormat(intl, { hour: "numeric", minute: dropMinutes ? undefined : "2-digit", timeZone: "UTC" }).format(at);
 }
 
-/** Full weekday name in the viewer's language; 1 = Monday … 7 = Sunday. */
+/** Weekday name in the viewer's language, capitalised to stand alone as a label; 1 = Monday … 7 = Sunday. */
 export function weekdayLabel(wd: number, intl: string, width: "long" | "short" = "long") {
-  return new Intl.DateTimeFormat(intl, { weekday: width, timeZone: "UTC" }).format(new Date(Date.UTC(2024, 0, wd)));
+  const s = new Intl.DateTimeFormat(intl, { weekday: width, timeZone: "UTC" }).format(new Date(Date.UTC(2024, 0, wd)));
+  return s.charAt(0).toLocaleUpperCase(intl) + s.slice(1);
 }
 
 function TimeSelect({ value, onChange, min, max, ariaLabel }: { value: number; onChange: (v: number) => void; min: number; max: number; ariaLabel: string }) {

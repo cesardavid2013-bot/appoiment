@@ -12,7 +12,7 @@ import { Avatar, MediaImage, type MediaLike } from "@/components/ui/media";
 import { formatDuration, formatMoney, formatPriceLabel, parseMoneyInput } from "@/domain/money";
 import { DURATION_CHOICES } from "@/domain/service-templates";
 import { useLocale, useT } from "@/i18n/client";
-import { priceWords } from "@/i18n/helpers";
+import { categoryName, priceWords } from "@/i18n/helpers";
 import { rich } from "@/i18n/rich";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
@@ -67,7 +67,7 @@ type Ctx = {
   paymentsEnabled: boolean;
   team: { id: string; name: string }[];
   locations: { id: string; name: string; kind: string }[];
-  categories: { id: string; name: string; children: { id: string; name: string }[] }[];
+  categories: { id: string; slug: string; name: string; children: { id: string; slug: string; name: string }[] }[];
   forms: { id: string; name: string }[];
   sections: string[];
   businessBookingMode: "instant" | "request";
@@ -105,7 +105,7 @@ export function ServiceEditor({ initial, serviceId, ctx, cover: initialCover }: 
   const tr = useT();
   const { intl } = useLocale();
   const router = useRouter();
-  const noticeLabel = (m: number) => (m === 0 ? t("editor.none") : m < 1440 ? t("editor.notice.hours", { count: m / 60 }) : m < 10080 ? t("editor.notice.days", { count: m / 1440 }) : t("editor.notice.weeks", { count: m / 10080 }));
+  const noticeLabel = (m: number) => (m === 0 ? t("editor.notice.none") : m < 1440 ? t("editor.notice.hours", { count: m / 60 }) : m < 10080 ? t("editor.notice.days", { count: m / 1440 }) : t("editor.notice.weeks", { count: m / 10080 }));
   const [v, setV] = useState(initial);
   const [price, setPrice] = useState(serviceId || initial.priceCents ? money(initial.priceCents) : "");
   const [sale, setSale] = useState(money(initial.salePriceCents));
@@ -276,11 +276,11 @@ export function ServiceEditor({ initial, serviceId, ctx, cover: initialCover }: 
                   <Select {...p} value={v.categoryId ?? ""} onChange={(e) => set("categoryId", e.target.value || null)}>
                     <option value="">{t("editor.basics.sameAsBusiness")}</option>
                     {ctx.categories.map((c) => (
-                      <optgroup key={c.id} label={c.name}>
-                        <option value={c.id}>{c.name}</option>
+                      <optgroup key={c.id} label={categoryName(tr, c.slug, c.name)}>
+                        <option value={c.id}>{categoryName(tr, c.slug, c.name)}</option>
                         {c.children.map((ch) => (
                           <option key={ch.id} value={ch.id}>
-                            {ch.name}
+                            {categoryName(tr, ch.slug, ch.name)}
                           </option>
                         ))}
                       </optgroup>
