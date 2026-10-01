@@ -5,10 +5,12 @@ import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 import { useLocale, useT } from "@/i18n/client";
 import { LOCALE_COOKIE, LOCALES, type Locale } from "@/i18n/locales";
+import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
 
 /**
- * Choose the interface language. Remembered for a year on this device.
+ * Choose the interface language. Remembered for a year on this device, and saved
+ * to the account when signed in so emails and notifications follow it.
  * `compact` is the header version: a globe and the language code, same native list.
  */
 export function LanguagePicker({ className, compact }: { className?: string; compact?: boolean }) {
@@ -32,8 +34,12 @@ export function LanguagePicker({ className, compact }: { className?: string; com
         value={locale}
         onChange={(e) => {
           const next = e.target.value as Locale;
+          // Set it here so the switch is instant even offline; the API also saves it to the account.
           document.cookie = `${LOCALE_COOKIE}=${next}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
-          start(() => router.refresh());
+          start(async () => {
+            await api("/api/me/locale", { body: { locale: next } }).catch(() => undefined);
+            router.refresh();
+          });
         }}
         className="absolute inset-0 cursor-pointer appearance-none opacity-0"
         aria-label={t("language")}

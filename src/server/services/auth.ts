@@ -1,8 +1,10 @@
 import "server-only";
-import { getLocale } from "@/i18n/server";
 import { and, eq, gt, isNull } from "drizzle-orm";
+import { cookies } from "next/headers";
 import { z } from "zod";
 import { AppError } from "@/domain/errors";
+import { isLocale, LOCALE_COOKIE } from "@/i18n/locales";
+import { getLocale } from "@/i18n/server";
 import { db } from "../db/client";
 import { authTokens, users } from "../db/schema";
 import { burnPasswordCheck, hashPassword, passwordProblem, verifyPassword } from "../auth/password";
@@ -59,7 +61,7 @@ export async function login(input: z.infer<typeof loginSchema>) {
   await rateLimit("login", ip);
   await rateLimit("loginAccount", input.email);
   const [user] = await db
-    .select({ id: users.id, passwordHash: users.passwordHash, status: users.status })
+    .select({ id: users.id, passwordHash: users.passwordHash, status: users.status, locale: users.locale })
     .from(users)
     .where(eq(users.email, input.email))
     .limit(1);
@@ -75,7 +77,25 @@ export async function login(input: z.infer<typeof loginSchema>) {
   if (user.status === "suspended") throw new AppError("forbidden", "This account is suspended. Contact support if you think this is a mistake.");
   if (user.status !== "active") throw invalid;
   await createSession(user.id);
+  await adoptLocale(user.id, user.locale);
   return { id: user.id };
+}
+
+/**
+ * After sign-in: a device that hasn't chosen a language follows the account's,
+ * and an account without one takes the language this device is using.
+ */
+export async function adoptLocale(userId: string, stored?: string | null) {
+  if (stored === undefined) {
+    const [row] = await db.select({ locale: users.locale }).from(users).where(eq(users.id, userId)).limit(1);
+    stored = row?.locale ?? null;
+  }
+  const jar = await cookies();
+  if (isLocale(stored)) {
+    if (!isLocale(jar.get(LOCALE_COOKIE)?.value)) jar.set(LOCALE_COOKIE, stored, { path: "/", maxAge: 60 * 60 * 24 * 365, sameSite: "lax" });
+  } else {
+    await db.update(users).set({ locale: await getLocale() }).where(eq(users.id, userId));
+  }
 }
 
 export async function sendVerification(userId: string, email: string, name: string) {

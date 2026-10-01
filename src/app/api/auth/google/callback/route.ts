@@ -5,6 +5,7 @@ import { safeNext } from "@/server/auth/redirect";
 import { createSession } from "@/server/auth/session";
 import { env } from "@/server/env";
 import { log } from "@/server/logger";
+import { adoptLocale } from "@/server/services/auth";
 
 export async function GET(req: NextRequest) {
   const jar = await cookies();
@@ -23,6 +24,7 @@ export async function GET(req: NextRequest) {
     const tokens = await google.validateAuthorizationCode(code, verifier);
     const userId = await upsertGoogleUser(tokens.idToken());
     await createSession(userId);
+    await adoptLocale(userId);
     return NextResponse.redirect(new URL(next, env.APP_URL));
   } catch (err) {
     log.warn("auth.google_failed", { err });
