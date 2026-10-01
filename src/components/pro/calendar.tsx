@@ -1,7 +1,7 @@
 "use client";
 
 import { keepPreviousData, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Ban, CalendarPlus, ChevronLeft, ChevronRight, ExternalLink, MessageSquareText, Sparkles } from "lucide-react";
+import { Ban, CalendarPlus, ChevronLeft, ChevronRight, ExternalLink, MessageSquareText } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Button, ButtonLink } from "@/components/ui/button";
@@ -471,7 +471,7 @@ function TimeGrid({
                     >
                       <span className="flex items-center gap-1 text-[12px] font-semibold leading-tight text-ink">
                         <span className="truncate">{a.customerName}</span>
-                        {a.isNewCustomer && <Sparkles className="size-3 shrink-0 text-accent" />}
+                        {a.isNewCustomer && <span className="size-1.5 shrink-0 rounded-full bg-accent" aria-hidden />}
                         {a.hasNote && <MessageSquareText className="size-3 shrink-0 text-ink-3" />}
                       </span>
                       {h > 34 && <span className="block truncate text-[11px] leading-tight text-ink-3">{a.serviceName}</span>}

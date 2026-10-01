@@ -1,4 +1,4 @@
-import { ArrowRight, BadgeCheck, Clock, Globe, Languages, MapPin, Navigation, ShieldCheck, Sparkles, Users, Zap } from "lucide-react";
+import { ArrowRight, BadgeCheck, Clock, Globe, Languages, MapPin, Navigation, ShieldCheck, Users, Zap } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -230,7 +230,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                   </a>
                 ) : (
                   <span className="inline-flex items-center gap-1.5 text-ink-3">
-                    <Sparkles className="size-4 text-gold" /> {t("newOnKept")}
+                    <span className="size-2 rotate-45 bg-gold" aria-hidden /> {t("newOnKept")}
                   </span>
                 )}
                 {place && (

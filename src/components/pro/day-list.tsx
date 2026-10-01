@@ -1,4 +1,4 @@
-import { MessageSquareText, Sparkles } from "lucide-react";
+import { MessageSquareText } from "lucide-react";
 import Link from "next/link";
 import { STATUS_TONE, type AppointmentStatus } from "@/domain/appointment-state";
 import { getI18n, getT } from "@/i18n/server";
@@ -48,7 +48,7 @@ export async function DayList({ items, timezone, memberNames, canManage, now }: 
                 <span className="truncate text-[15px] font-semibold text-ink">{a.customerName}</span>
                 {a.isNewCustomer && (
                   <span className="inline-flex shrink-0 items-center gap-0.5 text-[11px] font-medium uppercase tracking-wide text-accent-text">
-                    <Sparkles className="size-3" /> {t("dayList.new")}
+                    <span className="size-1.5 rounded-full bg-current" aria-hidden /> {t("dayList.new")}
                   </span>
                 )}
                 {a.hasNote && <MessageSquareText className="size-3.5 shrink-0 text-ink-3" aria-label={t("dayList.hasNote")} />}

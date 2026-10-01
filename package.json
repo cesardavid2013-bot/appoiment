@@ -14,6 +14,7 @@
     "db:migrate": "tsx scripts/migrate.ts",
     "db:seed": "tsx --conditions=react-server scripts/seed.ts",
     "db:reindex": "tsx --conditions=react-server scripts/reindex.ts",
+    "db:demo-media": "tsx --conditions=react-server scripts/demo-media.ts",
     "test": "vitest run",
     "test:unit": "vitest run --project unit",
     "test:integration": "vitest run --project integration",
