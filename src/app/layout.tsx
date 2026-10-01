@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Instrument_Sans } from "next/font/google";
 import { Providers } from "@/components/providers";
 import { I18nProvider } from "@/i18n/client";
 import { getI18n } from "@/i18n/server";
+import type { Messages } from "@/i18n/translate";
 import "./globals.css";
 
 const sans = Instrument_Sans({ variable: "--font-ui", subsets: ["latin"], display: "swap" });
@@ -29,14 +30,18 @@ export const viewport: Viewport = {
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const i18n = await getI18n();
+  const { messages, ...i18n } = await getI18n();
+  // Legal documents and emails render on the server only; don't ship them to every page
+  // (the legal tab nav is the one client piece that needs its labels).
+  const { legal, email: _email, ...rest } = messages;
+  const clientMessages = { ...rest, legal: { nav: (legal as Messages | undefined)?.nav ?? {} } };
   return (
     <html lang={i18n.intl} dir={i18n.dir} className={`${sans.variable} ${serif.variable} h-full`}>
       <body className="min-h-full">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-ink focus:px-4 focus:py-2 focus:text-bg">
           Skip to content
         </a>
-        <I18nProvider value={i18n}>
+        <I18nProvider value={{ ...i18n, messages: clientMessages }}>
           <Providers>{children}</Providers>
         </I18nProvider>
       </body>
