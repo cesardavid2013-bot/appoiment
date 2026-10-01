@@ -259,3 +259,8 @@
 [dir="rtl"] :is(.lucide-arrow-right, .lucide-arrow-left, .lucide-chevron-right, .lucide-chevron-left, .lucide-chevrons-right, .lucide-chevrons-left, .lucide-arrow-up-right, .lucide-move-right) {
   transform: scaleX(-1);
 }
+
+/* CJK scripts have no italics; keep the emphasis colour, drop the slant. */
+:is(:lang(ja), :lang(zh), :lang(ko), :lang(th)) :is(em, i, .italic) {
+  font-style: normal;
+}
