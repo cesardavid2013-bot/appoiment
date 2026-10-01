@@ -11,7 +11,7 @@ import { Field, FormError, Input } from "@/components/ui/field";
 import { DELETE_CONFIRMATION } from "@/domain/account";
 import { useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
-import { rich } from "./rich";
+import { rich } from "@/i18n/rich";
 import { SettingsCard } from "./settings-card";
 
 export function ExportCard() {

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { Switch } from "@/components/ui/controls";
 import { NOTIFICATION_TOPICS, type NotificationPrefs, type NotificationTopic } from "@/domain/notifications";
-import { rich } from "./rich";
+import { rich } from "@/i18n/rich";
 import { useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 import { SettingsCard } from "./settings-card";

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AccountShell } from "@/components/account/account-shell";
 import { DeleteAccountCard, ExportCard } from "@/components/account/privacy-settings";
 import { eq, sql } from "drizzle-orm";
-import { rich } from "@/components/account/rich";
+import { rich } from "@/i18n/rich";
 import { getT } from "@/i18n/server";
 import { db } from "@/server/db/client";
 import { users } from "@/server/db/schema";

@@ -6,7 +6,7 @@ import { LocalTime } from "@/components/support/local-time";
 import { ResolveTicketButton, TicketReply } from "@/components/support/ticket-reply";
 import { MediaImage } from "@/components/ui/media";
 import { Badge } from "@/components/ui/misc";
-import { rich } from "@/components/account/rich";
+import { rich } from "@/i18n/rich";
 import { categoryKey } from "@/components/support/category";
 import { TICKET_STATUS_TONE } from "@/domain/support";
 import { getI18n, getT } from "@/i18n/server";

@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import type { ReactNode } from "react";
 import { ButtonLink } from "@/components/ui/button";
 import { Badge, EmptyState, PageHeader } from "@/components/ui/misc";
-import { rich } from "@/components/account/rich";
+import { rich } from "@/i18n/rich";
 import { TICKET_STATUS_TONE } from "@/domain/support";
 import { getI18n, getT } from "@/i18n/server";
 import { categoryKey } from "@/components/support/category";
@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 function link(href: string) {
-  return function InlineLink(text: string) {
+  return function InlineLink(text: ReactNode) {
     return (
       <Link href={href} className="font-medium text-ink underline underline-offset-4">
         {text}
@@ -28,7 +28,7 @@ function link(href: string) {
 }
 
 /** Quick answers; `links` turns <link>…</link> in the answer into an in-app link. */
-const ANSWERS: { key: string; links?: Record<string, (text: string) => ReactNode> }[] = [
+const ANSWERS: { key: string; links?: Record<string, (text: ReactNode) => ReactNode> }[] = [
   { key: "reschedule", links: { link: link("/bookings") } },
   { key: "refund" },
   { key: "contactPro", links: { link: link("/messages") } },

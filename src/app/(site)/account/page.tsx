@@ -2,7 +2,7 @@ import { Bell, CalendarDays, ChevronRight, FileText, Heart, LifeBuoy, MessageCir
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ResendVerificationButton, SignOutButton } from "@/components/account/account-actions";
-import { rich } from "@/components/account/rich";
+import { rich } from "@/i18n/rich";
 import { ACCOUNT_SECTIONS } from "@/components/account/sections";
 import { Avatar } from "@/components/ui/media";
 import { getI18n, getT } from "@/i18n/server";

@@ -11,7 +11,7 @@ import { Avatar, type MediaLike } from "@/components/ui/media";
 import { useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 import { uploadMedia } from "@/lib/upload";
-import { rich } from "./rich";
+import { rich } from "@/i18n/rich";
 import { SettingsCard } from "./settings-card";
 
 type Props = {

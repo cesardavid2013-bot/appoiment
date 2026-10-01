@@ -2,7 +2,7 @@ import { CalendarCheck2, ChevronLeft, Clock, Hourglass, MapPin, Users } from "lu
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { rich } from "@/components/account/rich";
+import { rich } from "@/i18n/rich";
 import { AppointmentActions, ReviewForm } from "@/components/booking/appointment-actions";
 import { Avatar } from "@/components/ui/media";
 import { Badge, Stars } from "@/components/ui/misc";

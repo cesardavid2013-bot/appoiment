@@ -1,7 +1,8 @@
+import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ui/button";
 import { AcceptInviteButton } from "@/components/pro/accept-invite";
-import { rich } from "@/components/account/rich";
+import { rich } from "@/i18n/rich";
 import { getT } from "@/i18n/server";
 import { getViewer } from "@/server/auth/session";
 import { getInvite } from "@/server/services/team";
@@ -19,7 +20,7 @@ function maskEmail(e: string) {
 export default async function InvitePage({ params }: PageProps<"/invite/[token]">) {
   const { token } = await params;
   const [invite, viewer, t] = await Promise.all([getInvite(token.slice(0, 100)), getViewer(), getT("account")]);
-  const strong = (text: string) => <span className="font-medium text-ink">{text}</span>;
+  const strong = (text: ReactNode) => <span className="font-medium text-ink">{text}</span>;
   const next = `/invite/${encodeURIComponent(token)}`;
 
   return (
