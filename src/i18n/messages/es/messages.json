@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Tú:",
+  "unread": "Sin leer",
+  "apptLine": "{service} · {date}, {time}",
+  "list": {
+    "title": "Mensajes",
+    "unread": "{count, plural, one {# conversación sin leer.} other {# conversaciones sin leer.}}",
+    "caughtUp": "Estás al día.",
+    "emptyTitle": "Aún no tienes mensajes",
+    "emptyBody": "¿Dudas sobre un servicio, un precio o un horario? Abre la página de un profesional y toca “Hacer una pregunta”. Sus respuestas llegan aquí.",
+    "findPro": "Buscar un profesional"
+  },
+  "thread": {
+    "metaTitle": "Conversación",
+    "placeholder": "Escribe a {business}"
+  },
+  "new": {
+    "metaTitle": "Nuevo mensaje",
+    "ownTitle": "Este es tu negocio",
+    "ownBody": "Los mensajes de clientes para {business} llegan a la bandeja de tu negocio.",
+    "ownButton": "Abrir la bandeja del negocio",
+    "placeholderBooking": "Pregunta sobre esta reserva",
+    "placeholderQuestion": "Haz una pregunta",
+    "emptyBookingTitle": "Escribe a {business} sobre tu reserva",
+    "emptyQuestionTitle": "Pregúntale a {business} antes de reservar",
+    "emptyBookingBody": "¿Vas tarde, necesitas cambiar algo o tienes una duda? Tu mensaje llega directo a su equipo.",
+    "emptyQuestionBody": "Precios, horarios, qué llevar: {business} te responderá aquí y te avisaremos. Tu teléfono y tu correo siguen siendo privados."
+  },
+  "shell": {
+    "allMessages": "Todos los mensajes",
+    "viewProfile": "Ver perfil",
+    "book": "Reservar"
+  },
+  "pro": {
+    "backToInbox": "Volver a la bandeja"
+  },
+  "view": {
+    "label": "Mensajes",
+    "you": "Tú",
+    "loadingEarlier": "Cargando mensajes anteriores",
+    "showEarlier": "Ver mensajes anteriores",
+    "seen": "Visto",
+    "sending": "Enviando…",
+    "notSent": "No se envió.",
+    "retry": "Reintentar",
+    "discard": "Descartar",
+    "newMessages": "{count, plural, one {# mensaje nuevo} other {# mensajes nuevos}}",
+    "openPhoto": "Abrir la foto en una pestaña nueva",
+    "photo": "Foto"
+  },
+  "composer": {
+    "about": "Sobre {appointment}",
+    "unlink": "No vincular esta cita",
+    "processingPhoto": "Procesando la foto",
+    "removePhoto": "Quitar foto",
+    "attachPhoto": "Adjuntar una foto",
+    "label": "Mensaje",
+    "send": "Enviar mensaje",
+    "hint": "Presiona Enter para enviar y Mayús + Enter para una nueva línea."
+  },
+  "inbox": {
+    "title": "Bandeja",
+    "conversations": "Conversaciones",
+    "unread": "{count, plural, one {# sin leer} other {# sin leer}}",
+    "allCaughtUp": "Todo al día",
+    "searchLabel": "Buscar conversaciones por nombre del cliente",
+    "searchPlaceholder": "Buscar clientes",
+    "clearSearch": "Borrar búsqueda",
+    "show": "Mostrar",
+    "all": "Todas",
+    "unreadFilter": "Sin leer",
+    "noClientsNamed": "No hay clientes llamados “{term}”",
+    "nothingUnread": "Nada sin leer",
+    "noMessages": "Aún no hay mensajes",
+    "tryDifferent": "Prueba con otra búsqueda o muestra todas las conversaciones.",
+    "emptyBody": "Cuando un cliente haga una pregunta desde tu página o sobre una reserva, aparecerá aquí."
+  },
+  "clientPanel": {
+    "client": "Cliente",
+    "visits": "Visitas",
+    "noShows": "Ausencias",
+    "cancelled": "Canceladas",
+    "clientSince": "Cliente desde {date}",
+    "noVisits": "Aún sin visitas completadas",
+    "lastIn": "última visita: {date}",
+    "tags": "Etiquetas",
+    "clientProfile": "Perfil del cliente",
+    "notBooked": "Todavía no ha reservado contigo: esta conversación empezó desde tu página pública.",
+    "upcoming": "Próximas",
+    "nothingBooked": "Nada reservado.",
+    "recent": "Recientes"
+  }
+}

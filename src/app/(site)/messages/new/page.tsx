@@ -3,11 +3,15 @@ import { notFound, redirect } from "next/navigation";
 import { CustomerThreadShell } from "@/components/messages/customer-thread-shell";
 import { ThreadView } from "@/components/messages/thread-view";
 import { ButtonLink } from "@/components/ui/button";
+import { getT } from "@/i18n/server";
 import { requestNow } from "@/server/clock";
 import { appointmentRef, customerConversationWith, messageableBusiness } from "@/server/services/messaging";
 import { requireViewerPage } from "@/server/viewer";
 
-export const metadata: Metadata = { title: "New message", robots: { index: false } };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("messages");
+  return { title: t("new.metaTitle"), robots: { index: false } };
+}
 
 const UUID = /^[0-9a-f-]{36}$/i;
 
@@ -20,14 +24,15 @@ export default async function NewMessagePage({ searchParams }: PageProps<"/messa
   if (!businessId) redirect("/messages");
   const business = await messageableBusiness(businessId);
   if (!business) notFound();
+  const t = await getT("messages");
 
   if (business.ownerUserId === viewer.id) {
     return (
       <div className="mx-auto max-w-xl px-4 pb-16 pt-16 text-center sm:px-6">
-        <h1 className="font-display text-[30px] leading-tight text-ink">This is your business</h1>
-        <p className="mt-2 text-[15px] text-ink-3">Customer messages to {business.name} arrive in your business inbox.</p>
+        <h1 className="font-display text-[30px] leading-tight text-ink">{t("new.ownTitle")}</h1>
+        <p className="mt-2 text-[15px] text-ink-3">{t("new.ownBody", { business: business.name })}</p>
         <ButtonLink href="/pro/messages" className="mt-6">
-          Open business inbox
+          {t("new.ownButton")}
         </ButtonLink>
       </div>
     );
@@ -53,14 +58,12 @@ export default async function NewMessagePage({ searchParams }: PageProps<"/messa
         fallbackZone={viewer.timezone ?? business.timezone}
         serverNow={requestNow()}
         attach={attach}
-        placeholder={attach ? "Ask about this booking" : "Ask a question"}
+        placeholder={attach ? t("new.placeholderBooking") : t("new.placeholderQuestion")}
         empty={
           <div className="mx-auto mb-6 max-w-sm text-center">
-            <p className="text-[15px] font-semibold text-ink">{attach ? `Message ${business.name} about your booking` : `Ask ${business.name} before you book`}</p>
+            <p className="text-[15px] font-semibold text-ink">{attach ? t("new.emptyBookingTitle", { business: business.name }) : t("new.emptyQuestionTitle", { business: business.name })}</p>
             <p className="mt-1.5 text-sm leading-relaxed text-ink-3 text-pretty">
-              {attach
-                ? "Running late, need to change something, or have a question? Your message goes straight to their team."
-                : `Prices, timing, what to bring — ${business.name} will reply here and we'll let you know. Your phone number and email stay private.`}
+              {attach ? t("new.emptyBookingBody") : t("new.emptyQuestionBody", { business: business.name })}
             </p>
           </div>
         }
