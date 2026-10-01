@@ -1,0 +1,213 @@
+{
+  "governingVersion": "In caso di discrepanze tra le traduzioni, prevale la versione in inglese.",
+  "nav": {
+    "label": "Documenti legali",
+    "terms": "Termini di servizio",
+    "privacy": "Informativa sulla privacy"
+  },
+  "doc": {
+    "lastUpdated": "Ultimo aggiornamento: {date}",
+    "counselNote": "Questo è un documento iniziale scritto in linguaggio semplice. Sarà esaminato da consulenti legali prima del lancio pubblico di Kept e potrebbe cambiare di conseguenza. Ti avviseremo prima che entri in vigore qualsiasi modifica che incida sui tuoi diritti.",
+    "contents": "Indice"
+  },
+  "terms": {
+    "meta": {
+      "title": "Termini di servizio",
+      "description": "I termini, in linguaggio semplice, per usare Kept per prenotare professionisti o gestire la tua attività."
+    },
+    "title": "Termini di servizio",
+    "intro": "Questi termini spiegano come funziona Kept e cosa ci aspettiamo da chiunque lo usi. Li abbiamo voluti brevi e leggibili. Se qualcosa non è chiaro, <support>chiedici</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Che cos'è Kept",
+        "body": {
+          "p1": "Kept è un marketplace e uno strumento di prenotazione. I clienti lo usano per trovare e prenotare professionisti — barbieri, parrucchieri, personal trainer, insegnanti, detailer e molti altri. Professionisti e attività lo usano per pubblicare i propri servizi, gestire il calendario e ricevere pagamenti.",
+          "p2": "<b>Il servizio è fornito dal professionista o dall'attività che prenoti, non da Kept.</b> Quando prenoti, l'accordo per il servizio è con quell'attività. Noi gestiamo la piattaforma che vi mette in contatto, ti mostra i suoi prezzi e le sue condizioni e aiuta entrambe le parti a rispettare l'appuntamento."
+        }
+      },
+      "account": {
+        "title": "Il tuo account",
+        "body": {
+          "li1": "Per creare un account devi avere almeno 18 anni (o la maggiore età prevista dove vivi). Puoi prenotare per un'altra persona, ad esempio tuo figlio, se ne sei responsabile.",
+          "li2": "Fornisci informazioni corrette e mantienile aggiornate — le attività ne hanno bisogno per contattarti riguardo ai tuoi appuntamenti.",
+          "li3": "Non condividere la tua password. Sei responsabile di ciò che accade nel tuo account. Se pensi che qualcun altro vi abbia accesso, cambia la password ed esci dagli altri dispositivi in Accesso e sicurezza.",
+          "li4": "Una persona per account. Le attività aggiungono i membri del team come persone distinte invece di condividere un accesso."
+        }
+      },
+      "booking": {
+        "title": "Prenotare come cliente",
+        "body": {
+          "p1": "Prima di confermare una prenotazione vedrai il prezzo (o come viene stimato), la durata, l'eventuale acconto e la politica di cancellazione e mancata presentazione dell'attività. Prenotando, accetti queste condizioni.",
+          "li1": "Le <b>prenotazioni immediate</b> sono confermate subito. Le <b>richieste</b> sono confermate solo quando l'attività le accetta; fino ad allora il tuo orario resta bloccato e le richieste senza risposta scadono.",
+          "li2": "Puoi cancellare o spostare dalla pagina della prenotazione, nel rispetto delle regole dell'attività. Cancellazioni tardive e mancate presentazioni possono costarti in tutto o in parte l'acconto, o una penale, esattamente come indicato al momento della prenotazione.",
+          "li3": "Se il prezzo di un servizio è una stima (per esempio “da” o una fascia), il prezzo finale viene concordato con l'attività durante l'appuntamento.",
+          "li4": "Se Kept applica una commissione di servizio a una prenotazione, la vedrai prima di confermare. Non aggiungiamo mai addebiti in seguito."
+        }
+      },
+      "payments": {
+        "title": "Pagamenti e rimborsi",
+        "body": {
+          "p1": "I pagamenti online sono elaborati da Stripe. Kept non vede né conserva mai il numero completo della tua carta. Alcune attività accettano invece il pagamento di persona; in quel caso paghi direttamente a loro.",
+          "li1": "I rimborsi seguono la politica dell'attività mostrata al momento della prenotazione e vengono effettuati sulla carta con cui hai pagato. La tua banca potrebbe impiegare alcuni giorni lavorativi per mostrarli.",
+          "li2": "Se un'attività cancella o rifiuta il tuo appuntamento, tutto ciò che hai pagato online per quell'appuntamento ti viene rimborsato.",
+          "li3": "Se qualcosa è andato storto con un pagamento, <supportPayment>contattaci</supportPayment> prima di aprire una contestazione con la tua banca — di solito è più rapido."
+        }
+      },
+      "businesses": {
+        "title": "Per professionisti e attività",
+        "body": {
+          "li1": "La tua scheda deve essere accurata: chi sei, cosa offri, i tuoi prezzi, dove lavori e le tue condizioni. Foto e video devono mostrare il tuo lavoro o essere usati con autorizzazione.",
+          "li2": "Sei responsabile di possedere licenze, permessi, assicurazioni e qualifiche richiesti dalla tua attività e di adempiere ai tuoi obblighi fiscali.",
+          "li3": "Rispetta le prenotazioni che accetti e le condizioni che pubblichi. Cancellazioni ripetute all'ultimo minuto, mancate presentazioni o schede ingannevoli possono portare alla sospensione del tuo profilo.",
+          "li4": "Piani, limiti e commissioni sono indicati nella nostra <pricing>pagina dei prezzi</pricing>. La commissione della piattaforma si applica solo ai pagamenti che i clienti effettuano online tramite Kept. I versamenti sono effettuati da Stripe sul tuo conto e sono soggetti anche ai termini di Stripe.",
+          "li5": "I dati dei clienti che ricevi tramite Kept possono essere usati per fornire i tuoi servizi e per il relativo seguito. Invia comunicazioni di marketing solo ai clienti che hanno accettato di riceverle.",
+          "li6": "Mantieni la proprietà di ciò che carichi e concedi a Kept il permesso di mostrarlo su Kept e per promuovere il tuo profilo finché la tua scheda è attiva.",
+          "li7": "I posizionamenti Spotlight sono sempre indicati come sponsorizzati. Sono gratuiti durante il lancio; se questo cambierà, te lo diremo prima di addebitarti qualsiasi cosa."
+        }
+      },
+      "reviews": {
+        "title": "Recensioni",
+        "body": {
+          "p1": "Solo i clienti con un appuntamento completato possono lasciare una recensione, una per appuntamento. Le recensioni devono essere oneste e riguardare la propria esperienza. Le attività possono rispondere pubblicamente.",
+          "p2": "Non è consentito offrire qualcosa in cambio di una recensione o della sua rimozione. Possiamo nascondere o rimuovere le recensioni che violano questi termini — per esempio spam, incitamento all'odio, informazioni personali o conflitti di interesse — ma non rimuoviamo le recensioni solo perché sono negative."
+        }
+      },
+      "conduct": {
+        "title": "Cosa non puoi fare su Kept",
+        "body": {
+          "li1": "Offrire o prenotare qualsiasi cosa illegale, servizi sessuali o qualsiasi cosa che metta a rischio le persone.",
+          "li2": "Molestare, minacciare o discriminare chiunque — clienti, professionisti o il nostro team.",
+          "li3": "Creare account, schede, prenotazioni o recensioni false, o spacciarti per qualcun altro.",
+          "li4": "Caricare contenuti che non hai il diritto di condividere o che contengono informazioni personali di altre persone senza il loro permesso.",
+          "li5": "Fare scraping, sovraccaricare, sondare o interferire con il servizio, o tentare di aggirarne la sicurezza o le commissioni."
+        }
+      },
+      "ourRole": {
+        "title": "Il nostro ruolo e i suoi limiti",
+        "body": {
+          "p1": "Lavoriamo per mantenere Kept sicuro e affidabile e interveniamo sulle segnalazioni. Ma le attività su Kept sono indipendenti — non sono nostri dipendenti né nostri agenti, e non garantiamo la qualità, la sicurezza o la legalità dei loro servizi. Il badge “verificato” indica che abbiamo esaminato i documenti forniti dall'attività; non è una raccomandazione.",
+          "p2": "Kept è fornito “così com'è”. Nei limiti consentiti dalla legge, non siamo responsabili di perdite indirette o consequenziali, né di ciò che accade durante un servizio tra te e un'attività. Nulla in questi termini limita i diritti inderogabili che ti spettano in base alla normativa a tutela dei consumatori."
+        }
+      },
+      "ending": {
+        "title": "Sospensione e chiusura dell'account",
+        "body": {
+          "p1": "Puoi eliminare il tuo account in qualsiasi momento da <privacyData>Privacy e dati</privacyData>. Gli appuntamenti futuri vengono cancellati secondo la politica di ciascuna attività, e i dati di cui le attività hanno bisogno — come appuntamenti e pagamenti passati — vengono conservati in forma anonimizzata.",
+          "p2": "Possiamo sospendere o chiudere gli account che violano questi termini o mettono a rischio altre persone. Quando possibile, ti spiegheremo il motivo e ti daremo la possibilità di rispondere."
+        }
+      },
+      "changes": {
+        "title": "Modifiche, controversie e contatti",
+        "body": {
+          "p1": "Quando modificheremo questi termini in modo rilevante, te lo comunicheremo in anticipo via email o nell'app. Continuare a usare Kept dopo l'entrata in vigore di una modifica significa accettarla.",
+          "p2": "La legge applicabile e la procedura di risoluzione delle controversie verranno aggiunte qui dopo la revisione legale, prima del lancio pubblico di Kept.",
+          "p3": "Domande su questi termini? <support>Contattaci</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Informativa sulla privacy",
+      "description": "Quali dati personali raccoglie Kept, perché, chi li vede e come scaricarli o eliminarli."
+    },
+    "title": "Informativa sulla privacy",
+    "intro": "Questa informativa spiega quali dati personali raccoglie Kept, perché ne abbiamo bisogno, chi può vederli e quali scelte hai — sia come cliente sia come professionista.",
+    "sections": {
+      "summary": {
+        "title": "In breve",
+        "body": {
+          "li1": "Raccogliamo ciò che serve per gestire le prenotazioni: chi sei, cosa prenoti e come contattarti.",
+          "li2": "Le attività da cui prenoti vedono i dati di cui hanno bisogno per servirti. Nessun altro, a parte i fornitori di servizi che ci aiutano a far funzionare Kept.",
+          "li3": "Non vendiamo i tuoi dati personali e non usiamo tracker pubblicitari.",
+          "li4": "Puoi scaricare una copia dei tuoi dati o eliminare il tuo account in autonomia, in qualsiasi momento, da <privacyData>Privacy e dati</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Informazioni che ci fornisci",
+        "body": {
+          "li1": "<b>Account:</b> nome, email, password (conservata solo come hash irreversibile) e, facoltativamente, numero di telefono, foto e fuso orario. Se accedi con Google, riceviamo da Google il tuo nome e la tua email.",
+          "li2": "<b>Prenotazioni:</b> il servizio, l'orario, l'attività e il prezzo; le note che aggiungi; le risposte alle domande preliminari di un'attività; e un indirizzo se un professionista viene da te.",
+          "li3": "<b>Pagamenti:</b> importi, stato e rimborsi. I dati della carta vanno direttamente a Stripe — non riceviamo mai il numero completo della tua carta.",
+          "li4": "<b>Messaggi, recensioni e richieste di assistenza</b>, incluse le immagini allegate, e gli indirizzi che salvi.",
+          "li5": "<b>Le attività</b> ci forniscono anche i dati aziendali, i membri del team, i servizi, gli orari, i contenuti del portfolio, i dati per i versamenti (custoditi da Stripe) e le schede clienti che gestiscono."
+        }
+      },
+      "automatic": {
+        "title": "Informazioni raccolte automaticamente",
+        "body": {
+          "li1": "<b>Sessioni di accesso:</b> un cookie ti mantiene connesso. Conserviamo la sessione insieme al tipo di browser, così i tuoi dispositivi possono essere disconnessi in modo sicuro.",
+          "li2": "<b>Sicurezza:</b> conserviamo un hash irreversibile con chiave del tuo indirizzo IP — non l'indirizzo stesso — per limitare gli abusi e indagare su attività sospette.",
+          "li3": "<b>Posizione:</b> se scegli un luogo o condividi la tua posizione per cercare nelle vicinanze, viene salvata in un cookie sul tuo dispositivo per ricordare la tua scelta. Non tracciamo la tua posizione in background.",
+          "li4": "<b>Attività su Kept:</b> i professionisti che visualizzi e salvi, per potertele mostrare di nuovo; e il numero di visualizzazioni e clic sulle schede sponsorizzate, comunicato alle attività solo come totali."
+        }
+      },
+      "use": {
+        "title": "Come le usiamo",
+        "body": {
+          "li1": "Per creare e modificare le prenotazioni e ricordartele, e per elaborare pagamenti e rimborsi.",
+          "li2": "Per inviarti le notifiche che hai scelto. Conferme e modifiche delle prenotazioni vengono sempre inviate; tutto il resto può essere disattivato in Notifiche.",
+          "li3": "Per mostrarti professionisti e disponibilità pertinenti vicino a te.",
+          "li4": "Per mantenere Kept sicuro: prevenire frodi, spam e abusi, e intervenire sulle segnalazioni.",
+          "li5": "Per rispondere alle richieste di assistenza e migliorare Kept.",
+          "li6": "Per adempiere agli obblighi di legge, come la tenuta dei registri fiscali e contabili."
+        }
+      },
+      "businesses": {
+        "title": "Cosa vedono le attività",
+        "body": {
+          "p1": "Quando prenoti, l'attività vede il tuo nome, la tua email e il tuo numero di telefono (se lo hai aggiunto), la prenotazione e tutto ciò che hai condiviso con essa — note, risposte alle domande preliminari, un indirizzo per il servizio — oltre alle tue visite precedenti presso di lei. Può aggiungere note private alla tua scheda cliente.",
+          "p2": "Ogni attività è responsabile di come usa le proprie schede clienti e può inviarti comunicazioni di marketing solo se hai dato il tuo consenso. Le recensioni sono pubbliche e mostrano il tuo nome e l'iniziale del cognome."
+        }
+      },
+      "sharing": {
+        "title": "Con chi altro le condividiamo",
+        "body": {
+          "p1": "Ci avvaliamo di un numero ridotto di fornitori che trattano dati per nostro conto, in base a contratti che limitano ciò che possono farne:",
+          "li1": "Stripe, per pagamenti e versamenti.",
+          "li2": "Il nostro fornitore di email e, se gli SMS sono attivi, un fornitore di SMS.",
+          "li3": "Google, solo se scegli di accedere con Google.",
+          "li4": "Servizi di mappe e ricerca indirizzi, per mostrare mappe e trovare i luoghi che cerchi.",
+          "li5": "I nostri fornitori di hosting e infrastruttura.",
+          "p2": "Possiamo inoltre divulgare informazioni quando la legge lo richiede, per proteggere la sicurezza di qualcuno o nell'ambito di una fusione o acquisizione — nel qual caso questa informativa continuerebbe ad applicarsi. Non vendiamo mai dati personali."
+        }
+      },
+      "rights": {
+        "title": "Le tue scelte e i tuoi diritti",
+        "body": {
+          "li1": "<b>Accesso:</b> scarica una copia dei tuoi dati da <privacyData>Privacy e dati</privacyData>.",
+          "li2": "<b>Rettifica:</b> aggiorna i tuoi dati nel <profile>Profilo</profile>, o chiedi a noi di farlo.",
+          "li3": "<b>Cancellazione:</b> elimina il tuo account da Privacy e dati. Qui sotto trovi cosa conserviamo.",
+          "li4": "<b>Notifiche:</b> scegli cosa ti inviamo in <notifications>Notifiche</notifications>.",
+          "li5": "A seconda di dove vivi potresti avere ulteriori diritti, come opporti a determinati utilizzi o presentare reclamo a un'autorità per la protezione dei dati. <supportAccount>Contattaci</supportAccount> e ti aiuteremo."
+        }
+      },
+      "retention": {
+        "title": "Per quanto tempo le conserviamo",
+        "body": {
+          "p1": "Conserviamo le tue informazioni finché il tuo account è aperto.",
+          "p2": "Quando elimini il tuo account, cancelliamo subito nome, email, telefono, foto, indirizzi salvati, professionisti salvati, notifiche e metodi di accesso. I dati da cui dipendono le attività e la contabilità — appuntamenti passati, pagamenti e recensioni — vengono conservati, collegati a “Utente eliminato” anziché a te. I messaggi che hai scambiato con un'attività restano nella cronologia delle conversazioni di quell'attività."
+        }
+      },
+      "security": {
+        "title": "Sicurezza",
+        "body": {
+          "p1": "Le password sono protette con hash Argon2, le sessioni sono conservate lato server e possono essere revocate, le connessioni sono cifrate e le foto caricate vengono ricodificate per rimuovere i dati di posizione nascosti. Nessun sistema è perfettamente sicuro; se veniamo a conoscenza di una violazione che ti riguarda, ti avviseremo tempestivamente."
+        }
+      },
+      "children": {
+        "title": "Minori",
+        "body": {
+          "p1": "Gli account Kept sono riservati agli adulti. Un genitore o tutore può prenotare un servizio per il proprio figlio; non raccogliamo consapevolmente dati personali direttamente dai minori."
+        }
+      },
+      "changes": {
+        "title": "Modifiche e contatti",
+        "body": {
+          "p1": "Se modificheremo questa informativa in modo rilevante, te lo comunicheremo prima che la modifica entri in vigore.",
+          "p2": "Domande o richieste sui tuoi dati? <supportAccount>Contattaci</supportAccount>."
+        }
+      }
+    }
+  }
+}

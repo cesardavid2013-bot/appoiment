@@ -1,0 +1,22 @@
+{
+  "title": "Frag Kept",
+  "description": "Sag mir, was du brauchst und wann. Ich prüfe echte freie Termine.",
+  "newConversation": "Neue Unterhaltung",
+  "close": "Schließen",
+  "forExample": "Zum Beispiel:",
+  "starters": {
+    "one": "Ein Barbier morgen Nachmittag",
+    "two": "Gelnägel dieses Wochenende",
+    "three": "Massage in meiner Nähe heute Abend",
+    "four": "Mathe-Nachhilfe online"
+  },
+  "searching": "Suche läuft",
+  "listening": "Ich höre zu…",
+  "placeholder": "Ein Barbier am Samstagvormittag…",
+  "yourMessage": "Deine Nachricht",
+  "stopListening": "Zuhören beenden",
+  "speak": "Sprechen",
+  "send": "Senden",
+  "verified": "Verifiziert",
+  "online": "Online"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Chiedi a Kept",
+  "description": "Dimmi cosa ti serve e quando. Controllo le disponibilità reali.",
+  "newConversation": "Nuova conversazione",
+  "close": "Chiudi",
+  "forExample": "Per esempio:",
+  "starters": {
+    "one": "Un barbiere domani pomeriggio",
+    "two": "Unghie in gel questo weekend",
+    "three": "Un massaggio vicino a me stasera",
+    "four": "Ripetizioni di matematica online"
+  },
+  "searching": "Sto cercando",
+  "listening": "Ti ascolto…",
+  "placeholder": "Un barbiere sabato mattina…",
+  "yourMessage": "Il tuo messaggio",
+  "stopListening": "Smetti di ascoltare",
+  "speak": "Parla",
+  "send": "Invia",
+  "verified": "Verificato",
+  "online": "Online"
+}

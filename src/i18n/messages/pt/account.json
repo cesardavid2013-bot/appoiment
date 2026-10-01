@@ -1,0 +1,311 @@
+{
+  "loading": "Carregando…",
+  "noEmail": "Nenhum e-mail cadastrado",
+  "saveChanges": "Salvar alterações",
+  "cancel": "Cancelar",
+  "checkFields": "Confira os campos destacados.",
+  "nav": {
+    "label": "Configurações da conta",
+    "account": "Conta"
+  },
+  "sections": {
+    "profile": {
+      "label": "Perfil",
+      "description": "Nome, foto, telefone e fuso horário"
+    },
+    "security": {
+      "label": "Login e segurança",
+      "description": "Senha, confirmação de e-mail e dispositivos"
+    },
+    "notifications": {
+      "label": "Notificações",
+      "description": "Escolha sobre o que avisamos você por e-mail ou SMS"
+    },
+    "addresses": {
+      "label": "Endereços salvos",
+      "description": "Para profissionais que atendem a domicílio"
+    },
+    "privacy": {
+      "label": "Privacidade e dados",
+      "description": "Baixe seus dados ou exclua sua conta"
+    }
+  },
+  "home": {
+    "memberSince": "Membro desde {date}",
+    "confirmEmail": "<b>Confirme seu e-mail.</b> Enviamos um link para {email} para que os profissionais possam falar com você sobre suas reservas.",
+    "activity": "Sua atividade",
+    "settings": "Configurações",
+    "more": "Mais",
+    "signOut": "Sair",
+    "rows": {
+      "bookings": {
+        "label": "Reservas",
+        "description": "Agendamentos futuros e anteriores"
+      },
+      "saved": {
+        "label": "Salvos",
+        "description": "Profissionais que você salvou"
+      },
+      "messages": {
+        "label": "Mensagens",
+        "description": "Conversas com profissionais"
+      },
+      "notifications": {
+        "label": "Notificações",
+        "description": "Novidades sobre suas reservas"
+      },
+      "business": {
+        "label": "Mudar para o seu negócio",
+        "description": "Agenda, serviços e clientes"
+      },
+      "offer": {
+        "label": "Ofereça seus serviços no Kept",
+        "description": "Receba reservas e faça seu negócio crescer — comece grátis"
+      },
+      "support": {
+        "label": "Ajuda e suporte",
+        "description": "Ajuda com uma reserva, um pagamento ou sua conta"
+      },
+      "legal": {
+        "label": "Termos e privacidade",
+        "description": "Como o Kept funciona e como tratamos seus dados"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "E-mail de confirmação enviado",
+    "sentBody": "Confira {email} — o link vale por 3 dias.",
+    "sent": "E-mail enviado",
+    "resend": "Reenviar link"
+  },
+  "profile": {
+    "description": "Como você aparece para os profissionais com quem agenda.",
+    "saved": "Perfil salvo",
+    "details": "Dados pessoais",
+    "name": "Nome",
+    "email": "E-mail",
+    "changeEmail": "Para alterar o e-mail de acesso, <link>fale com o suporte</link> para confirmarmos que é você.",
+    "phone": "Telefone",
+    "phoneHintSms": "Os profissionais com quem você agenda podem ligar para falar do seu horário, e podemos enviar lembretes por SMS se você ativá-los.",
+    "phoneHint": "Os profissionais com quem você agenda podem usá-lo para falar com você sobre um horário.",
+    "photo": {
+      "title": "Foto",
+      "description": "Aparece ao lado do seu nome para os profissionais com quem você agenda.",
+      "updated": "Foto atualizada",
+      "removed": "Foto removida",
+      "change": "Trocar foto",
+      "upload": "Enviar foto",
+      "remove": "Remover",
+      "hint": "JPG, PNG ou WebP, até 15 MB. Removemos os dados de localização das fotos."
+    },
+    "timezone": {
+      "label": "Fuso horário",
+      "hint": "Seu fuso horário de referência. Os horários dos agendamentos sempre aparecem no horário local do profissional.",
+      "notSet": "Não definido",
+      "detect": "Detectar automaticamente",
+      "detectFailed": "Não conseguimos detectar seu fuso horário. Escolha-o na lista."
+    },
+    "language": {
+      "title": "Idioma",
+      "description": "Usado em menus, botões e datas em todo o Kept. Nomes de negócios, serviços e avaliações aparecem como foram escritos."
+    }
+  },
+  "security": {
+    "description": "Mantenha sua conta segura e sob seu controle.",
+    "password": {
+      "title": "Senha",
+      "setTitle": "Criar uma senha",
+      "description": "Ao alterar sua senha, você sai de todos os outros dispositivos.",
+      "setDescription": "Você entra com o Google. Crie uma senha para entrar também com seu e-mail.",
+      "change": "Alterar senha",
+      "setButton": "Criar senha",
+      "current": "Senha atual",
+      "new": "Nova senha",
+      "newHint": "No mínimo 8 caracteres. Evite palavras comuns e o seu e-mail.",
+      "confirm": "Confirme a nova senha",
+      "tooShort": "Use pelo menos 8 caracteres.",
+      "mismatch": "As senhas não coincidem.",
+      "changed": "Senha alterada",
+      "set": "Senha criada",
+      "othersSignedOut": "Todos os outros dispositivos foram desconectados."
+    },
+    "email": {
+      "title": "E-mail",
+      "description": "Usamos seu e-mail para o login e para enviar confirmações de reserva.",
+      "confirmed": "Confirmado",
+      "notConfirmed": "Ainda não confirmado",
+      "none": "Esta conta não tem e-mail."
+    },
+    "devices": {
+      "title": "Dispositivos",
+      "description": "Se você entrou em um dispositivo compartilhado ou perdido, desconecte-o aqui. Este dispositivo continua conectado.",
+      "status": "{count, plural, =0 {Somente este dispositivo está conectado} one {Conectado em # outro dispositivo} other {Conectado em # outros dispositivos}}",
+      "signOutOthers": "Sair dos outros dispositivos",
+      "confirmTitle": "Sair dos outros dispositivos?",
+      "confirmBody": "Quem estiver usando sua conta em outro celular, tablet ou computador precisará entrar de novo.",
+      "confirm": "Desconectar",
+      "signedOutToast": "{count, plural, one {Desconectado de # outro dispositivo} other {Desconectado de # outros dispositivos}}"
+    }
+  },
+  "notifications": {
+    "description": "Escolha como manter você informado. Nunca enviamos mais do que o necessário.",
+    "saved": "Salvo",
+    "emailAndText": "Alertas por e-mail e SMS",
+    "emailOnly": "Alertas por e-mail",
+    "inboxNote": "Tudo também aparece nas suas Notificações no Kept, seja qual for a sua escolha aqui.",
+    "addPhone": "Adicione um telefone no seu <link>perfil</link> para receber SMS.",
+    "email": "E-mail",
+    "sms": "SMS",
+    "forTopic": "para {topic}",
+    "alwaysOn": {
+      "bookings": "O e-mail fica sempre ativo, para podermos avisar você se uma reserva mudar.",
+      "business": "O e-mail fica sempre ativo, para você nunca perder uma nova reserva ou solicitação."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Atualizações de reservas",
+        "description": "Confirmações, alterações e cancelamentos."
+      },
+      "reminders": {
+        "label": "Lembretes",
+        "description": "Antes dos próximos agendamentos."
+      },
+      "messages": {
+        "label": "Mensagens",
+        "description": "Quando um profissional ou cliente envia uma mensagem para você."
+      },
+      "waitlist": {
+        "label": "Vagas da lista de espera",
+        "description": "Quando um horário que você queria fica disponível."
+      },
+      "reviews": {
+        "label": "Pedidos de avaliação",
+        "description": "Uma mensagem breve depois de um atendimento concluído."
+      },
+      "business": {
+        "label": "Atividade do negócio",
+        "description": "Novas reservas, solicitações e avaliações do seu negócio."
+      },
+      "marketing": {
+        "label": "Novidades e ofertas",
+        "description": "Atualizações ocasionais dos negócios com quem você já agendou."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Para profissionais que atendem a domicílio — barbeiros, estética automotiva, personal trainers e muito mais.",
+    "defaultLabel": "Casa",
+    "saved": "Endereço salvo",
+    "removed": "Endereço removido",
+    "emptyTitle": "Nenhum endereço salvo",
+    "emptyBody": "Deixe à mão, em um só lugar, os endereços onde você recebe serviços a domicílio — como sua casa ou o escritório.",
+    "add": "Adicionar endereço",
+    "removeLabel": "Remover {label}",
+    "count": "{count} de {max} salvos",
+    "limit": "Você atingiu o limite. Remova um endereço para adicionar outro.",
+    "dialogBody": "Só você vê. Um profissional só vê um endereço quando você agenda um serviço nele.",
+    "save": "Salvar endereço",
+    "fields": {
+      "name": "Nome",
+      "nameHint": "Por exemplo: Casa, Trabalho ou Academia.",
+      "line1": "Endereço",
+      "line2": "Apartamento, sala ou andar",
+      "city": "Cidade",
+      "region": "Estado / região",
+      "postalCode": "CEP",
+      "country": "País"
+    },
+    "removeTitle": "Remover “{label}”?",
+    "removeBody": "As reservas que você já fez neste endereço não são afetadas.",
+    "remove": "Remover endereço"
+  },
+  "privacy": {
+    "description": "Seus dados são seus. Veja como os usamos em nossa <link>política de privacidade</link>.",
+    "export": {
+      "title": "Baixar seus dados",
+      "description": "Receba uma cópia do seu perfil, endereços salvos, agendamentos, avaliações, mensagens, profissionais salvos e pedidos de suporte em um arquivo JSON.",
+      "button": "Baixar meus dados",
+      "hint": "Pronto na hora. Guarde o arquivo em um lugar seguro — ele contém informações pessoais."
+    },
+    "delete": {
+      "title": "Excluir sua conta",
+      "intro": "Isso encerra sua conta do Kept de forma permanente. Veja o que acontece:",
+      "erased": "Seu nome, e-mail, telefone, foto, endereços salvos e profissionais salvos são apagados, e você é desconectado de todos os dispositivos.",
+      "upcoming": "{count, plural, one {Seu próximo agendamento é cancelado conforme a política de cancelamento de cada negócio, incluindo qualquer reembolso que ela preveja.} other {Seus # próximos agendamentos são cancelados conforme a política de cancelamento de cada negócio, incluindo qualquer reembolso que ela preveja.}}",
+      "upcomingNone": "Os próximos agendamentos são cancelados conforme a política de cancelamento de cada negócio.",
+      "records": "Os registros dos quais os negócios e as regras fiscais dependem — agendamentos anteriores, pagamentos e avaliações — são mantidos, mas aparecem como de “Usuário excluído”.",
+      "permanent": "Não é possível desfazer. Você pode se cadastrar de novo depois com o mesmo e-mail, começando do zero.",
+      "blocked": "Você é dono de {businesses}. Encerre o negócio ou transfira-o para outra pessoa nas <link>configurações do negócio</link> antes de excluir sua conta, para que os clientes não fiquem sem resposta.",
+      "copyFirst": "Quer uma cópia antes? Baixe seus dados acima.",
+      "open": "Excluir conta…",
+      "confirmTitle": "Excluir sua conta?",
+      "confirmBody": "Não é possível desfazer.",
+      "keep": "Manter minha conta",
+      "confirm": "Excluir minha conta",
+      "willCancel": "{count, plural, one {# agendamento futuro será cancelado.} other {# agendamentos futuros serão cancelados.}}",
+      "password": "Sua senha",
+      "typeToConfirm": "Digite <word>{word}</word> para confirmar",
+      "deletedToast": "Sua conta foi excluída",
+      "deletedBody": "Obrigado por usar o Kept."
+    }
+  },
+  "saved": {
+    "title": "Salvos",
+    "description": "{count, plural, one {# profissional salvo.} other {# profissionais salvos.}} Os horários abaixo vêm em tempo real das agendas deles.",
+    "emptyTitle": "Nada salvo ainda",
+    "emptyBody": "Toque no coração de qualquer profissional para guardá-lo aqui — prático para reagendar com quem você já confia ou comparar alguns antes de decidir.",
+    "explore": "Explorar profissionais",
+    "loading": "Carregando profissionais salvos…"
+  },
+  "notificationList": {
+    "title": "Notificações",
+    "today": "Hoje",
+    "earlier": "Anteriores",
+    "emptyTitle": "Nenhuma notificação ainda",
+    "emptyBody": "Confirmações de reserva, lembretes, respostas e vagas da lista de espera aparecerão aqui.",
+    "unread": "{count} não lidas",
+    "caughtUp": "Você está em dia",
+    "allCaughtUpToast": "Tudo em dia",
+    "markAll": "Marcar tudo como lido",
+    "unreadItem": "Não lida",
+    "loadOlder": "Carregar anteriores",
+    "end": "Isso é tudo."
+  },
+  "invite": {
+    "eyebrow": "Convite para a equipe",
+    "invalidTitle": "Este convite não pode ser usado",
+    "invalidBody": "Ele pode ter expirado, sido cancelado ou já aceito. Peça a quem convidou você para enviar um novo link.",
+    "goHome": "Ir para o Kept",
+    "join": "Entrar em {business}",
+    "invitedAs": "Você foi convidado como <b>{role}</b>.",
+    "signInWith": "Entre ou crie uma conta com <b>{email}</b> para aceitar.",
+    "createAccount": "Criar conta",
+    "signIn": "Entrar",
+    "wrongAccount": "Você entrou como <b>{email}</b>, mas este convite foi enviado para {invited}.",
+    "wrongAccountHint": "Saia e entre com esse endereço, ou peça um convite para {email}.",
+    "acceptingAs": "Aceitando como <b>{email}</b>.",
+    "accept": "Aceitar e abrir minha agenda",
+    "roles": {
+      "owner": {
+        "label": "Proprietário",
+        "description": "Controle total, incluindo cobrança e equipe."
+      },
+      "manager": {
+        "label": "Gerente",
+        "description": "Cuida da operação do dia a dia. Não pode alterar a equipe nem as configurações do negócio."
+      },
+      "receptionist": {
+        "label": "Recepção",
+        "description": "Agenda e gerencia os horários de todos."
+      },
+      "provider": {
+        "label": "Profissional",
+        "description": "Vê e gerencia os próprios agendamentos e horários."
+      },
+      "custom": {
+        "label": "Personalizado",
+        "description": "Escolha exatamente o que essa pessoa pode fazer."
+      }
+    }
+  }
+}

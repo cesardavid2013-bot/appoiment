@@ -1,0 +1,147 @@
+{
+  "footer": "Du erhältst diese Nachricht aufgrund von Aktivitäten in deinem Kept-Konto. Benachrichtigungen verwaltest du unter Konto → Benachrichtigungen.",
+  "details": {
+    "service": "Leistung",
+    "when": "Wann",
+    "with": "Bei",
+    "where": "Wo",
+    "online": "Online — das Unternehmen schickt dir den Link",
+    "reference": "Buchungsnummer",
+    "paid": "Bezahlt",
+    "balanceDue": "Offener Betrag"
+  },
+  "cta": {
+    "viewAppointment": "Termin ansehen",
+    "viewRequest": "Anfrage ansehen",
+    "reviewRequest": "Anfrage prüfen",
+    "openAppointment": "Termin öffnen",
+    "openCalendar": "Kalender öffnen",
+    "findAnotherTime": "Andere Zeit finden",
+    "payDeposit": "Anzahlung leisten",
+    "leaveReview": "Bewertung schreiben",
+    "bookThisTime": "Diese Zeit buchen"
+  },
+  "booked": {
+    "title": "Du bist bei {business} gebucht",
+    "subject": "Bestätigt: {service} bei {business}",
+    "heading": "Dein Termin ist bestätigt",
+    "footnote": "Pläne geändert? Du kannst auf der Terminseite umbuchen oder stornieren — gemäß den Bedingungen des Unternehmens.",
+    "sms": "Kept: {service} bei {business} ist für {when} bestätigt. Nr. {reference}"
+  },
+  "requested": {
+    "title": "Anfrage an {business} gesendet",
+    "body": "Wir melden uns, sobald eine Antwort da ist.",
+    "subject": "Anfrage gesendet: {service} bei {business}",
+    "heading": "Deine Anfrage wurde gesendet",
+    "paragraph": "{business} prüft Anfragen, bevor sie bestätigt werden. Wir schreiben dir, sobald eine Antwort da ist."
+  },
+  "bizBooked": {
+    "title": "Neue Buchung",
+    "requestTitle": "Neue Buchungsanfrage",
+    "subject": "Neue Buchung: {service}",
+    "requestSubject": "Neue Anfrage: {service}",
+    "heading": "Du hast eine neue Buchung",
+    "requestHeading": "Du hast eine neue Buchungsanfrage",
+    "requestParagraph": "Nimm sie in deinem Kalender an oder lehne sie ab. Unbeantwortete Anfragen laufen automatisch ab."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} konnte deine Anfrage nicht annehmen",
+      "subject": "Anfrage abgelehnt: {service}",
+      "heading": "Deine Anfrage wurde nicht angenommen"
+    },
+    "expired": {
+      "title": "Deine Buchung ist abgelaufen",
+      "subject": "Deine Buchung ist abgelaufen",
+      "heading": "Deine Buchung ist abgelaufen"
+    },
+    "cancelled": {
+      "title": "{business} hat deinen Termin storniert",
+      "subject": "Storniert: {service}",
+      "heading": "Dein Termin wurde storniert"
+    },
+    "note": "Nachricht vom Unternehmen: „{note}“",
+    "refund": "Eine Erstattung von {amount} ist auf dem Weg zu deiner ursprünglichen Zahlungsmethode.",
+    "bookAgain": "Du kannst jederzeit einen anderen Termin buchen."
+  },
+  "bizCancelled": {
+    "title": "Ein Kunde hat storniert",
+    "expiredTitle": "Eine Buchung ist abgelaufen",
+    "subject": "Storniert: {service} · {when}",
+    "heading": "Ein Termin wurde storniert",
+    "reason": "Grund: „{reason}“"
+  },
+  "rescheduled": {
+    "title": "{business} hat deinen Termin verschoben",
+    "body": "Neu: {when}",
+    "subject": "Neue Zeit: {service} bei {business}",
+    "heading": "Dein Termin hat eine neue Zeit",
+    "previously": "Vorher: {when}.",
+    "changeIt": "Wenn dir die neue Zeit nicht passt, kannst du auf der Terminseite umbuchen oder stornieren."
+  },
+  "bizRescheduled": {
+    "title": "Ein Kunde hat umgebucht",
+    "subject": "Umgebucht: {service}",
+    "heading": "Ein Termin wurde umgebucht"
+  },
+  "approvedPay": {
+    "title": "{business} hat deine Anfrage angenommen",
+    "body": "Leiste die Anzahlung von {amount}, um zu bestätigen.",
+    "subject": "Angenommen — bestätige deinen Termin: {service}",
+    "heading": "Deine Anfrage wurde angenommen",
+    "paragraph": "Leiste die Anzahlung von {amount}, um dir deine Zeit zu sichern. Unbezahlte Buchungen werden automatisch freigegeben."
+  },
+  "reminder": {
+    "title": "Erinnerung: {service} {lead}",
+    "body": "{when} bei {business}",
+    "subject": "Erinnerung: {service} {lead} um {time}",
+    "heading": "Bis {lead}",
+    "footnote": "Du verspätest dich oder kannst nicht kommen? Gib dem Unternehmen über die Terminseite Bescheid.",
+    "sms": "Erinnerung: {service} bei {business} {when}."
+  },
+  "review": {
+    "title": "Wie war {service}?",
+    "body": "Gib {business} eine kurze Bewertung.",
+    "subject": "Wie war dein Besuch bei {business}?",
+    "heading": "Wie war's?",
+    "paragraph": "Deine Bewertung hilft {business} und allen, die einen Profi suchen. Es dauert keine Minute."
+  },
+  "waitlist": {
+    "title": "Bei {business} ist ein Platz frei geworden",
+    "body": "{when} ist jetzt verfügbar. Schnell sein lohnt sich — wer zuerst bucht, bekommt den Platz.",
+    "subject": "Bei {business} ist eine Zeit frei geworden",
+    "heading": "Gute Nachrichten — eine Zeit ist frei geworden",
+    "paragraph": "{when} ist gerade frei geworden. Plätze werden in der Reihenfolge der Buchung vergeben, also buche bald, wenn es dir passt."
+  },
+  "thread": {
+    "confirmed": "Termin bestätigt: {service}, {when}.",
+    "declined": "Termin abgelehnt: {service}, {when}.",
+    "expired": "Termin abgelaufen: {service}, {when}.",
+    "cancelled": "Termin storniert: {service}, {when}.",
+    "moved": "Termin verschoben von {from} auf {to}."
+  },
+  "verify": {
+    "subject": "Bestätige deine E-Mail-Adresse",
+    "preheader": "Ein Tipp, um deine E-Mail-Adresse zu bestätigen.",
+    "heading": "Willkommen, {name}",
+    "paragraph": "Bestätige deine E-Mail-Adresse, damit Unternehmen dich zu deinen Terminen erreichen können.",
+    "cta": "E-Mail bestätigen",
+    "footnote": "Dieser Link ist 3 Tage gültig. Wenn du kein Konto erstellt hast, kannst du diese E-Mail ignorieren."
+  },
+  "reset": {
+    "subject": "Setze dein Passwort zurück",
+    "heading": "Setze dein Passwort zurück",
+    "paragraph": "Jemand (hoffentlich du) möchte das Passwort für dein Kept-Konto zurücksetzen.",
+    "cta": "Neues Passwort wählen",
+    "footnote": "Dieser Link ist 1 Stunde gültig. Wenn du das nicht angefordert hast, kannst du diese E-Mail einfach ignorieren — dein Passwort bleibt unverändert."
+  },
+  "invite": {
+    "subject": "{inviter} hat dich eingeladen, {business} auf Kept beizutreten",
+    "reminderSubject": "Erinnerung: Tritt {business} auf Kept bei",
+    "heading": "Tritt {business} bei",
+    "paragraph": "{inviter} hat dich eingeladen, dem Team von {business} beizutreten. Du kannst dann deinen Plan sehen und deine Termine verwalten.",
+    "cta": "Einladung annehmen",
+    "footnote": "Diese Einladung ist {days} Tage gültig.",
+    "reminderFootnote": "Diese Einladung ist {days} Tage gültig. Frühere Einladungslinks funktionieren nicht mehr."
+  }
+}

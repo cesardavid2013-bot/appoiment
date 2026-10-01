@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Reserva", "hint": "Alterações, cancelamentos ou problemas com um agendamento." },
+    "payment": { "label": "Pagamento", "hint": "Cobranças, sinais, reembolsos ou gorjetas." },
+    "account": { "label": "Conta", "hint": "Login, seu perfil ou seus dados." },
+    "report": { "label": "Denunciar um negócio", "hint": "Questões de segurança, anúncios enganosos ou má conduta." },
+    "other": { "label": "Outro", "hint": "Qualquer outra coisa em que possamos ajudar." }
+  },
+  "status": {
+    "open": "Aguardando o suporte",
+    "awaiting_customer": "Respondido",
+    "resolved": "Resolvido",
+    "closed": "Encerrado"
+  },
+  "home": {
+    "title": "Ajuda e suporte",
+    "description": "Ajuda com uma reserva, um pagamento ou sua conta.",
+    "newRequest": "Novo pedido",
+    "yourRequests": "Seus pedidos",
+    "emptyTitle": "Nenhum pedido ainda",
+    "emptyBody": "Se algo não estiver certo com uma reserva, um pagamento ou sua conta, conte para nós e vamos ajudar a resolver.",
+    "contact": "Falar com o suporte",
+    "ticketLine": "{category} · Atualizado em {date} · {count, plural, one {# mensagem} other {# mensagens}}",
+    "quickAnswers": "Respostas rápidas",
+    "stillStuck": "Ainda precisa de ajuda? <link>Fale com o suporte</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Como cancelo ou reagendo um agendamento?",
+      "a": "Abra <link>Reservas</link>, escolha o agendamento e toque em Reagendar ou Cancelar. Cada negócio define o próprio prazo de cancelamento — você verá exatamente o que se aplica, incluindo qualquer taxa ou reembolso, antes de confirmar."
+    },
+    "refund": {
+      "q": "Quando vou receber meu reembolso?",
+      "a": "Os reembolsos voltam para o cartão usado no pagamento assim que o cancelamento é confirmado. Dependendo do banco, costumam levar de 5 a 10 dias úteis para aparecer. Se o sinal é reembolsável ou não depende da política do negócio, mostrada quando você reserva."
+    },
+    "contactPro": {
+      "q": "Como falo com um profissional?",
+      "a": "Use Mensagem no perfil dele ou na sua reserva. Suas conversas ficam em <link>Mensagens</link>. Para tudo sobre o serviço em si — como chegar, preparação, o que levar —, o negócio responde mais rápido."
+    },
+    "report": {
+      "q": "Algo deu errado com um negócio. O que posso fazer?",
+      "a": "Abra um pedido abaixo e escolha “Denunciar um negócio”. Vincule o agendamento, se houver. Lemos todas as denúncias e podemos intervir em reembolsos e, quando necessário, remover negócios do Kept."
+    },
+    "account": {
+      "q": "Como altero meu e-mail ou excluo minha conta?",
+      "a": "As alterações de e-mail passam pelo suporte para confirmarmos que é você. Você mesmo pode baixar seus dados ou excluir sua conta em <link>Privacidade e dados</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Pedido de suporte",
+    "allRequests": "Todos os pedidos",
+    "opened": "{category} · Aberto em <date></date>",
+    "appointmentLine": "{date} às {time} · Cód. {reference}",
+    "conversation": "Conversa",
+    "keptSupport": "Suporte Kept",
+    "openImage": "Abrir imagem anexada",
+    "attachedImage": "Imagem anexada",
+    "closed": "Este pedido está encerrado. <link>Abra um novo pedido</link> se ainda precisar de ajuda.",
+    "willReply": "Responderemos aqui e avisaremos você quando isso acontecer.",
+    "sorted": "Resolvido? Avise a gente."
+  },
+  "new": {
+    "title": "Falar com o suporte",
+    "intro": "Conte o que está acontecendo e uma pessoa de verdade da equipe do Kept responderá aqui. Para dúvidas sobre o serviço em si, mandar mensagem ao negócio costuma ser mais rápido.",
+    "notFound": "Não encontramos esse agendamento na sua conta, então ele não foi anexado. Você ainda pode escolher um abaixo."
+  },
+  "form": {
+    "topic": "Com o que você precisa de ajuda?",
+    "chooseTopic": "Escolha um assunto",
+    "addSubject": "Adicione um assunto curto",
+    "moreDetail": "Conte um pouco mais — pelo menos uma frase nos ajuda a ajudar você",
+    "sent": "Pedido enviado",
+    "checkFields": "Confira os campos destacados.",
+    "related": "Agendamento relacionado",
+    "refHint": "Cód. {reference} · {business}",
+    "linkHint": "Vincular uma reserva nos permite analisá-la imediatamente.",
+    "none": "Nenhum",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Assunto",
+    "subjectPlaceholder": "ex.: Fui cobrado duas vezes pelo sinal",
+    "details": "Detalhes",
+    "detailsHint": "O que aconteceu, quando e o que você gostaria que fizéssemos. Não inclua números de cartão nem senhas.",
+    "images": "Imagens",
+    "optional": "Opcional",
+    "cancel": "Cancelar",
+    "uploadingImages": "Enviando imagens…",
+    "send": "Enviar pedido"
+  },
+  "reply": {
+    "writeFirst": "Escreva uma resposta primeiro.",
+    "sent": "Resposta enviada",
+    "label": "Resposta",
+    "reopens": "Responder reabre este pedido.",
+    "placeholder": "Adicione mais detalhes ou responda à nossa pergunta…",
+    "send": "Enviar resposta"
+  },
+  "resolve": {
+    "button": "Marcar como resolvido",
+    "done": "Marcado como resolvido",
+    "doneBody": "Que bom que se resolveu. Você ainda pode responder se surgir algo.",
+    "confirmTitle": "Marcar este pedido como resolvido?",
+    "confirmBody": "Avise que está resolvido. Se surgir mais alguma coisa, responda aqui e retomamos."
+  },
+  "attach": {
+    "tooMany": "Você pode anexar até {max} imagens.",
+    "alt": "Anexo do suporte",
+    "label": "Anexos",
+    "uploadingName": "Enviando {name}",
+    "remove": "Remover {name}",
+    "add": "Adicionar imagem",
+    "uploading": "{count, plural, one {Enviando # imagem…} other {Enviando # imagens…}}",
+    "hint": "Capturas de tela ou fotos ajudam. Até {max} imagens, 15 MB cada."
+  }
+}

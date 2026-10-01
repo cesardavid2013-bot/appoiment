@@ -1,0 +1,90 @@
+{
+  "language": "Idioma",
+  "meta": {
+    "title": "Kept — Reserve profissionais de confiança perto de você",
+    "description": "Encontre e reserve barbeiros, cabeleireiros, personal trainers, fotógrafos, professores e todo tipo de profissional local — e gerencie seus próprios agendamentos com facilidade."
+  },
+  "skipToContent": "Pular para o conteúdo",
+  "logoHome": "Início do Kept",
+  "header": {
+    "mainNav": "Principal",
+    "search": "Buscar serviços ou profissionais",
+    "ask": "Perguntar",
+    "askKept": "Pergunte ao Kept",
+    "explore": "Explorar",
+    "myBusiness": "Meu negócio",
+    "forPros": "Para profissionais",
+    "bookings": "Reservas",
+    "messages": "Mensagens",
+    "notifications": "Notificações",
+    "unread": "não lidas",
+    "accountMenu": "Menu da conta",
+    "logIn": "Entrar",
+    "signUp": "Cadastrar-se"
+  },
+  "accountMenu": {
+    "bookings": "Reservas",
+    "saved": "Salvos",
+    "messages": "Mensagens",
+    "settings": "Configurações da conta",
+    "help": "Ajuda e suporte",
+    "switchToBusiness": "Mudar para o negócio",
+    "offerServices": "Ofereça seus serviços",
+    "admin": "Console de administração",
+    "signOut": "Sair"
+  },
+  "tabs": {
+    "label": "Principal",
+    "home": "Início",
+    "explore": "Explorar",
+    "bookings": "Reservas",
+    "inbox": "Caixa de entrada",
+    "account": "Conta"
+  },
+  "footer": {
+    "tagline": "Reserve profissionais de confiança. Gerencie seus agendamentos com menos esforço.",
+    "discover": "Descobrir",
+    "explore": "Explorar",
+    "hair": "Cabelo e barbearia",
+    "wellness": "Bem-estar",
+    "fitness": "Fitness",
+    "forPros": "Para profissionais",
+    "howItWorks": "Como funciona",
+    "listServices": "Anuncie seus serviços",
+    "dashboard": "Painel do negócio",
+    "help": "Ajuda",
+    "support": "Suporte",
+    "terms": "Termos",
+    "privacy": "Privacidade",
+    "copyright": "© {year} Kept. Todos os direitos reservados."
+  },
+  "price": {
+    "free": "Grátis",
+    "quote": "Preço sob consulta",
+    "from": "A partir de {price}"
+  },
+  "rating": {
+    "new": "Novo",
+    "summary": "nota {avg} em {count, plural, one {# avaliação} other {# avaliações}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Aguardando pagamento",
+    "requested": "Solicitação enviada",
+    "confirmed": "Confirmado",
+    "checked_in": "Check-in feito",
+    "in_progress": "Em andamento",
+    "completed": "Concluído",
+    "cancelled": "Cancelado",
+    "declined": "Recusado",
+    "no_show": "Não compareceu",
+    "expired": "Expirado"
+  },
+  "policy": {
+    "freeUntil": "Cancelamento grátis até {hours}h antes. Cancelamentos posteriores custam {percent}% do total.",
+    "cancelAhead": "Cancele com pelo menos {hours}h de antecedência.",
+    "freeAnyTime": "Cancelamento grátis a qualquer momento antes do horário.",
+    "depositRefundable": "O sinal é reembolsável se você cancelar dentro do prazo.",
+    "depositNonRefundable": "O sinal não é reembolsável.",
+    "reschedule": "Reagende online até {hours}h antes."
+  }
+}

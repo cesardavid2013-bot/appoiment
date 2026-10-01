@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Esplora i professionisti",
+    "category": "Prenota {category}",
+    "query": "{q} — ricerca",
+    "description": "Confronta i professionisti per disponibilità reale, prezzi e recensioni verificate."
+  },
+  "bar": {
+    "placeholder": "Cerca servizi o professionisti",
+    "label": "Cerca",
+    "clear": "Cancella ricerca"
+  },
+  "location": {
+    "placeholder": "Ovunque",
+    "label": "Luogo",
+    "clear": "Cancella luogo",
+    "useMine": "Usa la mia posizione attuale",
+    "finding": "Ti stiamo localizzando…",
+    "current": "Posizione attuale",
+    "selectedArea": "Area selezionata",
+    "unsupported": "Il tuo browser non può condividere la posizione. Inserisci una città.",
+    "denied": "La posizione è disattivata per questo sito. Inserisci una città — oppure consenti la posizione nelle impostazioni del browser.",
+    "failed": "Non siamo riusciti a ottenere la tua posizione. Inserisci una città."
+  },
+  "quick": {
+    "availableToday": "Disponibili oggi",
+    "instant": "Prenotazione immediata",
+    "mobile": "A domicilio",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Vista",
+    "list": "Elenco",
+    "map": "Mappa"
+  },
+  "heading": {
+    "explore": "Esplora",
+    "results": "Risultati",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Aggiornamento…",
+    "count": "{count, plural, one {# professionista} other {# professionisti}}",
+    "countMore": "{count}+ professionisti",
+    "near": "{results} vicino a {place}",
+    "nearYou": "{results} vicino a te"
+  },
+  "sort": {
+    "label": "Ordina per",
+    "relevance": "Più pertinenti",
+    "rating": "Più votati",
+    "price": "Prezzo più basso",
+    "distance": "Più vicini"
+  },
+  "categories": {
+    "label": "Categorie",
+    "all": "Tutte"
+  },
+  "empty": {
+    "title": "Ancora nessun risultato",
+    "query": "Prova un termine più generico, un'ortografia diversa o rimuovi qualche filtro.",
+    "filters": "Prova a rimuovere un filtro o a cercare in un'area più ampia.",
+    "clear": "Cancella tutti i filtri"
+  },
+  "showMore": "Mostra altri",
+  "filters": {
+    "button": "Filtri",
+    "buttonCount": "Filtri · {count}",
+    "title": "Filtri",
+    "clearAll": "Cancella tutto",
+    "show": "Mostra risultati",
+    "availability": "Disponibilità e prenotazione",
+    "rating": "Valutazione",
+    "minRating": "Valutazione minima",
+    "any": "Qualsiasi",
+    "price": "Prezzo di partenza fino a",
+    "maxPrice": "Prezzo di partenza massimo",
+    "distance": "Distanza",
+    "provider": "Fornitore",
+    "providerType": "Tipo di fornitore",
+    "individual": "Professionisti indipendenti",
+    "business": "Attività e team"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "En attente de paiement",
+    "requested": "Demande envoyée",
+    "confirmed": "Confirmé",
+    "checked_in": "Arrivé",
+    "in_progress": "En cours",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "declined": "Refusé",
+    "no_show": "Absent",
+    "expired": "Expiré"
+  },
+  "list": {
+    "title": "Réservations",
+    "filters": "Filtres des réservations",
+    "tabs": {
+      "upcoming": "À venir",
+      "past": "Passées",
+      "cancelled": "Annulées"
+    },
+    "howDidItGo": "Comment ça s'est passé ?",
+    "review": "Donner un avis",
+    "empty": {
+      "upcoming": "Aucun rendez-vous à venir",
+      "past": "Aucun rendez-vous passé pour l'instant",
+      "cancelled": "Aucune annulation",
+      "upcomingBody": "Quand vous réservez, vos rendez-vous s'affichent ici — avec l'itinéraire, des rappels et une modification facile.",
+      "findPro": "Trouver un professionnel"
+    }
+  },
+  "detail": {
+    "metaTitle": "Rendez-vous",
+    "allBookings": "Toutes les réservations",
+    "hero": {
+      "confirmedTitle": "C'est réservé",
+      "confirmedBody": "Nous vous avons envoyé une confirmation et vous enverrons un rappel avant votre rendez-vous.",
+      "requestedTitle": "Demande envoyée",
+      "requestedBody": "{business} va examiner votre demande. Nous vous préviendrons dès qu'il y aura une réponse — votre créneau est bloqué en attendant.",
+      "paymentTitle": "Finalisation de votre paiement",
+      "paymentBody": "Si vous venez de payer, cette page se met à jour automatiquement dans quelques secondes. Votre créneau est bloqué le temps que le paiement aboutisse."
+    },
+    "calendarDetails": "Référence {reference}",
+    "ref": "Réf.",
+    "when": "Quand",
+    "with": "Avec",
+    "where": "Où",
+    "atYourAddress": "À votre adresse",
+    "online": "En ligne",
+    "virtualLink": "Le professionnel enverra le lien avant votre séance.",
+    "yourReview": "Votre avis",
+    "payment": {
+      "title": "Paiement",
+      "serviceFee": "Frais de service",
+      "tax": "Taxes",
+      "estimatedTotal": "Total estimé",
+      "total": "Total",
+      "paid": "Payé",
+      "refunded": "Remboursé",
+      "balance": "Solde",
+      "dueAtAppointment": "À régler sur place",
+      "tip": "Pourboire"
+    },
+    "policy": {
+      "title": "Conditions d'annulation",
+      "freeUntil": "Annulation gratuite jusqu'à {hours, plural, one {# heure} other {# heures}} avant.",
+      "freeAnytime": "Annulation gratuite à tout moment avant le rendez-vous.",
+      "lateFee": "Annulation tardive : {percent} % du total.",
+      "depositNonRefundable": "L'acompte n'est pas remboursable.",
+      "cannotCancel": "Ce rendez-vous ne peut plus être annulé.",
+      "alreadyStarted": "Ce rendez-vous a déjà commencé.",
+      "cannotReschedule": "Ce rendez-vous ne peut pas être déplacé.",
+      "maxReschedules": "Ce rendez-vous a déjà été déplacé le nombre maximal de fois. Merci de contacter l'établissement.",
+      "rescheduleWindow": "Les modifications doivent être faites au moins {hours, plural, one {# heure} other {# heures}} avant le rendez-vous. Merci de contacter l'établissement."
+    },
+    "refund": {
+      "noCharge": "Aucuns frais.",
+      "full": "Vous serez intégralement remboursé.",
+      "none": "Votre paiement n'est pas remboursable selon la politique de cet établissement.",
+      "partial": "Vous serez partiellement remboursé selon la politique de cet établissement."
+    },
+    "note": "Remarque : {reason}",
+    "problem": "Un problème avec cette réservation ? <link>Contactez l'assistance</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} à {time}",
+    "cancelledToast": "Rendez-vous annulé",
+    "refundOnWay": "Un remboursement de {amount} est en cours.",
+    "rescheduledToast": "Rendez-vous déplacé",
+    "payToConfirm": "Payer {amount} pour confirmer",
+    "addToCalendar": "Ajouter à l'agenda",
+    "directions": "Itinéraire",
+    "message": "Message",
+    "bookAgain": "Réserver à nouveau",
+    "googleCalendar": "Google Agenda",
+    "leaveReview": "Laisser un avis",
+    "reschedule": "Déplacer",
+    "cancelAppointment": "Annuler le rendez-vous",
+    "cancelTitle": "Annuler ce rendez-vous ?",
+    "insideWindow": "Vous êtes dans le délai d'annulation de l'établissement.",
+    "refundAmount": "Remboursement : {amount}.",
+    "keptAmount": "Conservé par l'établissement : {amount}.",
+    "reason": "Motif",
+    "reasonHint": "Communiqué à l'établissement.",
+    "chooseNewTime": "Choisir un nouvel horaire",
+    "currently": "Actuellement : {when}",
+    "keepCurrentTime": "Garder l'horaire actuel",
+    "moveTo": "Déplacer à {time}",
+    "chooseTime": "Choisissez un horaire"
+  },
+  "review": {
+    "ratings": {
+      "1": "Décevant",
+      "2": "Passable",
+      "3": "Bien",
+      "4": "Très bien",
+      "5": "Excellent"
+    },
+    "thanks": "Merci pour votre avis",
+    "title": "Comment s'est passé votre rendez-vous chez {business} ?",
+    "subtitle": "Votre avis est public et signalé comme réservation vérifiée.",
+    "rating": "Note",
+    "stars": "{n, plural, one {# étoile} other {# étoiles}}",
+    "bodyLabel": "Racontez votre visite",
+    "bodyPlaceholder": "Qu'est-ce qui vous a marqué ? Le recommanderiez-vous ?",
+    "post": "Publier l'avis"
+  },
+  "slotPicker": {
+    "previousWeek": "Semaine précédente",
+    "nextWeek": "Semaine suivante",
+    "noOpenings": "Aucun créneau ce jour-là.",
+    "selected": "Sélectionné : {time}"
+  }
+}

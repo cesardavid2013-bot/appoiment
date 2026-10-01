@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept für Profis — Online-Buchung und ein Kalender, der für dich arbeitet",
+    "description": "Nimm Buchungen online an, beende Doppelbuchungen und Ausfälle und werde von Kunden in deiner Nähe gefunden. Für selbstständige Profis kostenlos starten."
+  },
+  "cta": {
+    "dashboard": "Zu deinem Business",
+    "setup": "Business einrichten",
+    "start": "Jetzt starten — kostenlos"
+  },
+  "hero": {
+    "eyebrow": "Kept für Profis",
+    "title": "Volle Termine. Freie Abende.",
+    "lede": "Online-Buchung, ein Kalender ohne Doppelbuchungen, Erinnerungen gegen Ausfälle und ein Profil, das Menschen in deiner Nähe sehen, die genau das suchen, was du machst. Kostenlos starten.",
+    "howItWorks": "So funktioniert's",
+    "note": "Keine Kreditkarte nötig. Dein Profil bleibt privat, bis du es veröffentlichst."
+  },
+  "sides": {
+    "heading": "So funktioniert Kept für deine Kunden und für dich",
+    "clients": {
+      "eyebrow": "Für deine Kunden",
+      "title": "Großartige Profis entdecken und buchen.",
+      "points": {
+        "search": "Suche nach Leistung, Ort und Zeit mit echten freien Terminen — statt eines Kontaktformulars.",
+        "prices": "Klare Preise, deine Bedingungen und verifizierte Bewertungen vor der Buchung.",
+        "reminders": "Erinnerungen, Wegbeschreibung und Umbuchen ohne Anruf."
+      }
+    },
+    "you": {
+      "eyebrow": "Für dich",
+      "title": "Verwalte deine Termine und lass dein Business wachsen.",
+      "points": {
+        "calendar": "Ein Kalender für Buchungen, Pausen und freie Tage — auf deinem Handy.",
+        "deposits": "Anzahlungen und Stornoregeln, die automatisch durchgesetzt werden.",
+        "clients": "Kundenhistorie, Notizen und Bewertungen, die Menschen wiederkommen lassen."
+      }
+    }
+  },
+  "steps": {
+    "heading": "In drei Schritten live",
+    "profile": {
+      "title": "Profil einrichten",
+      "body": "Füge deine Leistungen mit Preisen und Dauer hinzu, deine Öffnungszeiten, wo du arbeitest und ein paar Fotos deiner Arbeit. Wir führen dich durch."
+    },
+    "share": {
+      "title": "Link teilen",
+      "body": "Setz {host}/dein-name in deine Bio und auf deine Visitenkarten. Sobald du veröffentlichst, erscheinst du auch in der Suche für Menschen in der Nähe."
+    },
+    "book": {
+      "title": "Buchungen annehmen",
+      "body": "Kunden wählen einen echten freien Termin und buchen in Sekunden. Du wirst benachrichtigt, sie bekommen Erinnerungen, und dein Kalender stimmt immer."
+    }
+  },
+  "industries": {
+    "heading": "Gemacht für jede Leistung, die man stundenweise bucht",
+    "lede": "Wenn Kunden Zeit bei dir buchen, passt Kept — ob du allein an einem Stuhl arbeitest oder ein Team an mehreren Standorten führst."
+  },
+  "features": {
+    "heading": "Alles, was der Tag braucht",
+    "booking": {
+      "title": "Online-Buchung mit echter Verfügbarkeit",
+      "p1": "Kunden sehen nur Zeiten, die du wirklich anbieten kannst — deine Öffnungszeiten abzüglich bestehender Buchungen, Pausen, Puffer und freier Tage, mit Mindestvorlauf und einer Grenze, wie weit im Voraus gebucht werden kann.",
+      "p2": "Jede Buchung wird im Moment der Buchung erneut geprüft, sodass zwei Personen nie denselben Termin bekommen — selbst wenn sie in derselben Sekunde tippen."
+    },
+    "services": {
+      "title": "Leistungen, die zu deiner Preisgestaltung passen",
+      "p1": "Festpreis, Ab-Preis, Preisspanne, kostenlos oder nach Beratung. Füge Optionen wie Länge, Größe oder Extras hinzu — jede passt sowohl den Preis als auch die im Kalender reservierte Zeit an.",
+      "p2": "Füge Puffer davor oder danach hinzu, beschränke Leistungen auf bestimmte Teammitglieder oder Standorte und stelle vor dem ersten Besuch Vorab-Fragen."
+    },
+    "policies": {
+      "title": "Anzahlungen und Regeln, automatisch durchgesetzt",
+      "p1": "Verlange eine Anzahlung oder die volle Zahlung im Voraus, lege eine Stornofrist und Gebühren für späte Absagen oder Nichterscheinen fest. Kunden sehen die Regeln vor der Buchung, und Erstattungen folgen ihnen automatisch."
+    },
+    "reminders": {
+      "title": "Erinnerungen, die Ausfälle reduzieren",
+      "p1": "Bestätigungen und Erinnerungen gehen von selbst raus — standardmäßig einen Tag und zwei Stunden vorher — mit einem Link zum Umbuchen innerhalb deiner Regeln, statt einfach nicht zu erscheinen.",
+      "p2": "Sagt jemand ab, erfahren Kunden auf deiner Warteliste für diesen Tag von dem freien Platz."
+    },
+    "clients": {
+      "title": "Kenne deine Kunden",
+      "p1": "Für jeden Kunden gibt es eine Kartei mit Besuchen, Umsatz, Stornierungen und Ausfällen sowie private Notizen, die nur dein Team sieht. Schreib deinen Kunden direkt von dort."
+    },
+    "team": {
+      "title": "Vom Solo-Stuhl zum Team mit mehreren Standorten",
+      "p1": "Füge Teammitglieder mit eigenen Arbeitszeiten und Leistungen hinzu und Rollen, die festlegen, was jede Person sehen und tun darf. Führe mehrere Standorte, jeden mit eigener Zeitzone und eigenen Öffnungszeiten."
+    },
+    "portfolio": {
+      "title": "Ein Portfolio, das Buchungen bringt",
+      "p1": "Zeig Fotos und kurze Videos deiner Arbeit. Verknüpfe jedes mit einer Leistung, und Kunden können auf „Das buchen“ tippen, um genau das zu buchen, was sie gesehen haben."
+    },
+    "spotlight": {
+      "title": "Spotlight — kostenlos in der Startphase",
+      "p1": "Hebe dein Profil in der Suche und auf Kategorieseiten in deiner Nähe hervor. Gesponserte Ergebnisse sind immer gekennzeichnet, auf zwei pro Seite begrenzt und zeigen weiterhin deine echten Bewertungen und freien Termine.",
+      "p2": "Spotlight kostet nichts, solange Kept in der Startphase ist. Sollte sich das je ändern, informieren wir dich, bevor etwas berechnet wird — es wird nie von selbst kostenpflichtig."
+    }
+  },
+  "plans": {
+    "heading": "Tarife",
+    "lede": "Während der Startphase von Kept beginnt jedes neue Business mit {plan} ohne monatliche Gebühr. Preise für kostenpflichtige Tarife werden lange vor ihrer Einführung angekündigt, und niemand zahlt etwas, ohne einen Tarif gewählt zu haben.",
+    "badge": {
+      "launch": "Kostenlos in der Startphase",
+      "available": "Jetzt verfügbar",
+      "unavailable": "Noch nicht verfügbar"
+    },
+    "period": {
+      "launch": "pro Monat in der Startphase",
+      "available": "pro Monat",
+      "unavailable": "Preise folgen"
+    },
+    "rows": {
+      "members": "Buchbare Teammitglieder",
+      "locations": "Standorte",
+      "fee": "Gebühr auf Online-Zahlungen",
+      "roles": "Eigene Teamrollen",
+      "analytics": "Erweiterte Auswertungen"
+    },
+    "justYou": "1 (nur du)",
+    "upTo": "Bis zu {n}",
+    "included": "Inklusive",
+    "notIncluded": "Nicht enthalten",
+    "summary": {
+      "free": "Online-Buchung, Kalender, Erinnerungen, Anzahlungen, Kundenkartei, Vorab-Fragebögen, Portfolio und Spotlight sind alle enthalten.",
+      "launch": "Alles aus {base}, dazu ein Team mit bis zu {members}, mehr Standorte, eigene Rollen und niedrigere Gebühren. Das bekommen neue Unternehmen heute.",
+      "other": "Für größere Teams und Unternehmen mit mehreren Standorten."
+    },
+    "footnote": "Die Gebühr fällt nur bei Zahlungen an, die Kunden online über Kept leisten. Für vor Ort bezahlte Termine fällt keine Kept-Gebühr an. Du brauchst mehr Personen oder Standorte, als dein Tarif erlaubt? <link>Sag uns Bescheid</link>."
+  },
+  "faq": {
+    "heading": "Fragen",
+    "cost": {
+      "q": "Was kostet Kept?",
+      "a": "Es gibt keine monatliche Gebühr: Während der Startphase von Kept erhalten neue Unternehmen den Tarif {plan} kostenlos. Wenn ein Kunde online bezahlt — eine Anzahlung oder den vollen Preis —, behält Kept {fee} dieser Zahlung ein. Für vor Ort bezahlte Termine fällt überhaupt keine Kept-Gebühr an."
+    },
+    "clientFee": {
+      "q": "Zahlen meine Kunden fürs Buchen?",
+      "aFee": "Kunden sehen beim Bezahlen eine Servicegebühr von {fee}, die vor der Bestätigung angezeigt wird. Nachträglich wird nie etwas hinzugefügt.",
+      "aFree": "Nein. Kunden buchen kostenlos und sehen deinen genauen Preis, bevor sie bestätigen."
+    },
+    "payments": {
+      "q": "Muss ich Zahlungen online annehmen?",
+      "a": "Nein. Du kannst Kunden vor Ort bezahlen lassen oder bei der Buchung eine Anzahlung oder die volle Zahlung verlangen. Online-Zahlungen werden von Stripe abgewickelt und auf dein eigenes Bankkonto ausgezahlt."
+    },
+    "approve": {
+      "q": "Kann ich Buchungen freigeben, bevor sie bestätigt werden?",
+      "a": "Ja. Wähle Sofortbuchung oder den Anfragemodus, bei dem jede Buchung auf deine Freigabe wartet. Die Zeit bleibt reserviert, während du entscheidest, und unbeantwortete Anfragen laufen von selbst ab."
+    },
+    "where": {
+      "q": "Ich arbeite von zu Hause, fahre zu Kunden oder unterrichte online. Funktioniert das?",
+      "a": "Ja. Jeder Standort kann eine feste Adresse sein, ein mobiles Einsatzgebiet, in dem Kunden dir ihre Adresse angeben, oder eine Online-Sitzung. Du kannst alles beliebig kombinieren."
+    },
+    "spotlight": {
+      "q": "Wie funktioniert Spotlight?",
+      "a": "Spotlight zeigt dein Profil als deutlich gekennzeichnetes „Gesponsert“-Ergebnis in der Suche und auf Kategorieseiten, höchstens zwei pro Seite. In der Startphase ist es kostenlos — starte oder stoppe es jederzeit in deinem Dashboard."
+    },
+    "link": {
+      "q": "Kann ich meinen eigenen Link nutzen?",
+      "a": "Ja. Jedes Unternehmen bekommt ein Profil unter {host}/dein-name, das du auf Instagram, in deiner Bio oder per QR-Code teilen kannst. Kunden, die darüber buchen, müssen dich nicht erst suchen."
+    }
+  },
+  "closing": {
+    "title": "Dein nächster Kunde sucht schon.",
+    "body": "Richte deine Leistungen und Öffnungszeiten ein, veröffentliche dein Profil und nimm noch heute Buchungen an."
+  },
+  "demo": {
+    "example": "Beispiel",
+    "today": {
+      "label": "Beispiel für den Tagesplan, den ein Profi sieht",
+      "title": "Heute",
+      "summary": "{count, plural, one {# Termin} other {# Termine}} · {amount} gebucht",
+      "skinFade": "Skin Fade",
+      "beardTrim": "Bart trimmen & Konturen",
+      "lunch": "Mittagspause",
+      "signatureCut": "Signature-Schnitt",
+      "kidsCut": "Kinderhaarschnitt",
+      "firstVisit": "{name} · erster Besuch",
+      "confirmed": "Bestätigt",
+      "depositPaid": "Anzahlung bezahlt",
+      "needsApproval": "Freigabe nötig",
+      "checkedIn": "Eingecheckt"
+    },
+    "reminder": {
+      "label": "Beispiel für eine automatische Erinnerung, die ein Kunde erhält",
+      "when": "24 Std. vorher",
+      "title": "Erinnerung: {service} morgen",
+      "body": "{time} bei Dre im North Fade Studio. Musst du etwas ändern? Umbuchen bis 24 Std. vorher."
+    },
+    "grid": {
+      "label": "Beispiel für die Zeitauswahl, aus der Kunden buchen — nur mit freien Zeiten",
+      "title": "Zeit wählen",
+      "instant": "Sofortige Bestätigung",
+      "note": "Vergebene Zeiten verschwinden in dem Moment, in dem jemand bucht. Zwei Personen können nie denselben Termin bekommen."
+    },
+    "policy": {
+      "label": "Beispiel für Anzahlungs- und Stornobedingungen",
+      "title": "Buchungsbedingungen",
+      "deposit": "Anzahlung",
+      "depositValue": "{pct} bei Buchung",
+      "freeCancel": "Kostenlose Stornierung",
+      "freeCancelValue": "Bis 24 Std. vorher",
+      "lateCancel": "Späte Stornierung",
+      "lateCancelValue": "{pct} des Gesamtbetrags",
+      "noShow": "Nichterscheinen",
+      "noShowValue": "Anzahlung wird einbehalten",
+      "dueNow": "Jetzt fällig",
+      "dueValue": "{due} von {total}"
+    },
+    "client": {
+      "label": "Beispiel für eine Kundenkartei",
+      "since": "Kunde seit {month} · {visits, plural, one {# Besuch} other {# Besuche}}",
+      "spent": "Umsatz",
+      "noShows": "Ausfälle",
+      "gap": "Üblicher Abstand",
+      "gapValue": "{weeks} Wo.",
+      "note": "Private Notiz: empfindliche Kopfhaut — mildes Shampoo verwenden."
+    },
+    "team": {
+      "label": "Beispiel für ein Team an zwei Standorten",
+      "title": "Team",
+      "senior": "Senior-Barbier",
+      "barber": "Barbier",
+      "frontDesk": "Empfang"
+    },
+    "portfolio": {
+      "label": "Beispiel für Portfolio-Beiträge, die mit einer buchbaren Leistung verknüpft sind",
+      "skinFade": "Skin Fade",
+      "taper": "Taper & Bart",
+      "bookThis": "Das buchen",
+      "note": "Hier erscheinen deine Fotos und Videos — tippe auf eines, um genau diese Leistung zu buchen."
+    },
+    "spotlight": {
+      "label": "Beispiel für einen gesponserten Eintrag in den Suchergebnissen",
+      "category": "Barbier",
+      "promoted": "Gesponsert"
+    },
+    "options": {
+      "service": "Knotless Braids",
+      "hint": "Beispielleistung · probier die Optionen aus",
+      "length": "Länge",
+      "shoulder": "Schulterlang",
+      "mid": "Bis Rückenmitte",
+      "waist": "Hüftlang",
+      "addons": "Extras",
+      "wash": "Waschen & Föhnen",
+      "beads": "Perlen & Haarringe",
+      "included": "Inklusive",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

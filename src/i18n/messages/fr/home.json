@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Bon retour, {name}",
+    "eyebrow": "Le rendez-vous, tenu",
+    "title": "Réservez les personnes qui rendent votre semaine <em>meilleure.</em>",
+    "lead": "Barbiers, coiffeurs, coachs, professeurs, photographes et bien d'autres — avec de vrais créneaux, des prix affichés d'emblée et des avis uniquement issus de visites vérifiées.",
+    "points": {
+      "verified": "Uniquement des avis vérifiés",
+      "prices": "Les prix avant de réserver",
+      "instant": "Confirmation immédiate"
+    }
+  },
+  "search": {
+    "placeholder": "Coupe, massage, photographe…",
+    "label": "Que souhaitez-vous réserver ?",
+    "category": "Catégorie",
+    "submit": "Rechercher",
+    "sayIt": "Ou dites-le simplement —",
+    "sayItExample": "« un barbier demain après 17 h »"
+  },
+  "openings": {
+    "title": "Bientôt disponible",
+    "live": "En direct des agendas",
+    "appointment": "Rendez-vous"
+  },
+  "index": {
+    "eyebrow": "L'index",
+    "title": "Tous les rendez-vous possibles",
+    "exploreAll": "Tout explorer",
+    "pros": "{count, plural, one {# pro} other {# pros}}"
+  },
+  "next": {
+    "title": "Votre prochain rendez-vous",
+    "details": "Détails"
+  },
+  "again": {
+    "title": "Réserver à nouveau",
+    "rebook": "Réserver à nouveau"
+  },
+  "rails": {
+    "availableSoon": "Disponibles bientôt",
+    "availableSoonNear": "Disponibles bientôt près de {place}",
+    "availableSoonNearYou": "Disponibles bientôt près de chez vous",
+    "availableSoonSub": "Les créneaux en direct de l'agenda de chaque professionnel.",
+    "recent": "Vus récemment",
+    "topRated": "Les mieux notés",
+    "topRatedSub": "Les notes proviennent uniquement de réservations terminées et vérifiées.",
+    "newcomers": "Nouveaux sur Kept"
+  },
+  "how": {
+    "eyebrow": "Comment ça marche",
+    "title": "Trois étapes, sans un seul coup de fil",
+    "find": {
+      "title": "Trouvez la bonne personne",
+      "body": "Cherchez selon ce qu'il vous faut, quand et où — ou demandez simplement avec vos mots. Chaque profil affiche de vrais prix et des avis vérifiés."
+    },
+    "choose": {
+      "title": "Choisissez un vrai créneau",
+      "body": "Les horaires affichés sont libres dans leur agenda en ce moment même. Choisissez-en un, ajoutez vos options et confirmez."
+    },
+    "kept": {
+      "title": "C'est noté",
+      "body": "Vous recevez une confirmation, des rappels avant le jour J et un seul endroit pour déplacer, écrire ou réserver à nouveau."
+    }
+  },
+  "pros": {
+    "eyebrow": "Pour les professionnels",
+    "title": "Votre savoir-faire mérite un <em>meilleur</em> accueil.",
+    "body": "La réservation en ligne, un agenda qui ne peut pas faire de doublons, des rappels qui réduisent les absences et une page qui met votre travail en valeur. Gratuit pendant le lancement.",
+    "cta": "Proposez vos services",
+    "howItWorks": "Découvrir le fonctionnement",
+    "features": {
+      "any": {
+        "title": "Toutes les prestations",
+        "body": "Les options ajustent automatiquement le prix et la durée."
+      },
+      "noDouble": {
+        "title": "Jamais de doublon",
+        "body": "Chaque créneau est vérifié au moment de la réservation."
+      },
+      "noShows": {
+        "title": "Moins d'absences",
+        "body": "Rappels, acomptes et règles claires."
+      },
+      "discovered": {
+        "title": "Faites-vous connaître",
+        "body": "Portfolio, avis vérifiés et Spotlight."
+      }
+    }
+  }
+}

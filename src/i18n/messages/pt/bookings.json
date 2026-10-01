@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "Aguardando pagamento",
+    "requested": "Solicitação enviada",
+    "confirmed": "Confirmado",
+    "checked_in": "Check-in feito",
+    "in_progress": "Em andamento",
+    "completed": "Concluído",
+    "cancelled": "Cancelado",
+    "declined": "Recusado",
+    "no_show": "Não compareceu",
+    "expired": "Expirado"
+  },
+  "list": {
+    "title": "Reservas",
+    "filters": "Filtros de reservas",
+    "tabs": {
+      "upcoming": "Próximas",
+      "past": "Anteriores",
+      "cancelled": "Canceladas"
+    },
+    "howDidItGo": "Como foi?",
+    "review": "Avaliar",
+    "empty": {
+      "upcoming": "Nenhum agendamento futuro",
+      "past": "Nenhum agendamento anterior ainda",
+      "cancelled": "Nada cancelado",
+      "upcomingBody": "Quando você reservar, seus agendamentos aparecem aqui — com rotas, lembretes e reagendamento fácil.",
+      "findPro": "Encontrar um profissional"
+    }
+  },
+  "detail": {
+    "metaTitle": "Agendamento",
+    "allBookings": "Todas as reservas",
+    "hero": {
+      "confirmedTitle": "Está reservado",
+      "confirmedBody": "Enviamos uma confirmação e vamos lembrar você antes do horário.",
+      "requestedTitle": "Solicitação enviada",
+      "requestedBody": "{business} vai analisar sua solicitação. Avisaremos assim que responderem — enquanto isso, seu horário fica reservado.",
+      "paymentTitle": "Finalizando seu pagamento",
+      "paymentBody": "Se você acabou de pagar, isto se atualiza sozinho em alguns segundos. Seu horário fica reservado enquanto o pagamento é concluído."
+    },
+    "calendarDetails": "Código {reference}",
+    "ref": "Cód.",
+    "when": "Quando",
+    "with": "Com",
+    "where": "Onde",
+    "atYourAddress": "No seu endereço",
+    "online": "Online",
+    "virtualLink": "O profissional enviará o link antes da sessão.",
+    "yourReview": "Sua avaliação",
+    "payment": {
+      "title": "Pagamento",
+      "serviceFee": "Taxa de serviço",
+      "tax": "Impostos",
+      "estimatedTotal": "Total estimado",
+      "total": "Total",
+      "paid": "Pago",
+      "refunded": "Reembolsado",
+      "balance": "Saldo",
+      "dueAtAppointment": "A pagar no atendimento",
+      "tip": "Gorjeta"
+    },
+    "policy": {
+      "title": "Política de cancelamento",
+      "freeUntil": "Cancelamento grátis até {hours, plural, one {# hora} other {# horas}} antes.",
+      "freeAnytime": "Cancelamento grátis a qualquer momento antes do horário.",
+      "lateFee": "Cancelamentos posteriores: {percent}% do total.",
+      "depositNonRefundable": "O sinal não é reembolsável.",
+      "cannotCancel": "Este agendamento não pode mais ser cancelado.",
+      "alreadyStarted": "Este agendamento já começou.",
+      "cannotReschedule": "Este agendamento não pode ser reagendado.",
+      "maxReschedules": "Este agendamento já foi reagendado o número máximo de vezes. Fale com o profissional.",
+      "rescheduleWindow": "As alterações precisam ser feitas com pelo menos {hours, plural, one {# hora} other {# horas}} de antecedência. Fale com o profissional."
+    },
+    "refund": {
+      "noCharge": "Sem cobrança.",
+      "full": "Você receberá o reembolso integral.",
+      "none": "Seu pagamento não é reembolsável segundo a política deste negócio.",
+      "partial": "Você receberá um reembolso parcial segundo a política deste negócio."
+    },
+    "note": "Observação: {reason}",
+    "problem": "Algum problema com esta reserva? <link>Fale com o suporte</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} às {time}",
+    "cancelledToast": "Agendamento cancelado",
+    "refundOnWay": "Um reembolso de {amount} está a caminho.",
+    "rescheduledToast": "Reagendado",
+    "payToConfirm": "Pague {amount} para confirmar",
+    "addToCalendar": "Adicionar à agenda",
+    "directions": "Como chegar",
+    "message": "Mensagem",
+    "bookAgain": "Reservar de novo",
+    "googleCalendar": "Google Agenda",
+    "leaveReview": "Deixar avaliação",
+    "reschedule": "Reagendar",
+    "cancelAppointment": "Cancelar agendamento",
+    "cancelTitle": "Cancelar este agendamento?",
+    "insideWindow": "Você está dentro do prazo de cancelamento do negócio.",
+    "refundAmount": "Reembolso: {amount}.",
+    "keptAmount": "Retido pelo negócio: {amount}.",
+    "reason": "Motivo",
+    "reasonHint": "Compartilhado com o profissional.",
+    "chooseNewTime": "Escolha um novo horário",
+    "currently": "Atualmente: {when}",
+    "keepCurrentTime": "Manter horário atual",
+    "moveTo": "Mudar para {time}",
+    "chooseTime": "Escolha um horário"
+  },
+  "review": {
+    "ratings": {
+      "1": "Ruim",
+      "2": "Regular",
+      "3": "Bom",
+      "4": "Ótimo",
+      "5": "Excelente"
+    },
+    "thanks": "Obrigado pela sua avaliação",
+    "title": "Como foi com {business}?",
+    "subtitle": "Sua avaliação é pública e marcada como reserva verificada.",
+    "rating": "Nota",
+    "stars": "{n, plural, one {# estrela} other {# estrelas}}",
+    "bodyLabel": "Conte aos outros como foi",
+    "bodyPlaceholder": "O que se destacou? Você recomendaria?",
+    "post": "Publicar avaliação"
+  },
+  "slotPicker": {
+    "previousWeek": "Semana anterior",
+    "nextWeek": "Próxima semana",
+    "noOpenings": "Sem horários neste dia.",
+    "selected": "Selecionado: {time}"
+  }
+}

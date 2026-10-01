@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Non trovato",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} a {city}",
+    "bookOnline": "Prenota {name} online."
+  },
+  "preview": {
+    "notice": "Anteprima — solo tu puoi vedere questa pagina finché non la pubblichi.",
+    "goLive": "Pubblica"
+  },
+  "verified": "Verificato da Kept",
+  "verifiedLabel": "Attività verificata",
+  "reviewsCount": "{count, plural, one {# recensione verificata} other {# recensioni verificate}}",
+  "newOnKept": "Nuovo su Kept",
+  "travels": "{city} · si sposta fino a {km} km",
+  "status": {
+    "openUntil": "Aperto · fino alle {time}",
+    "opensAt": "Apre alle {time}",
+    "opensTomorrow": "Apre domani alle {time}",
+    "opensDay": "Apre {day} alle {time}",
+    "notSet": "Orari non impostati",
+    "closed": "Chiuso"
+  },
+  "nav": {
+    "label": "Sezioni del profilo",
+    "services": "Servizi",
+    "work": "Lavori",
+    "featured": "In evidenza",
+    "reviews": "Recensioni",
+    "about": "Chi siamo"
+  },
+  "services": {
+    "eyebrow": "Il menu",
+    "title": "Servizi",
+    "empty": "Questa attività non ha ancora pubblicato servizi.",
+    "sale": "Offerta",
+    "group": "Gruppo · fino a {count}",
+    "request": "Su richiesta",
+    "options": "Opzioni disponibili",
+    "deposit": "Acconto alla prenotazione",
+    "book": "Prenota",
+    "bookService": "Prenota {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Lavori recenti"
+  },
+  "featured": {
+    "eyebrow": "Sui social",
+    "title": "In evidenza",
+    "allProfiles": "Tutti i profili social",
+    "bookThis": "Prenota questo · {service}",
+    "newTab": "(si apre in una nuova scheda)",
+    "footnote": "I player si caricano da ciascuna piattaforma solo quando premi play.",
+    "play": "Riproduci {title}",
+    "loadsFrom": "Caricato da {host}"
+  },
+  "team": {
+    "eyebrow": "Le persone",
+    "title": "Team"
+  },
+  "reviews": {
+    "eyebrow": "Passaparola",
+    "title": "Recensioni",
+    "empty": "Ancora nessuna recensione. Le recensioni possono essere lasciate solo dai clienti dopo una visita completata.",
+    "distribution": "Distribuzione delle valutazioni",
+    "onlyCustomers": "Solo i clienti con una prenotazione completata possono lasciare una recensione.",
+    "response": "Risposta di {name}",
+    "stars": "{value} stelle su 5"
+  },
+  "about": {
+    "eyebrow": "La casa",
+    "title": "Chi siamo",
+    "hours": "Orari",
+    "timesIn": "Orari indicati in {zone}.",
+    "policies": "Condizioni",
+    "noShow": "Gli appuntamenti mancati possono essere addebitati al {percent}% del totale.",
+    "experience": "Oltre {years} anni di esperienza",
+    "amenities": "Servizi offerti",
+    "online": "Online",
+    "directions": "Indicazioni",
+    "comesToYou": "Viene da te",
+    "mobileBody": "Con base a {city}. Si sposta fino a {km} km — inserirai il tuo indirizzo al momento della prenotazione.",
+    "onlineSessions": "Sessioni online",
+    "onlineBody": "Partecipa da dove vuoi. Il link viene condiviso dopo la prenotazione."
+  },
+  "panel": {
+    "label": "Prenota",
+    "eyebrow": "Prenotazione",
+    "freeOptions": "Opzioni gratuite disponibili",
+    "from": "Servizi da {price}",
+    "onConsultation": "Prezzi su consulenza",
+    "nextToday": "Prossima disponibilità oggi",
+    "nextTomorrow": "Prossima disponibilità domani",
+    "nextOn": "Prossima disponibilità {day}",
+    "none": "Nessuna disponibilità nelle prossime due settimane",
+    "bookNow": "Prenota ora",
+    "requestToBook": "Richiedi prenotazione",
+    "instant": "Conferma immediata",
+    "confirms": "L'attività conferma la tua richiesta",
+    "notTaking": "Questa attività non accetta ancora prenotazioni.",
+    "mobileFrom": "Da {price}",
+    "mobileNext": "Prossima: {day} {time}",
+    "seeAvailability": "Vedi disponibilità",
+    "request": "Richiedi"
+  },
+  "actions": {
+    "share": "Condividi",
+    "shareTitle": "Condividi {name}",
+    "shareBody": "Invia il link o inquadra il codice per aprire la pagina di prenotazione.",
+    "copy": "Copia",
+    "copied": "Copiato",
+    "downloadQr": "Scarica codice QR",
+    "ask": "Fai una domanda",
+    "messageTitle": "Scrivi a {name}",
+    "messageBody": "Chiedi di servizi, disponibilità o qualsiasi altra cosa prima di prenotare. Il tuo numero di telefono e la tua email restano privati.",
+    "cancel": "Annulla",
+    "send": "Invia messaggio",
+    "yourMessage": "Il tuo messaggio",
+    "placeholder": "Ciao! Hai posto per uno skin fade sabato pomeriggio?",
+    "sent": "Messaggio inviato",
+    "sentBody": "{name} ti risponderà nei tuoi messaggi."
+  },
+  "portfolio": {
+    "compare": "Confronta prima e dopo",
+    "portfolio": "Portfolio",
+    "close": "Chiudi",
+    "previous": "Precedente",
+    "next": "Successivo",
+    "before": "Prima",
+    "after": "Dopo",
+    "beforeAfter": "Prima / dopo",
+    "video": "Video",
+    "openItem": "Apri elemento {n}",
+    "browse": "Usa le frecce per scorrere",
+    "bookThis": "Prenota questo",
+    "bookThisService": "Prenota questo — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Post",
+    "reel": "Reel",
+    "track": "Brano",
+    "album": "Album",
+    "artist": "Artista",
+    "playlist": "Playlist",
+    "episode": "Episodio",
+    "show": "Podcast"
+  }
+}

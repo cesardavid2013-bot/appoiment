@@ -1,0 +1,311 @@
+{
+  "loading": "Chargement…",
+  "noEmail": "Aucune adresse e-mail enregistrée",
+  "saveChanges": "Enregistrer les modifications",
+  "cancel": "Annuler",
+  "checkFields": "Merci de vérifier les champs signalés.",
+  "nav": {
+    "label": "Paramètres du compte",
+    "account": "Compte"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profil",
+      "description": "Nom, photo, téléphone et fuseau horaire"
+    },
+    "security": {
+      "label": "Connexion et sécurité",
+      "description": "Mot de passe, confirmation de l'e-mail et appareils"
+    },
+    "notifications": {
+      "label": "Notifications",
+      "description": "Choisissez ce que nous vous envoyons par e-mail ou SMS"
+    },
+    "addresses": {
+      "label": "Adresses enregistrées",
+      "description": "Pour les professionnels qui se déplacent chez vous"
+    },
+    "privacy": {
+      "label": "Confidentialité et données",
+      "description": "Téléchargez vos données ou supprimez votre compte"
+    }
+  },
+  "home": {
+    "memberSince": "Membre depuis {date}",
+    "confirmEmail": "<b>Confirmez votre adresse e-mail.</b> Nous avons envoyé un lien à {email} pour que les professionnels puissent vous joindre au sujet de vos réservations.",
+    "activity": "Votre activité",
+    "settings": "Paramètres",
+    "more": "Plus",
+    "signOut": "Se déconnecter",
+    "rows": {
+      "bookings": {
+        "label": "Réservations",
+        "description": "Rendez-vous à venir et passés"
+      },
+      "saved": {
+        "label": "Favoris",
+        "description": "Les professionnels que vous avez enregistrés"
+      },
+      "messages": {
+        "label": "Messages",
+        "description": "Conversations avec les professionnels"
+      },
+      "notifications": {
+        "label": "Notifications",
+        "description": "Les actualités de vos réservations"
+      },
+      "business": {
+        "label": "Passer à votre activité",
+        "description": "Agenda, prestations et clients"
+      },
+      "offer": {
+        "label": "Proposez vos services sur Kept",
+        "description": "Recevez des réservations et développez votre activité — gratuit pour démarrer"
+      },
+      "support": {
+        "label": "Aide et assistance",
+        "description": "De l'aide pour une réservation, un paiement ou votre compte"
+      },
+      "legal": {
+        "label": "Conditions et confidentialité",
+        "description": "Le fonctionnement de Kept et la gestion de vos données"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "E-mail de confirmation envoyé",
+    "sentBody": "Consultez {email} — le lien est valable 3 jours.",
+    "sent": "E-mail envoyé",
+    "resend": "Renvoyer le lien"
+  },
+  "profile": {
+    "description": "Ce que voient les professionnels chez qui vous réservez.",
+    "saved": "Profil enregistré",
+    "details": "Informations personnelles",
+    "name": "Nom",
+    "email": "E-mail",
+    "changeEmail": "Pour changer l'e-mail de connexion, <link>contactez l'assistance</link> afin que nous puissions confirmer qu'il s'agit bien de vous.",
+    "phone": "Téléphone",
+    "phoneHintSms": "Les professionnels chez qui vous réservez peuvent vous appeler au sujet de vos rendez-vous, et nous pouvons vous envoyer des rappels par SMS si vous les activez.",
+    "phoneHint": "Les professionnels chez qui vous réservez peuvent l'utiliser pour vous joindre au sujet d'un rendez-vous.",
+    "photo": {
+      "title": "Photo",
+      "description": "Affichée à côté de votre nom pour les professionnels chez qui vous réservez.",
+      "updated": "Photo mise à jour",
+      "removed": "Photo supprimée",
+      "change": "Changer de photo",
+      "upload": "Importer une photo",
+      "remove": "Supprimer",
+      "hint": "JPG, PNG ou WebP, 15 Mo maximum. Nous retirons les données de localisation des photos."
+    },
+    "timezone": {
+      "label": "Fuseau horaire",
+      "hint": "Votre fuseau horaire habituel. Les horaires des rendez-vous sont toujours affichés à l'heure locale du professionnel.",
+      "notSet": "Non défini",
+      "detect": "Détecter automatiquement",
+      "detectFailed": "Impossible de détecter votre fuseau horaire. Choisissez-le dans la liste."
+    },
+    "language": {
+      "title": "Langue",
+      "description": "Utilisée pour les menus, les boutons et les dates dans Kept. Les noms des établissements, les prestations et les avis s'affichent tels que l'établissement les a rédigés."
+    }
+  },
+  "security": {
+    "description": "Gardez votre compte sécurisé et sous votre contrôle.",
+    "password": {
+      "title": "Mot de passe",
+      "setTitle": "Définir un mot de passe",
+      "description": "Changer de mot de passe vous déconnecte de tous vos autres appareils.",
+      "setDescription": "Vous vous connectez avec Google. Ajoutez un mot de passe pour pouvoir aussi vous connecter avec votre e-mail.",
+      "change": "Changer le mot de passe",
+      "setButton": "Définir le mot de passe",
+      "current": "Mot de passe actuel",
+      "new": "Nouveau mot de passe",
+      "newHint": "8 caractères minimum. Évitez les mots courants et votre adresse e-mail.",
+      "confirm": "Confirmez le nouveau mot de passe",
+      "tooShort": "Utilisez au moins 8 caractères.",
+      "mismatch": "Les mots de passe ne correspondent pas.",
+      "changed": "Mot de passe modifié",
+      "set": "Mot de passe défini",
+      "othersSignedOut": "Vos autres appareils ont été déconnectés."
+    },
+    "email": {
+      "title": "E-mail",
+      "description": "Votre e-mail nous sert à vous connecter et à vous envoyer les confirmations de réservation.",
+      "confirmed": "Confirmé",
+      "notConfirmed": "Pas encore confirmé",
+      "none": "Ce compte n'a pas d'adresse e-mail."
+    },
+    "devices": {
+      "title": "Appareils",
+      "description": "Si vous vous êtes connecté sur un appareil partagé ou perdu, déconnectez-le ici. Cet appareil reste connecté.",
+      "status": "{count, plural, =0 {Seul cet appareil est connecté} one {Connecté sur # autre appareil} other {Connecté sur # autres appareils}}",
+      "signOutOthers": "Déconnecter les autres appareils",
+      "confirmTitle": "Déconnecter les autres appareils ?",
+      "confirmBody": "Toute personne utilisant votre compte sur un autre téléphone, une tablette ou un ordinateur devra se reconnecter.",
+      "confirm": "Les déconnecter",
+      "signedOutToast": "{count, plural, one {# autre appareil déconnecté} other {# autres appareils déconnectés}}"
+    }
+  },
+  "notifications": {
+    "description": "Choisissez comment rester informé. Nous n'envoyons jamais plus que nécessaire.",
+    "saved": "Enregistré",
+    "emailAndText": "Alertes par e-mail et SMS",
+    "emailOnly": "Alertes par e-mail",
+    "inboxNote": "Tout apparaît aussi dans vos notifications sur Kept, quel que soit votre choix ici.",
+    "addPhone": "Ajoutez un numéro de téléphone dans votre <link>profil</link> pour recevoir des SMS.",
+    "email": "E-mail",
+    "sms": "SMS",
+    "forTopic": "pour {topic}",
+    "alwaysOn": {
+      "bookings": "L'e-mail reste toujours activé, pour que nous puissions vous prévenir si une réservation change.",
+      "business": "L'e-mail reste toujours activé, pour que vous ne manquiez jamais une nouvelle réservation ou demande."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Suivi des réservations",
+        "description": "Confirmations, modifications et annulations."
+      },
+      "reminders": {
+        "label": "Rappels",
+        "description": "Avant vos prochains rendez-vous."
+      },
+      "messages": {
+        "label": "Messages",
+        "description": "Quand un professionnel ou un client vous écrit."
+      },
+      "waitlist": {
+        "label": "Créneaux de la liste d'attente",
+        "description": "Quand un horaire que vous souhaitiez se libère."
+      },
+      "reviews": {
+        "label": "Demandes d'avis",
+        "description": "Un petit mot après un rendez-vous terminé."
+      },
+      "business": {
+        "label": "Activité de l'établissement",
+        "description": "Nouvelles réservations, demandes et avis pour votre activité."
+      },
+      "marketing": {
+        "label": "Actualités et offres",
+        "description": "Des nouvelles occasionnelles des établissements où vous avez réservé."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Pour les professionnels qui se déplacent chez vous — barbiers, laveurs auto, coachs et bien d'autres.",
+    "defaultLabel": "Domicile",
+    "saved": "Adresse enregistrée",
+    "removed": "Adresse supprimée",
+    "emptyTitle": "Aucune adresse enregistrée",
+    "emptyBody": "Gardez sous la main, au même endroit, les lieux où vous réservez des prestations à domicile — chez vous ou au bureau, par exemple.",
+    "add": "Ajouter une adresse",
+    "removeLabel": "Supprimer {label}",
+    "count": "{count} sur {max} enregistrées",
+    "limit": "Vous avez atteint la limite. Supprimez une adresse pour en ajouter une autre.",
+    "dialogBody": "Visible par vous seul. Un professionnel ne voit une adresse que lorsque vous y réservez une prestation.",
+    "save": "Enregistrer l'adresse",
+    "fields": {
+      "name": "Nom",
+      "nameHint": "Par exemple Domicile, Travail ou Salle de sport.",
+      "line1": "Adresse",
+      "line2": "Appartement, bâtiment ou étage",
+      "city": "Ville",
+      "region": "Région / département",
+      "postalCode": "Code postal",
+      "country": "Pays"
+    },
+    "removeTitle": "Supprimer « {label} » ?",
+    "removeBody": "Les réservations déjà faites à cette adresse ne sont pas concernées.",
+    "remove": "Supprimer l'adresse"
+  },
+  "privacy": {
+    "description": "Vos données vous appartiennent. Découvrez comment nous les utilisons dans notre <link>politique de confidentialité</link>.",
+    "export": {
+      "title": "Télécharger vos données",
+      "description": "Obtenez une copie de votre profil, de vos adresses enregistrées, rendez-vous, avis, messages, professionnels favoris et demandes d'assistance dans un fichier JSON.",
+      "button": "Télécharger mes données",
+      "hint": "Prêt immédiatement. Conservez le fichier en lieu sûr — il contient des informations personnelles."
+    },
+    "delete": {
+      "title": "Supprimer votre compte",
+      "intro": "Cette action ferme définitivement votre compte Kept. Voici ce qui se passe :",
+      "erased": "Votre nom, votre e-mail, votre téléphone, votre photo, vos adresses et vos professionnels enregistrés sont effacés, et vous êtes déconnecté partout.",
+      "upcoming": "{count, plural, one {Votre rendez-vous à venir est annulé selon la politique d'annulation de l'établissement, y compris tout remboursement qu'elle prévoit.} other {Vos # rendez-vous à venir sont annulés selon la politique d'annulation de chaque établissement, y compris tout remboursement qu'elle prévoit.}}",
+      "upcomingNone": "Les éventuels rendez-vous à venir sont annulés selon la politique d'annulation de chaque établissement.",
+      "records": "Les données dont les établissements et les règles fiscales ont besoin — rendez-vous passés, paiements et avis — sont conservées, mais affichées comme provenant d'un « Utilisateur supprimé ».",
+      "permanent": "Cette action est irréversible. Vous pourrez vous réinscrire plus tard avec le même e-mail, en repartant de zéro.",
+      "blocked": "Vous êtes propriétaire de {businesses}. Fermez l'établissement ou transférez-le à quelqu'un d'autre depuis les <link>paramètres de l'activité</link> avant de supprimer votre compte, pour que ses clients ne restent pas sans réponse.",
+      "copyFirst": "Vous préférez garder une copie d'abord ? Téléchargez vos données ci-dessus.",
+      "open": "Supprimer le compte…",
+      "confirmTitle": "Supprimer votre compte ?",
+      "confirmBody": "Cette action est irréversible.",
+      "keep": "Conserver mon compte",
+      "confirm": "Supprimer mon compte",
+      "willCancel": "{count, plural, one {# rendez-vous à venir sera annulé.} other {# rendez-vous à venir seront annulés.}}",
+      "password": "Votre mot de passe",
+      "typeToConfirm": "Saisissez <word>{word}</word> pour confirmer",
+      "deletedToast": "Votre compte a été supprimé",
+      "deletedBody": "Merci d'avoir utilisé Kept."
+    }
+  },
+  "saved": {
+    "title": "Favoris",
+    "description": "{count, plural, one {# professionnel enregistré.} other {# professionnels enregistrés.}} Les créneaux ci-dessous viennent en direct de leurs agendas.",
+    "emptyTitle": "Aucun favori pour l'instant",
+    "emptyBody": "Touchez le cœur sur la fiche d'un professionnel pour le garder ici — pratique pour réserver à nouveau vos habitués ou en comparer quelques-uns avant de choisir.",
+    "explore": "Explorer les professionnels",
+    "loading": "Chargement de vos favoris…"
+  },
+  "notificationList": {
+    "title": "Notifications",
+    "today": "Aujourd'hui",
+    "earlier": "Plus tôt",
+    "emptyTitle": "Aucune notification pour l'instant",
+    "emptyBody": "Les confirmations de réservation, rappels, réponses et créneaux libérés de la liste d'attente s'afficheront ici.",
+    "unread": "{count} non lues",
+    "caughtUp": "Vous êtes à jour",
+    "allCaughtUpToast": "Tout est lu",
+    "markAll": "Tout marquer comme lu",
+    "unreadItem": "Non lue",
+    "loadOlder": "Afficher les plus anciennes",
+    "end": "C'est tout."
+  },
+  "invite": {
+    "eyebrow": "Invitation à rejoindre l'équipe",
+    "invalidTitle": "Cette invitation n'est plus utilisable",
+    "invalidBody": "Elle a peut-être expiré, été annulée ou déjà été acceptée. Demandez à la personne qui vous a invité de vous envoyer un nouveau lien.",
+    "goHome": "Aller sur Kept",
+    "join": "Rejoindre {business}",
+    "invitedAs": "Vous êtes invité en tant que <b>{role}</b>.",
+    "signInWith": "Connectez-vous ou créez un compte avec <b>{email}</b> pour accepter.",
+    "createAccount": "Créer un compte",
+    "signIn": "Se connecter",
+    "wrongAccount": "Vous êtes connecté en tant que <b>{email}</b>, mais cette invitation a été envoyée à {invited}.",
+    "wrongAccountHint": "Déconnectez-vous et reconnectez-vous avec cette adresse, ou demandez une invitation pour {email}.",
+    "acceptingAs": "Vous acceptez en tant que <b>{email}</b>.",
+    "accept": "Accepter et ouvrir mon planning",
+    "roles": {
+      "owner": {
+        "label": "Propriétaire",
+        "description": "Contrôle total, facturation et équipe comprises."
+      },
+      "manager": {
+        "label": "Manager",
+        "description": "Gère le quotidien. Ne peut pas modifier l'équipe ni les paramètres de l'établissement."
+      },
+      "receptionist": {
+        "label": "Accueil",
+        "description": "Réserve et gère les rendez-vous de toute l'équipe."
+      },
+      "provider": {
+        "label": "Professionnel",
+        "description": "Voit et gère ses propres rendez-vous et son planning."
+      },
+      "custom": {
+        "label": "Personnalisé",
+        "description": "Choisissez précisément ce que cette personne peut faire."
+      }
+    }
+  }
+}

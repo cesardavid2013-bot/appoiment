@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Réservation", "hint": "Modifications, annulations ou problèmes avec un rendez-vous." },
+    "payment": { "label": "Paiement", "hint": "Débits, acomptes, remboursements ou pourboires." },
+    "account": { "label": "Compte", "hint": "Connexion, profil ou données personnelles." },
+    "report": { "label": "Signaler un établissement", "hint": "Problèmes de sécurité, fiches trompeuses ou comportements inappropriés." },
+    "other": { "label": "Autre", "hint": "Tout autre sujet pour lequel nous pouvons vous aider." }
+  },
+  "status": {
+    "open": "En attente de l'assistance",
+    "awaiting_customer": "Réponse reçue",
+    "resolved": "Résolu",
+    "closed": "Clôturé"
+  },
+  "home": {
+    "title": "Aide et assistance",
+    "description": "De l'aide pour une réservation, un paiement ou votre compte.",
+    "newRequest": "Nouvelle demande",
+    "yourRequests": "Vos demandes",
+    "emptyTitle": "Aucune demande pour l'instant",
+    "emptyBody": "Si quelque chose ne va pas avec une réservation, un paiement ou votre compte, dites-le-nous et nous vous aiderons à régler le problème.",
+    "contact": "Contacter l'assistance",
+    "ticketLine": "{category} · Mis à jour le {date} · {count, plural, one {# message} other {# messages}}",
+    "quickAnswers": "Réponses rapides",
+    "stillStuck": "Toujours bloqué ? <link>Contactez l'assistance</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Comment annuler ou déplacer un rendez-vous ?",
+      "a": "Ouvrez <link>Réservations</link>, choisissez le rendez-vous et touchez Déplacer ou Annuler. Chaque établissement fixe son propre délai d'annulation — vous verrez exactement ce qui s'applique, frais ou remboursement compris, avant de confirmer."
+    },
+    "refund": {
+      "q": "Quand serai-je remboursé ?",
+      "a": "Les remboursements sont versés sur la carte utilisée pour payer dès que l'annulation est confirmée. Selon votre banque, ils apparaissent généralement sous 5 à 10 jours ouvrés. Le remboursement d'un acompte dépend de la politique de l'établissement, affichée lors de la réservation."
+    },
+    "contactPro": {
+      "q": "Comment contacter un professionnel ?",
+      "a": "Utilisez Message sur son profil ou sur votre réservation. Vos conversations se trouvent dans <link>Messages</link>. Pour tout ce qui concerne la prestation elle-même — itinéraire, préparation, ce qu'il faut apporter —, l'établissement vous répondra le plus vite."
+    },
+    "report": {
+      "q": "Un problème est survenu avec un établissement. Que puis-je faire ?",
+      "a": "Ouvrez une demande ci-dessous et choisissez « Signaler un établissement ». Associez le rendez-vous s'il y en a un. Nous lisons chaque signalement et pouvons intervenir sur les remboursements et, si nécessaire, retirer des établissements de Kept."
+    },
+    "account": {
+      "q": "Comment changer mon e-mail ou supprimer mon compte ?",
+      "a": "Les changements d'e-mail passent par l'assistance afin que nous puissions confirmer qu'il s'agit bien de vous. Vous pouvez télécharger vos données ou supprimer votre compte vous-même dans <link>Confidentialité et données</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Demande d'assistance",
+    "allRequests": "Toutes les demandes",
+    "opened": "{category} · Ouverte le <date></date>",
+    "appointmentLine": "{date} à {time} · Réf. {reference}",
+    "conversation": "Conversation",
+    "keptSupport": "Assistance Kept",
+    "openImage": "Ouvrir l'image jointe",
+    "attachedImage": "Image jointe",
+    "closed": "Cette demande est clôturée. <link>Ouvrez une nouvelle demande</link> si vous avez encore besoin d'aide.",
+    "willReply": "Nous vous répondrons ici et vous préviendrons.",
+    "sorted": "C'est réglé ? Dites-le-nous."
+  },
+  "new": {
+    "title": "Contacter l'assistance",
+    "intro": "Expliquez-nous ce qui se passe et une vraie personne de l'équipe Kept vous répondra ici. Pour les questions sur la prestation elle-même, écrire à l'établissement est généralement le plus rapide.",
+    "notFound": "Nous n'avons pas trouvé ce rendez-vous sur votre compte, il n'a donc pas été joint. Vous pouvez toujours en choisir un ci-dessous."
+  },
+  "form": {
+    "topic": "Pour quoi avez-vous besoin d'aide ?",
+    "chooseTopic": "Choisissez un sujet",
+    "addSubject": "Ajoutez un objet court",
+    "moreDetail": "Dites-nous-en un peu plus — une phrase au moins nous aide à vous aider",
+    "sent": "Demande envoyée",
+    "checkFields": "Merci de vérifier les champs signalés.",
+    "related": "Rendez-vous concerné",
+    "refHint": "Réf. {reference} · {business}",
+    "linkHint": "Associer une réservation nous permet de l'examiner tout de suite.",
+    "none": "Aucun",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Objet",
+    "subjectPlaceholder": "ex. : Mon acompte a été débité deux fois",
+    "details": "Détails",
+    "detailsHint": "Ce qui s'est passé, quand, et ce que vous attendez de nous. N'indiquez ni numéro de carte ni mot de passe.",
+    "images": "Images",
+    "optional": "Facultatif",
+    "cancel": "Annuler",
+    "uploadingImages": "Envoi des images…",
+    "send": "Envoyer la demande"
+  },
+  "reply": {
+    "writeFirst": "Rédigez d'abord une réponse.",
+    "sent": "Réponse envoyée",
+    "label": "Réponse",
+    "reopens": "Répondre rouvre cette demande.",
+    "placeholder": "Ajoutez des précisions ou répondez à notre question…",
+    "send": "Envoyer la réponse"
+  },
+  "resolve": {
+    "button": "Marquer comme résolu",
+    "done": "Marqué comme résolu",
+    "doneBody": "Ravis que ce soit réglé. Vous pouvez toujours répondre si besoin.",
+    "confirmTitle": "Marquer cette demande comme résolue ?",
+    "confirmBody": "Dites-nous que c'est réglé. Si autre chose se présente, répondez ici et nous reprendrons le fil."
+  },
+  "attach": {
+    "tooMany": "Vous pouvez joindre jusqu'à {max} images.",
+    "alt": "Pièce jointe de l'assistance",
+    "label": "Pièces jointes",
+    "uploadingName": "Envoi de {name}",
+    "remove": "Retirer {name}",
+    "add": "Ajouter une image",
+    "uploading": "{count, plural, one {Envoi de # image…} other {Envoi de # images…}}",
+    "hint": "Des captures d'écran ou des photos nous aident. Jusqu'à {max} images, 15 Mo chacune."
+  }
+}

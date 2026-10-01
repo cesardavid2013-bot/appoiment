@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Viene da te",
+    "comesToYouIn": "Viene da te · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Sponsorizzato",
+    "verified": "Attività verificata",
+    "instant": "Conferma immediata",
+    "request": "Prenotazione su richiesta",
+    "bookAt": "Prenota {day} alle {time}",
+    "moreTimes": "Altri orari",
+    "freeConsultation": "Consulenza gratuita disponibile",
+    "priceOnRequest": "Prezzo su richiesta",
+    "viewTimes": "Vedi orari"
+  },
+  "rail": {
+    "seeAll": "Vedi tutti"
+  },
+  "favorite": {
+    "save": "Salva",
+    "saved": "Salvato",
+    "remove": "Rimuovi dai salvati",
+    "savedToast": "Salvato",
+    "savedToastHint": "Lo trovi sempre in Salvati."
+  }
+}

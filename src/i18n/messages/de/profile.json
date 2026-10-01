@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Nicht gefunden",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} in {city}",
+    "bookOnline": "{name} online buchen."
+  },
+  "preview": {
+    "notice": "Vorschau — nur du siehst diese Seite, bis du sie veröffentlichst.",
+    "goLive": "Veröffentlichen"
+  },
+  "verified": "Von Kept verifiziert",
+  "verifiedLabel": "Verifiziertes Unternehmen",
+  "reviewsCount": "{count, plural, one {# verifizierte Bewertung} other {# verifizierte Bewertungen}}",
+  "newOnKept": "Neu auf Kept",
+  "travels": "{city} · fährt bis zu {km} km",
+  "status": {
+    "openUntil": "Geöffnet · bis {time}",
+    "opensAt": "Öffnet um {time}",
+    "opensTomorrow": "Öffnet morgen um {time}",
+    "opensDay": "Öffnet am {day} um {time}",
+    "notSet": "Keine Öffnungszeiten angegeben",
+    "closed": "Geschlossen"
+  },
+  "nav": {
+    "label": "Profilbereiche",
+    "services": "Leistungen",
+    "work": "Arbeiten",
+    "featured": "Highlights",
+    "reviews": "Bewertungen",
+    "about": "Über uns"
+  },
+  "services": {
+    "eyebrow": "Das Angebot",
+    "title": "Leistungen",
+    "empty": "Dieses Unternehmen hat noch keine Leistungen veröffentlicht.",
+    "sale": "Angebot",
+    "group": "Gruppe · bis zu {count}",
+    "request": "Buchungsanfrage",
+    "options": "Optionen verfügbar",
+    "deposit": "Anzahlung bei Buchung",
+    "book": "Buchen",
+    "bookService": "{name} buchen"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Aktuelle Arbeiten"
+  },
+  "featured": {
+    "eyebrow": "Auf Social Media",
+    "title": "Highlights",
+    "allProfiles": "Alle Social-Media-Profile",
+    "bookThis": "Das buchen · {service}",
+    "newTab": "(öffnet in neuem Tab)",
+    "footnote": "Player werden erst von der jeweiligen Plattform geladen, wenn du auf Play drückst.",
+    "play": "{title} abspielen",
+    "loadsFrom": "Wird von {host} geladen"
+  },
+  "team": {
+    "eyebrow": "Die Menschen",
+    "title": "Team"
+  },
+  "reviews": {
+    "eyebrow": "Mundpropaganda",
+    "title": "Bewertungen",
+    "empty": "Noch keine Bewertungen. Bewertungen können nur Kunden nach einem abgeschlossenen Besuch abgeben.",
+    "distribution": "Verteilung der Bewertungen",
+    "onlyCustomers": "Nur Kunden mit einer abgeschlossenen Buchung können eine Bewertung abgeben.",
+    "response": "Antwort von {name}",
+    "stars": "{value} von 5 Sternen"
+  },
+  "about": {
+    "eyebrow": "Das Haus",
+    "title": "Über uns",
+    "hours": "Öffnungszeiten",
+    "timesIn": "Zeiten in {zone}.",
+    "policies": "Bedingungen",
+    "noShow": "Für verpasste Termine können {percent} % des Gesamtbetrags berechnet werden.",
+    "experience": "{years}+ Jahre Erfahrung",
+    "amenities": "Ausstattung",
+    "online": "Online",
+    "directions": "Route",
+    "comesToYou": "Kommt zu dir",
+    "mobileBody": "Mit Sitz in {city}. Fährt bis zu {km} km — deine Adresse gibst du bei der Buchung an.",
+    "onlineSessions": "Online-Sitzungen",
+    "onlineBody": "Von überall teilnehmen. Den Link erhältst du nach der Buchung."
+  },
+  "panel": {
+    "label": "Buchen",
+    "eyebrow": "Reservieren",
+    "freeOptions": "Kostenlose Optionen verfügbar",
+    "from": "Leistungen ab {price}",
+    "onConsultation": "Preise nach Beratung",
+    "nextToday": "Nächster freier Termin heute",
+    "nextTomorrow": "Nächster freier Termin morgen",
+    "nextOn": "Nächster freier Termin am {day}",
+    "none": "Keine freien Termine in den nächsten zwei Wochen",
+    "bookNow": "Jetzt buchen",
+    "requestToBook": "Buchung anfragen",
+    "instant": "Sofortige Bestätigung",
+    "confirms": "Das Unternehmen bestätigt deine Anfrage",
+    "notTaking": "Dieses Unternehmen nimmt noch keine Buchungen an.",
+    "mobileFrom": "Ab {price}",
+    "mobileNext": "Nächster: {day} {time}",
+    "seeAvailability": "Verfügbarkeit ansehen",
+    "request": "Anfragen"
+  },
+  "actions": {
+    "share": "Teilen",
+    "shareTitle": "{name} teilen",
+    "shareBody": "Schick den Link oder scanne den Code, um die Buchungsseite zu öffnen.",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "downloadQr": "QR-Code herunterladen",
+    "ask": "Frage stellen",
+    "messageTitle": "Nachricht an {name}",
+    "messageBody": "Frag vor der Buchung nach Leistungen, Verfügbarkeit oder was auch immer. Deine Telefonnummer und E-Mail-Adresse bleiben privat.",
+    "cancel": "Abbrechen",
+    "send": "Nachricht senden",
+    "yourMessage": "Deine Nachricht",
+    "placeholder": "Hi! Hast du diesen Samstagnachmittag Zeit für einen Skin Fade?",
+    "sent": "Nachricht gesendet",
+    "sentBody": "{name} antwortet dir in deinem Postfach."
+  },
+  "portfolio": {
+    "compare": "Vorher und nachher vergleichen",
+    "portfolio": "Portfolio",
+    "close": "Schließen",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "before": "Vorher",
+    "after": "Nachher",
+    "beforeAfter": "Vorher / nachher",
+    "video": "Video",
+    "openItem": "Element {n} öffnen",
+    "browse": "Mit den Pfeiltasten blättern",
+    "bookThis": "Das buchen",
+    "bookThisService": "Das buchen — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Beitrag",
+    "reel": "Reel",
+    "track": "Track",
+    "album": "Album",
+    "artist": "Künstler",
+    "playlist": "Playlist",
+    "episode": "Folge",
+    "show": "Podcast"
+  }
+}

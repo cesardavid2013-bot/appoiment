@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Explorer les professionnels",
+    "category": "Réserver : {category}",
+    "query": "{q} — recherche",
+    "description": "Comparez les professionnels selon leurs vraies disponibilités, leurs prix et leurs avis vérifiés."
+  },
+  "bar": {
+    "placeholder": "Rechercher un service ou un professionnel",
+    "label": "Rechercher",
+    "clear": "Effacer la recherche"
+  },
+  "location": {
+    "placeholder": "Partout",
+    "label": "Lieu",
+    "clear": "Effacer le lieu",
+    "useMine": "Utiliser ma position actuelle",
+    "finding": "Localisation en cours…",
+    "current": "Position actuelle",
+    "selectedArea": "Zone sélectionnée",
+    "unsupported": "Votre navigateur ne peut pas partager votre position. Saisissez plutôt une ville.",
+    "denied": "La localisation est désactivée pour ce site. Saisissez plutôt une ville — ou autorisez la localisation dans les réglages de votre navigateur.",
+    "failed": "Impossible d'obtenir votre position. Saisissez plutôt une ville."
+  },
+  "quick": {
+    "availableToday": "Disponible aujourd'hui",
+    "instant": "Réservation immédiate",
+    "mobile": "À domicile",
+    "virtual": "En ligne"
+  },
+  "view": {
+    "label": "Affichage",
+    "list": "Liste",
+    "map": "Carte"
+  },
+  "heading": {
+    "explore": "Explorer",
+    "results": "Résultats",
+    "query": "« {q} »"
+  },
+  "summary": {
+    "updating": "Mise à jour…",
+    "count": "{count, plural, one {# professionnel} other {# professionnels}}",
+    "countMore": "{count}+ professionnels",
+    "near": "{results} près de {place}",
+    "nearYou": "{results} près de chez vous"
+  },
+  "sort": {
+    "label": "Trier par",
+    "relevance": "Pertinence",
+    "rating": "Mieux notés",
+    "price": "Prix le plus bas",
+    "distance": "Plus proches"
+  },
+  "categories": {
+    "label": "Catégories",
+    "all": "Toutes"
+  },
+  "empty": {
+    "title": "Aucun résultat pour l'instant",
+    "query": "Essayez un terme plus large, une autre orthographe, ou retirez quelques filtres.",
+    "filters": "Essayez de retirer un filtre ou d'élargir la zone de recherche.",
+    "clear": "Effacer tous les filtres"
+  },
+  "showMore": "Afficher plus",
+  "filters": {
+    "button": "Filtres",
+    "buttonCount": "Filtres · {count}",
+    "title": "Filtres",
+    "clearAll": "Tout effacer",
+    "show": "Afficher les résultats",
+    "availability": "Disponibilité et réservation",
+    "rating": "Note",
+    "minRating": "Note minimale",
+    "any": "Toutes",
+    "price": "Prix de départ jusqu'à",
+    "maxPrice": "Prix de départ maximal",
+    "distance": "Distance",
+    "provider": "Prestataire",
+    "providerType": "Type de prestataire",
+    "individual": "Indépendants",
+    "business": "Établissements et équipes"
+  }
+}

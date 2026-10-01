@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Profis entdecken",
+    "category": "{category} buchen",
+    "query": "{q} — Suche",
+    "description": "Vergleiche Profis nach echter Verfügbarkeit, Preisen und verifizierten Bewertungen."
+  },
+  "bar": {
+    "placeholder": "Leistungen oder Profis suchen",
+    "label": "Suchen",
+    "clear": "Suche löschen"
+  },
+  "location": {
+    "placeholder": "Überall",
+    "label": "Ort",
+    "clear": "Ort löschen",
+    "useMine": "Meinen aktuellen Standort verwenden",
+    "finding": "Standort wird ermittelt…",
+    "current": "Aktueller Standort",
+    "selectedArea": "Ausgewähltes Gebiet",
+    "unsupported": "Dein Browser kann den Standort nicht teilen. Gib stattdessen eine Stadt ein.",
+    "denied": "Der Standortzugriff ist für diese Website deaktiviert. Gib stattdessen eine Stadt ein — oder erlaube den Standort in deinen Browsereinstellungen.",
+    "failed": "Wir konnten deinen Standort nicht ermitteln. Gib stattdessen eine Stadt ein."
+  },
+  "quick": {
+    "availableToday": "Heute verfügbar",
+    "instant": "Sofortbuchung",
+    "mobile": "Kommt zu dir",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Ansicht",
+    "list": "Liste",
+    "map": "Karte"
+  },
+  "heading": {
+    "explore": "Entdecken",
+    "results": "Ergebnisse",
+    "query": "„{q}“"
+  },
+  "summary": {
+    "updating": "Wird aktualisiert…",
+    "count": "{count, plural, one {# Profi} other {# Profis}}",
+    "countMore": "{count}+ Profis",
+    "near": "{results} in der Nähe von {place}",
+    "nearYou": "{results} in deiner Nähe"
+  },
+  "sort": {
+    "label": "Sortieren nach",
+    "relevance": "Beste Treffer",
+    "rating": "Beste Bewertung",
+    "price": "Niedrigster Preis",
+    "distance": "Entfernung"
+  },
+  "categories": {
+    "label": "Kategorien",
+    "all": "Alle"
+  },
+  "empty": {
+    "title": "Noch keine Treffer",
+    "query": "Versuch einen allgemeineren Begriff, eine andere Schreibweise oder entferne einige Filter.",
+    "filters": "Entferne einen Filter oder such in einem größeren Umkreis.",
+    "clear": "Alle Filter löschen"
+  },
+  "showMore": "Mehr anzeigen",
+  "filters": {
+    "button": "Filter",
+    "buttonCount": "Filter · {count}",
+    "title": "Filter",
+    "clearAll": "Alle löschen",
+    "show": "Ergebnisse anzeigen",
+    "availability": "Verfügbarkeit & Buchung",
+    "rating": "Bewertung",
+    "minRating": "Mindestbewertung",
+    "any": "Beliebig",
+    "price": "Startpreis bis",
+    "maxPrice": "Maximaler Startpreis",
+    "distance": "Entfernung",
+    "provider": "Anbieter",
+    "providerType": "Anbietertyp",
+    "individual": "Selbstständige Profis",
+    "business": "Unternehmen & Teams"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Tu:",
+  "unread": "Non letto",
+  "apptLine": "{service} · {date} alle {time}",
+  "list": {
+    "title": "Messaggi",
+    "unread": "{count, plural, one {# conversazione non letta.} other {# conversazioni non lette.}}",
+    "caughtUp": "Sei in pari.",
+    "emptyTitle": "Ancora nessun messaggio",
+    "emptyBody": "Domande su un servizio, un prezzo o un orario? Apri la pagina di un professionista e tocca “Fai una domanda”. Le risposte arrivano qui.",
+    "findPro": "Trova un professionista"
+  },
+  "thread": {
+    "metaTitle": "Conversazione",
+    "placeholder": "Scrivi a {business}"
+  },
+  "new": {
+    "metaTitle": "Nuovo messaggio",
+    "ownTitle": "Questa è la tua attività",
+    "ownBody": "I messaggi dei clienti a {business} arrivano nella casella della tua attività.",
+    "ownButton": "Apri i messaggi dell'attività",
+    "placeholderBooking": "Chiedi qualcosa su questa prenotazione",
+    "placeholderQuestion": "Fai una domanda",
+    "emptyBookingTitle": "Scrivi a {business} sulla tua prenotazione",
+    "emptyQuestionTitle": "Chiedi a {business} prima di prenotare",
+    "emptyBookingBody": "Sei in ritardo, devi cambiare qualcosa o hai una domanda? Il tuo messaggio arriva direttamente al loro team.",
+    "emptyQuestionBody": "Prezzi, tempi, cosa portare — {business} risponderà qui e ti avviseremo. Il tuo numero di telefono e la tua email restano privati."
+  },
+  "shell": {
+    "allMessages": "Tutti i messaggi",
+    "viewProfile": "Vedi profilo",
+    "book": "Prenota"
+  },
+  "pro": {
+    "backToInbox": "Torna ai messaggi"
+  },
+  "view": {
+    "label": "Messaggi",
+    "you": "Tu",
+    "loadingEarlier": "Caricamento dei messaggi precedenti",
+    "showEarlier": "Mostra messaggi precedenti",
+    "seen": "Visto",
+    "sending": "Invio in corso…",
+    "notSent": "Non inviato.",
+    "retry": "Riprova",
+    "discard": "Elimina",
+    "newMessages": "{count, plural, one {# nuovo messaggio} other {# nuovi messaggi}}",
+    "openPhoto": "Apri la foto in una nuova scheda",
+    "photo": "Foto"
+  },
+  "composer": {
+    "about": "Riguardo a {appointment}",
+    "unlink": "Non collegare questo appuntamento",
+    "processingPhoto": "Elaborazione della foto",
+    "removePhoto": "Rimuovi foto",
+    "attachPhoto": "Allega una foto",
+    "label": "Messaggio",
+    "send": "Invia messaggio",
+    "hint": "Premi Invio per inviare, Maiusc + Invio per andare a capo."
+  },
+  "inbox": {
+    "title": "Messaggi",
+    "conversations": "Conversazioni",
+    "unread": "{count} non letti",
+    "allCaughtUp": "Tutto letto",
+    "searchLabel": "Cerca conversazioni per nome del cliente",
+    "searchPlaceholder": "Cerca clienti",
+    "clearSearch": "Cancella ricerca",
+    "show": "Mostra",
+    "all": "Tutte",
+    "unreadFilter": "Non lette",
+    "noClientsNamed": "Nessun cliente di nome “{term}”",
+    "nothingUnread": "Niente da leggere",
+    "noMessages": "Ancora nessun messaggio",
+    "tryDifferent": "Prova un'altra ricerca o mostra tutte le conversazioni.",
+    "emptyBody": "Quando i clienti fanno una domanda dalla tua pagina o su una prenotazione, la trovi qui."
+  },
+  "clientPanel": {
+    "client": "Cliente",
+    "visits": "Visite",
+    "noShows": "Assenze",
+    "cancelled": "Cancellati",
+    "clientSince": "Cliente da {date}",
+    "noVisits": "Ancora nessuna visita completata",
+    "lastIn": "ultima a {date}",
+    "tags": "Tag",
+    "clientProfile": "Profilo cliente",
+    "notBooked": "Non ha ancora prenotato da te — questa conversazione è iniziata dalla tua pagina pubblica.",
+    "upcoming": "In arrivo",
+    "nothingBooked": "Nessuna prenotazione.",
+    "recent": "Recenti"
+  }
+}

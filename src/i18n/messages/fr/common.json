@@ -1,0 +1,90 @@
+{
+  "language": "Langue",
+  "meta": {
+    "title": "Kept — Réservez des professionnels de confiance près de chez vous",
+    "description": "Trouvez et réservez barbiers, coiffeurs, coachs, photographes, professeurs et toutes sortes de professionnels près de chez vous — et gérez vos propres rendez-vous en toute simplicité."
+  },
+  "skipToContent": "Aller au contenu",
+  "logoHome": "Accueil Kept",
+  "header": {
+    "mainNav": "Principale",
+    "search": "Rechercher un service ou un professionnel",
+    "ask": "Demander",
+    "askKept": "Demandez à Kept",
+    "explore": "Explorer",
+    "myBusiness": "Mon activité",
+    "forPros": "Pour les pros",
+    "bookings": "Réservations",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "unread": "non lues",
+    "accountMenu": "Menu du compte",
+    "logIn": "Se connecter",
+    "signUp": "S'inscrire"
+  },
+  "accountMenu": {
+    "bookings": "Réservations",
+    "saved": "Favoris",
+    "messages": "Messages",
+    "settings": "Paramètres du compte",
+    "help": "Aide et assistance",
+    "switchToBusiness": "Passer à mon activité",
+    "offerServices": "Proposez vos services",
+    "admin": "Console d'administration",
+    "signOut": "Se déconnecter"
+  },
+  "tabs": {
+    "label": "Principal",
+    "home": "Accueil",
+    "explore": "Explorer",
+    "bookings": "Réservations",
+    "inbox": "Messagerie",
+    "account": "Compte"
+  },
+  "footer": {
+    "tagline": "Réservez des professionnels de confiance. Gérez vos rendez-vous sans effort.",
+    "discover": "Découvrir",
+    "explore": "Explorer",
+    "hair": "Coiffure et barbiers",
+    "wellness": "Bien-être",
+    "fitness": "Sport et fitness",
+    "forPros": "Pour les pros",
+    "howItWorks": "Comment ça marche",
+    "listServices": "Proposez vos services",
+    "dashboard": "Tableau de bord pro",
+    "help": "Aide",
+    "support": "Assistance",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "copyright": "© {year} Kept. Tous droits réservés."
+  },
+  "price": {
+    "free": "Gratuit",
+    "quote": "Prix sur consultation",
+    "from": "À partir de {price}"
+  },
+  "rating": {
+    "new": "Nouveau",
+    "summary": "noté {avg} d'après {count, plural, one {# avis} other {# avis}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "En attente de paiement",
+    "requested": "Demande envoyée",
+    "confirmed": "Confirmé",
+    "checked_in": "Arrivé",
+    "in_progress": "En cours",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "declined": "Refusé",
+    "no_show": "Absent",
+    "expired": "Expiré"
+  },
+  "policy": {
+    "freeUntil": "Annulation gratuite jusqu'à {hours} h avant. Au-delà, {percent} % du total est facturé.",
+    "cancelAhead": "Merci d'annuler au moins {hours} h avant votre rendez-vous.",
+    "freeAnyTime": "Annulation gratuite à tout moment avant votre rendez-vous.",
+    "depositRefundable": "L'acompte est remboursé si vous annulez à temps.",
+    "depositNonRefundable": "L'acompte n'est pas remboursable.",
+    "reschedule": "Modification en ligne jusqu'à {hours} h avant."
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "Introuvable",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} à {city}",
+    "bookOnline": "Réservez {name} en ligne."
+  },
+  "preview": {
+    "notice": "Aperçu — vous seul voyez cette page jusqu'à sa publication.",
+    "goLive": "Publier"
+  },
+  "verified": "Vérifié par Kept",
+  "verifiedLabel": "Établissement vérifié",
+  "reviewsCount": "{count, plural, one {# avis vérifié} other {# avis vérifiés}}",
+  "newOnKept": "Nouveau sur Kept",
+  "travels": "{city} · se déplace jusqu'à {km} km",
+  "status": {
+    "openUntil": "Ouvert · jusqu'à {time}",
+    "opensAt": "Ouvre à {time}",
+    "opensTomorrow": "Ouvre demain à {time}",
+    "opensDay": "Ouvre {day} à {time}",
+    "notSet": "Horaires non renseignés",
+    "closed": "Fermé"
+  },
+  "nav": {
+    "label": "Sections du profil",
+    "services": "Prestations",
+    "work": "Réalisations",
+    "featured": "À la une",
+    "reviews": "Avis",
+    "about": "À propos"
+  },
+  "services": {
+    "eyebrow": "La carte",
+    "title": "Prestations",
+    "empty": "Cet établissement n'a pas encore publié de prestations.",
+    "sale": "Promo",
+    "group": "Groupe · jusqu'à {count}",
+    "request": "Sur demande",
+    "options": "Options disponibles",
+    "deposit": "Acompte à la réservation",
+    "book": "Réserver",
+    "bookService": "Réserver {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Réalisations récentes"
+  },
+  "featured": {
+    "eyebrow": "Sur les réseaux",
+    "title": "À la une",
+    "allProfiles": "Tous les réseaux sociaux",
+    "bookThis": "Réserver ceci · {service}",
+    "newTab": "(s'ouvre dans un nouvel onglet)",
+    "footnote": "Les lecteurs ne se chargent depuis chaque plateforme que lorsque vous appuyez sur lecture.",
+    "play": "Lire {title}",
+    "loadsFrom": "Chargé depuis {host}"
+  },
+  "team": {
+    "eyebrow": "Les visages",
+    "title": "Équipe"
+  },
+  "reviews": {
+    "eyebrow": "Le bouche-à-oreille",
+    "title": "Avis",
+    "empty": "Aucun avis pour l'instant. Seuls les clients peuvent laisser un avis, après une visite terminée.",
+    "distribution": "Répartition des notes",
+    "onlyCustomers": "Seuls les clients ayant une réservation terminée peuvent laisser un avis.",
+    "response": "Réponse de {name}",
+    "stars": "{value} étoiles sur 5"
+  },
+  "about": {
+    "eyebrow": "La maison",
+    "title": "À propos",
+    "hours": "Horaires",
+    "timesIn": "Horaires affichés en {zone}.",
+    "policies": "Conditions",
+    "noShow": "Les rendez-vous manqués peuvent être facturés {percent} % du total.",
+    "experience": "{years} ans d'expérience et plus",
+    "amenities": "Équipements",
+    "online": "En ligne",
+    "directions": "Itinéraire",
+    "comesToYou": "Se déplace chez vous",
+    "mobileBody": "Basé à {city}. Se déplace jusqu'à {km} km — vous indiquerez votre adresse en réservant.",
+    "onlineSessions": "Séances en ligne",
+    "onlineBody": "Participez où que vous soyez. Le lien est envoyé après la réservation."
+  },
+  "panel": {
+    "label": "Réserver",
+    "eyebrow": "Réservation",
+    "freeOptions": "Options gratuites disponibles",
+    "from": "Prestations à partir de {price}",
+    "onConsultation": "Prix sur consultation",
+    "nextToday": "Prochain créneau aujourd'hui",
+    "nextTomorrow": "Prochain créneau demain",
+    "nextOn": "Prochain créneau {day}",
+    "none": "Aucun créneau dans les deux prochaines semaines",
+    "bookNow": "Réserver",
+    "requestToBook": "Demander une réservation",
+    "instant": "Confirmation immédiate",
+    "confirms": "L'établissement confirme votre demande",
+    "notTaking": "Cet établissement n'accepte pas encore de réservations.",
+    "mobileFrom": "À partir de {price}",
+    "mobileNext": "Prochain : {day} {time}",
+    "seeAvailability": "Voir les disponibilités",
+    "request": "Demander"
+  },
+  "actions": {
+    "share": "Partager",
+    "shareTitle": "Partager {name}",
+    "shareBody": "Envoyez le lien, ou scannez le code pour ouvrir la page de réservation.",
+    "copy": "Copier",
+    "copied": "Copié",
+    "downloadQr": "Télécharger le QR code",
+    "ask": "Poser une question",
+    "messageTitle": "Écrire à {name}",
+    "messageBody": "Posez vos questions sur les prestations, les disponibilités ou tout autre sujet avant de réserver. Votre numéro et votre e-mail restent privés.",
+    "cancel": "Annuler",
+    "send": "Envoyer le message",
+    "yourMessage": "Votre message",
+    "placeholder": "Bonjour ! Auriez-vous un créneau pour un dégradé américain ce samedi après-midi ?",
+    "sent": "Message envoyé",
+    "sentBody": "{name} vous répondra dans votre messagerie."
+  },
+  "portfolio": {
+    "compare": "Comparer avant et après",
+    "portfolio": "Portfolio",
+    "close": "Fermer",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "before": "Avant",
+    "after": "Après",
+    "beforeAfter": "Avant / après",
+    "video": "Vidéo",
+    "openItem": "Ouvrir l'élément {n}",
+    "browse": "Utilisez les flèches pour naviguer",
+    "bookThis": "Réserver ceci",
+    "bookThisService": "Réserver ceci — {service}"
+  },
+  "kind": {
+    "video": "Vidéo",
+    "short": "Short",
+    "post": "Publication",
+    "reel": "Reel",
+    "track": "Titre",
+    "album": "Album",
+    "artist": "Artiste",
+    "playlist": "Playlist",
+    "episode": "Épisode",
+    "show": "Podcast"
+  }
+}

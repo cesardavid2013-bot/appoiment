@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Buchung", "hint": "Änderungen, Stornierungen oder Probleme mit einem Termin." },
+    "payment": { "label": "Zahlung", "hint": "Abbuchungen, Anzahlungen, Erstattungen oder Trinkgeld." },
+    "account": { "label": "Konto", "hint": "Anmeldung, dein Profil oder deine Daten." },
+    "report": { "label": "Unternehmen melden", "hint": "Sicherheitsbedenken, irreführende Einträge oder Fehlverhalten." },
+    "other": { "label": "Sonstiges", "hint": "Alles andere, wobei wir helfen können." }
+  },
+  "status": {
+    "open": "Wartet auf Support",
+    "awaiting_customer": "Beantwortet",
+    "resolved": "Gelöst",
+    "closed": "Geschlossen"
+  },
+  "home": {
+    "title": "Hilfe & Support",
+    "description": "Hilfe bei einer Buchung, einer Zahlung oder deinem Konto.",
+    "newRequest": "Neue Anfrage",
+    "yourRequests": "Deine Anfragen",
+    "emptyTitle": "Noch keine Anfragen",
+    "emptyBody": "Wenn bei einer Buchung, einer Zahlung oder deinem Konto etwas nicht stimmt, sag uns Bescheid — wir helfen dir, es zu klären.",
+    "contact": "Support kontaktieren",
+    "ticketLine": "{category} · Aktualisiert am {date} · {count, plural, one {# Nachricht} other {# Nachrichten}}",
+    "quickAnswers": "Schnelle Antworten",
+    "stillStuck": "Kommst du nicht weiter? <link>Support kontaktieren</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Wie storniere oder verschiebe ich einen Termin?",
+      "a": "Öffne <link>Buchungen</link>, wähle den Termin und tippe auf Umbuchen oder Stornieren. Jedes Unternehmen legt seine eigene Stornofrist fest — du siehst vor dem Bestätigen genau, was gilt, einschließlich Gebühr oder Erstattung."
+    },
+    "refund": {
+      "q": "Wann bekomme ich meine Erstattung?",
+      "a": "Erstattungen gehen zurück auf die Karte, mit der du bezahlt hast, sobald eine Stornierung bestätigt ist. Je nach Bank dauert es meist 5–10 Werktage, bis sie erscheinen. Ob eine Anzahlung erstattet wird, hängt von den Bedingungen des Unternehmens ab, die bei der Buchung angezeigt werden."
+    },
+    "contactPro": {
+      "q": "Wie kontaktiere ich einen Profi?",
+      "a": "Nutze „Nachricht“ im Profil oder in deiner Buchung. Deine Unterhaltungen findest du unter <link>Nachrichten</link>. Bei allem rund um die Leistung selbst — Anfahrt, Vorbereitung, was du mitbringen solltest — antwortet das Unternehmen am schnellsten."
+    },
+    "report": {
+      "q": "Mit einem Unternehmen ist etwas schiefgelaufen. Was kann ich tun?",
+      "a": "Erstelle unten eine Anfrage und wähle „Unternehmen melden“. Verknüpfe den Termin, falls es einen gibt. Wir lesen jede Meldung und können bei Erstattungen eingreifen und, wenn nötig, Unternehmen von Kept entfernen."
+    },
+    "account": {
+      "q": "Wie ändere ich meine E-Mail-Adresse oder lösche mein Konto?",
+      "a": "Änderungen der E-Mail-Adresse laufen über den Support, damit wir bestätigen können, dass du es bist. Deine Daten herunterladen oder dein Konto löschen kannst du selbst unter <link>Datenschutz & Daten</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Supportanfrage",
+    "allRequests": "Alle Anfragen",
+    "opened": "{category} · Erstellt am <date></date>",
+    "appointmentLine": "{date} um {time} · Nr. {reference}",
+    "conversation": "Verlauf",
+    "keptSupport": "Kept-Support",
+    "openImage": "Angehängtes Bild öffnen",
+    "attachedImage": "Angehängtes Bild",
+    "closed": "Diese Anfrage ist geschlossen. <link>Erstelle eine neue Anfrage</link>, wenn du noch Hilfe brauchst.",
+    "willReply": "Wir antworten hier und sagen dir Bescheid, sobald wir das tun.",
+    "sorted": "Alles geklärt? Sag uns Bescheid."
+  },
+  "new": {
+    "title": "Support kontaktieren",
+    "intro": "Erzähl uns, worum es geht, und ein echter Mensch aus dem Kept-Team antwortet dir hier. Bei Fragen zur Leistung selbst geht es meist am schnellsten, dem Unternehmen zu schreiben.",
+    "notFound": "Wir konnten diesen Termin in deinem Konto nicht finden, daher wurde er nicht angehängt. Du kannst unten trotzdem einen auswählen."
+  },
+  "form": {
+    "topic": "Wobei brauchst du Hilfe?",
+    "chooseTopic": "Thema wählen",
+    "addSubject": "Füge einen kurzen Betreff hinzu",
+    "moreDetail": "Erzähl uns etwas mehr — schon ein Satz hilft uns, dir zu helfen",
+    "sent": "Anfrage gesendet",
+    "checkFields": "Bitte prüfe die markierten Felder.",
+    "related": "Zugehöriger Termin",
+    "refHint": "Nr. {reference} · {business}",
+    "linkHint": "Wenn du eine Buchung verknüpfst, können wir uns sofort darum kümmern.",
+    "none": "Keiner",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Betreff",
+    "subjectPlaceholder": "z. B. Meine Anzahlung wurde doppelt abgebucht",
+    "details": "Details",
+    "detailsHint": "Was ist passiert, wann, und was sollen wir tun? Bitte gib keine Kartennummern oder Passwörter an.",
+    "images": "Bilder",
+    "optional": "Optional",
+    "cancel": "Abbrechen",
+    "uploadingImages": "Bilder werden hochgeladen…",
+    "send": "Anfrage senden"
+  },
+  "reply": {
+    "writeFirst": "Schreib zuerst eine Antwort.",
+    "sent": "Antwort gesendet",
+    "label": "Antwort",
+    "reopens": "Mit einer Antwort wird diese Anfrage wieder geöffnet.",
+    "placeholder": "Füge Details hinzu oder beantworte unsere Frage…",
+    "send": "Antwort senden"
+  },
+  "resolve": {
+    "button": "Als gelöst markieren",
+    "done": "Als gelöst markiert",
+    "doneBody": "Schön, dass es geklärt ist. Du kannst trotzdem antworten, falls noch etwas ist.",
+    "confirmTitle": "Diese Anfrage als gelöst markieren?",
+    "confirmBody": "Sag uns, dass alles geklärt ist. Falls noch etwas auftaucht, antworte hier, und wir machen weiter."
+  },
+  "attach": {
+    "tooMany": "Du kannst bis zu {max} Bilder anhängen.",
+    "alt": "Support-Anhang",
+    "label": "Anhänge",
+    "uploadingName": "{name} wird hochgeladen",
+    "remove": "{name} entfernen",
+    "add": "Bild hinzufügen",
+    "uploading": "{count, plural, one {# Bild wird hochgeladen…} other {# Bilder werden hochgeladen…}}",
+    "hint": "Screenshots oder Fotos helfen. Bis zu {max} Bilder, je 15 MB."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Bentornato, {name}",
+    "eyebrow": "L'appuntamento, mantenuto",
+    "title": "Prenota le persone che rendono la tua settimana <em>migliore.</em>",
+    "lead": "Barbieri, parrucchieri, personal trainer, insegnanti, fotografi e molto altro — con disponibilità reali, prezzi chiari e recensioni solo da visite verificate.",
+    "points": {
+      "verified": "Solo recensioni verificate",
+      "prices": "Prezzi prima di prenotare",
+      "instant": "Conferma immediata"
+    }
+  },
+  "search": {
+    "placeholder": "Taglio, massaggio, fotografo…",
+    "label": "Cosa vuoi prenotare?",
+    "category": "Categoria",
+    "submit": "Cerca",
+    "sayIt": "Oppure dillo e basta —",
+    "sayItExample": "“un barbiere domani dopo le 17”"
+  },
+  "openings": {
+    "title": "Disponibili a breve",
+    "live": "In tempo reale dai calendari",
+    "appointment": "Appuntamento"
+  },
+  "index": {
+    "eyebrow": "L'indice",
+    "title": "Ogni tipo di appuntamento",
+    "exploreAll": "Esplora tutto",
+    "pros": "{count, plural, one {# professionista} other {# professionisti}}"
+  },
+  "next": {
+    "title": "Il tuo prossimo appuntamento",
+    "details": "Dettagli"
+  },
+  "again": {
+    "title": "Prenota di nuovo",
+    "rebook": "Riprenota"
+  },
+  "rails": {
+    "availableSoon": "Disponibili a breve",
+    "availableSoonNear": "Disponibili a breve vicino a {place}",
+    "availableSoonNearYou": "Disponibili a breve vicino a te",
+    "availableSoonSub": "Disponibilità in tempo reale dal calendario di ogni professionista.",
+    "recent": "Visti di recente",
+    "topRated": "I più apprezzati",
+    "topRatedSub": "Le valutazioni provengono solo da prenotazioni completate e verificate.",
+    "newcomers": "Nuovi su Kept"
+  },
+  "how": {
+    "eyebrow": "Come funziona",
+    "title": "Tre passaggi, zero telefonate",
+    "find": {
+      "title": "Trova la persona giusta",
+      "body": "Cerca per cosa ti serve, quando e dove — o chiedilo semplicemente con parole tue. Ogni profilo mostra prezzi reali e recensioni verificate."
+    },
+    "choose": {
+      "title": "Scegli un orario reale",
+      "body": "Gli orari che vedi sono liberi nel loro calendario in questo momento. Scegline uno, aggiungi le opzioni e conferma."
+    },
+    "kept": {
+      "title": "Consideralo fatto",
+      "body": "Ricevi una conferma, promemoria prima del giorno e un unico posto per spostare, scrivere o riprenotare."
+    }
+  },
+  "pros": {
+    "eyebrow": "Per i professionisti",
+    "title": "Il tuo mestiere merita un'accoglienza <em>migliore</em>.",
+    "body": "Prenotazioni online, un calendario che non accetta doppie prenotazioni, promemoria che riducono le assenze e una pagina che mostra il tuo lavoro come merita. Gratis durante il lancio.",
+    "cta": "Offri i tuoi servizi",
+    "howItWorks": "Scopri come funziona",
+    "features": {
+      "any": {
+        "title": "Qualsiasi servizio",
+        "body": "Le opzioni aggiornano prezzo e durata in automatico."
+      },
+      "noDouble": {
+        "title": "Mai doppie prenotazioni",
+        "body": "Ogni orario viene verificato al momento della prenotazione."
+      },
+      "noShows": {
+        "title": "Meno assenze",
+        "body": "Promemoria, acconti e regole chiare."
+      },
+      "discovered": {
+        "title": "Fatti scoprire",
+        "body": "Portfolio, recensioni verificate e Spotlight."
+      }
+    }
+  }
+}

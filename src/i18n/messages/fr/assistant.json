@@ -1,0 +1,22 @@
+{
+  "title": "Demandez à Kept",
+  "description": "Dites-moi ce qu'il vous faut et quand. Je vérifie les vraies disponibilités.",
+  "newConversation": "Nouvelle conversation",
+  "close": "Fermer",
+  "forExample": "Par exemple :",
+  "starters": {
+    "one": "Un barbier demain après-midi",
+    "two": "Ongles en gel ce week-end",
+    "three": "Un massage près de chez moi ce soir",
+    "four": "Cours de maths en ligne"
+  },
+  "searching": "Recherche en cours",
+  "listening": "Je vous écoute…",
+  "placeholder": "Un barbier samedi matin…",
+  "yourMessage": "Votre message",
+  "stopListening": "Arrêter l'écoute",
+  "speak": "Parler",
+  "send": "Envoyer",
+  "verified": "Vérifié",
+  "online": "En ligne"
+}

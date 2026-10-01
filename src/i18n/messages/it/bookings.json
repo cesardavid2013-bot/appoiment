@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "In attesa di pagamento",
+    "requested": "Richiesta inviata",
+    "confirmed": "Confermato",
+    "checked_in": "Arrivato",
+    "in_progress": "In corso",
+    "completed": "Completato",
+    "cancelled": "Cancellato",
+    "declined": "Rifiutato",
+    "no_show": "Non presentato",
+    "expired": "Scaduto"
+  },
+  "list": {
+    "title": "Prenotazioni",
+    "filters": "Filtri prenotazioni",
+    "tabs": {
+      "upcoming": "In arrivo",
+      "past": "Passate",
+      "cancelled": "Cancellate"
+    },
+    "howDidItGo": "Com'è andata?",
+    "review": "Recensisci",
+    "empty": {
+      "upcoming": "Nessun appuntamento in arrivo",
+      "past": "Ancora nessun appuntamento passato",
+      "cancelled": "Nessuna cancellazione",
+      "upcomingBody": "Quando prenoti, i tuoi appuntamenti compaiono qui — con indicazioni stradali, promemoria e modifiche semplici.",
+      "findPro": "Trova un professionista"
+    }
+  },
+  "detail": {
+    "metaTitle": "Appuntamento",
+    "allBookings": "Tutte le prenotazioni",
+    "hero": {
+      "confirmedTitle": "Hai prenotato",
+      "confirmedBody": "Ti abbiamo inviato una conferma e ti ricorderemo l'appuntamento.",
+      "requestedTitle": "Richiesta inviata",
+      "requestedBody": "{business} esaminerà la tua richiesta. Ti avviseremo appena risponde — nel frattempo il tuo orario resta bloccato.",
+      "paymentTitle": "Stiamo completando il pagamento",
+      "paymentBody": "Se hai appena pagato, questa pagina si aggiorna da sola in pochi secondi. Il tuo orario resta bloccato finché il pagamento non è completato."
+    },
+    "calendarDetails": "Codice {reference}",
+    "ref": "Cod.",
+    "when": "Quando",
+    "with": "Con",
+    "where": "Dove",
+    "atYourAddress": "Al tuo indirizzo",
+    "online": "Online",
+    "virtualLink": "L'attività ti invierà il link prima della sessione.",
+    "yourReview": "La tua recensione",
+    "payment": {
+      "title": "Pagamento",
+      "serviceFee": "Commissione di servizio",
+      "tax": "Imposte",
+      "estimatedTotal": "Totale stimato",
+      "total": "Totale",
+      "paid": "Pagato",
+      "refunded": "Rimborsato",
+      "balance": "Saldo",
+      "dueAtAppointment": "Da pagare all'appuntamento",
+      "tip": "Mancia"
+    },
+    "policy": {
+      "title": "Politica di cancellazione",
+      "freeUntil": "Cancellazione gratuita fino a {hours, plural, one {# ora} other {# ore}} prima.",
+      "freeAnytime": "Cancellazione gratuita in qualsiasi momento prima dell'appuntamento.",
+      "lateFee": "Cancellazioni successive: {percent}% del totale.",
+      "depositNonRefundable": "Gli acconti non sono rimborsabili.",
+      "cannotCancel": "Questo appuntamento non può più essere cancellato.",
+      "alreadyStarted": "Questo appuntamento è già iniziato.",
+      "cannotReschedule": "Questo appuntamento non può essere spostato.",
+      "maxReschedules": "Questo appuntamento è già stato spostato il numero massimo di volte. Contatta l'attività.",
+      "rescheduleWindow": "Le modifiche vanno fatte almeno {hours, plural, one {# ora} other {# ore}} prima dell'appuntamento. Contatta l'attività."
+    },
+    "refund": {
+      "noCharge": "Nessun addebito.",
+      "full": "Riceverai un rimborso completo.",
+      "none": "Secondo la politica di questa attività, il tuo pagamento non è rimborsabile.",
+      "partial": "Secondo la politica di questa attività, riceverai un rimborso parziale."
+    },
+    "note": "Nota: {reason}",
+    "problem": "Problemi con questa prenotazione? <link>Contatta l'assistenza</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} alle {time}",
+    "cancelledToast": "Appuntamento cancellato",
+    "refundOnWay": "Un rimborso di {amount} è in arrivo.",
+    "rescheduledToast": "Spostato",
+    "payToConfirm": "Paga {amount} per confermare",
+    "addToCalendar": "Aggiungi al calendario",
+    "directions": "Indicazioni",
+    "message": "Messaggio",
+    "bookAgain": "Prenota di nuovo",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "Lascia una recensione",
+    "reschedule": "Sposta",
+    "cancelAppointment": "Cancella appuntamento",
+    "cancelTitle": "Cancellare questo appuntamento?",
+    "insideWindow": "Sei all'interno del periodo di cancellazione dell'attività.",
+    "refundAmount": "Rimborso: {amount}.",
+    "keptAmount": "Trattenuto dall'attività: {amount}.",
+    "reason": "Motivo",
+    "reasonHint": "Condiviso con l'attività.",
+    "chooseNewTime": "Scegli un nuovo orario",
+    "currently": "Attualmente: {when}",
+    "keepCurrentTime": "Mantieni l'orario attuale",
+    "moveTo": "Sposta alle {time}",
+    "chooseTime": "Scegli un orario"
+  },
+  "review": {
+    "ratings": {
+      "1": "Scarso",
+      "2": "Discreto",
+      "3": "Buono",
+      "4": "Ottimo",
+      "5": "Eccellente"
+    },
+    "thanks": "Grazie per la tua recensione",
+    "title": "Com'è andata da {business}?",
+    "subtitle": "La tua recensione è pubblica e contrassegnata come prenotazione verificata.",
+    "rating": "Valutazione",
+    "stars": "{n, plural, one {# stella} other {# stelle}}",
+    "bodyLabel": "Racconta la tua esperienza",
+    "bodyPlaceholder": "Cosa ti ha colpito? Lo consiglieresti?",
+    "post": "Pubblica recensione"
+  },
+  "slotPicker": {
+    "previousWeek": "Settimana precedente",
+    "nextWeek": "Settimana successiva",
+    "noOpenings": "Nessuna disponibilità in questo giorno.",
+    "selected": "Selezionato: {time}"
+  }
+}
