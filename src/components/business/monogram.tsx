@@ -33,7 +33,7 @@ export function MonogramCover({ name, label, className, size = "md" }: { name: s
     <div className={cn("relative flex items-center justify-center overflow-hidden", toneFor(name), className)}>
       <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: "repeating-linear-gradient(35deg, currentColor 0 1px, transparent 1px 14px)" }} aria-hidden />
       <span className={cn("relative font-display leading-none tracking-tight", size === "sm" ? "text-3xl" : size === "lg" ? "text-7xl" : "text-5xl")}>{initials(name)}</span>
-      {label && <span className="absolute bottom-3 left-3.5 text-[11px] font-medium uppercase tracking-[0.08em] opacity-70">{label}</span>}
+      {label && <span className="absolute bottom-3 start-3.5 text-[11px] font-medium uppercase tracking-[0.08em] opacity-70">{label}</span>}
     </div>
   );
 }
@@ -52,7 +52,7 @@ export function NoirCover({ name, label, className, size = "md" }: { name: strin
       <div className="pointer-events-none absolute inset-2.5 border border-gold/25" aria-hidden />
       <div className="pointer-events-none absolute inset-0 [background:radial-gradient(80%_60%_at_50%_0%,rgb(201_168_101/0.10),transparent_70%)]" aria-hidden />
       <span className={cn("relative font-display leading-none tracking-[0.04em] text-gold-text", size === "sm" ? "text-3xl" : size === "lg" ? "text-8xl" : "text-6xl")}>{initials(name)}</span>
-      {label && <span className="absolute bottom-5 left-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-3">{label}</span>}
+      {label && <span className="absolute bottom-5 start-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-3">{label}</span>}
     </div>
   );
 }

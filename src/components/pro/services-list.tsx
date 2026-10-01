@@ -125,7 +125,7 @@ export function ServicesList({ items, currency }: { items: ServiceRow[]; currenc
                         {s.bookings30 > 0 && ` · ${s.bookings30} booked this month`}
                       </div>
                     </Link>
-                    <span className="w-24 shrink-0 text-right text-[15px] font-medium text-ink tabular">{formatPriceLabel(s, currency)}</span>
+                    <span className="w-24 shrink-0 text-end text-[15px] font-medium text-ink tabular">{formatPriceLabel(s, currency)}</span>
                     <Menu>
                       <MenuTrigger className="flex size-9 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={`Actions for ${s.name}`}>
                         <MoreHorizontal className="size-4" />

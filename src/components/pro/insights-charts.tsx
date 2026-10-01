@@ -79,9 +79,9 @@ export function DailyChart({ series, currency }: { series: Point[]; currency: st
       </div>
 
       <div className="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-2">
-        <div className="relative h-44 w-10 text-right text-[11px] text-ink-3 tabular" aria-hidden>
+        <div className="relative h-44 w-10 text-end text-[11px] text-ink-3 tabular" aria-hidden>
           {ticks.map((t, i) => (
-            <span key={i} className="absolute right-0 -translate-y-1/2" style={{ top: `${(i / (ticks.length - 1)) * 100}%` }}>
+            <span key={i} className="absolute end-0 -translate-y-1/2" style={{ top: `${(i / (ticks.length - 1)) * 100}%` }}>
               {isMoney ? formatMoney(t, currency, { compact: true }).replace(/\.00$/, "") : t}
             </span>
           ))}
@@ -122,7 +122,7 @@ export function DailyChart({ series, currency }: { series: Point[]; currency: st
           {labelIdx.map((i, k) => (
             <span
               key={k}
-              className={cn("absolute top-0", k === 0 ? "left-0" : k === 2 ? "right-0" : "-translate-x-1/2")}
+              className={cn("absolute top-0", k === 0 ? "start-0" : k === 2 ? "end-0" : "-translate-x-1/2")}
               style={k === 1 ? { left: `${((i + 0.5) / series.length) * 100}%` } : undefined}
             >
               {dayLabel(series[i].day)}
@@ -140,14 +140,14 @@ export function DailyChart({ series, currency }: { series: Point[]; currency: st
           <table className="w-full text-sm">
             <caption className="sr-only">Bookings and money collected per day</caption>
             <thead className="sticky top-0 bg-surface">
-              <tr className="border-b border-line text-left text-[12px] text-ink-3">
+              <tr className="border-b border-line text-start text-[12px] text-ink-3">
                 <th scope="col" className="px-3 py-2 font-medium">
                   Day
                 </th>
-                <th scope="col" className="px-3 py-2 text-right font-medium">
+                <th scope="col" className="px-3 py-2 text-end font-medium">
                   Bookings
                 </th>
-                <th scope="col" className="px-3 py-2 text-right font-medium">
+                <th scope="col" className="px-3 py-2 text-end font-medium">
                   Collected
                 </th>
               </tr>
@@ -155,11 +155,11 @@ export function DailyChart({ series, currency }: { series: Point[]; currency: st
             <tbody className="divide-y divide-line">
               {[...series].reverse().map((p) => (
                 <tr key={p.day}>
-                  <th scope="row" className="px-3 py-1.5 text-left font-normal text-ink-2">
+                  <th scope="row" className="px-3 py-1.5 text-start font-normal text-ink-2">
                     {dayLabel(p.day, { weekday: "short", month: "short", day: "numeric" })}
                   </th>
-                  <td className="px-3 py-1.5 text-right text-ink tabular">{p.bookings}</td>
-                  <td className="px-3 py-1.5 text-right text-ink tabular">{formatMoney(p.collected, currency)}</td>
+                  <td className="px-3 py-1.5 text-end text-ink tabular">{p.bookings}</td>
+                  <td className="px-3 py-1.5 text-end text-ink tabular">{formatMoney(p.collected, currency)}</td>
                 </tr>
               ))}
             </tbody>

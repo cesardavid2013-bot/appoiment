@@ -1,0 +1,25 @@
+{
+  "language": "Idioma",
+  "footer": {
+    "tagline": "Reserva con profesionales de confianza. Gestiona tus citas sin esfuerzo.",
+    "discover": "Descubrir",
+    "explore": "Explorar",
+    "hair": "Cabello y barberías",
+    "wellness": "Bienestar",
+    "fitness": "Fitness",
+    "forPros": "Para profesionales",
+    "howItWorks": "Cómo funciona",
+    "listServices": "Ofrece tus servicios",
+    "dashboard": "Panel del negocio",
+    "help": "Ayuda",
+    "support": "Soporte",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "copyright": "© {year} Kept. Todos los derechos reservados."
+  },
+  "price": {
+    "free": "Gratis",
+    "quote": "Precio a consultar",
+    "from": "Desde {price}"
+  }
+}

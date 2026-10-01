@@ -127,9 +127,9 @@ export function LocationsManager({ locations, businessTimezone, maxLocations, pl
             {locations.map((l) => {
               const { Icon } = KIND_META[l.kind];
               return (
-                <li key={l.id} className="flex items-start gap-3 py-3.5 pl-5 pr-2 sm:pl-6 sm:pr-3">
+                <li key={l.id} className="flex items-start gap-3 py-3.5 ps-5 pe-2 sm:ps-6 sm:pe-3">
                   <Icon className="mt-0.5 size-5 shrink-0 text-ink-3" aria-hidden />
-                  <button type="button" onClick={() => setEditing(l)} className="min-w-0 flex-1 text-left">
+                  <button type="button" onClick={() => setEditing(l)} className="min-w-0 flex-1 text-start">
                     <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
                       <span className="text-[15px] font-medium text-ink">{l.name}</span>
                       {l.isPrimary && <Badge tone="accent">Primary</Badge>}
@@ -201,7 +201,7 @@ export function LocationsManager({ locations, businessTimezone, maxLocations, pl
             </Button>
           }
         >
-          <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink-2">
+          <ul className="list-disc space-y-2 ps-5 text-sm leading-relaxed text-ink-2">
             {blockers.map((b) => (
               <li key={b.key}>{b.node}</li>
             ))}
@@ -218,7 +218,7 @@ export function LocationsManager({ locations, businessTimezone, maxLocations, pl
           description="Clients won't be able to book it any more. Past appointments keep their details."
         >
           {removing && (removing.isPrimary || removing.usage.members > 0 || removing.usage.services > 0) && (
-            <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-ink-2">
+            <ul className="list-disc space-y-1.5 ps-5 text-sm leading-relaxed text-ink-2">
               {removing.isPrimary && <li>Your oldest remaining location becomes primary.</li>}
               {removing.usage.members > 0 && (
                 <li>
@@ -512,7 +512,7 @@ function LocationDialog({ initial, businessTimezone, geocoding, isFirst, onClose
                   <li key={`${m.lat},${m.lng}`}>
                     <button
                       type="button"
-                      className="flex min-h-11 w-full items-center px-3 py-2 text-left text-sm text-ink hover:bg-surface-2"
+                      className="flex min-h-11 w-full items-center px-3 py-2 text-start text-sm text-ink hover:bg-surface-2"
                       onClick={() => {
                         set("coords", { lat: m.lat, lng: m.lng });
                         setMatches(null);

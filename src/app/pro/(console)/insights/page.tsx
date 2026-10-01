@@ -206,17 +206,17 @@ export default async function InsightsPage({ searchParams }: PageProps<"/pro/ins
                 <table className="w-full text-sm">
                   <caption className="sr-only">Services by number of bookings</caption>
                   <thead>
-                    <tr className="border-b border-line text-left text-[12px] text-ink-3">
-                      <th scope="col" className="py-2 pr-3 font-medium">
+                    <tr className="border-b border-line text-start text-[12px] text-ink-3">
+                      <th scope="col" className="py-2 pe-3 font-medium">
                         Service
                       </th>
-                      <th scope="col" className="w-20 px-3 py-2 text-right font-medium">
+                      <th scope="col" className="w-20 px-3 py-2 text-end font-medium">
                         Booked
                       </th>
-                      <th scope="col" className="hidden w-20 px-3 py-2 text-right font-medium sm:table-cell">
+                      <th scope="col" className="hidden w-20 px-3 py-2 text-end font-medium sm:table-cell">
                         Done
                       </th>
-                      <th scope="col" className="py-2 pl-3 text-right font-medium">
+                      <th scope="col" className="py-2 ps-3 text-end font-medium">
                         Earned
                       </th>
                     </tr>
@@ -224,12 +224,12 @@ export default async function InsightsPage({ searchParams }: PageProps<"/pro/ins
                   <tbody className="divide-y divide-line">
                     {a.byService.map((s) => (
                       <tr key={s.name}>
-                        <th scope="row" className="py-2.5 pr-3 text-left font-normal text-ink">
+                        <th scope="row" className="py-2.5 pe-3 text-start font-normal text-ink">
                           {s.name}
                         </th>
-                        <td className="px-3 py-2.5 text-right text-ink tabular">{s.bookings}</td>
-                        <td className="hidden px-3 py-2.5 text-right text-ink-2 tabular sm:table-cell">{s.completed}</td>
-                        <td className="py-2.5 pl-3 text-right text-ink tabular">{money(s.earned)}</td>
+                        <td className="px-3 py-2.5 text-end text-ink tabular">{s.bookings}</td>
+                        <td className="hidden px-3 py-2.5 text-end text-ink-2 tabular sm:table-cell">{s.completed}</td>
+                        <td className="py-2.5 ps-3 text-end text-ink tabular">{money(s.earned)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -274,7 +274,7 @@ export default async function InsightsPage({ searchParams }: PageProps<"/pro/ins
                       <tbody>
                         {WEEKDAYS.map((w, i) => (
                           <tr key={w}>
-                            <th scope="row" className="pr-2 text-left font-normal text-ink-3">
+                            <th scope="row" className="pe-2 text-start font-normal text-ink-3">
                               {w}
                             </th>
                             {hours.map((h) => {
@@ -312,23 +312,23 @@ export default async function InsightsPage({ searchParams }: PageProps<"/pro/ins
                 <table className="w-full min-w-[520px] text-sm">
                   <caption className="sr-only">Bookings and earnings by team member</caption>
                   <thead>
-                    <tr className="border-b border-line text-left text-[12px] text-ink-3">
-                      <th scope="col" className="py-2 pr-3 font-medium">
+                    <tr className="border-b border-line text-start text-[12px] text-ink-3">
+                      <th scope="col" className="py-2 pe-3 font-medium">
                         Name
                       </th>
-                      <th scope="col" className="px-3 py-2 text-right font-medium">
+                      <th scope="col" className="px-3 py-2 text-end font-medium">
                         Booked
                       </th>
-                      <th scope="col" className="px-3 py-2 text-right font-medium">
+                      <th scope="col" className="px-3 py-2 text-end font-medium">
                         Hours
                       </th>
-                      <th scope="col" className="px-3 py-2 text-right font-medium">
+                      <th scope="col" className="px-3 py-2 text-end font-medium">
                         Completed
                       </th>
-                      <th scope="col" className="px-3 py-2 text-right font-medium">
+                      <th scope="col" className="px-3 py-2 text-end font-medium">
                         No-shows
                       </th>
-                      <th scope="col" className="py-2 pl-3 text-right font-medium">
+                      <th scope="col" className="py-2 ps-3 text-end font-medium">
                         Earned
                       </th>
                     </tr>
@@ -336,17 +336,17 @@ export default async function InsightsPage({ searchParams }: PageProps<"/pro/ins
                   <tbody className="divide-y divide-line">
                     {a.byStaff.map((s) => (
                       <tr key={s.id}>
-                        <th scope="row" className="py-2.5 pr-3 text-left font-normal text-ink">
+                        <th scope="row" className="py-2.5 pe-3 text-start font-normal text-ink">
                           {s.name}
                         </th>
-                        <td className="px-3 py-2.5 text-right text-ink tabular">{s.bookings}</td>
-                        <td className="px-3 py-2.5 text-right text-ink-2 tabular">{(s.bookedMinutes / 60).toFixed(s.bookedMinutes % 60 ? 1 : 0)}</td>
-                        <td className="px-3 py-2.5 text-right text-ink-2 tabular">
+                        <td className="px-3 py-2.5 text-end text-ink tabular">{s.bookings}</td>
+                        <td className="px-3 py-2.5 text-end text-ink-2 tabular">{(s.bookedMinutes / 60).toFixed(s.bookedMinutes % 60 ? 1 : 0)}</td>
+                        <td className="px-3 py-2.5 text-end text-ink-2 tabular">
                           {s.completed}
                           {s.due > 0 && <span className="text-ink-3"> / {s.due}</span>}
                         </td>
-                        <td className={cn("px-3 py-2.5 text-right tabular", s.noShows ? "text-ink" : "text-ink-3")}>{s.noShows}</td>
-                        <td className="py-2.5 pl-3 text-right text-ink tabular">{money(s.earnedCents)}</td>
+                        <td className={cn("px-3 py-2.5 text-end tabular", s.noShows ? "text-ink" : "text-ink-3")}>{s.noShows}</td>
+                        <td className="py-2.5 ps-3 text-end text-ink tabular">{money(s.earnedCents)}</td>
                       </tr>
                     ))}
                   </tbody>

@@ -131,7 +131,7 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPasswo
               disabled={!ready || loading}
               className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-danger px-4 text-sm font-medium text-bg hover:bg-danger/90 disabled:opacity-50"
             >
-              {loading && <span className="size-4 animate-spin rounded-full border-2 border-current border-r-transparent" aria-hidden />}
+              {loading && <span className="size-4 animate-spin rounded-full border-2 border-current border-e-transparent" aria-hidden />}
               Delete my account
             </button>
           </>

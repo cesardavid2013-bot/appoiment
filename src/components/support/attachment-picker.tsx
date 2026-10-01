@@ -62,7 +62,7 @@ export function AttachmentPicker({ value, onChange, max, disabled }: { value: At
               type="button"
               onClick={() => onChange((prev) => prev.filter((x) => x.key !== a.key))}
               disabled={disabled}
-              className="absolute right-1 top-1 flex size-7 items-center justify-center rounded-full bg-surface/90 text-ink shadow-sm hover:bg-surface"
+              className="absolute end-1 top-1 flex size-7 items-center justify-center rounded-full bg-surface/90 text-ink shadow-sm hover:bg-surface"
               aria-label={`Remove ${a.name}`}
             >
               <X className="size-4" />

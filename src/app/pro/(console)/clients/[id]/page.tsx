@@ -36,7 +36,7 @@ function AppointmentList({ rows, showStaff, thisYear }: { rows: HistoryRow[]; sh
               <span className="block truncate text-[15px] text-ink">{a.serviceName}</span>
               {showStaff && a.memberName && <span className="block truncate text-[12px] text-ink-3">with {a.memberName}</span>}
             </span>
-            <span className="hidden shrink-0 text-right text-sm text-ink-2 tabular sm:block">{formatMoney(a.totalCents, a.currency)}</span>
+            <span className="hidden shrink-0 text-end text-sm text-ink-2 tabular sm:block">{formatMoney(a.totalCents, a.currency)}</span>
             <Badge tone={STATUS_TONE[a.status]} className="shrink-0">
               {STATUS_LABELS[a.status]}
             </Badge>

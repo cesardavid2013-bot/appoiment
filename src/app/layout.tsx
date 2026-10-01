@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Instrument_Sans } from "next/font/google";
 import { Providers } from "@/components/providers";
+import { I18nProvider } from "@/i18n/client";
+import { getI18n } from "@/i18n/server";
 import "./globals.css";
 
 const sans = Instrument_Sans({ variable: "--font-ui", subsets: ["latin"], display: "swap" });
@@ -26,14 +28,17 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const i18n = await getI18n();
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable} h-full`}>
+    <html lang={i18n.intl} dir={i18n.dir} className={`${sans.variable} ${serif.variable} h-full`}>
       <body className="min-h-full">
-        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-ink focus:px-4 focus:py-2 focus:text-bg">
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-ink focus:px-4 focus:py-2 focus:text-bg">
           Skip to content
         </a>
-        <Providers>{children}</Providers>
+        <I18nProvider value={i18n}>
+          <Providers>{children}</Providers>
+        </I18nProvider>
       </body>
     </html>
   );

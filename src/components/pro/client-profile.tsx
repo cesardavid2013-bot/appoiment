@@ -181,7 +181,7 @@ export function ClientTags({ client, canEdit, suggestions }: { client: ClientDat
       {tags.length > 0 ? (
         <ul className="flex flex-wrap gap-1.5" aria-label="Tags">
           {tags.map((t) => (
-            <li key={t} className="inline-flex h-7 items-center gap-1 rounded-sm bg-surface-2 pl-2 pr-0.5 text-[13px] text-ink-2">
+            <li key={t} className="inline-flex h-7 items-center gap-1 rounded-sm bg-surface-2 ps-2 pe-0.5 text-[13px] text-ink-2">
               {t}
               {canEdit && (
                 <button type="button" onClick={() => persist(tags.filter((x) => x !== t))} disabled={saving} className="flex size-6 items-center justify-center rounded text-ink-3 hover:bg-surface-3 hover:text-ink" aria-label={`Remove tag ${t}`}>

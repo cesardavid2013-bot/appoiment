@@ -165,7 +165,7 @@ export function PromoCodes({ items, services, currency }: { items: PromoRow[]; s
                 </p>
               </div>
               <div className="hidden text-[13px] text-ink-2 sm:block">{windowLabel(p)}</div>
-              <div className="hidden text-right sm:block">
+              <div className="hidden text-end sm:block">
                 <p className="text-sm font-medium text-ink tabular">
                   {p.redemptionCount}
                   <span className="font-normal text-ink-3">{p.maxRedemptions != null ? ` / ${p.maxRedemptions}` : ""} used</span>
@@ -174,7 +174,7 @@ export function PromoCodes({ items, services, currency }: { items: PromoRow[]; s
               </div>
               <Menu>
                 <MenuTrigger
-                  className="col-start-2 row-start-1 -mr-2 -mt-1 flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink sm:col-start-4 sm:mr-0 sm:mt-0 sm:size-9"
+                  className="col-start-2 row-start-1 -me-2 -mt-1 flex size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink sm:col-start-4 sm:me-0 sm:mt-0 sm:size-9"
                   aria-label={`Actions for ${p.code}`}
                 >
                   <MoreHorizontal className="size-4" />
@@ -356,7 +356,7 @@ function PromoDialog({ promo, services, currency, onClose }: { promo: PromoRow |
               ]}
             />
             <div className="relative w-36">
-              {kind === "fixed" && <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-ink-3">{currency === "USD" ? "$" : currency}</span>}
+              {kind === "fixed" && <span className="pointer-events-none absolute start-3 top-1/2 -translate-y-1/2 text-sm text-ink-3">{currency === "USD" ? "$" : currency}</span>}
               <Input
                 aria-label={kind === "percent" ? "Percent off" : "Amount off"}
                 aria-invalid={fields.value ? true : undefined}
@@ -364,10 +364,10 @@ function PromoDialog({ promo, services, currency, onClose }: { promo: PromoRow |
                 inputMode="decimal"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
-                className={cn("tabular", kind === "fixed" ? "pl-7" : "pr-8")}
+                className={cn("tabular", kind === "fixed" ? "ps-7" : "pe-8")}
                 placeholder={kind === "percent" ? "15" : "10"}
               />
-              {kind === "percent" && <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-sm text-ink-3">%</span>}
+              {kind === "percent" && <span className="pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-sm text-ink-3">%</span>}
             </div>
             {preview && !fields.value && (
               <p className="self-center text-sm text-ink-3" aria-live="polite">

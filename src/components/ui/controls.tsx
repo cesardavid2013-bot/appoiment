@@ -112,7 +112,7 @@ export function ChoiceCard({
       disabled={disabled}
       onClick={onClick}
       className={cn(
-        "flex w-full items-start gap-3 rounded-lg border px-4 py-3.5 text-left transition-[border-color,background-color,box-shadow]",
+        "flex w-full items-start gap-3 rounded-lg border px-4 py-3.5 text-start transition-[border-color,background-color,box-shadow]",
         selected ? "border-ink bg-surface shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface hover:border-line-strong",
         disabled && "cursor-not-allowed opacity-50",
       )}
@@ -131,7 +131,7 @@ export function ChoiceCard({
         <span className="block text-[15px] font-medium text-ink">{title}</span>
         {description && <span className="mt-0.5 block text-[13px] leading-snug text-ink-3">{description}</span>}
       </span>
-      {aside && <span className="shrink-0 text-right text-sm text-ink-2 tabular">{aside}</span>}
+      {aside && <span className="shrink-0 text-end text-sm text-ink-2 tabular">{aside}</span>}
     </button>
   );
 }

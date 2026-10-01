@@ -149,7 +149,7 @@ export function ExploreClient({
                 </button>
               );
             })}
-            <div className="ml-auto hidden shrink-0 lg:block">
+            <div className="ms-auto hidden shrink-0 lg:block">
               <Segmented
                 label="View"
                 size="sm"
@@ -165,7 +165,7 @@ export function ExploreClient({
         </div>
       </div>
 
-      <div className={cn("px-4 pt-6 sm:px-6 lg:px-8", view === "map" && "lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-6 lg:pr-0")}>
+      <div className={cn("px-4 pt-6 sm:px-6 lg:px-8", view === "map" && "lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-6 lg:pe-0")}>
         <div>
           <div className="mb-5 flex items-end justify-between gap-4">
             <div>
@@ -227,7 +227,7 @@ export function ExploreClient({
         </div>
 
         {view === "map" && (
-          <div className="fixed inset-0 top-16 z-20 bg-bg lg:sticky lg:top-[134px] lg:z-0 lg:h-[calc(100dvh-150px)] lg:overflow-hidden lg:rounded-l-xl lg:border lg:border-r-0 lg:border-line">
+          <div className="fixed inset-0 top-16 z-20 bg-bg lg:sticky lg:top-[134px] lg:z-0 lg:h-[calc(100dvh-150px)] lg:overflow-hidden lg:rounded-s-xl lg:border lg:border-e-0 lg:border-line">
             <ResultsMap items={items} activeId={activeId} onSelect={selectFromMap} center={center} />
             {/* Phone: selected card floats above the map */}
             {activeId && (

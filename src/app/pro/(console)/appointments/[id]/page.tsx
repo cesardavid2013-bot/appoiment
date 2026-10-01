@@ -78,7 +78,7 @@ export default async function ProAppointmentPage({ params }: PageProps<"/pro/app
               ].map(([k, v]) => (
                 <div key={k} className="flex justify-between gap-6 py-3">
                   <dt className="text-ink-3">{k}</dt>
-                  <dd className="text-right text-ink">{v}</dd>
+                  <dd className="text-end text-ink">{v}</dd>
                 </div>
               ))}
             </dl>
@@ -89,7 +89,7 @@ export default async function ProAppointmentPage({ params }: PageProps<"/pro/app
               <h2 id="answers-h" className="mb-3 text-[15px] font-semibold text-ink">
                 From the customer
               </h2>
-              {a.customerNote && <blockquote className="mb-4 border-l-2 border-line-strong pl-3.5 text-[15px] leading-relaxed text-ink-2">{a.customerNote}</blockquote>}
+              {a.customerNote && <blockquote className="mb-4 border-s-2 border-line-strong ps-3.5 text-[15px] leading-relaxed text-ink-2">{a.customerNote}</blockquote>}
               {a.intakeAnswers && a.intakeAnswers.length > 0 && (
                 <dl className="space-y-3">
                   {a.intakeAnswers.map((q) => (
@@ -167,10 +167,10 @@ export default async function ProAppointmentPage({ params }: PageProps<"/pro/app
             <h2 id="hist-h" className="mb-3 text-[15px] font-semibold text-ink">
               History
             </h2>
-            <ol className="space-y-3 border-l border-line pl-4">
+            <ol className="space-y-3 border-s border-line ps-4">
               {d.events.map((e) => (
                 <li key={e.id} className="relative text-sm">
-                  <span className="absolute -left-[21px] top-1.5 size-2 rounded-full bg-line-strong" aria-hidden />
+                  <span className="absolute -start-[21px] top-1.5 size-2 rounded-full bg-line-strong" aria-hidden />
                   <span className="text-ink">
                     {e.type === "status" && e.toStatus ? STATUS_LABELS[e.toStatus] : (EVENT_LABEL[e.type] ?? e.type)}
                     {e.type === "rescheduled" && e.data && typeof e.data.from === "string" && ` from ${fmtDateLong(e.data.from, tz).split(",").slice(0, 2).join(",")} ${fmtTime(e.data.from, tz)}`}

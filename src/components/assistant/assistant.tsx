@@ -174,7 +174,7 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
       <D.Portal>
         <D.Overlay className="fixed inset-0 z-50 bg-overlay data-[state=open]:animate-fade-in" />
         <D.Content
-          className="fixed inset-x-0 bottom-0 z-50 flex h-[92dvh] flex-col rounded-t-xl bg-bg shadow-lg outline-none data-[state=open]:animate-sheet sm:inset-y-0 sm:left-auto sm:right-0 sm:h-dvh sm:w-[440px] sm:rounded-none sm:border-l sm:border-line"
+          className="fixed inset-x-0 bottom-0 z-50 flex h-[92dvh] flex-col rounded-t-xl bg-bg shadow-lg outline-none data-[state=open]:animate-sheet sm:inset-y-0 sm:start-auto sm:end-0 sm:h-dvh sm:w-[440px] sm:rounded-none sm:border-s sm:border-line"
           onOpenAutoFocus={(e) => {
             e.preventDefault();
             input.current?.focus();
@@ -204,7 +204,7 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
                 <p className="text-[15px] leading-relaxed text-ink-2">{lang === "es" ? "Por ejemplo:" : "For example:"}</p>
                 <div className="mt-3 flex flex-col items-start gap-2">
                   {starters.map((s) => (
-                    <button key={s} type="button" onClick={() => send(s)} className="rounded-lg border border-line bg-surface px-3.5 py-2 text-left text-sm text-ink hover:border-line-strong">
+                    <button key={s} type="button" onClick={() => send(s)} className="rounded-lg border border-line bg-surface px-3.5 py-2 text-start text-sm text-ink hover:border-line-strong">
                       {s}
                     </button>
                   ))}
@@ -214,7 +214,7 @@ function AssistantPanel({ open, onOpenChange, pending, clearPending }: { open: b
             {turns.map((t, i) =>
               t.role === "user" ? (
                 <div key={i} className="flex justify-end">
-                  <p className="max-w-[85%] rounded-2xl rounded-br-md bg-ink px-3.5 py-2 text-[15px] text-bg">{t.text}</p>
+                  <p className="max-w-[85%] rounded-2xl rounded-ee-md bg-ink px-3.5 py-2 text-[15px] text-bg">{t.text}</p>
                 </div>
               ) : t.role === "error" ? (
                 <p key={i} className="text-sm text-danger">

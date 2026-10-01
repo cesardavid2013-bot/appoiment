@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Barber"
+  },
+  "hair": {
+    "name": "Hair & Barbers",
+    "description": "Cuts, colour, styling, braids and grooming."
+  },
+  "lashes-brows": {
+    "name": "Lashes & brows"
+  },
+  "massage": {
+    "name": "Massage"
+  },
+  "personal-training": {
+    "name": "Personal training"
+  },
+  "hair-salon": {
+    "name": "Hair salon"
+  },
+  "makeup": {
+    "name": "Makeup"
+  },
+  "nails": {
+    "name": "Nails",
+    "description": "Manicures, pedicures, extensions and nail art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga & pilates"
+  },
+  "beauty": {
+    "name": "Beauty",
+    "description": "Lashes, brows, makeup and skin."
+  },
+  "braids-locs": {
+    "name": "Braids & locs"
+  },
+  "skincare": {
+    "name": "Skin & esthetics"
+  },
+  "wellness": {
+    "name": "Wellness",
+    "description": "Massage, spa and bodywork."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Personal training, yoga, pilates and coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tattoo & piercing",
+    "description": "Custom tattoos, flash and piercings."
+  },
+  "photography": {
+    "name": "Photo & video",
+    "description": "Portraits, events, products and video."
+  },
+  "education": {
+    "name": "Lessons & tutoring",
+    "description": "Tutors, music teachers and language lessons."
+  },
+  "home-services": {
+    "name": "Home services",
+    "description": "Cleaning, repairs and handymen."
+  },
+  "automotive": {
+    "name": "Automotive",
+    "description": "Detailing, car wash and mobile mechanics."
+  },
+  "pets": {
+    "name": "Pets",
+    "description": "Grooming, sitting and training."
+  },
+  "events": {
+    "name": "Events",
+    "description": "DJs, planners and event pros."
+  },
+  "professional": {
+    "name": "Professional services",
+    "description": "Consultants, coaches and advisors."
+  },
+  "other": {
+    "name": "Other",
+    "description": "Everything else you can book."
+  }
+}

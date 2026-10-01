@@ -19,7 +19,7 @@ export default async function NewTicketPage({ searchParams }: PageProps<"/suppor
 
   return (
     <div className="mx-auto max-w-2xl px-4 pt-6 sm:px-6 sm:pt-10">
-      <Link href="/support" className="-ml-1 mb-4 inline-flex h-10 items-center gap-1 pr-2 text-sm font-medium text-ink-3 hover:text-ink">
+      <Link href="/support" className="-ms-1 mb-4 inline-flex h-10 items-center gap-1 pe-2 text-sm font-medium text-ink-3 hover:text-ink">
         <ChevronLeft className="size-4" aria-hidden />
         Help & support
       </Link>

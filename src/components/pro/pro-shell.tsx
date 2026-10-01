@@ -55,7 +55,7 @@ function isActive(pathname: string, href: string) {
 
 function Count({ n }: { n: number }) {
   if (!n) return null;
-  return <span className="ml-auto rounded-full bg-accent px-1.5 py-px text-[11px] font-semibold text-accent-ink tabular">{n > 99 ? "99+" : n}</span>;
+  return <span className="ms-auto rounded-full bg-accent px-1.5 py-px text-[11px] font-semibold text-accent-ink tabular">{n > 99 ? "99+" : n}</span>;
 }
 
 export function ProShell({ children, business, businesses, perms, user }: { children: ReactNode; business: ShellBusiness; businesses: ShellBusiness[]; perms: string[]; user: { name: string; email: string | null } }) {
@@ -87,13 +87,13 @@ export function ProShell({ children, business, businesses, perms, user }: { chil
   return (
     <div className="min-h-dvh lg:grid lg:grid-cols-[248px_minmax(0,1fr)]">
       {/* Desktop sidebar */}
-      <aside className="theme-noir sticky top-0 hidden h-dvh flex-col border-r border-line lg:flex" aria-label="Business navigation">
+      <aside className="theme-noir sticky top-0 hidden h-dvh flex-col border-e border-line lg:flex" aria-label="Business navigation">
         <div className="px-5 pt-5">
           <Logo href="/pro/today" />
         </div>
         <div className="px-3 pt-5">
           <Menu>
-            <MenuTrigger className="flex w-full items-center gap-2.5 rounded-lg border border-line bg-surface px-2.5 py-2 text-left hover:border-line-strong">
+            <MenuTrigger className="flex w-full items-center gap-2.5 rounded-lg border border-line bg-surface px-2.5 py-2 text-start hover:border-line-strong">
               <Avatar name={business.name} size={30} />
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-sm font-semibold text-ink">{business.name}</span>
@@ -146,7 +146,7 @@ export function ProShell({ children, business, businesses, perms, user }: { chil
             <ExternalLink className="size-[17px] text-ink-3" /> View public page
           </Link>
           <Menu>
-            <MenuTrigger className="flex w-full items-center gap-2.5 rounded-md px-2.5 py-2 text-left hover:bg-surface-2">
+            <MenuTrigger className="flex w-full items-center gap-2.5 rounded-md px-2.5 py-2 text-start hover:bg-surface-2">
               <Avatar name={user.name} size={26} />
               <span className="min-w-0 flex-1 truncate text-sm text-ink">{user.name}</span>
             </MenuTrigger>
@@ -173,7 +173,7 @@ export function ProShell({ children, business, businesses, perms, user }: { chil
         <span className="min-w-0 flex-1 truncate text-[15px] font-semibold text-ink">{business.name}</span>
         <Link href="/notifications" className="relative flex size-10 items-center justify-center rounded-md text-ink-2" aria-label="Notifications">
           <Bell className="size-5" />
-          {badges?.notifications ? <span className="absolute right-2 top-2 size-2 rounded-full bg-accent" aria-hidden /> : null}
+          {badges?.notifications ? <span className="absolute end-2 top-2 size-2 rounded-full bg-accent" aria-hidden /> : null}
         </Link>
       </header>
 
@@ -192,7 +192,7 @@ export function ProShell({ children, business, businesses, perms, user }: { chil
                 <Link href={t.href} aria-current={active ? "page" : undefined} className={cn("relative flex h-[58px] flex-col items-center justify-center gap-1 text-[11px] font-medium", active ? "text-ink" : "text-ink-3")}>
                   <Icon className="size-[22px]" strokeWidth={active ? 2.2 : 1.8} />
                   {t.label}
-                  {t.href === "/pro/messages" && badges?.messages ? <span className="absolute right-[calc(50%-18px)] top-2 size-2 rounded-full bg-accent" aria-hidden /> : null}
+                  {t.href === "/pro/messages" && badges?.messages ? <span className="absolute end-[calc(50%-18px)] top-2 size-2 rounded-full bg-accent" aria-hidden /> : null}
                 </Link>
               </li>
             );

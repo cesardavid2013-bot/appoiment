@@ -252,7 +252,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                               </div>
                               <div className="flex items-center justify-between gap-4 sm:flex-col sm:items-end sm:justify-start">
                                 <span className="text-[16px] font-semibold text-ink tabular">
-                                  {s.salePriceCents != null && s.salePriceCents < s.priceCents && <span className="mr-2 text-sm font-normal text-ink-3 line-through">{formatMoney(s.priceCents, b.currency, { compact: true })}</span>}
+                                  {s.salePriceCents != null && s.salePriceCents < s.priceCents && <span className="me-2 text-sm font-normal text-ink-3 line-through">{formatMoney(s.priceCents, b.currency, { compact: true })}</span>}
                                   {formatPriceLabel(s, b.currency)}
                                 </span>
                                 <Link href={`/${b.slug}/book?service=${s.id}`} className="inline-flex h-9 items-center rounded-md bg-ink px-4 text-sm font-medium text-bg transition-colors hover:bg-ink/88">
@@ -318,7 +318,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                           <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-surface-3">
                             <span className="block h-full rounded-full bg-ink" style={{ width: `${b.ratingCount ? (r.count / b.ratingCount) * 100 : 0}%` }} />
                           </span>
-                          <span className="w-5 text-right tabular">{r.count}</span>
+                          <span className="w-5 text-end tabular">{r.count}</span>
                         </li>
                       ))}
                     </ul>
@@ -345,7 +345,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                         </div>
                         {r.body && <p className="mt-3 text-[15px] leading-relaxed text-ink-2 text-pretty">{r.body}</p>}
                         {r.responseBody && (
-                          <div className="mt-3 border-l-2 border-line-strong pl-3.5">
+                          <div className="mt-3 border-s-2 border-line-strong ps-3.5">
                             <p className="text-[12px] font-medium text-ink-3">Response from {b.name}</p>
                             <p className="mt-1 text-sm leading-relaxed text-ink-2">{r.responseBody}</p>
                           </div>
@@ -374,10 +374,10 @@ export default async function ProfilePage({ params, searchParams }: Props) {
                           const today = d.value === todayWeekday;
                           return (
                             <tr key={d.value} className={cn(today && "font-semibold text-ink")}>
-                              <th scope="row" className={cn("py-1 pr-4 text-left font-normal", today ? "font-semibold text-ink" : "text-ink-3")}>
+                              <th scope="row" className={cn("py-1 pe-4 text-start font-normal", today ? "font-semibold text-ink" : "text-ink-3")}>
                                 {d.long}
                               </th>
-                              <td className={cn("py-1 text-right tabular", w.length ? "text-ink-2" : "text-ink-3", today && "text-ink")}>{hoursLabel(w)}</td>
+                              <td className={cn("py-1 text-end tabular", w.length ? "text-ink-2" : "text-ink-3", today && "text-ink")}>{hoursLabel(w)}</td>
                             </tr>
                           );
                         })}

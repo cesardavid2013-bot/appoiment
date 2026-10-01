@@ -120,10 +120,10 @@ export function TeamManager(props: Props) {
           const days = m.inviteExpiresAt ? Math.ceil((Date.parse(m.inviteExpiresAt) - now) / 86_400_000) : null;
           return (
             <li key={m.id} className="flex items-center gap-3 px-3 py-3 sm:px-4">
-              <button type="button" onClick={() => setEditing(m)} className="flex min-w-0 flex-1 items-center gap-3 text-left" aria-label={`Edit ${m.name}`}>
+              <button type="button" onClick={() => setEditing(m)} className="flex min-w-0 flex-1 items-center gap-3 text-start" aria-label={`Edit ${m.name}`}>
                 <span className="relative shrink-0">
                   <Avatar name={m.name} media={m.avatar} size={44} className={m.status === "invited" ? "opacity-60" : undefined} />
-                  {m.color && <span className="absolute -bottom-0.5 -right-0.5 size-3.5 rounded-full border-2 border-surface" style={{ background: m.color }} aria-hidden />}
+                  {m.color && <span className="absolute -bottom-0.5 -end-0.5 size-3.5 rounded-full border-2 border-surface" style={{ background: m.color }} aria-hidden />}
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
@@ -212,7 +212,7 @@ function RoleMatrix() {
         <ChevronRight className="size-4 text-ink-3 transition-transform group-open:rotate-90" aria-hidden />
       </summary>
       <div className="relative overflow-x-auto border-t border-line">
-        <table className="w-full min-w-[560px] text-left text-[13px]">
+        <table className="w-full min-w-[560px] text-start text-[13px]">
           <thead>
             <tr className="border-b border-line text-ink-3">
               <th scope="col" className="px-4 py-2.5 font-medium">

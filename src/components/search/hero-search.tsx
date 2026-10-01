@@ -73,7 +73,7 @@ export function HeroSearch({ initialLocation }: { initialLocation: SavedLocation
             autoComplete="off"
           />
           {open && hasSugg && (
-            <div className="absolute left-0 right-0 top-[calc(100%+10px)] z-30 overflow-hidden rounded-lg border border-line bg-surface p-1.5 text-left shadow-lg animate-rise">
+            <div className="absolute start-0 end-0 top-[calc(100%+10px)] z-30 overflow-hidden rounded-lg border border-line bg-surface p-1.5 text-start shadow-lg animate-rise">
               {shown!.categories.map((c) => (
                 <button key={c.slug} type="button" onClick={() => router.push(`/explore?category=${c.slug}`)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm text-ink hover:bg-surface-2">
                   {c.name}

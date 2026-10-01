@@ -31,10 +31,10 @@ export function LegalDoc({ title, updated, intro, sections }: { title: string; u
           {sections.map((s, i) => (
             <section key={s.id} id={s.id} aria-labelledby={`${s.id}-h`} className="scroll-mt-24">
               <h2 id={`${s.id}-h`} className="text-xl font-semibold tracking-[-0.01em] text-ink">
-                <span className="mr-2 text-ink-3 tabular">{i + 1}.</span>
+                <span className="me-2 text-ink-3 tabular">{i + 1}.</span>
                 {s.title}
               </h2>
-              <div className="mt-4 space-y-4 text-[16px] leading-[1.75] text-ink-2 [&_a]:font-medium [&_a]:text-ink [&_a]:underline [&_a]:underline-offset-4 [&_li]:pl-1 [&_strong]:font-semibold [&_strong]:text-ink [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5">
+              <div className="mt-4 space-y-4 text-[16px] leading-[1.75] text-ink-2 [&_a]:font-medium [&_a]:text-ink [&_a]:underline [&_a]:underline-offset-4 [&_li]:ps-1 [&_strong]:font-semibold [&_strong]:text-ink [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:ps-5">
                 {s.body}
               </div>
             </section>

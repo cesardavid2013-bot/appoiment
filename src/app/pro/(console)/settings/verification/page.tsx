@@ -105,7 +105,7 @@ export default async function VerificationSettingsPage() {
           <span className="truncate text-[15px] font-semibold text-ink">{m.businessName}</span>
           <BadgeCheck className="size-[18px] shrink-0 text-accent" aria-hidden />
         </div>
-        <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-ink-2">
+        <ul className="list-disc space-y-1.5 ps-5 text-sm leading-relaxed text-ink-2">
           <li>A check mark next to your name on your profile and in search results, labelled “Verified business”.</li>
           <li>It means Kept reviewed documents you provided. It isn&apos;t a review of your work or an endorsement — your ratings still come from clients.</li>
           <li>Documents stay private. Only people who manage this business and Kept&apos;s review team can open them.</li>

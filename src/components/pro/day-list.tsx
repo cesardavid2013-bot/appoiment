@@ -36,7 +36,7 @@ export function DayList({ items, timezone, memberNames, canManage, now }: { item
         const tone = STATUS_TONE[a.status];
         return (
           <li key={a.id} className={cn("group relative flex items-center gap-4 py-3.5", past && a.status === "completed" && "opacity-60")}>
-            <div className="w-[76px] shrink-0 text-right leading-tight">
+            <div className="w-[76px] shrink-0 text-end leading-tight">
               <div className="text-[15px] font-semibold text-ink tabular">{fmtTime(a.startsAt, timezone)}</div>
               <div className="text-[12px] text-ink-3 tabular">{fmtTime(a.endsAt, timezone)}</div>
             </div>

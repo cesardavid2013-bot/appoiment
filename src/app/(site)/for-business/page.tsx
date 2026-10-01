@@ -108,7 +108,7 @@ export default async function ForBusinessPage() {
         </div>
         <div className="relative mx-auto w-full max-w-md lg:max-w-none">
           <TodayPanel />
-          <ReminderCard className="relative mt-3 ml-auto w-[88%] sm:-mr-6 lg:-mr-10" />
+          <ReminderCard className="relative mt-3 ms-auto w-[88%] sm:-me-6 lg:-me-10" />
         </div>
       </section>
 
@@ -117,8 +117,8 @@ export default async function ForBusinessPage() {
         <h2 id="sides-h" className="sr-only">
           How Kept works for clients and for you
         </h2>
-        <div className="grid border-l border-t border-line sm:grid-cols-2">
-          <div className="border-b border-r border-line p-6 sm:p-8">
+        <div className="grid border-s border-t border-line sm:grid-cols-2">
+          <div className="border-b border-e border-line p-6 sm:p-8">
             <p className="text-[13px] font-medium text-ink-3">For your clients</p>
             <p className="mt-2 font-display text-[30px] leading-tight text-ink">Discover and book great professionals.</p>
             <ul className="mt-5 space-y-2.5">
@@ -127,7 +127,7 @@ export default async function ForBusinessPage() {
               <CheckItem>Reminders, directions, and rescheduling without a phone call.</CheckItem>
             </ul>
           </div>
-          <div className="border-b border-r border-line bg-surface p-6 sm:p-8">
+          <div className="border-b border-e border-line bg-surface p-6 sm:p-8">
             <p className="text-[13px] font-medium text-ink-3">For you</p>
             <p className="mt-2 font-display text-[30px] leading-tight text-ink">Run your appointments and grow your business.</p>
             <ul className="mt-5 space-y-2.5">
@@ -167,11 +167,11 @@ export default async function ForBusinessPage() {
           </h2>
           <p className="mt-4 text-[15px] leading-relaxed text-ink-3">If clients book time with you, Kept fits — whether you work alone from a chair or run a team across several locations.</p>
         </div>
-        <ul className="mt-10 grid border-l border-t border-line sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-10 grid border-s border-t border-line sm:grid-cols-2 lg:grid-cols-4">
           {cats
             .filter((c) => c.slug !== "other")
             .map((c) => (
-              <li key={c.slug} className="border-b border-r border-line p-5">
+              <li key={c.slug} className="border-b border-e border-line p-5">
                 <p className="text-[15px] font-medium text-ink">{c.name}</p>
                 <p className="mt-1 text-[13px] leading-relaxed text-ink-3">{c.children.length ? c.children.map((x) => x.name).join(", ") : c.description}</p>
               </li>
@@ -249,7 +249,7 @@ export default async function ForBusinessPage() {
                   ].map(([k, v]) => (
                     <div key={k} className="flex items-center justify-between gap-3 py-2.5">
                       <dt className="text-ink-3">{k}</dt>
-                      <dd className="text-right font-medium text-ink">{v}</dd>
+                      <dd className="text-end font-medium text-ink">{v}</dd>
                     </div>
                   ))}
                 </dl>
@@ -285,7 +285,7 @@ export default async function ForBusinessPage() {
                 {f.q}
                 <ChevronDown className="size-4 shrink-0 text-ink-3 transition-transform group-open:rotate-180" aria-hidden />
               </summary>
-              <p className="pb-5 pr-6 text-[15px] leading-relaxed text-ink-3">{f.a}</p>
+              <p className="pb-5 pe-6 text-[15px] leading-relaxed text-ink-3">{f.a}</p>
             </details>
           ))}
         </div>

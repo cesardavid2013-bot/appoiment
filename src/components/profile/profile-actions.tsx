@@ -49,7 +49,7 @@ export function ShareButton({ url, title, qrSvg, label = "Share" }: { url: strin
       <Dialog open={open} onOpenChange={setOpen} title={`Share ${title}`} description="Send the link, or scan the code to open the booking page." size="sm">
         <div className="space-y-5">
           <div className="mx-auto w-48 rounded-lg border border-line bg-white p-3 [&_svg]:h-auto [&_svg]:w-full" dangerouslySetInnerHTML={{ __html: qrSvg }} />
-          <div className="flex items-center gap-2 rounded-md border border-line bg-surface-2 p-1.5 pl-3">
+          <div className="flex items-center gap-2 rounded-md border border-line bg-surface-2 p-1.5 ps-3">
             <span className="min-w-0 flex-1 truncate text-sm text-ink-2">{url.replace(/^https?:\/\//, "")}</span>
             <Button size="sm" variant={copied ? "accent" : "primary"} onClick={copy} icon={copied ? <Check className="size-4" /> : <Copy className="size-4" />}>
               {copied ? "Copied" : "Copy"}

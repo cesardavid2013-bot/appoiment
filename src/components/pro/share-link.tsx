@@ -6,7 +6,7 @@ import { useState } from "react";
 export function ShareLink({ url }: { url: string }) {
   const [copied, setCopied] = useState(false);
   return (
-    <div className="flex items-center gap-2 rounded-md border border-line bg-surface p-1.5 pl-3">
+    <div className="flex items-center gap-2 rounded-md border border-line bg-surface p-1.5 ps-3">
       <span className="min-w-0 flex-1 truncate text-sm text-ink-2">{url.replace(/^https?:\/\//, "")}</span>
       <button
         type="button"

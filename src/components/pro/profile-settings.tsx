@@ -126,7 +126,7 @@ export function ProfileSettings(props: {
       <SettingsCard id="photos-h" title="Photos" description="Your logo appears on cards and messages; the cover leads your page. Use your own work or space — not stock photos.">
         <div className="relative overflow-hidden rounded-lg border border-line bg-surface-2">
           <div className="aspect-[3/1] w-full">{cover ? <MediaImage media={cover} sizes="640px" className="size-full" /> : <div className="flex size-full items-center justify-center text-[13px] text-ink-3">No cover photo</div>}</div>
-          <div className="absolute bottom-3 right-3 flex gap-2">
+          <div className="absolute bottom-3 end-3 flex gap-2">
             {cover && (
               <button
                 type="button"
@@ -240,7 +240,7 @@ export function ProfileSettings(props: {
           <div className="mt-3 grid gap-3 sm:grid-cols-2">
             {SOCIAL.map(([k, label]) => (
               <label key={k} className="flex h-11 items-center overflow-hidden rounded-md border border-line-strong bg-surface focus-within:border-accent focus-within:ring-3 focus-within:ring-accent/15 md:h-10">
-                <span className="w-24 shrink-0 border-r border-line bg-surface-2 px-3 text-[13px] text-ink-3">{label}</span>
+                <span className="w-24 shrink-0 border-e border-line bg-surface-2 px-3 text-[13px] text-ink-3">{label}</span>
                 <input
                   value={v.socialLinks[k] ?? ""}
                   onChange={(e) => set("socialLinks", { ...v.socialLinks, [k]: e.target.value })}
@@ -270,7 +270,7 @@ export function ProfileSettings(props: {
         </Field>
       </SettingsCard>
 
-      <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface lg:bottom-0 lg:left-[248px]">
+      <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface lg:bottom-0 lg:start-[248px]">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-10">
           <p className="min-w-0 truncate text-sm text-ink-3" aria-live="polite">
             {saving ? "Saving…" : dirty ? "Unsaved changes" : (
@@ -327,7 +327,7 @@ function TagField({ label, values, onChange, suggestions, max }: { label: string
       </label>
       <div className="mt-1.5 flex min-h-11 flex-wrap items-center gap-1.5 rounded-md border border-line-strong bg-surface px-2 py-1.5 focus-within:border-accent focus-within:ring-3 focus-within:ring-accent/15">
         {values.map((t) => (
-          <span key={t} className="inline-flex h-7 items-center gap-1 rounded-sm bg-surface-2 pl-2 pr-1 text-[13px] text-ink">
+          <span key={t} className="inline-flex h-7 items-center gap-1 rounded-sm bg-surface-2 ps-2 pe-1 text-[13px] text-ink">
             {t}
             <button type="button" onClick={() => onChange(values.filter((x) => x !== t))} className="flex size-5 items-center justify-center rounded-sm text-ink-3 hover:bg-line hover:text-ink" aria-label={`Remove ${t}`}>
               <X className="size-3" />

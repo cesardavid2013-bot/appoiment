@@ -355,7 +355,7 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
       </div>
 
       {/* Save bar */}
-      <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface/95 backdrop-blur-md lg:bottom-0 lg:left-[248px]">
+      <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface/95 backdrop-blur-md lg:bottom-0 lg:start-[248px]">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-10">
           <p className={cn("min-w-0 truncate text-sm", errorCount ? "text-danger" : "text-ink-3")} aria-live="polite">
             {saving ? "Saving…" : errorCount ? `Fix ${errorCount} thing${errorCount === 1 ? "" : "s"} before saving` : dirty ? "Unsaved changes" : formId ? "All changes saved" : "New form"}
@@ -385,7 +385,7 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
         }
       >
         {usedBy.length > 0 && (
-          <ul className="mb-3 list-disc space-y-0.5 pl-5 text-sm text-ink-2">
+          <ul className="mb-3 list-disc space-y-0.5 ps-5 text-sm text-ink-2">
             {usedBy.map((s) => (
               <li key={s.id}>{s.name}</li>
             ))}
@@ -470,8 +470,8 @@ function QuestionCard(p: {
 
   return (
     <li className={cn("rounded-xl border bg-surface", hasError ? "border-danger/50" : open ? "border-line-strong" : "border-line")}>
-      <div className="flex items-start gap-1 pl-4 pr-2 sm:pl-5">
-        <button type="button" onClick={p.onToggle} aria-expanded={open} aria-controls={`${d.id}-panel`} className="flex min-h-14 min-w-0 flex-1 items-start gap-3 py-3.5 text-left">
+      <div className="flex items-start gap-1 ps-4 pe-2 sm:ps-5">
+        <button type="button" onClick={p.onToggle} aria-expanded={open} aria-controls={`${d.id}-panel`} className="flex min-h-14 min-w-0 flex-1 items-start gap-3 py-3.5 text-start">
           <span className="mt-px w-5 shrink-0 text-sm text-ink-3 tabular">{index + 1}.</span>
           <span className="min-w-0 flex-1">
             <span className={cn("block text-[15px] font-medium", d.label.trim() ? "text-ink" : "text-ink-3")}>{d.label.trim() || "Untitled question"}</span>

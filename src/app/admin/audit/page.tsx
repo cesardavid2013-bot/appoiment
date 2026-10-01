@@ -58,14 +58,14 @@ export default async function AdminAuditPage({ searchParams }: PageProps<"/admin
         </label>
         <label className="relative">
           <span className="sr-only">Actor type</span>
-          <select name="actorType" defaultValue={params.actorType ?? ""} className={`${INPUT} cursor-pointer appearance-none pr-9`}>
+          <select name="actorType" defaultValue={params.actorType ?? ""} className={`${INPUT} cursor-pointer appearance-none pe-9`}>
             <option value="">Any actor</option>
             <option value="admin">Admin</option>
             <option value="business">Business</option>
             <option value="customer">Customer</option>
             <option value="system">System</option>
           </select>
-          <svg className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 16 16" fill="none" aria-hidden>
+          <svg className="pointer-events-none absolute end-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 16 16" fill="none" aria-hidden>
             <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </label>

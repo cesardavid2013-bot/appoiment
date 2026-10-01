@@ -95,7 +95,7 @@ export default async function PaymentsSettingsPage({ searchParams }: PageProps<"
           </div>
           <div className="flex justify-between gap-4 py-2.5">
             <dt className="text-ink-3">Card processing</dt>
-            <dd className="text-right font-medium text-ink">Stripe&rsquo;s standard rate</dd>
+            <dd className="text-end font-medium text-ink">Stripe&rsquo;s standard rate</dd>
           </div>
         </dl>
       </SettingsCard>

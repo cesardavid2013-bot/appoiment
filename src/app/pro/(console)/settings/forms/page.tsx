@@ -68,7 +68,7 @@ export default async function FormsSettingsPage() {
                   </p>
                   <UsedBy services={f.services} />
                 </div>
-                <p className="hidden shrink-0 pt-0.5 text-right text-[13px] text-ink-3 tabular sm:block">
+                <p className="hidden shrink-0 pt-0.5 text-end text-[13px] text-ink-3 tabular sm:block">
                   Edited {fmtDate(edited, m.timezone, sameYear ? { month: "short", day: "numeric" } : { month: "short", day: "numeric", year: "numeric" })}
                 </p>
                 <ChevronRight className="mt-0.5 size-4 shrink-0 text-ink-3" aria-hidden />

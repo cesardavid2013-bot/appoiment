@@ -120,7 +120,7 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
               Go live
             </Button>
           )}
-          <Link href={`/${slug}`} target="_blank" className="ml-auto inline-flex items-center gap-1 text-sm font-medium text-ink-2 hover:text-ink">
+          <Link href={`/${slug}`} target="_blank" className="ms-auto inline-flex items-center gap-1 text-sm font-medium text-ink-2 hover:text-ink">
             {live ? "View page" : "Preview"} <ExternalLink className="size-3.5" />
           </Link>
         </div>
@@ -175,7 +175,7 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
         <Field label="Address" error={slugError}>
           {(p) => (
             <div className="flex h-11 items-center overflow-hidden rounded-md border border-line-strong bg-surface focus-within:border-accent focus-within:ring-3 focus-within:ring-accent/15 md:h-10">
-              <span className="hidden shrink-0 border-r border-line bg-surface-2 px-3 text-sm leading-[2.5rem] text-ink-3 sm:block">{host}/</span>
+              <span className="hidden shrink-0 border-e border-line bg-surface-2 px-3 text-sm leading-[2.5rem] text-ink-3 sm:block">{host}/</span>
               <Input
                 {...p}
                 value={draftSlug}

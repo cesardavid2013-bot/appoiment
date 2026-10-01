@@ -158,7 +158,7 @@ export function NewAppointmentDialog({
               <ul className="mt-1.5">
                 {(lookup.data ?? []).map((c) => (
                   <li key={c.id}>
-                    <button type="button" onClick={() => setCustomer(c)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-left hover:bg-surface-2">
+                    <button type="button" onClick={() => setCustomer(c)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-start hover:bg-surface-2">
                       <span className="text-sm font-medium text-ink">{c.name}</span>
                       <span className="text-[13px] text-ink-3">{c.phone ?? c.email ?? ""}</span>
                     </button>

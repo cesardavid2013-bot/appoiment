@@ -61,7 +61,7 @@ export function useSettingsForm<T extends Record<string, unknown>>(initial: T, e
 
 export function SaveBar({ dirty, saving, onSave, onDiscard, idle }: { dirty: boolean; saving: boolean; onSave: () => void; onDiscard: () => void; idle?: React.ReactNode }) {
   return (
-    <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface lg:bottom-0 lg:left-[248px]">
+    <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface lg:bottom-0 lg:start-[248px]">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-10">
         <p className="min-w-0 truncate text-sm text-ink-3" aria-live="polite">
           {saving ? "Saving…" : dirty ? "Unsaved changes" : (idle ?? "All changes saved")}

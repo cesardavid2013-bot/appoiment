@@ -330,7 +330,7 @@ export function BookingFlow({
     <div className="pb-32 lg:pb-16">
       <header className="sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-md safe-top">
         <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:px-6">
-          <button type="button" onClick={back} className="-ml-2 flex size-10 items-center justify-center rounded-md text-ink-2 hover:bg-surface-2 hover:text-ink" aria-label={stepIndex === 0 ? `Back to ${b.name}` : "Previous step"}>
+          <button type="button" onClick={back} className="-ms-2 flex size-10 items-center justify-center rounded-md text-ink-2 hover:bg-surface-2 hover:text-ink" aria-label={stepIndex === 0 ? `Back to ${b.name}` : "Previous step"}>
             <ArrowLeft className="size-5" />
           </button>
           <div className="min-w-0 flex-1">
@@ -340,7 +340,7 @@ export function BookingFlow({
           <span className="shrink-0 text-[13px] text-ink-3 tabular">
             Step {stepIndex + 1} of {steps.length}
           </span>
-          <Link href={`/${b.slug}`} className="ml-1 hidden size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink sm:flex" aria-label="Exit booking">
+          <Link href={`/${b.slug}`} className="ms-1 hidden size-10 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink sm:flex" aria-label="Exit booking">
             <X className="size-5" />
           </Link>
         </div>
@@ -512,13 +512,13 @@ export function BookingFlow({
                   {showStaffInfo && (
                     <div className="flex justify-between gap-4 px-5 py-3">
                       <dt className="text-ink-3">With</dt>
-                      <dd className="text-right text-ink">{memberName ?? "Any available professional"}</dd>
+                      <dd className="text-end text-ink">{memberName ?? "Any available professional"}</dd>
                     </div>
                   )}
                   {effectiveLocation && (
                     <div className="flex justify-between gap-4 px-5 py-3">
                       <dt className="text-ink-3">Where</dt>
-                      <dd className="text-right text-ink">{effectiveLocation.kind === "physical" ? effectiveLocation.address : effectiveLocation.kind === "mobile" ? address || "Your address" : "Online"}</dd>
+                      <dd className="text-end text-ink">{effectiveLocation.kind === "physical" ? effectiveLocation.address : effectiveLocation.kind === "mobile" ? address || "Your address" : "Online"}</dd>
                     </div>
                   )}
                 </dl>

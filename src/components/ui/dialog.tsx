@@ -45,7 +45,7 @@ export function Dialog({ open, onOpenChange, title, description, children, foote
               {description ? <D.Description className="mt-1 text-sm leading-relaxed text-ink-3">{description}</D.Description> : <D.Description className="sr-only">{typeof title === "string" ? title : "Dialog"}</D.Description>}
             </div>
             {!locked && (
-              <D.Close className="-mr-2 -mt-1 flex size-9 shrink-0 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Close">
+              <D.Close className="-me-2 -mt-1 flex size-9 shrink-0 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Close">
                 <X className="size-5" />
               </D.Close>
             )}
@@ -101,7 +101,7 @@ export function ConfirmDialog({
             onClick={onConfirm}
             disabled={loading}
           >
-            {loading && <span className="size-4 animate-spin rounded-full border-2 border-current border-r-transparent" />}
+            {loading && <span className="size-4 animate-spin rounded-full border-2 border-current border-e-transparent" />}
             {confirmLabel}
           </button>
         </>

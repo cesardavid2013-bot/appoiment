@@ -10,7 +10,7 @@ export function Logo({ className, href = "/", suffix }: { className?: string; hr
         <path d="M7.5 12.5l3 3 6-7" fill="none" stroke="var(--accent)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       <span className="font-display text-[23px] leading-none tracking-[-0.01em]">Kept</span>
-      {suffix && <span className="ml-1 rounded-sm bg-surface-2 px-1.5 py-0.5 text-[11px] font-medium uppercase tracking-wide text-ink-3">{suffix}</span>}
+      {suffix && <span className="ms-1 rounded-sm bg-surface-2 px-1.5 py-0.5 text-[11px] font-medium uppercase tracking-wide text-ink-3">{suffix}</span>}
     </Link>
   );
 }

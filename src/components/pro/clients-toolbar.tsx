@@ -46,7 +46,7 @@ export function ClientsToolbar({ tags, canSeeSpend }: Props) {
   return (
     <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
       <div className="relative min-w-0 flex-1">
-        <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
+        <Search className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
         <label htmlFor="client-search" className="sr-only">
           Search clients by name, email or phone
         </label>
@@ -56,9 +56,9 @@ export function ClientsToolbar({ tags, canSeeSpend }: Props) {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Search name, email or phone"
-          className="h-11 w-full rounded-md border border-line-strong bg-surface pl-9 pr-10 text-[15px] text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15 md:h-10 md:text-sm [&::-webkit-search-cancel-button]:hidden"
+          className="h-11 w-full rounded-md border border-line-strong bg-surface ps-9 pe-10 text-[15px] text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15 md:h-10 md:text-sm [&::-webkit-search-cancel-button]:hidden"
         />
-        <span className="absolute right-1 top-1/2 flex -translate-y-1/2 items-center">
+        <span className="absolute end-1 top-1/2 flex -translate-y-1/2 items-center">
           {pending ? (
             <span className="flex size-9 items-center justify-center text-ink-3">
               <Spinner className="size-4" label="Updating results" />

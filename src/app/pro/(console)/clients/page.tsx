@@ -111,7 +111,7 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
               {/* Desktop table */}
               <div className="mt-5 hidden overflow-hidden rounded-xl border border-line md:block">
                 <table className="w-full text-sm">
-                  <thead className="bg-surface-2/60 text-left text-[12px] font-medium text-ink-3">
+                  <thead className="bg-surface-2/60 text-start text-[12px] font-medium text-ink-3">
                     <tr>
                       <th scope="col" className="px-4 py-2.5 font-medium">
                         Client
@@ -119,14 +119,14 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
                       <th scope="col" className="px-4 py-2.5 font-medium">
                         Contact
                       </th>
-                      <th scope="col" className="px-4 py-2.5 text-right font-medium">
+                      <th scope="col" className="px-4 py-2.5 text-end font-medium">
                         Visits
                       </th>
-                      <th scope="col" className="px-4 py-2.5 text-right font-medium">
+                      <th scope="col" className="px-4 py-2.5 text-end font-medium">
                         No-shows
                       </th>
                       {list.canSeeSpend && (
-                        <th scope="col" className="px-4 py-2.5 text-right font-medium">
+                        <th scope="col" className="px-4 py-2.5 text-end font-medium">
                           Spent
                         </th>
                       )}
@@ -151,9 +151,9 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
                           <span className="block truncate">{c.phone ?? c.email ?? <span className="text-ink-3">—</span>}</span>
                           {c.phone && c.email && <span className="block truncate text-[12px] text-ink-3">{c.email}</span>}
                         </td>
-                        <td className="px-4 py-3 text-right text-ink tabular">{c.completedCount}</td>
-                        <td className={cn("px-4 py-3 text-right tabular", c.noShowCount > 0 ? "font-medium text-danger" : "text-ink-3")}>{c.noShowCount}</td>
-                        {list.canSeeSpend && <td className="px-4 py-3 text-right text-ink tabular">{formatMoney(c.totalSpentCents ?? 0, m.currency)}</td>}
+                        <td className="px-4 py-3 text-end text-ink tabular">{c.completedCount}</td>
+                        <td className={cn("px-4 py-3 text-end tabular", c.noShowCount > 0 ? "font-medium text-danger" : "text-ink-3")}>{c.noShowCount}</td>
+                        {list.canSeeSpend && <td className="px-4 py-3 text-end text-ink tabular">{formatMoney(c.totalSpentCents ?? 0, m.currency)}</td>}
                         <td className="whitespace-nowrap px-4 py-3 text-ink-2 tabular">{lastVisit(c.lastVisitAt, tz, now) ?? <span className="text-ink-3">Never</span>}</td>
                         <td className="whitespace-nowrap px-4 py-3 tabular">
                           {c.nextVisit ? (
@@ -183,7 +183,7 @@ export default async function ClientsPage({ searchParams }: PageProps<"/pro/clie
                           {c.noShowCount > 0 && <span className="text-danger"> · {c.noShowCount} no-show{c.noShowCount === 1 ? "" : "s"}</span>}
                         </span>
                       </span>
-                      <span className="shrink-0 text-right">
+                      <span className="shrink-0 text-end">
                         {list.canSeeSpend && <span className="block text-sm font-medium text-ink tabular">{formatMoney(c.totalSpentCents ?? 0, m.currency)}</span>}
                         {c.nextVisit && <span className="block text-[12px] text-accent-text tabular">Next {fmtDate(c.nextVisit, tz, { month: "short", day: "numeric" })}</span>}
                       </span>

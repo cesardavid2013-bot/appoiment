@@ -104,7 +104,7 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
       <header className="sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-6">
           <Logo href={b ? "/pro/today" : "/"} suffix="Business" />
-          <span className="ml-auto text-[13px] text-ink-3 tabular lg:hidden">
+          <span className="ms-auto text-[13px] text-ink-3 tabular lg:hidden">
             {idx + 1} / {STEPS.length}
           </span>
           {b ? (
@@ -135,13 +135,13 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
                     disabled={!reachable}
                     onClick={() => go(s.key)}
                     aria-current={step === s.key ? "step" : undefined}
-                    className={cn("flex w-full items-center gap-3 rounded-md px-2 py-1.5 text-left text-sm transition-colors", step === s.key ? "bg-surface-2 font-semibold text-ink" : reachable ? "text-ink-2 hover:text-ink" : "text-ink-3/60")}
+                    className={cn("flex w-full items-center gap-3 rounded-md px-2 py-1.5 text-start text-sm transition-colors", step === s.key ? "bg-surface-2 font-semibold text-ink" : reachable ? "text-ink-2 hover:text-ink" : "text-ink-3/60")}
                   >
                     <span className={cn("flex size-5 shrink-0 items-center justify-center rounded-full border text-[11px] tabular", st === "done" ? "border-accent bg-accent text-accent-ink" : step === s.key ? "border-ink text-ink" : "border-line-strong text-ink-3")}>
                       {st === "done" ? <Check className="size-3" strokeWidth={3} /> : i + 1}
                     </span>
                     {s.label}
-                    {st === "skipped" && <span className="ml-auto text-[11px] text-ink-3">Skipped</span>}
+                    {st === "skipped" && <span className="ms-auto text-[11px] text-ink-3">Skipped</span>}
                   </button>
                 </li>
               );
@@ -161,7 +161,7 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
                       type="button"
                       onClick={() => setCategoryId(c.id)}
                       aria-pressed={on}
-                      className={cn("min-h-16 rounded-lg border px-3.5 py-3 text-left text-[15px] font-medium transition-[border-color,box-shadow]", on ? "border-ink shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface hover:border-line-strong")}
+                      className={cn("min-h-16 rounded-lg border px-3.5 py-3 text-start text-[15px] font-medium transition-[border-color,box-shadow]", on ? "border-ink shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface hover:border-line-strong")}
                     >
                       {c.name}
                     </button>
@@ -239,7 +239,7 @@ function Actions({ children, back, skip }: { children: ReactNode; back?: () => v
           Back
         </Button>
       )}
-      <div className="ml-auto flex items-center gap-2">
+      <div className="ms-auto flex items-center gap-2">
         {skip && (
           <Button variant="ghost" onClick={skip}>
             Skip for now
@@ -478,7 +478,7 @@ function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) 
             ["virtual", "Online", "Video calls", Monitor],
           ] as const
         ).map(([k, t, d, Icon]) => (
-          <button key={k} type="button" onClick={() => setKind(k)} aria-pressed={kind === k} className={cn("rounded-lg border px-3.5 py-3.5 text-left transition-[border-color,box-shadow]", kind === k ? "border-ink shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface hover:border-line-strong")}>
+          <button key={k} type="button" onClick={() => setKind(k)} aria-pressed={kind === k} className={cn("rounded-lg border px-3.5 py-3.5 text-start transition-[border-color,box-shadow]", kind === k ? "border-ink shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface hover:border-line-strong")}>
             <Icon className="size-5 text-ink-2" />
             <span className="mt-3 block text-[15px] font-medium text-ink">{t}</span>
             <span className="block text-[13px] text-ink-3">{d}</span>
@@ -586,7 +586,7 @@ function ServicesStep({ b, categorySlug, parentSlug, onDone }: { b: WizardBusine
               <Check className="size-4 text-accent" />
               <span className="min-w-0 flex-1 truncate text-[15px] text-ink">{s.name}</span>
               <span className="text-sm text-ink-3 tabular">{s.durationMinutes} min</span>
-              <span className="w-16 text-right text-sm font-medium text-ink tabular">{s.priceType === "free" ? "Free" : formatMoney(s.priceCents, b.currency, { compact: true })}</span>
+              <span className="w-16 text-end text-sm font-medium text-ink tabular">{s.priceType === "free" ? "Free" : formatMoney(s.priceCents, b.currency, { compact: true })}</span>
             </li>
           ))}
         </ul>

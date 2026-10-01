@@ -382,7 +382,7 @@ function SystemLine({ m, tz, appointmentHref }: { m: ThreadMessage; tz: string; 
 }
 
 function Bubble({ m, mine, first, last, dim, failed, appointmentHref }: { m: ThreadMessage; mine: boolean; first: boolean; last: boolean; dim?: boolean; failed?: boolean; appointmentHref: string }) {
-  const radius = mine ? cn("rounded-2xl", !first && "rounded-tr-md", !last && "rounded-br-md") : cn("rounded-2xl", !first && "rounded-tl-md", !last && "rounded-bl-md");
+  const radius = mine ? cn("rounded-2xl", !first && "rounded-se-md", !last && "rounded-ee-md") : cn("rounded-2xl", !first && "rounded-ss-md", !last && "rounded-es-md");
   return (
     <div className={cn("flex max-w-[82%] flex-col gap-1 sm:max-w-[70%]", mine ? "items-end" : "items-start", dim && "opacity-70")}>
       {m.media && (
@@ -461,7 +461,7 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
         {(appointment || upload || uploadError) && (
           <div className="mb-2 flex flex-wrap items-center gap-2">
             {appointment && (
-              <span className="inline-flex h-8 max-w-full items-center gap-1.5 rounded-md border border-line bg-surface pl-2.5 pr-1 text-[13px] text-ink-2">
+              <span className="inline-flex h-8 max-w-full items-center gap-1.5 rounded-md border border-line bg-surface ps-2.5 pe-1 text-[13px] text-ink-2">
                 <CalendarDays className="size-3.5 shrink-0 text-ink-3" aria-hidden />
                 <span className="truncate">About {apptLine(appointment)}</span>
                 <button type="button" onClick={() => setAppointment(null)} className="flex size-6 shrink-0 items-center justify-center rounded text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Don't link this appointment">
@@ -482,7 +482,7 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
                     {upload.progress < 100 ? `${upload.progress}%` : <Spinner className="size-4" label="Processing photo" />}
                   </span>
                 )}
-                <button type="button" onClick={() => setUpload(null)} className="absolute right-0.5 top-0.5 flex size-6 items-center justify-center rounded-full bg-surface/90 text-ink shadow-sm" aria-label="Remove photo">
+                <button type="button" onClick={() => setUpload(null)} className="absolute end-0.5 top-0.5 flex size-6 items-center justify-center rounded-full bg-surface/90 text-ink shadow-sm" aria-label="Remove photo">
                   <X className="size-3.5" />
                 </button>
               </span>
@@ -544,7 +544,7 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
           </button>
         </form>
         {body.length > MAX_LEN - 200 && (
-          <p className={cn("mt-1 px-14 text-right text-[12px] tabular", body.length > MAX_LEN ? "text-danger" : "text-ink-3")} aria-live="polite">
+          <p className={cn("mt-1 px-14 text-end text-[12px] tabular", body.length > MAX_LEN ? "text-danger" : "text-ink-3")} aria-live="polite">
             {body.length.toLocaleString()} / {MAX_LEN.toLocaleString()}
           </p>
         )}

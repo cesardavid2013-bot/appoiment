@@ -268,7 +268,7 @@ export function ReviewForm({ appointmentId, businessName }: { appointmentId: str
             <Star className={cn("size-8 transition-colors", (hover || rating) >= n ? "fill-ink text-ink" : "text-line-strong")} />
           </button>
         ))}
-        <span className="ml-2 text-sm font-medium text-ink-2">{labels[hover || rating]}</span>
+        <span className="ms-2 text-sm font-medium text-ink-2">{labels[hover || rating]}</span>
       </div>
       <div className="mt-4">
         <Field label="Tell others about your visit" optional>

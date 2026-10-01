@@ -12,7 +12,7 @@ export function SettingsShell({ title, description, perms, children, actions }: 
         <SettingsNav perms={perms} />
       </aside>
       <div className="min-w-0 max-w-2xl">
-        <Link href="/pro/settings" className="-ml-1 mb-4 inline-flex h-10 items-center gap-1 pr-2 text-sm font-medium text-ink-3 hover:text-ink lg:hidden">
+        <Link href="/pro/settings" className="-ms-1 mb-4 inline-flex h-10 items-center gap-1 pe-2 text-sm font-medium text-ink-3 hover:text-ink lg:hidden">
           <ChevronLeft className="size-4" aria-hidden />
           Settings
         </Link>

@@ -18,8 +18,8 @@ function BeforeAfter({ before, after, className }: { before: MediaLike; after: M
         <MediaImage media={before} className="size-full" sizes="(min-width: 1024px) 60vw, 100vw" />
       </div>
       <div className="pointer-events-none absolute inset-y-0 w-0.5 bg-white shadow" style={{ left: `${pos}%` }} />
-      <span className="pointer-events-none absolute left-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">Before</span>
-      <span className="pointer-events-none absolute right-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">After</span>
+      <span className="pointer-events-none absolute start-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">Before</span>
+      <span className="pointer-events-none absolute end-3 top-3 rounded bg-black/55 px-1.5 py-0.5 text-[11px] font-medium text-white">After</span>
       <input type="range" min={0} max={100} value={pos} onChange={(e) => setPos(Number(e.target.value))} aria-label="Compare before and after" className="absolute inset-0 size-full cursor-ew-resize opacity-0" />
     </div>
   );
@@ -51,8 +51,8 @@ export function PortfolioGrid({ items, slug }: { items: PortfolioEntry[]; slug: 
           <li key={p.id} className={cn(i === 0 && items.length > 4 && "col-span-2 row-span-2")}>
             <button type="button" onClick={() => setIndex(i)} className="group relative block aspect-square w-full overflow-hidden rounded-lg" aria-label={p.caption ?? `Open item ${i + 1}`}>
               <MediaImage media={p.media} alt={p.caption ?? ""} sizes="(min-width: 1024px) 22vw, 45vw" className="size-full transition-transform duration-500 group-hover:scale-[1.03]" />
-              {p.kind === "video" && <span className="absolute bottom-2 left-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Video</span>}
-              {p.kind === "before_after" && <span className="absolute bottom-2 left-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Before / after</span>}
+              {p.kind === "video" && <span className="absolute bottom-2 start-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Video</span>}
+              {p.kind === "before_after" && <span className="absolute bottom-2 start-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Before / after</span>}
             </button>
           </li>
         ))}
@@ -80,10 +80,10 @@ export function PortfolioGrid({ items, slug }: { items: PortfolioEntry[]; slug: 
                 ))}
               {items.length > 1 && (
                 <>
-                  <button type="button" onClick={() => go(-1)} className="absolute left-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label="Previous">
+                  <button type="button" onClick={() => go(-1)} className="absolute start-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label="Previous">
                     <ChevronLeft className="size-5" />
                   </button>
-                  <button type="button" onClick={() => go(1)} className="absolute right-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label="Next">
+                  <button type="button" onClick={() => go(1)} className="absolute end-2 top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:flex" aria-label="Next">
                     <ChevronRight className="size-5" />
                   </button>
                 </>

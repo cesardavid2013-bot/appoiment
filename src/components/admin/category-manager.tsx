@@ -117,7 +117,7 @@ export function CategoryManager({ tree }: { tree: AdminCategory[] }) {
 
   function renderRow(c: AdminCategory, index: number, siblings: number, child = false) {
     return (
-      <li key={c.id} className={cn("flex items-start gap-3 px-4 py-3", child && "bg-bg/60 pl-8 sm:pl-12")}>
+      <li key={c.id} className={cn("flex items-start gap-3 px-4 py-3", child && "bg-bg/60 ps-8 sm:ps-12")}>
         <div className="flex shrink-0 flex-col">
           <button
             type="button"

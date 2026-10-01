@@ -79,7 +79,7 @@ export default async function ReviewsPage({ searchParams }: PageProps<"/pro/revi
                       <span className="h-1.5 overflow-hidden rounded-full bg-surface-3" aria-hidden>
                         <span className="block h-full rounded-full bg-ink" style={{ width: `${(d.count / max) * 100}%` }} />
                       </span>
-                      <span className="text-right text-ink-3 tabular">{d.count}</span>
+                      <span className="text-end text-ink-3 tabular">{d.count}</span>
                     </Link>
                   </li>
                 ))}

@@ -242,7 +242,7 @@ export function AvailabilityManager(props: {
       </section>
 
       {dirty && (
-        <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface lg:bottom-0 lg:left-[248px]">
+        <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface lg:bottom-0 lg:start-[248px]">
           <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-10">
             <p className="text-sm text-ink-3" aria-live="polite">
               {valid ? "Unsaved changes to weekly hours" : <span className="text-danger">Some times overlap or end before they start</span>}

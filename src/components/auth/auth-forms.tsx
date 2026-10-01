@@ -140,7 +140,7 @@ function AccountTypeChooser({ onChoose }: { onChoose: (t: "client" | "pro") => v
             role="radio"
             aria-checked={false}
             onClick={() => onChoose(o.key)}
-            className="group relative rounded-xl border border-line bg-surface p-5 text-left transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-ink hover:shadow-md focus-visible:border-ink"
+            className="group relative rounded-xl border border-line bg-surface p-5 text-start transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-ink hover:shadow-md focus-visible:border-ink"
           >
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-text">{o.eyebrow}</p>
             <p className="mt-2 font-display text-[28px] leading-none text-ink">{o.title}</p>
@@ -153,7 +153,7 @@ function AccountTypeChooser({ onChoose }: { onChoose: (t: "client" | "pro") => v
                 </li>
               ))}
             </ul>
-            <span className="absolute right-5 top-5 text-ink-3 transition-transform group-hover:translate-x-0.5 group-hover:text-ink" aria-hidden>
+            <span className="absolute end-5 top-5 text-ink-3 transition-transform group-hover:translate-x-0.5 group-hover:text-ink" aria-hidden>
               →
             </span>
           </button>

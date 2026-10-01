@@ -15,10 +15,10 @@ export const Textarea = forwardRef<HTMLTextAreaElement, ComponentProps<"textarea
 export const Select = forwardRef<HTMLSelectElement, ComponentProps<"select">>(function Select({ className, children, ...props }, ref) {
   return (
     <div className={cn("relative", /\bw-(?!full)/.test(className ?? "") && "w-fit")}>
-      <select ref={ref} className={cn(control, "h-11 md:h-10 appearance-none pr-9 cursor-pointer", className)} {...props}>
+      <select ref={ref} className={cn(control, "h-11 md:h-10 appearance-none pe-9 cursor-pointer", className)} {...props}>
         {children}
       </select>
-      <svg className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 16 16" fill="none" aria-hidden>
+      <svg className="pointer-events-none absolute end-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 16 16" fill="none" aria-hidden>
         <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     </div>

@@ -27,7 +27,7 @@ function AskIcon() {
 function CountDot({ n }: { n: number }) {
   if (!n) return null;
   return (
-    <span className="absolute -right-0.5 -top-0.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-accent px-1 text-[10px] font-semibold text-accent-ink tabular">
+    <span className="absolute -end-0.5 -top-0.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-accent px-1 text-[10px] font-semibold text-accent-ink tabular">
       {n > 99 ? "99+" : n}
       <span className="sr-only"> unread</span>
     </span>
@@ -53,12 +53,12 @@ export function SiteHeader({ viewer }: { viewer: ShellViewer }) {
         <Logo />
         <Link
           href="/explore"
-          className={cn("ml-4 hidden h-10 max-w-sm flex-1 items-center gap-2.5 rounded-full border border-line bg-surface px-4 text-sm text-ink-3 shadow-sm transition-colors hover:border-line-strong md:flex", pathname?.startsWith("/explore") && "md:hidden")}
+          className={cn("ms-4 hidden h-10 max-w-sm flex-1 items-center gap-2.5 rounded-full border border-line bg-surface px-4 text-sm text-ink-3 shadow-sm transition-colors hover:border-line-strong md:flex", pathname?.startsWith("/explore") && "md:hidden")}
         >
           <Search className="size-4" />
           <span>Search services or professionals</span>
         </Link>
-        <nav className="ml-auto flex items-center gap-1" aria-label="Main">
+        <nav className="ms-auto flex items-center gap-1" aria-label="Main">
           <button type="button" onClick={() => assistant.open()} className={cn(buttonClass("ghost", "sm"), "gap-1.5")} aria-haspopup="dialog">
             <AskIcon />
             <span className="hidden sm:inline">Ask</span>
@@ -90,7 +90,7 @@ export function SiteHeader({ viewer }: { viewer: ShellViewer }) {
                 <CountDot n={badges?.notifications ?? 0} />
               </Link>
               <Menu>
-                <MenuTrigger className="ml-1 rounded-full outline-offset-2" aria-label="Account menu">
+                <MenuTrigger className="ms-1 rounded-full outline-offset-2" aria-label="Account menu">
                   <Avatar name={viewer.name} size={34} />
                 </MenuTrigger>
                 <MenuContent>

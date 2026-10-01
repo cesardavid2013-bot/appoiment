@@ -193,21 +193,21 @@ export function SpotlightPanel({ current, past, categories, blockedReason, timez
             <table className="w-full text-sm">
               <caption className="sr-only">Past Spotlight campaigns</caption>
               <thead>
-                <tr className="border-b border-line text-left text-[12px] text-ink-3">
+                <tr className="border-b border-line text-start text-[12px] text-ink-3">
                   <th scope="col" className="px-4 py-2 font-medium">
                     Dates
                   </th>
                   <th scope="col" className="hidden px-4 py-2 font-medium sm:table-cell">
                     Shown for
                   </th>
-                  <th scope="col" className="px-4 py-2 text-right font-medium">
+                  <th scope="col" className="px-4 py-2 text-end font-medium">
                     <span className="sm:hidden">Impr.</span>
                     <span className="hidden sm:inline">Impressions</span>
                   </th>
-                  <th scope="col" className="px-4 py-2 text-right font-medium">
+                  <th scope="col" className="px-4 py-2 text-end font-medium">
                     Visits
                   </th>
-                  <th scope="col" className="px-4 py-2 text-right font-medium">
+                  <th scope="col" className="px-4 py-2 text-end font-medium">
                     Rate
                   </th>
                 </tr>
@@ -220,9 +220,9 @@ export function SpotlightPanel({ current, past, categories, blockedReason, timez
                       <span className="block text-[12px] text-ink-3 sm:hidden">{target(c)}</span>
                     </td>
                     <td className="hidden px-4 py-2.5 text-ink-2 sm:table-cell">{target(c)}</td>
-                    <td className="px-4 py-2.5 text-right text-ink tabular">{nf.format(c.impressions)}</td>
-                    <td className="px-4 py-2.5 text-right text-ink tabular">{nf.format(c.clicks)}</td>
-                    <td className="px-4 py-2.5 text-right text-ink-2 tabular">{ctr(c)}</td>
+                    <td className="px-4 py-2.5 text-end text-ink tabular">{nf.format(c.impressions)}</td>
+                    <td className="px-4 py-2.5 text-end text-ink tabular">{nf.format(c.clicks)}</td>
+                    <td className="px-4 py-2.5 text-end text-ink-2 tabular">{ctr(c)}</td>
                   </tr>
                 ))}
               </tbody>

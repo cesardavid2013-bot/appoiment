@@ -80,7 +80,7 @@ export default async function HomePage() {
             .map((c, i) => {
               const n = counts.get(c.slug) ?? 0;
               return (
-                <li key={c.slug} className="border-b border-line sm:odd:border-r lg:border-r lg:[&:nth-child(3n)]:border-r-0 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r">
+                <li key={c.slug} className="border-b border-line sm:odd:border-e lg:border-e lg:[&:nth-child(3n)]:border-e-0 sm:[&:nth-child(2n)]:border-e-0 lg:[&:nth-child(2n)]:border-e">
                   <Link href={`/explore?category=${c.slug}`} className="group flex h-full items-start gap-5 px-1 py-5 transition-colors hover:bg-surface sm:px-5">
                     <span className="w-8 shrink-0 pt-0.5 font-display text-[22px] leading-none text-gold-text tabular">{String(i + 1).padStart(2, "0")}</span>
                     <span className="min-w-0 flex-1">
@@ -125,7 +125,7 @@ export default async function HomePage() {
                     {next.snapshot.address.split(",")[0]}
                   </span>
                 )}
-                <span className="ml-auto inline-flex items-center gap-1 font-medium text-ink group-hover:underline">
+                <span className="ms-auto inline-flex items-center gap-1 font-medium text-ink group-hover:underline">
                   Details <ArrowRight className="size-4" />
                 </span>
               </div>
@@ -202,7 +202,7 @@ export default async function HomePage() {
               ["Fewer no-shows", "Reminders, deposits and clear policies."],
               ["Get discovered", "Portfolio, verified reviews and Spotlight."],
             ].map(([t, d], i) => (
-              <div key={t} className={`border-b border-line py-6 ${i % 2 === 0 ? "pr-5" : "border-l pl-5"}`}>
+              <div key={t} className={`border-b border-line py-6 ${i % 2 === 0 ? "pe-5" : "border-s ps-5"}`}>
                 <dt className="font-display text-[22px] leading-tight text-ink">{t}</dt>
                 <dd className="mt-1.5 text-[13px] leading-relaxed text-ink-3">{d}</dd>
               </div>

@@ -131,7 +131,7 @@ export function Mono({ children, className }: { children: ReactNode; className?:
 export function Table({ children, label, className }: { children: ReactNode; label: string; className?: string }) {
   return (
     <div className={cn("relative overflow-x-auto", className)}>
-      <table className="w-full min-w-[720px] border-collapse text-left text-sm" aria-label={label}>
+      <table className="w-full min-w-[720px] border-collapse text-start text-sm" aria-label={label}>
         {children}
       </table>
     </div>
@@ -148,7 +148,7 @@ export function THead({ children }: { children: ReactNode }) {
 
 export function Th({ children, className, align = "left" }: { children?: ReactNode; className?: string; align?: "left" | "right" }) {
   return (
-    <th scope="col" className={cn("whitespace-nowrap px-4 py-2.5 font-medium", align === "right" && "text-right", className)}>
+    <th scope="col" className={cn("whitespace-nowrap px-4 py-2.5 font-medium", align === "right" && "text-end", className)}>
       {children}
     </th>
   );
@@ -163,7 +163,7 @@ export function Tr({ children, className }: { children: ReactNode; className?: s
 }
 
 export function Td({ children, className, align = "left" }: { children?: ReactNode; className?: string; align?: "left" | "right" }) {
-  return <td className={cn("px-4 py-3 text-ink", align === "right" && "text-right tabular", className)}>{children}</td>;
+  return <td className={cn("px-4 py-3 text-ink", align === "right" && "text-end tabular", className)}>{children}</td>;
 }
 
 /** Primary cell: bold link plus a muted second line. */
@@ -273,13 +273,13 @@ export function FilterForm({
       {q && (
         <label className="relative w-full min-w-0 sm:w-auto sm:max-w-sm sm:flex-1">
           <span className="sr-only">{q.label}</span>
-          <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
+          <Search className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
           <input
             type="search"
             name={qName}
             defaultValue={params[qName] ?? ""}
             placeholder={placeholder}
-            className="h-10 w-full rounded-md border border-line-strong bg-surface pl-9 pr-3 text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15"
+            className="h-10 w-full rounded-md border border-line-strong bg-surface ps-9 pe-3 text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15"
           />
         </label>
       )}
@@ -289,7 +289,7 @@ export function FilterForm({
           <select
             name={s.name}
             defaultValue={params[s.name] ?? ""}
-            className="h-10 w-full cursor-pointer appearance-none rounded-md border border-line-strong bg-surface pl-3 pr-9 text-ink focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15 sm:w-auto"
+            className="h-10 w-full cursor-pointer appearance-none rounded-md border border-line-strong bg-surface ps-3 pe-9 text-ink focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15 sm:w-auto"
           >
             {s.options.map((o) => (
               <option key={o.value} value={o.value}>
@@ -297,7 +297,7 @@ export function FilterForm({
               </option>
             ))}
           </select>
-          <svg className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 16 16" fill="none" aria-hidden>
+          <svg className="pointer-events-none absolute end-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" viewBox="0 0 16 16" fill="none" aria-hidden>
             <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </label>

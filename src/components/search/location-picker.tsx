@@ -99,13 +99,13 @@ export function LocationPicker({ value, onChange, className, compact }: { value:
         )}
       </div>
       {open && (
-        <div className="absolute left-0 right-0 top-[calc(100%+10px)] z-30 min-w-64 overflow-hidden rounded-lg border border-line bg-surface p-1.5 shadow-lg animate-rise">
-          <button type="button" onClick={useMine} className="flex w-full items-center gap-2.5 rounded-md px-3 py-2.5 text-left text-sm font-medium text-ink hover:bg-surface-2">
+        <div className="absolute start-0 end-0 top-[calc(100%+10px)] z-30 min-w-64 overflow-hidden rounded-lg border border-line bg-surface p-1.5 shadow-lg animate-rise">
+          <button type="button" onClick={useMine} className="flex w-full items-center gap-2.5 rounded-md px-3 py-2.5 text-start text-sm font-medium text-ink hover:bg-surface-2">
             <LocateFixed className="size-4 text-accent" />
             {locating ? "Finding you…" : "Use my current location"}
           </button>
           {(searching ? places : []).map((p) => (
-            <button key={`${p.label}-${p.lat}`} type="button" onClick={() => choose(p)} className="flex w-full items-center gap-2.5 rounded-md px-3 py-2.5 text-left text-sm text-ink hover:bg-surface-2">
+            <button key={`${p.label}-${p.lat}`} type="button" onClick={() => choose(p)} className="flex w-full items-center gap-2.5 rounded-md px-3 py-2.5 text-start text-sm text-ink hover:bg-surface-2">
               <MapPin className="size-4 text-ink-3" />
               {p.label}
             </button>

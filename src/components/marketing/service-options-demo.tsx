@@ -34,7 +34,7 @@ export function ServiceOptionsDemo() {
           <p className="text-[15px] font-semibold text-ink">Knotless braids</p>
           <p className="text-[13px] text-ink-3">Example service · try the options</p>
         </div>
-        <div className="text-right" aria-live="polite">
+        <div className="text-end" aria-live="polite">
           <p className="text-[17px] font-semibold text-ink tabular">{formatMoney(total, "USD", { compact: true })}</p>
           <p className="text-[13px] text-ink-3 tabular">{formatDuration(minutes)}</p>
         </div>

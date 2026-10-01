@@ -99,7 +99,7 @@ export function Stars({ value, size = 14, className }: { value: number; size?: n
   return (
     <span className={cn("relative inline-flex text-ink", className)} role="img" aria-label={`${value.toFixed(1)} out of 5 stars`}>
       {row("opacity-20")}
-      <span className="absolute inset-y-0 left-0 overflow-hidden" style={{ width: `${pct}%` }}>
+      <span className="absolute inset-y-0 start-0 overflow-hidden" style={{ width: `${pct}%` }}>
         {row("")}
       </span>
     </span>

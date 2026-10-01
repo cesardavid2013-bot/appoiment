@@ -25,7 +25,7 @@ const BLURBS: Record<string, string> = {
   "/pro/settings": "Profile, locations, booking rules, payments",
 };
 
-const ROW = "flex min-h-14 w-full items-center gap-3.5 px-4 py-3 text-left hover:bg-surface-2/60 sm:px-5";
+const ROW = "flex min-h-14 w-full items-center gap-3.5 px-4 py-3 text-start hover:bg-surface-2/60 sm:px-5";
 
 /** The mobile "Business" tab: every console section that isn't in the tab bar, plus business and account switching. */
 export function BusinessHub({ business, businesses, perms, user }: { business: ShellBusiness; businesses: ShellBusiness[]; perms: string[]; user: { name: string; email: string | null } }) {

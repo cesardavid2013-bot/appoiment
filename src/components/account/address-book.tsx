@@ -102,7 +102,7 @@ export function AddressBook({ initial, countries, max }: { initial: SavedAddress
                     {countryName(a.country)}
                   </p>
                 </div>
-                <Button variant="ghost" size="icon" className="-mr-2 size-11 shrink-0 sm:size-10" onClick={() => setRemoving(a)} aria-label={`Remove ${a.label}`}>
+                <Button variant="ghost" size="icon" className="-me-2 size-11 shrink-0 sm:size-10" onClick={() => setRemoving(a)} aria-label={`Remove ${a.label}`}>
                   <Trash2 className="size-4" />
                 </Button>
               </li>

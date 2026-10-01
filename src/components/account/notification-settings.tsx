@@ -77,7 +77,7 @@ export function NotificationSettings({ initial, smsEnabled, hasPhone, showBusine
               <li key={t} className="py-3.5">
                 <p className="text-sm font-medium text-ink">{meta.label}</p>
                 <p className="mt-0.5 text-[13px] leading-snug text-ink-3">{meta.description}</p>
-                <div className="mt-2.5 space-y-1 border-l-2 border-line pl-3.5">
+                <div className="mt-2.5 space-y-1 border-s-2 border-line ps-3.5">
                   <Switch
                     label={
                       <>

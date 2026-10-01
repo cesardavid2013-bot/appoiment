@@ -118,7 +118,7 @@ export default async function SupportPage({ searchParams }: PageProps<"/support"
                 {item.q}
                 <ChevronDown className="size-4 shrink-0 text-ink-3 transition-transform group-open:rotate-180" aria-hidden />
               </summary>
-              <p className="pb-5 pr-8 text-[15px] leading-relaxed text-ink-2">{item.a}</p>
+              <p className="pb-5 pe-8 text-[15px] leading-relaxed text-ink-2">{item.a}</p>
             </details>
           ))}
         </div>

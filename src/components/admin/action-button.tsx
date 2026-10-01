@@ -134,7 +134,7 @@ export function ActionButton({
                 tone === "danger" ? "bg-danger text-white hover:bg-danger/90" : "bg-ink text-bg hover:bg-ink/90",
               )}
             >
-              {busy && <span className="size-4 animate-spin rounded-full border-2 border-current border-r-transparent" aria-hidden />}
+              {busy && <span className="size-4 animate-spin rounded-full border-2 border-current border-e-transparent" aria-hidden />}
               {confirmLabel}
             </button>
           </>

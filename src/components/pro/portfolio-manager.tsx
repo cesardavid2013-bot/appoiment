@@ -174,7 +174,7 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
                   >
                     <span className="block h-full bg-accent transition-[width]" style={{ width: `${u.pct}%` }} />
                   </span>
-                  <span className="w-12 text-right text-[12px] text-ink-3 tabular">{u.state === "saving" ? "Saving" : `${u.pct}%`}</span>
+                  <span className="w-12 text-end text-[12px] text-ink-3 tabular">{u.state === "saving" ? "Saving" : `${u.pct}%`}</span>
                 </span>
               )}
             </li>
@@ -242,14 +242,14 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
                         </span>
                       )}
                     </button>
-                    <span className="pointer-events-none absolute left-2 top-2 flex gap-1">
+                    <span className="pointer-events-none absolute start-2 top-2 flex gap-1">
                       {item.isFeatured && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Featured</span>}
                       {item.kind === "video" && item.media && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Video</span>}
                       {item.kind === "before_after" && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Before / after</span>}
                     </span>
                     <Menu>
                       <MenuTrigger
-                        className="absolute right-1.5 top-1.5 flex size-9 items-center justify-center rounded-md bg-surface/90 text-ink shadow-sm hover:bg-surface"
+                        className="absolute end-1.5 top-1.5 flex size-9 items-center justify-center rounded-md bg-surface/90 text-ink shadow-sm hover:bg-surface"
                         aria-label={`Actions for ${label}`}
                       >
                         <MoreHorizontal className="size-4" />
@@ -410,7 +410,7 @@ function PickImage({ label, file, onPick }: { label: string; file: File | null; 
         {/* eslint-disable-next-line @next/next/no-img-element */}
         {file && url ? <img src={url} alt="" className="absolute inset-0 size-full object-cover" /> : <ImagePlus className="size-5 text-ink-3" />}
         {!file && <span>Choose photo</span>}
-        <span className="absolute left-2 top-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{label}</span>
+        <span className="absolute start-2 top-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{label}</span>
       </button>
     </div>
   );

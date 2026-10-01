@@ -62,7 +62,7 @@ export function WeeklyHoursEditor({ value, onChange }: { value: DayHours[]; onCh
                 <S.Thumb className="block size-5 translate-x-0.5 rounded-full bg-white shadow-sm transition-transform duration-200 data-[state=checked]:translate-x-[18px]" />
               </S.Root>
               <span className={cn("text-sm font-medium", open ? "text-ink" : "text-ink-3")}>{meta.long}</span>
-              {!open && <span className="ml-auto text-sm text-ink-3 sm:hidden">Closed</span>}
+              {!open && <span className="ms-auto text-sm text-ink-3 sm:hidden">Closed</span>}
             </div>
             <div className={cn("min-w-0 flex-1", !open && "hidden sm:block")}>
               {!open ? (

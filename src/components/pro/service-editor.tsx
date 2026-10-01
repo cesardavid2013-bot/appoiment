@@ -507,7 +507,7 @@ export function ServiceEditor({ initial, serviceId, ctx, cover: initialCover }: 
                       <div key={t.id} className={cn("rounded-lg border p-3", on ? "border-ink" : "border-line")}>
                         <Checkbox checked={on} onCheckedChange={(c) => set("memberIds", c ? [...v.memberIds, t.id] : v.memberIds.filter((x) => x !== t.id))} label={<span className="flex items-center gap-2"><Avatar name={t.name} size={22} />{t.name}</span>} />
                         {on && ctx.team.length > 1 && priced && (
-                          <label className="mt-2 flex items-center gap-2 pl-8 text-[13px] text-ink-3">
+                          <label className="mt-2 flex items-center gap-2 ps-8 text-[13px] text-ink-3">
                             Their price
                             <input
                               inputMode="decimal"
@@ -718,7 +718,7 @@ export function ServiceEditor({ initial, serviceId, ctx, cover: initialCover }: 
         </aside>
       </div>
 
-      <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface/95 backdrop-blur-md lg:bottom-0 lg:left-[248px]">
+      <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface/95 backdrop-blur-md lg:bottom-0 lg:start-[248px]">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-10">
           <p className="text-sm text-ink-3" aria-live="polite">
             {saving ? "Saving…" : dirty ? "Unsaved changes" : serviceId ? "All changes saved" : "New service"}

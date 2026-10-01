@@ -54,7 +54,7 @@ export function InboxList({ initial, fallbackZone, serverNow }: { initial: Inbox
   const unreadCount = isDefault ? rows.filter((r) => r.unread).length : filter === "unread" && !term ? rows.length : null;
 
   return (
-    <section aria-label="Conversations" className={cn("flex min-h-0 flex-col border-line lg:h-dvh lg:border-r", inThread && "hidden lg:flex")}>
+    <section aria-label="Conversations" className={cn("flex min-h-0 flex-col border-line lg:h-dvh lg:border-e", inThread && "hidden lg:flex")}>
       <div className="shrink-0 px-4 pb-3 pt-8 sm:px-6 lg:px-4 lg:pt-7">
         <div className="flex items-baseline justify-between gap-3">
           <h1 className="font-display text-[32px] leading-none tracking-[-0.01em] text-ink lg:text-[28px]">Inbox</h1>
@@ -63,7 +63,7 @@ export function InboxList({ initial, fallbackZone, serverNow }: { initial: Inbox
           </p>
         </div>
         <div className="relative mt-4">
-          <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
+          <Search className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-ink-3" aria-hidden />
           <label htmlFor="inbox-search" className="sr-only">
             Search conversations by client name
           </label>
@@ -73,10 +73,10 @@ export function InboxList({ initial, fallbackZone, serverNow }: { initial: Inbox
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="Search clients"
-            className="h-11 w-full rounded-md border border-line-strong bg-surface pl-9 pr-9 text-[15px] text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15 md:h-10 md:text-sm [&::-webkit-search-cancel-button]:hidden"
+            className="h-11 w-full rounded-md border border-line-strong bg-surface ps-9 pe-9 text-[15px] text-ink placeholder:text-ink-3 focus:border-accent focus:outline-none focus:ring-3 focus:ring-accent/15 md:h-10 md:text-sm [&::-webkit-search-cancel-button]:hidden"
           />
           {q && (
-            <button type="button" onClick={() => setQ("")} className="absolute right-1 top-1/2 flex size-9 -translate-y-1/2 items-center justify-center rounded text-ink-3 hover:text-ink" aria-label="Clear search">
+            <button type="button" onClick={() => setQ("")} className="absolute end-1 top-1/2 flex size-9 -translate-y-1/2 items-center justify-center rounded text-ink-3 hover:text-ink" aria-label="Clear search">
               <X className="size-4" />
             </button>
           )}

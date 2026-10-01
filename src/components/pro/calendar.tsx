@@ -79,11 +79,11 @@ function title(view: View, date: string, tz: string) {
 }
 
 const TONE_STYLE: Record<string, string> = {
-  positive: "border-l-accent",
-  attention: "border-l-warn bg-warn-soft/60",
-  info: "border-l-info",
-  negative: "border-l-danger opacity-70",
-  neutral: "border-l-line-strong opacity-75",
+  positive: "border-s-accent",
+  attention: "border-s-warn bg-warn-soft/60",
+  info: "border-s-info",
+  negative: "border-s-danger opacity-70",
+  neutral: "border-s-line-strong opacity-75",
 };
 
 export function ProCalendar({
@@ -173,13 +173,13 @@ export function ProCalendar({
           <button type="button" onClick={() => setDate(shift(view, date, 1))} className="flex size-9 items-center justify-center rounded-md border border-line text-ink-2 hover:bg-surface-2" aria-label="Next">
             <ChevronRight className="size-4" />
           </button>
-          <Button variant="secondary" size="sm" className="ml-1 h-9" onClick={() => setDate(today)} disabled={date === today && view !== "month"}>
+          <Button variant="secondary" size="sm" className="ms-1 h-9" onClick={() => setDate(today)} disabled={date === today && view !== "month"}>
             Today
           </Button>
         </div>
-        <h1 className="mr-auto min-w-0 truncate pl-1 text-[17px] font-semibold tracking-[-0.01em] text-ink" aria-live="polite">
+        <h1 className="me-auto min-w-0 truncate ps-1 text-[17px] font-semibold tracking-[-0.01em] text-ink" aria-live="polite">
           {title(view, date, timezone)}
-          {q.isFetching && <span className="ml-2 inline-block size-1.5 animate-pulse rounded-full bg-ink-3 align-middle" aria-label="Updating" />}
+          {q.isFetching && <span className="ms-2 inline-block size-1.5 animate-pulse rounded-full bg-ink-3 align-middle" aria-label="Updating" />}
         </h1>
         <div className="flex w-full items-center gap-2 sm:w-auto">
           <Segmented
@@ -194,7 +194,7 @@ export function ProCalendar({
               { value: "agenda", label: "List" },
             ]}
           />
-          <div className="ml-auto flex gap-2 sm:ml-2">
+          <div className="ms-auto flex gap-2 sm:ms-2">
             {canBlock && (
               <Button variant="secondary" size="sm" className="h-9" onClick={() => setBlockOpen(true)} icon={<Ban className="size-4" />}>
                 <span className="hidden sm:inline">Block</span>
@@ -372,7 +372,7 @@ function TimeGrid({
             type="button"
             disabled={!onDay}
             onClick={() => onDay?.(c.date)}
-            className={cn("flex items-center justify-center gap-1.5 border-l border-line py-2.5 text-[13px]", c.date === today && !columns ? "text-ink" : "text-ink-2", onDay && "hover:bg-surface-2")}
+            className={cn("flex items-center justify-center gap-1.5 border-s border-line py-2.5 text-[13px]", c.date === today && !columns ? "text-ink" : "text-ink-2", onDay && "hover:bg-surface-2")}
           >
             <span className="truncate font-medium">{c.label}</span>
             {c.sub && <span className={cn("flex size-6 items-center justify-center rounded-full text-[13px] font-semibold tabular", c.date === today ? "bg-ink text-bg" : "")}>{c.sub}</span>}
@@ -382,7 +382,7 @@ function TimeGrid({
         <div className="relative grid" style={{ gridTemplateColumns: `56px repeat(${cols.length}, minmax(${cols.length > 3 ? 92 : 140}px, 1fr))`, height }}>
           <div className="relative">
             {Array.from({ length: endH - startH }, (_, i) => (
-              <span key={i} className="absolute right-2 -translate-y-1/2 text-[11px] text-ink-3 tabular" style={{ top: i * HOUR * PX_PER_MIN }}>
+              <span key={i} className="absolute end-2 -translate-y-1/2 text-[11px] text-ink-3 tabular" style={{ top: i * HOUR * PX_PER_MIN }}>
                 {i === 0 ? "" : new Intl.DateTimeFormat("en-US", { hour: "numeric" }).format(new Date(2026, 0, 1, startH + i))}
               </span>
             ))}
@@ -394,7 +394,7 @@ function TimeGrid({
             return (
               <div
                 key={c.key}
-                className="relative border-l border-line"
+                className="relative border-s border-line"
                 onClick={(e) => {
                   if (!onEmpty || e.target !== e.currentTarget) return;
                   const rect = e.currentTarget.getBoundingClientRect();
@@ -432,7 +432,7 @@ function TimeGrid({
                       key={a.id}
                       type="button"
                       onClick={() => onPick(a)}
-                      className={cn("absolute overflow-hidden rounded-[5px] border border-l-[3px] border-line bg-surface px-1.5 py-1 text-left shadow-sm transition-shadow hover:z-10 hover:shadow-md focus-visible:z-10", TONE_STYLE[tone])}
+                      className={cn("absolute overflow-hidden rounded-[5px] border border-s-[3px] border-line bg-surface px-1.5 py-1 text-start shadow-sm transition-shadow hover:z-10 hover:shadow-md focus-visible:z-10", TONE_STYLE[tone])}
                       style={{
                         top: (s - gridStart) * PX_PER_MIN + 1,
                         height: h,
@@ -458,7 +458,7 @@ function TimeGrid({
                 })}
                 {c.date === today && nowMin >= gridStart && nowMin <= endH * 60 && (
                   <div className="pointer-events-none absolute inset-x-0 z-[5] flex items-center" style={{ top: (nowMin - gridStart) * PX_PER_MIN }} aria-hidden>
-                    <span className="-ml-1 size-2 rounded-full bg-danger" />
+                    <span className="-ms-1 size-2 rounded-full bg-danger" />
                     <span className="h-px flex-1 bg-danger" />
                   </div>
                 )}
@@ -527,12 +527,12 @@ function MonthGrid({ from, month, appts, tz, today, onDay }: { from: string; mon
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-7 overflow-hidden rounded-lg border-l border-t border-line">
+      <div className="grid grid-cols-7 overflow-hidden rounded-lg border-s border-t border-line">
         {days.map((d) => {
           const list = (byDay.get(d) ?? []).filter((a) => !["cancelled", "declined", "expired"].includes(a.status));
           const inMonth = d.startsWith(month);
           return (
-            <button key={d} type="button" onClick={() => onDay(d)} className={cn("flex min-h-[72px] flex-col items-stretch border-b border-r border-line p-1.5 text-left transition-colors hover:bg-surface sm:min-h-[104px]", !inMonth && "bg-surface-2/40")}>
+            <button key={d} type="button" onClick={() => onDay(d)} className={cn("flex min-h-[72px] flex-col items-stretch border-b border-e border-line p-1.5 text-start transition-colors hover:bg-surface sm:min-h-[104px]", !inMonth && "bg-surface-2/40")}>
               <span className={cn("mb-1 flex size-6 items-center justify-center self-start rounded-full text-[12px] font-semibold tabular", d === today ? "bg-ink text-bg" : inMonth ? "text-ink" : "text-ink-3")}>{Number(d.slice(8))}</span>
               <span className="hidden space-y-0.5 sm:block">
                 {list.slice(0, 3).map((a) => (
@@ -573,8 +573,8 @@ function Agenda({ from, appts, tz, tones, onPick, currency, today, showMember, t
           <ul className="divide-y divide-line">
             {items.map((a) => (
               <li key={a.id}>
-                <button type="button" onClick={() => onPick(a)} className="flex w-full items-center gap-4 py-3 text-left">
-                  <span className="w-[68px] shrink-0 text-right text-[14px] font-semibold text-ink tabular">{fmtTime(a.startsAt, tz)}</span>
+                <button type="button" onClick={() => onPick(a)} className="flex w-full items-center gap-4 py-3 text-start">
+                  <span className="w-[68px] shrink-0 text-end text-[14px] font-semibold text-ink tabular">{fmtTime(a.startsAt, tz)}</span>
                   <span className="w-[3px] self-stretch rounded-full" style={{ background: showMember && a.memberId ? tones.get(a.memberId) : STATUS_TONE[a.status] === "attention" ? "var(--warn)" : "var(--accent)" }} aria-hidden />
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-[15px] font-medium text-ink">{a.customerName}</span>

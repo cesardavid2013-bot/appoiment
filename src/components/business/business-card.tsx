@@ -72,11 +72,11 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
           <NoirCover name={b.name} label={b.categoryName} className="size-full transition-transform duration-700 group-hover:scale-[1.02]" />
         )}
         {b.logo && b.cover && (
-          <span className="absolute bottom-3 left-3 overflow-hidden rounded-full ring-2 ring-surface">
+          <span className="absolute bottom-3 start-3 overflow-hidden rounded-full ring-2 ring-surface">
             <Avatar name={b.name} media={b.logo} size={36} />
           </span>
         )}
-        {b.promoted && <span className="absolute left-3 top-3 rounded-sm bg-bg/90 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-ink">Promoted</span>}
+        {b.promoted && <span className="absolute start-3 top-3 rounded-sm bg-bg/90 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-ink">Promoted</span>}
       </Link>
 
       <div className="flex flex-1 flex-col p-4 sm:p-5">
@@ -141,7 +141,7 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
         </div>
       </div>
 
-      <div className="absolute right-3 top-3 z-20">
+      <div className="absolute end-3 top-3 z-20">
         <FavoriteButton businessId={b.id} initial={favorite} signedIn={signedIn} variant="overlay" />
       </div>
     </article>

@@ -19,7 +19,7 @@ export function ProThreadFrame({ name, avatar, subtitle, actions, aside, childre
             <ChevronLeft className="size-5" />
           </Link>
           <Avatar name={name} media={avatar} size={38} />
-          <div className="min-w-0 flex-1 pl-1">
+          <div className="min-w-0 flex-1 ps-1">
             <h2 className="truncate text-[15px] font-semibold text-ink">{name}</h2>
             {subtitle && <p className="truncate text-[12px] text-ink-3">{subtitle}</p>}
           </div>
@@ -27,7 +27,7 @@ export function ProThreadFrame({ name, avatar, subtitle, actions, aside, childre
         </header>
         {children}
       </div>
-      {aside && <aside className="hidden w-[300px] shrink-0 overflow-y-auto border-l border-line xl:block">{aside}</aside>}
+      {aside && <aside className="hidden w-[300px] shrink-0 overflow-y-auto border-s border-line xl:block">{aside}</aside>}
     </div>
   );
 }

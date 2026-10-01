@@ -254,3 +254,8 @@
     animation: rise 700ms var(--ease-out-soft) both;
   }
 }
+
+/* Right-to-left languages: directional icons point the other way. */
+[dir="rtl"] :is(.lucide-arrow-right, .lucide-arrow-left, .lucide-chevron-right, .lucide-chevron-left, .lucide-chevrons-right, .lucide-chevrons-left, .lucide-arrow-up-right, .lucide-move-right) {
+  transform: scaleX(-1);
+}

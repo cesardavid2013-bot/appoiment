@@ -1,0 +1,25 @@
+{
+  "language": "Language",
+  "footer": {
+    "tagline": "Book trusted professionals. Run your appointments with less effort.",
+    "discover": "Discover",
+    "explore": "Explore",
+    "hair": "Hair & barbers",
+    "wellness": "Wellness",
+    "fitness": "Fitness",
+    "forPros": "For professionals",
+    "howItWorks": "How it works",
+    "listServices": "List your services",
+    "dashboard": "Business dashboard",
+    "help": "Help",
+    "support": "Support",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "copyright": "© {year} Kept. All rights reserved."
+  },
+  "price": {
+    "free": "Free",
+    "quote": "Price on consultation",
+    "from": "From {price}"
+  }
+}

@@ -76,7 +76,7 @@ export default async function AdminReviewsPage({ searchParams }: PageProps<"/adm
                   <Td>
                     <Stars value={r.rating} size={12} />
                     {r.body ? <p className="mt-1 line-clamp-4 text-sm leading-relaxed text-ink-2">{r.body}</p> : <p className="mt-1 text-[13px] text-ink-3">No text</p>}
-                    {r.responseBody && <p className="mt-1.5 line-clamp-2 border-l-2 border-line pl-2 text-[13px] text-ink-3">Reply: {r.responseBody}</p>}
+                    {r.responseBody && <p className="mt-1.5 line-clamp-2 border-s-2 border-line ps-2 text-[13px] text-ink-3">Reply: {r.responseBody}</p>}
                   </Td>
                   <Td>
                     <Link href={`/admin/businesses/${r.businessId}`} className="hover:underline">

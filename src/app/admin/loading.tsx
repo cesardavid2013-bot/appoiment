@@ -12,7 +12,7 @@ export default function AdminLoading() {
           <div key={i} className="flex items-center gap-4 border-b border-line px-4 py-3.5 last:border-0">
             <Skeleton className="h-4 w-1/4" />
             <Skeleton className="h-4 w-1/6" />
-            <Skeleton className="ml-auto h-4 w-16" />
+            <Skeleton className="ms-auto h-4 w-16" />
           </div>
         ))}
       </div>

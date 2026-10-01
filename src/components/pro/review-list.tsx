@@ -145,7 +145,7 @@ function ReviewRow({ r, timezone, businessName }: { r: ReviewItem; timezone: str
           <button
             type="button"
             onClick={() => setReporting(true)}
-            className="-mr-2 -mt-1.5 inline-flex h-9 shrink-0 items-center gap-1.5 rounded-md px-2 text-[13px] text-ink-3 hover:bg-surface-2 hover:text-ink"
+            className="-me-2 -mt-1.5 inline-flex h-9 shrink-0 items-center gap-1.5 rounded-md px-2 text-[13px] text-ink-3 hover:bg-surface-2 hover:text-ink"
             aria-label={`Report review by ${r.authorName}`}
           >
             <Flag className="size-3.5" /> Report
@@ -209,7 +209,7 @@ function ReviewRow({ r, timezone, businessName }: { r: ReviewItem; timezone: str
           </div>
         </div>
       ) : r.responseBody ? (
-        <div className="mt-4 border-l-2 border-line-strong pl-4">
+        <div className="mt-4 border-s-2 border-line-strong ps-4">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <p className="text-[13px] font-medium text-ink">
               Your reply
@@ -218,7 +218,7 @@ function ReviewRow({ r, timezone, businessName }: { r: ReviewItem; timezone: str
                 {r.responderName ? ` · ${r.responderName}` : ""}
               </span>
             </p>
-            <button type="button" onClick={() => setEditing(true)} className="-mr-2 inline-flex h-9 items-center gap-1.5 rounded-md px-2 text-[13px] text-ink-2 hover:bg-surface-2 hover:text-ink">
+            <button type="button" onClick={() => setEditing(true)} className="-me-2 inline-flex h-9 items-center gap-1.5 rounded-md px-2 text-[13px] text-ink-2 hover:bg-surface-2 hover:text-ink">
               <Pencil className="size-3.5" /> Edit
             </button>
           </div>

@@ -128,7 +128,7 @@ function Account({ viewer }: { viewer: AdminShellViewer }) {
         <ArrowUpRight className="size-4 text-ink-3" aria-hidden />
         Back to Kept
       </Link>
-      <button type="button" onClick={logout} className="flex h-9 w-full items-center gap-2.5 rounded-md px-2.5 text-left text-sm text-ink-2 hover:bg-surface-2 hover:text-ink">
+      <button type="button" onClick={logout} className="flex h-9 w-full items-center gap-2.5 rounded-md px-2.5 text-start text-sm text-ink-2 hover:bg-surface-2 hover:text-ink">
         <LogOut className="size-4 text-ink-3" aria-hidden />
         Sign out
       </button>
@@ -141,7 +141,7 @@ export function AdminShell({ viewer, counts, children }: { viewer: AdminShellVie
   return (
     <div className="min-h-dvh bg-bg lg:grid lg:grid-cols-[240px_minmax(0,1fr)]">
       {/* Desktop sidebar */}
-      <div className="hidden border-r border-line bg-surface-2/40 lg:block">
+      <div className="hidden border-e border-line bg-surface-2/40 lg:block">
         <aside className="sticky top-0 flex h-dvh flex-col px-3 py-4">
           <div className="mb-6 px-2.5">
             <Logo href="/admin" suffix="Admin" />
@@ -157,17 +157,17 @@ export function AdminShell({ viewer, counts, children }: { viewer: AdminShellVie
       <header className="sticky top-0 z-40 flex h-14 items-center justify-between border-b border-line bg-bg/90 px-4 backdrop-blur-md safe-top lg:hidden">
         <Logo href="/admin" suffix="Admin" />
         <D.Root open={open} onOpenChange={setOpen}>
-          <D.Trigger className="-mr-2 flex size-10 items-center justify-center rounded-md text-ink-2 hover:bg-surface-2 hover:text-ink" aria-label="Open admin menu">
+          <D.Trigger className="-me-2 flex size-10 items-center justify-center rounded-md text-ink-2 hover:bg-surface-2 hover:text-ink" aria-label="Open admin menu">
             <MenuIcon className="size-5" />
           </D.Trigger>
           <D.Portal>
             <D.Overlay className="fixed inset-0 z-50 bg-overlay data-[state=open]:animate-fade-in" />
-            <D.Content className="fixed inset-y-0 left-0 z-50 flex w-[min(300px,86vw)] flex-col bg-surface px-3 py-4 shadow-lg outline-none data-[state=open]:animate-fade-in">
+            <D.Content className="fixed inset-y-0 start-0 z-50 flex w-[min(300px,86vw)] flex-col bg-surface px-3 py-4 shadow-lg outline-none data-[state=open]:animate-fade-in">
               <div className="mb-5 flex items-center justify-between px-2.5">
                 <D.Title className="sr-only">Admin navigation</D.Title>
                 <D.Description className="sr-only">Sections of the admin console</D.Description>
                 <Logo href="/admin" suffix="Admin" />
-                <D.Close className="-mr-2 flex size-9 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Close menu">
+                <D.Close className="-me-2 flex size-9 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Close menu">
                   <X className="size-5" />
                 </D.Close>
               </div>

@@ -111,10 +111,10 @@ export function MediaVideo({ media, className, autoPlayInView = false, sizes = "
       {!active && (
         <button type="button" onClick={() => setActive(true)} className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors hover:bg-black/20" aria-label="Play video">
           <span className="flex size-14 items-center justify-center rounded-full bg-white/90 text-ink shadow-md backdrop-blur">
-            <Play className="ml-0.5 size-6 fill-current" />
+            <Play className="ms-0.5 size-6 fill-current" />
           </span>
           {media.durationSeconds ? (
-            <span className="absolute bottom-2.5 right-2.5 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white tabular">
+            <span className="absolute bottom-2.5 end-2.5 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white tabular">
               {Math.floor(media.durationSeconds / 60)}:{String(Math.round(media.durationSeconds % 60)).padStart(2, "0")}
             </span>
           ) : null}
