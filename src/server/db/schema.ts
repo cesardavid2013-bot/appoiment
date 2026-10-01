@@ -1346,3 +1346,37 @@ export const rateLimits = pgTable(
   },
   (t) => [primaryKey({ columns: [t.key, t.windowStart] })],
 );
+
+/* ───────────────────────────── Spotlight ─────────────────────────── */
+
+export const promotionStatus = pgEnum("spotlight_status", ["active", "paused", "ended"]);
+
+/**
+ * Promoted placement in search ("Spotlight"). Always labelled "Promoted" to
+ * customers. Free during launch (priceCents = 0); the billing fields exist so
+ * paid campaigns can be enabled without a schema change.
+ */
+export const spotlightCampaigns = pgTable(
+  "spotlight_campaigns",
+  {
+    id: id(),
+    businessId: uuid("business_id")
+      .notNull()
+      .references(() => businesses.id),
+    /** null = shown for any search the business matches */
+    categoryId: uuid("category_id").references(() => categories.id),
+    status: promotionStatus("status").notNull().default("active"),
+    startsAt: ts("starts_at").notNull().defaultNow(),
+    endsAt: ts("ends_at").notNull(),
+    priceCents: integer("price_cents").notNull().default(0),
+    currency: text("currency").notNull().default("USD"),
+    impressions: integer("impressions").notNull().default(0),
+    clicks: integer("clicks").notNull().default(0),
+    createdByUserId: uuid("created_by_user_id").references(() => users.id),
+    createdAt: createdAt(),
+  },
+  (t) => [
+    index("spotlight_active_idx").on(t.status, t.endsAt),
+    uniqueIndex("spotlight_one_active_uq").on(t.businessId).where(sql`${t.status} = 'active'`),
+  ],
+);

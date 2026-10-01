@@ -323,14 +323,29 @@ export type SlotsRequest = {
   fromDate: string;
   toDate: string;
   optionIds: string[];
+  /** Discovery hints only: fill required choices with the default (or shortest) option. */
+  autoDefaults?: boolean;
 };
+
+/** Default choice per required group: the provider's default, else the shortest option. */
+export function defaultOptionIds(svc: BookableService): string[] {
+  const ids: string[] = [];
+  for (const g of svc.optionGroups) {
+    if (!g.required) continue;
+    const active = g.options.filter((o) => o.isActive);
+    if (!active.length) continue;
+    const pick = [...active].sort((a, b) => a.durationDeltaMinutes - b.durationDeltaMinutes)[0];
+    ids.push(pick.id);
+  }
+  return ids;
+}
 
 /** Public slot listing used by the booking flow. Read-only; never authoritative on its own. */
 export async function getSlots(req: SlotsRequest) {
   if (req.toDate < req.fromDate) throw new AppError("validation", "The end date must be after the start date.");
   if (addDaysIso(req.fromDate, MAX_SLOT_RANGE_DAYS) < req.toDate) throw new AppError("validation", "Choose a shorter date range.");
   const svc = await loadBookableService(req.serviceId);
-  const selected = selectOptions(svc, req.optionIds);
+  const selected = selectOptions(svc, req.autoDefaults && req.optionIds.length === 0 ? defaultOptionIds(svc) : req.optionIds);
   const loc = resolveLocation(svc, req.locationId);
   const members = candidateMembers(svc, selected, loc?.id ?? null, req.memberId);
   const queries = await buildSlotQueries({

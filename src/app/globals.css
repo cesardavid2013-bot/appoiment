@@ -1,26 +1,186 @@
 @import "tailwindcss";
 
+/*
+ * Kept design tokens.
+ * Warm paper neutrals, near-black ink for primary actions, one restrained
+ * accent (pine) for availability/selection. Every color is a token so dark
+ * mode is a token swap, never per-component overrides.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #faf9f6;
+  --surface: #ffffff;
+  --surface-2: #f3f1ec;
+  --surface-3: #ebe8e1;
+  --ink: #1a1814;
+  --ink-2: #48443d;
+  --ink-3: #78736a;
+  --line: #e6e2da;
+  --line-strong: #d3cec3;
+  --accent: #2e5e4e;
+  --accent-ink: #ffffff;
+  --accent-soft: #e5efe9;
+  --accent-text: #24493d;
+  --warn: #9a5b0c;
+  --warn-soft: #fbf0dc;
+  --danger: #b3261e;
+  --danger-soft: #fbe9e7;
+  --info: #2f5d8a;
+  --info-soft: #e7eef6;
+  --star: #1a1814;
+  --overlay: rgb(20 18 15 / 0.45);
+  --shadow-sm: 0 1px 2px rgb(26 24 20 / 0.05);
+  --shadow-md: 0 1px 2px rgb(26 24 20 / 0.04), 0 6px 20px rgb(26 24 20 / 0.07);
+  --shadow-lg: 0 2px 6px rgb(26 24 20 / 0.06), 0 18px 48px rgb(26 24 20 / 0.14);
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --bg: #11100e;
+    --surface: #191816;
+    --surface-2: #211f1c;
+    --surface-3: #2a2824;
+    --ink: #f3f0ea;
+    --ink-2: #cdc7bc;
+    --ink-3: #958f84;
+    --line: #2e2c28;
+    --line-strong: #403d37;
+    --accent: #7fb9a4;
+    --accent-ink: #0f1a16;
+    --accent-soft: #1d2e28;
+    --accent-text: #9fd0bd;
+    --warn: #e0a64a;
+    --warn-soft: #2f2414;
+    --danger: #f08b80;
+    --danger-soft: #331b18;
+    --info: #8fb5df;
+    --info-soft: #1a2633;
+    --star: #f3f0ea;
+    --overlay: rgb(0 0 0 / 0.6);
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow-md: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
+    --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.4), 0 18px 48px rgb(0 0 0 / 0.5);
+    color-scheme: dark;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-overlay: var(--overlay);
+  --font-sans: var(--font-ui), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-serif), ui-serif, Georgia, serif;
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-fade-in: fade-in 180ms var(--ease-out-soft);
+  --animate-rise: rise 260ms var(--ease-out-soft);
+  --animate-sheet: sheet 320ms var(--ease-out-soft);
+  --animate-pop: pop 360ms var(--ease-out-soft);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes sheet {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@keyframes pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.22); }
+  100% { transform: scale(1); }
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  button, [role="button"], a { -webkit-tap-highlight-color: transparent; }
+  input, textarea, select { font-size: 16px; } /* prevents iOS zoom */
+  @media (min-width: 768px) { input, textarea, select { font-size: 15px; } }
+  [hidden] { display: none !important; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .tabular { font-variant-numeric: tabular-nums; }
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+  .safe-top { padding-top: env(safe-area-inset-top); }
+  .skeleton {
+    position: relative;
+    overflow: hidden;
+    background: var(--surface-2);
+  }
+  .skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.35), transparent);
+    animation: shimmer 1.4s infinite;
+  }
+  @media (prefers-color-scheme: dark) {
+    .skeleton::after { background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.05), transparent); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
