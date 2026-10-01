@@ -93,5 +93,20 @@
     "optional": "Opcional",
     "stars": "{value} de 5 estrellas",
     "notifications": "Notificaciones"
+  },
+  "notFound": {
+    "eyebrow": "Página no encontrada",
+    "title": "Esa página ya no está aquí.",
+    "body": "El enlace puede ser antiguo o el profesional pudo cambiar su dirección.",
+    "home": "Volver al inicio",
+    "explore": "Explorar profesionales"
+  },
+  "error": {
+    "eyebrow": "Algo salió mal",
+    "title": "No pudimos cargar esta página.",
+    "body": "Es cosa nuestra, no tuya. Inténtalo de nuevo en un momento; si sigue pasando, cuéntanos.",
+    "retry": "Reintentar",
+    "support": "Contactar soporte",
+    "ref": "Referencia {id}"
   }
 }

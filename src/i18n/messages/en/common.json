@@ -93,5 +93,20 @@
     "optional": "Optional",
     "stars": "{value} out of 5 stars",
     "notifications": "Notifications"
+  },
+  "notFound": {
+    "eyebrow": "Page not found",
+    "title": "That page has moved on.",
+    "body": "The link may be old, or the professional may have changed their address.",
+    "home": "Back to home",
+    "explore": "Explore professionals"
+  },
+  "error": {
+    "eyebrow": "Something went wrong",
+    "title": "We couldn't load this page.",
+    "body": "It's on our side, not yours. Try again in a moment — if it keeps happening, tell us.",
+    "retry": "Try again",
+    "support": "Contact support",
+    "ref": "Reference {id}"
   }
 }
