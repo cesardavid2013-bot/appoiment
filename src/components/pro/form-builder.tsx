@@ -28,6 +28,9 @@ import { ConfirmDialog } from "@/components/ui/dialog";
 import { Field, FormError, Input, Select, Textarea } from "@/components/ui/field";
 import { Menu, MenuContent, MenuItem, MenuLabel, MenuTrigger } from "@/components/ui/menu";
 import { FIELD_TYPES, validateAnswers, type FieldType, type FormField } from "@/domain/forms";
+import { useT } from "@/i18n/client";
+import { rich } from "@/i18n/rich";
+import type { TFunction } from "@/i18n/translate";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 
@@ -44,15 +47,8 @@ const TYPE_ICONS: Record<FieldType, LucideIcon> = {
   acknowledgement: FileCheck2,
 };
 
-const TYPE_HINTS: Record<FieldType, string> = {
-  short_text: "A name, a number, a few words.",
-  long_text: "Room for a few sentences.",
-  yes_no: "Two buttons: Yes and No.",
-  single_choice: "Clients pick one option.",
-  multi_choice: "Clients tick any that apply.",
-  date: "A date picker, e.g. date of birth or event date.",
-  acknowledgement: "A statement clients tick to confirm they've read it.",
-};
+// Type names, hints and placeholders live in messages under `proSettings.builder.types.<type>`.
+const FIELD_TYPE_KEYS = Object.keys(FIELD_TYPES) as FieldType[];
 
 const isChoice = (t: FieldType) => t === "single_choice" || t === "multi_choice";
 
@@ -75,22 +71,22 @@ function newId() {
 }
 
 /** Same rules the server enforces (domain/forms.ts), checked before saving so errors land on the right question. */
-function validate(name: string, drafts: Draft[]) {
+function validate(t: TFunction, name: string, drafts: Draft[]) {
   const errors: Record<string, string> = {};
-  if (name.trim().length < 2) errors.name = "Give the form a name";
+  if (name.trim().length < 2) errors.name = t("builder.errors.name");
   for (const d of drafts) {
-    if (!d.label.trim()) errors[`${d.id}.label`] = d.type === "acknowledgement" ? "Write the statement clients agree to" : "Write the question";
+    if (!d.label.trim()) errors[`${d.id}.label`] = d.type === "acknowledgement" ? t("builder.errors.statement") : t("builder.errors.question");
     if (isChoice(d.type)) {
       const opts = d.options.map((o) => o.trim()).filter(Boolean);
-      if (opts.length < 2) errors[`${d.id}.options`] = "Add at least two choices";
-      else if (new Set(opts.map((o) => o.toLowerCase())).size !== opts.length) errors[`${d.id}.options`] = "Each choice needs to be different";
+      if (opts.length < 2) errors[`${d.id}.options`] = t("builder.errors.twoChoices");
+      else if (new Set(opts.map((o) => o.toLowerCase())).size !== opts.length) errors[`${d.id}.options`] = t("builder.errors.distinct");
     }
   }
   return errors;
 }
 
 /** Warns before leaving with unsaved edits: closing the tab, and clicking any in-app link. */
-function useUnsavedGuard(dirty: boolean) {
+function useUnsavedGuard(dirty: boolean, message: string) {
   useEffect(() => {
     if (!dirty) return;
     const beforeUnload = (e: BeforeUnloadEvent) => e.preventDefault();
@@ -101,7 +97,7 @@ function useUnsavedGuard(dirty: boolean) {
       const url = new URL(a.href, window.location.href);
       if (url.origin !== window.location.origin) return;
       if (url.pathname === window.location.pathname && url.search === window.location.search) return;
-      if (!window.confirm("You have unsaved changes to this form. Leave without saving them?")) {
+      if (!window.confirm(message)) {
         e.preventDefault();
         e.stopPropagation();
       }
@@ -112,11 +108,12 @@ function useUnsavedGuard(dirty: boolean) {
       window.removeEventListener("beforeunload", beforeUnload);
       document.removeEventListener("click", onClick, true);
     };
-  }, [dirty]);
+  }, [dirty, message]);
 }
 
 export function FormBuilder({ formId, initial, usedBy }: { formId?: string; initial: { name: string; fields: FormField[] }; usedBy: FormUsageItem[] }) {
   const router = useRouter();
+  const t = useT("proSettings");
   const [baseline, setBaseline] = useState(() => JSON.stringify({ name: initial.name, fields: initial.fields.map(toDraft).map(toField) }));
   const [name, setName] = useState(initial.name);
   const [drafts, setDrafts] = useState<Draft[]>(() => initial.fields.map(toDraft));
@@ -131,7 +128,7 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
 
   const current = useMemo(() => JSON.stringify({ name: name.trim(), fields: drafts.map(toField) }), [name, drafts]);
   const dirty = current !== baseline || (!formId && (name.trim() !== "" || drafts.length > 0));
-  useUnsavedGuard(dirty && !saving);
+  useUnsavedGuard(dirty && !saving, t("builder.leaveConfirm"));
 
   // Move focus to the question that was just added or opened with an error.
   useEffect(() => {
@@ -192,7 +189,7 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
   }
 
   async function save() {
-    const errs = validate(name, drafts);
+    const errs = validate(t, name, drafts);
     setErrors(errs);
     setFormError(null);
     if (Object.keys(errs).length) {
@@ -210,10 +207,10 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
       const row = await api<{ id: string }>(formId ? `/api/pro/forms/${formId}` : "/api/pro/forms", { method: formId ? "PUT" : "POST", body });
       setBaseline(JSON.stringify(body));
       if (formId) {
-        toast.success("Form saved");
+        toast.success(t("builder.toasts.saved"));
         router.refresh();
       } else {
-        toast.success("Form created");
+        toast.success(t("builder.toasts.created"));
         router.replace(`/pro/settings/forms/${row.id}`);
       }
     } catch (err) {
@@ -237,7 +234,7 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
     setArchiving(true);
     try {
       const res = await api<{ services: { id: string; name: string }[] }>(`/api/pro/forms/${formId}`, { method: "DELETE" });
-      toast.success(res.services.length ? `Form archived and removed from ${res.services.length} service${res.services.length === 1 ? "" : "s"}` : "Form archived");
+      toast.success(res.services.length ? t("builder.toasts.archivedFrom", { count: res.services.length }) : t("builder.toasts.archived"));
       setBaseline(current);
       router.push("/pro/settings/forms");
       router.refresh();
@@ -247,28 +244,28 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
     }
   }
 
-  const previewFields = drafts.map(toField).map((f) => ({ ...f, label: f.label || "Untitled question" }));
+  const previewFields = drafts.map(toField).map((f) => ({ ...f, label: f.label || t("builder.untitled") }));
   const errorCount = Object.keys(errors).length;
 
   return (
     <>
       <div className="flex flex-wrap items-end justify-between gap-3">
-        <h1 className="min-w-0 break-words font-display text-[30px] leading-[1.1] tracking-[-0.01em] text-ink sm:text-[36px]">{formId ? initial.name : "New form"}</h1>
+        <h1 className="min-w-0 break-words font-display text-[30px] leading-[1.1] tracking-[-0.01em] text-ink sm:text-[36px]">{formId ? initial.name : t("forms.newForm")}</h1>
         {formId && (
           <Button variant="ghost" size="sm" icon={<Archive className="size-4" />} onClick={() => setArchiveOpen(true)}>
-            Archive form
+            {t("builder.archive")}
           </Button>
         )}
       </div>
 
       <div className="mt-5 lg:hidden">
         <Segmented
-          label="Show"
+          label={t("builder.show")}
           value={pane}
           onChange={setPane}
           options={[
-            { value: "edit", label: `Questions${drafts.length ? ` (${drafts.length})` : ""}` },
-            { value: "preview", label: "Client preview" },
+            { value: "edit", label: drafts.length ? t("builder.questionsTab", { count: drafts.length }) : t("builder.questions") },
+            { value: "preview", label: t("builder.previewTab") },
           ]}
         />
       </div>
@@ -279,9 +276,9 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
           <FormError message={formError} />
           <section aria-labelledby="form-details" className="rounded-xl border border-line bg-surface px-5 py-5 sm:px-6">
             <h2 id="form-details" className="sr-only">
-              Form details
+              {t("builder.details")}
             </h2>
-            <Field label="Form name" hint="Only your team sees this. Clients just see the questions." error={errors.name}>
+            <Field label={t("builder.nameLabel")} hint={t("builder.nameHint")} error={errors.name}>
               {(p) => (
                 <Input
                   {...p}
@@ -292,7 +289,7 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
                     setErrors(({ name: _n, ...rest }) => rest);
                   }}
                   maxLength={80}
-                  placeholder="e.g. New client consultation"
+                  placeholder={t("builder.namePlaceholder")}
                   autoFocus={!formId}
                 />
               )}
@@ -303,16 +300,14 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
           <section aria-labelledby="questions-h">
             <div className="mb-3 flex items-baseline justify-between gap-3">
               <h2 id="questions-h" className="text-base font-semibold text-ink">
-                Questions
+                {t("builder.questions")}
               </h2>
-              <p className="text-[13px] text-ink-3 tabular">
-                {drafts.length} of {MAX_QUESTIONS}
-              </p>
+              <p className="text-[13px] text-ink-3 tabular">{t("builder.questionCount", { count: drafts.length, max: MAX_QUESTIONS })}</p>
             </div>
             {drafts.length === 0 ? (
               <div className="rounded-xl border border-dashed border-line-strong px-5 py-8 text-center">
-                <p className="text-sm font-medium text-ink">No questions yet</p>
-                <p className="mx-auto mt-1 max-w-xs text-[13px] leading-relaxed text-ink-3">Keep it short. Two or three questions get answered; ten get skipped.</p>
+                <p className="text-sm font-medium text-ink">{t("builder.emptyTitle")}</p>
+                <p className="mx-auto mt-1 max-w-xs text-[13px] leading-relaxed text-ink-3">{t("builder.emptyBody")}</p>
                 <div className="mt-4 flex justify-center">
                   <AddQuestion onAdd={add} disabled={false} />
                 </div>
@@ -358,14 +353,22 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
       <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface/95 backdrop-blur-md lg:bottom-0 lg:start-[248px]">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-10">
           <p className={cn("min-w-0 truncate text-sm", errorCount ? "text-danger" : "text-ink-3")} aria-live="polite">
-            {saving ? "Saving…" : errorCount ? `Fix ${errorCount} thing${errorCount === 1 ? "" : "s"} before saving` : dirty ? "Unsaved changes" : formId ? "All changes saved" : "New form"}
+            {saving
+              ? t("builder.saveBar.saving")
+              : errorCount
+                ? t("builder.saveBar.fix", { count: errorCount })
+                : dirty
+                  ? t("builder.saveBar.unsaved")
+                  : formId
+                    ? t("builder.saveBar.allSaved")
+                    : t("builder.saveBar.newForm")}
           </p>
           <div className="flex shrink-0 items-center gap-2">
             <Button variant="ghost" onClick={discard} disabled={saving || (!dirty && Boolean(formId))}>
-              {formId ? "Discard" : "Cancel"}
+              {formId ? t("builder.saveBar.discard") : t("builder.saveBar.cancel")}
             </Button>
             <Button onClick={save} loading={saving} disabled={!dirty && Boolean(formId)}>
-              {formId ? "Save changes" : "Create form"}
+              {formId ? t("builder.saveBar.save") : t("builder.saveBar.create")}
             </Button>
           </div>
         </div>
@@ -374,15 +377,11 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
       <ConfirmDialog
         open={archiveOpen}
         onOpenChange={setArchiveOpen}
-        title={`Archive “${initial.name}”?`}
-        confirmLabel={usedBy.length ? `Archive and remove from ${usedBy.length} service${usedBy.length === 1 ? "" : "s"}` : "Archive form"}
+        title={t("builder.archiveDialog.title", { name: initial.name })}
+        confirmLabel={usedBy.length ? t("builder.archiveDialog.confirmUsed", { count: usedBy.length }) : t("builder.archiveDialog.confirm")}
         onConfirm={archive}
         loading={archiving}
-        description={
-          usedBy.length
-            ? "These services will stop asking these questions on new bookings until you choose another form:"
-            : "No service asks this form, so nothing changes for clients."
-        }
+        description={usedBy.length ? t("builder.archiveDialog.descriptionUsed") : t("builder.archiveDialog.descriptionUnused")}
       >
         {usedBy.length > 0 && (
           <ul className="mb-3 list-disc space-y-0.5 ps-5 text-sm text-ink-2">
@@ -391,56 +390,63 @@ export function FormBuilder({ formId, initial, usedBy }: { formId?: string; init
             ))}
           </ul>
         )}
-        <p className="text-sm leading-relaxed text-ink-3">Answers already given on past and upcoming bookings stay on those bookings.{dirty ? " Unsaved edits to this form will be lost." : ""}</p>
+        <p className="text-sm leading-relaxed text-ink-3">
+          {t("builder.archiveDialog.keep")}
+          {dirty ? ` ${t("builder.archiveDialog.lost")}` : ""}
+        </p>
       </ConfirmDialog>
     </>
   );
 }
 
 function UsageLine({ usedBy }: { usedBy: FormUsageItem[] }) {
+  const t = useT("proSettings");
   if (!usedBy.length)
     return (
       <p className="mt-4 border-t border-line pt-4 text-[13px] leading-relaxed text-ink-3">
-        No service asks this form yet. Open a service in{" "}
-        <Link href="/pro/services" className="font-medium text-ink underline decoration-line-strong underline-offset-2 hover:decoration-ink">
-          Services
-        </Link>{" "}
-        and choose it under Questions &amp; requirements.
+        {rich(t("builder.usage.none"), {
+          link: (c) => (
+            <Link href="/pro/services" className="font-medium text-ink underline decoration-line-strong underline-offset-2 hover:decoration-ink">
+              {c}
+            </Link>
+          ),
+        })}
       </p>
     );
   return (
     <div className="mt-4 border-t border-line pt-4">
-      <p className="text-[13px] font-medium text-ink-2">Asked when clients book</p>
+      <p className="text-[13px] font-medium text-ink-2">{t("builder.usage.title")}</p>
       <ul className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1">
         {usedBy.map((s) => (
           <li key={s.id} className="text-sm">
             <Link href={`/pro/services/${s.id}#questions`} className="font-medium text-ink underline decoration-line-strong underline-offset-2 hover:decoration-ink">
               {s.name}
             </Link>
-            {s.status !== "active" && <span className="text-ink-3"> · hidden</span>}
+            {s.status !== "active" && <span className="text-ink-3"> · {t("builder.usage.hidden")}</span>}
           </li>
         ))}
       </ul>
-      <p className="mt-2 text-[13px] text-ink-3">Changes apply to new bookings for these services as soon as you save.</p>
+      <p className="mt-2 text-[13px] text-ink-3">{t("builder.usage.note")}</p>
     </div>
   );
 }
 
-function AddQuestion({ onAdd, disabled }: { onAdd: (t: FieldType) => void; disabled: boolean }) {
+function AddQuestion({ onAdd, disabled }: { onAdd: (type: FieldType) => void; disabled: boolean }) {
+  const t = useT("proSettings");
   return (
     <Menu>
       <MenuTrigger asChild disabled={disabled}>
         <Button variant="secondary" icon={<Plus className="size-4" />}>
-          {disabled ? `Limit of ${MAX_QUESTIONS} questions reached` : "Add question"}
+          {disabled ? t("builder.add.limit", { max: MAX_QUESTIONS }) : t("builder.add.label")}
         </Button>
       </MenuTrigger>
       <MenuContent align="start" className="w-64">
-        <MenuLabel>Question type</MenuLabel>
-        {(Object.keys(FIELD_TYPES) as FieldType[]).map((t) => {
-          const Icon = TYPE_ICONS[t];
+        <MenuLabel>{t("builder.add.type")}</MenuLabel>
+        {FIELD_TYPE_KEYS.map((type) => {
+          const Icon = TYPE_ICONS[type];
           return (
-            <MenuItem key={t} icon={<Icon />} onSelect={() => onAdd(t)}>
-              {FIELD_TYPES[t]}
+            <MenuItem key={type} icon={<Icon />} onSelect={() => onAdd(type)}>
+              {t(`builder.types.${type}.label`)}
             </MenuItem>
           );
         })}
@@ -463,6 +469,7 @@ function QuestionCard(p: {
   labelError?: string;
   optionsError?: string;
 }) {
+  const t = useT("proSettings");
   const { draft: d, index, count, open } = p;
   const Icon = TYPE_ICONS[d.type];
   const hasError = Boolean(p.labelError || p.optionsError);
@@ -474,20 +481,20 @@ function QuestionCard(p: {
         <button type="button" onClick={p.onToggle} aria-expanded={open} aria-controls={`${d.id}-panel`} className="flex min-h-14 min-w-0 flex-1 items-start gap-3 py-3.5 text-start">
           <span className="mt-px w-5 shrink-0 text-sm text-ink-3 tabular">{index + 1}.</span>
           <span className="min-w-0 flex-1">
-            <span className={cn("block text-[15px] font-medium", d.label.trim() ? "text-ink" : "text-ink-3")}>{d.label.trim() || "Untitled question"}</span>
+            <span className={cn("block text-[15px] font-medium", d.label.trim() ? "text-ink" : "text-ink-3")}>{d.label.trim() || t("builder.untitled")}</span>
             <span className="mt-0.5 flex items-center gap-1.5 text-[13px] text-ink-3">
               <Icon className="size-3.5" aria-hidden />
-              {FIELD_TYPES[d.type]}
-              {d.required && <span>· Required</span>}
-              {hasError && !open && <span className="text-danger">· Needs attention</span>}
+              {t(`builder.types.${d.type}.label`)}
+              {d.required && <span>· {t("builder.card.required")}</span>}
+              {hasError && !open && <span className="text-danger">· {t("builder.card.attention")}</span>}
             </span>
           </span>
         </button>
         <div className="flex shrink-0 items-center py-2">
-          <IconButton label={`Move question ${index + 1} up`} disabled={index === 0} onClick={() => p.onMove(-1)}>
+          <IconButton label={t("builder.card.moveUp", { n: index + 1 })} disabled={index === 0} onClick={() => p.onMove(-1)}>
             <ArrowUp className="size-4" />
           </IconButton>
-          <IconButton label={`Move question ${index + 1} down`} disabled={index === count - 1} onClick={() => p.onMove(1)}>
+          <IconButton label={t("builder.card.moveDown", { n: index + 1 })} disabled={index === count - 1} onClick={() => p.onMove(1)}>
             <ArrowDown className="size-4" />
           </IconButton>
         </div>
@@ -495,7 +502,7 @@ function QuestionCard(p: {
 
       {open && (
         <div id={`${d.id}-panel`} className="space-y-4 border-t border-line px-4 pb-4 pt-4 sm:px-5">
-          <Field label="Type" hint={TYPE_HINTS[d.type]}>
+          <Field label={t("builder.card.type")} hint={t(`builder.types.${d.type}.hint`)}>
             {(fp) => (
               <Select
                 {...fp}
@@ -506,24 +513,24 @@ function QuestionCard(p: {
                   p.onChange({ type, options });
                 }}
               >
-                {(Object.keys(FIELD_TYPES) as FieldType[]).map((t) => (
-                  <option key={t} value={t}>
-                    {FIELD_TYPES[t]}
+                {FIELD_TYPE_KEYS.map((type) => (
+                  <option key={type} value={type}>
+                    {t(`builder.types.${type}.label`)}
                   </option>
                 ))}
               </Select>
             )}
           </Field>
-          <Field label={ack ? "Statement" : "Question"} error={p.labelError}>
+          <Field label={ack ? t("builder.card.statement") : t("builder.card.question")} error={p.labelError}>
             {(fp) =>
               ack ? (
-                <Textarea {...fp} data-focus={d.id} rows={2} value={d.label} onChange={(e) => p.onChange({ label: e.target.value })} maxLength={200} placeholder="e.g. I understand a patch test is needed 48 hours before a colour service." />
+                <Textarea {...fp} data-focus={d.id} rows={2} value={d.label} onChange={(e) => p.onChange({ label: e.target.value })} maxLength={200} placeholder={t("builder.types.acknowledgement.placeholder")} />
               ) : (
-                <Input {...fp} data-focus={d.id} value={d.label} onChange={(e) => p.onChange({ label: e.target.value })} maxLength={200} placeholder={PLACEHOLDERS[d.type]} />
+                <Input {...fp} data-focus={d.id} value={d.label} onChange={(e) => p.onChange({ label: e.target.value })} maxLength={200} placeholder={t(`builder.types.${d.type}.placeholder`)} />
               )
             }
           </Field>
-          <Field label="Help text" optional hint={ack ? "Shown under the statement, e.g. where to read the full policy." : "Shown under the question."}>
+          <Field label={t("builder.card.helpText")} optional hint={ack ? t("builder.card.helpAck") : t("builder.card.helpQuestion")}>
             {(fp) => <Input {...fp} value={d.helpText} onChange={(e) => p.onChange({ helpText: e.target.value })} maxLength={500} />}
           </Field>
           {isChoice(d.type) && <OptionsEditor id={d.id} options={d.options} onChange={(options) => p.onChange({ options })} error={p.optionsError} multi={d.type === "multi_choice"} />}
@@ -531,21 +538,21 @@ function QuestionCard(p: {
             <Switch
               checked={d.required}
               onCheckedChange={(required) => p.onChange({ required })}
-              label={ack ? "Must be ticked to book" : "Required"}
-              description={d.required ? (ack ? "Clients can't book until they tick it." : "Clients can't book without answering.") : "Clients can skip it."}
+              label={ack ? t("builder.card.mustTick") : t("builder.card.required")}
+              description={d.required ? (ack ? t("builder.card.ackRequired") : t("builder.card.questionRequired")) : t("builder.card.optional")}
             />
           </div>
           <div className="flex flex-wrap items-center justify-between gap-2 pt-1">
             <div className="flex gap-1">
               <Button variant="ghost" size="sm" icon={<Copy className="size-4" />} onClick={p.onDuplicate} disabled={!p.canDuplicate}>
-                Duplicate
+                {t("builder.card.duplicate")}
               </Button>
               <Button variant="ghost" size="sm" icon={<Trash2 className="size-4" />} onClick={p.onRemove} className="text-danger hover:bg-danger-soft hover:text-danger">
-                Delete
+                {t("builder.card.delete")}
               </Button>
             </div>
             <Button variant="secondary" size="sm" onClick={p.onToggle}>
-              Done
+              {t("builder.card.done")}
             </Button>
           </div>
         </div>
@@ -554,17 +561,8 @@ function QuestionCard(p: {
   );
 }
 
-const PLACEHOLDERS: Record<FieldType, string> = {
-  short_text: "e.g. What's the make and model of your car?",
-  long_text: "e.g. Tell us about any injuries we should know about.",
-  yes_no: "e.g. Is this your first visit?",
-  single_choice: "e.g. How long is your hair right now?",
-  multi_choice: "e.g. Which areas would you like us to focus on?",
-  date: "e.g. When is the event?",
-  acknowledgement: "",
-};
-
 function OptionsEditor({ id, options, onChange, error, multi }: { id: string; options: string[]; onChange: (o: string[]) => void; error?: string; multi: boolean }) {
+  const t = useT("proSettings");
   const refs = useRef<(HTMLInputElement | null)[]>([]);
   const focusIndex = useRef<number | null>(null);
   useEffect(() => {
@@ -580,7 +578,7 @@ function OptionsEditor({ id, options, onChange, error, multi }: { id: string; op
   }
   return (
     <fieldset aria-describedby={error ? `${id}-opt-error` : undefined}>
-      <legend className="mb-1.5 text-sm font-medium text-ink">Choices</legend>
+      <legend className="mb-1.5 text-sm font-medium text-ink">{t("builder.options.legend")}</legend>
       <ul className="space-y-2">
         {options.map((o, i) => (
           <li key={i} className="flex items-center gap-2">
@@ -590,7 +588,7 @@ function OptionsEditor({ id, options, onChange, error, multi }: { id: string; op
                 refs.current[i] = el;
               }}
               value={o}
-              aria-label={`Choice ${i + 1}`}
+              aria-label={t("builder.options.choice", { n: i + 1 })}
               aria-invalid={error && !o.trim() ? true : undefined}
               onChange={(e) => onChange(options.map((x, j) => (j === i ? e.target.value : x)))}
               onKeyDown={(e) => {
@@ -605,9 +603,9 @@ function OptionsEditor({ id, options, onChange, error, multi }: { id: string; op
                 }
               }}
               maxLength={100}
-              placeholder={`Choice ${i + 1}`}
+              placeholder={t("builder.options.choice", { n: i + 1 })}
             />
-            <IconButton label={`Remove choice ${i + 1}`} disabled={options.length <= 2} onClick={() => onChange(options.filter((_, j) => j !== i))}>
+            <IconButton label={t("builder.options.remove", { n: i + 1 })} disabled={options.length <= 2} onClick={() => onChange(options.filter((_, j) => j !== i))}>
               <X className="size-4" />
             </IconButton>
           </li>
@@ -625,7 +623,7 @@ function OptionsEditor({ id, options, onChange, error, multi }: { id: string; op
         className="mt-2 inline-flex h-10 items-center gap-1.5 rounded-md px-1 text-sm font-medium text-ink-2 hover:text-ink disabled:opacity-50"
       >
         <Plus className="size-4" aria-hidden />
-        {options.length >= MAX_OPTIONS ? `${MAX_OPTIONS} choices maximum` : "Add choice"}
+        {options.length >= MAX_OPTIONS ? t("builder.options.max", { max: MAX_OPTIONS }) : t("builder.options.add")}
       </button>
     </fieldset>
   );
@@ -647,7 +645,23 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
 }
 
 /** The questions rendered with the booking flow's own component, answerable so the pro can try them. */
+/** The domain check's English messages, in the viewer's language. */
+function previewError(t: TFunction, english: string) {
+  const known: Record<string, string> = {
+    "Please confirm to continue.": "confirm",
+    "This question is required.": "required",
+    "Invalid answer.": "invalid",
+    "Choose one of the options.": "choose",
+    "Invalid choice.": "invalidChoice",
+    "Enter a valid date.": "date",
+  };
+  if (known[english]) return t(`builder.preview.errors.${known[english]}`);
+  const tooLong = /^Keep it under (\d+) characters\.$/.exec(english);
+  return tooLong ? t("builder.preview.errors.tooLong", { max: Number(tooLong[1]) }) : english;
+}
+
 function Preview({ fields }: { fields: FormField[] }) {
+  const t = useT("proSettings");
   const [answers, setAnswers] = useState<Record<string, unknown>>({});
   const [checked, setChecked] = useState<Record<string, string> | null>(null);
   const [note, setNote] = useState("");
@@ -660,7 +674,7 @@ function Preview({ fields }: { fields: FormField[] }) {
 
   function check() {
     const res = validateAnswers(fields, answers);
-    setChecked(res.ok ? {} : res.errors);
+    setChecked(res.ok ? {} : Object.fromEntries(Object.entries(res.errors).map(([k, v]) => [k, previewError(t, v)])));
   }
 
   return (
@@ -668,13 +682,13 @@ function Preview({ fields }: { fields: FormField[] }) {
       <div className="flex items-start justify-between gap-3 border-b border-line px-5 py-3.5">
         <div>
           <h2 id="preview-h" className="text-sm font-semibold text-ink">
-            Client preview
+            {t("builder.preview.title")}
           </h2>
-          <p className="text-[13px] text-ink-3">The “A few details” step of booking. Try it; nothing is saved.</p>
+          <p className="text-[13px] text-ink-3">{t("builder.preview.description")}</p>
         </div>
       </div>
       <div className="space-y-6 px-5 py-5">
-        {fields.length === 0 && <p className="text-sm text-ink-3">Questions you add appear here as clients will see them.</p>}
+        {fields.length === 0 && <p className="text-sm text-ink-3">{t("builder.preview.empty")}</p>}
         {fields.map((f) => (
           <IntakeField
             key={f.id}
@@ -687,14 +701,14 @@ function Preview({ fields }: { fields: FormField[] }) {
             error={checked?.[f.id]}
           />
         ))}
-        <Field label="Anything else they should know?" optional hint="Every booking ends with this box. It isn't part of your form.">
-          {(fp) => <Textarea {...fp} rows={3} value={note} onChange={(e) => setNote(e.target.value)} maxLength={1000} placeholder="Allergies, preferences, parking notes…" />}
+        <Field label={t("builder.preview.noteLabel")} optional hint={t("builder.preview.noteHint")}>
+          {(fp) => <Textarea {...fp} rows={3} value={note} onChange={(e) => setNote(e.target.value)} maxLength={1000} placeholder={t("builder.preview.notePlaceholder")} />}
         </Field>
       </div>
       {fields.length > 0 && (
         <div className="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-3">
           <p className="text-[13px] text-ink-3" aria-live="polite">
-            {checked == null ? "" : Object.keys(checked).length ? `${Object.keys(checked).length} answer${Object.keys(checked).length === 1 ? "" : "s"} missing or invalid` : "All good — this would go through."}
+            {checked == null ? "" : Object.keys(checked).length ? t("builder.preview.invalid", { count: Object.keys(checked).length }) : t("builder.preview.allGood")}
           </p>
           <div className="flex gap-1">
             <Button
@@ -706,10 +720,10 @@ function Preview({ fields }: { fields: FormField[] }) {
                 setNote("");
               }}
             >
-              Clear
+              {t("builder.preview.clear")}
             </Button>
             <Button variant="secondary" size="sm" onClick={check}>
-              Try continuing
+              {t("builder.preview.tryContinue")}
             </Button>
           </div>
         </div>

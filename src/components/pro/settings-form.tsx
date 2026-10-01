@@ -4,14 +4,16 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import { useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 
 /**
  * Shared state for a settings page with one save: tracks edits against the
  * last saved values, sends only what changed, warns before leaving with edits.
  */
-export function useSettingsForm<T extends Record<string, unknown>>(initial: T, endpoint: string, successMessage = "Saved") {
+export function useSettingsForm<T extends Record<string, unknown>>(initial: T, endpoint: string, successMessage?: string) {
   const router = useRouter();
+  const t = useT("proSettings");
   const [saved, setSaved] = useState(initial);
   const [values, setValues] = useState(initial);
   const [saving, setSaving] = useState(false);
@@ -46,12 +48,12 @@ export function useSettingsForm<T extends Record<string, unknown>>(initial: T, e
       try {
         await api(endpoint, { method: "PUT", body: transform ? transform(changed) : changed });
         setSaved(values);
-        toast.success(successMessage);
+        toast.success(successMessage ?? t("saveBar.saved"));
         router.refresh();
       } catch (err) {
         const e = err as ApiError;
         setErrors(e.fields ?? {});
-        setError(e.fields ? "Check the highlighted fields." : e.message);
+        setError(e.fields ? t("saveBar.checkFields") : e.message);
       } finally {
         setSaving(false);
       }
@@ -60,20 +62,21 @@ export function useSettingsForm<T extends Record<string, unknown>>(initial: T, e
 }
 
 export function SaveBar({ dirty, saving, onSave, onDiscard, idle }: { dirty: boolean; saving: boolean; onSave: () => void; onDiscard: () => void; idle?: React.ReactNode }) {
+  const t = useT("proSettings");
   return (
     <div className="fixed inset-x-0 bottom-[58px] z-30 border-t border-line bg-surface lg:bottom-0 lg:start-[248px]">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-10">
         <p className="min-w-0 truncate text-sm text-ink-3" aria-live="polite">
-          {saving ? "Saving…" : dirty ? "Unsaved changes" : (idle ?? "All changes saved")}
+          {saving ? t("saveBar.saving") : dirty ? t("saveBar.unsaved") : (idle ?? t("saveBar.allSaved"))}
         </p>
         <div className="flex shrink-0 gap-2">
           {dirty && (
             <Button variant="ghost" onClick={onDiscard} disabled={saving}>
-              Discard
+              {t("saveBar.discard")}
             </Button>
           )}
           <Button onClick={onSave} loading={saving} disabled={!dirty}>
-            Save
+            {t("saveBar.save")}
           </Button>
         </div>
       </div>

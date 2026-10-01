@@ -1,21 +1,15 @@
-import { ChevronLeft } from "lucide-react";
-import Link from "next/link";
 import type { ReactNode } from "react";
-import { SettingsNav } from "./settings-nav-client";
+import { SettingsBackLink, SettingsNav } from "./settings-nav-client";
 
 /** Frame for a settings page: section nav on desktop, back link on phones. */
 export function SettingsShell({ title, description, perms, children, actions }: { title: string; description?: ReactNode; perms: string[]; children: ReactNode; actions?: ReactNode }) {
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16 pt-6 sm:px-6 lg:grid lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-12 lg:px-10 lg:pt-10">
       <aside className="hidden lg:block">
-        <p className="mb-3 px-2.5 text-[12px] font-semibold uppercase tracking-[0.06em] text-ink-3">Settings</p>
         <SettingsNav perms={perms} />
       </aside>
       <div className="min-w-0 max-w-2xl">
-        <Link href="/pro/settings" className="-ms-1 mb-4 inline-flex h-10 items-center gap-1 pe-2 text-sm font-medium text-ink-3 hover:text-ink lg:hidden">
-          <ChevronLeft className="size-4" aria-hidden />
-          Settings
-        </Link>
+        <SettingsBackLink />
         <div className="flex flex-wrap items-end justify-between gap-3">
           <h1 className="font-display text-[32px] leading-[1.1] tracking-[-0.01em] text-ink sm:text-[38px]">{title}</h1>
           {actions}

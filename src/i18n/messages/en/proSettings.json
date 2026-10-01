@@ -1,0 +1,661 @@
+{
+  "title": "Settings",
+  "home": {
+    "description": "How {name} looks, books and gets paid."
+  },
+  "nav": {
+    "label": "Settings",
+    "back": "Settings",
+    "sections": {
+      "profile": { "label": "Business profile", "description": "Name, photos, about, contact and social links." },
+      "locations": { "label": "Locations", "description": "Where you work: a shop, the client's place, or online." },
+      "booking": { "label": "Booking rules", "description": "Instant or approved bookings, notice, reminders." },
+      "policies": { "label": "Cancellations & fees", "description": "Cancellation window, no-show fees, tax." },
+      "payments": { "label": "Payments", "description": "Take deposits and card payments online." },
+      "forms": { "label": "Client questions", "description": "Intake forms clients fill in when they book." },
+      "link": { "label": "Booking link", "description": "Your web address, QR code and going live." },
+      "verification": { "label": "Verification", "description": "Get the verified badge on your profile." }
+    }
+  },
+  "saveBar": {
+    "saving": "Saving…",
+    "unsaved": "Unsaved changes",
+    "allSaved": "All changes saved",
+    "discard": "Discard",
+    "save": "Save",
+    "saved": "Saved",
+    "checkFields": "Check the highlighted fields."
+  },
+  "shareLink": {
+    "copy": "Copy",
+    "copied": "Copied"
+  },
+  "profile": {
+    "title": "Business profile",
+    "description": "What clients see on your page and in search.",
+    "toastUpdated": "Profile updated",
+    "toastLive": "Changes are live on your page.",
+    "logoAlt": "{name} logo",
+    "viewPage": "View your page",
+    "photos": {
+      "title": "Photos",
+      "description": "Your logo appears on cards and messages; the cover leads your page. Use your own work or space — not stock photos.",
+      "noCover": "No cover photo",
+      "remove": "Remove",
+      "uploading": "Uploading…",
+      "changeCover": "Change cover",
+      "addCover": "Add cover",
+      "changeLogo": "Change logo",
+      "addLogo": "Add logo",
+      "logoHint": "Square works best. Without one we show your initials."
+    },
+    "basics": {
+      "title": "Basics",
+      "nameIndividual": "Your name or business name",
+      "nameBusiness": "Business name",
+      "tagline": "Tagline",
+      "taglineHint": "One line under your name. {count, plural, one {# character left.} other {# characters left.}}",
+      "taglinePlaceholder": "e.g. Precision fades and beard work in Bed-Stuy",
+      "category": "Main category",
+      "categoryHint": "Where you show up when people browse.",
+      "choose": "Choose…",
+      "years": "Years of experience"
+    },
+    "about": {
+      "title": "About",
+      "description": "What you do, how you work, what makes a visit with you different. Plain words beat buzzwords.",
+      "label": "About",
+      "languages": "Languages spoken",
+      "amenities": "Amenities"
+    },
+    "tags": {
+      "optional": "Optional",
+      "placeholder": "Type and press Enter",
+      "remove": "Remove {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "English",
+        "spanish": "Spanish",
+        "french": "French",
+        "portuguese": "Portuguese",
+        "mandarin": "Mandarin",
+        "cantonese": "Cantonese",
+        "arabic": "Arabic",
+        "russian": "Russian",
+        "haitianCreole": "Haitian Creole",
+        "korean": "Korean",
+        "vietnamese": "Vietnamese",
+        "hindi": "Hindi",
+        "italian": "Italian",
+        "german": "German",
+        "polish": "Polish",
+        "tagalog": "Tagalog"
+      },
+      "amenities": {
+        "wheelchair": "Wheelchair accessible",
+        "streetParking": "Street parking",
+        "freeParking": "Free parking",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Card payments",
+        "walkIns": "Walk-ins welcome",
+        "kidFriendly": "Kid friendly",
+        "restroom": "Restroom",
+        "airConditioning": "Air conditioning",
+        "drinks": "Drinks offered",
+        "genderNeutral": "Gender-neutral",
+        "petFriendly": "Pet friendly"
+      }
+    },
+    "contact": {
+      "title": "Contact & links",
+      "description": "Shown on your page. Clients can always message you through Kept, so these are optional.",
+      "email": "Public email",
+      "phone": "Public phone",
+      "website": "Website",
+      "websitePlaceholder": "yourdomain.com"
+    },
+    "social": {
+      "legend": "Social profiles",
+      "hint": "Type your handle or paste your profile link. To feature specific videos, posts or tracks on your page, add them in <link>Portfolio</link>.",
+      "placeholders": {
+        "instagram": "@yourname",
+        "tiktok": "@yourname",
+        "youtube": "@yourchannel",
+        "facebook": "yourpage",
+        "x": "@yourname",
+        "linkedin": "in/yourname",
+        "spotify": "Artist link",
+        "soundcloud": "yourname",
+        "behance": "yourname",
+        "pinterest": "yourname",
+        "twitch": "yourchannel",
+        "threads": "@yourname"
+      },
+      "errors": {
+        "wrongNetwork": "That isn't a {network} link.",
+        "useProfile": "Use the link to your {network} profile.",
+        "badHandle": "That doesn't look like a {network} handle.",
+        "badArtist": "That doesn't look like a {network} artist link."
+      }
+    },
+    "timezone": {
+      "title": "Time zone",
+      "description": "Your hours and every appointment time are in this zone. Change it only if you've actually moved — existing bookings keep their exact time.",
+      "label": "Time zone"
+    }
+  },
+  "booking": {
+    "title": "Booking rules",
+    "description": "How and when clients can book you. Individual services can override notice and approval.",
+    "toastUpdated": "Booking rules updated",
+    "mode": {
+      "title": "Confirmation",
+      "description": "You can still require approval for specific services in the service editor.",
+      "instantTitle": "Instant booking",
+      "instantDescription": "Clients pick a free time and they're booked. Best for most businesses — it's what clients expect.",
+      "requestTitle": "Approve each request",
+      "requestDescription": "Clients send a request; you accept or decline. Unanswered requests expire automatically so nobody waits forever."
+    },
+    "window": {
+      "title": "When clients can book",
+      "minNotice": "Minimum notice",
+      "minNoticeHint": "The latest a client can book before a start time.",
+      "noMinimum": "No minimum — book right up to the start",
+      "advance": "Book up to",
+      "advanceHint": "How far ahead your calendar opens.",
+      "daysAhead": "{count, plural, one {# day ahead} other {# days ahead}}",
+      "yearAhead": "1 year ahead",
+      "interval": "Start times every",
+      "intervalHint": "Shorter intervals give clients more choice; longer ones keep your day tidy.",
+      "anyStaff": "Offer “Any available professional”",
+      "anyStaffDescription": "Shows the most open times and spreads bookings across your team. Turn off if clients must choose a person."
+    },
+    "durations": {
+      "minutes": "{count, plural, one {# minute} other {# minutes}}",
+      "hours": "{count, plural, one {# hour} other {# hours}}",
+      "days": "{count, plural, one {# day} other {# days}}",
+      "weeks": "{count, plural, one {# week} other {# weeks}}"
+    },
+    "reminders": {
+      "title": "Reminders",
+      "description": "Sent by email before each appointment. Clients who book closer than a reminder's time don't get that one.",
+      "descriptionSms": "Sent by email and text message (if the client allows texts) before each appointment. Clients who book closer than a reminder's time don't get that one.",
+      "none": "No reminders. Clients only get their booking confirmation.",
+      "add": "Add a reminder",
+      "addPlaceholder": "Add a reminder…",
+      "upTo": "Up to 3",
+      "remove": "Remove the reminder {label}",
+      "minutesBefore": "{count, plural, one {# minute before} other {# minutes before}}",
+      "hoursBefore": "{count, plural, one {# hour before} other {# hours before}}",
+      "daysBefore": "{count, plural, one {# day before} other {# days before}}"
+    }
+  },
+  "policies": {
+    "title": "Cancellations & fees",
+    "description": "Clients see these before they book and again before they cancel.",
+    "toastUpdated": "Policies updated",
+    "cancel": {
+      "title": "Cancelling and rescheduling",
+      "freeUntil": "Free cancellation until",
+      "rescheduleUntil": "Online rescheduling until",
+      "anyTime": "Any time before",
+      "oneDay": "24 hours (1 day) before",
+      "hoursBefore": "{count, plural, one {# hour before} other {# hours before}}",
+      "daysBefore": "{count, plural, one {# day before} other {# days before}}",
+      "lateFee": "Late cancellation fee",
+      "lateFeeHintPaid": "Kept from what the client paid online. We never charge more than they've paid.",
+      "lateFeeHintUnpaid": "Only applies to money paid online. Connect payments and take deposits to enforce it.",
+      "none": "None",
+      "ofTotal": "of the total",
+      "noShowFee": "No-show fee",
+      "noShowHint": "Part of your policy so clients know up front. When you mark a no-show, anything they paid online stays with you; a fee collected in person can be recorded on the appointment.",
+      "refundDeposits": "Refund deposits for on-time cancellations",
+      "refundDepositsDescription": "Off means deposits are kept whenever a client cancels."
+    },
+    "words": {
+      "title": "In your own words",
+      "description": "Optional notes shown with your policy.",
+      "late": "Running late",
+      "lateHint": "e.g. “After 15 minutes late we may need to shorten or rebook your service.”",
+      "before": "Before your visit",
+      "beforeHint": "Shown to every client before they confirm — directions, what to bring, how to prepare."
+    },
+    "tax": {
+      "title": "Sales tax",
+      "description": "Added on top of your prices at checkout and shown as its own line. Leave at 0 if your prices already include tax.",
+      "rate": "Rate",
+      "rateError": "Enter a rate between 0 and 30%",
+      "label": "Label",
+      "labelPlaceholder": "Sales tax"
+    },
+    "preview": {
+      "title": "What clients see before booking"
+    }
+  },
+  "payments": {
+    "title": "Payments",
+    "description": "Take deposits or full payment when clients book. Paying in person always works too.",
+    "online": {
+      "title": "Online payments",
+      "description": "Payments are processed by Stripe and paid out to your bank account. Kept never sees card numbers."
+    },
+    "unavailable": {
+      "badge": "Not available yet",
+      "body": "Card payments aren’t switched on for Kept yet. Until they are, clients pay you at the appointment, and you can record each payment — cash, card reader or transfer — from the appointment page so your records and Insights stay accurate.",
+      "note": "Nothing to do here for now. Deposits and policies you set will start applying once online payments open."
+    },
+    "none": {
+      "deposits": "Require a deposit or full payment per service",
+      "fees": "Keep late-cancellation fees from deposits automatically",
+      "tips": "Let clients add a tip after the visit",
+      "connect": "Set up payments with Stripe",
+      "time": "Takes about 5 minutes. You’ll need your bank details and an ID."
+    },
+    "incomplete": {
+      "badge": "Setup not finished",
+      "body": "Stripe still needs a few details before you can take payments.",
+      "continue": "Continue setup"
+    },
+    "connected": {
+      "badge": "Connected",
+      "body": "You can take deposits and payments online.",
+      "services": "Choose what to collect for each service in <link>Services</link>."
+    },
+    "fees": {
+      "title": "Fees",
+      "kept": "Kept fee on online payments",
+      "inPerson": "Payments taken in person",
+      "noFee": "No Kept fee",
+      "processing": "Card processing",
+      "stripeRate": "Stripe’s standard rate"
+    }
+  },
+  "link": {
+    "title": "Booking link",
+    "description": "Your page on Kept. Put it in your bio, on your card, on the mirror.",
+    "checklist": {
+      "location": "Add where you work",
+      "services": "Create at least one service",
+      "availability": "Set your working hours",
+      "done": "Done",
+      "todo": "To do"
+    },
+    "status": {
+      "liveTitle": "Your page is live",
+      "draftTitle": "Your page isn't live yet",
+      "liveDescription": "Clients can find you in search and book online.",
+      "draftDescription": "Only you can see it. Go live when the checklist is done.",
+      "live": "Live",
+      "hide": "Hide my page",
+      "goLive": "Go live",
+      "viewPage": "View page",
+      "preview": "Preview"
+    },
+    "toasts": {
+      "live": "You're live — clients can find and book you",
+      "hidden": "Your page is hidden",
+      "hiddenDescription": "Existing appointments aren't affected.",
+      "slugUpdated": "Address updated",
+      "slugUpdatedDescription": "Your old link no longer works — update it wherever you've shared it.",
+      "copied": "Copied"
+    },
+    "share": {
+      "title": "Share",
+      "qrLabel": "QR code for {address}",
+      "qrHint": "Print it at the front desk, on business cards or your mirror. Scanning opens your booking page directly.",
+      "png": "PNG for print",
+      "svg": "SVG",
+      "embedSummary": "Add a “Book now” button to your website",
+      "embedHint": "Paste this where you want the button.",
+      "copyCode": "Copy code",
+      "buttonText": "Book with {name}"
+    },
+    "slug": {
+      "title": "Web address",
+      "description": "Lowercase letters, numbers and hyphens. Changing it breaks links you've already shared.",
+      "change": "Change address",
+      "label": "Address"
+    },
+    "hideDialog": {
+      "title": "Hide your page?",
+      "description": "You'll disappear from search and nobody can book online. Existing appointments stay as they are. You can go live again any time.",
+      "confirm": "Hide page"
+    }
+  },
+  "locations": {
+    "title": "Locations",
+    "description": "Where clients book you: your shop, the area you travel to, or online. Each service and team member can be limited to some of them.",
+    "privacy": {
+      "title": "What clients can see",
+      "atPlace": "At your place",
+      "atPlaceBody": "The full address and a map, so clients can find you.",
+      "travel": "Travelling to clients",
+      "travelBody": "Only your city and how far you travel. If you work from home, your home address and exact pin are never shown — search places you within about 5 km. Clients give you their address when they book.",
+      "online": "Online",
+      "onlineBody": "No address at all, just that sessions happen online."
+    },
+    "kinds": {
+      "physical": { "label": "At my place", "description": "Shop, studio, office" },
+      "mobile": { "label": "I go to clients", "description": "Homes, offices, events" },
+      "virtual": { "label": "Online", "description": "Video or phone sessions" }
+    },
+    "summary": {
+      "mobile": "Travels up to {km} km from {place}",
+      "virtual": "Online sessions"
+    },
+    "list": {
+      "title": "Your locations",
+      "count": "{count} of {max} on the {plan} plan",
+      "emptyTitle": "No locations yet",
+      "emptyBody": "Clients can't book until they know where the appointment happens. Add your shop, the area you travel to, or online sessions.",
+      "add": "Add location",
+      "primary": "Primary",
+      "upcoming": "{count, plural, one {# upcoming appointment} other {# upcoming appointments}}",
+      "notPinned": "Not pinned on the map",
+      "actions": "Actions for {name}",
+      "edit": "Edit",
+      "makePrimary": "Make primary",
+      "remove": "Remove location",
+      "atLimit": "{count, plural, one {Your {plan} plan includes # location. Remove one to add another.} other {Your {plan} plan includes # locations. Remove one to add another.}}",
+      "primaryHint": "The primary location is the one shown first on your profile and in search."
+    },
+    "toasts": {
+      "primary": "{name} is now your primary location",
+      "removed": "{name} removed",
+      "saved": "Location saved",
+      "added": "Location added"
+    },
+    "remove": {
+      "blockedTitle": "{name} can't be removed yet",
+      "ok": "OK",
+      "title": "Remove {name}?",
+      "confirm": "Remove location",
+      "description": "Clients won't be able to book it any more. Past appointments keep their details.",
+      "primaryNote": "Your oldest remaining location becomes primary.",
+      "membersNote": "{count, plural, one {# team member is assigned here. Anyone assigned only here will be bookable at all your locations.} other {# team members are assigned here. Anyone assigned only here will be bookable at all your locations.}}",
+      "servicesNote": "Services offered here keep their other locations.",
+      "onlyLocation": "It's your only location. Add another one first so clients still have somewhere to book.",
+      "upcoming": "{count, plural, one {It has # upcoming appointment. Move or cancel it from your <link>calendar</link> first.} other {It has # upcoming appointments. Move or cancel them from your <link>calendar</link> first.}}",
+      "exclusive": "{count, plural, one {{names} is only offered here. Offer it somewhere else or hide it in <link>Services</link>.} other {{names} are only offered here. Offer them somewhere else or hide them in <link>Services</link>.}}",
+      "quoted": "“{name}”"
+    },
+    "dialog": {
+      "editTitle": "Edit {name}",
+      "addTitle": "Add a location",
+      "cancel": "Cancel",
+      "save": "Save location",
+      "add": "Add location",
+      "where": "Where do appointments happen?",
+      "name": "Name",
+      "nameHintPhysical": "Shown to clients, e.g. the shop's name or neighbourhood.",
+      "nameHintOther": "Shown to clients when they choose where to book.",
+      "namePlaceholderPhysical": "e.g. Downtown studio",
+      "defaultMobile": "Mobile service",
+      "defaultVirtual": "Online",
+      "street": "Street address",
+      "line2": "Apartment, suite, floor",
+      "cityBased": "City you're based in",
+      "city": "City",
+      "region": "State / region",
+      "postalCode": "Postal code",
+      "country": "Country code",
+      "countryHint": "Two letters, e.g. US, MX, ES",
+      "radius": "How far will you travel?",
+      "radiusOption": "Up to {km} km",
+      "timezone": "Time zone",
+      "timezoneHint": "Hours and bookings here use this zone.",
+      "phone": "Phone",
+      "phoneHint": "If clients should call this location directly.",
+      "primary": "Make this my primary location",
+      "primaryDescription": "Shown first on your profile and used for search."
+    },
+    "pin": {
+      "title": "Map pin",
+      "physical": "Puts your shop on the map and in “near me” searches. Clients see the address you entered above.",
+      "mobile": "Used only to match you with nearby clients. Your exact pin and street address are never shown — your profile shows the city, and search places you within about 5 km.",
+      "find": "Find this address",
+      "useMine": "Use my current location",
+      "remove": "Remove pin",
+      "removed": "Pin removed.",
+      "matches": "Address matches",
+      "pinnedTo": "Pinned to {place}.",
+      "pinned": "Pinned.",
+      "notPinned": "Not pinned yet. You'll still appear when clients search your city.",
+      "noGeolocation": "This browser can't share its location.",
+      "here": "Pinned to where you are now.",
+      "denied": "We couldn't get your location. Check your browser's location permission.",
+      "enterAddress": "Enter the address first.",
+      "noMatch": "No match found. Check the address, or use your current location."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Arrival instructions",
+        "placeholder": "e.g. Park on Elm St. Ring the buzzer for unit 2B and come up to the second floor.",
+        "hint": "Parking, entrance, buzzer code. Clients see this on your profile and in their booking."
+      },
+      "mobile": {
+        "label": "Notes for clients",
+        "placeholder": "e.g. I'll need a parking spot within 50 m and access to a power outlet.",
+        "hint": "What clients should have ready. Shown in their booking."
+      },
+      "virtual": {
+        "label": "How sessions work",
+        "placeholder": "e.g. You'll get a video link by message an hour before your session.",
+        "hint": "Shown in their booking. Don't paste a private meeting link here — send links in Messages."
+      }
+    }
+  },
+  "verification": {
+    "title": "Verification",
+    "description": "Show clients that a real, licensed business is behind your profile. Our team checks the documents you send by hand.",
+    "status": {
+      "title": "Status",
+      "not_submitted": "Not verified",
+      "pending": "In review",
+      "verified": "Verified",
+      "rejected": "Not approved",
+      "needs_info": "More information needed"
+    },
+    "body": {
+      "notSubmitted": "You haven't asked to be verified yet. Send a few details and documents below.",
+      "pending": "Sent on {date}. Someone on our team reviews every request by hand; you'll get a notification as soon as there's a decision. You can't change the request while it's in review.",
+      "pendingNoDate": "Sent. Someone on our team reviews every request by hand; you'll get a notification as soon as there's a decision. You can't change the request while it's in review.",
+      "verified": "{name} is verified since {date}. The badge shows on your <link>public profile</link> and in search results.",
+      "verifiedNoDate": "{name} is verified. The badge shows on your <link>public profile</link> and in search results.",
+      "rejected": "We couldn't verify {name} with what was sent on {date}. You can send new details and documents below.",
+      "rejectedNoDate": "We couldn't verify {name} with what was sent. You can send new details and documents below.",
+      "needsInfo": "Our team needs a bit more before deciding. Answer below and your request goes back into review."
+    },
+    "note": "Note from Kept",
+    "noteDate": "Note from Kept · {date}",
+    "submit": {
+      "replyTitle": "Reply to our team",
+      "retryTitle": "Try again",
+      "requestTitle": "Request verification",
+      "firstDescription": "Tell us about the business and attach proof. Most businesses send one licence or registration document.",
+      "againDescription": "We've kept what you sent last time. Change it or add to it."
+    },
+    "sent": {
+      "title": "What you sent",
+      "description": "On {date}.",
+      "noDescription": "No description.",
+      "documents": "Documents",
+      "open": "Open document {n}",
+      "removed": "Some documents were removed and can no longer be opened."
+    },
+    "meaning": {
+      "title": "What clients see",
+      "example": "Example of the verified badge",
+      "checkMark": "A check mark next to your name on your profile and in search results, labelled “Verified business”.",
+      "notEndorsement": "It means Kept reviewed documents you provided. It isn't a review of your work or an endorsement — your ratings still come from clients.",
+      "private": "Documents stay private. Only people who manage this business and Kept's review team can open them.",
+      "removable": "Our team can remove the badge later, for example if a licence turns out to be invalid."
+    },
+    "form": {
+      "documentN": "Document {n}",
+      "tooMany": "{count, plural, one {You can attach up to # document.} other {You can attach up to # documents.}}",
+      "needSomething": "Add a short description or at least one document.",
+      "sentReply": "Sent. Your request is back in review.",
+      "submitted": "Submitted for review",
+      "replyLabel": "Your reply",
+      "aboutLabel": "About your business",
+      "hint": "Licence or registration numbers, who issued them, and how long you've been working. Anything that helps us confirm the business is real and yours.",
+      "placeholder": "e.g. Licensed barber, NY State licence #12345678, issued 2019. Shop registered as North Fade LLC.",
+      "documents": "Documents",
+      "documentsHint": "Photos or scans (JPG, PNG or WebP, up to 15 MB each) of a licence, registration certificate or certification. Up to {max}.",
+      "attachedList": "Attached documents",
+      "open": "Open document {n}",
+      "uploading": "Uploading {name}",
+      "fromLast": "From your last request",
+      "attached": "Attached",
+      "remove": "Remove {name}",
+      "addAnother": "Add another document",
+      "add": "Add documents",
+      "uploadingAll": "Uploading documents",
+      "attachedCount": "{count, plural, one {# document attached} other {# documents attached}}",
+      "privacy": "Only people who manage this business and Kept's review team can open these files. They're never shown on your profile.",
+      "waiting": "Waiting for uploads…",
+      "sendReply": "Send reply",
+      "submitAgain": "Submit again",
+      "submit": "Submit for review"
+    }
+  },
+  "forms": {
+    "title": "Client questions",
+    "description": "Questions clients answer while they book: allergies, goals, the car they're bringing. Build a form once, then pick it on each service that needs it.",
+    "newForm": "New form",
+    "editForm": "Edit form",
+    "notIncludedTitle": "Not included in your plan",
+    "notIncludedBody": "Intake questions aren't part of the {plan} plan. Services still take bookings without them.",
+    "emptyTitle": "No forms yet",
+    "emptyBody": "Ask what you need to know before the appointment, so you're not finding out at the chair. Answers are saved on the booking and shown to whoever does the appointment.",
+    "create": "Create a form",
+    "listLabel": "Forms",
+    "noQuestions": "No questions yet",
+    "questions": "{count, plural, one {# question} other {# questions}}",
+    "required": "{count, plural, one {# required} other {# required}}",
+    "edited": "Edited {date}",
+    "footer": "To ask a form on a service, open the service and choose it under <b>Questions & requirements</b>. Each service asks at most one form.",
+    "notUsed": "Not used by any service yet",
+    "askedOn": "Asked on <list></list>",
+    "hidden": "(hidden)",
+    "more": "{count, plural, one {# more} other {# more}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": { "label": "Short answer", "hint": "A name, a number, a few words.", "placeholder": "e.g. What's the make and model of your car?" },
+      "long_text": { "label": "Paragraph", "hint": "Room for a few sentences.", "placeholder": "e.g. Tell us about any injuries we should know about." },
+      "yes_no": { "label": "Yes / No", "hint": "Two buttons: Yes and No.", "placeholder": "e.g. Is this your first visit?" },
+      "single_choice": { "label": "Multiple choice", "hint": "Clients pick one option.", "placeholder": "e.g. How long is your hair right now?" },
+      "multi_choice": { "label": "Checkboxes", "hint": "Clients tick any that apply.", "placeholder": "e.g. Which areas would you like us to focus on?" },
+      "date": { "label": "Date", "hint": "A date picker, e.g. date of birth or event date.", "placeholder": "e.g. When is the event?" },
+      "acknowledgement": { "label": "Acknowledgement", "hint": "A statement clients tick to confirm they've read it.", "placeholder": "e.g. I understand a patch test is needed 48 hours before a colour service." }
+    },
+    "errors": {
+      "name": "Give the form a name",
+      "statement": "Write the statement clients agree to",
+      "question": "Write the question",
+      "twoChoices": "Add at least two choices",
+      "distinct": "Each choice needs to be different"
+    },
+    "leaveConfirm": "You have unsaved changes to this form. Leave without saving them?",
+    "toasts": {
+      "saved": "Form saved",
+      "created": "Form created",
+      "archived": "Form archived",
+      "archivedFrom": "{count, plural, one {Form archived and removed from # service} other {Form archived and removed from # services}}"
+    },
+    "untitled": "Untitled question",
+    "archive": "Archive form",
+    "show": "Show",
+    "questionsTab": "{count, plural, one {Questions (#)} other {Questions (#)}}",
+    "previewTab": "Client preview",
+    "details": "Form details",
+    "nameLabel": "Form name",
+    "nameHint": "Only your team sees this. Clients just see the questions.",
+    "namePlaceholder": "e.g. New client consultation",
+    "questions": "Questions",
+    "questionCount": "{count} of {max}",
+    "emptyTitle": "No questions yet",
+    "emptyBody": "Keep it short. Two or three questions get answered; ten get skipped.",
+    "saveBar": {
+      "saving": "Saving…",
+      "fix": "{count, plural, one {Fix # thing before saving} other {Fix # things before saving}}",
+      "unsaved": "Unsaved changes",
+      "allSaved": "All changes saved",
+      "newForm": "New form",
+      "discard": "Discard",
+      "cancel": "Cancel",
+      "save": "Save changes",
+      "create": "Create form"
+    },
+    "archiveDialog": {
+      "title": "Archive “{name}”?",
+      "confirm": "Archive form",
+      "confirmUsed": "{count, plural, one {Archive and remove from # service} other {Archive and remove from # services}}",
+      "descriptionUsed": "These services will stop asking these questions on new bookings until you choose another form:",
+      "descriptionUnused": "No service asks this form, so nothing changes for clients.",
+      "keep": "Answers already given on past and upcoming bookings stay on those bookings.",
+      "lost": "Unsaved edits to this form will be lost."
+    },
+    "usage": {
+      "none": "No service asks this form yet. Open a service in <link>Services</link> and choose it under Questions & requirements.",
+      "title": "Asked when clients book",
+      "hidden": "hidden",
+      "note": "Changes apply to new bookings for these services as soon as you save."
+    },
+    "add": {
+      "label": "Add question",
+      "limit": "Limit of {max} questions reached",
+      "type": "Question type"
+    },
+    "card": {
+      "required": "Required",
+      "attention": "Needs attention",
+      "moveUp": "Move question {n} up",
+      "moveDown": "Move question {n} down",
+      "type": "Type",
+      "statement": "Statement",
+      "question": "Question",
+      "helpText": "Help text",
+      "helpAck": "Shown under the statement, e.g. where to read the full policy.",
+      "helpQuestion": "Shown under the question.",
+      "mustTick": "Must be ticked to book",
+      "ackRequired": "Clients can't book until they tick it.",
+      "questionRequired": "Clients can't book without answering.",
+      "optional": "Clients can skip it.",
+      "duplicate": "Duplicate",
+      "delete": "Delete",
+      "done": "Done"
+    },
+    "options": {
+      "legend": "Choices",
+      "choice": "Choice {n}",
+      "remove": "Remove choice {n}",
+      "max": "{max} choices maximum",
+      "add": "Add choice"
+    },
+    "preview": {
+      "title": "Client preview",
+      "description": "The “A few details” step of booking. Try it; nothing is saved.",
+      "empty": "Questions you add appear here as clients will see them.",
+      "noteLabel": "Anything else they should know?",
+      "noteHint": "Every booking ends with this box. It isn't part of your form.",
+      "notePlaceholder": "Allergies, preferences, parking notes…",
+      "invalid": "{count, plural, one {# answer missing or invalid} other {# answers missing or invalid}}",
+      "allGood": "All good — this would go through.",
+      "clear": "Clear",
+      "tryContinue": "Try continuing",
+      "errors": {
+        "confirm": "Please confirm to continue.",
+        "required": "This question is required.",
+        "invalid": "Invalid answer.",
+        "tooLong": "Keep it under {max} characters.",
+        "choose": "Choose one of the options.",
+        "invalidChoice": "Invalid choice.",
+        "date": "Enter a valid date."
+      }
+    }
+  }
+}

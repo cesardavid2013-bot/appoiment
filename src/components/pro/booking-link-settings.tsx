@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ConfirmDialog } from "@/components/ui/dialog";
 import { Field, Input } from "@/components/ui/field";
 import { Badge } from "@/components/ui/misc";
+import { useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 import { ShareLink } from "./share-link";
 import { SettingsCard } from "./settings-shell";
@@ -24,6 +25,7 @@ type Props = {
 
 export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checklist }: Props) {
   const router = useRouter();
+  const t = useT("proSettings");
   const live = status === "active";
   const url = `${appUrl}/${slug}`;
   const host = appUrl.replace(/^https?:\/\//, "");
@@ -38,7 +40,7 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
     setPublishing(true);
     try {
       await api("/api/pro/business/publish", { body: { live: next } });
-      toast.success(next ? "You're live — clients can find and book you" : "Your page is hidden", { description: next ? undefined : "Existing appointments aren't affected." });
+      toast.success(next ? t("link.toasts.live") : t("link.toasts.hidden"), { description: next ? undefined : t("link.toasts.hiddenDescription") });
       setConfirmHide(false);
       router.refresh();
     } catch (err) {
@@ -53,7 +55,7 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
     setSavingSlug(true);
     try {
       await api("/api/pro/business/slug", { method: "PUT", body: { slug: draftSlug } });
-      toast.success("Address updated", { description: "Your old link no longer works — update it wherever you've shared it." });
+      toast.success(t("link.toasts.slugUpdated"), { description: t("link.toasts.slugUpdatedDescription") });
       router.refresh();
     } catch (err) {
       setSlugError((err as ApiError).message);
@@ -88,12 +90,12 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
 
   return (
     <>
-      <SettingsCard id="status-h" title={live ? "Your page is live" : "Your page isn't live yet"} description={live ? "Clients can find you in search and book online." : "Only you can see it. Go live when the checklist is done."}>
+      <SettingsCard id="status-h" title={live ? t("link.status.liveTitle") : t("link.status.draftTitle")} description={live ? t("link.status.liveDescription") : t("link.status.draftDescription")}>
         {!live && (
           <ul className="space-y-2">
             {checklist.map((c) => (
               <li key={c.key} className="flex items-center gap-2.5 text-sm">
-                {c.done ? <Check className="size-4 text-accent" aria-label="Done" /> : <CircleDashed className="size-4 text-ink-3" aria-label="To do" />}
+                {c.done ? <Check className="size-4 text-accent" aria-label={t("link.checklist.done")} /> : <CircleDashed className="size-4 text-ink-3" aria-label={t("link.checklist.todo")} />}
                 {c.done ? (
                   <span className="text-ink-3 line-through decoration-line-strong">{c.label}</span>
                 ) : (
@@ -109,72 +111,72 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
           {live ? (
             <>
               <Badge tone="positive" dot>
-                Live
+                {t("link.status.live")}
               </Badge>
               <Button variant="ghost" size="sm" onClick={() => setConfirmHide(true)}>
-                Hide my page
+                {t("link.status.hide")}
               </Button>
             </>
           ) : (
             <Button onClick={() => setLive(true)} loading={publishing} disabled={!ready || status === "suspended"}>
-              Go live
+              {t("link.status.goLive")}
             </Button>
           )}
           <Link href={`/${slug}`} target="_blank" className="ms-auto inline-flex items-center gap-1 text-sm font-medium text-ink-2 hover:text-ink">
-            {live ? "View page" : "Preview"} <ExternalLink className="size-3.5" />
+            {live ? t("link.status.viewPage") : t("link.status.preview")} <ExternalLink className="size-3.5" />
           </Link>
         </div>
       </SettingsCard>
 
-      <SettingsCard id="share-h" title="Share">
+      <SettingsCard id="share-h" title={t("link.share.title")}>
         <ShareLink url={url} />
         <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-          <div className="w-40 shrink-0 rounded-lg border border-line bg-white p-2.5" role="img" aria-label={`QR code for ${host}/${slug}`} dangerouslySetInnerHTML={{ __html: qrSvg }} />
+          <div className="w-40 shrink-0 rounded-lg border border-line bg-white p-2.5" role="img" aria-label={t("link.share.qrLabel", { address: `${host}/${slug}` })} dangerouslySetInnerHTML={{ __html: qrSvg }} />
           <div className="space-y-3">
-            <p className="text-sm leading-relaxed text-ink-2">Print it at the front desk, on business cards or your mirror. Scanning opens your booking page directly.</p>
+            <p className="text-sm leading-relaxed text-ink-2">{t("link.share.qrHint")}</p>
             <div className="flex flex-wrap gap-2">
               <Button variant="secondary" size="sm" onClick={downloadPng} icon={<Download className="size-4" />}>
-                PNG for print
+                {t("link.share.png")}
               </Button>
               <Button variant="secondary" size="sm" onClick={downloadSvg} icon={<Download className="size-4" />}>
-                SVG
+                {t("link.share.svg")}
               </Button>
             </div>
           </div>
         </div>
         <details className="group">
-          <summary className="cursor-pointer text-sm font-medium text-ink-2 hover:text-ink">Add a “Book now” button to your website</summary>
-          <p className="mt-2 text-[13px] text-ink-3">Paste this where you want the button.</p>
+          <summary className="cursor-pointer text-sm font-medium text-ink-2 hover:text-ink">{t("link.share.embedSummary")}</summary>
+          <p className="mt-2 text-[13px] text-ink-3">{t("link.share.embedHint")}</p>
           <pre className="relative mt-2 overflow-x-auto rounded-md bg-surface-2 p-3 text-[12px] leading-relaxed text-ink-2">
-            <code>{snippet(url, name)}</code>
+            <code dir="ltr">{snippet(url, t("link.share.buttonText", { name: safeName(name) }))}</code>
           </pre>
           <Button
             variant="ghost"
             size="sm"
             className="mt-1"
             onClick={async () => {
-              await navigator.clipboard.writeText(snippet(url, name));
-              toast.success("Copied");
+              await navigator.clipboard.writeText(snippet(url, t("link.share.buttonText", { name: safeName(name) })));
+              toast.success(t("link.toasts.copied"));
             }}
           >
-            Copy code
+            {t("link.share.copyCode")}
           </Button>
         </details>
       </SettingsCard>
 
       <SettingsCard
         id="slug-h"
-        title="Web address"
-        description="Lowercase letters, numbers and hyphens. Changing it breaks links you've already shared."
+        title={t("link.slug.title")}
+        description={t("link.slug.description")}
         footer={
           <Button onClick={saveSlug} loading={savingSlug} disabled={draftSlug.trim() === slug || draftSlug.trim().length < 3}>
-            Change address
+            {t("link.slug.change")}
           </Button>
         }
       >
-        <Field label="Address" error={slugError}>
+        <Field label={t("link.slug.label")} error={slugError}>
           {(p) => (
-            <div className="flex h-11 items-center overflow-hidden rounded-md border border-line-strong bg-surface focus-within:border-accent focus-within:ring-3 focus-within:ring-accent/15 md:h-10">
+            <div dir="ltr" className="flex h-11 items-center overflow-hidden rounded-md border border-line-strong bg-surface focus-within:border-accent focus-within:ring-3 focus-within:ring-accent/15 md:h-10">
               <span className="hidden shrink-0 border-e border-line bg-surface-2 px-3 text-sm leading-[2.5rem] text-ink-3 sm:block">{host}/</span>
               <Input
                 {...p}
@@ -192,9 +194,9 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
       <ConfirmDialog
         open={confirmHide}
         onOpenChange={setConfirmHide}
-        title="Hide your page?"
-        description="You'll disappear from search and nobody can book online. Existing appointments stay as they are. You can go live again any time."
-        confirmLabel="Hide page"
+        title={t("link.hideDialog.title")}
+        description={t("link.hideDialog.description")}
+        confirmLabel={t("link.hideDialog.confirm")}
         onConfirm={() => setLive(false)}
         loading={publishing}
       />
@@ -202,9 +204,10 @@ export function BookingLinkSettings({ name, appUrl, slug, status, qrSvg, checkli
   );
 }
 
-function snippet(url: string, name: string) {
-  const safe = name.replace(/[<>&"]/g, "");
-  return `<a href="${url}" target="_blank" rel="noopener"\n   style="display:inline-block;padding:12px 20px;border-radius:8px;background:#1a1814;color:#fff;font:600 15px/1 system-ui,sans-serif;text-decoration:none">\n  Book with ${safe}\n</a>`;
+const safeName = (name: string) => name.replace(/[<>&"]/g, "");
+
+function snippet(url: string, label: string) {
+  return `<a href="${url}" target="_blank" rel="noopener"\n   style="display:inline-block;padding:12px 20px;border-radius:8px;background:#1a1814;color:#fff;font:600 15px/1 system-ui,sans-serif;text-decoration:none">\n  ${label.replace(/[<>&"]/g, "")}\n</a>`;
 }
 
 function trigger(href: string, filename: string) {

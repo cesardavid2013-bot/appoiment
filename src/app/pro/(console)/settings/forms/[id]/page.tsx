@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FormBuilder } from "@/components/pro/form-builder";
 import { entitlements } from "@/domain/plans";
+import { getT } from "@/i18n/server";
 import { proPage } from "@/server/pro-page";
 import { getFormForEdit } from "@/server/services/forms-admin";
 import { FormFrame } from "../form-frame";
 
-export const metadata: Metadata = { title: "Edit form" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSettings");
+  return { title: t("forms.editForm") };
+}
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
