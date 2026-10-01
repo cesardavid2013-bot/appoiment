@@ -99,7 +99,7 @@ export default async function ForBusinessPage() {
               {primary.label}
             </Link>
             <a href="#how" className={cn(buttonClass("ghost", "lg"), "gap-1.5")}>
-              {t("hero.howItWorks")} <ArrowRight className="size-4 rtl:-scale-x-100" aria-hidden />
+              {t("hero.howItWorks")} <ArrowRight className="size-4" aria-hidden />
             </a>
           </div>
           <p className="mt-4 text-[13px] text-ink-3">{t("hero.note")}</p>

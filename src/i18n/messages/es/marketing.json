@@ -168,7 +168,7 @@
       "title": "Hoy",
       "summary": "{count, plural, one {# cita} other {# citas}} · {amount} reservados",
       "skinFade": "Degradado a piel",
-      "beardTrim": "Arreglo de barba y perfilado",
+      "beardTrim": "Barba y perfilado",
       "lunch": "Almuerzo",
       "signatureCut": "Corte de la casa",
       "kidsCut": "Corte infantil",

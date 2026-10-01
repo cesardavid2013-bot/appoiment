@@ -189,7 +189,7 @@ function AccountTypeChooser({ onChoose }: { onChoose: (t: "client" | "pro") => v
               ))}
             </ul>
             <ArrowRight
-              className="absolute end-5 top-5 size-4 text-ink-3 transition-transform group-hover:translate-x-0.5 group-hover:text-ink rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5"
+              className="absolute end-5 top-5 size-4 text-ink-3 transition-transform group-hover:translate-x-0.5 group-hover:text-ink rtl:group-hover:-translate-x-0.5"
               aria-hidden
             />
           </button>
