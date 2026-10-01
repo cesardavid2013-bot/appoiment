@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept para profissionais — reservas online e uma agenda que trabalha por você",
+    "description": "Receba reservas online, acabe com horários duplicados e faltas, e seja encontrado por clientes da sua região. Comece grátis como profissional independente."
+  },
+  "cta": {
+    "dashboard": "Ir para o seu negócio",
+    "setup": "Configure seu negócio",
+    "start": "Comece agora — é grátis"
+  },
+  "hero": {
+    "eyebrow": "Kept para profissionais",
+    "title": "Agenda cheia. Noites livres.",
+    "lede": "Reservas online, uma agenda que nunca marca dois clientes no mesmo horário, lembretes que reduzem as faltas e um perfil na frente de quem está perto de você procurando exatamente o que você faz. Comece grátis.",
+    "howItWorks": "Como funciona",
+    "note": "Sem cartão de crédito. Seu perfil fica privado até você publicá-lo."
+  },
+  "sides": {
+    "heading": "Como o Kept funciona para os clientes e para você",
+    "clients": {
+      "eyebrow": "Para seus clientes",
+      "title": "Descobrir e reservar ótimos profissionais.",
+      "points": {
+        "search": "Busca por serviço, lugar e horário, com horários reais — não um formulário de contato.",
+        "prices": "Preços claros, suas políticas e avaliações verificadas antes de reservar.",
+        "reminders": "Lembretes, rotas e reagendamento sem precisar ligar."
+      }
+    },
+    "you": {
+      "eyebrow": "Para você",
+      "title": "Gerencie seus agendamentos e faça seu negócio crescer.",
+      "points": {
+        "calendar": "Uma só agenda para reservas, pausas e folgas — no seu celular.",
+        "deposits": "Sinal e regras de cancelamento aplicados automaticamente.",
+        "clients": "Histórico, observações e avaliações de clientes que trazem as pessoas de volta."
+      }
+    }
+  },
+  "steps": {
+    "heading": "No ar em três passos",
+    "profile": {
+      "title": "Configure seu perfil",
+      "body": "Adicione seus serviços com preços e duração, seus horários, onde você atende e algumas fotos do seu trabalho. Nós guiamos você."
+    },
+    "share": {
+      "title": "Compartilhe seu link",
+      "body": "Coloque {host}/seu-nome na sua bio e nos seus cartões. Depois de publicar, você também aparece nas buscas de quem está por perto."
+    },
+    "book": {
+      "title": "Receba reservas",
+      "body": "Os clientes escolhem um horário real e reservam em segundos. Você é notificado, eles recebem lembretes e sua agenda fica sempre certa."
+    }
+  },
+  "industries": {
+    "heading": "Feito para qualquer serviço reservado por horário",
+    "lede": "Se os clientes reservam tempo com você, o Kept serve — seja você um profissional sozinho com uma cadeira ou uma equipe em várias unidades."
+  },
+  "features": {
+    "heading": "Tudo o que o dia precisa",
+    "booking": {
+      "title": "Reservas online com disponibilidade real",
+      "p1": "Os clientes só veem horários que você realmente pode atender — seu expediente, descontando reservas existentes, pausas, intervalos e folgas, com antecedência mínima e o limite de quanto tempo à frente podem reservar.",
+      "p2": "Cada reserva é verificada de novo no momento em que é feita, então duas pessoas nunca ficam com o mesmo horário, mesmo que toquem no mesmo segundo."
+    },
+    "services": {
+      "title": "Serviços do jeito que você cobra",
+      "p1": "Preço fixo, a partir de, faixa de preço, grátis ou sob consulta. Adicione opções como comprimento, tamanho ou extras, e cada uma ajusta tanto o preço quanto o tempo reservado na sua agenda.",
+      "p2": "Adicione intervalos antes ou depois, limite serviços a certos membros da equipe ou unidades e faça perguntas antes da primeira visita."
+    },
+    "policies": {
+      "title": "Sinal e políticas aplicados automaticamente",
+      "p1": "Peça um sinal ou o pagamento total antecipado, defina um prazo de cancelamento e taxas por cancelamento tardio ou falta. Os clientes veem as regras antes de reservar, e os reembolsos as seguem automaticamente."
+    },
+    "reminders": {
+      "title": "Lembretes que reduzem as faltas",
+      "p1": "Confirmações e lembretes são enviados sozinhos — por padrão, um dia antes e duas horas antes — com um link para reagendar dentro das suas regras, em vez de simplesmente não aparecer.",
+      "p2": "Quando alguém cancela, os clientes na sua lista de espera daquele dia ficam sabendo da vaga."
+    },
+    "clients": {
+      "title": "Conheça seus clientes",
+      "p1": "Cada cliente tem um histórico de visitas, gastos, cancelamentos e faltas, além de observações privadas que só sua equipe vê. Mande mensagens aos clientes do mesmo lugar."
+    },
+    "team": {
+      "title": "Da cadeira solo à equipe com várias unidades",
+      "p1": "Adicione membros da equipe com horários e serviços próprios, e funções que controlam o que cada pessoa pode ver e fazer. Gerencie várias unidades, cada uma com seu fuso horário e expediente."
+    },
+    "portfolio": {
+      "title": "Um portfólio que gera reservas",
+      "p1": "Mostre fotos e vídeos curtos do seu trabalho. Vincule cada um a um serviço, e os clientes podem tocar em “Reservar este” para reservar exatamente o que viram."
+    },
+    "spotlight": {
+      "title": "Spotlight — grátis durante o lançamento",
+      "p1": "Destaque seu perfil nas buscas e nas páginas de categoria perto de você. Os resultados patrocinados são sempre identificados, limitados a dois por página, e continuam mostrando suas notas e horários reais.",
+      "p2": "O Spotlight não custa nada enquanto o Kept está em lançamento. Se isso mudar, avisaremos você antes de qualquer cobrança — ele nunca passa a ser pago sozinho."
+    }
+  },
+  "plans": {
+    "heading": "Planos",
+    "lede": "Durante o lançamento do Kept, todo novo negócio começa no plano {plan} sem mensalidade. Os preços dos planos pagos serão anunciados bem antes de entrarem em vigor, e ninguém é cobrado sem escolher um plano.",
+    "badge": {
+      "launch": "Grátis durante o lançamento",
+      "available": "Disponível agora",
+      "unavailable": "Ainda não disponível"
+    },
+    "period": {
+      "launch": "por mês durante o lançamento",
+      "available": "por mês",
+      "unavailable": "Preço a ser anunciado"
+    },
+    "rows": {
+      "members": "Membros da equipe reserváveis",
+      "locations": "Unidades",
+      "fee": "Taxa sobre pagamentos online",
+      "roles": "Funções personalizadas",
+      "analytics": "Análises avançadas"
+    },
+    "justYou": "1 (só você)",
+    "upTo": "Até {n}",
+    "included": "Incluído",
+    "notIncluded": "Não incluído",
+    "summary": {
+      "free": "Reservas online, agenda, lembretes, sinal, fichas de clientes, formulários prévios, portfólio e Spotlight, tudo incluído.",
+      "launch": "Tudo do {base}, mais uma equipe de até {members}, mais unidades, funções personalizadas e taxas menores. É o que os novos negócios recebem hoje.",
+      "other": "Para equipes maiores e negócios com várias unidades."
+    },
+    "footnote": "A taxa se aplica apenas aos pagamentos que os clientes fazem online pelo Kept. Agendamentos pagos presencialmente não têm taxa do Kept. Precisa de mais pessoas ou unidades do que seu plano permite? <link>Fale com a gente</link>."
+  },
+  "faq": {
+    "heading": "Perguntas",
+    "cost": {
+      "q": "Quanto custa o Kept?",
+      "a": "Não há mensalidade: durante o lançamento do Kept, os novos negócios recebem o plano {plan} grátis. Quando um cliente paga online — um sinal ou o valor total —, o Kept fica com {fee} desse pagamento. Agendamentos pagos presencialmente não têm nenhuma taxa do Kept."
+    },
+    "clientFee": {
+      "q": "Meus clientes pagam para reservar?",
+      "aFee": "Os clientes veem uma taxa de serviço de {fee} no checkout, mostrada antes de confirmarem. Nada é adicionado depois.",
+      "aFree": "Não. Os clientes reservam de graça e veem seu preço exato antes de confirmar."
+    },
+    "payments": {
+      "q": "Preciso receber pagamentos online?",
+      "a": "Não. Você pode deixar os clientes pagarem presencialmente ou exigir um sinal ou o pagamento total na reserva. Os pagamentos online são processados pela Stripe e repassados para a sua própria conta bancária."
+    },
+    "approve": {
+      "q": "Posso aprovar as reservas antes de serem confirmadas?",
+      "a": "Sim. Escolha reserva imediata ou o modo de solicitação, em que toda reserva aguarda sua aprovação. O horário fica reservado enquanto você decide, e as solicitações que você não responder expiram sozinhas."
+    },
+    "where": {
+      "q": "Atendo em casa, vou até os clientes ou dou aulas online. Funciona?",
+      "a": "Sim. Cada local pode ser um endereço físico, uma área de atendimento a domicílio em que os clientes informam o endereço, ou uma sessão virtual. Você pode oferecer qualquer combinação."
+    },
+    "spotlight": {
+      "q": "Como funciona o Spotlight?",
+      "a": "O Spotlight mostra seu perfil como um resultado “Patrocinado”, claramente identificado, nas buscas e nas páginas de categoria, com no máximo dois por página. É grátis durante o lançamento — ative ou pause quando quiser pelo seu painel."
+    },
+    "link": {
+      "q": "Posso usar meu próprio link?",
+      "a": "Sim. Todo negócio recebe um perfil em {host}/seu-nome que você pode compartilhar no Instagram, na sua bio ou em um QR code. Quem reserva por ele não precisa procurar você."
+    }
+  },
+  "closing": {
+    "title": "Seu próximo cliente já está procurando.",
+    "body": "Configure seus serviços e horários, publique seu perfil e comece a receber reservas hoje."
+  },
+  "demo": {
+    "example": "Exemplo",
+    "today": {
+      "label": "Exemplo da agenda de Hoje que um profissional vê",
+      "title": "Hoje",
+      "summary": "{count, plural, one {# agendamento} other {# agendamentos}} · {amount} reservados",
+      "skinFade": "Degradê navalhado",
+      "beardTrim": "Barba e acabamento",
+      "lunch": "Almoço",
+      "signatureCut": "Corte da casa",
+      "kidsCut": "Corte infantil",
+      "firstVisit": "{name} · primeira visita",
+      "confirmed": "Confirmado",
+      "depositPaid": "Sinal pago",
+      "needsApproval": "Aguarda aprovação",
+      "checkedIn": "Check-in feito"
+    },
+    "reminder": {
+      "label": "Exemplo de lembrete automático que um cliente recebe",
+      "when": "24h antes",
+      "title": "Lembrete: {service} amanhã",
+      "body": "{time} com Dre no North Fade Studio. Precisa mudar? Reagende até 24h antes."
+    },
+    "grid": {
+      "label": "Exemplo do seletor de horários em que os clientes reservam, mostrando só horários livres",
+      "title": "Escolha um horário",
+      "instant": "Confirmação imediata",
+      "note": "Os horários ocupados somem assim que alguém reserva. Duas pessoas nunca ficam com o mesmo horário."
+    },
+    "policy": {
+      "label": "Exemplo de política de sinal e cancelamento",
+      "title": "Política de reserva",
+      "deposit": "Sinal",
+      "depositValue": "{pct} na reserva",
+      "freeCancel": "Cancelamento grátis",
+      "freeCancelValue": "Até 24h antes",
+      "lateCancel": "Cancelamento tardio",
+      "lateCancelValue": "{pct} do total",
+      "noShow": "Falta",
+      "noShowValue": "Sinal retido",
+      "dueNow": "A pagar agora",
+      "dueValue": "{due} de {total}"
+    },
+    "client": {
+      "label": "Exemplo de ficha de cliente",
+      "since": "Cliente desde {month} · {visits, plural, one {# visita} other {# visitas}}",
+      "spent": "Gasto",
+      "noShows": "Faltas",
+      "gap": "Intervalo habitual",
+      "gapValue": "{weeks} sem.",
+      "note": "Observação privada: couro cabeludo sensível — usar o xampu suave."
+    },
+    "team": {
+      "label": "Exemplo de equipe em duas unidades",
+      "title": "Equipe",
+      "senior": "Barbeiro sênior",
+      "barber": "Barbeiro",
+      "frontDesk": "Recepção"
+    },
+    "portfolio": {
+      "label": "Exemplo de publicações do portfólio vinculadas a um serviço reservável",
+      "skinFade": "Degradê navalhado",
+      "taper": "Disfarce e barba",
+      "bookThis": "Reservar este",
+      "note": "Suas fotos e vídeos aparecem aqui — toque em um para reservar exatamente esse serviço."
+    },
+    "spotlight": {
+      "label": "Exemplo de anúncio patrocinado nos resultados de busca",
+      "category": "Barbearia",
+      "promoted": "Patrocinado"
+    },
+    "options": {
+      "service": "Box braids sem nó",
+      "hint": "Serviço de exemplo · experimente as opções",
+      "length": "Comprimento",
+      "shoulder": "Na altura dos ombros",
+      "mid": "Meio das costas",
+      "waist": "Na cintura",
+      "addons": "Extras",
+      "wash": "Lavagem e escova",
+      "beads": "Miçangas e anéis",
+      "included": "Incluído",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

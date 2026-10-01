@@ -1,0 +1,22 @@
+{
+  "title": "Pergunte ao Kept",
+  "description": "Diga o que você precisa e quando. Eu verifico os horários realmente livres.",
+  "newConversation": "Nova conversa",
+  "close": "Fechar",
+  "forExample": "Por exemplo:",
+  "starters": {
+    "one": "Um barbeiro amanhã à tarde",
+    "two": "Unhas em gel neste fim de semana",
+    "three": "Massagem perto de mim hoje à noite",
+    "four": "Professor de matemática online"
+  },
+  "searching": "Buscando",
+  "listening": "Ouvindo…",
+  "placeholder": "Um barbeiro no sábado de manhã…",
+  "yourMessage": "Sua mensagem",
+  "stopListening": "Parar de ouvir",
+  "speak": "Falar",
+  "send": "Enviar",
+  "verified": "Verificado",
+  "online": "Online"
+}

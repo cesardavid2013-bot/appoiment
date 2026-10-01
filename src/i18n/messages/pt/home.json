@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Que bom ver você de novo, {name}",
+    "eyebrow": "O horário, garantido",
+    "title": "Reserve as pessoas que deixam sua semana <em>melhor.</em>",
+    "lead": "Barbeiros, cabeleireiros, personal trainers, professores, fotógrafos e muito mais — com horários reais, preços claros e avaliações só de atendimentos verificados.",
+    "points": {
+      "verified": "Só avaliações verificadas",
+      "prices": "Preços antes de reservar",
+      "instant": "Confirmação imediata"
+    }
+  },
+  "search": {
+    "placeholder": "Corte de cabelo, massagem, fotógrafo…",
+    "label": "O que você quer reservar?",
+    "category": "Categoria",
+    "submit": "Buscar",
+    "sayIt": "Ou simplesmente diga —",
+    "sayItExample": "“um barbeiro amanhã depois das 17h”"
+  },
+  "openings": {
+    "title": "Horários em breve",
+    "live": "Direto das agendas",
+    "appointment": "Agendamento"
+  },
+  "index": {
+    "eyebrow": "O índice",
+    "title": "Todo tipo de agendamento",
+    "exploreAll": "Explorar tudo",
+    "pros": "{count, plural, one {# profissional} other {# profissionais}}"
+  },
+  "next": {
+    "title": "Seu próximo agendamento",
+    "details": "Detalhes"
+  },
+  "again": {
+    "title": "Reservar de novo",
+    "rebook": "Reservar de novo"
+  },
+  "rails": {
+    "availableSoon": "Disponíveis em breve",
+    "availableSoonNear": "Disponíveis em breve perto de {place}",
+    "availableSoonNearYou": "Disponíveis em breve perto de você",
+    "availableSoonSub": "Horários em tempo real da agenda de cada profissional.",
+    "recent": "Vistos recentemente",
+    "topRated": "Mais bem avaliados",
+    "topRatedSub": "As notas vêm apenas de reservas concluídas e verificadas.",
+    "newcomers": "Novos no Kept"
+  },
+  "how": {
+    "eyebrow": "Como funciona",
+    "title": "Três passos, sem ficar ligando",
+    "find": {
+      "title": "Encontre a pessoa certa",
+      "body": "Busque pelo que você precisa, quando e onde — ou simplesmente pergunte com suas palavras. Todo perfil mostra preços reais e avaliações verificadas."
+    },
+    "choose": {
+      "title": "Escolha um horário real",
+      "body": "Os horários que você vê estão livres na agenda deles agora. Escolha um, adicione opções e confirme."
+    },
+    "kept": {
+      "title": "Pode contar com isso",
+      "body": "Você recebe uma confirmação, lembretes antes do dia e um só lugar para reagendar, mandar mensagem ou reservar de novo."
+    }
+  },
+  "pros": {
+    "eyebrow": "Para profissionais",
+    "title": "Seu talento merece uma recepção <em>melhor</em>.",
+    "body": "Reservas online, uma agenda que nunca marca dois clientes no mesmo horário, lembretes que reduzem as faltas e uma página que mostra seu trabalho como ele merece. Grátis durante o lançamento.",
+    "cta": "Ofereça seus serviços",
+    "howItWorks": "Veja como funciona",
+    "features": {
+      "any": {
+        "title": "Qualquer serviço",
+        "body": "As opções ajustam preço e duração automaticamente."
+      },
+      "noDouble": {
+        "title": "Nunca dois no mesmo horário",
+        "body": "Cada horário é verificado no momento da reserva."
+      },
+      "noShows": {
+        "title": "Menos faltas",
+        "body": "Lembretes, sinal e políticas claras."
+      },
+      "discovered": {
+        "title": "Seja descoberto",
+        "body": "Portfólio, avaliações verificadas e Spotlight."
+      }
+    }
+  }
+}
