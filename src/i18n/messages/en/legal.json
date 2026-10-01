@@ -1,0 +1,213 @@
+{
+  "governingVersion": "If translations differ, the English version applies.",
+  "nav": {
+    "label": "Legal documents",
+    "terms": "Terms of service",
+    "privacy": "Privacy policy"
+  },
+  "doc": {
+    "lastUpdated": "Last updated {date}",
+    "counselNote": "This is a plain-language starter document. It will be reviewed by legal counsel before Kept launches publicly, and may change as a result. We'll tell you before any change that affects your rights takes effect.",
+    "contents": "Contents"
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of service",
+      "description": "The plain-language terms for using Kept to book professionals or to run your business."
+    },
+    "title": "Terms of service",
+    "intro": "These terms explain how Kept works and what we expect from everyone who uses it. We've kept them short and readable. If something here is unclear, <support>ask us</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "What Kept is",
+        "body": {
+          "p1": "Kept is a marketplace and booking tool. Customers use it to find and book professionals — barbers, stylists, trainers, tutors, detailers and many more. Professionals and businesses use it to publish their services, manage their calendar and get paid.",
+          "p2": "<b>The professional or business you book provides the service, not Kept.</b> When you book, your agreement for the service is with that business. We run the platform that connects you, shows you their prices and policies, and helps both sides keep the appointment."
+        }
+      },
+      "account": {
+        "title": "Your account",
+        "body": {
+          "li1": "You need to be at least 18 (or the age of majority where you live) to create an account. You can book for someone else, such as your child, if you're responsible for them.",
+          "li2": "Give accurate information and keep it up to date — businesses rely on it to reach you about your appointments.",
+          "li3": "Keep your password to yourself. You're responsible for what happens on your account. If you think someone else has access, change your password and sign out other devices in Login & security.",
+          "li4": "One person per account. Businesses add team members as separate people rather than sharing a login."
+        }
+      },
+      "booking": {
+        "title": "Booking as a customer",
+        "body": {
+          "p1": "Before you confirm a booking you'll see the price (or how it's estimated), how long it takes, any deposit, and the business's cancellation and no-show policy. By booking, you agree to those terms.",
+          "li1": "<b>Instant bookings</b> are confirmed straight away. <b>Requests</b> are confirmed only once the business accepts them; until then your time is held, and unanswered requests expire.",
+          "li2": "You can cancel or reschedule from your booking page within the business's rules. Late cancellations and no-shows may cost you some or all of a deposit, or a fee, exactly as shown when you booked.",
+          "li3": "If a service is priced as an estimate (for example “from” or a range), the final price is agreed with the business at your appointment.",
+          "li4": "If Kept charges a service fee for a booking, it's shown before you confirm. We never add charges afterwards."
+        }
+      },
+      "payments": {
+        "title": "Payments and refunds",
+        "body": {
+          "p1": "Online payments are processed by Stripe. Kept never sees or stores your full card number. Some businesses take payment in person instead; in that case you pay them directly.",
+          "li1": "Refunds follow the business's policy shown at booking, and are issued to the card you paid with. Your bank may take several business days to show them.",
+          "li2": "If a business cancels or declines your appointment, everything you paid online for it is refunded.",
+          "li3": "If something went wrong with a payment, <supportPayment>contact us</supportPayment> before opening a dispute with your bank — it's usually faster."
+        }
+      },
+      "businesses": {
+        "title": "For professionals and businesses",
+        "body": {
+          "li1": "Your listing must be accurate: who you are, what you offer, your prices, where you work and your policies. Photos and videos must be of your own work, or used with permission.",
+          "li2": "You're responsible for holding any licences, permits, insurance and qualifications your work requires, and for meeting your tax obligations.",
+          "li3": "Honour the bookings you accept and the policies you publish. Repeated last-minute cancellations, no-shows or misleading listings can lead to your profile being suspended.",
+          "li4": "Plans, limits and fees are listed on our <pricing>pricing page</pricing>. A platform fee applies only to payments clients make online through Kept. Payouts are made by Stripe to your own account and are also subject to Stripe's terms.",
+          "li5": "Client details you receive through Kept may be used to provide and follow up on your services. Send marketing only to clients who agreed to receive it.",
+          "li6": "You keep ownership of what you upload, and give Kept permission to display it on Kept and in promotion of your profile while your listing is active.",
+          "li7": "Spotlight placements are always labelled as promoted. They're free during launch; if that changes we'll tell you before anything is charged."
+        }
+      },
+      "reviews": {
+        "title": "Reviews",
+        "body": {
+          "p1": "Only customers with a completed appointment can leave a review, once per appointment. Reviews must be honest and about your own experience. Businesses may reply publicly.",
+          "p2": "Offering anything in exchange for a review, or for removing one, isn't allowed. We may hide or remove reviews that break these terms — for example spam, hate, personal information or conflicts of interest — but we don't remove reviews just because they're negative."
+        }
+      },
+      "conduct": {
+        "title": "Things you can't do on Kept",
+        "body": {
+          "li1": "Offer or book anything illegal, sexual services, or anything that puts people at risk.",
+          "li2": "Harass, threaten or discriminate against anyone — customers, professionals or our team.",
+          "li3": "Create fake accounts, listings, bookings or reviews, or impersonate someone else.",
+          "li4": "Upload content you don't have the right to share, or that contains other people's personal information without permission.",
+          "li5": "Scrape, overload, probe or interfere with the service, or try to get around its security or fees."
+        }
+      },
+      "ourRole": {
+        "title": "Our role and its limits",
+        "body": {
+          "p1": "We work to keep Kept safe and reliable, and we act on reports. But businesses on Kept are independent — they aren't our employees or agents, and we don't guarantee the quality, safety or legality of their services. A “verified” badge means we reviewed documents the business provided; it isn't an endorsement.",
+          "p2": "Kept is provided “as is”. To the extent the law allows, we aren't liable for indirect or consequential losses, or for what happens during a service between you and a business. Nothing in these terms limits rights you have under consumer protection law that can't be excluded."
+        }
+      },
+      "ending": {
+        "title": "Suspension and closing your account",
+        "body": {
+          "p1": "You can delete your account at any time in <privacyData>Privacy & data</privacyData>. Upcoming appointments are cancelled under each business's policy, and records businesses need — such as past appointments and payments — are kept in anonymised form.",
+          "p2": "We may suspend or close accounts that break these terms or put others at risk. Where we can, we'll tell you why and give you a chance to respond."
+        }
+      },
+      "changes": {
+        "title": "Changes, disputes and contact",
+        "body": {
+          "p1": "When we change these terms in a way that matters, we'll tell you in advance by email or in the app. Continuing to use Kept after a change takes effect means you accept it.",
+          "p2": "The governing law and the process for resolving disputes will be added here after legal review, before Kept launches publicly.",
+          "p3": "Questions about these terms? <support>Contact us</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy policy",
+      "description": "What personal data Kept collects, why, who sees it, and how to download or delete it."
+    },
+    "title": "Privacy policy",
+    "intro": "This policy explains what personal data Kept collects, why we need it, who can see it, and the choices you have — for customers and professionals alike.",
+    "sections": {
+      "summary": {
+        "title": "The short version",
+        "body": {
+          "li1": "We collect what we need to run bookings: who you are, what you book, and how to reach you.",
+          "li2": "The businesses you book with see the details they need to serve you. Nobody else does, apart from the service providers that help us run Kept.",
+          "li3": "We don't sell your personal data, and we don't use advertising trackers.",
+          "li4": "You can download a copy of your data or delete your account yourself, any time, in <privacyData>Privacy & data</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Information you give us",
+        "body": {
+          "li1": "<b>Account:</b> your name, email, password (stored only as a one-way hash), and optionally your phone number, photo and time zone. If you sign in with Google, we receive your name and email from Google.",
+          "li2": "<b>Bookings:</b> the service, time, business and price; notes you add; answers to a business's intake questions; and an address if a professional comes to you.",
+          "li3": "<b>Payments:</b> amounts, status and refunds. Card details go directly to Stripe — we never receive your full card number.",
+          "li4": "<b>Messages, reviews and support requests</b>, including any images you attach, and addresses you save.",
+          "li5": "<b>Businesses</b> also give us business details, team members, services, schedules, portfolio media, payout details (held by Stripe) and the client records they keep."
+        }
+      },
+      "automatic": {
+        "title": "Information collected automatically",
+        "body": {
+          "li1": "<b>Sign-in sessions:</b> a cookie keeps you signed in. We store the session with your browser type so your devices can be signed out securely.",
+          "li2": "<b>Security:</b> we store a keyed, one-way hash of your IP address — not the address itself — to rate-limit abuse and investigate suspicious activity.",
+          "li3": "<b>Location:</b> if you choose a place or share your location to search nearby, it's saved in a cookie on your device to remember your choice. We don't track your location in the background.",
+          "li4": "<b>Activity on Kept:</b> professionals you view and save, so we can show them again; and counts of views and clicks on promoted listings, reported to businesses only as totals."
+        }
+      },
+      "use": {
+        "title": "How we use it",
+        "body": {
+          "li1": "To make, change and remind you about bookings, and to process payments and refunds.",
+          "li2": "To send the notifications you've chosen. Booking confirmations and changes are always sent; everything else can be turned off in Notification settings.",
+          "li3": "To show you relevant professionals and openings near you.",
+          "li4": "To keep Kept safe: preventing fraud, spam and abuse, and acting on reports.",
+          "li5": "To answer support requests and improve Kept.",
+          "li6": "To meet legal obligations, such as tax and accounting records."
+        }
+      },
+      "businesses": {
+        "title": "What businesses see",
+        "body": {
+          "p1": "When you book, the business sees your name, email and phone number (if you added one), the booking and anything you shared with it — notes, intake answers, a service address — plus your previous visits with them. They can add private notes to their client record.",
+          "p2": "Each business is responsible for how it uses its client records, and may only send you marketing if you agreed to it. Reviews are public and show your first name and last initial."
+        }
+      },
+      "sharing": {
+        "title": "Who else we share it with",
+        "body": {
+          "p1": "We use a small number of providers who process data on our behalf, under contracts that limit what they can do with it:",
+          "li1": "Stripe, for payments and payouts.",
+          "li2": "Our email provider, and an SMS provider if text messages are enabled.",
+          "li3": "Google, only if you choose to sign in with Google.",
+          "li4": "Map and address-lookup services, to show maps and find places you search for.",
+          "li5": "Our hosting and infrastructure providers.",
+          "p2": "We may also disclose information when the law requires it, to protect someone's safety, or as part of a merger or acquisition — in which case this policy would continue to apply. We never sell personal data."
+        }
+      },
+      "rights": {
+        "title": "Your choices and rights",
+        "body": {
+          "li1": "<b>Access:</b> download a copy of your data from <privacyData>Privacy & data</privacyData>.",
+          "li2": "<b>Correct:</b> update your details in <profile>Profile</profile>, or ask us to.",
+          "li3": "<b>Delete:</b> delete your account in Privacy & data. See below for what we keep.",
+          "li4": "<b>Notifications:</b> choose what we send in <notifications>Notification settings</notifications>.",
+          "li5": "Depending on where you live you may have further rights, such as objecting to certain uses or complaining to a data protection authority. <supportAccount>Contact us</supportAccount> and we'll help."
+        }
+      },
+      "retention": {
+        "title": "How long we keep it",
+        "body": {
+          "p1": "We keep your information while your account is open.",
+          "p2": "When you delete your account, we erase your name, email, phone, photo, saved addresses, saved professionals, notifications and sign-in methods straight away. Records that businesses and accounting depend on — past appointments, payments and reviews — are kept, linked to “Deleted user” rather than to you. Messages you exchanged with a business stay in that business's conversation history."
+        }
+      },
+      "security": {
+        "title": "Security",
+        "body": {
+          "p1": "Passwords are hashed with Argon2, sessions are stored server-side and can be revoked, connections are encrypted, and uploaded photos are re-encoded so hidden location data is removed. No system is perfectly secure; if we learn of a breach that affects you, we'll tell you promptly."
+        }
+      },
+      "children": {
+        "title": "Children",
+        "body": {
+          "p1": "Kept accounts are for adults. A parent or guardian can book a service for their child; we don't knowingly collect personal data directly from children."
+        }
+      },
+      "changes": {
+        "title": "Changes and contact",
+        "body": {
+          "p1": "If we change this policy in a way that matters, we'll tell you before it takes effect.",
+          "p2": "Questions or requests about your data? <supportAccount>Contact us</supportAccount>."
+        }
+      }
+    }
+  }
+}

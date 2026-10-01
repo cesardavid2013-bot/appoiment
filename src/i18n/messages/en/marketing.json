@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept for professionals — online booking and a calendar that works for you",
+    "description": "Take bookings online, stop double-bookings and no-shows, and get discovered by local customers. Free to start for independent professionals."
+  },
+  "cta": {
+    "dashboard": "Go to your business",
+    "setup": "Set up your business",
+    "start": "Get started — it's free"
+  },
+  "hero": {
+    "eyebrow": "Kept for professionals",
+    "title": "Fill your book. Keep your evenings.",
+    "lede": "Online booking, a calendar that can't double-book, reminders that cut no-shows, and a profile in front of people near you looking for exactly what you do. Free to start.",
+    "howItWorks": "How it works",
+    "note": "No card required. Your profile stays private until you publish it."
+  },
+  "sides": {
+    "heading": "How Kept works for clients and for you",
+    "clients": {
+      "eyebrow": "For your clients",
+      "title": "Discover and book great professionals.",
+      "points": {
+        "search": "Search by service, place and time, and see real openings — not a contact form.",
+        "prices": "Upfront prices, your policies and verified reviews before they book.",
+        "reminders": "Reminders, directions, and rescheduling without a phone call."
+      }
+    },
+    "you": {
+      "eyebrow": "For you",
+      "title": "Run your appointments and grow your business.",
+      "points": {
+        "calendar": "One calendar for bookings, breaks and time off — on your phone.",
+        "deposits": "Deposits and cancellation rules that are enforced for you.",
+        "clients": "Client history, notes and reviews that bring people back."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Live in three steps",
+    "profile": {
+      "title": "Set up your profile",
+      "body": "Add your services with prices and durations, your hours, where you work and a few photos of your work. We walk you through it."
+    },
+    "share": {
+      "title": "Share your link",
+      "body": "Put {host}/your-name in your bio and on your cards. Once you publish, you also appear in search for people nearby."
+    },
+    "book": {
+      "title": "Take bookings",
+      "body": "Clients pick a real opening and book in seconds. You get notified, they get reminders, and your calendar stays correct."
+    }
+  },
+  "industries": {
+    "heading": "Built for any service you book by the hour",
+    "lede": "If clients book time with you, Kept fits — whether you work alone from a chair or run a team across several locations."
+  },
+  "features": {
+    "heading": "Everything the day needs",
+    "booking": {
+      "title": "Online booking with real availability",
+      "p1": "Clients only ever see times you can actually do — your hours, minus existing bookings, breaks, buffers and time off, with minimum notice and how far ahead they can book.",
+      "p2": "Every booking is checked again at the moment it's made, so two people can never land in the same slot, even if they tap at the same second."
+    },
+    "services": {
+      "title": "Services that work the way you price",
+      "p1": "Fixed, starting-at, a range, free or by consultation. Add options like length, size or add-ons, and each one adjusts both the price and the time held in your calendar.",
+      "p2": "Add buffers before or after, limit services to certain team members or locations, and ask intake questions before the first visit."
+    },
+    "policies": {
+      "title": "Deposits and policies, enforced for you",
+      "p1": "Ask for a deposit or full payment up front, set a cancellation window and late-cancel or no-show fees. Clients see the rules before they book, and refunds follow them automatically."
+    },
+    "reminders": {
+      "title": "Reminders that cut no-shows",
+      "p1": "Confirmations and reminders go out on their own — by default a day before and two hours before — with a link to reschedule inside your rules instead of just not showing up.",
+      "p2": "When someone cancels, clients on your waitlist for that day hear about the opening."
+    },
+    "clients": {
+      "title": "Know your clients",
+      "p1": "Every client gets a record of visits, spend, cancellations and no-shows, plus private notes only your team can see. Message clients from the same place."
+    },
+    "team": {
+      "title": "From solo chair to team and locations",
+      "p1": "Add team members with their own hours and services, and roles that control what each person can see and do. Run several locations, each with its own time zone and hours."
+    },
+    "portfolio": {
+      "title": "A portfolio that books",
+      "p1": "Show photos and short videos of your work. Link each one to a service, and clients can tap “Book this” to book exactly what they saw."
+    },
+    "spotlight": {
+      "title": "Spotlight — free during launch",
+      "p1": "Promote your profile in search and category pages near you. Promoted results are always labelled, limited to two per page, and still show your real ratings and openings.",
+      "p2": "Spotlight costs nothing while Kept is launching. If that ever changes, we'll tell you before anything is charged — it never switches to paid on its own."
+    }
+  },
+  "plans": {
+    "heading": "Plans",
+    "lede": "While Kept is launching, every new business starts on {plan} with no monthly fee. Prices for paid plans will be announced well before they apply, and nobody is charged without choosing a plan.",
+    "badge": {
+      "launch": "Free during launch",
+      "available": "Available now",
+      "unavailable": "Not yet available"
+    },
+    "period": {
+      "launch": "per month while we launch",
+      "available": "per month",
+      "unavailable": "Pricing to be announced"
+    },
+    "rows": {
+      "members": "Bookable team members",
+      "locations": "Locations",
+      "fee": "Fee on online payments",
+      "roles": "Custom team roles",
+      "analytics": "Advanced analytics"
+    },
+    "justYou": "1 (just you)",
+    "upTo": "Up to {n}",
+    "included": "Included",
+    "notIncluded": "Not included",
+    "summary": {
+      "free": "Online booking, calendar, reminders, deposits, client records, intake forms, portfolio and Spotlight are all included.",
+      "launch": "Everything in {base}, plus a team of up to {members}, more locations, custom roles and lower fees. What new businesses get today.",
+      "other": "For larger teams and multi-location businesses."
+    },
+    "footnote": "The fee applies only to payments clients make online through Kept. Appointments paid in person have no Kept fee. Need more people or locations than your plan allows? <link>Tell us</link>."
+  },
+  "faq": {
+    "heading": "Questions",
+    "cost": {
+      "q": "What does Kept cost?",
+      "a": "There's no monthly fee: while Kept is launching, new businesses get the {plan} plan free. When a client pays online — a deposit or the full price — Kept keeps {fee} of that payment. Appointments paid in person carry no Kept fee at all."
+    },
+    "clientFee": {
+      "q": "Do my clients pay to book?",
+      "aFee": "Clients see a {fee} service fee at checkout, shown before they confirm. Nothing is ever added after the fact.",
+      "aFree": "No. Clients book for free and see your exact price before they confirm."
+    },
+    "payments": {
+      "q": "Do I need to take payments online?",
+      "a": "No. You can let clients pay in person, or require a deposit or full payment when they book. Online payments are processed by Stripe and paid out to your own bank account."
+    },
+    "approve": {
+      "q": "Can I approve bookings before they're confirmed?",
+      "a": "Yes. Choose instant booking, or request mode where every booking waits for your approval. The time is held while you decide, and requests you don't answer expire on their own."
+    },
+    "where": {
+      "q": "I work from home, travel to clients, or teach online. Does that work?",
+      "a": "Yes. Each location can be a physical address, a mobile service area where clients give you their address, or a virtual session. You can offer any combination."
+    },
+    "spotlight": {
+      "q": "How does Spotlight work?",
+      "a": "Spotlight shows your profile as a clearly labelled “Promoted” result in search and category pages, at most two per page. It's free during launch — start or stop it any time from your dashboard."
+    },
+    "link": {
+      "q": "Can I use my own link?",
+      "a": "Yes. Every business gets a profile at {host}/your-name that you can share on Instagram, in your bio or on a QR code. Clients booking through it don't have to search for you."
+    }
+  },
+  "closing": {
+    "title": "Your next client is already looking.",
+    "body": "Set up your services and hours, publish your profile, and start taking bookings today."
+  },
+  "demo": {
+    "example": "Example",
+    "today": {
+      "label": "Example of the Today schedule a professional sees",
+      "title": "Today",
+      "summary": "{count, plural, one {# appointment} other {# appointments}} · {amount} booked",
+      "skinFade": "Skin fade",
+      "beardTrim": "Beard trim & line-up",
+      "lunch": "Lunch",
+      "signatureCut": "Signature cut",
+      "kidsCut": "Kids cut",
+      "firstVisit": "{name} · first visit",
+      "confirmed": "Confirmed",
+      "depositPaid": "Deposit paid",
+      "needsApproval": "Needs approval",
+      "checkedIn": "Checked in"
+    },
+    "reminder": {
+      "label": "Example of an automatic reminder a client receives",
+      "when": "24h before",
+      "title": "Reminder: {service} tomorrow",
+      "body": "{time} with Dre at North Fade Studio. Need to change it? Reschedule up to 24h before."
+    },
+    "grid": {
+      "label": "Example of the time picker customers book from, showing only open times",
+      "title": "Choose a time",
+      "instant": "Instant confirmation",
+      "note": "Taken times disappear the moment someone books. Two people can never get the same slot."
+    },
+    "policy": {
+      "label": "Example of a deposit and cancellation policy",
+      "title": "Booking policy",
+      "deposit": "Deposit",
+      "depositValue": "{pct} at booking",
+      "freeCancel": "Free cancellation",
+      "freeCancelValue": "Up to 24h before",
+      "lateCancel": "Late cancellation",
+      "lateCancelValue": "{pct} of the total",
+      "noShow": "No-show",
+      "noShowValue": "Deposit kept",
+      "dueNow": "Due now",
+      "dueValue": "{due} of {total}"
+    },
+    "client": {
+      "label": "Example of a client record",
+      "since": "Client since {month} · {visits, plural, one {# visit} other {# visits}}",
+      "spent": "Spent",
+      "noShows": "No-shows",
+      "gap": "Usual gap",
+      "gapValue": "{weeks} wk",
+      "note": "Private note: sensitive scalp — use the gentle shampoo."
+    },
+    "team": {
+      "label": "Example of a team across two locations",
+      "title": "Team",
+      "senior": "Senior barber",
+      "barber": "Barber",
+      "frontDesk": "Front desk"
+    },
+    "portfolio": {
+      "label": "Example of portfolio posts linked to a bookable service",
+      "skinFade": "Skin fade",
+      "taper": "Taper & beard",
+      "bookThis": "Book this",
+      "note": "Your photos and videos appear here — tap one to book that exact service."
+    },
+    "spotlight": {
+      "label": "Example of a promoted listing in search results",
+      "category": "Barber",
+      "promoted": "Promoted"
+    },
+    "options": {
+      "service": "Knotless braids",
+      "hint": "Example service · try the options",
+      "length": "Length",
+      "shoulder": "Shoulder length",
+      "mid": "Mid-back",
+      "waist": "Waist length",
+      "addons": "Add-ons",
+      "wash": "Wash & blow-dry",
+      "beads": "Beads & cuffs",
+      "included": "Included",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept para profesionales: reservas en línea y una agenda que trabaja por ti",
+    "description": "Recibe reservas en línea, olvídate de las citas duplicadas y de los clientes que no llegan, y deja que te encuentren clientes de tu zona. Gratis para empezar si trabajas por tu cuenta."
+  },
+  "cta": {
+    "dashboard": "Ir a tu negocio",
+    "setup": "Configura tu negocio",
+    "start": "Empieza gratis"
+  },
+  "hero": {
+    "eyebrow": "Kept para profesionales",
+    "title": "Llena tu agenda. Recupera tus noches.",
+    "lede": "Reservas en línea, una agenda que no permite citas duplicadas, recordatorios que reducen las ausencias y un perfil frente a personas cerca de ti que buscan justo lo que haces. Gratis para empezar.",
+    "howItWorks": "Cómo funciona",
+    "note": "No necesitas tarjeta. Tu perfil es privado hasta que lo publiques."
+  },
+  "sides": {
+    "heading": "Cómo funciona Kept para tus clientes y para ti",
+    "clients": {
+      "eyebrow": "Para tus clientes",
+      "title": "Descubrir y reservar a grandes profesionales.",
+      "points": {
+        "search": "Buscan por servicio, lugar y hora, y ven horarios disponibles reales, no un formulario de contacto.",
+        "prices": "Precios claros, tus políticas y reseñas verificadas antes de reservar.",
+        "reminders": "Recordatorios, indicaciones para llegar y cambios de cita sin tener que llamar."
+      }
+    },
+    "you": {
+      "eyebrow": "Para ti",
+      "title": "Gestiona tus citas y haz crecer tu negocio.",
+      "points": {
+        "calendar": "Una sola agenda para reservas, descansos y días libres, en tu teléfono.",
+        "deposits": "Anticipos y reglas de cancelación que se aplican solas.",
+        "clients": "Historial de clientes, notas y reseñas que hacen que vuelvan."
+      }
+    }
+  },
+  "steps": {
+    "heading": "En línea en tres pasos",
+    "profile": {
+      "title": "Arma tu perfil",
+      "body": "Agrega tus servicios con precios y duración, tu horario, dónde trabajas y algunas fotos de tu trabajo. Te guiamos en cada paso."
+    },
+    "share": {
+      "title": "Comparte tu enlace",
+      "body": "Pon {host}/tu-nombre en tu bio y en tus tarjetas. Cuando publiques, también aparecerás en las búsquedas de gente cercana."
+    },
+    "book": {
+      "title": "Recibe reservas",
+      "body": "Tus clientes eligen un horario real y reservan en segundos. A ti te llega el aviso, a ellos los recordatorios, y tu agenda siempre está al día."
+    }
+  },
+  "industries": {
+    "heading": "Hecho para cualquier servicio que se reserva por tiempo",
+    "lede": "Si tus clientes reservan tiempo contigo, Kept te sirve, ya sea que trabajes solo en tu silla o tengas un equipo en varias sucursales."
+  },
+  "features": {
+    "heading": "Todo lo que tu día necesita",
+    "booking": {
+      "title": "Reservas en línea con disponibilidad real",
+      "p1": "Tus clientes solo ven los horarios que de verdad puedes cumplir: tu horario menos las reservas existentes, descansos, márgenes y días libres, con la anticipación mínima y el plazo máximo que tú defines.",
+      "p2": "Cada reserva se vuelve a verificar en el momento en que se hace, así que dos personas nunca pueden quedarse con el mismo horario, aunque toquen en el mismo segundo."
+    },
+    "services": {
+      "title": "Servicios que funcionan como tú cobras",
+      "p1": "Precio fijo, desde, por rango, gratis o a consultar. Agrega opciones como largo, tamaño o extras, y cada una ajusta tanto el precio como el tiempo que se bloquea en tu agenda.",
+      "p2": "Agrega márgenes antes o después, limita servicios a ciertos miembros del equipo o sucursales, y haz preguntas previas antes de la primera visita."
+    },
+    "policies": {
+      "title": "Anticipos y políticas que se cumplen solas",
+      "p1": "Pide un anticipo o el pago completo por adelantado, define un plazo de cancelación y cargos por cancelación tardía o ausencia. Tus clientes ven las reglas antes de reservar y los reembolsos las siguen automáticamente."
+    },
+    "reminders": {
+      "title": "Recordatorios que reducen las ausencias",
+      "p1": "Las confirmaciones y los recordatorios se envían solos (por defecto, un día antes y dos horas antes) con un enlace para reprogramar dentro de tus reglas, en lugar de simplemente no llegar.",
+      "p2": "Cuando alguien cancela, los clientes en tu lista de espera para ese día se enteran del horario libre."
+    },
+    "clients": {
+      "title": "Conoce a tus clientes",
+      "p1": "Cada cliente tiene un registro de visitas, gasto, cancelaciones y ausencias, además de notas privadas que solo ve tu equipo. Escríbeles desde el mismo lugar."
+    },
+    "team": {
+      "title": "De una sola silla a un equipo con sucursales",
+      "p1": "Agrega miembros del equipo con su propio horario y servicios, y roles que controlan lo que cada persona puede ver y hacer. Administra varias sucursales, cada una con su zona horaria y su horario."
+    },
+    "portfolio": {
+      "title": "Un portafolio que genera reservas",
+      "p1": "Muestra fotos y videos cortos de tu trabajo. Vincula cada uno a un servicio y tus clientes podrán tocar “Reservar esto” para reservar exactamente lo que vieron."
+    },
+    "spotlight": {
+      "title": "Spotlight: gratis durante el lanzamiento",
+      "p1": "Promociona tu perfil en las búsquedas y páginas de categoría cerca de ti. Los resultados promocionados siempre van etiquetados, hay como máximo dos por página y muestran tus calificaciones y horarios reales.",
+      "p2": "Spotlight no cuesta nada mientras Kept está en lanzamiento. Si eso cambia, te avisaremos antes de cobrarte cualquier cosa: nunca pasa a ser de pago por sí solo."
+    }
+  },
+  "plans": {
+    "heading": "Planes",
+    "lede": "Mientras Kept está en lanzamiento, todo negocio nuevo empieza en el plan {plan} sin cuota mensual. Los precios de los planes de pago se anunciarán con mucha anticipación y a nadie se le cobra sin elegir un plan.",
+    "badge": {
+      "launch": "Gratis durante el lanzamiento",
+      "available": "Disponible ahora",
+      "unavailable": "Aún no disponible"
+    },
+    "period": {
+      "launch": "al mes durante el lanzamiento",
+      "available": "al mes",
+      "unavailable": "Precio por anunciar"
+    },
+    "rows": {
+      "members": "Miembros del equipo con reservas",
+      "locations": "Sucursales",
+      "fee": "Comisión en pagos en línea",
+      "roles": "Roles de equipo personalizados",
+      "analytics": "Analíticas avanzadas"
+    },
+    "justYou": "1 (solo tú)",
+    "upTo": "Hasta {n}",
+    "included": "Incluido",
+    "notIncluded": "No incluido",
+    "summary": {
+      "free": "Incluye reservas en línea, agenda, recordatorios, anticipos, fichas de clientes, formularios previos, portafolio y Spotlight.",
+      "launch": "Todo lo de {base}, más un equipo de hasta {members} personas, más sucursales, roles personalizados y comisiones más bajas. Es lo que reciben hoy los negocios nuevos.",
+      "other": "Para equipos más grandes y negocios con varias sucursales."
+    },
+    "footnote": "La comisión solo aplica a los pagos que los clientes hacen en línea a través de Kept. Las citas pagadas en persona no tienen comisión de Kept. ¿Necesitas más personas o sucursales de las que permite tu plan? <link>Cuéntanos</link>."
+  },
+  "faq": {
+    "heading": "Preguntas",
+    "cost": {
+      "q": "¿Cuánto cuesta Kept?",
+      "a": "No hay cuota mensual: mientras Kept está en lanzamiento, los negocios nuevos reciben gratis el plan {plan}. Cuando un cliente paga en línea (un anticipo o el precio completo), Kept se queda con el {fee} de ese pago. Las citas pagadas en persona no tienen ninguna comisión de Kept."
+    },
+    "clientFee": {
+      "q": "¿Mis clientes pagan por reservar?",
+      "aFee": "Tus clientes ven un cargo por servicio del {fee} al pagar, antes de confirmar. Nunca se agrega nada después.",
+      "aFree": "No. Tus clientes reservan gratis y ven tu precio exacto antes de confirmar."
+    },
+    "payments": {
+      "q": "¿Tengo que cobrar en línea?",
+      "a": "No. Puedes dejar que tus clientes paguen en persona, o pedir un anticipo o el pago completo al reservar. Los pagos en línea los procesa Stripe y se depositan en tu propia cuenta bancaria."
+    },
+    "approve": {
+      "q": "¿Puedo aprobar las reservas antes de que se confirmen?",
+      "a": "Sí. Elige reserva instantánea o modo de solicitud, en el que cada reserva espera tu aprobación. El horario queda apartado mientras decides y las solicitudes que no respondas vencen solas."
+    },
+    "where": {
+      "q": "Trabajo desde casa, voy a domicilio o doy clases en línea. ¿Me sirve?",
+      "a": "Sí. Cada ubicación puede ser una dirección física, una zona de servicio a domicilio donde el cliente te da su dirección, o una sesión virtual. Puedes ofrecer cualquier combinación."
+    },
+    "spotlight": {
+      "q": "¿Cómo funciona Spotlight?",
+      "a": "Spotlight muestra tu perfil como un resultado “Promocionado”, claramente etiquetado, en las búsquedas y páginas de categoría, con un máximo de dos por página. Es gratis durante el lanzamiento: actívalo o detenlo cuando quieras desde tu panel."
+    },
+    "link": {
+      "q": "¿Puedo usar mi propio enlace?",
+      "a": "Sí. Cada negocio tiene un perfil en {host}/tu-nombre que puedes compartir en Instagram, en tu bio o en un código QR. Quienes reservan desde ahí no tienen que buscarte."
+    }
+  },
+  "closing": {
+    "title": "Tu próximo cliente ya te está buscando.",
+    "body": "Configura tus servicios y horario, publica tu perfil y empieza a recibir reservas hoy mismo."
+  },
+  "demo": {
+    "example": "Ejemplo",
+    "today": {
+      "label": "Ejemplo de la agenda de Hoy que ve un profesional",
+      "title": "Hoy",
+      "summary": "{count, plural, one {# cita} other {# citas}} · {amount} reservados",
+      "skinFade": "Degradado a piel",
+      "beardTrim": "Barba y perfilado",
+      "lunch": "Almuerzo",
+      "signatureCut": "Corte de la casa",
+      "kidsCut": "Corte infantil",
+      "firstVisit": "{name} · primera visita",
+      "confirmed": "Confirmada",
+      "depositPaid": "Anticipo pagado",
+      "needsApproval": "Por aprobar",
+      "checkedIn": "En el local"
+    },
+    "reminder": {
+      "label": "Ejemplo de un recordatorio automático que recibe un cliente",
+      "when": "24 h antes",
+      "title": "Recordatorio: {service} mañana",
+      "body": "{time} con Dre en North Fade Studio. ¿Necesitas cambiarla? Reprograma hasta 24 h antes."
+    },
+    "grid": {
+      "label": "Ejemplo del selector de horario desde el que reservan los clientes, con solo horarios libres",
+      "title": "Elige un horario",
+      "instant": "Confirmación instantánea",
+      "note": "Los horarios ocupados desaparecen en cuanto alguien reserva. Dos personas nunca pueden quedarse con el mismo."
+    },
+    "policy": {
+      "label": "Ejemplo de una política de anticipo y cancelación",
+      "title": "Política de reservas",
+      "deposit": "Anticipo",
+      "depositValue": "{pct} al reservar",
+      "freeCancel": "Cancelación gratis",
+      "freeCancelValue": "Hasta 24 h antes",
+      "lateCancel": "Cancelación tardía",
+      "lateCancelValue": "{pct} del total",
+      "noShow": "Ausencia",
+      "noShowValue": "Se retiene el anticipo",
+      "dueNow": "A pagar ahora",
+      "dueValue": "{due} de {total}"
+    },
+    "client": {
+      "label": "Ejemplo de una ficha de cliente",
+      "since": "Cliente desde {month} · {visits, plural, one {# visita} other {# visitas}}",
+      "spent": "Gastado",
+      "noShows": "Ausencias",
+      "gap": "Frecuencia",
+      "gapValue": "{weeks} sem",
+      "note": "Nota privada: cuero cabelludo sensible, usar el champú suave."
+    },
+    "team": {
+      "label": "Ejemplo de un equipo en dos sucursales",
+      "title": "Equipo",
+      "senior": "Barbero sénior",
+      "barber": "Barbero",
+      "frontDesk": "Recepción"
+    },
+    "portfolio": {
+      "label": "Ejemplo de publicaciones del portafolio vinculadas a un servicio reservable",
+      "skinFade": "Degradado a piel",
+      "taper": "Taper y barba",
+      "bookThis": "Reservar esto",
+      "note": "Aquí aparecen tus fotos y videos: toca uno para reservar exactamente ese servicio."
+    },
+    "spotlight": {
+      "label": "Ejemplo de un perfil promocionado en los resultados de búsqueda",
+      "category": "Barbería",
+      "promoted": "Promocionado"
+    },
+    "options": {
+      "service": "Trenzas knotless",
+      "hint": "Servicio de ejemplo · prueba las opciones",
+      "length": "Largo",
+      "shoulder": "A los hombros",
+      "mid": "A media espalda",
+      "waist": "A la cintura",
+      "addons": "Extras",
+      "wash": "Lavado y secado",
+      "beads": "Cuentas y anillos",
+      "included": "Incluido",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}
