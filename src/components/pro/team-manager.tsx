@@ -12,6 +12,9 @@ import { Avatar, type MediaLike } from "@/components/ui/media";
 import { Menu, MenuContent, MenuItem, MenuSeparator, MenuTrigger } from "@/components/ui/menu";
 import { Badge, PageHeader } from "@/components/ui/misc";
 import { ALL_PERMISSIONS, PERMISSIONS, ROLE_LABELS, ROLE_PERMISSIONS, type MemberRole, type Permission } from "@/domain/permissions";
+import { useT } from "@/i18n/client";
+import { rich } from "@/i18n/rich";
+import type { TFunction } from "@/i18n/translate";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { uploadMedia } from "@/lib/upload";
@@ -49,7 +52,18 @@ type Props = {
 /** Calendar colours: distinguishable on the calendar, readable with white text. */
 const COLORS = ["#2e5e4e", "#3d5a80", "#7a4b8c", "#a0522d", "#8a6d1f", "#5b6b2f", "#9c3d54", "#40666a"];
 
+/** Looks up a translation, falling back to the English domain constant when the key is missing. */
+function tOr(t: TFunction, key: string, fallback: string) {
+  const v = t(key);
+  return v === key ? fallback : v;
+}
+const roleLabel = (t: TFunction, r: MemberRole) => tOr(t, `account.invite.roles.${r}.label`, ROLE_LABELS[r].label);
+const roleDescription = (t: TFunction, r: MemberRole) => tOr(t, `account.invite.roles.${r}.description`, ROLE_LABELS[r].description);
+const permissionLabel = (t: TFunction, p: Permission) => tOr(t, `proSetup.team.permissions.${p}`, PERMISSIONS[p]);
+
 export function TeamManager(props: Props) {
+  const t = useT("proSetup");
+  const tr = useT();
   const router = useRouter();
   const { members, selfMemberId, plan, now } = props;
   const [inviteOpen, setInviteOpen] = useState(false);
@@ -66,7 +80,7 @@ export function TeamManager(props: Props) {
   async function resend(m: Member) {
     try {
       await api(`/api/pro/team/${m.id}/resend`, { body: {} });
-      toast.success(`New invitation sent to ${m.email}`);
+      toast.success(t("team.resent", { email: m.email ?? "" }));
       router.refresh();
     } catch (err) {
       toast.error((err as ApiError).message);
@@ -78,8 +92,8 @@ export function TeamManager(props: Props) {
     setBusy(true);
     try {
       const res = await api<{ upcomingAppointments: number }>(`/api/pro/team/${removing.id}`, { method: "DELETE" });
-      toast.success(removing.status === "invited" ? "Invitation cancelled" : `${removing.name} no longer has access`, {
-        description: res.upcomingAppointments ? `They still have ${res.upcomingAppointments} upcoming appointment${res.upcomingAppointments === 1 ? "" : "s"} — reassign or cancel them from the calendar.` : undefined,
+      toast.success(removing.status === "invited" ? t("team.inviteCancelled") : t("team.removed", { name: removing.name }), {
+        description: res.upcomingAppointments ? t("team.removedUpcoming", { count: res.upcomingAppointments }) : undefined,
       });
       setRemoving(null);
       router.refresh();
@@ -93,12 +107,12 @@ export function TeamManager(props: Props) {
   return (
     <>
       <PageHeader
-        title="Team"
-        description="Who works here, what they can see, and who customers can book."
+        title={t("team.title")}
+        description={t("team.description")}
         actions={
           canInvite && (
             <Button onClick={() => setInviteOpen(true)} icon={<Plus className="size-4" />}>
-              Invite someone
+              {t("team.invite")}
             </Button>
           )
         }
@@ -106,11 +120,10 @@ export function TeamManager(props: Props) {
 
       <div className="mt-8 flex flex-wrap items-baseline justify-between gap-2 text-sm">
         <p className="text-ink-2">
-          <span className="font-medium text-ink tabular">{current.length}</span> {current.length === 1 ? "person" : "people"} ·{" "}
-          <span className="font-medium text-ink tabular">{bookableSeats}</span> {bookableSeats === 1 ? "takes" : "take"} bookings
+          {rich(t("team.headcount", { people: current.length, bookable: bookableSeats }), { b: (c) => <span className="font-medium text-ink tabular">{c}</span> })}
         </p>
         <p className="text-ink-3 tabular">
-          {plan.label} plan: {bookableSeats} of {plan.maxBookable} bookable {plan.maxBookable === 1 ? "seat" : "seats"} used
+          {t("team.seats", { plan: plan.label, used: bookableSeats, count: plan.maxBookable })}
         </p>
       </div>
 
@@ -120,7 +133,7 @@ export function TeamManager(props: Props) {
           const days = m.inviteExpiresAt ? Math.ceil((Date.parse(m.inviteExpiresAt) - now) / 86_400_000) : null;
           return (
             <li key={m.id} className="flex items-center gap-3 px-3 py-3 sm:px-4">
-              <button type="button" onClick={() => setEditing(m)} className="flex min-w-0 flex-1 items-center gap-3 text-start" aria-label={`Edit ${m.name}`}>
+              <button type="button" onClick={() => setEditing(m)} className="flex min-w-0 flex-1 items-center gap-3 text-start" aria-label={t("team.editMember", { name: m.name })}>
                 <span className="relative shrink-0">
                   <Avatar name={m.name} media={m.avatar} size={44} className={m.status === "invited" ? "opacity-60" : undefined} />
                   {m.color && <span className="absolute -bottom-0.5 -end-0.5 size-3.5 rounded-full border-2 border-surface" style={{ background: m.color }} aria-hidden />}
@@ -129,13 +142,13 @@ export function TeamManager(props: Props) {
                   <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
                     <span className="truncate text-[15px] font-medium text-ink">
                       {m.name}
-                      {self && <span className="font-normal text-ink-3"> (you)</span>}
+                      {self && <span className="font-normal text-ink-3"> {t("team.you")}</span>}
                     </span>
-                    <Badge tone={m.role === "owner" ? "accent" : "neutral"}>{ROLE_LABELS[m.role].label}</Badge>
-                    {m.status === "invited" && <Badge tone={days != null && days <= 0 ? "negative" : "attention"}>{days != null && days <= 0 ? "Invite expired" : "Invited"}</Badge>}
+                    <Badge tone={m.role === "owner" ? "accent" : "neutral"}>{roleLabel(tr, m.role)}</Badge>
+                    {m.status === "invited" && <Badge tone={days != null && days <= 0 ? "negative" : "attention"}>{days != null && days <= 0 ? t("team.inviteExpired") : t("team.invited")}</Badge>}
                   </span>
                   <span className="mt-0.5 block truncate text-[13px] text-ink-3">
-                    {m.status === "invited" ? `${m.email}${days != null && days > 0 ? ` · expires in ${days} ${days === 1 ? "day" : "days"}` : ""}` : [m.title, m.isBookable ? (m.upcoming ? `${m.upcoming} upcoming` : "Takes bookings") : "Doesn't take bookings"].filter(Boolean).join(" · ")}
+                    {m.status === "invited" ? `${m.email}${days != null && days > 0 ? ` · ${t("team.expiresIn", { count: days })}` : ""}` : [m.title, m.isBookable ? (m.upcoming ? t("team.upcoming", { count: m.upcoming }) : t("team.takesBookings")) : t("team.noBookings")].filter(Boolean).join(" · ")}
                   </span>
                 </span>
                 <ChevronRight className="hidden size-4 shrink-0 text-ink-3 sm:block" aria-hidden />
@@ -144,15 +157,15 @@ export function TeamManager(props: Props) {
                 <span className="size-10 shrink-0" aria-hidden />
               ) : (
                 <Menu>
-                  <MenuTrigger className="flex size-10 shrink-0 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={`Actions for ${m.name}`}>
+                  <MenuTrigger className="flex size-10 shrink-0 items-center justify-center rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={t("team.actionsFor", { name: m.name })}>
                     <MoreHorizontal className="size-4" />
                   </MenuTrigger>
                   <MenuContent>
-                    <MenuItem onSelect={() => setEditing(m)}>Edit</MenuItem>
-                    {m.status === "invited" && <MenuItem onSelect={() => resend(m)}>Send a new invite link</MenuItem>}
+                    <MenuItem onSelect={() => setEditing(m)}>{t("team.editAction")}</MenuItem>
+                    {m.status === "invited" && <MenuItem onSelect={() => resend(m)}>{t("team.resend")}</MenuItem>}
                     <MenuSeparator />
                     <MenuItem danger onSelect={() => setRemoving(m)}>
-                      {m.status === "invited" ? "Cancel invitation" : "Remove from team"}
+                      {m.status === "invited" ? t("team.cancelInvite") : t("team.removeFromTeam")}
                     </MenuItem>
                   </MenuContent>
                 </Menu>
@@ -165,7 +178,7 @@ export function TeamManager(props: Props) {
       {removed.length > 0 && (
         <div className="mt-4">
           <button type="button" onClick={() => setShowRemoved((v) => !v)} className="text-sm font-medium text-ink-3 hover:text-ink" aria-expanded={showRemoved}>
-            {showRemoved ? "Hide" : "Show"} {removed.length} former {removed.length === 1 ? "member" : "members"}
+            {t(showRemoved ? "team.hideFormer" : "team.showFormer", { count: removed.length })}
           </button>
           {showRemoved && (
             <ul className="mt-2 divide-y divide-line rounded-lg border border-line text-sm">
@@ -173,12 +186,12 @@ export function TeamManager(props: Props) {
                 <li key={m.id} className="flex items-center gap-3 px-4 py-2.5 text-ink-3">
                   <Avatar name={m.name} media={m.avatar} size={28} className="opacity-60" />
                   <span className="flex-1 truncate">{m.name}</span>
-                  <span className="text-[13px]">No access</span>
+                  <span className="text-[13px]">{t("team.noAccess")}</span>
                 </li>
               ))}
             </ul>
           )}
-          <p className="mt-2 text-[13px] text-ink-3">Former members keep their past appointments in your records. To bring someone back, invite them again.</p>
+          <p className="mt-2 text-[13px] text-ink-3">{t("team.formerNote")}</p>
         </div>
       )}
 
@@ -189,13 +202,15 @@ export function TeamManager(props: Props) {
       <ConfirmDialog
         open={Boolean(removing)}
         onOpenChange={(o) => !o && setRemoving(null)}
-        title={removing?.status === "invited" ? `Cancel ${removing?.name}'s invitation?` : `Remove ${removing?.name} from the team?`}
+        title={removing?.status === "invited" ? t("team.cancelInviteTitle", { name: removing?.name ?? "" }) : t("team.removeTitle", { name: removing?.name ?? "" })}
         description={
           removing?.status === "invited"
-            ? "The invite link stops working immediately."
-            : `They lose access right away and stop appearing on your profile. Their past appointments stay in your records.${removing?.upcoming ? ` They have ${removing.upcoming} upcoming appointment${removing.upcoming === 1 ? "" : "s"} you'll need to reassign or cancel.` : ""}`
+            ? t("team.cancelInviteBody")
+            : removing?.upcoming
+              ? `${t("team.removeBody")} ${t("team.removeBodyUpcoming", { count: removing.upcoming })}`
+              : t("team.removeBody")
         }
-        confirmLabel={removing?.status === "invited" ? "Cancel invitation" : "Remove"}
+        confirmLabel={removing?.status === "invited" ? t("team.cancelInvite") : t("team.remove")}
         onConfirm={remove}
         loading={busy}
       />
@@ -204,11 +219,13 @@ export function TeamManager(props: Props) {
 }
 
 function RoleMatrix() {
+  const t = useT("proSetup");
+  const tr = useT();
   const roles = ["owner", "manager", "receptionist", "provider"] as const;
   return (
     <details className="group mt-12 rounded-lg border border-line bg-surface">
       <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3.5 text-[15px] font-medium text-ink">
-        What each role can do
+        {t("team.matrix.title")}
         <ChevronRight className="size-4 text-ink-3 transition-transform group-open:rotate-90" aria-hidden />
       </summary>
       <div className="relative overflow-x-auto border-t border-line">
@@ -216,11 +233,11 @@ function RoleMatrix() {
           <thead>
             <tr className="border-b border-line text-ink-3">
               <th scope="col" className="px-4 py-2.5 font-medium">
-                Permission
+                {t("team.matrix.permission")}
               </th>
               {roles.map((r) => (
                 <th key={r} scope="col" className="w-24 px-2 py-2.5 text-center font-medium">
-                  {ROLE_LABELS[r].label}
+                  {roleLabel(tr, r)}
                 </th>
               ))}
             </tr>
@@ -229,11 +246,11 @@ function RoleMatrix() {
             {ALL_PERMISSIONS.map((p) => (
               <tr key={p}>
                 <th scope="row" className="px-4 py-2 font-normal text-ink-2">
-                  {PERMISSIONS[p]}
+                  {permissionLabel(tr, p)}
                 </th>
                 {roles.map((r) => (
                   <td key={r} className="px-2 py-2 text-center">
-                    {ROLE_PERMISSIONS[r].includes(p) ? <Check className="mx-auto size-4 text-accent" aria-label="Yes" /> : <span className="text-ink-3" aria-label="No">–</span>}
+                    {ROLE_PERMISSIONS[r].includes(p) ? <Check className="mx-auto size-4 text-accent" aria-label={t("team.matrix.yes")} /> : <span className="text-ink-3" aria-label={t("team.matrix.no")}>–</span>}
                   </td>
                 ))}
               </tr>
@@ -246,16 +263,18 @@ function RoleMatrix() {
 }
 
 function RolePicker({ value, onChange, assignable, customAllowed }: { value: MemberRole; onChange: (r: MemberRole) => void; assignable: MemberRole[]; customAllowed: boolean }) {
+  const t = useT("proSetup");
+  const tr = useT();
   return (
-    <div className="grid gap-2" role="radiogroup" aria-label="Role">
+    <div className="grid gap-2" role="radiogroup" aria-label={t("team.role")}>
       {assignable.map((r) => (
         <ChoiceCard
           key={r}
           selected={value === r}
           onClick={() => onChange(r)}
           disabled={r === "custom" && !customAllowed}
-          title={ROLE_LABELS[r].label}
-          description={r === "custom" && !customAllowed ? "Available on Pro and Business plans." : ROLE_LABELS[r].description}
+          title={roleLabel(tr, r)}
+          description={r === "custom" && !customAllowed ? t("team.customUpgrade") : roleDescription(tr, r)}
         />
       ))}
     </div>
@@ -263,17 +282,20 @@ function RolePicker({ value, onChange, assignable, customAllowed }: { value: Mem
 }
 
 function PermissionPicker({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
+  const t = useT("proSetup");
+  const tr = useT();
   return (
     <fieldset className="space-y-1 rounded-lg border border-line p-3">
-      <legend className="px-1 text-[13px] font-medium text-ink-2">Allowed to</legend>
+      <legend className="px-1 text-[13px] font-medium text-ink-2">{t("team.allowedTo")}</legend>
       {ALL_PERMISSIONS.filter((p) => p !== "team.manage").map((p: Permission) => (
-        <Checkbox key={p} checked={value.includes(p)} onCheckedChange={(c) => onChange(c ? [...value, p] : value.filter((x) => x !== p))} label={PERMISSIONS[p]} />
+        <Checkbox key={p} checked={value.includes(p)} onCheckedChange={(c) => onChange(c ? [...value, p] : value.filter((x) => x !== p))} label={permissionLabel(tr, p)} />
       ))}
     </fieldset>
   );
 }
 
 function InviteDialog({ open, onOpenChange, assignable, plan, seatsFull }: { open: boolean; onOpenChange: (o: boolean) => void; assignable: MemberRole[]; plan: Props["plan"]; seatsFull: boolean }) {
+  const t = useT("proSetup");
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -291,7 +313,7 @@ function InviteDialog({ open, onOpenChange, assignable, plan, seatsFull }: { ope
     setErrors({});
     try {
       await api("/api/pro/team", { body: { email, displayName: name, title: title.trim() || null, role, customPermissions: role === "custom" ? perms : [], isBookable: bookable } });
-      toast.success(`Invitation sent to ${email}`, { description: "The link works for 7 days." });
+      toast.success(t("team.inviteDialog.sent", { email }), { description: t("team.inviteDialog.sentBody") });
       onOpenChange(false);
       setEmail("");
       setName("");
@@ -310,16 +332,16 @@ function InviteDialog({ open, onOpenChange, assignable, plan, seatsFull }: { ope
     <Dialog
       open={open}
       onOpenChange={onOpenChange}
-      title="Invite someone"
-      description="They'll get an email with a link to join. They sign in with that email address."
+      title={t("team.invite")}
+      description={t("team.inviteDialog.description")}
       locked={saving}
       footer={
         <>
           <Button variant="ghost" onClick={() => onOpenChange(false)}>
-            Cancel
+            {t("team.cancel")}
           </Button>
           <Button onClick={send} loading={saving}>
-            Send invitation
+            {t("team.inviteDialog.send")}
           </Button>
         </>
       }
@@ -327,24 +349,24 @@ function InviteDialog({ open, onOpenChange, assignable, plan, seatsFull }: { ope
       <div className="space-y-4">
         <FormError message={error} />
         <div className="grid gap-4 sm:grid-cols-2">
-          <Field label="Name" error={errors.displayName}>
+          <Field label={t("team.fields.name")} error={errors.displayName}>
             {(p) => <Input {...p} value={name} onChange={(e) => setName(e.target.value)} autoComplete="off" maxLength={80} />}
           </Field>
-          <Field label="Job title" optional>
-            {(p) => <Input {...p} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g. Senior barber" maxLength={60} />}
+          <Field label={t("team.fields.jobTitle")} optional>
+            {(p) => <Input {...p} value={title} onChange={(e) => setTitle(e.target.value)} placeholder={t("team.fields.jobTitlePlaceholder")} maxLength={60} />}
           </Field>
         </div>
-        <Field label="Email" error={errors.email}>
+        <Field label={t("team.fields.email")} error={errors.email}>
           {(p) => <Input {...p} type="email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="off" inputMode="email" />}
         </Field>
-        <Field label="Role">{() => <RolePicker value={role} onChange={setRole} assignable={assignable} customAllowed={plan.customRoles} />}</Field>
+        <Field label={t("team.role")}>{() => <RolePicker value={role} onChange={setRole} assignable={assignable} customAllowed={plan.customRoles} />}</Field>
         {role === "custom" && <PermissionPicker value={perms} onChange={setPerms} />}
         <Switch
           checked={bookable}
           onCheckedChange={setBookable}
           disabled={seatsFull && !bookable}
-          label="Customers can book them"
-          description={seatsFull && !bookable ? `All ${plan.maxBookable} bookable seats on your ${plan.label} plan are in use.` : "Shows them on your profile once they've set their hours."}
+          label={t("team.fields.bookable")}
+          description={seatsFull && !bookable ? t("team.fields.seatsFull", { count: plan.maxBookable, plan: plan.label }) : t("team.fields.bookableHintInvite")}
         />
       </div>
     </Dialog>
@@ -352,6 +374,7 @@ function InviteDialog({ open, onOpenChange, assignable, plan, seatsFull }: { ope
 }
 
 function EditMemberDialog({ member, onClose, self, assignable, plan, locations, businessId, seatsFull }: Props & { member: Member; onClose: () => void; self: boolean; seatsFull: boolean }) {
+  const t = useT("proSetup");
   const router = useRouter();
   const [v, setV] = useState({
     displayName: member.name,
@@ -389,7 +412,7 @@ function EditMemberDialog({ member, onClose, self, assignable, plan, locations, 
   async function save() {
     setError(null);
     const commissionBps = v.commission.trim() === "" ? null : Math.round(Number(v.commission) * 100);
-    if (commissionBps != null && (!Number.isFinite(commissionBps) || commissionBps < 0 || commissionBps > 10_000)) return setError("Commission must be between 0 and 100%.");
+    if (commissionBps != null && (!Number.isFinite(commissionBps) || commissionBps < 0 || commissionBps > 10_000)) return setError(t("team.edit.commissionError"));
     setSaving(true);
     try {
       await api(`/api/pro/team/${member.id}`, {
@@ -406,7 +429,7 @@ function EditMemberDialog({ member, onClose, self, assignable, plan, locations, 
           avatarMediaId: v.avatarMediaId,
         },
       });
-      toast.success("Saved");
+      toast.success(t("team.edit.saved"));
       onClose();
       router.refresh();
     } catch (err) {
@@ -420,17 +443,17 @@ function EditMemberDialog({ member, onClose, self, assignable, plan, locations, 
     <Dialog
       open
       onOpenChange={(o) => !o && onClose()}
-      title={self ? "Your profile" : member.name}
-      description={invited ? `Invitation pending for ${member.email}.` : member.email ?? undefined}
+      title={self ? t("team.edit.yourProfile") : member.name}
+      description={invited ? t("team.edit.pending", { email: member.email ?? "" }) : member.email ?? undefined}
       size="lg"
       locked={saving}
       footer={
         <>
           <Button variant="ghost" onClick={onClose}>
-            Cancel
+            {t("team.cancel")}
           </Button>
           <Button onClick={save} loading={saving} disabled={uploading}>
-            Save
+            {t("team.edit.save")}
           </Button>
         </>
       }
@@ -440,7 +463,7 @@ function EditMemberDialog({ member, onClose, self, assignable, plan, locations, 
         <div className="flex items-center gap-4">
           <Avatar name={v.displayName || member.name} media={avatar} size={64} />
           <label className="inline-flex h-10 cursor-pointer items-center gap-2 rounded-md border border-line-strong bg-surface px-3.5 text-sm font-medium text-ink hover:bg-surface-2 focus-within:ring-3 focus-within:ring-accent/15">
-            <Camera className="size-4" /> {uploading ? "Uploading…" : avatar ? "Change photo" : "Add photo"}
+            <Camera className="size-4" /> {uploading ? t("team.edit.uploading") : avatar ? t("team.edit.changePhoto") : t("team.edit.addPhoto")}
             <input type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" onChange={(e) => onPhoto(e.target.files?.[0])} disabled={uploading} />
           </label>
           {avatar && (
@@ -452,29 +475,29 @@ function EditMemberDialog({ member, onClose, self, assignable, plan, locations, 
                 setV((s) => ({ ...s, avatarMediaId: null }));
               }}
             >
-              Remove
+              {t("team.remove")}
             </button>
           )}
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          <Field label="Name shown to customers">{(p) => <Input {...p} value={v.displayName} onChange={(e) => setV({ ...v, displayName: e.target.value })} maxLength={80} />}</Field>
-          <Field label="Job title" optional>
+          <Field label={t("team.fields.publicName")}>{(p) => <Input {...p} value={v.displayName} onChange={(e) => setV({ ...v, displayName: e.target.value })} maxLength={80} />}</Field>
+          <Field label={t("team.fields.jobTitle")} optional>
             {(p) => <Input {...p} value={v.title} onChange={(e) => setV({ ...v, title: e.target.value })} maxLength={60} />}
           </Field>
         </div>
-        <Field label="Bio" optional hint="A line or two about their specialties. Shown on your profile.">
+        <Field label={t("team.fields.bio")} optional hint={t("team.fields.bioHint")}>
           {(p) => <Textarea {...p} rows={3} value={v.bio} onChange={(e) => setV({ ...v, bio: e.target.value })} maxLength={1000} />}
         </Field>
         <Switch
           checked={v.isBookable}
           onCheckedChange={(b) => setV({ ...v, isBookable: b })}
           disabled={!member.isBookable && seatsFull}
-          label="Customers can book them"
-          description={!member.isBookable && seatsFull ? `All ${plan.maxBookable} bookable seats on your ${plan.label} plan are in use.` : "Turn off for front-desk staff or people on leave."}
+          label={t("team.fields.bookable")}
+          description={!member.isBookable && seatsFull ? t("team.fields.seatsFull", { count: plan.maxBookable, plan: plan.label }) : t("team.fields.bookableHintEdit")}
         />
-        <Field label="Calendar colour" optional>
+        <Field label={t("team.fields.color")} optional>
           {() => (
-            <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Calendar colour">
+            <div className="flex flex-wrap gap-2" role="radiogroup" aria-label={t("team.fields.color")}>
               {COLORS.map((c) => (
                 <button
                   key={c}
@@ -493,7 +516,7 @@ function EditMemberDialog({ member, onClose, self, assignable, plan, locations, 
           )}
         </Field>
         {locations.length > 1 && (
-          <Field label="Works at" hint="Leave all unchecked if they work at every location.">
+          <Field label={t("team.fields.worksAt")} hint={t("team.fields.worksAtHint")}>
             {() => (
               <div className="space-y-1">
                 {locations.map((l) => (
@@ -504,18 +527,18 @@ function EditMemberDialog({ member, onClose, self, assignable, plan, locations, 
           </Field>
         )}
         {!self && (
-          <Field label="Commission" optional hint="Used in Insights to estimate what you owe them. Not paid out automatically.">
+          <Field label={t("team.fields.commission")} optional hint={t("team.fields.commissionHint")}>
             {(p) => (
               <div className="flex items-center gap-2">
                 <Input {...p} inputMode="decimal" value={v.commission} onChange={(e) => setV({ ...v, commission: e.target.value })} className="w-24" placeholder="0" />
-                <span className="text-sm text-ink-3">% of service revenue</span>
+                <span className="text-sm text-ink-3">{t("team.fields.commissionSuffix")}</span>
               </div>
             )}
           </Field>
         )}
         {canRole && (
           <>
-            <Field label="Role">{() => <RolePicker value={v.role} onChange={(r) => setV({ ...v, role: r })} assignable={assignable} customAllowed={plan.customRoles} />}</Field>
+            <Field label={t("team.role")}>{() => <RolePicker value={v.role} onChange={(r) => setV({ ...v, role: r })} assignable={assignable} customAllowed={plan.customRoles} />}</Field>
             {v.role === "custom" && <PermissionPicker value={v.customPermissions} onChange={(p) => setV({ ...v, customPermissions: p })} />}
           </>
         )}

@@ -10,9 +10,12 @@ import { Button, ButtonLink } from "@/components/ui/button";
 import { ChoiceCard } from "@/components/ui/controls";
 import { Field, FormError, Input, Select, Textarea } from "@/components/ui/field";
 import { Avatar, type MediaLike } from "@/components/ui/media";
-import { formatMoney, parseMoneyInput } from "@/domain/money";
+import { formatDuration, formatMoney, parseMoneyInput } from "@/domain/money";
 import { DURATION_CHOICES, templatesFor } from "@/domain/service-templates";
 import { slugify } from "@/domain/slugs";
+import { useLocale, useT } from "@/i18n/client";
+import { categoryName } from "@/i18n/helpers";
+import type { TFunction } from "@/i18n/translate";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { uploadMedia } from "@/lib/upload";
@@ -48,22 +51,30 @@ type WizardBusiness = {
 };
 
 const STEPS = [
-  { key: "category", label: "What you offer" },
-  { key: "kind", label: "Solo or team" },
-  { key: "name", label: "Name" },
-  { key: "branding", label: "Profile", optional: true },
-  { key: "location", label: "Where you work" },
-  { key: "services", label: "Services" },
-  { key: "availability", label: "Hours" },
-  { key: "policies", label: "Booking rules", optional: true },
-  { key: "payments", label: "Payments", optional: true },
-  { key: "preview", label: "Go live" },
+  { key: "category" },
+  { key: "kind" },
+  { key: "name" },
+  { key: "branding", optional: true },
+  { key: "location" },
+  { key: "services" },
+  { key: "availability" },
+  { key: "policies", optional: true },
+  { key: "payments", optional: true },
+  { key: "preview" },
 ] as const;
 type StepKey = (typeof STEPS)[number]["key"];
 
 const CURRENCIES = ["USD", "EUR", "GBP", "CAD", "AUD", "MXN", "BRL", "COP", "CLP", "ARS", "PEN"];
 
+/** Translation with a fallback for labels that arrive from the server in English. */
+function tOr(t: TFunction, key: string, fallback: string) {
+  const v = t(key);
+  return v === `proSetup.${key}` ? fallback : v;
+}
+
 export function OnboardingWizard({ categories, user, business: b, stripe, initialStep }: { categories: Category[]; user: { name: string }; business: WizardBusiness | null; stripe: boolean; initialStep?: string }) {
+  const t = useT("proSetup");
+  const tr = useT();
   const router = useRouter();
   const done = new Set(b?.onboarding.completed ?? []);
   const skipped = new Set(b?.onboarding.skipped ?? []);
@@ -103,17 +114,17 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
     <div className="min-h-dvh">
       <header className="sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-6">
-          <Logo href={b ? "/pro/today" : "/"} suffix="Business" />
+          <Logo href={b ? "/pro/today" : "/"} suffix={t("onboarding.logoSuffix")} />
           <span className="ms-auto text-[13px] text-ink-3 tabular lg:hidden">
-            {idx + 1} / {STEPS.length}
+            {t("onboarding.progress", { step: idx + 1, total: STEPS.length })}
           </span>
           {b ? (
             <Link href="/pro/today" className="text-sm font-medium text-ink-2 hover:text-ink">
-              Save & exit
+              {t("onboarding.saveExit")}
             </Link>
           ) : (
             <Link href="/" className="text-sm font-medium text-ink-2 hover:text-ink">
-              Exit
+              {t("onboarding.exit")}
             </Link>
           )}
         </div>
@@ -123,7 +134,7 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
       </header>
 
       <div className="mx-auto grid max-w-6xl gap-12 px-4 pb-24 pt-10 sm:px-6 lg:grid-cols-[220px_minmax(0,1fr)]">
-        <nav aria-label="Setup steps" className="hidden lg:block">
+        <nav aria-label={t("onboarding.stepsNav")} className="hidden lg:block">
           <ol className="sticky top-28 space-y-1">
             {STEPS.map((s, i) => {
               const st = stepState(s.key);
@@ -140,8 +151,8 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
                     <span className={cn("flex size-5 shrink-0 items-center justify-center rounded-full border text-[11px] tabular", st === "done" ? "border-accent bg-accent text-accent-ink" : step === s.key ? "border-ink text-ink" : "border-line-strong text-ink-3")}>
                       {st === "done" ? <Check className="size-3" strokeWidth={3} /> : i + 1}
                     </span>
-                    {s.label}
-                    {st === "skipped" && <span className="ms-auto text-[11px] text-ink-3">Skipped</span>}
+                    {t(`onboarding.steps.${s.key}`)}
+                    {st === "skipped" && <span className="ms-auto text-[11px] text-ink-3">{t("onboarding.skipped")}</span>}
                   </button>
                 </li>
               );
@@ -151,7 +162,7 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
 
         <div className="mx-auto w-full max-w-xl animate-rise lg:mx-0" key={step}>
           {step === "category" && (
-            <StepFrame title={`Welcome, ${user.name.split(" ")[0]}. What do you offer?`} lead="Pick the closest match. You can offer anything — this just helps customers find you.">
+            <StepFrame title={t("onboarding.category.title", { name: user.name.split(" ")[0] })} lead={t("onboarding.category.lead")}>
               <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
                 {categories.map((c) => {
                   const on = categoryId === c.id || c.children.some((ch) => ch.id === categoryId);
@@ -163,7 +174,7 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
                       aria-pressed={on}
                       className={cn("min-h-16 rounded-lg border px-3.5 py-3 text-start text-[15px] font-medium transition-[border-color,box-shadow]", on ? "border-ink shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface hover:border-line-strong")}
                     >
-                      {c.name}
+                      {categoryName(tr, c.slug, c.name)}
                     </button>
                   );
                 })}
@@ -173,11 +184,11 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
                 if (!parent?.children.length) return null;
                 return (
                   <div className="mt-6">
-                    <p className="mb-2 text-sm font-medium text-ink">More specifically</p>
+                    <p className="mb-2 text-sm font-medium text-ink">{t("onboarding.category.moreSpecific")}</p>
                     <div className="flex flex-wrap gap-2">
                       {parent.children.map((ch) => (
                         <button key={ch.id} type="button" onClick={() => setCategoryId(ch.id)} aria-pressed={categoryId === ch.id} className={cn("h-9 rounded-md border px-3 text-sm", categoryId === ch.id ? "border-ink bg-ink text-bg" : "border-line-strong bg-surface text-ink-2 hover:text-ink")}>
-                          {ch.name}
+                          {categoryName(tr, ch.slug, ch.name)}
                         </button>
                       ))}
                     </div>
@@ -186,21 +197,21 @@ export function OnboardingWizard({ categories, user, business: b, stripe, initia
               })()}
               <Actions>
                 <Button size="lg" disabled={!categoryId} onClick={() => go("kind")}>
-                  Continue
+                  {t("onboarding.continue")}
                 </Button>
               </Actions>
             </StepFrame>
           )}
 
           {step === "kind" && (
-            <StepFrame title="Is it just you, or a team?" lead="You can add team members later either way.">
+            <StepFrame title={t("onboarding.kind.title")} lead={t("onboarding.kind.lead")}>
               <div className="grid gap-2">
-                <ChoiceCard selected={kind === "individual"} onClick={() => setKind("individual")} title={<span className="flex items-center gap-2"><User className="size-4" /> Just me</span>} description="Independent professional — your name or brand, your calendar." />
-                <ChoiceCard selected={kind === "business"} onClick={() => setKind("business")} title={<span className="flex items-center gap-2"><Users className="size-4" /> A business with a team</span>} description="Shop, studio, salon or agency with staff, roles and multiple calendars." />
+                <ChoiceCard selected={kind === "individual"} onClick={() => setKind("individual")} title={<span className="flex items-center gap-2"><User className="size-4" /> {t("onboarding.kind.individual")}</span>} description={t("onboarding.kind.individualHint")} />
+                <ChoiceCard selected={kind === "business"} onClick={() => setKind("business")} title={<span className="flex items-center gap-2"><Users className="size-4" /> {t("onboarding.kind.business")}</span>} description={t("onboarding.kind.businessHint")} />
               </div>
               <Actions back={() => go("category")}>
                 <Button size="lg" disabled={!kind} onClick={() => go("name")}>
-                  Continue
+                  {t("onboarding.continue")}
                 </Button>
               </Actions>
             </StepFrame>
@@ -232,17 +243,18 @@ function StepFrame({ title, lead, children }: { title: string; lead?: ReactNode;
 }
 
 function Actions({ children, back, skip }: { children: ReactNode; back?: () => void; skip?: () => void }) {
+  const t = useT("proSetup");
   return (
     <div className="mt-10 flex items-center gap-3 border-t border-line pt-6">
       {back && (
         <Button variant="ghost" onClick={back} icon={<ArrowLeft className="size-4" />}>
-          Back
+          {t("onboarding.back")}
         </Button>
       )}
       <div className="ms-auto flex items-center gap-2">
         {skip && (
           <Button variant="ghost" onClick={skip}>
-            Skip for now
+            {t("onboarding.skip")}
           </Button>
         )}
         {children}
@@ -252,6 +264,7 @@ function Actions({ children, back, skip }: { children: ReactNode; back?: () => v
 }
 
 function NameStep({ kind, userName, categoryId, onBack, onCreated }: { kind: "individual" | "business"; userName: string; categoryId: string | null; onBack: () => void; onCreated: () => void }) {
+  const t = useT("proSetup");
   const [name, setName] = useState(kind === "individual" ? userName : "");
   const detected = typeof Intl !== "undefined" ? Intl.DateTimeFormat().resolvedOptions().timeZone : "UTC";
   const [timezone, setTimezone] = useState(detected);
@@ -277,14 +290,14 @@ function NameStep({ kind, userName, categoryId, onBack, onCreated }: { kind: "in
     }
   }
   return (
-    <StepFrame title={kind === "individual" ? "What should clients call you?" : "What's your business called?"} lead="This is the name customers see when they search and book.">
+    <StepFrame title={kind === "individual" ? t("onboarding.name.titleIndividual") : t("onboarding.name.titleBusiness")} lead={t("onboarding.name.lead")}>
       <div className="space-y-5">
         <FormError message={error} />
-        <Field label={kind === "individual" ? "Your professional name" : "Business name"} hint={name.trim().length >= 2 ? `Your page: kept.app/${slugify(name) || "…"} — you can change it later.` : undefined}>
-          {(p) => <Input {...p} value={name} onChange={(e) => setName(e.target.value)} maxLength={80} autoFocus placeholder={kind === "individual" ? "e.g. Maya Okafor Training" : "e.g. North Fade Studio"} />}
+        <Field label={kind === "individual" ? t("onboarding.name.labelIndividual") : t("onboarding.name.labelBusiness")} hint={name.trim().length >= 2 ? t("onboarding.name.pageHint", { url: `kept.app/${slugify(name) || "…"}` }) : undefined}>
+          {(p) => <Input {...p} value={name} onChange={(e) => setName(e.target.value)} maxLength={80} autoFocus placeholder={kind === "individual" ? t("onboarding.name.placeholderIndividual") : t("onboarding.name.placeholderBusiness")} />}
         </Field>
         <div className="grid gap-5 sm:grid-cols-2">
-          <Field label="Time zone" hint="Your hours and bookings use this zone.">
+          <Field label={t("onboarding.name.timezone")} hint={t("onboarding.name.timezoneHint")}>
             {(p) => (
               <Select {...p} value={timezone} onChange={(e) => setTimezone(e.target.value)}>
                 {zones.map((z) => (
@@ -295,7 +308,7 @@ function NameStep({ kind, userName, categoryId, onBack, onCreated }: { kind: "in
               </Select>
             )}
           </Field>
-          <Field label="Currency">
+          <Field label={t("onboarding.name.currency")}>
             {(p) => (
               <Select {...p} value={currency} onChange={(e) => setCurrency(e.target.value)}>
                 {CURRENCIES.map((c) => (
@@ -308,7 +321,7 @@ function NameStep({ kind, userName, categoryId, onBack, onCreated }: { kind: "in
       </div>
       <Actions back={onBack}>
         <Button size="lg" disabled={name.trim().length < 2} loading={saving} onClick={create}>
-          Create my page
+          {t("onboarding.name.create")}
         </Button>
       </Actions>
     </StepFrame>
@@ -316,6 +329,7 @@ function NameStep({ kind, userName, categoryId, onBack, onCreated }: { kind: "in
 }
 
 function BrandingStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => void; onSkip: () => void }) {
+  const t = useT("proSetup");
   const [tagline, setTagline] = useState(b.tagline ?? "");
   const [about, setAbout] = useState(b.about ?? "");
   const [logo, setLogo] = useState<{ id: string; media: MediaLike | null } | null>(b.logoMediaId ? { id: b.logoMediaId, media: b.logo } : null);
@@ -348,7 +362,7 @@ function BrandingStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => 
     }
   }
   return (
-    <StepFrame title="Make a good first impression" lead="A photo and one line about what you do go a long way. Both are optional and easy to change later.">
+    <StepFrame title={t("onboarding.branding.title")} lead={t("onboarding.branding.lead")}>
       <div className="space-y-6">
         <FormError message={error} />
         <div className="flex items-center gap-5">
@@ -363,22 +377,22 @@ function BrandingStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => 
           <div>
             <label className="inline-flex h-10 cursor-pointer items-center gap-2 rounded-md border border-line-strong bg-surface px-4 text-sm font-medium text-ink hover:bg-surface-2">
               <Camera className="size-4" />
-              {logo ? "Change photo" : "Add photo or logo"}
+              {logo ? t("onboarding.branding.changePhoto") : t("onboarding.branding.addPhoto")}
               <input type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" onChange={(e) => onFile(e.target.files?.[0])} />
             </label>
-            <p className="mt-1.5 text-[13px] text-ink-3">Square images work best.</p>
+            <p className="mt-1.5 text-[13px] text-ink-3">{t("onboarding.branding.square")}</p>
           </div>
         </div>
-        <Field label="One line about you" optional hint={`${tagline.length}/140`}>
-          {(p) => <Input {...p} value={tagline} onChange={(e) => setTagline(e.target.value)} maxLength={140} placeholder="Precision fades and classic cuts in Williamsburg" />}
+        <Field label={t("onboarding.branding.tagline")} optional hint={`${tagline.length}/140`}>
+          {(p) => <Input {...p} value={tagline} onChange={(e) => setTagline(e.target.value)} maxLength={140} placeholder={t("onboarding.branding.taglinePlaceholder")} />}
         </Field>
-        <Field label="About" optional>
-          {(p) => <Textarea {...p} rows={5} value={about} onChange={(e) => setAbout(e.target.value)} maxLength={4000} placeholder="Your experience, your approach, what clients can expect." />}
+        <Field label={t("onboarding.branding.about")} optional>
+          {(p) => <Textarea {...p} rows={5} value={about} onChange={(e) => setAbout(e.target.value)} maxLength={4000} placeholder={t("onboarding.branding.aboutPlaceholder")} />}
         </Field>
       </div>
       <Actions skip={onSkip}>
         <Button size="lg" onClick={save} loading={saving} disabled={progress != null}>
-          Save & continue
+          {t("onboarding.saveContinue")}
         </Button>
       </Actions>
     </StepFrame>
@@ -386,6 +400,7 @@ function BrandingStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => 
 }
 
 function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) {
+  const t = useT("proSetup");
   const [adding, setAdding] = useState(b.locations.length === 0);
   const [kind, setKind] = useState<"physical" | "mobile" | "virtual">("physical");
   const [form, setForm] = useState({ name: b.name, line1: "", line2: "", city: "", region: "", postalCode: "", country: "US", radius: "15" });
@@ -406,7 +421,7 @@ function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) 
       },
       () => {
         setLocating(false);
-        toast.error("We couldn't get your location. Customers will still see your address.");
+        toast.error(t("onboarding.location.locateError"));
       },
       { timeout: 8000 },
     );
@@ -419,7 +434,7 @@ function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) 
     try {
       await api("/api/pro/locations", {
         body: {
-          name: kind === "physical" ? form.name : kind === "mobile" ? "Mobile service" : "Online",
+          name: kind === "physical" ? form.name : kind === "mobile" ? t("onboarding.location.mobileName") : t("onboarding.location.onlineName"),
           kind,
           line1: kind === "physical" ? form.line1 : null,
           line2: kind === "physical" ? form.line2 : null,
@@ -445,43 +460,43 @@ function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) 
 
   if (!adding)
     return (
-      <StepFrame title="Where you work">
+      <StepFrame title={t("onboarding.location.listTitle")}>
         <ul className="divide-y divide-line rounded-lg border border-line bg-surface">
           {b.locations.map((l) => (
             <li key={l.id} className="flex items-center gap-3 px-4 py-3.5">
               {l.kind === "physical" ? <Store className="size-5 text-ink-3" /> : l.kind === "mobile" ? <MapPin className="size-5 text-ink-3" /> : <Monitor className="size-5 text-ink-3" />}
               <div className="min-w-0">
                 <p className="text-[15px] font-medium text-ink">{l.name}</p>
-                <p className="truncate text-sm text-ink-3">{l.kind === "physical" ? [l.line1, l.city].filter(Boolean).join(", ") : l.kind === "mobile" ? `Travels from ${l.city}` : "Online sessions"}</p>
+                <p className="truncate text-sm text-ink-3">{l.kind === "physical" ? [l.line1, l.city].filter(Boolean).join(", ") : l.kind === "mobile" ? t("onboarding.location.travelsFrom", { city: l.city ?? "" }) : t("onboarding.location.onlineSessions")}</p>
               </div>
             </li>
           ))}
         </ul>
         <button type="button" onClick={() => setAdding(true)} className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-ink-2 hover:text-ink">
-          <Plus className="size-4" /> Add another place
+          <Plus className="size-4" /> {t("onboarding.location.addAnother")}
         </button>
         <Actions>
           <Button size="lg" onClick={onDone}>
-            Continue
+            {t("onboarding.continue")}
           </Button>
         </Actions>
       </StepFrame>
     );
 
   return (
-    <StepFrame title="Where do appointments happen?" lead="Add your main place now. You can add more locations, travel areas or online sessions later.">
+    <StepFrame title={t("onboarding.location.title")} lead={t("onboarding.location.lead")}>
       <div className="grid gap-2 sm:grid-cols-3">
         {(
           [
-            ["physical", "At my place", "Shop, studio, office", Store],
-            ["mobile", "I go to clients", "Homes, offices, events", MapPin],
-            ["virtual", "Online", "Video calls", Monitor],
+            ["physical", Store],
+            ["mobile", MapPin],
+            ["virtual", Monitor],
           ] as const
-        ).map(([k, t, d, Icon]) => (
+        ).map(([k, Icon]) => (
           <button key={k} type="button" onClick={() => setKind(k)} aria-pressed={kind === k} className={cn("rounded-lg border px-3.5 py-3.5 text-start transition-[border-color,box-shadow]", kind === k ? "border-ink shadow-[0_0_0_1px_var(--ink)]" : "border-line bg-surface hover:border-line-strong")}>
             <Icon className="size-5 text-ink-2" />
-            <span className="mt-3 block text-[15px] font-medium text-ink">{t}</span>
-            <span className="block text-[13px] text-ink-3">{d}</span>
+            <span className="mt-3 block text-[15px] font-medium text-ink">{t(`onboarding.location.kind.${k}.title`)}</span>
+            <span className="block text-[13px] text-ink-3">{t(`onboarding.location.kind.${k}.hint`)}</span>
           </button>
         ))}
       </div>
@@ -489,30 +504,30 @@ function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) 
         <FormError message={error} />
         {kind === "physical" && (
           <>
-            <Field label="Place name" hint="Shown to customers, e.g. your shop's name.">{(p) => <Input {...p} value={form.name} onChange={set("name")} />}</Field>
-            <Field label="Street address" error={fields.line1}>{(p) => <Input {...p} value={form.line1} onChange={set("line1")} autoComplete="address-line1" />}</Field>
-            <Field label="Apartment, suite, floor" optional>{(p) => <Input {...p} value={form.line2} onChange={set("line2")} autoComplete="address-line2" />}</Field>
+            <Field label={t("onboarding.location.placeName")} hint={t("onboarding.location.placeNameHint")}>{(p) => <Input {...p} value={form.name} onChange={set("name")} />}</Field>
+            <Field label={t("onboarding.location.street")} error={fields.line1}>{(p) => <Input {...p} value={form.line1} onChange={set("line1")} autoComplete="address-line1" />}</Field>
+            <Field label={t("onboarding.location.line2")} optional>{(p) => <Input {...p} value={form.line2} onChange={set("line2")} autoComplete="address-line2" />}</Field>
           </>
         )}
         {kind !== "virtual" && (
           <div className="grid gap-4 sm:grid-cols-[1fr_120px]">
-            <Field label="City" error={fields.city}>{(p) => <Input {...p} value={form.city} onChange={set("city")} autoComplete="address-level2" />}</Field>
-            <Field label="State / region" optional>{(p) => <Input {...p} value={form.region} onChange={set("region")} autoComplete="address-level1" />}</Field>
+            <Field label={t("onboarding.location.city")} error={fields.city}>{(p) => <Input {...p} value={form.city} onChange={set("city")} autoComplete="address-level2" />}</Field>
+            <Field label={t("onboarding.location.region")} optional>{(p) => <Input {...p} value={form.region} onChange={set("region")} autoComplete="address-level1" />}</Field>
           </div>
         )}
         {kind === "physical" && (
           <div className="grid gap-4 sm:grid-cols-2">
-            <Field label="Postal code" optional>{(p) => <Input {...p} value={form.postalCode} onChange={set("postalCode")} autoComplete="postal-code" />}</Field>
-            <Field label="Country code" hint="Two letters, e.g. US, MX, ES">{(p) => <Input {...p} value={form.country} onChange={set("country")} maxLength={2} className="uppercase" />}</Field>
+            <Field label={t("onboarding.location.postalCode")} optional>{(p) => <Input {...p} value={form.postalCode} onChange={set("postalCode")} autoComplete="postal-code" />}</Field>
+            <Field label={t("onboarding.location.country")} hint={t("onboarding.location.countryHint")}>{(p) => <Input {...p} value={form.country} onChange={set("country")} maxLength={2} className="uppercase" />}</Field>
           </div>
         )}
         {kind === "mobile" && (
-          <Field label="How far will you travel?" error={fields.serviceRadiusKm}>
+          <Field label={t("onboarding.location.radius")} error={fields.serviceRadiusKm}>
             {(p) => (
               <Select {...p} value={form.radius} onChange={(e) => setForm((f) => ({ ...f, radius: e.target.value }))}>
                 {[5, 10, 15, 25, 40, 60, 100].map((r) => (
                   <option key={r} value={r}>
-                    Up to {r} km
+                    {t("onboarding.location.upToKm", { km: r })}
                   </option>
                 ))}
               </Select>
@@ -521,17 +536,17 @@ function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) 
         )}
         {kind !== "virtual" && (
           <div className="rounded-lg bg-surface-2 p-4">
-            <p className="text-sm font-medium text-ink">Show up in “near me” searches</p>
-            <p className="mt-1 text-[13px] leading-snug text-ink-3">{kind === "physical" ? "If you're at this address now, pin it so customers nearby can find you." : "Pin where you're based so nearby customers can find you."}</p>
+            <p className="text-sm font-medium text-ink">{t("onboarding.location.nearMe")}</p>
+            <p className="mt-1 text-[13px] leading-snug text-ink-3">{kind === "physical" ? t("onboarding.location.nearMePhysical") : t("onboarding.location.nearMeMobile")}</p>
             <Button variant="secondary" size="sm" className="mt-3" onClick={pin} loading={locating} icon={coords ? <Check className="size-4 text-accent" /> : <LocateFixed className="size-4" />}>
-              {coords ? "Location pinned" : "Use my current location"}
+              {coords ? t("onboarding.location.pinned") : t("onboarding.location.useCurrent")}
             </Button>
           </div>
         )}
       </div>
       <Actions back={b.locations.length ? () => setAdding(false) : undefined}>
         <Button size="lg" onClick={save} loading={saving}>
-          Save & continue
+          {t("onboarding.saveContinue")}
         </Button>
       </Actions>
     </StepFrame>
@@ -541,8 +556,10 @@ function LocationStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) 
 type DraftService = { key: string; name: string; duration: number; price: string };
 
 function ServicesStep({ b, categorySlug, parentSlug, onDone }: { b: WizardBusiness; categorySlug: string | null; parentSlug: string | null; onDone: () => void }) {
-  const templates = templatesFor(categorySlug, parentSlug).filter((t) => !b.services.some((s) => s.name.toLowerCase() === t.name.toLowerCase()));
-  const [rows, setRows] = useState<DraftService[]>(() => (b.services.length ? [] : templates.slice(0, 2).map((t, i) => ({ key: `t${i}`, name: t.name, duration: t.durationMinutes, price: "" }))));
+  const t = useT("proSetup");
+  const { intl } = useLocale();
+  const templates = templatesFor(categorySlug, parentSlug).filter((tp) => !b.services.some((s) => s.name.toLowerCase() === tp.name.toLowerCase()));
+  const [rows, setRows] = useState<DraftService[]>(() => (b.services.length ? [] : templates.slice(0, 2).map((tp, i) => ({ key: `t${i}`, name: tp.name, duration: tp.durationMinutes, price: "" }))));
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(0);
@@ -553,8 +570,8 @@ function ServicesStep({ b, categorySlug, parentSlug, onDone }: { b: WizardBusine
   async function save() {
     const errs: Record<string, string> = {};
     for (const r of rows) {
-      if (r.name.trim().length < 2) errs[r.key] = "Name this service";
-      else if (r.price.trim() === "" || parseMoneyInput(r.price) == null) errs[r.key] = "Add a price (use 0 for free)";
+      if (r.name.trim().length < 2) errs[r.key] = t("onboarding.services.errorName");
+      else if (r.price.trim() === "" || parseMoneyInput(r.price) == null) errs[r.key] = t("onboarding.services.errorPrice");
     }
     setErrors(errs);
     if (Object.keys(errs).length) return;
@@ -578,15 +595,15 @@ function ServicesStep({ b, categorySlug, parentSlug, onDone }: { b: WizardBusine
   }
 
   return (
-    <StepFrame title="What can people book?" lead="Add everything you offer — as many services as you like. Options, add-ons, deposits and photos can be added later in Services.">
+    <StepFrame title={t("onboarding.services.title")} lead={t("onboarding.services.lead")}>
       {b.services.length > 0 && (
         <ul className="mb-6 divide-y divide-line rounded-lg border border-line bg-surface">
           {b.services.map((s) => (
             <li key={s.id} className="flex items-center gap-3 px-4 py-3">
               <Check className="size-4 text-accent" />
               <span className="min-w-0 flex-1 truncate text-[15px] text-ink">{s.name}</span>
-              <span className="text-sm text-ink-3 tabular">{s.durationMinutes} min</span>
-              <span className="w-16 text-end text-sm font-medium text-ink tabular">{s.priceType === "free" ? "Free" : formatMoney(s.priceCents, b.currency, { compact: true })}</span>
+              <span className="text-sm text-ink-3 tabular">{formatDuration(s.durationMinutes, intl)}</span>
+              <span className="w-16 text-end text-sm font-medium text-ink tabular">{s.priceType === "free" ? t("onboarding.services.free") : formatMoney(s.priceCents, b.currency, { compact: true, intl })}</span>
             </li>
           ))}
         </ul>
@@ -597,20 +614,20 @@ function ServicesStep({ b, categorySlug, parentSlug, onDone }: { b: WizardBusine
           {rows.map((r) => (
             <li key={r.key} className="rounded-lg border border-line bg-surface p-3.5">
               <div className="grid grid-cols-[1fr_auto] gap-3 sm:grid-cols-[1fr_120px_110px_auto] sm:items-end">
-                <Field label="Service" className="col-span-2 sm:col-span-1">{(p) => <Input {...p} value={r.name} onChange={(e) => update(r.key, { name: e.target.value })} maxLength={100} placeholder="e.g. Haircut" />}</Field>
-                <Field label="Length">
+                <Field label={t("onboarding.services.service")} className="col-span-2 sm:col-span-1">{(p) => <Input {...p} value={r.name} onChange={(e) => update(r.key, { name: e.target.value })} maxLength={100} placeholder={t("onboarding.services.placeholder")} />}</Field>
+                <Field label={t("onboarding.services.length")}>
                   {(p) => (
                     <Select {...p} value={r.duration} onChange={(e) => update(r.key, { duration: Number(e.target.value) })}>
                       {DURATION_CHOICES.map((d) => (
                         <option key={d} value={d}>
-                          {d < 60 ? `${d} min` : `${Math.floor(d / 60)}h${d % 60 ? ` ${d % 60}m` : ""}`}
+                          {formatDuration(d, intl)}
                         </option>
                       ))}
                     </Select>
                   )}
                 </Field>
-                <Field label={`Price (${b.currency})`}>{(p) => <Input {...p} value={r.price} onChange={(e) => update(r.key, { price: e.target.value })} inputMode="decimal" placeholder="0.00" />}</Field>
-                <button type="button" onClick={() => setRows((x) => x.filter((y) => y.key !== r.key))} className="flex size-11 items-center justify-center self-end rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink md:size-10" aria-label={`Remove ${r.name || "service"}`}>
+                <Field label={t("onboarding.services.price", { currency: b.currency })}>{(p) => <Input {...p} value={r.price} onChange={(e) => update(r.key, { price: e.target.value })} inputMode="decimal" placeholder="0.00" />}</Field>
+                <button type="button" onClick={() => setRows((x) => x.filter((y) => y.key !== r.key))} className="flex size-11 items-center justify-center self-end rounded-md text-ink-3 hover:bg-surface-2 hover:text-ink md:size-10" aria-label={r.name ? t("onboarding.services.remove", { name: r.name }) : t("onboarding.services.removeEmpty")}>
                   <Trash2 className="size-4" />
                 </button>
               </div>
@@ -622,25 +639,25 @@ function ServicesStep({ b, categorySlug, parentSlug, onDone }: { b: WizardBusine
 
       <div className="mt-4 flex flex-wrap gap-2">
         {templates
-          .filter((t) => !used.has(t.name.toLowerCase()))
-          .map((t) => (
-            <button key={t.name} type="button" onClick={() => setRows((r) => [...r, { key: `${t.name}-${Date.now()}`, name: t.name, duration: t.durationMinutes, price: "" }])} className="inline-flex h-9 items-center gap-1.5 rounded-md border border-dashed border-line-strong px-3 text-sm text-ink-2 hover:border-ink hover:text-ink">
-              <Plus className="size-3.5" /> {t.name}
+          .filter((tp) => !used.has(tp.name.toLowerCase()))
+          .map((tp) => (
+            <button key={tp.name} type="button" onClick={() => setRows((r) => [...r, { key: `${tp.name}-${Date.now()}`, name: tp.name, duration: tp.durationMinutes, price: "" }])} className="inline-flex h-9 items-center gap-1.5 rounded-md border border-dashed border-line-strong px-3 text-sm text-ink-2 hover:border-ink hover:text-ink">
+              <Plus className="size-3.5" /> {tp.name}
             </button>
           ))}
         <button type="button" onClick={() => setRows((r) => [...r, { key: `c${Date.now()}`, name: "", duration: 60, price: "" }])} className="inline-flex h-9 items-center gap-1.5 rounded-md bg-surface-2 px-3 text-sm font-medium text-ink hover:bg-surface-3">
-          <Plus className="size-3.5" /> Custom service
+          <Plus className="size-3.5" /> {t("onboarding.services.custom")}
         </button>
       </div>
 
       <Actions>
         {rows.length === 0 && b.services.length > 0 ? (
           <Button size="lg" onClick={onDone}>
-            Continue
+            {t("onboarding.continue")}
           </Button>
         ) : (
           <Button size="lg" onClick={save} loading={saving} disabled={rows.length === 0}>
-            {saving ? `Saving ${saved + 1} of ${rows.length + saved}` : `Save ${rows.length} ${rows.length === 1 ? "service" : "services"}`}
+            {saving ? t("onboarding.services.saving", { n: saved + 1, total: rows.length + saved }) : t("onboarding.services.save", { count: rows.length })}
           </Button>
         )}
       </Actions>
@@ -649,6 +666,7 @@ function ServicesStep({ b, categorySlug, parentSlug, onDone }: { b: WizardBusine
 }
 
 function HoursStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) {
+  const t = useT("proSetup");
   const [hours, setHours] = useState<DayHours[]>(b.hours);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -666,12 +684,12 @@ function HoursStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) {
     }
   }
   return (
-    <StepFrame title="When can people book you?" lead="Set your usual week. Breaks, days off and holidays can be added any time from your calendar.">
+    <StepFrame title={t("onboarding.hours.title")} lead={t("onboarding.hours.lead")}>
       <FormError message={error} />
       <WeeklyHoursEditor value={hours} onChange={setHours} />
       <Actions>
         <Button size="lg" onClick={save} loading={saving} disabled={!valid || !anyOpen}>
-          Save hours
+          {t("availability.saveHours")}
         </Button>
       </Actions>
     </StepFrame>
@@ -679,6 +697,8 @@ function HoursStep({ b, onDone }: { b: WizardBusiness; onDone: () => void }) {
 }
 
 function PoliciesStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => void; onSkip: () => void }) {
+  const t = useT("proSetup");
+  const noticeLabel = (m: number) => (m === 0 ? t("editor.notice.none") : m < 60 ? t("onboarding.policies.minutes", { count: m }) : m < 1440 ? t("editor.notice.hours", { count: m / 60 }) : t("editor.notice.days", { count: m / 1440 }));
   const [mode, setMode] = useState(b.bookingMode);
   const [notice, setNotice] = useState(String(b.minNoticeMinutes));
   const [window_, setWindow] = useState(String(b.cancellationWindowHours));
@@ -698,45 +718,45 @@ function PoliciesStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => 
     }
   }
   return (
-    <StepFrame title="How should booking work?" lead="Sensible defaults are already set. Customers see these rules before they confirm.">
+    <StepFrame title={t("onboarding.policies.title")} lead={t("onboarding.policies.lead")}>
       <FormError message={error} />
       <div className="space-y-8">
         <fieldset>
-          <legend className="mb-3 text-sm font-semibold text-ink">Confirmations</legend>
+          <legend className="mb-3 text-sm font-semibold text-ink">{t("onboarding.policies.confirmations")}</legend>
           <div className="grid gap-2">
-            <ChoiceCard selected={mode === "instant"} onClick={() => setMode("instant")} title="Instant booking" description="Open times are booked immediately. Most popular — customers love it." />
-            <ChoiceCard selected={mode === "request"} onClick={() => setMode("request")} title="Approve each request" description="You confirm or decline every booking. Unanswered requests expire after 48 hours." />
+            <ChoiceCard selected={mode === "instant"} onClick={() => setMode("instant")} title={t("editor.rules.instant")} description={t("onboarding.policies.instantHint")} />
+            <ChoiceCard selected={mode === "request"} onClick={() => setMode("request")} title={t("onboarding.policies.approve")} description={t("onboarding.policies.approveHint")} />
           </div>
         </fieldset>
         <div className="grid gap-5 sm:grid-cols-3">
-          <Field label="Minimum notice">
+          <Field label={t("editor.rules.minNotice")}>
             {(p) => (
               <Select {...p} value={notice} onChange={(e) => setNotice(e.target.value)}>
-                {[["0", "None"], ["30", "30 minutes"], ["60", "1 hour"], ["120", "2 hours"], ["240", "4 hours"], ["720", "12 hours"], ["1440", "1 day"], ["2880", "2 days"]].map(([v, l]) => (
-                  <option key={v} value={v}>
-                    {l}
+                {[0, 30, 60, 120, 240, 720, 1440, 2880].map((m) => (
+                  <option key={m} value={String(m)}>
+                    {noticeLabel(m)}
                   </option>
                 ))}
               </Select>
             )}
           </Field>
-          <Field label="Free cancellation until">
+          <Field label={t("onboarding.policies.freeCancel")}>
             {(p) => (
               <Select {...p} value={window_} onChange={(e) => setWindow(e.target.value)}>
-                {[["0", "Start time"], ["2", "2h before"], ["6", "6h before"], ["12", "12h before"], ["24", "24h before"], ["48", "48h before"]].map(([v, l]) => (
-                  <option key={v} value={v}>
-                    {l}
+                {[0, 2, 6, 12, 24, 48].map((h) => (
+                  <option key={h} value={String(h)}>
+                    {h === 0 ? t("onboarding.policies.startTime") : t("onboarding.policies.hoursBefore", { hours: h })}
                   </option>
                 ))}
               </Select>
             )}
           </Field>
-          <Field label="Late cancel / no-show fee">
+          <Field label={t("onboarding.policies.fee")}>
             {(p) => (
               <Select {...p} value={fee} onChange={(e) => setFee(e.target.value)}>
                 {["0", "25", "50", "100"].map((v) => (
                   <option key={v} value={v}>
-                    {v === "0" ? "No fee" : `${v}% of total`}
+                    {v === "0" ? t("onboarding.policies.noFee") : t("onboarding.policies.percentOfTotal", { percent: v })}
                   </option>
                 ))}
               </Select>
@@ -746,7 +766,7 @@ function PoliciesStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => 
       </div>
       <Actions skip={onSkip}>
         <Button size="lg" onClick={save} loading={saving}>
-          Save & continue
+          {t("onboarding.saveContinue")}
         </Button>
       </Actions>
     </StepFrame>
@@ -754,6 +774,7 @@ function PoliciesStep({ b, onDone, onSkip }: { b: WizardBusiness; onDone: () => 
 }
 
 function PaymentsStep({ b, stripe, onDone, onSkip }: { b: WizardBusiness; stripe: boolean; onDone: () => void; onSkip: () => void }) {
+  const t = useT("proSetup");
   const [loading, setLoading] = useState(false);
   async function connect() {
     setLoading(true);
@@ -766,28 +787,28 @@ function PaymentsStep({ b, stripe, onDone, onSkip }: { b: WizardBusiness; stripe
     }
   }
   return (
-    <StepFrame title="Getting paid" lead="Customers can always pay you in person. Online payments let you take deposits, cut no-shows and receive tips.">
+    <StepFrame title={t("onboarding.payments.title")} lead={t("onboarding.payments.lead")}>
       {b.paymentsEnabled ? (
         <div className="flex items-center gap-3 rounded-lg border border-accent/30 bg-accent-soft p-4 text-sm text-accent-text">
-          <Check className="size-5" /> Online payments are connected.
+          <Check className="size-5" /> {t("onboarding.payments.connected")}
         </div>
       ) : stripe ? (
         <div className="rounded-lg border border-line bg-surface p-5">
-          <p className="text-[15px] font-medium text-ink">Connect payouts with Stripe</p>
-          <p className="mt-1 text-sm leading-relaxed text-ink-3">Takes about five minutes. Card details are handled by Stripe and never touch Kept’s servers.</p>
+          <p className="text-[15px] font-medium text-ink">{t("onboarding.payments.stripeTitle")}</p>
+          <p className="mt-1 text-sm leading-relaxed text-ink-3">{t("onboarding.payments.stripeBody")}</p>
           <Button className="mt-4" onClick={connect} loading={loading}>
-            Connect payouts
+            {t("onboarding.payments.connect")}
           </Button>
         </div>
       ) : (
         <div className="rounded-lg border border-line bg-surface p-5">
-          <p className="text-[15px] font-medium text-ink">In-person payments for now</p>
-          <p className="mt-1 text-sm leading-relaxed text-ink-3">Online payments aren’t switched on for this platform yet. Customers will see that they pay at the appointment, and you can record payments from each booking.</p>
+          <p className="text-[15px] font-medium text-ink">{t("onboarding.payments.offTitle")}</p>
+          <p className="mt-1 text-sm leading-relaxed text-ink-3">{t("onboarding.payments.offBody")}</p>
         </div>
       )}
       <Actions skip={!b.paymentsEnabled && stripe ? onSkip : undefined}>
         <Button size="lg" onClick={onDone} variant={!b.paymentsEnabled && stripe ? "secondary" : "primary"}>
-          Continue
+          {t("onboarding.continue")}
         </Button>
       </Actions>
     </StepFrame>
@@ -795,6 +816,7 @@ function PaymentsStep({ b, stripe, onDone, onSkip }: { b: WizardBusiness; stripe
 }
 
 function PreviewStep({ b, goTo }: { b: WizardBusiness; goTo: (s: StepKey) => void }) {
+  const t = useT("proSetup");
   const router = useRouter();
   const [publishing, setPublishing] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -806,7 +828,7 @@ function PreviewStep({ b, goTo }: { b: WizardBusiness; goTo: (s: StepKey) => voi
     try {
       await api("/api/pro/business/publish", { body: { live: true } });
       await api("/api/pro/business/onboarding", { body: { step: "preview" } });
-      toast.success("You're live", { description: "Customers can now find and book you." });
+      toast.success(t("onboarding.preview.live"), { description: t("onboarding.preview.liveToast") });
       router.push("/pro/today");
       router.refresh();
     } catch (err) {
@@ -815,16 +837,16 @@ function PreviewStep({ b, goTo }: { b: WizardBusiness; goTo: (s: StepKey) => voi
     }
   }
   return (
-    <StepFrame title={live ? "You're live" : ready ? "Ready when you are" : "Almost there"} lead={live ? "Your page is public and taking bookings." : "Check your page, then go live. You can pause it any time."}>
+    <StepFrame title={live ? t("onboarding.preview.live") : ready ? t("onboarding.preview.ready") : t("onboarding.preview.almost")} lead={live ? t("onboarding.preview.liveLead") : t("onboarding.preview.lead")}>
       <FormError message={error} />
       <ul className="divide-y divide-line rounded-lg border border-line bg-surface">
         {b.checklist.map((i) => (
           <li key={i.key} className="flex items-center gap-3 px-4 py-3.5">
             <span className={cn("flex size-6 items-center justify-center rounded-full", i.done ? "bg-accent text-accent-ink" : "border border-line-strong text-ink-3")}>{i.done ? <Check className="size-3.5" strokeWidth={3} /> : <X className="size-3.5" />}</span>
-            <span className={cn("flex-1 text-[15px]", i.done ? "text-ink" : "text-ink-2")}>{i.label}</span>
+            <span className={cn("flex-1 text-[15px]", i.done ? "text-ink" : "text-ink-2")}>{tOr(t, `onboarding.checklist.${i.key}`, i.label)}</span>
             {!i.done && (
               <button type="button" onClick={() => goTo(i.key as StepKey)} className="text-sm font-medium text-ink underline underline-offset-4">
-                Finish
+                {t("onboarding.preview.finish")}
               </button>
             )}
           </li>
@@ -833,17 +855,17 @@ function PreviewStep({ b, goTo }: { b: WizardBusiness; goTo: (s: StepKey) => voi
       <div className="mt-6 flex items-center justify-between gap-4 rounded-lg bg-surface-2 px-4 py-3.5">
         <span className="min-w-0 truncate text-sm text-ink-2">kept.app/{b.slug}</span>
         <a href={`/${b.slug}`} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-ink hover:underline">
-          Preview <ExternalLink className="size-3.5" />
+          {t("onboarding.preview.preview")} <ExternalLink className="size-3.5" />
         </a>
       </div>
       <Actions>
         {live ? (
           <ButtonLink href="/pro/today" size="lg">
-            Go to my day
+            {t("onboarding.preview.goToDay")}
           </ButtonLink>
         ) : (
           <Button size="lg" onClick={publish} loading={publishing} disabled={!ready}>
-            Go live
+            {t("onboarding.preview.goLive")}
           </Button>
         )}
       </Actions>

@@ -12,6 +12,7 @@ import { MediaImage, type MediaLike } from "@/components/ui/media";
 import { Menu, MenuContent, MenuItem, MenuSeparator, MenuTrigger } from "@/components/ui/menu";
 import { EmptyState } from "@/components/ui/misc";
 import { Spinner } from "@/components/ui/spinner";
+import { useT } from "@/i18n/client";
 import { api, type ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { uploadMedia } from "@/lib/upload";
@@ -37,6 +38,7 @@ type Upload = { key: string; name: string; pct: number; state: "uploading" | "sa
 const ACCEPT = "image/jpeg,image/png,image/webp,image/heic,image/heif,video/mp4,video/quicktime,video/webm";
 
 export function PortfolioManager({ items, businessId, services, team }: { items: WorkItem[]; businessId: string; services: Opt[]; team: Opt[] }) {
+  const t = useT("proSetup");
   const router = useRouter();
   const fileRef = useRef<HTMLInputElement>(null);
   const [uploads, setUploads] = useState<Upload[]>([]);
@@ -59,8 +61,8 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
   // Videos are encoded in the background; check back until they're ready.
   useEffect(() => {
     if (!processing) return;
-    const t = setInterval(() => router.refresh(), 8000);
-    return () => clearInterval(t);
+    const timer = setInterval(() => router.refresh(), 8000);
+    return () => clearInterval(timer);
   }, [processing, router]);
 
   async function addFiles(files: FileList | null) {
@@ -88,7 +90,7 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
     await Promise.all([worker(), worker()]);
     if (fileRef.current) fileRef.current.value = "";
     if (ok) {
-      toast.success(`${ok} ${ok === 1 ? "item" : "items"} added to your portfolio`);
+      toast.success(t("portfolio.added", { count: ok }));
       router.refresh();
     }
   }
@@ -114,7 +116,7 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
   async function toggleFeatured(item: WorkItem) {
     try {
       await api(`/api/pro/portfolio/${item.id}`, { method: "PUT", body: { isFeatured: !item.isFeatured } });
-      toast.success(item.isFeatured ? "Removed from featured" : "Featured — it now shows first on your profile");
+      toast.success(item.isFeatured ? t("portfolio.unfeatured") : t("portfolio.featuredToast"));
       router.refresh();
     } catch (err) {
       toast.error((err as ApiError).message);
@@ -126,7 +128,7 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
     setBusy(true);
     try {
       await api(`/api/pro/portfolio/${deleting.id}`, { method: "DELETE" });
-      toast.success("Removed from your portfolio");
+      toast.success(t("portfolio.removed"));
       setDeleting(null);
       router.refresh();
     } catch (err) {
@@ -143,16 +145,16 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
       <input ref={fileRef} type="file" accept={ACCEPT} multiple className="sr-only" tabIndex={-1} aria-hidden onChange={(e) => addFiles(e.target.files)} />
       <div className="flex flex-wrap gap-2">
         <Button icon={<Upload className="size-4" />} onClick={() => fileRef.current?.click()} disabled={uploading}>
-          Add photos or videos
+          {t("portfolio.add")}
         </Button>
         <Button variant="secondary" icon={<ImagePlus className="size-4" />} onClick={() => setPairOpen(true)} disabled={uploading}>
-          Before &amp; after
+          {t("portfolio.beforeAfter")}
         </Button>
       </div>
-      <p className="mt-2 text-[13px] text-ink-3">Photos (JPG, PNG, WebP) and videos (MP4, MOV, up to 3 minutes). You can select several at once.</p>
+      <p className="mt-2 text-[13px] text-ink-3">{t("portfolio.formats")}</p>
 
       {uploads.length > 0 && (
-        <ul className="mt-4 divide-y divide-line rounded-lg border border-line bg-surface" aria-live="polite" aria-label="Uploads">
+        <ul className="mt-4 divide-y divide-line rounded-lg border border-line bg-surface" aria-live="polite" aria-label={t("portfolio.uploads")}>
           {uploads.map((u) => (
             <li key={u.key} className="flex items-center gap-3 px-3 py-2.5 text-sm">
               <span className="min-w-0 flex-1 truncate text-ink">{u.name}</span>
@@ -161,7 +163,7 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
                   <AlertCircle className="size-4 shrink-0" /> {u.error}
                 </span>
               ) : u.state === "done" ? (
-                <span className="text-[13px] text-accent-text">Added</span>
+                <span className="text-[13px] text-accent-text">{t("portfolio.uploadAdded")}</span>
               ) : (
                 <span className="flex w-40 items-center gap-2">
                   <span
@@ -170,11 +172,11 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
                     aria-valuenow={u.pct}
                     aria-valuemin={0}
                     aria-valuemax={100}
-                    aria-label={`Uploading ${u.name}`}
+                    aria-label={t("portfolio.uploading", { name: u.name })}
                   >
                     <span className="block h-full bg-accent transition-[width]" style={{ width: `${u.pct}%` }} />
                   </span>
-                  <span className="w-12 text-end text-[12px] text-ink-3 tabular">{u.state === "saving" ? "Saving" : `${u.pct}%`}</span>
+                  <span className="w-12 text-end text-[12px] text-ink-3 tabular">{u.state === "saving" ? t("portfolio.saving") : `${u.pct}%`}</span>
                 </span>
               )}
             </li>
@@ -182,7 +184,7 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
           {!uploading && (
             <li className="flex justify-end px-3 py-2">
               <button type="button" className="h-8 rounded-md px-2 text-[13px] text-ink-3 hover:bg-surface-2 hover:text-ink" onClick={() => setUploads([])}>
-                Clear list
+                {t("portfolio.clearList")}
               </button>
             </li>
           )}
@@ -194,11 +196,11 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
           <div className="mt-8 rounded-lg border border-dashed border-line-strong">
             <EmptyState
               icon={<ImagePlus />}
-              title="Show people your work"
-              description="Customers look at past work before they book. Add a few recent pieces and link each one to a service so they can tap “Book this”."
+              title={t("portfolio.emptyTitle")}
+              description={t("portfolio.emptyBody")}
               action={
                 <Button icon={<Upload className="size-4" />} onClick={() => fileRef.current?.click()}>
-                  Upload your first photos
+                  {t("portfolio.emptyAction")}
                 </Button>
               }
             />
@@ -207,18 +209,18 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
       ) : (
         <>
           <p className="mt-8 text-[13px] text-ink-3">
-            {list.length} {list.length === 1 ? "piece" : "pieces"}
-            {featuredCount > 0 && ` · ${featuredCount} featured`} · Shown on your profile in this order{list.length > 4 ? ", with the first one large" : ""}.
+            {t("portfolio.pieces", { count: list.length })}
+            {featuredCount > 0 && ` · ${t("portfolio.featuredCount", { count: featuredCount })}`} · {list.length > 4 ? t("portfolio.orderLarge") : t("portfolio.order")}
           </p>
           <ul className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {list.map((item, idx) => {
               const canEarlier = idx > 0 && list[idx - 1].isFeatured === item.isFeatured;
               const canLater = idx < list.length - 1 && list[idx + 1].isFeatured === item.isFeatured;
-              const label = item.caption ?? (item.serviceName ? `${item.serviceName} photo` : `Portfolio item ${idx + 1}`);
+              const label = item.caption ?? (item.serviceName ? t("portfolio.servicePhoto", { name: item.serviceName }) : t("portfolio.itemN", { n: idx + 1 }));
               return (
                 <li key={item.id} className="group min-w-0">
                   <div className="relative aspect-square overflow-hidden rounded-lg bg-surface-2">
-                    <button type="button" onClick={() => setEditing(item)} className="absolute inset-0 block size-full" aria-label={`Edit ${label}`}>
+                    <button type="button" onClick={() => setEditing(item)} className="absolute inset-0 block size-full" aria-label={t("portfolio.editItem", { label })}>
                       {item.media ? (
                         item.kind === "before_after" && item.before ? (
                           <span className="grid size-full grid-cols-2 gap-px bg-line">
@@ -231,57 +233,57 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
                       ) : item.mediaStatus === "processing" ? (
                         <span className="flex size-full flex-col items-center justify-center gap-2 px-3 text-center text-[13px] text-ink-3">
                           <Spinner className="size-5" />
-                          Processing video…
-                          <span className="text-[12px]">It appears on your profile when ready.</span>
+                          {t("portfolio.processing")}
+                          <span className="text-[12px]">{t("portfolio.processingHint")}</span>
                         </span>
                       ) : (
                         <span className="flex size-full flex-col items-center justify-center gap-1.5 px-3 text-center text-[13px] text-danger">
                           <AlertCircle className="size-5" />
-                          Couldn&apos;t process this file
-                          <span className="text-[12px] text-ink-3">Delete it and try exporting as MP4.</span>
+                          {t("portfolio.failed")}
+                          <span className="text-[12px] text-ink-3">{t("portfolio.failedHint")}</span>
                         </span>
                       )}
                     </button>
                     <span className="pointer-events-none absolute start-2 top-2 flex gap-1">
-                      {item.isFeatured && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Featured</span>}
-                      {item.kind === "video" && item.media && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Video</span>}
-                      {item.kind === "before_after" && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">Before / after</span>}
+                      {item.isFeatured && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{t("portfolio.featured")}</span>}
+                      {item.kind === "video" && item.media && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{t("portfolio.video")}</span>}
+                      {item.kind === "before_after" && <span className="rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{t("portfolio.beforeAfterBadge")}</span>}
                     </span>
                     <Menu>
                       <MenuTrigger
                         className="absolute end-1.5 top-1.5 flex size-9 items-center justify-center rounded-md bg-surface/90 text-ink shadow-sm hover:bg-surface"
-                        aria-label={`Actions for ${label}`}
+                        aria-label={t("portfolio.actionsFor", { label })}
                       >
                         <MoreHorizontal className="size-4" />
                       </MenuTrigger>
                       <MenuContent>
                         <MenuItem icon={<Pencil />} onSelect={() => setEditing(item)}>
-                          Edit details
+                          {t("portfolio.editDetails")}
                         </MenuItem>
                         <MenuItem icon={<Star />} onSelect={() => toggleFeatured(item)}>
-                          {item.isFeatured ? "Unfeature" : "Feature"}
+                          {item.isFeatured ? t("portfolio.unfeature") : t("portfolio.feature")}
                         </MenuItem>
                         {canEarlier && (
                           <MenuItem icon={<ArrowLeft />} onSelect={() => move(item, -1)}>
-                            Move earlier
+                            {t("portfolio.moveEarlier")}
                           </MenuItem>
                         )}
                         {canLater && (
                           <MenuItem icon={<ArrowRight />} onSelect={() => move(item, 1)}>
-                            Move later
+                            {t("portfolio.moveLater")}
                           </MenuItem>
                         )}
                         <MenuSeparator />
                         <MenuItem danger icon={<Trash2 />} onSelect={() => setDeleting(item)}>
-                          Delete
+                          {t("portfolio.delete")}
                         </MenuItem>
                       </MenuContent>
                     </Menu>
                   </div>
                   <div className="mt-2 min-w-0 px-0.5">
-                    <p className={cn("truncate text-[13px]", item.caption ? "text-ink" : "text-ink-3")}>{item.caption ?? "No caption"}</p>
+                    <p className={cn("truncate text-[13px]", item.caption ? "text-ink" : "text-ink-3")}>{item.caption ?? t("portfolio.noCaption")}</p>
                     <p className="truncate text-[12px] text-ink-3">
-                      {item.serviceName ? (item.serviceBookable ? `Book this: ${item.serviceName}` : `${item.serviceName} (not bookable)`) : "Not linked to a service"}
+                      {item.serviceName ? (item.serviceBookable ? t("portfolio.bookThis", { name: item.serviceName }) : t("portfolio.notBookable", { name: item.serviceName })) : t("portfolio.notLinked")}
                       {item.memberName ? ` · ${item.memberName}` : ""}
                     </p>
                   </div>
@@ -297,9 +299,9 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
       <ConfirmDialog
         open={deleting != null}
         onOpenChange={(o) => !o && setDeleting(null)}
-        title="Delete this from your portfolio?"
-        description="It's removed from your public profile right away. This can't be undone."
-        confirmLabel="Delete"
+        title={t("portfolio.deleteTitle")}
+        description={t("portfolio.deleteBody")}
+        confirmLabel={t("portfolio.delete")}
         loading={busy}
         onConfirm={remove}
       />
@@ -308,6 +310,7 @@ export function PortfolioManager({ items, businessId, services, team }: { items:
 }
 
 function EditDialog({ item, services, team, onClose }: { item: WorkItem; services: Opt[]; team: Opt[]; onClose: () => void }) {
+  const t = useT("proSetup");
   const router = useRouter();
   const [caption, setCaption] = useState(item.caption ?? "");
   const [serviceId, setServiceId] = useState(item.serviceId ?? "");
@@ -322,7 +325,7 @@ function EditDialog({ item, services, team, onClose }: { item: WorkItem; service
     setError(null);
     try {
       await api(`/api/pro/portfolio/${item.id}`, { method: "PUT", body: { caption: caption.trim() || null, serviceId: serviceId || null, memberId: memberId || null, isFeatured: featured } });
-      toast.success("Saved");
+      toast.success(t("portfolio.saved"));
       router.refresh();
       onClose();
     } catch (err) {
@@ -336,15 +339,15 @@ function EditDialog({ item, services, team, onClose }: { item: WorkItem; service
     <Dialog
       open
       onOpenChange={(o) => !o && onClose()}
-      title="Edit details"
+      title={t("portfolio.editDetails")}
       locked={saving}
       footer={
         <>
           <Button variant="ghost" onClick={onClose} disabled={saving}>
-            Cancel
+            {t("portfolio.cancel")}
           </Button>
           <Button type="submit" form="work-form" loading={saving}>
-            Save
+            {t("portfolio.save")}
           </Button>
         </>
       }
@@ -352,13 +355,13 @@ function EditDialog({ item, services, team, onClose }: { item: WorkItem; service
       <form id="work-form" onSubmit={save} className="space-y-4">
         {item.media && item.kind !== "before_after" && <MediaImage media={item.media} alt="" sizes="480px" fit="contain" className="h-48 w-full rounded-md" />}
         <FormError message={error} />
-        <Field label="Caption" optional hint="What was done — e.g. “Mid skin fade with a textured crop”.">
+        <Field label={t("portfolio.caption")} optional hint={t("portfolio.captionHint")}>
           {(p) => <Textarea {...p} rows={2} maxLength={300} value={caption} onChange={(e) => setCaption(e.target.value)} />}
         </Field>
-        <Field label="Service" optional hint="Customers see a “Book this” button that opens this service.">
+        <Field label={t("portfolio.service")} optional hint={t("portfolio.serviceHint")}>
           {(p) => (
             <Select {...p} value={serviceId} onChange={(e) => setServiceId(e.target.value)}>
-              <option value="">None</option>
+              <option value="">{t("portfolio.none")}</option>
               {services.map((s) => (
                 <option key={s.id} value={s.id}>
                   {s.name}
@@ -368,26 +371,27 @@ function EditDialog({ item, services, team, onClose }: { item: WorkItem; service
           )}
         </Field>
         {team.length > 1 && (
-          <Field label="Done by" optional>
+          <Field label={t("portfolio.doneBy")} optional>
             {(p) => (
               <Select {...p} value={memberId} onChange={(e) => setMemberId(e.target.value)}>
-                <option value="">Not specified</option>
-                {team.map((t) => (
-                  <option key={t.id} value={t.id}>
-                    {t.name}
+                <option value="">{t("portfolio.notSpecified")}</option>
+                {team.map((tm) => (
+                  <option key={tm.id} value={tm.id}>
+                    {tm.name}
                   </option>
                 ))}
               </Select>
             )}
           </Field>
         )}
-        <Switch checked={featured} onCheckedChange={setFeatured} label="Feature this" description="Featured work shows first on your profile." />
+        <Switch checked={featured} onCheckedChange={setFeatured} label={t("portfolio.featureThis")} description={t("portfolio.featureThisHint")} />
       </form>
     </Dialog>
   );
 }
 
 function PickImage({ label, file, onPick }: { label: string; file: File | null; onPick: (f: File | null) => void }) {
+  const t = useT("proSetup");
   const ref = useRef<HTMLInputElement>(null);
   const [url, setUrl] = useState<string | null>(null);
   const urlRef = useRef<string | null>(null);
@@ -405,11 +409,11 @@ function PickImage({ label, file, onPick }: { label: string; file: File | null; 
         type="button"
         onClick={() => ref.current?.click()}
         className="relative flex aspect-square w-full flex-col items-center justify-center gap-1.5 overflow-hidden rounded-lg border border-dashed border-line-strong bg-surface-2 text-sm text-ink-2 hover:border-ink-3"
-        aria-label={file ? `${label}: ${file.name}. Choose a different photo` : `Choose ${label.toLowerCase()} photo`}
+        aria-label={file ? t("portfolio.pair.change", { label, file: file.name }) : t("portfolio.pair.choose", { label })}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         {file && url ? <img src={url} alt="" className="absolute inset-0 size-full object-cover" /> : <ImagePlus className="size-5 text-ink-3" />}
-        {!file && <span>Choose photo</span>}
+        {!file && <span>{t("portfolio.pair.choosePhoto")}</span>}
         <span className="absolute start-2 top-2 rounded bg-black/60 px-1.5 py-0.5 text-[11px] font-medium text-white">{label}</span>
       </button>
     </div>
@@ -417,6 +421,7 @@ function PickImage({ label, file, onPick }: { label: string; file: File | null; 
 }
 
 function BeforeAfterDialog({ businessId, services, onClose }: { businessId: string; services: Opt[]; onClose: () => void }) {
+  const t = useT("proSetup");
   const router = useRouter();
   const [before, setBefore] = useState<File | null>(null);
   const [after, setAfter] = useState<File | null>(null);
@@ -427,18 +432,18 @@ function BeforeAfterDialog({ businessId, services, onClose }: { businessId: stri
 
   async function save() {
     if (!before || !after) {
-      setError("Choose both a before and an after photo.");
+      setError(t("portfolio.pair.errorBoth"));
       return;
     }
     setError(null);
     try {
-      setProgress("Uploading before photo…");
-      const b = await uploadMedia(before, { purpose: "portfolio", businessId, onProgress: (p) => setProgress(`Uploading before photo… ${p}%`) });
-      setProgress("Uploading after photo…");
-      const a = await uploadMedia(after, { purpose: "portfolio", businessId, onProgress: (p) => setProgress(`Uploading after photo… ${p}%`) });
-      setProgress("Saving…");
+      setProgress(t("portfolio.pair.uploadingBefore"));
+      const b = await uploadMedia(before, { purpose: "portfolio", businessId, onProgress: (p) => setProgress(`${t("portfolio.pair.uploadingBefore")} ${p}%`) });
+      setProgress(t("portfolio.pair.uploadingAfter"));
+      const a = await uploadMedia(after, { purpose: "portfolio", businessId, onProgress: (p) => setProgress(`${t("portfolio.pair.uploadingAfter")} ${p}%`) });
+      setProgress(t("portfolio.pair.saving"));
       await api("/api/pro/portfolio", { body: { mediaId: a.id, beforeMediaId: b.id, caption: caption.trim() || null, serviceId: serviceId || null } });
-      toast.success("Before & after added");
+      toast.success(t("portfolio.pair.added"));
       router.refresh();
       onClose();
     } catch (err) {
@@ -452,24 +457,24 @@ function BeforeAfterDialog({ businessId, services, onClose }: { businessId: stri
     <Dialog
       open
       onOpenChange={(o) => !o && onClose()}
-      title="Add a before & after"
-      description="Customers drag a slider to compare the two photos. Use the same angle and lighting if you can."
+      title={t("portfolio.pair.title")}
+      description={t("portfolio.pair.description")}
       locked={busy}
       footer={
         <>
           <Button variant="ghost" onClick={onClose} disabled={busy}>
-            Cancel
+            {t("portfolio.cancel")}
           </Button>
           <Button onClick={save} loading={busy}>
-            Add to portfolio
+            {t("portfolio.pair.submit")}
           </Button>
         </>
       }
     >
       <div className="space-y-4">
         <div className="grid grid-cols-2 gap-3">
-          <PickImage label="Before" file={before} onPick={setBefore} />
-          <PickImage label="After" file={after} onPick={setAfter} />
+          <PickImage label={t("portfolio.pair.before")} file={before} onPick={setBefore} />
+          <PickImage label={t("portfolio.pair.after")} file={after} onPick={setAfter} />
         </div>
         <FormError message={error} />
         {progress && (
@@ -477,13 +482,13 @@ function BeforeAfterDialog({ businessId, services, onClose }: { businessId: stri
             {progress}
           </p>
         )}
-        <Field label="Caption" optional>
+        <Field label={t("portfolio.caption")} optional>
           {(p) => <Textarea {...p} rows={2} maxLength={300} value={caption} onChange={(e) => setCaption(e.target.value)} />}
         </Field>
-        <Field label="Service" optional hint="Adds a “Book this” button on your profile.">
+        <Field label={t("portfolio.service")} optional hint={t("portfolio.pair.serviceHint")}>
           {(p) => (
             <Select {...p} value={serviceId} onChange={(e) => setServiceId(e.target.value)}>
-              <option value="">None</option>
+              <option value="">{t("portfolio.none")}</option>
               {services.map((s) => (
                 <option key={s.id} value={s.id}>
                   {s.name}

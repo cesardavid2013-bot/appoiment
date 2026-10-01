@@ -6,12 +6,17 @@ import { ButtonLink } from "@/components/ui/button";
 import { PageHeader } from "@/components/ui/misc";
 import { db } from "@/server/db/client";
 import { appointments, serviceOptionGroups, serviceStaff, services } from "@/server/db/schema";
+import { getT } from "@/i18n/server";
 import { proPage } from "@/server/pro-page";
 
-export const metadata: Metadata = { title: "Services" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("proSetup");
+  return { title: t("services.title") };
+}
 
 export default async function ServicesPage() {
   const { m } = await proPage("services.manage");
+  const t = await getT("proSetup");
   const rows = await db
     .select({
       id: services.id,
@@ -34,11 +39,11 @@ export default async function ServicesPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 pb-16 pt-8 sm:px-6 lg:px-10 lg:pt-10">
       <PageHeader
-        title="Services"
-        description="Everything customers can book, in the order they see it."
+        title={t("services.title")}
+        description={t("services.description")}
         actions={
           <ButtonLink href="/pro/services/new" icon={<Plus className="size-4" />}>
-            New service
+            {t("services.new")}
           </ButtonLink>
         }
       />
