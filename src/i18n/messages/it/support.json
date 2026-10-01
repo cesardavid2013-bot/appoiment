@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Prenotazione", "hint": "Modifiche, cancellazioni o problemi con un appuntamento." },
+    "payment": { "label": "Pagamento", "hint": "Addebiti, acconti, rimborsi o mance." },
+    "account": { "label": "Account", "hint": "Accesso, profilo o dati personali." },
+    "report": { "label": "Segnala un'attività", "hint": "Problemi di sicurezza, schede ingannevoli o comportamenti scorretti." },
+    "other": { "label": "Altro", "hint": "Qualsiasi altra cosa in cui possiamo aiutarti." }
+  },
+  "status": {
+    "open": "In attesa dell'assistenza",
+    "awaiting_customer": "Risposto",
+    "resolved": "Risolto",
+    "closed": "Chiuso"
+  },
+  "home": {
+    "title": "Aiuto e assistenza",
+    "description": "Aiuto con una prenotazione, un pagamento o il tuo account.",
+    "newRequest": "Nuova richiesta",
+    "yourRequests": "Le tue richieste",
+    "emptyTitle": "Ancora nessuna richiesta",
+    "emptyBody": "Se qualcosa non va con una prenotazione, un pagamento o il tuo account, scrivici e ti aiuteremo a risolverlo.",
+    "contact": "Contatta l'assistenza",
+    "ticketLine": "{category} · Aggiornata il {date} · {count, plural, one {# messaggio} other {# messaggi}}",
+    "quickAnswers": "Risposte rapide",
+    "stillStuck": "Serve ancora aiuto? <link>Contatta l'assistenza</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Come cancello o sposto un appuntamento?",
+      "a": "Apri <link>Prenotazioni</link>, scegli l'appuntamento e tocca Sposta o Cancella. Ogni attività stabilisce il proprio periodo di cancellazione — prima di confermare vedrai esattamente cosa si applica, incluse eventuali penali o rimborsi."
+    },
+    "refund": {
+      "q": "Quando riceverò il rimborso?",
+      "a": "I rimborsi tornano sulla carta con cui hai pagato non appena la cancellazione è confermata. A seconda della banca, di solito compaiono in 5–10 giorni lavorativi. Se un acconto sia rimborsabile dipende dalla politica dell'attività, mostrata al momento della prenotazione."
+    },
+    "contactPro": {
+      "q": "Come contatto un professionista?",
+      "a": "Usa Messaggio sul suo profilo o sulla tua prenotazione. Le tue conversazioni sono in <link>Messaggi</link>. Per tutto ciò che riguarda il servizio — indicazioni, preparazione, cosa portare — l'attività risponde più in fretta."
+    },
+    "report": {
+      "q": "Qualcosa è andato storto con un'attività. Cosa posso fare?",
+      "a": "Apri una richiesta qui sotto e scegli “Segnala un'attività”. Collega l'appuntamento, se c'è. Leggiamo ogni segnalazione e possiamo intervenire sui rimborsi e, se necessario, rimuovere attività da Kept."
+    },
+    "account": {
+      "q": "Come cambio la mia email o elimino il mio account?",
+      "a": "Le modifiche dell'email passano dall'assistenza, così possiamo verificare che sia tu. Puoi scaricare i tuoi dati o eliminare il tuo account in autonomia da <link>Privacy e dati</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Richiesta di assistenza",
+    "allRequests": "Tutte le richieste",
+    "opened": "{category} · Aperta il <date></date>",
+    "appointmentLine": "{date} alle {time} · Cod. {reference}",
+    "conversation": "Conversazione",
+    "keptSupport": "Assistenza Kept",
+    "openImage": "Apri l'immagine allegata",
+    "attachedImage": "Immagine allegata",
+    "closed": "Questa richiesta è chiusa. <link>Apri una nuova richiesta</link> se hai ancora bisogno di aiuto.",
+    "willReply": "Ti risponderemo qui e ti avviseremo quando lo faremo.",
+    "sorted": "Tutto risolto? Faccelo sapere."
+  },
+  "new": {
+    "title": "Contatta l'assistenza",
+    "intro": "Raccontaci cosa succede e una persona vera del team Kept ti risponderà qui. Per domande sul servizio in sé, scrivere all'attività è di solito la via più rapida.",
+    "notFound": "Non abbiamo trovato quell'appuntamento nel tuo account, quindi non è stato allegato. Puoi comunque sceglierne uno qui sotto."
+  },
+  "form": {
+    "topic": "Con cosa hai bisogno di aiuto?",
+    "chooseTopic": "Scegli un argomento",
+    "addSubject": "Aggiungi un oggetto breve",
+    "moreDetail": "Raccontaci qualcosa in più — anche solo una frase ci aiuta ad aiutarti",
+    "sent": "Richiesta inviata",
+    "checkFields": "Controlla i campi evidenziati.",
+    "related": "Appuntamento correlato",
+    "refHint": "Cod. {reference} · {business}",
+    "linkHint": "Collegare una prenotazione ci permette di verificarla subito.",
+    "none": "Nessuno",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Oggetto",
+    "subjectPlaceholder": "es. Mi è stato addebitato due volte l'acconto",
+    "details": "Dettagli",
+    "detailsHint": "Cosa è successo, quando, e cosa vorresti che facessimo. Non includere numeri di carta o password.",
+    "images": "Immagini",
+    "optional": "Facoltativo",
+    "cancel": "Annulla",
+    "uploadingImages": "Caricamento immagini…",
+    "send": "Invia richiesta"
+  },
+  "reply": {
+    "writeFirst": "Scrivi prima una risposta.",
+    "sent": "Risposta inviata",
+    "label": "Risposta",
+    "reopens": "Rispondendo, questa richiesta viene riaperta.",
+    "placeholder": "Aggiungi dettagli o rispondi alla nostra domanda…",
+    "send": "Invia risposta"
+  },
+  "resolve": {
+    "button": "Segna come risolta",
+    "done": "Segnata come risolta",
+    "doneBody": "Felici che sia tutto a posto. Puoi sempre rispondere se serve.",
+    "confirmTitle": "Segnare questa richiesta come risolta?",
+    "confirmBody": "Facci sapere che è tutto a posto. Se emerge qualcos'altro, rispondi qui e riprenderemo da dove eravamo."
+  },
+  "attach": {
+    "tooMany": "Puoi allegare fino a {max} immagini.",
+    "alt": "Allegato dell'assistenza",
+    "label": "Allegati",
+    "uploadingName": "Caricamento di {name}",
+    "remove": "Rimuovi {name}",
+    "add": "Aggiungi immagine",
+    "uploading": "{count, plural, one {Caricamento di # immagine…} other {Caricamento di # immagini…}}",
+    "hint": "Screenshot o foto aiutano. Fino a {max} immagini, 15 MB ciascuna."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "language": "Lingua",
+  "meta": {
+    "title": "Kept — Prenota professionisti di fiducia vicino a te",
+    "description": "Scopri e prenota barbieri, parrucchieri, personal trainer, fotografi, insegnanti e ogni tipo di professionista della tua zona — e gestisci i tuoi appuntamenti con facilità."
+  },
+  "skipToContent": "Vai al contenuto",
+  "logoHome": "Home di Kept",
+  "header": {
+    "mainNav": "Principale",
+    "search": "Cerca servizi o professionisti",
+    "ask": "Chiedi",
+    "askKept": "Chiedi a Kept",
+    "explore": "Esplora",
+    "myBusiness": "La mia attività",
+    "forPros": "Per i professionisti",
+    "bookings": "Prenotazioni",
+    "messages": "Messaggi",
+    "notifications": "Notifiche",
+    "unread": "non lette",
+    "accountMenu": "Menu account",
+    "logIn": "Accedi",
+    "signUp": "Registrati"
+  },
+  "accountMenu": {
+    "bookings": "Prenotazioni",
+    "saved": "Salvati",
+    "messages": "Messaggi",
+    "settings": "Impostazioni account",
+    "help": "Aiuto e assistenza",
+    "switchToBusiness": "Passa all'attività",
+    "offerServices": "Offri i tuoi servizi",
+    "admin": "Console di amministrazione",
+    "signOut": "Esci"
+  },
+  "tabs": {
+    "label": "Principale",
+    "home": "Home",
+    "explore": "Esplora",
+    "bookings": "Prenotazioni",
+    "inbox": "Messaggi",
+    "account": "Account"
+  },
+  "footer": {
+    "tagline": "Prenota professionisti di fiducia. Gestisci i tuoi appuntamenti con meno fatica.",
+    "discover": "Scopri",
+    "explore": "Esplora",
+    "hair": "Parrucchieri e barbieri",
+    "wellness": "Benessere",
+    "fitness": "Fitness",
+    "forPros": "Per i professionisti",
+    "howItWorks": "Come funziona",
+    "listServices": "Pubblica i tuoi servizi",
+    "dashboard": "Dashboard attività",
+    "help": "Aiuto",
+    "support": "Assistenza",
+    "terms": "Termini",
+    "privacy": "Privacy",
+    "copyright": "© {year} Kept. Tutti i diritti riservati."
+  },
+  "price": {
+    "free": "Gratis",
+    "quote": "Prezzo su consulenza",
+    "from": "Da {price}"
+  },
+  "rating": {
+    "new": "Nuovo",
+    "summary": "valutazione {avg} in base a {count, plural, one {# recensione} other {# recensioni}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "In attesa di pagamento",
+    "requested": "Richiesta inviata",
+    "confirmed": "Confermato",
+    "checked_in": "Arrivato",
+    "in_progress": "In corso",
+    "completed": "Completato",
+    "cancelled": "Cancellato",
+    "declined": "Rifiutato",
+    "no_show": "Non presentato",
+    "expired": "Scaduto"
+  },
+  "policy": {
+    "freeUntil": "Cancellazione gratuita fino a {hours} ore prima. Le cancellazioni successive costano il {percent}% del totale.",
+    "cancelAhead": "Cancella almeno {hours} ore prima dell'appuntamento.",
+    "freeAnyTime": "Cancellazione gratuita in qualsiasi momento prima dell'appuntamento.",
+    "depositRefundable": "Gli acconti vengono rimborsati se cancelli in tempo.",
+    "depositNonRefundable": "Gli acconti non sono rimborsabili.",
+    "reschedule": "Modifiche online fino a {hours} ore prima."
+  }
+}

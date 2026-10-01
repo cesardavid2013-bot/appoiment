@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "Barbiere"
+  },
+  "hair": {
+    "name": "Parrucchieri e barbieri",
+    "description": "Tagli, colore, piega, trecce e cura della barba."
+  },
+  "lashes-brows": {
+    "name": "Ciglia e sopracciglia"
+  },
+  "massage": {
+    "name": "Massaggi"
+  },
+  "personal-training": {
+    "name": "Personal trainer"
+  },
+  "hair-salon": {
+    "name": "Parrucchiere"
+  },
+  "makeup": {
+    "name": "Trucco"
+  },
+  "nails": {
+    "name": "Unghie",
+    "description": "Manicure, pedicure, ricostruzione e nail art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga e pilates"
+  },
+  "beauty": {
+    "name": "Bellezza",
+    "description": "Ciglia, sopracciglia, trucco e pelle."
+  },
+  "braids-locs": {
+    "name": "Trecce e dreadlock"
+  },
+  "skincare": {
+    "name": "Estetica e cura della pelle"
+  },
+  "wellness": {
+    "name": "Benessere",
+    "description": "Massaggi, spa e trattamenti corpo."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Personal training, yoga, pilates e coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tatuaggi e piercing",
+    "description": "Tatuaggi personalizzati, flash e piercing."
+  },
+  "photography": {
+    "name": "Foto e video",
+    "description": "Ritratti, eventi, prodotti e video."
+  },
+  "education": {
+    "name": "Lezioni e ripetizioni",
+    "description": "Ripetizioni, lezioni di musica e corsi di lingua."
+  },
+  "home-services": {
+    "name": "Servizi per la casa",
+    "description": "Pulizie, riparazioni e tuttofare."
+  },
+  "automotive": {
+    "name": "Auto",
+    "description": "Detailing, autolavaggio e meccanici a domicilio."
+  },
+  "pets": {
+    "name": "Animali",
+    "description": "Toelettatura, pet sitting e addestramento."
+  },
+  "events": {
+    "name": "Eventi",
+    "description": "DJ, organizzatori e professionisti degli eventi."
+  },
+  "professional": {
+    "name": "Servizi professionali",
+    "description": "Consulenti, coach e advisor."
+  },
+  "other": {
+    "name": "Altro",
+    "description": "Tutto il resto che puoi prenotare."
+  }
+}
