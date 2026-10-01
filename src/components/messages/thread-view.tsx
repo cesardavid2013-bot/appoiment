@@ -7,6 +7,8 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { MediaImage, type MediaLike } from "@/components/ui/media";
 import { Spinner } from "@/components/ui/spinner";
+import { useLocale, useT } from "@/i18n/client";
+import type { TFunction } from "@/i18n/translate";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { fmtTime, localDateKey } from "@/lib/format";
@@ -65,6 +67,8 @@ function mergeById(base: ThreadMessage[], incoming: ThreadMessage[]) {
 export function ThreadView(p: ThreadViewProps) {
   const router = useRouter();
   const qc = useQueryClient();
+  const t = useT("messages");
+  const { intl } = useLocale();
   const tz = useTimeZone(p.fallbackZone);
   const now = useNow(p.serverNow);
   const [messages, setMessages] = useState(p.initialMessages);
@@ -200,7 +204,7 @@ export function ThreadView(p: ThreadViewProps) {
         body: item.body,
         senderRole: p.side,
         senderUserId: res.message.senderUserId,
-        senderName: "You",
+        senderName: t("view.you"),
         mine: true,
         createdAt: res.message.createdAt,
         cursor: res.message.createdAt,
@@ -249,7 +253,7 @@ export function ThreadView(p: ThreadViewProps) {
       const key = localDateKey(m.createdAt, tz);
       let day = out.at(-1);
       if (!day || day.key !== key) {
-        day = { key, label: dayLabel(m.createdAt, tz, now), groups: [] };
+        day = { key, label: dayLabel(m.createdAt, tz, now, intl), groups: [] };
         out.push(day);
       }
       const g = day.groups.at(-1);
@@ -262,20 +266,20 @@ export function ThreadView(p: ThreadViewProps) {
       }
     }
     return out;
-  }, [messages, tz, now]);
+  }, [messages, tz, now, intl]);
 
   const lastMine = [...messages].reverse().find((m) => m.mine);
   const seen = Boolean(lastMine && otherReadAt && otherReadAt >= lastMine.createdAt && !pending.length && messages.at(-1)?.id === lastMine.id);
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
-      <div ref={scroller} onScroll={onScroll} className="relative min-h-0 flex-1 overflow-y-auto overscroll-contain" role="log" aria-live="polite" aria-relevant="additions" aria-label="Messages">
+      <div ref={scroller} onScroll={onScroll} className="relative min-h-0 flex-1 overflow-y-auto overscroll-contain" role="log" aria-live="polite" aria-relevant="additions" aria-label={t("view.label")}>
         <div ref={content} className="mx-auto flex min-h-full max-w-3xl flex-col justify-end px-4 pb-4 pt-6 sm:px-6">
           {hasMore && (
             <div className="mb-4 flex justify-center">
               <button type="button" onClick={loadOlder} disabled={loadingOlder} className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-[13px] font-medium text-ink-2 hover:bg-surface-2 hover:text-ink disabled:opacity-60">
-                {loadingOlder ? <Spinner className="size-3.5" label="Loading earlier messages" /> : <ArrowUp className="size-3.5" aria-hidden />}
-                Show earlier messages
+                {loadingOlder ? <Spinner className="size-3.5" label={t("view.loadingEarlier")} /> : <ArrowUp className="size-3.5" aria-hidden />}
+                {t("view.showEarlier")}
               </button>
             </div>
           )}
@@ -291,18 +295,18 @@ export function ThreadView(p: ThreadViewProps) {
                 g.system ? (
                   <div key={g.items[0].id} className="my-3 space-y-1.5">
                     {g.items.map((m) => (
-                      <SystemLine key={m.id} m={m} tz={tz} appointmentHref={p.appointmentHref} />
+                      <SystemLine key={m.id} m={m} tz={tz} intl={intl} appointmentHref={p.appointmentHref} />
                     ))}
                   </div>
                 ) : (
                   <div key={g.items[0].id} className={cn("mt-3 flex flex-col gap-0.5", g.mine ? "items-end" : "items-start")}>
                     {p.side === "business" && g.mine && g.senderUserId && g.senderUserId !== p.viewerId && <p className="mb-0.5 px-1 text-[12px] text-ink-3">{g.senderName}</p>}
                     {g.items.map((m, i) => (
-                      <Bubble key={m.id} m={m} mine={g.mine} first={i === 0} last={i === g.items.length - 1} appointmentHref={p.appointmentHref} />
+                      <Bubble key={m.id} m={m} mine={g.mine} first={i === 0} last={i === g.items.length - 1} appointmentHref={p.appointmentHref} t={t} intl={intl} />
                     ))}
                     <p className="mt-0.5 px-1 text-[11px] text-ink-3 tabular">
-                      <time dateTime={g.items[g.items.length - 1].createdAt}>{fmtTime(g.items[g.items.length - 1].createdAt, tz)}</time>
-                      {seen && lastMine && g.items.includes(lastMine) && <span> · Seen</span>}
+                      <time dateTime={g.items[g.items.length - 1].createdAt}>{fmtTime(g.items[g.items.length - 1].createdAt, tz, intl)}</time>
+                      {seen && lastMine && g.items.includes(lastMine) && <span> · {t("view.seen")}</span>}
                     </p>
                   </div>
                 ),
@@ -313,25 +317,27 @@ export function ThreadView(p: ThreadViewProps) {
           {pending.map((x) => (
             <div key={x.tempId} className="mt-3 flex flex-col items-end gap-0.5">
               <Bubble
-                m={{ id: x.tempId, body: x.body, senderRole: p.side, senderUserId: p.viewerId, senderName: "You", mine: true, createdAt: x.createdAt, cursor: x.createdAt, media: x.media, appointment: x.appointment }}
+                m={{ id: x.tempId, body: x.body, senderRole: p.side, senderUserId: p.viewerId, senderName: t("view.you"), mine: true, createdAt: x.createdAt, cursor: x.createdAt, media: x.media, appointment: x.appointment }}
                 mine
                 first
                 last
                 dim={x.status === "sending"}
                 failed={x.status === "failed"}
                 appointmentHref={p.appointmentHref}
+                t={t}
+                intl={intl}
               />
               {x.status === "sending" ? (
-                <p className="px-1 text-[11px] text-ink-3">Sending…</p>
+                <p className="px-1 text-[11px] text-ink-3">{t("view.sending")}</p>
               ) : (
                 <p className="flex flex-wrap items-center justify-end gap-x-2 px-1 text-[12px] text-danger" role="alert">
                   <AlertCircle className="size-3.5" aria-hidden />
-                  <span>{x.error ?? "Not sent."}</span>
+                  <span>{x.error ?? t("view.notSent")}</span>
                   <button type="button" onClick={() => retry(x)} className="font-semibold underline underline-offset-2">
-                    Retry
+                    {t("view.retry")}
                   </button>
                   <button type="button" onClick={() => setPending((prev) => prev.filter((y) => y.tempId !== x.tempId))} className="text-ink-3 underline underline-offset-2">
-                    Discard
+                    {t("view.discard")}
                   </button>
                 </p>
               )}
@@ -348,26 +354,26 @@ export function ThreadView(p: ThreadViewProps) {
               setUnseenBelow(0);
               scrollToBottom(true);
             }}
-            className="pointer-events-auto absolute -top-12 left-1/2 inline-flex h-8 -translate-x-1/2 items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-[13px] font-medium text-ink shadow-md"
+            className="pointer-events-auto absolute inset-x-0 -top-12 mx-auto inline-flex h-8 w-fit items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-[13px] font-medium text-ink shadow-md"
           >
             <ArrowDown className="size-3.5" aria-hidden />
-            {unseenBelow === 1 ? "1 new message" : `${unseenBelow} new messages`}
+            {t("view.newMessages", { count: unseenBelow })}
           </button>
         </div>
       )}
 
-      <Composer key={p.attach?.id ?? "none"} placeholder={p.placeholder} uploadBusinessId={p.uploadBusinessId ?? null} attach={p.attach ?? null} onSend={send} />
+      <Composer key={p.attach?.id ?? "none"} t={t} intl={intl} placeholder={p.placeholder} uploadBusinessId={p.uploadBusinessId ?? null} attach={p.attach ?? null} onSend={send} />
     </div>
   );
 }
 
-function SystemLine({ m, tz, appointmentHref }: { m: ThreadMessage; tz: string; appointmentHref: string }) {
+function SystemLine({ m, tz, intl, appointmentHref }: { m: ThreadMessage; tz: string; intl: string; appointmentHref: string }) {
   const body = (
     <>
       <CalendarDays className="size-3.5 shrink-0" aria-hidden />
       <span className="min-w-0">
         {m.body}
-        <span className="text-ink-3"> · {fmtTime(m.createdAt, tz)}</span>
+        <span className="text-ink-3"> · {fmtTime(m.createdAt, tz, intl)}</span>
       </span>
     </>
   );
@@ -381,16 +387,16 @@ function SystemLine({ m, tz, appointmentHref }: { m: ThreadMessage; tz: string; 
   );
 }
 
-function Bubble({ m, mine, first, last, dim, failed, appointmentHref }: { m: ThreadMessage; mine: boolean; first: boolean; last: boolean; dim?: boolean; failed?: boolean; appointmentHref: string }) {
+function Bubble({ m, mine, first, last, dim, failed, appointmentHref, t, intl }: { m: ThreadMessage; mine: boolean; first: boolean; last: boolean; dim?: boolean; failed?: boolean; appointmentHref: string; t: TFunction; intl: string }) {
   const radius = mine ? cn("rounded-2xl", !first && "rounded-se-md", !last && "rounded-ee-md") : cn("rounded-2xl", !first && "rounded-ss-md", !last && "rounded-es-md");
   return (
     <div className={cn("flex max-w-[82%] flex-col gap-1 sm:max-w-[70%]", mine ? "items-end" : "items-start", dim && "opacity-70")}>
       {m.media && (
         <a href={m.media.sources.at(-1)?.url} target="_blank" rel="noreferrer" className={cn("block w-56 overflow-hidden border border-line sm:w-64", radius)}
           style={{ aspectRatio: m.media.width && m.media.height ? Math.min(1.8, Math.max(0.6, m.media.width / m.media.height)) : 4 / 3 }}
-          aria-label="Open photo in a new tab"
+          aria-label={t("view.openPhoto")}
         >
-          <MediaImage media={m.media} alt="Photo" sizes="256px" className="size-full" fit="cover" />
+          <MediaImage media={m.media} alt={t("view.photo")} sizes="256px" className="size-full" fit="cover" />
         </a>
       )}
       {(m.body || m.appointment) && (
@@ -401,7 +407,7 @@ function Bubble({ m, mine, first, last, dim, failed, appointmentHref }: { m: Thr
               className={cn("mb-1 flex items-center gap-1.5 text-[12px] font-medium underline-offset-2 hover:underline", mine ? "text-bg/75" : "text-ink-3", !m.body && "mb-0")}
             >
               <CalendarDays className="size-3.5 shrink-0" aria-hidden />
-              <span className="truncate">{apptLine(m.appointment)}</span>
+              <span className="truncate">{apptLine(m.appointment, t, intl)}</span>
             </Link>
           )}
           {m.body && <p className="whitespace-pre-wrap break-words">{m.body}</p>}
@@ -411,7 +417,7 @@ function Bubble({ m, mine, first, last, dim, failed, appointmentHref }: { m: Thr
   );
 }
 
-function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placeholder: string; uploadBusinessId: string | null; attach: ThreadAppointment | null; onSend: (x: { body: string; upload: Upload | null; appointment: ThreadAppointment | null }) => void }) {
+function Composer({ t, intl, placeholder, uploadBusinessId, attach, onSend }: { t: TFunction; intl: string; placeholder: string; uploadBusinessId: string | null; attach: ThreadAppointment | null; onSend: (x: { body: string; upload: Upload | null; appointment: ThreadAppointment | null }) => void }) {
   const [body, setBody] = useState("");
   const [upload, setUpload] = useState<Upload | null>(null);
   const [uploadError, setUploadError] = useState<string | null>(null);
@@ -447,7 +453,7 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
     const preview = URL.createObjectURL(file);
     setUpload({ file: file.name, preview, progress: 0, id: null, media: null });
     try {
-      const res = await uploadMedia(file, { purpose: "message", businessId: uploadBusinessId, onProgress: (pct) => setUpload((u) => (u && u.preview === preview ? { ...u, progress: pct } : u)), alt: "Photo" });
+      const res = await uploadMedia(file, { purpose: "message", businessId: uploadBusinessId, onProgress: (pct) => setUpload((u) => (u && u.preview === preview ? { ...u, progress: pct } : u)), alt: t("view.photo") });
       setUpload((u) => (u && u.preview === preview ? { ...u, id: res.id, media: res.media } : u));
     } catch (err) {
       setUpload(null);
@@ -463,8 +469,8 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
             {appointment && (
               <span className="inline-flex h-8 max-w-full items-center gap-1.5 rounded-md border border-line bg-surface ps-2.5 pe-1 text-[13px] text-ink-2">
                 <CalendarDays className="size-3.5 shrink-0 text-ink-3" aria-hidden />
-                <span className="truncate">About {apptLine(appointment)}</span>
-                <button type="button" onClick={() => setAppointment(null)} className="flex size-6 shrink-0 items-center justify-center rounded text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label="Don't link this appointment">
+                <span className="truncate">{t("composer.about", { appointment: apptLine(appointment, t, intl) })}</span>
+                <button type="button" onClick={() => setAppointment(null)} className="flex size-6 shrink-0 items-center justify-center rounded text-ink-3 hover:bg-surface-2 hover:text-ink" aria-label={t("composer.unlink")}>
                   <X className="size-3.5" />
                 </button>
               </span>
@@ -479,10 +485,10 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
                 )}
                 {!upload.id && (
                   <span className="absolute inset-0 flex items-center justify-center bg-bg/40 text-[11px] font-semibold text-ink tabular" aria-live="polite">
-                    {upload.progress < 100 ? `${upload.progress}%` : <Spinner className="size-4" label="Processing photo" />}
+                    {upload.progress < 100 ? `${upload.progress}%` : <Spinner className="size-4" label={t("composer.processingPhoto")} />}
                   </span>
                 )}
-                <button type="button" onClick={() => setUpload(null)} className="absolute end-0.5 top-0.5 flex size-6 items-center justify-center rounded-full bg-surface/90 text-ink shadow-sm" aria-label="Remove photo">
+                <button type="button" onClick={() => setUpload(null)} className="absolute end-0.5 top-0.5 flex size-6 items-center justify-center rounded-full bg-surface/90 text-ink shadow-sm" aria-label={t("composer.removePhoto")}>
                   <X className="size-3.5" />
                 </button>
               </span>
@@ -506,14 +512,14 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
             onClick={() => fileInput.current?.click()}
             disabled={Boolean(upload)}
             className="flex size-11 shrink-0 items-center justify-center rounded-full text-ink-2 hover:bg-surface-2 hover:text-ink disabled:opacity-40"
-            aria-label="Attach a photo"
+            aria-label={t("composer.attachPhoto")}
           >
             <ImagePlus className="size-5" />
           </button>
           <input ref={fileInput} type="file" accept="image/jpeg,image/png,image/webp,image/avif,image/gif" className="sr-only" tabIndex={-1} aria-hidden onChange={(e) => pick(e.target.files?.[0])} />
           <div className="min-w-0 flex-1">
             <label htmlFor={inputId} className="sr-only">
-              Message
+              {t("composer.label")}
             </label>
             <textarea
               id={inputId}
@@ -538,17 +544,17 @@ function Composer({ placeholder, uploadBusinessId, attach, onSend }: { placehold
             type="submit"
             disabled={!canSend}
             className="flex size-11 shrink-0 items-center justify-center rounded-full bg-ink text-bg transition-opacity disabled:opacity-30"
-            aria-label="Send message"
+            aria-label={t("composer.send")}
           >
             <ArrowUp className="size-5" strokeWidth={2.2} />
           </button>
         </form>
         {body.length > MAX_LEN - 200 && (
           <p className={cn("mt-1 px-14 text-end text-[12px] tabular", body.length > MAX_LEN ? "text-danger" : "text-ink-3")} aria-live="polite">
-            {body.length.toLocaleString()} / {MAX_LEN.toLocaleString()}
+            {body.length.toLocaleString(intl)} / {MAX_LEN.toLocaleString(intl)}
           </p>
         )}
-        <p id={`${inputId}-hint`} className="sr-only">Press Enter to send, Shift and Enter for a new line.</p>
+        <p id={`${inputId}-hint`} className="sr-only">{t("composer.hint")}</p>
       </div>
     </div>
   );

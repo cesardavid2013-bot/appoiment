@@ -4,11 +4,15 @@ import { CustomerThreadShell } from "@/components/messages/customer-thread-shell
 import { ThreadView } from "@/components/messages/thread-view";
 import { toClient, type ThreadMessage } from "@/components/messages/types";
 import { AppError } from "@/domain/errors";
+import { getT } from "@/i18n/server";
 import { requestNow } from "@/server/clock";
 import { appointmentRef, getThread } from "@/server/services/messaging";
 import { requireViewerPage } from "@/server/viewer";
 
-export const metadata: Metadata = { title: "Conversation", robots: { index: false } };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("messages");
+  return { title: t("thread.metaTitle"), robots: { index: false } };
+}
 
 const UUID = /^[0-9a-f-]{36}$/i;
 
@@ -24,6 +28,7 @@ export default async function CustomerThreadPage({ params, searchParams }: PageP
     if (err instanceof AppError && err.code === "not_found") notFound();
     throw err;
   }
+  const t = await getT("messages");
   const attach = typeof sp.appointment === "string" && UUID.test(sp.appointment) ? await appointmentRef(thread.businessId, viewer.id, sp.appointment) : null;
 
   return (
@@ -41,7 +46,7 @@ export default async function CustomerThreadPage({ params, searchParams }: PageP
         fallbackZone={viewer.timezone ?? thread.businessTimezone}
         serverNow={requestNow()}
         attach={attach}
-        placeholder={`Message ${thread.businessName}`}
+        placeholder={t("thread.placeholder", { business: thread.businessName })}
       />
     </CustomerThreadShell>
   );

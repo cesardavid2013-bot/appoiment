@@ -1,5 +1,6 @@
 "use client";
 
+import { useLocale } from "@/i18n/client";
 import { useNow, useTimeZone } from "@/lib/use-client-time";
 import { listTime } from "./time";
 
@@ -7,9 +8,10 @@ import { listTime } from "./time";
 export function ListTime({ iso, fallbackZone, serverNow, className }: { iso: string; fallbackZone: string; serverNow: number; className?: string }) {
   const tz = useTimeZone(fallbackZone);
   const now = useNow(serverNow);
+  const { intl } = useLocale();
   return (
     <time dateTime={iso} className={className}>
-      {listTime(iso, tz, now)}
+      {listTime(iso, tz, now, intl)}
     </time>
   );
 }

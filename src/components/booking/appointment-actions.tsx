@@ -10,6 +10,7 @@ import { Button, ButtonLink } from "@/components/ui/button";
 import { ConfirmDialog, Dialog } from "@/components/ui/dialog";
 import { Field, FormError, Textarea } from "@/components/ui/field";
 import { formatMoney } from "@/domain/money";
+import { useLocale, useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { fmtDateLong, fmtTime } from "@/lib/format";
@@ -52,6 +53,10 @@ export function AppointmentActions({
   googleCalUrl: string;
 }) {
   const router = useRouter();
+  const t = useT("bookings");
+  const { intl } = useLocale();
+  const money = (c: number) => formatMoney(c, a.currency, { intl });
+  const when = (iso: string) => t("actions.dateAtTime", { date: fmtDateLong(iso, a.timezone, intl), time: fmtTime(iso, a.timezone, intl) });
   const [cancelOpen, setCancelOpen] = useState(false);
   const [reason, setReason] = useState("");
   const [cancelling, setCancelling] = useState(false);
@@ -68,7 +73,7 @@ export function AppointmentActions({
     setCancelling(true);
     try {
       const res = await api<{ refundCents: number }>(`/api/bookings/${a.id}/cancel`, { body: { reason: reason.trim() || null } });
-      toast.success("Appointment cancelled", { description: res.refundCents > 0 ? `A refund of ${formatMoney(res.refundCents, a.currency)} is on its way.` : undefined });
+      toast.success(t("actions.cancelledToast"), { description: res.refundCents > 0 ? t("actions.refundOnWay", { amount: money(res.refundCents) }) : undefined });
       setCancelOpen(false);
       router.refresh();
     } catch (err) {
@@ -84,7 +89,7 @@ export function AppointmentActions({
     setMoveError(null);
     try {
       await api(`/api/bookings/${a.id}/reschedule`, { body: { start: newStart, memberId: "same" } });
-      toast.success("Rescheduled", { description: `${fmtDateLong(newStart, a.timezone)} at ${fmtTime(newStart, a.timezone)}` });
+      toast.success(t("actions.rescheduledToast"), { description: when(newStart) });
       setMoveOpen(false);
       router.refresh();
     } catch (err) {
@@ -111,37 +116,37 @@ export function AppointmentActions({
     <div className="space-y-6">
       {a.needsPayment && a.status === "pending_payment" && (
         <Button size="lg" className="w-full" onClick={pay} loading={paying} icon={<CreditCard className="size-4" />}>
-          Pay {formatMoney(a.amountDue, a.currency)} to confirm
+          {t("actions.payToConfirm", { amount: money(a.amountDue) })}
         </Button>
       )}
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         {upcoming && (
           <>
-            <ActionTile href={`/api/bookings/${a.id}/ics`} icon={<CalendarPlus />} label="Add to calendar" download />
-            {directions && <ActionTile href={directions} icon={<Navigation />} label="Directions" external />}
+            <ActionTile href={`/api/bookings/${a.id}/ics`} icon={<CalendarPlus />} label={t("actions.addToCalendar")} download />
+            {directions && <ActionTile href={directions} icon={<Navigation />} label={t("actions.directions")} external />}
           </>
         )}
-        <ActionTile href={`/messages?business=${a.businessId}`} icon={<MessageCircle />} label="Message" onClick={() => router.push(`/messages/new?business=${a.businessId}&appointment=${a.id}`)} />
-        {!upcoming && <ActionTile href={`/${a.businessSlug}/book?service=${a.serviceId}`} icon={<Repeat />} label="Book again" />}
-        {upcoming && <ActionTile href={googleCalUrl} icon={<CalendarClock />} label="Google Calendar" external />}
+        <ActionTile href={`/messages?business=${a.businessId}`} icon={<MessageCircle />} label={t("actions.message")} onClick={() => router.push(`/messages/new?business=${a.businessId}&appointment=${a.id}`)} />
+        {!upcoming && <ActionTile href={`/${a.businessSlug}/book?service=${a.serviceId}`} icon={<Repeat />} label={t("actions.bookAgain")} />}
+        {upcoming && <ActionTile href={googleCalUrl} icon={<CalendarClock />} label={t("actions.googleCalendar")} external />}
       </div>
 
       {canReview && (
         <ButtonLink href={`/bookings/${a.id}?review=1`} variant="primary" size="lg" className="w-full" icon={<Star className="size-4" />}>
-          Leave a review
+          {t("actions.leaveReview")}
         </ButtonLink>
       )}
 
       {upcoming && (
         <div className="flex flex-col gap-2 border-t border-line pt-5 sm:flex-row">
           {reschedule.allowed ? (
-            <Button variant="secondary" className="flex-1" onClick={() => setMoveOpen(true)} icon={<CalendarClock className="size-4" />}>
-              Reschedule
+            <Button variant="secondary" className="h-11 sm:h-10 sm:flex-1" onClick={() => setMoveOpen(true)} icon={<CalendarClock className="size-4" />}>
+              {t("actions.reschedule")}
             </Button>
           ) : null}
           {cancel.allowed ? (
-            <Button variant="danger" className="flex-1" onClick={() => setCancelOpen(true)} icon={<XCircle className="size-4" />}>
-              Cancel appointment
+            <Button variant="danger" className="h-11 sm:h-10 sm:flex-1" onClick={() => setCancelOpen(true)} icon={<XCircle className="size-4" />}>
+              {t("actions.cancelAppointment")}
             </Button>
           ) : null}
         </div>
@@ -153,9 +158,9 @@ export function AppointmentActions({
       <ConfirmDialog
         open={cancelOpen}
         onOpenChange={setCancelOpen}
-        title="Cancel this appointment?"
-        description={cancel.isLate ? "You're inside the business's cancellation window." : undefined}
-        confirmLabel="Cancel appointment"
+        title={t("actions.cancelTitle")}
+        description={cancel.isLate ? t("actions.insideWindow") : undefined}
+        confirmLabel={t("actions.cancelAppointment")}
         onConfirm={doCancel}
         loading={cancelling}
       >
@@ -163,11 +168,11 @@ export function AppointmentActions({
           {cancel.summary && (
             <div className={cn("rounded-md px-3.5 py-3 text-sm", cancel.keptCents ? "bg-warn-soft text-warn" : "bg-surface-2 text-ink-2")}>
               {cancel.summary}
-              {cancel.refundCents ? ` Refund: ${formatMoney(cancel.refundCents, a.currency)}.` : ""}
-              {cancel.keptCents ? ` Kept by the business: ${formatMoney(cancel.keptCents, a.currency)}.` : ""}
+              {cancel.refundCents ? ` ${t("actions.refundAmount", { amount: money(cancel.refundCents) })}` : ""}
+              {cancel.keptCents ? ` ${t("actions.keptAmount", { amount: money(cancel.keptCents) })}` : ""}
             </div>
           )}
-          <Field label="Reason" optional hint="Shared with the business.">
+          <Field label={t("actions.reason")} optional hint={t("actions.reasonHint")}>
             {(p) => <Textarea {...p} rows={2} value={reason} onChange={(e) => setReason(e.target.value)} maxLength={500} />}
           </Field>
         </div>
@@ -176,16 +181,16 @@ export function AppointmentActions({
       <Dialog
         open={moveOpen}
         onOpenChange={setMoveOpen}
-        title="Choose a new time"
-        description={`Currently ${fmtDateLong(a.startsAt, a.timezone)} at ${fmtTime(a.startsAt, a.timezone)}`}
+        title={t("actions.chooseNewTime")}
+        description={t("actions.currently", { when: when(a.startsAt) })}
         locked={moving}
         footer={
           <>
             <Button variant="ghost" onClick={() => setMoveOpen(false)} disabled={moving}>
-              Keep current time
+              {t("actions.keepCurrentTime")}
             </Button>
             <Button onClick={doMove} loading={moving} disabled={!newStart}>
-              {newStart ? `Move to ${fmtTime(newStart, a.timezone)}` : "Choose a time"}
+              {newStart ? t("actions.moveTo", { time: fmtTime(newStart, a.timezone, intl) }) : t("actions.chooseTime")}
             </Button>
           </>
         }
@@ -202,7 +207,7 @@ export function AppointmentActions({
         <StripeCheckout
           clientSecret={checkout.clientSecret}
           publishableKey={checkout.publishableKey}
-          amountLabel={formatMoney(a.amountDue, a.currency)}
+          amountLabel={money(a.amountDue)}
           returnUrl={`${window.location.origin}/bookings/${a.id}?new=1`}
           onClose={() => setCheckout(null)}
         />
@@ -237,18 +242,19 @@ function ActionTile({ href, icon, label, external, download, onClick }: { href: 
 
 export function ReviewForm({ appointmentId, businessName }: { appointmentId: string; businessName: string }) {
   const router = useRouter();
+  const t = useT("bookings");
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const [body, setBody] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
-  const labels = ["", "Poor", "Fair", "Good", "Great", "Excellent"];
+  const labels = ["", t("review.ratings.1"), t("review.ratings.2"), t("review.ratings.3"), t("review.ratings.4"), t("review.ratings.5")];
   async function submit() {
     setSaving(true);
     setError(null);
     try {
       await api("/api/reviews", { body: { appointmentId, rating, body: body.trim() || null } });
-      toast.success("Thanks for your review");
+      toast.success(t("review.thanks"));
       router.replace(`/bookings/${appointmentId}`);
       router.refresh();
     } catch (err) {
@@ -259,25 +265,25 @@ export function ReviewForm({ appointmentId, businessName }: { appointmentId: str
   return (
     <section className="rounded-xl border border-line bg-surface p-5" aria-labelledby="review-h">
       <h2 id="review-h" className="text-[17px] font-semibold text-ink">
-        How was {businessName}?
+        {t("review.title", { business: businessName })}
       </h2>
-      <p className="mt-1 text-sm text-ink-3">Your review is public and marked as a verified booking.</p>
-      <div className="mt-4 flex items-center gap-1" role="radiogroup" aria-label="Rating" onMouseLeave={() => setHover(0)}>
+      <p className="mt-1 text-sm text-ink-3">{t("review.subtitle")}</p>
+      <div className="mt-4 flex items-center gap-1" role="radiogroup" aria-label={t("review.rating")} onMouseLeave={() => setHover(0)}>
         {[1, 2, 3, 4, 5].map((n) => (
-          <button key={n} type="button" role="radio" aria-checked={rating === n} aria-label={`${n} star${n > 1 ? "s" : ""}`} onClick={() => setRating(n)} onMouseEnter={() => setHover(n)} className="p-1">
+          <button key={n} type="button" role="radio" aria-checked={rating === n} aria-label={t("review.stars", { n })} onClick={() => setRating(n)} onMouseEnter={() => setHover(n)} className="p-1">
             <Star className={cn("size-8 transition-colors", (hover || rating) >= n ? "fill-ink text-ink" : "text-line-strong")} />
           </button>
         ))}
         <span className="ms-2 text-sm font-medium text-ink-2">{labels[hover || rating]}</span>
       </div>
       <div className="mt-4">
-        <Field label="Tell others about your visit" optional>
-          {(p) => <Textarea {...p} rows={4} value={body} onChange={(e) => setBody(e.target.value)} maxLength={2000} placeholder="What stood out? Would you recommend them?" />}
+        <Field label={t("review.bodyLabel")} optional>
+          {(p) => <Textarea {...p} rows={4} value={body} onChange={(e) => setBody(e.target.value)} maxLength={2000} placeholder={t("review.bodyPlaceholder")} />}
         </Field>
       </div>
       <FormError message={error} />
       <Button className="mt-4" onClick={submit} disabled={rating === 0} loading={saving}>
-        Post review
+        {t("review.post")}
       </Button>
     </section>
   );

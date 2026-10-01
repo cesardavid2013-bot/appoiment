@@ -2,16 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useT } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import { ACCOUNT_SECTIONS } from "./sections";
 
 /** Desktop side navigation for account settings. */
 export function AccountNav() {
   const pathname = usePathname();
+  const t = useT("account");
   return (
-    <nav aria-label="Account settings" className="sticky top-24">
+    <nav aria-label={t("nav.label")} className="sticky top-24">
       <Link href="/account" className="mb-3 block px-3 text-[13px] font-medium text-ink-3 hover:text-ink">
-        Account
+        {t("nav.account")}
       </Link>
       <ul className="space-y-0.5">
         {ACCOUNT_SECTIONS.map((s) => {
@@ -28,7 +30,7 @@ export function AccountNav() {
                 )}
               >
                 <Icon className={cn("size-4", active ? "text-ink" : "text-ink-3")} aria-hidden />
-                {s.label}
+                {t(`sections.${s.key}.label`)}
               </Link>
             </li>
           );

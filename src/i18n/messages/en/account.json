@@ -1,0 +1,311 @@
+{
+  "loading": "Loading…",
+  "noEmail": "No email on file",
+  "saveChanges": "Save changes",
+  "cancel": "Cancel",
+  "checkFields": "Please check the highlighted fields.",
+  "nav": {
+    "label": "Account settings",
+    "account": "Account"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profile",
+      "description": "Name, photo, phone and time zone"
+    },
+    "security": {
+      "label": "Login & security",
+      "description": "Password, email confirmation and devices"
+    },
+    "notifications": {
+      "label": "Notification settings",
+      "description": "Choose what we email or text you about"
+    },
+    "addresses": {
+      "label": "Saved addresses",
+      "description": "For professionals who come to you"
+    },
+    "privacy": {
+      "label": "Privacy & data",
+      "description": "Download your data or delete your account"
+    }
+  },
+  "home": {
+    "memberSince": "Member since {date}",
+    "confirmEmail": "<b>Confirm your email.</b> We sent a link to {email} so businesses can reach you about bookings.",
+    "activity": "Your activity",
+    "settings": "Settings",
+    "more": "More",
+    "signOut": "Sign out",
+    "rows": {
+      "bookings": {
+        "label": "Bookings",
+        "description": "Upcoming and past appointments"
+      },
+      "saved": {
+        "label": "Saved",
+        "description": "Professionals you've saved"
+      },
+      "messages": {
+        "label": "Messages",
+        "description": "Conversations with businesses"
+      },
+      "notifications": {
+        "label": "Notifications",
+        "description": "Updates about your bookings"
+      },
+      "business": {
+        "label": "Switch to your business",
+        "description": "Calendar, services and clients"
+      },
+      "offer": {
+        "label": "Offer your services on Kept",
+        "description": "Take bookings and grow your business — free to start"
+      },
+      "support": {
+        "label": "Help & support",
+        "description": "Get help with a booking, payment or your account"
+      },
+      "legal": {
+        "label": "Terms & privacy",
+        "description": "How Kept works and how we handle your data"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Confirmation email sent",
+    "sentBody": "Check {email} — the link works for 3 days.",
+    "sent": "Email sent",
+    "resend": "Resend link"
+  },
+  "profile": {
+    "description": "How you appear to the professionals you book with.",
+    "saved": "Profile saved",
+    "details": "Personal details",
+    "name": "Name",
+    "email": "Email",
+    "changeEmail": "To change your sign-in email, <link>contact support</link> so we can confirm it's you.",
+    "phone": "Phone",
+    "phoneHintSms": "Businesses you book with can call you about appointments, and we can text you reminders if you turn them on.",
+    "phoneHint": "Businesses you book with can use it to reach you about an appointment.",
+    "photo": {
+      "title": "Photo",
+      "description": "Shown to professionals you book with, next to your name.",
+      "updated": "Photo updated",
+      "removed": "Photo removed",
+      "change": "Change photo",
+      "upload": "Upload photo",
+      "remove": "Remove",
+      "hint": "JPG, PNG or WebP, up to 15 MB. We strip location data from photos."
+    },
+    "timezone": {
+      "label": "Time zone",
+      "hint": "Your home time zone. Appointment times are always shown in the business's local time.",
+      "notSet": "Not set",
+      "detect": "Detect automatically",
+      "detectFailed": "We couldn't detect your time zone. Choose it from the list."
+    },
+    "language": {
+      "title": "Language",
+      "description": "Used for menus, buttons and dates across Kept. Business names, services and reviews appear as the business wrote them."
+    }
+  },
+  "security": {
+    "description": "Keep your account secure and in your hands.",
+    "password": {
+      "title": "Password",
+      "setTitle": "Set a password",
+      "description": "Changing your password signs you out on every other device.",
+      "setDescription": "You sign in with Google. Add a password to also sign in with your email.",
+      "change": "Change password",
+      "setButton": "Set password",
+      "current": "Current password",
+      "new": "New password",
+      "newHint": "At least 8 characters. Avoid common words and your email.",
+      "confirm": "Confirm new password",
+      "tooShort": "Use at least 8 characters.",
+      "mismatch": "These passwords don't match.",
+      "changed": "Password changed",
+      "set": "Password set",
+      "othersSignedOut": "Any other devices have been signed out."
+    },
+    "email": {
+      "title": "Email",
+      "description": "We use your email to sign you in and to send booking confirmations.",
+      "confirmed": "Confirmed",
+      "notConfirmed": "Not confirmed yet",
+      "none": "There's no email on this account."
+    },
+    "devices": {
+      "title": "Devices",
+      "description": "If you signed in on a shared or lost device, sign it out here. This device stays signed in.",
+      "status": "{count, plural, =0 {Only this device is signed in} one {Signed in on # other device} other {Signed in on # other devices}}",
+      "signOutOthers": "Sign out of other devices",
+      "confirmTitle": "Sign out of other devices?",
+      "confirmBody": "Anyone using your account on another phone, tablet or computer will need to sign in again.",
+      "confirm": "Sign them out",
+      "signedOutToast": "{count, plural, one {Signed out of # other device} other {Signed out of # other devices}}"
+    }
+  },
+  "notifications": {
+    "description": "Choose how we keep you posted. We never send more than we need to.",
+    "saved": "Saved",
+    "emailAndText": "Email and text alerts",
+    "emailOnly": "Email alerts",
+    "inboxNote": "Everything also appears in your Notifications inbox on Kept, whatever you choose here.",
+    "addPhone": "Add a phone number in your <link>profile</link> to receive text messages.",
+    "email": "Email",
+    "sms": "Text message",
+    "forTopic": "for {topic}",
+    "alwaysOn": {
+      "bookings": "Email is always on, so we can reach you if a booking changes.",
+      "business": "Email is always on, so you never miss a new booking or request."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Booking updates",
+        "description": "Confirmations, changes and cancellations."
+      },
+      "reminders": {
+        "label": "Reminders",
+        "description": "Before upcoming appointments."
+      },
+      "messages": {
+        "label": "Messages",
+        "description": "When a business or customer messages you."
+      },
+      "waitlist": {
+        "label": "Waitlist openings",
+        "description": "When a time you wanted becomes available."
+      },
+      "reviews": {
+        "label": "Review requests",
+        "description": "A short note after a completed appointment."
+      },
+      "business": {
+        "label": "Business activity",
+        "description": "New bookings, requests and reviews for your business."
+      },
+      "marketing": {
+        "label": "News & offers",
+        "description": "Occasional updates from businesses you've booked with."
+      }
+    }
+  },
+  "addresses": {
+    "description": "For mobile professionals who come to you — barbers, detailers, trainers and more.",
+    "defaultLabel": "Home",
+    "saved": "Address saved",
+    "removed": "Address removed",
+    "emptyTitle": "No saved addresses",
+    "emptyBody": "Keep the places you book mobile services at — like home or the office — handy in one place.",
+    "add": "Add an address",
+    "removeLabel": "Remove {label}",
+    "count": "{count} of {max} saved",
+    "limit": "You've reached the limit. Remove an address to add another.",
+    "dialogBody": "Private to you. A professional only sees an address when you book a service there.",
+    "save": "Save address",
+    "fields": {
+      "name": "Name",
+      "nameHint": "For example Home, Work or Gym.",
+      "line1": "Street address",
+      "line2": "Apartment, suite or floor",
+      "city": "City",
+      "region": "State / region",
+      "postalCode": "Postal code",
+      "country": "Country"
+    },
+    "removeTitle": "Remove “{label}”?",
+    "removeBody": "Bookings you've already made at this address aren't affected.",
+    "remove": "Remove address"
+  },
+  "privacy": {
+    "description": "Your data is yours. Read how we use it in our <link>privacy policy</link>.",
+    "export": {
+      "title": "Download your data",
+      "description": "Get a copy of your profile, saved addresses, appointments, reviews, messages, saved professionals and support requests as a JSON file.",
+      "button": "Download my data",
+      "hint": "Prepared instantly. Keep the file somewhere safe — it contains personal information."
+    },
+    "delete": {
+      "title": "Delete your account",
+      "intro": "This permanently closes your Kept account. Here's what happens:",
+      "erased": "Your name, email, phone, photo, saved addresses and saved professionals are erased, and you're signed out everywhere.",
+      "upcoming": "{count, plural, one {Your upcoming appointment is cancelled under each business's cancellation policy, including any refund it allows.} other {Your # upcoming appointments are cancelled under each business's cancellation policy, including any refund it allows.}}",
+      "upcomingNone": "Any upcoming appointments are cancelled under each business's cancellation policy.",
+      "records": "Records businesses and tax rules depend on — past appointments, payments and reviews — are kept, but shown as from “Deleted user”.",
+      "permanent": "This can't be undone. You can sign up again later with the same email, starting fresh.",
+      "blocked": "You own {businesses}. Close the business or transfer it to someone else from your <link>business settings</link> before deleting your account, so its clients aren't left without answers.",
+      "copyFirst": "Prefer a copy first? Download your data above.",
+      "open": "Delete account…",
+      "confirmTitle": "Delete your account?",
+      "confirmBody": "This can't be undone.",
+      "keep": "Keep my account",
+      "confirm": "Delete my account",
+      "willCancel": "{count, plural, one {# upcoming appointment will be cancelled.} other {# upcoming appointments will be cancelled.}}",
+      "password": "Your password",
+      "typeToConfirm": "Type <word>{word}</word> to confirm",
+      "deletedToast": "Your account has been deleted",
+      "deletedBody": "Thanks for using Kept."
+    }
+  },
+  "saved": {
+    "title": "Saved",
+    "description": "{count, plural, one {# professional you've saved.} other {# professionals you've saved.}} Openings below are live from their calendars.",
+    "emptyTitle": "Nothing saved yet",
+    "emptyBody": "Tap the heart on any professional to keep them here — handy for rebooking your regulars or comparing a few before you decide.",
+    "explore": "Explore professionals",
+    "loading": "Loading saved professionals…"
+  },
+  "notificationList": {
+    "title": "Notifications",
+    "today": "Today",
+    "earlier": "Earlier",
+    "emptyTitle": "No notifications yet",
+    "emptyBody": "Booking confirmations, reminders, replies and waitlist openings will show up here.",
+    "unread": "{count} unread",
+    "caughtUp": "You're all caught up",
+    "allCaughtUpToast": "All caught up",
+    "markAll": "Mark all as read",
+    "unreadItem": "Unread",
+    "loadOlder": "Load older",
+    "end": "That's everything."
+  },
+  "invite": {
+    "eyebrow": "Team invitation",
+    "invalidTitle": "This invitation can’t be used",
+    "invalidBody": "It may have expired, been cancelled, or already been accepted. Ask the person who invited you to send a new link.",
+    "goHome": "Go to Kept",
+    "join": "Join {business}",
+    "invitedAs": "You’ve been invited as <b>{role}</b>.",
+    "signInWith": "Sign in or create an account with <b>{email}</b> to accept.",
+    "createAccount": "Create account",
+    "signIn": "Sign in",
+    "wrongAccount": "You’re signed in as <b>{email}</b>, but this invitation was sent to {invited}.",
+    "wrongAccountHint": "Sign out and sign in with that address, or ask for an invitation to {email}.",
+    "acceptingAs": "Accepting as <b>{email}</b>.",
+    "accept": "Accept and open my schedule",
+    "roles": {
+      "owner": {
+        "label": "Owner",
+        "description": "Full control, including billing and team."
+      },
+      "manager": {
+        "label": "Manager",
+        "description": "Runs day-to-day operations. Can't change team or business settings."
+      },
+      "receptionist": {
+        "label": "Front desk",
+        "description": "Books and manages appointments for everyone."
+      },
+      "provider": {
+        "label": "Professional",
+        "description": "Sees and manages their own appointments and schedule."
+      },
+      "custom": {
+        "label": "Custom",
+        "description": "Pick exactly what this person can do."
+      }
+    }
+  }
+}

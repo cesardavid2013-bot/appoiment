@@ -1,0 +1,93 @@
+{
+  "youPrefix": "You:",
+  "unread": "Unread",
+  "apptLine": "{service} · {date} at {time}",
+  "list": {
+    "title": "Messages",
+    "unread": "{count, plural, one {# unread conversation.} other {# unread conversations.}}",
+    "caughtUp": "You're all caught up.",
+    "emptyTitle": "No messages yet",
+    "emptyBody": "Questions about a service, a price or a time? Open a professional's page and tap “Ask a question”. Their replies land here.",
+    "findPro": "Find a professional"
+  },
+  "thread": {
+    "metaTitle": "Conversation",
+    "placeholder": "Message {business}"
+  },
+  "new": {
+    "metaTitle": "New message",
+    "ownTitle": "This is your business",
+    "ownBody": "Customer messages to {business} arrive in your business inbox.",
+    "ownButton": "Open business inbox",
+    "placeholderBooking": "Ask about this booking",
+    "placeholderQuestion": "Ask a question",
+    "emptyBookingTitle": "Message {business} about your booking",
+    "emptyQuestionTitle": "Ask {business} before you book",
+    "emptyBookingBody": "Running late, need to change something, or have a question? Your message goes straight to their team.",
+    "emptyQuestionBody": "Prices, timing, what to bring — {business} will reply here and we'll let you know. Your phone number and email stay private."
+  },
+  "shell": {
+    "allMessages": "All messages",
+    "viewProfile": "View profile",
+    "book": "Book"
+  },
+  "pro": {
+    "backToInbox": "Back to inbox"
+  },
+  "view": {
+    "label": "Messages",
+    "you": "You",
+    "loadingEarlier": "Loading earlier messages",
+    "showEarlier": "Show earlier messages",
+    "seen": "Seen",
+    "sending": "Sending…",
+    "notSent": "Not sent.",
+    "retry": "Retry",
+    "discard": "Discard",
+    "newMessages": "{count, plural, one {# new message} other {# new messages}}",
+    "openPhoto": "Open photo in a new tab",
+    "photo": "Photo"
+  },
+  "composer": {
+    "about": "About {appointment}",
+    "unlink": "Don't link this appointment",
+    "processingPhoto": "Processing photo",
+    "removePhoto": "Remove photo",
+    "attachPhoto": "Attach a photo",
+    "label": "Message",
+    "send": "Send message",
+    "hint": "Press Enter to send, Shift and Enter for a new line."
+  },
+  "inbox": {
+    "title": "Inbox",
+    "conversations": "Conversations",
+    "unread": "{count} unread",
+    "allCaughtUp": "All caught up",
+    "searchLabel": "Search conversations by client name",
+    "searchPlaceholder": "Search clients",
+    "clearSearch": "Clear search",
+    "show": "Show",
+    "all": "All",
+    "unreadFilter": "Unread",
+    "noClientsNamed": "No clients named “{term}”",
+    "nothingUnread": "Nothing unread",
+    "noMessages": "No messages yet",
+    "tryDifferent": "Try a different search or show all conversations.",
+    "emptyBody": "When clients ask a question from your page or about a booking, it shows up here."
+  },
+  "clientPanel": {
+    "client": "Client",
+    "visits": "Visits",
+    "noShows": "No-shows",
+    "cancelled": "Cancelled",
+    "clientSince": "Client since {date}",
+    "noVisits": "No completed visits yet",
+    "lastIn": "last in {date}",
+    "tags": "Tags",
+    "clientProfile": "Client profile",
+    "notBooked": "Hasn't booked with you yet — this conversation started from your public page.",
+    "upcoming": "Upcoming",
+    "nothingBooked": "Nothing booked.",
+    "recent": "Recent"
+  }
+}

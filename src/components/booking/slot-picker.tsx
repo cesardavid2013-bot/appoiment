@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FormError } from "@/components/ui/field";
 import { Skeleton } from "@/components/ui/misc";
 import { addDaysIso, todayIn } from "@/domain/time";
+import { useLocale, useT } from "@/i18n/client";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { fmtTime, localDateKey } from "@/lib/format";
@@ -35,6 +36,8 @@ export function SlotPicker({
   exclude?: string;
   endpoint?: string;
 }) {
+  const t = useT("bookings");
+  const { intl } = useLocale();
   const today = todayIn(timezone);
   const [from, setFrom] = useState(today);
   const to = addDaysIso(from, 6);
@@ -56,13 +59,13 @@ export function SlotPicker({
   return (
     <div>
       <div className="mb-3 flex items-center justify-between">
-        <span className="text-sm font-medium text-ink">{new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" }).format(new Date(`${activeDate}T12:00:00Z`))}</span>
+        <span className="text-sm font-medium capitalize text-ink">{new Intl.DateTimeFormat(intl, { month: "long", timeZone: "UTC" }).format(new Date(`${activeDate}T12:00:00Z`))}</span>
         <div className="flex gap-1">
-          <button type="button" disabled={from <= today} onClick={() => setFrom(addDaysIso(from, -7) < today ? today : addDaysIso(from, -7))} className="flex size-8 items-center justify-center rounded-md border border-line disabled:opacity-40" aria-label="Previous week">
-            <ChevronLeft className="size-4" />
+          <button type="button" disabled={from <= today} onClick={() => setFrom(addDaysIso(from, -7) < today ? today : addDaysIso(from, -7))} className="flex size-8 items-center justify-center rounded-md border border-line disabled:opacity-40" aria-label={t("slotPicker.previousWeek")}>
+            <ChevronLeft className="size-4 rtl:-scale-x-100" />
           </button>
-          <button type="button" onClick={() => setFrom(addDaysIso(from, 7))} className="flex size-8 items-center justify-center rounded-md border border-line" aria-label="Next week">
-            <ChevronRight className="size-4" />
+          <button type="button" onClick={() => setFrom(addDaysIso(from, 7))} className="flex size-8 items-center justify-center rounded-md border border-line" aria-label={t("slotPicker.nextWeek")}>
+            <ChevronRight className="size-4 rtl:-scale-x-100" />
           </button>
         </div>
       </div>
@@ -78,8 +81,8 @@ export function SlotPicker({
               aria-pressed={activeDate === d}
               className={cn("flex h-14 flex-col items-center justify-center rounded-md border text-xs", activeDate === d ? "border-ink bg-ink text-bg" : has ? "border-line bg-surface text-ink" : "border-transparent text-ink-3")}
             >
-              <span className="uppercase">{new Intl.DateTimeFormat("en-US", { weekday: "narrow", timeZone: "UTC" }).format(dt)}</span>
-              <span className="text-[15px] font-semibold">{dt.getUTCDate()}</span>
+              <span className="uppercase">{new Intl.DateTimeFormat(intl, { weekday: "narrow", timeZone: "UTC" }).format(dt)}</span>
+              <span className="text-[15px] font-semibold">{new Intl.DateTimeFormat(intl, { day: "numeric", timeZone: "UTC" }).format(dt)}</span>
             </button>
           );
         })}
@@ -94,7 +97,7 @@ export function SlotPicker({
             ))}
           </div>
         ) : slots.length === 0 ? (
-          <p className="py-6 text-center text-sm text-ink-3">No openings this day.</p>
+          <p className="py-6 text-center text-sm text-ink-3">{t("slotPicker.noOpenings")}</p>
         ) : (
           <div className="grid max-h-56 grid-cols-3 gap-2 overflow-y-auto sm:grid-cols-4">
             {slots.map((s) => (
@@ -105,13 +108,13 @@ export function SlotPicker({
                 aria-pressed={value === s.start}
                 className={cn("h-10 rounded-md border text-sm font-semibold tabular", value === s.start ? "border-ink bg-ink text-bg" : "border-line-strong bg-surface text-ink hover:border-ink")}
               >
-                {fmtTime(s.start, q.data!.timezone)}
+                {fmtTime(s.start, q.data!.timezone, intl)}
               </button>
             ))}
           </div>
         )}
       </div>
-      {value && localDateKey(value, timezone) && <p className="sr-only">Selected {fmtTime(value, timezone)}</p>}
+      {value && localDateKey(value, timezone) && <p className="sr-only">{t("slotPicker.selected", { time: fmtTime(value, timezone, intl) })}</p>}
     </div>
   );
 }

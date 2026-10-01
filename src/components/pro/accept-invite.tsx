@@ -4,10 +4,12 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FormError } from "@/components/ui/field";
+import { useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
 
 export function AcceptInviteButton({ token }: { token: string }) {
   const router = useRouter();
+  const t = useT("account");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   return (
@@ -28,7 +30,7 @@ export function AcceptInviteButton({ token }: { token: string }) {
           }
         }}
       >
-        Accept and open my schedule
+        {t("invite.accept")}
       </Button>
     </div>
   );

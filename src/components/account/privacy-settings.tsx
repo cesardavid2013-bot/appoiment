@@ -9,27 +9,31 @@ import { Button, buttonClass } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Field, FormError, Input } from "@/components/ui/field";
 import { DELETE_CONFIRMATION } from "@/domain/account";
+import { useT } from "@/i18n/client";
 import { api, ApiError } from "@/lib/api";
-import { SettingsCard } from "./account-shell";
+import { rich } from "./rich";
+import { SettingsCard } from "./settings-card";
 
 export function ExportCard() {
+  const t = useT("account");
   return (
     <SettingsCard
       id="export-h"
-      title="Download your data"
-      description="Get a copy of your profile, saved addresses, appointments, reviews, messages, saved professionals and support requests as a JSON file."
+      title={t("privacy.export.title")}
+      description={t("privacy.export.description")}
     >
       <a href="/api/me/export" download className={buttonClass("secondary", "md", "h-11 sm:h-10")}>
         <Download className="size-4" aria-hidden />
-        Download my data
+        {t("privacy.export.button")}
       </a>
-      <p className="mt-3 text-[13px] text-ink-3">Prepared instantly. Keep the file somewhere safe — it contains personal information.</p>
+      <p className="mt-3 text-[13px] text-ink-3">{t("privacy.export.hint")}</p>
     </SettingsCard>
   );
 }
 
 export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPassword }: { blockingBusinesses: { id: string; name: string }[]; upcomingCount: number; hasPassword: boolean }) {
   const router = useRouter();
+  const t = useT("account");
   const [open, setOpen] = useState(false);
   const [typed, setTyped] = useState("");
   const [password, setPassword] = useState("");
@@ -45,7 +49,7 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPasswo
     setError(null);
     try {
       await api("/api/me/account", { method: "DELETE", body: { confirm: typed.trim(), password } });
-      toast.success("Your account has been deleted", { description: "Thanks for using Kept." });
+      toast.success(t("privacy.delete.deletedToast"), { description: t("privacy.delete.deletedBody") });
       router.replace("/");
       router.refresh();
     } catch (err) {
@@ -58,27 +62,25 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPasswo
     <section aria-labelledby="delete-h" className="rounded-xl border border-danger/25 bg-surface">
       <div className="p-5 sm:p-6">
         <h2 id="delete-h" className="text-base font-semibold text-ink">
-          Delete your account
+          {t("privacy.delete.title")}
         </h2>
-        <p className="mt-1 text-sm leading-relaxed text-ink-3">This permanently closes your Kept account. Here&apos;s what happens:</p>
+        <p className="mt-1 text-sm leading-relaxed text-ink-3">{t("privacy.delete.intro")}</p>
         <ul className="mt-4 space-y-2 text-sm leading-relaxed text-ink-2">
           <li className="flex gap-2.5">
             <span className="mt-2 size-1.5 shrink-0 rounded-full bg-ink-3" aria-hidden />
-            Your name, email, phone, photo, saved addresses and saved professionals are erased, and you&apos;re signed out everywhere.
+            {t("privacy.delete.erased")}
           </li>
           <li className="flex gap-2.5">
             <span className="mt-2 size-1.5 shrink-0 rounded-full bg-ink-3" aria-hidden />
-            {upcomingCount > 0
-              ? `Your ${upcomingCount === 1 ? "upcoming appointment is" : `${upcomingCount} upcoming appointments are`} cancelled under each business's cancellation policy, including any refund it allows.`
-              : "Any upcoming appointments are cancelled under each business's cancellation policy."}
+            {upcomingCount > 0 ? t("privacy.delete.upcoming", { count: upcomingCount }) : t("privacy.delete.upcomingNone")}
           </li>
           <li className="flex gap-2.5">
             <span className="mt-2 size-1.5 shrink-0 rounded-full bg-ink-3" aria-hidden />
-            Records businesses and tax rules depend on — past appointments, payments and reviews — are kept, but shown as from &ldquo;Deleted user&rdquo;.
+            {t("privacy.delete.records")}
           </li>
           <li className="flex gap-2.5">
             <span className="mt-2 size-1.5 shrink-0 rounded-full bg-ink-3" aria-hidden />
-            This can&apos;t be undone. You can sign up again later with the same email, starting fresh.
+            {t("privacy.delete.permanent")}
           </li>
         </ul>
 
@@ -86,19 +88,19 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPasswo
           <div className="mt-5 flex gap-3 rounded-md border border-warn/25 bg-warn-soft px-3.5 py-3 text-sm leading-relaxed text-warn" role="note">
             <TriangleAlert className="mt-0.5 size-4 shrink-0" aria-hidden />
             <p>
-              You own {blockingBusinesses.map((b) => b.name).join(", ")}. Close the business or transfer it to someone else from your{" "}
-              <Link href="/pro" className="font-medium underline underline-offset-4">
-                business settings
-              </Link>{" "}
-              before deleting your account, so its clients aren&apos;t left without answers.
+              {rich(t("privacy.delete.blocked", { businesses: blockingBusinesses.map((b) => b.name).join(", ") }), {
+                link: (text) => (
+                  <Link href="/pro" className="font-medium underline underline-offset-4">
+                    {text}
+                  </Link>
+                ),
+              })}
             </p>
           </div>
         )}
       </div>
       <div className="flex flex-col gap-2 border-t border-line px-5 py-3.5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <p className="text-[13px] text-ink-3">
-          Prefer a copy first? Download your data above.
-        </p>
+        <p className="text-[13px] text-ink-3">{t("privacy.delete.copyFirst")}</p>
         <Button
           variant="danger"
           className="h-11 sm:h-10"
@@ -109,21 +111,21 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPasswo
             setOpen(true);
           }}
         >
-          Delete account…
+          {t("privacy.delete.open")}
         </Button>
       </div>
 
       <Dialog
         open={open}
         onOpenChange={setOpen}
-        title="Delete your account?"
-        description="This can't be undone."
+        title={t("privacy.delete.confirmTitle")}
+        description={t("privacy.delete.confirmBody")}
         size="sm"
         locked={loading}
         footer={
           <>
             <Button variant="ghost" onClick={() => setOpen(false)} disabled={loading}>
-              Keep my account
+              {t("privacy.delete.keep")}
             </Button>
             <button
               type="submit"
@@ -132,7 +134,7 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPasswo
               className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-danger px-4 text-sm font-medium text-bg hover:bg-danger/90 disabled:opacity-50"
             >
               {loading && <span className="size-4 animate-spin rounded-full border-2 border-current border-e-transparent" aria-hidden />}
-              Delete my account
+              {t("privacy.delete.confirm")}
             </button>
           </>
         }
@@ -141,15 +143,15 @@ export function DeleteAccountCard({ blockingBusinesses, upcomingCount, hasPasswo
           <FormError message={error} />
           {upcomingCount > 0 && (
             <p className="rounded-md bg-surface-2 px-3.5 py-3 text-sm text-ink-2">
-              {upcomingCount === 1 ? "1 upcoming appointment" : `${upcomingCount} upcoming appointments`} will be cancelled.
+              {t("privacy.delete.willCancel", { count: upcomingCount })}
             </p>
           )}
           {hasPassword && (
-            <Field label="Your password">
+            <Field label={t("privacy.delete.password")}>
               {(p) => <Input {...p} type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" />}
             </Field>
           )}
-          <Field label={<>Type <span className="font-mono font-semibold">{DELETE_CONFIRMATION}</span> to confirm</>}>
+          <Field label={<>{rich(t("privacy.delete.typeToConfirm", { word: DELETE_CONFIRMATION }), { word: (w) => <span className="font-mono font-semibold" dir="ltr">{w}</span> })}</>}>
             {(p) => <Input {...p} value={typed} onChange={(e) => setTyped(e.target.value)} autoComplete="off" autoCapitalize="characters" spellCheck={false} />}
           </Field>
         </form>

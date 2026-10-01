@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ui/button";
 import { AcceptInviteButton } from "@/components/pro/accept-invite";
-import { ROLE_LABELS } from "@/domain/permissions";
+import { rich } from "@/components/account/rich";
+import { getT } from "@/i18n/server";
 import { getViewer } from "@/server/auth/session";
 import { getInvite } from "@/server/services/team";
 
-export const metadata: Metadata = { title: "Team invitation", robots: { index: false } };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("account");
+  return { title: t("invite.eyebrow"), robots: { index: false } };
+}
 
 function maskEmail(e: string) {
   const [user, domain] = e.split("@");
@@ -14,50 +18,51 @@ function maskEmail(e: string) {
 
 export default async function InvitePage({ params }: PageProps<"/invite/[token]">) {
   const { token } = await params;
-  const [invite, viewer] = await Promise.all([getInvite(token.slice(0, 100)), getViewer()]);
+  const [invite, viewer, t] = await Promise.all([getInvite(token.slice(0, 100)), getViewer(), getT("account")]);
+  const strong = (text: string) => <span className="font-medium text-ink">{text}</span>;
   const next = `/invite/${encodeURIComponent(token)}`;
 
   return (
     <div className="mx-auto max-w-md px-4 py-16 sm:py-24">
       {!invite ? (
         <>
-          <h1 className="font-display text-4xl leading-tight text-ink">This invitation can&rsquo;t be used</h1>
-          <p className="mt-3 text-[15px] leading-relaxed text-ink-3">It may have expired, been cancelled, or already been accepted. Ask the person who invited you to send a new link.</p>
+          <h1 className="font-display text-4xl leading-tight text-ink">{t("invite.invalidTitle")}</h1>
+          <p className="mt-3 text-[15px] leading-relaxed text-ink-3">{t("invite.invalidBody")}</p>
           <ButtonLink href="/" variant="secondary" className="mt-8">
-            Go to Kept
+            {t("invite.goHome")}
           </ButtonLink>
         </>
       ) : (
         <>
-          <p className="text-[13px] font-medium uppercase tracking-[0.06em] text-ink-3">Team invitation</p>
-          <h1 className="mt-2 font-display text-4xl leading-tight text-ink">Join {invite.businessName}</h1>
+          <p className="text-[13px] font-medium uppercase tracking-[0.06em] text-ink-3">{t("invite.eyebrow")}</p>
+          <h1 className="mt-2 font-display text-4xl leading-tight text-ink">{t("invite.join", { business: invite.businessName })}</h1>
           <p className="mt-3 text-[15px] leading-relaxed text-ink-3">
-            You&rsquo;ve been invited as <span className="font-medium text-ink">{ROLE_LABELS[invite.role].label}</span>. {ROLE_LABELS[invite.role].description}
+            {rich(t("invite.invitedAs", { role: t(`invite.roles.${invite.role}.label`) }), { b: strong })} {t(`invite.roles.${invite.role}.description`)}
           </p>
           <div className="mt-8 rounded-lg border border-line bg-surface p-5">
             {!viewer ? (
               <>
                 <p className="text-sm text-ink-2">
-                  Sign in or create an account with <span className="font-medium text-ink">{maskEmail(invite.email ?? "")}</span> to accept.
+                  {rich(t("invite.signInWith", { email: maskEmail(invite.email ?? "") }), { b: strong })}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <ButtonLink href={`/signup?next=${encodeURIComponent(next)}`}>Create account</ButtonLink>
+                  <ButtonLink href={`/signup?next=${encodeURIComponent(next)}`}>{t("invite.createAccount")}</ButtonLink>
                   <ButtonLink href={`/login?next=${encodeURIComponent(next)}`} variant="secondary">
-                    Sign in
+                    {t("invite.signIn")}
                   </ButtonLink>
                 </div>
               </>
             ) : viewer.email?.toLowerCase() !== invite.email?.toLowerCase() ? (
               <>
                 <p className="text-sm text-ink-2">
-                  You&rsquo;re signed in as <span className="font-medium text-ink">{viewer.email}</span>, but this invitation was sent to {maskEmail(invite.email ?? "")}.
+                  {rich(t("invite.wrongAccount", { email: viewer.email ?? "", invited: maskEmail(invite.email ?? "") }), { b: strong })}
                 </p>
-                <p className="mt-2 text-sm text-ink-3">Sign out and sign in with that address, or ask for an invitation to {viewer.email}.</p>
+                <p className="mt-2 text-sm text-ink-3">{t("invite.wrongAccountHint", { email: viewer.email ?? "" })}</p>
               </>
             ) : (
               <>
                 <p className="text-sm text-ink-2">
-                  Accepting as <span className="font-medium text-ink">{viewer.email}</span>.
+                  {rich(t("invite.acceptingAs", { email: viewer.email ?? "" }), { b: strong })}
                 </p>
                 <AcceptInviteButton token={token} />
               </>

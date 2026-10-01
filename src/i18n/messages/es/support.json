@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Reserva", "hint": "Cambios, cancelaciones o problemas con una cita." },
+    "payment": { "label": "Pago", "hint": "Cobros, depósitos, reembolsos o propinas." },
+    "account": { "label": "Cuenta", "hint": "Inicio de sesión, tu perfil o tus datos." },
+    "report": { "label": "Reportar un negocio", "hint": "Problemas de seguridad, anuncios engañosos o mala conducta." },
+    "other": { "label": "Otro", "hint": "Cualquier otra cosa en la que podamos ayudarte." }
+  },
+  "status": {
+    "open": "Esperando a soporte",
+    "awaiting_customer": "Respondida",
+    "resolved": "Resuelta",
+    "closed": "Cerrada"
+  },
+  "home": {
+    "title": "Ayuda y soporte",
+    "description": "Obtén ayuda con una reserva, un pago o tu cuenta.",
+    "newRequest": "Nueva solicitud",
+    "yourRequests": "Tus solicitudes",
+    "emptyTitle": "Aún no tienes solicitudes",
+    "emptyBody": "Si algo no está bien con una reserva, un pago o tu cuenta, cuéntanos y te ayudamos a resolverlo.",
+    "contact": "Contactar a soporte",
+    "ticketLine": "{category} · Actualizada el {date} · {count, plural, one {# mensaje} other {# mensajes}}",
+    "quickAnswers": "Respuestas rápidas",
+    "stillStuck": "¿Sigues con dudas? <link>Contacta a soporte</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "¿Cómo cancelo o cambio el horario de una cita?",
+      "a": "Abre <link>Reservas</link>, elige la cita y toca Cambiar horario o Cancelar cita. Cada negocio define su propio plazo de cancelación; antes de confirmar verás exactamente qué aplica, incluido cualquier cargo o reembolso."
+    },
+    "refund": {
+      "q": "¿Cuándo recibiré mi reembolso?",
+      "a": "Los reembolsos vuelven a la tarjeta con la que pagaste en cuanto se confirma la cancelación. Según tu banco, suelen tardar de 5 a 10 días hábiles en aparecer. Que un depósito sea reembolsable depende de la política del negocio, que se muestra al reservar."
+    },
+    "contactPro": {
+      "q": "¿Cómo contacto a un profesional?",
+      "a": "Usa Mensaje en su perfil o en tu reserva. Tus conversaciones están en <link>Mensajes</link>. Para todo lo relacionado con el servicio en sí (cómo llegar, cómo prepararte, qué llevar), el negocio es quien responde más rápido."
+    },
+    "report": {
+      "q": "Tuve un problema con un negocio. ¿Qué puedo hacer?",
+      "a": "Abre una solicitud abajo y elige “Reportar un negocio”. Vincula la cita si la hay. Leemos todos los reportes y podemos intervenir en reembolsos y, si es necesario, retirar negocios de Kept."
+    },
+    "account": {
+      "q": "¿Cómo cambio mi correo o elimino mi cuenta?",
+      "a": "Los cambios de correo se hacen a través de soporte para confirmar que eres tú. Puedes descargar tus datos o eliminar tu cuenta por tu cuenta en <link>Privacidad y datos</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Solicitud de soporte",
+    "allRequests": "Todas las solicitudes",
+    "opened": "{category} · Abierta el <date></date>",
+    "appointmentLine": "{date}, {time} · Ref. {reference}",
+    "conversation": "Conversación",
+    "keptSupport": "Soporte de Kept",
+    "openImage": "Abrir la imagen adjunta",
+    "attachedImage": "Imagen adjunta",
+    "closed": "Esta solicitud está cerrada. <link>Abre una nueva solicitud</link> si todavía necesitas ayuda.",
+    "willReply": "Te responderemos aquí y te avisaremos cuando lo hagamos.",
+    "sorted": "¿Ya se resolvió? Avísanos."
+  },
+  "new": {
+    "title": "Contactar a soporte",
+    "intro": "Cuéntanos qué pasa y una persona real del equipo de Kept te responderá aquí. Para dudas sobre el servicio en sí, escribirle al negocio suele ser lo más rápido.",
+    "notFound": "No encontramos esa cita en tu cuenta, así que no se adjuntó. Aun así, puedes elegir una abajo."
+  },
+  "form": {
+    "topic": "¿Con qué necesitas ayuda?",
+    "chooseTopic": "Elige un tema",
+    "addSubject": "Agrega un asunto breve",
+    "moreDetail": "Cuéntanos un poco más: con al menos una oración podemos ayudarte mejor",
+    "sent": "Solicitud enviada",
+    "checkFields": "Revisa los campos marcados.",
+    "related": "Cita relacionada",
+    "refHint": "Ref. {reference} · {business}",
+    "linkHint": "Si vinculas una reserva, podemos revisarla de inmediato.",
+    "none": "Ninguna",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Asunto",
+    "subjectPlaceholder": "p. ej., Me cobraron dos veces el depósito",
+    "details": "Detalles",
+    "detailsHint": "Qué pasó, cuándo y qué te gustaría que hiciéramos. No incluyas números de tarjeta ni contraseñas.",
+    "images": "Imágenes",
+    "optional": "Opcional",
+    "cancel": "Cancelar",
+    "uploadingImages": "Subiendo imágenes…",
+    "send": "Enviar solicitud"
+  },
+  "reply": {
+    "writeFirst": "Primero escribe una respuesta.",
+    "sent": "Respuesta enviada",
+    "label": "Respuesta",
+    "reopens": "Si respondes, esta solicitud se vuelve a abrir.",
+    "placeholder": "Agrega más detalles o responde nuestra pregunta…",
+    "send": "Enviar respuesta"
+  },
+  "resolve": {
+    "button": "Marcar como resuelta",
+    "done": "Marcada como resuelta",
+    "doneBody": "¡Qué bueno que se resolvió! Aún puedes responder si surge algo.",
+    "confirmTitle": "¿Marcar esta solicitud como resuelta?",
+    "confirmBody": "Avísanos que ya se resolvió. Si surge algo más, responde aquí y la retomamos."
+  },
+  "attach": {
+    "tooMany": "Puedes adjuntar hasta {max} imágenes.",
+    "alt": "Archivo adjunto de soporte",
+    "label": "Archivos adjuntos",
+    "uploadingName": "Subiendo {name}",
+    "remove": "Quitar {name}",
+    "add": "Agregar imagen",
+    "uploading": "{count, plural, one {Subiendo # imagen…} other {Subiendo # imágenes…}}",
+    "hint": "Las capturas de pantalla o fotos ayudan. Hasta {max} imágenes de 15 MB cada una."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Booking", "hint": "Changes, cancellations or problems with an appointment." },
+    "payment": { "label": "Payment", "hint": "Charges, deposits, refunds or tips." },
+    "account": { "label": "Account", "hint": "Signing in, your profile or your data." },
+    "report": { "label": "Report a business", "hint": "Safety concerns, misleading listings or misconduct." },
+    "other": { "label": "Other", "hint": "Anything else we can help with." }
+  },
+  "status": {
+    "open": "Waiting on support",
+    "awaiting_customer": "Replied",
+    "resolved": "Resolved",
+    "closed": "Closed"
+  },
+  "home": {
+    "title": "Help & support",
+    "description": "Get help with a booking, a payment or your account.",
+    "newRequest": "New request",
+    "yourRequests": "Your requests",
+    "emptyTitle": "No requests yet",
+    "emptyBody": "If something isn't right with a booking, a payment or your account, tell us and we'll help sort it out.",
+    "contact": "Contact support",
+    "ticketLine": "{category} · Updated {date} · {count, plural, one {# message} other {# messages}}",
+    "quickAnswers": "Quick answers",
+    "stillStuck": "Still stuck? <link>Contact support</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "How do I cancel or reschedule an appointment?",
+      "a": "Open <link>Bookings</link>, choose the appointment and tap Reschedule or Cancel. Each business sets its own cancellation window — you'll see exactly what applies, including any fee or refund, before you confirm."
+    },
+    "refund": {
+      "q": "When will I get my refund?",
+      "a": "Refunds go back to the card you paid with as soon as a cancellation is confirmed. Depending on your bank, they usually take 5–10 business days to appear. Whether a deposit is refundable depends on the business's policy, which is shown when you book."
+    },
+    "contactPro": {
+      "q": "How do I contact a professional?",
+      "a": "Use Message on their profile or on your booking. Your conversations live in <link>Messages</link>. For anything about the service itself — directions, preparation, what to bring — the business can answer fastest."
+    },
+    "report": {
+      "q": "Something went wrong with a business. What can I do?",
+      "a": "Open a request below and choose “Report a business”. Link the appointment if there is one. We read every report, and we can step in on refunds and, where needed, remove businesses from Kept."
+    },
+    "account": {
+      "q": "How do I change my email or delete my account?",
+      "a": "Email changes go through support so we can confirm it's you. You can download your data or delete your account yourself in <link>Privacy & data</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Support request",
+    "allRequests": "All requests",
+    "opened": "{category} · Opened <date></date>",
+    "appointmentLine": "{date} at {time} · Ref {reference}",
+    "conversation": "Conversation",
+    "keptSupport": "Kept Support",
+    "openImage": "Open attached image",
+    "attachedImage": "Attached image",
+    "closed": "This request is closed. <link>Open a new request</link> if you still need help.",
+    "willReply": "We'll reply here and let you know when we do.",
+    "sorted": "Sorted? Let us know."
+  },
+  "new": {
+    "title": "Contact support",
+    "intro": "Tell us what's going on and a real person from the Kept team will reply here. For questions about a service itself, messaging the business is usually fastest.",
+    "notFound": "We couldn't find that appointment on your account, so it hasn't been attached. You can still choose one below."
+  },
+  "form": {
+    "topic": "What do you need help with?",
+    "chooseTopic": "Choose a topic",
+    "addSubject": "Add a short subject",
+    "moreDetail": "Tell us a little more — at least a sentence helps us help you",
+    "sent": "Request sent",
+    "checkFields": "Please check the highlighted fields.",
+    "related": "Related appointment",
+    "refHint": "Ref {reference} · {business}",
+    "linkHint": "Linking a booking lets us look into it straight away.",
+    "none": "None",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Subject",
+    "subjectPlaceholder": "e.g. I was charged twice for my deposit",
+    "details": "Details",
+    "detailsHint": "What happened, when, and what you'd like us to do. Please don't include card numbers or passwords.",
+    "images": "Images",
+    "optional": "Optional",
+    "cancel": "Cancel",
+    "uploadingImages": "Uploading images…",
+    "send": "Send request"
+  },
+  "reply": {
+    "writeFirst": "Write a reply first.",
+    "sent": "Reply sent",
+    "label": "Reply",
+    "reopens": "Replying reopens this request.",
+    "placeholder": "Add more detail or answer our question…",
+    "send": "Send reply"
+  },
+  "resolve": {
+    "button": "Mark as resolved",
+    "done": "Marked as resolved",
+    "doneBody": "Glad it's sorted. You can still reply if anything comes up.",
+    "confirmTitle": "Mark this request as resolved?",
+    "confirmBody": "Let us know it's sorted. If anything else comes up, reply here and we'll pick it back up."
+  },
+  "attach": {
+    "tooMany": "You can attach up to {max} images.",
+    "alt": "Support attachment",
+    "label": "Attachments",
+    "uploadingName": "Uploading {name}",
+    "remove": "Remove {name}",
+    "add": "Add image",
+    "uploading": "{count, plural, one {Uploading # image…} other {Uploading # images…}}",
+    "hint": "Screenshots or photos help. Up to {max} images, 15 MB each."
+  }
+}
