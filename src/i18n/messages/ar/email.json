@@ -1,0 +1,147 @@
+{
+  "footer": "تصلك هذه الرسالة بسبب نشاط على حسابك في Kept. يمكنك إدارة الإشعارات من الحساب ← الإشعارات.",
+  "details": {
+    "service": "الخدمة",
+    "when": "متى",
+    "with": "مع",
+    "where": "أين",
+    "online": "عبر الإنترنت — سيشارك النشاط التجاري الرابط",
+    "reference": "المرجع",
+    "paid": "المدفوع",
+    "balanceDue": "المبلغ المتبقي"
+  },
+  "cta": {
+    "viewAppointment": "عرض الموعد",
+    "viewRequest": "عرض الطلب",
+    "reviewRequest": "مراجعة الطلب",
+    "openAppointment": "فتح الموعد",
+    "openCalendar": "فتح التقويم",
+    "findAnotherTime": "البحث عن وقت آخر",
+    "payDeposit": "دفع العربون",
+    "leaveReview": "اكتب تقييمًا",
+    "bookThisTime": "احجز هذا الوقت"
+  },
+  "booked": {
+    "title": "تم حجزك مع {business}",
+    "subject": "مؤكّد: {service} مع {business}",
+    "heading": "تم تأكيد موعدك",
+    "footnote": "تغيّرت خططك؟ يمكنك إعادة الجدولة أو الإلغاء من صفحة الموعد، وفق سياسة النشاط التجاري.",
+    "sms": "Kept: تم تأكيد {service} مع {business} في {when}. المرجع {reference}"
+  },
+  "requested": {
+    "title": "تم إرسال الطلب إلى {business}",
+    "body": "سنُعلمك فور الرد.",
+    "subject": "تم إرسال الطلب: {service} مع {business}",
+    "heading": "تم إرسال طلبك",
+    "paragraph": "يراجع {business} الطلبات قبل التأكيد. سنراسلك عبر البريد الإلكتروني فور الرد."
+  },
+  "bizBooked": {
+    "title": "حجز جديد",
+    "requestTitle": "طلب حجز جديد",
+    "subject": "حجز جديد: {service}",
+    "requestSubject": "طلب جديد: {service}",
+    "heading": "لديك حجز جديد",
+    "requestHeading": "لديك طلب حجز جديد",
+    "requestParagraph": "اقبله أو ارفضه من تقويمك. الطلبات التي لا يُرد عليها تنتهي صلاحيتها تلقائيًا."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "تعذّر على {business} قبول طلبك",
+      "subject": "تم رفض الطلب: {service}",
+      "heading": "لم يُقبل طلبك"
+    },
+    "expired": {
+      "title": "انتهت صلاحية حجزك",
+      "subject": "انتهت صلاحية حجزك",
+      "heading": "انتهت صلاحية حجزك"
+    },
+    "cancelled": {
+      "title": "ألغى {business} موعدك",
+      "subject": "ملغى: {service}",
+      "heading": "تم إلغاء موعدك"
+    },
+    "note": "ملاحظة من النشاط التجاري: «{note}»",
+    "refund": "استرداد بقيمة {amount} في طريقه إلى وسيلة الدفع الأصلية.",
+    "bookAgain": "يمكنك حجز وقت آخر متى كنت مستعدًا."
+  },
+  "bizCancelled": {
+    "title": "ألغى عميل موعده",
+    "expiredTitle": "انتهت صلاحية حجز",
+    "subject": "ملغى: {service} · {when}",
+    "heading": "تم إلغاء موعد",
+    "reason": "السبب: «{reason}»"
+  },
+  "rescheduled": {
+    "title": "نقل {business} موعدك",
+    "body": "الآن {when}",
+    "subject": "وقت جديد: {service} مع {business}",
+    "heading": "لموعدك وقت جديد",
+    "previously": "كان سابقًا {when}.",
+    "changeIt": "إذا لم يناسبك الوقت الجديد، يمكنك إعادة الجدولة أو الإلغاء من صفحة الموعد."
+  },
+  "bizRescheduled": {
+    "title": "أعاد عميل جدولة موعده",
+    "subject": "أُعيدت جدولته: {service}",
+    "heading": "تمت إعادة جدولة موعد"
+  },
+  "approvedPay": {
+    "title": "قبل {business} طلبك",
+    "body": "ادفع عربونًا بقيمة {amount} للتأكيد.",
+    "subject": "تم القبول — أكّد {service}",
+    "heading": "تم قبول طلبك",
+    "paragraph": "ادفع عربونًا بقيمة {amount} لتثبيت وقتك. الحجوزات غير المدفوعة تُحرَّر تلقائيًا."
+  },
+  "reminder": {
+    "title": "تذكير: {service} {lead}",
+    "body": "{when} مع {business}",
+    "subject": "تذكير: {service} {lead} الساعة {time}",
+    "heading": "نراك {lead}",
+    "footnote": "تأخرت أو لن تتمكن من الحضور؟ أخبر النشاط التجاري من صفحة الموعد.",
+    "sms": "تذكير: {service} مع {business} {when}."
+  },
+  "review": {
+    "title": "كيف كانت {service}؟",
+    "body": "شارك تقييمًا سريعًا لـ {business}.",
+    "subject": "كيف كانت زيارتك لـ {business}؟",
+    "heading": "كيف كانت التجربة؟",
+    "paragraph": "تقييمك يساعد {business} والآخرين الذين يختارون محترفًا. لا يستغرق الأمر أكثر من دقيقة."
+  },
+  "waitlist": {
+    "title": "توفّر مكان لدى {business}",
+    "body": "{when} متاح الآن. احجز بسرعة — الأسبقية لمن يحجز أولًا.",
+    "subject": "توفّر وقت لدى {business}",
+    "heading": "خبر سار — توفّر وقت",
+    "paragraph": "أصبح {when} متاحًا للتو. الأسبقية لمن يحجز أولًا، فاحجز قريبًا إذا كان يناسبك."
+  },
+  "thread": {
+    "confirmed": "تم تأكيد الموعد: {service}، {when}.",
+    "declined": "تم رفض الموعد: {service}، {when}.",
+    "expired": "انتهت صلاحية الموعد: {service}، {when}.",
+    "cancelled": "تم إلغاء الموعد: {service}، {when}.",
+    "moved": "نُقل الموعد من {from} إلى {to}."
+  },
+  "verify": {
+    "subject": "أكّد بريدك الإلكتروني",
+    "preheader": "لمسة واحدة لتأكيد عنوان بريدك الإلكتروني.",
+    "heading": "مرحبًا، {name}",
+    "paragraph": "أكّد بريدك الإلكتروني حتى تتمكن الأنشطة التجارية من التواصل معك بشأن مواعيدك.",
+    "cta": "تأكيد البريد الإلكتروني",
+    "footnote": "تنتهي صلاحية هذا الرابط خلال 3 أيام. إذا لم تنشئ حسابًا، يمكنك تجاهل هذه الرسالة."
+  },
+  "reset": {
+    "subject": "إعادة تعيين كلمة المرور",
+    "heading": "إعادة تعيين كلمة المرور",
+    "paragraph": "طلب أحدهم (نأمل أن يكون أنت) إعادة تعيين كلمة مرور حسابك في Kept.",
+    "cta": "اختيار كلمة مرور جديدة",
+    "footnote": "تنتهي صلاحية هذا الرابط خلال ساعة واحدة. إذا لم تطلب ذلك، يمكنك تجاهل هذه الرسالة بأمان — لن تتغير كلمة مرورك."
+  },
+  "invite": {
+    "subject": "دعاك {inviter} للانضمام إلى {business} على Kept",
+    "reminderSubject": "تذكير: انضم إلى {business} على Kept",
+    "heading": "انضم إلى {business}",
+    "paragraph": "دعاك {inviter} للانضمام إلى فريق {business}. ستتمكن من رؤية جدولك وإدارة مواعيدك.",
+    "cta": "قبول الدعوة",
+    "footnote": "تنتهي صلاحية هذه الدعوة خلال {days} أيام.",
+    "reminderFootnote": "تنتهي صلاحية هذه الدعوة خلال {days} أيام. روابط الدعوة السابقة لم تعد صالحة."
+  }
+}

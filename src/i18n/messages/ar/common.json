@@ -1,0 +1,97 @@
+{
+  "language": "اللغة",
+  "meta": {
+    "title": "Kept — احجز محترفين محليين موثوقين",
+    "description": "اكتشف واحجز حلاقين ومصففين ومدربين ومصورين ومدرّسين وكل أنواع المحترفين المحليين — وأدر مواعيدك بكل سهولة."
+  },
+  "skipToContent": "الانتقال إلى المحتوى",
+  "logoHome": "الصفحة الرئيسية لـ Kept",
+  "header": {
+    "mainNav": "الرئيسية",
+    "search": "ابحث عن خدمات أو محترفين",
+    "ask": "اسأل",
+    "askKept": "اسأل Kept",
+    "explore": "استكشف",
+    "myBusiness": "نشاطي التجاري",
+    "forPros": "للمحترفين",
+    "bookings": "الحجوزات",
+    "messages": "الرسائل",
+    "notifications": "الإشعارات",
+    "unread": "غير مقروءة",
+    "accountMenu": "قائمة الحساب",
+    "logIn": "تسجيل الدخول",
+    "signUp": "إنشاء حساب"
+  },
+  "accountMenu": {
+    "bookings": "الحجوزات",
+    "saved": "المحفوظات",
+    "messages": "الرسائل",
+    "settings": "إعدادات الحساب",
+    "help": "المساعدة والدعم",
+    "switchToBusiness": "الانتقال إلى النشاط التجاري",
+    "offerServices": "قدّم خدماتك",
+    "admin": "لوحة الإدارة",
+    "signOut": "تسجيل الخروج"
+  },
+  "tabs": {
+    "label": "الأساسية",
+    "home": "الرئيسية",
+    "explore": "استكشف",
+    "bookings": "الحجوزات",
+    "inbox": "الوارد",
+    "account": "الحساب"
+  },
+  "footer": {
+    "tagline": "احجز محترفين موثوقين. أدر مواعيدك بجهد أقل.",
+    "discover": "اكتشف",
+    "explore": "استكشف",
+    "hair": "الشعر والحلاقة",
+    "wellness": "العافية",
+    "fitness": "اللياقة البدنية",
+    "forPros": "للمحترفين",
+    "howItWorks": "كيف يعمل",
+    "listServices": "أدرج خدماتك",
+    "dashboard": "لوحة النشاط التجاري",
+    "help": "المساعدة",
+    "support": "الدعم",
+    "terms": "الشروط",
+    "privacy": "الخصوصية",
+    "copyright": "© {year} Kept. جميع الحقوق محفوظة."
+  },
+  "price": {
+    "free": "مجاني",
+    "quote": "السعر بعد الاستشارة",
+    "from": "ابتداءً من {price}"
+  },
+  "rating": {
+    "new": "جديد",
+    "summary": "بتقييم {avg} من {count, plural, zero {بلا تقييمات} one {تقييم واحد} two {تقييمين} few {# تقييمات} many {# تقييمًا} other {# تقييم}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "بانتظار الدفع",
+    "requested": "تم إرسال الطلب",
+    "confirmed": "مؤكّد",
+    "checked_in": "تم تسجيل الوصول",
+    "in_progress": "قيد التنفيذ",
+    "completed": "مكتمل",
+    "cancelled": "ملغى",
+    "declined": "مرفوض",
+    "no_show": "لم يحضر",
+    "expired": "منتهي الصلاحية"
+  },
+  "policy": {
+    "freeUntil": "إلغاء مجاني حتى {hours} ساعة قبل الموعد. يُحتسب على الإلغاء المتأخر {percent}% من الإجمالي.",
+    "cancelAhead": "يرجى الإلغاء قبل موعدك بـ {hours} ساعة على الأقل.",
+    "freeAnyTime": "إلغاء مجاني في أي وقت قبل موعدك.",
+    "depositRefundable": "العربون قابل للاسترداد عند الإلغاء في الوقت المناسب.",
+    "depositNonRefundable": "العربون غير قابل للاسترداد.",
+    "reschedule": "إعادة الجدولة عبر الإنترنت حتى {hours} ساعة قبل الموعد."
+  },
+  "ui": {
+    "close": "إغلاق",
+    "keepIt": "الإبقاء عليه",
+    "optional": "اختياري",
+    "stars": "{value} من 5 نجوم",
+    "notifications": "الإشعارات"
+  }
+}

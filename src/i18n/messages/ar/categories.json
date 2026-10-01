@@ -1,0 +1,149 @@
+{
+  "barber": {
+    "name": "حلاق رجالي"
+  },
+  "hair": {
+    "name": "الشعر والحلاقة",
+    "description": "قصّات وصبغات وتصفيف وضفائر وعناية."
+  },
+  "lashes-brows": {
+    "name": "الرموش والحواجب"
+  },
+  "massage": {
+    "name": "مساج"
+  },
+  "personal-training": {
+    "name": "تدريب شخصي"
+  },
+  "hair-salon": {
+    "name": "صالون شعر"
+  },
+  "makeup": {
+    "name": "مكياج"
+  },
+  "nails": {
+    "name": "الأظافر",
+    "description": "مانيكير وباديكير وتركيب أظافر ورسم على الأظافر."
+  },
+  "spa": {
+    "name": "سبا"
+  },
+  "yoga-pilates": {
+    "name": "يوغا وبيلاتس"
+  },
+  "beauty": {
+    "name": "التجميل",
+    "description": "رموش وحواجب ومكياج وبشرة."
+  },
+  "braids-locs": {
+    "name": "ضفائر ولوكس"
+  },
+  "skincare": {
+    "name": "العناية بالبشرة"
+  },
+  "wellness": {
+    "name": "العافية",
+    "description": "مساج وسبا وعلاج بالجسد."
+  },
+  "fitness": {
+    "name": "اللياقة البدنية",
+    "description": "تدريب شخصي ويوغا وبيلاتس وتدريب."
+  },
+  "tattoo-piercing": {
+    "name": "وشم وثقب",
+    "description": "وشوم مخصصة وتصاميم جاهزة وثقب."
+  },
+  "photography": {
+    "name": "تصوير وفيديو",
+    "description": "بورتريه وفعاليات ومنتجات وفيديو."
+  },
+  "education": {
+    "name": "دروس وتعليم خصوصي",
+    "description": "مدرّسون خصوصيون ومعلمو موسيقى ودروس لغات."
+  },
+  "home-services": {
+    "name": "المنزل والحديقة",
+    "description": "تنظيف وإصلاحات وصيانة وبستنة."
+  },
+  "automotive": {
+    "name": "السيارات",
+    "description": "تلميع وغسيل سيارات وميكانيكي متنقل."
+  },
+  "pets": {
+    "name": "الحيوانات الأليفة",
+    "description": "تجميل ورعاية وتدريب."
+  },
+  "events": {
+    "name": "الفعاليات",
+    "description": "دي جي ومنظمو فعاليات ومحترفو مناسبات."
+  },
+  "professional": {
+    "name": "خدمات مهنية",
+    "description": "مستشارون ومدرّبون وخبراء."
+  },
+  "other": {
+    "name": "أخرى",
+    "description": "كل ما يمكنك حجزه غير ذلك."
+  },
+  "music-audio": {
+    "name": "موسيقى وصوتيات",
+    "description": "منتجون واستوديوهات تسجيل ومكساج وتدريب صوتي."
+  },
+  "music-production": {
+    "name": "إنتاج موسيقي"
+  },
+  "recording-studio": {
+    "name": "استوديوهات تسجيل"
+  },
+  "vocal-coaching": {
+    "name": "تدريب صوتي"
+  },
+  "creators": {
+    "name": "صنّاع المحتوى",
+    "description": "صنّاع محتوى ومحتوى UGC ووسائل التواصل الاجتماعي ومونتاج فيديو."
+  },
+  "content-creation": {
+    "name": "صناعة المحتوى"
+  },
+  "video-editing": {
+    "name": "مونتاج فيديو"
+  },
+  "social-media": {
+    "name": "إدارة وسائل التواصل الاجتماعي"
+  },
+  "design": {
+    "name": "التصميم والإبداع",
+    "description": "تصميم جرافيك وهوية ومواقع وديكور داخلي."
+  },
+  "graphic-design": {
+    "name": "تصميم جرافيك وهوية"
+  },
+  "web-design": {
+    "name": "تصميم مواقع"
+  },
+  "interior-design": {
+    "name": "تصميم داخلي"
+  },
+  "health": {
+    "name": "الصحة والرعاية",
+    "description": "علاج طبيعي وتغذية وعلاج نفسي ورعاية شمولية."
+  },
+  "physio": {
+    "name": "علاج طبيعي وتقويم العمود الفقري"
+  },
+  "nutrition": {
+    "name": "التغذية"
+  },
+  "therapy": {
+    "name": "علاج نفسي واستشارات"
+  },
+  "cleaning": {
+    "name": "تنظيف"
+  },
+  "handyman": {
+    "name": "صيانة وإصلاحات"
+  },
+  "gardening": {
+    "name": "بستنة"
+  }
+}
