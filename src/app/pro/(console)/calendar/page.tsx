@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { ProCalendar } from "@/components/pro/calendar";
 import { addDaysIso, isoWeekday, localMinuteToInstant, todayIn } from "@/domain/time";
+import { getT } from "@/i18n/server";
 import { calendarRange, servicesForCalendar } from "@/server/services/pro";
 import { proPage } from "@/server/pro-page";
 
-export const metadata: Metadata = { title: "Calendar" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT("pro");
+  return { title: t("nav.calendar") };
+}
 
 const VIEWS = ["day", "week", "month", "agenda"] as const;
 
