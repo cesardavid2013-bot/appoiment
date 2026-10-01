@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState, type ReactNode } from "react";
 import { Toaster } from "sonner";
 import { useT } from "@/i18n/client";
+import { RegisterServiceWorker } from "@/components/shell/register-sw";
 import { ApiError } from "@/lib/api";
 
 export function Providers({ children }: { children: ReactNode }) {
@@ -23,6 +24,7 @@ export function Providers({ children }: { children: ReactNode }) {
   return (
     <QueryClientProvider client={client}>
       {children}
+      <RegisterServiceWorker />
       <Toaster
         position="top-center"
         containerAriaLabel={t("notifications")}

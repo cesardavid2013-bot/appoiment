@@ -108,5 +108,10 @@
     "retry": "Try again",
     "support": "Contact support",
     "ref": "Reference {id}"
+  },
+  "offline": {
+    "eyebrow": "You're offline",
+    "title": "No connection right now.",
+    "body": "Your bookings are safe. Reconnect and Kept picks up where you left off."
   }
 }

@@ -108,5 +108,10 @@
     "retry": "Reintentar",
     "support": "Contactar soporte",
     "ref": "Referencia {id}"
+  },
+  "offline": {
+    "eyebrow": "Sin conexión",
+    "title": "Ahora mismo no hay conexión.",
+    "body": "Tus reservas están a salvo. Cuando vuelvas a conectarte, Kept sigue donde lo dejaste."
   }
 }

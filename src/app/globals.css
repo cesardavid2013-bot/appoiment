@@ -264,3 +264,66 @@
 :is(:lang(ja), :lang(zh), :lang(ko), :lang(th)) :is(em, i, .italic) {
   font-style: normal;
 }
+
+/*
+ * Type per script. The brand faces (Cormorant Garamond, Instrument Sans) cover Latin, Latin Extended,
+ * Cyrillic and Vietnamese. Every other script gets the best system face on each platform, in a serif
+ * for headings and a sans for text, so a heading never falls back to an unrelated default.
+ */
+:lang(ja) {
+  --font-sans: var(--font-ui), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Noto Sans JP", "Meiryo", system-ui, sans-serif;
+  --font-display: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "MS PMincho", serif;
+}
+:lang(zh), :lang(zh-CN) {
+  --font-sans: var(--font-ui), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  --font-display: var(--font-serif), "Songti SC", "STSong", "Noto Serif SC", "SimSun", serif;
+}
+:lang(zh-TW), :lang(zh-Hant) {
+  --font-sans: var(--font-ui), "PingFang TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+  --font-display: var(--font-serif), "Songti TC", "Noto Serif TC", "PMingLiU", serif;
+}
+:lang(ko) {
+  --font-sans: var(--font-ui), "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  --font-display: var(--font-serif), "AppleMyungjo", "Batang", "Noto Serif KR", serif;
+}
+:lang(ar), :lang(fa), :lang(ur) {
+  --font-sans: var(--font-ui), "Geeza Pro", "SF Arabic", "Segoe UI", "Noto Sans Arabic", Tahoma, system-ui, sans-serif;
+  --font-display: var(--font-serif), "Geeza Pro", "Noto Naskh Arabic", "Traditional Arabic", serif;
+}
+:lang(ur) {
+  --font-display: var(--font-serif), "Noto Nastaliq Urdu", "Geeza Pro", serif;
+}
+:lang(he) {
+  --font-sans: var(--font-ui), "Arial Hebrew", "Segoe UI", "Noto Sans Hebrew", system-ui, sans-serif;
+  --font-display: var(--font-serif), "Times New Roman", "Noto Serif Hebrew", serif;
+}
+:lang(hi) {
+  --font-sans: var(--font-ui), "Kohinoor Devanagari", "Devanagari Sangam MN", "Nirmala UI", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-display: var(--font-serif), "Kohinoor Devanagari", "Devanagari Sangam MN", "Nirmala UI", "Noto Serif Devanagari", serif;
+}
+:lang(bn) {
+  --font-sans: var(--font-ui), "Kohinoor Bangla", "Bangla Sangam MN", "Nirmala UI", "Noto Sans Bengali", system-ui, sans-serif;
+  --font-display: var(--font-serif), "Kohinoor Bangla", "Bangla Sangam MN", "Nirmala UI", "Noto Serif Bengali", serif;
+}
+:lang(th) {
+  --font-sans: var(--font-ui), "Thonburi", "Sukhumvit Set", "Leelawadee UI", "Noto Sans Thai", system-ui, sans-serif;
+  --font-display: var(--font-serif), "Thonburi", "Leelawadee UI", "Noto Serif Thai", serif;
+}
+:lang(el) {
+  --font-display: var(--font-serif), "Palatino", "Palatino Linotype", "Times New Roman", serif;
+}
+
+/* Scripts without word spaces need looser line breaking and no letter-spacing on small caps labels. */
+:is(:lang(ja), :lang(zh), :lang(zh-TW), :lang(ko), :lang(th), :lang(ar), :lang(fa), :lang(ur), :lang(he), :lang(hi), :lang(bn)) .eyebrow {
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+:is(:lang(ja), :lang(zh), :lang(zh-TW)) { line-break: strict; word-break: normal; }
+:is(:lang(ar), :lang(fa), :lang(ur)) { letter-spacing: 0 !important; }
+:is(:lang(ar), :lang(fa), :lang(ur)) * { letter-spacing: 0; }
+
+/* iOS: no zoom on focus (inputs ≥16px), no rubber-band flash behind the dark sheets. */
+@supports (-webkit-touch-callout: none) {
+  input, select, textarea { font-size: max(16px, 1em); }
+}
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
