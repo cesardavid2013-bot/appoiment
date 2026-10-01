@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "探索专业人士",
+    "category": "预约{category}",
+    "query": "{q} — 搜索",
+    "description": "按真实可约时间、价格和认证评价比较专业人士。"
+  },
+  "bar": {
+    "placeholder": "搜索服务或专业人士",
+    "label": "搜索",
+    "clear": "清除搜索"
+  },
+  "location": {
+    "placeholder": "任意地点",
+    "label": "地点",
+    "clear": "清除地点",
+    "useMine": "使用我的当前位置",
+    "finding": "正在定位…",
+    "current": "当前位置",
+    "selectedArea": "所选区域",
+    "unsupported": "您的浏览器无法共享位置，请改为输入城市。",
+    "denied": "此网站的位置权限已关闭。请改为输入城市，或在浏览器设置中允许位置访问。",
+    "failed": "无法获取您的位置，请改为输入城市。"
+  },
+  "quick": {
+    "availableToday": "今天可约",
+    "instant": "即时预约",
+    "mobile": "上门服务",
+    "virtual": "线上"
+  },
+  "view": {
+    "label": "视图",
+    "list": "列表",
+    "map": "地图"
+  },
+  "heading": {
+    "explore": "探索",
+    "results": "搜索结果",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "正在更新…",
+    "count": "{count, plural, other {# 位专业人士}}",
+    "countMore": "{count}+ 位专业人士",
+    "near": "{place}附近的{results}",
+    "nearYou": "您附近的{results}"
+  },
+  "sort": {
+    "label": "排序方式",
+    "relevance": "最佳匹配",
+    "rating": "评分最高",
+    "price": "价格最低",
+    "distance": "距离最近"
+  },
+  "categories": {
+    "label": "类别",
+    "all": "全部"
+  },
+  "empty": {
+    "title": "暂无匹配结果",
+    "query": "试试更宽泛的词、换一种写法，或移除部分筛选条件。",
+    "filters": "试试移除筛选条件或扩大搜索范围。",
+    "clear": "清除所有筛选"
+  },
+  "showMore": "显示更多",
+  "filters": {
+    "button": "筛选",
+    "buttonCount": "筛选 · {count}",
+    "title": "筛选",
+    "clearAll": "全部清除",
+    "show": "查看结果",
+    "availability": "可约时间与预约方式",
+    "rating": "评分",
+    "minRating": "最低评分",
+    "any": "不限",
+    "price": "起价不超过",
+    "maxPrice": "最高起价",
+    "distance": "距离",
+    "provider": "服务提供方",
+    "providerType": "提供方类型",
+    "individual": "独立专业人士",
+    "business": "商家与团队"
+  }
+}

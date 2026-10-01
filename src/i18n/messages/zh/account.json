@@ -1,0 +1,311 @@
+{
+  "loading": "加载中…",
+  "noEmail": "未登记邮箱",
+  "saveChanges": "保存更改",
+  "cancel": "取消",
+  "checkFields": "请检查标出的字段。",
+  "nav": {
+    "label": "账户设置",
+    "account": "账户"
+  },
+  "sections": {
+    "profile": {
+      "label": "个人资料",
+      "description": "姓名、照片、电话和时区"
+    },
+    "security": {
+      "label": "登录与安全",
+      "description": "密码、邮箱验证和设备"
+    },
+    "notifications": {
+      "label": "通知设置",
+      "description": "选择我们通过邮件或短信通知您的内容"
+    },
+    "addresses": {
+      "label": "已保存的地址",
+      "description": "供上门服务的专业人士使用"
+    },
+    "privacy": {
+      "label": "隐私与数据",
+      "description": "下载您的数据或删除账户"
+    }
+  },
+  "home": {
+    "memberSince": "{date} 加入",
+    "confirmEmail": "<b>请验证您的邮箱。</b>我们已向 {email} 发送链接，验证后商家才能就预约事宜与您联系。",
+    "activity": "我的动态",
+    "settings": "设置",
+    "more": "更多",
+    "signOut": "退出登录",
+    "rows": {
+      "bookings": {
+        "label": "预约",
+        "description": "即将到来和过往的预约"
+      },
+      "saved": {
+        "label": "收藏",
+        "description": "您收藏的专业人士"
+      },
+      "messages": {
+        "label": "消息",
+        "description": "与商家的对话"
+      },
+      "notifications": {
+        "label": "通知",
+        "description": "预约相关动态"
+      },
+      "business": {
+        "label": "切换到商家",
+        "description": "日程、服务和客户"
+      },
+      "offer": {
+        "label": "在 Kept 上提供服务",
+        "description": "接受预约，发展业务——免费开始"
+      },
+      "support": {
+        "label": "帮助与支持",
+        "description": "获取预约、付款或账户方面的帮助"
+      },
+      "legal": {
+        "label": "条款与隐私",
+        "description": "Kept 如何运作以及我们如何处理您的数据"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "验证邮件已发送",
+    "sentBody": "请查看 {email}，链接 3 天内有效。",
+    "sent": "邮件已发送",
+    "resend": "重新发送链接"
+  },
+  "profile": {
+    "description": "您向所预约的专业人士展示的信息。",
+    "saved": "个人资料已保存",
+    "details": "个人信息",
+    "name": "姓名",
+    "email": "邮箱",
+    "changeEmail": "如需更改登录邮箱，请<link>联系客服</link>，以便我们确认是您本人。",
+    "phone": "电话",
+    "phoneHintSms": "您预约的商家可以致电与您沟通预约事宜；开启后，我们还可以通过短信向您发送提醒。",
+    "phoneHint": "您预约的商家可以通过此号码就预约事宜与您联系。",
+    "photo": {
+      "title": "照片",
+      "description": "显示在您的姓名旁，向您预约的专业人士展示。",
+      "updated": "照片已更新",
+      "removed": "照片已移除",
+      "change": "更换照片",
+      "upload": "上传照片",
+      "remove": "移除",
+      "hint": "JPG、PNG 或 WebP 格式，最大 15 MB。我们会清除照片中的位置信息。"
+    },
+    "timezone": {
+      "label": "时区",
+      "hint": "您所在地的时区。预约时间始终以商家当地时间显示。",
+      "notSet": "未设置",
+      "detect": "自动检测",
+      "detectFailed": "无法检测您的时区，请从列表中选择。"
+    },
+    "language": {
+      "title": "语言",
+      "description": "用于 Kept 中的菜单、按钮和日期。商家名称、服务和评价按商家原文显示。"
+    }
+  },
+  "security": {
+    "description": "保护账户安全，一切由您掌控。",
+    "password": {
+      "title": "密码",
+      "setTitle": "设置密码",
+      "description": "更改密码后，您的其他所有设备都将退出登录。",
+      "setDescription": "您目前通过 Google 登录。添加密码后，也可以使用邮箱登录。",
+      "change": "更改密码",
+      "setButton": "设置密码",
+      "current": "当前密码",
+      "new": "新密码",
+      "newHint": "至少 8 个字符。避免使用常见词语和您的邮箱。",
+      "confirm": "确认新密码",
+      "tooShort": "请至少使用 8 个字符。",
+      "mismatch": "两次输入的密码不一致。",
+      "changed": "密码已更改",
+      "set": "密码已设置",
+      "othersSignedOut": "其他设备均已退出登录。"
+    },
+    "email": {
+      "title": "邮箱",
+      "description": "我们使用您的邮箱进行登录并发送预约确认。",
+      "confirmed": "已验证",
+      "notConfirmed": "尚未验证",
+      "none": "此账户没有绑定邮箱。"
+    },
+    "devices": {
+      "title": "设备",
+      "description": "如果您曾在共用或丢失的设备上登录，可以在这里将其退出。当前设备将保持登录。",
+      "status": "{count, plural, =0 {仅当前设备已登录} other {另有 # 台设备已登录}}",
+      "signOutOthers": "退出其他设备",
+      "confirmTitle": "要退出其他设备吗？",
+      "confirmBody": "在其他手机、平板或电脑上使用您账户的人需要重新登录。",
+      "confirm": "全部退出",
+      "signedOutToast": "{count, plural, other {已退出另外 # 台设备}}"
+    }
+  },
+  "notifications": {
+    "description": "选择我们与您保持联系的方式。我们只发送必要的通知。",
+    "saved": "已保存",
+    "emailAndText": "邮件和短信提醒",
+    "emailOnly": "邮件提醒",
+    "inboxNote": "无论您在此如何选择，所有通知都会显示在 Kept 的通知收件箱中。",
+    "addPhone": "请在<link>个人资料</link>中添加电话号码以接收短信。",
+    "email": "邮件",
+    "sms": "短信",
+    "forTopic": "关于{topic}",
+    "alwaysOn": {
+      "bookings": "邮件通知始终开启，以便预约有变动时我们能联系到您。",
+      "business": "邮件通知始终开启，确保您不会错过任何新预约或请求。"
+    },
+    "topics": {
+      "bookings": {
+        "label": "预约动态",
+        "description": "确认、变更和取消。"
+      },
+      "reminders": {
+        "label": "提醒",
+        "description": "在预约开始前提醒您。"
+      },
+      "messages": {
+        "label": "消息",
+        "description": "商家或客户给您发消息时。"
+      },
+      "waitlist": {
+        "label": "候补空位",
+        "description": "您想要的时间有空位时。"
+      },
+      "reviews": {
+        "label": "评价邀请",
+        "description": "预约完成后的简短邀请。"
+      },
+      "business": {
+        "label": "商家动态",
+        "description": "您的商家收到的新预约、请求和评价。"
+      },
+      "marketing": {
+        "label": "资讯与优惠",
+        "description": "来自您预约过的商家的不定期动态。"
+      }
+    }
+  },
+  "addresses": {
+    "description": "供上门服务的专业人士使用——理发师、汽车美容师、私人教练等。",
+    "defaultLabel": "家",
+    "saved": "地址已保存",
+    "removed": "地址已删除",
+    "emptyTitle": "暂无已保存的地址",
+    "emptyBody": "将您预约上门服务的地点（如家或办公室）集中保存，随时取用。",
+    "add": "添加地址",
+    "removeLabel": "删除{label}",
+    "count": "已保存 {count}/{max} 个",
+    "limit": "已达到上限。请删除一个地址后再添加。",
+    "dialogBody": "仅您可见。只有当您在该地址预约服务时，专业人士才能看到它。",
+    "save": "保存地址",
+    "fields": {
+      "name": "名称",
+      "nameHint": "例如：家、公司或健身房。",
+      "line1": "街道地址",
+      "line2": "楼栋、单元或楼层",
+      "city": "城市",
+      "region": "省 / 地区",
+      "postalCode": "邮政编码",
+      "country": "国家/地区"
+    },
+    "removeTitle": "删除“{label}”？",
+    "removeBody": "您已在此地址进行的预约不受影响。",
+    "remove": "删除地址"
+  },
+  "privacy": {
+    "description": "您的数据归您所有。请阅读我们的<link>隐私政策</link>，了解我们如何使用这些数据。",
+    "export": {
+      "title": "下载您的数据",
+      "description": "以 JSON 文件形式获取您的个人资料、已保存的地址、预约、评价、消息、收藏的专业人士和客服请求的副本。",
+      "button": "下载我的数据",
+      "hint": "即时生成。文件包含个人信息，请妥善保管。"
+    },
+    "delete": {
+      "title": "删除账户",
+      "intro": "此操作将永久关闭您的 Kept 账户。删除后将发生以下情况：",
+      "erased": "您的姓名、邮箱、电话、照片、已保存的地址和收藏的专业人士将被清除，并且您将在所有设备上退出登录。",
+      "upcoming": "{count, plural, other {您即将到来的 # 个预约将按照各商家的取消政策取消，包括政策允许的退款。}}",
+      "upcomingNone": "所有即将到来的预约都将按照各商家的取消政策取消。",
+      "records": "商家和税务规定所需的记录（过往预约、付款和评价）将被保留，但显示为来自“已删除用户”。",
+      "permanent": "此操作无法撤销。之后您可以使用同一邮箱重新注册，从头开始。",
+      "blocked": "您是{businesses}的所有者。删除账户前，请先在<link>商家设置</link>中关闭该商家或将其转让给他人，以免其客户无人应答。",
+      "copyFirst": "想先保留一份副本？请在上方下载您的数据。",
+      "open": "删除账户…",
+      "confirmTitle": "要删除您的账户吗？",
+      "confirmBody": "此操作无法撤销。",
+      "keep": "保留我的账户",
+      "confirm": "删除我的账户",
+      "willCancel": "{count, plural, other {将取消 # 个即将到来的预约。}}",
+      "password": "您的密码",
+      "typeToConfirm": "输入 <word>{word}</word> 以确认",
+      "deletedToast": "您的账户已删除",
+      "deletedBody": "感谢您使用 Kept。"
+    }
+  },
+  "saved": {
+    "title": "收藏",
+    "description": "{count, plural, other {您收藏了 # 位专业人士。}}以下空档实时来自他们的日程。",
+    "emptyTitle": "暂无收藏",
+    "emptyBody": "点按任意专业人士的爱心即可收藏到这里——方便再次预约常去的人，或在决定前比较几位。",
+    "explore": "探索专业人士",
+    "loading": "正在加载收藏的专业人士…"
+  },
+  "notificationList": {
+    "title": "通知",
+    "today": "今天",
+    "earlier": "更早",
+    "emptyTitle": "暂无通知",
+    "emptyBody": "预约确认、提醒、回复和候补空位都会显示在这里。",
+    "unread": "{count} 条未读",
+    "caughtUp": "您已查看全部",
+    "allCaughtUpToast": "已全部查看",
+    "markAll": "全部标为已读",
+    "unreadItem": "未读",
+    "loadOlder": "加载更早的通知",
+    "end": "已经到底了。"
+  },
+  "invite": {
+    "eyebrow": "团队邀请",
+    "invalidTitle": "此邀请无法使用",
+    "invalidBody": "邀请可能已过期、已取消或已被接受。请让邀请人重新发送链接。",
+    "goHome": "前往 Kept",
+    "join": "加入{business}",
+    "invitedAs": "您受邀成为<b>{role}</b>。",
+    "signInWith": "请使用 <b>{email}</b> 登录或创建账户以接受邀请。",
+    "createAccount": "创建账户",
+    "signIn": "登录",
+    "wrongAccount": "您当前登录的账户是 <b>{email}</b>，但此邀请发送给了 {invited}。",
+    "wrongAccountHint": "请退出后使用该邮箱登录，或请对方向 {email} 发送邀请。",
+    "acceptingAs": "将以 <b>{email}</b> 身份接受。",
+    "accept": "接受并打开我的日程",
+    "roles": {
+      "owner": {
+        "label": "所有者",
+        "description": "完全控制，包括账单和团队。"
+      },
+      "manager": {
+        "label": "经理",
+        "description": "负责日常运营，不能更改团队或商家设置。"
+      },
+      "receptionist": {
+        "label": "前台",
+        "description": "为所有人预约和管理预约。"
+      },
+      "provider": {
+        "label": "专业人士",
+        "description": "查看和管理自己的预约与日程。"
+      },
+      "custom": {
+        "label": "自定义",
+        "description": "精确选择此人可以执行的操作。"
+      }
+    }
+  }
+}

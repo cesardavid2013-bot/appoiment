@@ -1,0 +1,90 @@
+{
+  "language": "语言",
+  "meta": {
+    "title": "Kept — 预约值得信赖的本地专业人士",
+    "description": "发现并预约理发师、发型师、教练、摄影师、家教等各类本地专业人士——也能轻松管理您自己的预约。"
+  },
+  "skipToContent": "跳至内容",
+  "logoHome": "Kept 首页",
+  "header": {
+    "mainNav": "主导航",
+    "search": "搜索服务或专业人士",
+    "ask": "提问",
+    "askKept": "问问 Kept",
+    "explore": "探索",
+    "myBusiness": "我的商家",
+    "forPros": "专业人士入口",
+    "bookings": "预约",
+    "messages": "消息",
+    "notifications": "通知",
+    "unread": "未读",
+    "accountMenu": "账户菜单",
+    "logIn": "登录",
+    "signUp": "注册"
+  },
+  "accountMenu": {
+    "bookings": "预约",
+    "saved": "收藏",
+    "messages": "消息",
+    "settings": "账户设置",
+    "help": "帮助与支持",
+    "switchToBusiness": "切换到商家",
+    "offerServices": "提供您的服务",
+    "admin": "管理控制台",
+    "signOut": "退出登录"
+  },
+  "tabs": {
+    "label": "主要",
+    "home": "首页",
+    "explore": "探索",
+    "bookings": "预约",
+    "inbox": "收件箱",
+    "account": "账户"
+  },
+  "footer": {
+    "tagline": "预约值得信赖的专业人士。轻松管理您的预约。",
+    "discover": "发现",
+    "explore": "探索",
+    "hair": "美发与理发",
+    "wellness": "身心健康",
+    "fitness": "健身",
+    "forPros": "专业人士入口",
+    "howItWorks": "使用方式",
+    "listServices": "发布您的服务",
+    "dashboard": "商家后台",
+    "help": "帮助",
+    "support": "客服支持",
+    "terms": "条款",
+    "privacy": "隐私",
+    "copyright": "© {year} Kept。保留所有权利。"
+  },
+  "price": {
+    "free": "免费",
+    "quote": "价格面议",
+    "from": "{price} 起"
+  },
+  "rating": {
+    "new": "新入驻",
+    "summary": "评分 {avg}，来自 {count, plural, other {# 条评价}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "待付款",
+    "requested": "请求已发送",
+    "confirmed": "已确认",
+    "checked_in": "已签到",
+    "in_progress": "进行中",
+    "completed": "已完成",
+    "cancelled": "已取消",
+    "declined": "已拒绝",
+    "no_show": "爽约",
+    "expired": "已过期"
+  },
+  "policy": {
+    "freeUntil": "最晚可在预约开始前 {hours} 小时免费取消。逾期取消将收取总额的 {percent}%。",
+    "cancelAhead": "请至少在预约开始前 {hours} 小时取消。",
+    "freeAnyTime": "预约开始前随时可免费取消。",
+    "depositRefundable": "按时取消可退还定金。",
+    "depositNonRefundable": "定金不予退还。",
+    "reschedule": "最晚可在预约开始前 {hours} 小时在线改约。"
+  }
+}

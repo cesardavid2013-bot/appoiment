@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "待付款",
+    "requested": "请求已发送",
+    "confirmed": "已确认",
+    "checked_in": "已签到",
+    "in_progress": "进行中",
+    "completed": "已完成",
+    "cancelled": "已取消",
+    "declined": "已拒绝",
+    "no_show": "爽约",
+    "expired": "已过期"
+  },
+  "list": {
+    "title": "预约",
+    "filters": "预约筛选",
+    "tabs": {
+      "upcoming": "即将到来",
+      "past": "过往",
+      "cancelled": "已取消"
+    },
+    "howDidItGo": "体验如何？",
+    "review": "评价",
+    "empty": {
+      "upcoming": "暂无即将到来的预约",
+      "past": "暂无过往预约",
+      "cancelled": "没有已取消的预约",
+      "upcomingBody": "预约后，您的预约会显示在这里，并附有路线、提醒和便捷的改约功能。",
+      "findPro": "寻找专业人士"
+    }
+  },
+  "detail": {
+    "metaTitle": "预约",
+    "allBookings": "全部预约",
+    "hero": {
+      "confirmedTitle": "预约成功",
+      "confirmedBody": "我们已发送确认信息，并会在预约前提醒您。",
+      "requestedTitle": "请求已发送",
+      "requestedBody": "{business}将审核您的请求，一旦对方回复，我们会立即通知您。在此期间，您的时间已为您保留。",
+      "paymentTitle": "正在完成付款",
+      "paymentBody": "如果您刚刚完成付款，几秒钟后此处会自动更新。付款完成前，您的时间会一直为您保留。"
+    },
+    "calendarDetails": "预约编号 {reference}",
+    "ref": "编号",
+    "when": "时间",
+    "with": "服务人员",
+    "where": "地点",
+    "atYourAddress": "在您的地址",
+    "online": "线上",
+    "virtualLink": "商家会在服务开始前发送链接。",
+    "yourReview": "您的评价",
+    "payment": {
+      "title": "付款",
+      "serviceFee": "服务费",
+      "tax": "税费",
+      "estimatedTotal": "预计总额",
+      "total": "总额",
+      "paid": "已付",
+      "refunded": "已退款",
+      "balance": "余额",
+      "dueAtAppointment": "到店支付",
+      "tip": "小费"
+    },
+    "policy": {
+      "title": "取消政策",
+      "freeUntil": "最晚可在预约开始前 {hours, plural, other {# 小时}}免费取消。",
+      "freeAnytime": "预约开始前随时可免费取消。",
+      "lateFee": "逾期取消：收取总额的 {percent}%。",
+      "depositNonRefundable": "定金不予退还。",
+      "cannotCancel": "此预约已无法取消。",
+      "alreadyStarted": "此预约已经开始。",
+      "cannotReschedule": "此预约无法改约。",
+      "maxReschedules": "此预约的改约次数已达上限，请联系商家。",
+      "rescheduleWindow": "须在预约开始前至少 {hours, plural, other {# 小时}}进行更改，请联系商家。"
+    },
+    "refund": {
+      "noCharge": "不收取费用。",
+      "full": "您将获得全额退款。",
+      "none": "根据该商家的政策，您的付款不予退还。",
+      "partial": "根据该商家的政策，您将获得部分退款。"
+    },
+    "note": "备注：{reason}",
+    "problem": "此预约有问题？<link>联系客服</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} {time}",
+    "cancelledToast": "预约已取消",
+    "refundOnWay": "{amount} 的退款正在处理中。",
+    "rescheduledToast": "已改约",
+    "payToConfirm": "支付 {amount} 以确认",
+    "addToCalendar": "添加到日历",
+    "directions": "路线",
+    "message": "发消息",
+    "bookAgain": "再次预约",
+    "googleCalendar": "Google 日历",
+    "leaveReview": "发表评价",
+    "reschedule": "改约",
+    "cancelAppointment": "取消预约",
+    "cancelTitle": "要取消此预约吗？",
+    "insideWindow": "您已处于该商家的取消期限内。",
+    "refundAmount": "退款：{amount}。",
+    "keptAmount": "商家保留：{amount}。",
+    "reason": "原因",
+    "reasonHint": "将告知商家。",
+    "chooseNewTime": "选择新时间",
+    "currently": "当前：{when}",
+    "keepCurrentTime": "保持当前时间",
+    "moveTo": "改至 {time}",
+    "chooseTime": "选择时间"
+  },
+  "review": {
+    "ratings": {
+      "1": "差",
+      "2": "一般",
+      "3": "好",
+      "4": "很好",
+      "5": "极好"
+    },
+    "thanks": "感谢您的评价",
+    "title": "{business}怎么样？",
+    "subtitle": "您的评价将公开显示，并标注为已认证的预约。",
+    "rating": "评分",
+    "stars": "{n, plural, other {# 星}}",
+    "bodyLabel": "和大家分享您的体验",
+    "bodyPlaceholder": "有什么让您印象深刻？您会推荐吗？",
+    "post": "发布评价"
+  },
+  "slotPicker": {
+    "previousWeek": "上一周",
+    "nextWeek": "下一周",
+    "noOpenings": "当天没有空档。",
+    "selected": "已选择 {time}"
+  }
+}

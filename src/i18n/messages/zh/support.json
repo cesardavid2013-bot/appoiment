@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "预约",
+      "hint": "预约的变更、取消或问题。"
+    },
+    "payment": {
+      "label": "付款",
+      "hint": "扣款、定金、退款或小费。"
+    },
+    "account": {
+      "label": "账户",
+      "hint": "登录、个人资料或您的数据。"
+    },
+    "report": {
+      "label": "举报商家",
+      "hint": "安全隐患、误导性信息或不当行为。"
+    },
+    "other": {
+      "label": "其他",
+      "hint": "我们能帮上忙的其他任何事。"
+    }
+  },
+  "status": {
+    "open": "等待客服处理",
+    "awaiting_customer": "已回复",
+    "resolved": "已解决",
+    "closed": "已关闭"
+  },
+  "home": {
+    "title": "帮助与支持",
+    "description": "获取预约、付款或账户方面的帮助。",
+    "newRequest": "新建请求",
+    "yourRequests": "您的请求",
+    "emptyTitle": "暂无请求",
+    "emptyBody": "如果预约、付款或账户出现问题，请告诉我们，我们会帮您解决。",
+    "contact": "联系客服",
+    "ticketLine": "{category} · 更新于 {date} · {count, plural, other {# 条消息}}",
+    "quickAnswers": "快速解答",
+    "stillStuck": "仍未解决？<link>联系客服</link>。"
+  },
+  "faq": {
+    "reschedule": {
+      "q": "如何取消预约或改约？",
+      "a": "打开<link>预约</link>，选择该预约并点按“改约”或“取消”。每个商家都有自己的取消期限——在您确认前，会清楚显示适用的规则，包括任何费用或退款。"
+    },
+    "refund": {
+      "q": "我什么时候能收到退款？",
+      "a": "取消一经确认，退款即退回您付款时使用的卡。视银行而定，通常需要 5–10 个工作日到账。定金是否可退取决于商家政策，预约时会显示。"
+    },
+    "contactPro": {
+      "q": "如何联系专业人士？",
+      "a": "在对方主页或您的预约中使用“发消息”。您的对话都在<link>消息</link>中。关于服务本身的问题——路线、准备事项、需要带什么——商家能最快回答。"
+    },
+    "report": {
+      "q": "和商家之间出了问题，我该怎么办？",
+      "a": "在下方新建请求并选择“举报商家”。如有相关预约，请一并关联。我们会阅读每一份举报，可以介入退款事宜，并在必要时将商家从 Kept 下架。"
+    },
+    "account": {
+      "q": "如何更改邮箱或删除账户？",
+      "a": "更改邮箱需要通过客服办理，以便我们确认是您本人。您可以在<link>隐私与数据</link>中自行下载数据或删除账户。"
+    }
+  },
+  "ticket": {
+    "metaTitle": "客服请求",
+    "allRequests": "全部请求",
+    "opened": "{category} · 创建于<date></date>",
+    "appointmentLine": "{date} {time} · 编号 {reference}",
+    "conversation": "对话",
+    "keptSupport": "Kept 客服",
+    "openImage": "打开附件图片",
+    "attachedImage": "附件图片",
+    "closed": "此请求已关闭。如仍需帮助，请<link>新建请求</link>。",
+    "willReply": "我们会在这里回复，并在回复时通知您。",
+    "sorted": "问题解决了吗？告诉我们吧。"
+  },
+  "new": {
+    "title": "联系客服",
+    "intro": "告诉我们发生了什么，Kept 团队的真人客服会在这里回复您。如果是关于服务本身的问题，直接给商家发消息通常最快。",
+    "notFound": "我们在您的账户中找不到该预约，因此未将其关联。您仍可在下方选择一个预约。"
+  },
+  "form": {
+    "topic": "您需要哪方面的帮助？",
+    "chooseTopic": "选择主题",
+    "addSubject": "请添加简短的主题",
+    "moreDetail": "请再多说一点——哪怕一句话，也能帮助我们更好地帮您",
+    "sent": "请求已发送",
+    "checkFields": "请检查标出的字段。",
+    "related": "相关预约",
+    "refHint": "编号 {reference} · {business}",
+    "linkHint": "关联预约后，我们可以立即着手核查。",
+    "none": "无",
+    "appointmentOption": "{date} {time} — {service} · {business}",
+    "subject": "主题",
+    "subjectPlaceholder": "例如：我的定金被扣了两次",
+    "details": "详细信息",
+    "detailsHint": "发生了什么、什么时候，以及您希望我们怎么处理。请勿填写卡号或密码。",
+    "images": "图片",
+    "optional": "选填",
+    "cancel": "取消",
+    "uploadingImages": "正在上传图片…",
+    "send": "发送请求"
+  },
+  "reply": {
+    "writeFirst": "请先填写回复。",
+    "sent": "回复已发送",
+    "label": "回复",
+    "reopens": "回复后此请求将重新开启。",
+    "placeholder": "补充更多细节或回答我们的问题…",
+    "send": "发送回复"
+  },
+  "resolve": {
+    "button": "标记为已解决",
+    "done": "已标记为已解决",
+    "doneBody": "很高兴问题已解决。如有其他情况，您仍可回复。",
+    "confirmTitle": "要将此请求标记为已解决吗？",
+    "confirmBody": "告诉我们问题已解决。如有其他情况，在这里回复，我们会继续跟进。"
+  },
+  "attach": {
+    "tooMany": "最多可添加 {max} 张图片。",
+    "alt": "客服附件",
+    "label": "附件",
+    "uploadingName": "正在上传 {name}",
+    "remove": "移除 {name}",
+    "add": "添加图片",
+    "uploading": "{count, plural, other {正在上传 # 张图片…}}",
+    "hint": "截图或照片会很有帮助。最多 {max} 张，每张不超过 15 MB。"
+  }
+}
