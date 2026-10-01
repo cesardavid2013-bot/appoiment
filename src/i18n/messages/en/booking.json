@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Book with {name}",
+    "fallbackTitle": "Book"
+  },
+  "steps": {
+    "service": "Choose a service",
+    "options": "Customize",
+    "who": "Who & where",
+    "time": "Pick a time",
+    "details": "A few details",
+    "review": "Review & confirm"
+  },
+  "header": {
+    "backTo": "Back to {name}",
+    "previousStep": "Previous step",
+    "stepOf": "Step {current} of {total}",
+    "exit": "Exit booking"
+  },
+  "service": {
+    "optionsAvailable": "Options available",
+    "group": "Group · up to {count}"
+  },
+  "options": {
+    "required": "Required",
+    "upTo": "Choose up to {count}",
+    "optionalAny": "Optional · choose any",
+    "optional": "Optional",
+    "included": "Included",
+    "errorRequired": "Choose an option for “{name}”.",
+    "errorOnlyOne": "Choose only one option for “{name}”.",
+    "errorUpTo": "Choose up to {count} for “{name}”.",
+    "errorUnavailable": "One of the selected options is no longer available."
+  },
+  "who": {
+    "where": "Where",
+    "with": "With",
+    "comesToYou": "Comes to you · within {km} km of {city}",
+    "online": "Online session",
+    "anyPro": "Any available professional",
+    "anyProHint": "Most openings — we'll match you with whoever is free."
+  },
+  "details": {
+    "addressLabel": "Where should we come?",
+    "addressHint": "Within {km} km of {city}. Shared only with the business.",
+    "addressPlaceholder": "Street address, apartment, city",
+    "consent": "I have read and agree to the above",
+    "age": "I confirm I am at least {age} years old",
+    "noteLabel": "Anything else they should know?",
+    "notePlaceholder": "Allergies, preferences, parking notes…"
+  },
+  "review": {
+    "changeTime": "Change time",
+    "with": "With",
+    "where": "Where",
+    "yourAddress": "Your address",
+    "online": "Online",
+    "noteLabel": "Anything they should know?",
+    "notePlaceholder": "Preferences, questions, accessibility needs…",
+    "promoApplied": "{code} applied",
+    "promoRemove": "Remove",
+    "promoPlaceholder": "Promo code",
+    "promoApply": "Apply",
+    "beforeYouBook": "Before you book",
+    "bookingAs": "Booking as {name}"
+  },
+  "confirm": {
+    "request": "Send booking request",
+    "requestShort": "Send request",
+    "pay": "Confirm and pay {amount}",
+    "payShort": "Pay {amount}",
+    "confirm": "Confirm booking",
+    "confirmShort": "Confirm"
+  },
+  "summary": {
+    "label": "Booking summary",
+    "instant": "Instant confirmation",
+    "request": "Confirmed by the business",
+    "total": "Total",
+    "estimatedTotal": "Estimated total",
+    "estimated": "Estimated",
+    "comesToYou": "Comes to you",
+    "online": "Online",
+    "empty": "Choose a service to see times and prices.",
+    "continue": "Continue",
+    "signInToBook": "Sign in to book"
+  },
+  "time": {
+    "preselectMissed": "The time you picked isn’t available with these choices anymore. Here are the closest openings.",
+    "previousWeeks": "Previous two weeks",
+    "nextWeeks": "Next two weeks",
+    "chooseDate": "Choose a date",
+    "today": "Today",
+    "timesAvailable": "{count, plural, one {# time available} other {# times available}}",
+    "noAvailability": "No availability",
+    "noOpeningsOn": "No openings on {date}",
+    "noOpeningsThisDay": "No openings this day",
+    "nextOpening": "Next opening: {date}.",
+    "tryLater": "Try the next two weeks, or join the waitlist and we'll tell you if something opens.",
+    "joinWaitlist": "Join the waitlist for this day",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "morningTimes": "Morning times",
+    "afternoonTimes": "Afternoon times",
+    "eveningTimes": "Evening times",
+    "spotsLeft": "{count, plural, one {# left} other {# left}}",
+    "timesIn": "Times in {abbr} ({zone}).",
+    "timesInLocal": "Times in {abbr} ({zone}) — that's {time} where you are."
+  },
+  "waitlist": {
+    "title": "Join the waitlist",
+    "description": "If a time opens on {date}, we'll notify you immediately. Openings go to whoever books first.",
+    "cancel": "Cancel",
+    "notify": "Notify me",
+    "windowLabel": "Times that work for you",
+    "any": "Any time that day",
+    "morning": "Morning (before noon)",
+    "afternoon": "Afternoon (noon – 5 PM)",
+    "evening": "Evening (after 5 PM)",
+    "joined": "You're on the waitlist",
+    "joinedBody": "We'll notify you right away if a time opens up."
+  },
+  "price": {
+    "label": "Price breakdown",
+    "total": "Total",
+    "estimatedTotal": "Estimated total",
+    "payNow": "Pay now",
+    "depositNow": "Deposit due now",
+    "remaining": "Remaining at appointment",
+    "nothingNow": "Nothing to pay now — pay at your appointment.",
+    "estimateNote": "Final price is confirmed by the business and may vary with the work needed.",
+    "tax": "Tax",
+    "serviceFee": "Service fee"
+  },
+  "checkout": {
+    "title": "Payment",
+    "description": "Complete payment to confirm your booking.",
+    "pay": "Pay {amount}",
+    "secured": "Secured by Stripe. Your time is held while you pay.",
+    "declined": "Your card was declined.",
+    "failed": "We couldn't complete the payment. Your card was not charged — please try again."
+  },
+  "intake": {
+    "optional": "(optional)",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

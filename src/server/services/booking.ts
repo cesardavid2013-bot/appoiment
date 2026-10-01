@@ -163,6 +163,8 @@ export async function getQuote(viewer: Viewer | null, input: z.infer<typeof quot
     promoError,
     requiresApproval: needsApproval(svc),
     policies: describeCancellationPolicy(policyOf(svc)),
+    /** Raw rules behind `policies`, so clients can word them in the viewer's language. */
+    policy: policyOf(svc),
     latePolicy: svc.business.latePolicy,
     bookingInstructions: svc.service.bookingInstructions ?? svc.business.bookingInstructions,
   };
