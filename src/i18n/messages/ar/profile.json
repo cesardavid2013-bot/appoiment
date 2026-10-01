@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "غير موجود",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} في {city}",
+    "bookOnline": "احجز مع {name} عبر الإنترنت."
+  },
+  "preview": {
+    "notice": "معاينة — لا يرى هذه الصفحة أحد غيرك حتى تنشرها.",
+    "goLive": "النشر"
+  },
+  "verified": "موثّق من Kept",
+  "verifiedLabel": "نشاط تجاري موثّق",
+  "reviewsCount": "{count, plural, zero {لا تقييمات موثّقة} one {تقييم موثّق واحد} two {تقييمان موثّقان} few {# تقييمات موثّقة} many {# تقييمًا موثّقًا} other {# تقييم موثّق}}",
+  "newOnKept": "جديد على Kept",
+  "travels": "{city} · يتنقل حتى {km} كم",
+  "status": {
+    "openUntil": "مفتوح · حتى {time}",
+    "opensAt": "يفتح الساعة {time}",
+    "opensTomorrow": "يفتح غدًا الساعة {time}",
+    "opensDay": "يفتح {day} الساعة {time}",
+    "notSet": "ساعات العمل غير محددة",
+    "closed": "مغلق"
+  },
+  "nav": {
+    "label": "أقسام الملف الشخصي",
+    "services": "الخدمات",
+    "work": "الأعمال",
+    "featured": "مميّز",
+    "reviews": "التقييمات",
+    "about": "نبذة"
+  },
+  "services": {
+    "eyebrow": "القائمة",
+    "title": "الخدمات",
+    "empty": "لم ينشر هذا النشاط التجاري خدمات بعد.",
+    "sale": "تخفيض",
+    "group": "جماعي · حتى {count}",
+    "request": "طلب حجز",
+    "options": "خيارات متاحة",
+    "deposit": "عربون عند الحجز",
+    "book": "احجز",
+    "bookService": "احجز {name}"
+  },
+  "work": {
+    "eyebrow": "معرض الأعمال",
+    "title": "أحدث الأعمال"
+  },
+  "featured": {
+    "eyebrow": "على وسائل التواصل",
+    "title": "مميّز",
+    "allProfiles": "كل الحسابات الاجتماعية",
+    "bookThis": "احجز هذا · {service}",
+    "newTab": "(يُفتح في علامة تبويب جديدة)",
+    "footnote": "تُحمَّل المشغّلات من كل منصة فقط عند الضغط على تشغيل.",
+    "play": "تشغيل {title}",
+    "loadsFrom": "يُحمَّل من {host}"
+  },
+  "team": {
+    "eyebrow": "الأشخاص",
+    "title": "الفريق"
+  },
+  "reviews": {
+    "eyebrow": "ما يقوله الناس",
+    "title": "التقييمات",
+    "empty": "لا تقييمات بعد. لا يمكن ترك التقييمات إلا للعملاء بعد زيارة مكتملة.",
+    "distribution": "توزيع التقييمات",
+    "onlyCustomers": "لا يمكن ترك تقييم إلا للعملاء الذين أكملوا حجزًا.",
+    "response": "رد من {name}",
+    "stars": "{value} من 5 نجوم"
+  },
+  "about": {
+    "eyebrow": "المكان",
+    "title": "نبذة",
+    "hours": "ساعات العمل",
+    "timesIn": "الأوقات معروضة بتوقيت {zone}.",
+    "policies": "السياسات",
+    "noShow": "قد يُحتسب على المواعيد الفائتة {percent}% من الإجمالي.",
+    "experience": "خبرة +{years} سنوات",
+    "amenities": "المرافق",
+    "online": "عبر الإنترنت",
+    "directions": "الاتجاهات",
+    "comesToYou": "يأتي إليك",
+    "mobileBody": "مقره في {city}. يتنقل حتى {km} كم — ستضيف عنوانك عند الحجز.",
+    "onlineSessions": "جلسات عبر الإنترنت",
+    "onlineBody": "انضم من أي مكان. يُشارَك الرابط بعد الحجز."
+  },
+  "panel": {
+    "label": "احجز",
+    "eyebrow": "الحجز",
+    "freeOptions": "خيارات مجانية متاحة",
+    "from": "خدمات ابتداءً من {price}",
+    "onConsultation": "الأسعار بعد الاستشارة",
+    "nextToday": "أقرب وقت متاح اليوم",
+    "nextTomorrow": "أقرب وقت متاح غدًا",
+    "nextOn": "أقرب وقت متاح {day}",
+    "none": "لا أوقات متاحة في الأسبوعين القادمين",
+    "bookNow": "احجز الآن",
+    "requestToBook": "طلب حجز",
+    "instant": "تأكيد فوري",
+    "confirms": "يؤكد النشاط التجاري طلبك",
+    "notTaking": "هذا النشاط التجاري لا يستقبل الحجوزات بعد.",
+    "mobileFrom": "ابتداءً من {price}",
+    "mobileNext": "التالي: {day} {time}",
+    "seeAvailability": "عرض التوفّر",
+    "request": "طلب"
+  },
+  "actions": {
+    "share": "مشاركة",
+    "shareTitle": "مشاركة {name}",
+    "shareBody": "أرسل الرابط، أو امسح الرمز لفتح صفحة الحجز.",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "downloadQr": "تنزيل رمز QR",
+    "ask": "اطرح سؤالًا",
+    "messageTitle": "راسل {name}",
+    "messageBody": "اسأل عن الخدمات أو التوفّر أو أي شيء آخر قبل الحجز. يبقى رقم هاتفك وبريدك الإلكتروني خاصين.",
+    "cancel": "إلغاء",
+    "send": "إرسال الرسالة",
+    "yourMessage": "رسالتك",
+    "placeholder": "مرحبًا! هل لديك وقت لقصة سكين فيد بعد ظهر السبت؟",
+    "sent": "تم إرسال الرسالة",
+    "sentBody": "سيرد {name} في صندوقك الوارد."
+  },
+  "portfolio": {
+    "compare": "قارن قبل وبعد",
+    "portfolio": "معرض الأعمال",
+    "close": "إغلاق",
+    "previous": "السابق",
+    "next": "التالي",
+    "before": "قبل",
+    "after": "بعد",
+    "beforeAfter": "قبل / بعد",
+    "video": "فيديو",
+    "openItem": "فتح العنصر {n}",
+    "browse": "استخدم مفاتيح الأسهم للتصفح",
+    "bookThis": "احجز هذا",
+    "bookThisService": "احجز هذا — {service}"
+  },
+  "kind": {
+    "video": "فيديو",
+    "short": "مقطع قصير",
+    "post": "منشور",
+    "reel": "ريل",
+    "track": "مقطع صوتي",
+    "album": "ألبوم",
+    "artist": "فنان",
+    "playlist": "قائمة تشغيل",
+    "episode": "حلقة",
+    "show": "بودكاست"
+  }
+}

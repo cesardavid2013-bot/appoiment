@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "عبر الإنترنت",
+    "comesToYou": "يأتي إليك",
+    "comesToYouIn": "يأتي إليك · {city}",
+    "lessThanOneKm": "<1 كم",
+    "promoted": "مروَّج",
+    "verified": "نشاط تجاري موثّق",
+    "instant": "تأكيد فوري",
+    "request": "طلب حجز",
+    "bookAt": "احجز {day} الساعة {time}",
+    "moreTimes": "أوقات أخرى",
+    "freeConsultation": "استشارة مجانية متاحة",
+    "priceOnRequest": "السعر عند الطلب",
+    "viewTimes": "عرض الأوقات"
+  },
+  "rail": {
+    "seeAll": "عرض الكل"
+  },
+  "favorite": {
+    "save": "حفظ",
+    "saved": "محفوظ",
+    "remove": "إزالة من المحفوظات",
+    "savedToast": "تم الحفظ",
+    "savedToastHint": "تجده في أي وقت في المحفوظات."
+  }
+}

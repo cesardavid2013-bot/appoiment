@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "بانتظار الدفع",
+    "requested": "تم إرسال الطلب",
+    "confirmed": "مؤكّد",
+    "checked_in": "تم تسجيل الوصول",
+    "in_progress": "قيد التنفيذ",
+    "completed": "مكتمل",
+    "cancelled": "ملغى",
+    "declined": "مرفوض",
+    "no_show": "لم يحضر",
+    "expired": "منتهي الصلاحية"
+  },
+  "list": {
+    "title": "الحجوزات",
+    "filters": "تصفية الحجوزات",
+    "tabs": {
+      "upcoming": "القادمة",
+      "past": "السابقة",
+      "cancelled": "الملغاة"
+    },
+    "howDidItGo": "كيف كانت التجربة؟",
+    "review": "تقييم",
+    "empty": {
+      "upcoming": "لا توجد مواعيد قادمة",
+      "past": "لا توجد مواعيد سابقة بعد",
+      "cancelled": "لا شيء ملغى",
+      "upcomingBody": "عندما تحجز، تظهر مواعيدك هنا — مع الاتجاهات والتذكيرات وإعادة الجدولة بسهولة.",
+      "findPro": "ابحث عن محترف"
+    },
+    "nextUp": "التالي · {when}",
+    "nextUpOn": "التالي · {day}",
+    "details": "التفاصيل",
+    "directions": "الاتجاهات"
+  },
+  "detail": {
+    "metaTitle": "الموعد",
+    "allBookings": "كل الحجوزات",
+    "hero": {
+      "confirmedTitle": "تم حجزك",
+      "confirmedBody": "أرسلنا تأكيدًا وسنذكّرك قبل موعدك.",
+      "requestedTitle": "تم إرسال الطلب",
+      "requestedBody": "سيراجع {business} طلبك. سنُعلمك فور الرد — ووقتك محجوز في هذه الأثناء.",
+      "paymentTitle": "جارٍ إتمام الدفع",
+      "paymentBody": "إذا كنت قد دفعت للتو، فسيتحدّث هذا تلقائيًا خلال ثوانٍ. وقتك محجوز حتى يكتمل الدفع."
+    },
+    "calendarDetails": "المرجع {reference}",
+    "ref": "المرجع",
+    "when": "متى",
+    "with": "مع",
+    "where": "أين",
+    "atYourAddress": "في عنوانك",
+    "online": "عبر الإنترنت",
+    "virtualLink": "سيرسل النشاط التجاري الرابط قبل جلستك.",
+    "yourReview": "تقييمك",
+    "payment": {
+      "title": "الدفع",
+      "serviceFee": "رسوم الخدمة",
+      "tax": "الضريبة",
+      "estimatedTotal": "الإجمالي التقديري",
+      "total": "الإجمالي",
+      "paid": "المدفوع",
+      "refunded": "المسترد",
+      "balance": "المتبقي",
+      "dueAtAppointment": "يُدفع عند الموعد",
+      "tip": "الإكرامية"
+    },
+    "policy": {
+      "title": "سياسة الإلغاء",
+      "freeUntil": "إلغاء مجاني حتى {hours, plural, zero {أقل من ساعة} one {ساعة واحدة} two {ساعتين} few {# ساعات} many {# ساعة} other {# ساعة}} قبل الموعد.",
+      "freeAnytime": "إلغاء مجاني في أي وقت قبل الموعد.",
+      "lateFee": "الإلغاء المتأخر: {percent}% من الإجمالي.",
+      "depositNonRefundable": "العربون غير قابل للاسترداد.",
+      "cannotCancel": "لم يعد بالإمكان إلغاء هذا الموعد.",
+      "alreadyStarted": "هذا الموعد قد بدأ بالفعل.",
+      "cannotReschedule": "لا يمكن إعادة جدولة هذا الموعد.",
+      "maxReschedules": "تمت إعادة جدولة هذا الموعد الحد الأقصى من المرات. يرجى التواصل مع النشاط التجاري.",
+      "rescheduleWindow": "يجب إجراء التغييرات قبل الموعد بـ {hours, plural, zero {أقل من ساعة} one {ساعة واحدة} two {ساعتين} few {# ساعات} many {# ساعة} other {# ساعة}} على الأقل. يرجى التواصل مع النشاط التجاري."
+    },
+    "refund": {
+      "noCharge": "بدون رسوم.",
+      "full": "ستحصل على استرداد كامل.",
+      "none": "دفعتك غير قابلة للاسترداد وفق سياسة هذا النشاط التجاري.",
+      "partial": "ستحصل على استرداد جزئي وفق سياسة هذا النشاط التجاري."
+    },
+    "note": "ملاحظة: {reason}",
+    "problem": "مشكلة في هذا الحجز؟ <link>تواصل مع الدعم</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} الساعة {time}",
+    "cancelledToast": "تم إلغاء الموعد",
+    "refundOnWay": "استرداد بقيمة {amount} في طريقه إليك.",
+    "rescheduledToast": "تمت إعادة الجدولة",
+    "payToConfirm": "ادفع {amount} للتأكيد",
+    "addToCalendar": "إضافة إلى التقويم",
+    "directions": "الاتجاهات",
+    "message": "مراسلة",
+    "bookAgain": "احجز مجددًا",
+    "googleCalendar": "تقويم Google",
+    "leaveReview": "اكتب تقييمًا",
+    "reschedule": "إعادة الجدولة",
+    "cancelAppointment": "إلغاء الموعد",
+    "cancelTitle": "إلغاء هذا الموعد؟",
+    "insideWindow": "أنت ضمن مهلة الإلغاء الخاصة بالنشاط التجاري.",
+    "refundAmount": "المسترد: {amount}.",
+    "keptAmount": "يحتفظ به النشاط التجاري: {amount}.",
+    "reason": "السبب",
+    "reasonHint": "يُشارَك مع النشاط التجاري.",
+    "chooseNewTime": "اختر وقتًا جديدًا",
+    "currently": "حاليًا {when}",
+    "keepCurrentTime": "الإبقاء على الوقت الحالي",
+    "moveTo": "النقل إلى {time}",
+    "chooseTime": "اختر وقتًا"
+  },
+  "review": {
+    "ratings": {
+      "1": "ضعيف",
+      "2": "مقبول",
+      "3": "جيد",
+      "4": "رائع",
+      "5": "ممتاز"
+    },
+    "thanks": "شكرًا على تقييمك",
+    "title": "كيف كانت تجربتك مع {business}؟",
+    "subtitle": "تقييمك علني ويُعلَّم كحجز موثّق.",
+    "rating": "التقييم",
+    "stars": "{n, plural, zero {بلا نجوم} one {نجمة واحدة} two {نجمتان} few {# نجوم} many {# نجمة} other {# نجمة}}",
+    "bodyLabel": "أخبر الآخرين عن زيارتك",
+    "bodyPlaceholder": "ما الذي لفت انتباهك؟ هل توصي بهم؟",
+    "post": "نشر التقييم"
+  },
+  "slotPicker": {
+    "previousWeek": "الأسبوع السابق",
+    "nextWeek": "الأسبوع التالي",
+    "noOpenings": "لا توجد أوقات متاحة في هذا اليوم.",
+    "selected": "تم اختيار {time}"
+  }
+}

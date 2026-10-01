@@ -1,0 +1,93 @@
+{
+  "youPrefix": "أنت:",
+  "unread": "غير مقروءة",
+  "apptLine": "{service} · {date} الساعة {time}",
+  "list": {
+    "title": "الرسائل",
+    "unread": "{count, plural, zero {لا محادثات غير مقروءة.} one {محادثة واحدة غير مقروءة.} two {محادثتان غير مقروءتين.} few {# محادثات غير مقروءة.} many {# محادثة غير مقروءة.} other {# محادثة غير مقروءة.}}",
+    "caughtUp": "لقد اطّلعت على كل شيء.",
+    "emptyTitle": "لا توجد رسائل بعد",
+    "emptyBody": "لديك أسئلة عن خدمة أو سعر أو وقت؟ افتح صفحة محترف واضغط «اطرح سؤالًا». تصل ردودهم هنا.",
+    "findPro": "ابحث عن محترف"
+  },
+  "thread": {
+    "metaTitle": "محادثة",
+    "placeholder": "راسل {business}"
+  },
+  "new": {
+    "metaTitle": "رسالة جديدة",
+    "ownTitle": "هذا نشاطك التجاري",
+    "ownBody": "رسائل العملاء إلى {business} تصل إلى صندوق وارد نشاطك التجاري.",
+    "ownButton": "فتح صندوق وارد النشاط التجاري",
+    "placeholderBooking": "اسأل عن هذا الحجز",
+    "placeholderQuestion": "اطرح سؤالًا",
+    "emptyBookingTitle": "راسل {business} بشأن حجزك",
+    "emptyQuestionTitle": "اسأل {business} قبل أن تحجز",
+    "emptyBookingBody": "تأخرت، أو تحتاج إلى تغيير شيء، أو لديك سؤال؟ تصل رسالتك مباشرة إلى فريقهم.",
+    "emptyQuestionBody": "الأسعار والتوقيت وما يجب إحضاره — سيرد {business} هنا وسنُعلمك. يبقى رقم هاتفك وبريدك الإلكتروني خاصين."
+  },
+  "shell": {
+    "allMessages": "كل الرسائل",
+    "viewProfile": "عرض الملف الشخصي",
+    "book": "احجز"
+  },
+  "pro": {
+    "backToInbox": "العودة إلى الوارد"
+  },
+  "view": {
+    "label": "الرسائل",
+    "you": "أنت",
+    "loadingEarlier": "جارٍ تحميل الرسائل السابقة",
+    "showEarlier": "عرض الرسائل السابقة",
+    "seen": "تمت المشاهدة",
+    "sending": "جارٍ الإرسال…",
+    "notSent": "لم تُرسل.",
+    "retry": "إعادة المحاولة",
+    "discard": "تجاهل",
+    "newMessages": "{count, plural, zero {لا رسائل جديدة} one {رسالة جديدة واحدة} two {رسالتان جديدتان} few {# رسائل جديدة} many {# رسالة جديدة} other {# رسالة جديدة}}",
+    "openPhoto": "فتح الصورة في علامة تبويب جديدة",
+    "photo": "صورة"
+  },
+  "composer": {
+    "about": "بخصوص {appointment}",
+    "unlink": "عدم ربط هذا الموعد",
+    "processingPhoto": "جارٍ معالجة الصورة",
+    "removePhoto": "إزالة الصورة",
+    "attachPhoto": "إرفاق صورة",
+    "label": "الرسالة",
+    "send": "إرسال الرسالة",
+    "hint": "اضغط Enter للإرسال، وShift مع Enter لسطر جديد."
+  },
+  "inbox": {
+    "title": "الوارد",
+    "conversations": "المحادثات",
+    "unread": "{count} غير مقروءة",
+    "allCaughtUp": "اطّلعت على كل شيء",
+    "searchLabel": "البحث في المحادثات باسم العميل",
+    "searchPlaceholder": "ابحث عن عملاء",
+    "clearSearch": "مسح البحث",
+    "show": "عرض",
+    "all": "الكل",
+    "unreadFilter": "غير المقروءة",
+    "noClientsNamed": "لا يوجد عملاء باسم «{term}»",
+    "nothingUnread": "لا شيء غير مقروء",
+    "noMessages": "لا توجد رسائل بعد",
+    "tryDifferent": "جرّب بحثًا مختلفًا أو اعرض كل المحادثات.",
+    "emptyBody": "عندما يطرح العملاء سؤالًا من صفحتك أو بشأن حجز، يظهر هنا."
+  },
+  "clientPanel": {
+    "client": "العميل",
+    "visits": "الزيارات",
+    "noShows": "الغياب",
+    "cancelled": "الملغاة",
+    "clientSince": "عميل منذ {date}",
+    "noVisits": "لا زيارات مكتملة بعد",
+    "lastIn": "آخر زيارة {date}",
+    "tags": "الوسوم",
+    "clientProfile": "ملف العميل",
+    "notBooked": "لم يحجز معك بعد — بدأت هذه المحادثة من صفحتك العامة.",
+    "upcoming": "القادمة",
+    "nothingBooked": "لا شيء محجوز.",
+    "recent": "الأخيرة"
+  }
+}
