@@ -7,14 +7,42 @@
     "label": "Configuración",
     "back": "Configuración",
     "sections": {
-      "profile": { "label": "Perfil del negocio", "description": "Nombre, fotos, descripción, contacto y redes sociales." },
-      "locations": { "label": "Ubicaciones", "description": "Dónde trabajas: un local, a domicilio o en línea." },
-      "booking": { "label": "Reglas de reserva", "description": "Reservas inmediatas o con aprobación, antelación, recordatorios." },
-      "policies": { "label": "Cancelaciones y cargos", "description": "Plazo de cancelación, cargos por inasistencia, impuestos." },
-      "payments": { "label": "Pagos", "description": "Cobra depósitos y pagos con tarjeta en línea." },
-      "forms": { "label": "Preguntas para clientes", "description": "Formularios que los clientes completan al reservar." },
-      "link": { "label": "Enlace de reservas", "description": "Tu dirección web, código QR y publicación." },
-      "verification": { "label": "Verificación", "description": "Obtén la insignia de verificado en tu perfil." }
+      "profile": {
+        "label": "Perfil del negocio",
+        "description": "Nombre, fotos, descripción, contacto y redes sociales."
+      },
+      "locations": {
+        "label": "Ubicaciones",
+        "description": "Dónde trabajas: un local, a domicilio o en línea."
+      },
+      "booking": {
+        "label": "Reglas de reserva",
+        "description": "Reservas inmediatas o con aprobación, antelación, recordatorios."
+      },
+      "policies": {
+        "label": "Cancelaciones y cargos",
+        "description": "Plazo de cancelación, cargos por inasistencia, impuestos."
+      },
+      "payments": {
+        "label": "Pagos",
+        "description": "Cobra depósitos y pagos con tarjeta en línea."
+      },
+      "forms": {
+        "label": "Preguntas para clientes",
+        "description": "Formularios que los clientes completan al reservar."
+      },
+      "link": {
+        "label": "Enlace de reservas",
+        "description": "Tu dirección web, código QR y publicación."
+      },
+      "verification": {
+        "label": "Verificación",
+        "description": "Obtén la insignia de verificado en tu perfil."
+      },
+      "appearance": {
+        "label": "Aspecto de tu página",
+        "description": "Encabezado, colores, orden de secciones y botones de enlace."
+      }
     }
   },
   "saveBar": {
@@ -336,9 +364,18 @@
       "onlineBody": "Ninguna dirección, solo que las sesiones son en línea."
     },
     "kinds": {
-      "physical": { "label": "En mi local", "description": "Local, estudio, consultorio" },
-      "mobile": { "label": "Voy a los clientes", "description": "Casas, oficinas, eventos" },
-      "virtual": { "label": "En línea", "description": "Sesiones por video o teléfono" }
+      "physical": {
+        "label": "En mi local",
+        "description": "Local, estudio, consultorio"
+      },
+      "mobile": {
+        "label": "Voy a los clientes",
+        "description": "Casas, oficinas, eventos"
+      },
+      "virtual": {
+        "label": "En línea",
+        "description": "Sesiones por video o teléfono"
+      }
     },
     "summary": {
       "mobile": "Se desplaza hasta {km} km desde {place}",
@@ -544,13 +581,41 @@
   },
   "builder": {
     "types": {
-      "short_text": { "label": "Respuesta corta", "hint": "Un nombre, un número, unas pocas palabras.", "placeholder": "p. ej., ¿Cuál es la marca y el modelo de tu auto?" },
-      "long_text": { "label": "Párrafo", "hint": "Espacio para unas cuantas frases.", "placeholder": "p. ej., Cuéntanos si tienes alguna lesión que debamos conocer." },
-      "yes_no": { "label": "Sí / No", "hint": "Dos botones: Sí y No.", "placeholder": "p. ej., ¿Es tu primera visita?" },
-      "single_choice": { "label": "Opción múltiple", "hint": "Los clientes eligen una opción.", "placeholder": "p. ej., ¿Qué tan largo tienes el cabello ahora?" },
-      "multi_choice": { "label": "Casillas", "hint": "Los clientes marcan todas las que correspondan.", "placeholder": "p. ej., ¿En qué zonas quieres que nos enfoquemos?" },
-      "date": { "label": "Fecha", "hint": "Un selector de fecha, p. ej., fecha de nacimiento o del evento.", "placeholder": "p. ej., ¿Cuándo es el evento?" },
-      "acknowledgement": { "label": "Confirmación", "hint": "Una declaración que los clientes marcan para confirmar que la leyeron.", "placeholder": "p. ej., Entiendo que se necesita una prueba de alergia 48 horas antes de un servicio de color." }
+      "short_text": {
+        "label": "Respuesta corta",
+        "hint": "Un nombre, un número, unas pocas palabras.",
+        "placeholder": "p. ej., ¿Cuál es la marca y el modelo de tu auto?"
+      },
+      "long_text": {
+        "label": "Párrafo",
+        "hint": "Espacio para unas cuantas frases.",
+        "placeholder": "p. ej., Cuéntanos si tienes alguna lesión que debamos conocer."
+      },
+      "yes_no": {
+        "label": "Sí / No",
+        "hint": "Dos botones: Sí y No.",
+        "placeholder": "p. ej., ¿Es tu primera visita?"
+      },
+      "single_choice": {
+        "label": "Opción múltiple",
+        "hint": "Los clientes eligen una opción.",
+        "placeholder": "p. ej., ¿Qué tan largo tienes el cabello ahora?"
+      },
+      "multi_choice": {
+        "label": "Casillas",
+        "hint": "Los clientes marcan todas las que correspondan.",
+        "placeholder": "p. ej., ¿En qué zonas quieres que nos enfoquemos?"
+      },
+      "date": {
+        "label": "Fecha",
+        "hint": "Un selector de fecha, p. ej., fecha de nacimiento o del evento.",
+        "placeholder": "p. ej., ¿Cuándo es el evento?"
+      },
+      "acknowledgement": {
+        "label": "Confirmación",
+        "hint": "Una declaración que los clientes marcan para confirmar que la leyeron.",
+        "placeholder": "p. ej., Entiendo que se necesita una prueba de alergia 48 horas antes de un servicio de color."
+      }
     },
     "errors": {
       "name": "Ponle un nombre al formulario",
@@ -656,6 +721,62 @@
         "invalidChoice": "Opción no válida.",
         "date": "Introduce una fecha válida."
       }
+    }
+  },
+  "appearance": {
+    "title": "Aspecto de tu página",
+    "description": "Haz que tu página pública se vea como tú: el encabezado, el color de acento, el orden de las secciones, un aviso y tus propios botones de enlace.",
+    "saved": "Tu página se ha actualizado",
+    "masthead": {
+      "title": "Encabezado",
+      "body": "Oscuro y cinematográfico, o claro y luminoso. Tu foto de portada se ve en ambos.",
+      "sample": "Tu página",
+      "noir": "Noir — encabezado oscuro",
+      "ivory": "Marfil — encabezado claro"
+    },
+    "accent": {
+      "title": "Color de acento",
+      "body": "Se usa en pequeños detalles: etiquetas, filetes, estrellas y destacados.",
+      "names": {
+        "brass": "Latón",
+        "emerald": "Esmeralda",
+        "rose": "Rosa",
+        "sapphire": "Zafiro",
+        "copper": "Cobre"
+      }
+    },
+    "sections": {
+      "title": "Secciones",
+      "body": "Elige qué ven los visitantes y en qué orden. Los servicios van primero y las reseñas siempre se muestran: son lo que da confianza a tu página.",
+      "alwaysFirst": "Siempre primero",
+      "always": "Siempre visible",
+      "hide": "Ocultar {name}",
+      "show": "Mostrar {name}",
+      "up": "Subir {name}",
+      "down": "Bajar {name}",
+      "names": {
+        "services": "Servicios",
+        "work": "Trabajos",
+        "featured": "Destacados",
+        "team": "Equipo",
+        "reviews": "Reseñas",
+        "about": "Información"
+      }
+    },
+    "notice": {
+      "title": "Aviso",
+      "body": "Un mensaje corto en lo alto de tu página: horario de festivos, lista de espera, un local nuevo.",
+      "label": "Mensaje",
+      "placeholder": "Cerrado del 24 al 26 de diciembre. Volvemos el 27."
+    },
+    "links": {
+      "title": "Botones de enlace",
+      "body": "Tu carta, tarjetas regalo, una tienda o una playlist: hasta 8 botones en tu página.",
+      "label": "Texto del botón",
+      "url": "Dirección",
+      "labelPlaceholder": "Tarjetas regalo",
+      "remove": "Quitar enlace",
+      "add": "Añadir un enlace"
     }
   }
 }

@@ -3,6 +3,7 @@ import { and, asc, desc, eq, inArray, isNull, sql } from "drizzle-orm";
 import { cache } from "react";
 import { formFieldsSchema, type FormField } from "@/domain/forms";
 import { describeCancellationPolicy } from "@/domain/policies";
+import { normalizeTheme } from "@/domain/profile-theme";
 import { displayPriceRange, type PaymentPolicy, type PriceType } from "@/domain/pricing";
 import { db } from "../db/client";
 import {
@@ -183,6 +184,7 @@ export const getPublicBusiness = cache(async (slug: string, opts: { allowDraftFo
     currency: b.currency,
     website: b.website,
     socialLinks: b.socialLinks,
+    theme: normalizeTheme(b.profileTheme),
     contactPhone: b.contactPhone,
     languages: b.languages,
     amenities: b.amenities,

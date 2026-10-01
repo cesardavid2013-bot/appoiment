@@ -265,6 +265,8 @@ export const businesses = pgTable(
     contactPhone: text("contact_phone"),
     website: text("website"),
     socialLinks: jsonb("social_links").$type<Record<string, string>>().notNull().default({}),
+    /** Page appearance chosen by the professional; always read through normalizeTheme. */
+    profileTheme: jsonb("profile_theme").$type<Record<string, unknown>>().notNull().default({}),
     languages: text("languages").array().notNull().default(sql`'{}'::text[]`),
     amenities: text("amenities").array().notNull().default(sql`'{}'::text[]`),
     yearsExperience: smallint("years_experience"),

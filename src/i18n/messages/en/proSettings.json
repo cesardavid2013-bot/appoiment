@@ -7,14 +7,42 @@
     "label": "Settings",
     "back": "Settings",
     "sections": {
-      "profile": { "label": "Business profile", "description": "Name, photos, about, contact and social links." },
-      "locations": { "label": "Locations", "description": "Where you work: a shop, the client's place, or online." },
-      "booking": { "label": "Booking rules", "description": "Instant or approved bookings, notice, reminders." },
-      "policies": { "label": "Cancellations & fees", "description": "Cancellation window, no-show fees, tax." },
-      "payments": { "label": "Payments", "description": "Take deposits and card payments online." },
-      "forms": { "label": "Client questions", "description": "Intake forms clients fill in when they book." },
-      "link": { "label": "Booking link", "description": "Your web address, QR code and going live." },
-      "verification": { "label": "Verification", "description": "Get the verified badge on your profile." }
+      "profile": {
+        "label": "Business profile",
+        "description": "Name, photos, about, contact and social links."
+      },
+      "locations": {
+        "label": "Locations",
+        "description": "Where you work: a shop, the client's place, or online."
+      },
+      "booking": {
+        "label": "Booking rules",
+        "description": "Instant or approved bookings, notice, reminders."
+      },
+      "policies": {
+        "label": "Cancellations & fees",
+        "description": "Cancellation window, no-show fees, tax."
+      },
+      "payments": {
+        "label": "Payments",
+        "description": "Take deposits and card payments online."
+      },
+      "forms": {
+        "label": "Client questions",
+        "description": "Intake forms clients fill in when they book."
+      },
+      "link": {
+        "label": "Booking link",
+        "description": "Your web address, QR code and going live."
+      },
+      "verification": {
+        "label": "Verification",
+        "description": "Get the verified badge on your profile."
+      },
+      "appearance": {
+        "label": "Page appearance",
+        "description": "Header, colours, section order and link buttons."
+      }
     }
   },
   "saveBar": {
@@ -336,9 +364,18 @@
       "onlineBody": "No address at all, just that sessions happen online."
     },
     "kinds": {
-      "physical": { "label": "At my place", "description": "Shop, studio, office" },
-      "mobile": { "label": "I go to clients", "description": "Homes, offices, events" },
-      "virtual": { "label": "Online", "description": "Video or phone sessions" }
+      "physical": {
+        "label": "At my place",
+        "description": "Shop, studio, office"
+      },
+      "mobile": {
+        "label": "I go to clients",
+        "description": "Homes, offices, events"
+      },
+      "virtual": {
+        "label": "Online",
+        "description": "Video or phone sessions"
+      }
     },
     "summary": {
       "mobile": "Travels up to {km} km from {place}",
@@ -544,13 +581,41 @@
   },
   "builder": {
     "types": {
-      "short_text": { "label": "Short answer", "hint": "A name, a number, a few words.", "placeholder": "e.g. What's the make and model of your car?" },
-      "long_text": { "label": "Paragraph", "hint": "Room for a few sentences.", "placeholder": "e.g. Tell us about any injuries we should know about." },
-      "yes_no": { "label": "Yes / No", "hint": "Two buttons: Yes and No.", "placeholder": "e.g. Is this your first visit?" },
-      "single_choice": { "label": "Multiple choice", "hint": "Clients pick one option.", "placeholder": "e.g. How long is your hair right now?" },
-      "multi_choice": { "label": "Checkboxes", "hint": "Clients tick any that apply.", "placeholder": "e.g. Which areas would you like us to focus on?" },
-      "date": { "label": "Date", "hint": "A date picker, e.g. date of birth or event date.", "placeholder": "e.g. When is the event?" },
-      "acknowledgement": { "label": "Acknowledgement", "hint": "A statement clients tick to confirm they've read it.", "placeholder": "e.g. I understand a patch test is needed 48 hours before a colour service." }
+      "short_text": {
+        "label": "Short answer",
+        "hint": "A name, a number, a few words.",
+        "placeholder": "e.g. What's the make and model of your car?"
+      },
+      "long_text": {
+        "label": "Paragraph",
+        "hint": "Room for a few sentences.",
+        "placeholder": "e.g. Tell us about any injuries we should know about."
+      },
+      "yes_no": {
+        "label": "Yes / No",
+        "hint": "Two buttons: Yes and No.",
+        "placeholder": "e.g. Is this your first visit?"
+      },
+      "single_choice": {
+        "label": "Multiple choice",
+        "hint": "Clients pick one option.",
+        "placeholder": "e.g. How long is your hair right now?"
+      },
+      "multi_choice": {
+        "label": "Checkboxes",
+        "hint": "Clients tick any that apply.",
+        "placeholder": "e.g. Which areas would you like us to focus on?"
+      },
+      "date": {
+        "label": "Date",
+        "hint": "A date picker, e.g. date of birth or event date.",
+        "placeholder": "e.g. When is the event?"
+      },
+      "acknowledgement": {
+        "label": "Acknowledgement",
+        "hint": "A statement clients tick to confirm they've read it.",
+        "placeholder": "e.g. I understand a patch test is needed 48 hours before a colour service."
+      }
     },
     "errors": {
       "name": "Give the form a name",
@@ -656,6 +721,62 @@
         "invalidChoice": "Invalid choice.",
         "date": "Enter a valid date."
       }
+    }
+  },
+  "appearance": {
+    "title": "Page appearance",
+    "description": "Make your public page look like you: its header, accent colour, the order of sections, a notice and your own link buttons.",
+    "saved": "Your page has been updated",
+    "masthead": {
+      "title": "Header",
+      "body": "Dark and cinematic, or light and airy. Your cover photo shows through either way.",
+      "sample": "Your page",
+      "noir": "Noir — dark header",
+      "ivory": "Ivory — light header"
+    },
+    "accent": {
+      "title": "Accent colour",
+      "body": "Used for small details: labels, rules, stars and highlights.",
+      "names": {
+        "brass": "Brass",
+        "emerald": "Emerald",
+        "rose": "Rose",
+        "sapphire": "Sapphire",
+        "copper": "Copper"
+      }
+    },
+    "sections": {
+      "title": "Sections",
+      "body": "Choose what visitors see and in which order. Services come first and reviews always stay visible — they are what makes your page trustworthy.",
+      "alwaysFirst": "Always first",
+      "always": "Always shown",
+      "hide": "Hide {name}",
+      "show": "Show {name}",
+      "up": "Move {name} up",
+      "down": "Move {name} down",
+      "names": {
+        "services": "Services",
+        "work": "Work",
+        "featured": "Featured",
+        "team": "Team",
+        "reviews": "Reviews",
+        "about": "About"
+      }
+    },
+    "notice": {
+      "title": "Notice",
+      "body": "A short message at the top of your page — holiday hours, a waitlist, a new location.",
+      "label": "Message",
+      "placeholder": "Closed December 24–26. Back on the 27th."
+    },
+    "links": {
+      "title": "Link buttons",
+      "body": "Your menu, gift cards, a shop or a playlist: up to 8 buttons shown on your page.",
+      "label": "Button text",
+      "url": "Address",
+      "labelPlaceholder": "Gift cards",
+      "remove": "Remove link",
+      "add": "Add a link"
     }
   }
 }

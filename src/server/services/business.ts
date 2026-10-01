@@ -6,6 +6,7 @@ import { displayPriceRange } from "@/domain/pricing";
 import { isValidSlug, normalizeSearch, slugify } from "@/domain/slugs";
 import { isValidTimeZone } from "@/domain/time";
 import { LAUNCH_PLAN } from "@/domain/plans";
+import { MAX_LINKS, normalizeTheme } from "@/domain/profile-theme";
 import { normalizeSocial, SOCIAL_KEYS, type SocialKey } from "@/domain/social";
 import { db, type Executor } from "../db/client";
 import {
@@ -347,4 +348,26 @@ function publicCoord(loc: { kind: string; lat: number | null; lng: number | null
   if (v == null) return null;
   if (loc!.kind === "physical") return v;
   return Math.round(v / 0.05) * 0.05;
+}
+
+/* ─────────────────────────── Page appearance ─────────────────────── */
+
+/** The request is only a suggestion: it is re-validated field by field, so nothing unexpected is ever stored. */
+export const themeSchema = z.object({
+  masthead: z.string(),
+  accent: z.string(),
+  order: z.array(z.string()).max(10),
+  hidden: z.array(z.string()).max(10),
+  notice: z.string().max(400).nullable(),
+  links: z.array(z.object({ label: z.string().max(80), url: z.string().max(400) })).max(20),
+});
+
+export async function updateTheme(m: Membership, actorUserId: string, input: z.infer<typeof themeSchema>) {
+  const theme = normalizeTheme(input);
+  // A link that doesn't validate would silently vanish; tell the professional instead.
+  const asked = input.links.filter((l) => l.label.trim() || l.url.trim());
+  if (theme.links.length < Math.min(asked.length, MAX_LINKS)) throw new AppError("validation", "One of your links isn't a valid https address.", { fields: { links: "Use full https:// addresses." } });
+  await db.update(businesses).set({ profileTheme: theme }).where(eq(businesses.id, m.businessId));
+  await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "business.theme_updated" });
+  return theme;
 }

@@ -57,6 +57,13 @@
       "when": 1790862948603,
       "tag": "0007_apple_embeds",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1790863109685,
+      "tag": "0008_profile_theme",
+      "breakpoints": true
     }
   ]
 }

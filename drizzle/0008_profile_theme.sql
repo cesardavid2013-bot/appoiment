@@ -1,0 +1,1 @@
+ALTER TABLE "businesses" ADD COLUMN "profile_theme" jsonb DEFAULT '{}'::jsonb NOT NULL;

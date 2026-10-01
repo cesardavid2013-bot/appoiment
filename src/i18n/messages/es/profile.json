@@ -42,7 +42,10 @@
     "book": "Reservar",
     "bookService": "Reservar {name}"
   },
-  "work": { "eyebrow": "Portafolio", "title": "Trabajos recientes" },
+  "work": {
+    "eyebrow": "Portafolio",
+    "title": "Trabajos recientes"
+  },
   "featured": {
     "eyebrow": "En redes",
     "title": "Destacados",
@@ -53,7 +56,10 @@
     "play": "Reproducir {title}",
     "loadsFrom": "Se carga desde {host}"
   },
-  "team": { "eyebrow": "Las personas", "title": "Equipo" },
+  "team": {
+    "eyebrow": "Las personas",
+    "title": "Equipo"
+  },
   "reviews": {
     "eyebrow": "Boca a boca",
     "title": "Reseñas",
@@ -142,5 +148,8 @@
     "playlist": "Playlist",
     "episode": "Episodio",
     "show": "Pódcast"
+  },
+  "links": {
+    "label": "Botones de enlace"
   }
 }

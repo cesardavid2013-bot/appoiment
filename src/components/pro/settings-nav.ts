@@ -6,6 +6,7 @@ export type SettingsSection = { href: string; key: string; permission: Permissio
 /** Every settings page, in the order owners usually need them. */
 export const SETTINGS_SECTIONS: SettingsSection[] = [
   { href: "/pro/settings/profile", key: "profile", permission: "business.manage" },
+  { href: "/pro/settings/appearance", key: "appearance", permission: "business.manage" },
   { href: "/pro/settings/locations", key: "locations", permission: "locations.manage" },
   { href: "/pro/settings/booking", key: "booking", permission: "business.manage" },
   { href: "/pro/settings/policies", key: "policies", permission: "business.manage" },
