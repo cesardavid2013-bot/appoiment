@@ -33,38 +33,64 @@ export default async function HomePage() {
   const firstName = viewer?.name.split(" ")[0];
 
   return (
-    <div className="pb-8">
-      <section className="mx-auto grid max-w-7xl gap-10 px-4 pb-4 pt-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-14 lg:px-8 lg:pt-16">
-        <div>
-          <p className="mb-4 text-sm font-medium text-ink-3">{firstName ? `Good to see you, ${firstName}.` : "Barbers, stylists, trainers, tutors, detailers and more"}</p>
-          <h1 className="font-display text-[44px] leading-[1.02] tracking-[-0.02em] text-ink text-balance sm:text-6xl lg:text-[72px]">
-            Book the people who make your week better.
-          </h1>
-          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-ink-3 text-pretty">Real openings, upfront prices and reviews from verified visits. Pick a time and you’re booked.</p>
-          <div className="mt-8">
-            <HeroSearch initialLocation={loc} />
+    <div>
+      <section className="theme-noir relative overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0 opacity-[0.5] [background:radial-gradient(1200px_500px_at_85%_-10%,rgb(201_168_101/0.10),transparent_60%)]" />
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-16 pt-14 sm:px-6 sm:pt-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16 lg:px-8 lg:pb-24 lg:pt-24">
+          <div className="reveal">
+            <p className="eyebrow !text-gold-text">{firstName ? `Welcome back, ${firstName}` : "The appointment, kept"}</p>
+            <h1 className="mt-5 font-display text-[52px] leading-[0.98] text-ink text-balance sm:text-[76px] lg:text-[96px]">
+              Book the people who make your week <em className="font-normal italic text-gold-text">better.</em>
+            </h1>
+            <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-ink-2 text-pretty">Barbers, stylists, trainers, tutors, photographers and more — with real openings, upfront prices and reviews only from verified visits.</p>
+            <div className="mt-9">
+              <HeroSearch initialLocation={loc} />
+            </div>
+            <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-[13px] text-ink-3">
+              {["Verified reviews only", "Prices before you book", "Instant confirmation"].map((t) => (
+                <li key={t} className="inline-flex items-center gap-2">
+                  <span className="size-1 rounded-full bg-gold" aria-hidden />
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="reveal [animation-delay:120ms]">
+            <OpeningsBoard items={modules.nearby} />
           </div>
         </div>
-        <OpeningsBoard items={modules.nearby} />
       </section>
 
-      <section aria-labelledby="browse" className="mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 id="browse" className="sr-only">Browse by category</h2>
-        <ul className="grid grid-cols-2 border-l border-t border-line sm:grid-cols-3 lg:grid-cols-6">
+      <section aria-labelledby="browse" className="mx-auto mt-20 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="eyebrow">The index</p>
+            <h2 id="browse" className="mt-3 font-display text-4xl leading-none text-ink sm:text-5xl">
+              Every kind of appointment
+            </h2>
+          </div>
+          <Link href="/explore" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:underline">
+            Explore all <ArrowRight className="size-4" />
+          </Link>
+        </div>
+        <ul className="mt-8 grid grid-cols-1 border-t border-line sm:grid-cols-2 lg:grid-cols-3">
           {cats
             .filter((c) => c.slug !== "other")
             .slice(0, 12)
-            .map((c) => {
+            .map((c, i) => {
               const n = counts.get(c.slug) ?? 0;
               return (
-                <li key={c.slug} className="border-b border-r border-line">
-                  <Link href={`/explore?category=${c.slug}`} className="group flex h-full flex-col gap-1.5 p-4 transition-colors hover:bg-surface sm:p-5">
-                    <span className="flex items-baseline justify-between gap-2">
-                      <span className="text-[15px] font-medium leading-snug text-ink">{c.name}</span>
-                      {n > 0 && <span className="shrink-0 text-[12px] text-ink-3 tabular">{n}</span>}
+                <li key={c.slug} className="border-b border-line sm:odd:border-r lg:border-r lg:[&:nth-child(3n)]:border-r-0 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r">
+                  <Link href={`/explore?category=${c.slug}`} className="group flex h-full items-start gap-5 px-1 py-5 transition-colors hover:bg-surface sm:px-5">
+                    <span className="w-8 shrink-0 pt-0.5 font-display text-[22px] leading-none text-gold-text tabular">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="min-w-0 flex-1">
+                      <span className="flex items-baseline justify-between gap-3">
+                        <span className="font-display text-[24px] leading-tight text-ink">{c.name}</span>
+                        {n > 0 && <span className="shrink-0 text-[12px] text-ink-3 tabular">{n} {n === 1 ? "pro" : "pros"}</span>}
+                      </span>
+                      {c.description && <span className="mt-1 block text-[13px] leading-snug text-ink-3">{c.description}</span>}
                     </span>
-                    {c.description && <span className="line-clamp-2 text-[12.5px] leading-snug text-ink-3">{c.description}</span>}
-                    <ArrowRight className="mt-auto size-3.5 -translate-x-1 text-ink-3 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" aria-hidden />
+                    <ArrowRight className="mt-1.5 size-4 shrink-0 -translate-x-1 text-ink-3 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" aria-hidden />
                   </Link>
                 </li>
               );
@@ -132,34 +158,56 @@ export default async function HomePage() {
       <CardRail title="Highly rated" subtitle="Ratings come only from completed, verified bookings." href="/explore?sort=rating" items={modules.topRated} favorites={favSet} signedIn={signedIn} />
       <CardRail title="New on Kept" href="/explore" items={modules.newcomers} favorites={favSet} signedIn={signedIn} />
 
-      <section className="mx-auto mt-20 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 overflow-hidden rounded-xl bg-ink px-6 py-10 text-bg sm:px-10 sm:py-14 lg:grid-cols-2 lg:items-center">
+      <section aria-labelledby="how" className="mx-auto mt-24 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <p className="eyebrow">How it works</p>
+        <h2 id="how" className="mt-3 font-display text-4xl leading-none text-ink sm:text-5xl">
+          Three steps, no phone tag
+        </h2>
+        <ol className="mt-10 grid gap-10 border-t border-line pt-10 md:grid-cols-3 md:gap-12">
+          {[
+            ["Find your person", "Search by what you need, when and where — or just ask in your own words. Every profile shows real prices and verified reviews."],
+            ["Choose a real time", "The times you see are free on their calendar right now. Pick one, add any options, and confirm."],
+            ["Consider it kept", "You get a confirmation, reminders before the day, and one place to reschedule, message or rebook."],
+          ].map(([t, d], i) => (
+            <li key={t}>
+              <span className="font-display text-[56px] leading-none text-gold-text">{i + 1}</span>
+              <h3 className="mt-4 text-lg font-semibold text-ink">{t}</h3>
+              <p className="mt-2 max-w-sm text-[15px] leading-relaxed text-ink-3">{d}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="theme-noir mt-24">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-8">
           <div>
-            <p className="text-sm font-medium text-bg/60">For professionals</p>
-            <h2 className="mt-3 font-display text-4xl leading-[1.05] tracking-[-0.01em] text-balance sm:text-5xl">Your services, your hours, your clients — in one place.</h2>
-            <p className="mt-4 max-w-md text-[15px] leading-relaxed text-bg/70">Online booking, a calendar that prevents double-bookings, reminders that cut no-shows, and a profile that shows off your work. Free to start.</p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/signup?intent=pro" className="inline-flex h-11 items-center rounded-md bg-bg px-5 text-[15px] font-medium text-ink hover:bg-bg/90">
+            <p className="eyebrow !text-gold-text">For professionals</p>
+            <h2 className="mt-4 font-display text-[44px] leading-[1.02] text-ink text-balance sm:text-6xl">
+              Your craft deserves a <em className="font-normal italic text-gold-text">better</em> front desk.
+            </h2>
+            <p className="mt-5 max-w-md text-[16px] leading-relaxed text-ink-2">Online booking, a calendar that can&rsquo;t double-book, reminders that cut no-shows, and a page that shows your work the way it deserves. Free while we launch.</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/signup?intent=pro" className="inline-flex h-12 items-center rounded-md bg-ink px-6 text-[15px] font-medium text-bg hover:bg-ink/90">
                 Offer your services
               </Link>
-              <Link href="/for-business" className="inline-flex h-11 items-center gap-1.5 rounded-md px-4 text-[15px] font-medium text-bg/80 hover:text-bg">
-                How it works <ArrowRight className="size-4" />
+              <Link href="/for-business" className="inline-flex h-12 items-center gap-1.5 rounded-md border border-line-strong px-5 text-[15px] font-medium text-ink hover:bg-surface">
+                See how it works <ArrowRight className="size-4" />
               </Link>
             </div>
           </div>
-          <ul className="grid gap-3 sm:grid-cols-2">
+          <dl className="grid grid-cols-2 border-t border-line">
             {[
-              ["Any kind of service", "Options like length, size or add-ons change price and time automatically."],
-              ["Never double-booked", "Every slot is checked by the server at the moment of booking."],
-              ["Fewer no-shows", "Automatic reminders, deposits and clear cancellation policies."],
-              ["Get discovered", "Show your work, collect verified reviews, and promote your profile."],
-            ].map(([t, d]) => (
-              <li key={t} className="rounded-lg border border-bg/10 bg-bg/[0.04] p-4">
-                <p className="text-[15px] font-medium">{t}</p>
-                <p className="mt-1 text-[13px] leading-relaxed text-bg/60">{d}</p>
-              </li>
+              ["Any service", "Options change price and time automatically."],
+              ["Never double-booked", "Every time is checked at the moment of booking."],
+              ["Fewer no-shows", "Reminders, deposits and clear policies."],
+              ["Get discovered", "Portfolio, verified reviews and Spotlight."],
+            ].map(([t, d], i) => (
+              <div key={t} className={`border-b border-line py-6 ${i % 2 === 0 ? "pr-5" : "border-l pl-5"}`}>
+                <dt className="font-display text-[22px] leading-tight text-ink">{t}</dt>
+                <dd className="mt-1.5 text-[13px] leading-relaxed text-ink-3">{d}</dd>
+              </div>
             ))}
-          </ul>
+          </dl>
         </div>
       </section>
     </div>

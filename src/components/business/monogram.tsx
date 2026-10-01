@@ -37,3 +37,22 @@ export function MonogramCover({ name, label, className, size = "md" }: { name: s
     </div>
   );
 }
+
+const NOIR = ["#15130f", "#101613", "#17110f", "#11131a", "#161510"];
+
+/**
+ * Cover for a professional without photos yet: dark stationery with a brass
+ * monogram and a fine inset frame — consistent, quiet, never fake imagery.
+ */
+export function NoirCover({ name, label, className, size = "md" }: { name: string; label?: string | null; className?: string; size?: "sm" | "md" | "lg" }) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
+  return (
+    <div className={cn("theme-noir relative flex items-center justify-center overflow-hidden", className)} style={{ background: NOIR[h % NOIR.length] }}>
+      <div className="pointer-events-none absolute inset-2.5 border border-gold/25" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 [background:radial-gradient(80%_60%_at_50%_0%,rgb(201_168_101/0.10),transparent_70%)]" aria-hidden />
+      <span className={cn("relative font-display leading-none tracking-[0.04em] text-gold-text", size === "sm" ? "text-3xl" : size === "lg" ? "text-8xl" : "text-6xl")}>{initials(name)}</span>
+      {label && <span className="absolute bottom-5 left-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-3">{label}</span>}
+    </div>
+  );
+}

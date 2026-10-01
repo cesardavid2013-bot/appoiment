@@ -87,7 +87,7 @@ export function ProShell({ children, business, businesses, perms, user }: { chil
   return (
     <div className="min-h-dvh lg:grid lg:grid-cols-[248px_minmax(0,1fr)]">
       {/* Desktop sidebar */}
-      <aside className="sticky top-0 hidden h-dvh flex-col border-r border-line bg-surface/50 lg:flex" aria-label="Business navigation">
+      <aside className="theme-noir sticky top-0 hidden h-dvh flex-col border-r border-line lg:flex" aria-label="Business navigation">
         <div className="px-5 pt-5">
           <Logo href="/pro/today" />
         </div>

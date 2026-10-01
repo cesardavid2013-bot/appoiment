@@ -20,9 +20,9 @@ export function OpeningsBoard({ items }: { items: CardBusiness[] }) {
     .slice(0, 5);
   if (!rows.length) return null;
   return (
-    <section aria-labelledby="openings" className="overflow-hidden rounded-xl border border-line bg-surface shadow-md">
+    <section aria-labelledby="openings" className="overflow-hidden rounded-xl border border-line bg-surface shadow-lg">
       <div className="flex items-center justify-between border-b border-line px-5 py-3.5">
-        <h2 id="openings" className="flex items-center gap-2 text-sm font-semibold text-ink">
+        <h2 id="openings" className="eyebrow flex items-center gap-2 !text-ink">
           <span className="relative flex size-2">
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-50 motion-reduce:hidden" />
             <span className="relative inline-flex size-2 rounded-full bg-accent" />
@@ -34,10 +34,10 @@ export function OpeningsBoard({ items }: { items: CardBusiness[] }) {
       <ul className="divide-y divide-line">
         {rows.map(({ b, start, service }) => (
           <li key={b.id}>
-            <Link href={`/${b.slug}/book?service=${b.nextServiceId}&start=${encodeURIComponent(start)}`} className="group grid grid-cols-[84px_1fr_auto] items-center gap-4 px-5 py-3.5 transition-colors hover:bg-surface-2/70">
+            <Link href={`/${b.slug}/book?service=${b.nextServiceId}&start=${encodeURIComponent(start)}`} className="group grid grid-cols-[96px_1fr_auto] items-center gap-4 px-5 py-3.5 transition-colors hover:bg-surface-2/70">
               <div className="leading-tight">
-                <div className="text-[11px] font-medium uppercase tracking-wide text-ink-3">{when(start, b.timezone)}</div>
-                <div className="whitespace-nowrap text-[17px] font-semibold text-ink tabular">{fmtTime(start, b.timezone)}</div>
+                <div className="text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-text">{when(start, b.timezone)}</div>
+                <div className="mt-0.5 whitespace-nowrap font-display text-[24px] leading-none text-ink">{fmtTime(start, b.timezone)}</div>
               </div>
               <div className="min-w-0">
                 <div className="truncate text-sm font-medium text-ink">{service?.name ?? "Appointment"}</div>

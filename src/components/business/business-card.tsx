@@ -1,12 +1,12 @@
 import { BadgeCheck, ChevronRight, Zap } from "lucide-react";
 import Link from "next/link";
-import { formatDuration, formatMoney, formatPriceLabel } from "@/domain/money";
+import { formatMoney, formatPriceLabel } from "@/domain/money";
 import { RatingInline } from "@/components/ui/misc";
 import { Avatar, MediaImage, type MediaLike } from "@/components/ui/media";
 import { fmtTime, localDateKey } from "@/lib/format";
 import { cn } from "@/lib/cn";
 import { FavoriteButton } from "./favorite-button";
-import { toneFor } from "./monogram";
+import { NoirCover } from "./monogram";
 
 export type CardService = { id: string; name: string; priceType: string; priceCents: number; salePriceCents: number | null; priceMaxCents: number | null; durationMinutes: number };
 
@@ -64,79 +64,74 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
   const bookHref = (start?: string) => `/${b.slug}/book?service=${b.nextServiceId ?? ""}${start ? `&start=${encodeURIComponent(start)}` : ""}`;
 
   return (
-    <article className={cn("group relative flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition-[box-shadow,border-color] duration-200 hover:border-line-strong hover:shadow-md", className)}>
-      {b.cover && (
-        <Link href={profileHref} tabIndex={-1} aria-hidden className="relative block aspect-[16/10] overflow-hidden">
-          <MediaImage media={b.cover} alt="" sizes="(min-width: 1280px) 25vw, (min-width: 768px) 33vw, 92vw" priority={priority} className="size-full transition-transform duration-500 group-hover:scale-[1.02]" />
-        </Link>
-      )}
+    <article className={cn("group relative flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition-[box-shadow,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-line-strong hover:shadow-lg", className)}>
+      <Link href={profileHref} tabIndex={-1} aria-hidden className="relative block aspect-[16/11] overflow-hidden">
+        {b.cover ? (
+          <MediaImage media={b.cover} alt="" sizes="(min-width: 1280px) 25vw, (min-width: 768px) 33vw, 92vw" priority={priority} className="size-full transition-transform duration-700 group-hover:scale-[1.04]" />
+        ) : (
+          <NoirCover name={b.name} label={b.categoryName} className="size-full transition-transform duration-700 group-hover:scale-[1.02]" />
+        )}
+        {b.logo && b.cover && (
+          <span className="absolute bottom-3 left-3 overflow-hidden rounded-full ring-2 ring-surface">
+            <Avatar name={b.name} media={b.logo} size={36} />
+          </span>
+        )}
+        {b.promoted && <span className="absolute left-3 top-3 rounded-sm bg-bg/90 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-ink">Promoted</span>}
+      </Link>
 
-      <div className="flex flex-1 flex-col p-4">
-        <div className="flex items-start gap-3">
-          <Link href={profileHref} className="shrink-0 rounded-full outline-offset-2" tabIndex={-1} aria-hidden>
-            {b.logo ? (
-              <Avatar name={b.name} media={b.logo} size={44} />
-            ) : (
-              <span className={cn("flex size-11 items-center justify-center rounded-full font-display text-xl", toneFor(b.name))}>
-                {b.name.replace(/[^\p{L}\p{N} ]/gu, "").split(" ").filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase()}
-              </span>
-            )}
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <h3 className="flex items-center gap-1.5 font-display text-[23px] leading-tight text-ink">
+          <Link href={profileHref} className="truncate after:absolute after:inset-0 after:content-[''] focus-visible:outline-none group-has-[a:focus-visible]:underline">
+            {b.name}
           </Link>
-          <div className="min-w-0 flex-1">
-            <h3 className="flex items-center gap-1 pr-9 text-[15px] font-semibold leading-snug text-ink">
-              <Link href={profileHref} className="truncate after:absolute after:inset-0 after:content-[''] focus-visible:outline-none group-has-[a:focus-visible]:underline">
-                {b.name}
-              </Link>
-              {b.verified && <BadgeCheck className="size-4 shrink-0 text-accent" aria-label="Verified business" />}
-            </h3>
-            <p className="mt-0.5 truncate text-[13px] text-ink-3">{meta}</p>
-            <div className="mt-1 flex items-center gap-2">
-              <RatingInline avg={b.ratingAvg} count={b.ratingCount} />
-              {b.promoted && <span className="text-[11px] font-medium uppercase tracking-wide text-ink-3">· Promoted</span>}
-            </div>
-          </div>
+          {b.verified && <BadgeCheck className="size-[18px] shrink-0 text-gold" aria-label="Verified business" />}
+        </h3>
+        <p className="mt-1 truncate text-[13px] text-ink-3">{meta}</p>
+        <div className="mt-1.5">
+          <RatingInline avg={b.ratingAvg} count={b.ratingCount} />
         </div>
 
         {services.length > 0 && (
-          <ul className="relative z-10 mt-4 divide-y divide-line border-y border-line">
+          <ul className="relative z-10 mt-4 space-y-1.5">
             {services.map((s) => (
               <li key={s.id}>
-                <Link href={`/${b.slug}/book?service=${s.id}`} className="flex items-center gap-3 py-2.5 text-[13px] hover:bg-surface-2/60">
-                  <span className="min-w-0 flex-1 truncate font-medium text-ink">{s.name}</span>
-                  <span className="shrink-0 text-ink-3 tabular">{formatDuration(s.durationMinutes)}</span>
-                  <span className="w-[72px] shrink-0 text-right font-medium text-ink tabular">{formatPriceLabel(s, b.currency)}</span>
+                <Link href={`/${b.slug}/book?service=${s.id}`} className="flex items-baseline gap-2 text-[13.5px] hover:text-ink">
+                  <span className="min-w-0 truncate text-ink-2">{s.name}</span>
+                  <span className="leader" aria-hidden />
+                  <span className="shrink-0 font-medium text-ink tabular">{formatPriceLabel(s, b.currency)}</span>
                 </Link>
               </li>
             ))}
           </ul>
         )}
 
-        <div className="relative z-10 mt-auto pt-3.5">
+        <div className="relative z-10 mt-auto pt-4">
           {slots.length > 0 ? (
-            <div>
-              <p className="mb-2 flex items-center gap-1.5 text-[12px] font-medium text-ink-3">
-                {b.instant && <Zap className="size-3.5 text-accent" aria-hidden />}
+            <div className="border-t border-line pt-3.5">
+              <p className="mb-2.5 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-3">
+                {b.instant && <Zap className="size-3 text-accent" aria-hidden />}
                 {dayLabel(slots[0], b.timezone)}
-                {b.instant ? " · instant confirmation" : " · request to book"}
+                <span aria-hidden>·</span>
+                {b.instant ? "Instant confirmation" : "Request to book"}
               </p>
               <div className="flex items-center gap-1.5">
                 {slots.slice(0, 3).map((s) => (
                   <Link
                     key={s}
                     href={bookHref(s)}
-                    className="flex h-8 flex-1 items-center justify-center rounded-md border border-accent/25 bg-accent-soft text-[13px] font-semibold text-accent-text tabular transition-colors hover:border-accent hover:bg-accent hover:text-accent-ink"
+                    className="flex h-9 flex-1 items-center justify-center rounded-md border border-accent/30 text-[13px] font-semibold text-accent-text tabular transition-colors hover:border-accent hover:bg-accent hover:text-accent-ink"
                     aria-label={`Book ${dayLabel(s, b.timezone)} at ${fmtTime(s, b.timezone)}`}
                   >
                     {fmtTime(s, b.timezone).replace(":00", "")}
                   </Link>
                 ))}
-                <Link href={bookHref()} className="flex h-8 w-9 shrink-0 items-center justify-center rounded-md border border-line text-ink-3 hover:border-line-strong hover:text-ink" aria-label="More times">
+                <Link href={bookHref()} className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-line text-ink-3 hover:border-line-strong hover:text-ink" aria-label="More times">
                   <ChevronRight className="size-4" />
                 </Link>
               </div>
             </div>
           ) : (
-            <div className="flex items-center justify-between text-[13px]">
+            <div className="flex items-center justify-between border-t border-line pt-3.5 text-[13px]">
               <span className="text-ink-3">{b.priceMinCents != null ? (b.priceMinCents === 0 ? "Free consultation available" : `From ${formatMoney(b.priceMinCents, b.currency, { compact: true })}`) : "Price on request"}</span>
               <Link href={profileHref} className="font-medium text-ink hover:underline">
                 View times
@@ -147,7 +142,7 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
       </div>
 
       <div className="absolute right-3 top-3 z-20">
-        <FavoriteButton businessId={b.id} initial={favorite} signedIn={signedIn} variant={b.cover ? "overlay" : "ghost"} />
+        <FavoriteButton businessId={b.id} initial={favorite} signedIn={signedIn} variant="overlay" />
       </div>
     </article>
   );
@@ -155,7 +150,9 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
 
 export function BusinessCardSkeleton() {
   return (
-    <div className="rounded-xl border border-line bg-surface p-4">
+    <div className="overflow-hidden rounded-xl border border-line bg-surface">
+      <div className="skeleton aspect-[16/11] w-full" />
+      <div className="p-4">
       <div className="flex gap-3">
         <div className="skeleton size-11 rounded-full" />
         <div className="flex-1 space-y-2 pt-1">
@@ -171,6 +168,7 @@ export function BusinessCardSkeleton() {
         <div className="skeleton h-8 flex-1 rounded-md" />
         <div className="skeleton h-8 flex-1 rounded-md" />
         <div className="skeleton h-8 flex-1 rounded-md" />
+      </div>
       </div>
     </div>
   );

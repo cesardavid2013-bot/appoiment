@@ -7,13 +7,13 @@ import { BusinessCard, type CardBusiness } from "./business-card";
 export function CardRail({ title, subtitle, href, items, favorites, signedIn }: { title: string; subtitle?: ReactNode; href?: string; items: CardBusiness[]; favorites: Set<string>; signedIn: boolean }) {
   if (!items.length) return null;
   return (
-    <section className="mx-auto mt-14 max-w-7xl" aria-labelledby={`rail-${title}`}>
+    <section className="mx-auto mt-20 max-w-7xl" aria-labelledby={`rail-${title}`}>
       <div className="mb-5 flex items-end justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <div>
-          <h2 id={`rail-${title}`} className="text-xl font-semibold tracking-[-0.015em] text-ink">
+          <h2 id={`rail-${title}`} className="font-display text-[34px] leading-none text-ink sm:text-[40px]">
             {title}
           </h2>
-          {subtitle && <p className="mt-1 text-sm text-ink-3">{subtitle}</p>}
+          {subtitle && <p className="mt-2 text-sm text-ink-3">{subtitle}</p>}
         </div>
         {href && (
           <Link href={href} className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-ink-2 hover:text-ink">

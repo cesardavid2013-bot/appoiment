@@ -1,67 +1,97 @@
 @import "tailwindcss";
 
 /*
- * Kept design tokens.
- * Warm paper neutrals, near-black ink for primary actions, one restrained
- * accent (pine) for availability/selection. Every color is a token so dark
- * mode is a token swap, never per-component overrides.
+ * Kept design tokens — "Noir": ivory paper, deep ink, emerald for availability
+ * and selection, brass for the few things that deserve a gleam. Every color is
+ * a token, so dark mode and dark sections (.theme-noir) are token swaps.
  */
 :root {
-  --bg: #faf9f6;
-  --surface: #ffffff;
-  --surface-2: #f3f1ec;
-  --surface-3: #ebe8e1;
-  --ink: #1a1814;
-  --ink-2: #48443d;
-  --ink-3: #6c675e;
-  --line: #e6e2da;
-  --line-strong: #d3cec3;
-  --accent: #2e5e4e;
+  --bg: #f6f2ea;
+  --surface: #fffdf8;
+  --surface-2: #efe9de;
+  --surface-3: #e5ddcf;
+  --ink: #14120e;
+  --ink-2: #3d372f;
+  --ink-3: #625a4e;
+  --line: #e2d9ca;
+  --line-strong: #cbbfaa;
+  --accent: #1e4d3f;
   --accent-ink: #ffffff;
-  --accent-soft: #e5efe9;
-  --accent-text: #24493d;
+  --accent-soft: #e1ece5;
+  --accent-text: #1a4236;
+  --gold: #a8843e;
+  --gold-soft: #f1e7d3;
+  --gold-text: #7a5b22;
   --warn: #9a5b0c;
   --warn-soft: #fbf0dc;
   --danger: #b3261e;
   --danger-soft: #fbe9e7;
   --info: #2f5d8a;
   --info-soft: #e7eef6;
-  --star: #1a1814;
-  --overlay: rgb(20 18 15 / 0.45);
-  --shadow-sm: 0 1px 2px rgb(26 24 20 / 0.05);
-  --shadow-md: 0 1px 2px rgb(26 24 20 / 0.04), 0 6px 20px rgb(26 24 20 / 0.07);
-  --shadow-lg: 0 2px 6px rgb(26 24 20 / 0.06), 0 18px 48px rgb(26 24 20 / 0.14);
+  --star: #14120e;
+  --overlay: rgb(14 13 11 / 0.55);
+  --shadow-sm: 0 1px 2px rgb(20 18 14 / 0.05);
+  --shadow-md: 0 1px 2px rgb(20 18 14 / 0.04), 0 8px 24px rgb(20 18 14 / 0.07);
+  --shadow-lg: 0 2px 6px rgb(20 18 14 / 0.06), 0 24px 60px rgb(20 18 14 / 0.16);
   color-scheme: light;
 }
 
+/* The dark palette, shared by dark mode and by .theme-noir sections. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #11100e;
-    --surface: #191816;
-    --surface-2: #211f1c;
-    --surface-3: #2a2824;
-    --ink: #f3f0ea;
-    --ink-2: #cdc7bc;
-    --ink-3: #958f84;
-    --line: #2e2c28;
-    --line-strong: #403d37;
-    --accent: #7fb9a4;
-    --accent-ink: #0f1a16;
-    --accent-soft: #1d2e28;
-    --accent-text: #9fd0bd;
+    --bg: #0e0d0b;
+    --surface: #171512;
+    --surface-2: #1f1d19;
+    --surface-3: #292620;
+    --ink: #f3ede2;
+    --ink-2: #cfc6b6;
+    --ink-3: #9a917f;
+    --line: #2c2924;
+    --line-strong: #403b33;
+    --accent: #8cc4ad;
+    --accent-ink: #0c1a14;
+    --accent-soft: #1a2c25;
+    --accent-text: #a6d6c2;
+    --gold: #c9a865;
+    --gold-soft: #2a2316;
+    --gold-text: #d8bb7e;
     --warn: #e0a64a;
     --warn-soft: #2f2414;
     --danger: #f08b80;
     --danger-soft: #331b18;
     --info: #8fb5df;
     --info-soft: #1a2633;
-    --star: #f3f0ea;
-    --overlay: rgb(0 0 0 / 0.6);
+    --star: #f3ede2;
+    --overlay: rgb(0 0 0 / 0.62);
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
     --shadow-md: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
-    --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.4), 0 18px 48px rgb(0 0 0 / 0.5);
+    --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.4), 0 24px 60px rgb(0 0 0 / 0.55);
     color-scheme: dark;
   }
+}
+
+/* A dark band inside a light page (hero, menus, banners). Children use the same tokens. */
+.theme-noir {
+  --bg: #0e0d0b;
+  --surface: #171512;
+  --surface-2: #1f1d19;
+  --surface-3: #292620;
+  --ink: #f3ede2;
+  --ink-2: #cfc6b6;
+  --ink-3: #9a917f;
+  --line: #2c2924;
+  --line-strong: #403b33;
+  --accent: #8cc4ad;
+  --accent-ink: #0c1a14;
+  --accent-soft: #1a2c25;
+  --accent-text: #a6d6c2;
+  --gold: #c9a865;
+  --gold-soft: #2a2316;
+  --gold-text: #d8bb7e;
+  --star: #f3ede2;
+  background: var(--bg);
+  color: var(--ink);
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -78,6 +108,9 @@
   --color-accent-ink: var(--accent-ink);
   --color-accent-soft: var(--accent-soft);
   --color-accent-text: var(--accent-text);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-gold-text: var(--gold-text);
   --color-warn: var(--warn);
   --color-warn-soft: var(--warn-soft);
   --color-danger: var(--danger);
@@ -189,4 +222,35 @@
 .leaflet-control-attribution a {
   color: var(--ink-2) !important;
   text-decoration: underline !important;
+}
+
+/* Display type: high-contrast serif, lining figures so prices and times align. */
+.font-display {
+  font-variant-numeric: lining-nums;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Small-caps style label used above headings — the quiet signature of the system. */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* Restaurant-menu leader between a name and its price. */
+.leader {
+  flex: 1 1 auto;
+  min-width: 1.5rem;
+  align-self: baseline;
+  border-bottom: 1px dotted var(--line-strong);
+  transform: translateY(-0.28em);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: rise 700ms var(--ease-out-soft) both;
+  }
 }
