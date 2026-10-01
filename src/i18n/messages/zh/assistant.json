@@ -1,0 +1,22 @@
+{
+  "title": "问问 Kept",
+  "description": "告诉我您需要什么、什么时候。我会查找真实空档。",
+  "newConversation": "新对话",
+  "close": "关闭",
+  "forExample": "例如：",
+  "starters": {
+    "one": "明天下午找理发师",
+    "two": "本周末 60 美元以内的光疗美甲",
+    "three": "今晚附近的按摩",
+    "four": "线上数学家教"
+  },
+  "searching": "正在搜索",
+  "listening": "正在聆听…",
+  "placeholder": "周六上午找理发师…",
+  "yourMessage": "您的消息",
+  "stopListening": "停止聆听",
+  "speak": "语音",
+  "send": "发送",
+  "verified": "已认证",
+  "online": "线上"
+}

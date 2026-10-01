@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "找不到頁面",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{city}的{title}",
+    "bookOnline": "線上預約{name}。"
+  },
+  "preview": {
+    "notice": "預覽——在您發布之前，只有您能看到這個頁面。",
+    "goLive": "正式上線"
+  },
+  "verified": "已通過 Kept 驗證",
+  "verifiedLabel": "已驗證店家",
+  "reviewsCount": "{count, plural, other {# 則已驗證評價}}",
+  "newOnKept": "Kept 新進",
+  "travels": "{city} · 到府範圍最遠 {km} 公里",
+  "status": {
+    "openUntil": "營業中 · 至 {time}",
+    "opensAt": "{time} 開始營業",
+    "opensTomorrow": "明天 {time} 開始營業",
+    "opensDay": "{day} {time} 開始營業",
+    "notSet": "尚未設定營業時間",
+    "closed": "休息中"
+  },
+  "nav": {
+    "label": "頁面區塊",
+    "services": "服務",
+    "work": "作品",
+    "featured": "精選",
+    "reviews": "評價",
+    "about": "簡介"
+  },
+  "services": {
+    "eyebrow": "服務項目",
+    "title": "服務",
+    "empty": "此店家尚未發布服務。",
+    "sale": "特價",
+    "group": "團體 · 最多 {count} 人",
+    "request": "申請預約",
+    "options": "提供加選項目",
+    "deposit": "預約時支付訂金",
+    "book": "預約",
+    "bookService": "預約{name}"
+  },
+  "work": {
+    "eyebrow": "作品集",
+    "title": "近期作品"
+  },
+  "featured": {
+    "eyebrow": "社群媒體",
+    "title": "精選",
+    "allProfiles": "所有社群帳號",
+    "bookThis": "預約此項 · {service}",
+    "newTab": "（在新分頁中開啟）",
+    "footnote": "只有在您按下播放時，播放器才會從各平台載入。",
+    "play": "播放{title}",
+    "loadsFrom": "從 {host} 載入"
+  },
+  "team": {
+    "eyebrow": "我們的團隊",
+    "title": "團隊"
+  },
+  "reviews": {
+    "eyebrow": "口碑",
+    "title": "評價",
+    "empty": "尚無評價。只有完成到店的顧客才能撰寫評價。",
+    "distribution": "評分分布",
+    "onlyCustomers": "只有完成預約的顧客才能撰寫評價。",
+    "response": "{name}的回覆",
+    "stars": "{value} 顆星（滿分 5 顆星）"
+  },
+  "about": {
+    "eyebrow": "關於本店",
+    "title": "簡介",
+    "hours": "營業時間",
+    "timesIn": "時間以{zone}顯示。",
+    "policies": "政策",
+    "noShow": "未到場可能會被收取總額的 {percent}%。",
+    "experience": "{years} 年以上經驗",
+    "amenities": "設施與服務",
+    "online": "線上",
+    "directions": "路線",
+    "comesToYou": "到府服務",
+    "mobileBody": "以{city}為據點，到府範圍最遠 {km} 公里——預約時請填寫您的地址。",
+    "onlineSessions": "線上課程",
+    "onlineBody": "隨時隨地參加。連結會在預約後提供。"
+  },
+  "panel": {
+    "label": "預約",
+    "eyebrow": "預訂",
+    "freeOptions": "提供免費選項",
+    "from": "服務 {price} 起",
+    "onConsultation": "價格依諮詢而定",
+    "nextToday": "今天有空檔",
+    "nextTomorrow": "明天有空檔",
+    "nextOn": "最近空檔：{day}",
+    "none": "未來兩週沒有空檔",
+    "bookNow": "立即預約",
+    "requestToBook": "申請預約",
+    "instant": "立即確認",
+    "confirms": "店家會確認您的申請",
+    "notTaking": "此店家尚未開放預約。",
+    "mobileFrom": "{price} 起",
+    "mobileNext": "最近：{day} {time}",
+    "seeAvailability": "查看可預約時段",
+    "request": "申請"
+  },
+  "actions": {
+    "share": "分享",
+    "shareTitle": "分享{name}",
+    "shareBody": "傳送連結，或掃描條碼開啟預約頁面。",
+    "copy": "複製",
+    "copied": "已複製",
+    "downloadQr": "下載 QR 碼",
+    "ask": "提問",
+    "messageTitle": "傳訊息給{name}",
+    "messageBody": "預約前可以詢問服務、可預約時段或任何問題。您的電話號碼和電子郵件不會公開。",
+    "cancel": "取消",
+    "send": "傳送訊息",
+    "yourMessage": "您的訊息",
+    "placeholder": "您好！這週六下午有空幫我剃個漸層嗎？",
+    "sent": "訊息已傳送",
+    "sentBody": "{name}會在您的收件匣中回覆。"
+  },
+  "portfolio": {
+    "compare": "比較前後差異",
+    "portfolio": "作品集",
+    "close": "關閉",
+    "previous": "上一個",
+    "next": "下一個",
+    "before": "之前",
+    "after": "之後",
+    "beforeAfter": "前 / 後",
+    "video": "影片",
+    "openItem": "開啟第 {n} 項",
+    "browse": "使用方向鍵瀏覽",
+    "bookThis": "預約此項",
+    "bookThisService": "預約此項——{service}"
+  },
+  "kind": {
+    "video": "影片",
+    "short": "短影音",
+    "post": "貼文",
+    "reel": "連續短片",
+    "track": "單曲",
+    "album": "專輯",
+    "artist": "藝人",
+    "playlist": "播放清單",
+    "episode": "單集",
+    "show": "播客節目"
+  }
+}

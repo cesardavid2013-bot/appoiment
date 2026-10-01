@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "等待付款",
+    "requested": "已送出申請",
+    "confirmed": "已確認",
+    "checked_in": "已報到",
+    "in_progress": "進行中",
+    "completed": "已完成",
+    "cancelled": "已取消",
+    "declined": "已婉拒",
+    "no_show": "未到場",
+    "expired": "已逾期"
+  },
+  "list": {
+    "title": "預約",
+    "filters": "預約篩選",
+    "tabs": {
+      "upcoming": "即將到來",
+      "past": "過去",
+      "cancelled": "已取消"
+    },
+    "howDidItGo": "體驗如何？",
+    "review": "評價",
+    "empty": {
+      "upcoming": "沒有即將到來的預約",
+      "past": "尚無過去的預約",
+      "cancelled": "沒有已取消的預約",
+      "upcomingBody": "預約後，您的預約會顯示在這裡，並附上路線、提醒和簡單的改期功能。",
+      "findPro": "尋找專業人士"
+    }
+  },
+  "detail": {
+    "metaTitle": "預約",
+    "allBookings": "所有預約",
+    "hero": {
+      "confirmedTitle": "預約完成",
+      "confirmedBody": "我們已寄出確認通知，並會在預約前提醒您。",
+      "requestedTitle": "已送出申請",
+      "requestedBody": "{business}將審核您的申請。對方一回覆，我們會立即通知您——在此期間，您的時段會為您保留。",
+      "paymentTitle": "正在完成付款",
+      "paymentBody": "如果您剛完成付款，幾秒後這裡會自動更新。付款完成前，您的時段會為您保留。"
+    },
+    "calendarDetails": "預約編號 {reference}",
+    "ref": "編號",
+    "when": "時間",
+    "with": "服務人員",
+    "where": "地點",
+    "atYourAddress": "在您的地址",
+    "online": "線上",
+    "virtualLink": "店家會在服務開始前傳送連結。",
+    "yourReview": "您的評價",
+    "payment": {
+      "title": "付款",
+      "serviceFee": "服務費",
+      "tax": "稅金",
+      "estimatedTotal": "預估總額",
+      "total": "總額",
+      "paid": "已付款",
+      "refunded": "已退款",
+      "balance": "餘額",
+      "dueAtAppointment": "到店付款",
+      "tip": "小費"
+    },
+    "policy": {
+      "title": "取消政策",
+      "freeUntil": "最晚可在預約開始前 {hours, plural, other {# 小時}}免費取消。",
+      "freeAnytime": "預約開始前隨時可免費取消。",
+      "lateFee": "逾時取消：收取總額的 {percent}%。",
+      "depositNonRefundable": "訂金恕不退還。",
+      "cannotCancel": "此預約已無法取消。",
+      "alreadyStarted": "此預約已經開始。",
+      "cannotReschedule": "此預約無法改期。",
+      "maxReschedules": "此預約的改期次數已達上限，請聯絡店家。",
+      "rescheduleWindow": "須在預約開始前至少 {hours, plural, other {# 小時}}進行變更，請聯絡店家。"
+    },
+    "refund": {
+      "noCharge": "不收取費用。",
+      "full": "您將獲得全額退款。",
+      "none": "依此店家的政策，您的付款恕不退還。",
+      "partial": "依此店家的政策，您將獲得部分退款。"
+    },
+    "note": "備註：{reason}",
+    "problem": "此預約有問題嗎？<link>聯絡客服</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} {time}",
+    "cancelledToast": "預約已取消",
+    "refundOnWay": "{amount} 的退款正在處理中。",
+    "rescheduledToast": "已改期",
+    "payToConfirm": "支付 {amount} 以確認",
+    "addToCalendar": "加入行事曆",
+    "directions": "路線",
+    "message": "傳訊息",
+    "bookAgain": "再次預約",
+    "googleCalendar": "Google 日曆",
+    "leaveReview": "撰寫評價",
+    "reschedule": "改期",
+    "cancelAppointment": "取消預約",
+    "cancelTitle": "要取消此預約嗎？",
+    "insideWindow": "目前已在此店家的取消期限內。",
+    "refundAmount": "退款：{amount}。",
+    "keptAmount": "店家保留：{amount}。",
+    "reason": "原因",
+    "reasonHint": "會告知店家。",
+    "chooseNewTime": "選擇新時間",
+    "currently": "目前：{when}",
+    "keepCurrentTime": "維持目前時間",
+    "moveTo": "改至 {time}",
+    "chooseTime": "選擇時間"
+  },
+  "review": {
+    "ratings": {
+      "1": "差",
+      "2": "普通",
+      "3": "不錯",
+      "4": "很好",
+      "5": "極佳"
+    },
+    "thanks": "感謝您的評價",
+    "title": "{business}的體驗如何？",
+    "subtitle": "您的評價會公開顯示，並標示為已驗證的預約。",
+    "rating": "評分",
+    "stars": "{n, plural, other {# 顆星}}",
+    "bodyLabel": "與大家分享您的體驗",
+    "bodyPlaceholder": "有什麼讓您印象深刻？您會推薦嗎？",
+    "post": "發布評價"
+  },
+  "slotPicker": {
+    "previousWeek": "上一週",
+    "nextWeek": "下一週",
+    "noOpenings": "這天沒有空檔。",
+    "selected": "已選擇 {time}"
+  }
+}

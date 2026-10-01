@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "男士理髮"
+  },
+  "hair": {
+    "name": "美髮與理髮",
+    "description": "剪髮、染髮、造型、編髮和儀容整理。"
+  },
+  "lashes-brows": {
+    "name": "美睫與美眉"
+  },
+  "massage": {
+    "name": "按摩"
+  },
+  "personal-training": {
+    "name": "私人教練"
+  },
+  "hair-salon": {
+    "name": "美髮沙龍"
+  },
+  "makeup": {
+    "name": "彩妝"
+  },
+  "nails": {
+    "name": "美甲",
+    "description": "手部保養、足部保養、延甲和指甲彩繪。"
+  },
+  "spa": {
+    "name": "SPA 水療"
+  },
+  "yoga-pilates": {
+    "name": "瑜伽與皮拉提斯"
+  },
+  "beauty": {
+    "name": "美容",
+    "description": "美睫、美眉、彩妝和肌膚保養。"
+  },
+  "braids-locs": {
+    "name": "編髮與髒辮"
+  },
+  "skincare": {
+    "name": "臉部保養與美容"
+  },
+  "wellness": {
+    "name": "身心舒壓",
+    "description": "按摩、SPA 和身體保養。"
+  },
+  "fitness": {
+    "name": "健身",
+    "description": "私人教練、瑜伽、皮拉提斯和運動指導。"
+  },
+  "tattoo-piercing": {
+    "name": "刺青與穿洞",
+    "description": "客製刺青、現成圖案和穿洞。"
+  },
+  "photography": {
+    "name": "攝影與影片",
+    "description": "人像、活動、商品和影片拍攝。"
+  },
+  "education": {
+    "name": "課程與家教",
+    "description": "家教、音樂老師和語言課程。"
+  },
+  "home-services": {
+    "name": "居家服務",
+    "description": "清潔、修繕和水電師傅。"
+  },
+  "automotive": {
+    "name": "汽車服務",
+    "description": "汽車美容、洗車和到府維修。"
+  },
+  "pets": {
+    "name": "寵物",
+    "description": "美容、保母和訓練。"
+  },
+  "events": {
+    "name": "活動",
+    "description": "DJ、企劃和活動專業人士。"
+  },
+  "professional": {
+    "name": "專業服務",
+    "description": "顧問、教練和諮詢師。"
+  },
+  "other": {
+    "name": "其他",
+    "description": "其他所有可預約的服務。"
+  }
+}

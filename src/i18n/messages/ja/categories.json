@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "理容室・バーバー"
+  },
+  "hair": {
+    "name": "ヘア・バーバー",
+    "description": "カット、カラー、スタイリング、ブレイズ、グルーミング。"
+  },
+  "lashes-brows": {
+    "name": "まつげ・眉毛"
+  },
+  "massage": {
+    "name": "マッサージ"
+  },
+  "personal-training": {
+    "name": "パーソナルトレーニング"
+  },
+  "hair-salon": {
+    "name": "美容室"
+  },
+  "makeup": {
+    "name": "メイク"
+  },
+  "nails": {
+    "name": "ネイル",
+    "description": "マニキュア、ペディキュア、スカルプチュア、ネイルアート。"
+  },
+  "spa": {
+    "name": "スパ"
+  },
+  "yoga-pilates": {
+    "name": "ヨガ・ピラティス"
+  },
+  "beauty": {
+    "name": "美容",
+    "description": "まつげ、眉毛、メイク、スキンケア。"
+  },
+  "braids-locs": {
+    "name": "ブレイズ・ドレッド"
+  },
+  "skincare": {
+    "name": "フェイシャル・エステ"
+  },
+  "wellness": {
+    "name": "ウェルネス",
+    "description": "マッサージ、スパ、ボディケア。"
+  },
+  "fitness": {
+    "name": "フィットネス",
+    "description": "パーソナルトレーニング、ヨガ、ピラティス、コーチング。"
+  },
+  "tattoo-piercing": {
+    "name": "タトゥー・ピアス",
+    "description": "オリジナルタトゥー、フラッシュ、ピアッシング。"
+  },
+  "photography": {
+    "name": "写真・動画",
+    "description": "ポートレート、イベント、商品撮影、動画。"
+  },
+  "education": {
+    "name": "レッスン・家庭教師",
+    "description": "家庭教師、音楽教室、語学レッスン。"
+  },
+  "home-services": {
+    "name": "暮らしのサービス",
+    "description": "ハウスクリーニング、修理、便利屋。"
+  },
+  "automotive": {
+    "name": "カーサービス",
+    "description": "カーディテイリング、洗車、出張整備。"
+  },
+  "pets": {
+    "name": "ペット",
+    "description": "トリミング、ペットシッター、しつけ。"
+  },
+  "events": {
+    "name": "イベント",
+    "description": "DJ、プランナー、イベントのプロ。"
+  },
+  "professional": {
+    "name": "専門サービス",
+    "description": "コンサルタント、コーチ、アドバイザー。"
+  },
+  "other": {
+    "name": "その他",
+    "description": "予約できるその他すべて。"
+  }
+}

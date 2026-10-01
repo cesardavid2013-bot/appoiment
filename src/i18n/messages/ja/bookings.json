@@ -1,0 +1,134 @@
+{
+  "status": {
+    "pending_payment": "お支払い待ち",
+    "requested": "リクエスト送信済み",
+    "confirmed": "確定",
+    "checked_in": "チェックイン済み",
+    "in_progress": "施術中",
+    "completed": "完了",
+    "cancelled": "キャンセル済み",
+    "declined": "お断り",
+    "no_show": "無断キャンセル",
+    "expired": "期限切れ"
+  },
+  "list": {
+    "title": "予約",
+    "filters": "予約の絞り込み",
+    "tabs": {
+      "upcoming": "今後",
+      "past": "過去",
+      "cancelled": "キャンセル済み"
+    },
+    "howDidItGo": "いかがでしたか？",
+    "review": "レビュー",
+    "empty": {
+      "upcoming": "今後の予約はありません",
+      "past": "過去の予約はまだありません",
+      "cancelled": "キャンセルした予約はありません",
+      "upcomingBody": "予約すると、ここに表示されます。道順、リマインダー、かんたんな日時変更もこちらから。",
+      "findPro": "プロを探す"
+    }
+  },
+  "detail": {
+    "metaTitle": "予約",
+    "allBookings": "すべての予約",
+    "hero": {
+      "confirmedTitle": "予約が確定しました",
+      "confirmedBody": "確認メールをお送りしました。予約日の前にリマインダーでお知らせします。",
+      "requestedTitle": "リクエストを送信しました",
+      "requestedBody": "{business}がリクエストを確認します。返答があり次第お知らせします。それまでの間、お時間は確保されています。",
+      "paymentTitle": "お支払いを処理しています",
+      "paymentBody": "お支払いが済んでいれば、数秒で自動的に更新されます。お支払いが完了するまで、お時間は確保されています。"
+    },
+    "calendarDetails": "予約番号 {reference}",
+    "ref": "予約番号",
+    "when": "日時",
+    "with": "担当",
+    "where": "場所",
+    "atYourAddress": "ご指定の住所",
+    "online": "オンライン",
+    "virtualLink": "セッションの前に事業者からリンクが送られます。",
+    "yourReview": "あなたのレビュー",
+    "payment": {
+      "title": "お支払い",
+      "serviceFee": "サービス料",
+      "tax": "税",
+      "estimatedTotal": "合計（見積もり）",
+      "total": "合計",
+      "paid": "支払済み",
+      "refunded": "返金済み",
+      "balance": "残額",
+      "dueAtAppointment": "当日のお支払い",
+      "tip": "チップ"
+    },
+    "policy": {
+      "title": "キャンセルポリシー",
+      "freeUntil": "予約の{hours, plural, other {#時間}}前まで無料でキャンセルできます。",
+      "freeAnytime": "予約時刻の前ならいつでも無料でキャンセルできます。",
+      "lateFee": "それ以降のキャンセル：合計の{percent}%。",
+      "depositNonRefundable": "デポジットは返金されません。",
+      "cannotCancel": "この予約はキャンセルできなくなりました。",
+      "alreadyStarted": "この予約はすでに開始しています。",
+      "cannotReschedule": "この予約は日時を変更できません。",
+      "maxReschedules": "この予約は日時変更の上限回数に達しています。事業者にお問い合わせください。",
+      "rescheduleWindow": "変更は予約の{hours, plural, other {#時間}}前までに行う必要があります。事業者にお問い合わせください。"
+    },
+    "refund": {
+      "noCharge": "料金は発生しません。",
+      "full": "全額返金されます。",
+      "none": "この事業者のポリシーにより、お支払いは返金されません。",
+      "partial": "この事業者のポリシーに基づき、一部が返金されます。"
+    },
+    "note": "メモ：{reason}",
+    "problem": "この予約に問題がありますか？<link>サポートに問い合わせる</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} {time}",
+    "cancelledToast": "予約をキャンセルしました",
+    "refundOnWay": "{amount}の返金手続きを行いました。",
+    "rescheduledToast": "日時を変更しました",
+    "payToConfirm": "{amount}を支払って確定",
+    "addToCalendar": "カレンダーに追加",
+    "directions": "道順",
+    "message": "メッセージ",
+    "bookAgain": "もう一度予約",
+    "googleCalendar": "Googleカレンダー",
+    "leaveReview": "レビューを書く",
+    "reschedule": "日時を変更",
+    "cancelAppointment": "予約をキャンセル",
+    "cancelTitle": "この予約をキャンセルしますか？",
+    "insideWindow": "事業者のキャンセル期限を過ぎています。",
+    "refundAmount": "返金額：{amount}。",
+    "keptAmount": "事業者が受け取る金額：{amount}。",
+    "reason": "理由",
+    "reasonHint": "事業者に共有されます。",
+    "chooseNewTime": "新しい日時を選択",
+    "currently": "現在：{when}",
+    "keepCurrentTime": "現在の日時のままにする",
+    "moveTo": "{time}に変更",
+    "chooseTime": "時間を選択"
+  },
+  "review": {
+    "ratings": {
+      "1": "不満",
+      "2": "まあまあ",
+      "3": "良い",
+      "4": "とても良い",
+      "5": "最高"
+    },
+    "thanks": "レビューありがとうございます",
+    "title": "{business}はいかがでしたか？",
+    "subtitle": "レビューは公開され、認証済みの予約として表示されます。",
+    "rating": "評価",
+    "stars": "{n, plural, other {星#つ}}",
+    "bodyLabel": "来店の感想を教えてください",
+    "bodyPlaceholder": "印象に残ったことは？おすすめできますか？",
+    "post": "レビューを投稿"
+  },
+  "slotPicker": {
+    "previousWeek": "前の週",
+    "nextWeek": "次の週",
+    "noOpenings": "この日は空きがありません。",
+    "selected": "{time}を選択中"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "language": "言語",
+  "meta": {
+    "title": "Kept — 信頼できる地元のプロを予約",
+    "description": "理容師、スタイリスト、トレーナー、フォトグラファー、家庭教師など、あらゆる地元のプロを見つけて予約。ご自身の予約管理もかんたんに。"
+  },
+  "skipToContent": "コンテンツへスキップ",
+  "logoHome": "Kept ホーム",
+  "header": {
+    "mainNav": "メイン",
+    "search": "サービスやプロを検索",
+    "ask": "質問",
+    "askKept": "Keptに聞く",
+    "explore": "探す",
+    "myBusiness": "マイビジネス",
+    "forPros": "プロの方へ",
+    "bookings": "予約",
+    "messages": "メッセージ",
+    "notifications": "通知",
+    "unread": "未読",
+    "accountMenu": "アカウントメニュー",
+    "logIn": "ログイン",
+    "signUp": "新規登録"
+  },
+  "accountMenu": {
+    "bookings": "予約",
+    "saved": "保存済み",
+    "messages": "メッセージ",
+    "settings": "アカウント設定",
+    "help": "ヘルプとサポート",
+    "switchToBusiness": "ビジネスに切り替え",
+    "offerServices": "サービスを提供する",
+    "admin": "管理コンソール",
+    "signOut": "ログアウト"
+  },
+  "tabs": {
+    "label": "メイン",
+    "home": "ホーム",
+    "explore": "探す",
+    "bookings": "予約",
+    "inbox": "受信箱",
+    "account": "アカウント"
+  },
+  "footer": {
+    "tagline": "信頼できるプロを予約。予約管理をもっと楽に。",
+    "discover": "見つける",
+    "explore": "探す",
+    "hair": "ヘア・バーバー",
+    "wellness": "ウェルネス",
+    "fitness": "フィットネス",
+    "forPros": "プロの方へ",
+    "howItWorks": "ご利用の流れ",
+    "listServices": "サービスを掲載",
+    "dashboard": "ビジネスダッシュボード",
+    "help": "ヘルプ",
+    "support": "サポート",
+    "terms": "利用規約",
+    "privacy": "プライバシー",
+    "copyright": "© {year} Kept. 無断転載を禁じます。"
+  },
+  "price": {
+    "free": "無料",
+    "quote": "料金はご相談",
+    "from": "{price}〜"
+  },
+  "rating": {
+    "new": "新着",
+    "summary": "{count, plural, other {#件のレビュー}}で評価{avg}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "お支払い待ち",
+    "requested": "リクエスト送信済み",
+    "confirmed": "確定",
+    "checked_in": "チェックイン済み",
+    "in_progress": "施術中",
+    "completed": "完了",
+    "cancelled": "キャンセル済み",
+    "declined": "お断り",
+    "no_show": "無断キャンセル",
+    "expired": "期限切れ"
+  },
+  "policy": {
+    "freeUntil": "{hours}時間前まで無料でキャンセルできます。それ以降のキャンセルには合計の{percent}%が請求されます。",
+    "cancelAhead": "キャンセルは予約の{hours}時間前までにお願いします。",
+    "freeAnyTime": "予約時刻の前ならいつでも無料でキャンセルできます。",
+    "depositRefundable": "期限内にキャンセルすればデポジットは返金されます。",
+    "depositNonRefundable": "デポジットは返金されません。",
+    "reschedule": "{hours}時間前までオンラインで日時を変更できます。"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "notFound": "見つかりません",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{city}の{title}",
+    "bookOnline": "{name}をオンラインで予約。"
+  },
+  "preview": {
+    "notice": "プレビュー — 公開するまで、このページはあなたにしか表示されません。",
+    "goLive": "公開する"
+  },
+  "verified": "Keptによる認証済み",
+  "verifiedLabel": "認証済みのビジネス",
+  "reviewsCount": "{count, plural, other {認証済みのレビュー#件}}",
+  "newOnKept": "Keptに新登場",
+  "travels": "{city} · 最大{km} kmまで出張",
+  "status": {
+    "openUntil": "営業中 · {time}まで",
+    "opensAt": "{time}に開店",
+    "opensTomorrow": "明日{time}に開店",
+    "opensDay": "{day} {time}に開店",
+    "notSet": "営業時間未設定",
+    "closed": "休業"
+  },
+  "nav": {
+    "label": "プロフィールのセクション",
+    "services": "サービス",
+    "work": "作品",
+    "featured": "注目",
+    "reviews": "レビュー",
+    "about": "紹介"
+  },
+  "services": {
+    "eyebrow": "メニュー",
+    "title": "サービス",
+    "empty": "このビジネスはまだサービスを公開していません。",
+    "sale": "セール",
+    "group": "グループ · 最大{count}人",
+    "request": "リクエスト予約",
+    "options": "オプションあり",
+    "deposit": "予約時にデポジット",
+    "book": "予約",
+    "bookService": "{name}を予約"
+  },
+  "work": {
+    "eyebrow": "ポートフォリオ",
+    "title": "最近の作品"
+  },
+  "featured": {
+    "eyebrow": "SNS",
+    "title": "注目",
+    "allProfiles": "すべてのSNSプロフィール",
+    "bookThis": "これを予約 · {service}",
+    "newTab": "（新しいタブで開きます）",
+    "footnote": "プレーヤーは再生ボタンを押したときにだけ各プラットフォームから読み込まれます。",
+    "play": "{title}を再生",
+    "loadsFrom": "{host}から読み込み"
+  },
+  "team": {
+    "eyebrow": "スタッフ",
+    "title": "チーム"
+  },
+  "reviews": {
+    "eyebrow": "口コミ",
+    "title": "レビュー",
+    "empty": "レビューはまだありません。レビューは来店が完了したお客様だけが投稿できます。",
+    "distribution": "評価の分布",
+    "onlyCustomers": "予約が完了したお客様だけがレビューを投稿できます。",
+    "response": "{name}からの返信",
+    "stars": "5つ星中{value}"
+  },
+  "about": {
+    "eyebrow": "お店について",
+    "title": "紹介",
+    "hours": "営業時間",
+    "timesIn": "時間は{zone}で表示しています。",
+    "policies": "ポリシー",
+    "noShow": "無断キャンセルの場合、合計の{percent}%が請求されることがあります。",
+    "experience": "経験{years}年以上",
+    "amenities": "設備・サービス",
+    "online": "オンライン",
+    "directions": "道順",
+    "comesToYou": "出張対応",
+    "mobileBody": "{city}を拠点に、最大{km} kmまで出張します。住所は予約時に入力していただきます。",
+    "onlineSessions": "オンラインセッション",
+    "onlineBody": "どこからでも参加できます。リンクは予約後に共有されます。"
+  },
+  "panel": {
+    "label": "予約",
+    "eyebrow": "ご予約",
+    "freeOptions": "無料のオプションあり",
+    "from": "サービス {price}〜",
+    "onConsultation": "料金はご相談",
+    "nextToday": "次の空き：今日",
+    "nextTomorrow": "次の空き：明日",
+    "nextOn": "次の空き：{day}",
+    "none": "今後2週間は空きがありません",
+    "bookNow": "今すぐ予約",
+    "requestToBook": "予約をリクエスト",
+    "instant": "即時確定",
+    "confirms": "事業者がリクエストを確認して確定します",
+    "notTaking": "このビジネスはまだ予約を受け付けていません。",
+    "mobileFrom": "{price}〜",
+    "mobileNext": "次の空き：{day} {time}",
+    "seeAvailability": "空き状況を見る",
+    "request": "リクエスト"
+  },
+  "actions": {
+    "share": "共有",
+    "shareTitle": "{name}を共有",
+    "shareBody": "リンクを送るか、コードをスキャンして予約ページを開いてください。",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "downloadQr": "QRコードをダウンロード",
+    "ask": "質問する",
+    "messageTitle": "{name}にメッセージ",
+    "messageBody": "サービス、空き状況など、予約前に何でも質問できます。電話番号とメールアドレスは公開されません。",
+    "cancel": "キャンセル",
+    "send": "メッセージを送信",
+    "yourMessage": "メッセージ",
+    "placeholder": "こんにちは！今週土曜の午後、スキンフェードをお願いできますか？",
+    "sent": "メッセージを送信しました",
+    "sentBody": "{name}から受信箱に返信が届きます。"
+  },
+  "portfolio": {
+    "compare": "ビフォーアフターを比較",
+    "portfolio": "ポートフォリオ",
+    "close": "閉じる",
+    "previous": "前へ",
+    "next": "次へ",
+    "before": "ビフォー",
+    "after": "アフター",
+    "beforeAfter": "ビフォー／アフター",
+    "video": "動画",
+    "openItem": "{n}番目を開く",
+    "browse": "矢印キーで切り替え",
+    "bookThis": "これを予約",
+    "bookThisService": "これを予約 — {service}"
+  },
+  "kind": {
+    "video": "動画",
+    "short": "ショート",
+    "post": "投稿",
+    "reel": "リール",
+    "track": "曲",
+    "album": "アルバム",
+    "artist": "アーティスト",
+    "playlist": "プレイリスト",
+    "episode": "エピソード",
+    "show": "ポッドキャスト"
+  }
+}

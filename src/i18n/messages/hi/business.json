@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "ऑनलाइन",
+    "comesToYou": "आपके पास आते हैं",
+    "comesToYouIn": "आपके पास आते हैं · {city}",
+    "lessThanOneKm": "<1 कि.मी.",
+    "promoted": "प्रमोटेड",
+    "verified": "सत्यापित व्यवसाय",
+    "instant": "तुरंत पुष्टि",
+    "request": "बुकिंग का अनुरोध",
+    "bookAt": "{day} को {time} बजे बुक करें",
+    "moreTimes": "और समय",
+    "freeConsultation": "मुफ़्त परामर्श उपलब्ध",
+    "priceOnRequest": "कीमत अनुरोध पर",
+    "viewTimes": "समय देखें"
+  },
+  "rail": {
+    "seeAll": "सभी देखें"
+  },
+  "favorite": {
+    "save": "सहेजें",
+    "saved": "सहेजा गया",
+    "remove": "सहेजे गए से हटाएँ",
+    "savedToast": "सहेजा गया",
+    "savedToastHint": "इसे कभी भी “सहेजे गए” में पाएँ।"
+  }
+}

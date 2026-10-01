@@ -1,0 +1,147 @@
+{
+  "footer": "您收到此邮件是因为您的 Kept 账户有相关动态。可在“账户 → 通知”中管理通知。",
+  "details": {
+    "service": "服务",
+    "when": "时间",
+    "with": "服务人员",
+    "where": "地点",
+    "online": "线上——链接将由商家提供",
+    "reference": "预约编号",
+    "paid": "已付",
+    "balanceDue": "待付余额"
+  },
+  "cta": {
+    "viewAppointment": "查看预约",
+    "viewRequest": "查看请求",
+    "reviewRequest": "处理请求",
+    "openAppointment": "打开预约",
+    "openCalendar": "打开日程",
+    "findAnotherTime": "另选时间",
+    "payDeposit": "支付定金",
+    "leaveReview": "发表评价",
+    "bookThisTime": "预约此时间"
+  },
+  "booked": {
+    "title": "您已成功预约{business}",
+    "subject": "已确认：{business}的{service}",
+    "heading": "您的预约已确认",
+    "footnote": "计划有变？您可以在预约页面改约或取消，具体以商家政策为准。",
+    "sms": "Kept：{business}的{service}已确认，时间为{when}。编号 {reference}"
+  },
+  "requested": {
+    "title": "已向{business}发送请求",
+    "body": "对方回复后我们会第一时间通知您。",
+    "subject": "请求已发送：{business}的{service}",
+    "heading": "您的请求已发送",
+    "paragraph": "{business}会先审核请求再确认。对方回复后，我们会立即发邮件通知您。"
+  },
+  "bizBooked": {
+    "title": "新预约",
+    "requestTitle": "新预约请求",
+    "subject": "新预约：{service}",
+    "requestSubject": "新请求：{service}",
+    "heading": "您有一个新预约",
+    "requestHeading": "您有一个新预约请求",
+    "requestParagraph": "请在日程中批准或拒绝。未处理的请求会自动过期。"
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business}无法接受您的请求",
+      "subject": "请求被拒绝：{service}",
+      "heading": "您的请求未被接受"
+    },
+    "expired": {
+      "title": "您的预约已过期",
+      "subject": "您的预约已过期",
+      "heading": "您的预约已过期"
+    },
+    "cancelled": {
+      "title": "{business}取消了您的预约",
+      "subject": "已取消：{service}",
+      "heading": "您的预约已取消"
+    },
+    "note": "商家留言：“{note}”",
+    "refund": "{amount} 的退款正在退回您的原付款方式。",
+    "bookAgain": "您可以随时另约时间。"
+  },
+  "bizCancelled": {
+    "title": "有客户取消了预约",
+    "expiredTitle": "有预约已过期",
+    "subject": "已取消：{service} · {when}",
+    "heading": "有一个预约已取消",
+    "reason": "原因：“{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business}调整了您的预约时间",
+    "body": "新时间：{when}",
+    "subject": "新时间：{business}的{service}",
+    "heading": "您的预约有了新时间",
+    "previously": "原时间：{when}。",
+    "changeIt": "如果新时间不合适，您可以在预约页面改约或取消。"
+  },
+  "bizRescheduled": {
+    "title": "有客户改约了",
+    "subject": "已改约：{service}",
+    "heading": "有一个预约已改约"
+  },
+  "approvedPay": {
+    "title": "{business}接受了您的请求",
+    "body": "支付 {amount} 定金即可确认。",
+    "subject": "已接受——请确认您的{service}",
+    "heading": "您的请求已被接受",
+    "paragraph": "支付 {amount} 定金即可锁定您的时间。未付款的预约将自动释放。"
+  },
+  "reminder": {
+    "title": "提醒：{lead}的{service}",
+    "body": "{when}，{business}",
+    "subject": "提醒：{lead} {time} 的{service}",
+    "heading": "{lead}见",
+    "footnote": "要迟到或无法前往？请在预约页面告知商家。",
+    "sms": "提醒：{business}的{service}，时间为{when}。"
+  },
+  "review": {
+    "title": "{service}体验如何？",
+    "body": "为{business}写一条简短评价吧。",
+    "subject": "您在{business}的体验如何？",
+    "heading": "体验如何？",
+    "paragraph": "您的评价能帮助{business}，也能帮助其他正在挑选专业人士的人。不到一分钟即可完成。"
+  },
+  "waitlist": {
+    "title": "{business}有空位了",
+    "body": "{when}现在可以预约。先到先得，请尽快预约。",
+    "subject": "{business}有时间空出来了",
+    "heading": "好消息——有空位了",
+    "paragraph": "{when}刚刚空出。空位先到先得，如果时间合适，请尽快预约。"
+  },
+  "thread": {
+    "confirmed": "预约已确认：{service}，{when}。",
+    "declined": "预约被拒绝：{service}，{when}。",
+    "expired": "预约已过期：{service}，{when}。",
+    "cancelled": "预约已取消：{service}，{when}。",
+    "moved": "预约已从{from}改至{to}。"
+  },
+  "verify": {
+    "subject": "验证您的邮箱",
+    "preheader": "轻点一下即可验证您的邮箱地址。",
+    "heading": "欢迎您，{name}",
+    "paragraph": "验证邮箱后，商家才能就您的预约与您联系。",
+    "cta": "验证邮箱",
+    "footnote": "此链接 3 天内有效。如果您没有创建过账户，请忽略此邮件。"
+  },
+  "reset": {
+    "subject": "重置您的密码",
+    "heading": "重置您的密码",
+    "paragraph": "有人（希望是您本人）申请重置您的 Kept 账户密码。",
+    "cta": "设置新密码",
+    "footnote": "此链接 1 小时内有效。如果这不是您本人的操作，请放心忽略此邮件——您的密码不会改变。"
+  },
+  "invite": {
+    "subject": "{inviter}邀请您在 Kept 上加入{business}",
+    "reminderSubject": "提醒：在 Kept 上加入{business}",
+    "heading": "加入{business}",
+    "paragraph": "{inviter}邀请您加入{business}团队。加入后，您可以查看自己的日程并管理您的预约。",
+    "cta": "接受邀请",
+    "footnote": "此邀请将在 {days} 天后过期。",
+    "reminderFootnote": "此邀请将在 {days} 天后过期。之前的邀请链接已失效。"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "youPrefix": "आप:",
+  "unread": "अपठित",
+  "apptLine": "{service} · {date}, {time} बजे",
+  "list": {
+    "title": "संदेश",
+    "unread": "{count, plural, one {# अपठित बातचीत।} other {# अपठित बातचीत।}}",
+    "caughtUp": "आपने सब देख लिया है।",
+    "emptyTitle": "अभी कोई संदेश नहीं",
+    "emptyBody": "किसी सेवा, कीमत या समय के बारे में सवाल है? किसी प्रोफ़ेशनल का पेज खोलें और “सवाल पूछें” पर टैप करें। उनके जवाब यहाँ आएँगे।",
+    "findPro": "प्रोफ़ेशनल खोजें"
+  },
+  "thread": {
+    "metaTitle": "बातचीत",
+    "placeholder": "{business} को संदेश भेजें"
+  },
+  "new": {
+    "metaTitle": "नया संदेश",
+    "ownTitle": "यह आपका व्यवसाय है",
+    "ownBody": "{business} को ग्राहकों के संदेश आपके व्यवसाय इनबॉक्स में आते हैं।",
+    "ownButton": "व्यवसाय इनबॉक्स खोलें",
+    "placeholderBooking": "इस बुकिंग के बारे में पूछें",
+    "placeholderQuestion": "सवाल पूछें",
+    "emptyBookingTitle": "अपनी बुकिंग के बारे में {business} को संदेश भेजें",
+    "emptyQuestionTitle": "बुक करने से पहले {business} से पूछें",
+    "emptyBookingBody": "देर हो रही है, कुछ बदलना है या कोई सवाल है? आपका संदेश सीधे उनकी टीम तक जाता है।",
+    "emptyQuestionBody": "कीमतें, समय, क्या साथ लाना है — {business} यहाँ जवाब देगा और हम आपको बताएँगे। आपका फ़ोन नंबर और ईमेल निजी रहते हैं।"
+  },
+  "shell": {
+    "allMessages": "सभी संदेश",
+    "viewProfile": "प्रोफ़ाइल देखें",
+    "book": "बुक करें"
+  },
+  "pro": {
+    "backToInbox": "इनबॉक्स पर वापस जाएँ"
+  },
+  "view": {
+    "label": "संदेश",
+    "you": "आप",
+    "loadingEarlier": "पुराने संदेश लोड हो रहे हैं",
+    "showEarlier": "पुराने संदेश दिखाएँ",
+    "seen": "देखा गया",
+    "sending": "भेजा जा रहा है…",
+    "notSent": "नहीं भेजा गया।",
+    "retry": "फिर से कोशिश करें",
+    "discard": "हटाएँ",
+    "newMessages": "{count, plural, one {# नया संदेश} other {# नए संदेश}}",
+    "openPhoto": "फ़ोटो नए टैब में खोलें",
+    "photo": "फ़ोटो"
+  },
+  "composer": {
+    "about": "{appointment} के बारे में",
+    "unlink": "इस अपॉइंटमेंट को लिंक न करें",
+    "processingPhoto": "फ़ोटो प्रोसेस हो रही है",
+    "removePhoto": "फ़ोटो हटाएँ",
+    "attachPhoto": "फ़ोटो जोड़ें",
+    "label": "संदेश",
+    "send": "संदेश भेजें",
+    "hint": "भेजने के लिए Enter दबाएँ, नई लाइन के लिए Shift और Enter।"
+  },
+  "inbox": {
+    "title": "इनबॉक्स",
+    "conversations": "बातचीत",
+    "unread": "{count} अपठित",
+    "allCaughtUp": "सब देख लिया",
+    "searchLabel": "क्लाइंट के नाम से बातचीत खोजें",
+    "searchPlaceholder": "क्लाइंट खोजें",
+    "clearSearch": "खोज साफ़ करें",
+    "show": "दिखाएँ",
+    "all": "सभी",
+    "unreadFilter": "अपठित",
+    "noClientsNamed": "“{term}” नाम का कोई क्लाइंट नहीं",
+    "nothingUnread": "कुछ भी अपठित नहीं",
+    "noMessages": "अभी कोई संदेश नहीं",
+    "tryDifferent": "कोई दूसरी खोज आज़माएँ या सभी बातचीत दिखाएँ।",
+    "emptyBody": "जब क्लाइंट आपके पेज से या किसी बुकिंग के बारे में सवाल पूछेंगे, तो वह यहाँ दिखेगा।"
+  },
+  "clientPanel": {
+    "client": "क्लाइंट",
+    "visits": "विज़िट",
+    "noShows": "नो-शो",
+    "cancelled": "रद्द",
+    "clientSince": "{date} से क्लाइंट",
+    "noVisits": "अभी कोई पूरी हुई विज़िट नहीं",
+    "lastIn": "आखिरी बार {date} में",
+    "tags": "टैग",
+    "clientProfile": "क्लाइंट प्रोफ़ाइल",
+    "notBooked": "अभी तक आपके साथ बुक नहीं किया है — यह बातचीत आपके सार्वजनिक पेज से शुरू हुई।",
+    "upcoming": "आने वाली",
+    "nothingBooked": "कुछ बुक नहीं है।",
+    "recent": "हाल की"
+  }
+}

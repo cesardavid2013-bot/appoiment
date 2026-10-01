@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "线上",
+    "comesToYou": "上门服务",
+    "comesToYouIn": "上门服务 · {city}",
+    "lessThanOneKm": "<1 公里",
+    "promoted": "推广",
+    "verified": "已认证商家",
+    "instant": "即时确认",
+    "request": "申请预约",
+    "bookAt": "预约{day} {time}",
+    "moreTimes": "更多时间",
+    "freeConsultation": "可免费咨询",
+    "priceOnRequest": "价格面议",
+    "viewTimes": "查看时间"
+  },
+  "rail": {
+    "seeAll": "查看全部"
+  },
+  "favorite": {
+    "save": "收藏",
+    "saved": "已收藏",
+    "remove": "取消收藏",
+    "savedToast": "已收藏",
+    "savedToastHint": "随时可在“收藏”中找到。"
+  }
+}

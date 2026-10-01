@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "線上",
+    "comesToYou": "到府服務",
+    "comesToYouIn": "到府服務 · {city}",
+    "lessThanOneKm": "<1 公里",
+    "promoted": "推廣",
+    "verified": "已驗證店家",
+    "instant": "立即確認",
+    "request": "申請預約",
+    "bookAt": "預約{day} {time}",
+    "moreTimes": "更多時段",
+    "freeConsultation": "提供免費諮詢",
+    "priceOnRequest": "價格請洽詢",
+    "viewTimes": "查看時段"
+  },
+  "rail": {
+    "seeAll": "查看全部"
+  },
+  "favorite": {
+    "save": "收藏",
+    "saved": "已收藏",
+    "remove": "取消收藏",
+    "savedToast": "已收藏",
+    "savedToastHint": "隨時可在「收藏」中找到。"
+  }
+}

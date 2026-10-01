@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "探索專業人士",
+    "category": "預約{category}",
+    "query": "{q} — 搜尋",
+    "description": "依真實可預約時段、價格和已驗證的評價比較專業人士。"
+  },
+  "bar": {
+    "placeholder": "搜尋服務或專業人士",
+    "label": "搜尋",
+    "clear": "清除搜尋"
+  },
+  "location": {
+    "placeholder": "任何地點",
+    "label": "地點",
+    "clear": "清除地點",
+    "useMine": "使用我目前的位置",
+    "finding": "正在定位…",
+    "current": "目前位置",
+    "selectedArea": "所選區域",
+    "unsupported": "您的瀏覽器無法分享位置，請改為輸入城市。",
+    "denied": "此網站的定位功能已關閉。請改為輸入城市，或在瀏覽器設定中允許存取位置。",
+    "failed": "無法取得您的位置，請改為輸入城市。"
+  },
+  "quick": {
+    "availableToday": "今天有空",
+    "instant": "立即預約",
+    "mobile": "到府服務",
+    "virtual": "線上"
+  },
+  "view": {
+    "label": "檢視",
+    "list": "清單",
+    "map": "地圖"
+  },
+  "heading": {
+    "explore": "探索",
+    "results": "搜尋結果",
+    "query": "「{q}」"
+  },
+  "summary": {
+    "updating": "更新中…",
+    "count": "{count, plural, other {# 位專業人士}}",
+    "countMore": "{count}+ 位專業人士",
+    "near": "{place}附近的{results}",
+    "nearYou": "您附近的{results}"
+  },
+  "sort": {
+    "label": "排序方式",
+    "relevance": "最佳符合",
+    "rating": "評分最高",
+    "price": "價格最低",
+    "distance": "距離最近"
+  },
+  "categories": {
+    "label": "類別",
+    "all": "全部"
+  },
+  "empty": {
+    "title": "目前沒有符合的結果",
+    "query": "請試試更廣泛的字詞、換個寫法，或移除部分篩選條件。",
+    "filters": "請試著移除篩選條件，或擴大搜尋範圍。",
+    "clear": "清除所有篩選條件"
+  },
+  "showMore": "顯示更多",
+  "filters": {
+    "button": "篩選",
+    "buttonCount": "篩選 · {count}",
+    "title": "篩選",
+    "clearAll": "全部清除",
+    "show": "顯示結果",
+    "availability": "可預約時段與預約方式",
+    "rating": "評分",
+    "minRating": "最低評分",
+    "any": "不限",
+    "price": "起價上限",
+    "maxPrice": "最高起價",
+    "distance": "距離",
+    "provider": "服務提供者",
+    "providerType": "提供者類型",
+    "individual": "獨立專業人士",
+    "business": "店家與團隊"
+  }
+}

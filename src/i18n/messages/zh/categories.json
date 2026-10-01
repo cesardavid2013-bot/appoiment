@@ -1,0 +1,88 @@
+{
+  "barber": {
+    "name": "理发店"
+  },
+  "hair": {
+    "name": "美发与理发",
+    "description": "剪发、染发、造型、编发和修容。"
+  },
+  "lashes-brows": {
+    "name": "睫毛与眉毛"
+  },
+  "massage": {
+    "name": "按摩"
+  },
+  "personal-training": {
+    "name": "私人教练"
+  },
+  "hair-salon": {
+    "name": "美发沙龙"
+  },
+  "makeup": {
+    "name": "化妆"
+  },
+  "nails": {
+    "name": "美甲",
+    "description": "修手、修脚、延长甲和美甲彩绘。"
+  },
+  "spa": {
+    "name": "水疗 SPA"
+  },
+  "yoga-pilates": {
+    "name": "瑜伽与普拉提"
+  },
+  "beauty": {
+    "name": "美容",
+    "description": "睫毛、眉毛、化妆和护肤。"
+  },
+  "braids-locs": {
+    "name": "编发与脏辫"
+  },
+  "skincare": {
+    "name": "皮肤护理"
+  },
+  "wellness": {
+    "name": "身心健康",
+    "description": "按摩、水疗和身体护理。"
+  },
+  "fitness": {
+    "name": "健身",
+    "description": "私人教练、瑜伽、普拉提和训练指导。"
+  },
+  "tattoo-piercing": {
+    "name": "纹身与穿孔",
+    "description": "定制纹身、现成图案和穿孔。"
+  },
+  "photography": {
+    "name": "摄影与视频",
+    "description": "人像、活动、产品和视频拍摄。"
+  },
+  "education": {
+    "name": "课程与辅导",
+    "description": "家教、音乐老师和语言课程。"
+  },
+  "home-services": {
+    "name": "家政服务",
+    "description": "保洁、维修和杂活师傅。"
+  },
+  "automotive": {
+    "name": "汽车服务",
+    "description": "汽车美容、洗车和上门维修。"
+  },
+  "pets": {
+    "name": "宠物",
+    "description": "美容、寄养照看和训练。"
+  },
+  "events": {
+    "name": "活动",
+    "description": "DJ、策划师和活动专业人士。"
+  },
+  "professional": {
+    "name": "专业服务",
+    "description": "顾问、教练和咨询师。"
+  },
+  "other": {
+    "name": "其他",
+    "description": "其他一切可预约的服务。"
+  }
+}

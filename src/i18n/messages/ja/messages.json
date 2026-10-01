@@ -1,0 +1,93 @@
+{
+  "youPrefix": "あなた：",
+  "unread": "未読",
+  "apptLine": "{service} · {date} {time}",
+  "list": {
+    "title": "メッセージ",
+    "unread": "{count, plural, other {未読の会話が#件あります。}}",
+    "caughtUp": "すべて確認済みです。",
+    "emptyTitle": "メッセージはまだありません",
+    "emptyBody": "サービス、料金、時間について質問がありますか？プロのページを開いて「質問する」をタップしてください。返信はここに届きます。",
+    "findPro": "プロを探す"
+  },
+  "thread": {
+    "metaTitle": "会話",
+    "placeholder": "{business}にメッセージ"
+  },
+  "new": {
+    "metaTitle": "新しいメッセージ",
+    "ownTitle": "これはあなたのビジネスです",
+    "ownBody": "{business}宛てのお客様からのメッセージは、ビジネスの受信箱に届きます。",
+    "ownButton": "ビジネスの受信箱を開く",
+    "placeholderBooking": "この予約について質問する",
+    "placeholderQuestion": "質問する",
+    "emptyBookingTitle": "予約について{business}にメッセージを送る",
+    "emptyQuestionTitle": "予約の前に{business}に質問する",
+    "emptyBookingBody": "遅れそう、変更したいことがある、質問がある — メッセージはチームに直接届きます。",
+    "emptyQuestionBody": "料金、所要時間、持ち物など。{business}がここで返信し、お知らせします。電話番号とメールアドレスは公開されません。"
+  },
+  "shell": {
+    "allMessages": "すべてのメッセージ",
+    "viewProfile": "プロフィールを見る",
+    "book": "予約"
+  },
+  "pro": {
+    "backToInbox": "受信箱に戻る"
+  },
+  "view": {
+    "label": "メッセージ",
+    "you": "あなた",
+    "loadingEarlier": "以前のメッセージを読み込み中",
+    "showEarlier": "以前のメッセージを表示",
+    "seen": "既読",
+    "sending": "送信中…",
+    "notSent": "送信できませんでした。",
+    "retry": "再試行",
+    "discard": "破棄",
+    "newMessages": "{count, plural, other {#件の新しいメッセージ}}",
+    "openPhoto": "写真を新しいタブで開く",
+    "photo": "写真"
+  },
+  "composer": {
+    "about": "{appointment}について",
+    "unlink": "この予約とのリンクを解除",
+    "processingPhoto": "写真を処理中",
+    "removePhoto": "写真を削除",
+    "attachPhoto": "写真を添付",
+    "label": "メッセージ",
+    "send": "メッセージを送信",
+    "hint": "Enterで送信、Shift＋Enterで改行。"
+  },
+  "inbox": {
+    "title": "受信箱",
+    "conversations": "会話",
+    "unread": "未読{count}件",
+    "allCaughtUp": "すべて確認済み",
+    "searchLabel": "顧客名で会話を検索",
+    "searchPlaceholder": "顧客を検索",
+    "clearSearch": "検索をクリア",
+    "show": "表示",
+    "all": "すべて",
+    "unreadFilter": "未読",
+    "noClientsNamed": "「{term}」という名前の顧客はいません",
+    "nothingUnread": "未読はありません",
+    "noMessages": "メッセージはまだありません",
+    "tryDifferent": "別のキーワードで検索するか、すべての会話を表示してください。",
+    "emptyBody": "お客様があなたのページや予約について質問すると、ここに表示されます。"
+  },
+  "clientPanel": {
+    "client": "顧客",
+    "visits": "来店回数",
+    "noShows": "無断キャンセル",
+    "cancelled": "キャンセル",
+    "clientSince": "{date}からの顧客",
+    "noVisits": "完了した来店はまだありません",
+    "lastIn": "最終来店：{date}",
+    "tags": "タグ",
+    "clientProfile": "顧客プロフィール",
+    "notBooked": "まだ予約はありません。この会話は公開ページから始まりました。",
+    "upcoming": "今後の予約",
+    "nothingBooked": "予約はありません。",
+    "recent": "最近"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "欢迎回来，{name}",
+    "eyebrow": "每一个预约，都如约而至",
+    "title": "预约那些让您每周都<em>更美好</em>的人。",
+    "lead": "理发师、发型师、教练、家教、摄影师等——真实空档、透明价格，评价仅来自真实到店。",
+    "points": {
+      "verified": "仅限真实评价",
+      "prices": "预约前即知价格",
+      "instant": "即时确认"
+    }
+  },
+  "search": {
+    "placeholder": "剪发、按摩、摄影师…",
+    "label": "您想预约什么？",
+    "category": "类别",
+    "submit": "搜索",
+    "sayIt": "或者直接说——",
+    "sayItExample": "“明天 5 点后找理发师”"
+  },
+  "openings": {
+    "title": "即将有空",
+    "live": "实时同步日程",
+    "appointment": "预约"
+  },
+  "index": {
+    "eyebrow": "索引",
+    "title": "各类预约，应有尽有",
+    "exploreAll": "全部探索",
+    "pros": "{count, plural, other {# 位专业人士}}"
+  },
+  "next": {
+    "title": "您的下一个预约",
+    "details": "详情"
+  },
+  "again": {
+    "title": "再次预约",
+    "rebook": "再约"
+  },
+  "rails": {
+    "availableSoon": "即将有空",
+    "availableSoonNear": "{place}附近即将有空",
+    "availableSoonNearYou": "您附近即将有空",
+    "availableSoonSub": "实时同步自每位专业人士的日程。",
+    "recent": "最近浏览",
+    "topRated": "高分推荐",
+    "topRatedSub": "评分仅来自已完成且经过认证的预约。",
+    "newcomers": "Kept 新入驻"
+  },
+  "how": {
+    "eyebrow": "使用方式",
+    "title": "三步搞定，无需来回打电话",
+    "find": {
+      "title": "找到合适的人",
+      "body": "按需求、时间和地点搜索——或者直接用自己的话提问。每个主页都展示真实价格和经过认证的评价。"
+    },
+    "choose": {
+      "title": "选择真实时间",
+      "body": "您看到的时间就是对方日程上此刻真正空闲的时间。选好时间、添加选项，即可确认。"
+    },
+    "kept": {
+      "title": "一切交给我们",
+      "body": "您会收到确认和预约前的提醒，改约、发消息或再次预约，都在同一个地方完成。"
+    }
+  },
+  "pros": {
+    "eyebrow": "面向专业人士",
+    "title": "您的手艺，值得<em>更好</em>的前台。",
+    "body": "在线预约、绝不重复预约的日程、减少爽约的提醒，以及充分展示您作品的主页。上线期间免费。",
+    "cta": "提供您的服务",
+    "howItWorks": "了解使用方式",
+    "features": {
+      "any": {
+        "title": "任何服务",
+        "body": "选项自动调整价格和时长。"
+      },
+      "noDouble": {
+        "title": "绝不重复预约",
+        "body": "每个时间在预约当下都会再次核对。"
+      },
+      "noShows": {
+        "title": "减少爽约",
+        "body": "提醒、定金和清晰的政策。"
+      },
+      "discovered": {
+        "title": "让更多人发现您",
+        "body": "作品集、真实评价和 Spotlight。"
+      }
+    }
+  }
+}

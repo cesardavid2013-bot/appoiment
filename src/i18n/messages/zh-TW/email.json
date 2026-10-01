@@ -1,0 +1,147 @@
+{
+  "footer": "您收到這封郵件，是因為您的 Kept 帳戶有相關動態。可在「帳戶 → 通知」中管理通知。",
+  "details": {
+    "service": "服務",
+    "when": "時間",
+    "with": "服務人員",
+    "where": "地點",
+    "online": "線上——連結將由店家提供",
+    "reference": "預約編號",
+    "paid": "已付款",
+    "balanceDue": "待付餘額"
+  },
+  "cta": {
+    "viewAppointment": "查看預約",
+    "viewRequest": "查看申請",
+    "reviewRequest": "審核申請",
+    "openAppointment": "開啟預約",
+    "openCalendar": "開啟行事曆",
+    "findAnotherTime": "另選時間",
+    "payDeposit": "支付訂金",
+    "leaveReview": "撰寫評價",
+    "bookThisTime": "預約此時段"
+  },
+  "booked": {
+    "title": "您已成功預約{business}",
+    "subject": "已確認：{business}的{service}",
+    "heading": "您的預約已確認",
+    "footnote": "計畫有變？您可以在預約頁面改期或取消，但須遵守店家的政策。",
+    "sms": "Kept：{business}的{service}已確認，時間為{when}。編號 {reference}"
+  },
+  "requested": {
+    "title": "已向{business}送出申請",
+    "body": "對方一回覆，我們會立即通知您。",
+    "subject": "已送出申請：{business}的{service}",
+    "heading": "您的申請已送出",
+    "paragraph": "{business}會先審核申請再確認。對方一回覆，我們會立即寄信通知您。"
+  },
+  "bizBooked": {
+    "title": "新預約",
+    "requestTitle": "新的預約申請",
+    "subject": "新預約：{service}",
+    "requestSubject": "新申請：{service}",
+    "heading": "您有一筆新預約",
+    "requestHeading": "您有一筆新的預約申請",
+    "requestParagraph": "請在行事曆中核准或婉拒。未回覆的申請會自動逾期。"
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business}無法接受您的申請",
+      "subject": "申請遭婉拒：{service}",
+      "heading": "您的申請未被接受"
+    },
+    "expired": {
+      "title": "您的預約已逾期",
+      "subject": "您的預約已逾期",
+      "heading": "您的預約已逾期"
+    },
+    "cancelled": {
+      "title": "{business}取消了您的預約",
+      "subject": "已取消：{service}",
+      "heading": "您的預約已取消"
+    },
+    "note": "店家留言：「{note}」",
+    "refund": "{amount} 的退款正在退回您原本的付款方式。",
+    "bookAgain": "您隨時可以另約時間。"
+  },
+  "bizCancelled": {
+    "title": "有顧客取消了預約",
+    "expiredTitle": "有一筆預約已逾期",
+    "subject": "已取消：{service} · {when}",
+    "heading": "有一筆預約已取消",
+    "reason": "原因：「{reason}」"
+  },
+  "rescheduled": {
+    "title": "{business}更改了您的預約時間",
+    "body": "新時間：{when}",
+    "subject": "新時間：{business}的{service}",
+    "heading": "您的預約有了新時間",
+    "previously": "原時間：{when}。",
+    "changeIt": "如果新時間不方便，您可以在預約頁面改期或取消。"
+  },
+  "bizRescheduled": {
+    "title": "有顧客更改了預約時間",
+    "subject": "已改期：{service}",
+    "heading": "有一筆預約已改期"
+  },
+  "approvedPay": {
+    "title": "{business}已接受您的申請",
+    "body": "支付 {amount} 訂金即可確認。",
+    "subject": "已接受——請確認您的{service}",
+    "heading": "您的申請已被接受",
+    "paragraph": "支付 {amount} 訂金即可保留您的時段。未付款的預約會自動釋出。"
+  },
+  "reminder": {
+    "title": "提醒：{lead}的{service}",
+    "body": "{when}，{business}",
+    "subject": "提醒：{lead} {time} 的{service}",
+    "heading": "{lead}見",
+    "footnote": "會遲到或無法赴約嗎？請從預約頁面告知店家。",
+    "sms": "提醒：{business}的{service}，時間為{when}。"
+  },
+  "review": {
+    "title": "{service}的體驗如何？",
+    "body": "為{business}寫一則簡短的評價吧。",
+    "subject": "您在{business}的體驗如何？",
+    "heading": "體驗如何？",
+    "paragraph": "您的評價能幫助{business}，也能幫助其他正在挑選專業人士的人。不到一分鐘即可完成。"
+  },
+  "waitlist": {
+    "title": "{business}有空檔了",
+    "body": "{when}現在可以預約。先搶先贏，請盡快預約。",
+    "subject": "{business}釋出了新時段",
+    "heading": "好消息——有空檔了",
+    "paragraph": "{when}剛剛空出來。空檔先搶先贏，如果時間方便，請盡快預約。"
+  },
+  "thread": {
+    "confirmed": "預約已確認：{service}，{when}。",
+    "declined": "預約遭婉拒：{service}，{when}。",
+    "expired": "預約已逾期：{service}，{when}。",
+    "cancelled": "預約已取消：{service}，{when}。",
+    "moved": "預約已從{from}改至{to}。"
+  },
+  "verify": {
+    "subject": "驗證您的電子郵件",
+    "preheader": "輕觸一下即可驗證您的電子郵件地址。",
+    "heading": "歡迎，{name}",
+    "paragraph": "驗證電子郵件後，店家才能就您的預約與您聯絡。",
+    "cta": "驗證電子郵件",
+    "footnote": "此連結 3 天內有效。如果您沒有建立帳戶，請忽略這封郵件。"
+  },
+  "reset": {
+    "subject": "重設您的密碼",
+    "heading": "重設您的密碼",
+    "paragraph": "有人（希望是您本人）申請重設您 Kept 帳戶的密碼。",
+    "cta": "設定新密碼",
+    "footnote": "此連結 1 小時內有效。如果您沒有提出此申請，可以放心忽略這封郵件——您的密碼不會變更。"
+  },
+  "invite": {
+    "subject": "{inviter}邀請您在 Kept 上加入{business}",
+    "reminderSubject": "提醒：在 Kept 上加入{business}",
+    "heading": "加入{business}",
+    "paragraph": "{inviter}邀請您加入{business}的團隊。加入後，您可以查看自己的行程並管理您的預約。",
+    "cta": "接受邀請",
+    "footnote": "此邀請將於 {days} 天後失效。",
+    "reminderFootnote": "此邀請將於 {days} 天後失效。先前的邀請連結已無法使用。"
+  }
+}

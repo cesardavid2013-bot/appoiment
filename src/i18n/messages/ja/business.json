@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "オンライン",
+    "comesToYou": "出張対応",
+    "comesToYouIn": "出張対応 · {city}",
+    "lessThanOneKm": "1 km未満",
+    "promoted": "PR",
+    "verified": "認証済みのビジネス",
+    "instant": "即時確定",
+    "request": "リクエスト予約",
+    "bookAt": "{day} {time}に予約",
+    "moreTimes": "他の時間",
+    "freeConsultation": "無料相談あり",
+    "priceOnRequest": "料金は要問い合わせ",
+    "viewTimes": "空き時間を見る"
+  },
+  "rail": {
+    "seeAll": "すべて見る"
+  },
+  "favorite": {
+    "save": "保存",
+    "saved": "保存済み",
+    "remove": "保存済みから削除",
+    "savedToast": "保存しました",
+    "savedToastHint": "「保存済み」からいつでも見られます。"
+  }
+}
