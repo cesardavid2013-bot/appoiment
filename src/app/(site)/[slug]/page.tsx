@@ -200,7 +200,7 @@ export default async function ProfilePage({ params, searchParams }: Props) {
 
         {/* Section nav */}
         <nav aria-label="Profile sections" className="sticky top-16 z-20 -mx-4 mt-8 border-b border-line bg-bg/90 px-4 backdrop-blur-md sm:mx-0 sm:px-0">
-          <ul className="flex gap-6 overflow-x-auto scrollbar-none">
+          <ul className="relative flex gap-6 overflow-x-auto scrollbar-none">
             {nav.map((n) => (
               <li key={n.id}>
                 <a href={`#${n.id}`} className="block border-b-2 border-transparent py-3.5 text-sm font-medium text-ink-3 hover:border-line-strong hover:text-ink">

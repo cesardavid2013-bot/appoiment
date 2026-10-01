@@ -72,7 +72,7 @@ export function Segmented<T extends string>({ value, onChange, options, label, s
 
 export const Tabs = T.Root;
 export function TabsList({ children, className }: { children: ReactNode; className?: string }) {
-  return <T.List className={cn("flex gap-6 overflow-x-auto border-b border-line scrollbar-none", className)}>{children}</T.List>;
+  return <T.List className={cn("relative flex gap-6 overflow-x-auto border-b border-line scrollbar-none", className)}>{children}</T.List>;
 }
 export function TabsTrigger({ value, children }: { value: string; children: ReactNode }) {
   return (

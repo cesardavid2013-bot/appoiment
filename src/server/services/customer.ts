@@ -93,3 +93,26 @@ export async function pendingReviews(userId: string) {
     .limit(3);
 }
 
+
+/** Everything the customer's appointment page needs, scoped to the viewer. */
+export async function customerAppointmentDetail(userId: string, id: string) {
+  const [row] = await db
+    .select({
+      a: appointments,
+      businessName: businesses.name,
+      businessSlug: businesses.slug,
+      logoMediaId: businesses.logoMediaId,
+      paymentsEnabled: businesses.paymentsEnabled,
+      allowTips: businesses.stripeAccountId,
+    })
+    .from(appointments)
+    .innerJoin(businesses, eq(businesses.id, appointments.businessId))
+    .where(and(eq(appointments.id, id), eq(appointments.customerUserId, userId)));
+  if (!row) return null;
+  const [review] = await db.select({ id: reviews.id, rating: reviews.rating, body: reviews.body }).from(reviews).where(eq(reviews.appointmentId, id));
+  const media = await getMediaMap([row.logoMediaId]);
+  const loc = row.a.locationId
+    ? (await db.execute<{ lat: number | null; lng: number | null; kind: string; instructions: string | null }>(sql`select lat, lng, kind, instructions from locations where id = ${row.a.locationId}`))[0]
+    : null;
+  return { ...row, review: review ?? null, logo: row.logoMediaId ? (media.get(row.logoMediaId) ?? null) : null, location: loc ?? null };
+}

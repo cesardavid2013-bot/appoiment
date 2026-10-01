@@ -129,7 +129,7 @@ export function ExploreClient({
               className="h-full w-40 px-3 sm:w-52"
             />
           </form>
-          <div className="-mx-4 flex items-center gap-2 overflow-x-auto px-4 scrollbar-none sm:mx-0 sm:px-0">
+          <div className="relative -mx-4 flex items-center gap-2 overflow-x-auto px-4 scrollbar-none sm:mx-0 sm:px-0">
             <Button variant="secondary" size="sm" onClick={() => setFiltersOpen(true)} icon={<SlidersHorizontal className="size-4" />} className="shrink-0">
               Filters{activeFilters ? ` · ${activeFilters}` : ""}
             </Button>
@@ -181,7 +181,7 @@ export function ExploreClient({
           </div>
 
           {/* Category row */}
-          <nav aria-label="Categories" className="-mx-4 mb-6 flex gap-5 overflow-x-auto border-b border-line px-4 scrollbar-none sm:mx-0 sm:px-0">
+          <nav aria-label="Categories" className="relative -mx-4 mb-6 flex gap-5 overflow-x-auto border-b border-line px-4 scrollbar-none sm:mx-0 sm:px-0">
             <button type="button" onClick={() => update({ category: null })} className={cn("-mb-px shrink-0 border-b-2 pb-3 text-sm font-medium", !category ? "border-ink text-ink" : "border-transparent text-ink-3 hover:text-ink")}>
               All
             </button>

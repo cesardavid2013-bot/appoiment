@@ -21,7 +21,7 @@ export function CardRail({ title, subtitle, href, items, favorites, signedIn }: 
           </Link>
         )}
       </div>
-      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 scrollbar-none sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-8">
+      <div className="relative flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 scrollbar-none sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-8">
         {items.slice(0, 8).map((b, i) => (
           <BusinessCard key={b.id} b={b} favorite={favorites.has(b.id)} signedIn={signedIn} priority={i < 2} className="w-[78vw] max-w-[320px] shrink-0 snap-start sm:w-auto sm:max-w-none" />
         ))}
