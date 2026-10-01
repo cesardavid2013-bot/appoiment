@@ -53,3 +53,5 @@ export async function uploadMedia(file: File, opts: { purpose: string; businessI
     xhr.send(body);
   });
 }
+
+export type UploadedMedia = UploadResult;
