@@ -59,19 +59,21 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
   const meta = [b.categoryName, where, distanceLabel(b.distanceKm)].filter(Boolean).join(" · ");
   const slots = b.nextSlots ?? (b.nextAvailable ? [b.nextAvailable] : []);
   const services = (b.topServices ?? []).slice(0, 2);
+  // Promoted cards carry ?ref=spotlight so the profile visit counts as a Spotlight click.
+  const profileHref = b.promoted ? `/${b.slug}?ref=spotlight` : `/${b.slug}`;
   const bookHref = (start?: string) => `/${b.slug}/book?service=${b.nextServiceId ?? ""}${start ? `&start=${encodeURIComponent(start)}` : ""}`;
 
   return (
     <article className={cn("group relative flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition-[box-shadow,border-color] duration-200 hover:border-line-strong hover:shadow-md", className)}>
       {b.cover && (
-        <Link href={`/${b.slug}`} tabIndex={-1} aria-hidden className="relative block aspect-[16/10] overflow-hidden">
+        <Link href={profileHref} tabIndex={-1} aria-hidden className="relative block aspect-[16/10] overflow-hidden">
           <MediaImage media={b.cover} alt="" sizes="(min-width: 1280px) 25vw, (min-width: 768px) 33vw, 92vw" priority={priority} className="size-full transition-transform duration-500 group-hover:scale-[1.02]" />
         </Link>
       )}
 
       <div className="flex flex-1 flex-col p-4">
         <div className="flex items-start gap-3">
-          <Link href={`/${b.slug}`} className="shrink-0 rounded-full outline-offset-2" tabIndex={-1} aria-hidden>
+          <Link href={profileHref} className="shrink-0 rounded-full outline-offset-2" tabIndex={-1} aria-hidden>
             {b.logo ? (
               <Avatar name={b.name} media={b.logo} size={44} />
             ) : (
@@ -82,7 +84,7 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
           </Link>
           <div className="min-w-0 flex-1">
             <h3 className="flex items-center gap-1 pr-9 text-[15px] font-semibold leading-snug text-ink">
-              <Link href={`/${b.slug}`} className="truncate after:absolute after:inset-0 after:content-[''] focus-visible:outline-none group-has-[a:focus-visible]:underline">
+              <Link href={profileHref} className="truncate after:absolute after:inset-0 after:content-[''] focus-visible:outline-none group-has-[a:focus-visible]:underline">
                 {b.name}
               </Link>
               {b.verified && <BadgeCheck className="size-4 shrink-0 text-accent" aria-label="Verified business" />}
@@ -136,7 +138,7 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
           ) : (
             <div className="flex items-center justify-between text-[13px]">
               <span className="text-ink-3">{b.priceMinCents != null ? (b.priceMinCents === 0 ? "Free consultation available" : `From ${formatMoney(b.priceMinCents, b.currency, { compact: true })}`) : "Price on request"}</span>
-              <Link href={`/${b.slug}`} className="font-medium text-ink hover:underline">
+              <Link href={profileHref} className="font-medium text-ink hover:underline">
                 View times
               </Link>
             </div>

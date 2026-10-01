@@ -84,12 +84,14 @@ export async function createReview(viewer: Viewer, input: z.infer<typeof reviewS
 }
 
 export async function respondToReview(m: Membership, actorUserId: string, reviewId: string, body: string) {
+  if (!m.permissions.has("reviews.respond")) throw new AppError("forbidden", "You don't have permission to reply to reviews.");
   const text = body.trim();
-  if (text.length < 2 || text.length > 1500) throw new AppError("validation", "Responses must be between 2 and 1,500 characters.");
+  if (text.length < 2 || text.length > 1500) throw new AppError("validation", "Responses must be between 2 and 1,500 characters.", { fields: { body: text.length < 2 ? "Write a reply first" : "Keep it under 1,500 characters" } });
+  // Scoped to the caller's business; hidden/removed reviews can't be answered.
   const [r] = await db
     .update(reviews)
     .set({ responseBody: text, respondedAt: new Date(), respondedByUserId: actorUserId })
-    .where(and(eq(reviews.id, reviewId), eq(reviews.businessId, m.businessId)))
+    .where(and(eq(reviews.id, reviewId), eq(reviews.businessId, m.businessId), eq(reviews.status, "published")))
     .returning();
   if (!r) throw notFound("That review");
   await audit({ actorUserId, actorType: "business", businessId: m.businessId, action: "review.responded", targetType: "review", targetId: reviewId });
