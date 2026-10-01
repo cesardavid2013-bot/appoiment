@@ -60,7 +60,11 @@
     "title": "No matches yet",
     "query": "Try a broader term, a different spelling, or remove some filters.",
     "filters": "Try removing a filter or searching a wider area.",
-    "clear": "Clear all filters"
+    "clear": "Clear all filters",
+    "categoryTitle": "No {category} pros listed here yet",
+    "categoryBody": "Kept is growing city by city. Offer this service? Your booking page can be live today.",
+    "listServices": "List your services",
+    "seeAll": "See all professionals"
   },
   "showMore": "Show more",
   "filters": {

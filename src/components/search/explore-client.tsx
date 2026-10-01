@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useRef, useState, useTransition } from "react";
 import { BusinessCard, BusinessCardSkeleton, type CardBusiness } from "@/components/business/business-card";
-import { Button } from "@/components/ui/button";
+import { Button, ButtonLink } from "@/components/ui/button";
 import { Checkbox, Segmented } from "@/components/ui/controls";
 import { Dialog } from "@/components/ui/dialog";
 import { Select } from "@/components/ui/field";
@@ -202,7 +202,22 @@ export function ExploreClient({
           </nav>
 
           <div ref={listRef} className={cn("transition-opacity", pending && "opacity-50")}>
-            {items.length === 0 ? (
+            {items.length === 0 && category && [...params.keys()].every((k) => k === "category") ? (
+              // A category nobody offers here yet: invite pros instead of a dead end.
+              <EmptyState
+                icon={<Search />}
+                title={t("empty.categoryTitle", { category: categoryName(tr, category, category) })}
+                description={t("empty.categoryBody")}
+                action={
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <ButtonLink href="/for-business">{t("empty.listServices")}</ButtonLink>
+                    <Button variant="secondary" onClick={() => update({ category: null })}>
+                      {t("empty.seeAll")}
+                    </Button>
+                  </div>
+                }
+              />
+            ) : items.length === 0 ? (
               <EmptyState
                 icon={<Search />}
                 title={t("empty.title")}

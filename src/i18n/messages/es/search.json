@@ -60,7 +60,11 @@
     "title": "Aún no hay resultados",
     "query": "Prueba con un término más general, otra forma de escribirlo o quita algunos filtros.",
     "filters": "Prueba quitando un filtro o buscando en una zona más amplia.",
-    "clear": "Quitar todos los filtros"
+    "clear": "Quitar todos los filtros",
+    "categoryTitle": "Aún no hay profesionales de {category} aquí",
+    "categoryBody": "Kept crece ciudad por ciudad. ¿Ofreces este servicio? Tu página de reservas puede estar lista hoy.",
+    "listServices": "Ofrece tus servicios",
+    "seeAll": "Ver todos los profesionales"
   },
   "showMore": "Ver más",
   "filters": {
