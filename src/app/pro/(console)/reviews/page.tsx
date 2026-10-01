@@ -28,6 +28,7 @@ export default async function ReviewsPage({ searchParams }: PageProps<"/pro/revi
     return `/pro/reviews?${q}`;
   };
   const max = Math.max(1, ...summary.distribution.map((d) => d.count));
+  const average = summary.average ?? 0;
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:px-10 lg:pt-10">
@@ -54,9 +55,9 @@ export default async function ReviewsPage({ searchParams }: PageProps<"/pro/revi
             </h2>
             <div className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-6 lg:block">
               <div className="flex flex-col gap-2 lg:flex-row lg:items-end lg:gap-3">
-                <p className="font-display text-[52px] leading-none text-ink tabular">{summary.average!.toFixed(1)}</p>
+                <p className="font-display text-[52px] leading-none text-ink tabular">{average.toFixed(1)}</p>
                 <div className="pb-1">
-                  <Stars value={summary.average!} size={15} />
+                  <Stars value={average} size={15} />
                   <p className="mt-1 text-[13px] text-ink-3">
                     {summary.count} {summary.count === 1 ? "review" : "reviews"}
                   </p>

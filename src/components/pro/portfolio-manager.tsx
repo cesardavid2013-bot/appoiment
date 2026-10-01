@@ -390,15 +390,17 @@ function EditDialog({ item, services, team, onClose }: { item: WorkItem; service
 function PickImage({ label, file, onPick }: { label: string; file: File | null; onPick: (f: File | null) => void }) {
   const ref = useRef<HTMLInputElement>(null);
   const [url, setUrl] = useState<string | null>(null);
-  useEffect(() => {
-    if (!file) return;
-    const u = URL.createObjectURL(file);
-    setUrl(u);
-    return () => URL.revokeObjectURL(u);
-  }, [file]);
+  const urlRef = useRef<string | null>(null);
+  useEffect(() => () => void (urlRef.current && URL.revokeObjectURL(urlRef.current)), []);
+  function choose(f: File | null) {
+    if (urlRef.current) URL.revokeObjectURL(urlRef.current);
+    urlRef.current = f ? URL.createObjectURL(f) : null;
+    setUrl(urlRef.current);
+    onPick(f);
+  }
   return (
     <div>
-      <input ref={ref} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" className="sr-only" tabIndex={-1} aria-hidden onChange={(e) => onPick(e.target.files?.[0] ?? null)} />
+      <input ref={ref} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" className="sr-only" tabIndex={-1} aria-hidden onChange={(e) => choose(e.target.files?.[0] ?? null)} />
       <button
         type="button"
         onClick={() => ref.current?.click()}
