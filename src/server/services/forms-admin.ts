@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq, inArray, isNull } from "drizzle-orm";
+import { and, desc, eq, inArray, isNull, ne } from "drizzle-orm";
 import { z } from "zod";
 import { AppError, forbidden, notFound } from "@/domain/errors";
 import { formFieldsSchema, type FormField } from "@/domain/forms";
@@ -22,7 +22,7 @@ export async function listForms(businessId: string) {
 export type FormUsage = { id: string; name: string; status: string };
 export type FormWithUsage = { id: string; name: string; fields: FormField[]; updatedAt: Date; createdAt: Date; services: FormUsage[] };
 
-/** Active forms with the services that ask them, for the settings list. */
+/** Active forms with the (non-archived) services that ask them, for the settings list. */
 export async function listFormsWithUsage(businessId: string): Promise<FormWithUsage[]> {
   const forms = await listForms(businessId);
   const used = forms.length
@@ -32,6 +32,7 @@ export async function listFormsWithUsage(businessId: string): Promise<FormWithUs
         .where(
           and(
             eq(services.businessId, businessId),
+            ne(services.status, "archived"),
             inArray(
               services.intakeFormId,
               forms.map((f) => f.id),
@@ -49,6 +50,10 @@ export async function listFormsWithUsage(businessId: string): Promise<FormWithUs
     createdAt: f.createdAt,
     services: used.filter((s) => s.formId === f.id).map(({ id, name, status }) => ({ id, name, status })),
   }));
+}
+
+export async function getFormForEdit(businessId: string, id: string): Promise<FormWithUsage | null> {
+  return (await listFormsWithUsage(businessId)).find((f) => f.id === id) ?? null;
 }
 
 export async function saveForm(m: Membership, actorUserId: string, input: z.infer<typeof formSchema>, id?: string) {
