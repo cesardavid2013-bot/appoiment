@@ -86,5 +86,32 @@
     "depositRefundable": "按时取消可退还定金。",
     "depositNonRefundable": "定金不予退还。",
     "reschedule": "最晚可在预约开始前 {hours} 小时在线改约。"
+  },
+  "ui": {
+    "close": "关闭",
+    "keepIt": "保留",
+    "optional": "选填",
+    "stars": "{value} 星（满分 5 星）",
+    "notifications": "通知"
+  },
+  "notFound": {
+    "eyebrow": "页面未找到",
+    "title": "这个页面已经不在了。",
+    "body": "链接可能已过期，或者该专业人士更改了主页地址。",
+    "home": "返回首页",
+    "explore": "探索专业人士"
+  },
+  "error": {
+    "eyebrow": "出了点问题",
+    "title": "我们无法加载此页面。",
+    "body": "问题出在我们这边，与您无关。请稍后再试；如果持续出现，请告诉我们。",
+    "retry": "重试",
+    "support": "联系客服",
+    "ref": "参考编号 {id}"
+  },
+  "offline": {
+    "eyebrow": "您已离线",
+    "title": "当前没有网络连接。",
+    "body": "您的预约安全无虞。重新联网后，Kept 会从上次的位置继续。"
   }
 }

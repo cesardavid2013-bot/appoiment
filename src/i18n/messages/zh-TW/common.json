@@ -86,5 +86,32 @@
     "depositRefundable": "在期限內取消可退還訂金。",
     "depositNonRefundable": "訂金恕不退還。",
     "reschedule": "最晚可在預約開始前 {hours} 小時線上改期。"
+  },
+  "ui": {
+    "close": "關閉",
+    "keepIt": "保留",
+    "optional": "選填",
+    "stars": "{value} 星（滿分 5 星）",
+    "notifications": "通知"
+  },
+  "notFound": {
+    "eyebrow": "找不到頁面",
+    "title": "這個頁面已經不在了。",
+    "body": "連結可能已過期，或該專業人士更改了頁面網址。",
+    "home": "返回首頁",
+    "explore": "探索專業人士"
+  },
+  "error": {
+    "eyebrow": "發生了一些問題",
+    "title": "我們無法載入此頁面。",
+    "body": "問題出在我們這邊，與您無關。請稍後再試；若持續發生，請告訴我們。",
+    "retry": "重試",
+    "support": "聯絡客服",
+    "ref": "參考編號 {id}"
+  },
+  "offline": {
+    "eyebrow": "您已離線",
+    "title": "目前沒有網路連線。",
+    "body": "您的預約安全無虞。重新連線後，Kept 會從上次的位置繼續。"
   }
 }
