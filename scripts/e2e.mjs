@@ -17,7 +17,7 @@ for (const who of ["pro", "customer"]) {
   const file = `/tmp/claude-0/.auth-${who}-${port}.json`;
   const ctx = await browser.newContext();
   if (fs.existsSync(file)) await ctx.addCookies(JSON.parse(fs.readFileSync(file, "utf8")).cookies);
-  if (!(await ctx.request.get(`${base}/api/me/badges`)).ok()) {
+  if (!fs.existsSync(file) || !(await ctx.request.get(`${base}/api/me/badges`)).ok()) {
     const res = await ctx.request.post(`${base}/api/auth/login`, { data: { email: `${who}@kept.test`, password: "kept-demo-2026" }, headers: { origin: base } });
     if (!res.ok()) throw new Error(`Couldn't sign in ${who}@kept.test — is the demo seed loaded? (${res.status()})`);
     fs.writeFileSync(file, JSON.stringify(await ctx.storageState()));
