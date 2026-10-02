@@ -27,7 +27,11 @@
       "cancelled": "Nimic anulat",
       "upcomingBody": "Când rezervați, programările apar aici — cu indicații de traseu, mementouri și reprogramare ușoară.",
       "findPro": "Găsiți un profesionist"
-    }
+    },
+    "nextUp": "Urmează · {when}",
+    "nextUpOn": "Urmează · {day}",
+    "details": "Detalii",
+    "directions": "Indicații"
   },
   "detail": {
     "metaTitle": "Programare",

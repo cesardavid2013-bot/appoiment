@@ -60,7 +60,11 @@
     "title": "Niciun rezultat deocamdată",
     "query": "Încercați un termen mai general, altă ortografie sau eliminați câteva filtre.",
     "filters": "Încercați să eliminați un filtru sau să căutați într-o zonă mai largă.",
-    "clear": "Ștergeți toate filtrele"
+    "clear": "Ștergeți toate filtrele",
+    "categoryTitle": "Încă nu există profesioniști {category} aici",
+    "categoryBody": "Kept crește oraș cu oraș. Oferiți acest serviciu? Pagina dumneavoastră de rezervări poate fi activă chiar azi.",
+    "listServices": "Adăugați serviciile dumneavoastră",
+    "seeAll": "Vedeți toți profesioniștii"
   },
   "showMore": "Afișați mai multe",
   "filters": {

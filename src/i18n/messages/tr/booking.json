@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "{name} için rezervasyon",
+    "fallbackTitle": "Rezervasyon"
+  },
+  "steps": {
+    "service": "Hizmeti seçin",
+    "options": "Özelleştirin",
+    "who": "Kim ve nerede",
+    "time": "Saati seçin",
+    "details": "Birkaç ayrıntı",
+    "review": "Gözden geçir ve onayla"
+  },
+  "header": {
+    "backTo": "{name} sayfasına dön",
+    "previousStep": "Önceki adım",
+    "stepOf": "Adım {current} / {total}",
+    "exit": "Rezervasyondan çık"
+  },
+  "service": {
+    "optionsAvailable": "Seçenekler mevcut",
+    "group": "Grup · en fazla {count}"
+  },
+  "options": {
+    "required": "Zorunlu",
+    "upTo": "En fazla {count} seçin",
+    "optionalAny": "İsteğe bağlı · istediğinizi seçin",
+    "optional": "İsteğe bağlı",
+    "included": "Dahil",
+    "errorRequired": "“{name}” için bir seçenek belirleyin.",
+    "errorOnlyOne": "“{name}” için yalnızca bir seçenek belirleyebilirsiniz.",
+    "errorUpTo": "“{name}” için en fazla {count} seçenek belirleyebilirsiniz.",
+    "errorUnavailable": "Seçtiğiniz seçeneklerden biri artık mevcut değil."
+  },
+  "who": {
+    "where": "Nerede",
+    "with": "Kiminle",
+    "comesToYou": "Size gelir · {city} merkezine {km} km içinde",
+    "online": "Online seans",
+    "anyPro": "Müsait herhangi bir profesyonel",
+    "anyProHint": "En çok seçenek — size müsait olan kişiyi eşleştiririz."
+  },
+  "details": {
+    "addressLabel": "Nereye gelelim?",
+    "addressHint": "{city} merkezine {km} km içinde. Yalnızca işletmeyle paylaşılır.",
+    "addressPlaceholder": "Sokak adresi, daire, şehir",
+    "consent": "Yukarıdakileri okudum ve kabul ediyorum",
+    "age": "En az {age} yaşında olduğumu onaylıyorum",
+    "noteLabel": "Bilmeleri gereken başka bir şey var mı?",
+    "notePlaceholder": "Alerjiler, tercihler, otopark notları…"
+  },
+  "review": {
+    "changeTime": "Saati değiştir",
+    "with": "Kiminle",
+    "where": "Nerede",
+    "yourAddress": "Adresiniz",
+    "online": "Online",
+    "noteLabel": "Bilmeleri gereken bir şey var mı?",
+    "notePlaceholder": "Tercihler, sorular, erişilebilirlik ihtiyaçları…",
+    "promoApplied": "{code} uygulandı",
+    "promoRemove": "Kaldır",
+    "promoPlaceholder": "Promosyon kodu",
+    "promoApply": "Uygula",
+    "beforeYouBook": "Rezervasyondan önce",
+    "bookingAs": "{name} olarak rezervasyon"
+  },
+  "confirm": {
+    "request": "Rezervasyon talebi gönder",
+    "requestShort": "Talep gönder",
+    "pay": "Onayla ve {amount} öde",
+    "payShort": "{amount} öde",
+    "confirm": "Rezervasyonu onayla",
+    "confirmShort": "Onayla"
+  },
+  "summary": {
+    "label": "Rezervasyon özeti",
+    "instant": "Anında onay",
+    "request": "İşletme tarafından onaylanır",
+    "total": "Toplam",
+    "estimatedTotal": "Tahmini toplam",
+    "estimated": "Tahmini",
+    "comesToYou": "Size gelir",
+    "online": "Online",
+    "empty": "Saatleri ve fiyatları görmek için bir hizmet seçin.",
+    "continue": "Devam",
+    "signInToBook": "Rezervasyon için giriş yapın"
+  },
+  "time": {
+    "preselectMissed": "Seçtiğiniz saat bu seçeneklerle artık müsait değil. İşte en yakın boş saatler.",
+    "previousWeeks": "Önceki iki hafta",
+    "nextWeeks": "Sonraki iki hafta",
+    "chooseDate": "Tarih seçin",
+    "today": "Bugün",
+    "timesAvailable": "{count, plural, one {# saat müsait} other {# saat müsait}}",
+    "noAvailability": "Müsait saat yok",
+    "noOpeningsOn": "{date} için boş saat yok",
+    "noOpeningsThisDay": "Bu gün için boş saat yok",
+    "nextOpening": "Sıradaki boş saat: {date}.",
+    "tryLater": "Sonraki iki haftaya göz atın ya da bekleme listesine katılın; yer açılırsa size haber veririz.",
+    "joinWaitlist": "Bu gün için bekleme listesine katıl",
+    "morning": "Sabah",
+    "afternoon": "Öğleden sonra",
+    "evening": "Akşam",
+    "morningTimes": "Sabah saatleri",
+    "afternoonTimes": "Öğleden sonra saatleri",
+    "eveningTimes": "Akşam saatleri",
+    "spotsLeft": "{count, plural, one {# yer kaldı} other {# yer kaldı}}",
+    "timesIn": "Saatler {abbr} ({zone}) diliminde gösterilir.",
+    "timesInLocal": "Saatler {abbr} ({zone}) diliminde gösterilir; sizde saat {time}."
+  },
+  "waitlist": {
+    "title": "Bekleme listesine katılın",
+    "description": "{date} için bir saat açılırsa size hemen haber veririz. Boşalan saat, ilk rezervasyon yapana verilir.",
+    "cancel": "Vazgeç",
+    "notify": "Bana haber ver",
+    "windowLabel": "Size uygun saatler",
+    "any": "O günün herhangi bir saati",
+    "morning": "Sabah (öğleden önce)",
+    "afternoon": "Öğleden sonra (12:00 – 17:00)",
+    "evening": "Akşam (17:00’den sonra)",
+    "joined": "Bekleme listesindesiniz",
+    "joinedBody": "Bir saat açılırsa size hemen haber vereceğiz."
+  },
+  "price": {
+    "label": "Fiyat dökümü",
+    "total": "Toplam",
+    "estimatedTotal": "Tahmini toplam",
+    "payNow": "Şimdi ödenecek",
+    "depositNow": "Şimdi ödenecek depozito",
+    "remaining": "Kalan tutar randevuda",
+    "nothingNow": "Şimdi ödeme yok; randevunuzda ödersiniz.",
+    "estimateNote": "Nihai fiyat işletme tarafından onaylanır ve gereken işe göre değişebilir.",
+    "tax": "Vergi",
+    "serviceFee": "Hizmet bedeli"
+  },
+  "checkout": {
+    "title": "Ödeme",
+    "description": "Rezervasyonunuzu onaylamak için ödemeyi tamamlayın.",
+    "pay": "{amount} öde",
+    "secured": "Stripe tarafından korunur. Ödeme yaparken saatiniz sizin için ayrılır.",
+    "declined": "Kartınız reddedildi.",
+    "failed": "Ödemeyi tamamlayamadık. Kartınızdan para çekilmedi; lütfen tekrar deneyin."
+  },
+  "intake": {
+    "optional": "(isteğe bağlı)",
+    "yes": "Evet",
+    "no": "Hayır"
+  }
+}

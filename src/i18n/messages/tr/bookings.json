@@ -27,7 +27,11 @@
       "cancelled": "İptal edilen bir şey yok",
       "upcomingBody": "Rezervasyon yaptığınızda randevularınız burada görünür — yol tarifi, hatırlatmalar ve kolay erteleme ile.",
       "findPro": "Bir profesyonel bulun"
-    }
+    },
+    "nextUp": "Sıradaki · {when}",
+    "nextUpOn": "Sıradaki · {day}",
+    "details": "Ayrıntılar",
+    "directions": "Yol tarifi"
   },
   "detail": {
     "metaTitle": "Randevu",

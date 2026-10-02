@@ -84,5 +84,66 @@
   "other": {
     "name": "Altele",
     "description": "Tot ce mai puteți rezerva."
+  },
+  "music-audio": {
+    "name": "Muzică și audio",
+    "description": "Producători, studiouri de înregistrări, mixaj și coaching vocal."
+  },
+  "music-production": {
+    "name": "Producție muzicală"
+  },
+  "recording-studio": {
+    "name": "Studiouri de înregistrări"
+  },
+  "vocal-coaching": {
+    "name": "Coaching vocal"
+  },
+  "creators": {
+    "name": "Creatori și conținut",
+    "description": "Creatori de conținut, UGC, social media și editare video."
+  },
+  "content-creation": {
+    "name": "Creare de conținut"
+  },
+  "video-editing": {
+    "name": "Editare video"
+  },
+  "social-media": {
+    "name": "Management social media"
+  },
+  "design": {
+    "name": "Design și creație",
+    "description": "Design grafic, de brand, web și de interior."
+  },
+  "graphic-design": {
+    "name": "Design grafic și de brand"
+  },
+  "web-design": {
+    "name": "Web design"
+  },
+  "interior-design": {
+    "name": "Design de interior"
+  },
+  "health": {
+    "name": "Sănătate și îngrijire",
+    "description": "Fizioterapie, nutriție, terapie și îngrijire holistică."
+  },
+  "physio": {
+    "name": "Fizioterapie și chiropractică"
+  },
+  "nutrition": {
+    "name": "Nutriție"
+  },
+  "therapy": {
+    "name": "Terapie și consiliere"
+  },
+  "cleaning": {
+    "name": "Curățenie"
+  },
+  "handyman": {
+    "name": "Meseriaș și reparații"
+  },
+  "gardening": {
+    "name": "Grădinărit"
   }
 }

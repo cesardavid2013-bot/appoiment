@@ -86,5 +86,32 @@
     "depositRefundable": "Zamanında iptal ederseniz kapora iade edilir.",
     "depositNonRefundable": "Kaporalar iade edilmez.",
     "reschedule": "{hours} saat öncesine kadar online erteleme."
+  },
+  "ui": {
+    "close": "Kapat",
+    "keepIt": "Kalsın",
+    "optional": "İsteğe bağlı",
+    "stars": "5 yıldız üzerinden {value}",
+    "notifications": "Bildirimler"
+  },
+  "notFound": {
+    "eyebrow": "Sayfa bulunamadı",
+    "title": "Bu sayfa taşınmış.",
+    "body": "Bağlantı eski olabilir ya da profesyonel adresini değiştirmiş olabilir.",
+    "home": "Ana sayfaya dön",
+    "explore": "Profesyonelleri keşfedin"
+  },
+  "error": {
+    "eyebrow": "Bir şeyler ters gitti",
+    "title": "Bu sayfayı yükleyemedik.",
+    "body": "Sorun bizden kaynaklanıyor, sizden değil. Birazdan tekrar deneyin; devam ederse bize haber verin.",
+    "retry": "Tekrar dene",
+    "support": "Destekle iletişime geç",
+    "ref": "Referans {id}"
+  },
+  "offline": {
+    "eyebrow": "Çevrimdışısınız",
+    "title": "Şu anda bağlantı yok.",
+    "body": "Rezervasyonlarınız güvende. Yeniden bağlanın, Kept kaldığınız yerden devam etsin."
   }
 }
