@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Mag-book kay {name}",
+    "fallbackTitle": "Mag-book"
+  },
+  "steps": {
+    "service": "Pumili ng serbisyo",
+    "options": "I-customize",
+    "who": "Sino at saan",
+    "time": "Pumili ng oras",
+    "details": "Ilang detalye",
+    "review": "Suriin at kumpirmahin"
+  },
+  "header": {
+    "backTo": "Bumalik kay {name}",
+    "previousStep": "Nakaraang hakbang",
+    "stepOf": "Hakbang {current} ng {total}",
+    "exit": "Lumabas sa booking"
+  },
+  "service": {
+    "optionsAvailable": "May mga opsyon",
+    "group": "Grupo · hanggang {count}"
+  },
+  "options": {
+    "required": "Kinakailangan",
+    "upTo": "Pumili ng hanggang {count}",
+    "optionalAny": "Opsyonal · pumili ng alinman",
+    "optional": "Opsyonal",
+    "included": "Kasama",
+    "errorRequired": "Pumili ng opsyon para sa “{name}”.",
+    "errorOnlyOne": "Isang opsyon lang ang piliin para sa “{name}”.",
+    "errorUpTo": "Pumili ng hanggang {count} para sa “{name}”.",
+    "errorUnavailable": "Hindi na available ang isa sa mga napiling opsyon."
+  },
+  "who": {
+    "where": "Saan",
+    "with": "Kasama si",
+    "comesToYou": "Pumupunta sa iyo · sa loob ng {km} km mula sa {city}",
+    "online": "Online session",
+    "anyPro": "Sinumang available na propesyonal",
+    "anyProHint": "Pinakamaraming bakante — itutugma ka namin sa sinumang libre."
+  },
+  "details": {
+    "addressLabel": "Saan kami pupunta?",
+    "addressHint": "Sa loob ng {km} km mula sa {city}. Ibabahagi lang sa negosyo.",
+    "addressPlaceholder": "Address ng kalye, unit, lungsod",
+    "consent": "Nabasa ko at sumasang-ayon ako sa nasa itaas",
+    "age": "Kinukumpirma kong hindi bababa sa {age} taong gulang ako",
+    "noteLabel": "May iba pa bang dapat nilang malaman?",
+    "notePlaceholder": "Allergy, kagustuhan, paalala sa paradahan…"
+  },
+  "review": {
+    "changeTime": "Baguhin ang oras",
+    "with": "Kasama si",
+    "where": "Saan",
+    "yourAddress": "Ang iyong address",
+    "online": "Online",
+    "noteLabel": "May dapat ba silang malaman?",
+    "notePlaceholder": "Kagustuhan, mga tanong, pangangailangan sa accessibility…",
+    "promoApplied": "Nailapat ang {code}",
+    "promoRemove": "Alisin",
+    "promoPlaceholder": "Promo code",
+    "promoApply": "Ilapat",
+    "beforeYouBook": "Bago ka mag-book",
+    "bookingAs": "Nagbo-book bilang {name}"
+  },
+  "confirm": {
+    "request": "Ipadala ang kahilingan sa booking",
+    "requestShort": "Ipadala",
+    "pay": "Kumpirmahin at bayaran ang {amount}",
+    "payShort": "Bayaran ang {amount}",
+    "confirm": "Kumpirmahin ang booking",
+    "confirmShort": "Kumpirmahin"
+  },
+  "summary": {
+    "label": "Buod ng booking",
+    "instant": "Agarang kumpirmasyon",
+    "request": "Kukumpirmahin ng negosyo",
+    "total": "Kabuuan",
+    "estimatedTotal": "Tinatayang kabuuan",
+    "estimated": "Tinatayang",
+    "comesToYou": "Pumupunta sa iyo",
+    "online": "Online",
+    "empty": "Pumili ng serbisyo para makita ang mga oras at presyo.",
+    "continue": "Magpatuloy",
+    "signInToBook": "Mag-sign in para mag-book"
+  },
+  "time": {
+    "preselectMissed": "Hindi na available ang oras na pinili mo sa mga napiling ito. Narito ang pinakamalalapit na bakante.",
+    "previousWeeks": "Nakaraang dalawang linggo",
+    "nextWeeks": "Susunod na dalawang linggo",
+    "chooseDate": "Pumili ng petsa",
+    "today": "Ngayon",
+    "timesAvailable": "{count, plural, one {# oras na available} other {# oras na available}}",
+    "noAvailability": "Walang availability",
+    "noOpeningsOn": "Walang bakante sa {date}",
+    "noOpeningsThisDay": "Walang bakante sa araw na ito",
+    "nextOpening": "Susunod na bakante: {date}.",
+    "tryLater": "Subukan ang susunod na dalawang linggo, o sumali sa waitlist at sasabihan ka namin kung may magbukas.",
+    "joinWaitlist": "Sumali sa waitlist para sa araw na ito",
+    "morning": "Umaga",
+    "afternoon": "Hapon",
+    "evening": "Gabi",
+    "morningTimes": "Mga oras sa umaga",
+    "afternoonTimes": "Mga oras sa hapon",
+    "eveningTimes": "Mga oras sa gabi",
+    "spotsLeft": "{count, plural, one {# na lang} other {# na lang}}",
+    "timesIn": "Mga oras sa {abbr} ({zone}).",
+    "timesInLocal": "Mga oras sa {abbr} ({zone}) — {time} iyon sa kinaroroonan mo."
+  },
+  "waitlist": {
+    "title": "Sumali sa waitlist",
+    "description": "Kung may magbukas na oras sa {date}, aabisuhan ka namin agad. Mapupunta ang bakante sa unang makapag-book.",
+    "cancel": "Kanselahin",
+    "notify": "Abisuhan ako",
+    "windowLabel": "Mga oras na pwede sa iyo",
+    "any": "Anumang oras sa araw na iyon",
+    "morning": "Umaga (bago magtanghali)",
+    "afternoon": "Hapon (tanghali – 5 PM)",
+    "evening": "Gabi (pagkatapos ng 5 PM)",
+    "joined": "Nasa waitlist ka na",
+    "joinedBody": "Aabisuhan ka namin agad kung may magbukas na oras."
+  },
+  "price": {
+    "label": "Detalye ng presyo",
+    "total": "Kabuuan",
+    "estimatedTotal": "Tinatayang kabuuan",
+    "payNow": "Magbayad ngayon",
+    "depositNow": "Depositong dapat bayaran ngayon",
+    "remaining": "Balanse sa appointment",
+    "nothingNow": "Walang babayaran ngayon — magbayad sa iyong appointment.",
+    "estimateNote": "Kukumpirmahin ng negosyo ang pinal na presyo at maaari itong mag-iba ayon sa kailangang gawin.",
+    "tax": "Buwis",
+    "serviceFee": "Bayad sa serbisyo"
+  },
+  "checkout": {
+    "title": "Pagbabayad",
+    "description": "Kumpletuhin ang pagbabayad para makumpirma ang iyong booking.",
+    "pay": "Bayaran ang {amount}",
+    "secured": "Sinigurado ng Stripe. Nakareserba ang iyong oras habang nagbabayad ka.",
+    "declined": "Tinanggihan ang iyong card.",
+    "failed": "Hindi namin nakumpleto ang bayad. Hindi nasingil ang iyong card — pakisubukan muli."
+  },
+  "intake": {
+    "optional": "(opsyonal)",
+    "yes": "Oo",
+    "no": "Hindi"
+  }
+}
