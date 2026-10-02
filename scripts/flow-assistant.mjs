@@ -2,7 +2,7 @@
 import { chromium } from "@playwright/test";
 const base = process.env.BASE ?? "http://localhost:3000";
 const out = process.argv[2];
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH ?? "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 for (const [device, opts] of [["mobile", { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2, locale: "es-US", timezoneId: "America/New_York" }], ["desktop", { viewport: { width: 1440, height: 900 }, locale: "en-US", timezoneId: "America/New_York" }]]) {
   const ctx = await browser.newContext(opts);
   const page = await ctx.newPage();

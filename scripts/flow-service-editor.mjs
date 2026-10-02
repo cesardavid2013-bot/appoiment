@@ -3,7 +3,7 @@ import { chromium } from "@playwright/test";
 import fs from "node:fs";
 const base = process.env.BASE ?? "http://localhost:3000";
 const SID = process.env.SID ?? fs.readFileSync("/tmp/claude-0/sid", "utf8").trim();
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH ?? "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
 await ctx.addCookies(JSON.parse(fs.readFileSync(`/tmp/claude-0/.auth-pro-${new URL(base).port}.json`, "utf8")).cookies);
 const page = await ctx.newPage();

@@ -5,7 +5,7 @@ import fs from "node:fs";
 const [outDir, ...targets] = process.argv.slice(2);
 fs.mkdirSync(outDir, { recursive: true });
 const base = process.env.BASE ?? "http://localhost:3000";
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH ?? "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const accounts = { customer: "customer@kept.test", pro: "pro@kept.test", admin: "admin@kept.test" };
 const contexts = {};
 async function ctxFor(device, login) {

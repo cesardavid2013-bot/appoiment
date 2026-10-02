@@ -26,7 +26,11 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    env_file: .env
+    env_file:
+      - path: .env
+      # Written by compartir-link: the public https address of the share tunnel.
+      - path: .env.share
+        required: false
     environment:
       DATABASE_URL: postgres://kept:${DB_PASSWORD:-kept-change-me}@db:5432/kept
       STORAGE_DIR: /app/storage
@@ -45,7 +49,10 @@ services:
     restart: unless-stopped
     depends_on:
       - web
-    env_file: .env
+    env_file:
+      - path: .env
+      - path: .env.share
+        required: false
     environment:
       DATABASE_URL: postgres://kept:${DB_PASSWORD:-kept-change-me}@db:5432/kept
       STORAGE_DIR: /app/storage
@@ -53,6 +60,13 @@ services:
     command: ["npm", "run", "worker"]
     volumes:
       - files:/app/storage
+
+  # Public https link without an account (compartir-link). Only starts with --profile share.
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    profiles: ["share"]
+    restart: unless-stopped
+    command: ["tunnel", "--no-autoupdate", "--url", "http://web:3000"]
 
 volumes:
   dbdata:

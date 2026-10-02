@@ -5,7 +5,7 @@ import postgres from "postgres";
 const base = process.env.BASE ?? "http://localhost:3000";
 const sql = postgres(process.env.DATABASE_URL ?? "postgres://app:app@localhost:5432/appoint_dev");
 const email = `invitee-${Date.now()}@kept.test`;
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH ?? "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const ok = (label, v) => console.log(v ? "✓" : "✗", label);
 const errs = [];
 const watch = (p) => { p.on("pageerror", (e) => errs.push(e.message)); p.on("console", (m) => m.type() === "error" && !/422|409|403/.test(m.text()) && errs.push(m.text())); };

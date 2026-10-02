@@ -7,6 +7,8 @@ if not exist .env (
   powershell -NoProfile -Command "$s=-join ((48..57)+(65..90)+(97..122) | Get-Random -Count 48 | %% {[char]$_}); (Get-Content .env.example) -replace '^APP_SECRET=.*',('APP_SECRET='+$s) -replace '^APP_URL=.*','APP_URL=http://localhost:3000' | Set-Content .env"
 )
 set LOCAL_HTTP=1
+if exist .env.share del .env.share
+docker compose --profile share stop tunnel >nul 2>nul
 echo Construyendo Kept (la primera vez tarda unos minutos)...
 docker compose up -d --build || (pause & exit /b 1)
 echo Esperando a que arranque...

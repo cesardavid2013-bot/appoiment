@@ -18,6 +18,9 @@ if [ ! -f .env ]; then
 fi
 
 export LOCAL_HTTP=1
+# Back to localhost only: drop the share link if one was running.
+rm -f .env.share
+docker compose --profile share stop tunnel >/dev/null 2>&1 || true
 echo "Construyendo Kept (la primera vez tarda unos minutos)…"
 docker compose up -d --build
 

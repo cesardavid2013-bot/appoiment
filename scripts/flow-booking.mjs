@@ -4,7 +4,7 @@ const out = process.argv[2] ?? "/tmp/claude-0/flow";
 const device = process.argv[3] ?? "desktop";
 import fs from "node:fs";
 fs.mkdirSync(out, { recursive: true });
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH ?? "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const ctx = await browser.newContext(device === "mobile" ? { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true } : { viewport: { width: 1360, height: 900 } });
 const page = await ctx.newPage();
 const errors = [];

@@ -53,6 +53,8 @@ Deploy steps: `npm ci && npm run build`, run `npm run db:migrate` once per relea
 
 ## Put it online
 
+To let someone try it right now from your own computer: `./compartir-link.sh` (or `.command` / `.bat`) starts everything plus a free Cloudflare quick tunnel and prints a public `https://….trycloudflare.com` link. It lasts while the machine is on and changes on every run — good for testing, not for production.
+
 The quickest path is one machine with Docker (a small VPS is enough):
 
 ```bash

@@ -10,7 +10,7 @@ const pages = [
   ["/pro/today", "pro"], ["/pro/calendar", "pro"], ["/pro/services", "pro"], ["/pro/availability", "pro"], ["/pro/team", "pro"], ["/pro/clients", "pro"],
   ["/pro/messages", "pro"], ["/pro/insights", "pro"], ["/pro/promote", "pro"], ["/pro/reviews", "pro"], ["/pro/work", "pro"], ["/pro/settings/profile", "pro"], ["/pro/settings/appearance", "pro"], ["/pro/settings/booking", "pro"],
 ];
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH ?? "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const ctxs = {};
 async function ctx(login) {
   const k = login ?? "anon";
