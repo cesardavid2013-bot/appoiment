@@ -60,7 +60,11 @@
     "title": "Aucun résultat pour l'instant",
     "query": "Essayez un terme plus large, une autre orthographe, ou retirez quelques filtres.",
     "filters": "Essayez de retirer un filtre ou d'élargir la zone de recherche.",
-    "clear": "Effacer tous les filtres"
+    "clear": "Effacer tous les filtres",
+    "categoryTitle": "Aucun professionnel {category} pour l'instant",
+    "categoryBody": "Kept grandit ville après ville. Vous proposez ce service ? Votre page de réservation peut être en ligne dès aujourd'hui.",
+    "listServices": "Proposez vos services",
+    "seeAll": "Voir tous les professionnels"
   },
   "showMore": "Afficher plus",
   "filters": {
