@@ -1,0 +1,311 @@
+{
+  "loading": "Laddar…",
+  "noEmail": "Ingen e-postadress registrerad",
+  "saveChanges": "Spara ändringar",
+  "cancel": "Avbryt",
+  "checkFields": "Kontrollera de markerade fälten.",
+  "nav": {
+    "label": "Kontoinställningar",
+    "account": "Konto"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profil",
+      "description": "Namn, foto, telefon och tidszon"
+    },
+    "security": {
+      "label": "Inloggning & säkerhet",
+      "description": "Lösenord, e-postbekräftelse och enheter"
+    },
+    "notifications": {
+      "label": "Aviseringsinställningar",
+      "description": "Välj vad vi mejlar eller sms:ar dig om"
+    },
+    "addresses": {
+      "label": "Sparade adresser",
+      "description": "För yrkesverksamma som kommer till dig"
+    },
+    "privacy": {
+      "label": "Integritet & data",
+      "description": "Ladda ner dina uppgifter eller radera ditt konto"
+    }
+  },
+  "home": {
+    "memberSince": "Medlem sedan {date}",
+    "confirmEmail": "<b>Bekräfta din e-post.</b> Vi har skickat en länk till {email} så att företag kan nå dig om bokningar.",
+    "activity": "Din aktivitet",
+    "settings": "Inställningar",
+    "more": "Mer",
+    "signOut": "Logga ut",
+    "rows": {
+      "bookings": {
+        "label": "Bokningar",
+        "description": "Kommande och tidigare bokningar"
+      },
+      "saved": {
+        "label": "Sparade",
+        "description": "Yrkesverksamma du har sparat"
+      },
+      "messages": {
+        "label": "Meddelanden",
+        "description": "Konversationer med företag"
+      },
+      "notifications": {
+        "label": "Aviseringar",
+        "description": "Uppdateringar om dina bokningar"
+      },
+      "business": {
+        "label": "Byt till ditt företag",
+        "description": "Kalender, tjänster och kunder"
+      },
+      "offer": {
+        "label": "Erbjud dina tjänster på Kept",
+        "description": "Ta emot bokningar och väx — gratis att komma igång"
+      },
+      "support": {
+        "label": "Hjälp & support",
+        "description": "Få hjälp med en bokning, betalning eller ditt konto"
+      },
+      "legal": {
+        "label": "Villkor & integritet",
+        "description": "Så fungerar Kept och så hanterar vi dina uppgifter"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Bekräftelsemejl skickat",
+    "sentBody": "Kolla {email} — länken fungerar i 3 dagar.",
+    "sent": "Mejl skickat",
+    "resend": "Skicka länken igen"
+  },
+  "profile": {
+    "description": "Så visas du för de yrkesverksamma du bokar hos.",
+    "saved": "Profilen sparades",
+    "details": "Personuppgifter",
+    "name": "Namn",
+    "email": "E-post",
+    "changeEmail": "För att ändra din inloggnings-e-post, <link>kontakta support</link> så att vi kan bekräfta att det är du.",
+    "phone": "Telefon",
+    "phoneHintSms": "Företag du bokar hos kan ringa dig om bokningar, och vi kan skicka påminnelser via sms om du slår på det.",
+    "phoneHint": "Företag du bokar hos kan använda det för att nå dig om en bokning.",
+    "photo": {
+      "title": "Foto",
+      "description": "Visas för yrkesverksamma du bokar hos, bredvid ditt namn.",
+      "updated": "Fotot uppdaterades",
+      "removed": "Fotot togs bort",
+      "change": "Byt foto",
+      "upload": "Ladda upp foto",
+      "remove": "Ta bort",
+      "hint": "JPG, PNG eller WebP, upp till 15 MB. Vi tar bort platsdata från foton."
+    },
+    "timezone": {
+      "label": "Tidszon",
+      "hint": "Din hemmatidszon. Bokningstider visas alltid i företagets lokala tid.",
+      "notSet": "Inte angiven",
+      "detect": "Identifiera automatiskt",
+      "detectFailed": "Vi kunde inte identifiera din tidszon. Välj den i listan."
+    },
+    "language": {
+      "title": "Språk",
+      "description": "Används för menyer, knappar och datum i hela Kept. Företagsnamn, tjänster och omdömen visas som företaget har skrivit dem."
+    }
+  },
+  "security": {
+    "description": "Håll ditt konto säkert och i dina egna händer.",
+    "password": {
+      "title": "Lösenord",
+      "setTitle": "Ange ett lösenord",
+      "description": "När du byter lösenord loggas du ut på alla andra enheter.",
+      "setDescription": "Du loggar in med Google. Lägg till ett lösenord för att även kunna logga in med din e-post.",
+      "change": "Byt lösenord",
+      "setButton": "Ange lösenord",
+      "current": "Nuvarande lösenord",
+      "new": "Nytt lösenord",
+      "newHint": "Minst 8 tecken. Undvik vanliga ord och din e-postadress.",
+      "confirm": "Bekräfta nytt lösenord",
+      "tooShort": "Använd minst 8 tecken.",
+      "mismatch": "Lösenorden matchar inte.",
+      "changed": "Lösenordet har ändrats",
+      "set": "Lösenordet har angetts",
+      "othersSignedOut": "Alla andra enheter har loggats ut."
+    },
+    "email": {
+      "title": "E-post",
+      "description": "Vi använder din e-post för att logga in dig och skicka bokningsbekräftelser.",
+      "confirmed": "Bekräftad",
+      "notConfirmed": "Inte bekräftad ännu",
+      "none": "Det finns ingen e-postadress på det här kontot."
+    },
+    "devices": {
+      "title": "Enheter",
+      "description": "Om du har loggat in på en delad eller borttappad enhet kan du logga ut den här. Den här enheten förblir inloggad.",
+      "status": "{count, plural, =0 {Bara den här enheten är inloggad} one {Inloggad på # annan enhet} other {Inloggad på # andra enheter}}",
+      "signOutOthers": "Logga ut från andra enheter",
+      "confirmTitle": "Logga ut från andra enheter?",
+      "confirmBody": "Den som använder ditt konto på en annan telefon, surfplatta eller dator måste logga in igen.",
+      "confirm": "Logga ut dem",
+      "signedOutToast": "{count, plural, one {Utloggad från # annan enhet} other {Utloggad från # andra enheter}}"
+    }
+  },
+  "notifications": {
+    "description": "Välj hur vi håller dig uppdaterad. Vi skickar aldrig mer än nödvändigt.",
+    "saved": "Sparat",
+    "emailAndText": "E-post- och sms-aviseringar",
+    "emailOnly": "E-postaviseringar",
+    "inboxNote": "Allt visas också i din aviseringsinkorg på Kept, oavsett vad du väljer här.",
+    "addPhone": "Lägg till ett telefonnummer i din <link>profil</link> för att få sms.",
+    "email": "E-post",
+    "sms": "Sms",
+    "forTopic": "för {topic}",
+    "alwaysOn": {
+      "bookings": "E-post är alltid på, så att vi når dig om en bokning ändras.",
+      "business": "E-post är alltid på, så att du aldrig missar en ny bokning eller förfrågan."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Bokningsuppdateringar",
+        "description": "Bekräftelser, ändringar och avbokningar."
+      },
+      "reminders": {
+        "label": "Påminnelser",
+        "description": "Inför kommande bokningar."
+      },
+      "messages": {
+        "label": "Meddelanden",
+        "description": "När ett företag eller en kund skriver till dig."
+      },
+      "waitlist": {
+        "label": "Lediga tider från kön",
+        "description": "När en tid du ville ha blir ledig."
+      },
+      "reviews": {
+        "label": "Omdömesförfrågningar",
+        "description": "Ett kort meddelande efter ett genomfört besök."
+      },
+      "business": {
+        "label": "Företagsaktivitet",
+        "description": "Nya bokningar, förfrågningar och omdömen för ditt företag."
+      },
+      "marketing": {
+        "label": "Nyheter & erbjudanden",
+        "description": "Enstaka uppdateringar från företag du har bokat hos."
+      }
+    }
+  },
+  "addresses": {
+    "description": "För mobila yrkesverksamma som kommer till dig — barberare, bilvårdare, tränare med flera.",
+    "defaultLabel": "Hem",
+    "saved": "Adressen sparades",
+    "removed": "Adressen togs bort",
+    "emptyTitle": "Inga sparade adresser",
+    "emptyBody": "Ha platserna där du bokar mobila tjänster — som hemma eller på jobbet — samlade på ett ställe.",
+    "add": "Lägg till adress",
+    "removeLabel": "Ta bort {label}",
+    "count": "{count} av {max} sparade",
+    "limit": "Du har nått gränsen. Ta bort en adress för att lägga till en ny.",
+    "dialogBody": "Privat för dig. En yrkesverksam ser bara en adress när du bokar en tjänst där.",
+    "save": "Spara adress",
+    "fields": {
+      "name": "Namn",
+      "nameHint": "Till exempel Hem, Jobb eller Gym.",
+      "line1": "Gatuadress",
+      "line2": "Lägenhet, kontor eller våning",
+      "city": "Ort",
+      "region": "Län / region",
+      "postalCode": "Postnummer",
+      "country": "Land"
+    },
+    "removeTitle": "Ta bort ”{label}”?",
+    "removeBody": "Bokningar du redan har gjort på den här adressen påverkas inte.",
+    "remove": "Ta bort adress"
+  },
+  "privacy": {
+    "description": "Dina uppgifter är dina. Läs hur vi använder dem i vår <link>integritetspolicy</link>.",
+    "export": {
+      "title": "Ladda ner dina uppgifter",
+      "description": "Få en kopia av din profil, sparade adresser, bokningar, omdömen, meddelanden, sparade yrkesverksamma och supportärenden som en JSON-fil.",
+      "button": "Ladda ner mina uppgifter",
+      "hint": "Färdig direkt. Förvara filen på ett säkert ställe — den innehåller personuppgifter."
+    },
+    "delete": {
+      "title": "Radera ditt konto",
+      "intro": "Det här stänger ditt Kept-konto permanent. Så här går det till:",
+      "erased": "Ditt namn, din e-post, ditt telefonnummer, ditt foto, dina sparade adresser och sparade yrkesverksamma raderas, och du loggas ut överallt.",
+      "upcoming": "{count, plural, one {Din kommande bokning avbokas enligt respektive företags avbokningsvillkor, inklusive eventuell återbetalning.} other {Dina # kommande bokningar avbokas enligt respektive företags avbokningsvillkor, inklusive eventuell återbetalning.}}",
+      "upcomingNone": "Eventuella kommande bokningar avbokas enligt respektive företags avbokningsvillkor.",
+      "records": "Uppgifter som företag och skatteregler är beroende av — tidigare bokningar, betalningar och omdömen — sparas, men visas som från ”Raderad användare”.",
+      "permanent": "Det här kan inte ångras. Du kan registrera dig igen senare med samma e-postadress och börja om från början.",
+      "blocked": "Du äger {businesses}. Stäng företaget eller överför det till någon annan under dina <link>företagsinställningar</link> innan du raderar ditt konto, så att dess kunder inte lämnas utan svar.",
+      "copyFirst": "Vill du hellre ha en kopia först? Ladda ner dina uppgifter ovan.",
+      "open": "Radera konto…",
+      "confirmTitle": "Radera ditt konto?",
+      "confirmBody": "Det här kan inte ångras.",
+      "keep": "Behåll mitt konto",
+      "confirm": "Radera mitt konto",
+      "willCancel": "{count, plural, one {# kommande bokning avbokas.} other {# kommande bokningar avbokas.}}",
+      "password": "Ditt lösenord",
+      "typeToConfirm": "Skriv <word>{word}</word> för att bekräfta",
+      "deletedToast": "Ditt konto har raderats",
+      "deletedBody": "Tack för att du använde Kept."
+    }
+  },
+  "saved": {
+    "title": "Sparade",
+    "description": "{count, plural, one {# yrkesverksam du har sparat.} other {# yrkesverksamma du har sparat.}} Lediga tider nedan är live från deras kalendrar.",
+    "emptyTitle": "Inget sparat ännu",
+    "emptyBody": "Tryck på hjärtat hos en yrkesverksam för att spara dem här — praktiskt för att boka om dina stamfavoriter eller jämföra några innan du bestämmer dig.",
+    "explore": "Utforska yrkesverksamma",
+    "loading": "Laddar sparade yrkesverksamma…"
+  },
+  "notificationList": {
+    "title": "Aviseringar",
+    "today": "Idag",
+    "earlier": "Tidigare",
+    "emptyTitle": "Inga aviseringar ännu",
+    "emptyBody": "Bokningsbekräftelser, påminnelser, svar och lediga tider från kön visas här.",
+    "unread": "{count} olästa",
+    "caughtUp": "Du är helt i fas",
+    "allCaughtUpToast": "Helt i fas",
+    "markAll": "Markera alla som lästa",
+    "unreadItem": "Oläst",
+    "loadOlder": "Ladda äldre",
+    "end": "Det var allt."
+  },
+  "invite": {
+    "eyebrow": "Teaminbjudan",
+    "invalidTitle": "Den här inbjudan kan inte användas",
+    "invalidBody": "Den kan ha gått ut, återkallats eller redan accepterats. Be den som bjöd in dig att skicka en ny länk.",
+    "goHome": "Gå till Kept",
+    "join": "Gå med i {business}",
+    "invitedAs": "Du har blivit inbjuden som <b>{role}</b>.",
+    "signInWith": "Logga in eller skapa ett konto med <b>{email}</b> för att acceptera.",
+    "createAccount": "Skapa konto",
+    "signIn": "Logga in",
+    "wrongAccount": "Du är inloggad som <b>{email}</b>, men den här inbjudan skickades till {invited}.",
+    "wrongAccountHint": "Logga ut och logga in med den adressen, eller be om en inbjudan till {email}.",
+    "acceptingAs": "Accepterar som <b>{email}</b>.",
+    "accept": "Acceptera och öppna mitt schema",
+    "roles": {
+      "owner": {
+        "label": "Ägare",
+        "description": "Full kontroll, inklusive fakturering och team."
+      },
+      "manager": {
+        "label": "Chef",
+        "description": "Sköter den dagliga driften. Kan inte ändra team- eller företagsinställningar."
+      },
+      "receptionist": {
+        "label": "Reception",
+        "description": "Bokar och hanterar bokningar för alla."
+      },
+      "provider": {
+        "label": "Yrkesverksam",
+        "description": "Ser och hanterar sina egna bokningar och sitt schema."
+      },
+      "custom": {
+        "label": "Anpassad",
+        "description": "Välj exakt vad den här personen får göra."
+      }
+    }
+  }
+}

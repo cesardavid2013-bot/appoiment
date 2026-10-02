@@ -1,0 +1,311 @@
+{
+  "loading": "Laden…",
+  "noEmail": "Geen e-mailadres bekend",
+  "saveChanges": "Wijzigingen opslaan",
+  "cancel": "Annuleren",
+  "checkFields": "Controleer de gemarkeerde velden.",
+  "nav": {
+    "label": "Accountinstellingen",
+    "account": "Account"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profiel",
+      "description": "Naam, foto, telefoon en tijdzone"
+    },
+    "security": {
+      "label": "Inloggen & beveiliging",
+      "description": "Wachtwoord, e-mailbevestiging en apparaten"
+    },
+    "notifications": {
+      "label": "Meldingsinstellingen",
+      "description": "Kies waarover we je mailen of sms’en"
+    },
+    "addresses": {
+      "label": "Opgeslagen adressen",
+      "description": "Voor professionals die bij je langskomen"
+    },
+    "privacy": {
+      "label": "Privacy & gegevens",
+      "description": "Download je gegevens of verwijder je account"
+    }
+  },
+  "home": {
+    "memberSince": "Lid sinds {date}",
+    "confirmEmail": "<b>Bevestig je e-mailadres.</b> We hebben een link gestuurd naar {email}, zodat bedrijven je kunnen bereiken over boekingen.",
+    "activity": "Jouw activiteit",
+    "settings": "Instellingen",
+    "more": "Meer",
+    "signOut": "Uitloggen",
+    "rows": {
+      "bookings": {
+        "label": "Boekingen",
+        "description": "Aankomende en afgelopen afspraken"
+      },
+      "saved": {
+        "label": "Bewaard",
+        "description": "Professionals die je hebt bewaard"
+      },
+      "messages": {
+        "label": "Berichten",
+        "description": "Gesprekken met bedrijven"
+      },
+      "notifications": {
+        "label": "Meldingen",
+        "description": "Updates over je boekingen"
+      },
+      "business": {
+        "label": "Wissel naar je bedrijf",
+        "description": "Agenda, diensten en klanten"
+      },
+      "offer": {
+        "label": "Bied je diensten aan op Kept",
+        "description": "Ontvang boekingen en laat je bedrijf groeien — gratis om te starten"
+      },
+      "support": {
+        "label": "Hulp & support",
+        "description": "Hulp bij een boeking, betaling of je account"
+      },
+      "legal": {
+        "label": "Voorwaarden & privacy",
+        "description": "Hoe Kept werkt en hoe we met je gegevens omgaan"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Bevestigingsmail verstuurd",
+    "sentBody": "Check {email} — de link is 3 dagen geldig.",
+    "sent": "E-mail verstuurd",
+    "resend": "Link opnieuw versturen"
+  },
+  "profile": {
+    "description": "Hoe je overkomt bij de professionals bij wie je boekt.",
+    "saved": "Profiel opgeslagen",
+    "details": "Persoonlijke gegevens",
+    "name": "Naam",
+    "email": "E-mailadres",
+    "changeEmail": "Om je inlog-e-mailadres te wijzigen, <link>neem je contact op met support</link>, zodat we kunnen bevestigen dat jij het bent.",
+    "phone": "Telefoon",
+    "phoneHintSms": "Bedrijven bij wie je boekt kunnen je bellen over afspraken, en we kunnen je herinneringen sms’en als je die aanzet.",
+    "phoneHint": "Bedrijven bij wie je boekt kunnen dit gebruiken om je over een afspraak te bereiken.",
+    "photo": {
+      "title": "Foto",
+      "description": "Wordt naast je naam getoond aan professionals bij wie je boekt.",
+      "updated": "Foto bijgewerkt",
+      "removed": "Foto verwijderd",
+      "change": "Foto wijzigen",
+      "upload": "Foto uploaden",
+      "remove": "Verwijderen",
+      "hint": "JPG, PNG of WebP, tot 15 MB. We verwijderen locatiegegevens uit foto’s."
+    },
+    "timezone": {
+      "label": "Tijdzone",
+      "hint": "Je eigen tijdzone. Tijden van afspraken worden altijd in de lokale tijd van het bedrijf getoond.",
+      "notSet": "Niet ingesteld",
+      "detect": "Automatisch bepalen",
+      "detectFailed": "We konden je tijdzone niet bepalen. Kies hem uit de lijst."
+    },
+    "language": {
+      "title": "Taal",
+      "description": "Gebruikt voor menu’s, knoppen en datums in heel Kept. Bedrijfsnamen, diensten en reviews worden getoond zoals het bedrijf ze schreef."
+    }
+  },
+  "security": {
+    "description": "Houd je account veilig en in eigen hand.",
+    "password": {
+      "title": "Wachtwoord",
+      "setTitle": "Stel een wachtwoord in",
+      "description": "Als je je wachtwoord wijzigt, word je op alle andere apparaten uitgelogd.",
+      "setDescription": "Je logt in met Google. Voeg een wachtwoord toe om ook met je e-mailadres te kunnen inloggen.",
+      "change": "Wachtwoord wijzigen",
+      "setButton": "Wachtwoord instellen",
+      "current": "Huidig wachtwoord",
+      "new": "Nieuw wachtwoord",
+      "newHint": "Minimaal 8 tekens. Vermijd gewone woorden en je e-mailadres.",
+      "confirm": "Nieuw wachtwoord bevestigen",
+      "tooShort": "Gebruik minimaal 8 tekens.",
+      "mismatch": "Deze wachtwoorden komen niet overeen.",
+      "changed": "Wachtwoord gewijzigd",
+      "set": "Wachtwoord ingesteld",
+      "othersSignedOut": "Alle andere apparaten zijn uitgelogd."
+    },
+    "email": {
+      "title": "E-mailadres",
+      "description": "We gebruiken je e-mailadres om je in te loggen en boekingsbevestigingen te sturen.",
+      "confirmed": "Bevestigd",
+      "notConfirmed": "Nog niet bevestigd",
+      "none": "Er is geen e-mailadres gekoppeld aan dit account."
+    },
+    "devices": {
+      "title": "Apparaten",
+      "description": "Heb je ingelogd op een gedeeld of verloren apparaat, log het dan hier uit. Dit apparaat blijft ingelogd.",
+      "status": "{count, plural, =0 {Alleen dit apparaat is ingelogd} one {Ingelogd op # ander apparaat} other {Ingelogd op # andere apparaten}}",
+      "signOutOthers": "Uitloggen op andere apparaten",
+      "confirmTitle": "Uitloggen op andere apparaten?",
+      "confirmBody": "Iedereen die je account op een andere telefoon, tablet of computer gebruikt, moet opnieuw inloggen.",
+      "confirm": "Uitloggen",
+      "signedOutToast": "{count, plural, one {Uitgelogd op # ander apparaat} other {Uitgelogd op # andere apparaten}}"
+    }
+  },
+  "notifications": {
+    "description": "Kies hoe we je op de hoogte houden. We sturen nooit meer dan nodig is.",
+    "saved": "Opgeslagen",
+    "emailAndText": "E-mail- en sms-meldingen",
+    "emailOnly": "E-mailmeldingen",
+    "inboxNote": "Alles verschijnt ook in je meldingeninbox op Kept, wat je hier ook kiest.",
+    "addPhone": "Voeg een telefoonnummer toe in je <link>profiel</link> om sms-berichten te ontvangen.",
+    "email": "E-mail",
+    "sms": "Sms",
+    "forTopic": "voor {topic}",
+    "alwaysOn": {
+      "bookings": "E-mail staat altijd aan, zodat we je kunnen bereiken als een boeking verandert.",
+      "business": "E-mail staat altijd aan, zodat je nooit een nieuwe boeking of aanvraag mist."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Boekingsupdates",
+        "description": "Bevestigingen, wijzigingen en annuleringen."
+      },
+      "reminders": {
+        "label": "Herinneringen",
+        "description": "Vóór aankomende afspraken."
+      },
+      "messages": {
+        "label": "Berichten",
+        "description": "Wanneer een bedrijf of klant je een bericht stuurt."
+      },
+      "waitlist": {
+        "label": "Plek vrijgekomen",
+        "description": "Wanneer een tijd die je wilde beschikbaar komt."
+      },
+      "reviews": {
+        "label": "Reviewverzoeken",
+        "description": "Een kort bericht na een afgeronde afspraak."
+      },
+      "business": {
+        "label": "Bedrijfsactiviteit",
+        "description": "Nieuwe boekingen, aanvragen en reviews voor je bedrijf."
+      },
+      "marketing": {
+        "label": "Nieuws & aanbiedingen",
+        "description": "Af en toe een update van bedrijven bij wie je hebt geboekt."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Voor mobiele professionals die bij je langskomen — barbers, detailers, trainers en meer.",
+    "defaultLabel": "Thuis",
+    "saved": "Adres opgeslagen",
+    "removed": "Adres verwijderd",
+    "emptyTitle": "Geen opgeslagen adressen",
+    "emptyBody": "Houd de plekken waar je mobiele diensten boekt — zoals thuis of kantoor — bij de hand op één plek.",
+    "add": "Adres toevoegen",
+    "removeLabel": "{label} verwijderen",
+    "count": "{count} van {max} opgeslagen",
+    "limit": "Je hebt de limiet bereikt. Verwijder een adres om er een toe te voegen.",
+    "dialogBody": "Privé voor jou. Een professional ziet een adres alleen als je daar een dienst boekt.",
+    "save": "Adres opslaan",
+    "fields": {
+      "name": "Naam",
+      "nameHint": "Bijvoorbeeld Thuis, Werk of Sportschool.",
+      "line1": "Straat en huisnummer",
+      "line2": "Appartement, unit of verdieping",
+      "city": "Plaats",
+      "region": "Provincie / regio",
+      "postalCode": "Postcode",
+      "country": "Land"
+    },
+    "removeTitle": "“{label}” verwijderen?",
+    "removeBody": "Boekingen die je al op dit adres hebt gemaakt, blijven ongewijzigd.",
+    "remove": "Adres verwijderen"
+  },
+  "privacy": {
+    "description": "Jouw gegevens zijn van jou. Lees in ons <link>privacybeleid</link> hoe we ze gebruiken.",
+    "export": {
+      "title": "Download je gegevens",
+      "description": "Ontvang een kopie van je profiel, opgeslagen adressen, afspraken, reviews, berichten, bewaarde professionals en supportverzoeken als JSON-bestand.",
+      "button": "Mijn gegevens downloaden",
+      "hint": "Direct klaar. Bewaar het bestand op een veilige plek — het bevat persoonlijke gegevens."
+    },
+    "delete": {
+      "title": "Verwijder je account",
+      "intro": "Hiermee sluit je je Kept-account definitief. Dit gebeurt er:",
+      "erased": "Je naam, e-mailadres, telefoonnummer, foto, opgeslagen adressen en bewaarde professionals worden gewist, en je wordt overal uitgelogd.",
+      "upcoming": "{count, plural, one {Je aankomende afspraak wordt geannuleerd volgens het annuleringsbeleid van het bedrijf, inclusief een eventuele terugbetaling.} other {Je # aankomende afspraken worden geannuleerd volgens het annuleringsbeleid van elk bedrijf, inclusief een eventuele terugbetaling.}}",
+      "upcomingNone": "Eventuele aankomende afspraken worden geannuleerd volgens het annuleringsbeleid van elk bedrijf.",
+      "records": "Gegevens waar bedrijven en belastingregels van afhankelijk zijn — afgelopen afspraken, betalingen en reviews — blijven bewaard, maar worden getoond als afkomstig van “Verwijderde gebruiker”.",
+      "permanent": "Dit kan niet ongedaan worden gemaakt. Je kunt je later opnieuw aanmelden met hetzelfde e-mailadres, met een schone lei.",
+      "blocked": "Je bent eigenaar van {businesses}. Sluit het bedrijf of draag het over aan iemand anders via je <link>bedrijfsinstellingen</link> voordat je je account verwijdert, zodat de klanten niet zonder antwoord blijven.",
+      "copyFirst": "Liever eerst een kopie? Download hierboven je gegevens.",
+      "open": "Account verwijderen…",
+      "confirmTitle": "Je account verwijderen?",
+      "confirmBody": "Dit kan niet ongedaan worden gemaakt.",
+      "keep": "Mijn account behouden",
+      "confirm": "Mijn account verwijderen",
+      "willCancel": "{count, plural, one {# aankomende afspraak wordt geannuleerd.} other {# aankomende afspraken worden geannuleerd.}}",
+      "password": "Je wachtwoord",
+      "typeToConfirm": "Typ <word>{word}</word> om te bevestigen",
+      "deletedToast": "Je account is verwijderd",
+      "deletedBody": "Bedankt dat je Kept hebt gebruikt."
+    }
+  },
+  "saved": {
+    "title": "Bewaard",
+    "description": "{count, plural, one {# professional die je hebt bewaard.} other {# professionals die je hebt bewaard.}} De tijden hieronder komen live uit hun agenda’s.",
+    "emptyTitle": "Nog niets bewaard",
+    "emptyBody": "Tik op het hartje bij een professional om hem of haar hier te bewaren — handig om vaste kappers opnieuw te boeken of er een paar te vergelijken voordat je kiest.",
+    "explore": "Professionals ontdekken",
+    "loading": "Bewaarde professionals laden…"
+  },
+  "notificationList": {
+    "title": "Meldingen",
+    "today": "Vandaag",
+    "earlier": "Eerder",
+    "emptyTitle": "Nog geen meldingen",
+    "emptyBody": "Boekingsbevestigingen, herinneringen, antwoorden en vrijgekomen plekken verschijnen hier.",
+    "unread": "{count} ongelezen",
+    "caughtUp": "Je bent helemaal bij",
+    "allCaughtUpToast": "Helemaal bij",
+    "markAll": "Alles als gelezen markeren",
+    "unreadItem": "Ongelezen",
+    "loadOlder": "Oudere laden",
+    "end": "Dat was alles."
+  },
+  "invite": {
+    "eyebrow": "Teamuitnodiging",
+    "invalidTitle": "Deze uitnodiging kan niet worden gebruikt",
+    "invalidBody": "Hij kan verlopen, ingetrokken of al geaccepteerd zijn. Vraag degene die je heeft uitgenodigd om een nieuwe link te sturen.",
+    "goHome": "Naar Kept",
+    "join": "Word lid van {business}",
+    "invitedAs": "Je bent uitgenodigd als <b>{role}</b>.",
+    "signInWith": "Log in of maak een account aan met <b>{email}</b> om te accepteren.",
+    "createAccount": "Account aanmaken",
+    "signIn": "Inloggen",
+    "wrongAccount": "Je bent ingelogd als <b>{email}</b>, maar deze uitnodiging is verstuurd naar {invited}.",
+    "wrongAccountHint": "Log uit en log in met dat adres, of vraag een uitnodiging voor {email}.",
+    "acceptingAs": "Accepteren als <b>{email}</b>.",
+    "accept": "Accepteren en mijn rooster openen",
+    "roles": {
+      "owner": {
+        "label": "Eigenaar",
+        "description": "Volledige controle, inclusief facturatie en team."
+      },
+      "manager": {
+        "label": "Manager",
+        "description": "Beheert de dagelijkse gang van zaken. Kan geen team- of bedrijfsinstellingen wijzigen."
+      },
+      "receptionist": {
+        "label": "Receptie",
+        "description": "Boekt en beheert afspraken voor iedereen."
+      },
+      "provider": {
+        "label": "Professional",
+        "description": "Ziet en beheert de eigen afspraken en agenda."
+      },
+      "custom": {
+        "label": "Aangepast",
+        "description": "Kies precies wat deze persoon mag doen."
+      }
+    }
+  }
+}

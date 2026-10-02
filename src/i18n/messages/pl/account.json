@@ -1,0 +1,311 @@
+{
+  "loading": "Wczytywanie…",
+  "noEmail": "Brak adresu e-mail",
+  "saveChanges": "Zapisz zmiany",
+  "cancel": "Anuluj",
+  "checkFields": "Sprawdź zaznaczone pola.",
+  "nav": {
+    "label": "Ustawienia konta",
+    "account": "Konto"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profil",
+      "description": "Imię, zdjęcie, telefon i strefa czasowa"
+    },
+    "security": {
+      "label": "Logowanie i bezpieczeństwo",
+      "description": "Hasło, potwierdzenie e-maila i urządzenia"
+    },
+    "notifications": {
+      "label": "Ustawienia powiadomień",
+      "description": "Wybierz, o czym wysyłamy Ci e-maile lub SMS-y"
+    },
+    "addresses": {
+      "label": "Zapisane adresy",
+      "description": "Dla specjalistów, którzy dojeżdżają do Ciebie"
+    },
+    "privacy": {
+      "label": "Prywatność i dane",
+      "description": "Pobierz swoje dane lub usuń konto"
+    }
+  },
+  "home": {
+    "memberSince": "Z nami od {date}",
+    "confirmEmail": "<b>Potwierdź swój e-mail.</b> Wysłaliśmy link na adres {email}, aby firmy mogły się z Tobą kontaktować w sprawie rezerwacji.",
+    "activity": "Twoja aktywność",
+    "settings": "Ustawienia",
+    "more": "Więcej",
+    "signOut": "Wyloguj się",
+    "rows": {
+      "bookings": {
+        "label": "Rezerwacje",
+        "description": "Nadchodzące i minione wizyty"
+      },
+      "saved": {
+        "label": "Zapisane",
+        "description": "Specjaliści, których zapisujesz"
+      },
+      "messages": {
+        "label": "Wiadomości",
+        "description": "Rozmowy z firmami"
+      },
+      "notifications": {
+        "label": "Powiadomienia",
+        "description": "Aktualności o Twoich rezerwacjach"
+      },
+      "business": {
+        "label": "Przełącz na swoją firmę",
+        "description": "Kalendarz, usługi i klienci"
+      },
+      "offer": {
+        "label": "Zaoferuj swoje usługi w Kept",
+        "description": "Przyjmuj rezerwacje i rozwijaj firmę — na start bezpłatnie"
+      },
+      "support": {
+        "label": "Pomoc i wsparcie",
+        "description": "Pomoc w sprawie rezerwacji, płatności lub konta"
+      },
+      "legal": {
+        "label": "Regulamin i prywatność",
+        "description": "Jak działa Kept i jak przetwarzamy Twoje dane"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Wysłano e-mail z potwierdzeniem",
+    "sentBody": "Sprawdź skrzynkę {email} — link działa przez 3 dni.",
+    "sent": "E-mail wysłany",
+    "resend": "Wyślij link ponownie"
+  },
+  "profile": {
+    "description": "Tak widzą Cię specjaliści, u których rezerwujesz.",
+    "saved": "Profil zapisany",
+    "details": "Dane osobowe",
+    "name": "Imię i nazwisko",
+    "email": "E-mail",
+    "changeEmail": "Aby zmienić e-mail używany do logowania, <link>skontaktuj się z pomocą</link>, byśmy mogli potwierdzić, że to Ty.",
+    "phone": "Telefon",
+    "phoneHintSms": "Firmy, u których rezerwujesz, mogą do Ciebie zadzwonić w sprawie wizyt, a my możemy wysyłać Ci przypomnienia SMS-em, jeśli je włączysz.",
+    "phoneHint": "Firmy, u których rezerwujesz, mogą go użyć, aby skontaktować się z Tobą w sprawie wizyty.",
+    "photo": {
+      "title": "Zdjęcie",
+      "description": "Widoczne dla specjalistów, u których rezerwujesz, obok Twojego imienia.",
+      "updated": "Zdjęcie zaktualizowane",
+      "removed": "Zdjęcie usunięte",
+      "change": "Zmień zdjęcie",
+      "upload": "Prześlij zdjęcie",
+      "remove": "Usuń",
+      "hint": "JPG, PNG lub WebP, do 15 MB. Usuwamy ze zdjęć dane o lokalizacji."
+    },
+    "timezone": {
+      "label": "Strefa czasowa",
+      "hint": "Twoja domowa strefa czasowa. Godziny wizyt są zawsze pokazywane w czasie lokalnym firmy.",
+      "notSet": "Nie ustawiono",
+      "detect": "Wykryj automatycznie",
+      "detectFailed": "Nie udało się wykryć Twojej strefy czasowej. Wybierz ją z listy."
+    },
+    "language": {
+      "title": "Język",
+      "description": "Używany w menu, przyciskach i datach w całym Kept. Nazwy firm, usługi i opinie są wyświetlane tak, jak napisała je firma."
+    }
+  },
+  "security": {
+    "description": "Dbaj o bezpieczeństwo konta i miej je w swoich rękach.",
+    "password": {
+      "title": "Hasło",
+      "setTitle": "Ustaw hasło",
+      "description": "Zmiana hasła wyloguje Cię na wszystkich innych urządzeniach.",
+      "setDescription": "Logujesz się przez Google. Dodaj hasło, aby móc logować się także e-mailem.",
+      "change": "Zmień hasło",
+      "setButton": "Ustaw hasło",
+      "current": "Obecne hasło",
+      "new": "Nowe hasło",
+      "newHint": "Co najmniej 8 znaków. Unikaj popularnych słów i swojego adresu e-mail.",
+      "confirm": "Potwierdź nowe hasło",
+      "tooShort": "Użyj co najmniej 8 znaków.",
+      "mismatch": "Hasła nie są takie same.",
+      "changed": "Hasło zostało zmienione",
+      "set": "Hasło zostało ustawione",
+      "othersSignedOut": "Pozostałe urządzenia zostały wylogowane."
+    },
+    "email": {
+      "title": "E-mail",
+      "description": "Używamy Twojego e-maila do logowania i wysyłania potwierdzeń rezerwacji.",
+      "confirmed": "Potwierdzony",
+      "notConfirmed": "Jeszcze niepotwierdzony",
+      "none": "To konto nie ma przypisanego adresu e-mail."
+    },
+    "devices": {
+      "title": "Urządzenia",
+      "description": "Jeśli logujesz się na wspólnym lub zgubionym urządzeniu, wyloguj je tutaj. To urządzenie pozostanie zalogowane.",
+      "status": "{count, plural, =0 {Zalogowane jest tylko to urządzenie} one {Zalogowano na # innym urządzeniu} few {Zalogowano na # innych urządzeniach} many {Zalogowano na # innych urządzeniach} other {Zalogowano na # innych urządzeniach}}",
+      "signOutOthers": "Wyloguj z innych urządzeń",
+      "confirmTitle": "Wylogować z innych urządzeń?",
+      "confirmBody": "Każdy, kto używa Twojego konta na innym telefonie, tablecie lub komputerze, będzie musiał zalogować się ponownie.",
+      "confirm": "Wyloguj je",
+      "signedOutToast": "{count, plural, one {Wylogowano z # innego urządzenia} few {Wylogowano z # innych urządzeń} many {Wylogowano z # innych urządzeń} other {Wylogowano z # innych urządzeń}}"
+    }
+  },
+  "notifications": {
+    "description": "Wybierz, jak informujemy Cię na bieżąco. Nigdy nie wysyłamy więcej, niż trzeba.",
+    "saved": "Zapisano",
+    "emailAndText": "Powiadomienia e-mail i SMS",
+    "emailOnly": "Powiadomienia e-mail",
+    "inboxNote": "Wszystko pojawia się też w skrzynce powiadomień w Kept, niezależnie od tego, co tu wybierzesz.",
+    "addPhone": "Dodaj numer telefonu w swoim <link>profilu</link>, aby otrzymywać SMS-y.",
+    "email": "E-mail",
+    "sms": "SMS",
+    "forTopic": "dla: {topic}",
+    "alwaysOn": {
+      "bookings": "E-mail jest zawsze włączony, abyśmy mogli się z Tobą skontaktować, gdy rezerwacja ulegnie zmianie.",
+      "business": "E-mail jest zawsze włączony, aby żadna nowa rezerwacja ani prośba Cię nie ominęła."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Aktualizacje rezerwacji",
+        "description": "Potwierdzenia, zmiany i anulowania."
+      },
+      "reminders": {
+        "label": "Przypomnienia",
+        "description": "Przed nadchodzącymi wizytami."
+      },
+      "messages": {
+        "label": "Wiadomości",
+        "description": "Gdy firma lub klient napisze do Ciebie."
+      },
+      "waitlist": {
+        "label": "Zwolnione terminy z listy oczekujących",
+        "description": "Gdy termin, na którym Ci zależało, stanie się dostępny."
+      },
+      "reviews": {
+        "label": "Prośby o opinię",
+        "description": "Krótka wiadomość po zakończonej wizycie."
+      },
+      "business": {
+        "label": "Aktywność firmy",
+        "description": "Nowe rezerwacje, prośby i opinie dotyczące Twojej firmy."
+      },
+      "marketing": {
+        "label": "Nowości i oferty",
+        "description": "Okazjonalne wiadomości od firm, u których rezerwowano."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Dla mobilnych specjalistów, którzy dojeżdżają do Ciebie — barberów, specjalistów od detailingu, trenerów i innych.",
+    "defaultLabel": "Dom",
+    "saved": "Adres zapisany",
+    "removed": "Adres usunięty",
+    "emptyTitle": "Brak zapisanych adresów",
+    "emptyBody": "Miej pod ręką miejsca, w których rezerwujesz usługi mobilne — jak dom czy biuro — w jednym miejscu.",
+    "add": "Dodaj adres",
+    "removeLabel": "Usuń: {label}",
+    "count": "Zapisano {count} z {max}",
+    "limit": "Osiągnięto limit. Usuń adres, aby dodać kolejny.",
+    "dialogBody": "Widoczny tylko dla Ciebie. Specjalista zobaczy adres wyłącznie wtedy, gdy zarezerwujesz u niego usługę.",
+    "save": "Zapisz adres",
+    "fields": {
+      "name": "Nazwa",
+      "nameHint": "Na przykład Dom, Praca lub Siłownia.",
+      "line1": "Ulica i numer",
+      "line2": "Mieszkanie, lokal lub piętro",
+      "city": "Miasto",
+      "region": "Województwo / region",
+      "postalCode": "Kod pocztowy",
+      "country": "Kraj"
+    },
+    "removeTitle": "Usunąć „{label}”?",
+    "removeBody": "Rezerwacje, które już wykonano pod tym adresem, nie ulegną zmianie.",
+    "remove": "Usuń adres"
+  },
+  "privacy": {
+    "description": "Twoje dane należą do Ciebie. Przeczytaj, jak je wykorzystujemy, w naszej <link>polityce prywatności</link>.",
+    "export": {
+      "title": "Pobierz swoje dane",
+      "description": "Otrzymaj kopię swojego profilu, zapisanych adresów, wizyt, opinii, wiadomości, zapisanych specjalistów i zgłoszeń do pomocy w pliku JSON.",
+      "button": "Pobierz moje dane",
+      "hint": "Gotowe od razu. Przechowuj plik w bezpiecznym miejscu — zawiera dane osobowe."
+    },
+    "delete": {
+      "title": "Usuń konto",
+      "intro": "Spowoduje to trwałe zamknięcie Twojego konta Kept. Oto, co się stanie:",
+      "erased": "Twoje imię, e-mail, telefon, zdjęcie, zapisane adresy i zapisani specjaliści zostaną usunięci, a z konta zostaniesz wylogowany(-a) wszędzie.",
+      "upcoming": "{count, plural, one {Twoja nadchodząca wizyta zostanie anulowana zgodnie z zasadami anulowania danej firmy, wraz z ewentualnym zwrotem.} few {Twoje # nadchodzące wizyty zostaną anulowane zgodnie z zasadami anulowania poszczególnych firm, wraz z ewentualnym zwrotem.} many {Twoich # nadchodzących wizyt zostanie anulowanych zgodnie z zasadami anulowania poszczególnych firm, wraz z ewentualnym zwrotem.} other {Twoich # nadchodzących wizyt zostanie anulowanych zgodnie z zasadami anulowania poszczególnych firm, wraz z ewentualnym zwrotem.}}",
+      "upcomingNone": "Ewentualne nadchodzące wizyty zostaną anulowane zgodnie z zasadami anulowania poszczególnych firm.",
+      "records": "Dane, od których zależą firmy i przepisy podatkowe — minione wizyty, płatności i opinie — zostają zachowane, ale są pokazywane jako pochodzące od „Usuniętego użytkownika”.",
+      "permanent": "Tego nie można cofnąć. Możesz później zarejestrować się ponownie na ten sam e-mail, zaczynając od zera.",
+      "blocked": "Do Ciebie należy: {businesses}. Zanim usuniesz konto, zamknij firmę lub przekaż ją komuś innemu w <link>ustawieniach firmy</link>, aby jej klienci nie zostali bez odpowiedzi.",
+      "copyFirst": "Wolisz najpierw mieć kopię? Pobierz swoje dane powyżej.",
+      "open": "Usuń konto…",
+      "confirmTitle": "Usunąć konto?",
+      "confirmBody": "Tego nie można cofnąć.",
+      "keep": "Zostaw moje konto",
+      "confirm": "Usuń moje konto",
+      "willCancel": "{count, plural, one {# nadchodząca wizyta zostanie anulowana.} few {# nadchodzące wizyty zostaną anulowane.} many {# nadchodzących wizyt zostanie anulowanych.} other {# nadchodzących wizyt zostanie anulowanych.}}",
+      "password": "Twoje hasło",
+      "typeToConfirm": "Wpisz <word>{word}</word>, aby potwierdzić",
+      "deletedToast": "Twoje konto zostało usunięte",
+      "deletedBody": "Dziękujemy za korzystanie z Kept."
+    }
+  },
+  "saved": {
+    "title": "Zapisane",
+    "description": "{count, plural, one {# zapisany specjalista.} few {# zapisanych specjalistów.} many {# zapisanych specjalistów.} other {# zapisanych specjalistów.}} Poniższe terminy pochodzą na żywo z ich kalendarzy.",
+    "emptyTitle": "Nic jeszcze nie zapisano",
+    "emptyBody": "Stuknij serduszko przy dowolnym specjaliście, aby zachować go tutaj — przydatne, gdy chcesz ponownie zarezerwować stałych specjalistów albo porównać kilku przed decyzją.",
+    "explore": "Odkrywaj specjalistów",
+    "loading": "Wczytywanie zapisanych specjalistów…"
+  },
+  "notificationList": {
+    "title": "Powiadomienia",
+    "today": "Dziś",
+    "earlier": "Wcześniej",
+    "emptyTitle": "Brak powiadomień",
+    "emptyBody": "Potwierdzenia rezerwacji, przypomnienia, odpowiedzi i zwolnione terminy pojawią się tutaj.",
+    "unread": "Nieprzeczytane: {count}",
+    "caughtUp": "Jesteś na bieżąco",
+    "allCaughtUpToast": "Jesteś na bieżąco",
+    "markAll": "Oznacz wszystkie jako przeczytane",
+    "unreadItem": "Nieprzeczytane",
+    "loadOlder": "Wczytaj starsze",
+    "end": "To wszystko."
+  },
+  "invite": {
+    "eyebrow": "Zaproszenie do zespołu",
+    "invalidTitle": "Tego zaproszenia nie można użyć",
+    "invalidBody": "Mogło wygasnąć, zostać anulowane lub już przyjęte. Poproś osobę, która Cię zaprosiła, o nowy link.",
+    "goHome": "Przejdź do Kept",
+    "join": "Dołącz do: {business}",
+    "invitedAs": "Zaproszono Cię jako: <b>{role}</b>.",
+    "signInWith": "Zaloguj się lub załóż konto na adres <b>{email}</b>, aby przyjąć zaproszenie.",
+    "createAccount": "Załóż konto",
+    "signIn": "Zaloguj się",
+    "wrongAccount": "Zalogowano jako <b>{email}</b>, ale to zaproszenie wysłano na adres {invited}.",
+    "wrongAccountHint": "Wyloguj się i zaloguj tym adresem albo poproś o zaproszenie na adres {email}.",
+    "acceptingAs": "Przyjmujesz jako <b>{email}</b>.",
+    "accept": "Przyjmij i otwórz mój grafik",
+    "roles": {
+      "owner": {
+        "label": "Właściciel",
+        "description": "Pełna kontrola, w tym rozliczenia i zespół."
+      },
+      "manager": {
+        "label": "Menedżer",
+        "description": "Prowadzi bieżącą działalność. Nie może zmieniać ustawień zespołu ani firmy."
+      },
+      "receptionist": {
+        "label": "Recepcja",
+        "description": "Rezerwuje wizyty i zarządza nimi dla wszystkich."
+      },
+      "provider": {
+        "label": "Specjalista",
+        "description": "Widzi własne wizyty i grafik oraz nimi zarządza."
+      },
+      "custom": {
+        "label": "Niestandardowa",
+        "description": "Wybierz dokładnie, co ta osoba może robić."
+      }
+    }
+  }
+}
