@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "ادائیگی کا انتظار",
+    "requested": "درخواست بھیج دی گئی",
+    "confirmed": "تصدیق شدہ",
+    "checked_in": "پہنچ گئے",
+    "in_progress": "جاری ہے",
+    "completed": "مکمل",
+    "cancelled": "منسوخ",
+    "declined": "مسترد",
+    "no_show": "حاضر نہیں ہوئے",
+    "expired": "میعاد ختم"
+  },
+  "list": {
+    "title": "بکنگز",
+    "filters": "بکنگ فلٹر",
+    "tabs": {
+      "upcoming": "آنے والی",
+      "past": "گزشتہ",
+      "cancelled": "منسوخ"
+    },
+    "howDidItGo": "کیسا رہا؟",
+    "review": "جائزہ",
+    "empty": {
+      "upcoming": "کوئی آنے والی اپائنٹمنٹ نہیں",
+      "past": "ابھی کوئی گزشتہ اپائنٹمنٹ نہیں",
+      "cancelled": "کچھ منسوخ نہیں ہوا",
+      "upcomingBody": "جب آپ بک کریں گے تو آپ کی اپائنٹمنٹس یہاں نظر آئیں گی — راستے، یاد دہانیوں اور آسان ری شیڈولنگ کے ساتھ۔",
+      "findPro": "پیشہ ور تلاش کریں"
+    },
+    "nextUp": "اگلی · {when}",
+    "nextUpOn": "اگلی · {day}",
+    "details": "تفصیلات",
+    "directions": "راستہ"
+  },
+  "detail": {
+    "metaTitle": "اپائنٹمنٹ",
+    "allBookings": "تمام بکنگز",
+    "hero": {
+      "confirmedTitle": "آپ کی بکنگ ہو گئی",
+      "confirmedBody": "ہم نے تصدیق بھیج دی ہے اور آپ کی اپائنٹمنٹ سے پہلے یاد دہانی بھی کرائیں گے۔",
+      "requestedTitle": "درخواست بھیج دی گئی",
+      "requestedBody": "{business} آپ کی درخواست کا جائزہ لے گا۔ جواب دیتے ہی ہم آپ کو مطلع کریں گے — تب تک آپ کا وقت محفوظ رہے گا۔",
+      "paymentTitle": "آپ کی ادائیگی مکمل ہو رہی ہے",
+      "paymentBody": "اگر آپ نے ابھی ادائیگی کی ہے تو یہ چند سیکنڈ میں خود بخود اپ ڈیٹ ہو جائے گا۔ ادائیگی مکمل ہونے تک آپ کا وقت محفوظ رہتا ہے۔"
+    },
+    "calendarDetails": "حوالہ {reference}",
+    "ref": "حوالہ",
+    "when": "کب",
+    "with": "کس کے ساتھ",
+    "where": "کہاں",
+    "atYourAddress": "آپ کے پتے پر",
+    "online": "آن لائن",
+    "virtualLink": "کاروبار آپ کے سیشن سے پہلے لنک بھیجے گا۔",
+    "yourReview": "آپ کا جائزہ",
+    "payment": {
+      "title": "ادائیگی",
+      "serviceFee": "سروس فیس",
+      "tax": "ٹیکس",
+      "estimatedTotal": "تخمینی کل",
+      "total": "کل",
+      "paid": "ادا شدہ",
+      "refunded": "واپس کی گئی",
+      "balance": "باقی",
+      "dueAtAppointment": "اپائنٹمنٹ پر واجب الادا",
+      "tip": "ٹپ"
+    },
+    "policy": {
+      "title": "منسوخی کی پالیسی",
+      "freeUntil": "{hours, plural, one {# گھنٹہ} other {# گھنٹے}} پہلے تک منسوخی مفت ہے۔",
+      "freeAnytime": "اپائنٹمنٹ سے پہلے کسی بھی وقت منسوخی مفت ہے۔",
+      "lateFee": "اس کے بعد منسوخی پر: کل رقم کا {percent}%۔",
+      "depositNonRefundable": "ڈپازٹ واپس نہیں ہوتا۔",
+      "cannotCancel": "یہ اپائنٹمنٹ اب منسوخ نہیں کی جا سکتی۔",
+      "alreadyStarted": "یہ اپائنٹمنٹ شروع ہو چکی ہے۔",
+      "cannotReschedule": "اس اپائنٹمنٹ کا وقت تبدیل نہیں کیا جا سکتا۔",
+      "maxReschedules": "اس اپائنٹمنٹ کا وقت زیادہ سے زیادہ بار تبدیل کیا جا چکا ہے۔ براہِ کرم کاروبار سے رابطہ کریں۔",
+      "rescheduleWindow": "تبدیلی اپائنٹمنٹ سے کم از کم {hours, plural, one {# گھنٹہ} other {# گھنٹے}} پہلے کرنا ضروری ہے۔ براہِ کرم کاروبار سے رابطہ کریں۔"
+    },
+    "refund": {
+      "noCharge": "کوئی چارج نہیں۔",
+      "full": "آپ کو مکمل رقم واپس ملے گی۔",
+      "none": "اس کاروبار کی پالیسی کے مطابق آپ کی ادائیگی واپس نہیں ہوگی۔",
+      "partial": "اس کاروبار کی پالیسی کے مطابق آپ کو جزوی رقم واپس ملے گی۔"
+    },
+    "note": "نوٹ: {reason}",
+    "problem": "اس بکنگ میں کوئی مسئلہ ہے؟ <link>سپورٹ سے رابطہ کریں</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} کو {time} بجے",
+    "cancelledToast": "اپائنٹمنٹ منسوخ ہو گئی",
+    "refundOnWay": "{amount} کی رقم واپسی کے راستے میں ہے۔",
+    "rescheduledToast": "وقت تبدیل ہو گیا",
+    "payToConfirm": "تصدیق کے لیے {amount} ادا کریں",
+    "addToCalendar": "کیلنڈر میں شامل کریں",
+    "directions": "راستہ",
+    "message": "پیغام",
+    "bookAgain": "دوبارہ بک کریں",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "جائزہ دیں",
+    "reschedule": "وقت تبدیل کریں",
+    "cancelAppointment": "اپائنٹمنٹ منسوخ کریں",
+    "cancelTitle": "یہ اپائنٹمنٹ منسوخ کریں؟",
+    "insideWindow": "آپ کاروبار کی منسوخی کی مدت کے اندر ہیں۔",
+    "refundAmount": "واپسی: {amount}۔",
+    "keptAmount": "کاروبار کے پاس رہے گا: {amount}۔",
+    "reason": "وجہ",
+    "reasonHint": "کاروبار کے ساتھ شیئر کی جاتی ہے۔",
+    "chooseNewTime": "نیا وقت چنیں",
+    "currently": "فی الحال {when}",
+    "keepCurrentTime": "موجودہ وقت برقرار رکھیں",
+    "moveTo": "{time} پر منتقل کریں",
+    "chooseTime": "وقت چنیں"
+  },
+  "review": {
+    "ratings": {
+      "1": "خراب",
+      "2": "مناسب",
+      "3": "اچھا",
+      "4": "بہت اچھا",
+      "5": "شاندار"
+    },
+    "thanks": "جائزے کا شکریہ",
+    "title": "{business} کیسا رہا؟",
+    "subtitle": "آپ کا جائزہ عوامی ہے اور تصدیق شدہ بکنگ کے طور پر نشان زد ہوگا۔",
+    "rating": "ریٹنگ",
+    "stars": "{n, plural, one {# ستارہ} other {# ستارے}}",
+    "bodyLabel": "دوسروں کو اپنی وزٹ کے بارے میں بتائیں",
+    "bodyPlaceholder": "کیا چیز نمایاں رہی؟ کیا آپ انہیں تجویز کریں گے؟",
+    "post": "جائزہ شائع کریں"
+  },
+  "slotPicker": {
+    "previousWeek": "پچھلا ہفتہ",
+    "nextWeek": "اگلا ہفتہ",
+    "noOpenings": "اس دن کوئی وقت خالی نہیں۔",
+    "selected": "{time} منتخب"
+  }
+}

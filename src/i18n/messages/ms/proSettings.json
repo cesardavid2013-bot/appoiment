@@ -1,0 +1,782 @@
+{
+  "title": "Tetapan",
+  "home": {
+    "description": "Bagaimana {name} kelihatan, menerima tempahan dan dibayar."
+  },
+  "nav": {
+    "label": "Tetapan",
+    "back": "Tetapan",
+    "sections": {
+      "profile": {
+        "label": "Profil perniagaan",
+        "description": "Nama, foto, tentang, hubungan dan pautan sosial."
+      },
+      "locations": {
+        "label": "Lokasi",
+        "description": "Tempat anda bekerja: kedai, tempat pelanggan, atau dalam talian."
+      },
+      "booking": {
+        "label": "Peraturan tempahan",
+        "description": "Tempahan segera atau diluluskan, notis, peringatan."
+      },
+      "policies": {
+        "label": "Pembatalan & yuran",
+        "description": "Tempoh pembatalan, yuran tidak hadir, cukai."
+      },
+      "payments": {
+        "label": "Pembayaran",
+        "description": "Ambil deposit dan bayaran kad dalam talian."
+      },
+      "forms": {
+        "label": "Soalan pelanggan",
+        "description": "Borang pengambilan yang diisi pelanggan semasa menempah."
+      },
+      "link": {
+        "label": "Pautan tempahan",
+        "description": "Alamat web, kod QR dan mengaktifkan halaman anda."
+      },
+      "verification": {
+        "label": "Pengesahan",
+        "description": "Dapatkan lencana disahkan pada profil anda."
+      },
+      "appearance": {
+        "label": "Rupa halaman",
+        "description": "Pengepala, warna, susunan bahagian dan butang pautan."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Menyimpan…",
+    "unsaved": "Perubahan belum disimpan",
+    "allSaved": "Semua perubahan disimpan",
+    "discard": "Buang",
+    "save": "Simpan",
+    "saved": "Disimpan",
+    "checkFields": "Semak ruangan yang diserlahkan."
+  },
+  "shareLink": {
+    "copy": "Salin",
+    "copied": "Disalin"
+  },
+  "profile": {
+    "title": "Profil perniagaan",
+    "description": "Apa yang dilihat pelanggan pada halaman anda dan dalam carian.",
+    "toastUpdated": "Profil dikemas kini",
+    "toastLive": "Perubahan telah aktif pada halaman anda.",
+    "logoAlt": "Logo {name}",
+    "viewPage": "Lihat halaman anda",
+    "photos": {
+      "title": "Foto",
+      "description": "Logo anda muncul pada kad dan mesej; kulit mendahului halaman anda. Gunakan hasil kerja atau ruang anda sendiri — bukan foto stok.",
+      "noCover": "Tiada foto kulit",
+      "remove": "Buang",
+      "uploading": "Memuat naik…",
+      "changeCover": "Tukar kulit",
+      "addCover": "Tambah kulit",
+      "changeLogo": "Tukar logo",
+      "addLogo": "Tambah logo",
+      "logoHint": "Segi empat sama paling sesuai. Tanpa logo kami paparkan inisial anda."
+    },
+    "basics": {
+      "title": "Asas",
+      "nameIndividual": "Nama anda atau nama perniagaan",
+      "nameBusiness": "Nama perniagaan",
+      "tagline": "Slogan",
+      "taglineHint": "Satu baris di bawah nama anda. {count, plural, other {# aksara lagi.}}",
+      "taglinePlaceholder": "cth. Fade tepat dan kerja janggut di Bed-Stuy",
+      "category": "Kategori utama",
+      "categoryHint": "Tempat anda muncul apabila orang menyemak imbas.",
+      "choose": "Pilih…",
+      "years": "Tahun pengalaman"
+    },
+    "about": {
+      "title": "Tentang",
+      "description": "Apa yang anda lakukan, cara anda bekerja, apa yang menjadikan lawatan dengan anda berbeza. Perkataan mudah mengalahkan perkataan muluk.",
+      "label": "Tentang",
+      "languages": "Bahasa yang dituturkan",
+      "amenities": "Kemudahan"
+    },
+    "tags": {
+      "optional": "Pilihan",
+      "placeholder": "Taip dan tekan Enter",
+      "remove": "Buang {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "Inggeris",
+        "spanish": "Sepanyol",
+        "french": "Perancis",
+        "portuguese": "Portugis",
+        "mandarin": "Mandarin",
+        "cantonese": "Kantonis",
+        "arabic": "Arab",
+        "russian": "Rusia",
+        "haitianCreole": "Kreol Haiti",
+        "korean": "Korea",
+        "vietnamese": "Vietnam",
+        "hindi": "Hindi",
+        "italian": "Itali",
+        "german": "Jerman",
+        "polish": "Poland",
+        "tagalog": "Tagalog"
+      },
+      "amenities": {
+        "wheelchair": "Boleh diakses kerusi roda",
+        "streetParking": "Tempat letak kereta tepi jalan",
+        "freeParking": "Tempat letak kereta percuma",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Bayaran kad",
+        "walkIns": "Pelanggan tanpa temu janji dialu-alukan",
+        "kidFriendly": "Mesra kanak-kanak",
+        "restroom": "Tandas",
+        "airConditioning": "Penghawa dingin",
+        "drinks": "Minuman disediakan",
+        "genderNeutral": "Neutral jantina",
+        "petFriendly": "Mesra haiwan peliharaan"
+      }
+    },
+    "contact": {
+      "title": "Hubungan & pautan",
+      "description": "Dipaparkan pada halaman anda. Pelanggan sentiasa boleh menghantar mesej kepada anda melalui Kept, jadi ini adalah pilihan.",
+      "email": "E-mel awam",
+      "phone": "Telefon awam",
+      "website": "Laman web",
+      "websitePlaceholder": "yourdomain.com"
+    },
+    "social": {
+      "legend": "Profil sosial",
+      "hint": "Taip nama pengguna anda atau tampal pautan profil anda. Untuk memaparkan video, hantaran atau lagu tertentu pada halaman anda, tambahkannya dalam <link>Portfolio</link>.",
+      "placeholders": {
+        "instagram": "@yourname",
+        "tiktok": "@yourname",
+        "youtube": "@yourchannel",
+        "facebook": "yourpage",
+        "x": "@yourname",
+        "linkedin": "in/yourname",
+        "spotify": "Pautan artis",
+        "soundcloud": "yourname",
+        "behance": "yourname",
+        "pinterest": "yourname",
+        "twitch": "yourchannel",
+        "threads": "@yourname"
+      },
+      "errors": {
+        "wrongNetwork": "Itu bukan pautan {network}.",
+        "useProfile": "Gunakan pautan ke profil {network} anda.",
+        "badHandle": "Itu tidak kelihatan seperti nama pengguna {network}.",
+        "badArtist": "Itu tidak kelihatan seperti pautan artis {network}."
+      }
+    },
+    "timezone": {
+      "title": "Zon waktu",
+      "description": "Waktu bekerja anda dan setiap masa janji temu berada dalam zon ini. Tukar hanya jika anda benar-benar telah berpindah — tempahan sedia ada mengekalkan masa tepat mereka.",
+      "label": "Zon waktu"
+    }
+  },
+  "booking": {
+    "title": "Peraturan tempahan",
+    "description": "Bagaimana dan bila pelanggan boleh menempah anda. Perkhidmatan individu boleh mengatasi notis dan kelulusan.",
+    "toastUpdated": "Peraturan tempahan dikemas kini",
+    "mode": {
+      "title": "Pengesahan",
+      "description": "Anda masih boleh mewajibkan kelulusan untuk perkhidmatan tertentu dalam penyunting perkhidmatan.",
+      "instantTitle": "Tempahan segera",
+      "instantDescription": "Pelanggan memilih masa kosong dan terus ditempah. Terbaik untuk kebanyakan perniagaan — inilah yang dijangka pelanggan.",
+      "requestTitle": "Luluskan setiap permintaan",
+      "requestDescription": "Pelanggan menghantar permintaan; anda menerima atau menolak. Permintaan yang tidak dijawab tamat tempoh secara automatik supaya tiada sesiapa menunggu selama-lamanya."
+    },
+    "window": {
+      "title": "Bila pelanggan boleh menempah",
+      "minNotice": "Notis minimum",
+      "minNoticeHint": "Waktu terakhir pelanggan boleh menempah sebelum masa mula.",
+      "noMinimum": "Tiada minimum — tempah sehingga tepat sebelum bermula",
+      "advance": "Tempah sehingga",
+      "advanceHint": "Sejauh mana kalendar anda dibuka ke hadapan.",
+      "daysAhead": "{count, plural, other {# hari lebih awal}}",
+      "yearAhead": "1 tahun lebih awal",
+      "interval": "Masa mula setiap",
+      "intervalHint": "Selang yang lebih pendek memberi pelanggan lebih banyak pilihan; yang lebih panjang memastikan hari anda kemas.",
+      "anyStaff": "Tawarkan “Mana-mana profesional yang tersedia”",
+      "anyStaffDescription": "Menunjukkan masa paling terbuka dan mengagihkan tempahan kepada pasukan anda. Matikan jika pelanggan mesti memilih seseorang."
+    },
+    "durations": {
+      "minutes": "{count, plural, other {# minit}}",
+      "hours": "{count, plural, other {# jam}}",
+      "days": "{count, plural, other {# hari}}",
+      "weeks": "{count, plural, other {# minggu}}"
+    },
+    "reminders": {
+      "title": "Peringatan",
+      "description": "Dihantar melalui e-mel sebelum setiap janji temu. Pelanggan yang menempah lebih dekat daripada masa peringatan tidak menerima peringatan itu.",
+      "descriptionSms": "Dihantar melalui e-mel dan mesej teks (jika pelanggan membenarkan mesej teks) sebelum setiap janji temu. Pelanggan yang menempah lebih dekat daripada masa peringatan tidak menerima peringatan itu.",
+      "none": "Tiada peringatan. Pelanggan hanya menerima pengesahan tempahan mereka.",
+      "add": "Tambah peringatan",
+      "addPlaceholder": "Tambah peringatan…",
+      "upTo": "Sehingga 3",
+      "remove": "Buang peringatan {label}",
+      "minutesBefore": "{count, plural, other {# minit sebelum}}",
+      "hoursBefore": "{count, plural, other {# jam sebelum}}",
+      "daysBefore": "{count, plural, other {# hari sebelum}}"
+    }
+  },
+  "policies": {
+    "title": "Pembatalan & yuran",
+    "description": "Pelanggan melihat ini sebelum menempah dan sekali lagi sebelum membatalkan.",
+    "toastUpdated": "Polisi dikemas kini",
+    "cancel": {
+      "title": "Membatalkan dan menjadualkan semula",
+      "freeUntil": "Pembatalan percuma sehingga",
+      "rescheduleUntil": "Penjadualan semula dalam talian sehingga",
+      "anyTime": "Bila-bila masa sebelum",
+      "oneDay": "24 jam (1 hari) sebelum",
+      "hoursBefore": "{count, plural, other {# jam sebelum}}",
+      "daysBefore": "{count, plural, other {# hari sebelum}}",
+      "lateFee": "Yuran pembatalan lewat",
+      "lateFeeHintPaid": "Dipotong daripada apa yang dibayar pelanggan dalam talian. Kami tidak pernah mengenakan lebih daripada yang telah mereka bayar.",
+      "lateFeeHintUnpaid": "Hanya terpakai pada wang yang dibayar dalam talian. Sambungkan pembayaran dan ambil deposit untuk menguatkuasakannya.",
+      "none": "Tiada",
+      "ofTotal": "daripada jumlah",
+      "noShowFee": "Yuran tidak hadir",
+      "noShowHint": "Sebahagian daripada polisi anda supaya pelanggan tahu terlebih dahulu. Apabila anda menandakan tidak hadir, apa-apa yang mereka bayar dalam talian kekal bersama anda; yuran yang dikutip secara bersemuka boleh direkodkan pada janji temu.",
+      "refundDeposits": "Kembalikan deposit untuk pembatalan tepat pada masanya",
+      "refundDepositsDescription": "Dimatikan bermaksud deposit dikekalkan setiap kali pelanggan membatalkan."
+    },
+    "words": {
+      "title": "Dalam kata-kata anda sendiri",
+      "description": "Nota pilihan yang dipaparkan bersama polisi anda.",
+      "late": "Lewat tiba",
+      "lateHint": "cth. “Selepas lewat 15 minit, kami mungkin perlu memendekkan atau menempah semula perkhidmatan anda.”",
+      "before": "Sebelum lawatan anda",
+      "beforeHint": "Dipaparkan kepada setiap pelanggan sebelum mereka mengesahkan — arah tuju, apa yang perlu dibawa, cara bersedia."
+    },
+    "tax": {
+      "title": "Cukai jualan",
+      "description": "Ditambah di atas harga anda semasa pembayaran dan dipaparkan sebagai baris tersendiri. Biarkan pada 0 jika harga anda sudah termasuk cukai.",
+      "rate": "Kadar",
+      "rateError": "Masukkan kadar antara 0 dan 30%",
+      "label": "Label",
+      "labelPlaceholder": "Cukai jualan"
+    },
+    "preview": {
+      "title": "Apa yang dilihat pelanggan sebelum menempah"
+    }
+  },
+  "payments": {
+    "title": "Pembayaran",
+    "description": "Ambil deposit atau bayaran penuh apabila pelanggan menempah. Membayar secara bersemuka sentiasa berfungsi juga.",
+    "online": {
+      "title": "Bayaran dalam talian",
+      "description": "Bayaran diproses oleh Stripe dan dibayar ke akaun bank anda. Kept tidak pernah melihat nombor kad."
+    },
+    "unavailable": {
+      "badge": "Belum tersedia",
+      "body": "Bayaran kad belum dihidupkan untuk Kept. Sehingga ia dihidupkan, pelanggan membayar anda semasa janji temu, dan anda boleh merekodkan setiap bayaran — tunai, pembaca kad atau pindahan — daripada halaman janji temu supaya rekod dan Wawasan anda kekal tepat.",
+      "note": "Tiada apa-apa untuk dilakukan di sini buat masa ini. Deposit dan polisi yang anda tetapkan akan mula terpakai sebaik sahaja bayaran dalam talian dibuka."
+    },
+    "none": {
+      "deposits": "Wajibkan deposit atau bayaran penuh bagi setiap perkhidmatan",
+      "fees": "Simpan yuran pembatalan lewat daripada deposit secara automatik",
+      "tips": "Benarkan pelanggan menambah tip selepas lawatan",
+      "connect": "Sediakan pembayaran dengan Stripe",
+      "time": "Mengambil masa kira-kira 5 minit. Anda memerlukan butiran bank dan satu kad pengenalan."
+    },
+    "incomplete": {
+      "badge": "Persediaan belum selesai",
+      "body": "Stripe masih memerlukan beberapa butiran sebelum anda boleh menerima bayaran.",
+      "continue": "Teruskan persediaan"
+    },
+    "connected": {
+      "badge": "Disambungkan",
+      "body": "Anda boleh menerima deposit dan bayaran dalam talian.",
+      "services": "Pilih apa yang hendak dikutip bagi setiap perkhidmatan dalam <link>Perkhidmatan</link>."
+    },
+    "fees": {
+      "title": "Yuran",
+      "kept": "Yuran Kept atas bayaran dalam talian",
+      "inPerson": "Bayaran yang diambil secara bersemuka",
+      "noFee": "Tiada yuran Kept",
+      "processing": "Pemprosesan kad",
+      "stripeRate": "Kadar standard Stripe"
+    }
+  },
+  "link": {
+    "title": "Pautan tempahan",
+    "description": "Halaman anda di Kept. Letakkannya dalam bio, pada kad anda, pada cermin.",
+    "checklist": {
+      "location": "Tambah tempat anda bekerja",
+      "services": "Cipta sekurang-kurangnya satu perkhidmatan",
+      "availability": "Tetapkan waktu bekerja anda",
+      "done": "Selesai",
+      "todo": "Untuk dilakukan"
+    },
+    "status": {
+      "liveTitle": "Halaman anda aktif",
+      "draftTitle": "Halaman anda belum aktif",
+      "liveDescription": "Pelanggan boleh menemui anda dalam carian dan menempah dalam talian.",
+      "draftDescription": "Hanya anda boleh melihatnya. Aktifkan apabila senarai semak selesai.",
+      "live": "Aktif",
+      "hide": "Sembunyikan halaman saya",
+      "goLive": "Aktifkan",
+      "viewPage": "Lihat halaman",
+      "preview": "Pratonton"
+    },
+    "toasts": {
+      "live": "Anda aktif — pelanggan boleh menemui dan menempah anda",
+      "hidden": "Halaman anda disembunyikan",
+      "hiddenDescription": "Janji temu sedia ada tidak terjejas.",
+      "slugUpdated": "Alamat dikemas kini",
+      "slugUpdatedDescription": "Pautan lama anda tidak lagi berfungsi — kemas kininya di mana-mana anda telah berkongsi.",
+      "copied": "Disalin"
+    },
+    "share": {
+      "title": "Kongsi",
+      "qrLabel": "Kod QR untuk {address}",
+      "qrHint": "Cetak di kaunter hadapan, pada kad perniagaan atau cermin anda. Mengimbasnya terus membuka halaman tempahan anda.",
+      "png": "PNG untuk cetakan",
+      "svg": "SVG",
+      "embedSummary": "Tambah butang “Tempah sekarang” pada laman web anda",
+      "embedHint": "Tampal ini di tempat anda mahu butang itu.",
+      "copyCode": "Salin kod",
+      "buttonText": "Tempah dengan {name}"
+    },
+    "slug": {
+      "title": "Alamat web",
+      "description": "Huruf kecil, nombor dan sempang. Menukarnya memutuskan pautan yang telah anda kongsi.",
+      "change": "Tukar alamat",
+      "label": "Alamat"
+    },
+    "hideDialog": {
+      "title": "Sembunyikan halaman anda?",
+      "description": "Anda akan hilang daripada carian dan tiada sesiapa boleh menempah dalam talian. Janji temu sedia ada kekal seperti sedia ada. Anda boleh aktif semula pada bila-bila masa.",
+      "confirm": "Sembunyikan halaman"
+    }
+  },
+  "locations": {
+    "title": "Lokasi",
+    "description": "Tempat pelanggan menempah anda: kedai anda, kawasan yang anda kunjungi, atau dalam talian. Setiap perkhidmatan dan ahli pasukan boleh dihadkan kepada sebahagian daripadanya.",
+    "privacy": {
+      "title": "Apa yang boleh dilihat pelanggan",
+      "atPlace": "Di tempat anda",
+      "atPlaceBody": "Alamat penuh dan peta, supaya pelanggan dapat menemui anda.",
+      "travel": "Mengunjungi pelanggan",
+      "travelBody": "Hanya bandar anda dan sejauh mana anda bergerak. Jika anda bekerja dari rumah, alamat rumah dan pin tepat anda tidak pernah dipaparkan — carian meletakkan anda dalam lingkungan kira-kira 5 km. Pelanggan memberi alamat mereka kepada anda semasa menempah.",
+      "online": "Dalam talian",
+      "onlineBody": "Tiada alamat langsung, hanya bahawa sesi berlangsung dalam talian."
+    },
+    "kinds": {
+      "physical": {
+        "label": "Di tempat saya",
+        "description": "Kedai, studio, pejabat"
+      },
+      "mobile": {
+        "label": "Saya mengunjungi pelanggan",
+        "description": "Rumah, pejabat, acara"
+      },
+      "virtual": {
+        "label": "Dalam talian",
+        "description": "Sesi video atau telefon"
+      }
+    },
+    "summary": {
+      "mobile": "Bergerak sehingga {km} km dari {place}",
+      "virtual": "Sesi dalam talian"
+    },
+    "list": {
+      "title": "Lokasi anda",
+      "count": "{count} daripada {max} pada pelan {plan}",
+      "emptyTitle": "Belum ada lokasi",
+      "emptyBody": "Pelanggan tidak boleh menempah sehingga mereka tahu di mana janji temu berlangsung. Tambah kedai anda, kawasan yang anda kunjungi, atau sesi dalam talian.",
+      "add": "Tambah lokasi",
+      "primary": "Utama",
+      "upcoming": "{count, plural, other {# janji temu akan datang}}",
+      "notPinned": "Tidak disematkan pada peta",
+      "actions": "Tindakan untuk {name}",
+      "edit": "Sunting",
+      "makePrimary": "Jadikan utama",
+      "remove": "Buang lokasi",
+      "atLimit": "{count, plural, other {Pelan {plan} anda termasuk # lokasi. Buang satu untuk menambah yang lain.}}",
+      "primaryHint": "Lokasi utama ialah yang dipaparkan dahulu pada profil dan dalam carian anda."
+    },
+    "toasts": {
+      "primary": "{name} kini lokasi utama anda",
+      "removed": "{name} dibuang",
+      "saved": "Lokasi disimpan",
+      "added": "Lokasi ditambah"
+    },
+    "remove": {
+      "blockedTitle": "{name} belum boleh dibuang",
+      "ok": "OK",
+      "title": "Buang {name}?",
+      "confirm": "Buang lokasi",
+      "description": "Pelanggan tidak lagi dapat menempahnya. Janji temu lepas mengekalkan butirannya.",
+      "primaryNote": "Lokasi tertua yang tinggal menjadi lokasi utama.",
+      "membersNote": "{count, plural, other {# ahli pasukan ditugaskan di sini. Sesiapa yang ditugaskan di sini sahaja akan boleh ditempah di semua lokasi anda.}}",
+      "servicesNote": "Perkhidmatan yang ditawarkan di sini mengekalkan lokasi lain mereka.",
+      "onlyLocation": "Ini ialah satu-satunya lokasi anda. Tambah yang lain dahulu supaya pelanggan masih mempunyai tempat untuk menempah.",
+      "upcoming": "{count, plural, other {Ia mempunyai # janji temu akan datang. Alihkan atau batalkannya daripada <link>kalendar</link> anda dahulu.}}",
+      "exclusive": "{count, plural, other {{names} hanya ditawarkan di sini. Tawarkannya di tempat lain atau sembunyikannya dalam <link>Perkhidmatan</link>.}}",
+      "quoted": "“{name}”"
+    },
+    "dialog": {
+      "editTitle": "Sunting {name}",
+      "addTitle": "Tambah lokasi",
+      "cancel": "Batal",
+      "save": "Simpan lokasi",
+      "add": "Tambah lokasi",
+      "where": "Di mana janji temu berlangsung?",
+      "name": "Nama",
+      "nameHintPhysical": "Dipaparkan kepada pelanggan, cth. nama kedai atau kawasan kejiranan.",
+      "nameHintOther": "Dipaparkan kepada pelanggan apabila mereka memilih tempat untuk menempah.",
+      "namePlaceholderPhysical": "cth. Studio pusat bandar",
+      "defaultMobile": "Perkhidmatan bergerak",
+      "defaultVirtual": "Dalam talian",
+      "street": "Alamat jalan",
+      "line2": "Pangsapuri, suite, tingkat",
+      "cityBased": "Bandar tempat anda berpangkalan",
+      "city": "Bandar",
+      "region": "Negeri / wilayah",
+      "postalCode": "Poskod",
+      "country": "Kod negara",
+      "countryHint": "Dua huruf, cth. US, MX, ES",
+      "radius": "Sejauh mana anda akan bergerak?",
+      "radiusOption": "Sehingga {km} km",
+      "timezone": "Zon waktu",
+      "timezoneHint": "Waktu dan tempahan di sini menggunakan zon ini.",
+      "phone": "Telefon",
+      "phoneHint": "Jika pelanggan perlu menelefon lokasi ini secara terus.",
+      "primary": "Jadikan ini lokasi utama saya",
+      "primaryDescription": "Dipaparkan dahulu pada profil anda dan digunakan untuk carian."
+    },
+    "pin": {
+      "title": "Pin peta",
+      "physical": "Meletakkan kedai anda pada peta dan dalam carian “berhampiran saya”. Pelanggan melihat alamat yang anda masukkan di atas.",
+      "mobile": "Digunakan hanya untuk memadankan anda dengan pelanggan berhampiran. Pin tepat dan alamat jalan anda tidak pernah dipaparkan — profil anda menunjukkan bandar, dan carian meletakkan anda dalam lingkungan kira-kira 5 km.",
+      "find": "Cari alamat ini",
+      "useMine": "Guna lokasi semasa saya",
+      "remove": "Buang pin",
+      "removed": "Pin dibuang.",
+      "matches": "Padanan alamat",
+      "pinnedTo": "Disematkan pada {place}.",
+      "pinned": "Disematkan.",
+      "notPinned": "Belum disematkan. Anda masih akan muncul apabila pelanggan mencari di bandar anda.",
+      "noGeolocation": "Pelayar ini tidak dapat berkongsi lokasinya.",
+      "here": "Disematkan pada tempat anda berada sekarang.",
+      "denied": "Kami tidak dapat mengesan lokasi anda. Semak kebenaran lokasi pelayar anda.",
+      "enterAddress": "Masukkan alamat dahulu.",
+      "noMatch": "Tiada padanan ditemui. Semak alamat, atau gunakan lokasi semasa anda."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Arahan ketibaan",
+        "placeholder": "cth. Letak kereta di Elm St. Tekan loceng unit 2B dan naik ke tingkat dua.",
+        "hint": "Tempat letak kereta, pintu masuk, kod loceng. Pelanggan melihat ini pada profil anda dan dalam tempahan mereka."
+      },
+      "mobile": {
+        "label": "Nota untuk pelanggan",
+        "placeholder": "cth. Saya perlukan tempat letak kereta dalam jarak 50 m dan akses kepada soket kuasa.",
+        "hint": "Apa yang perlu disediakan pelanggan. Dipaparkan dalam tempahan mereka."
+      },
+      "virtual": {
+        "label": "Cara sesi berfungsi",
+        "placeholder": "cth. Anda akan menerima pautan video melalui mesej sejam sebelum sesi anda.",
+        "hint": "Dipaparkan dalam tempahan mereka. Jangan tampal pautan mesyuarat peribadi di sini — hantar pautan dalam Mesej."
+      }
+    }
+  },
+  "verification": {
+    "title": "Pengesahan",
+    "description": "Tunjukkan kepada pelanggan bahawa perniagaan sebenar yang berlesen berada di sebalik profil anda. Pasukan kami menyemak dokumen yang anda hantar secara manual.",
+    "status": {
+      "title": "Status",
+      "not_submitted": "Belum disahkan",
+      "pending": "Dalam semakan",
+      "verified": "Disahkan",
+      "rejected": "Tidak diluluskan",
+      "needs_info": "Maklumat lanjut diperlukan"
+    },
+    "body": {
+      "notSubmitted": "Anda belum meminta untuk disahkan. Hantar beberapa butiran dan dokumen di bawah.",
+      "pending": "Dihantar pada {date}. Seseorang dalam pasukan kami menyemak setiap permintaan secara manual; anda akan menerima pemberitahuan sebaik sahaja ada keputusan. Anda tidak boleh mengubah permintaan semasa ia dalam semakan.",
+      "pendingNoDate": "Dihantar. Seseorang dalam pasukan kami menyemak setiap permintaan secara manual; anda akan menerima pemberitahuan sebaik sahaja ada keputusan. Anda tidak boleh mengubah permintaan semasa ia dalam semakan.",
+      "verified": "{name} disahkan sejak {date}. Lencana dipaparkan pada <link>profil awam</link> anda dan dalam hasil carian.",
+      "verifiedNoDate": "{name} disahkan. Lencana dipaparkan pada <link>profil awam</link> anda dan dalam hasil carian.",
+      "rejected": "Kami tidak dapat mengesahkan {name} dengan apa yang dihantar pada {date}. Anda boleh menghantar butiran dan dokumen baharu di bawah.",
+      "rejectedNoDate": "Kami tidak dapat mengesahkan {name} dengan apa yang dihantar. Anda boleh menghantar butiran dan dokumen baharu di bawah.",
+      "needsInfo": "Pasukan kami memerlukan sedikit lagi sebelum membuat keputusan. Jawab di bawah dan permintaan anda kembali ke semakan."
+    },
+    "note": "Nota daripada Kept",
+    "noteDate": "Nota daripada Kept · {date}",
+    "submit": {
+      "replyTitle": "Balas kepada pasukan kami",
+      "retryTitle": "Cuba lagi",
+      "requestTitle": "Minta pengesahan",
+      "firstDescription": "Ceritakan tentang perniagaan dan lampirkan bukti. Kebanyakan perniagaan menghantar satu dokumen lesen atau pendaftaran.",
+      "againDescription": "Kami telah menyimpan apa yang anda hantar kali lepas. Ubah atau tambah padanya."
+    },
+    "sent": {
+      "title": "Apa yang anda hantar",
+      "description": "Pada {date}.",
+      "noDescription": "Tiada penerangan.",
+      "documents": "Dokumen",
+      "open": "Buka dokumen {n}",
+      "removed": "Sesetengah dokumen telah dibuang dan tidak lagi boleh dibuka."
+    },
+    "meaning": {
+      "title": "Apa yang dilihat pelanggan",
+      "example": "Contoh lencana disahkan",
+      "checkMark": "Tanda semak di sebelah nama anda pada profil dan dalam hasil carian, berlabel “Perniagaan disahkan”.",
+      "notEndorsement": "Ia bermaksud Kept menyemak dokumen yang anda berikan. Ia bukan ulasan terhadap kerja anda atau sokongan — penilaian anda masih datang daripada pelanggan.",
+      "private": "Dokumen kekal peribadi. Hanya orang yang menguruskan perniagaan ini dan pasukan semakan Kept boleh membukanya.",
+      "removable": "Pasukan kami boleh membuang lencana kemudian, contohnya jika sesuatu lesen didapati tidak sah."
+    },
+    "form": {
+      "documentN": "Dokumen {n}",
+      "tooMany": "{count, plural, other {Anda boleh melampirkan sehingga # dokumen.}}",
+      "needSomething": "Tambah penerangan ringkas atau sekurang-kurangnya satu dokumen.",
+      "sentReply": "Dihantar. Permintaan anda kembali dalam semakan.",
+      "submitted": "Dihantar untuk semakan",
+      "replyLabel": "Balasan anda",
+      "aboutLabel": "Tentang perniagaan anda",
+      "hint": "Nombor lesen atau pendaftaran, siapa yang mengeluarkannya, dan sudah berapa lama anda bekerja. Apa-apa yang membantu kami mengesahkan perniagaan itu benar dan milik anda.",
+      "placeholder": "cth. Barber berlesen, lesen NY State #12345678, dikeluarkan 2019. Kedai didaftarkan sebagai North Fade LLC.",
+      "documents": "Dokumen",
+      "documentsHint": "Foto atau imbasan (JPG, PNG atau WebP, sehingga 15 MB setiap satu) lesen, sijil pendaftaran atau pensijilan. Sehingga {max}.",
+      "attachedList": "Dokumen dilampirkan",
+      "open": "Buka dokumen {n}",
+      "uploading": "Memuat naik {name}",
+      "fromLast": "Daripada permintaan terakhir anda",
+      "attached": "Dilampirkan",
+      "remove": "Buang {name}",
+      "addAnother": "Tambah dokumen lain",
+      "add": "Tambah dokumen",
+      "uploadingAll": "Memuat naik dokumen",
+      "attachedCount": "{count, plural, other {# dokumen dilampirkan}}",
+      "privacy": "Hanya orang yang menguruskan perniagaan ini dan pasukan semakan Kept boleh membuka fail ini. Ia tidak pernah dipaparkan pada profil anda.",
+      "waiting": "Menunggu muat naik…",
+      "sendReply": "Hantar balasan",
+      "submitAgain": "Hantar semula",
+      "submit": "Hantar untuk semakan"
+    }
+  },
+  "forms": {
+    "title": "Soalan pelanggan",
+    "description": "Soalan yang dijawab pelanggan semasa menempah: alahan, matlamat, kereta yang mereka bawa. Bina borang sekali, kemudian pilih pada setiap perkhidmatan yang memerlukannya.",
+    "newForm": "Borang baharu",
+    "editForm": "Sunting borang",
+    "notIncludedTitle": "Tidak termasuk dalam pelan anda",
+    "notIncludedBody": "Soalan pengambilan bukan sebahagian daripada pelan {plan}. Perkhidmatan masih menerima tempahan tanpanya.",
+    "emptyTitle": "Belum ada borang",
+    "emptyBody": "Tanya apa yang perlu anda tahu sebelum janji temu, supaya anda tidak mengetahuinya di kerusi. Jawapan disimpan pada tempahan dan dipaparkan kepada sesiapa yang melaksanakan janji temu.",
+    "create": "Cipta borang",
+    "listLabel": "Borang",
+    "noQuestions": "Belum ada soalan",
+    "questions": "{count, plural, other {# soalan}}",
+    "required": "{count, plural, other {# wajib}}",
+    "edited": "Disunting {date}",
+    "footer": "Untuk meminta borang pada sesuatu perkhidmatan, buka perkhidmatan itu dan pilihnya di bawah <b>Soalan & keperluan</b>. Setiap perkhidmatan meminta paling banyak satu borang.",
+    "notUsed": "Belum digunakan oleh mana-mana perkhidmatan",
+    "askedOn": "Ditanya pada <list></list>",
+    "hidden": "(tersembunyi)",
+    "more": "{count, plural, other {# lagi}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "Jawapan ringkas",
+        "hint": "Satu nama, satu nombor, beberapa perkataan.",
+        "placeholder": "cth. Apakah buatan dan model kereta anda?"
+      },
+      "long_text": {
+        "label": "Perenggan",
+        "hint": "Ruang untuk beberapa ayat.",
+        "placeholder": "cth. Beritahu kami tentang sebarang kecederaan yang perlu kami ketahui."
+      },
+      "yes_no": {
+        "label": "Ya / Tidak",
+        "hint": "Dua butang: Ya dan Tidak.",
+        "placeholder": "cth. Adakah ini lawatan pertama anda?"
+      },
+      "single_choice": {
+        "label": "Pilihan berganda",
+        "hint": "Pelanggan memilih satu pilihan.",
+        "placeholder": "cth. Berapa panjang rambut anda sekarang?"
+      },
+      "multi_choice": {
+        "label": "Kotak semak",
+        "hint": "Pelanggan menanda mana-mana yang berkenaan.",
+        "placeholder": "cth. Kawasan mana yang anda mahu kami beri tumpuan?"
+      },
+      "date": {
+        "label": "Tarikh",
+        "hint": "Pemilih tarikh, cth. tarikh lahir atau tarikh acara.",
+        "placeholder": "cth. Bila acaranya?"
+      },
+      "acknowledgement": {
+        "label": "Perakuan",
+        "hint": "Satu kenyataan yang ditanda pelanggan untuk mengesahkan mereka telah membacanya.",
+        "placeholder": "cth. Saya faham ujian tampalan diperlukan 48 jam sebelum perkhidmatan warna."
+      }
+    },
+    "errors": {
+      "name": "Berikan nama kepada borang",
+      "statement": "Tulis kenyataan yang dipersetujui pelanggan",
+      "question": "Tulis soalan",
+      "twoChoices": "Tambah sekurang-kurangnya dua pilihan",
+      "distinct": "Setiap pilihan mesti berbeza"
+    },
+    "leaveConfirm": "Anda mempunyai perubahan yang belum disimpan pada borang ini. Tinggalkan tanpa menyimpannya?",
+    "toasts": {
+      "saved": "Borang disimpan",
+      "created": "Borang dicipta",
+      "archived": "Borang diarkibkan",
+      "archivedFrom": "{count, plural, other {Borang diarkibkan dan dibuang daripada # perkhidmatan}}"
+    },
+    "untitled": "Soalan tanpa tajuk",
+    "archive": "Arkibkan borang",
+    "show": "Tunjukkan",
+    "questionsTab": "{count, plural, other {Soalan (#)}}",
+    "previewTab": "Pratonton pelanggan",
+    "details": "Butiran borang",
+    "nameLabel": "Nama borang",
+    "nameHint": "Hanya pasukan anda melihat ini. Pelanggan hanya melihat soalan.",
+    "namePlaceholder": "cth. Perundingan pelanggan baharu",
+    "questions": "Soalan",
+    "questionCount": "{count} daripada {max}",
+    "emptyTitle": "Belum ada soalan",
+    "emptyBody": "Ringkaskan. Dua atau tiga soalan dijawab; sepuluh dilangkau.",
+    "saveBar": {
+      "saving": "Menyimpan…",
+      "fix": "{count, plural, other {Betulkan # perkara sebelum menyimpan}}",
+      "unsaved": "Perubahan belum disimpan",
+      "allSaved": "Semua perubahan disimpan",
+      "newForm": "Borang baharu",
+      "discard": "Buang",
+      "cancel": "Batal",
+      "save": "Simpan perubahan",
+      "create": "Cipta borang"
+    },
+    "archiveDialog": {
+      "title": "Arkibkan “{name}”?",
+      "confirm": "Arkibkan borang",
+      "confirmUsed": "{count, plural, other {Arkibkan dan buang daripada # perkhidmatan}}",
+      "descriptionUsed": "Perkhidmatan ini akan berhenti menanyakan soalan ini pada tempahan baharu sehingga anda memilih borang lain:",
+      "descriptionUnused": "Tiada perkhidmatan menanyakan borang ini, jadi tiada apa yang berubah untuk pelanggan.",
+      "keep": "Jawapan yang telah diberikan pada tempahan lepas dan akan datang kekal pada tempahan tersebut.",
+      "lost": "Suntingan borang ini yang belum disimpan akan hilang."
+    },
+    "usage": {
+      "none": "Belum ada perkhidmatan yang menanyakan borang ini. Buka perkhidmatan dalam <link>Perkhidmatan</link> dan pilihnya di bawah Soalan & keperluan.",
+      "title": "Ditanya semasa pelanggan menempah",
+      "hidden": "tersembunyi",
+      "note": "Perubahan terpakai pada tempahan baharu bagi perkhidmatan ini sebaik sahaja anda menyimpan."
+    },
+    "add": {
+      "label": "Tambah soalan",
+      "limit": "Had {max} soalan dicapai",
+      "type": "Jenis soalan"
+    },
+    "card": {
+      "required": "Wajib",
+      "attention": "Perlu perhatian",
+      "moveUp": "Alih soalan {n} ke atas",
+      "moveDown": "Alih soalan {n} ke bawah",
+      "type": "Jenis",
+      "statement": "Kenyataan",
+      "question": "Soalan",
+      "helpText": "Teks bantuan",
+      "helpAck": "Dipaparkan di bawah kenyataan, cth. di mana hendak membaca polisi penuh.",
+      "helpQuestion": "Dipaparkan di bawah soalan.",
+      "mustTick": "Mesti ditanda untuk menempah",
+      "ackRequired": "Pelanggan tidak boleh menempah sehingga mereka menandanya.",
+      "questionRequired": "Pelanggan tidak boleh menempah tanpa menjawab.",
+      "optional": "Pelanggan boleh melangkaunya.",
+      "duplicate": "Gandakan",
+      "delete": "Padam",
+      "done": "Selesai"
+    },
+    "options": {
+      "legend": "Pilihan",
+      "choice": "Pilihan {n}",
+      "remove": "Buang pilihan {n}",
+      "max": "Maksimum {max} pilihan",
+      "add": "Tambah pilihan"
+    },
+    "preview": {
+      "title": "Pratonton pelanggan",
+      "description": "Langkah “Beberapa butiran” dalam tempahan. Cubalah; tiada apa yang disimpan.",
+      "empty": "Soalan yang anda tambah muncul di sini seperti yang akan dilihat pelanggan.",
+      "noteLabel": "Ada apa-apa lagi yang mereka perlu tahu?",
+      "noteHint": "Setiap tempahan berakhir dengan kotak ini. Ia bukan sebahagian daripada borang anda.",
+      "notePlaceholder": "Alahan, keutamaan, nota tempat letak kereta…",
+      "invalid": "{count, plural, other {# jawapan tiada atau tidak sah}}",
+      "allGood": "Semuanya baik — ini akan diteruskan.",
+      "clear": "Kosongkan",
+      "tryContinue": "Cuba teruskan",
+      "errors": {
+        "confirm": "Sila sahkan untuk meneruskan.",
+        "required": "Soalan ini wajib.",
+        "invalid": "Jawapan tidak sah.",
+        "tooLong": "Pastikan kurang daripada {max} aksara.",
+        "choose": "Pilih salah satu pilihan.",
+        "invalidChoice": "Pilihan tidak sah.",
+        "date": "Masukkan tarikh yang sah."
+      }
+    }
+  },
+  "appearance": {
+    "title": "Rupa halaman",
+    "description": "Jadikan halaman awam anda kelihatan seperti anda: pengepalanya, warna aksen, susunan bahagian, notis dan butang pautan anda sendiri.",
+    "saved": "Halaman anda telah dikemas kini",
+    "masthead": {
+      "title": "Pengepala",
+      "body": "Gelap dan sinematik, atau cerah dan lapang. Foto kulit anda tetap kelihatan dalam kedua-duanya.",
+      "sample": "Halaman anda",
+      "noir": "Noir — pengepala gelap",
+      "ivory": "Ivory — pengepala cerah"
+    },
+    "accent": {
+      "title": "Warna aksen",
+      "body": "Digunakan untuk butiran kecil: label, garisan, bintang dan serlahan.",
+      "names": {
+        "brass": "Loyang",
+        "emerald": "Zamrud",
+        "rose": "Mawar",
+        "sapphire": "Nilam",
+        "copper": "Tembaga"
+      }
+    },
+    "sections": {
+      "title": "Bahagian",
+      "body": "Pilih apa yang dilihat pengunjung dan dalam susunan yang mana. Perkhidmatan datang dahulu dan ulasan sentiasa kelihatan — itulah yang menjadikan halaman anda dipercayai.",
+      "alwaysFirst": "Sentiasa pertama",
+      "always": "Sentiasa dipaparkan",
+      "hide": "Sembunyikan {name}",
+      "show": "Tunjukkan {name}",
+      "up": "Alih {name} ke atas",
+      "down": "Alih {name} ke bawah",
+      "names": {
+        "services": "Perkhidmatan",
+        "work": "Hasil kerja",
+        "featured": "Pilihan",
+        "team": "Pasukan",
+        "reviews": "Ulasan",
+        "about": "Tentang"
+      }
+    },
+    "notice": {
+      "title": "Notis",
+      "body": "Mesej ringkas di bahagian atas halaman anda — waktu cuti, senarai menunggu, lokasi baharu.",
+      "label": "Mesej",
+      "placeholder": "Tutup 24–26 Disember. Kembali pada 27hb."
+    },
+    "links": {
+      "title": "Butang pautan",
+      "body": "Menu anda, kad hadiah, kedai atau senarai main: sehingga 8 butang dipaparkan pada halaman anda.",
+      "label": "Teks butang",
+      "url": "Alamat",
+      "labelPlaceholder": "Kad hadiah",
+      "remove": "Buang pautan",
+      "add": "Tambah pautan"
+    }
+  }
+}

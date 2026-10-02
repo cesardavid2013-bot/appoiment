@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Tempahan", "hint": "Perubahan, pembatalan atau masalah dengan janji temu." },
+    "payment": { "label": "Pembayaran", "hint": "Caj, deposit, bayaran balik atau tip." },
+    "account": { "label": "Akaun", "hint": "Log masuk, profil atau data anda." },
+    "report": { "label": "Laporkan perniagaan", "hint": "Kebimbangan keselamatan, senarai mengelirukan atau salah laku." },
+    "other": { "label": "Lain-lain", "hint": "Apa-apa lagi yang boleh kami bantu." }
+  },
+  "status": {
+    "open": "Menunggu sokongan",
+    "awaiting_customer": "Telah dibalas",
+    "resolved": "Selesai",
+    "closed": "Ditutup"
+  },
+  "home": {
+    "title": "Bantuan & sokongan",
+    "description": "Dapatkan bantuan tentang tempahan, pembayaran atau akaun anda.",
+    "newRequest": "Permintaan baharu",
+    "yourRequests": "Permintaan anda",
+    "emptyTitle": "Belum ada permintaan",
+    "emptyBody": "Jika ada yang tidak kena dengan tempahan, pembayaran atau akaun anda, beritahu kami dan kami akan membantu menyelesaikannya.",
+    "contact": "Hubungi sokongan",
+    "ticketLine": "{category} · Dikemas kini {date} · {count, plural, other {# mesej}}",
+    "quickAnswers": "Jawapan pantas",
+    "stillStuck": "Masih menghadapi masalah? <link>Hubungi sokongan</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Bagaimana saya membatalkan atau menjadualkan semula janji temu?",
+      "a": "Buka <link>Tempahan</link>, pilih janji temu dan ketik Jadual semula atau Batal. Setiap perniagaan menetapkan tempoh pembatalannya sendiri — anda akan melihat dengan tepat apa yang terpakai, termasuk sebarang yuran atau bayaran balik, sebelum anda mengesahkan."
+    },
+    "refund": {
+      "q": "Bilakah saya akan menerima bayaran balik?",
+      "a": "Bayaran balik dikembalikan ke kad yang anda gunakan sebaik sahaja pembatalan disahkan. Bergantung pada bank anda, ia biasanya mengambil masa 5–10 hari bekerja untuk dipaparkan. Sama ada deposit boleh dikembalikan bergantung pada polisi perniagaan, yang dipaparkan semasa anda menempah."
+    },
+    "contactPro": {
+      "q": "Bagaimana saya menghubungi profesional?",
+      "a": "Gunakan Mesej pada profil mereka atau pada tempahan anda. Perbualan anda disimpan dalam <link>Mesej</link>. Untuk apa-apa tentang perkhidmatan itu sendiri — arah tuju, persediaan, apa yang perlu dibawa — perniagaan boleh menjawab dengan paling pantas."
+    },
+    "report": {
+      "q": "Ada masalah dengan sesebuah perniagaan. Apa yang boleh saya lakukan?",
+      "a": "Buka permintaan di bawah dan pilih “Laporkan perniagaan”. Pautkan janji temu jika ada. Kami membaca setiap laporan, dan kami boleh campur tangan dalam bayaran balik serta, jika perlu, membuang perniagaan daripada Kept."
+    },
+    "account": {
+      "q": "Bagaimana saya menukar e-mel atau memadam akaun saya?",
+      "a": "Perubahan e-mel dibuat melalui sokongan supaya kami dapat mengesahkan ia adalah anda. Anda boleh memuat turun data atau memadam akaun sendiri dalam <link>Privasi & data</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Permintaan sokongan",
+    "allRequests": "Semua permintaan",
+    "opened": "{category} · Dibuka <date></date>",
+    "appointmentLine": "{date} pada {time} · Rujukan {reference}",
+    "conversation": "Perbualan",
+    "keptSupport": "Sokongan Kept",
+    "openImage": "Buka imej yang dilampirkan",
+    "attachedImage": "Imej dilampirkan",
+    "closed": "Permintaan ini telah ditutup. <link>Buka permintaan baharu</link> jika anda masih memerlukan bantuan.",
+    "willReply": "Kami akan membalas di sini dan memaklumkan anda apabila kami berbuat demikian.",
+    "sorted": "Sudah selesai? Beritahu kami."
+  },
+  "new": {
+    "title": "Hubungi sokongan",
+    "intro": "Beritahu kami apa yang berlaku dan seorang insan sebenar daripada pasukan Kept akan membalas di sini. Untuk soalan tentang perkhidmatan itu sendiri, menghantar mesej kepada perniagaan biasanya paling pantas.",
+    "notFound": "Kami tidak dapat menemui janji temu itu dalam akaun anda, jadi ia tidak dilampirkan. Anda masih boleh memilih satu di bawah."
+  },
+  "form": {
+    "topic": "Apa yang anda perlukan bantuan?",
+    "chooseTopic": "Pilih topik",
+    "addSubject": "Tambah subjek ringkas",
+    "moreDetail": "Ceritakan sedikit lagi — sekurang-kurangnya satu ayat membantu kami membantu anda",
+    "sent": "Permintaan dihantar",
+    "checkFields": "Sila semak ruangan yang diserlahkan.",
+    "related": "Janji temu berkaitan",
+    "refHint": "Rujukan {reference} · {business}",
+    "linkHint": "Memautkan tempahan membolehkan kami menyiasatnya dengan segera.",
+    "none": "Tiada",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Subjek",
+    "subjectPlaceholder": "cth. Deposit saya dicaj dua kali",
+    "details": "Butiran",
+    "detailsHint": "Apa yang berlaku, bila, dan apa yang anda mahu kami lakukan. Sila jangan sertakan nombor kad atau kata laluan.",
+    "images": "Imej",
+    "optional": "Pilihan",
+    "cancel": "Batal",
+    "uploadingImages": "Memuat naik imej…",
+    "send": "Hantar permintaan"
+  },
+  "reply": {
+    "writeFirst": "Tulis balasan dahulu.",
+    "sent": "Balasan dihantar",
+    "label": "Balasan",
+    "reopens": "Membalas akan membuka semula permintaan ini.",
+    "placeholder": "Tambah butiran lanjut atau jawab soalan kami…",
+    "send": "Hantar balasan"
+  },
+  "resolve": {
+    "button": "Tandakan sebagai selesai",
+    "done": "Ditandakan sebagai selesai",
+    "doneBody": "Gembira ia sudah selesai. Anda masih boleh membalas jika ada apa-apa timbul.",
+    "confirmTitle": "Tandakan permintaan ini sebagai selesai?",
+    "confirmBody": "Beritahu kami ia sudah selesai. Jika ada apa-apa timbul lagi, balas di sini dan kami akan menyambungnya semula."
+  },
+  "attach": {
+    "tooMany": "Anda boleh melampirkan sehingga {max} imej.",
+    "alt": "Lampiran sokongan",
+    "label": "Lampiran",
+    "uploadingName": "Memuat naik {name}",
+    "remove": "Buang {name}",
+    "add": "Tambah imej",
+    "uploading": "{count, plural, other {Memuat naik # imej…}}",
+    "hint": "Tangkapan skrin atau foto membantu. Sehingga {max} imej, setiap satu 15 MB."
+  }
+}

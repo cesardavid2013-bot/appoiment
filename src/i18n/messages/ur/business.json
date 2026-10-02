@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "آن لائن",
+    "comesToYou": "آپ کے پاس آتے ہیں",
+    "comesToYouIn": "آپ کے پاس آتے ہیں · {city}",
+    "lessThanOneKm": "<1 کلومیٹر",
+    "promoted": "پروموٹڈ",
+    "verified": "تصدیق شدہ کاروبار",
+    "instant": "فوری تصدیق",
+    "request": "بکنگ کی درخواست کریں",
+    "bookAt": "{day} کو {time} بجے بک کریں",
+    "moreTimes": "مزید اوقات",
+    "freeConsultation": "مفت مشاورت دستیاب",
+    "priceOnRequest": "قیمت درخواست پر",
+    "viewTimes": "اوقات دیکھیں"
+  },
+  "rail": {
+    "seeAll": "سب دیکھیں"
+  },
+  "favorite": {
+    "save": "محفوظ کریں",
+    "saved": "محفوظ",
+    "remove": "محفوظ شدہ سے ہٹائیں",
+    "savedToast": "محفوظ ہو گیا",
+    "savedToastHint": "اسے کسی بھی وقت «محفوظ کردہ» میں دیکھیں۔"
+  }
+}

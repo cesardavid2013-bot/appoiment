@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Jika terdapat perbezaan dalam terjemahan, versi Inggeris akan terpakai.",
+  "nav": {
+    "label": "Dokumen undang-undang",
+    "terms": "Terma perkhidmatan",
+    "privacy": "Dasar privasi"
+  },
+  "doc": {
+    "lastUpdated": "Dikemas kini kali terakhir {date}",
+    "counselNote": "Ini ialah dokumen permulaan dalam bahasa yang mudah. Ia akan disemak oleh penasihat undang-undang sebelum Kept dilancarkan secara awam, dan mungkin berubah akibatnya. Kami akan memaklumkan anda sebelum sebarang perubahan yang menjejaskan hak anda berkuat kuasa.",
+    "contents": "Kandungan"
+  },
+  "terms": {
+    "meta": {
+      "title": "Terma perkhidmatan",
+      "description": "Terma dalam bahasa yang mudah untuk menggunakan Kept bagi menempah profesional atau menjalankan perniagaan anda."
+    },
+    "title": "Terma perkhidmatan",
+    "intro": "Terma ini menerangkan cara Kept berfungsi dan apa yang kami harapkan daripada semua yang menggunakannya. Kami menjadikannya ringkas dan mudah dibaca. Jika ada yang tidak jelas di sini, <support>tanya kami</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Apa itu Kept",
+        "body": {
+          "p1": "Kept ialah pasar dan alat tempahan. Pelanggan menggunakannya untuk mencari dan menempah profesional — barber, penata gaya, jurulatih, tutor, detailer dan ramai lagi. Profesional dan perniagaan menggunakannya untuk menerbitkan perkhidmatan mereka, mengurus kalendar dan menerima bayaran.",
+          "p2": "<b>Profesional atau perniagaan yang anda tempah menyediakan perkhidmatan, bukan Kept.</b> Apabila anda menempah, perjanjian anda untuk perkhidmatan itu adalah dengan perniagaan tersebut. Kami mengendalikan platform yang menghubungkan anda, menunjukkan harga dan polisi mereka, serta membantu kedua-dua pihak menepati janji temu."
+        }
+      },
+      "account": {
+        "title": "Akaun anda",
+        "body": {
+          "li1": "Anda perlu berumur sekurang-kurangnya 18 tahun (atau umur dewasa di tempat anda tinggal) untuk mencipta akaun. Anda boleh menempah untuk orang lain, seperti anak anda, jika anda bertanggungjawab ke atas mereka.",
+          "li2": "Berikan maklumat yang tepat dan pastikan ia sentiasa terkini — perniagaan bergantung padanya untuk menghubungi anda tentang janji temu anda.",
+          "li3": "Rahsiakan kata laluan anda. Anda bertanggungjawab atas apa yang berlaku pada akaun anda. Jika anda rasa orang lain mempunyai akses, tukar kata laluan anda dan log keluar peranti lain dalam Log masuk & keselamatan.",
+          "li4": "Satu orang bagi setiap akaun. Perniagaan menambah ahli pasukan sebagai individu berasingan dan bukannya berkongsi satu log masuk."
+        }
+      },
+      "booking": {
+        "title": "Menempah sebagai pelanggan",
+        "body": {
+          "p1": "Sebelum anda mengesahkan tempahan, anda akan melihat harga (atau cara ia dianggarkan), tempoh, sebarang deposit, serta polisi pembatalan dan tidak hadir perniagaan. Dengan menempah, anda bersetuju dengan terma tersebut.",
+          "li1": "<b>Tempahan segera</b> disahkan serta-merta. <b>Permintaan</b> hanya disahkan apabila perniagaan menerimanya; sehingga itu masa anda ditahan, dan permintaan yang tidak dijawab akan tamat tempoh.",
+          "li2": "Anda boleh membatalkan atau menjadualkan semula daripada halaman tempahan anda dalam peraturan perniagaan. Pembatalan lewat dan ketidakhadiran mungkin mengakibatkan sebahagian atau seluruh deposit, atau yuran, dikenakan, tepat seperti yang ditunjukkan semasa anda menempah.",
+          "li3": "Jika harga sesuatu perkhidmatan ialah anggaran (contohnya “bermula dari” atau julat), harga akhir dipersetujui dengan perniagaan semasa janji temu anda.",
+          "li4": "Jika Kept mengenakan yuran perkhidmatan untuk tempahan, ia ditunjukkan sebelum anda mengesahkan. Kami tidak pernah menambah caj selepas itu."
+        }
+      },
+      "payments": {
+        "title": "Pembayaran dan bayaran balik",
+        "body": {
+          "p1": "Bayaran dalam talian diproses oleh Stripe. Kept tidak pernah melihat atau menyimpan nombor kad penuh anda. Sesetengah perniagaan menerima bayaran secara bersemuka; dalam kes itu anda membayar mereka terus.",
+          "li1": "Bayaran balik mengikut polisi perniagaan yang ditunjukkan semasa menempah, dan dikeluarkan ke kad yang anda gunakan untuk membayar. Bank anda mungkin mengambil beberapa hari bekerja untuk menunjukkannya.",
+          "li2": "Jika perniagaan membatalkan atau menolak janji temu anda, semua yang anda bayar dalam talian untuknya akan dikembalikan.",
+          "li3": "Jika ada masalah dengan pembayaran, <supportPayment>hubungi kami</supportPayment> sebelum membuka pertikaian dengan bank anda — ia biasanya lebih pantas."
+        }
+      },
+      "businesses": {
+        "title": "Untuk profesional dan perniagaan",
+        "body": {
+          "li1": "Senarai anda mesti tepat: siapa anda, apa yang anda tawarkan, harga anda, di mana anda bekerja dan polisi anda. Foto dan video mestilah hasil kerja anda sendiri, atau digunakan dengan kebenaran.",
+          "li2": "Anda bertanggungjawab memiliki sebarang lesen, permit, insurans dan kelayakan yang diperlukan untuk kerja anda, dan memenuhi tanggungjawab cukai anda.",
+          "li3": "Tepati tempahan yang anda terima dan polisi yang anda terbitkan. Pembatalan saat akhir yang berulang, ketidakhadiran atau senarai mengelirukan boleh menyebabkan profil anda digantung.",
+          "li4": "Pelan, had dan yuran disenaraikan di <pricing>halaman harga</pricing> kami. Yuran platform hanya terpakai pada bayaran yang dibuat pelanggan dalam talian melalui Kept. Pembayaran keluar dibuat oleh Stripe ke akaun anda sendiri dan turut tertakluk kepada terma Stripe.",
+          "li5": "Butiran pelanggan yang anda terima melalui Kept boleh digunakan untuk menyediakan dan menyusuli perkhidmatan anda. Hantar pemasaran hanya kepada pelanggan yang bersetuju menerimanya.",
+          "li6": "Anda kekal memiliki apa yang anda muat naik, dan memberi Kept kebenaran untuk memaparkannya di Kept dan dalam promosi profil anda selagi senarai anda aktif.",
+          "li7": "Penempatan Spotlight sentiasa dilabel sebagai dipromosikan. Ia percuma semasa pelancaran; jika itu berubah kami akan memaklumkan anda sebelum sebarang caj dikenakan."
+        }
+      },
+      "reviews": {
+        "title": "Ulasan",
+        "body": {
+          "p1": "Hanya pelanggan yang mempunyai janji temu selesai boleh memberi ulasan, sekali bagi setiap janji temu. Ulasan mestilah jujur dan tentang pengalaman anda sendiri. Perniagaan boleh membalas secara terbuka.",
+          "p2": "Menawarkan apa-apa sebagai ganti ulasan, atau untuk membuang ulasan, tidak dibenarkan. Kami boleh menyembunyikan atau membuang ulasan yang melanggar terma ini — contohnya spam, kebencian, maklumat peribadi atau konflik kepentingan — tetapi kami tidak membuang ulasan hanya kerana ia negatif."
+        }
+      },
+      "conduct": {
+        "title": "Perkara yang tidak boleh anda lakukan di Kept",
+        "body": {
+          "li1": "Menawarkan atau menempah apa-apa yang menyalahi undang-undang, perkhidmatan seksual, atau apa-apa yang membahayakan orang.",
+          "li2": "Mengganggu, mengugut atau mendiskriminasi sesiapa — pelanggan, profesional atau pasukan kami.",
+          "li3": "Mencipta akaun, senarai, tempahan atau ulasan palsu, atau menyamar sebagai orang lain.",
+          "li4": "Memuat naik kandungan yang anda tidak berhak kongsi, atau yang mengandungi maklumat peribadi orang lain tanpa kebenaran.",
+          "li5": "Mengikis, membebankan, menyiasat atau mengganggu perkhidmatan, atau cuba mengelak keselamatan atau yurannya."
+        }
+      },
+      "ourRole": {
+        "title": "Peranan kami dan hadnya",
+        "body": {
+          "p1": "Kami berusaha memastikan Kept selamat dan boleh dipercayai, dan kami bertindak atas laporan. Tetapi perniagaan di Kept adalah bebas — mereka bukan pekerja atau ejen kami, dan kami tidak menjamin kualiti, keselamatan atau kesahihan undang-undang perkhidmatan mereka. Lencana “disahkan” bermaksud kami menyemak dokumen yang diberikan oleh perniagaan; ia bukan sokongan.",
+          "p2": "Kept disediakan “seadanya”. Setakat yang dibenarkan undang-undang, kami tidak bertanggungjawab atas kerugian tidak langsung atau berbangkit, atau atas apa yang berlaku semasa perkhidmatan antara anda dan perniagaan. Tiada apa dalam terma ini yang mengehadkan hak anda di bawah undang-undang perlindungan pengguna yang tidak boleh dikecualikan."
+        }
+      },
+      "ending": {
+        "title": "Penggantungan dan penutupan akaun anda",
+        "body": {
+          "p1": "Anda boleh memadam akaun anda pada bila-bila masa dalam <privacyData>Privasi & data</privacyData>. Janji temu akan datang dibatalkan mengikut polisi setiap perniagaan, dan rekod yang diperlukan perniagaan — seperti janji temu dan pembayaran lepas — disimpan dalam bentuk tanpa nama.",
+          "p2": "Kami boleh menggantung atau menutup akaun yang melanggar terma ini atau membahayakan orang lain. Jika boleh, kami akan memberitahu anda sebabnya dan memberi anda peluang untuk menjawab."
+        }
+      },
+      "changes": {
+        "title": "Perubahan, pertikaian dan hubungan",
+        "body": {
+          "p1": "Apabila kami mengubah terma ini dengan cara yang penting, kami akan memaklumkan anda terlebih dahulu melalui e-mel atau dalam aplikasi. Terus menggunakan Kept selepas perubahan berkuat kuasa bermakna anda menerimanya.",
+          "p2": "Undang-undang yang mentadbir dan proses penyelesaian pertikaian akan ditambah di sini selepas semakan undang-undang, sebelum Kept dilancarkan secara awam.",
+          "p3": "Soalan tentang terma ini? <support>Hubungi kami</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Dasar privasi",
+      "description": "Data peribadi yang dikumpulkan Kept, sebabnya, siapa yang melihatnya, dan cara memuat turun atau memadamnya."
+    },
+    "title": "Dasar privasi",
+    "intro": "Dasar ini menerangkan data peribadi yang dikumpulkan Kept, mengapa kami memerlukannya, siapa yang boleh melihatnya, dan pilihan yang anda ada — untuk pelanggan dan profesional.",
+    "sections": {
+      "summary": {
+        "title": "Versi ringkas",
+        "body": {
+          "li1": "Kami mengumpulkan apa yang diperlukan untuk menjalankan tempahan: siapa anda, apa yang anda tempah, dan cara menghubungi anda.",
+          "li2": "Perniagaan yang anda tempah melihat butiran yang mereka perlukan untuk melayani anda. Tiada orang lain, selain penyedia perkhidmatan yang membantu kami menjalankan Kept.",
+          "li3": "Kami tidak menjual data peribadi anda, dan kami tidak menggunakan penjejak pengiklanan.",
+          "li4": "Anda boleh memuat turun salinan data anda atau memadam akaun anda sendiri, pada bila-bila masa, dalam <privacyData>Privasi & data</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Maklumat yang anda berikan kepada kami",
+        "body": {
+          "li1": "<b>Akaun:</b> nama, e-mel, kata laluan anda (disimpan hanya sebagai cincangan sehala), dan secara pilihan nombor telefon, foto dan zon waktu anda. Jika anda log masuk dengan Google, kami menerima nama dan e-mel anda daripada Google.",
+          "li2": "<b>Tempahan:</b> perkhidmatan, masa, perniagaan dan harga; nota yang anda tambah; jawapan kepada soalan pengambilan perniagaan; dan alamat jika profesional datang ke tempat anda.",
+          "li3": "<b>Pembayaran:</b> jumlah, status dan bayaran balik. Butiran kad terus ke Stripe — kami tidak pernah menerima nombor kad penuh anda.",
+          "li4": "<b>Mesej, ulasan dan permintaan sokongan</b>, termasuk sebarang imej yang anda lampirkan, dan alamat yang anda simpan.",
+          "li5": "<b>Perniagaan</b> turut memberi kami butiran perniagaan, ahli pasukan, perkhidmatan, jadual, media portfolio, butiran pembayaran keluar (dipegang oleh Stripe) dan rekod pelanggan yang mereka simpan."
+        }
+      },
+      "automatic": {
+        "title": "Maklumat yang dikumpulkan secara automatik",
+        "body": {
+          "li1": "<b>Sesi log masuk:</b> kuki mengekalkan anda log masuk. Kami menyimpan sesi bersama jenis pelayar anda supaya peranti anda boleh dilog keluar dengan selamat.",
+          "li2": "<b>Keselamatan:</b> kami menyimpan cincangan sehala berkunci bagi alamat IP anda — bukan alamat itu sendiri — untuk menghadkan kadar penyalahgunaan dan menyiasat aktiviti yang mencurigakan.",
+          "li3": "<b>Lokasi:</b> jika anda memilih tempat atau berkongsi lokasi anda untuk mencari berhampiran, ia disimpan dalam kuki pada peranti anda untuk mengingati pilihan anda. Kami tidak menjejak lokasi anda di latar belakang.",
+          "li4": "<b>Aktiviti di Kept:</b> profesional yang anda lihat dan simpan, supaya kami boleh menunjukkannya semula; dan bilangan paparan serta klik pada senarai yang dipromosikan, dilaporkan kepada perniagaan sebagai jumlah sahaja."
+        }
+      },
+      "use": {
+        "title": "Cara kami menggunakannya",
+        "body": {
+          "li1": "Untuk membuat, mengubah dan mengingatkan anda tentang tempahan, serta memproses pembayaran dan bayaran balik.",
+          "li2": "Untuk menghantar pemberitahuan yang telah anda pilih. Pengesahan dan perubahan tempahan sentiasa dihantar; yang lain boleh dimatikan dalam Tetapan pemberitahuan.",
+          "li3": "Untuk menunjukkan profesional dan slot yang berkaitan berhampiran anda.",
+          "li4": "Untuk memastikan Kept selamat: mencegah penipuan, spam dan penyalahgunaan, serta bertindak atas laporan.",
+          "li5": "Untuk menjawab permintaan sokongan dan menambah baik Kept.",
+          "li6": "Untuk memenuhi kewajipan undang-undang, seperti rekod cukai dan perakaunan."
+        }
+      },
+      "businesses": {
+        "title": "Apa yang dilihat oleh perniagaan",
+        "body": {
+          "p1": "Apabila anda menempah, perniagaan melihat nama, e-mel dan nombor telefon anda (jika anda menambahnya), tempahan dan apa-apa yang anda kongsikan dengannya — nota, jawapan pengambilan, alamat perkhidmatan — serta lawatan anda sebelum ini dengan mereka. Mereka boleh menambah nota peribadi pada rekod pelanggan mereka.",
+          "p2": "Setiap perniagaan bertanggungjawab atas cara ia menggunakan rekod pelanggannya, dan hanya boleh menghantar pemasaran kepada anda jika anda bersetuju. Ulasan adalah awam dan menunjukkan nama pertama serta huruf pertama nama akhir anda."
+        }
+      },
+      "sharing": {
+        "title": "Dengan siapa lagi kami berkongsi",
+        "body": {
+          "p1": "Kami menggunakan beberapa penyedia yang memproses data bagi pihak kami, di bawah kontrak yang mengehadkan apa yang boleh mereka lakukan dengannya:",
+          "li1": "Stripe, untuk pembayaran dan pembayaran keluar.",
+          "li2": "Penyedia e-mel kami, dan penyedia SMS jika mesej teks diaktifkan.",
+          "li3": "Google, hanya jika anda memilih untuk log masuk dengan Google.",
+          "li4": "Perkhidmatan peta dan carian alamat, untuk memaparkan peta dan mencari tempat yang anda cari.",
+          "li5": "Penyedia pengehosan dan infrastruktur kami.",
+          "p2": "Kami juga boleh mendedahkan maklumat apabila dikehendaki oleh undang-undang, untuk melindungi keselamatan seseorang, atau sebagai sebahagian daripada penggabungan atau pengambilalihan — dalam hal ini dasar ini akan terus terpakai. Kami tidak pernah menjual data peribadi."
+        }
+      },
+      "rights": {
+        "title": "Pilihan dan hak anda",
+        "body": {
+          "li1": "<b>Akses:</b> muat turun salinan data anda daripada <privacyData>Privasi & data</privacyData>.",
+          "li2": "<b>Betulkan:</b> kemas kini butiran anda dalam <profile>Profil</profile>, atau minta kami melakukannya.",
+          "li3": "<b>Padam:</b> padam akaun anda dalam Privasi & data. Lihat di bawah untuk apa yang kami simpan.",
+          "li4": "<b>Pemberitahuan:</b> pilih apa yang kami hantar dalam <notifications>Tetapan pemberitahuan</notifications>.",
+          "li5": "Bergantung pada tempat tinggal anda, anda mungkin mempunyai hak lain, seperti membantah penggunaan tertentu atau membuat aduan kepada pihak berkuasa perlindungan data. <supportAccount>Hubungi kami</supportAccount> dan kami akan membantu."
+        }
+      },
+      "retention": {
+        "title": "Berapa lama kami menyimpannya",
+        "body": {
+          "p1": "Kami menyimpan maklumat anda selagi akaun anda dibuka.",
+          "p2": "Apabila anda memadam akaun anda, kami memadam nama, e-mel, telefon, foto, alamat tersimpan, profesional tersimpan, pemberitahuan dan kaedah log masuk anda serta-merta. Rekod yang bergantung kepada perniagaan dan perakaunan — janji temu, pembayaran dan ulasan lepas — disimpan, dipautkan kepada “Pengguna dipadam” dan bukannya kepada anda. Mesej yang anda tukar dengan perniagaan kekal dalam sejarah perbualan perniagaan itu."
+        }
+      },
+      "security": {
+        "title": "Keselamatan",
+        "body": {
+          "p1": "Kata laluan dicincang dengan Argon2, sesi disimpan di sebelah pelayan dan boleh ditarik balik, sambungan disulitkan, dan foto yang dimuat naik dikodkan semula supaya data lokasi tersembunyi dibuang. Tiada sistem yang selamat sepenuhnya; jika kami mengetahui pelanggaran yang menjejaskan anda, kami akan memaklumkan anda dengan segera."
+        }
+      },
+      "children": {
+        "title": "Kanak-kanak",
+        "body": {
+          "p1": "Akaun Kept adalah untuk orang dewasa. Ibu bapa atau penjaga boleh menempah perkhidmatan untuk anak mereka; kami tidak sengaja mengumpulkan data peribadi terus daripada kanak-kanak."
+        }
+      },
+      "changes": {
+        "title": "Perubahan dan hubungan",
+        "body": {
+          "p1": "Jika kami mengubah dasar ini dengan cara yang penting, kami akan memaklumkan anda sebelum ia berkuat kuasa.",
+          "p2": "Soalan atau permintaan tentang data anda? <supportAccount>Hubungi kami</supportAccount>."
+        }
+      }
+    }
+  }
+}

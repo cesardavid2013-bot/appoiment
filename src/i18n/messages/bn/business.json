@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "অনলাইন",
+    "comesToYou": "আপনার কাছে যান",
+    "comesToYouIn": "আপনার কাছে যান · {city}",
+    "lessThanOneKm": "<১ কিমি",
+    "promoted": "প্রমোটেড",
+    "verified": "যাচাইকৃত ব্যবসা",
+    "instant": "তাৎক্ষণিক নিশ্চিতকরণ",
+    "request": "বুকিংয়ের অনুরোধ করুন",
+    "bookAt": "{day} {time}-এ বুক করুন",
+    "moreTimes": "আরও সময়",
+    "freeConsultation": "বিনামূল্যে পরামর্শ পাওয়া যায়",
+    "priceOnRequest": "অনুরোধে দাম জানা যাবে",
+    "viewTimes": "সময় দেখুন"
+  },
+  "rail": {
+    "seeAll": "সব দেখুন"
+  },
+  "favorite": {
+    "save": "সংরক্ষণ",
+    "saved": "সংরক্ষিত",
+    "remove": "সংরক্ষিত থেকে সরান",
+    "savedToast": "সংরক্ষিত হয়েছে",
+    "savedToastHint": "যেকোনো সময় ‘সংরক্ষিত’ বিভাগে খুঁজে পাবেন।"
+  }
+}

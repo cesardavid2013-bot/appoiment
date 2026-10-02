@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Selamat kembali, {name}",
+    "eyebrow": "Janji temu, ditepati",
+    "title": "Tempah mereka yang menjadikan minggu anda <em>lebih baik.</em>",
+    "lead": "Barber, penata gaya, jurulatih, tutor, jurugambar dan banyak lagi — dengan slot sebenar, harga terus terang dan ulasan hanya daripada lawatan yang disahkan.",
+    "points": {
+      "verified": "Ulasan yang disahkan sahaja",
+      "prices": "Harga sebelum anda menempah",
+      "instant": "Pengesahan segera"
+    }
+  },
+  "search": {
+    "placeholder": "Potong rambut, urut, jurugambar…",
+    "label": "Apa yang anda mahu tempah?",
+    "category": "Kategori",
+    "submit": "Cari",
+    "sayIt": "Atau sebut sahaja —",
+    "sayItExample": "“barber esok lepas pukul 5”"
+  },
+  "openings": {
+    "title": "Kosong tidak lama lagi",
+    "live": "Terus dari kalendar",
+    "appointment": "Janji temu"
+  },
+  "index": {
+    "eyebrow": "Indeks",
+    "title": "Setiap jenis janji temu",
+    "exploreAll": "Terokai semua",
+    "pros": "{count, plural, other {# profesional}}"
+  },
+  "next": {
+    "title": "Janji temu anda yang seterusnya",
+    "details": "Butiran"
+  },
+  "again": {
+    "title": "Tempah semula",
+    "rebook": "Tempah semula"
+  },
+  "rails": {
+    "availableSoon": "Tersedia tidak lama lagi",
+    "availableSoonNear": "Tersedia tidak lama lagi berhampiran {place}",
+    "availableSoonNearYou": "Tersedia tidak lama lagi berhampiran anda",
+    "availableSoonSub": "Slot kosong terus daripada kalendar setiap profesional.",
+    "recent": "Baru dilihat",
+    "topRated": "Berpenilaian tinggi",
+    "topRatedSub": "Penilaian hanya datang daripada tempahan yang selesai dan disahkan.",
+    "newcomers": "Baharu di Kept"
+  },
+  "how": {
+    "eyebrow": "Cara ia berfungsi",
+    "title": "Tiga langkah, tanpa berbalas panggilan",
+    "find": {
+      "title": "Cari orang anda",
+      "body": "Cari mengikut keperluan, masa dan lokasi — atau tanya sahaja dengan kata-kata anda sendiri. Setiap profil memaparkan harga sebenar dan ulasan yang disahkan."
+    },
+    "choose": {
+      "title": "Pilih masa sebenar",
+      "body": "Masa yang anda lihat kosong dalam kalendar mereka sekarang. Pilih satu, tambah pilihan jika perlu, dan sahkan."
+    },
+    "kept": {
+      "title": "Anggap ia ditepati",
+      "body": "Anda menerima pengesahan, peringatan sebelum hari tersebut, dan satu tempat untuk menjadualkan semula, menghantar mesej atau menempah semula."
+    }
+  },
+  "pros": {
+    "eyebrow": "Untuk profesional",
+    "title": "Kemahiran anda layak mendapat <em>kaunter hadapan</em> yang lebih baik.",
+    "body": "Tempahan dalam talian, kalendar yang tidak akan menempah dua kali, peringatan yang mengurangkan ketidakhadiran, dan halaman yang mempamerkan hasil kerja anda sewajarnya. Percuma sepanjang pelancaran kami.",
+    "cta": "Tawarkan perkhidmatan anda",
+    "howItWorks": "Lihat cara ia berfungsi",
+    "features": {
+      "any": {
+        "title": "Sebarang perkhidmatan",
+        "body": "Pilihan menukar harga dan masa secara automatik."
+      },
+      "noDouble": {
+        "title": "Tiada tempahan bertindih",
+        "body": "Setiap masa disemak pada saat tempahan dibuat."
+      },
+      "noShows": {
+        "title": "Kurang ketidakhadiran",
+        "body": "Peringatan, deposit dan polisi yang jelas."
+      },
+      "discovered": {
+        "title": "Mudah ditemui",
+        "body": "Portfolio, ulasan yang disahkan dan Spotlight."
+      }
+    }
+  }
+}

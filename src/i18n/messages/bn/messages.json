@@ -1,0 +1,93 @@
+{
+  "youPrefix": "আপনি:",
+  "unread": "অপঠিত",
+  "apptLine": "{service} · {date}, {time}",
+  "list": {
+    "title": "বার্তা",
+    "unread": "{count, plural, one {#টি অপঠিত কথোপকথন।} other {#টি অপঠিত কথোপকথন।}}",
+    "caughtUp": "সবকিছু দেখা হয়ে গেছে।",
+    "emptyTitle": "এখনো কোনো বার্তা নেই",
+    "emptyBody": "কোনো সেবা, দাম বা সময় নিয়ে প্রশ্ন? পেশাজীবীর পেজ খুলে “প্রশ্ন করুন” চাপুন। তাঁদের উত্তর এখানে আসবে।",
+    "findPro": "পেশাজীবী খুঁজুন"
+  },
+  "thread": {
+    "metaTitle": "কথোপকথন",
+    "placeholder": "{business}-কে বার্তা পাঠান"
+  },
+  "new": {
+    "metaTitle": "নতুন বার্তা",
+    "ownTitle": "এটি আপনার নিজের ব্যবসা",
+    "ownBody": "{business}-এ গ্রাহকদের পাঠানো বার্তা আপনার ব্যবসার ইনবক্সে আসে।",
+    "ownButton": "ব্যবসার ইনবক্স খুলুন",
+    "placeholderBooking": "এই বুকিং সম্পর্কে জিজ্ঞেস করুন",
+    "placeholderQuestion": "প্রশ্ন করুন",
+    "emptyBookingTitle": "আপনার বুকিং নিয়ে {business}-কে বার্তা পাঠান",
+    "emptyQuestionTitle": "বুক করার আগে {business}-কে জিজ্ঞেস করুন",
+    "emptyBookingBody": "দেরি হচ্ছে, কিছু বদলাতে চান, নাকি প্রশ্ন আছে? আপনার বার্তা সরাসরি তাঁদের দলের কাছে যায়।",
+    "emptyQuestionBody": "দাম, সময়, কী সঙ্গে আনবেন — {business} এখানেই উত্তর দেবে এবং আমরা আপনাকে জানাব। আপনার ফোন নম্বর ও ইমেল গোপন থাকে।"
+  },
+  "shell": {
+    "allMessages": "সব বার্তা",
+    "viewProfile": "প্রোফাইল দেখুন",
+    "book": "বুক করুন"
+  },
+  "pro": {
+    "backToInbox": "ইনবক্সে ফিরে যান"
+  },
+  "view": {
+    "label": "বার্তা",
+    "you": "আপনি",
+    "loadingEarlier": "আগের বার্তা লোড হচ্ছে",
+    "showEarlier": "আগের বার্তা দেখান",
+    "seen": "দেখা হয়েছে",
+    "sending": "পাঠানো হচ্ছে…",
+    "notSent": "পাঠানো যায়নি।",
+    "retry": "আবার চেষ্টা করুন",
+    "discard": "বাদ দিন",
+    "newMessages": "{count, plural, one {#টি নতুন বার্তা} other {#টি নতুন বার্তা}}",
+    "openPhoto": "ছবিটি নতুন ট্যাবে খুলুন",
+    "photo": "ছবি"
+  },
+  "composer": {
+    "about": "{appointment} সম্পর্কে",
+    "unlink": "এই অ্যাপয়েন্টমেন্ট যুক্ত করবেন না",
+    "processingPhoto": "ছবি প্রক্রিয়া হচ্ছে",
+    "removePhoto": "ছবি সরান",
+    "attachPhoto": "ছবি যুক্ত করুন",
+    "label": "বার্তা",
+    "send": "বার্তা পাঠান",
+    "hint": "পাঠাতে Enter চাপুন, নতুন লাইনের জন্য Shift ও Enter।"
+  },
+  "inbox": {
+    "title": "ইনবক্স",
+    "conversations": "কথোপকথন",
+    "unread": "{count}টি অপঠিত",
+    "allCaughtUp": "সব দেখা হয়েছে",
+    "searchLabel": "গ্রাহকের নাম দিয়ে কথোপকথন খুঁজুন",
+    "searchPlaceholder": "গ্রাহক খুঁজুন",
+    "clearSearch": "অনুসন্ধান মুছুন",
+    "show": "দেখান",
+    "all": "সব",
+    "unreadFilter": "অপঠিত",
+    "noClientsNamed": "“{term}” নামে কোনো গ্রাহক নেই",
+    "nothingUnread": "কিছুই অপঠিত নেই",
+    "noMessages": "এখনো কোনো বার্তা নেই",
+    "tryDifferent": "অন্যভাবে খুঁজুন বা সব কথোপকথন দেখান।",
+    "emptyBody": "গ্রাহকেরা আপনার পেজ থেকে বা কোনো বুকিং নিয়ে প্রশ্ন করলে তা এখানে দেখা যাবে।"
+  },
+  "clientPanel": {
+    "client": "গ্রাহক",
+    "visits": "ভিজিট",
+    "noShows": "অনুপস্থিতি",
+    "cancelled": "বাতিল",
+    "clientSince": "{date} থেকে গ্রাহক",
+    "noVisits": "এখনো কোনো সম্পন্ন ভিজিট নেই",
+    "lastIn": "সর্বশেষ {date}-এ",
+    "tags": "ট্যাগ",
+    "clientProfile": "গ্রাহকের প্রোফাইল",
+    "notBooked": "এখনো আপনার কাছে বুক করেননি — এই কথোপকথন আপনার পাবলিক পেজ থেকে শুরু হয়েছে।",
+    "upcoming": "আসন্ন",
+    "nothingBooked": "কিছু বুক করা নেই।",
+    "recent": "সাম্প্রতিক"
+  }
+}
