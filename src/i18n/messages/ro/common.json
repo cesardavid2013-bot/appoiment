@@ -86,5 +86,32 @@
     "depositRefundable": "Avansurile se rambursează dacă anulați la timp.",
     "depositNonRefundable": "Avansurile nu se rambursează.",
     "reschedule": "Reprogramare online cu până la {hours} h înainte."
+  },
+  "ui": {
+    "close": "Închide",
+    "keepIt": "Păstrează",
+    "optional": "Opțional",
+    "stars": "{value} din 5 stele",
+    "notifications": "Notificări"
+  },
+  "notFound": {
+    "eyebrow": "Pagina nu a fost găsită",
+    "title": "Pagina aceasta s-a mutat.",
+    "body": "Poate că linkul este vechi sau profesionistul și-a schimbat adresa.",
+    "home": "Înapoi la pagina principală",
+    "explore": "Explorați profesioniști"
+  },
+  "error": {
+    "eyebrow": "Ceva nu a funcționat",
+    "title": "Nu am putut încărca pagina.",
+    "body": "Problema este la noi, nu la dumneavoastră. Încercați din nou într-un moment — dacă se repetă, spuneți-ne.",
+    "retry": "Încercați din nou",
+    "support": "Contactați asistența",
+    "ref": "Referință {id}"
+  },
+  "offline": {
+    "eyebrow": "Sunteți offline",
+    "title": "Momentan nu aveți conexiune.",
+    "body": "Rezervările dumneavoastră sunt în siguranță. Reconectați-vă și Kept reia de unde ați rămas."
   }
 }
