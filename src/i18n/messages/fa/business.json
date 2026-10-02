@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "آنلاین",
+    "comesToYou": "به محل شما می‌آید",
+    "comesToYouIn": "به محل شما می‌آید · {city}",
+    "lessThanOneKm": "کمتر از ۱ کیلومتر",
+    "promoted": "تبلیغاتی",
+    "verified": "کسب‌وکار تأییدشده",
+    "instant": "تأیید فوری",
+    "request": "درخواست رزرو",
+    "bookAt": "رزرو {day} ساعت {time}",
+    "moreTimes": "زمان‌های بیشتر",
+    "freeConsultation": "مشاورهٔ رایگان موجود است",
+    "priceOnRequest": "قیمت در صورت درخواست",
+    "viewTimes": "مشاهدهٔ زمان‌ها"
+  },
+  "rail": {
+    "seeAll": "مشاهدهٔ همه"
+  },
+  "favorite": {
+    "save": "ذخیره",
+    "saved": "ذخیره شد",
+    "remove": "حذف از ذخیره‌شده‌ها",
+    "savedToast": "ذخیره شد",
+    "savedToastHint": "هر زمان آن را در ذخیره‌شده‌ها پیدا کنید."
+  }
+}
