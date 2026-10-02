@@ -84,5 +84,66 @@
   "other": {
     "name": "Diğer",
     "description": "Rezervasyon yapabileceğiniz diğer her şey."
+  },
+  "music-audio": {
+    "name": "Müzik ve ses",
+    "description": "Yapımcılar, kayıt stüdyoları, miksaj ve ses eğitmenliği."
+  },
+  "music-production": {
+    "name": "Müzik prodüksiyonu"
+  },
+  "recording-studio": {
+    "name": "Kayıt stüdyoları"
+  },
+  "vocal-coaching": {
+    "name": "Ses eğitimi"
+  },
+  "creators": {
+    "name": "İçerik üreticileri",
+    "description": "İçerik üreticileri, UGC, sosyal medya ve video kurgu."
+  },
+  "content-creation": {
+    "name": "İçerik üretimi"
+  },
+  "video-editing": {
+    "name": "Video kurgu"
+  },
+  "social-media": {
+    "name": "Sosyal medya yönetimi"
+  },
+  "design": {
+    "name": "Tasarım ve yaratıcılık",
+    "description": "Grafik, marka, web ve iç mekan tasarımı."
+  },
+  "graphic-design": {
+    "name": "Grafik ve marka tasarımı"
+  },
+  "web-design": {
+    "name": "Web tasarımı"
+  },
+  "interior-design": {
+    "name": "İç mimari tasarım"
+  },
+  "health": {
+    "name": "Sağlık ve bakım",
+    "description": "Fizyoterapi, beslenme, terapi ve bütünsel bakım."
+  },
+  "physio": {
+    "name": "Fizyoterapi ve kayropraktik"
+  },
+  "nutrition": {
+    "name": "Beslenme"
+  },
+  "therapy": {
+    "name": "Terapi ve danışmanlık"
+  },
+  "cleaning": {
+    "name": "Temizlik"
+  },
+  "handyman": {
+    "name": "Tamir ve bakım ustası"
+  },
+  "gardening": {
+    "name": "Bahçıvanlık"
   }
 }
