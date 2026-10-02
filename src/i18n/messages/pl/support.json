@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "Rezerwacja",
+      "hint": "Zmiany, anulowania lub problemy z wizytą."
+    },
+    "payment": {
+      "label": "Płatność",
+      "hint": "Obciążenia, zadatki, zwroty lub napiwki."
+    },
+    "account": {
+      "label": "Konto",
+      "hint": "Logowanie, Twój profil lub Twoje dane."
+    },
+    "report": {
+      "label": "Zgłoś firmę",
+      "hint": "Obawy dotyczące bezpieczeństwa, wprowadzające w błąd ogłoszenia lub nieodpowiednie zachowanie."
+    },
+    "other": {
+      "label": "Inne",
+      "hint": "Cokolwiek innego, w czym możemy pomóc."
+    }
+  },
+  "status": {
+    "open": "Oczekuje na odpowiedź pomocy",
+    "awaiting_customer": "Odpowiedziano",
+    "resolved": "Rozwiązane",
+    "closed": "Zamknięte"
+  },
+  "home": {
+    "title": "Pomoc i wsparcie",
+    "description": "Uzyskaj pomoc w sprawie rezerwacji, płatności lub konta.",
+    "newRequest": "Nowe zgłoszenie",
+    "yourRequests": "Twoje zgłoszenia",
+    "emptyTitle": "Brak zgłoszeń",
+    "emptyBody": "Jeśli coś jest nie tak z rezerwacją, płatnością lub kontem, napisz do nas, a pomożemy to wyjaśnić.",
+    "contact": "Skontaktuj się z pomocą",
+    "ticketLine": "{category} · Zaktualizowano {date} · {count, plural, one {# wiadomość} few {# wiadomości} many {# wiadomości} other {# wiadomości}}",
+    "quickAnswers": "Szybkie odpowiedzi",
+    "stillStuck": "Nadal masz problem? <link>Skontaktuj się z pomocą</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Jak anulować lub zmienić termin wizyty?",
+      "a": "Otwórz <link>Rezerwacje</link>, wybierz wizytę i stuknij Zmień termin lub Anuluj. Każda firma ustala własny okres anulowania — przed potwierdzeniem zobaczysz dokładnie, co obowiązuje, w tym ewentualną opłatę lub zwrot."
+    },
+    "refund": {
+      "q": "Kiedy dostanę zwrot pieniędzy?",
+      "a": "Zwroty trafiają na kartę, którą zapłacono, zaraz po potwierdzeniu anulowania. W zależności od banku zwykle pojawiają się po 5–10 dniach roboczych. To, czy zadatek podlega zwrotowi, zależy od zasad firmy, które widzisz przy rezerwacji."
+    },
+    "contactPro": {
+      "q": "Jak skontaktować się ze specjalistą?",
+      "a": "Użyj przycisku Wiadomość na jego profilu lub przy rezerwacji. Twoje rozmowy znajdziesz w <link>Wiadomościach</link>. W sprawach dotyczących samej usługi — dojazdu, przygotowania, tego, co zabrać — najszybciej odpowie firma."
+    },
+    "report": {
+      "q": "Coś poszło nie tak z firmą. Co mogę zrobić?",
+      "a": "Utwórz poniżej zgłoszenie i wybierz „Zgłoś firmę”. Dołącz wizytę, jeśli jakaś jest. Czytamy każde zgłoszenie i możemy interweniować w sprawie zwrotów oraz, w razie potrzeby, usunąć firmy z Kept."
+    },
+    "account": {
+      "q": "Jak zmienić e-mail lub usunąć konto?",
+      "a": "Zmiany e-maila przechodzą przez pomoc, abyśmy mogli potwierdzić, że to Ty. Swoje dane możesz pobrać, a konto usunąć samodzielnie w sekcji <link>Prywatność i dane</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Zgłoszenie do pomocy",
+    "allRequests": "Wszystkie zgłoszenia",
+    "opened": "{category} · Utworzono <date></date>",
+    "appointmentLine": "{date}, {time} · Nr ref. {reference}",
+    "conversation": "Rozmowa",
+    "keptSupport": "Wsparcie Kept",
+    "openImage": "Otwórz załączony obraz",
+    "attachedImage": "Załączony obraz",
+    "closed": "To zgłoszenie jest zamknięte. <link>Utwórz nowe zgłoszenie</link>, jeśli nadal potrzebujesz pomocy.",
+    "willReply": "Odpowiemy tutaj i damy Ci znać, gdy to zrobimy.",
+    "sorted": "Załatwione? Daj nam znać."
+  },
+  "new": {
+    "title": "Skontaktuj się z pomocą",
+    "intro": "Napisz, co się dzieje, a prawdziwa osoba z zespołu Kept odpowie tutaj. W pytaniach o samą usługę zwykle najszybciej będzie napisać do firmy.",
+    "notFound": "Nie znaleźliśmy tej wizyty na Twoim koncie, więc nie została dołączona. Nadal możesz wybrać wizytę poniżej."
+  },
+  "form": {
+    "topic": "W czym potrzebujesz pomocy?",
+    "chooseTopic": "Wybierz temat",
+    "addSubject": "Dodaj krótki temat",
+    "moreDetail": "Napisz nam trochę więcej — przynajmniej jedno zdanie pomoże nam pomóc Tobie",
+    "sent": "Zgłoszenie wysłane",
+    "checkFields": "Sprawdź zaznaczone pola.",
+    "related": "Powiązana wizyta",
+    "refHint": "Nr ref. {reference} · {business}",
+    "linkHint": "Dołączenie rezerwacji pozwala nam od razu się nią zająć.",
+    "none": "Brak",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Temat",
+    "subjectPlaceholder": "np. Zadatek został pobrany dwukrotnie",
+    "details": "Szczegóły",
+    "detailsHint": "Co się stało, kiedy i czego oczekujesz. Nie podawaj numerów kart ani haseł.",
+    "images": "Obrazy",
+    "optional": "Opcjonalnie",
+    "cancel": "Anuluj",
+    "uploadingImages": "Przesyłanie obrazów…",
+    "send": "Wyślij zgłoszenie"
+  },
+  "reply": {
+    "writeFirst": "Najpierw napisz odpowiedź.",
+    "sent": "Odpowiedź wysłana",
+    "label": "Odpowiedź",
+    "reopens": "Odpowiedź ponownie otworzy to zgłoszenie.",
+    "placeholder": "Dodaj więcej szczegółów lub odpowiedz na nasze pytanie…",
+    "send": "Wyślij odpowiedź"
+  },
+  "resolve": {
+    "button": "Oznacz jako rozwiązane",
+    "done": "Oznaczono jako rozwiązane",
+    "doneBody": "Cieszymy się, że sprawa załatwiona. Nadal możesz odpowiedzieć, jeśli coś się pojawi.",
+    "confirmTitle": "Oznaczyć to zgłoszenie jako rozwiązane?",
+    "confirmBody": "Daj nam znać, że sprawa załatwiona. Jeśli pojawi się coś jeszcze, odpowiedz tutaj, a wrócimy do tematu."
+  },
+  "attach": {
+    "tooMany": "Możesz dołączyć maksymalnie {max} obrazów.",
+    "alt": "Załącznik do zgłoszenia",
+    "label": "Załączniki",
+    "uploadingName": "Przesyłanie: {name}",
+    "remove": "Usuń: {name}",
+    "add": "Dodaj obraz",
+    "uploading": "{count, plural, one {Przesyłanie # obrazu…} few {Przesyłanie # obrazów…} many {Przesyłanie # obrazów…} other {Przesyłanie # obrazu…}}",
+    "hint": "Pomocne są zrzuty ekranu lub zdjęcia. Maksymalnie {max} obrazów, po 15 MB każdy."
+  }
+}

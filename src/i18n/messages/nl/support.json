@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "Boeking",
+      "hint": "Wijzigingen, annuleringen of problemen met een afspraak."
+    },
+    "payment": {
+      "label": "Betaling",
+      "hint": "Afschrijvingen, aanbetalingen, terugbetalingen of fooien."
+    },
+    "account": {
+      "label": "Account",
+      "hint": "Inloggen, je profiel of je gegevens."
+    },
+    "report": {
+      "label": "Een bedrijf melden",
+      "hint": "Veiligheidszorgen, misleidende vermeldingen of wangedrag."
+    },
+    "other": {
+      "label": "Overig",
+      "hint": "Alles waarbij we je verder kunnen helpen."
+    }
+  },
+  "status": {
+    "open": "Wacht op support",
+    "awaiting_customer": "Beantwoord",
+    "resolved": "Opgelost",
+    "closed": "Gesloten"
+  },
+  "home": {
+    "title": "Hulp & support",
+    "description": "Krijg hulp bij een boeking, een betaling of je account.",
+    "newRequest": "Nieuw verzoek",
+    "yourRequests": "Je verzoeken",
+    "emptyTitle": "Nog geen verzoeken",
+    "emptyBody": "Klopt er iets niet met een boeking, een betaling of je account? Laat het ons weten, dan helpen we het op te lossen.",
+    "contact": "Contact met support",
+    "ticketLine": "{category} · Bijgewerkt {date} · {count, plural, one {# bericht} other {# berichten}}",
+    "quickAnswers": "Snelle antwoorden",
+    "stillStuck": "Kom je er niet uit? <link>Neem contact op met support</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Hoe annuleer of verplaats ik een afspraak?",
+      "a": "Open <link>Boekingen</link>, kies de afspraak en tik op Verplaatsen of Annuleren. Elk bedrijf stelt zijn eigen annuleringstermijn in — je ziet precies wat er geldt, inclusief eventuele kosten of terugbetaling, voordat je bevestigt."
+    },
+    "refund": {
+      "q": "Wanneer krijg ik mijn terugbetaling?",
+      "a": "Terugbetalingen gaan terug naar de kaart waarmee je hebt betaald zodra een annulering is bevestigd. Afhankelijk van je bank duurt het meestal 5–10 werkdagen voordat ze zichtbaar zijn. Of een aanbetaling wordt terugbetaald, hangt af van het beleid van het bedrijf, dat je ziet tijdens het boeken."
+    },
+    "contactPro": {
+      "q": "Hoe neem ik contact op met een professional?",
+      "a": "Gebruik Bericht op hun profiel of bij je boeking. Je gesprekken staan in <link>Berichten</link>. Voor alles over de dienst zelf — route, voorbereiding, wat je mee moet nemen — kan het bedrijf het snelst antwoorden."
+    },
+    "report": {
+      "q": "Er ging iets mis met een bedrijf. Wat kan ik doen?",
+      "a": "Dien hieronder een verzoek in en kies “Een bedrijf melden”. Koppel de afspraak als die er is. We lezen elke melding en kunnen ingrijpen bij terugbetalingen en, waar nodig, bedrijven van Kept verwijderen."
+    },
+    "account": {
+      "q": "Hoe wijzig ik mijn e-mailadres of verwijder ik mijn account?",
+      "a": "Wijzigingen van je e-mailadres lopen via support, zodat we kunnen bevestigen dat jij het bent. Je kunt je gegevens downloaden of je account zelf verwijderen onder <link>Privacy & gegevens</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Supportverzoek",
+    "allRequests": "Alle verzoeken",
+    "opened": "{category} · Geopend op <date></date>",
+    "appointmentLine": "{date} om {time} · Ref. {reference}",
+    "conversation": "Gesprek",
+    "keptSupport": "Kept Support",
+    "openImage": "Bijgevoegde afbeelding openen",
+    "attachedImage": "Bijgevoegde afbeelding",
+    "closed": "Dit verzoek is gesloten. <link>Dien een nieuw verzoek in</link> als je nog hulp nodig hebt.",
+    "willReply": "We antwoorden hier en laten het je weten wanneer we dat doen.",
+    "sorted": "Opgelost? Laat het ons weten."
+  },
+  "new": {
+    "title": "Contact met support",
+    "intro": "Vertel ons wat er aan de hand is, dan antwoordt een echt persoon van het Kept-team hier. Voor vragen over de dienst zelf is een bericht aan het bedrijf meestal het snelst.",
+    "notFound": "We konden die afspraak niet vinden in je account, dus hij is niet gekoppeld. Je kunt hieronder nog steeds een afspraak kiezen."
+  },
+  "form": {
+    "topic": "Waar heb je hulp bij nodig?",
+    "chooseTopic": "Kies een onderwerp",
+    "addSubject": "Voeg een korte titel toe",
+    "moreDetail": "Vertel ons iets meer — minstens één zin helpt ons om je te helpen",
+    "sent": "Verzoek verstuurd",
+    "checkFields": "Controleer de gemarkeerde velden.",
+    "related": "Gerelateerde afspraak",
+    "refHint": "Ref. {reference} · {business}",
+    "linkHint": "Als je een boeking koppelt, kunnen we er meteen naar kijken.",
+    "none": "Geen",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Onderwerp",
+    "subjectPlaceholder": "bijv. Mijn aanbetaling is twee keer afgeschreven",
+    "details": "Details",
+    "detailsHint": "Wat er gebeurde, wanneer en wat je van ons wilt. Vermeld alsjeblieft geen kaartnummers of wachtwoorden.",
+    "images": "Afbeeldingen",
+    "optional": "Optioneel",
+    "cancel": "Annuleren",
+    "uploadingImages": "Afbeeldingen uploaden…",
+    "send": "Verzoek versturen"
+  },
+  "reply": {
+    "writeFirst": "Schrijf eerst een reactie.",
+    "sent": "Reactie verstuurd",
+    "label": "Reactie",
+    "reopens": "Als je reageert, wordt dit verzoek heropend.",
+    "placeholder": "Voeg meer details toe of beantwoord onze vraag…",
+    "send": "Reactie versturen"
+  },
+  "resolve": {
+    "button": "Markeren als opgelost",
+    "done": "Gemarkeerd als opgelost",
+    "doneBody": "Fijn dat het is opgelost. Je kunt nog altijd reageren als er iets opkomt.",
+    "confirmTitle": "Dit verzoek als opgelost markeren?",
+    "confirmBody": "Laat ons weten dat het is opgelost. Komt er nog iets op, reageer dan hier en we pakken het weer op."
+  },
+  "attach": {
+    "tooMany": "Je kunt maximaal {max} afbeeldingen bijvoegen.",
+    "alt": "Bijlage voor support",
+    "label": "Bijlagen",
+    "uploadingName": "{name} uploaden",
+    "remove": "{name} verwijderen",
+    "add": "Afbeelding toevoegen",
+    "uploading": "{count, plural, one {# afbeelding uploaden…} other {# afbeeldingen uploaden…}}",
+    "hint": "Screenshots of foto’s helpen. Maximaal {max} afbeeldingen, elk 15 MB."
+  }
+}

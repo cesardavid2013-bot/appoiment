@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "booking": {
+      "label": "Bokning",
+      "hint": "Ändringar, avbokningar eller problem med en bokning."
+    },
+    "payment": {
+      "label": "Betalning",
+      "hint": "Debiteringar, depositioner, återbetalningar eller dricks."
+    },
+    "account": {
+      "label": "Konto",
+      "hint": "Inloggning, din profil eller dina uppgifter."
+    },
+    "report": {
+      "label": "Anmäl ett företag",
+      "hint": "Säkerhetsproblem, vilseledande annonser eller missbruk."
+    },
+    "other": {
+      "label": "Övrigt",
+      "hint": "Allt annat vi kan hjälpa till med."
+    }
+  },
+  "status": {
+    "open": "Väntar på support",
+    "awaiting_customer": "Besvarad",
+    "resolved": "Löst",
+    "closed": "Stängd"
+  },
+  "home": {
+    "title": "Hjälp & support",
+    "description": "Få hjälp med en bokning, en betalning eller ditt konto.",
+    "newRequest": "Nytt ärende",
+    "yourRequests": "Dina ärenden",
+    "emptyTitle": "Inga ärenden ännu",
+    "emptyBody": "Om något inte stämmer med en bokning, en betalning eller ditt konto, berätta för oss så hjälper vi dig att reda ut det.",
+    "contact": "Kontakta support",
+    "ticketLine": "{category} · Uppdaterad {date} · {count, plural, one {# meddelande} other {# meddelanden}}",
+    "quickAnswers": "Snabba svar",
+    "stillStuck": "Kör du fast? <link>Kontakta support</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Hur avbokar eller bokar jag om en tid?",
+      "a": "Öppna <link>Bokningar</link>, välj tiden och tryck på Boka om eller Avboka. Varje företag bestämmer sin egen avbokningstid — du ser exakt vad som gäller, inklusive eventuell avgift eller återbetalning, innan du bekräftar."
+    },
+    "refund": {
+      "q": "När får jag min återbetalning?",
+      "a": "Återbetalningar går tillbaka till kortet du betalade med så fort en avbokning är bekräftad. Beroende på din bank tar det vanligtvis 5–10 bankdagar innan de syns. Om en deposition återbetalas beror på företagets villkor, som visas när du bokar."
+    },
+    "contactPro": {
+      "q": "Hur kontaktar jag en yrkesverksam?",
+      "a": "Använd Meddelande på deras profil eller i din bokning. Dina konversationer finns under <link>Meddelanden</link>. För allt som rör själva tjänsten — vägbeskrivning, förberedelser, vad du ska ta med — svarar företaget snabbast."
+    },
+    "report": {
+      "q": "Något gick fel med ett företag. Vad kan jag göra?",
+      "a": "Skapa ett ärende nedan och välj ”Anmäl ett företag”. Koppla bokningen om det finns någon. Vi läser varje anmälan och kan gå in och hjälpa till med återbetalningar och, vid behov, ta bort företag från Kept."
+    },
+    "account": {
+      "q": "Hur ändrar jag min e-post eller raderar mitt konto?",
+      "a": "Ändring av e-post går via support så att vi kan bekräfta att det är du. Du kan ladda ner dina uppgifter eller radera ditt konto själv under <link>Integritet & data</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Supportärende",
+    "allRequests": "Alla ärenden",
+    "opened": "{category} · Skapat <date></date>",
+    "appointmentLine": "{date} kl. {time} · Ref. {reference}",
+    "conversation": "Konversation",
+    "keptSupport": "Kept Support",
+    "openImage": "Öppna bifogad bild",
+    "attachedImage": "Bifogad bild",
+    "closed": "Det här ärendet är stängt. <link>Skapa ett nytt ärende</link> om du fortfarande behöver hjälp.",
+    "willReply": "Vi svarar här och meddelar dig när vi gör det.",
+    "sorted": "Löst? Berätta för oss."
+  },
+  "new": {
+    "title": "Kontakta support",
+    "intro": "Berätta vad som har hänt så svarar en riktig person i Kept-teamet här. För frågor om själva tjänsten går det oftast snabbast att skriva till företaget.",
+    "notFound": "Vi hittade inte den bokningen på ditt konto, så den har inte kopplats. Du kan fortfarande välja en nedan."
+  },
+  "form": {
+    "topic": "Vad behöver du hjälp med?",
+    "chooseTopic": "Välj ett ämne",
+    "addSubject": "Lägg till en kort rubrik",
+    "moreDetail": "Berätta lite mer — minst en mening hjälper oss att hjälpa dig",
+    "sent": "Ärendet skickades",
+    "checkFields": "Kontrollera de markerade fälten.",
+    "related": "Tillhörande bokning",
+    "refHint": "Ref. {reference} · {business}",
+    "linkHint": "Genom att koppla en bokning kan vi titta på den direkt.",
+    "none": "Ingen",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Ämne",
+    "subjectPlaceholder": "t.ex. Jag debiterades två gånger för min deposition",
+    "details": "Detaljer",
+    "detailsHint": "Vad som hände, när och vad du vill att vi gör. Ange inte kortnummer eller lösenord.",
+    "images": "Bilder",
+    "optional": "Valfritt",
+    "cancel": "Avbryt",
+    "uploadingImages": "Laddar upp bilder…",
+    "send": "Skicka ärende"
+  },
+  "reply": {
+    "writeFirst": "Skriv ett svar först.",
+    "sent": "Svaret skickades",
+    "label": "Svar",
+    "reopens": "Om du svarar öppnas ärendet igen.",
+    "placeholder": "Lägg till fler detaljer eller svara på vår fråga…",
+    "send": "Skicka svar"
+  },
+  "resolve": {
+    "button": "Markera som löst",
+    "done": "Markerat som löst",
+    "doneBody": "Roligt att det är löst. Du kan fortfarande svara om något dyker upp.",
+    "confirmTitle": "Markera det här ärendet som löst?",
+    "confirmBody": "Låt oss veta att det är löst. Om något mer dyker upp, svara här så tar vi upp tråden igen."
+  },
+  "attach": {
+    "tooMany": "Du kan bifoga upp till {max} bilder.",
+    "alt": "Bilaga till support",
+    "label": "Bilagor",
+    "uploadingName": "Laddar upp {name}",
+    "remove": "Ta bort {name}",
+    "add": "Lägg till bild",
+    "uploading": "{count, plural, one {Laddar upp # bild…} other {Laddar upp # bilder…}}",
+    "hint": "Skärmdumpar eller foton hjälper. Upp till {max} bilder, 15 MB vardera."
+  }
+}
