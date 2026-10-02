@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Terokai profesional",
+    "category": "Tempah {category}",
+    "query": "{q} — carian",
+    "description": "Bandingkan profesional mengikut ketersediaan sebenar, harga dan ulasan yang disahkan."
+  },
+  "bar": {
+    "placeholder": "Cari perkhidmatan atau profesional",
+    "label": "Cari",
+    "clear": "Kosongkan carian"
+  },
+  "location": {
+    "placeholder": "Di mana-mana",
+    "label": "Lokasi",
+    "clear": "Kosongkan lokasi",
+    "useMine": "Guna lokasi semasa saya",
+    "finding": "Mencari lokasi anda…",
+    "current": "Lokasi semasa",
+    "selectedArea": "Kawasan dipilih",
+    "unsupported": "Pelayar anda tidak dapat berkongsi lokasi. Taip nama bandar sebaliknya.",
+    "denied": "Lokasi dimatikan untuk laman ini. Taip nama bandar sebaliknya — atau benarkan lokasi dalam tetapan pelayar anda.",
+    "failed": "Kami tidak dapat mengesan lokasi anda. Taip nama bandar sebaliknya."
+  },
+  "quick": {
+    "availableToday": "Tersedia hari ini",
+    "instant": "Tempahan segera",
+    "mobile": "Datang ke tempat anda",
+    "virtual": "Dalam talian"
+  },
+  "view": {
+    "label": "Paparan",
+    "list": "Senarai",
+    "map": "Peta"
+  },
+  "heading": {
+    "explore": "Terokai",
+    "results": "Hasil",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Mengemas kini…",
+    "count": "{count, plural, other {# profesional}}",
+    "countMore": "{count}+ profesional",
+    "near": "{results} berhampiran {place}",
+    "nearYou": "{results} berhampiran anda"
+  },
+  "sort": {
+    "label": "Susun mengikut",
+    "relevance": "Paling sepadan",
+    "rating": "Penilaian tertinggi",
+    "price": "Harga terendah",
+    "distance": "Paling hampir"
+  },
+  "categories": {
+    "label": "Kategori",
+    "all": "Semua"
+  },
+  "empty": {
+    "title": "Belum ada padanan",
+    "query": "Cuba istilah yang lebih umum, ejaan yang berbeza, atau buang beberapa penapis.",
+    "filters": "Cuba buang satu penapis atau cari di kawasan yang lebih luas.",
+    "clear": "Kosongkan semua penapis",
+    "categoryTitle": "Belum ada profesional {category} disenaraikan di sini",
+    "categoryBody": "Kept berkembang bandar demi bandar. Menawarkan perkhidmatan ini? Halaman tempahan anda boleh aktif hari ini.",
+    "listServices": "Senaraikan perkhidmatan anda",
+    "seeAll": "Lihat semua profesional"
+  },
+  "showMore": "Tunjukkan lagi",
+  "filters": {
+    "button": "Penapis",
+    "buttonCount": "Penapis · {count}",
+    "title": "Penapis",
+    "clearAll": "Kosongkan semua",
+    "show": "Tunjukkan hasil",
+    "availability": "Ketersediaan & tempahan",
+    "rating": "Penilaian",
+    "minRating": "Penilaian minimum",
+    "any": "Mana-mana",
+    "price": "Harga permulaan sehingga",
+    "maxPrice": "Harga permulaan maksimum",
+    "distance": "Jarak",
+    "provider": "Penyedia",
+    "providerType": "Jenis penyedia",
+    "individual": "Profesional bebas",
+    "business": "Perniagaan & pasukan"
+  }
+}
