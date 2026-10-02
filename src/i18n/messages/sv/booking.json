@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Boka hos {name}",
+    "fallbackTitle": "Boka"
+  },
+  "steps": {
+    "service": "Välj tjänst",
+    "options": "Anpassa",
+    "who": "Vem & var",
+    "time": "Välj tid",
+    "details": "Några uppgifter",
+    "review": "Granska & bekräfta"
+  },
+  "header": {
+    "backTo": "Tillbaka till {name}",
+    "previousStep": "Föregående steg",
+    "stepOf": "Steg {current} av {total}",
+    "exit": "Lämna bokningen"
+  },
+  "service": {
+    "optionsAvailable": "Tillval finns",
+    "group": "Grupp · upp till {count}"
+  },
+  "options": {
+    "required": "Obligatoriskt",
+    "upTo": "Välj upp till {count}",
+    "optionalAny": "Valfritt · välj hur många du vill",
+    "optional": "Valfritt",
+    "included": "Ingår",
+    "errorRequired": "Välj ett alternativ för ”{name}”.",
+    "errorOnlyOne": "Välj bara ett alternativ för ”{name}”.",
+    "errorUpTo": "Välj upp till {count} för ”{name}”.",
+    "errorUnavailable": "Ett av de valda tillvalen är inte längre tillgängligt."
+  },
+  "who": {
+    "where": "Var",
+    "with": "Hos",
+    "comesToYou": "Kommer till dig · inom {km} km från {city}",
+    "online": "Onlinesession",
+    "anyPro": "Valfri ledig yrkesverksam",
+    "anyProHint": "Flest lediga tider — vi matchar dig med den som är ledig."
+  },
+  "details": {
+    "addressLabel": "Vart ska vi komma?",
+    "addressHint": "Inom {km} km från {city}. Delas bara med företaget.",
+    "addressPlaceholder": "Gatuadress, lägenhet, ort",
+    "consent": "Jag har läst och godkänner ovanstående",
+    "age": "Jag bekräftar att jag är minst {age} år",
+    "noteLabel": "Är det något mer de bör veta?",
+    "notePlaceholder": "Allergier, önskemål, parkeringsinfo…"
+  },
+  "review": {
+    "changeTime": "Ändra tid",
+    "with": "Hos",
+    "where": "Var",
+    "yourAddress": "Din adress",
+    "online": "Online",
+    "noteLabel": "Är det något de bör veta?",
+    "notePlaceholder": "Önskemål, frågor, tillgänglighetsbehov…",
+    "promoApplied": "{code} tillämpad",
+    "promoRemove": "Ta bort",
+    "promoPlaceholder": "Rabattkod",
+    "promoApply": "Använd",
+    "beforeYouBook": "Innan du bokar",
+    "bookingAs": "Bokar som {name}"
+  },
+  "confirm": {
+    "request": "Skicka bokningsförfrågan",
+    "requestShort": "Skicka förfrågan",
+    "pay": "Bekräfta och betala {amount}",
+    "payShort": "Betala {amount}",
+    "confirm": "Bekräfta bokning",
+    "confirmShort": "Bekräfta"
+  },
+  "summary": {
+    "label": "Bokningssammanfattning",
+    "instant": "Direkt bekräftelse",
+    "request": "Bekräftas av företaget",
+    "total": "Totalt",
+    "estimatedTotal": "Beräknat totalbelopp",
+    "estimated": "Beräknat",
+    "comesToYou": "Kommer till dig",
+    "online": "Online",
+    "empty": "Välj en tjänst för att se tider och priser.",
+    "continue": "Fortsätt",
+    "signInToBook": "Logga in för att boka"
+  },
+  "time": {
+    "preselectMissed": "Tiden du valde är inte längre ledig med de här valen. Här är de närmaste lediga tiderna.",
+    "previousWeeks": "Föregående två veckor",
+    "nextWeeks": "Nästa två veckor",
+    "chooseDate": "Välj datum",
+    "today": "Idag",
+    "timesAvailable": "{count, plural, one {# tid ledig} other {# tider lediga}}",
+    "noAvailability": "Inga lediga tider",
+    "noOpeningsOn": "Inga lediga tider {date}",
+    "noOpeningsThisDay": "Inga lediga tider den här dagen",
+    "nextOpening": "Nästa lediga tid: {date}.",
+    "tryLater": "Prova de kommande två veckorna, eller ställ dig i kö så hör vi av oss om något blir ledigt.",
+    "joinWaitlist": "Ställ dig i kö för den här dagen",
+    "morning": "Förmiddag",
+    "afternoon": "Eftermiddag",
+    "evening": "Kväll",
+    "morningTimes": "Tider på förmiddagen",
+    "afternoonTimes": "Tider på eftermiddagen",
+    "eveningTimes": "Tider på kvällen",
+    "spotsLeft": "{count, plural, one {# kvar} other {# kvar}}",
+    "timesIn": "Tider i {abbr} ({zone}).",
+    "timesInLocal": "Tider i {abbr} ({zone}) — det blir {time} där du är."
+  },
+  "waitlist": {
+    "title": "Ställ dig i kö",
+    "description": "Om en tid blir ledig {date} meddelar vi dig direkt. Lediga tider går till den som bokar först.",
+    "cancel": "Avbryt",
+    "notify": "Meddela mig",
+    "windowLabel": "Tider som passar dig",
+    "any": "Vilken tid som helst den dagen",
+    "morning": "Förmiddag (före kl. 12)",
+    "afternoon": "Eftermiddag (kl. 12–17)",
+    "evening": "Kväll (efter kl. 17)",
+    "joined": "Du står i kön",
+    "joinedBody": "Vi meddelar dig direkt om en tid blir ledig."
+  },
+  "price": {
+    "label": "Prisspecifikation",
+    "total": "Totalt",
+    "estimatedTotal": "Beräknat totalbelopp",
+    "payNow": "Betala nu",
+    "depositNow": "Deposition att betala nu",
+    "remaining": "Återstår vid besöket",
+    "nothingNow": "Inget att betala nu — du betalar vid ditt besök.",
+    "estimateNote": "Slutpriset bekräftas av företaget och kan variera beroende på arbetets omfattning.",
+    "tax": "Moms",
+    "serviceFee": "Serviceavgift"
+  },
+  "checkout": {
+    "title": "Betalning",
+    "description": "Slutför betalningen för att bekräfta din bokning.",
+    "pay": "Betala {amount}",
+    "secured": "Säkras av Stripe. Din tid reserveras medan du betalar.",
+    "declined": "Ditt kort nekades.",
+    "failed": "Vi kunde inte slutföra betalningen. Ditt kort har inte debiterats — försök igen."
+  },
+  "intake": {
+    "optional": "(valfritt)",
+    "yes": "Ja",
+    "no": "Nej"
+  }
+}

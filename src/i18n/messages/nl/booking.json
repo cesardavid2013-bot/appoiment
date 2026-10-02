@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Boek bij {name}",
+    "fallbackTitle": "Boeken"
+  },
+  "steps": {
+    "service": "Kies een dienst",
+    "options": "Aanpassen",
+    "who": "Wie & waar",
+    "time": "Kies een tijdstip",
+    "details": "Een paar gegevens",
+    "review": "Controleren & bevestigen"
+  },
+  "header": {
+    "backTo": "Terug naar {name}",
+    "previousStep": "Vorige stap",
+    "stepOf": "Stap {current} van {total}",
+    "exit": "Boeking verlaten"
+  },
+  "service": {
+    "optionsAvailable": "Opties beschikbaar",
+    "group": "Groep · tot {count}"
+  },
+  "options": {
+    "required": "Verplicht",
+    "upTo": "Kies er maximaal {count}",
+    "optionalAny": "Optioneel · kies er zoveel je wilt",
+    "optional": "Optioneel",
+    "included": "Inbegrepen",
+    "errorRequired": "Kies een optie voor “{name}”.",
+    "errorOnlyOne": "Kies slechts één optie voor “{name}”.",
+    "errorUpTo": "Kies maximaal {count} voor “{name}”.",
+    "errorUnavailable": "Een van de gekozen opties is niet meer beschikbaar."
+  },
+  "who": {
+    "where": "Waar",
+    "with": "Bij wie",
+    "comesToYou": "Komt naar je toe · binnen {km} km van {city}",
+    "online": "Online sessie",
+    "anyPro": "Elke beschikbare professional",
+    "anyProHint": "Meeste keuze aan tijden — we koppelen je aan wie er vrij is."
+  },
+  "details": {
+    "addressLabel": "Waar moeten we langskomen?",
+    "addressHint": "Binnen {km} km van {city}. Alleen gedeeld met het bedrijf.",
+    "addressPlaceholder": "Straat en huisnummer, plaats",
+    "consent": "Ik heb het bovenstaande gelezen en ga akkoord",
+    "age": "Ik bevestig dat ik minstens {age} jaar oud ben",
+    "noteLabel": "Is er nog iets wat ze moeten weten?",
+    "notePlaceholder": "Allergieën, voorkeuren, parkeerinformatie…"
+  },
+  "review": {
+    "changeTime": "Tijd wijzigen",
+    "with": "Bij wie",
+    "where": "Waar",
+    "yourAddress": "Je adres",
+    "online": "Online",
+    "noteLabel": "Is er iets wat ze moeten weten?",
+    "notePlaceholder": "Voorkeuren, vragen, toegankelijkheidsbehoeften…",
+    "promoApplied": "{code} toegepast",
+    "promoRemove": "Verwijderen",
+    "promoPlaceholder": "Actiecode",
+    "promoApply": "Toepassen",
+    "beforeYouBook": "Voordat je boekt",
+    "bookingAs": "Boeken als {name}"
+  },
+  "confirm": {
+    "request": "Boekingsaanvraag versturen",
+    "requestShort": "Aanvraag versturen",
+    "pay": "Bevestigen en {amount} betalen",
+    "payShort": "{amount} betalen",
+    "confirm": "Boeking bevestigen",
+    "confirmShort": "Bevestigen"
+  },
+  "summary": {
+    "label": "Samenvatting van de boeking",
+    "instant": "Direct bevestigd",
+    "request": "Bevestigd door het bedrijf",
+    "total": "Totaal",
+    "estimatedTotal": "Geschat totaal",
+    "estimated": "Geschat",
+    "comesToYou": "Komt naar je toe",
+    "online": "Online",
+    "empty": "Kies een dienst om tijden en prijzen te zien.",
+    "continue": "Doorgaan",
+    "signInToBook": "Log in om te boeken"
+  },
+  "time": {
+    "preselectMissed": "Het tijdstip dat je koos is met deze keuzes niet meer beschikbaar. Dit zijn de dichtstbijzijnde mogelijkheden.",
+    "previousWeeks": "Vorige twee weken",
+    "nextWeeks": "Volgende twee weken",
+    "chooseDate": "Kies een datum",
+    "today": "Vandaag",
+    "timesAvailable": "{count, plural, one {# tijd beschikbaar} other {# tijden beschikbaar}}",
+    "noAvailability": "Niet beschikbaar",
+    "noOpeningsOn": "Geen plek op {date}",
+    "noOpeningsThisDay": "Geen plek op deze dag",
+    "nextOpening": "Eerstvolgende plek: {date}.",
+    "tryLater": "Probeer de komende twee weken, of zet jezelf op de wachtlijst, dan laten we het weten als er iets vrijkomt.",
+    "joinWaitlist": "Op de wachtlijst voor deze dag",
+    "morning": "Ochtend",
+    "afternoon": "Middag",
+    "evening": "Avond",
+    "morningTimes": "Tijden in de ochtend",
+    "afternoonTimes": "Tijden in de middag",
+    "eveningTimes": "Tijden in de avond",
+    "spotsLeft": "{count, plural, one {# over} other {# over}}",
+    "timesIn": "Tijden in {abbr} ({zone}).",
+    "timesInLocal": "Tijden in {abbr} ({zone}) — dat is {time} waar jij bent."
+  },
+  "waitlist": {
+    "title": "Op de wachtlijst",
+    "description": "Als er op {date} een tijd vrijkomt, laten we het je direct weten. Wie het eerst boekt, krijgt de plek.",
+    "cancel": "Annuleren",
+    "notify": "Houd me op de hoogte",
+    "windowLabel": "Tijden die jou schikken",
+    "any": "Elk tijdstip op die dag",
+    "morning": "Ochtend (voor 12:00)",
+    "afternoon": "Middag (12:00 – 17:00)",
+    "evening": "Avond (na 17:00)",
+    "joined": "Je staat op de wachtlijst",
+    "joinedBody": "We laten het je meteen weten als er een tijd vrijkomt."
+  },
+  "price": {
+    "label": "Prijsopbouw",
+    "total": "Totaal",
+    "estimatedTotal": "Geschat totaal",
+    "payNow": "Nu betalen",
+    "depositNow": "Nu te betalen aanbetaling",
+    "remaining": "Resterend bij de afspraak",
+    "nothingNow": "Nu niets te betalen — je betaalt bij je afspraak.",
+    "estimateNote": "De uiteindelijke prijs wordt door het bedrijf bevestigd en kan afwijken afhankelijk van het benodigde werk.",
+    "tax": "Btw",
+    "serviceFee": "Servicekosten"
+  },
+  "checkout": {
+    "title": "Betaling",
+    "description": "Rond de betaling af om je boeking te bevestigen.",
+    "pay": "{amount} betalen",
+    "secured": "Beveiligd door Stripe. Je tijdstip wordt vastgehouden terwijl je betaalt.",
+    "declined": "Je kaart is geweigerd.",
+    "failed": "We konden de betaling niet voltooien. Er is niets van je kaart afgeschreven — probeer het opnieuw."
+  },
+  "intake": {
+    "optional": "(optioneel)",
+    "yes": "Ja",
+    "no": "Nee"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Rezerwacja u: {name}",
+    "fallbackTitle": "Rezerwacja"
+  },
+  "steps": {
+    "service": "Wybierz usługę",
+    "options": "Dostosuj",
+    "who": "Kto i gdzie",
+    "time": "Wybierz termin",
+    "details": "Kilka szczegółów",
+    "review": "Sprawdź i potwierdź"
+  },
+  "header": {
+    "backTo": "Wróć do: {name}",
+    "previousStep": "Poprzedni krok",
+    "stepOf": "Krok {current} z {total}",
+    "exit": "Wyjdź z rezerwacji"
+  },
+  "service": {
+    "optionsAvailable": "Dostępne opcje",
+    "group": "Grupa · do {count} osób"
+  },
+  "options": {
+    "required": "Wymagane",
+    "upTo": "Wybierz maksymalnie {count}",
+    "optionalAny": "Opcjonalnie · wybierz dowolną liczbę",
+    "optional": "Opcjonalnie",
+    "included": "W cenie",
+    "errorRequired": "Wybierz opcję dla: „{name}”.",
+    "errorOnlyOne": "Wybierz tylko jedną opcję dla: „{name}”.",
+    "errorUpTo": "Wybierz maksymalnie {count} dla: „{name}”.",
+    "errorUnavailable": "Jedna z wybranych opcji nie jest już dostępna."
+  },
+  "who": {
+    "where": "Gdzie",
+    "with": "U kogo",
+    "comesToYou": "Dojeżdża do Ciebie · w promieniu {km} km od miejscowości {city}",
+    "online": "Sesja online",
+    "anyPro": "Dowolny dostępny specjalista",
+    "anyProHint": "Najwięcej terminów — przypiszemy Cię do osoby, która jest wolna."
+  },
+  "details": {
+    "addressLabel": "Dokąd mamy dojechać?",
+    "addressHint": "W promieniu {km} km od miejscowości {city}. Widoczny tylko dla firmy.",
+    "addressPlaceholder": "Ulica, numer mieszkania, miasto",
+    "consent": "Przeczytałem(-am) powyższe i akceptuję",
+    "age": "Potwierdzam, że mam co najmniej {age} lat",
+    "noteLabel": "Czy jest coś jeszcze, co powinni wiedzieć?",
+    "notePlaceholder": "Alergie, preferencje, informacje o parkowaniu…"
+  },
+  "review": {
+    "changeTime": "Zmień termin",
+    "with": "U kogo",
+    "where": "Gdzie",
+    "yourAddress": "Twój adres",
+    "online": "Online",
+    "noteLabel": "Czy jest coś, co powinni wiedzieć?",
+    "notePlaceholder": "Preferencje, pytania, potrzeby w zakresie dostępności…",
+    "promoApplied": "Zastosowano kod {code}",
+    "promoRemove": "Usuń",
+    "promoPlaceholder": "Kod promocyjny",
+    "promoApply": "Zastosuj",
+    "beforeYouBook": "Zanim zarezerwujesz",
+    "bookingAs": "Rezerwujesz jako {name}"
+  },
+  "confirm": {
+    "request": "Wyślij prośbę o rezerwację",
+    "requestShort": "Wyślij prośbę",
+    "pay": "Potwierdź i zapłać {amount}",
+    "payShort": "Zapłać {amount}",
+    "confirm": "Potwierdź rezerwację",
+    "confirmShort": "Potwierdź"
+  },
+  "summary": {
+    "label": "Podsumowanie rezerwacji",
+    "instant": "Natychmiastowe potwierdzenie",
+    "request": "Potwierdza firma",
+    "total": "Razem",
+    "estimatedTotal": "Szacowana suma",
+    "estimated": "Szacunkowo",
+    "comesToYou": "Dojeżdża do Ciebie",
+    "online": "Online",
+    "empty": "Wybierz usługę, aby zobaczyć terminy i ceny.",
+    "continue": "Dalej",
+    "signInToBook": "Zaloguj się, aby zarezerwować"
+  },
+  "time": {
+    "preselectMissed": "Wybrany termin nie jest już dostępny przy tych ustawieniach. Oto najbliższe wolne terminy.",
+    "previousWeeks": "Poprzednie dwa tygodnie",
+    "nextWeeks": "Kolejne dwa tygodnie",
+    "chooseDate": "Wybierz datę",
+    "today": "Dziś",
+    "timesAvailable": "{count, plural, one {# dostępny termin} few {# dostępne terminy} many {# dostępnych terminów} other {# dostępnego terminu}}",
+    "noAvailability": "Brak dostępności",
+    "noOpeningsOn": "Brak wolnych terminów: {date}",
+    "noOpeningsThisDay": "Brak wolnych terminów tego dnia",
+    "nextOpening": "Najbliższy wolny termin: {date}.",
+    "tryLater": "Sprawdź kolejne dwa tygodnie albo zapisz się na listę oczekujących, a damy Ci znać, gdy coś się zwolni.",
+    "joinWaitlist": "Zapisz się na listę oczekujących na ten dzień",
+    "morning": "Rano",
+    "afternoon": "Po południu",
+    "evening": "Wieczorem",
+    "morningTimes": "Terminy rano",
+    "afternoonTimes": "Terminy po południu",
+    "eveningTimes": "Terminy wieczorem",
+    "spotsLeft": "{count, plural, one {zostało #} few {zostały #} many {zostało #} other {zostało #}}",
+    "timesIn": "Godziny w strefie {abbr} ({zone}).",
+    "timesInLocal": "Godziny w strefie {abbr} ({zone}) — u Ciebie będzie to {time}."
+  },
+  "waitlist": {
+    "title": "Zapisz się na listę oczekujących",
+    "description": "Jeśli {date} zwolni się termin, od razu Cię powiadomimy. Wolne terminy trafiają do osoby, która zarezerwuje pierwsza.",
+    "cancel": "Anuluj",
+    "notify": "Powiadom mnie",
+    "windowLabel": "Terminy, które Ci odpowiadają",
+    "any": "Dowolna pora tego dnia",
+    "morning": "Rano (przed południem)",
+    "afternoon": "Po południu (12:00–17:00)",
+    "evening": "Wieczorem (po 17:00)",
+    "joined": "Jesteś na liście oczekujących",
+    "joinedBody": "Od razu damy Ci znać, gdy zwolni się termin."
+  },
+  "price": {
+    "label": "Szczegóły ceny",
+    "total": "Razem",
+    "estimatedTotal": "Szacowana suma",
+    "payNow": "Do zapłaty teraz",
+    "depositNow": "Zadatek do zapłaty teraz",
+    "remaining": "Pozostało do zapłaty na wizycie",
+    "nothingNow": "Nic nie musisz teraz płacić — zapłacisz na wizycie.",
+    "estimateNote": "Ostateczną cenę potwierdza firma i może ona zależeć od zakresu potrzebnych prac.",
+    "tax": "Podatek",
+    "serviceFee": "Opłata serwisowa"
+  },
+  "checkout": {
+    "title": "Płatność",
+    "description": "Dokończ płatność, aby potwierdzić rezerwację.",
+    "pay": "Zapłać {amount}",
+    "secured": "Zabezpieczone przez Stripe. Termin jest dla Ciebie zatrzymany na czas płatności.",
+    "declined": "Twoja karta została odrzucona.",
+    "failed": "Nie udało się dokończyć płatności. Z karty nic nie pobrano — spróbuj ponownie."
+  },
+  "intake": {
+    "optional": "(opcjonalnie)",
+    "yes": "Tak",
+    "no": "Nie"
+  }
+}
