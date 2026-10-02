@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Mag-explore ng mga propesyonal",
+    "category": "Mag-book ng {category}",
+    "query": "{q} — paghahanap",
+    "description": "Ihambing ang mga propesyonal ayon sa totoong availability, presyo at beripikadong review."
+  },
+  "bar": {
+    "placeholder": "Maghanap ng serbisyo o propesyonal",
+    "label": "Maghanap",
+    "clear": "I-clear ang paghahanap"
+  },
+  "location": {
+    "placeholder": "Saanman",
+    "label": "Lokasyon",
+    "clear": "I-clear ang lokasyon",
+    "useMine": "Gamitin ang kasalukuyan kong lokasyon",
+    "finding": "Hinahanap ka…",
+    "current": "Kasalukuyang lokasyon",
+    "selectedArea": "Napiling lugar",
+    "unsupported": "Hindi maibabahagi ng iyong browser ang lokasyon. Mag-type na lang ng lungsod.",
+    "denied": "Naka-off ang lokasyon para sa site na ito. Mag-type ng lungsod — o payagan ang lokasyon sa mga setting ng iyong browser.",
+    "failed": "Hindi namin makuha ang iyong lokasyon. Mag-type na lang ng lungsod."
+  },
+  "quick": {
+    "availableToday": "Available ngayon",
+    "instant": "Agarang booking",
+    "mobile": "Pumupunta sa iyo",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Tanaw",
+    "list": "Listahan",
+    "map": "Mapa"
+  },
+  "heading": {
+    "explore": "Mag-explore",
+    "results": "Mga resulta",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Ina-update…",
+    "count": "{count, plural, one {# propesyonal} other {# propesyonal}}",
+    "countMore": "{count}+ propesyonal",
+    "near": "{results} malapit sa {place}",
+    "nearYou": "{results} malapit sa iyo"
+  },
+  "sort": {
+    "label": "Ayusin ayon sa",
+    "relevance": "Pinakaangkop",
+    "rating": "Pinakamataas ang rating",
+    "price": "Pinakamababang presyo",
+    "distance": "Pinakamalapit"
+  },
+  "categories": {
+    "label": "Mga kategorya",
+    "all": "Lahat"
+  },
+  "empty": {
+    "title": "Wala pang tugma",
+    "query": "Subukan ang mas malawak na termino, ibang baybay, o alisin ang ilang filter.",
+    "filters": "Subukang alisin ang isang filter o maghanap sa mas malawak na lugar.",
+    "clear": "I-clear ang lahat ng filter",
+    "categoryTitle": "Wala pang nakalistang {category} dito",
+    "categoryBody": "Lumalago ang Kept, lungsod por lungsod. Nag-aalok ka ba ng serbisyong ito? Maaaring live na ang iyong booking page ngayon din.",
+    "listServices": "I-list ang iyong serbisyo",
+    "seeAll": "Tingnan ang lahat ng propesyonal"
+  },
+  "showMore": "Magpakita pa",
+  "filters": {
+    "button": "Mga filter",
+    "buttonCount": "Mga filter · {count}",
+    "title": "Mga filter",
+    "clearAll": "I-clear lahat",
+    "show": "Ipakita ang mga resulta",
+    "availability": "Availability at booking",
+    "rating": "Rating",
+    "minRating": "Pinakamababang rating",
+    "any": "Kahit ano",
+    "price": "Panimulang presyo hanggang",
+    "maxPrice": "Pinakamataas na panimulang presyo",
+    "distance": "Layo",
+    "provider": "Provider",
+    "providerType": "Uri ng provider",
+    "individual": "Mga independiyenteng propesyonal",
+    "business": "Mga negosyo at team"
+  }
+}
