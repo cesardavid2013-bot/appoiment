@@ -1,0 +1,93 @@
+{
+  "youPrefix": "אתם:",
+  "unread": "לא נקרא",
+  "apptLine": "{service} · {date} בשעה {time}",
+  "list": {
+    "title": "הודעות",
+    "unread": "{count, plural, one {שיחה אחת שלא נקראה.} two {# שיחות שלא נקראו.} other {# שיחות שלא נקראו.}}",
+    "caughtUp": "הכול מעודכן.",
+    "emptyTitle": "עדיין אין הודעות",
+    "emptyBody": "שאלה על שירות, מחיר או שעה? פתחו את העמוד של איש מקצוע והקישו על “שאלו שאלה”. התשובות שלו יופיעו כאן.",
+    "findPro": "מצאו איש מקצוע"
+  },
+  "thread": {
+    "metaTitle": "שיחה",
+    "placeholder": "הודעה אל {business}"
+  },
+  "new": {
+    "metaTitle": "הודעה חדשה",
+    "ownTitle": "זה העסק שלכם",
+    "ownBody": "הודעות מלקוחות אל {business} מגיעות לתיבת הדואר של העסק שלכם.",
+    "ownButton": "פתיחת תיבת הדואר של העסק",
+    "placeholderBooking": "שאלו על ההזמנה הזו",
+    "placeholderQuestion": "שאלו שאלה",
+    "emptyBookingTitle": "הודעה אל {business} על ההזמנה שלכם",
+    "emptyQuestionTitle": "שאלו את {business} לפני ההזמנה",
+    "emptyBookingBody": "מאחרים, צריכים לשנות משהו או יש שאלה? ההודעה שלכם מגיעה ישר לצוות.",
+    "emptyQuestionBody": "מחירים, זמנים, מה להביא — {business} ישיבו כאן ואנחנו נעדכן אתכם. מספר הטלפון והאימייל שלכם נשארים פרטיים."
+  },
+  "shell": {
+    "allMessages": "כל ההודעות",
+    "viewProfile": "צפייה בפרופיל",
+    "book": "הזמנה"
+  },
+  "pro": {
+    "backToInbox": "חזרה לתיבת הדואר"
+  },
+  "view": {
+    "label": "הודעות",
+    "you": "אתם",
+    "loadingEarlier": "טוען הודעות קודמות",
+    "showEarlier": "הצגת הודעות קודמות",
+    "seen": "נראה",
+    "sending": "שולח…",
+    "notSent": "לא נשלח.",
+    "retry": "ניסיון חוזר",
+    "discard": "מחיקה",
+    "newMessages": "{count, plural, one {הודעה חדשה אחת} two {# הודעות חדשות} other {# הודעות חדשות}}",
+    "openPhoto": "פתיחת התמונה בלשונית חדשה",
+    "photo": "תמונה"
+  },
+  "composer": {
+    "about": "בנוגע ל-{appointment}",
+    "unlink": "לא לקשר את התור הזה",
+    "processingPhoto": "מעבד תמונה",
+    "removePhoto": "הסרת התמונה",
+    "attachPhoto": "צירוף תמונה",
+    "label": "הודעה",
+    "send": "שליחת הודעה",
+    "hint": "לחצו Enter לשליחה, Shift ו-Enter לשורה חדשה."
+  },
+  "inbox": {
+    "title": "תיבת הדואר",
+    "conversations": "שיחות",
+    "unread": "{count} שלא נקראו",
+    "allCaughtUp": "הכול מעודכן",
+    "searchLabel": "חיפוש שיחות לפי שם לקוח",
+    "searchPlaceholder": "חיפוש לקוחות",
+    "clearSearch": "ניקוי החיפוש",
+    "show": "הצגה",
+    "all": "הכול",
+    "unreadFilter": "לא נקראו",
+    "noClientsNamed": "אין לקוחות בשם “{term}”",
+    "nothingUnread": "אין הודעות שלא נקראו",
+    "noMessages": "עדיין אין הודעות",
+    "tryDifferent": "נסו חיפוש אחר או הציגו את כל השיחות.",
+    "emptyBody": "כשלקוחות ישאלו שאלה מהעמוד שלכם או בנוגע להזמנה, זה יופיע כאן."
+  },
+  "clientPanel": {
+    "client": "לקוח",
+    "visits": "ביקורים",
+    "noShows": "אי-הגעות",
+    "cancelled": "ביטולים",
+    "clientSince": "לקוח מאז {date}",
+    "noVisits": "עדיין אין ביקורים שהושלמו",
+    "lastIn": "אחרון ב-{date}",
+    "tags": "תגיות",
+    "clientProfile": "פרופיל לקוח",
+    "notBooked": "עדיין לא הזמין אצלכם — השיחה הזו התחילה מהעמוד הציבורי שלכם.",
+    "upcoming": "קרובים",
+    "nothingBooked": "אין הזמנות.",
+    "recent": "אחרונים"
+  }
+}
