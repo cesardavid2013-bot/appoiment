@@ -478,27 +478,224 @@
     "deleteBody": "Este eliminat imediat de pe profilul public. Acțiunea nu poate fi anulată.",
     "saved": "Salvat",
     "cancel": "Anulați",
-    "pair": {}
+    "save": "Salvați",
+    "caption": "Descriere",
+    "captionHint": "Ce s-a făcut — de ex. „Mid skin fade cu tuns texturat”.",
+    "service": "Serviciu",
+    "serviceHint": "Clienții văd un buton „Rezervă acum” care deschide acest serviciu.",
+    "none": "Niciunul",
+    "doneBy": "Realizat de",
+    "notSpecified": "Nespecificat",
+    "featureThis": "Evidențiați",
+    "featureThisHint": "Lucrările evidențiate apar primele pe profil.",
+    "pair": {
+      "change": "{label}: {file}. Alegeți altă fotografie",
+      "choose": "Alegeți fotografia: {label}",
+      "choosePhoto": "Alegeți fotografia",
+      "errorBoth": "Alegeți atât fotografia „înainte”, cât și „după”.",
+      "uploadingBefore": "Se încarcă fotografia „înainte”…",
+      "uploadingAfter": "Se încarcă fotografia „după”…",
+      "saving": "Se salvează…",
+      "added": "Înainte și după a fost adăugat",
+      "title": "Adăugați un înainte și după",
+      "description": "Clienții trag de un glisor pentru a compara cele două fotografii. Folosiți același unghi și aceeași lumină, dacă puteți.",
+      "submit": "Adăugați în portofoliu",
+      "before": "Înainte",
+      "after": "După",
+      "serviceHint": "Adaugă un buton „Rezervă acum” pe profilul dumneavoastră."
+    }
   },
-  "embeds": {},
+  "embeds": {
+    "name": "{provider} {kindLower}",
+    "removed": "Eliminat de pe profilul dumneavoastră",
+    "title": "Din rețelele dumneavoastră sociale",
+    "count": "{count} din {max}",
+    "description": "Prezentați în secțiunea Evidențiate a profilului videoclipuri și Shorts de pe YouTube, TikTok-uri, postări și reels de pe Instagram, videoclipuri Vimeo, piese SoundCloud și lansări Spotify. Playerele se încarcă doar când un vizitator apasă pe redare.",
+    "full": "Evidențiați {max} postări, maximul pe care îl poate afișa un profil. Eliminați una pentru a adăuga alta.",
+    "editItem": "Editați {label}",
+    "moveItemUp": "Mutați {label} mai sus",
+    "moveItemDown": "Mutați {label} mai jos",
+    "editMenu": "Editați descrierea și serviciul",
+    "moveUp": "Mutați mai sus",
+    "moveDown": "Mutați mai jos",
+    "openOn": "Deschideți pe {provider}",
+    "remove": "Eliminați",
+    "removeTitle": "Eliminați de pe profil?",
+    "removeBody": "Dispare imediat din secțiunea Evidențiate. Postarea în sine rămâne în contul dumneavoastră de socializare.",
+    "added": "{name} a fost adăugat pe profilul dumneavoastră",
+    "linkLabel": "Link către un videoclip, o postare sau o piesă",
+    "found": "S-a găsit {name}. Verificați previzualizarea, apoi adăugați-l.",
+    "linkHint": "Copiați linkul cu butonul Distribuie de pe YouTube, TikTok, Instagram, Vimeo, SoundCloud, Spotify, Apple Music, Apple Podcasts sau Mixcloud.",
+    "captionHint": "O linie despre el — de ex. „Mixat și masterizat pentru Lina Vega”.",
+    "serviceHintAdd": "Adaugă un link „Rezervă acum” sub postare.",
+    "serviceHintEdit": "Clienții văd un link „Rezervă acum” sub postare.",
+    "add": "Adăugați pe profil",
+    "clear": "Ștergeți"
+  },
   "onboarding": {
-    "steps": {},
-    "category": {},
-    "kind": {},
-    "name": {},
-    "branding": {},
-    "location": {
-      "kind": {
-        "physical": {},
-        "mobile": {},
-        "virtual": {}
-      }
+    "metaTitle": "Configurați-vă firma",
+    "logoSuffix": "Firmă",
+    "progress": "{step} / {total}",
+    "saveExit": "Salvați și ieșiți",
+    "exit": "Ieșiți",
+    "stepsNav": "Pașii de configurare",
+    "skipped": "Omis",
+    "continue": "Continuați",
+    "back": "Înapoi",
+    "skip": "Omiteți deocamdată",
+    "saveContinue": "Salvați și continuați",
+    "steps": {
+      "category": "Ce oferiți",
+      "kind": "Individual sau echipă",
+      "name": "Nume",
+      "branding": "Profil",
+      "location": "Unde lucrați",
+      "services": "Servicii",
+      "availability": "Program",
+      "policies": "Reguli de rezervare",
+      "payments": "Plăți",
+      "preview": "Publicare"
     },
-    "services": {},
-    "hours": {},
-    "policies": {},
-    "payments": {},
-    "preview": {},
-    "checklist": {}
+    "category": {
+      "title": "Bun venit, {name}. Ce oferiți?",
+      "lead": "Alegeți cea mai apropiată variantă. Puteți oferi orice — asta doar îi ajută pe clienți să vă găsească.",
+      "moreSpecific": "Mai exact"
+    },
+    "kind": {
+      "title": "Lucrați singur sau în echipă?",
+      "lead": "Puteți adăuga oricum membri ai echipei mai târziu.",
+      "individual": "Doar eu",
+      "individualHint": "Profesionist independent — numele sau brandul dumneavoastră, calendarul dumneavoastră.",
+      "business": "O firmă cu echipă",
+      "businessHint": "Salon, studio, atelier sau agenție cu personal, roluri și mai multe calendare."
+    },
+    "name": {
+      "titleIndividual": "Cum să vă numească clienții?",
+      "titleBusiness": "Cum se numește firma dumneavoastră?",
+      "lead": "Acesta este numele pe care îl văd clienții când caută și rezervă.",
+      "labelIndividual": "Numele dumneavoastră profesional",
+      "labelBusiness": "Numele firmei",
+      "pageHint": "Pagina dumneavoastră: {url} — o puteți schimba ulterior.",
+      "placeholderIndividual": "de ex. Maya Okafor Training",
+      "placeholderBusiness": "de ex. North Fade Studio",
+      "timezone": "Fus orar",
+      "timezoneHint": "Programul și rezervările dumneavoastră folosesc acest fus orar.",
+      "currency": "Monedă",
+      "create": "Creați pagina mea"
+    },
+    "branding": {
+      "title": "Faceți o primă impresie bună",
+      "lead": "O fotografie și o linie despre ce faceți contează mult. Ambele sunt opționale și se pot schimba oricând.",
+      "changePhoto": "Schimbați fotografia",
+      "addPhoto": "Adăugați o fotografie sau un logo",
+      "square": "Imaginile pătrate funcționează cel mai bine.",
+      "tagline": "O linie despre dumneavoastră",
+      "taglinePlaceholder": "Fade-uri precise și tunsori clasice în Williamsburg",
+      "about": "Despre",
+      "aboutPlaceholder": "Experiența dumneavoastră, abordarea, ce pot aștepta clienții."
+    },
+    "location": {
+      "locateError": "Nu v-am putut obține locația. Clienții vă vor vedea totuși adresa.",
+      "mobileName": "Serviciu la domiciliu",
+      "onlineName": "Online",
+      "listTitle": "Unde lucrați",
+      "travelsFrom": "Se deplasează din {city}",
+      "onlineSessions": "Sesiuni online",
+      "addAnother": "Adăugați alt loc",
+      "title": "Unde au loc programările?",
+      "lead": "Adăugați acum locul principal. Mai multe locații, zone de deplasare sau sesiuni online se pot adăuga ulterior.",
+      "kind": {
+        "physical": {
+          "title": "La sediul meu",
+          "hint": "Magazin, studio, birou"
+        },
+        "mobile": {
+          "title": "Mă deplasez la clienți",
+          "hint": "Acasă, birouri, evenimente"
+        },
+        "virtual": {
+          "title": "Online",
+          "hint": "Apeluri video"
+        }
+      },
+      "placeName": "Numele locului",
+      "placeNameHint": "Se afișează clienților, de ex. numele magazinului dumneavoastră.",
+      "street": "Adresa",
+      "line2": "Apartament, sediu, etaj",
+      "city": "Oraș",
+      "region": "Județ / regiune",
+      "postalCode": "Cod poștal",
+      "country": "Codul țării",
+      "countryHint": "Două litere, de ex. US, MX, ES",
+      "radius": "Cât de departe vă deplasați?",
+      "upToKm": "Până la {km} km",
+      "nearMe": "Apăreți în căutările „în apropierea mea”",
+      "nearMePhysical": "Dacă vă aflați acum la această adresă, fixați locația pentru ca clienții din apropiere să vă găsească.",
+      "nearMeMobile": "Fixați locul unde vă aflați, ca clienții din apropiere să vă găsească.",
+      "pinned": "Locație fixată",
+      "useCurrent": "Folosiți locația mea curentă"
+    },
+    "services": {
+      "errorName": "Denumiți acest serviciu",
+      "errorPrice": "Adăugați un preț (0 pentru gratuit)",
+      "title": "Ce pot rezerva clienții?",
+      "lead": "Adăugați tot ce oferiți — oricâte servicii doriți. Opțiunile, extra-urile, avansurile și fotografiile se pot adăuga mai târziu în Servicii.",
+      "free": "Gratuit",
+      "service": "Serviciu",
+      "placeholder": "de ex. Tuns",
+      "length": "Durată",
+      "price": "Preț ({currency})",
+      "remove": "Eliminați {name}",
+      "removeEmpty": "Eliminați serviciul",
+      "custom": "Serviciu personalizat",
+      "saving": "Se salvează {n} din {total}",
+      "save": "{count, plural, one {Salvați # serviciu} few {Salvați # servicii} other {Salvați # de servicii}}"
+    },
+    "hours": {
+      "title": "Când pot rezerva clienții la dumneavoastră?",
+      "lead": "Stabiliți săptămâna obișnuită. Pauzele, zilele libere și sărbătorile se pot adăuga oricând din calendar."
+    },
+    "policies": {
+      "minutes": "{count, plural, one {# minut} few {# minute} other {# de minute}}",
+      "title": "Cum ar trebui să funcționeze rezervările?",
+      "lead": "Setările implicite sensibile sunt deja stabilite. Clienții văd aceste reguli înainte de confirmare.",
+      "confirmations": "Confirmări",
+      "instantHint": "Intervalele libere se rezervă imediat. Cea mai populară variantă — clienților le place.",
+      "approve": "Aprobați fiecare cerere",
+      "approveHint": "Confirmați sau refuzați fiecare rezervare. Cererile fără răspuns expiră după 48 de ore.",
+      "freeCancel": "Anulare gratuită până la",
+      "startTime": "Ora de începere",
+      "hoursBefore": "Cu {hours} h înainte",
+      "fee": "Taxă pentru anulare târzie / neprezentare",
+      "noFee": "Fără taxă",
+      "percentOfTotal": "{percent}% din total"
+    },
+    "payments": {
+      "title": "Încasarea plăților",
+      "lead": "Clienții vă pot plăti oricând în persoană. Plățile online vă permit să încasați avansuri, să reduceți neprezentările și să primiți bacșișuri.",
+      "connected": "Plățile online sunt conectate.",
+      "stripeTitle": "Conectați plățile prin Stripe",
+      "stripeBody": "Durează aproximativ cinci minute. Datele cardului sunt gestionate de Stripe și nu ajung niciodată pe serverele Kept.",
+      "connect": "Conectați plățile",
+      "offTitle": "Deocamdată, plăți în persoană",
+      "offBody": "Plățile online nu sunt încă activate pentru această platformă. Clienții vor vedea că plătesc la programare, iar dumneavoastră puteți înregistra plățile din fiecare rezervare."
+    },
+    "preview": {
+      "live": "Sunteți activ",
+      "liveToast": "Clienții vă pot găsi și rezerva acum.",
+      "ready": "Gata când sunteți și dumneavoastră",
+      "almost": "Aproape gata",
+      "liveLead": "Pagina dumneavoastră este publică și primește rezervări.",
+      "lead": "Verificați pagina, apoi activați-o. O puteți pune în pauză oricând.",
+      "finish": "Finalizați",
+      "preview": "Previzualizare",
+      "goToDay": "Mergeți la ziua mea",
+      "goLive": "Activați"
+    },
+    "checklist": {
+      "location": "Adăugați locul unde lucrați",
+      "services": "Creați cel puțin un serviciu",
+      "availability": "Stabiliți programul de lucru"
+    }
   }
 }

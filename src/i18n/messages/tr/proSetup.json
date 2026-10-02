@@ -478,27 +478,224 @@
     "deleteBody": "Herkese açık profilinizden hemen kaldırılır. Bu işlem geri alınamaz.",
     "saved": "Kaydedildi",
     "cancel": "Vazgeç",
-    "pair": {}
+    "save": "Kaydet",
+    "caption": "Açıklama",
+    "captionHint": "Ne yapıldığı — örn. “Dokulu kesimle mid skin fade”.",
+    "service": "Hizmet",
+    "serviceHint": "Müşteriler bu hizmeti açan bir “Rezervasyon yap” düğmesi görür.",
+    "none": "Yok",
+    "doneBy": "Yapan",
+    "notSpecified": "Belirtilmedi",
+    "featureThis": "Öne çıkar",
+    "featureThisHint": "Öne çıkan çalışmalar profilinizde ilk sırada gösterilir.",
+    "pair": {
+      "change": "{label}: {file}. Başka bir fotoğraf seçin",
+      "choose": "Fotoğraf seç: {label}",
+      "choosePhoto": "Fotoğraf seç",
+      "errorBoth": "Hem öncesi hem sonrası fotoğrafını seçin.",
+      "uploadingBefore": "Öncesi fotoğrafı yükleniyor…",
+      "uploadingAfter": "Sonrası fotoğrafı yükleniyor…",
+      "saving": "Kaydediliyor…",
+      "added": "Öncesi ve sonrası eklendi",
+      "title": "Öncesi ve sonrası ekle",
+      "description": "Müşteriler iki fotoğrafı karşılaştırmak için kaydırıcıyı sürükler. Mümkünse aynı açıyı ve ışığı kullanın.",
+      "submit": "Portfolyoya ekle",
+      "before": "Öncesi",
+      "after": "Sonrası",
+      "serviceHint": "Profilinize bir “Rezervasyon yap” düğmesi ekler."
+    }
   },
-  "embeds": {},
+  "embeds": {
+    "name": "{provider} {kindLower}",
+    "removed": "Profilinizden kaldırıldı",
+    "title": "Sosyal medya hesaplarınızdan",
+    "count": "{count} / {max}",
+    "description": "Profilinizin Öne çıkanlar bölümünde YouTube videoları ve Shorts, TikTok’lar, Instagram gönderileri ve reels’ler, Vimeo videoları, SoundCloud parçaları ve Spotify çıkışlarını sergileyin. Oynatıcılar yalnızca ziyaretçi oynat’a bastığında yüklenir.",
+    "full": "{max} gönderi öne çıkarıyorsunuz; bir profilin gösterebileceği en fazla sayı bu. Başka eklemek için birini kaldırın.",
+    "editItem": "{label} öğesini düzenle",
+    "moveItemUp": "{label} öğesini yukarı taşı",
+    "moveItemDown": "{label} öğesini aşağı taşı",
+    "editMenu": "Açıklamayı ve hizmeti düzenle",
+    "moveUp": "Yukarı taşı",
+    "moveDown": "Aşağı taşı",
+    "openOn": "{provider} üzerinde aç",
+    "remove": "Kaldır",
+    "removeTitle": "Profilinizden kaldırılsın mı?",
+    "removeBody": "Öne çıkanlar bölümünden hemen kalkar. Gönderi sosyal medya hesabınızda kalır.",
+    "added": "{name} profilinize eklendi",
+    "linkLabel": "Bir video, gönderi veya parça bağlantısı",
+    "found": "{name} bulundu. Önizlemeyi kontrol edin, sonra ekleyin.",
+    "linkHint": "YouTube, TikTok, Instagram, Vimeo, SoundCloud, Spotify, Apple Music, Apple Podcasts veya Mixcloud’daki Paylaş düğmesinden bağlantıyı kopyalayın.",
+    "captionHint": "Hakkında bir satır — örn. “Lina Vega için mikslendi ve mastering yapıldı”.",
+    "serviceHintAdd": "Gönderinin altına bir “Rezervasyon yap” bağlantısı ekler.",
+    "serviceHintEdit": "Müşteriler gönderinin altında bir “Rezervasyon yap” bağlantısı görür.",
+    "add": "Profile ekle",
+    "clear": "Temizle"
+  },
   "onboarding": {
-    "steps": {},
-    "category": {},
-    "kind": {},
-    "name": {},
-    "branding": {},
-    "location": {
-      "kind": {
-        "physical": {},
-        "mobile": {},
-        "virtual": {}
-      }
+    "metaTitle": "İşletmenizi kurun",
+    "logoSuffix": "İşletme",
+    "progress": "{step} / {total}",
+    "saveExit": "Kaydet ve çık",
+    "exit": "Çık",
+    "stepsNav": "Kurulum adımları",
+    "skipped": "Atlandı",
+    "continue": "Devam",
+    "back": "Geri",
+    "skip": "Şimdilik atla",
+    "saveContinue": "Kaydet ve devam et",
+    "steps": {
+      "category": "Ne sunuyorsunuz",
+      "kind": "Tek kişi veya ekip",
+      "name": "Ad",
+      "branding": "Profil",
+      "location": "Nerede çalışıyorsunuz",
+      "services": "Hizmetler",
+      "availability": "Saatler",
+      "policies": "Rezervasyon kuralları",
+      "payments": "Ödemeler",
+      "preview": "Yayına alma"
     },
-    "services": {},
-    "hours": {},
-    "policies": {},
-    "payments": {},
-    "preview": {},
-    "checklist": {}
+    "category": {
+      "title": "Hoş geldiniz, {name}. Ne sunuyorsunuz?",
+      "lead": "En yakın seçeneği seçin. Her şeyi sunabilirsiniz; bu yalnızca müşterilerin sizi bulmasına yardımcı olur.",
+      "moreSpecific": "Daha ayrıntılı"
+    },
+    "kind": {
+      "title": "Yalnız mısınız, yoksa ekip mi?",
+      "lead": "Her iki durumda da ekip üyelerini daha sonra ekleyebilirsiniz.",
+      "individual": "Sadece ben",
+      "individualHint": "Bağımsız profesyonel; adınız veya markanız, takviminiz.",
+      "business": "Ekipli bir işletme",
+      "businessHint": "Personel, roller ve birden fazla takvimi olan dükkân, stüdyo, salon veya ajans."
+    },
+    "name": {
+      "titleIndividual": "Müşteriler size nasıl hitap etsin?",
+      "titleBusiness": "İşletmenizin adı nedir?",
+      "lead": "Müşteriler arama yaparken ve rezervasyon yaparken bu adı görür.",
+      "labelIndividual": "Mesleki adınız",
+      "labelBusiness": "İşletme adı",
+      "pageHint": "Sayfanız: {url} — daha sonra değiştirebilirsiniz.",
+      "placeholderIndividual": "örn. Maya Okafor Training",
+      "placeholderBusiness": "örn. North Fade Studio",
+      "timezone": "Saat dilimi",
+      "timezoneHint": "Çalışma saatleriniz ve rezervasyonlarınız bu dilimi kullanır.",
+      "currency": "Para birimi",
+      "create": "Sayfamı oluştur"
+    },
+    "branding": {
+      "title": "İyi bir ilk izlenim bırakın",
+      "lead": "Bir fotoğraf ve ne yaptığınıza dair tek bir satır çok işe yarar. İkisi de isteğe bağlıdır ve sonradan kolayca değiştirilebilir.",
+      "changePhoto": "Fotoğrafı değiştir",
+      "addPhoto": "Fotoğraf veya logo ekle",
+      "square": "Kare görseller en iyi sonucu verir.",
+      "tagline": "Sizinle ilgili tek satır",
+      "taglinePlaceholder": "Williamsburg’de hassas fade’ler ve klasik kesimler",
+      "about": "Hakkında",
+      "aboutPlaceholder": "Deneyiminiz, yaklaşımınız, müşterilerin neler bekleyebileceği."
+    },
+    "location": {
+      "locateError": "Konumunuzu alamadık. Müşteriler yine de adresinizi görecek.",
+      "mobileName": "Mobil hizmet",
+      "onlineName": "Online",
+      "listTitle": "Nerede çalışıyorsunuz",
+      "travelsFrom": "{city} merkezinden gelir",
+      "onlineSessions": "Online seanslar",
+      "addAnother": "Başka bir yer ekle",
+      "title": "Randevular nerede gerçekleşiyor?",
+      "lead": "Şimdi ana yerinizi ekleyin. Daha fazla konum, hizmet bölgesi veya online seansı sonra ekleyebilirsiniz.",
+      "kind": {
+        "physical": {
+          "title": "Benim yerimde",
+          "hint": "Dükkân, stüdyo, ofis"
+        },
+        "mobile": {
+          "title": "Müşterilere giderim",
+          "hint": "Evler, ofisler, etkinlikler"
+        },
+        "virtual": {
+          "title": "Online",
+          "hint": "Görüntülü görüşmeler"
+        }
+      },
+      "placeName": "Yer adı",
+      "placeNameHint": "Müşterilere gösterilir, örn. dükkânınızın adı.",
+      "street": "Sokak adresi",
+      "line2": "Daire, ofis, kat",
+      "city": "Şehir",
+      "region": "İl / bölge",
+      "postalCode": "Posta kodu",
+      "country": "Ülke kodu",
+      "countryHint": "İki harf, örn. US, MX, ES",
+      "radius": "Ne kadar uzağa gidersiniz?",
+      "upToKm": "En fazla {km} km",
+      "nearMe": "“Yakınımda” aramalarında görün",
+      "nearMePhysical": "Şu anda bu adresteyseniz, yakındaki müşterilerin sizi bulabilmesi için konumu sabitleyin.",
+      "nearMeMobile": "Yakındaki müşterilerin sizi bulabilmesi için bulunduğunuz yeri sabitleyin.",
+      "pinned": "Konum sabitlendi",
+      "useCurrent": "Mevcut konumumu kullan"
+    },
+    "services": {
+      "errorName": "Bu hizmete bir ad verin",
+      "errorPrice": "Bir fiyat girin (ücretsiz için 0)",
+      "title": "İnsanlar neyi rezerve edebilir?",
+      "lead": "Sunduğunuz her şeyi ekleyin; istediğiniz kadar hizmet olabilir. Seçenekler, ek hizmetler, depozito ve fotoğraflar daha sonra Hizmetler’den eklenebilir.",
+      "free": "Ücretsiz",
+      "service": "Hizmet",
+      "placeholder": "örn. Saç kesimi",
+      "length": "Süre",
+      "price": "Fiyat ({currency})",
+      "remove": "{name} hizmetini kaldır",
+      "removeEmpty": "Hizmeti kaldır",
+      "custom": "Özel hizmet",
+      "saving": "{total} hizmetten {n} kaydediliyor",
+      "save": "{count, plural, one {# hizmeti kaydet} other {# hizmeti kaydet}}"
+    },
+    "hours": {
+      "title": "Size ne zaman rezervasyon yapılabilir?",
+      "lead": "Olağan haftanızı belirleyin. Molalar, izinler ve tatiller takviminizden istediğiniz zaman eklenebilir."
+    },
+    "policies": {
+      "minutes": "{count, plural, one {# dakika} other {# dakika}}",
+      "title": "Rezervasyon nasıl işlemeli?",
+      "lead": "Makul varsayılanlar zaten ayarlı. Müşteriler onaylamadan önce bu kuralları görür.",
+      "confirmations": "Onaylar",
+      "instantHint": "Boş saatler anında rezerve edilir. En popüler seçenek; müşteriler çok seviyor.",
+      "approve": "Her talebi onayla",
+      "approveHint": "Her rezervasyonu onaylar veya reddedersiniz. Yanıtsız talepler 48 saat sonra sona erer.",
+      "freeCancel": "Ücretsiz iptal süresi",
+      "startTime": "Başlangıç saati",
+      "hoursBefore": "{hours} saat önce",
+      "fee": "Geç iptal / gelmeme ücreti",
+      "noFee": "Ücret yok",
+      "percentOfTotal": "Toplamın %{percent}’i"
+    },
+    "payments": {
+      "title": "Ödeme alma",
+      "lead": "Müşteriler size her zaman yüz yüze ödeme yapabilir. Online ödemeler depozito almanızı, gelmeme oranını düşürmenizi ve bahşiş almanızı sağlar.",
+      "connected": "Online ödemeler bağlandı.",
+      "stripeTitle": "Ödemeleri Stripe ile bağlayın",
+      "stripeBody": "Yaklaşık beş dakika sürer. Kart bilgilerini Stripe işler ve Kept sunucularına asla ulaşmaz.",
+      "connect": "Ödemeleri bağla",
+      "offTitle": "Şimdilik yüz yüze ödemeler",
+      "offBody": "Online ödemeler bu platformda henüz açık değil. Müşteriler randevuda ödeme yapacaklarını görür ve siz her rezervasyondan ödemeleri kaydedebilirsiniz."
+    },
+    "preview": {
+      "live": "Yayındasınız",
+      "liveToast": "Müşteriler artık sizi bulup rezervasyon yapabilir.",
+      "ready": "Hazır olduğunuzda hazır",
+      "almost": "Neredeyse tamam",
+      "liveLead": "Sayfanız herkese açık ve rezervasyon alıyor.",
+      "lead": "Sayfanızı kontrol edin, sonra yayına alın. İstediğiniz zaman duraklatabilirsiniz.",
+      "finish": "Bitir",
+      "preview": "Önizleme",
+      "goToDay": "Günüme git",
+      "goLive": "Yayına al"
+    },
+    "checklist": {
+      "location": "Çalıştığınız yeri ekleyin",
+      "services": "En az bir hizmet oluşturun",
+      "availability": "Çalışma saatlerinizi belirleyin"
+    }
   }
 }
