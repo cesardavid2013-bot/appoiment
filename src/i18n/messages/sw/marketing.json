@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept kwa wataalamu — miadi mtandaoni na kalenda inayokufanyia kazi",
+    "description": "Pokea miadi mtandaoni, epuka miadi mara mbili na wasiofika, na ugunduliwe na wateja wa karibu. Bure kuanza kwa wataalamu huru."
+  },
+  "cta": {
+    "dashboard": "Nenda kwenye biashara yako",
+    "setup": "Andaa biashara yako",
+    "start": "Anza — ni bure"
+  },
+  "hero": {
+    "eyebrow": "Kept kwa wataalamu",
+    "title": "Jaza kitabu chako. Weka jioni zako.",
+    "lede": "Miadi mtandaoni, kalenda isiyoweza kuweka miadi mara mbili, vikumbusho vinavyopunguza wasiofika, na wasifu mbele ya watu wa karibu wanaotafuta hasa unachofanya. Bure kuanza.",
+    "howItWorks": "Inavyofanya kazi",
+    "note": "Hakuna kadi inayohitajika. Wasifu wako hubaki wa faragha hadi uuchapishe."
+  },
+  "sides": {
+    "heading": "Jinsi Kept inavyofanya kazi kwa wateja na kwako",
+    "clients": {
+      "eyebrow": "Kwa wateja wako",
+      "title": "Gundua na uweke miadi na wataalamu bora.",
+      "points": {
+        "search": "Tafuta kwa huduma, mahali na wakati, na uone nafasi halisi — si fomu ya mawasiliano.",
+        "prices": "Bei za wazi, sera zako na maoni yaliyothibitishwa kabla hawajaweka miadi.",
+        "reminders": "Vikumbusho, maelekezo, na kupanga upya bila kupiga simu."
+      }
+    },
+    "you": {
+      "eyebrow": "Kwako",
+      "title": "Endesha miadi yako na ukuze biashara yako.",
+      "points": {
+        "calendar": "Kalenda moja ya miadi, mapumziko na likizo — kwenye simu yako.",
+        "deposits": "Amana na kanuni za kughairi zinazotekelezwa kwa ajili yako.",
+        "clients": "Historia ya wateja, madokezo na maoni yanayowarudisha watu."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Anza kuonekana kwa hatua tatu",
+    "profile": {
+      "title": "Andaa wasifu wako",
+      "body": "Ongeza huduma zako na bei na muda, saa zako za kazi, mahali unapofanyia kazi na picha chache za kazi yako. Tunakuongoza."
+    },
+    "share": {
+      "title": "Shiriki kiungo chako",
+      "body": "Weka {host}/jina-lako kwenye wasifu wako na kwenye kadi zako. Ukishachapisha, pia unaonekana kwenye utafutaji wa watu wa karibu."
+    },
+    "book": {
+      "title": "Pokea miadi",
+      "body": "Wateja huchagua nafasi halisi na kuweka miadi kwa sekunde. Wewe unaarifiwa, wao wanapata vikumbusho, na kalenda yako inabaki sahihi."
+    }
+  },
+  "industries": {
+    "heading": "Imejengwa kwa huduma yoyote unayoweka miadi kwa saa",
+    "lede": "Kama wateja huweka miadi ya muda wako, Kept inakufaa — iwe unafanya kazi peke yako kutoka kiti kimoja au unaendesha timu katika maeneo kadhaa."
+  },
+  "features": {
+    "heading": "Kila kitu ambacho siku inahitaji",
+    "booking": {
+      "title": "Miadi mtandaoni yenye upatikanaji halisi",
+      "p1": "Wateja huona tu nyakati ambazo unaweza kweli kuzifanya — saa zako za kazi, ukiondoa miadi iliyopo, mapumziko, nafasi za kati na likizo, kwa taarifa ya chini kabisa na umbali wa mbele wanaoweza kuweka miadi.",
+      "p2": "Kila miadi hukaguliwa tena wakati inapowekwa, kwa hiyo watu wawili hawawezi kamwe kupata nafasi moja, hata wakigusa sekunde ile ile."
+    },
+    "services": {
+      "title": "Huduma zinazofanya kazi kama unavyopanga bei",
+      "p1": "Bei isiyobadilika, kuanzia, kiwango, bure au kwa mashauriano. Ongeza chaguo kama urefu, ukubwa au nyongeza, na kila moja hurekebisha bei na muda unaoshikiliwa kwenye kalenda yako.",
+      "p2": "Ongeza nafasi za kati kabla au baada, weka huduma kwa baadhi ya wanatimu au maeneo, na uulize maswali ya awali kabla ya ziara ya kwanza."
+    },
+    "policies": {
+      "title": "Amana na sera, zinazotekelezwa kwa ajili yako",
+      "p1": "Omba amana au malipo kamili mapema, weka muda wa kughairi na ada ya kughairi kwa kuchelewa au kutofika. Wateja huona kanuni kabla ya kuweka miadi, na marejesho huzifuata kiotomatiki."
+    },
+    "reminders": {
+      "title": "Vikumbusho vinavyopunguza wasiofika",
+      "p1": "Uthibitisho na vikumbusho hutumwa vyenyewe — kwa kawaida siku moja kabla na saa mbili kabla — pamoja na kiungo cha kupanga upya ndani ya kanuni zako badala ya kutofika tu.",
+      "p2": "Mtu anapoghairi, wateja walio kwenye orodha yako ya kusubiri ya siku hiyo hupata habari ya nafasi."
+    },
+    "clients": {
+      "title": "Wajue wateja wako",
+      "p1": "Kila mteja ana rekodi ya ziara, matumizi, kughairi na kutofika, pamoja na madokezo ya faragha ambayo timu yako pekee inaweza kuona. Tuma ujumbe kwa wateja kutoka mahali pale pale."
+    },
+    "team": {
+      "title": "Kutoka kiti kimoja hadi timu na maeneo mengi",
+      "p1": "Ongeza wanatimu wenye saa na huduma zao wenyewe, na majukumu yanayodhibiti kila mtu anaweza kuona na kufanya nini. Endesha maeneo kadhaa, kila moja na saa zake za eneo na saa za kazi."
+    },
+    "portfolio": {
+      "title": "Jalada la kazi linalopata miadi",
+      "p1": "Onyesha picha na video fupi za kazi yako. Unganisha kila moja na huduma, na wateja wanaweza kugusa “Weka miadi ya hii” kuweka miadi ya hasa walichokiona."
+    },
+    "spotlight": {
+      "title": "Spotlight — bure wakati wa uzinduzi",
+      "p1": "Tangaza wasifu wako kwenye utafutaji na kurasa za kategoria karibu nawe. Matokeo yaliyotangazwa huwa na lebo kila wakati, yamezuiwa hadi mawili kwa ukurasa, na bado huonyesha alama zako halisi na nafasi zako.",
+      "p2": "Spotlight haigharimu chochote wakati Kept inazinduliwa. Hilo likibadilika, tutakuambia kabla ya kutoza chochote — haibadiliki kuwa ya kulipia yenyewe."
+    }
+  },
+  "plans": {
+    "heading": "Mipango",
+    "lede": "Wakati Kept inazinduliwa, kila biashara mpya inaanza na {plan} bila ada ya kila mwezi. Bei za mipango ya kulipia zitatangazwa muda mrefu kabla hazijaanza kutumika, na hakuna anayetozwa bila kuchagua mpango.",
+    "badge": {
+      "launch": "Bure wakati wa uzinduzi",
+      "available": "Inapatikana sasa",
+      "unavailable": "Haipatikani bado"
+    },
+    "period": {
+      "launch": "kwa mwezi wakati tunazindua",
+      "available": "kwa mwezi",
+      "unavailable": "Bei itatangazwa"
+    },
+    "rows": {
+      "members": "Wanatimu wanaoweza kuwekewa miadi",
+      "locations": "Maeneo",
+      "fee": "Ada kwenye malipo ya mtandaoni",
+      "roles": "Majukumu maalum ya timu",
+      "analytics": "Uchambuzi wa hali ya juu"
+    },
+    "justYou": "1 (wewe tu)",
+    "upTo": "Hadi {n}",
+    "included": "Imejumuishwa",
+    "notIncluded": "Haijajumuishwa",
+    "summary": {
+      "free": "Miadi mtandaoni, kalenda, vikumbusho, amana, rekodi za wateja, fomu za awali, jalada la kazi na Spotlight vyote vimejumuishwa.",
+      "launch": "Kila kitu kwenye {base}, pamoja na timu ya hadi {members}, maeneo zaidi, majukumu maalum na ada za chini. Wanachopata biashara mpya leo.",
+      "other": "Kwa timu kubwa zaidi na biashara za maeneo mengi."
+    },
+    "footnote": "Ada inatumika tu kwa malipo ambayo wateja hufanya mtandaoni kupitia Kept. Miadi inayolipiwa ana kwa ana haina ada ya Kept. Unahitaji watu au maeneo zaidi ya mpango wako unavyoruhusu? <link>Tuambie</link>."
+  },
+  "faq": {
+    "heading": "Maswali",
+    "cost": {
+      "q": "Kept inagharimu kiasi gani?",
+      "a": "Hakuna ada ya kila mwezi: wakati Kept inazinduliwa, biashara mpya hupata mpango wa {plan} bure. Mteja anapolipa mtandaoni — amana au bei kamili — Kept huchukua {fee} ya malipo hayo. Miadi inayolipiwa ana kwa ana haina ada ya Kept kabisa."
+    },
+    "clientFee": {
+      "q": "Je, wateja wangu hulipa ili kuweka miadi?",
+      "aFee": "Wateja huona ada ya huduma ya {fee} wakati wa kulipa, inayoonyeshwa kabla ya kuthibitisha. Hakuna kinachoongezwa baadaye.",
+      "aFree": "Hapana. Wateja huweka miadi bure na kuona bei yako kamili kabla ya kuthibitisha."
+    },
+    "payments": {
+      "q": "Je, ni lazima nipokee malipo mtandaoni?",
+      "a": "Hapana. Unaweza kuwaruhusu wateja walipe ana kwa ana, au kuhitaji amana au malipo kamili wanapoweka miadi. Malipo ya mtandaoni huchakatwa na Stripe na kulipwa kwenye akaunti yako ya benki."
+    },
+    "approve": {
+      "q": "Je, naweza kuidhinisha miadi kabla haijathibitishwa?",
+      "a": "Ndiyo. Chagua miadi ya papo hapo, au hali ya ombi ambapo kila miadi inasubiri idhini yako. Wakati unashikiliwa unapoamua, na maombi usiyojibu huisha muda yenyewe."
+    },
+    "where": {
+      "q": "Ninafanya kazi nyumbani, nasafiri kwa wateja, au nafundisha mtandaoni. Je, hilo linawezekana?",
+      "a": "Ndiyo. Kila eneo linaweza kuwa anwani halisi, eneo la huduma ya kuhama ambapo wateja wanakupa anwani zao, au kikao cha mtandaoni. Unaweza kutoa mchanganyiko wowote."
+    },
+    "spotlight": {
+      "q": "Spotlight inafanyaje kazi?",
+      "a": "Spotlight huonyesha wasifu wako kama matokeo yenye lebo wazi ya “Imetangazwa” kwenye utafutaji na kurasa za kategoria, hadi mawili kwa ukurasa. Ni bure wakati wa uzinduzi — ianze au uisimamishe wakati wowote kutoka dashibodi yako."
+    },
+    "link": {
+      "q": "Naweza kutumia kiungo changu mwenyewe?",
+      "a": "Ndiyo. Kila biashara hupata wasifu kwenye {host}/jina-lako unaoweza kushiriki kwenye Instagram, kwenye wasifu wako au kwenye msimbo wa QR. Wateja wanaoweka miadi kupitia kwake hawahitaji kukutafuta."
+    }
+  },
+  "closing": {
+    "title": "Mteja wako ajaye tayari anatafuta.",
+    "body": "Andaa huduma na saa zako, chapisha wasifu wako, na uanze kupokea miadi leo."
+  },
+  "demo": {
+    "example": "Mfano",
+    "today": {
+      "label": "Mfano wa ratiba ya Leo ambayo mtaalamu huona",
+      "title": "Leo",
+      "summary": "{count, plural, one {miadi #} other {miadi #}} · {amount} imewekwa",
+      "skinFade": "Skin fade",
+      "beardTrim": "Kupunguza ndevu na kunyoa mistari",
+      "lunch": "Chakula cha mchana",
+      "signatureCut": "Mtindo wa kipekee",
+      "kidsCut": "Kunyoa watoto",
+      "firstVisit": "{name} · ziara ya kwanza",
+      "confirmed": "Imethibitishwa",
+      "depositPaid": "Amana imelipwa",
+      "needsApproval": "Inahitaji idhini",
+      "checkedIn": "Amewasili"
+    },
+    "reminder": {
+      "label": "Mfano wa kikumbusho cha kiotomatiki ambacho mteja hupokea",
+      "when": "Saa 24 kabla",
+      "title": "Kikumbusho: {service} kesho",
+      "body": "{time} na Dre kwenye North Fade Studio. Unahitaji kubadilisha? Panga upya hadi saa 24 kabla."
+    },
+    "grid": {
+      "label": "Mfano wa kichagua wakati ambacho wateja hutumia kuweka miadi, kikionyesha nyakati wazi tu",
+      "title": "Chagua wakati",
+      "instant": "Uthibitisho wa papo hapo",
+      "note": "Nyakati zilizochukuliwa hupotea mara mtu anapoweka miadi. Watu wawili hawawezi kamwe kupata nafasi moja."
+    },
+    "policy": {
+      "label": "Mfano wa sera ya amana na kughairi",
+      "title": "Sera ya miadi",
+      "deposit": "Amana",
+      "depositValue": "{pct} wakati wa kuweka miadi",
+      "freeCancel": "Kughairi bila malipo",
+      "freeCancelValue": "Hadi saa 24 kabla",
+      "lateCancel": "Kughairi kwa kuchelewa",
+      "lateCancelValue": "{pct} ya jumla",
+      "noShow": "Kutofika",
+      "noShowValue": "Amana inabaki",
+      "dueNow": "Inadaiwa sasa",
+      "dueValue": "{due} kati ya {total}"
+    },
+    "client": {
+      "label": "Mfano wa rekodi ya mteja",
+      "since": "Mteja tangu {month} · {visits, plural, one {ziara #} other {ziara #}}",
+      "spent": "Alitumia",
+      "noShows": "Hakufika",
+      "gap": "Muda wa kawaida",
+      "gapValue": "wiki {weeks}",
+      "note": "Dokezo la faragha: ngozi ya kichwa nyeti — tumia shampoo laini."
+    },
+    "team": {
+      "label": "Mfano wa timu katika maeneo mawili",
+      "title": "Timu",
+      "senior": "Kinyozi mkuu",
+      "barber": "Kinyozi",
+      "frontDesk": "Mapokezi"
+    },
+    "portfolio": {
+      "label": "Mfano wa machapisho ya jalada la kazi yaliyounganishwa na huduma inayoweza kuwekewa miadi",
+      "skinFade": "Skin fade",
+      "taper": "Taper na ndevu",
+      "bookThis": "Weka miadi ya hii",
+      "note": "Picha na video zako zinaonekana hapa — gusa moja kuweka miadi ya huduma hiyo hasa."
+    },
+    "spotlight": {
+      "label": "Mfano wa tangazo kwenye matokeo ya utafutaji",
+      "category": "Kinyozi",
+      "promoted": "Imetangazwa"
+    },
+    "options": {
+      "service": "Knotless braids",
+      "hint": "Huduma ya mfano · jaribu chaguo",
+      "length": "Urefu",
+      "shoulder": "Hadi begani",
+      "mid": "Hadi katikati ya mgongo",
+      "waist": "Hadi kiunoni",
+      "addons": "Nyongeza",
+      "wash": "Kuosha na kukausha",
+      "beads": "Shanga na pete",
+      "included": "Imejumuishwa",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}
