@@ -60,7 +60,11 @@
     "title": "暂无匹配结果",
     "query": "试试更宽泛的词、换一种写法，或移除部分筛选条件。",
     "filters": "试试移除筛选条件或扩大搜索范围。",
-    "clear": "清除所有筛选"
+    "clear": "清除所有筛选",
+    "categoryTitle": "这里还没有{category}专业人士入驻",
+    "categoryBody": "Kept 正在逐城拓展。您提供这项服务吗？您的预约页面今天就能上线。",
+    "listServices": "发布您的服务",
+    "seeAll": "查看所有专业人士"
   },
   "showMore": "显示更多",
   "filters": {

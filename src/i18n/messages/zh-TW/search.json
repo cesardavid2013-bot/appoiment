@@ -60,7 +60,11 @@
     "title": "目前沒有符合的結果",
     "query": "請試試更廣泛的字詞、換個寫法，或移除部分篩選條件。",
     "filters": "請試著移除篩選條件，或擴大搜尋範圍。",
-    "clear": "清除所有篩選條件"
+    "clear": "清除所有篩選條件",
+    "categoryTitle": "這裡還沒有{category}專業人士入駐",
+    "categoryBody": "Kept 正逐城拓展。您提供這項服務嗎？您的預約頁面今天就能上線。",
+    "listServices": "刊登您的服務",
+    "seeAll": "查看所有專業人士"
   },
   "showMore": "顯示更多",
   "filters": {
