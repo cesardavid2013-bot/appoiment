@@ -27,7 +27,11 @@
       "cancelled": "Nichts storniert",
       "upcomingBody": "Sobald du buchst, erscheinen deine Termine hier — mit Wegbeschreibung, Erinnerungen und einfachem Umbuchen.",
       "findPro": "Profi finden"
-    }
+    },
+    "nextUp": "Als Nächstes · {when}",
+    "nextUpOn": "Als Nächstes · {day}",
+    "details": "Details",
+    "directions": "Route"
   },
   "detail": {
     "metaTitle": "Termin",

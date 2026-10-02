@@ -27,7 +27,11 @@
       "cancelled": "Aucune annulation",
       "upcomingBody": "Quand vous réservez, vos rendez-vous s'affichent ici — avec l'itinéraire, des rappels et une modification facile.",
       "findPro": "Trouver un professionnel"
-    }
+    },
+    "nextUp": "Prochain rendez-vous · {when}",
+    "nextUpOn": "Prochain rendez-vous · {day}",
+    "details": "Détails",
+    "directions": "Itinéraire"
   },
   "detail": {
     "metaTitle": "Rendez-vous",

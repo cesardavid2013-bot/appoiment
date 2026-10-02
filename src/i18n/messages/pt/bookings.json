@@ -27,7 +27,11 @@
       "cancelled": "Nada cancelado",
       "upcomingBody": "Quando você reservar, seus agendamentos aparecem aqui — com rotas, lembretes e reagendamento fácil.",
       "findPro": "Encontrar um profissional"
-    }
+    },
+    "nextUp": "A seguir · {when}",
+    "nextUpOn": "A seguir · {day}",
+    "details": "Detalhes",
+    "directions": "Como chegar"
   },
   "detail": {
     "metaTitle": "Agendamento",

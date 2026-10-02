@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Bei {name} buchen",
+    "fallbackTitle": "Buchen"
+  },
+  "steps": {
+    "service": "Leistung wählen",
+    "options": "Anpassen",
+    "who": "Wer & wo",
+    "time": "Zeit wählen",
+    "details": "Ein paar Details",
+    "review": "Prüfen & bestätigen"
+  },
+  "header": {
+    "backTo": "Zurück zu {name}",
+    "previousStep": "Vorheriger Schritt",
+    "stepOf": "Schritt {current} von {total}",
+    "exit": "Buchung verlassen"
+  },
+  "service": {
+    "optionsAvailable": "Optionen verfügbar",
+    "group": "Gruppe · bis zu {count}"
+  },
+  "options": {
+    "required": "Erforderlich",
+    "upTo": "Wähle bis zu {count}",
+    "optionalAny": "Optional · beliebig viele wählbar",
+    "optional": "Optional",
+    "included": "Inklusive",
+    "errorRequired": "Wähle eine Option für „{name}“.",
+    "errorOnlyOne": "Wähle nur eine Option für „{name}“.",
+    "errorUpTo": "Wähle bis zu {count} für „{name}“.",
+    "errorUnavailable": "Eine der gewählten Optionen ist nicht mehr verfügbar."
+  },
+  "who": {
+    "where": "Wo",
+    "with": "Bei",
+    "comesToYou": "Kommt zu dir · im Umkreis von {km} km um {city}",
+    "online": "Online-Termin",
+    "anyPro": "Beliebiger verfügbarer Profi",
+    "anyProHint": "Die meisten Termine – wir finden für dich, wer gerade frei ist."
+  },
+  "details": {
+    "addressLabel": "Wohin sollen wir kommen?",
+    "addressHint": "Im Umkreis von {km} km um {city}. Wird nur mit dem Unternehmen geteilt.",
+    "addressPlaceholder": "Straße, Wohnung, Stadt",
+    "consent": "Ich habe das Obige gelesen und stimme zu",
+    "age": "Ich bestätige, dass ich mindestens {age} Jahre alt bin",
+    "noteLabel": "Gibt es noch etwas, das sie wissen sollten?",
+    "notePlaceholder": "Allergien, Vorlieben, Hinweise zum Parken …"
+  },
+  "review": {
+    "changeTime": "Zeit ändern",
+    "with": "Bei",
+    "where": "Wo",
+    "yourAddress": "Deine Adresse",
+    "online": "Online",
+    "noteLabel": "Etwas, das sie wissen sollten?",
+    "notePlaceholder": "Vorlieben, Fragen, Barrierefreiheit …",
+    "promoApplied": "{code} angewendet",
+    "promoRemove": "Entfernen",
+    "promoPlaceholder": "Promocode",
+    "promoApply": "Einlösen",
+    "beforeYouBook": "Vor der Buchung",
+    "bookingAs": "Buchung als {name}"
+  },
+  "confirm": {
+    "request": "Buchungsanfrage senden",
+    "requestShort": "Anfrage senden",
+    "pay": "Bestätigen und {amount} bezahlen",
+    "payShort": "{amount} bezahlen",
+    "confirm": "Buchung bestätigen",
+    "confirmShort": "Bestätigen"
+  },
+  "summary": {
+    "label": "Buchungsübersicht",
+    "instant": "Sofortbestätigung",
+    "request": "Wird vom Unternehmen bestätigt",
+    "total": "Gesamt",
+    "estimatedTotal": "Geschätzter Gesamtbetrag",
+    "estimated": "Geschätzt",
+    "comesToYou": "Kommt zu dir",
+    "online": "Online",
+    "empty": "Wähle eine Leistung, um Zeiten und Preise zu sehen.",
+    "continue": "Weiter",
+    "signInToBook": "Zum Buchen anmelden"
+  },
+  "time": {
+    "preselectMissed": "Die gewählte Zeit ist mit diesen Optionen nicht mehr verfügbar. Hier sind die nächstgelegenen Termine.",
+    "previousWeeks": "Vorherige zwei Wochen",
+    "nextWeeks": "Nächste zwei Wochen",
+    "chooseDate": "Datum wählen",
+    "today": "Heute",
+    "timesAvailable": "{count, plural, one {# Termin verfügbar} other {# Termine verfügbar}}",
+    "noAvailability": "Keine Verfügbarkeit",
+    "noOpeningsOn": "Keine freien Termine am {date}",
+    "noOpeningsThisDay": "An diesem Tag keine freien Termine",
+    "nextOpening": "Nächster freier Termin: {date}.",
+    "tryLater": "Probiere die nächsten zwei Wochen oder trag dich auf die Warteliste ein – wir melden uns, sobald etwas frei wird.",
+    "joinWaitlist": "Auf die Warteliste für diesen Tag",
+    "morning": "Vormittag",
+    "afternoon": "Nachmittag",
+    "evening": "Abend",
+    "morningTimes": "Termine am Vormittag",
+    "afternoonTimes": "Termine am Nachmittag",
+    "eveningTimes": "Termine am Abend",
+    "spotsLeft": "{count, plural, one {# übrig} other {# übrig}}",
+    "timesIn": "Zeiten in {abbr} ({zone}).",
+    "timesInLocal": "Zeiten in {abbr} ({zone}) – bei dir ist das {time}."
+  },
+  "waitlist": {
+    "title": "Auf die Warteliste",
+    "description": "Wenn am {date} ein Termin frei wird, benachrichtigen wir dich sofort. Freie Termine gehen an den, der zuerst bucht.",
+    "cancel": "Abbrechen",
+    "notify": "Benachrichtige mich",
+    "windowLabel": "Zeiten, die für dich passen",
+    "any": "Jede Uhrzeit an dem Tag",
+    "morning": "Vormittag (vor 12 Uhr)",
+    "afternoon": "Nachmittag (12 – 17 Uhr)",
+    "evening": "Abend (nach 17 Uhr)",
+    "joined": "Du stehst auf der Warteliste",
+    "joinedBody": "Wir benachrichtigen dich sofort, wenn ein Termin frei wird."
+  },
+  "price": {
+    "label": "Preisübersicht",
+    "total": "Gesamt",
+    "estimatedTotal": "Geschätzter Gesamtbetrag",
+    "payNow": "Jetzt bezahlen",
+    "depositNow": "Jetzt fällige Anzahlung",
+    "remaining": "Restbetrag vor Ort",
+    "nothingNow": "Jetzt ist nichts zu zahlen – bezahle vor Ort.",
+    "estimateNote": "Der Endpreis wird vom Unternehmen bestätigt und kann je nach Aufwand abweichen.",
+    "tax": "Steuern",
+    "serviceFee": "Servicegebühr"
+  },
+  "checkout": {
+    "title": "Zahlung",
+    "description": "Schließe die Zahlung ab, um deine Buchung zu bestätigen.",
+    "pay": "{amount} bezahlen",
+    "secured": "Gesichert durch Stripe. Dein Termin bleibt während der Zahlung reserviert.",
+    "declined": "Deine Karte wurde abgelehnt.",
+    "failed": "Die Zahlung konnte nicht abgeschlossen werden. Deine Karte wurde nicht belastet – bitte versuche es erneut."
+  },
+  "intake": {
+    "optional": "(optional)",
+    "yes": "Ja",
+    "no": "Nein"
+  }
+}

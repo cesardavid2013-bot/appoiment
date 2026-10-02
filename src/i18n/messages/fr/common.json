@@ -86,5 +86,32 @@
     "depositRefundable": "L'acompte est remboursé si vous annulez à temps.",
     "depositNonRefundable": "L'acompte n'est pas remboursable.",
     "reschedule": "Modification en ligne jusqu'à {hours} h avant."
+  },
+  "ui": {
+    "close": "Fermer",
+    "keepIt": "Conserver",
+    "optional": "Facultatif",
+    "stars": "{value} sur 5 étoiles",
+    "notifications": "Notifications"
+  },
+  "notFound": {
+    "eyebrow": "Page introuvable",
+    "title": "Cette page a déménagé.",
+    "body": "Le lien est peut-être ancien, ou le professionnel a changé d'adresse.",
+    "home": "Retour à l'accueil",
+    "explore": "Découvrir les professionnels"
+  },
+  "error": {
+    "eyebrow": "Un problème est survenu",
+    "title": "Nous n'avons pas pu charger cette page.",
+    "body": "Le problème vient de chez nous, pas de vous. Réessayez dans un instant — s'il persiste, dites-le-nous.",
+    "retry": "Réessayer",
+    "support": "Contacter l'assistance",
+    "ref": "Référence {id}"
+  },
+  "offline": {
+    "eyebrow": "Vous êtes hors ligne",
+    "title": "Pas de connexion pour le moment.",
+    "body": "Vos réservations sont en sécurité. Reconnectez-vous et Kept reprend là où vous en étiez."
   }
 }

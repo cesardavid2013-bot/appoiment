@@ -148,5 +148,8 @@
     "playlist": "Playlist",
     "episode": "Episodio",
     "show": "Podcast"
+  },
+  "links": {
+    "label": "Pulsanti di link"
   }
 }

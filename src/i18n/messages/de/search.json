@@ -60,7 +60,11 @@
     "title": "Noch keine Treffer",
     "query": "Versuch einen allgemeineren Begriff, eine andere Schreibweise oder entferne einige Filter.",
     "filters": "Entferne einen Filter oder such in einem größeren Umkreis.",
-    "clear": "Alle Filter löschen"
+    "clear": "Alle Filter löschen",
+    "categoryTitle": "Hier sind noch keine Profis für {category} gelistet",
+    "categoryBody": "Kept wächst Stadt für Stadt. Du bietest diese Leistung an? Deine Buchungsseite kann noch heute online gehen.",
+    "listServices": "Leistungen anbieten",
+    "seeAll": "Alle Profis ansehen"
   },
   "showMore": "Mehr anzeigen",
   "filters": {

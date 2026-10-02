@@ -84,5 +84,66 @@
   "other": {
     "name": "Autres",
     "description": "Tout ce que vous pouvez réserver d'autre."
+  },
+  "music-audio": {
+    "name": "Musique et audio",
+    "description": "Producteurs, studios d'enregistrement, mixage et coaching vocal."
+  },
+  "music-production": {
+    "name": "Production musicale"
+  },
+  "recording-studio": {
+    "name": "Studios d'enregistrement"
+  },
+  "vocal-coaching": {
+    "name": "Coaching vocal"
+  },
+  "creators": {
+    "name": "Créateurs et contenu",
+    "description": "Créateurs de contenu, UGC, réseaux sociaux et montage vidéo."
+  },
+  "content-creation": {
+    "name": "Création de contenu"
+  },
+  "video-editing": {
+    "name": "Montage vidéo"
+  },
+  "social-media": {
+    "name": "Gestion des réseaux sociaux"
+  },
+  "design": {
+    "name": "Design et création",
+    "description": "Design graphique, identité de marque, web et décoration d'intérieur."
+  },
+  "graphic-design": {
+    "name": "Design graphique et identité de marque"
+  },
+  "web-design": {
+    "name": "Web design"
+  },
+  "interior-design": {
+    "name": "Décoration d'intérieur"
+  },
+  "health": {
+    "name": "Santé et soins",
+    "description": "Kinésithérapie, nutrition, thérapie et soins holistiques."
+  },
+  "physio": {
+    "name": "Kinésithérapie et chiropraxie"
+  },
+  "nutrition": {
+    "name": "Nutrition"
+  },
+  "therapy": {
+    "name": "Thérapie et accompagnement psychologique"
+  },
+  "cleaning": {
+    "name": "Ménage et nettoyage"
+  },
+  "handyman": {
+    "name": "Bricolage et réparations"
+  },
+  "gardening": {
+    "name": "Jardinage"
   }
 }

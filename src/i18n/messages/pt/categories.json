@@ -84,5 +84,66 @@
   "other": {
     "name": "Outros",
     "description": "Tudo o mais que você pode reservar."
+  },
+  "music-audio": {
+    "name": "Música e áudio",
+    "description": "Produtores, estúdios de gravação, mixagem e aulas de canto."
+  },
+  "music-production": {
+    "name": "Produção musical"
+  },
+  "recording-studio": {
+    "name": "Estúdios de gravação"
+  },
+  "vocal-coaching": {
+    "name": "Aulas de canto"
+  },
+  "creators": {
+    "name": "Criadores e conteúdo",
+    "description": "Criadores de conteúdo, UGC, redes sociais e edição de vídeo."
+  },
+  "content-creation": {
+    "name": "Criação de conteúdo"
+  },
+  "video-editing": {
+    "name": "Edição de vídeo"
+  },
+  "social-media": {
+    "name": "Gestão de redes sociais"
+  },
+  "design": {
+    "name": "Design e criação",
+    "description": "Design gráfico, de marca, web e de interiores."
+  },
+  "graphic-design": {
+    "name": "Design gráfico e de marca"
+  },
+  "web-design": {
+    "name": "Web design"
+  },
+  "interior-design": {
+    "name": "Design de interiores"
+  },
+  "health": {
+    "name": "Saúde e cuidados",
+    "description": "Fisioterapia, nutrição, terapia e cuidados holísticos."
+  },
+  "physio": {
+    "name": "Fisioterapia e quiropraxia"
+  },
+  "nutrition": {
+    "name": "Nutrição"
+  },
+  "therapy": {
+    "name": "Terapia e aconselhamento"
+  },
+  "cleaning": {
+    "name": "Limpeza"
+  },
+  "handyman": {
+    "name": "Manutenção e reparos"
+  },
+  "gardening": {
+    "name": "Jardinagem"
   }
 }

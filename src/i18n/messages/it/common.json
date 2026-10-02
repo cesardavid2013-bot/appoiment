@@ -86,5 +86,32 @@
     "depositRefundable": "Gli acconti vengono rimborsati se cancelli in tempo.",
     "depositNonRefundable": "Gli acconti non sono rimborsabili.",
     "reschedule": "Modifiche online fino a {hours} ore prima."
+  },
+  "ui": {
+    "close": "Chiudi",
+    "keepIt": "Mantieni",
+    "optional": "Facoltativo",
+    "stars": "{value} stelle su 5",
+    "notifications": "Notifiche"
+  },
+  "notFound": {
+    "eyebrow": "Pagina non trovata",
+    "title": "Questa pagina si è spostata.",
+    "body": "Il link potrebbe essere vecchio, oppure il professionista ha cambiato indirizzo.",
+    "home": "Torna alla home",
+    "explore": "Esplora i professionisti"
+  },
+  "error": {
+    "eyebrow": "Qualcosa è andato storto",
+    "title": "Non siamo riusciti a caricare questa pagina.",
+    "body": "Il problema è da parte nostra, non tua. Riprova tra un momento: se continua, faccelo sapere.",
+    "retry": "Riprova",
+    "support": "Contatta l'assistenza",
+    "ref": "Riferimento {id}"
+  },
+  "offline": {
+    "eyebrow": "Sei offline",
+    "title": "Nessuna connessione al momento.",
+    "body": "Le tue prenotazioni sono al sicuro. Riconnettiti e Kept riparte da dove eri rimasto."
   }
 }

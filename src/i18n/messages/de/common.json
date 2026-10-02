@@ -86,5 +86,32 @@
     "depositRefundable": "Anzahlungen werden erstattet, wenn du rechtzeitig stornierst.",
     "depositNonRefundable": "Anzahlungen werden nicht erstattet.",
     "reschedule": "Online umbuchen bis {hours} Std. vorher."
+  },
+  "ui": {
+    "close": "Schließen",
+    "keepIt": "Behalten",
+    "optional": "Optional",
+    "stars": "{value} von 5 Sternen",
+    "notifications": "Benachrichtigungen"
+  },
+  "notFound": {
+    "eyebrow": "Seite nicht gefunden",
+    "title": "Diese Seite ist umgezogen.",
+    "body": "Der Link ist vielleicht veraltet, oder der Profi hat seine Adresse geändert.",
+    "home": "Zurück zur Startseite",
+    "explore": "Profis entdecken"
+  },
+  "error": {
+    "eyebrow": "Etwas ist schiefgelaufen",
+    "title": "Wir konnten diese Seite nicht laden.",
+    "body": "Der Fehler liegt bei uns, nicht bei dir. Versuch es gleich noch einmal – falls es weiter auftritt, sag uns Bescheid.",
+    "retry": "Erneut versuchen",
+    "support": "Support kontaktieren",
+    "ref": "Referenz {id}"
+  },
+  "offline": {
+    "eyebrow": "Du bist offline",
+    "title": "Gerade keine Verbindung.",
+    "body": "Deine Buchungen sind sicher. Verbinde dich wieder, und Kept macht genau da weiter, wo du aufgehört hast."
   }
 }

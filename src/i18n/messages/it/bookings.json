@@ -27,7 +27,11 @@
       "cancelled": "Nessuna cancellazione",
       "upcomingBody": "Quando prenoti, i tuoi appuntamenti compaiono qui — con indicazioni stradali, promemoria e modifiche semplici.",
       "findPro": "Trova un professionista"
-    }
+    },
+    "nextUp": "Prossimo · {when}",
+    "nextUpOn": "Prossimo · {day}",
+    "details": "Dettagli",
+    "directions": "Indicazioni"
   },
   "detail": {
     "metaTitle": "Appuntamento",
