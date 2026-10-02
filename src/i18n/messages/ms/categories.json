@@ -1,0 +1,149 @@
+{
+  "barber": {
+    "name": "Barber"
+  },
+  "hair": {
+    "name": "Rambut & barber",
+    "description": "Gunting, warna, gaya rambut, kepang dan dandanan."
+  },
+  "lashes-brows": {
+    "name": "Bulu mata & kening"
+  },
+  "massage": {
+    "name": "Urut"
+  },
+  "personal-training": {
+    "name": "Latihan peribadi"
+  },
+  "hair-salon": {
+    "name": "Salon rambut"
+  },
+  "makeup": {
+    "name": "Solekan"
+  },
+  "nails": {
+    "name": "Kuku",
+    "description": "Manikur, pedikur, sambungan kuku dan seni kuku."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga & pilates"
+  },
+  "beauty": {
+    "name": "Kecantikan",
+    "description": "Bulu mata, kening, solekan dan penjagaan kulit."
+  },
+  "braids-locs": {
+    "name": "Kepang & loc"
+  },
+  "skincare": {
+    "name": "Kulit & estetik"
+  },
+  "wellness": {
+    "name": "Kesejahteraan",
+    "description": "Urutan, spa dan terapi badan."
+  },
+  "fitness": {
+    "name": "Kecergasan",
+    "description": "Latihan peribadi, yoga, pilates dan bimbingan."
+  },
+  "tattoo-piercing": {
+    "name": "Tatu & tindik",
+    "description": "Tatu rekaan khas, reka bentuk flash dan tindikan."
+  },
+  "photography": {
+    "name": "Foto & video",
+    "description": "Potret, acara, produk dan video."
+  },
+  "education": {
+    "name": "Pelajaran & tuisyen",
+    "description": "Tutor, guru muzik dan kelas bahasa."
+  },
+  "home-services": {
+    "name": "Rumah & taman",
+    "description": "Pembersihan, pembaikan, tukang dan berkebun."
+  },
+  "automotive": {
+    "name": "Automotif",
+    "description": "Detailing, cuci kereta dan mekanik bergerak."
+  },
+  "pets": {
+    "name": "Haiwan peliharaan",
+    "description": "Dandanan, penjagaan dan latihan."
+  },
+  "events": {
+    "name": "Acara",
+    "description": "DJ, perancang dan profesional acara."
+  },
+  "professional": {
+    "name": "Perkhidmatan profesional",
+    "description": "Perunding, jurulatih dan penasihat."
+  },
+  "other": {
+    "name": "Lain-lain",
+    "description": "Semua yang lain yang boleh anda tempah."
+  },
+  "music-audio": {
+    "name": "Muzik & audio",
+    "description": "Penerbit, studio rakaman, penyebatian dan bimbingan vokal."
+  },
+  "music-production": {
+    "name": "Penerbitan muzik"
+  },
+  "recording-studio": {
+    "name": "Studio rakaman"
+  },
+  "vocal-coaching": {
+    "name": "Bimbingan vokal"
+  },
+  "creators": {
+    "name": "Pencipta & kandungan",
+    "description": "Pencipta kandungan, UGC, media sosial dan penyuntingan video."
+  },
+  "content-creation": {
+    "name": "Penciptaan kandungan"
+  },
+  "video-editing": {
+    "name": "Penyuntingan video"
+  },
+  "social-media": {
+    "name": "Pengurusan media sosial"
+  },
+  "design": {
+    "name": "Reka bentuk & kreatif",
+    "description": "Reka bentuk grafik, jenama, web dan hiasan dalaman."
+  },
+  "graphic-design": {
+    "name": "Reka bentuk grafik & jenama"
+  },
+  "web-design": {
+    "name": "Reka bentuk web"
+  },
+  "interior-design": {
+    "name": "Hiasan dalaman"
+  },
+  "health": {
+    "name": "Kesihatan & penjagaan",
+    "description": "Fisio, pemakanan, terapi dan penjagaan holistik."
+  },
+  "physio": {
+    "name": "Fisioterapi & kiropraktik"
+  },
+  "nutrition": {
+    "name": "Pemakanan"
+  },
+  "therapy": {
+    "name": "Terapi & kaunseling"
+  },
+  "cleaning": {
+    "name": "Pembersihan"
+  },
+  "handyman": {
+    "name": "Tukang & pembaikan"
+  },
+  "gardening": {
+    "name": "Berkebun"
+  }
+}
