@@ -1,0 +1,93 @@
+{
+  "youPrefix": "آپ:",
+  "unread": "ناپڑھے",
+  "apptLine": "{service} · {date} کو {time} بجے",
+  "list": {
+    "title": "پیغامات",
+    "unread": "{count, plural, one {# ناپڑھی گفتگو۔} other {# ناپڑھی گفتگوئیں۔}}",
+    "caughtUp": "آپ سب کچھ دیکھ چکے ہیں۔",
+    "emptyTitle": "ابھی کوئی پیغام نہیں",
+    "emptyBody": "کسی خدمت، قیمت یا وقت کے بارے میں سوال ہے؟ پیشہ ور کا صفحہ کھولیں اور «سوال پوچھیں» دبائیں۔ ان کے جوابات یہاں آئیں گے۔",
+    "findPro": "پیشہ ور تلاش کریں"
+  },
+  "thread": {
+    "metaTitle": "گفتگو",
+    "placeholder": "{business} کو پیغام بھیجیں"
+  },
+  "new": {
+    "metaTitle": "نیا پیغام",
+    "ownTitle": "یہ آپ کا اپنا کاروبار ہے",
+    "ownBody": "{business} کو بھیجے گئے گاہکوں کے پیغامات آپ کے بزنس ان باکس میں آتے ہیں۔",
+    "ownButton": "بزنس ان باکس کھولیں",
+    "placeholderBooking": "اس بکنگ کے بارے میں پوچھیں",
+    "placeholderQuestion": "سوال پوچھیں",
+    "emptyBookingTitle": "اپنی بکنگ کے بارے میں {business} کو پیغام بھیجیں",
+    "emptyQuestionTitle": "بک کرنے سے پہلے {business} سے پوچھیں",
+    "emptyBookingBody": "دیر ہو رہی ہے، کچھ بدلنا ہے، یا کوئی سوال ہے؟ آپ کا پیغام سیدھا ان کی ٹیم تک پہنچتا ہے۔",
+    "emptyQuestionBody": "قیمتیں، وقت، کیا ساتھ لانا ہے — {business} یہیں جواب دے گا اور ہم آپ کو بتا دیں گے۔ آپ کا فون نمبر اور ای میل نجی رہتے ہیں۔"
+  },
+  "shell": {
+    "allMessages": "تمام پیغامات",
+    "viewProfile": "پروفائل دیکھیں",
+    "book": "بک کریں"
+  },
+  "pro": {
+    "backToInbox": "ان باکس پر واپس جائیں"
+  },
+  "view": {
+    "label": "پیغامات",
+    "you": "آپ",
+    "loadingEarlier": "پرانے پیغامات لوڈ ہو رہے ہیں",
+    "showEarlier": "پرانے پیغامات دکھائیں",
+    "seen": "دیکھ لیا",
+    "sending": "بھیجا جا رہا ہے…",
+    "notSent": "بھیجا نہیں گیا۔",
+    "retry": "دوبارہ کوشش کریں",
+    "discard": "ضائع کریں",
+    "newMessages": "{count, plural, one {# نیا پیغام} other {# نئے پیغامات}}",
+    "openPhoto": "تصویر نئے ٹیب میں کھولیں",
+    "photo": "تصویر"
+  },
+  "composer": {
+    "about": "{appointment} کے بارے میں",
+    "unlink": "اس اپائنٹمنٹ کو منسلک نہ کریں",
+    "processingPhoto": "تصویر پر کام ہو رہا ہے",
+    "removePhoto": "تصویر ہٹائیں",
+    "attachPhoto": "تصویر منسلک کریں",
+    "label": "پیغام",
+    "send": "پیغام بھیجیں",
+    "hint": "بھیجنے کے لیے Enter دبائیں، نئی لائن کے لیے Shift اور Enter۔"
+  },
+  "inbox": {
+    "title": "ان باکس",
+    "conversations": "گفتگوئیں",
+    "unread": "{count} ناپڑھی",
+    "allCaughtUp": "سب دیکھ لیا",
+    "searchLabel": "گاہک کے نام سے گفتگو تلاش کریں",
+    "searchPlaceholder": "گاہک تلاش کریں",
+    "clearSearch": "تلاش صاف کریں",
+    "show": "دکھائیں",
+    "all": "سب",
+    "unreadFilter": "ناپڑھی",
+    "noClientsNamed": "“{term}” نام کا کوئی گاہک نہیں",
+    "nothingUnread": "کچھ ناپڑھا نہیں",
+    "noMessages": "ابھی کوئی پیغام نہیں",
+    "tryDifferent": "کوئی دوسری تلاش آزمائیں یا تمام گفتگوئیں دکھائیں۔",
+    "emptyBody": "جب گاہک آپ کے صفحے سے یا کسی بکنگ کے بارے میں سوال پوچھیں گے تو وہ یہاں نظر آئے گا۔"
+  },
+  "clientPanel": {
+    "client": "گاہک",
+    "visits": "وزٹس",
+    "noShows": "غیر حاضریاں",
+    "cancelled": "منسوخ",
+    "clientSince": "{date} سے گاہک",
+    "noVisits": "ابھی کوئی مکمل وزٹ نہیں",
+    "lastIn": "آخری بار {date} میں",
+    "tags": "ٹیگز",
+    "clientProfile": "گاہک کا پروفائل",
+    "notBooked": "انہوں نے ابھی تک آپ کے ساتھ بک نہیں کیا — یہ گفتگو آپ کے عوامی صفحے سے شروع ہوئی۔",
+    "upcoming": "آنے والی",
+    "nothingBooked": "کچھ بک نہیں۔",
+    "recent": "حالیہ"
+  }
+}
