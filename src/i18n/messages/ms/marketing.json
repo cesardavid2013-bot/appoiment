@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept untuk profesional — tempahan dalam talian dan kalendar yang berfungsi untuk anda",
+    "description": "Terima tempahan dalam talian, hentikan tempahan bertindih dan ketidakhadiran, dan ditemui oleh pelanggan tempatan. Percuma untuk bermula bagi profesional bebas."
+  },
+  "cta": {
+    "dashboard": "Pergi ke perniagaan anda",
+    "setup": "Sediakan perniagaan anda",
+    "start": "Mulakan — percuma"
+  },
+  "hero": {
+    "eyebrow": "Kept untuk profesional",
+    "title": "Penuhkan buku tempahan anda. Kekalkan petang anda.",
+    "lede": "Tempahan dalam talian, kalendar yang tidak akan menempah dua kali, peringatan yang mengurangkan ketidakhadiran, dan profil di hadapan orang berhampiran anda yang mencari tepat apa yang anda lakukan. Percuma untuk bermula.",
+    "howItWorks": "Cara ia berfungsi",
+    "note": "Tidak perlu kad. Profil anda kekal peribadi sehingga anda menerbitkannya."
+  },
+  "sides": {
+    "heading": "Cara Kept berfungsi untuk pelanggan dan untuk anda",
+    "clients": {
+      "eyebrow": "Untuk pelanggan anda",
+      "title": "Temui dan tempah profesional yang hebat.",
+      "points": {
+        "search": "Cari mengikut perkhidmatan, tempat dan masa, dan lihat slot sebenar — bukan borang hubungan.",
+        "prices": "Harga terus terang, polisi anda dan ulasan yang disahkan sebelum mereka menempah.",
+        "reminders": "Peringatan, arah tuju dan penjadualan semula tanpa panggilan telefon."
+      }
+    },
+    "you": {
+      "eyebrow": "Untuk anda",
+      "title": "Uruskan janji temu anda dan kembangkan perniagaan.",
+      "points": {
+        "calendar": "Satu kalendar untuk tempahan, rehat dan cuti — pada telefon anda.",
+        "deposits": "Deposit dan peraturan pembatalan yang dikuatkuasakan untuk anda.",
+        "clients": "Sejarah pelanggan, nota dan ulasan yang membawa orang kembali."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Aktif dalam tiga langkah",
+    "profile": {
+      "title": "Sediakan profil anda",
+      "body": "Tambah perkhidmatan anda dengan harga dan tempoh, waktu operasi, tempat anda bekerja dan beberapa foto hasil kerja anda. Kami membimbing anda langkah demi langkah."
+    },
+    "share": {
+      "title": "Kongsi pautan anda",
+      "body": "Letakkan {host}/your-name dalam bio dan kad anda. Sebaik sahaja anda menerbitkan, anda juga muncul dalam carian untuk orang berhampiran."
+    },
+    "book": {
+      "title": "Terima tempahan",
+      "body": "Pelanggan memilih slot sebenar dan menempah dalam beberapa saat. Anda dimaklumkan, mereka menerima peringatan, dan kalendar anda kekal tepat."
+    }
+  },
+  "industries": {
+    "heading": "Dibina untuk sebarang perkhidmatan yang ditempah mengikut jam",
+    "lede": "Jika pelanggan menempah masa anda, Kept sesuai — sama ada anda bekerja seorang diri di sebuah kerusi atau mengetuai pasukan di beberapa lokasi."
+  },
+  "features": {
+    "heading": "Semua yang diperlukan sepanjang hari",
+    "booking": {
+      "title": "Tempahan dalam talian dengan ketersediaan sebenar",
+      "p1": "Pelanggan hanya melihat masa yang benar-benar boleh anda berikan — waktu operasi anda, tolak tempahan sedia ada, rehat, penampan dan cuti, dengan notis minimum dan sejauh mana awal mereka boleh menempah.",
+      "p2": "Setiap tempahan disemak semula pada saat ia dibuat, jadi dua orang tidak akan mendapat slot yang sama, walaupun mereka mengetik pada saat yang sama."
+    },
+    "services": {
+      "title": "Perkhidmatan yang mengikut cara anda meletakkan harga",
+      "p1": "Tetap, bermula dari, julat, percuma atau selepas perundingan. Tambah pilihan seperti panjang, saiz atau tambahan, dan setiap satu melaraskan harga serta masa yang ditahan dalam kalendar anda.",
+      "p2": "Tambah penampan sebelum atau selepas, hadkan perkhidmatan kepada ahli pasukan atau lokasi tertentu, dan ajukan soalan pengambilan sebelum lawatan pertama."
+    },
+    "policies": {
+      "title": "Deposit dan polisi, dikuatkuasakan untuk anda",
+      "p1": "Minta deposit atau bayaran penuh terlebih dahulu, tetapkan tempoh pembatalan serta yuran pembatalan lewat atau tidak hadir. Pelanggan melihat peraturan sebelum menempah, dan bayaran balik mengikutinya secara automatik."
+    },
+    "reminders": {
+      "title": "Peringatan yang mengurangkan ketidakhadiran",
+      "p1": "Pengesahan dan peringatan dihantar sendiri — secara lalai sehari sebelum dan dua jam sebelum — dengan pautan untuk menjadualkan semula mengikut peraturan anda dan bukannya sekadar tidak hadir.",
+      "p2": "Apabila seseorang membatalkan, pelanggan dalam senarai menunggu anda untuk hari itu akan tahu tentang slot kosong."
+    },
+    "clients": {
+      "title": "Kenali pelanggan anda",
+      "p1": "Setiap pelanggan mempunyai rekod lawatan, perbelanjaan, pembatalan dan ketidakhadiran, serta nota peribadi yang hanya boleh dilihat pasukan anda. Hantar mesej kepada pelanggan dari tempat yang sama."
+    },
+    "team": {
+      "title": "Dari kerusi bersendirian kepada pasukan dan lokasi",
+      "p1": "Tambah ahli pasukan dengan waktu operasi dan perkhidmatan mereka sendiri, serta peranan yang mengawal apa yang boleh dilihat dan dilakukan setiap orang. Urus beberapa lokasi, masing-masing dengan zon waktu dan waktu operasi sendiri."
+    },
+    "portfolio": {
+      "title": "Portfolio yang mendatangkan tempahan",
+      "p1": "Paparkan foto dan video pendek hasil kerja anda. Pautkan setiap satu kepada perkhidmatan, dan pelanggan boleh mengetik “Tempah ini” untuk menempah tepat apa yang mereka lihat."
+    },
+    "spotlight": {
+      "title": "Spotlight — percuma semasa pelancaran",
+      "p1": "Promosikan profil anda dalam carian dan halaman kategori berhampiran anda. Hasil yang dipromosikan sentiasa berlabel, terhad kepada dua setiap halaman, dan masih memaparkan penilaian dan slot sebenar anda.",
+      "p2": "Spotlight tidak dikenakan bayaran semasa Kept dilancarkan. Jika itu berubah, kami akan memaklumkan anda sebelum sebarang caj dikenakan — ia tidak pernah bertukar kepada berbayar dengan sendirinya."
+    }
+  },
+  "plans": {
+    "heading": "Pelan",
+    "lede": "Semasa Kept dilancarkan, setiap perniagaan baharu bermula dengan {plan} tanpa yuran bulanan. Harga pelan berbayar akan diumumkan lama sebelum ia terpakai, dan tiada sesiapa dicaj tanpa memilih pelan.",
+    "badge": {
+      "launch": "Percuma semasa pelancaran",
+      "available": "Tersedia sekarang",
+      "unavailable": "Belum tersedia"
+    },
+    "period": {
+      "launch": "sebulan semasa pelancaran",
+      "available": "sebulan",
+      "unavailable": "Harga akan diumumkan"
+    },
+    "rows": {
+      "members": "Ahli pasukan yang boleh ditempah",
+      "locations": "Lokasi",
+      "fee": "Yuran atas bayaran dalam talian",
+      "roles": "Peranan pasukan tersuai",
+      "analytics": "Analitik lanjutan"
+    },
+    "justYou": "1 (anda sahaja)",
+    "upTo": "Sehingga {n}",
+    "included": "Termasuk",
+    "notIncluded": "Tidak termasuk",
+    "summary": {
+      "free": "Tempahan dalam talian, kalendar, peringatan, deposit, rekod pelanggan, borang pengambilan, portfolio dan Spotlight semuanya termasuk.",
+      "launch": "Semua dalam {base}, serta pasukan sehingga {members}, lebih banyak lokasi, peranan tersuai dan yuran lebih rendah. Apa yang diterima perniagaan baharu hari ini.",
+      "other": "Untuk pasukan yang lebih besar dan perniagaan berbilang lokasi."
+    },
+    "footnote": "Yuran hanya terpakai pada bayaran yang dibuat pelanggan dalam talian melalui Kept. Janji temu yang dibayar secara bersemuka tiada yuran Kept. Perlukan lebih ramai orang atau lokasi daripada yang dibenarkan pelan anda? <link>Beritahu kami</link>."
+  },
+  "faq": {
+    "heading": "Soalan",
+    "cost": {
+      "q": "Berapakah kos Kept?",
+      "a": "Tiada yuran bulanan: semasa Kept dilancarkan, perniagaan baharu mendapat pelan {plan} secara percuma. Apabila pelanggan membayar dalam talian — deposit atau harga penuh — Kept mengekalkan {fee} daripada bayaran itu. Janji temu yang dibayar secara bersemuka tidak dikenakan sebarang yuran Kept."
+    },
+    "clientFee": {
+      "q": "Adakah pelanggan saya membayar untuk menempah?",
+      "aFee": "Pelanggan melihat yuran perkhidmatan {fee} semasa pembayaran, dipaparkan sebelum mereka mengesahkan. Tiada apa-apa ditambah selepas itu.",
+      "aFree": "Tidak. Pelanggan menempah secara percuma dan melihat harga tepat anda sebelum mereka mengesahkan."
+    },
+    "payments": {
+      "q": "Adakah saya perlu menerima bayaran dalam talian?",
+      "a": "Tidak. Anda boleh membenarkan pelanggan membayar secara bersemuka, atau mewajibkan deposit atau bayaran penuh semasa menempah. Bayaran dalam talian diproses oleh Stripe dan dibayar ke akaun bank anda sendiri."
+    },
+    "approve": {
+      "q": "Bolehkah saya meluluskan tempahan sebelum ia disahkan?",
+      "a": "Boleh. Pilih tempahan segera, atau mod permintaan di mana setiap tempahan menunggu kelulusan anda. Masa ditahan semasa anda membuat keputusan, dan permintaan yang tidak anda jawab akan tamat tempoh dengan sendirinya."
+    },
+    "where": {
+      "q": "Saya bekerja dari rumah, mengunjungi pelanggan atau mengajar dalam talian. Adakah ini boleh?",
+      "a": "Boleh. Setiap lokasi boleh menjadi alamat fizikal, kawasan perkhidmatan bergerak di mana pelanggan memberi alamat mereka kepada anda, atau sesi maya. Anda boleh menawarkan sebarang gabungan."
+    },
+    "spotlight": {
+      "q": "Bagaimana Spotlight berfungsi?",
+      "a": "Spotlight memaparkan profil anda sebagai hasil “Dipromosikan” yang berlabel jelas dalam carian dan halaman kategori, paling banyak dua setiap halaman. Ia percuma semasa pelancaran — mulakan atau hentikan pada bila-bila masa dari papan pemuka anda."
+    },
+    "link": {
+      "q": "Bolehkah saya menggunakan pautan saya sendiri?",
+      "a": "Boleh. Setiap perniagaan mendapat profil di {host}/your-name yang boleh anda kongsi di Instagram, dalam bio atau pada kod QR. Pelanggan yang menempah melaluinya tidak perlu mencari anda."
+    }
+  },
+  "closing": {
+    "title": "Pelanggan anda yang seterusnya sedang mencari.",
+    "body": "Sediakan perkhidmatan dan waktu operasi anda, terbitkan profil anda, dan mula menerima tempahan hari ini."
+  },
+  "demo": {
+    "example": "Contoh",
+    "today": {
+      "label": "Contoh jadual Hari ini yang dilihat oleh profesional",
+      "title": "Hari ini",
+      "summary": "{count, plural, other {# janji temu}} · {amount} ditempah",
+      "skinFade": "Skin fade",
+      "beardTrim": "Trim janggut & line-up",
+      "lunch": "Makan tengah hari",
+      "signatureCut": "Gunting signature",
+      "kidsCut": "Gunting kanak-kanak",
+      "firstVisit": "{name} · lawatan pertama",
+      "confirmed": "Disahkan",
+      "depositPaid": "Deposit dibayar",
+      "needsApproval": "Perlu kelulusan",
+      "checkedIn": "Telah daftar masuk"
+    },
+    "reminder": {
+      "label": "Contoh peringatan automatik yang diterima pelanggan",
+      "when": "24 jam sebelum",
+      "title": "Peringatan: {service} esok",
+      "body": "{time} bersama Dre di North Fade Studio. Perlu menukarnya? Jadual semula sehingga 24 jam sebelum."
+    },
+    "grid": {
+      "label": "Contoh pemilih masa yang digunakan pelanggan untuk menempah, hanya menunjukkan masa yang kosong",
+      "title": "Pilih masa",
+      "instant": "Pengesahan segera",
+      "note": "Masa yang telah diambil hilang sebaik sahaja seseorang menempah. Dua orang tidak akan mendapat slot yang sama."
+    },
+    "policy": {
+      "label": "Contoh polisi deposit dan pembatalan",
+      "title": "Polisi tempahan",
+      "deposit": "Deposit",
+      "depositValue": "{pct} semasa menempah",
+      "freeCancel": "Pembatalan percuma",
+      "freeCancelValue": "Sehingga 24 jam sebelum",
+      "lateCancel": "Pembatalan lewat",
+      "lateCancelValue": "{pct} daripada jumlah",
+      "noShow": "Tidak hadir",
+      "noShowValue": "Deposit dikekalkan",
+      "dueNow": "Perlu dibayar sekarang",
+      "dueValue": "{due} daripada {total}"
+    },
+    "client": {
+      "label": "Contoh rekod pelanggan",
+      "since": "Pelanggan sejak {month} · {visits, plural, other {# lawatan}}",
+      "spent": "Perbelanjaan",
+      "noShows": "Tidak hadir",
+      "gap": "Jarak biasa",
+      "gapValue": "{weeks} mgu",
+      "note": "Nota peribadi: kulit kepala sensitif — gunakan syampu yang lembut."
+    },
+    "team": {
+      "label": "Contoh pasukan di dua lokasi",
+      "title": "Pasukan",
+      "senior": "Barber kanan",
+      "barber": "Barber",
+      "frontDesk": "Kaunter hadapan"
+    },
+    "portfolio": {
+      "label": "Contoh hantaran portfolio yang dipautkan kepada perkhidmatan yang boleh ditempah",
+      "skinFade": "Skin fade",
+      "taper": "Taper & janggut",
+      "bookThis": "Tempah ini",
+      "note": "Foto dan video anda muncul di sini — ketik satu untuk menempah perkhidmatan yang tepat itu."
+    },
+    "spotlight": {
+      "label": "Contoh senarai yang dipromosikan dalam hasil carian",
+      "category": "Barber",
+      "promoted": "Dipromosikan"
+    },
+    "options": {
+      "service": "Kepang knotless",
+      "hint": "Contoh perkhidmatan · cuba pilihannya",
+      "length": "Panjang",
+      "shoulder": "Paras bahu",
+      "mid": "Paras tengah belakang",
+      "waist": "Paras pinggang",
+      "addons": "Tambahan",
+      "wash": "Basuh & blow-dry",
+      "beads": "Manik & cuff",
+      "included": "Termasuk",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}
