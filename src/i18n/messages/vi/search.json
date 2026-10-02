@@ -60,7 +60,11 @@
     "title": "Chưa có kết quả phù hợp",
     "query": "Thử từ khóa rộng hơn, cách viết khác hoặc bỏ bớt bộ lọc.",
     "filters": "Thử bỏ một bộ lọc hoặc tìm ở khu vực rộng hơn.",
-    "clear": "Xóa tất cả bộ lọc"
+    "clear": "Xóa tất cả bộ lọc",
+    "categoryTitle": "Chưa có chuyên gia {category} nào ở đây",
+    "categoryBody": "Kept đang lớn mạnh từng thành phố một. Bạn cung cấp dịch vụ này? Trang đặt lịch của bạn có thể hoạt động ngay hôm nay.",
+    "listServices": "Đăng dịch vụ của bạn",
+    "seeAll": "Xem tất cả chuyên gia"
   },
   "showMore": "Xem thêm",
   "filters": {
