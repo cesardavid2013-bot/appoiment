@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "Tidak ditemui",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} di {city}",
+    "bookOnline": "Tempah {name} dalam talian."
+  },
+  "preview": {
+    "notice": "Pratonton — hanya anda boleh melihat halaman ini sehingga anda menerbitkannya.",
+    "goLive": "Aktifkan"
+  },
+  "verified": "Disahkan oleh Kept",
+  "verifiedLabel": "Perniagaan disahkan",
+  "reviewsCount": "{count, plural, other {# ulasan disahkan}}",
+  "newOnKept": "Baharu di Kept",
+  "travels": "{city} · bergerak sehingga {km} km",
+  "status": {
+    "openUntil": "Buka · sehingga {time}",
+    "opensAt": "Buka pada {time}",
+    "opensTomorrow": "Buka esok pada {time}",
+    "opensDay": "Buka {day} pada {time}",
+    "notSet": "Waktu operasi belum ditetapkan",
+    "closed": "Tutup"
+  },
+  "nav": {
+    "label": "Bahagian profil",
+    "services": "Perkhidmatan",
+    "work": "Hasil kerja",
+    "featured": "Pilihan",
+    "reviews": "Ulasan",
+    "about": "Tentang"
+  },
+  "services": {
+    "eyebrow": "Menu",
+    "title": "Perkhidmatan",
+    "empty": "Perniagaan ini belum menerbitkan perkhidmatan.",
+    "sale": "Jualan",
+    "group": "Kumpulan · sehingga {count}",
+    "request": "Mohon tempahan",
+    "options": "Pilihan tersedia",
+    "deposit": "Deposit semasa menempah",
+    "book": "Tempah",
+    "bookService": "Tempah {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Hasil kerja terkini"
+  },
+  "featured": {
+    "eyebrow": "Di media sosial",
+    "title": "Pilihan",
+    "allProfiles": "Semua profil sosial",
+    "bookThis": "Tempah ini · {service}",
+    "newTab": "(dibuka dalam tab baharu)",
+    "footnote": "Pemain dimuatkan daripada setiap platform hanya apabila anda menekan main.",
+    "play": "Mainkan {title}",
+    "loadsFrom": "Dimuatkan daripada {host}"
+  },
+  "team": {
+    "eyebrow": "Orangnya",
+    "title": "Pasukan"
+  },
+  "reviews": {
+    "eyebrow": "Dari mulut ke mulut",
+    "title": "Ulasan",
+    "empty": "Belum ada ulasan. Ulasan hanya boleh diberikan oleh pelanggan selepas lawatan selesai.",
+    "distribution": "Taburan penilaian",
+    "onlyCustomers": "Hanya pelanggan yang mempunyai tempahan selesai boleh memberi ulasan.",
+    "response": "Maklum balas daripada {name}",
+    "stars": "{value} daripada 5 bintang"
+  },
+  "about": {
+    "eyebrow": "Tentang tempat kami",
+    "title": "Tentang",
+    "hours": "Waktu operasi",
+    "timesIn": "Masa dipaparkan dalam {zone}.",
+    "policies": "Polisi",
+    "noShow": "Janji temu yang tidak dihadiri mungkin dikenakan {percent}% daripada jumlah keseluruhan.",
+    "experience": "Pengalaman {years}+ tahun",
+    "amenities": "Kemudahan",
+    "online": "Dalam talian",
+    "directions": "Arah tuju",
+    "comesToYou": "Datang ke tempat anda",
+    "mobileBody": "Berpangkalan di {city}. Bergerak sehingga {km} km — anda akan menambah alamat semasa menempah.",
+    "onlineSessions": "Sesi dalam talian",
+    "onlineBody": "Sertai dari mana-mana. Pautan dikongsi selepas tempahan."
+  },
+  "panel": {
+    "label": "Tempah",
+    "eyebrow": "Tempah tempat",
+    "freeOptions": "Pilihan percuma tersedia",
+    "from": "Perkhidmatan bermula {price}",
+    "onConsultation": "Harga selepas perundingan",
+    "nextToday": "Slot seterusnya hari ini",
+    "nextTomorrow": "Slot seterusnya esok",
+    "nextOn": "Slot seterusnya pada {day}",
+    "none": "Tiada slot kosong dalam dua minggu akan datang",
+    "bookNow": "Tempah sekarang",
+    "requestToBook": "Mohon tempahan",
+    "instant": "Pengesahan segera",
+    "confirms": "Perniagaan mengesahkan permintaan anda",
+    "notTaking": "Perniagaan ini belum menerima tempahan.",
+    "mobileFrom": "Bermula {price}",
+    "mobileNext": "Seterusnya: {day} {time}",
+    "seeAvailability": "Lihat ketersediaan",
+    "request": "Mohon"
+  },
+  "actions": {
+    "share": "Kongsi",
+    "shareTitle": "Kongsi {name}",
+    "shareBody": "Hantar pautan, atau imbas kod untuk membuka halaman tempahan.",
+    "copy": "Salin",
+    "copied": "Disalin",
+    "downloadQr": "Muat turun kod QR",
+    "ask": "Ajukan soalan",
+    "messageTitle": "Mesej {name}",
+    "messageBody": "Tanya tentang perkhidmatan, ketersediaan atau apa-apa lagi sebelum anda menempah. Nombor telefon dan e-mel anda kekal peribadi.",
+    "cancel": "Batal",
+    "send": "Hantar mesej",
+    "yourMessage": "Mesej anda",
+    "placeholder": "Hai! Adakah anda lapang untuk skin fade petang Sabtu ini?",
+    "sent": "Mesej dihantar",
+    "sentBody": "{name} akan membalas dalam peti masuk anda."
+  },
+  "portfolio": {
+    "compare": "Bandingkan sebelum dan selepas",
+    "portfolio": "Portfolio",
+    "close": "Tutup",
+    "previous": "Sebelumnya",
+    "next": "Seterusnya",
+    "before": "Sebelum",
+    "after": "Selepas",
+    "beforeAfter": "Sebelum / selepas",
+    "video": "Video",
+    "openItem": "Buka item {n}",
+    "browse": "Gunakan kekunci anak panah untuk menyemak imbas",
+    "bookThis": "Tempah ini",
+    "bookThisService": "Tempah ini — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Hantaran",
+    "reel": "Reel",
+    "track": "Lagu",
+    "album": "Album",
+    "artist": "Artis",
+    "playlist": "Senarai main",
+    "episode": "Episod",
+    "show": "Podcast"
+  },
+  "links": {
+    "label": "Butang pautan"
+  }
+}

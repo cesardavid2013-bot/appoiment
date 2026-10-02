@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "نہیں ملا",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{city} میں {title}",
+    "bookOnline": "{name} کو آن لائن بک کریں۔"
+  },
+  "preview": {
+    "notice": "پیش منظر — شائع کرنے تک یہ صفحہ صرف آپ دیکھ سکتے ہیں۔",
+    "goLive": "لائیو کریں"
+  },
+  "verified": "Kept سے تصدیق شدہ",
+  "verifiedLabel": "تصدیق شدہ کاروبار",
+  "reviewsCount": "{count, plural, one {# تصدیق شدہ جائزہ} other {# تصدیق شدہ جائزے}}",
+  "newOnKept": "Kept پر نئے",
+  "travels": "{city} · {km} کلومیٹر تک سفر کرتے ہیں",
+  "status": {
+    "openUntil": "کھلا ہے · {time} تک",
+    "opensAt": "{time} بجے کھلتا ہے",
+    "opensTomorrow": "کل {time} بجے کھلتا ہے",
+    "opensDay": "{day} کو {time} بجے کھلتا ہے",
+    "notSet": "اوقات مقرر نہیں",
+    "closed": "بند"
+  },
+  "nav": {
+    "label": "پروفائل کے حصے",
+    "services": "خدمات",
+    "work": "کام",
+    "featured": "نمایاں",
+    "reviews": "جائزے",
+    "about": "تعارف"
+  },
+  "services": {
+    "eyebrow": "مینو",
+    "title": "خدمات",
+    "empty": "اس کاروبار نے ابھی تک خدمات شائع نہیں کیں۔",
+    "sale": "سیل",
+    "group": "گروپ · زیادہ سے زیادہ {count}",
+    "request": "بکنگ کی درخواست کریں",
+    "options": "آپشنز دستیاب",
+    "deposit": "بکنگ کے وقت ڈپازٹ",
+    "book": "بک کریں",
+    "bookService": "{name} بک کریں"
+  },
+  "work": {
+    "eyebrow": "پورٹ فولیو",
+    "title": "حالیہ کام"
+  },
+  "featured": {
+    "eyebrow": "سوشل پر",
+    "title": "نمایاں",
+    "allProfiles": "تمام سوشل پروفائلز",
+    "bookThis": "یہ بک کریں · {service}",
+    "newTab": "(نئے ٹیب میں کھلتا ہے)",
+    "footnote": "پلیئرز ہر پلیٹ فارم سے صرف اس وقت لوڈ ہوتے ہیں جب آپ پلے دباتے ہیں۔",
+    "play": "{title} چلائیں",
+    "loadsFrom": "{host} سے لوڈ ہوتا ہے"
+  },
+  "team": {
+    "eyebrow": "ہمارے لوگ",
+    "title": "ٹیم"
+  },
+  "reviews": {
+    "eyebrow": "زبانی سفارش",
+    "title": "جائزے",
+    "empty": "ابھی کوئی جائزہ نہیں۔ جائزہ صرف وہی گاہک دے سکتے ہیں جن کی وزٹ مکمل ہو چکی ہو۔",
+    "distribution": "ریٹنگ کی تقسیم",
+    "onlyCustomers": "صرف مکمل بکنگ والے گاہک ہی جائزہ دے سکتے ہیں۔",
+    "response": "{name} کا جواب",
+    "stars": "5 میں سے {value} ستارے"
+  },
+  "about": {
+    "eyebrow": "ہمارا ٹھکانہ",
+    "title": "تعارف",
+    "hours": "اوقات",
+    "timesIn": "اوقات {zone} میں دکھائے گئے ہیں۔",
+    "policies": "پالیسیاں",
+    "noShow": "چھوٹی ہوئی اپائنٹمنٹس پر کل رقم کا {percent}% وصول کیا جا سکتا ہے۔",
+    "experience": "{years}+ سال کا تجربہ",
+    "amenities": "سہولیات",
+    "online": "آن لائن",
+    "directions": "راستہ",
+    "comesToYou": "آپ کے پاس آتے ہیں",
+    "mobileBody": "{city} میں مقیم۔ {km} کلومیٹر تک سفر کرتے ہیں — بکنگ کے وقت آپ اپنا پتا شامل کریں گے۔",
+    "onlineSessions": "آن لائن سیشنز",
+    "onlineBody": "کہیں سے بھی شامل ہوں۔ لنک بکنگ کے بعد شیئر کیا جاتا ہے۔"
+  },
+  "panel": {
+    "label": "بک کریں",
+    "eyebrow": "ریزرو کریں",
+    "freeOptions": "مفت آپشنز دستیاب",
+    "from": "خدمات {price} سے",
+    "onConsultation": "قیمتیں مشاورت پر",
+    "nextToday": "آج اگلا دستیاب وقت",
+    "nextTomorrow": "کل اگلا دستیاب وقت",
+    "nextOn": "{day} کو اگلا دستیاب وقت",
+    "none": "اگلے دو ہفتوں میں کوئی دستیاب وقت نہیں",
+    "bookNow": "ابھی بک کریں",
+    "requestToBook": "بکنگ کی درخواست کریں",
+    "instant": "فوری تصدیق",
+    "confirms": "کاروبار آپ کی درخواست کی تصدیق کرتا ہے",
+    "notTaking": "یہ کاروبار ابھی بکنگز نہیں لے رہا۔",
+    "mobileFrom": "{price} سے",
+    "mobileNext": "اگلا: {day} {time}",
+    "seeAvailability": "دستیابی دیکھیں",
+    "request": "درخواست"
+  },
+  "actions": {
+    "share": "شیئر",
+    "shareTitle": "{name} کو شیئر کریں",
+    "shareBody": "لنک بھیجیں، یا بکنگ پیج کھولنے کے لیے کوڈ اسکین کریں۔",
+    "copy": "کاپی",
+    "copied": "کاپی ہو گیا",
+    "downloadQr": "QR کوڈ ڈاؤن لوڈ کریں",
+    "ask": "سوال پوچھیں",
+    "messageTitle": "{name} کو پیغام بھیجیں",
+    "messageBody": "بک کرنے سے پہلے خدمات، دستیابی یا کسی بھی اور بات کے بارے میں پوچھیں۔ آپ کا فون نمبر اور ای میل نجی رہتے ہیں۔",
+    "cancel": "منسوخ کریں",
+    "send": "پیغام بھیجیں",
+    "yourMessage": "آپ کا پیغام",
+    "placeholder": "السلام علیکم! کیا اس ہفتے کی دوپہر آپ کے پاس اسکن فیڈ کے لیے وقت ہے؟",
+    "sent": "پیغام بھیج دیا گیا",
+    "sentBody": "{name} آپ کے ان باکس میں جواب دیں گے۔"
+  },
+  "portfolio": {
+    "compare": "پہلے اور بعد کا موازنہ کریں",
+    "portfolio": "پورٹ فولیو",
+    "close": "بند کریں",
+    "previous": "پچھلا",
+    "next": "اگلا",
+    "before": "پہلے",
+    "after": "بعد",
+    "beforeAfter": "پہلے / بعد",
+    "video": "ویڈیو",
+    "openItem": "آئٹم {n} کھولیں",
+    "browse": "براؤز کرنے کے لیے ایرو کیز استعمال کریں",
+    "bookThis": "یہ بک کریں",
+    "bookThisService": "یہ بک کریں — {service}"
+  },
+  "kind": {
+    "video": "ویڈیو",
+    "short": "شارٹ",
+    "post": "پوسٹ",
+    "reel": "ریل",
+    "track": "ٹریک",
+    "album": "البم",
+    "artist": "آرٹسٹ",
+    "playlist": "پلے لسٹ",
+    "episode": "قسط",
+    "show": "پوڈکاسٹ"
+  },
+  "links": {
+    "label": "لنک بٹن"
+  }
+}
