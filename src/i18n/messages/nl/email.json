@@ -1,0 +1,147 @@
+{
+  "footer": "Je ontvangt dit bericht vanwege activiteit op je Kept-account. Beheer meldingen via Account → Meldingen.",
+  "details": {
+    "service": "Dienst",
+    "when": "Wanneer",
+    "with": "Bij wie",
+    "where": "Waar",
+    "online": "Online — de link wordt door het bedrijf gedeeld",
+    "reference": "Referentie",
+    "paid": "Betaald",
+    "balanceDue": "Openstaand saldo"
+  },
+  "cta": {
+    "viewAppointment": "Afspraak bekijken",
+    "viewRequest": "Aanvraag bekijken",
+    "reviewRequest": "Aanvraag beoordelen",
+    "openAppointment": "Afspraak openen",
+    "openCalendar": "Agenda openen",
+    "findAnotherTime": "Ander tijdstip zoeken",
+    "payDeposit": "Aanbetaling voldoen",
+    "leaveReview": "Review schrijven",
+    "bookThisTime": "Dit tijdstip boeken"
+  },
+  "booked": {
+    "title": "Je staat ingepland bij {business}",
+    "subject": "Bevestigd: {service} bij {business}",
+    "heading": "Je afspraak is bevestigd",
+    "footnote": "Wijzigen of annuleren? Dat kan via de afspraakpagina, volgens het beleid van het bedrijf.",
+    "sms": "Kept: {service} bij {business} is bevestigd voor {when}. Ref. {reference}"
+  },
+  "requested": {
+    "title": "Aanvraag verstuurd naar {business}",
+    "body": "We laten het je weten zodra er een reactie is.",
+    "subject": "Aanvraag verstuurd: {service} bij {business}",
+    "heading": "Je aanvraag is verstuurd",
+    "paragraph": "{business} bekijkt aanvragen voordat ze worden bevestigd. We mailen je zodra er een reactie is."
+  },
+  "bizBooked": {
+    "title": "Nieuwe boeking",
+    "requestTitle": "Nieuwe boekingsaanvraag",
+    "subject": "Nieuwe boeking: {service}",
+    "requestSubject": "Nieuwe aanvraag: {service}",
+    "heading": "Je hebt een nieuwe boeking",
+    "requestHeading": "Je hebt een nieuwe boekingsaanvraag",
+    "requestParagraph": "Keur hem goed of wijs hem af vanuit je agenda. Onbeantwoorde aanvragen verlopen automatisch."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} kon je aanvraag niet accepteren",
+      "subject": "Aanvraag afgewezen: {service}",
+      "heading": "Je aanvraag is niet geaccepteerd"
+    },
+    "expired": {
+      "title": "Je boeking is verlopen",
+      "subject": "Je boeking is verlopen",
+      "heading": "Je boeking is verlopen"
+    },
+    "cancelled": {
+      "title": "{business} heeft je afspraak geannuleerd",
+      "subject": "Geannuleerd: {service}",
+      "heading": "Je afspraak is geannuleerd"
+    },
+    "note": "Opmerking van het bedrijf: “{note}”",
+    "refund": "Een terugbetaling van {amount} is onderweg naar je oorspronkelijke betaalmethode.",
+    "bookAgain": "Je kunt een ander tijdstip boeken wanneer het jou uitkomt."
+  },
+  "bizCancelled": {
+    "title": "Een klant heeft geannuleerd",
+    "expiredTitle": "Een boeking is verlopen",
+    "subject": "Geannuleerd: {service} · {when}",
+    "heading": "Een afspraak is geannuleerd",
+    "reason": "Reden: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} heeft je afspraak verplaatst",
+    "body": "Nu {when}",
+    "subject": "Nieuw tijdstip: {service} bij {business}",
+    "heading": "Je afspraak heeft een nieuw tijdstip",
+    "previously": "Eerder {when}.",
+    "changeIt": "Past het nieuwe tijdstip niet? Dan kun je via de afspraakpagina verplaatsen of annuleren."
+  },
+  "bizRescheduled": {
+    "title": "Een klant heeft verplaatst",
+    "subject": "Verplaatst: {service}",
+    "heading": "Een afspraak is verplaatst"
+  },
+  "approvedPay": {
+    "title": "{business} heeft je aanvraag geaccepteerd",
+    "body": "Voldoe de aanbetaling van {amount} om te bevestigen.",
+    "subject": "Geaccepteerd — bevestig je {service}",
+    "heading": "Je aanvraag is geaccepteerd",
+    "paragraph": "Voldoe de aanbetaling van {amount} om je tijdstip vast te leggen. Onbetaalde boekingen worden automatisch vrijgegeven."
+  },
+  "reminder": {
+    "title": "Herinnering: {service} {lead}",
+    "body": "{when} bij {business}",
+    "subject": "Herinnering: {service} {lead} om {time}",
+    "heading": "Tot {lead}",
+    "footnote": "Kom je te laat of kun je niet komen? Laat het het bedrijf weten via de afspraakpagina.",
+    "sms": "Herinnering: {service} bij {business} {when}."
+  },
+  "review": {
+    "title": "Hoe was {service}?",
+    "body": "Deel een korte review van {business}.",
+    "subject": "Hoe was je bezoek aan {business}?",
+    "heading": "Hoe was het?",
+    "paragraph": "Je review helpt {business} en anderen die een professional zoeken. Het kost minder dan een minuut."
+  },
+  "waitlist": {
+    "title": "Er is een plek vrijgekomen bij {business}",
+    "body": "{when} is nu beschikbaar. Boek snel — wie het eerst komt, het eerst maalt.",
+    "subject": "Er is een tijdstip vrijgekomen bij {business}",
+    "heading": "Goed nieuws — er is een tijdstip vrijgekomen",
+    "paragraph": "{when} is zojuist beschikbaar gekomen. Wie het eerst komt, het eerst maalt, dus boek snel als het je uitkomt."
+  },
+  "thread": {
+    "confirmed": "Afspraak bevestigd: {service}, {when}.",
+    "declined": "Afspraak afgewezen: {service}, {when}.",
+    "expired": "Afspraak verlopen: {service}, {when}.",
+    "cancelled": "Afspraak geannuleerd: {service}, {when}.",
+    "moved": "Afspraak verplaatst van {from} naar {to}."
+  },
+  "verify": {
+    "subject": "Bevestig je e-mailadres",
+    "preheader": "Eén tik om je e-mailadres te bevestigen.",
+    "heading": "Welkom, {name}",
+    "paragraph": "Bevestig je e-mailadres zodat bedrijven je kunnen bereiken over je afspraken.",
+    "cta": "E-mailadres bevestigen",
+    "footnote": "Deze link verloopt na 3 dagen. Heb je geen account aangemaakt? Dan kun je deze e-mail negeren."
+  },
+  "reset": {
+    "subject": "Stel je wachtwoord opnieuw in",
+    "heading": "Stel je wachtwoord opnieuw in",
+    "paragraph": "Iemand (hopelijk jij) heeft gevraagd om het wachtwoord van je Kept-account opnieuw in te stellen.",
+    "cta": "Kies een nieuw wachtwoord",
+    "footnote": "Deze link verloopt na 1 uur. Heb je dit niet aangevraagd, dan kun je deze e-mail gerust negeren — je wachtwoord verandert niet."
+  },
+  "invite": {
+    "subject": "{inviter} heeft je uitgenodigd voor {business} op Kept",
+    "reminderSubject": "Herinnering: word lid van {business} op Kept",
+    "heading": "Word lid van {business}",
+    "paragraph": "{inviter} heeft je uitgenodigd om het team van {business} te versterken. Je kunt dan je rooster zien en je afspraken beheren.",
+    "cta": "Uitnodiging accepteren",
+    "footnote": "Deze uitnodiging verloopt over {days} dagen.",
+    "reminderFootnote": "Deze uitnodiging verloopt over {days} dagen. Eerdere uitnodigingslinks werken niet meer."
+  }
+}

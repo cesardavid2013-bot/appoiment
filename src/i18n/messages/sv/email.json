@@ -1,0 +1,147 @@
+{
+  "footer": "Du får det här meddelandet på grund av aktivitet på ditt Kept-konto. Hantera aviseringar under Konto → Aviseringar.",
+  "details": {
+    "service": "Tjänst",
+    "when": "När",
+    "with": "Hos",
+    "where": "Var",
+    "online": "Online — länken delas av företaget",
+    "reference": "Referens",
+    "paid": "Betalt",
+    "balanceDue": "Kvarstående belopp"
+  },
+  "cta": {
+    "viewAppointment": "Visa bokning",
+    "viewRequest": "Visa förfrågan",
+    "reviewRequest": "Granska förfrågan",
+    "openAppointment": "Öppna bokning",
+    "openCalendar": "Öppna kalender",
+    "findAnotherTime": "Hitta en annan tid",
+    "payDeposit": "Betala deposition",
+    "leaveReview": "Skriv ett omdöme",
+    "bookThisTime": "Boka den här tiden"
+  },
+  "booked": {
+    "title": "Du är bokad hos {business}",
+    "subject": "Bekräftad: {service} hos {business}",
+    "heading": "Din bokning är bekräftad",
+    "footnote": "Ändrade planer? Du kan boka om eller avboka från bokningssidan, enligt företagets villkor.",
+    "sms": "Kept: {service} hos {business} är bekräftad för {when}. Ref. {reference}"
+  },
+  "requested": {
+    "title": "Förfrågan skickad till {business}",
+    "body": "Vi meddelar dig så fort de svarar.",
+    "subject": "Förfrågan skickad: {service} hos {business}",
+    "heading": "Din förfrågan har skickats",
+    "paragraph": "{business} granskar förfrågningar innan de bekräftas. Vi mejlar dig så fort de svarar."
+  },
+  "bizBooked": {
+    "title": "Ny bokning",
+    "requestTitle": "Ny bokningsförfrågan",
+    "subject": "Ny bokning: {service}",
+    "requestSubject": "Ny förfrågan: {service}",
+    "heading": "Du har en ny bokning",
+    "requestHeading": "Du har en ny bokningsförfrågan",
+    "requestParagraph": "Godkänn eller avböj den från din kalender. Obesvarade förfrågningar går ut automatiskt."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} kunde inte ta emot din förfrågan",
+      "subject": "Förfrågan avböjd: {service}",
+      "heading": "Din förfrågan godkändes inte"
+    },
+    "expired": {
+      "title": "Din bokning har gått ut",
+      "subject": "Din bokning har gått ut",
+      "heading": "Din bokning har gått ut"
+    },
+    "cancelled": {
+      "title": "{business} har avbokat din tid",
+      "subject": "Avbokad: {service}",
+      "heading": "Din bokning har avbokats"
+    },
+    "note": "Meddelande från företaget: ”{note}”",
+    "refund": "En återbetalning på {amount} är på väg till din ursprungliga betalningsmetod.",
+    "bookAgain": "Du kan boka en ny tid när det passar dig."
+  },
+  "bizCancelled": {
+    "title": "En kund har avbokat",
+    "expiredTitle": "En bokning har gått ut",
+    "subject": "Avbokad: {service} · {when}",
+    "heading": "En bokning har avbokats",
+    "reason": "Orsak: ”{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} har flyttat din tid",
+    "body": "Nu {when}",
+    "subject": "Ny tid: {service} hos {business}",
+    "heading": "Din bokning har fått en ny tid",
+    "previously": "Tidigare {when}.",
+    "changeIt": "Om den nya tiden inte passar kan du boka om eller avboka från bokningssidan."
+  },
+  "bizRescheduled": {
+    "title": "En kund har bokat om",
+    "subject": "Ombokad: {service}",
+    "heading": "En bokning har bokats om"
+  },
+  "approvedPay": {
+    "title": "{business} har godkänt din förfrågan",
+    "body": "Betala depositionen på {amount} för att bekräfta.",
+    "subject": "Godkänd — bekräfta din {service}",
+    "heading": "Din förfrågan har godkänts",
+    "paragraph": "Betala depositionen på {amount} för att säkra din tid. Obetalda bokningar frigörs automatiskt."
+  },
+  "reminder": {
+    "title": "Påminnelse: {service} {lead}",
+    "body": "{when} hos {business}",
+    "subject": "Påminnelse: {service} {lead} kl. {time}",
+    "heading": "Vi ses {lead}",
+    "footnote": "Blir du sen eller kan inte komma? Meddela företaget från bokningssidan.",
+    "sms": "Påminnelse: {service} hos {business} {when}."
+  },
+  "review": {
+    "title": "Hur var {service}?",
+    "body": "Dela ett kort omdöme om {business}.",
+    "subject": "Hur var ditt besök hos {business}?",
+    "heading": "Hur gick det?",
+    "paragraph": "Ditt omdöme hjälper {business} och andra som söker en yrkesverksam. Det tar mindre än en minut."
+  },
+  "waitlist": {
+    "title": "En tid har blivit ledig hos {business}",
+    "body": "{when} är nu ledig. Boka snabbt — först till kvarn.",
+    "subject": "En tid har blivit ledig hos {business}",
+    "heading": "Goda nyheter — en tid har blivit ledig",
+    "paragraph": "{when} har precis blivit ledig. Först till kvarn gäller, så boka snart om den passar dig."
+  },
+  "thread": {
+    "confirmed": "Bokning bekräftad: {service}, {when}.",
+    "declined": "Bokning avböjd: {service}, {when}.",
+    "expired": "Bokning utgången: {service}, {when}.",
+    "cancelled": "Bokning avbokad: {service}, {when}.",
+    "moved": "Bokning flyttad från {from} till {to}."
+  },
+  "verify": {
+    "subject": "Bekräfta din e-post",
+    "preheader": "Ett tryck för att bekräfta din e-postadress.",
+    "heading": "Välkommen, {name}",
+    "paragraph": "Bekräfta din e-post så att företag kan nå dig om dina bokningar.",
+    "cta": "Bekräfta e-post",
+    "footnote": "Länken är giltig i 3 dagar. Om du inte skapade ett konto kan du bortse från det här mejlet."
+  },
+  "reset": {
+    "subject": "Återställ ditt lösenord",
+    "heading": "Återställ ditt lösenord",
+    "paragraph": "Någon (förhoppningsvis du) har bett om att återställa lösenordet för ditt Kept-konto.",
+    "cta": "Välj ett nytt lösenord",
+    "footnote": "Länken är giltig i 1 timme. Om det inte var du som begärde detta kan du lugnt bortse från det här mejlet — ditt lösenord ändras inte."
+  },
+  "invite": {
+    "subject": "{inviter} har bjudit in dig till {business} på Kept",
+    "reminderSubject": "Påminnelse: gå med i {business} på Kept",
+    "heading": "Gå med i {business}",
+    "paragraph": "{inviter} har bjudit in dig till teamet på {business}. Du kommer att kunna se ditt schema och hantera dina bokningar.",
+    "cta": "Acceptera inbjudan",
+    "footnote": "Inbjudan går ut om {days} dagar.",
+    "reminderFootnote": "Inbjudan går ut om {days} dagar. Tidigare inbjudningslänkar fungerar inte längre."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "footer": "Otrzymujesz tę wiadomość z powodu aktywności na Twoim koncie Kept. Powiadomieniami zarządzasz w sekcji Konto → Powiadomienia.",
+  "details": {
+    "service": "Usługa",
+    "when": "Kiedy",
+    "with": "U kogo",
+    "where": "Gdzie",
+    "online": "Online — link udostępni firma",
+    "reference": "Numer referencyjny",
+    "paid": "Zapłacono",
+    "balanceDue": "Do zapłaty"
+  },
+  "cta": {
+    "viewAppointment": "Zobacz wizytę",
+    "viewRequest": "Zobacz prośbę",
+    "reviewRequest": "Rozpatrz prośbę",
+    "openAppointment": "Otwórz wizytę",
+    "openCalendar": "Otwórz kalendarz",
+    "findAnotherTime": "Znajdź inny termin",
+    "payDeposit": "Zapłać zadatek",
+    "leaveReview": "Wystaw opinię",
+    "bookThisTime": "Zarezerwuj ten termin"
+  },
+  "booked": {
+    "title": "Masz rezerwację: {business}",
+    "subject": "Potwierdzono: {service} — {business}",
+    "heading": "Twoja wizyta jest potwierdzona",
+    "footnote": "Zmieniły się plany? Możesz zmienić termin lub anulować na stronie wizyty, zgodnie z zasadami firmy.",
+    "sms": "Kept: {service} w firmie {business} potwierdzona na {when}. Nr ref. {reference}"
+  },
+  "requested": {
+    "title": "Prośba wysłana do: {business}",
+    "body": "Damy Ci znać, gdy tylko odpowiedzą.",
+    "subject": "Prośba wysłana: {service} — {business}",
+    "heading": "Twoja prośba została wysłana",
+    "paragraph": "{business} rozpatruje prośby przed potwierdzeniem. Wyślemy Ci e-mail, gdy tylko odpowiedzą."
+  },
+  "bizBooked": {
+    "title": "Nowa rezerwacja",
+    "requestTitle": "Nowa prośba o rezerwację",
+    "subject": "Nowa rezerwacja: {service}",
+    "requestSubject": "Nowa prośba: {service}",
+    "heading": "Masz nową rezerwację",
+    "requestHeading": "Masz nową prośbę o rezerwację",
+    "requestParagraph": "Zatwierdź ją lub odrzuć w swoim kalendarzu. Prośby bez odpowiedzi wygasają automatycznie."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} nie mogła przyjąć Twojej prośby",
+      "subject": "Prośba odrzucona: {service}",
+      "heading": "Twoja prośba nie została przyjęta"
+    },
+    "expired": {
+      "title": "Twoja rezerwacja wygasła",
+      "subject": "Twoja rezerwacja wygasła",
+      "heading": "Twoja rezerwacja wygasła"
+    },
+    "cancelled": {
+      "title": "{business} anulowała Twoją wizytę",
+      "subject": "Anulowano: {service}",
+      "heading": "Twoja wizyta została anulowana"
+    },
+    "note": "Wiadomość od firmy: „{note}”",
+    "refund": "Zwrot w kwocie {amount} jest w drodze na pierwotną metodę płatności.",
+    "bookAgain": "Możesz zarezerwować inny termin, kiedy tylko będziesz gotowy(-a)."
+  },
+  "bizCancelled": {
+    "title": "Klient anulował wizytę",
+    "expiredTitle": "Rezerwacja wygasła",
+    "subject": "Anulowano: {service} · {when}",
+    "heading": "Wizyta została anulowana",
+    "reason": "Powód: „{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} przeniosła Twoją wizytę",
+    "body": "Teraz: {when}",
+    "subject": "Nowy termin: {service} — {business}",
+    "heading": "Twoja wizyta ma nowy termin",
+    "previously": "Wcześniej: {when}.",
+    "changeIt": "Jeśli nowy termin Ci nie odpowiada, możesz zmienić go lub anulować wizytę na jej stronie."
+  },
+  "bizRescheduled": {
+    "title": "Klient zmienił termin",
+    "subject": "Zmieniono termin: {service}",
+    "heading": "Zmieniono termin wizyty"
+  },
+  "approvedPay": {
+    "title": "{business} przyjęła Twoją prośbę",
+    "body": "Zapłać zadatek {amount}, aby potwierdzić.",
+    "subject": "Przyjęto — potwierdź: {service}",
+    "heading": "Twoja prośba została przyjęta",
+    "paragraph": "Zapłać zadatek {amount}, aby zarezerwować swój termin. Nieopłacone rezerwacje są zwalniane automatycznie."
+  },
+  "reminder": {
+    "title": "Przypomnienie: {service} {lead}",
+    "body": "{when} — {business}",
+    "subject": "Przypomnienie: {service} {lead} o {time}",
+    "heading": "Do zobaczenia {lead}",
+    "footnote": "Spóźniasz się lub nie możesz przyjść? Daj znać firmie na stronie wizyty.",
+    "sms": "Przypomnienie: {service} w firmie {business} {when}."
+  },
+  "review": {
+    "title": "Jak było: {service}?",
+    "body": "Podziel się krótką opinią o firmie {business}.",
+    "subject": "Jak minęła wizyta w firmie {business}?",
+    "heading": "Jak było?",
+    "paragraph": "Twoja opinia pomaga firmie {business} i innym osobom wybierającym specjalistę. Zajmie mniej niż minutę."
+  },
+  "waitlist": {
+    "title": "Zwolnił się termin w firmie {business}",
+    "body": "Termin {when} jest już dostępny. Rezerwuj szybko — kto pierwszy, ten lepszy.",
+    "subject": "Zwolnił się termin w firmie {business}",
+    "heading": "Dobra wiadomość — zwolnił się termin",
+    "paragraph": "Termin {when} właśnie stał się dostępny. Obowiązuje kolejność zgłoszeń, więc zarezerwuj szybko, jeśli Ci odpowiada."
+  },
+  "thread": {
+    "confirmed": "Wizyta potwierdzona: {service}, {when}.",
+    "declined": "Wizyta odrzucona: {service}, {when}.",
+    "expired": "Wizyta wygasła: {service}, {when}.",
+    "cancelled": "Wizyta anulowana: {service}, {when}.",
+    "moved": "Wizyta przeniesiona z {from} na {to}."
+  },
+  "verify": {
+    "subject": "Potwierdź swój e-mail",
+    "preheader": "Jedno dotknięcie, aby potwierdzić adres e-mail.",
+    "heading": "Witaj, {name}",
+    "paragraph": "Potwierdź swój e-mail, aby firmy mogły się z Tobą kontaktować w sprawie wizyt.",
+    "cta": "Potwierdź e-mail",
+    "footnote": "Ten link wygasa po 3 dniach. Jeśli nie zakładano konta, możesz zignorować tę wiadomość."
+  },
+  "reset": {
+    "subject": "Zresetuj hasło",
+    "heading": "Zresetuj hasło",
+    "paragraph": "Ktoś (mamy nadzieję, że Ty) poprosił o zresetowanie hasła do Twojego konta Kept.",
+    "cta": "Wybierz nowe hasło",
+    "footnote": "Ten link wygasa po 1 godzinie. Jeśli to nie Ty o to prosiłeś(-aś), możesz spokojnie zignorować tę wiadomość — hasło się nie zmieni."
+  },
+  "invite": {
+    "subject": "{inviter} zaprasza Cię do firmy {business} w Kept",
+    "reminderSubject": "Przypomnienie: dołącz do firmy {business} w Kept",
+    "heading": "Dołącz do firmy {business}",
+    "paragraph": "{inviter} zaprasza Cię do zespołu firmy {business}. Zobaczysz swój grafik i będziesz zarządzać swoimi wizytami.",
+    "cta": "Przyjmij zaproszenie",
+    "footnote": "To zaproszenie wygasa za {days} dni.",
+    "reminderFootnote": "To zaproszenie wygasa za {days} dni. Wcześniejsze linki z zaproszeniem już nie działają."
+  }
+}
