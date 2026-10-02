@@ -558,38 +558,225 @@
       "submit": "Trimiteți spre verificare"
     }
   },
-  "forms": {},
+  "forms": {
+    "title": "Întrebări pentru clienți",
+    "description": "Întrebări la care clienții răspund când rezervă: alergii, obiective, mașina pe care o aduc. Creați un formular o singură dată, apoi alegeți-l pentru fiecare serviciu care îl necesită.",
+    "newForm": "Formular nou",
+    "editForm": "Editați formularul",
+    "notIncludedTitle": "Nu este inclus în planul dumneavoastră",
+    "notIncludedBody": "Întrebările pentru clienți nu fac parte din planul {plan}. Serviciile primesc rezervări și fără ele.",
+    "emptyTitle": "Încă nu există formulare",
+    "emptyBody": "Întrebați ce trebuie să știți înainte de programare, ca să nu aflați abia la scaun. Răspunsurile se salvează în rezervare și sunt afișate persoanei care face programarea.",
+    "create": "Creați un formular",
+    "listLabel": "Formulare",
+    "noQuestions": "Încă nu există întrebări",
+    "questions": "{count, plural, one {# întrebare} few {# întrebări} other {# de întrebări}}",
+    "required": "{count, plural, one {# obligatoriu} few {# obligatorii} other {# obligatorii}}",
+    "edited": "Editat {date}",
+    "footer": "Pentru a adăuga un formular unui serviciu, deschideți serviciul și alegeți-l la <b>Întrebări și cerințe</b>. Fiecare serviciu folosește cel mult un formular.",
+    "notUsed": "Încă nu este folosit de niciun serviciu",
+    "askedOn": "Folosit la: <list></list>",
+    "hidden": "(ascuns)",
+    "more": "{count, plural, one {încă #} few {încă #} other {încă #}}"
+  },
   "builder": {
     "types": {
-      "short_text": {},
-      "long_text": {},
-      "yes_no": {},
-      "single_choice": {},
-      "multi_choice": {},
-      "date": {},
-      "acknowledgement": {}
+      "short_text": {
+        "label": "Răspuns scurt",
+        "hint": "Un nume, un număr, câteva cuvinte.",
+        "placeholder": "de ex. Care este marca și modelul mașinii dumneavoastră?"
+      },
+      "long_text": {
+        "label": "Paragraf",
+        "hint": "Loc pentru câteva propoziții.",
+        "placeholder": "de ex. Spuneți-ne despre orice accidentări de care ar trebui să știm."
+      },
+      "yes_no": {
+        "label": "Da / Nu",
+        "hint": "Două butoane: Da și Nu.",
+        "placeholder": "de ex. Este prima dumneavoastră vizită?"
+      },
+      "single_choice": {
+        "label": "Alegere multiplă",
+        "hint": "Clienții aleg o singură opțiune.",
+        "placeholder": "de ex. Cât de lung este părul dumneavoastră acum?"
+      },
+      "multi_choice": {
+        "label": "Casete de selectare",
+        "hint": "Clienții bifează toate variantele care se aplică.",
+        "placeholder": "de ex. Pe ce zone ați dori să ne concentrăm?"
+      },
+      "date": {
+        "label": "Dată",
+        "hint": "Un selector de dată, de ex. data nașterii sau a evenimentului.",
+        "placeholder": "de ex. Când are loc evenimentul?"
+      },
+      "acknowledgement": {
+        "label": "Confirmare",
+        "hint": "O declarație pe care clienții o bifează pentru a confirma că au citit-o.",
+        "placeholder": "de ex. Înțeleg că este necesar un test de sensibilitate cu 48 de ore înainte de un serviciu de colorare."
+      }
     },
-    "errors": {},
-    "toasts": {},
-    "saveBar": {},
-    "archiveDialog": {},
-    "usage": {},
-    "add": {},
-    "card": {},
-    "options": {},
+    "errors": {
+      "name": "Dați un nume formularului",
+      "statement": "Scrieți declarația cu care sunt de acord clienții",
+      "question": "Scrieți întrebarea",
+      "twoChoices": "Adăugați cel puțin două opțiuni",
+      "distinct": "Fiecare opțiune trebuie să fie diferită"
+    },
+    "leaveConfirm": "Aveți modificări nesalvate în acest formular. Ieșiți fără a le salva?",
+    "toasts": {
+      "saved": "Formular salvat",
+      "created": "Formular creat",
+      "archived": "Formular arhivat",
+      "archivedFrom": "{count, plural, one {Formular arhivat și eliminat dintr-un serviciu} few {Formular arhivat și eliminat din # servicii} other {Formular arhivat și eliminat din # de servicii}}"
+    },
+    "untitled": "Întrebare fără titlu",
+    "archive": "Arhivați formularul",
+    "show": "Afișați",
+    "questionsTab": "{count, plural, one {Întrebări (#)} few {Întrebări (#)} other {Întrebări (#)}}",
+    "previewTab": "Previzualizare client",
+    "details": "Detaliile formularului",
+    "nameLabel": "Numele formularului",
+    "nameHint": "Doar echipa dumneavoastră vede acest nume. Clienții văd doar întrebările.",
+    "namePlaceholder": "de ex. Consultație pentru clienți noi",
+    "questions": "Întrebări",
+    "questionCount": "{count} din {max}",
+    "emptyTitle": "Încă nu există întrebări",
+    "emptyBody": "Păstrați-le scurte. La două-trei întrebări se răspunde; zece se sar.",
+    "saveBar": {
+      "saving": "Se salvează…",
+      "fix": "{count, plural, one {Remediați # problemă înainte de salvare} few {Remediați # probleme înainte de salvare} other {Remediați # de probleme înainte de salvare}}",
+      "unsaved": "Modificări nesalvate",
+      "allSaved": "Toate modificările au fost salvate",
+      "newForm": "Formular nou",
+      "discard": "Renunțați",
+      "cancel": "Anulați",
+      "save": "Salvați modificările",
+      "create": "Creați formularul"
+    },
+    "archiveDialog": {
+      "title": "Arhivați „{name}”?",
+      "confirm": "Arhivați formularul",
+      "confirmUsed": "{count, plural, one {Arhivați și eliminați dintr-un serviciu} few {Arhivați și eliminați din # servicii} other {Arhivați și eliminați din # de servicii}}",
+      "descriptionUsed": "Aceste servicii nu vor mai pune aceste întrebări la rezervările noi până alegeți alt formular:",
+      "descriptionUnused": "Niciun serviciu nu folosește acest formular, deci nimic nu se schimbă pentru clienți.",
+      "keep": "Răspunsurile deja date la rezervările trecute și viitoare rămân la acele rezervări.",
+      "lost": "Modificările nesalvate ale acestui formular se vor pierde."
+    },
+    "usage": {
+      "none": "Niciun serviciu nu folosește încă acest formular. Deschideți un serviciu în <link>Servicii</link> și alegeți-l la Întrebări și cerințe.",
+      "title": "Se pune când clienții rezervă",
+      "hidden": "ascuns",
+      "note": "Modificările se aplică rezervărilor noi pentru aceste servicii imediat ce salvați."
+    },
+    "add": {
+      "label": "Adăugați o întrebare",
+      "limit": "S-a atins limita de {max} întrebări",
+      "type": "Tipul întrebării"
+    },
+    "card": {
+      "required": "Obligatoriu",
+      "attention": "Necesită atenție",
+      "moveUp": "Mutați întrebarea {n} mai sus",
+      "moveDown": "Mutați întrebarea {n} mai jos",
+      "type": "Tip",
+      "statement": "Declarație",
+      "question": "Întrebare",
+      "helpText": "Text de ajutor",
+      "helpAck": "Se afișează sub declarație, de ex. unde se poate citi politica completă.",
+      "helpQuestion": "Se afișează sub întrebare.",
+      "mustTick": "Trebuie bifat pentru a rezerva",
+      "ackRequired": "Clienții nu pot rezerva până nu bifează.",
+      "questionRequired": "Clienții nu pot rezerva fără a răspunde.",
+      "optional": "Clienții îl pot sări.",
+      "duplicate": "Duplicați",
+      "delete": "Ștergeți",
+      "done": "Gata"
+    },
+    "options": {
+      "legend": "Opțiuni",
+      "choice": "Opțiunea {n}",
+      "remove": "Eliminați opțiunea {n}",
+      "max": "Cel mult {max} opțiuni",
+      "add": "Adăugați o opțiune"
+    },
     "preview": {
-      "errors": {}
+      "title": "Previzualizare client",
+      "description": "Pasul „Câteva detalii” din rezervare. Încercați-l; nu se salvează nimic.",
+      "empty": "Întrebările adăugate apar aici așa cum le vor vedea clienții.",
+      "noteLabel": "Altceva ce ar trebui să știe?",
+      "noteHint": "Fiecare rezervare se încheie cu această casetă. Nu face parte din formularul dumneavoastră.",
+      "notePlaceholder": "Alergii, preferințe, indicații de parcare…",
+      "invalid": "{count, plural, one {# răspuns lipsește sau este invalid} few {# răspunsuri lipsesc sau sunt invalide} other {# de răspunsuri lipsesc sau sunt invalide}}",
+      "allGood": "Totul în regulă — ar fi trecut.",
+      "clear": "Ștergeți",
+      "tryContinue": "Încercați să continuați",
+      "errors": {
+        "confirm": "Confirmați pentru a continua.",
+        "required": "Această întrebare este obligatorie.",
+        "invalid": "Răspuns invalid.",
+        "tooLong": "Maximum {max} de caractere.",
+        "choose": "Alegeți una dintre opțiuni.",
+        "invalidChoice": "Opțiune invalidă.",
+        "date": "Introduceți o dată validă."
+      }
     }
   },
   "appearance": {
-    "masthead": {},
+    "title": "Aspectul paginii",
+    "description": "Faceți pagina publică să vă semene: antet, culoare de accent, ordinea secțiunilor, un anunț și propriile butoane cu linkuri.",
+    "saved": "Pagina dumneavoastră a fost actualizată",
+    "masthead": {
+      "title": "Antet",
+      "body": "Închis și cinematografic sau luminos și aerisit. Fotografia de copertă se vede în ambele cazuri.",
+      "sample": "Pagina dumneavoastră",
+      "noir": "Noir — antet închis",
+      "ivory": "Ivory — antet luminos"
+    },
     "accent": {
-      "names": {}
+      "title": "Culoare de accent",
+      "body": "Folosită pentru detalii mici: etichete, linii, stele și evidențieri.",
+      "names": {
+        "brass": "Alamă",
+        "emerald": "Smarald",
+        "rose": "Roz",
+        "sapphire": "Safir",
+        "copper": "Cupru"
+      }
     },
     "sections": {
-      "names": {}
+      "title": "Secțiuni",
+      "body": "Alegeți ce văd vizitatorii și în ce ordine. Serviciile vin mereu primele, iar recenziile rămân mereu vizibile — ele fac pagina demnă de încredere.",
+      "alwaysFirst": "Mereu primul",
+      "always": "Afișat mereu",
+      "hide": "Ascundeți {name}",
+      "show": "Afișați {name}",
+      "up": "Mutați {name} mai sus",
+      "down": "Mutați {name} mai jos",
+      "names": {
+        "services": "Servicii",
+        "work": "Lucrări",
+        "featured": "Evidențiate",
+        "team": "Echipă",
+        "reviews": "Recenzii",
+        "about": "Despre"
+      }
     },
-    "notice": {},
-    "links": {}
+    "notice": {
+      "title": "Anunț",
+      "body": "Un mesaj scurt în partea de sus a paginii — program de sărbători, listă de așteptare, o nouă locație.",
+      "label": "Mesaj",
+      "placeholder": "Închis 24–26 decembrie. Revenim pe 27."
+    },
+    "links": {
+      "title": "Butoane cu linkuri",
+      "body": "Meniul, cardurile cadou, un magazin sau o listă de redare: până la 8 butoane afișate pe pagina dumneavoastră.",
+      "label": "Textul butonului",
+      "url": "Adresă",
+      "labelPlaceholder": "Carduri cadou",
+      "remove": "Eliminați linkul",
+      "add": "Adăugați un link"
+    }
   }
 }

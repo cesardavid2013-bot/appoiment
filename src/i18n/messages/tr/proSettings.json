@@ -558,38 +558,225 @@
       "submit": "İncelemeye gönder"
     }
   },
-  "forms": {},
+  "forms": {
+    "title": "Müşteri soruları",
+    "description": "Müşterilerin rezervasyon sırasında yanıtladığı sorular: alerjiler, hedefler, getirecekleri araç. Bir formu bir kez oluşturun, sonra ihtiyaç duyan her hizmette seçin.",
+    "newForm": "Yeni form",
+    "editForm": "Formu düzenle",
+    "notIncludedTitle": "Planınıza dahil değil",
+    "notIncludedBody": "Müşteri soruları {plan} planına dahil değil. Hizmetler bunlar olmadan da rezervasyon almaya devam eder.",
+    "emptyTitle": "Henüz form yok",
+    "emptyBody": "Randevudan önce bilmeniz gerekenleri sorun; koltukta öğrenmeyin. Yanıtlar rezervasyonla birlikte kaydedilir ve randevuyu yapan kişiye gösterilir.",
+    "create": "Form oluştur",
+    "listLabel": "Formlar",
+    "noQuestions": "Henüz soru yok",
+    "questions": "{count, plural, one {# soru} other {# soru}}",
+    "required": "{count, plural, one {# zorunlu} other {# zorunlu}}",
+    "edited": "Düzenlendi: {date}",
+    "footer": "Bir formu hizmette kullanmak için hizmeti açın ve <b>Sorular ve gereklilikler</b> altında seçin. Her hizmet en fazla bir form sorar.",
+    "notUsed": "Henüz hiçbir hizmette kullanılmıyor",
+    "askedOn": "Kullanıldığı yerler: <list></list>",
+    "hidden": "(gizli)",
+    "more": "{count, plural, one {# tane daha} other {# tane daha}}"
+  },
   "builder": {
     "types": {
-      "short_text": {},
-      "long_text": {},
-      "yes_no": {},
-      "single_choice": {},
-      "multi_choice": {},
-      "date": {},
-      "acknowledgement": {}
+      "short_text": {
+        "label": "Kısa yanıt",
+        "hint": "Bir ad, bir sayı, birkaç kelime.",
+        "placeholder": "örn. Aracınızın marka ve modeli nedir?"
+      },
+      "long_text": {
+        "label": "Paragraf",
+        "hint": "Birkaç cümlelik yer.",
+        "placeholder": "örn. Bilmemiz gereken yaralanmaları anlatın."
+      },
+      "yes_no": {
+        "label": "Evet / Hayır",
+        "hint": "İki düğme: Evet ve Hayır.",
+        "placeholder": "örn. Bu ilk ziyaretiniz mi?"
+      },
+      "single_choice": {
+        "label": "Çoktan seçmeli",
+        "hint": "Müşteri tek bir seçenek seçer.",
+        "placeholder": "örn. Saçınız şu anda ne kadar uzun?"
+      },
+      "multi_choice": {
+        "label": "Onay kutuları",
+        "hint": "Müşteri uygun olanların hepsini işaretler.",
+        "placeholder": "örn. Hangi bölgelere odaklanmamızı istersiniz?"
+      },
+      "date": {
+        "label": "Tarih",
+        "hint": "Bir tarih seçici, örn. doğum tarihi veya etkinlik tarihi.",
+        "placeholder": "örn. Etkinlik ne zaman?"
+      },
+      "acknowledgement": {
+        "label": "Onay beyanı",
+        "hint": "Müşterinin okuduğunu onaylamak için işaretlediği bir ifade.",
+        "placeholder": "örn. Boya hizmetinden 48 saat önce alerji testi gerektiğini anlıyorum."
+      }
     },
-    "errors": {},
-    "toasts": {},
-    "saveBar": {},
-    "archiveDialog": {},
-    "usage": {},
-    "add": {},
-    "card": {},
-    "options": {},
+    "errors": {
+      "name": "Forma bir ad verin",
+      "statement": "Müşterilerin kabul ettiği ifadeyi yazın",
+      "question": "Soruyu yazın",
+      "twoChoices": "En az iki seçenek ekleyin",
+      "distinct": "Her seçenek farklı olmalı"
+    },
+    "leaveConfirm": "Bu formda kaydedilmemiş değişiklikler var. Kaydetmeden çıkılsın mı?",
+    "toasts": {
+      "saved": "Form kaydedildi",
+      "created": "Form oluşturuldu",
+      "archived": "Form arşivlendi",
+      "archivedFrom": "{count, plural, one {Form arşivlendi ve # hizmetten kaldırıldı} other {Form arşivlendi ve # hizmetten kaldırıldı}}"
+    },
+    "untitled": "Başlıksız soru",
+    "archive": "Formu arşivle",
+    "show": "Göster",
+    "questionsTab": "{count, plural, one {Sorular (#)} other {Sorular (#)}}",
+    "previewTab": "Müşteri önizlemesi",
+    "details": "Form ayrıntıları",
+    "nameLabel": "Form adı",
+    "nameHint": "Bunu yalnızca ekibiniz görür. Müşteriler yalnızca soruları görür.",
+    "namePlaceholder": "örn. Yeni müşteri görüşmesi",
+    "questions": "Sorular",
+    "questionCount": "{count} / {max}",
+    "emptyTitle": "Henüz soru yok",
+    "emptyBody": "Kısa tutun. İki üç soru yanıtlanır; on soru atlanır.",
+    "saveBar": {
+      "saving": "Kaydediliyor…",
+      "fix": "{count, plural, one {Kaydetmeden önce # şeyi düzeltin} other {Kaydetmeden önce # şeyi düzeltin}}",
+      "unsaved": "Kaydedilmemiş değişiklikler",
+      "allSaved": "Tüm değişiklikler kaydedildi",
+      "newForm": "Yeni form",
+      "discard": "Vazgeç",
+      "cancel": "Vazgeç",
+      "save": "Değişiklikleri kaydet",
+      "create": "Formu oluştur"
+    },
+    "archiveDialog": {
+      "title": "“{name}” arşivlensin mi?",
+      "confirm": "Formu arşivle",
+      "confirmUsed": "{count, plural, one {Arşivle ve # hizmetten kaldır} other {Arşivle ve # hizmetten kaldır}}",
+      "descriptionUsed": "Başka bir form seçene kadar bu hizmetler yeni rezervasyonlarda bu soruları sormayacak:",
+      "descriptionUnused": "Hiçbir hizmet bu formu kullanmıyor; müşteriler için hiçbir şey değişmez.",
+      "keep": "Geçmiş ve yaklaşan rezervasyonlarda verilen yanıtlar o rezervasyonlarda kalır.",
+      "lost": "Bu formdaki kaydedilmemiş düzenlemeler kaybolacak."
+    },
+    "usage": {
+      "none": "Henüz hiçbir hizmet bu formu sormuyor. <link>Hizmetler</link>’de bir hizmeti açın ve Sorular ve gereklilikler altında seçin.",
+      "title": "Müşteriler rezervasyon yaparken sorulur",
+      "hidden": "gizli",
+      "note": "Değişiklikler, kaydettiğiniz anda bu hizmetlerin yeni rezervasyonlarına uygulanır."
+    },
+    "add": {
+      "label": "Soru ekle",
+      "limit": "{max} soru sınırına ulaşıldı",
+      "type": "Soru türü"
+    },
+    "card": {
+      "required": "Zorunlu",
+      "attention": "Dikkat gerekiyor",
+      "moveUp": "{n}. soruyu yukarı taşı",
+      "moveDown": "{n}. soruyu aşağı taşı",
+      "type": "Tür",
+      "statement": "İfade",
+      "question": "Soru",
+      "helpText": "Yardım metni",
+      "helpAck": "İfadenin altında gösterilir, örn. politikanın tamamının nerede okunacağı.",
+      "helpQuestion": "Sorunun altında gösterilir.",
+      "mustTick": "Rezervasyon için işaretlenmeli",
+      "ackRequired": "Müşteriler işaretlemeden rezervasyon yapamaz.",
+      "questionRequired": "Müşteriler yanıtlamadan rezervasyon yapamaz.",
+      "optional": "Müşteriler atlayabilir.",
+      "duplicate": "Çoğalt",
+      "delete": "Sil",
+      "done": "Tamam"
+    },
+    "options": {
+      "legend": "Seçenekler",
+      "choice": "{n}. seçenek",
+      "remove": "{n}. seçeneği kaldır",
+      "max": "En fazla {max} seçenek",
+      "add": "Seçenek ekle"
+    },
     "preview": {
-      "errors": {}
+      "title": "Müşteri önizlemesi",
+      "description": "Rezervasyonun “Birkaç ayrıntı” adımı. Deneyin; hiçbir şey kaydedilmez.",
+      "empty": "Eklediğiniz sorular burada müşterilerin göreceği şekilde görünür.",
+      "noteLabel": "Bilmeleri gereken başka bir şey var mı?",
+      "noteHint": "Her rezervasyon bu kutuyla biter. Formunuzun parçası değildir.",
+      "notePlaceholder": "Alerjiler, tercihler, otopark notları…",
+      "invalid": "{count, plural, one {# yanıt eksik veya geçersiz} other {# yanıt eksik veya geçersiz}}",
+      "allGood": "Her şey yolunda; bu geçerdi.",
+      "clear": "Temizle",
+      "tryContinue": "Devam etmeyi dene",
+      "errors": {
+        "confirm": "Devam etmek için onaylayın.",
+        "required": "Bu soru zorunlu.",
+        "invalid": "Geçersiz yanıt.",
+        "tooLong": "En fazla {max} karakter olsun.",
+        "choose": "Seçeneklerden birini seçin.",
+        "invalidChoice": "Geçersiz seçenek.",
+        "date": "Geçerli bir tarih girin."
+      }
     }
   },
   "appearance": {
-    "masthead": {},
+    "title": "Sayfa görünümü",
+    "description": "Herkese açık sayfanızı size benzetin: üst bölüm, vurgu rengi, bölüm sırası, bir duyuru ve kendi bağlantı düğmeleriniz.",
+    "saved": "Sayfanız güncellendi",
+    "masthead": {
+      "title": "Üst bölüm",
+      "body": "Koyu ve sinematik ya da açık ve ferah. Kapak fotoğrafınız ikisinde de görünür.",
+      "sample": "Sayfanız",
+      "noir": "Noir — koyu üst bölüm",
+      "ivory": "Ivory — açık üst bölüm"
+    },
     "accent": {
-      "names": {}
+      "title": "Vurgu rengi",
+      "body": "Küçük ayrıntılarda kullanılır: etiketler, çizgiler, yıldızlar ve vurgular.",
+      "names": {
+        "brass": "Pirinç",
+        "emerald": "Zümrüt",
+        "rose": "Gül",
+        "sapphire": "Safir",
+        "copper": "Bakır"
+      }
     },
     "sections": {
-      "names": {}
+      "title": "Bölümler",
+      "body": "Ziyaretçilerin ne göreceğini ve hangi sırayla göreceğini seçin. Hizmetler her zaman ilk sıradadır ve yorumlar her zaman görünür kalır; sayfanızı güvenilir kılan onlardır.",
+      "alwaysFirst": "Her zaman ilk",
+      "always": "Her zaman gösterilir",
+      "hide": "{name} bölümünü gizle",
+      "show": "{name} bölümünü göster",
+      "up": "{name} bölümünü yukarı taşı",
+      "down": "{name} bölümünü aşağı taşı",
+      "names": {
+        "services": "Hizmetler",
+        "work": "Çalışmalar",
+        "featured": "Öne çıkanlar",
+        "team": "Ekip",
+        "reviews": "Yorumlar",
+        "about": "Hakkında"
+      }
     },
-    "notice": {},
-    "links": {}
+    "notice": {
+      "title": "Duyuru",
+      "body": "Sayfanızın en üstünde kısa bir mesaj: tatil saatleri, bekleme listesi, yeni bir konum.",
+      "label": "Mesaj",
+      "placeholder": "24–26 Aralık kapalıyız. 27’sinde buradayız."
+    },
+    "links": {
+      "title": "Bağlantı düğmeleri",
+      "body": "Menünüz, hediye kartları, bir mağaza veya bir çalma listesi: sayfanızda en fazla 8 düğme.",
+      "label": "Düğme metni",
+      "url": "Adres",
+      "labelPlaceholder": "Hediye kartları",
+      "remove": "Bağlantıyı kaldır",
+      "add": "Bağlantı ekle"
+    }
   }
 }
