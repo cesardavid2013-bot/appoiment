@@ -60,7 +60,11 @@
     "title": "Henüz eşleşme yok",
     "query": "Daha genel bir terim veya farklı bir yazım deneyin ya da bazı filtreleri kaldırın.",
     "filters": "Bir filtreyi kaldırmayı veya daha geniş bir bölgede aramayı deneyin.",
-    "clear": "Tüm filtreleri temizle"
+    "clear": "Tüm filtreleri temizle",
+    "categoryTitle": "Burada henüz {category} alanında profesyonel yok",
+    "categoryBody": "Kept şehir şehir büyüyor. Bu hizmeti siz mi sunuyorsunuz? Rezervasyon sayfanız bugün yayında olabilir.",
+    "listServices": "Hizmetlerinizi ekleyin",
+    "seeAll": "Tüm profesyoneller"
   },
   "showMore": "Daha fazla göster",
   "filters": {
