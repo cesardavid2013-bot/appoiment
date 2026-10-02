@@ -84,5 +84,66 @@
   "other": {
     "name": "기타",
     "description": "그 밖에 예약할 수 있는 모든 것."
+  },
+  "music-audio": {
+    "name": "음악 & 오디오",
+    "description": "프로듀서, 녹음 스튜디오, 믹싱, 보컬 코칭."
+  },
+  "music-production": {
+    "name": "음악 프로덕션"
+  },
+  "recording-studio": {
+    "name": "녹음 스튜디오"
+  },
+  "vocal-coaching": {
+    "name": "보컬 코칭"
+  },
+  "creators": {
+    "name": "크리에이터 & 콘텐츠",
+    "description": "콘텐츠 크리에이터, UGC, 소셜 미디어, 영상 편집."
+  },
+  "content-creation": {
+    "name": "콘텐츠 제작"
+  },
+  "video-editing": {
+    "name": "영상 편집"
+  },
+  "social-media": {
+    "name": "소셜 미디어 운영"
+  },
+  "design": {
+    "name": "디자인 & 크리에이티브",
+    "description": "그래픽, 브랜드, 웹, 인테리어 디자인."
+  },
+  "graphic-design": {
+    "name": "그래픽 & 브랜드 디자인"
+  },
+  "web-design": {
+    "name": "웹 디자인"
+  },
+  "interior-design": {
+    "name": "인테리어 디자인"
+  },
+  "health": {
+    "name": "건강 & 케어",
+    "description": "물리치료, 영양, 심리 상담, 통합 케어."
+  },
+  "physio": {
+    "name": "물리치료 & 카이로프랙틱"
+  },
+  "nutrition": {
+    "name": "영양 상담"
+  },
+  "therapy": {
+    "name": "심리 치료 & 상담"
+  },
+  "cleaning": {
+    "name": "청소"
+  },
+  "handyman": {
+    "name": "수리 & 설치"
+  },
+  "gardening": {
+    "name": "정원 관리"
   }
 }

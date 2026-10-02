@@ -84,5 +84,66 @@
   "other": {
     "name": "Khác",
     "description": "Mọi thứ khác bạn có thể đặt lịch."
+  },
+  "music-audio": {
+    "name": "Âm nhạc & âm thanh",
+    "description": "Nhà sản xuất, phòng thu, hòa âm phối khí và huấn luyện thanh nhạc."
+  },
+  "music-production": {
+    "name": "Sản xuất âm nhạc"
+  },
+  "recording-studio": {
+    "name": "Phòng thu âm"
+  },
+  "vocal-coaching": {
+    "name": "Huấn luyện thanh nhạc"
+  },
+  "creators": {
+    "name": "Nhà sáng tạo & nội dung",
+    "description": "Người sáng tạo nội dung, UGC, mạng xã hội và biên tập video."
+  },
+  "content-creation": {
+    "name": "Sáng tạo nội dung"
+  },
+  "video-editing": {
+    "name": "Biên tập video"
+  },
+  "social-media": {
+    "name": "Quản lý mạng xã hội"
+  },
+  "design": {
+    "name": "Thiết kế & sáng tạo",
+    "description": "Thiết kế đồ họa, thương hiệu, web và nội thất."
+  },
+  "graphic-design": {
+    "name": "Thiết kế đồ họa & thương hiệu"
+  },
+  "web-design": {
+    "name": "Thiết kế web"
+  },
+  "interior-design": {
+    "name": "Thiết kế nội thất"
+  },
+  "health": {
+    "name": "Sức khỏe & chăm sóc",
+    "description": "Vật lý trị liệu, dinh dưỡng, trị liệu tâm lý và chăm sóc toàn diện."
+  },
+  "physio": {
+    "name": "Vật lý trị liệu & nắn chỉnh cột sống"
+  },
+  "nutrition": {
+    "name": "Dinh dưỡng"
+  },
+  "therapy": {
+    "name": "Trị liệu & tư vấn tâm lý"
+  },
+  "cleaning": {
+    "name": "Dọn dẹp"
+  },
+  "handyman": {
+    "name": "Thợ sửa chữa"
+  },
+  "gardening": {
+    "name": "Làm vườn"
   }
 }
