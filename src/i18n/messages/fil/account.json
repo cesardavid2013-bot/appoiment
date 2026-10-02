@@ -1,0 +1,311 @@
+{
+  "loading": "Naglo-load…",
+  "noEmail": "Walang naka-file na email",
+  "saveChanges": "I-save ang mga pagbabago",
+  "cancel": "Kanselahin",
+  "checkFields": "Pakisuri ang mga naka-highlight na field.",
+  "nav": {
+    "label": "Mga setting ng account",
+    "account": "Account"
+  },
+  "sections": {
+    "profile": {
+      "label": "Profile",
+      "description": "Pangalan, larawan, telepono at time zone"
+    },
+    "security": {
+      "label": "Pag-login at seguridad",
+      "description": "Password, kumpirmasyon ng email at mga device"
+    },
+    "notifications": {
+      "label": "Mga setting ng abiso",
+      "description": "Piliin kung ano ang ipapadala namin sa email o text"
+    },
+    "addresses": {
+      "label": "Mga naka-save na address",
+      "description": "Para sa mga propesyonal na pumupunta sa iyo"
+    },
+    "privacy": {
+      "label": "Privacy at data",
+      "description": "I-download ang iyong data o burahin ang iyong account"
+    }
+  },
+  "home": {
+    "memberSince": "Miyembro mula {date}",
+    "confirmEmail": "<b>Kumpirmahin ang iyong email.</b> Nagpadala kami ng link sa {email} para makontak ka ng mga negosyo tungkol sa mga booking.",
+    "activity": "Ang iyong aktibidad",
+    "settings": "Mga setting",
+    "more": "Higit pa",
+    "signOut": "Mag-sign out",
+    "rows": {
+      "bookings": {
+        "label": "Mga booking",
+        "description": "Paparating at nakaraang mga appointment"
+      },
+      "saved": {
+        "label": "Mga naka-save",
+        "description": "Mga propesyonal na na-save mo"
+      },
+      "messages": {
+        "label": "Mga mensahe",
+        "description": "Mga usapan kasama ang mga negosyo"
+      },
+      "notifications": {
+        "label": "Mga abiso",
+        "description": "Mga update tungkol sa iyong mga booking"
+      },
+      "business": {
+        "label": "Lumipat sa iyong negosyo",
+        "description": "Kalendaryo, mga serbisyo at kliyente"
+      },
+      "offer": {
+        "label": "Ialok ang iyong serbisyo sa Kept",
+        "description": "Tumanggap ng booking at palaguin ang iyong negosyo — libre sa simula"
+      },
+      "support": {
+        "label": "Tulong at suporta",
+        "description": "Humingi ng tulong sa booking, bayad o iyong account"
+      },
+      "legal": {
+        "label": "Mga tuntunin at privacy",
+        "description": "Paano gumagana ang Kept at paano namin pinangangasiwaan ang iyong data"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Naipadala ang email ng kumpirmasyon",
+    "sentBody": "Tingnan ang {email} — gumagana ang link sa loob ng 3 araw.",
+    "sent": "Naipadala ang email",
+    "resend": "Ipadala muli ang link"
+  },
+  "profile": {
+    "description": "Paano ka lumalabas sa mga propesyonal na binu-book mo.",
+    "saved": "Na-save ang profile",
+    "details": "Personal na detalye",
+    "name": "Pangalan",
+    "email": "Email",
+    "changeEmail": "Para palitan ang email mo sa pag-sign in, <link>makipag-ugnayan sa suporta</link> para makumpirma naming ikaw ito.",
+    "phone": "Telepono",
+    "phoneHintSms": "Matatawagan ka ng mga negosyong binu-book mo tungkol sa mga appointment, at maaari ka naming padalhan ng mga paalala sa text kung i-o-on mo ito.",
+    "phoneHint": "Magagamit ito ng mga negosyong binu-book mo para makontak ka tungkol sa isang appointment.",
+    "photo": {
+      "title": "Larawan",
+      "description": "Ipinapakita sa mga propesyonal na binu-book mo, katabi ng iyong pangalan.",
+      "updated": "Na-update ang larawan",
+      "removed": "Naalis ang larawan",
+      "change": "Palitan ang larawan",
+      "upload": "Mag-upload ng larawan",
+      "remove": "Alisin",
+      "hint": "JPG, PNG o WebP, hanggang 15 MB. Inaalis namin ang data ng lokasyon sa mga larawan."
+    },
+    "timezone": {
+      "label": "Time zone",
+      "hint": "Ang time zone ng iyong tinitirhan. Palaging ipinapakita ang oras ng appointment sa lokal na oras ng negosyo.",
+      "notSet": "Hindi pa naitakda",
+      "detect": "Awtomatikong tuklasin",
+      "detectFailed": "Hindi namin matukoy ang iyong time zone. Pumili mula sa listahan."
+    },
+    "language": {
+      "title": "Wika",
+      "description": "Ginagamit sa mga menu, button at petsa sa buong Kept. Ang mga pangalan ng negosyo, serbisyo at review ay lumalabas ayon sa pagkakasulat ng negosyo."
+    }
+  },
+  "security": {
+    "description": "Panatilihing ligtas ang iyong account at nasa iyong kamay.",
+    "password": {
+      "title": "Password",
+      "setTitle": "Magtakda ng password",
+      "description": "Kapag pinalitan mo ang iyong password, masa-sign out ka sa lahat ng iba pang device.",
+      "setDescription": "Nagsa-sign in ka gamit ang Google. Magdagdag ng password para makapag-sign in ka rin gamit ang iyong email.",
+      "change": "Palitan ang password",
+      "setButton": "Itakda ang password",
+      "current": "Kasalukuyang password",
+      "new": "Bagong password",
+      "newHint": "Hindi bababa sa 8 character. Iwasan ang mga karaniwang salita at ang iyong email.",
+      "confirm": "Kumpirmahin ang bagong password",
+      "tooShort": "Gumamit ng hindi bababa sa 8 character.",
+      "mismatch": "Hindi magkapareho ang mga password.",
+      "changed": "Napalitan ang password",
+      "set": "Naitakda ang password",
+      "othersSignedOut": "Na-sign out na ang iba pang device."
+    },
+    "email": {
+      "title": "Email",
+      "description": "Ginagamit namin ang iyong email para sa pag-sign in at pagpapadala ng kumpirmasyon ng booking.",
+      "confirmed": "Nakumpirma",
+      "notConfirmed": "Hindi pa nakukumpirma",
+      "none": "Walang email ang account na ito."
+    },
+    "devices": {
+      "title": "Mga device",
+      "description": "Kung nag-sign in ka sa shared o nawalang device, i-sign out ito rito. Mananatiling naka-sign in ang device na ito.",
+      "status": "{count, plural, =0 {Ang device na ito lang ang naka-sign in} one {Naka-sign in sa # iba pang device} other {Naka-sign in sa # iba pang device}}",
+      "signOutOthers": "Mag-sign out sa ibang device",
+      "confirmTitle": "Mag-sign out sa ibang device?",
+      "confirmBody": "Kailangang mag-sign in muli ang sinumang gumagamit ng iyong account sa ibang telepono, tablet o computer.",
+      "confirm": "I-sign out sila",
+      "signedOutToast": "{count, plural, one {Na-sign out sa # iba pang device} other {Na-sign out sa # iba pang device}}"
+    }
+  },
+  "notifications": {
+    "description": "Piliin kung paano ka namin papanatilihing updated. Hindi kami magpapadala nang higit sa kailangan.",
+    "saved": "Na-save",
+    "emailAndText": "Mga alerto sa email at text",
+    "emailOnly": "Mga alerto sa email",
+    "inboxNote": "Lalabas din ang lahat sa iyong inbox ng Mga abiso sa Kept, anuman ang piliin mo rito.",
+    "addPhone": "Magdagdag ng numero ng telepono sa iyong <link>profile</link> para makatanggap ng mga text message.",
+    "email": "Email",
+    "sms": "Text message",
+    "forTopic": "para sa {topic}",
+    "alwaysOn": {
+      "bookings": "Palaging naka-on ang email para makontak ka namin kapag may nagbago sa booking.",
+      "business": "Palaging naka-on ang email para hindi mo mapalampas ang bagong booking o kahilingan."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Mga update sa booking",
+        "description": "Mga kumpirmasyon, pagbabago at pagkansela."
+      },
+      "reminders": {
+        "label": "Mga paalala",
+        "description": "Bago ang mga paparating na appointment."
+      },
+      "messages": {
+        "label": "Mga mensahe",
+        "description": "Kapag may nagmensahe sa iyo na negosyo o customer."
+      },
+      "waitlist": {
+        "label": "Mga bakante sa waitlist",
+        "description": "Kapag naging available ang oras na gusto mo."
+      },
+      "reviews": {
+        "label": "Mga hiling na mag-review",
+        "description": "Maikling mensahe pagkatapos ng natapos na appointment."
+      },
+      "business": {
+        "label": "Aktibidad ng negosyo",
+        "description": "Mga bagong booking, kahilingan at review para sa iyong negosyo."
+      },
+      "marketing": {
+        "label": "Balita at alok",
+        "description": "Paminsan-minsang update mula sa mga negosyong na-book mo."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Para sa mga mobile na propesyonal na pumupunta sa iyo — barbero, detailer, trainer at iba pa.",
+    "defaultLabel": "Bahay",
+    "saved": "Na-save ang address",
+    "removed": "Naalis ang address",
+    "emptyTitle": "Walang naka-save na address",
+    "emptyBody": "Itago sa iisang lugar ang mga lugar kung saan ka nagbo-book ng mobile na serbisyo — tulad ng bahay o opisina.",
+    "add": "Magdagdag ng address",
+    "removeLabel": "Alisin ang {label}",
+    "count": "{count} sa {max} ang naka-save",
+    "limit": "Naabot mo na ang limitasyon. Mag-alis ng address para makapagdagdag ng isa pa.",
+    "dialogBody": "Pribado sa iyo. Makikita lang ng propesyonal ang address kapag nag-book ka ng serbisyo roon.",
+    "save": "I-save ang address",
+    "fields": {
+      "name": "Pangalan",
+      "nameHint": "Halimbawa: Bahay, Trabaho o Gym.",
+      "line1": "Address ng kalye",
+      "line2": "Apartment, suite o palapag",
+      "city": "Lungsod",
+      "region": "Estado / rehiyon",
+      "postalCode": "Postal code",
+      "country": "Bansa"
+    },
+    "removeTitle": "Alisin ang “{label}”?",
+    "removeBody": "Hindi maaapektuhan ang mga booking na nagawa mo na sa address na ito.",
+    "remove": "Alisin ang address"
+  },
+  "privacy": {
+    "description": "Sa iyo ang iyong data. Basahin kung paano namin ito ginagamit sa aming <link>patakaran sa privacy</link>.",
+    "export": {
+      "title": "I-download ang iyong data",
+      "description": "Kumuha ng kopya ng iyong profile, mga naka-save na address, appointment, review, mensahe, naka-save na propesyonal at kahilingan sa suporta bilang JSON file.",
+      "button": "I-download ang aking data",
+      "hint": "Agad na inihahanda. Itago ang file sa ligtas na lugar — naglalaman ito ng personal na impormasyon."
+    },
+    "delete": {
+      "title": "Burahin ang iyong account",
+      "intro": "Permanenteng isasara nito ang iyong Kept account. Ito ang mangyayari:",
+      "erased": "Mabubura ang iyong pangalan, email, telepono, larawan, mga naka-save na address at mga naka-save na propesyonal, at masa-sign out ka sa lahat ng device.",
+      "upcoming": "{count, plural, one {Makakansela ang iyong paparating na appointment ayon sa patakaran sa pagkansela ng negosyo, kasama ang anumang refund na pinapayagan nito.} other {Makakansela ang iyong # paparating na appointment ayon sa patakaran sa pagkansela ng bawat negosyo, kasama ang anumang refund na pinapayagan nito.}}",
+      "upcomingNone": "Makakansela ang anumang paparating na appointment ayon sa patakaran sa pagkansela ng bawat negosyo.",
+      "records": "Mananatili ang mga rekord na kailangan ng mga negosyo at alituntunin sa buwis — mga nakaraang appointment, bayad at review — ngunit ipapakitang mula sa “Deleted user”.",
+      "permanent": "Hindi na ito mababawi. Maaari kang mag-sign up muli sa hinaharap gamit ang parehong email, na panibagong simula.",
+      "blocked": "Ikaw ang may-ari ng {businesses}. Isara ang negosyo o ilipat ito sa iba mula sa iyong <link>mga setting ng negosyo</link> bago burahin ang iyong account, para hindi maiwang walang sagot ang mga kliyente nito.",
+      "copyFirst": "Gusto munang magkaroon ng kopya? I-download ang iyong data sa itaas.",
+      "open": "Burahin ang account…",
+      "confirmTitle": "Burahin ang iyong account?",
+      "confirmBody": "Hindi na ito mababawi.",
+      "keep": "Panatilihin ang aking account",
+      "confirm": "Burahin ang aking account",
+      "willCancel": "{count, plural, one {Makakansela ang # paparating na appointment.} other {Makakansela ang # paparating na appointment.}}",
+      "password": "Ang iyong password",
+      "typeToConfirm": "I-type ang <word>{word}</word> para kumpirmahin",
+      "deletedToast": "Nabura na ang iyong account",
+      "deletedBody": "Salamat sa paggamit ng Kept."
+    }
+  },
+  "saved": {
+    "title": "Mga naka-save",
+    "description": "{count, plural, one {# propesyonal na na-save mo.} other {# propesyonal na na-save mo.}} Live mula sa kanilang kalendaryo ang mga bakante sa ibaba.",
+    "emptyTitle": "Wala pang naka-save",
+    "emptyBody": "I-tap ang puso sa sinumang propesyonal para itago sila rito — madaling mag-rebook sa mga suki mo o magkumpara ng ilan bago magpasya.",
+    "explore": "Mag-explore ng mga propesyonal",
+    "loading": "Nilo-load ang mga naka-save na propesyonal…"
+  },
+  "notificationList": {
+    "title": "Mga abiso",
+    "today": "Ngayon",
+    "earlier": "Mas maaga",
+    "emptyTitle": "Wala pang abiso",
+    "emptyBody": "Dito lalabas ang mga kumpirmasyon ng booking, paalala, sagot at bakante sa waitlist.",
+    "unread": "{count} hindi pa nababasa",
+    "caughtUp": "Nabasa mo na lahat",
+    "allCaughtUpToast": "Wala nang bago",
+    "markAll": "Markahan lahat bilang nabasa",
+    "unreadItem": "Hindi pa nababasa",
+    "loadOlder": "Mag-load ng mas luma",
+    "end": "Iyon na ang lahat."
+  },
+  "invite": {
+    "eyebrow": "Imbitasyon sa team",
+    "invalidTitle": "Hindi magagamit ang imbitasyong ito",
+    "invalidBody": "Maaaring nag-expire na ito, nakansela, o natanggap na. Hilingin sa nag-imbita sa iyo na magpadala ng bagong link.",
+    "goHome": "Pumunta sa Kept",
+    "join": "Sumali sa {business}",
+    "invitedAs": "Inimbitahan ka bilang <b>{role}</b>.",
+    "signInWith": "Mag-sign in o gumawa ng account gamit ang <b>{email}</b> para tanggapin.",
+    "createAccount": "Gumawa ng account",
+    "signIn": "Mag-sign in",
+    "wrongAccount": "Naka-sign in ka bilang <b>{email}</b>, ngunit ipinadala ang imbitasyong ito sa {invited}.",
+    "wrongAccountHint": "Mag-sign out at mag-sign in gamit ang address na iyon, o humiling ng imbitasyon sa {email}.",
+    "acceptingAs": "Tinatanggap bilang <b>{email}</b>.",
+    "accept": "Tanggapin at buksan ang aking iskedyul",
+    "roles": {
+      "owner": {
+        "label": "May-ari",
+        "description": "Buong kontrol, kasama ang billing at team."
+      },
+      "manager": {
+        "label": "Manager",
+        "description": "Namamahala sa pang-araw-araw na operasyon. Hindi maaaring baguhin ang team o mga setting ng negosyo."
+      },
+      "receptionist": {
+        "label": "Front desk",
+        "description": "Nagbu-book at namamahala ng mga appointment para sa lahat."
+      },
+      "provider": {
+        "label": "Propesyonal",
+        "description": "Nakikita at pinamamahalaan ang sarili niyang mga appointment at iskedyul."
+      },
+      "custom": {
+        "label": "Custom",
+        "description": "Piliin kung ano mismo ang magagawa ng taong ito."
+      }
+    }
+  }
+}
