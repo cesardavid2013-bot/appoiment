@@ -148,5 +148,8 @@
     "playlist": "播放清單",
     "episode": "單集",
     "show": "播客節目"
+  },
+  "links": {
+    "label": "連結按鈕"
   }
 }

@@ -148,5 +148,8 @@
     "playlist": "歌单",
     "episode": "单集",
     "show": "播客"
+  },
+  "links": {
+    "label": "链接按钮"
   }
 }
