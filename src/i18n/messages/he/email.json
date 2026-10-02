@@ -1,0 +1,147 @@
+{
+  "footer": "קיבלתם הודעה זו בעקבות פעילות בחשבון Kept שלכם. אפשר לנהל התראות ב: חשבון ← התראות.",
+  "details": {
+    "service": "שירות",
+    "when": "מתי",
+    "with": "עם",
+    "where": "איפה",
+    "online": "אונליין — העסק ישתף את הקישור",
+    "reference": "מזהה",
+    "paid": "שולם",
+    "balanceDue": "יתרה לתשלום"
+  },
+  "cta": {
+    "viewAppointment": "צפייה בתור",
+    "viewRequest": "צפייה בבקשה",
+    "reviewRequest": "סקירת הבקשה",
+    "openAppointment": "פתיחת התור",
+    "openCalendar": "פתיחת היומן",
+    "findAnotherTime": "מציאת זמן אחר",
+    "payDeposit": "תשלום המקדמה",
+    "leaveReview": "כתבו חוות דעת",
+    "bookThisTime": "הזמינו את הזמן הזה"
+  },
+  "booked": {
+    "title": "התור שלכם אצל {business} נקבע",
+    "subject": "אושר: {service} אצל {business}",
+    "heading": "התור שלכם אושר",
+    "footnote": "צריכים לשנות תוכניות? אפשר לשנות מועד או לבטל מעמוד התור, בהתאם למדיניות העסק.",
+    "sms": "Kept: {service} אצל {business} אושר ל-{when}. מזהה {reference}"
+  },
+  "requested": {
+    "title": "הבקשה נשלחה אל {business}",
+    "body": "נעדכן אתכם ברגע שיגיבו.",
+    "subject": "הבקשה נשלחה: {service} אצל {business}",
+    "heading": "הבקשה שלכם נשלחה",
+    "paragraph": "{business} בודקים בקשות לפני האישור. נשלח לכם אימייל ברגע שיגיבו."
+  },
+  "bizBooked": {
+    "title": "הזמנה חדשה",
+    "requestTitle": "בקשת הזמנה חדשה",
+    "subject": "הזמנה חדשה: {service}",
+    "requestSubject": "בקשה חדשה: {service}",
+    "heading": "יש לכם הזמנה חדשה",
+    "requestHeading": "יש לכם בקשת הזמנה חדשה",
+    "requestParagraph": "אשרו או דחו אותה מהיומן. בקשות שלא נענו פוקעות אוטומטית."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} לא יכולים לקבל את הבקשה שלכם",
+      "subject": "הבקשה נדחתה: {service}",
+      "heading": "הבקשה שלכם לא התקבלה"
+    },
+    "expired": {
+      "title": "ההזמנה שלכם פגה",
+      "subject": "ההזמנה שלכם פגה",
+      "heading": "ההזמנה שלכם פגה"
+    },
+    "cancelled": {
+      "title": "{business} ביטלו את התור שלכם",
+      "subject": "בוטל: {service}",
+      "heading": "התור שלכם בוטל"
+    },
+    "note": "הערה מהעסק: “{note}”",
+    "refund": "החזר של {amount} בדרך לאמצעי התשלום המקורי שלכם.",
+    "bookAgain": "אפשר להזמין זמן אחר מתי שנוח לכם."
+  },
+  "bizCancelled": {
+    "title": "לקוח ביטל",
+    "expiredTitle": "הזמנה פגה",
+    "subject": "בוטל: {service} · {when}",
+    "heading": "תור בוטל",
+    "reason": "סיבה: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} הזיזו את התור שלכם",
+    "body": "עכשיו {when}",
+    "subject": "זמן חדש: {service} אצל {business}",
+    "heading": "לתור שלכם יש זמן חדש",
+    "previously": "קודם {when}.",
+    "changeIt": "אם הזמן החדש לא מתאים, אפשר לשנות מועד או לבטל מעמוד התור."
+  },
+  "bizRescheduled": {
+    "title": "לקוח שינה מועד",
+    "subject": "מועד שונה: {service}",
+    "heading": "מועד תור שונה"
+  },
+  "approvedPay": {
+    "title": "{business} קיבלו את הבקשה שלכם",
+    "body": "שלמו את המקדמה בסך {amount} כדי לאשר.",
+    "subject": "התקבל — אשרו את {service}",
+    "heading": "הבקשה שלכם התקבלה",
+    "paragraph": "שלמו את המקדמה בסך {amount} כדי לנעול את הזמן שלכם. הזמנות שלא שולמו משתחררות אוטומטית."
+  },
+  "reminder": {
+    "title": "תזכורת: {service} {lead}",
+    "body": "{when} אצל {business}",
+    "subject": "תזכורת: {service} {lead} בשעה {time}",
+    "heading": "נתראה {lead}",
+    "footnote": "מאחרים או לא יכולים להגיע? עדכנו את העסק מעמוד התור.",
+    "sms": "תזכורת: {service} אצל {business} {when}."
+  },
+  "review": {
+    "title": "איך היה {service}?",
+    "body": "שתפו חוות דעת קצרה על {business}.",
+    "subject": "איך היה הביקור שלכם אצל {business}?",
+    "heading": "איך היה?",
+    "paragraph": "חוות הדעת שלכם עוזרת ל-{business} ולאחרים שבוחרים איש מקצוע. זה לוקח פחות מדקה."
+  },
+  "waitlist": {
+    "title": "התפנה מקום אצל {business}",
+    "body": "{when} פנוי עכשיו. מזמינים מהר — כל הקודם זוכה.",
+    "subject": "התפנה זמן אצל {business}",
+    "heading": "חדשות טובות — התפנה זמן",
+    "paragraph": "{when} בדיוק התפנה. המקומות ניתנים לפי סדר הגעה, אז הזמינו בקרוב אם זה מתאים לכם."
+  },
+  "thread": {
+    "confirmed": "התור אושר: {service}, {when}.",
+    "declined": "התור נדחה: {service}, {when}.",
+    "expired": "תוקף התור פג: {service}, {when}.",
+    "cancelled": "התור בוטל: {service}, {when}.",
+    "moved": "התור הועבר מ-{from} ל-{to}."
+  },
+  "verify": {
+    "subject": "אישור כתובת האימייל",
+    "preheader": "נגיעה אחת כדי לאשר את כתובת האימייל שלכם.",
+    "heading": "ברוכים הבאים, {name}",
+    "paragraph": "אשרו את האימייל כדי שעסקים יוכלו ליצור איתכם קשר בנוגע לתורים.",
+    "cta": "אישור האימייל",
+    "footnote": "הקישור תקף ל-3 ימים. אם לא יצרתם חשבון, אפשר להתעלם מהודעה זו."
+  },
+  "reset": {
+    "subject": "איפוס הסיסמה",
+    "heading": "איפוס הסיסמה",
+    "paragraph": "מישהו (כנראה אתם) ביקש לאפס את הסיסמה של חשבון Kept שלכם.",
+    "cta": "בחירת סיסמה חדשה",
+    "footnote": "הקישור תקף לשעה אחת. אם לא ביקשתם זאת, אפשר להתעלם מהודעה זו בבטחה — הסיסמה שלכם לא תשתנה."
+  },
+  "invite": {
+    "subject": "{inviter} הזמין/ה אתכם להצטרף אל {business} ב-Kept",
+    "reminderSubject": "תזכורת: הצטרפו אל {business} ב-Kept",
+    "heading": "הצטרפות אל {business}",
+    "paragraph": "{inviter} הזמין/ה אתכם להצטרף לצוות של {business}. תוכלו לראות את הלוח הזמנים שלכם ולנהל את התורים.",
+    "cta": "אישור ההזמנה",
+    "footnote": "ההזמנה תקפה ל-{days} ימים.",
+    "reminderFootnote": "ההזמנה תקפה ל-{days} ימים. קישורי הזמנה קודמים אינם פועלים עוד."
+  }
+}
