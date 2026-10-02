@@ -1,0 +1,782 @@
+{
+  "title": "Instellingen",
+  "home": {
+    "description": "Hoe {name} eruitziet, boekt en betaald wordt."
+  },
+  "nav": {
+    "label": "Instellingen",
+    "back": "Instellingen",
+    "sections": {
+      "profile": {
+        "label": "Bedrijfsprofiel",
+        "description": "Naam, foto’s, over ons, contact en sociale links."
+      },
+      "locations": {
+        "label": "Locaties",
+        "description": "Waar je werkt: een winkel, bij de klant of online."
+      },
+      "booking": {
+        "label": "Boekingsregels",
+        "description": "Direct of goedgekeurd boeken, aanlooptijd, herinneringen."
+      },
+      "policies": {
+        "label": "Annuleringen & kosten",
+        "description": "Annuleringstermijn, no-showkosten, btw."
+      },
+      "payments": {
+        "label": "Betalingen",
+        "description": "Ontvang aanbetalingen en kaartbetalingen online."
+      },
+      "forms": {
+        "label": "Klantvragen",
+        "description": "Intakeformulieren die klanten bij het boeken invullen."
+      },
+      "link": {
+        "label": "Boekingslink",
+        "description": "Je webadres, QR-code en live gaan."
+      },
+      "verification": {
+        "label": "Verificatie",
+        "description": "Krijg de geverifieerd-badge op je profiel."
+      },
+      "appearance": {
+        "label": "Uiterlijk van de pagina",
+        "description": "Header, kleuren, volgorde van onderdelen en linkknoppen."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Opslaan…",
+    "unsaved": "Niet-opgeslagen wijzigingen",
+    "allSaved": "Alle wijzigingen opgeslagen",
+    "discard": "Verwerpen",
+    "save": "Opslaan",
+    "saved": "Opgeslagen",
+    "checkFields": "Controleer de gemarkeerde velden."
+  },
+  "shareLink": {
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd"
+  },
+  "profile": {
+    "title": "Bedrijfsprofiel",
+    "description": "Wat klanten zien op je pagina en in zoekresultaten.",
+    "toastUpdated": "Profiel bijgewerkt",
+    "toastLive": "Wijzigingen staan live op je pagina.",
+    "logoAlt": "Logo van {name}",
+    "viewPage": "Je pagina bekijken",
+    "photos": {
+      "title": "Foto’s",
+      "description": "Je logo verschijnt op kaarten en in berichten; de omslagfoto opent je pagina. Gebruik je eigen werk of ruimte — geen stockfoto’s.",
+      "noCover": "Geen omslagfoto",
+      "remove": "Verwijderen",
+      "uploading": "Uploaden…",
+      "changeCover": "Omslag wijzigen",
+      "addCover": "Omslag toevoegen",
+      "changeLogo": "Logo wijzigen",
+      "addLogo": "Logo toevoegen",
+      "logoHint": "Vierkant werkt het best. Zonder logo tonen we je initialen."
+    },
+    "basics": {
+      "title": "Basis",
+      "nameIndividual": "Je naam of bedrijfsnaam",
+      "nameBusiness": "Bedrijfsnaam",
+      "tagline": "Slogan",
+      "taglineHint": "Eén regel onder je naam. {count, plural, one {Nog # teken over.} other {Nog # tekens over.}}",
+      "taglinePlaceholder": "bijv. Precisie-fades en baardverzorging in de Jordaan",
+      "category": "Hoofdcategorie",
+      "categoryHint": "Waar je verschijnt wanneer mensen rondkijken.",
+      "choose": "Kies…",
+      "years": "Jaren ervaring"
+    },
+    "about": {
+      "title": "Over ons",
+      "description": "Wat je doet, hoe je werkt en wat een bezoek bij jou bijzonder maakt. Gewone woorden winnen het van containerbegrippen.",
+      "label": "Over ons",
+      "languages": "Gesproken talen",
+      "amenities": "Voorzieningen"
+    },
+    "tags": {
+      "optional": "Optioneel",
+      "placeholder": "Typ en druk op Enter",
+      "remove": "{tag} verwijderen"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "Engels",
+        "spanish": "Spaans",
+        "french": "Frans",
+        "portuguese": "Portugees",
+        "mandarin": "Mandarijn",
+        "cantonese": "Kantonees",
+        "arabic": "Arabisch",
+        "russian": "Russisch",
+        "haitianCreole": "Haïtiaans Creools",
+        "korean": "Koreaans",
+        "vietnamese": "Vietnamees",
+        "hindi": "Hindi",
+        "italian": "Italiaans",
+        "german": "Duits",
+        "polish": "Pools",
+        "tagalog": "Tagalog"
+      },
+      "amenities": {
+        "wheelchair": "Toegankelijk voor rolstoelen",
+        "streetParking": "Parkeren op straat",
+        "freeParking": "Gratis parkeren",
+        "wifi": "Wifi",
+        "cardPayments": "Kaartbetalingen",
+        "walkIns": "Inloop welkom",
+        "kidFriendly": "Kindvriendelijk",
+        "restroom": "Toilet",
+        "airConditioning": "Airconditioning",
+        "drinks": "Drankjes beschikbaar",
+        "genderNeutral": "Genderneutraal",
+        "petFriendly": "Huisdiervriendelijk"
+      }
+    },
+    "contact": {
+      "title": "Contact & links",
+      "description": "Getoond op je pagina. Klanten kunnen je altijd via Kept een bericht sturen, dus dit is optioneel.",
+      "email": "Openbaar e-mailadres",
+      "phone": "Openbaar telefoonnummer",
+      "website": "Website",
+      "websitePlaceholder": "jouwdomein.nl"
+    },
+    "social": {
+      "legend": "Socialmediaprofielen",
+      "hint": "Typ je gebruikersnaam of plak de link naar je profiel. Wil je specifieke video’s, posts of nummers op je pagina uitlichten? Voeg ze dan toe onder <link>Portfolio</link>.",
+      "placeholders": {
+        "instagram": "@jouwnaam",
+        "tiktok": "@jouwnaam",
+        "youtube": "@jouwkanaal",
+        "facebook": "jouwpagina",
+        "x": "@jouwnaam",
+        "linkedin": "in/jouwnaam",
+        "spotify": "Link naar artiest",
+        "soundcloud": "jouwnaam",
+        "behance": "jouwnaam",
+        "pinterest": "jouwnaam",
+        "twitch": "jouwkanaal",
+        "threads": "@jouwnaam"
+      },
+      "errors": {
+        "wrongNetwork": "Dat is geen {network}-link.",
+        "useProfile": "Gebruik de link naar je {network}-profiel.",
+        "badHandle": "Dat lijkt geen {network}-gebruikersnaam.",
+        "badArtist": "Dat lijkt geen {network}-artiestenlink."
+      }
+    },
+    "timezone": {
+      "title": "Tijdzone",
+      "description": "Je uren en elke afspraaktijd staan in deze zone. Wijzig hem alleen als je echt bent verhuisd — bestaande boekingen behouden hun exacte tijd.",
+      "label": "Tijdzone"
+    }
+  },
+  "booking": {
+    "title": "Boekingsregels",
+    "description": "Hoe en wanneer klanten bij je kunnen boeken. Afzonderlijke diensten kunnen aanlooptijd en goedkeuring overschrijven.",
+    "toastUpdated": "Boekingsregels bijgewerkt",
+    "mode": {
+      "title": "Bevestiging",
+      "description": "Je kunt in de diensteneditor nog steeds goedkeuring eisen voor specifieke diensten.",
+      "instantTitle": "Direct boeken",
+      "instantDescription": "Klanten kiezen een vrij tijdstip en zijn geboekt. Het beste voor de meeste bedrijven — het is wat klanten verwachten.",
+      "requestTitle": "Elke aanvraag goedkeuren",
+      "requestDescription": "Klanten sturen een aanvraag; jij accepteert of wijst af. Onbeantwoorde aanvragen verlopen automatisch, zodat niemand eindeloos wacht."
+    },
+    "window": {
+      "title": "Wanneer klanten kunnen boeken",
+      "minNotice": "Minimale aanlooptijd",
+      "minNoticeHint": "Het laatste moment waarop een klant vóór een starttijd kan boeken.",
+      "noMinimum": "Geen minimum — boeken tot het begin",
+      "advance": "Boeken tot",
+      "advanceHint": "Hoe ver vooruit je agenda openstaat.",
+      "daysAhead": "{count, plural, one {# dag vooruit} other {# dagen vooruit}}",
+      "yearAhead": "1 jaar vooruit",
+      "interval": "Starttijden elke",
+      "intervalHint": "Kortere intervallen geven klanten meer keuze; langere houden je dag overzichtelijk.",
+      "anyStaff": "“Elke beschikbare professional” aanbieden",
+      "anyStaffDescription": "Toont de meeste vrije tijden en verdeelt boekingen over je team. Zet uit als klanten een persoon moeten kiezen."
+    },
+    "durations": {
+      "minutes": "{count, plural, one {# minuut} other {# minuten}}",
+      "hours": "{count, plural, one {# uur} other {# uur}}",
+      "days": "{count, plural, one {# dag} other {# dagen}}",
+      "weeks": "{count, plural, one {# week} other {# weken}}"
+    },
+    "reminders": {
+      "title": "Herinneringen",
+      "description": "Per e-mail verstuurd vóór elke afspraak. Klanten die korter dan de tijd van een herinnering van tevoren boeken, krijgen die niet.",
+      "descriptionSms": "Per e-mail en sms (als de klant sms toestaat) verstuurd vóór elke afspraak. Klanten die korter dan de tijd van een herinnering van tevoren boeken, krijgen die niet.",
+      "none": "Geen herinneringen. Klanten krijgen alleen hun boekingsbevestiging.",
+      "add": "Een herinnering toevoegen",
+      "addPlaceholder": "Een herinnering toevoegen…",
+      "upTo": "Maximaal 3",
+      "remove": "De herinnering {label} verwijderen",
+      "minutesBefore": "{count, plural, one {# minuut van tevoren} other {# minuten van tevoren}}",
+      "hoursBefore": "{count, plural, one {# uur van tevoren} other {# uur van tevoren}}",
+      "daysBefore": "{count, plural, one {# dag van tevoren} other {# dagen van tevoren}}"
+    }
+  },
+  "policies": {
+    "title": "Annuleringen & kosten",
+    "description": "Klanten zien deze voordat ze boeken en nogmaals voordat ze annuleren.",
+    "toastUpdated": "Voorwaarden bijgewerkt",
+    "cancel": {
+      "title": "Annuleren en verplaatsen",
+      "freeUntil": "Gratis annuleren tot",
+      "rescheduleUntil": "Online verplaatsen tot",
+      "anyTime": "Tot het moment zelf",
+      "oneDay": "24 uur (1 dag) van tevoren",
+      "hoursBefore": "{count, plural, one {# uur van tevoren} other {# uur van tevoren}}",
+      "daysBefore": "{count, plural, one {# dag van tevoren} other {# dagen van tevoren}}",
+      "lateFee": "Kosten bij te late annulering",
+      "lateFeeHintPaid": "Ingehouden van wat de klant online heeft betaald. We rekenen nooit meer dan wat ze hebben betaald.",
+      "lateFeeHintUnpaid": "Geldt alleen voor geld dat online is betaald. Koppel betalingen en vraag aanbetalingen om dit af te dwingen.",
+      "none": "Geen",
+      "ofTotal": "van het totaal",
+      "noShowFee": "Kosten bij niet verschijnen",
+      "noShowHint": "Onderdeel van je beleid, zodat klanten het vooraf weten. Als je iemand als niet verschenen markeert, blijft alles wat ze online hebben betaald bij jou; kosten die ter plekke zijn ontvangen, kun je op de afspraak registreren.",
+      "refundDeposits": "Aanbetalingen terugbetalen bij tijdige annulering",
+      "refundDepositsDescription": "Uit betekent dat aanbetalingen worden ingehouden wanneer een klant annuleert."
+    },
+    "words": {
+      "title": "In je eigen woorden",
+      "description": "Optionele opmerkingen die bij je voorwaarden worden getoond.",
+      "late": "Te laat komen",
+      "lateHint": "bijv. “Bij meer dan 15 minuten te laat moeten we je behandeling mogelijk inkorten of opnieuw plannen.”",
+      "before": "Vóór je bezoek",
+      "beforeHint": "Getoond aan elke klant voordat ze bevestigen — route, wat mee te nemen, hoe je je voorbereidt."
+    },
+    "tax": {
+      "title": "Btw",
+      "description": "Wordt bij het afrekenen bovenop je prijzen geteld en als aparte regel getoond. Laat op 0 staan als je prijzen al inclusief btw zijn.",
+      "rate": "Tarief",
+      "rateError": "Vul een tarief tussen 0 en 30% in",
+      "label": "Label",
+      "labelPlaceholder": "Btw"
+    },
+    "preview": {
+      "title": "Wat klanten zien voordat ze boeken"
+    }
+  },
+  "payments": {
+    "title": "Betalingen",
+    "description": "Vraag aanbetalingen of volledige betaling bij het boeken. Ter plekke betalen werkt altijd ook.",
+    "online": {
+      "title": "Online betalingen",
+      "description": "Betalingen worden verwerkt door Stripe en uitbetaald op je bankrekening. Kept ziet nooit kaartnummers."
+    },
+    "unavailable": {
+      "badge": "Nog niet beschikbaar",
+      "body": "Kaartbetalingen zijn voor Kept nog niet ingeschakeld. Tot die tijd betalen klanten je bij de afspraak en kun je elke betaling — contant, pinautomaat of overschrijving — vanaf de afspraakpagina registreren, zodat je administratie en Inzichten kloppen.",
+      "note": "Hier is voorlopig niets te doen. Aanbetalingen en voorwaarden die je instelt, gaan gelden zodra online betalingen openen."
+    },
+    "none": {
+      "deposits": "Een aanbetaling of volledige betaling per dienst vragen",
+      "fees": "Kosten voor te late annulering automatisch inhouden van aanbetalingen",
+      "tips": "Klanten na het bezoek een fooi laten toevoegen",
+      "connect": "Betalingen instellen met Stripe",
+      "time": "Duurt ongeveer 5 minuten. Je hebt je bankgegevens en een identiteitsbewijs nodig."
+    },
+    "incomplete": {
+      "badge": "Installatie niet voltooid",
+      "body": "Stripe heeft nog een paar gegevens nodig voordat je betalingen kunt ontvangen.",
+      "continue": "Installatie voortzetten"
+    },
+    "connected": {
+      "badge": "Gekoppeld",
+      "body": "Je kunt aanbetalingen en betalingen online ontvangen.",
+      "services": "Kies per dienst wat je int onder <link>Diensten</link>."
+    },
+    "fees": {
+      "title": "Kosten",
+      "kept": "Kosten van Kept op online betalingen",
+      "inPerson": "Betalingen ter plekke",
+      "noFee": "Geen kosten van Kept",
+      "processing": "Kaartverwerking",
+      "stripeRate": "Standaardtarief van Stripe"
+    }
+  },
+  "link": {
+    "title": "Boekingslink",
+    "description": "Je pagina op Kept. Zet hem in je bio, op je kaartje, op de spiegel.",
+    "checklist": {
+      "location": "Voeg toe waar je werkt",
+      "services": "Maak minstens één dienst aan",
+      "availability": "Stel je werktijden in",
+      "done": "Klaar",
+      "todo": "Te doen"
+    },
+    "status": {
+      "liveTitle": "Je pagina is live",
+      "draftTitle": "Je pagina is nog niet live",
+      "liveDescription": "Klanten kunnen je vinden in zoekresultaten en online boeken.",
+      "draftDescription": "Alleen jij ziet hem. Ga live wanneer de checklist klaar is.",
+      "live": "Live",
+      "hide": "Mijn pagina verbergen",
+      "goLive": "Live zetten",
+      "viewPage": "Pagina bekijken",
+      "preview": "Voorbeeld"
+    },
+    "toasts": {
+      "live": "Je bent live — klanten kunnen je vinden en boeken",
+      "hidden": "Je pagina is verborgen",
+      "hiddenDescription": "Bestaande afspraken worden niet beïnvloed.",
+      "slugUpdated": "Adres bijgewerkt",
+      "slugUpdatedDescription": "Je oude link werkt niet meer — werk hem bij overal waar je hem hebt gedeeld.",
+      "copied": "Gekopieerd"
+    },
+    "share": {
+      "title": "Delen",
+      "qrLabel": "QR-code voor {address}",
+      "qrHint": "Print hem voor aan de balie, op visitekaartjes of je spiegel. Scannen opent direct je boekingspagina.",
+      "png": "PNG voor print",
+      "svg": "SVG",
+      "embedSummary": "Voeg een knop “Nu boeken” toe aan je website",
+      "embedHint": "Plak dit waar je de knop wilt hebben.",
+      "copyCode": "Code kopiëren",
+      "buttonText": "Boek bij {name}"
+    },
+    "slug": {
+      "title": "Webadres",
+      "description": "Kleine letters, cijfers en streepjes. Als je het wijzigt, werken links die je al hebt gedeeld niet meer.",
+      "change": "Adres wijzigen",
+      "label": "Adres"
+    },
+    "hideDialog": {
+      "title": "Je pagina verbergen?",
+      "description": "Je verdwijnt uit zoekresultaten en niemand kan online boeken. Bestaande afspraken blijven zoals ze zijn. Je kunt op elk moment weer live gaan.",
+      "confirm": "Pagina verbergen"
+    }
+  },
+  "locations": {
+    "title": "Locaties",
+    "description": "Waar klanten bij je boeken: je winkel, het gebied waar je naartoe reist of online. Elke dienst en elk teamlid kan tot een deel ervan worden beperkt.",
+    "privacy": {
+      "title": "Wat klanten kunnen zien",
+      "atPlace": "Bij jou",
+      "atPlaceBody": "Het volledige adres en een kaart, zodat klanten je kunnen vinden.",
+      "travel": "Reizen naar klanten",
+      "travelBody": "Alleen je plaats en hoe ver je reist. Als je thuis werkt, worden je huisadres en exacte pin nooit getoond — zoekresultaten plaatsen je binnen ongeveer 5 km. Klanten geven je hun adres bij het boeken.",
+      "online": "Online",
+      "onlineBody": "Helemaal geen adres, alleen dat sessies online plaatsvinden."
+    },
+    "kinds": {
+      "physical": {
+        "label": "Bij mij",
+        "description": "Winkel, studio, kantoor"
+      },
+      "mobile": {
+        "label": "Ik ga naar klanten",
+        "description": "Woningen, kantoren, evenementen"
+      },
+      "virtual": {
+        "label": "Online",
+        "description": "Video- of telefoonsessies"
+      }
+    },
+    "summary": {
+      "mobile": "Reist tot {km} km vanuit {place}",
+      "virtual": "Online sessies"
+    },
+    "list": {
+      "title": "Je locaties",
+      "count": "{count} van {max} in het abonnement {plan}",
+      "emptyTitle": "Nog geen locaties",
+      "emptyBody": "Klanten kunnen niet boeken voordat ze weten waar de afspraak plaatsvindt. Voeg je winkel, het gebied waar je naartoe reist of online sessies toe.",
+      "add": "Locatie toevoegen",
+      "primary": "Hoofdlocatie",
+      "upcoming": "{count, plural, one {# aankomende afspraak} other {# aankomende afspraken}}",
+      "notPinned": "Niet vastgepind op de kaart",
+      "actions": "Acties voor {name}",
+      "edit": "Bewerken",
+      "makePrimary": "Hoofdlocatie maken",
+      "remove": "Locatie verwijderen",
+      "atLimit": "{count, plural, one {Je abonnement {plan} bevat # locatie. Verwijder er een om een andere toe te voegen.} other {Je abonnement {plan} bevat # locaties. Verwijder er een om een andere toe te voegen.}}",
+      "primaryHint": "De hoofdlocatie wordt als eerste getoond op je profiel en in zoekresultaten."
+    },
+    "toasts": {
+      "primary": "{name} is nu je hoofdlocatie",
+      "removed": "{name} verwijderd",
+      "saved": "Locatie opgeslagen",
+      "added": "Locatie toegevoegd"
+    },
+    "remove": {
+      "blockedTitle": "{name} kan nog niet worden verwijderd",
+      "ok": "OK",
+      "title": "{name} verwijderen?",
+      "confirm": "Locatie verwijderen",
+      "description": "Klanten kunnen hier niet meer boeken. Eerdere afspraken behouden hun details.",
+      "primaryNote": "Je oudste overgebleven locatie wordt de hoofdlocatie.",
+      "membersNote": "{count, plural, one {# teamlid is hier toegewezen. Iedereen die alleen hier is toegewezen, is boekbaar op al je locaties.} other {# teamleden zijn hier toegewezen. Iedereen die alleen hier is toegewezen, is boekbaar op al je locaties.}}",
+      "servicesNote": "Diensten die hier worden aangeboden, behouden hun andere locaties.",
+      "onlyLocation": "Het is je enige locatie. Voeg eerst een andere toe, zodat klanten nog ergens kunnen boeken.",
+      "upcoming": "{count, plural, one {Er staat # aankomende afspraak. Verplaats of annuleer die eerst via je <link>agenda</link>.} other {Er staan # aankomende afspraken. Verplaats of annuleer ze eerst via je <link>agenda</link>.}}",
+      "exclusive": "{count, plural, one {{names} wordt alleen hier aangeboden. Bied de dienst ergens anders aan of verberg hem onder <link>Diensten</link>.} other {{names} worden alleen hier aangeboden. Bied ze ergens anders aan of verberg ze onder <link>Diensten</link>.}}",
+      "quoted": "“{name}”"
+    },
+    "dialog": {
+      "editTitle": "{name} bewerken",
+      "addTitle": "Een locatie toevoegen",
+      "cancel": "Annuleren",
+      "save": "Locatie opslaan",
+      "add": "Locatie toevoegen",
+      "where": "Waar vinden afspraken plaats?",
+      "name": "Naam",
+      "nameHintPhysical": "Getoond aan klanten, bijv. de naam van de winkel of de buurt.",
+      "nameHintOther": "Getoond aan klanten wanneer ze kiezen waar ze boeken.",
+      "namePlaceholderPhysical": "bijv. Studio centrum",
+      "defaultMobile": "Mobiele dienst",
+      "defaultVirtual": "Online",
+      "street": "Straat en huisnummer",
+      "line2": "Appartement, unit, verdieping",
+      "cityBased": "Plaats waar je gevestigd bent",
+      "city": "Plaats",
+      "region": "Provincie / regio",
+      "postalCode": "Postcode",
+      "country": "Landcode",
+      "countryHint": "Twee letters, bijv. NL, BE, DE",
+      "radius": "Hoe ver reis je?",
+      "radiusOption": "Tot {km} km",
+      "timezone": "Tijdzone",
+      "timezoneHint": "Uren en boekingen hier gebruiken deze zone.",
+      "phone": "Telefoon",
+      "phoneHint": "Als klanten deze locatie rechtstreeks moeten bellen.",
+      "primary": "Maak dit mijn hoofdlocatie",
+      "primaryDescription": "Wordt als eerste getoond op je profiel en gebruikt voor zoekresultaten."
+    },
+    "pin": {
+      "title": "Kaartpin",
+      "physical": "Zet je winkel op de kaart en in zoekopdrachten “in de buurt”. Klanten zien het adres dat je hierboven hebt ingevuld.",
+      "mobile": "Wordt alleen gebruikt om je te koppelen aan klanten in de buurt. Je exacte pin en straatadres worden nooit getoond — je profiel toont de plaats en zoekresultaten plaatsen je binnen ongeveer 5 km.",
+      "find": "Dit adres zoeken",
+      "useMine": "Mijn huidige locatie gebruiken",
+      "remove": "Pin verwijderen",
+      "removed": "Pin verwijderd.",
+      "matches": "Overeenkomende adressen",
+      "pinnedTo": "Vastgepind op {place}.",
+      "pinned": "Vastgepind.",
+      "notPinned": "Nog niet vastgepind. Je verschijnt nog steeds wanneer klanten in je plaats zoeken.",
+      "noGeolocation": "Deze browser kan zijn locatie niet delen.",
+      "here": "Vastgepind op waar je nu bent.",
+      "denied": "We konden je locatie niet ophalen. Controleer de locatietoestemming van je browser.",
+      "enterAddress": "Vul eerst het adres in.",
+      "noMatch": "Geen resultaat gevonden. Controleer het adres of gebruik je huidige locatie."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Aankomstinstructies",
+        "placeholder": "bijv. Parkeer in de Lindenstraat. Bel aan bij 2B en kom naar de tweede verdieping.",
+        "hint": "Parkeren, ingang, deurcode. Klanten zien dit op je profiel en in hun boeking."
+      },
+      "mobile": {
+        "label": "Opmerkingen voor klanten",
+        "placeholder": "bijv. Ik heb een parkeerplek binnen 50 m nodig en toegang tot een stopcontact.",
+        "hint": "Wat klanten klaar moeten hebben. Getoond in hun boeking."
+      },
+      "virtual": {
+        "label": "Hoe sessies werken",
+        "placeholder": "bijv. Je krijgt een uur voor je sessie een videolink per bericht.",
+        "hint": "Getoond in hun boeking. Plak hier geen privé-vergaderlink — verstuur links via Berichten."
+      }
+    }
+  },
+  "verification": {
+    "title": "Verificatie",
+    "description": "Laat klanten zien dat er een echt, erkend bedrijf achter je profiel zit. Ons team controleert de documenten die je instuurt met de hand.",
+    "status": {
+      "title": "Status",
+      "not_submitted": "Niet geverifieerd",
+      "pending": "In beoordeling",
+      "verified": "Geverifieerd",
+      "rejected": "Niet goedgekeurd",
+      "needs_info": "Meer informatie nodig"
+    },
+    "body": {
+      "notSubmitted": "Je hebt nog niet gevraagd om geverifieerd te worden. Stuur hieronder een paar gegevens en documenten in.",
+      "pending": "Verstuurd op {date}. Iemand van ons team beoordeelt elke aanvraag met de hand; je krijgt een melding zodra er een beslissing is. Je kunt de aanvraag niet wijzigen zolang hij in beoordeling is.",
+      "pendingNoDate": "Verstuurd. Iemand van ons team beoordeelt elke aanvraag met de hand; je krijgt een melding zodra er een beslissing is. Je kunt de aanvraag niet wijzigen zolang hij in beoordeling is.",
+      "verified": "{name} is geverifieerd sinds {date}. De badge verschijnt op je <link>openbare profiel</link> en in zoekresultaten.",
+      "verifiedNoDate": "{name} is geverifieerd. De badge verschijnt op je <link>openbare profiel</link> en in zoekresultaten.",
+      "rejected": "We konden {name} niet verifiëren met wat er op {date} is ingestuurd. Je kunt hieronder nieuwe gegevens en documenten insturen.",
+      "rejectedNoDate": "We konden {name} niet verifiëren met wat er is ingestuurd. Je kunt hieronder nieuwe gegevens en documenten insturen.",
+      "needsInfo": "Ons team heeft nog iets meer nodig voordat het kan beslissen. Antwoord hieronder en je aanvraag gaat terug in beoordeling."
+    },
+    "note": "Opmerking van Kept",
+    "noteDate": "Opmerking van Kept · {date}",
+    "submit": {
+      "replyTitle": "Reageer op ons team",
+      "retryTitle": "Opnieuw proberen",
+      "requestTitle": "Verificatie aanvragen",
+      "firstDescription": "Vertel ons over het bedrijf en voeg bewijs toe. De meeste bedrijven sturen één vergunning of inschrijfbewijs in.",
+      "againDescription": "We hebben bewaard wat je de vorige keer hebt ingestuurd. Wijzig of vul het aan."
+    },
+    "sent": {
+      "title": "Wat je hebt ingestuurd",
+      "description": "Op {date}.",
+      "noDescription": "Geen beschrijving.",
+      "documents": "Documenten",
+      "open": "Document {n} openen",
+      "removed": "Sommige documenten zijn verwijderd en kunnen niet meer worden geopend."
+    },
+    "meaning": {
+      "title": "Wat klanten zien",
+      "example": "Voorbeeld van de geverifieerd-badge",
+      "checkMark": "Een vinkje naast je naam op je profiel en in zoekresultaten, met het label “Geverifieerd bedrijf”.",
+      "notEndorsement": "Het betekent dat Kept documenten heeft beoordeeld die je hebt aangeleverd. Het is geen beoordeling van je werk of een aanbeveling — je beoordelingen komen nog steeds van klanten.",
+      "private": "Documenten blijven privé. Alleen mensen die dit bedrijf beheren en het beoordelingsteam van Kept kunnen ze openen.",
+      "removable": "Ons team kan de badge later verwijderen, bijvoorbeeld als een vergunning ongeldig blijkt te zijn."
+    },
+    "form": {
+      "documentN": "Document {n}",
+      "tooMany": "{count, plural, one {Je kunt maximaal # document bijvoegen.} other {Je kunt maximaal # documenten bijvoegen.}}",
+      "needSomething": "Voeg een korte beschrijving of minstens één document toe.",
+      "sentReply": "Verstuurd. Je aanvraag is weer in beoordeling.",
+      "submitted": "Ingediend voor beoordeling",
+      "replyLabel": "Je reactie",
+      "aboutLabel": "Over je bedrijf",
+      "hint": "Vergunnings- of registratienummers, wie ze heeft uitgegeven en hoe lang je al werkt. Alles wat ons helpt te bevestigen dat het bedrijf echt en van jou is.",
+      "placeholder": "bijv. Erkend barbier, KvK-nummer 12345678, ingeschreven in 2019. Zaak geregistreerd als North Fade B.V.",
+      "documents": "Documenten",
+      "documentsHint": "Foto’s of scans (JPG, PNG of WebP, tot 15 MB per stuk) van een vergunning, inschrijfbewijs of certificering. Maximaal {max}.",
+      "attachedList": "Bijgevoegde documenten",
+      "open": "Document {n} openen",
+      "uploading": "{name} uploaden",
+      "fromLast": "Van je vorige aanvraag",
+      "attached": "Bijgevoegd",
+      "remove": "{name} verwijderen",
+      "addAnother": "Nog een document toevoegen",
+      "add": "Documenten toevoegen",
+      "uploadingAll": "Documenten uploaden",
+      "attachedCount": "{count, plural, one {# document bijgevoegd} other {# documenten bijgevoegd}}",
+      "privacy": "Alleen mensen die dit bedrijf beheren en het beoordelingsteam van Kept kunnen deze bestanden openen. Ze worden nooit op je profiel getoond.",
+      "waiting": "Wachten op uploads…",
+      "sendReply": "Reactie versturen",
+      "submitAgain": "Opnieuw indienen",
+      "submit": "Indienen voor beoordeling"
+    }
+  },
+  "forms": {
+    "title": "Klantvragen",
+    "description": "Vragen die klanten tijdens het boeken beantwoorden: allergieën, doelen, de auto die ze meenemen. Bouw een formulier één keer en kies het dan bij elke dienst die het nodig heeft.",
+    "newForm": "Nieuw formulier",
+    "editForm": "Formulier bewerken",
+    "notIncludedTitle": "Niet inbegrepen in je abonnement",
+    "notIncludedBody": "Intakevragen zijn geen onderdeel van het abonnement {plan}. Diensten nemen ook zonder deze vragen gewoon boekingen aan.",
+    "emptyTitle": "Nog geen formulieren",
+    "emptyBody": "Vraag wat je moet weten vóór de afspraak, zodat je het niet pas in de stoel ontdekt. Antwoorden worden bij de boeking opgeslagen en getoond aan wie de afspraak uitvoert.",
+    "create": "Een formulier maken",
+    "listLabel": "Formulieren",
+    "noQuestions": "Nog geen vragen",
+    "questions": "{count, plural, one {# vraag} other {# vragen}}",
+    "required": "{count, plural, one {# verplicht} other {# verplicht}}",
+    "edited": "Bewerkt op {date}",
+    "footer": "Om een formulier bij een dienst te vragen, open je de dienst en kies je het onder <b>Vragen & vereisten</b>. Elke dienst vraagt maximaal één formulier.",
+    "notUsed": "Nog door geen enkele dienst gebruikt",
+    "askedOn": "Gevraagd bij <list></list>",
+    "hidden": "(verborgen)",
+    "more": "{count, plural, one {# meer} other {# meer}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "Kort antwoord",
+        "hint": "Een naam, een getal, een paar woorden.",
+        "placeholder": "bijv. Wat is het merk en model van je auto?"
+      },
+      "long_text": {
+        "label": "Alinea",
+        "hint": "Ruimte voor een paar zinnen.",
+        "placeholder": "bijv. Vertel ons over blessures waarvan we moeten weten."
+      },
+      "yes_no": {
+        "label": "Ja / Nee",
+        "hint": "Twee knoppen: Ja en Nee.",
+        "placeholder": "bijv. Is dit je eerste bezoek?"
+      },
+      "single_choice": {
+        "label": "Meerkeuze",
+        "hint": "Klanten kiezen één optie.",
+        "placeholder": "bijv. Hoe lang is je haar nu?"
+      },
+      "multi_choice": {
+        "label": "Selectievakjes",
+        "hint": "Klanten vinken alles aan wat van toepassing is.",
+        "placeholder": "bijv. Op welke gebieden wil je dat we ons richten?"
+      },
+      "date": {
+        "label": "Datum",
+        "hint": "Een datumkiezer, bijv. geboortedatum of datum van het evenement.",
+        "placeholder": "bijv. Wanneer is het evenement?"
+      },
+      "acknowledgement": {
+        "label": "Kennisgeving",
+        "hint": "Een verklaring die klanten aanvinken om te bevestigen dat ze die hebben gelezen.",
+        "placeholder": "bijv. Ik begrijp dat 48 uur vóór een kleurbehandeling een allergietest nodig is."
+      }
+    },
+    "errors": {
+      "name": "Geef het formulier een naam",
+      "statement": "Schrijf de verklaring waarmee klanten akkoord gaan",
+      "question": "Schrijf de vraag",
+      "twoChoices": "Voeg minstens twee keuzes toe",
+      "distinct": "Elke keuze moet anders zijn"
+    },
+    "leaveConfirm": "Je hebt niet-opgeslagen wijzigingen in dit formulier. Verlaten zonder op te slaan?",
+    "toasts": {
+      "saved": "Formulier opgeslagen",
+      "created": "Formulier aangemaakt",
+      "archived": "Formulier gearchiveerd",
+      "archivedFrom": "{count, plural, one {Formulier gearchiveerd en verwijderd van # dienst} other {Formulier gearchiveerd en verwijderd van # diensten}}"
+    },
+    "untitled": "Vraag zonder titel",
+    "archive": "Formulier archiveren",
+    "show": "Tonen",
+    "questionsTab": "{count, plural, one {Vragen (#)} other {Vragen (#)}}",
+    "previewTab": "Klantvoorbeeld",
+    "details": "Formuliergegevens",
+    "nameLabel": "Formuliernaam",
+    "nameHint": "Alleen je team ziet dit. Klanten zien alleen de vragen.",
+    "namePlaceholder": "bijv. Consult voor nieuwe klanten",
+    "questions": "Vragen",
+    "questionCount": "{count} van {max}",
+    "emptyTitle": "Nog geen vragen",
+    "emptyBody": "Houd het kort. Twee of drie vragen worden beantwoord; tien worden overgeslagen.",
+    "saveBar": {
+      "saving": "Opslaan…",
+      "fix": "{count, plural, one {Los # ding op voor het opslaan} other {Los # dingen op voor het opslaan}}",
+      "unsaved": "Niet-opgeslagen wijzigingen",
+      "allSaved": "Alle wijzigingen opgeslagen",
+      "newForm": "Nieuw formulier",
+      "discard": "Verwerpen",
+      "cancel": "Annuleren",
+      "save": "Wijzigingen opslaan",
+      "create": "Formulier aanmaken"
+    },
+    "archiveDialog": {
+      "title": "“{name}” archiveren?",
+      "confirm": "Formulier archiveren",
+      "confirmUsed": "{count, plural, one {Archiveren en verwijderen van # dienst} other {Archiveren en verwijderen van # diensten}}",
+      "descriptionUsed": "Deze diensten stellen deze vragen niet meer bij nieuwe boekingen totdat je een ander formulier kiest:",
+      "descriptionUnused": "Geen enkele dienst vraagt dit formulier, dus er verandert niets voor klanten.",
+      "keep": "Antwoorden die al zijn gegeven bij eerdere en aankomende boekingen blijven bij die boekingen staan.",
+      "lost": "Niet-opgeslagen wijzigingen in dit formulier gaan verloren."
+    },
+    "usage": {
+      "none": "Geen enkele dienst vraagt dit formulier nog. Open een dienst onder <link>Diensten</link> en kies het bij Vragen & vereisten.",
+      "title": "Gevraagd bij het boeken",
+      "hidden": "verborgen",
+      "note": "Wijzigingen gelden voor nieuwe boekingen van deze diensten zodra je opslaat."
+    },
+    "add": {
+      "label": "Vraag toevoegen",
+      "limit": "Limiet van {max} vragen bereikt",
+      "type": "Soort vraag"
+    },
+    "card": {
+      "required": "Verplicht",
+      "attention": "Vraagt aandacht",
+      "moveUp": "Vraag {n} omhoog verplaatsen",
+      "moveDown": "Vraag {n} omlaag verplaatsen",
+      "type": "Soort",
+      "statement": "Verklaring",
+      "question": "Vraag",
+      "helpText": "Hulptekst",
+      "helpAck": "Getoond onder de verklaring, bijv. waar je het volledige beleid kunt lezen.",
+      "helpQuestion": "Getoond onder de vraag.",
+      "mustTick": "Moet worden aangevinkt om te boeken",
+      "ackRequired": "Klanten kunnen niet boeken totdat ze het aanvinken.",
+      "questionRequired": "Klanten kunnen niet boeken zonder te antwoorden.",
+      "optional": "Klanten kunnen het overslaan.",
+      "duplicate": "Dupliceren",
+      "delete": "Verwijderen",
+      "done": "Klaar"
+    },
+    "options": {
+      "legend": "Keuzes",
+      "choice": "Keuze {n}",
+      "remove": "Keuze {n} verwijderen",
+      "max": "Maximaal {max} keuzes",
+      "add": "Keuze toevoegen"
+    },
+    "preview": {
+      "title": "Klantvoorbeeld",
+      "description": "De stap “Een paar gegevens” van het boeken. Probeer het uit; er wordt niets opgeslagen.",
+      "empty": "Vragen die je toevoegt verschijnen hier zoals klanten ze zullen zien.",
+      "noteLabel": "Is er nog iets wat ze moeten weten?",
+      "noteHint": "Elke boeking eindigt met dit vak. Het maakt geen deel uit van je formulier.",
+      "notePlaceholder": "Allergieën, voorkeuren, parkeerinformatie…",
+      "invalid": "{count, plural, one {# antwoord ontbreekt of is ongeldig} other {# antwoorden ontbreken of zijn ongeldig}}",
+      "allGood": "Alles goed — dit zou doorgaan.",
+      "clear": "Wissen",
+      "tryContinue": "Probeer door te gaan",
+      "errors": {
+        "confirm": "Bevestig om door te gaan.",
+        "required": "Deze vraag is verplicht.",
+        "invalid": "Ongeldig antwoord.",
+        "tooLong": "Houd het onder {max} tekens.",
+        "choose": "Kies een van de opties.",
+        "invalidChoice": "Ongeldige keuze.",
+        "date": "Vul een geldige datum in."
+      }
+    }
+  },
+  "appearance": {
+    "title": "Uiterlijk van de pagina",
+    "description": "Laat je openbare pagina bij je passen: de header, accentkleur, de volgorde van onderdelen, een mededeling en je eigen linkknoppen.",
+    "saved": "Je pagina is bijgewerkt",
+    "masthead": {
+      "title": "Header",
+      "body": "Donker en filmisch, of licht en luchtig. Je omslagfoto komt er in beide gevallen doorheen.",
+      "sample": "Jouw pagina",
+      "noir": "Noir — donkere header",
+      "ivory": "Ivoor — lichte header"
+    },
+    "accent": {
+      "title": "Accentkleur",
+      "body": "Gebruikt voor kleine details: labels, lijnen, sterren en accenten.",
+      "names": {
+        "brass": "Messing",
+        "emerald": "Smaragd",
+        "rose": "Roze",
+        "sapphire": "Saffier",
+        "copper": "Koper"
+      }
+    },
+    "sections": {
+      "title": "Onderdelen",
+      "body": "Kies wat bezoekers zien en in welke volgorde. Diensten komen eerst en reviews blijven altijd zichtbaar — daardoor is je pagina betrouwbaar.",
+      "alwaysFirst": "Altijd eerst",
+      "always": "Altijd getoond",
+      "hide": "{name} verbergen",
+      "show": "{name} tonen",
+      "up": "{name} omhoog verplaatsen",
+      "down": "{name} omlaag verplaatsen",
+      "names": {
+        "services": "Diensten",
+        "work": "Werk",
+        "featured": "Uitgelicht",
+        "team": "Team",
+        "reviews": "Reviews",
+        "about": "Over"
+      }
+    },
+    "notice": {
+      "title": "Mededeling",
+      "body": "Een kort bericht bovenaan je pagina — vakantietijden, een wachtlijst, een nieuwe locatie.",
+      "label": "Bericht",
+      "placeholder": "Gesloten van 24 tot en met 26 december. Op de 27e zijn we er weer."
+    },
+    "links": {
+      "title": "Linkknoppen",
+      "body": "Je menu, cadeaubonnen, een winkel of een afspeellijst: maximaal 8 knoppen op je pagina.",
+      "label": "Knoptekst",
+      "url": "Adres",
+      "labelPlaceholder": "Cadeaubonnen",
+      "remove": "Link verwijderen",
+      "add": "Een link toevoegen"
+    }
+  }
+}

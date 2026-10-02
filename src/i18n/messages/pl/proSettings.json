@@ -1,0 +1,782 @@
+{
+  "title": "Ustawienia",
+  "home": {
+    "description": "Jak {name} wygląda, przyjmuje rezerwacje i otrzymuje płatności."
+  },
+  "nav": {
+    "label": "Ustawienia",
+    "back": "Ustawienia",
+    "sections": {
+      "profile": {
+        "label": "Profil firmy",
+        "description": "Nazwa, zdjęcia, opis, kontakt i linki społecznościowe."
+      },
+      "locations": {
+        "label": "Lokalizacje",
+        "description": "Gdzie pracujesz: sklep, miejsce klienta lub online."
+      },
+      "booking": {
+        "label": "Zasady rezerwacji",
+        "description": "Rezerwacje natychmiastowe lub zatwierdzane, wyprzedzenie, przypomnienia."
+      },
+      "policies": {
+        "label": "Anulowanie i opłaty",
+        "description": "Okres anulowania, opłaty za nieobecność, podatek."
+      },
+      "payments": {
+        "label": "Płatności",
+        "description": "Przyjmuj zadatki i płatności kartą online."
+      },
+      "forms": {
+        "label": "Pytania do klientów",
+        "description": "Formularze wstępne, które klienci wypełniają przy rezerwacji."
+      },
+      "link": {
+        "label": "Link do rezerwacji",
+        "description": "Twój adres internetowy, kod QR i publikacja strony."
+      },
+      "verification": {
+        "label": "Weryfikacja",
+        "description": "Zdobądź odznakę zweryfikowanej firmy na profilu."
+      },
+      "appearance": {
+        "label": "Wygląd strony",
+        "description": "Nagłówek, kolory, kolejność sekcji i przyciski z linkami."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Zapisywanie…",
+    "unsaved": "Niezapisane zmiany",
+    "allSaved": "Wszystkie zmiany zapisane",
+    "discard": "Odrzuć",
+    "save": "Zapisz",
+    "saved": "Zapisano",
+    "checkFields": "Sprawdź zaznaczone pola."
+  },
+  "shareLink": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano"
+  },
+  "profile": {
+    "title": "Profil firmy",
+    "description": "Co klienci widzą na Twojej stronie i w wyszukiwarce.",
+    "toastUpdated": "Profil zaktualizowany",
+    "toastLive": "Zmiany są widoczne na Twojej stronie.",
+    "logoAlt": "Logo: {name}",
+    "viewPage": "Zobacz swoją stronę",
+    "photos": {
+      "title": "Zdjęcia",
+      "description": "Twoje logo pojawia się na kartach i w wiadomościach; zdjęcie okładkowe otwiera Twoją stronę. Użyj własnych prac lub wnętrza — nie zdjęć stockowych.",
+      "noCover": "Brak zdjęcia okładkowego",
+      "remove": "Usuń",
+      "uploading": "Przesyłanie…",
+      "changeCover": "Zmień okładkę",
+      "addCover": "Dodaj okładkę",
+      "changeLogo": "Zmień logo",
+      "addLogo": "Dodaj logo",
+      "logoHint": "Najlepiej sprawdza się kwadrat. Bez logo pokazujemy Twoje inicjały."
+    },
+    "basics": {
+      "title": "Podstawy",
+      "nameIndividual": "Twoje imię lub nazwa firmy",
+      "nameBusiness": "Nazwa firmy",
+      "tagline": "Hasło",
+      "taglineHint": "Jedna linijka pod nazwą. {count, plural, one {Pozostał # znak.} few {Pozostały # znaki.} many {Pozostało # znaków.} other {Pozostało # znaku.}}",
+      "taglinePlaceholder": "np. Precyzyjne fade’y i pielęgnacja brody na Mokotowie",
+      "category": "Główna kategoria",
+      "categoryHint": "Gdzie się pojawiasz, gdy ludzie przeglądają ofertę.",
+      "choose": "Wybierz…",
+      "years": "Lata doświadczenia"
+    },
+    "about": {
+      "title": "O nas",
+      "description": "Czym się zajmujesz, jak pracujesz i co wyróżnia wizytę u Ciebie. Zwykłe słowa biją modne hasła.",
+      "label": "O nas",
+      "languages": "Znane języki",
+      "amenities": "Udogodnienia"
+    },
+    "tags": {
+      "optional": "Opcjonalnie",
+      "placeholder": "Wpisz i naciśnij Enter",
+      "remove": "Usuń: {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "Angielski",
+        "spanish": "Hiszpański",
+        "french": "Francuski",
+        "portuguese": "Portugalski",
+        "mandarin": "Mandaryński",
+        "cantonese": "Kantoński",
+        "arabic": "Arabski",
+        "russian": "Rosyjski",
+        "haitianCreole": "Kreolski haitański",
+        "korean": "Koreański",
+        "vietnamese": "Wietnamski",
+        "hindi": "Hindi",
+        "italian": "Włoski",
+        "german": "Niemiecki",
+        "polish": "Polski",
+        "tagalog": "Tagalski"
+      },
+      "amenities": {
+        "wheelchair": "Dostępne dla wózków inwalidzkich",
+        "streetParking": "Parking uliczny",
+        "freeParking": "Bezpłatny parking",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Płatności kartą",
+        "walkIns": "Mile widziani bez rezerwacji",
+        "kidFriendly": "Przyjazne dzieciom",
+        "restroom": "Toaleta",
+        "airConditioning": "Klimatyzacja",
+        "drinks": "Napoje w ofercie",
+        "genderNeutral": "Neutralne płciowo",
+        "petFriendly": "Przyjazne zwierzętom"
+      }
+    },
+    "contact": {
+      "title": "Kontakt i linki",
+      "description": "Widoczne na Twojej stronie. Klienci zawsze mogą napisać do Ciebie przez Kept, więc to pola opcjonalne.",
+      "email": "Publiczny e-mail",
+      "phone": "Publiczny telefon",
+      "website": "Strona internetowa",
+      "websitePlaceholder": "twojadomena.pl"
+    },
+    "social": {
+      "legend": "Profile społecznościowe",
+      "hint": "Wpisz swoją nazwę użytkownika lub wklej link do profilu. Aby wyróżnić na stronie konkretne filmy, posty lub utwory, dodaj je w sekcji <link>Portfolio</link>.",
+      "placeholders": {
+        "instagram": "@twojanazwa",
+        "tiktok": "@twojanazwa",
+        "youtube": "@twojkanal",
+        "facebook": "twojastrona",
+        "x": "@twojanazwa",
+        "linkedin": "in/twojanazwa",
+        "spotify": "Link do artysty",
+        "soundcloud": "twojanazwa",
+        "behance": "twojanazwa",
+        "pinterest": "twojanazwa",
+        "twitch": "twojkanal",
+        "threads": "@twojanazwa"
+      },
+      "errors": {
+        "wrongNetwork": "To nie jest link do {network}.",
+        "useProfile": "Użyj linku do swojego profilu w {network}.",
+        "badHandle": "To nie wygląda na nazwę użytkownika w {network}.",
+        "badArtist": "To nie wygląda na link do artysty w {network}."
+      }
+    },
+    "timezone": {
+      "title": "Strefa czasowa",
+      "description": "Twoje godziny i wszystkie godziny wizyt są podawane w tej strefie. Zmień ją tylko wtedy, gdy naprawdę się przeprowadzasz — istniejące rezerwacje zachowują dokładną godzinę.",
+      "label": "Strefa czasowa"
+    }
+  },
+  "booking": {
+    "title": "Zasady rezerwacji",
+    "description": "Jak i kiedy klienci mogą u Ciebie rezerwować. Poszczególne usługi mogą zastępować wyprzedzenie i zatwierdzanie.",
+    "toastUpdated": "Zasady rezerwacji zaktualizowane",
+    "mode": {
+      "title": "Potwierdzenie",
+      "description": "W edytorze usług nadal możesz wymagać zatwierdzenia dla wybranych usług.",
+      "instantTitle": "Rezerwacja natychmiastowa",
+      "instantDescription": "Klienci wybierają wolny termin i są zarezerwowani. Najlepsze dla większości firm — tego oczekują klienci.",
+      "requestTitle": "Zatwierdzaj każdą prośbę",
+      "requestDescription": "Klienci wysyłają prośbę, a Ty ją przyjmujesz lub odrzucasz. Prośby bez odpowiedzi wygasają automatycznie, by nikt nie czekał w nieskończoność."
+    },
+    "window": {
+      "title": "Kiedy klienci mogą rezerwować",
+      "minNotice": "Minimalne wyprzedzenie",
+      "minNoticeHint": "Ostatni moment, w którym klient może zarezerwować przed godziną rozpoczęcia.",
+      "noMinimum": "Bez minimum — można rezerwować aż do rozpoczęcia",
+      "advance": "Rezerwacja do",
+      "advanceHint": "Jak daleko naprzód jest otwarty Twój kalendarz.",
+      "daysAhead": "{count, plural, one {# dzień naprzód} few {# dni naprzód} many {# dni naprzód} other {# dnia naprzód}}",
+      "yearAhead": "1 rok naprzód",
+      "interval": "Godziny rozpoczęcia co",
+      "intervalHint": "Krótsze odstępy dają klientom większy wybór; dłuższe porządkują Twój dzień.",
+      "anyStaff": "Oferuj „Dowolnego dostępnego specjalistę”",
+      "anyStaffDescription": "Pokazuje najwięcej wolnych terminów i rozkłada rezerwacje na cały zespół. Wyłącz, jeśli klienci muszą wybrać konkretną osobę."
+    },
+    "durations": {
+      "minutes": "{count, plural, one {# minuta} few {# minuty} many {# minut} other {# minuty}}",
+      "hours": "{count, plural, one {# godzina} few {# godziny} many {# godzin} other {# godziny}}",
+      "days": "{count, plural, one {# dzień} few {# dni} many {# dni} other {# dnia}}",
+      "weeks": "{count, plural, one {# tydzień} few {# tygodnie} many {# tygodni} other {# tygodnia}}"
+    },
+    "reminders": {
+      "title": "Przypomnienia",
+      "description": "Wysyłane e-mailem przed każdą wizytą. Klienci, którzy rezerwują później niż termin przypomnienia, nie dostają tego przypomnienia.",
+      "descriptionSms": "Wysyłane e-mailem i SMS-em (jeśli klient zezwala na SMS-y) przed każdą wizytą. Klienci, którzy rezerwują później niż termin przypomnienia, nie dostają tego przypomnienia.",
+      "none": "Brak przypomnień. Klienci dostają tylko potwierdzenie rezerwacji.",
+      "add": "Dodaj przypomnienie",
+      "addPlaceholder": "Dodaj przypomnienie…",
+      "upTo": "Maksymalnie 3",
+      "remove": "Usuń przypomnienie: {label}",
+      "minutesBefore": "{count, plural, one {# minutę wcześniej} few {# minuty wcześniej} many {# minut wcześniej} other {# minuty wcześniej}}",
+      "hoursBefore": "{count, plural, one {# godzinę wcześniej} few {# godziny wcześniej} many {# godzin wcześniej} other {# godziny wcześniej}}",
+      "daysBefore": "{count, plural, one {# dzień wcześniej} few {# dni wcześniej} many {# dni wcześniej} other {# dnia wcześniej}}"
+    }
+  },
+  "policies": {
+    "title": "Anulowanie i opłaty",
+    "description": "Klienci widzą je przed rezerwacją i ponownie przed anulowaniem.",
+    "toastUpdated": "Zasady zaktualizowane",
+    "cancel": {
+      "title": "Anulowanie i zmiana terminu",
+      "freeUntil": "Bezpłatne anulowanie do",
+      "rescheduleUntil": "Zmiana terminu online do",
+      "anyTime": "W dowolnym momencie przed",
+      "oneDay": "24 godziny (1 dzień) wcześniej",
+      "hoursBefore": "{count, plural, one {# godzinę wcześniej} few {# godziny wcześniej} many {# godzin wcześniej} other {# godziny wcześniej}}",
+      "daysBefore": "{count, plural, one {# dzień wcześniej} few {# dni wcześniej} many {# dni wcześniej} other {# dnia wcześniej}}",
+      "lateFee": "Opłata za późne anulowanie",
+      "lateFeeHintPaid": "Potrącana z tego, co klient zapłacił online. Nigdy nie pobieramy więcej, niż zapłacono.",
+      "lateFeeHintUnpaid": "Dotyczy tylko pieniędzy zapłaconych online. Podłącz płatności i pobieraj zadatki, aby ją egzekwować.",
+      "none": "Brak",
+      "ofTotal": "całości",
+      "noShowFee": "Opłata za nieobecność",
+      "noShowHint": "Część Twoich zasad, aby klienci znali je z góry. Gdy oznaczysz nieobecność, wszystko, co klient zapłacił online, zostaje u Ciebie; opłatę pobraną na miejscu możesz zaksięgować przy wizycie.",
+      "refundDeposits": "Zwracaj zadatki przy anulowaniu w terminie",
+      "refundDepositsDescription": "Wyłączone oznacza, że zadatki są zatrzymywane przy każdym anulowaniu przez klienta."
+    },
+    "words": {
+      "title": "Własnymi słowami",
+      "description": "Opcjonalne uwagi pokazywane razem z Twoimi zasadami.",
+      "late": "Spóźnienie",
+      "lateHint": "np. „Przy spóźnieniu powyżej 15 minut możemy być zmuszeni skrócić usługę lub umówić ją ponownie.”",
+      "before": "Przed wizytą",
+      "beforeHint": "Pokazywane każdemu klientowi przed potwierdzeniem — dojazd, co zabrać, jak się przygotować."
+    },
+    "tax": {
+      "title": "Podatek od sprzedaży",
+      "description": "Doliczany do cen przy płatności i pokazywany jako osobna linia. Zostaw 0, jeśli Twoje ceny już zawierają podatek.",
+      "rate": "Stawka",
+      "rateError": "Wpisz stawkę od 0 do 30%",
+      "label": "Etykieta",
+      "labelPlaceholder": "Podatek od sprzedaży"
+    },
+    "preview": {
+      "title": "Co klienci widzą przed rezerwacją"
+    }
+  },
+  "payments": {
+    "title": "Płatności",
+    "description": "Przyjmuj zadatki lub pełną płatność przy rezerwacji. Płatność na miejscu zawsze też działa.",
+    "online": {
+      "title": "Płatności online",
+      "description": "Płatności obsługuje Stripe i wypłaca je na Twoje konto bankowe. Kept nigdy nie widzi numerów kart."
+    },
+    "unavailable": {
+      "badge": "Jeszcze niedostępne",
+      "body": "Płatności kartą nie zostały jeszcze włączone w Kept. Do tego czasu klienci płacą u Ciebie na wizycie, a każdą płatność — gotówkę, terminal lub przelew — możesz zaksięgować na stronie wizyty, aby Twoje zapisy i statystyki były dokładne.",
+      "note": "Na razie nic tu nie musisz robić. Zadatki i zasady, które ustawisz, zaczną obowiązywać, gdy ruszą płatności online."
+    },
+    "none": {
+      "deposits": "Wymagaj zadatku lub pełnej płatności dla każdej usługi",
+      "fees": "Automatycznie zatrzymuj opłaty za późne anulowanie z zadatków",
+      "tips": "Pozwól klientom dodać napiwek po wizycie",
+      "connect": "Skonfiguruj płatności ze Stripe",
+      "time": "Zajmuje około 5 minut. Będą potrzebne dane bankowe i dokument tożsamości."
+    },
+    "incomplete": {
+      "badge": "Konfiguracja nieukończona",
+      "body": "Stripe potrzebuje jeszcze kilku danych, zanim będziesz mógł przyjmować płatności.",
+      "continue": "Kontynuuj konfigurację"
+    },
+    "connected": {
+      "badge": "Podłączone",
+      "body": "Możesz przyjmować zadatki i płatności online.",
+      "services": "Wybierz, co pobierać przy każdej usłudze, w sekcji <link>Usługi</link>."
+    },
+    "fees": {
+      "title": "Opłaty",
+      "kept": "Opłata Kept od płatności online",
+      "inPerson": "Płatności przyjęte na miejscu",
+      "noFee": "Bez opłaty Kept",
+      "processing": "Obsługa kart",
+      "stripeRate": "Standardowa stawka Stripe"
+    }
+  },
+  "link": {
+    "title": "Link do rezerwacji",
+    "description": "Twoja strona w Kept. Umieść ją w bio, na wizytówce, na lustrze.",
+    "checklist": {
+      "location": "Dodaj miejsce, w którym pracujesz",
+      "services": "Utwórz co najmniej jedną usługę",
+      "availability": "Ustaw godziny pracy",
+      "done": "Gotowe",
+      "todo": "Do zrobienia"
+    },
+    "status": {
+      "liveTitle": "Twoja strona jest aktywna",
+      "draftTitle": "Twoja strona nie jest jeszcze aktywna",
+      "liveDescription": "Klienci mogą Cię znaleźć w wyszukiwarce i rezerwować online.",
+      "draftDescription": "Widzisz ją tylko Ty. Opublikuj, gdy lista kontrolna będzie gotowa.",
+      "live": "Aktywna",
+      "hide": "Ukryj moją stronę",
+      "goLive": "Opublikuj",
+      "viewPage": "Zobacz stronę",
+      "preview": "Podgląd"
+    },
+    "toasts": {
+      "live": "Strona jest aktywna — klienci mogą Cię znaleźć i zarezerwować wizytę",
+      "hidden": "Twoja strona jest ukryta",
+      "hiddenDescription": "Istniejące wizyty nie są naruszone.",
+      "slugUpdated": "Adres zaktualizowany",
+      "slugUpdatedDescription": "Twój stary link już nie działa — zaktualizuj go wszędzie, gdzie został udostępniony.",
+      "copied": "Skopiowano"
+    },
+    "share": {
+      "title": "Udostępnij",
+      "qrLabel": "Kod QR dla: {address}",
+      "qrHint": "Wydrukuj go przy recepcji, na wizytówkach lub na lustrze. Zeskanowanie otwiera bezpośrednio stronę rezerwacji.",
+      "png": "PNG do druku",
+      "svg": "SVG",
+      "embedSummary": "Dodaj przycisk „Zarezerwuj teraz” na swojej stronie internetowej",
+      "embedHint": "Wklej to tam, gdzie ma być przycisk.",
+      "copyCode": "Kopiuj kod",
+      "buttonText": "Zarezerwuj: {name}"
+    },
+    "slug": {
+      "title": "Adres internetowy",
+      "description": "Małe litery, cyfry i myślniki. Zmiana psuje linki, które już udostępniono.",
+      "change": "Zmień adres",
+      "label": "Adres"
+    },
+    "hideDialog": {
+      "title": "Ukryć stronę?",
+      "description": "Znikniesz z wyszukiwarki i nikt nie będzie mógł rezerwować online. Istniejące wizyty pozostają bez zmian. Możesz ponownie opublikować stronę w każdej chwili.",
+      "confirm": "Ukryj stronę"
+    }
+  },
+  "locations": {
+    "title": "Lokalizacje",
+    "description": "Gdzie klienci rezerwują u Ciebie: Twój sklep, obszar, do którego dojeżdżasz, lub online. Każdą usługę i członka zespołu można ograniczyć do wybranych lokalizacji.",
+    "privacy": {
+      "title": "Co widzą klienci",
+      "atPlace": "U Ciebie",
+      "atPlaceBody": "Pełny adres i mapa, aby klienci mogli Cię znaleźć.",
+      "travel": "Dojazd do klientów",
+      "travelBody": "Tylko Twoje miasto i jak daleko dojeżdżasz. Jeśli pracujesz z domu, Twój adres domowy i dokładna pinezka nigdy nie są pokazywane — wyszukiwarka umieszcza Cię w promieniu około 5 km. Klienci podają swój adres przy rezerwacji.",
+      "online": "Online",
+      "onlineBody": "Zero adresu, tylko informacja, że sesje odbywają się online."
+    },
+    "kinds": {
+      "physical": {
+        "label": "U mnie",
+        "description": "Sklep, studio, biuro"
+      },
+      "mobile": {
+        "label": "Jeżdżę do klientów",
+        "description": "Domy, biura, wydarzenia"
+      },
+      "virtual": {
+        "label": "Online",
+        "description": "Sesje wideo lub telefoniczne"
+      }
+    },
+    "summary": {
+      "mobile": "Dojazd do {km} km od: {place}",
+      "virtual": "Sesje online"
+    },
+    "list": {
+      "title": "Twoje lokalizacje",
+      "count": "{count} z {max} w planie {plan}",
+      "emptyTitle": "Brak lokalizacji",
+      "emptyBody": "Klienci nie mogą rezerwować, dopóki nie wiedzą, gdzie odbędzie się wizyta. Dodaj swój sklep, obszar dojazdu lub sesje online.",
+      "add": "Dodaj lokalizację",
+      "primary": "Główna",
+      "upcoming": "{count, plural, one {# nadchodząca wizyta} few {# nadchodzące wizyty} many {# nadchodzących wizyt} other {# nadchodzącej wizyty}}",
+      "notPinned": "Nie przypięto na mapie",
+      "actions": "Działania dla: {name}",
+      "edit": "Edytuj",
+      "makePrimary": "Ustaw jako główną",
+      "remove": "Usuń lokalizację",
+      "atLimit": "{count, plural, one {Twój plan {plan} obejmuje # lokalizację. Usuń jedną, aby dodać inną.} few {Twój plan {plan} obejmuje # lokalizacje. Usuń jedną, aby dodać inną.} many {Twój plan {plan} obejmuje # lokalizacji. Usuń jedną, aby dodać inną.} other {Twój plan {plan} obejmuje # lokalizacji. Usuń jedną, aby dodać inną.}}",
+      "primaryHint": "Lokalizacja główna jest wyświetlana jako pierwsza na profilu i w wyszukiwarce."
+    },
+    "toasts": {
+      "primary": "{name} jest teraz Twoją lokalizacją główną",
+      "removed": "Usunięto: {name}",
+      "saved": "Lokalizacja zapisana",
+      "added": "Lokalizacja dodana"
+    },
+    "remove": {
+      "blockedTitle": "Nie można jeszcze usunąć: {name}",
+      "ok": "OK",
+      "title": "Usunąć: {name}?",
+      "confirm": "Usuń lokalizację",
+      "description": "Klienci nie będą już mogli tu rezerwować. Minione wizyty zachowują swoje szczegóły.",
+      "primaryNote": "Twoja najstarsza pozostała lokalizacja stanie się główną.",
+      "membersNote": "{count, plural, one {# członek zespołu jest tu przypisany. Osoba przypisana tylko tutaj będzie dostępna do rezerwacji we wszystkich Twoich lokalizacjach.} few {# członków zespołu jest tu przypisanych. Osoby przypisane tylko tutaj będą dostępne do rezerwacji we wszystkich Twoich lokalizacjach.} many {# członków zespołu jest tu przypisanych. Osoby przypisane tylko tutaj będą dostępne do rezerwacji we wszystkich Twoich lokalizacjach.} other {# członka zespołu jest tu przypisanych. Osoby przypisane tylko tutaj będą dostępne do rezerwacji we wszystkich Twoich lokalizacjach.}}",
+      "servicesNote": "Usługi oferowane tutaj zachowują swoje pozostałe lokalizacje.",
+      "onlyLocation": "To Twoja jedyna lokalizacja. Najpierw dodaj inną, aby klienci nadal mieli gdzie rezerwować.",
+      "upcoming": "{count, plural, one {Ma # nadchodzącą wizytę. Najpierw przenieś ją lub anuluj w swoim <link>kalendarzu</link>.} few {Ma # nadchodzące wizyty. Najpierw przenieś je lub anuluj w swoim <link>kalendarzu</link>.} many {Ma # nadchodzących wizyt. Najpierw przenieś je lub anuluj w swoim <link>kalendarzu</link>.} other {Ma # nadchodzącej wizyty. Najpierw przenieś je lub anuluj w swoim <link>kalendarzu</link>.}}",
+      "exclusive": "{count, plural, one {{names} jest oferowana tylko tutaj. Zaoferuj ją gdzie indziej lub ukryj w sekcji <link>Usługi</link>.} few {{names} są oferowane tylko tutaj. Zaoferuj je gdzie indziej lub ukryj w sekcji <link>Usługi</link>.} many {{names} są oferowane tylko tutaj. Zaoferuj je gdzie indziej lub ukryj w sekcji <link>Usługi</link>.} other {{names} są oferowane tylko tutaj. Zaoferuj je gdzie indziej lub ukryj w sekcji <link>Usługi</link>.}}",
+      "quoted": "„{name}”"
+    },
+    "dialog": {
+      "editTitle": "Edytuj: {name}",
+      "addTitle": "Dodaj lokalizację",
+      "cancel": "Anuluj",
+      "save": "Zapisz lokalizację",
+      "add": "Dodaj lokalizację",
+      "where": "Gdzie odbywają się wizyty?",
+      "name": "Nazwa",
+      "nameHintPhysical": "Widoczna dla klientów, np. nazwa sklepu lub dzielnicy.",
+      "nameHintOther": "Widoczna dla klientów, gdy wybierają, gdzie zarezerwować.",
+      "namePlaceholderPhysical": "np. Studio w centrum",
+      "defaultMobile": "Usługa mobilna",
+      "defaultVirtual": "Online",
+      "street": "Ulica i numer",
+      "line2": "Mieszkanie, lokal, piętro",
+      "cityBased": "Miasto, w którym działasz",
+      "city": "Miasto",
+      "region": "Województwo / region",
+      "postalCode": "Kod pocztowy",
+      "country": "Kod kraju",
+      "countryHint": "Dwie litery, np. PL, DE, CZ",
+      "radius": "Jak daleko dojeżdżasz?",
+      "radiusOption": "Do {km} km",
+      "timezone": "Strefa czasowa",
+      "timezoneHint": "Godziny i rezerwacje tutaj używają tej strefy.",
+      "phone": "Telefon",
+      "phoneHint": "Jeśli klienci mają dzwonić bezpośrednio do tej lokalizacji.",
+      "primary": "Ustaw jako moją lokalizację główną",
+      "primaryDescription": "Wyświetlana jako pierwsza na profilu i używana w wyszukiwarce."
+    },
+    "pin": {
+      "title": "Pinezka na mapie",
+      "physical": "Umieszcza Twój sklep na mapie i w wyszukiwaniach „w pobliżu”. Klienci widzą adres wpisany powyżej.",
+      "mobile": "Używana wyłącznie do dopasowania Cię do klientów w pobliżu. Twoja dokładna pinezka i adres ulicy nigdy nie są pokazywane — profil pokazuje miasto, a wyszukiwarka umieszcza Cię w promieniu około 5 km.",
+      "find": "Znajdź ten adres",
+      "useMine": "Użyj mojej bieżącej lokalizacji",
+      "remove": "Usuń pinezkę",
+      "removed": "Pinezka usunięta.",
+      "matches": "Pasujące adresy",
+      "pinnedTo": "Przypięto do: {place}.",
+      "pinned": "Przypięto.",
+      "notPinned": "Jeszcze nie przypięto. Nadal będziesz się pojawiać, gdy klienci szukają w Twoim mieście.",
+      "noGeolocation": "Ta przeglądarka nie może udostępnić lokalizacji.",
+      "here": "Przypięto tam, gdzie jesteś teraz.",
+      "denied": "Nie udało się ustalić Twojej lokalizacji. Sprawdź uprawnienie lokalizacji w przeglądarce.",
+      "enterAddress": "Najpierw wpisz adres.",
+      "noMatch": "Nie znaleziono pasującego adresu. Sprawdź adres lub użyj bieżącej lokalizacji."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Wskazówki dojazdu",
+        "placeholder": "np. Zaparkuj przy ul. Lipowej. Zadzwoń domofonem pod 2B i wejdź na drugie piętro.",
+        "hint": "Parkowanie, wejście, kod domofonu. Klienci widzą to na Twoim profilu i w swojej rezerwacji."
+      },
+      "mobile": {
+        "label": "Uwagi dla klientów",
+        "placeholder": "np. Potrzebuję miejsca parkingowego w promieniu 50 m i dostępu do gniazdka.",
+        "hint": "Co klienci powinni przygotować. Widoczne w ich rezerwacji."
+      },
+      "virtual": {
+        "label": "Jak działają sesje",
+        "placeholder": "np. Godzinę przed sesją dostaniesz wiadomością link do wideorozmowy.",
+        "hint": "Widoczne w ich rezerwacji. Nie wklejaj tu prywatnego linku do spotkania — linki wysyłaj w Wiadomościach."
+      }
+    }
+  },
+  "verification": {
+    "title": "Weryfikacja",
+    "description": "Pokaż klientom, że za Twoim profilem stoi prawdziwa, licencjonowana firma. Nasz zespół ręcznie sprawdza przesłane dokumenty.",
+    "status": {
+      "title": "Status",
+      "not_submitted": "Niezweryfikowana",
+      "pending": "W trakcie sprawdzania",
+      "verified": "Zweryfikowana",
+      "rejected": "Nie zatwierdzono",
+      "needs_info": "Potrzebne dodatkowe informacje"
+    },
+    "body": {
+      "notSubmitted": "Nie poprosiłeś(-aś) jeszcze o weryfikację. Prześlij poniżej kilka danych i dokumentów.",
+      "pending": "Wysłano {date}. Ktoś z naszego zespołu ręcznie sprawdza każdą prośbę; dostaniesz powiadomienie, gdy tylko zapadnie decyzja. Nie możesz zmienić prośby, gdy jest sprawdzana.",
+      "pendingNoDate": "Wysłano. Ktoś z naszego zespołu ręcznie sprawdza każdą prośbę; dostaniesz powiadomienie, gdy tylko zapadnie decyzja. Nie możesz zmienić prośby, gdy jest sprawdzana.",
+      "verified": "{name} jest zweryfikowana od {date}. Odznaka pojawia się na Twoim <link>publicznym profilu</link> i w wynikach wyszukiwania.",
+      "verifiedNoDate": "{name} jest zweryfikowana. Odznaka pojawia się na Twoim <link>publicznym profilu</link> i w wynikach wyszukiwania.",
+      "rejected": "Nie udało się zweryfikować firmy {name} na podstawie tego, co przesłano {date}. Możesz przesłać poniżej nowe dane i dokumenty.",
+      "rejectedNoDate": "Nie udało się zweryfikować firmy {name} na podstawie tego, co przesłano. Możesz przesłać poniżej nowe dane i dokumenty.",
+      "needsInfo": "Nasz zespół potrzebuje czegoś więcej, zanim zdecyduje. Odpowiedz poniżej, a Twoja prośba wróci do sprawdzenia."
+    },
+    "note": "Wiadomość od Kept",
+    "noteDate": "Wiadomość od Kept · {date}",
+    "submit": {
+      "replyTitle": "Odpowiedz naszemu zespołowi",
+      "retryTitle": "Spróbuj ponownie",
+      "requestTitle": "Poproś o weryfikację",
+      "firstDescription": "Opowiedz o firmie i dołącz dowody. Większość firm przesyła jedną licencję lub dokument rejestracyjny.",
+      "againDescription": "Zachowaliśmy to, co przesłano ostatnio. Zmień to lub uzupełnij."
+    },
+    "sent": {
+      "title": "Co przesłano",
+      "description": "{date}.",
+      "noDescription": "Brak opisu.",
+      "documents": "Dokumenty",
+      "open": "Otwórz dokument {n}",
+      "removed": "Niektóre dokumenty zostały usunięte i nie można ich już otworzyć."
+    },
+    "meaning": {
+      "title": "Co widzą klienci",
+      "example": "Przykład odznaki weryfikacji",
+      "checkMark": "Znacznik obok Twojej nazwy na profilu i w wynikach wyszukiwania, opisany jako „Zweryfikowana firma”.",
+      "notEndorsement": "Oznacza, że Kept sprawdził dostarczone przez Ciebie dokumenty. To nie ocena Twojej pracy ani rekomendacja — Twoje oceny nadal pochodzą od klientów.",
+      "private": "Dokumenty pozostają prywatne. Mogą je otworzyć tylko osoby zarządzające tą firmą i zespół weryfikacji Kept.",
+      "removable": "Nasz zespół może później usunąć odznakę, na przykład jeśli licencja okaże się nieważna."
+    },
+    "form": {
+      "documentN": "Dokument {n}",
+      "tooMany": "{count, plural, one {Możesz dołączyć maksymalnie # dokument.} few {Możesz dołączyć maksymalnie # dokumenty.} many {Możesz dołączyć maksymalnie # dokumentów.} other {Możesz dołączyć maksymalnie # dokumentu.}}",
+      "needSomething": "Dodaj krótki opis lub co najmniej jeden dokument.",
+      "sentReply": "Wysłano. Twoja prośba wróciła do sprawdzenia.",
+      "submitted": "Przesłano do sprawdzenia",
+      "replyLabel": "Twoja odpowiedź",
+      "aboutLabel": "O Twojej firmie",
+      "hint": "Numery licencji lub rejestracji, kto je wydał i jak długo pracujesz. Wszystko, co pomoże nam potwierdzić, że firma jest prawdziwa i należy do Ciebie.",
+      "placeholder": "np. Barber z uprawnieniami, wpis w CEIDG od 2019 r. Zakład zarejestrowany jako North Fade Sp. z o.o.",
+      "documents": "Dokumenty",
+      "documentsHint": "Zdjęcia lub skany (JPG, PNG lub WebP, do 15 MB każdy) licencji, zaświadczenia o rejestracji lub certyfikatu. Maksymalnie {max}.",
+      "attachedList": "Dołączone dokumenty",
+      "open": "Otwórz dokument {n}",
+      "uploading": "Przesyłanie: {name}",
+      "fromLast": "Z Twojej poprzedniej prośby",
+      "attached": "Dołączono",
+      "remove": "Usuń: {name}",
+      "addAnother": "Dodaj kolejny dokument",
+      "add": "Dodaj dokumenty",
+      "uploadingAll": "Przesyłanie dokumentów",
+      "attachedCount": "{count, plural, one {Dołączono # dokument} few {Dołączono # dokumenty} many {Dołączono # dokumentów} other {Dołączono # dokumentu}}",
+      "privacy": "Te pliki mogą otworzyć tylko osoby zarządzające tą firmą i zespół weryfikacji Kept. Nigdy nie są pokazywane na Twoim profilu.",
+      "waiting": "Oczekiwanie na przesłanie plików…",
+      "sendReply": "Wyślij odpowiedź",
+      "submitAgain": "Prześlij ponownie",
+      "submit": "Prześlij do sprawdzenia"
+    }
+  },
+  "forms": {
+    "title": "Pytania do klientów",
+    "description": "Pytania, na które klienci odpowiadają podczas rezerwacji: alergie, cele, samochód, który przywiozą. Zbuduj formularz raz, a potem wybieraj go przy każdej usłudze, która go potrzebuje.",
+    "newForm": "Nowy formularz",
+    "editForm": "Edytuj formularz",
+    "notIncludedTitle": "Nie wchodzi w skład Twojego planu",
+    "notIncludedBody": "Pytania wstępne nie są częścią planu {plan}. Usługi nadal przyjmują rezerwacje bez nich.",
+    "emptyTitle": "Brak formularzy",
+    "emptyBody": "Zapytaj o to, co musisz wiedzieć przed wizytą, żeby nie dowiadywać się dopiero przy fotelu. Odpowiedzi są zapisywane przy rezerwacji i pokazywane osobie, która wykonuje wizytę.",
+    "create": "Utwórz formularz",
+    "listLabel": "Formularze",
+    "noQuestions": "Brak pytań",
+    "questions": "{count, plural, one {# pytanie} few {# pytania} many {# pytań} other {# pytania}}",
+    "required": "{count, plural, one {# wymagane} few {# wymagane} many {# wymaganych} other {# wymaganego}}",
+    "edited": "Edytowano {date}",
+    "footer": "Aby zadać formularz przy usłudze, otwórz usługę i wybierz go w sekcji <b>Pytania i wymagania</b>. Każda usługa zadaje najwyżej jeden formularz.",
+    "notUsed": "Jeszcze nieużywany przez żadną usługę",
+    "askedOn": "Zadawany przy: <list></list>",
+    "hidden": "(ukryta)",
+    "more": "{count, plural, one {jeszcze #} few {jeszcze #} many {jeszcze #} other {jeszcze #}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "Krótka odpowiedź",
+        "hint": "Imię, liczba, kilka słów.",
+        "placeholder": "np. Jaka jest marka i model Twojego samochodu?"
+      },
+      "long_text": {
+        "label": "Akapit",
+        "hint": "Miejsce na kilka zdań.",
+        "placeholder": "np. Opowiedz nam o urazach, o których powinniśmy wiedzieć."
+      },
+      "yes_no": {
+        "label": "Tak / Nie",
+        "hint": "Dwa przyciski: Tak i Nie.",
+        "placeholder": "np. Czy to Twoja pierwsza wizyta?"
+      },
+      "single_choice": {
+        "label": "Jednokrotny wybór",
+        "hint": "Klienci wybierają jedną opcję.",
+        "placeholder": "np. Jak długie są teraz Twoje włosy?"
+      },
+      "multi_choice": {
+        "label": "Pola wyboru",
+        "hint": "Klienci zaznaczają wszystko, co pasuje.",
+        "placeholder": "np. Na jakich obszarach mamy się skupić?"
+      },
+      "date": {
+        "label": "Data",
+        "hint": "Wybór daty, np. data urodzenia lub data wydarzenia.",
+        "placeholder": "np. Kiedy jest wydarzenie?"
+      },
+      "acknowledgement": {
+        "label": "Oświadczenie",
+        "hint": "Stwierdzenie, które klienci zaznaczają, by potwierdzić, że je przeczytali.",
+        "placeholder": "np. Rozumiem, że test uczuleniowy jest potrzebny 48 godzin przed koloryzacją."
+      }
+    },
+    "errors": {
+      "name": "Nadaj formularzowi nazwę",
+      "statement": "Napisz stwierdzenie, na które zgadzają się klienci",
+      "question": "Napisz pytanie",
+      "twoChoices": "Dodaj co najmniej dwa wybory",
+      "distinct": "Każdy wybór musi być inny"
+    },
+    "leaveConfirm": "Masz niezapisane zmiany w tym formularzu. Wyjść bez zapisywania?",
+    "toasts": {
+      "saved": "Formularz zapisany",
+      "created": "Formularz utworzony",
+      "archived": "Formularz zarchiwizowany",
+      "archivedFrom": "{count, plural, one {Formularz zarchiwizowany i usunięty z # usługi} few {Formularz zarchiwizowany i usunięty z # usług} many {Formularz zarchiwizowany i usunięty z # usług} other {Formularz zarchiwizowany i usunięty z # usługi}}"
+    },
+    "untitled": "Pytanie bez tytułu",
+    "archive": "Archiwizuj formularz",
+    "show": "Pokaż",
+    "questionsTab": "{count, plural, one {Pytania (#)} few {Pytania (#)} many {Pytania (#)} other {Pytania (#)}}",
+    "previewTab": "Podgląd klienta",
+    "details": "Szczegóły formularza",
+    "nameLabel": "Nazwa formularza",
+    "nameHint": "Widzi to tylko Twój zespół. Klienci widzą tylko pytania.",
+    "namePlaceholder": "np. Konsultacja dla nowych klientów",
+    "questions": "Pytania",
+    "questionCount": "{count} z {max}",
+    "emptyTitle": "Brak pytań",
+    "emptyBody": "Zachowaj zwięzłość. Na dwa lub trzy pytania klienci odpowiedzą; dziesięć pominą.",
+    "saveBar": {
+      "saving": "Zapisywanie…",
+      "fix": "{count, plural, one {Popraw # rzecz przed zapisem} few {Popraw # rzeczy przed zapisem} many {Popraw # rzeczy przed zapisem} other {Popraw # rzeczy przed zapisem}}",
+      "unsaved": "Niezapisane zmiany",
+      "allSaved": "Wszystkie zmiany zapisane",
+      "newForm": "Nowy formularz",
+      "discard": "Odrzuć",
+      "cancel": "Anuluj",
+      "save": "Zapisz zmiany",
+      "create": "Utwórz formularz"
+    },
+    "archiveDialog": {
+      "title": "Zarchiwizować „{name}”?",
+      "confirm": "Archiwizuj formularz",
+      "confirmUsed": "{count, plural, one {Zarchiwizuj i usuń z # usługi} few {Zarchiwizuj i usuń z # usług} many {Zarchiwizuj i usuń z # usług} other {Zarchiwizuj i usuń z # usługi}}",
+      "descriptionUsed": "Te usługi przestaną zadawać te pytania przy nowych rezerwacjach, dopóki nie wybierzesz innego formularza:",
+      "descriptionUnused": "Żadna usługa nie zadaje tego formularza, więc dla klientów nic się nie zmienia.",
+      "keep": "Odpowiedzi udzielone już przy minionych i nadchodzących rezerwacjach pozostają przy tych rezerwacjach.",
+      "lost": "Niezapisane zmiany w tym formularzu zostaną utracone."
+    },
+    "usage": {
+      "none": "Żadna usługa nie zadaje jeszcze tego formularza. Otwórz usługę w sekcji <link>Usługi</link> i wybierz go w Pytania i wymagania.",
+      "title": "Zadawany przy rezerwacji",
+      "hidden": "ukryta",
+      "note": "Zmiany dotyczą nowych rezerwacji tych usług od razu po zapisaniu."
+    },
+    "add": {
+      "label": "Dodaj pytanie",
+      "limit": "Osiągnięto limit {max} pytań",
+      "type": "Rodzaj pytania"
+    },
+    "card": {
+      "required": "Wymagane",
+      "attention": "Wymaga uwagi",
+      "moveUp": "Przesuń pytanie {n} w górę",
+      "moveDown": "Przesuń pytanie {n} w dół",
+      "type": "Rodzaj",
+      "statement": "Stwierdzenie",
+      "question": "Pytanie",
+      "helpText": "Tekst pomocniczy",
+      "helpAck": "Pokazywany pod stwierdzeniem, np. gdzie przeczytać pełne zasady.",
+      "helpQuestion": "Pokazywany pod pytaniem.",
+      "mustTick": "Trzeba zaznaczyć, by zarezerwować",
+      "ackRequired": "Klienci nie mogą zarezerwować, dopóki tego nie zaznaczą.",
+      "questionRequired": "Klienci nie mogą zarezerwować bez odpowiedzi.",
+      "optional": "Klienci mogą to pominąć.",
+      "duplicate": "Duplikuj",
+      "delete": "Usuń",
+      "done": "Gotowe"
+    },
+    "options": {
+      "legend": "Wybory",
+      "choice": "Wybór {n}",
+      "remove": "Usuń wybór {n}",
+      "max": "Maksymalnie {max} wyborów",
+      "add": "Dodaj wybór"
+    },
+    "preview": {
+      "title": "Podgląd klienta",
+      "description": "Krok „Kilka szczegółów” podczas rezerwacji. Wypróbuj go; nic nie jest zapisywane.",
+      "empty": "Dodane pytania pojawią się tutaj tak, jak zobaczą je klienci.",
+      "noteLabel": "Czy jest coś jeszcze, co powinni wiedzieć?",
+      "noteHint": "Każda rezerwacja kończy się tym polem. Nie jest częścią Twojego formularza.",
+      "notePlaceholder": "Alergie, preferencje, informacje o parkowaniu…",
+      "invalid": "{count, plural, one {Brakująca lub nieprawidłowa odpowiedź: #} few {Brakujące lub nieprawidłowe odpowiedzi: #} many {Brakujące lub nieprawidłowe odpowiedzi: #} other {Brakujące lub nieprawidłowe odpowiedzi: #}}",
+      "allGood": "Wszystko w porządku — to przeszłoby dalej.",
+      "clear": "Wyczyść",
+      "tryContinue": "Spróbuj przejść dalej",
+      "errors": {
+        "confirm": "Potwierdź, aby przejść dalej.",
+        "required": "To pytanie jest wymagane.",
+        "invalid": "Nieprawidłowa odpowiedź.",
+        "tooLong": "Użyj mniej niż {max} znaków.",
+        "choose": "Wybierz jedną z opcji.",
+        "invalidChoice": "Nieprawidłowy wybór.",
+        "date": "Wpisz prawidłową datę."
+      }
+    }
+  },
+  "appearance": {
+    "title": "Wygląd strony",
+    "description": "Spraw, by Twoja publiczna strona wyglądała jak Ty: nagłówek, kolor akcentu, kolejność sekcji, komunikat i własne przyciski z linkami.",
+    "saved": "Twoja strona została zaktualizowana",
+    "masthead": {
+      "title": "Nagłówek",
+      "body": "Ciemny i filmowy albo jasny i przestronny. Twoje zdjęcie okładkowe prześwituje w obu przypadkach.",
+      "sample": "Twoja strona",
+      "noir": "Noir — ciemny nagłówek",
+      "ivory": "Ivory — jasny nagłówek"
+    },
+    "accent": {
+      "title": "Kolor akcentu",
+      "body": "Używany do drobnych detali: etykiet, linii, gwiazdek i wyróżnień.",
+      "names": {
+        "brass": "Mosiądz",
+        "emerald": "Szmaragd",
+        "rose": "Róż",
+        "sapphire": "Szafir",
+        "copper": "Miedź"
+      }
+    },
+    "sections": {
+      "title": "Sekcje",
+      "body": "Wybierz, co widzą odwiedzający i w jakiej kolejności. Usługi są zawsze pierwsze, a opinie zawsze pozostają widoczne — to dzięki nim Twoja strona jest wiarygodna.",
+      "alwaysFirst": "Zawsze pierwsze",
+      "always": "Zawsze widoczne",
+      "hide": "Ukryj: {name}",
+      "show": "Pokaż: {name}",
+      "up": "Przesuń w górę: {name}",
+      "down": "Przesuń w dół: {name}",
+      "names": {
+        "services": "Usługi",
+        "work": "Prace",
+        "featured": "Polecane",
+        "team": "Zespół",
+        "reviews": "Opinie",
+        "about": "O nas"
+      }
+    },
+    "notice": {
+      "title": "Komunikat",
+      "body": "Krótka wiadomość na górze strony — godziny w czasie urlopu, lista oczekujących, nowa lokalizacja.",
+      "label": "Wiadomość",
+      "placeholder": "Zamknięte 24–26 grudnia. Wracamy 27-go."
+    },
+    "links": {
+      "title": "Przyciski z linkami",
+      "body": "Twoje menu, karty podarunkowe, sklep lub playlista: do 8 przycisków widocznych na stronie.",
+      "label": "Tekst przycisku",
+      "url": "Adres",
+      "labelPlaceholder": "Karty podarunkowe",
+      "remove": "Usuń link",
+      "add": "Dodaj link"
+    }
+  }
+}

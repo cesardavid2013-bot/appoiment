@@ -1,0 +1,782 @@
+{
+  "title": "Inställningar",
+  "home": {
+    "description": "Hur {name} ser ut, bokar och får betalt."
+  },
+  "nav": {
+    "label": "Inställningar",
+    "back": "Inställningar",
+    "sections": {
+      "profile": {
+        "label": "Företagsprofil",
+        "description": "Namn, foton, om oss, kontakt och sociala länkar."
+      },
+      "locations": {
+        "label": "Platser",
+        "description": "Där du arbetar: en butik, hos kunden eller online."
+      },
+      "booking": {
+        "label": "Bokningsregler",
+        "description": "Direktbokning eller godkända bokningar, varsel, påminnelser."
+      },
+      "policies": {
+        "label": "Avbokningar & avgifter",
+        "description": "Avbokningstid, avgift för uteblivet besök, moms."
+      },
+      "payments": {
+        "label": "Betalningar",
+        "description": "Ta emot depositioner och kortbetalningar online."
+      },
+      "forms": {
+        "label": "Kundfrågor",
+        "description": "Frågeformulär som kunder fyller i när de bokar."
+      },
+      "link": {
+        "label": "Bokningslänk",
+        "description": "Din webbadress, QR-kod och att gå live."
+      },
+      "verification": {
+        "label": "Verifiering",
+        "description": "Få verifieringsmärket på din profil."
+      },
+      "appearance": {
+        "label": "Sidans utseende",
+        "description": "Sidhuvud, färger, ordning på avsnitt och länkknappar."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Sparar…",
+    "unsaved": "Osparade ändringar",
+    "allSaved": "Alla ändringar sparade",
+    "discard": "Släng",
+    "save": "Spara",
+    "saved": "Sparat",
+    "checkFields": "Kontrollera de markerade fälten."
+  },
+  "shareLink": {
+    "copy": "Kopiera",
+    "copied": "Kopierad"
+  },
+  "profile": {
+    "title": "Företagsprofil",
+    "description": "Vad kunder ser på din sida och i sökningar.",
+    "toastUpdated": "Profilen uppdaterad",
+    "toastLive": "Ändringarna är live på din sida.",
+    "logoAlt": "Logotyp för {name}",
+    "viewPage": "Visa din sida",
+    "photos": {
+      "title": "Foton",
+      "description": "Din logotyp visas på kort och i meddelanden; omslaget leder din sida. Använd ditt eget arbete eller dina egna lokaler — inte arkivfoton.",
+      "noCover": "Inget omslagsfoto",
+      "remove": "Ta bort",
+      "uploading": "Laddar upp…",
+      "changeCover": "Byt omslag",
+      "addCover": "Lägg till omslag",
+      "changeLogo": "Byt logotyp",
+      "addLogo": "Lägg till logotyp",
+      "logoHint": "Kvadratisk fungerar bäst. Utan logotyp visar vi dina initialer."
+    },
+    "basics": {
+      "title": "Grunder",
+      "nameIndividual": "Ditt namn eller företagsnamn",
+      "nameBusiness": "Företagsnamn",
+      "tagline": "Slogan",
+      "taglineHint": "En rad under ditt namn. {count, plural, one {# tecken kvar.} other {# tecken kvar.}}",
+      "taglinePlaceholder": "t.ex. Precisa fades och skäggvård på Södermalm",
+      "category": "Huvudkategori",
+      "categoryHint": "Där du visas när folk bläddrar.",
+      "choose": "Välj…",
+      "years": "Års erfarenhet"
+    },
+    "about": {
+      "title": "Om oss",
+      "description": "Vad du gör, hur du arbetar och vad som gör ett besök hos dig annorlunda. Vanliga ord slår modeord.",
+      "label": "Om oss",
+      "languages": "Talade språk",
+      "amenities": "Bekvämligheter"
+    },
+    "tags": {
+      "optional": "Valfritt",
+      "placeholder": "Skriv och tryck på Enter",
+      "remove": "Ta bort {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "Engelska",
+        "spanish": "Spanska",
+        "french": "Franska",
+        "portuguese": "Portugisiska",
+        "mandarin": "Mandarin",
+        "cantonese": "Kantonesiska",
+        "arabic": "Arabiska",
+        "russian": "Ryska",
+        "haitianCreole": "Haitisk kreol",
+        "korean": "Koreanska",
+        "vietnamese": "Vietnamesiska",
+        "hindi": "Hindi",
+        "italian": "Italienska",
+        "german": "Tyska",
+        "polish": "Polska",
+        "tagalog": "Tagalog"
+      },
+      "amenities": {
+        "wheelchair": "Rullstolsanpassat",
+        "streetParking": "Gatuparkering",
+        "freeParking": "Gratis parkering",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Kortbetalning",
+        "walkIns": "Drop-in välkommet",
+        "kidFriendly": "Barnvänligt",
+        "restroom": "Toalett",
+        "airConditioning": "Luftkonditionering",
+        "drinks": "Dryck erbjuds",
+        "genderNeutral": "Könsneutralt",
+        "petFriendly": "Husdjursvänligt"
+      }
+    },
+    "contact": {
+      "title": "Kontakt & länkar",
+      "description": "Visas på din sida. Kunder kan alltid skriva till dig via Kept, så det här är valfritt.",
+      "email": "Publik e-post",
+      "phone": "Publikt telefonnummer",
+      "website": "Webbplats",
+      "websitePlaceholder": "dindomän.se"
+    },
+    "social": {
+      "legend": "Sociala profiler",
+      "hint": "Skriv ditt användarnamn eller klistra in länken till din profil. Vill du lyfta fram specifika videor, inlägg eller låtar på din sida lägger du till dem under <link>Portfölj</link>.",
+      "placeholders": {
+        "instagram": "@dittnamn",
+        "tiktok": "@dittnamn",
+        "youtube": "@dinkanal",
+        "facebook": "dinsida",
+        "x": "@dittnamn",
+        "linkedin": "in/dittnamn",
+        "spotify": "Länk till artist",
+        "soundcloud": "dittnamn",
+        "behance": "dittnamn",
+        "pinterest": "dittnamn",
+        "twitch": "dinkanal",
+        "threads": "@dittnamn"
+      },
+      "errors": {
+        "wrongNetwork": "Det är inte en {network}-länk.",
+        "useProfile": "Använd länken till din {network}-profil.",
+        "badHandle": "Det ser inte ut som ett {network}-användarnamn.",
+        "badArtist": "Det ser inte ut som en {network}-artistlänk."
+      }
+    },
+    "timezone": {
+      "title": "Tidszon",
+      "description": "Dina tider och varje bokningstid anges i den här zonen. Ändra den bara om du faktiskt har flyttat — befintliga bokningar behåller sin exakta tid.",
+      "label": "Tidszon"
+    }
+  },
+  "booking": {
+    "title": "Bokningsregler",
+    "description": "Hur och när kunder kan boka dig. Enskilda tjänster kan åsidosätta varsel och godkännande.",
+    "toastUpdated": "Bokningsreglerna uppdaterade",
+    "mode": {
+      "title": "Bekräftelse",
+      "description": "Du kan fortfarande kräva godkännande för specifika tjänster i tjänsteredigeraren.",
+      "instantTitle": "Direktbokning",
+      "instantDescription": "Kunder väljer en ledig tid och är bokade. Bäst för de flesta företag — det är vad kunder förväntar sig.",
+      "requestTitle": "Godkänn varje förfrågan",
+      "requestDescription": "Kunder skickar en förfrågan; du godkänner eller avböjer. Obesvarade förfrågningar går ut automatiskt så att ingen väntar i all evighet."
+    },
+    "window": {
+      "title": "När kunder kan boka",
+      "minNotice": "Minsta varsel",
+      "minNoticeHint": "Det senaste en kund kan boka före en starttid.",
+      "noMinimum": "Inget minimum — boka ända fram till start",
+      "advance": "Boka upp till",
+      "advanceHint": "Hur långt fram din kalender är öppen.",
+      "daysAhead": "{count, plural, one {# dag i förväg} other {# dagar i förväg}}",
+      "yearAhead": "1 år i förväg",
+      "interval": "Starttider var",
+      "intervalHint": "Kortare intervall ger kunder mer att välja på; längre håller din dag ordnad.",
+      "anyStaff": "Erbjud ”Valfri ledig yrkesverksam”",
+      "anyStaffDescription": "Visar flest lediga tider och sprider bokningar över ditt team. Stäng av om kunder måste välja en person."
+    },
+    "durations": {
+      "minutes": "{count, plural, one {# minut} other {# minuter}}",
+      "hours": "{count, plural, one {# timme} other {# timmar}}",
+      "days": "{count, plural, one {# dag} other {# dagar}}",
+      "weeks": "{count, plural, one {# vecka} other {# veckor}}"
+    },
+    "reminders": {
+      "title": "Påminnelser",
+      "description": "Skickas via e-post före varje bokning. Kunder som bokar närmare än en påminnelses tid får inte just den.",
+      "descriptionSms": "Skickas via e-post och sms (om kunden tillåter sms) före varje bokning. Kunder som bokar närmare än en påminnelses tid får inte just den.",
+      "none": "Inga påminnelser. Kunder får bara sin bokningsbekräftelse.",
+      "add": "Lägg till en påminnelse",
+      "addPlaceholder": "Lägg till en påminnelse…",
+      "upTo": "Upp till 3",
+      "remove": "Ta bort påminnelsen {label}",
+      "minutesBefore": "{count, plural, one {# minut innan} other {# minuter innan}}",
+      "hoursBefore": "{count, plural, one {# timme innan} other {# timmar innan}}",
+      "daysBefore": "{count, plural, one {# dag innan} other {# dagar innan}}"
+    }
+  },
+  "policies": {
+    "title": "Avbokningar & avgifter",
+    "description": "Kunder ser dessa innan de bokar och igen innan de avbokar.",
+    "toastUpdated": "Villkoren uppdaterade",
+    "cancel": {
+      "title": "Avbokning och ombokning",
+      "freeUntil": "Gratis avbokning till",
+      "rescheduleUntil": "Ombokning online till",
+      "anyTime": "När som helst före",
+      "oneDay": "24 timmar (1 dag) innan",
+      "hoursBefore": "{count, plural, one {# timme innan} other {# timmar innan}}",
+      "daysBefore": "{count, plural, one {# dag innan} other {# dagar innan}}",
+      "lateFee": "Avgift för sen avbokning",
+      "lateFeeHintPaid": "Dras från det kunden betalat online. Vi tar aldrig ut mer än vad de har betalat.",
+      "lateFeeHintUnpaid": "Gäller bara pengar som betalats online. Anslut betalningar och ta emot depositioner för att kunna tillämpa den.",
+      "none": "Ingen",
+      "ofTotal": "av totalen",
+      "noShowFee": "Avgift för uteblivet besök",
+      "noShowHint": "En del av dina villkor så att kunder vet i förväg. När du markerar ett uteblivet besök stannar allt de betalat online hos dig; en avgift som tagits emot på plats kan registreras på bokningen.",
+      "refundDeposits": "Återbetala depositioner vid avbokning i tid",
+      "refundDepositsDescription": "Av innebär att depositioner behålls varje gång en kund avbokar."
+    },
+    "words": {
+      "title": "Med dina egna ord",
+      "description": "Valfria anteckningar som visas tillsammans med dina villkor.",
+      "late": "Att komma sent",
+      "lateHint": "t.ex. ”Om du kommer mer än 15 minuter försent kan vi behöva korta ner eller boka om din behandling.”",
+      "before": "Inför ditt besök",
+      "beforeHint": "Visas för varje kund innan de bekräftar — vägbeskrivning, vad de ska ta med, hur de förbereder sig."
+    },
+    "tax": {
+      "title": "Moms",
+      "description": "Läggs på dina priser i kassan och visas som en egen rad. Lämna på 0 om dina priser redan inkluderar moms.",
+      "rate": "Sats",
+      "rateError": "Ange en sats mellan 0 och 30 %",
+      "label": "Etikett",
+      "labelPlaceholder": "Moms"
+    },
+    "preview": {
+      "title": "Vad kunder ser innan de bokar"
+    }
+  },
+  "payments": {
+    "title": "Betalningar",
+    "description": "Ta emot depositioner eller full betalning när kunder bokar. Att betala på plats fungerar alltid också.",
+    "online": {
+      "title": "Onlinebetalningar",
+      "description": "Betalningar hanteras av Stripe och betalas ut till ditt bankkonto. Kept ser aldrig kortnummer."
+    },
+    "unavailable": {
+      "badge": "Inte tillgängligt än",
+      "body": "Kortbetalningar är inte påslagna för Kept än. Tills de är det betalar kunder dig vid besöket, och du kan registrera varje betalning — kontant, kortterminal eller överföring — från bokningssidan så att dina register och Insikter stämmer.",
+      "note": "Inget att göra här just nu. Depositioner och villkor du anger börjar gälla när onlinebetalningar öppnar."
+    },
+    "none": {
+      "deposits": "Kräv deposition eller full betalning per tjänst",
+      "fees": "Behåll avgifter för sen avbokning från depositioner automatiskt",
+      "tips": "Låt kunder lägga till dricks efter besöket",
+      "connect": "Konfigurera betalningar med Stripe",
+      "time": "Tar ungefär 5 minuter. Du behöver dina bankuppgifter och ett leg."
+    },
+    "incomplete": {
+      "badge": "Konfigurationen är inte klar",
+      "body": "Stripe behöver några fler uppgifter innan du kan ta emot betalningar.",
+      "continue": "Fortsätt konfigurationen"
+    },
+    "connected": {
+      "badge": "Ansluten",
+      "body": "Du kan ta emot depositioner och betalningar online.",
+      "services": "Välj vad som ska tas ut för varje tjänst under <link>Tjänster</link>."
+    },
+    "fees": {
+      "title": "Avgifter",
+      "kept": "Kept-avgift på onlinebetalningar",
+      "inPerson": "Betalningar på plats",
+      "noFee": "Ingen Kept-avgift",
+      "processing": "Kortbehandling",
+      "stripeRate": "Stripes standardsats"
+    }
+  },
+  "link": {
+    "title": "Bokningslänk",
+    "description": "Din sida på Kept. Sätt den i din bio, på ditt kort, på spegeln.",
+    "checklist": {
+      "location": "Lägg till var du arbetar",
+      "services": "Skapa minst en tjänst",
+      "availability": "Ange dina arbetstider",
+      "done": "Klart",
+      "todo": "Att göra"
+    },
+    "status": {
+      "liveTitle": "Din sida är live",
+      "draftTitle": "Din sida är inte live än",
+      "liveDescription": "Kunder kan hitta dig i sökningar och boka online.",
+      "draftDescription": "Bara du kan se den. Gå live när checklistan är klar.",
+      "live": "Live",
+      "hide": "Dölj min sida",
+      "goLive": "Gå live",
+      "viewPage": "Visa sidan",
+      "preview": "Förhandsvisa"
+    },
+    "toasts": {
+      "live": "Du är live — kunder kan hitta och boka dig",
+      "hidden": "Din sida är dold",
+      "hiddenDescription": "Befintliga bokningar påverkas inte.",
+      "slugUpdated": "Adressen uppdaterad",
+      "slugUpdatedDescription": "Din gamla länk fungerar inte längre — uppdatera den överallt där du har delat den.",
+      "copied": "Kopierad"
+    },
+    "share": {
+      "title": "Dela",
+      "qrLabel": "QR-kod för {address}",
+      "qrHint": "Skriv ut den till receptionen, på visitkort eller spegeln. Vid skanning öppnas din bokningssida direkt.",
+      "png": "PNG för utskrift",
+      "svg": "SVG",
+      "embedSummary": "Lägg till en knapp ”Boka nu” på din webbplats",
+      "embedHint": "Klistra in det här där du vill ha knappen.",
+      "copyCode": "Kopiera kod",
+      "buttonText": "Boka hos {name}"
+    },
+    "slug": {
+      "title": "Webbadress",
+      "description": "Små bokstäver, siffror och bindestreck. Om du ändrar den slutar länkar du redan delat att fungera.",
+      "change": "Ändra adress",
+      "label": "Adress"
+    },
+    "hideDialog": {
+      "title": "Dölja din sida?",
+      "description": "Du försvinner från sökningar och ingen kan boka online. Befintliga bokningar ligger kvar som de är. Du kan gå live igen när som helst.",
+      "confirm": "Dölj sidan"
+    }
+  },
+  "locations": {
+    "title": "Platser",
+    "description": "Där kunder bokar dig: din butik, området du åker till eller online. Varje tjänst och teammedlem kan begränsas till några av dem.",
+    "privacy": {
+      "title": "Vad kunder kan se",
+      "atPlace": "Hos dig",
+      "atPlaceBody": "Hela adressen och en karta, så att kunder kan hitta dig.",
+      "travel": "Resor till kunder",
+      "travelBody": "Bara din ort och hur långt du åker. Om du arbetar hemifrån visas aldrig din hemadress och exakta nål — sökningen placerar dig inom cirka 5 km. Kunder anger sin adress när de bokar.",
+      "online": "Online",
+      "onlineBody": "Ingen adress alls, bara att sessioner sker online."
+    },
+    "kinds": {
+      "physical": {
+        "label": "Hos mig",
+        "description": "Butik, studio, kontor"
+      },
+      "mobile": {
+        "label": "Jag åker till kunder",
+        "description": "Hem, kontor, event"
+      },
+      "virtual": {
+        "label": "Online",
+        "description": "Video- eller telefonsessioner"
+      }
+    },
+    "summary": {
+      "mobile": "Reser upp till {km} km från {place}",
+      "virtual": "Onlinesessioner"
+    },
+    "list": {
+      "title": "Dina platser",
+      "count": "{count} av {max} i abonnemanget {plan}",
+      "emptyTitle": "Inga platser ännu",
+      "emptyBody": "Kunder kan inte boka förrän de vet var bokningen sker. Lägg till din butik, området du åker till eller onlinesessioner.",
+      "add": "Lägg till plats",
+      "primary": "Primär",
+      "upcoming": "{count, plural, one {# kommande bokning} other {# kommande bokningar}}",
+      "notPinned": "Inte fäst på kartan",
+      "actions": "Åtgärder för {name}",
+      "edit": "Redigera",
+      "makePrimary": "Gör primär",
+      "remove": "Ta bort plats",
+      "atLimit": "{count, plural, one {Ditt abonnemang {plan} inkluderar # plats. Ta bort en för att lägga till en annan.} other {Ditt abonnemang {plan} inkluderar # platser. Ta bort en för att lägga till en annan.}}",
+      "primaryHint": "Den primära platsen visas först på din profil och i sökningar."
+    },
+    "toasts": {
+      "primary": "{name} är nu din primära plats",
+      "removed": "{name} borttagen",
+      "saved": "Platsen sparad",
+      "added": "Platsen tillagd"
+    },
+    "remove": {
+      "blockedTitle": "{name} kan inte tas bort än",
+      "ok": "OK",
+      "title": "Ta bort {name}?",
+      "confirm": "Ta bort plats",
+      "description": "Kunder kommer inte längre att kunna boka här. Tidigare bokningar behåller sina detaljer.",
+      "primaryNote": "Din äldsta kvarvarande plats blir primär.",
+      "membersNote": "{count, plural, one {# teammedlem är tilldelad här. Den som bara är tilldelad här blir bokningsbar på alla dina platser.} other {# teammedlemmar är tilldelade här. De som bara är tilldelade här blir bokningsbara på alla dina platser.}}",
+      "servicesNote": "Tjänster som erbjuds här behåller sina andra platser.",
+      "onlyLocation": "Det är din enda plats. Lägg först till en till så att kunder fortfarande har någonstans att boka.",
+      "upcoming": "{count, plural, one {Den har # kommande bokning. Flytta eller avboka den först från din <link>kalender</link>.} other {Den har # kommande bokningar. Flytta eller avboka dem först från din <link>kalender</link>.}}",
+      "exclusive": "{count, plural, one {{names} erbjuds bara här. Erbjud den någon annanstans eller dölj den under <link>Tjänster</link>.} other {{names} erbjuds bara här. Erbjud dem någon annanstans eller dölj dem under <link>Tjänster</link>.}}",
+      "quoted": "”{name}”"
+    },
+    "dialog": {
+      "editTitle": "Redigera {name}",
+      "addTitle": "Lägg till en plats",
+      "cancel": "Avbryt",
+      "save": "Spara plats",
+      "add": "Lägg till plats",
+      "where": "Var sker bokningarna?",
+      "name": "Namn",
+      "nameHintPhysical": "Visas för kunder, t.ex. butikens namn eller stadsdelen.",
+      "nameHintOther": "Visas för kunder när de väljer var de ska boka.",
+      "namePlaceholderPhysical": "t.ex. Studion i city",
+      "defaultMobile": "Mobil tjänst",
+      "defaultVirtual": "Online",
+      "street": "Gatuadress",
+      "line2": "Lägenhet, kontor, våning",
+      "cityBased": "Orten du är baserad i",
+      "city": "Ort",
+      "region": "Län / region",
+      "postalCode": "Postnummer",
+      "country": "Landskod",
+      "countryHint": "Två bokstäver, t.ex. SE, NO, DK",
+      "radius": "Hur långt åker du?",
+      "radiusOption": "Upp till {km} km",
+      "timezone": "Tidszon",
+      "timezoneHint": "Tider och bokningar här använder den här zonen.",
+      "phone": "Telefon",
+      "phoneHint": "Om kunder ska ringa den här platsen direkt.",
+      "primary": "Gör till min primära plats",
+      "primaryDescription": "Visas först på din profil och används för sökning."
+    },
+    "pin": {
+      "title": "Kartnål",
+      "physical": "Placerar din butik på kartan och i sökningar ”nära mig”. Kunder ser adressen du angav ovan.",
+      "mobile": "Används bara för att matcha dig med kunder i närheten. Din exakta nål och gatuadress visas aldrig — din profil visar orten och sökningen placerar dig inom cirka 5 km.",
+      "find": "Hitta den här adressen",
+      "useMine": "Använd min nuvarande plats",
+      "remove": "Ta bort nål",
+      "removed": "Nålen borttagen.",
+      "matches": "Matchande adresser",
+      "pinnedTo": "Fäst vid {place}.",
+      "pinned": "Fäst.",
+      "notPinned": "Inte fäst än. Du visas fortfarande när kunder söker i din ort.",
+      "noGeolocation": "Den här webbläsaren kan inte dela sin plats.",
+      "here": "Fäst där du är nu.",
+      "denied": "Vi kunde inte hämta din plats. Kontrollera webbläsarens platsbehörighet.",
+      "enterAddress": "Ange adressen först.",
+      "noMatch": "Ingen träff hittades. Kontrollera adressen eller använd din nuvarande plats."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Ankomstinstruktioner",
+        "placeholder": "t.ex. Parkera på Almgatan. Ring på porttelefonen för 2B och kom upp till andra våningen.",
+        "hint": "Parkering, entré, portkod. Kunder ser detta på din profil och i sin bokning."
+      },
+      "mobile": {
+        "label": "Anteckningar till kunder",
+        "placeholder": "t.ex. Jag behöver en parkeringsplats inom 50 m och tillgång till ett eluttag.",
+        "hint": "Vad kunder ska ha förberett. Visas i deras bokning."
+      },
+      "virtual": {
+        "label": "Så fungerar sessioner",
+        "placeholder": "t.ex. Du får en videolänk via meddelande en timme före din session.",
+        "hint": "Visas i deras bokning. Klistra inte in en privat möteslänk här — skicka länkar i Meddelanden."
+      }
+    }
+  },
+  "verification": {
+    "title": "Verifiering",
+    "description": "Visa kunder att ett riktigt, licensierat företag står bakom din profil. Vårt team kontrollerar de dokument du skickar in för hand.",
+    "status": {
+      "title": "Status",
+      "not_submitted": "Inte verifierad",
+      "pending": "Under granskning",
+      "verified": "Verifierad",
+      "rejected": "Inte godkänd",
+      "needs_info": "Mer information behövs"
+    },
+    "body": {
+      "notSubmitted": "Du har inte begärt verifiering än. Skicka in några uppgifter och dokument nedan.",
+      "pending": "Skickad {date}. Någon i vårt team granskar varje förfrågan för hand; du får en avisering så fort ett beslut finns. Du kan inte ändra förfrågan medan den granskas.",
+      "pendingNoDate": "Skickad. Någon i vårt team granskar varje förfrågan för hand; du får en avisering så fort ett beslut finns. Du kan inte ändra förfrågan medan den granskas.",
+      "verified": "{name} är verifierad sedan {date}. Märket visas på din <link>publika profil</link> och i sökresultat.",
+      "verifiedNoDate": "{name} är verifierad. Märket visas på din <link>publika profil</link> och i sökresultat.",
+      "rejected": "Vi kunde inte verifiera {name} med det som skickades {date}. Du kan skicka in nya uppgifter och dokument nedan.",
+      "rejectedNoDate": "Vi kunde inte verifiera {name} med det som skickades. Du kan skicka in nya uppgifter och dokument nedan.",
+      "needsInfo": "Vårt team behöver lite mer innan de beslutar. Svara nedan så går din förfrågan tillbaka till granskning."
+    },
+    "note": "Meddelande från Kept",
+    "noteDate": "Meddelande från Kept · {date}",
+    "submit": {
+      "replyTitle": "Svara vårt team",
+      "retryTitle": "Försök igen",
+      "requestTitle": "Begär verifiering",
+      "firstDescription": "Berätta om företaget och bifoga bevis. De flesta företag skickar in ett tillstånd eller registreringsbevis.",
+      "againDescription": "Vi har sparat det du skickade förra gången. Ändra eller komplettera det."
+    },
+    "sent": {
+      "title": "Det du skickade",
+      "description": "Den {date}.",
+      "noDescription": "Ingen beskrivning.",
+      "documents": "Dokument",
+      "open": "Öppna dokument {n}",
+      "removed": "Vissa dokument har tagits bort och kan inte längre öppnas."
+    },
+    "meaning": {
+      "title": "Vad kunder ser",
+      "example": "Exempel på verifieringsmärket",
+      "checkMark": "En bock bredvid ditt namn på din profil och i sökresultat, märkt ”Verifierat företag”.",
+      "notEndorsement": "Det betyder att Kept har granskat dokument du lämnat in. Det är inte en bedömning av ditt arbete eller en rekommendation — dina betyg kommer fortfarande från kunder.",
+      "private": "Dokumenten förblir privata. Bara personer som hanterar det här företaget och Kepts granskningsteam kan öppna dem.",
+      "removable": "Vårt team kan ta bort märket senare, till exempel om ett tillstånd visar sig vara ogiltigt."
+    },
+    "form": {
+      "documentN": "Dokument {n}",
+      "tooMany": "{count, plural, one {Du kan bifoga upp till # dokument.} other {Du kan bifoga upp till # dokument.}}",
+      "needSomething": "Lägg till en kort beskrivning eller minst ett dokument.",
+      "sentReply": "Skickat. Din förfrågan är tillbaka under granskning.",
+      "submitted": "Inskickad för granskning",
+      "replyLabel": "Ditt svar",
+      "aboutLabel": "Om ditt företag",
+      "hint": "Tillstånds- eller registreringsnummer, vem som utfärdat dem och hur länge du har arbetat. Allt som hjälper oss bekräfta att företaget är verkligt och ditt.",
+      "placeholder": "t.ex. Utbildad barberare, F-skattsedel sedan 2019. Firman registrerad som North Fade AB.",
+      "documents": "Dokument",
+      "documentsHint": "Foton eller skanningar (JPG, PNG eller WebP, upp till 15 MB vardera) av ett tillstånd, registreringsbevis eller certifikat. Upp till {max}.",
+      "attachedList": "Bifogade dokument",
+      "open": "Öppna dokument {n}",
+      "uploading": "Laddar upp {name}",
+      "fromLast": "Från din senaste förfrågan",
+      "attached": "Bifogat",
+      "remove": "Ta bort {name}",
+      "addAnother": "Lägg till ett dokument till",
+      "add": "Lägg till dokument",
+      "uploadingAll": "Laddar upp dokument",
+      "attachedCount": "{count, plural, one {# dokument bifogat} other {# dokument bifogade}}",
+      "privacy": "Bara personer som hanterar det här företaget och Kepts granskningsteam kan öppna filerna. De visas aldrig på din profil.",
+      "waiting": "Väntar på uppladdningar…",
+      "sendReply": "Skicka svar",
+      "submitAgain": "Skicka in igen",
+      "submit": "Skicka in för granskning"
+    }
+  },
+  "forms": {
+    "title": "Kundfrågor",
+    "description": "Frågor kunder svarar på medan de bokar: allergier, mål, bilen de tar med. Bygg ett formulär en gång och välj det sedan på varje tjänst som behöver det.",
+    "newForm": "Nytt formulär",
+    "editForm": "Redigera formulär",
+    "notIncludedTitle": "Ingår inte i ditt abonnemang",
+    "notIncludedBody": "Frågor före besöket ingår inte i abonnemanget {plan}. Tjänster tar fortfarande emot bokningar utan dem.",
+    "emptyTitle": "Inga formulär ännu",
+    "emptyBody": "Fråga det du behöver veta före besöket, så att du inte får reda på det först i stolen. Svaren sparas på bokningen och visas för den som utför besöket.",
+    "create": "Skapa ett formulär",
+    "listLabel": "Formulär",
+    "noQuestions": "Inga frågor ännu",
+    "questions": "{count, plural, one {# fråga} other {# frågor}}",
+    "required": "{count, plural, one {# obligatorisk} other {# obligatoriska}}",
+    "edited": "Redigerad {date}",
+    "footer": "För att ställa ett formulär på en tjänst öppnar du tjänsten och väljer det under <b>Frågor & krav</b>. Varje tjänst ställer högst ett formulär.",
+    "notUsed": "Används inte av någon tjänst än",
+    "askedOn": "Ställs på <list></list>",
+    "hidden": "(dold)",
+    "more": "{count, plural, one {# till} other {# till}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "Kort svar",
+        "hint": "Ett namn, en siffra, några ord.",
+        "placeholder": "t.ex. Vilket märke och modell har din bil?"
+      },
+      "long_text": {
+        "label": "Stycke",
+        "hint": "Plats för några meningar.",
+        "placeholder": "t.ex. Berätta om eventuella skador vi bör känna till."
+      },
+      "yes_no": {
+        "label": "Ja / Nej",
+        "hint": "Två knappar: Ja och Nej.",
+        "placeholder": "t.ex. Är det här ditt första besök?"
+      },
+      "single_choice": {
+        "label": "Flerval",
+        "hint": "Kunder väljer ett alternativ.",
+        "placeholder": "t.ex. Hur långt är ditt hår just nu?"
+      },
+      "multi_choice": {
+        "label": "Kryssrutor",
+        "hint": "Kunder kryssar för allt som stämmer.",
+        "placeholder": "t.ex. Vilka områden vill du att vi fokuserar på?"
+      },
+      "date": {
+        "label": "Datum",
+        "hint": "En datumväljare, t.ex. födelsedatum eller eventdatum.",
+        "placeholder": "t.ex. När är eventet?"
+      },
+      "acknowledgement": {
+        "label": "Bekräftelse",
+        "hint": "Ett påstående som kunder kryssar för för att bekräfta att de har läst det.",
+        "placeholder": "t.ex. Jag förstår att ett allergitest behövs 48 timmar före en färgbehandling."
+      }
+    },
+    "errors": {
+      "name": "Ge formuläret ett namn",
+      "statement": "Skriv påståendet som kunder godkänner",
+      "question": "Skriv frågan",
+      "twoChoices": "Lägg till minst två val",
+      "distinct": "Varje val måste vara olika"
+    },
+    "leaveConfirm": "Du har osparade ändringar i det här formuläret. Lämna utan att spara?",
+    "toasts": {
+      "saved": "Formuläret sparat",
+      "created": "Formuläret skapat",
+      "archived": "Formuläret arkiverat",
+      "archivedFrom": "{count, plural, one {Formuläret arkiverat och borttaget från # tjänst} other {Formuläret arkiverat och borttaget från # tjänster}}"
+    },
+    "untitled": "Fråga utan rubrik",
+    "archive": "Arkivera formulär",
+    "show": "Visa",
+    "questionsTab": "{count, plural, one {Frågor (#)} other {Frågor (#)}}",
+    "previewTab": "Kundförhandsvisning",
+    "details": "Formulärdetaljer",
+    "nameLabel": "Formulärnamn",
+    "nameHint": "Bara ditt team ser detta. Kunder ser bara frågorna.",
+    "namePlaceholder": "t.ex. Konsultation för nya kunder",
+    "questions": "Frågor",
+    "questionCount": "{count} av {max}",
+    "emptyTitle": "Inga frågor ännu",
+    "emptyBody": "Håll det kort. Två eller tre frågor blir besvarade; tio hoppas över.",
+    "saveBar": {
+      "saving": "Sparar…",
+      "fix": "{count, plural, one {Åtgärda # sak innan du sparar} other {Åtgärda # saker innan du sparar}}",
+      "unsaved": "Osparade ändringar",
+      "allSaved": "Alla ändringar sparade",
+      "newForm": "Nytt formulär",
+      "discard": "Släng",
+      "cancel": "Avbryt",
+      "save": "Spara ändringar",
+      "create": "Skapa formulär"
+    },
+    "archiveDialog": {
+      "title": "Arkivera ”{name}”?",
+      "confirm": "Arkivera formulär",
+      "confirmUsed": "{count, plural, one {Arkivera och ta bort från # tjänst} other {Arkivera och ta bort från # tjänster}}",
+      "descriptionUsed": "De här tjänsterna slutar ställa de här frågorna vid nya bokningar tills du väljer ett annat formulär:",
+      "descriptionUnused": "Ingen tjänst ställer det här formuläret, så ingenting ändras för kunder.",
+      "keep": "Svar som redan getts på tidigare och kommande bokningar finns kvar på de bokningarna.",
+      "lost": "Osparade ändringar i det här formuläret går förlorade."
+    },
+    "usage": {
+      "none": "Ingen tjänst ställer det här formuläret än. Öppna en tjänst under <link>Tjänster</link> och välj det under Frågor & krav.",
+      "title": "Ställs när kunder bokar",
+      "hidden": "dold",
+      "note": "Ändringar gäller nya bokningar av de här tjänsterna så fort du sparar."
+    },
+    "add": {
+      "label": "Lägg till fråga",
+      "limit": "Gränsen på {max} frågor är nådd",
+      "type": "Frågetyp"
+    },
+    "card": {
+      "required": "Obligatorisk",
+      "attention": "Behöver åtgärdas",
+      "moveUp": "Flytta fråga {n} upp",
+      "moveDown": "Flytta fråga {n} ner",
+      "type": "Typ",
+      "statement": "Påstående",
+      "question": "Fråga",
+      "helpText": "Hjälptext",
+      "helpAck": "Visas under påståendet, t.ex. var man kan läsa hela villkoren.",
+      "helpQuestion": "Visas under frågan.",
+      "mustTick": "Måste kryssas i för att boka",
+      "ackRequired": "Kunder kan inte boka förrän de kryssar i den.",
+      "questionRequired": "Kunder kan inte boka utan att svara.",
+      "optional": "Kunder kan hoppa över den.",
+      "duplicate": "Duplicera",
+      "delete": "Radera",
+      "done": "Klar"
+    },
+    "options": {
+      "legend": "Val",
+      "choice": "Val {n}",
+      "remove": "Ta bort val {n}",
+      "max": "Högst {max} val",
+      "add": "Lägg till val"
+    },
+    "preview": {
+      "title": "Kundförhandsvisning",
+      "description": "Steget ”Några uppgifter” i bokningen. Prova det; ingenting sparas.",
+      "empty": "Frågor du lägger till visas här som kunder kommer att se dem.",
+      "noteLabel": "Är det något mer de bör veta?",
+      "noteHint": "Varje bokning avslutas med den här rutan. Den är inte en del av ditt formulär.",
+      "notePlaceholder": "Allergier, önskemål, parkeringsinfo…",
+      "invalid": "{count, plural, one {# svar saknas eller är ogiltigt} other {# svar saknas eller är ogiltiga}}",
+      "allGood": "Allt bra — det här skulle gå igenom.",
+      "clear": "Rensa",
+      "tryContinue": "Prova att fortsätta",
+      "errors": {
+        "confirm": "Bekräfta för att fortsätta.",
+        "required": "Den här frågan är obligatorisk.",
+        "invalid": "Ogiltigt svar.",
+        "tooLong": "Håll det under {max} tecken.",
+        "choose": "Välj ett av alternativen.",
+        "invalidChoice": "Ogiltigt val.",
+        "date": "Ange ett giltigt datum."
+      }
+    }
+  },
+  "appearance": {
+    "title": "Sidans utseende",
+    "description": "Få din publika sida att se ut som du: sidhuvudet, accentfärgen, ordningen på avsnitt, ett meddelande och dina egna länkknappar.",
+    "saved": "Din sida har uppdaterats",
+    "masthead": {
+      "title": "Sidhuvud",
+      "body": "Mörkt och filmiskt, eller ljust och luftigt. Ditt omslagsfoto syns igenom i båda fallen.",
+      "sample": "Din sida",
+      "noir": "Noir — mörkt sidhuvud",
+      "ivory": "Elfenben — ljust sidhuvud"
+    },
+    "accent": {
+      "title": "Accentfärg",
+      "body": "Används till små detaljer: etiketter, linjer, stjärnor och markeringar.",
+      "names": {
+        "brass": "Mässing",
+        "emerald": "Smaragd",
+        "rose": "Ros",
+        "sapphire": "Safir",
+        "copper": "Koppar"
+      }
+    },
+    "sections": {
+      "title": "Avsnitt",
+      "body": "Välj vad besökare ser och i vilken ordning. Tjänster kommer först och omdömen förblir alltid synliga — det är det som gör din sida pålitlig.",
+      "alwaysFirst": "Alltid först",
+      "always": "Visas alltid",
+      "hide": "Dölj {name}",
+      "show": "Visa {name}",
+      "up": "Flytta upp {name}",
+      "down": "Flytta ner {name}",
+      "names": {
+        "services": "Tjänster",
+        "work": "Arbeten",
+        "featured": "Utvalt",
+        "team": "Team",
+        "reviews": "Omdömen",
+        "about": "Om oss"
+      }
+    },
+    "notice": {
+      "title": "Meddelande",
+      "body": "Ett kort meddelande högst upp på din sida — semestertider, en väntelista, en ny plats.",
+      "label": "Meddelande",
+      "placeholder": "Stängt 24–26 december. Åter den 27:e."
+    },
+    "links": {
+      "title": "Länkknappar",
+      "body": "Din meny, presentkort, en butik eller en spellista: upp till 8 knappar som visas på din sida.",
+      "label": "Knapptext",
+      "url": "Adress",
+      "labelPlaceholder": "Presentkort",
+      "remove": "Ta bort länk",
+      "add": "Lägg till en länk"
+    }
+  }
+}
