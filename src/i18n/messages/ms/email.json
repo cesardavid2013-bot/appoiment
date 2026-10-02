@@ -1,0 +1,147 @@
+{
+  "footer": "Anda menerima e-mel ini kerana aktiviti pada akaun Kept anda. Urus pemberitahuan dalam Akaun → Pemberitahuan.",
+  "details": {
+    "service": "Perkhidmatan",
+    "when": "Bila",
+    "with": "Bersama",
+    "where": "Di mana",
+    "online": "Dalam talian — pautan akan dikongsi oleh perniagaan",
+    "reference": "Rujukan",
+    "paid": "Dibayar",
+    "balanceDue": "Baki perlu dibayar"
+  },
+  "cta": {
+    "viewAppointment": "Lihat janji temu",
+    "viewRequest": "Lihat permintaan",
+    "reviewRequest": "Semak permintaan",
+    "openAppointment": "Buka janji temu",
+    "openCalendar": "Buka kalendar",
+    "findAnotherTime": "Cari masa lain",
+    "payDeposit": "Bayar deposit",
+    "leaveReview": "Tulis ulasan",
+    "bookThisTime": "Tempah masa ini"
+  },
+  "booked": {
+    "title": "Anda telah menempah dengan {business}",
+    "subject": "Disahkan: {service} dengan {business}",
+    "heading": "Janji temu anda telah disahkan",
+    "footnote": "Perlu mengubah rancangan? Anda boleh menjadualkan semula atau membatalkan daripada halaman janji temu, tertakluk kepada polisi perniagaan.",
+    "sms": "Kept: {service} dengan {business} disahkan pada {when}. Rujukan {reference}"
+  },
+  "requested": {
+    "title": "Permintaan dihantar kepada {business}",
+    "body": "Kami akan memaklumkan anda sebaik sahaja mereka membalas.",
+    "subject": "Permintaan dihantar: {service} dengan {business}",
+    "heading": "Permintaan anda telah dihantar",
+    "paragraph": "{business} menyemak permintaan sebelum mengesahkan. Kami akan mengirim e-mel kepada anda sebaik sahaja mereka membalas."
+  },
+  "bizBooked": {
+    "title": "Tempahan baharu",
+    "requestTitle": "Permintaan tempahan baharu",
+    "subject": "Tempahan baharu: {service}",
+    "requestSubject": "Permintaan baharu: {service}",
+    "heading": "Anda mempunyai tempahan baharu",
+    "requestHeading": "Anda mempunyai permintaan tempahan baharu",
+    "requestParagraph": "Luluskan atau tolak daripada kalendar anda. Permintaan yang tidak dijawab tamat tempoh secara automatik."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} tidak dapat menerima permintaan anda",
+      "subject": "Permintaan ditolak: {service}",
+      "heading": "Permintaan anda tidak diterima"
+    },
+    "expired": {
+      "title": "Tempahan anda telah tamat tempoh",
+      "subject": "Tempahan anda telah tamat tempoh",
+      "heading": "Tempahan anda telah tamat tempoh"
+    },
+    "cancelled": {
+      "title": "{business} membatalkan janji temu anda",
+      "subject": "Dibatalkan: {service}",
+      "heading": "Janji temu anda telah dibatalkan"
+    },
+    "note": "Nota daripada perniagaan: “{note}”",
+    "refund": "Bayaran balik sebanyak {amount} sedang dalam perjalanan ke kaedah pembayaran asal anda.",
+    "bookAgain": "Anda boleh menempah masa lain bila-bila masa anda bersedia."
+  },
+  "bizCancelled": {
+    "title": "Seorang pelanggan membatalkan",
+    "expiredTitle": "Satu tempahan telah tamat tempoh",
+    "subject": "Dibatalkan: {service} · {when}",
+    "heading": "Satu janji temu telah dibatalkan",
+    "reason": "Sebab: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} mengalihkan janji temu anda",
+    "body": "Kini {when}",
+    "subject": "Masa baharu: {service} dengan {business}",
+    "heading": "Janji temu anda mempunyai masa baharu",
+    "previously": "Sebelum ini {when}.",
+    "changeIt": "Jika masa baharu tidak sesuai, anda boleh menjadualkan semula atau membatalkan daripada halaman janji temu."
+  },
+  "bizRescheduled": {
+    "title": "Seorang pelanggan menjadualkan semula",
+    "subject": "Dijadualkan semula: {service}",
+    "heading": "Satu janji temu telah dijadualkan semula"
+  },
+  "approvedPay": {
+    "title": "{business} menerima permintaan anda",
+    "body": "Bayar deposit {amount} untuk mengesahkan.",
+    "subject": "Diterima — sahkan {service} anda",
+    "heading": "Permintaan anda diterima",
+    "paragraph": "Bayar deposit {amount} untuk mengunci masa anda. Tempahan yang tidak dibayar dilepaskan secara automatik."
+  },
+  "reminder": {
+    "title": "Peringatan: {service} {lead}",
+    "body": "{when} bersama {business}",
+    "subject": "Peringatan: {service} {lead} pada {time}",
+    "heading": "Jumpa {lead}",
+    "footnote": "Terlewat atau tidak dapat hadir? Maklumkan perniagaan daripada halaman janji temu.",
+    "sms": "Peringatan: {service} dengan {business} {when}."
+  },
+  "review": {
+    "title": "Bagaimana {service}?",
+    "body": "Kongsi ulasan ringkas tentang {business}.",
+    "subject": "Bagaimana lawatan anda ke {business}?",
+    "heading": "Bagaimana pengalaman anda?",
+    "paragraph": "Ulasan anda membantu {business} dan orang lain yang memilih profesional. Ia mengambil masa kurang daripada seminit."
+  },
+  "waitlist": {
+    "title": "Satu slot kosong di {business}",
+    "body": "{when} kini tersedia. Tempah segera — siapa cepat dia dapat.",
+    "subject": "Satu masa kosong di {business}",
+    "heading": "Berita baik — satu masa telah kosong",
+    "paragraph": "{when} baru sahaja tersedia. Slot diberikan siapa cepat dia dapat, jadi tempah segera jika ia sesuai untuk anda."
+  },
+  "thread": {
+    "confirmed": "Janji temu disahkan: {service}, {when}.",
+    "declined": "Janji temu ditolak: {service}, {when}.",
+    "expired": "Janji temu tamat tempoh: {service}, {when}.",
+    "cancelled": "Janji temu dibatalkan: {service}, {when}.",
+    "moved": "Janji temu dialihkan daripada {from} ke {to}."
+  },
+  "verify": {
+    "subject": "Sahkan e-mel anda",
+    "preheader": "Satu ketikan untuk mengesahkan alamat e-mel anda.",
+    "heading": "Selamat datang, {name}",
+    "paragraph": "Sahkan e-mel anda supaya perniagaan boleh menghubungi anda tentang janji temu anda.",
+    "cta": "Sahkan e-mel",
+    "footnote": "Pautan ini tamat tempoh dalam 3 hari. Jika anda tidak mencipta akaun, anda boleh mengabaikan e-mel ini."
+  },
+  "reset": {
+    "subject": "Tetapkan semula kata laluan anda",
+    "heading": "Tetapkan semula kata laluan anda",
+    "paragraph": "Seseorang (harapnya anda) meminta untuk menetapkan semula kata laluan akaun Kept anda.",
+    "cta": "Pilih kata laluan baharu",
+    "footnote": "Pautan ini tamat tempoh dalam 1 jam. Jika bukan anda yang meminta, abaikan sahaja e-mel ini — kata laluan anda tidak akan berubah."
+  },
+  "invite": {
+    "subject": "{inviter} menjemput anda menyertai {business} di Kept",
+    "reminderSubject": "Peringatan: sertai {business} di Kept",
+    "heading": "Sertai {business}",
+    "paragraph": "{inviter} menjemput anda menyertai pasukan di {business}. Anda akan dapat melihat jadual anda dan menguruskan janji temu anda.",
+    "cta": "Terima jemputan",
+    "footnote": "Jemputan ini tamat tempoh dalam {days} hari.",
+    "reminderFootnote": "Jemputan ini tamat tempoh dalam {days} hari. Pautan jemputan terdahulu tidak lagi berfungsi."
+  }
+}
