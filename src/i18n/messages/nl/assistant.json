@@ -1,0 +1,22 @@
+{
+  "title": "Vraag Kept",
+  "description": "Zeg wat je nodig hebt en wanneer. Ik kijk naar echte beschikbaarheid.",
+  "newConversation": "Nieuw gesprek",
+  "close": "Sluiten",
+  "forExample": "Bijvoorbeeld:",
+  "starters": {
+    "one": "Een barber morgenmiddag",
+    "two": "Gelnagels dit weekend onder $60",
+    "three": "Vanavond een massage bij mij in de buurt",
+    "four": "Wiskundebijles online"
+  },
+  "searching": "Zoeken",
+  "listening": "Aan het luisteren…",
+  "placeholder": "Een barber zaterdagochtend…",
+  "yourMessage": "Je bericht",
+  "stopListening": "Stop met luisteren",
+  "speak": "Spreek",
+  "send": "Versturen",
+  "verified": "Geverifieerd",
+  "online": "Online"
+}

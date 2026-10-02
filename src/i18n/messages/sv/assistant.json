@@ -1,0 +1,22 @@
+{
+  "title": "Fråga Kept",
+  "description": "Säg vad du behöver och när. Jag kollar verkliga lediga tider.",
+  "newConversation": "Ny konversation",
+  "close": "Stäng",
+  "forExample": "Till exempel:",
+  "starters": {
+    "one": "En barberare i morgon eftermiddag",
+    "two": "Gelénaglar i helgen för under $60",
+    "three": "Massage nära mig i kväll",
+    "four": "Mattelärare online"
+  },
+  "searching": "Söker",
+  "listening": "Lyssnar…",
+  "placeholder": "En barberare lördag förmiddag…",
+  "yourMessage": "Ditt meddelande",
+  "stopListening": "Sluta lyssna",
+  "speak": "Tala",
+  "send": "Skicka",
+  "verified": "Verifierad",
+  "online": "Online"
+}

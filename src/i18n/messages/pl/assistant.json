@@ -1,0 +1,22 @@
+{
+  "title": "Zapytaj Kept",
+  "description": "Powiedz, czego potrzebujesz i kiedy. Sprawdzę prawdziwe wolne terminy.",
+  "newConversation": "Nowa rozmowa",
+  "close": "Zamknij",
+  "forExample": "Na przykład:",
+  "starters": {
+    "one": "Barber jutro po południu",
+    "two": "Żelowe paznokcie w ten weekend do $60",
+    "three": "Masaż w pobliżu dziś wieczorem",
+    "four": "Korepetycje z matematyki online"
+  },
+  "searching": "Szukam",
+  "listening": "Słucham…",
+  "placeholder": "Barber w sobotę rano…",
+  "yourMessage": "Twoja wiadomość",
+  "stopListening": "Przestań słuchać",
+  "speak": "Mów",
+  "send": "Wyślij",
+  "verified": "Zweryfikowane",
+  "online": "Online"
+}

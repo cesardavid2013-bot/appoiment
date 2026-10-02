@@ -44,7 +44,7 @@
     "addressLabel": "Dokąd mamy dojechać?",
     "addressHint": "W promieniu {km} km od miejscowości {city}. Widoczny tylko dla firmy.",
     "addressPlaceholder": "Ulica, numer mieszkania, miasto",
-    "consent": "Przeczytałem(-am) powyższe i akceptuję",
+    "consent": "Akceptuję powyższe po zapoznaniu się z treścią",
     "age": "Potwierdzam, że mam co najmniej {age} lat",
     "noteLabel": "Czy jest coś jeszcze, co powinni wiedzieć?",
     "notePlaceholder": "Alergie, preferencje, informacje o parkowaniu…"
