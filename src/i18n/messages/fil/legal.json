@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Kung may pagkakaiba ang mga salin, ang bersyong Ingles ang masusunod.",
+  "nav": {
+    "label": "Mga legal na dokumento",
+    "terms": "Mga tuntunin ng serbisyo",
+    "privacy": "Patakaran sa privacy"
+  },
+  "doc": {
+    "lastUpdated": "Huling na-update noong {date}",
+    "counselNote": "Ito ay panimulang dokumentong nakasulat sa payak na wika. Susuriin ito ng legal na tagapayo bago opisyal na maglunsad ang Kept sa publiko, at maaari itong magbago bunga nito. Sasabihan ka namin bago magkabisa ang anumang pagbabagong makaaapekto sa iyong mga karapatan.",
+    "contents": "Mga nilalaman"
+  },
+  "terms": {
+    "meta": {
+      "title": "Mga tuntunin ng serbisyo",
+      "description": "Ang mga tuntunin, sa payak na wika, para sa paggamit ng Kept sa pag-book ng mga propesyonal o sa pagpapatakbo ng iyong negosyo."
+    },
+    "title": "Mga tuntunin ng serbisyo",
+    "intro": "Ipinapaliwanag ng mga tuntuning ito kung paano gumagana ang Kept at ano ang inaasahan namin sa lahat ng gumagamit nito. Pinanatili naming maikli at madaling basahin ang mga ito. Kung may hindi malinaw rito, <support>magtanong sa amin</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Ano ang Kept",
+        "body": {
+          "p1": "Ang Kept ay isang marketplace at kasangkapan sa pag-book. Ginagamit ito ng mga customer para maghanap at mag-book ng mga propesyonal — barbero, stylist, trainer, tutor, detailer at marami pang iba. Ginagamit naman ito ng mga propesyonal at negosyo para i-publish ang kanilang mga serbisyo, pamahalaan ang kanilang kalendaryo at mabayaran.",
+          "p2": "<b>Ang propesyonal o negosyong ibinu-book mo ang nagbibigay ng serbisyo, hindi ang Kept.</b> Kapag nag-book ka, ang kasunduan mo para sa serbisyo ay sa negosyong iyon. Kami ang nagpapatakbo ng platapormang nag-uugnay sa inyo, nagpapakita ng kanilang presyo at patakaran, at tumutulong sa dalawang panig na tuparin ang appointment."
+        }
+      },
+      "account": {
+        "title": "Ang iyong account",
+        "body": {
+          "li1": "Kailangan mong hindi bababa sa 18 taong gulang (o nasa legal na gulang sa kinaroroonan mo) para gumawa ng account. Maaari kang mag-book para sa ibang tao, tulad ng iyong anak, kung responsable ka sa kanila.",
+          "li2": "Magbigay ng tumpak na impormasyon at panatilihin itong napapanahon — umaasa rito ang mga negosyo para makontak ka tungkol sa iyong mga appointment.",
+          "li3": "Ilihim ang iyong password. Ikaw ang responsable sa nangyayari sa iyong account. Kung sa tingin mo ay may ibang taong nakapasok, palitan ang iyong password at i-sign out ang ibang device sa Pag-login at seguridad.",
+          "li4": "Isang tao kada account. Idinaragdag ng mga negosyo ang mga miyembro ng team bilang magkakahiwalay na tao sa halip na magbahagi ng iisang login."
+        }
+      },
+      "booking": {
+        "title": "Pag-book bilang customer",
+        "body": {
+          "p1": "Bago mo kumpirmahin ang isang booking, makikita mo ang presyo (o kung paano ito tinatantiya), kung gaano katagal, anumang deposito, at ang patakaran ng negosyo sa pagkansela at hindi pagsipot. Sa pag-book, sumasang-ayon ka sa mga tuntuning iyon.",
+          "li1": "Agad na nakukumpirma ang <b>mga agarang booking</b>. Ang <b>mga kahilingan</b> ay nakukumpirma lamang kapag tinanggap ng negosyo; hanggang noon, nakareserba ang iyong oras, at nag-e-expire ang mga kahilingang hindi nasagot.",
+          "li2": "Maaari kang magkansela o mag-reschedule mula sa iyong pahina ng booking ayon sa mga patakaran ng negosyo. Ang mga huling pagkansela at hindi pagsipot ay maaaring magdulot ng pagkawala ng bahagi o buo ng deposito, o ng singil, eksakto ayon sa ipinakita noong nag-book ka.",
+          "li3": "Kung ang presyo ng serbisyo ay tantiya (halimbawa “simula sa” o saklaw), napagkakasunduan sa negosyo ang pinal na presyo sa iyong appointment.",
+          "li4": "Kung naniningil ang Kept ng bayad sa serbisyo para sa isang booking, ipinapakita ito bago mo kumpirmahin. Hindi kami kailanman nagdaragdag ng singil pagkatapos."
+        }
+      },
+      "payments": {
+        "title": "Mga bayad at refund",
+        "body": {
+          "p1": "Pinoproseso ng Stripe ang mga online na bayad. Hindi kailanman nakikita o iniimbak ng Kept ang buo mong numero ng card. Ang ilang negosyo ay tumatanggap ng bayad nang personal; sa ganoong kaso, direkta kang magbabayad sa kanila.",
+          "li1": "Sumusunod ang mga refund sa patakaran ng negosyo na ipinakita noong nag-book, at ibinabalik sa card na ginamit mo sa pagbabayad. Maaaring abutin ng ilang araw ng trabaho bago ito lumabas sa iyong bangko.",
+          "li2": "Kung kinansela o tinanggihan ng negosyo ang iyong appointment, ibabalik ang lahat ng binayaran mo online para dito.",
+          "li3": "Kung may nangyaring mali sa isang bayad, <supportPayment>makipag-ugnayan sa amin</supportPayment> bago magbukas ng dispute sa iyong bangko — karaniwang mas mabilis ito."
+        }
+      },
+      "businesses": {
+        "title": "Para sa mga propesyonal at negosyo",
+        "body": {
+          "li1": "Dapat tumpak ang iyong listing: kung sino ka, ano ang iyong inaalok, ang iyong mga presyo, kung saan ka nagtatrabaho at ang iyong mga patakaran. Ang mga larawan at video ay dapat sa sarili mong gawa, o ginamit nang may pahintulot.",
+          "li2": "Ikaw ang responsable sa pagkakaroon ng anumang lisensya, permit, insurance at kwalipikasyong kinakailangan ng iyong trabaho, at sa pagtupad sa iyong mga obligasyon sa buwis.",
+          "li3": "Tuparin ang mga booking na tinatanggap mo at ang mga patakarang iyong inilathala. Ang paulit-ulit na pagkansela sa huling minuto, hindi pagsipot o mapanlinlang na listing ay maaaring humantong sa pagsuspinde ng iyong profile.",
+          "li4": "Nakalista ang mga plano, limitasyon at singil sa aming <pricing>pahina ng presyo</pricing>. Ang bayad sa platapormang naaangkop ay para lamang sa mga bayad na ginagawa ng mga kliyente online sa pamamagitan ng Kept. Ang mga payout ay ginagawa ng Stripe sa iyong sariling account at saklaw din ng mga tuntunin ng Stripe.",
+          "li5": "Ang mga detalye ng kliyenteng natatanggap mo sa pamamagitan ng Kept ay maaaring gamitin upang maibigay at masundan ang iyong mga serbisyo. Magpadala ng marketing lamang sa mga kliyenteng pumayag na tumanggap nito.",
+          "li6": "Nananatili sa iyo ang pagmamay-ari ng mga ina-upload mo, at binibigyan mo ang Kept ng pahintulot na ipakita ito sa Kept at sa pag-promote ng iyong profile habang aktibo ang iyong listing.",
+          "li7": "Palaging may label na promoted ang mga placement ng Spotlight. Libre ang mga ito habang naglulunsad; kung magbago ito, sasabihan ka namin bago may singilin."
+        }
+      },
+      "reviews": {
+        "title": "Mga review",
+        "body": {
+          "p1": "Mga customer lamang na may natapos na appointment ang makakapag-iwan ng review, isang beses kada appointment. Dapat tapat ang mga review at tungkol sa sarili mong karanasan. Maaaring tumugon nang hayagan ang mga negosyo.",
+          "p2": "Hindi pinapayagan ang pag-aalok ng anuman kapalit ng review, o ng pagtanggal ng isa. Maaari naming itago o alisin ang mga review na lumalabag sa mga tuntuning ito — halimbawa spam, poot, personal na impormasyon o salungatan ng interes — ngunit hindi namin inaalis ang mga review dahil lamang negatibo ang mga ito."
+        }
+      },
+      "conduct": {
+        "title": "Mga bagay na hindi mo maaaring gawin sa Kept",
+        "body": {
+          "li1": "Mag-alok o mag-book ng anumang ilegal, serbisyong sekswal, o anumang naglalagay sa panganib sa mga tao.",
+          "li2": "Manggulo, manakot o mandiskrimina ng sinuman — mga customer, propesyonal o aming team.",
+          "li3": "Gumawa ng pekeng account, listing, booking o review, o magpanggap bilang ibang tao.",
+          "li4": "Mag-upload ng nilalamang wala kang karapatang ibahagi, o naglalaman ng personal na impormasyon ng ibang tao nang walang pahintulot.",
+          "li5": "Mag-scrape, mag-overload, manubok pasukin nang walang pahintulot o makialam sa serbisyo, o subukang lampasan ang seguridad o mga singil nito."
+        }
+      },
+      "ourRole": {
+        "title": "Ang aming papel at mga hangganan nito",
+        "body": {
+          "p1": "Nagsisikap kaming panatilihing ligtas at maaasahan ang Kept, at kumikilos kami sa mga ulat. Ngunit nagsasarili ang mga negosyo sa Kept — hindi sila aming empleyado o ahente, at hindi namin ginagarantiya ang kalidad, kaligtasan o legalidad ng kanilang mga serbisyo. Ang badge na “verified” ay nangangahulugang sinuri namin ang mga dokumentong ibinigay ng negosyo; hindi ito pag-endorso.",
+          "p2": "Ibinibigay ang Kept “as is”. Hanggang sa pinahihintulutan ng batas, hindi kami mananagot sa mga hindi direkta o kaakibat na pinsala, o sa nangyayari sa isang serbisyo sa pagitan mo at ng isang negosyo. Walang nasa mga tuntuning ito ang naglilimita sa mga karapatan mo sa ilalim ng batas sa proteksyon ng mamimili na hindi maaaring ibukod."
+        }
+      },
+      "ending": {
+        "title": "Pagsuspinde at pagsasara ng iyong account",
+        "body": {
+          "p1": "Maaari mong burahin ang iyong account anumang oras sa <privacyData>Privacy at data</privacyData>. Kinakansela ang mga paparating na appointment ayon sa patakaran ng bawat negosyo, at ang mga rekord na kailangan ng mga negosyo — tulad ng mga nakaraang appointment at bayad — ay iniingatan sa anyong walang pangalan.",
+          "p2": "Maaari naming suspindihin o isara ang mga account na lumalabag sa mga tuntuning ito o naglalagay sa panganib sa iba. Kung maaari, sasabihin namin sa iyo kung bakit at bibigyan ka ng pagkakataong tumugon."
+        }
+      },
+      "changes": {
+        "title": "Mga pagbabago, hindi pagkakaunawaan at pakikipag-ugnayan",
+        "body": {
+          "p1": "Kapag binago namin ang mga tuntuning ito sa paraang mahalaga, sasabihan ka namin nang maaga sa pamamagitan ng email o sa app. Ang patuloy na paggamit ng Kept pagkatapos magkabisa ang pagbabago ay nangangahulugang tinatanggap mo ito.",
+          "p2": "Idaragdag dito ang umiiral na batas at ang proseso sa paglutas ng mga hindi pagkakaunawaan pagkatapos ng legal na pagsusuri, bago opisyal na maglunsad ang Kept sa publiko.",
+          "p3": "May mga tanong tungkol sa mga tuntuning ito? <support>Makipag-ugnayan sa amin</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Patakaran sa privacy",
+      "description": "Anong personal na data ang kinokolekta ng Kept, bakit, sino ang nakakakita nito, at paano ito i-download o burahin."
+    },
+    "title": "Patakaran sa privacy",
+    "intro": "Ipinapaliwanag ng patakarang ito kung anong personal na data ang kinokolekta ng Kept, bakit namin ito kailangan, sino ang makakakita nito, at ang mga pagpipilian mo — para sa mga customer at propesyonal.",
+    "sections": {
+      "summary": {
+        "title": "Ang maikling bersyon",
+        "body": {
+          "li1": "Kinokolekta namin ang kailangan para patakbuhin ang mga booking: kung sino ka, ano ang ibinu-book mo, at paano ka makokontak.",
+          "li2": "Nakikita ng mga negosyong binu-book mo ang mga detalyeng kailangan nila para pagsilbihan ka. Walang ibang nakakakita, maliban sa mga service provider na tumutulong sa amin na patakbuhin ang Kept.",
+          "li3": "Hindi namin ibinebenta ang iyong personal na data, at hindi kami gumagamit ng mga advertising tracker.",
+          "li4": "Maaari kang mag-download ng kopya ng iyong data o burahin ang iyong account nang mag-isa, anumang oras, sa <privacyData>Privacy at data</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Impormasyong ibinibigay mo sa amin",
+        "body": {
+          "li1": "<b>Account:</b> ang iyong pangalan, email, password (iniimbak lamang bilang one-way hash), at opsyonal ang iyong numero ng telepono, larawan at time zone. Kung nag-sign in ka gamit ang Google, natatanggap namin ang iyong pangalan at email mula sa Google.",
+          "li2": "<b>Mga booking:</b> ang serbisyo, oras, negosyo at presyo; mga talang idinagdag mo; mga sagot sa intake questions ng negosyo; at address kung pumupunta sa iyo ang propesyonal.",
+          "li3": "<b>Mga bayad:</b> mga halaga, katayuan at refund. Direktang napupunta sa Stripe ang mga detalye ng card — hindi namin kailanman natatanggap ang buo mong numero ng card.",
+          "li4": "<b>Mga mensahe, review at kahilingan sa suporta</b>, kasama ang anumang larawang ilalakip mo, at mga address na sine-save mo.",
+          "li5": "Nagbibigay din ang <b>mga negosyo</b> ng mga detalye ng negosyo, miyembro ng team, serbisyo, iskedyul, media ng portfolio, detalye ng payout (hawak ng Stripe) at mga rekord ng kliyenteng iniingatan nila."
+        }
+      },
+      "automatic": {
+        "title": "Impormasyong awtomatikong kinokolekta",
+        "body": {
+          "li1": "<b>Mga session ng pag-sign in:</b> pinapanatili kang naka-sign in ng isang cookie. Iniimbak namin ang session kasama ang uri ng iyong browser para ligtas na ma-sign out ang iyong mga device.",
+          "li2": "<b>Seguridad:</b> nag-iimbak kami ng keyed, one-way hash ng iyong IP address — hindi ang mismong address — para limitahan ang pang-aabuso at imbestigahan ang kahina-hinalang aktibidad.",
+          "li3": "<b>Lokasyon:</b> kung pumili ka ng lugar o ibinahagi ang iyong lokasyon para maghanap sa malapit, sine-save ito sa isang cookie sa iyong device para maalala ang iyong pinili. Hindi namin sinusubaybayan ang iyong lokasyon sa background.",
+          "li4": "<b>Aktibidad sa Kept:</b> mga propesyonal na tinitingnan at sine-save mo, para maipakita namin muli ang mga ito; at bilang ng mga view at click sa mga pino-promote na listing, iniuulat sa mga negosyo bilang kabuuan lamang."
+        }
+      },
+      "use": {
+        "title": "Paano namin ito ginagamit",
+        "body": {
+          "li1": "Para gumawa, magbago at magpaalala sa iyo tungkol sa mga booking, at para iproseso ang mga bayad at refund.",
+          "li2": "Para magpadala ng mga abisong pinili mo. Palaging ipinapadala ang mga kumpirmasyon at pagbabago ng booking; ang iba pa ay maaaring i-off sa mga setting ng abiso.",
+          "li3": "Para ipakita sa iyo ang mga kaugnay na propesyonal at bakante malapit sa iyo.",
+          "li4": "Para panatilihing ligtas ang Kept: pag-iwas sa panloloko, spam at pang-aabuso, at pagkilos sa mga ulat.",
+          "li5": "Para sagutin ang mga kahilingan sa suporta at pagbutihin ang Kept.",
+          "li6": "Para tuparin ang mga legal na obligasyon, tulad ng mga rekord sa buwis at accounting."
+        }
+      },
+      "businesses": {
+        "title": "Ano ang nakikita ng mga negosyo",
+        "body": {
+          "p1": "Kapag nag-book ka, nakikita ng negosyo ang iyong pangalan, email at numero ng telepono (kung nagdagdag ka), ang booking at anumang ibinahagi mo sa kanila — mga tala, sagot sa intake, address ng serbisyo — pati ang iyong mga nakaraang pagbisita sa kanila. Maaari silang magdagdag ng mga pribadong tala sa kanilang rekord ng kliyente.",
+          "p2": "Ang bawat negosyo ang responsable sa paggamit nito ng mga rekord ng kliyente, at maaari lamang magpadala sa iyo ng marketing kung pumayag ka. Pampubliko ang mga review at ipinapakita ang iyong unang pangalan at inisyal ng apelyido."
+        }
+      },
+      "sharing": {
+        "title": "Sino pa ang pinagbabahagian namin",
+        "body": {
+          "p1": "Gumagamit kami ng kaunting bilang ng mga provider na nagpoproseso ng data para sa amin, sa ilalim ng mga kontratang naglilimita sa magagawa nila rito:",
+          "li1": "Stripe, para sa mga bayad at payout.",
+          "li2": "Ang aming email provider, at isang SMS provider kung naka-enable ang mga text message.",
+          "li3": "Google, kung pinili mo lamang na mag-sign in gamit ang Google.",
+          "li4": "Mga serbisyo sa mapa at paghahanap ng address, para ipakita ang mga mapa at hanapin ang mga lugar na sinisearch mo.",
+          "li5": "Ang aming mga hosting at infrastructure provider.",
+          "p2": "Maaari rin naming ibunyag ang impormasyon kapag hinihingi ito ng batas, para protektahan ang kaligtasan ng isang tao, o bilang bahagi ng merger o acquisition — kung saan patuloy na iiral ang patakarang ito. Hindi kami kailanman nagbebenta ng personal na data."
+        }
+      },
+      "rights": {
+        "title": "Ang iyong mga pagpipilian at karapatan",
+        "body": {
+          "li1": "<b>Access:</b> mag-download ng kopya ng iyong data mula sa <privacyData>Privacy at data</privacyData>.",
+          "li2": "<b>Pagwawasto:</b> i-update ang iyong mga detalye sa <profile>Profile</profile>, o hilingin sa amin na gawin ito.",
+          "li3": "<b>Pagbura:</b> burahin ang iyong account sa Privacy at data. Tingnan sa ibaba kung ano ang iniingatan namin.",
+          "li4": "<b>Mga abiso:</b> piliin ang ipapadala namin sa <notifications>Mga setting ng abiso</notifications>.",
+          "li5": "Depende sa kinaroroonan mo, maaari kang magkaroon ng karagdagang karapatan, tulad ng pagtutol sa ilang paggamit o pagrereklamo sa awtoridad sa proteksyon ng data. <supportAccount>Makipag-ugnayan sa amin</supportAccount> at tutulungan ka namin."
+        }
+      },
+      "retention": {
+        "title": "Gaano katagal namin itong iniingatan",
+        "body": {
+          "p1": "Iniingatan namin ang iyong impormasyon habang bukas ang iyong account.",
+          "p2": "Kapag binura mo ang iyong account, agad naming binubura ang iyong pangalan, email, telepono, larawan, mga naka-save na address, mga naka-save na propesyonal, abiso at paraan ng pag-sign in. Iniingatan ang mga rekord na kailangan ng mga negosyo at accounting — mga nakaraang appointment, bayad at review — na nakaugnay sa “Deleted user” sa halip na sa iyo. Nananatili sa kasaysayan ng usapan ng negosyong iyon ang mga mensaheng ipinagpalitan mo sa isang negosyo."
+        }
+      },
+      "security": {
+        "title": "Seguridad",
+        "body": {
+          "p1": "Hina-hash ang mga password gamit ang Argon2, iniimbak sa server ang mga session at maaaring bawiin, naka-encrypt ang mga koneksyon, at muling ine-encode ang mga na-upload na larawan para maalis ang nakatagong data ng lokasyon. Walang sistemang ganap na ligtas; kung malaman naming may paglabag na nakakaapekto sa iyo, agad ka naming sasabihan."
+        }
+      },
+      "children": {
+        "title": "Mga bata",
+        "body": {
+          "p1": "Para sa mga nasa hustong gulang ang mga account sa Kept. Maaaring mag-book ang magulang o tagapag-alaga ng serbisyo para sa kanilang anak; hindi kami sadyang nangongolekta ng personal na data nang direkta mula sa mga bata."
+        }
+      },
+      "changes": {
+        "title": "Mga pagbabago at pakikipag-ugnayan",
+        "body": {
+          "p1": "Kung babaguhin namin ang patakarang ito sa paraang mahalaga, sasabihan ka namin bago ito magkabisa.",
+          "p2": "May mga tanong o kahilingan tungkol sa iyong data? <supportAccount>Makipag-ugnayan sa amin</supportAccount>."
+        }
+      }
+    }
+  }
+}
