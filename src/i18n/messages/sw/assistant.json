@@ -1,0 +1,22 @@
+{
+  "title": "Uliza Kept",
+  "description": "Sema unachohitaji na lini. Ninakagua nafasi halisi.",
+  "newConversation": "Mazungumzo mapya",
+  "close": "Funga",
+  "forExample": "Kwa mfano:",
+  "starters": {
+    "one": "Kinyozi kesho alasiri",
+    "two": "Kucha za gel wikendi hii chini ya $60",
+    "three": "Masaji karibu nami usiku huu",
+    "four": "Mwalimu wa hesabu mtandaoni"
+  },
+  "searching": "Inatafuta",
+  "listening": "Inasikiliza…",
+  "placeholder": "Kinyozi Jumamosi asubuhi…",
+  "yourMessage": "Ujumbe wako",
+  "stopListening": "Acha kusikiliza",
+  "speak": "Sema",
+  "send": "Tuma",
+  "verified": "Imethibitishwa",
+  "online": "Mtandaoni"
+}
