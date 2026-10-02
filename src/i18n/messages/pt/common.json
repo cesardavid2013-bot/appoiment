@@ -86,5 +86,32 @@
     "depositRefundable": "O sinal é reembolsável se você cancelar dentro do prazo.",
     "depositNonRefundable": "O sinal não é reembolsável.",
     "reschedule": "Reagende online até {hours}h antes."
+  },
+  "ui": {
+    "close": "Fechar",
+    "keepIt": "Manter",
+    "optional": "Opcional",
+    "stars": "{value} de 5 estrelas",
+    "notifications": "Notificações"
+  },
+  "notFound": {
+    "eyebrow": "Página não encontrada",
+    "title": "Esta página mudou de endereço.",
+    "body": "O link pode estar desatualizado, ou o profissional pode ter mudado de endereço.",
+    "home": "Voltar ao início",
+    "explore": "Explorar profissionais"
+  },
+  "error": {
+    "eyebrow": "Algo deu errado",
+    "title": "Não conseguimos carregar esta página.",
+    "body": "O problema é do nosso lado, não do seu. Tente novamente em instantes — se continuar acontecendo, avise-nos.",
+    "retry": "Tentar novamente",
+    "support": "Falar com o suporte",
+    "ref": "Referência {id}"
+  },
+  "offline": {
+    "eyebrow": "Você está offline",
+    "title": "Sem conexão no momento.",
+    "body": "Suas reservas estão seguras. Reconecte-se e o Kept continua de onde você parou."
   }
 }
