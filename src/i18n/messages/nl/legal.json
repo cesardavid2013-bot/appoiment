@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Als vertalingen van elkaar afwijken, geldt de Engelse versie.",
+  "nav": {
+    "label": "Juridische documenten",
+    "terms": "Gebruiksvoorwaarden",
+    "privacy": "Privacybeleid"
+  },
+  "doc": {
+    "lastUpdated": "Laatst bijgewerkt op {date}",
+    "counselNote": "Dit is een document in begrijpelijke taal dat als uitgangspunt dient. Het wordt door juridisch adviseurs beoordeeld voordat Kept publiek live gaat en kan daardoor veranderen. We laten het je weten voordat een wijziging die je rechten raakt van kracht wordt.",
+    "contents": "Inhoud"
+  },
+  "terms": {
+    "meta": {
+      "title": "Gebruiksvoorwaarden",
+      "description": "De voorwaarden in begrijpelijke taal voor het gebruik van Kept om professionals te boeken of je bedrijf te runnen."
+    },
+    "title": "Gebruiksvoorwaarden",
+    "intro": "Deze voorwaarden leggen uit hoe Kept werkt en wat we verwachten van iedereen die het gebruikt. We hebben ze kort en leesbaar gehouden. Is iets hier onduidelijk, <support>vraag het ons</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Wat Kept is",
+        "body": {
+          "p1": "Kept is een marktplaats en boekingstool. Klanten gebruiken het om professionals te vinden en te boeken — barbers, kappers, trainers, docenten, detailers en nog veel meer. Professionals en bedrijven gebruiken het om hun diensten te publiceren, hun agenda te beheren en betaald te krijgen.",
+          "p2": "<b>De professional of het bedrijf dat je boekt levert de dienst, niet Kept.</b> Wanneer je boekt, sluit je de overeenkomst voor de dienst met dat bedrijf. Wij beheren het platform dat jullie verbindt, je hun prijzen en voorwaarden laat zien en beide kanten helpt de afspraak na te komen."
+        }
+      },
+      "account": {
+        "title": "Je account",
+        "body": {
+          "li1": "Je moet minstens 18 zijn (of meerderjarig volgens het recht van je woonplaats) om een account aan te maken. Je kunt voor iemand anders boeken, zoals je kind, als je verantwoordelijk bent voor die persoon.",
+          "li2": "Geef juiste gegevens op en houd ze actueel — bedrijven gebruiken ze om je over je afspraken te bereiken.",
+          "li3": "Houd je wachtwoord geheim. Je bent verantwoordelijk voor wat er met je account gebeurt. Denk je dat iemand anders toegang heeft, wijzig dan je wachtwoord en log andere apparaten uit onder Inloggen & beveiliging.",
+          "li4": "Eén persoon per account. Bedrijven voegen teamleden toe als aparte personen in plaats van een login te delen."
+        }
+      },
+      "booking": {
+        "title": "Boeken als klant",
+        "body": {
+          "p1": "Voordat je een boeking bevestigt, zie je de prijs (of hoe die wordt geschat), hoe lang het duurt, een eventuele aanbetaling en het annulerings- en no-showbeleid van het bedrijf. Door te boeken ga je akkoord met die voorwaarden.",
+          "li1": "<b>Directe boekingen</b> worden meteen bevestigd. <b>Aanvragen</b> worden pas bevestigd wanneer het bedrijf ze accepteert; tot die tijd wordt je tijdstip vastgehouden en onbeantwoorde aanvragen verlopen.",
+          "li2": "Je kunt annuleren of verplaatsen via je boekingspagina, binnen de regels van het bedrijf. Te late annuleringen en no-shows kunnen je een deel of het geheel van een aanbetaling kosten, of een vergoeding, precies zoals getoond toen je boekte.",
+          "li3": "Als een dienst als schatting is geprijsd (bijvoorbeeld “vanaf” of een bandbreedte), wordt de definitieve prijs bij je afspraak met het bedrijf overeengekomen.",
+          "li4": "Als Kept servicekosten voor een boeking in rekening brengt, worden die getoond voordat je bevestigt. Achteraf voegen we nooit kosten toe."
+        }
+      },
+      "payments": {
+        "title": "Betalingen en terugbetalingen",
+        "body": {
+          "p1": "Online betalingen worden verwerkt door Stripe. Kept ziet of bewaart nooit je volledige kaartnummer. Sommige bedrijven laten je ter plekke betalen; in dat geval betaal je hen rechtstreeks.",
+          "li1": "Terugbetalingen volgen het beleid van het bedrijf dat bij het boeken wordt getoond en worden uitgevoerd naar de kaart waarmee je hebt betaald. Je bank kan er enkele werkdagen over doen om ze te tonen.",
+          "li2": "Als een bedrijf je afspraak annuleert of afwijst, krijg je alles terug wat je er online voor hebt betaald.",
+          "li3": "Is er iets misgegaan met een betaling, <supportPayment>neem dan contact met ons op</supportPayment> voordat je een geschil bij je bank start — dat is meestal sneller."
+        }
+      },
+      "businesses": {
+        "title": "Voor professionals en bedrijven",
+        "body": {
+          "li1": "Je vermelding moet juist zijn: wie je bent, wat je aanbiedt, je prijzen, waar je werkt en je voorwaarden. Foto’s en video’s moeten van je eigen werk zijn of met toestemming worden gebruikt.",
+          "li2": "Je bent zelf verantwoordelijk voor alle vergunningen, verzekeringen en kwalificaties die je werk vereist, en voor het nakomen van je fiscale verplichtingen.",
+          "li3": "Kom de boekingen na die je accepteert en de voorwaarden die je publiceert. Herhaalde annuleringen op het laatste moment, no-shows of misleidende vermeldingen kunnen ertoe leiden dat je profiel wordt opgeschort.",
+          "li4": "Abonnementen, limieten en kosten staan op onze <pricing>prijzenpagina</pricing>. Een platformvergoeding geldt alleen voor betalingen die klanten online via Kept doen. Uitbetalingen worden door Stripe naar je eigen rekening gedaan en vallen ook onder de voorwaarden van Stripe.",
+          "li5": "Klantgegevens die je via Kept ontvangt, mogen worden gebruikt om je diensten te verlenen en op te volgen. Stuur marketing alleen naar klanten die daarvoor toestemming hebben gegeven.",
+          "li6": "Je blijft eigenaar van wat je uploadt en geeft Kept toestemming om het op Kept en in de promotie van je profiel te tonen zolang je vermelding actief is.",
+          "li7": "Spotlight-plaatsingen worden altijd als gepromoot gelabeld. Ze zijn gratis tijdens de lancering; als dat verandert, laten we het je weten voordat er iets in rekening wordt gebracht."
+        }
+      },
+      "reviews": {
+        "title": "Reviews",
+        "body": {
+          "p1": "Alleen klanten met een afgeronde afspraak kunnen een review plaatsen, één keer per afspraak. Reviews moeten eerlijk zijn en over je eigen ervaring gaan. Bedrijven mogen openbaar reageren.",
+          "p2": "Het is niet toegestaan iets aan te bieden in ruil voor een review of voor het verwijderen ervan. We kunnen reviews verbergen of verwijderen die deze voorwaarden schenden — bijvoorbeeld spam, haat, persoonlijke gegevens of belangenverstrengeling — maar we verwijderen reviews niet alleen omdat ze negatief zijn."
+        }
+      },
+      "conduct": {
+        "title": "Wat je niet mag doen op Kept",
+        "body": {
+          "li1": "Iets illegaals aanbieden of boeken, seksuele diensten, of iets wat mensen in gevaar brengt.",
+          "li2": "Iemand lastigvallen, bedreigen of discrimineren — klanten, professionals of ons team.",
+          "li3": "Nepaccounts, -vermeldingen, -boekingen of -reviews aanmaken, of je voordoen als iemand anders.",
+          "li4": "Inhoud uploaden waarvoor je geen deelrechten hebt, of die zonder toestemming persoonlijke gegevens van anderen bevat.",
+          "li5": "De dienst scrapen, overbelasten, aftasten of verstoren, of proberen de beveiliging of kosten te omzeilen."
+        }
+      },
+      "ourRole": {
+        "title": "Onze rol en de grenzen ervan",
+        "body": {
+          "p1": "We zetten ons in om Kept veilig en betrouwbaar te houden en we handelen naar aanleiding van meldingen. Maar bedrijven op Kept zijn onafhankelijk — ze zijn niet onze werknemers of vertegenwoordigers, en we garanderen de kwaliteit, veiligheid of wettigheid van hun diensten niet. Een “geverifieerd”-badge betekent dat we documenten hebben beoordeeld die het bedrijf heeft aangeleverd; het is geen aanbeveling.",
+          "p2": "Kept wordt geleverd “zoals het is”. Voor zover de wet het toestaat, zijn we niet aansprakelijk voor indirecte schade of gevolgschade, of voor wat er tijdens een dienst tussen jou en een bedrijf gebeurt. Niets in deze voorwaarden beperkt rechten die je hebt op grond van consumentenbeschermingsrecht en die niet kunnen worden uitgesloten."
+        }
+      },
+      "ending": {
+        "title": "Opschorting en je account sluiten",
+        "body": {
+          "p1": "Je kunt je account op elk moment verwijderen onder <privacyData>Privacy & gegevens</privacyData>. Aankomende afspraken worden geannuleerd volgens het beleid van elk bedrijf en gegevens die bedrijven nodig hebben — zoals afgelopen afspraken en betalingen — worden in geanonimiseerde vorm bewaard.",
+          "p2": "We kunnen accounts opschorten of sluiten die deze voorwaarden schenden of anderen in gevaar brengen. Waar mogelijk vertellen we je waarom en geven we je de kans om te reageren."
+        }
+      },
+      "changes": {
+        "title": "Wijzigingen, geschillen en contact",
+        "body": {
+          "p1": "Wanneer we deze voorwaarden op een belangrijke manier wijzigen, laten we het je van tevoren weten per e-mail of in de app. Als je Kept blijft gebruiken nadat een wijziging van kracht is geworden, ga je ermee akkoord.",
+          "p2": "Het toepasselijke recht en de procedure voor het oplossen van geschillen worden hier na juridische beoordeling toegevoegd, voordat Kept publiek live gaat.",
+          "p3": "Vragen over deze voorwaarden? <support>Neem contact met ons op</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacybeleid",
+      "description": "Welke persoonsgegevens Kept verzamelt, waarom, wie ze ziet en hoe je ze kunt downloaden of verwijderen."
+    },
+    "title": "Privacybeleid",
+    "intro": "Dit beleid legt uit welke persoonsgegevens Kept verzamelt, waarom we ze nodig hebben, wie ze kan zien en welke keuzes je hebt — voor klanten en professionals.",
+    "sections": {
+      "summary": {
+        "title": "De korte versie",
+        "body": {
+          "li1": "We verzamelen wat we nodig hebben om boekingen te laten verlopen: wie je bent, wat je boekt en hoe we je kunnen bereiken.",
+          "li2": "De bedrijven bij wie je boekt, zien de gegevens die ze nodig hebben om je van dienst te zijn. Niemand anders, behalve de dienstverleners die ons helpen Kept te runnen.",
+          "li3": "We verkopen je persoonsgegevens niet en gebruiken geen advertentietrackers.",
+          "li4": "Je kunt op elk moment een kopie van je gegevens downloaden of je account zelf verwijderen onder <privacyData>Privacy & gegevens</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Gegevens die je ons geeft",
+        "body": {
+          "li1": "<b>Account:</b> je naam, e-mailadres, wachtwoord (alleen opgeslagen als eenrichtingshash) en optioneel je telefoonnummer, foto en tijdzone. Als je inlogt met Google, ontvangen we je naam en e-mailadres van Google.",
+          "li2": "<b>Boekingen:</b> de dienst, het tijdstip, het bedrijf en de prijs; notities die je toevoegt; antwoorden op de intakevragen van een bedrijf; en een adres als een professional bij je langskomt.",
+          "li3": "<b>Betalingen:</b> bedragen, status en terugbetalingen. Kaartgegevens gaan rechtstreeks naar Stripe — we ontvangen nooit je volledige kaartnummer.",
+          "li4": "<b>Berichten, reviews en supportverzoeken</b>, inclusief afbeeldingen die je bijvoegt, en adressen die je opslaat.",
+          "li5": "<b>Bedrijven</b> geven ons ook bedrijfsgegevens, teamleden, diensten, roosters, portfoliomedia, uitbetalingsgegevens (bewaard door Stripe) en de klantdossiers die ze bijhouden."
+        }
+      },
+      "automatic": {
+        "title": "Automatisch verzamelde gegevens",
+        "body": {
+          "li1": "<b>Inlogsessies:</b> een cookie houdt je ingelogd. We slaan de sessie op met je browsertype, zodat je apparaten veilig kunnen worden uitgelogd.",
+          "li2": "<b>Beveiliging:</b> we slaan een gesleutelde eenrichtingshash van je IP-adres op — niet het adres zelf — om misbruik te beperken en verdachte activiteit te onderzoeken.",
+          "li3": "<b>Locatie:</b> als je een plaats kiest of je locatie deelt om in de buurt te zoeken, wordt die opgeslagen in een cookie op je apparaat om je keuze te onthouden. We volgen je locatie niet op de achtergrond.",
+          "li4": "<b>Activiteit op Kept:</b> professionals die je bekijkt en bewaart, zodat we ze opnieuw kunnen tonen; en aantallen weergaven en klikken op gepromote vermeldingen, die alleen als totalen aan bedrijven worden gemeld."
+        }
+      },
+      "use": {
+        "title": "Hoe we ze gebruiken",
+        "body": {
+          "li1": "Om boekingen te maken, te wijzigen en je eraan te herinneren, en om betalingen en terugbetalingen te verwerken.",
+          "li2": "Om de meldingen te sturen die je hebt gekozen. Boekingsbevestigingen en wijzigingen worden altijd verstuurd; al het andere kun je uitzetten in de meldingsinstellingen.",
+          "li3": "Om je relevante professionals en beschikbaarheid in je buurt te tonen.",
+          "li4": "Om Kept veilig te houden: fraude, spam en misbruik voorkomen en actie ondernemen op meldingen.",
+          "li5": "Om supportverzoeken te beantwoorden en Kept te verbeteren.",
+          "li6": "Om aan wettelijke verplichtingen te voldoen, zoals fiscale en boekhoudkundige administratie."
+        }
+      },
+      "businesses": {
+        "title": "Wat bedrijven zien",
+        "body": {
+          "p1": "Wanneer je boekt, ziet het bedrijf je naam, e-mailadres en telefoonnummer (als je dat hebt toegevoegd), de boeking en alles wat je ermee hebt gedeeld — notities, intakeantwoorden, een serviceadres — plus je eerdere bezoeken bij hen. Ze kunnen privénotities toevoegen aan hun klantdossier.",
+          "p2": "Elk bedrijf is zelf verantwoordelijk voor hoe het zijn klantdossiers gebruikt en mag je alleen marketing sturen als je daarmee hebt ingestemd. Reviews zijn openbaar en tonen je voornaam en de initiaal van je achternaam."
+        }
+      },
+      "sharing": {
+        "title": "Met wie we ze verder delen",
+        "body": {
+          "p1": "We gebruiken een klein aantal aanbieders die namens ons gegevens verwerken, onder contracten die beperken wat ze ermee mogen doen:",
+          "li1": "Stripe, voor betalingen en uitbetalingen.",
+          "li2": "Onze e-mailprovider en een sms-provider als sms-berichten zijn ingeschakeld.",
+          "li3": "Google, alleen als je ervoor kiest om met Google in te loggen.",
+          "li4": "Kaart- en adreszoekdiensten, om kaarten te tonen en plaatsen te vinden waarnaar je zoekt.",
+          "li5": "Onze hosting- en infrastructuuraanbieders.",
+          "p2": "We kunnen gegevens ook openbaar maken wanneer de wet dat vereist, om iemands veiligheid te beschermen of als onderdeel van een fusie of overname — in dat geval blijft dit beleid van toepassing. We verkopen nooit persoonsgegevens."
+        }
+      },
+      "rights": {
+        "title": "Je keuzes en rechten",
+        "body": {
+          "li1": "<b>Inzage:</b> download een kopie van je gegevens onder <privacyData>Privacy & gegevens</privacyData>.",
+          "li2": "<b>Corrigeren:</b> werk je gegevens bij in <profile>Profiel</profile>, of vraag ons het te doen.",
+          "li3": "<b>Verwijderen:</b> verwijder je account onder Privacy & gegevens. Hieronder lees je wat we bewaren.",
+          "li4": "<b>Meldingen:</b> kies wat we sturen in de <notifications>meldingsinstellingen</notifications>.",
+          "li5": "Afhankelijk van waar je woont, heb je mogelijk meer rechten, zoals bezwaar maken tegen bepaald gebruik of een klacht indienen bij een toezichthouder voor gegevensbescherming. <supportAccount>Neem contact met ons op</supportAccount> en we helpen je."
+        }
+      },
+      "retention": {
+        "title": "Hoe lang we ze bewaren",
+        "body": {
+          "p1": "We bewaren je gegevens zolang je account open is.",
+          "p2": "Wanneer je je account verwijdert, wissen we direct je naam, e-mailadres, telefoonnummer, foto, opgeslagen adressen, bewaarde professionals, meldingen en inlogmethoden. Gegevens waar bedrijven en de boekhouding van afhankelijk zijn — afgelopen afspraken, betalingen en reviews — blijven bewaard, gekoppeld aan “Verwijderde gebruiker” in plaats van aan jou. Berichten die je met een bedrijf hebt uitgewisseld, blijven in de gespreksgeschiedenis van dat bedrijf staan."
+        }
+      },
+      "security": {
+        "title": "Beveiliging",
+        "body": {
+          "p1": "Wachtwoorden worden gehasht met Argon2, sessies worden aan de serverkant opgeslagen en kunnen worden ingetrokken, verbindingen zijn versleuteld en geüploade foto’s worden opnieuw gecodeerd zodat verborgen locatiegegevens worden verwijderd. Geen enkel systeem is perfect veilig; als we vernemen van een datalek dat jou raakt, laten we het je snel weten."
+        }
+      },
+      "children": {
+        "title": "Kinderen",
+        "body": {
+          "p1": "Kept-accounts zijn voor volwassenen. Een ouder of voogd kan een dienst boeken voor zijn of haar kind; we verzamelen niet bewust persoonsgegevens rechtstreeks van kinderen."
+        }
+      },
+      "changes": {
+        "title": "Wijzigingen en contact",
+        "body": {
+          "p1": "Als we dit beleid op een belangrijke manier wijzigen, laten we het je weten voordat het van kracht wordt.",
+          "p2": "Vragen of verzoeken over je gegevens? <supportAccount>Neem contact met ons op</supportAccount>."
+        }
+      }
+    }
+  }
+}

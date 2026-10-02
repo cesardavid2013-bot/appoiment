@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Om översättningarna skiljer sig åt gäller den engelska versionen.",
+  "nav": {
+    "label": "Juridiska dokument",
+    "terms": "Användarvillkor",
+    "privacy": "Integritetspolicy"
+  },
+  "doc": {
+    "lastUpdated": "Senast uppdaterad {date}",
+    "counselNote": "Det här är ett dokument på lättförståeligt språk som fungerar som utgångspunkt. Det granskas av juridiska ombud innan Kept lanseras publikt och kan komma att ändras till följd av det. Vi meddelar dig innan en ändring som påverkar dina rättigheter träder i kraft.",
+    "contents": "Innehåll"
+  },
+  "terms": {
+    "meta": {
+      "title": "Användarvillkor",
+      "description": "Villkoren på lättförståeligt språk för att använda Kept för att boka yrkesverksamma eller driva ditt företag."
+    },
+    "title": "Användarvillkor",
+    "intro": "De här villkoren förklarar hur Kept fungerar och vad vi förväntar oss av alla som använder det. Vi har hållit dem korta och läsbara. Om något här är oklart, <support>fråga oss</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Vad Kept är",
+        "body": {
+          "p1": "Kept är en marknadsplats och ett bokningsverktyg. Kunder använder det för att hitta och boka yrkesverksamma — barberare, frisörer, tränare, lärare, bilvårdare och många fler. Yrkesverksamma och företag använder det för att publicera sina tjänster, hantera sin kalender och få betalt.",
+          "p2": "<b>Det är den yrkesverksamma eller det företag du bokar som tillhandahåller tjänsten, inte Kept.</b> När du bokar ingår du avtalet om tjänsten med det företaget. Vi driver plattformen som kopplar samman er, visar deras priser och villkor och hjälper båda sidor att hålla bokningen."
+        }
+      },
+      "account": {
+        "title": "Ditt konto",
+        "body": {
+          "li1": "Du måste vara minst 18 år (eller myndig där du bor) för att skapa ett konto. Du kan boka åt någon annan, till exempel ditt barn, om du ansvarar för dem.",
+          "li2": "Ange korrekta uppgifter och håll dem uppdaterade — företag förlitar sig på dem för att nå dig om dina bokningar.",
+          "li3": "Håll ditt lösenord för dig själv. Du ansvarar för det som sker på ditt konto. Om du tror att någon annan har tillgång, byt lösenord och logga ut andra enheter under Inloggning & säkerhet.",
+          "li4": "En person per konto. Företag lägger till teammedlemmar som separata personer i stället för att dela en inloggning."
+        }
+      },
+      "booking": {
+        "title": "Boka som kund",
+        "body": {
+          "p1": "Innan du bekräftar en bokning ser du priset (eller hur det uppskattas), hur lång tid det tar, eventuell deposition samt företagets villkor för avbokning och uteblivet besök. Genom att boka godkänner du dessa villkor.",
+          "li1": "<b>Direktbokningar</b> bekräftas omedelbart. <b>Förfrågningar</b> bekräftas först när företaget godkänner dem; tills dess är din tid reserverad, och obesvarade förfrågningar går ut.",
+          "li2": "Du kan avboka eller boka om från din bokningssida inom företagets regler. Sena avbokningar och uteblivna besök kan kosta dig hela eller delar av en deposition, eller en avgift, exakt som det visades när du bokade.",
+          "li3": "Om en tjänst är prissatt som en uppskattning (till exempel ”från” eller ett spann) överenskoms det slutliga priset med företaget vid din bokning.",
+          "li4": "Om Kept tar ut en serviceavgift för en bokning visas den innan du bekräftar. Vi lägger aldrig till avgifter i efterhand."
+        }
+      },
+      "payments": {
+        "title": "Betalningar och återbetalningar",
+        "body": {
+          "p1": "Onlinebetalningar hanteras av Stripe. Kept ser eller lagrar aldrig ditt fullständiga kortnummer. Vissa företag tar betalt på plats i stället; i så fall betalar du dem direkt.",
+          "li1": "Återbetalningar följer företagets villkor som visas vid bokning och görs till kortet du betalade med. Din bank kan behöva flera bankdagar för att visa dem.",
+          "li2": "Om ett företag avbokar eller avböjer din bokning återbetalas allt du betalat online för den.",
+          "li3": "Om något gick fel med en betalning, <supportPayment>kontakta oss</supportPayment> innan du öppnar en tvist med din bank — det går oftast snabbare."
+        }
+      },
+      "businesses": {
+        "title": "För yrkesverksamma och företag",
+        "body": {
+          "li1": "Din annons måste vara korrekt: vem du är, vad du erbjuder, dina priser, var du arbetar och dina villkor. Foton och videor måste vara av ditt eget arbete eller användas med tillstånd.",
+          "li2": "Du ansvarar för att ha de licenser, tillstånd, försäkringar och kvalifikationer som ditt arbete kräver, och för att uppfylla dina skatteskyldigheter.",
+          "li3": "Håll de bokningar du godkänner och de villkor du publicerar. Upprepade avbokningar i sista minuten, uteblivna besök eller vilseledande annonser kan leda till att din profil stängs av.",
+          "li4": "Abonnemang, gränser och avgifter finns på vår <pricing>prissida</pricing>. En plattformsavgift gäller bara betalningar som kunder gör online via Kept. Utbetalningar görs av Stripe till ditt eget konto och omfattas även av Stripes villkor.",
+          "li5": "Kunduppgifter du får via Kept får användas för att tillhandahålla och följa upp dina tjänster. Skicka marknadsföring endast till kunder som har samtyckt till att få den.",
+          "li6": "Du behåller äganderätten till det du laddar upp, och ger Kept tillstånd att visa det på Kept och i marknadsföringen av din profil så länge din annons är aktiv.",
+          "li7": "Spotlight-placeringar märks alltid som sponsrade. De är gratis under lanseringen; om det ändras meddelar vi dig innan något debiteras."
+        }
+      },
+      "reviews": {
+        "title": "Omdömen",
+        "body": {
+          "p1": "Endast kunder med en genomförd bokning kan lämna ett omdöme, en gång per bokning. Omdömen måste vara ärliga och handla om din egen upplevelse. Företag får svara offentligt.",
+          "p2": "Det är inte tillåtet att erbjuda något i utbyte mot ett omdöme, eller för att ta bort ett. Vi kan dölja eller ta bort omdömen som bryter mot de här villkoren — till exempel skräppost, hat, personuppgifter eller intressekonflikter — men vi tar inte bort omdömen bara för att de är negativa."
+        }
+      },
+      "conduct": {
+        "title": "Vad du inte får göra på Kept",
+        "body": {
+          "li1": "Erbjuda eller boka något olagligt, sexuella tjänster eller något som utsätter människor för risk.",
+          "li2": "Trakassera, hota eller diskriminera någon — kunder, yrkesverksamma eller vårt team.",
+          "li3": "Skapa falska konton, annonser, bokningar eller omdömen, eller utge dig för att vara någon annan.",
+          "li4": "Ladda upp innehåll som du inte har rätt att dela, eller som innehåller andras personuppgifter utan tillstånd.",
+          "li5": "Skrapa, överbelasta, undersöka eller störa tjänsten, eller försöka kringgå dess säkerhet eller avgifter."
+        }
+      },
+      "ourRole": {
+        "title": "Vår roll och dess gränser",
+        "body": {
+          "p1": "Vi arbetar för att hålla Kept säkert och pålitligt, och vi agerar på anmälningar. Men företagen på Kept är oberoende — de är inte våra anställda eller ombud, och vi garanterar inte kvaliteten, säkerheten eller lagligheten hos deras tjänster. Ett ”verifierad”-märke betyder att vi har granskat dokument som företaget lämnat in; det är inte en rekommendation.",
+          "p2": "Kept tillhandahålls ”i befintligt skick”. I den utsträckning lagen tillåter ansvarar vi inte för indirekta förluster eller följdförluster, eller för vad som händer under en tjänst mellan dig och ett företag. Inget i de här villkoren begränsar rättigheter du har enligt konsumentskyddslagstiftning som inte kan uteslutas."
+        }
+      },
+      "ending": {
+        "title": "Avstängning och att stänga ditt konto",
+        "body": {
+          "p1": "Du kan radera ditt konto när som helst under <privacyData>Integritet & data</privacyData>. Kommande bokningar avbokas enligt respektive företags villkor, och uppgifter som företag behöver — som tidigare bokningar och betalningar — sparas i anonymiserad form.",
+          "p2": "Vi kan stänga av eller stänga konton som bryter mot de här villkoren eller utsätter andra för risk. När vi kan berättar vi varför och ger dig möjlighet att svara."
+        }
+      },
+      "changes": {
+        "title": "Ändringar, tvister och kontakt",
+        "body": {
+          "p1": "När vi ändrar de här villkoren på ett sätt som spelar roll meddelar vi dig i förväg via e-post eller i appen. Om du fortsätter använda Kept efter att en ändring har trätt i kraft innebär det att du godkänner den.",
+          "p2": "Tillämplig lag och förfarandet för att lösa tvister läggs till här efter juridisk granskning, innan Kept lanseras publikt.",
+          "p3": "Frågor om de här villkoren? <support>Kontakta oss</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Integritetspolicy",
+      "description": "Vilka personuppgifter Kept samlar in, varför, vem som ser dem och hur du kan ladda ner eller radera dem."
+    },
+    "title": "Integritetspolicy",
+    "intro": "Den här policyn förklarar vilka personuppgifter Kept samlar in, varför vi behöver dem, vem som kan se dem och vilka val du har — för både kunder och yrkesverksamma.",
+    "sections": {
+      "summary": {
+        "title": "Kortversionen",
+        "body": {
+          "li1": "Vi samlar in det vi behöver för att sköta bokningar: vem du är, vad du bokar och hur vi når dig.",
+          "li2": "Företagen du bokar hos ser de uppgifter de behöver för att kunna hjälpa dig. Ingen annan gör det, bortsett från de tjänsteleverantörer som hjälper oss driva Kept.",
+          "li3": "Vi säljer inte dina personuppgifter och vi använder inga reklamspårare.",
+          "li4": "Du kan ladda ner en kopia av dina uppgifter eller radera ditt konto själv, när som helst, under <privacyData>Integritet & data</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Uppgifter du lämnar till oss",
+        "body": {
+          "li1": "<b>Konto:</b> ditt namn, din e-post, ditt lösenord (lagras endast som enkelriktad hash) och eventuellt ditt telefonnummer, foto och tidszon. Om du loggar in med Google får vi ditt namn och din e-post från Google.",
+          "li2": "<b>Bokningar:</b> tjänsten, tiden, företaget och priset; anteckningar du lägger till; svar på ett företags frågor; och en adress om en yrkesverksam kommer till dig.",
+          "li3": "<b>Betalningar:</b> belopp, status och återbetalningar. Kortuppgifter går direkt till Stripe — vi får aldrig ditt fullständiga kortnummer.",
+          "li4": "<b>Meddelanden, omdömen och supportärenden</b>, inklusive bilder du bifogar, och adresser du sparar.",
+          "li5": "<b>Företag</b> lämnar även företagsuppgifter, teammedlemmar, tjänster, scheman, portföljmaterial, utbetalningsuppgifter (hanteras av Stripe) och de kundregister de för."
+        }
+      },
+      "automatic": {
+        "title": "Uppgifter som samlas in automatiskt",
+        "body": {
+          "li1": "<b>Inloggningssessioner:</b> en cookie håller dig inloggad. Vi lagrar sessionen tillsammans med din webbläsartyp så att dina enheter kan loggas ut på ett säkert sätt.",
+          "li2": "<b>Säkerhet:</b> vi lagrar en nyckelbaserad, enkelriktad hash av din IP-adress — inte själva adressen — för att begränsa missbruk och utreda misstänkt aktivitet.",
+          "li3": "<b>Plats:</b> om du väljer en plats eller delar din plats för att söka i närheten sparas den i en cookie på din enhet för att komma ihåg ditt val. Vi spårar inte din plats i bakgrunden.",
+          "li4": "<b>Aktivitet på Kept:</b> yrkesverksamma du tittar på och sparar, så att vi kan visa dem igen; samt antal visningar och klick på sponsrade annonser, som rapporteras till företag endast som totaler."
+        }
+      },
+      "use": {
+        "title": "Hur vi använder dem",
+        "body": {
+          "li1": "För att skapa, ändra och påminna dig om bokningar, och för att hantera betalningar och återbetalningar.",
+          "li2": "För att skicka de aviseringar du har valt. Bokningsbekräftelser och ändringar skickas alltid; allt annat kan stängas av i aviseringsinställningarna.",
+          "li3": "För att visa relevanta yrkesverksamma och lediga tider nära dig.",
+          "li4": "För att hålla Kept säkert: förhindra bedrägeri, skräppost och missbruk, och agera på anmälningar.",
+          "li5": "För att besvara supportärenden och förbättra Kept.",
+          "li6": "För att uppfylla rättsliga skyldigheter, som skatte- och bokföringsunderlag."
+        }
+      },
+      "businesses": {
+        "title": "Vad företag ser",
+        "body": {
+          "p1": "När du bokar ser företaget ditt namn, din e-post och ditt telefonnummer (om du lagt till ett), bokningen och allt du delat med dem — anteckningar, svar på frågor, en serviceadress — samt dina tidigare besök hos dem. De kan lägga till privata anteckningar i sitt kundregister.",
+          "p2": "Varje företag ansvarar för hur det använder sina kundregister och får bara skicka marknadsföring till dig om du har samtyckt till det. Omdömen är offentliga och visar ditt förnamn och första bokstaven i efternamnet."
+        }
+      },
+      "sharing": {
+        "title": "Vilka vi i övrigt delar dem med",
+        "body": {
+          "p1": "Vi använder ett fåtal leverantörer som behandlar uppgifter för vår räkning, enligt avtal som begränsar vad de får göra med dem:",
+          "li1": "Stripe, för betalningar och utbetalningar.",
+          "li2": "Vår e-postleverantör, och en sms-leverantör om textmeddelanden är aktiverade.",
+          "li3": "Google, bara om du väljer att logga in med Google.",
+          "li4": "Kart- och adresssökningstjänster, för att visa kartor och hitta platser du söker efter.",
+          "li5": "Våra leverantörer av hosting och infrastruktur.",
+          "p2": "Vi kan också lämna ut uppgifter när lagen kräver det, för att skydda någons säkerhet eller som del av en fusion eller ett förvärv — i så fall fortsätter den här policyn att gälla. Vi säljer aldrig personuppgifter."
+        }
+      },
+      "rights": {
+        "title": "Dina val och rättigheter",
+        "body": {
+          "li1": "<b>Tillgång:</b> ladda ner en kopia av dina uppgifter under <privacyData>Integritet & data</privacyData>.",
+          "li2": "<b>Rättelse:</b> uppdatera dina uppgifter i <profile>Profil</profile>, eller be oss göra det.",
+          "li3": "<b>Radering:</b> radera ditt konto under Integritet & data. Se nedan för vad vi behåller.",
+          "li4": "<b>Aviseringar:</b> välj vad vi skickar i <notifications>aviseringsinställningarna</notifications>.",
+          "li5": "Beroende på var du bor kan du ha ytterligare rättigheter, till exempel att invända mot vissa användningar eller klaga hos en dataskyddsmyndighet. <supportAccount>Kontakta oss</supportAccount> så hjälper vi dig."
+        }
+      },
+      "retention": {
+        "title": "Hur länge vi sparar dem",
+        "body": {
+          "p1": "Vi sparar dina uppgifter så länge ditt konto är öppet.",
+          "p2": "När du raderar ditt konto raderar vi omedelbart ditt namn, din e-post, ditt telefonnummer, ditt foto, dina sparade adresser, sparade yrkesverksamma, aviseringar och inloggningsmetoder. Uppgifter som företag och bokföring är beroende av — tidigare bokningar, betalningar och omdömen — sparas, kopplade till ”Raderad användare” i stället för till dig. Meddelanden du utbytte med ett företag finns kvar i det företagets konversationshistorik."
+        }
+      },
+      "security": {
+        "title": "Säkerhet",
+        "body": {
+          "p1": "Lösenord hashas med Argon2, sessioner lagras på serversidan och kan återkallas, anslutningar är krypterade och uppladdade foton kodas om så att dold platsdata tas bort. Inget system är helt säkert; om vi får kännedom om ett intrång som påverkar dig meddelar vi dig omgående."
+        }
+      },
+      "children": {
+        "title": "Barn",
+        "body": {
+          "p1": "Kept-konton är till för vuxna. En förälder eller vårdnadshavare kan boka en tjänst åt sitt barn; vi samlar inte medvetet in personuppgifter direkt från barn."
+        }
+      },
+      "changes": {
+        "title": "Ändringar och kontakt",
+        "body": {
+          "p1": "Om vi ändrar den här policyn på ett sätt som spelar roll meddelar vi dig innan den träder i kraft.",
+          "p2": "Frågor eller önskemål om dina uppgifter? <supportAccount>Kontakta oss</supportAccount>."
+        }
+      }
+    }
+  }
+}
