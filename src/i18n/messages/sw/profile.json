@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "Haijapatikana",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} huko {city}",
+    "bookOnline": "Weka miadi na {name} mtandaoni."
+  },
+  "preview": {
+    "notice": "Hakikisho — ni wewe tu unayeweza kuona ukurasa huu hadi uuchapishe.",
+    "goLive": "Anza kuonekana"
+  },
+  "verified": "Imethibitishwa na Kept",
+  "verifiedLabel": "Biashara iliyothibitishwa",
+  "reviewsCount": "{count, plural, one {maoni # yaliyothibitishwa} other {maoni # yaliyothibitishwa}}",
+  "newOnKept": "Mpya kwenye Kept",
+  "travels": "{city} · husafiri hadi km {km}",
+  "status": {
+    "openUntil": "Wazi · hadi {time}",
+    "opensAt": "Hufunguliwa saa {time}",
+    "opensTomorrow": "Hufunguliwa kesho saa {time}",
+    "opensDay": "Hufunguliwa {day} saa {time}",
+    "notSet": "Saa za kazi hazijawekwa",
+    "closed": "Imefungwa"
+  },
+  "nav": {
+    "label": "Sehemu za wasifu",
+    "services": "Huduma",
+    "work": "Kazi",
+    "featured": "Zilizoangaziwa",
+    "reviews": "Maoni",
+    "about": "Kuhusu"
+  },
+  "services": {
+    "eyebrow": "Menyu",
+    "title": "Huduma",
+    "empty": "Biashara hii haijachapisha huduma bado.",
+    "sale": "Punguzo",
+    "group": "Kikundi · hadi {count}",
+    "request": "Omba kuweka miadi",
+    "options": "Chaguo zinapatikana",
+    "deposit": "Amana wakati wa kuweka miadi",
+    "book": "Weka miadi",
+    "bookService": "Weka miadi ya {name}"
+  },
+  "work": {
+    "eyebrow": "Jalada la kazi",
+    "title": "Kazi za hivi karibuni"
+  },
+  "featured": {
+    "eyebrow": "Mitandaoni",
+    "title": "Zilizoangaziwa",
+    "allProfiles": "Wasifu wote wa mitandao ya kijamii",
+    "bookThis": "Weka miadi ya hii · {service}",
+    "newTab": "(hufunguka kwenye kichupo kipya)",
+    "footnote": "Vicheza media hupakiwa kutoka kila jukwaa tu unapobonyeza cheza.",
+    "play": "Cheza {title}",
+    "loadsFrom": "Hupakiwa kutoka {host}"
+  },
+  "team": {
+    "eyebrow": "Watu",
+    "title": "Timu"
+  },
+  "reviews": {
+    "eyebrow": "Sifa za mdomo",
+    "title": "Maoni",
+    "empty": "Hakuna maoni bado. Maoni yanaweza kutolewa tu na wateja baada ya ziara iliyokamilika.",
+    "distribution": "Mgawanyo wa alama",
+    "onlyCustomers": "Ni wateja walio na miadi iliyokamilika tu wanaoweza kutoa maoni.",
+    "response": "Jibu kutoka kwa {name}",
+    "stars": "Nyota {value} kati ya 5"
+  },
+  "about": {
+    "eyebrow": "Mahali penyewe",
+    "title": "Kuhusu",
+    "hours": "Saa za kazi",
+    "timesIn": "Nyakati zinaonyeshwa kwa {zone}.",
+    "policies": "Sera",
+    "noShow": "Miadi isiyohudhuriwa inaweza kutozwa {percent}% ya jumla.",
+    "experience": "Uzoefu wa miaka {years}+",
+    "amenities": "Huduma za ziada",
+    "online": "Mtandaoni",
+    "directions": "Maelekezo",
+    "comesToYou": "Anakuja kwako",
+    "mobileBody": "Yuko {city}. Husafiri hadi km {km} — utaongeza anwani yako wakati wa kuweka miadi.",
+    "onlineSessions": "Vikao vya mtandaoni",
+    "onlineBody": "Jiunge ukiwa popote. Kiungo hushirikiwa baada ya kuweka miadi."
+  },
+  "panel": {
+    "label": "Weka miadi",
+    "eyebrow": "Hifadhi nafasi",
+    "freeOptions": "Chaguo za bure zinapatikana",
+    "from": "Huduma kuanzia {price}",
+    "onConsultation": "Bei kwa mashauriano",
+    "nextToday": "Nafasi ijayo leo",
+    "nextTomorrow": "Nafasi ijayo kesho",
+    "nextOn": "Nafasi ijayo {day}",
+    "none": "Hakuna nafasi katika wiki mbili zijazo",
+    "bookNow": "Weka miadi sasa",
+    "requestToBook": "Omba kuweka miadi",
+    "instant": "Uthibitisho wa papo hapo",
+    "confirms": "Biashara huthibitisha ombi lako",
+    "notTaking": "Biashara hii haipokei miadi bado.",
+    "mobileFrom": "Kuanzia {price}",
+    "mobileNext": "Ijayo: {day} {time}",
+    "seeAvailability": "Tazama upatikanaji",
+    "request": "Omba"
+  },
+  "actions": {
+    "share": "Shiriki",
+    "shareTitle": "Shiriki {name}",
+    "shareBody": "Tuma kiungo, au changanua msimbo ili kufungua ukurasa wa miadi.",
+    "copy": "Nakili",
+    "copied": "Imenakiliwa",
+    "downloadQr": "Pakua msimbo wa QR",
+    "ask": "Uliza swali",
+    "messageTitle": "Mtumie {name} ujumbe",
+    "messageBody": "Uliza kuhusu huduma, upatikanaji au chochote kabla ya kuweka miadi. Nambari yako ya simu na barua pepe hubaki za faragha.",
+    "cancel": "Ghairi",
+    "send": "Tuma ujumbe",
+    "yourMessage": "Ujumbe wako",
+    "placeholder": "Habari! Je, una nafasi Jumamosi alasiri kwa skin fade?",
+    "sent": "Ujumbe umetumwa",
+    "sentBody": "{name} atajibu kwenye kikasha chako."
+  },
+  "portfolio": {
+    "compare": "Linganisha kabla na baada",
+    "portfolio": "Jalada la kazi",
+    "close": "Funga",
+    "previous": "Iliyotangulia",
+    "next": "Inayofuata",
+    "before": "Kabla",
+    "after": "Baada",
+    "beforeAfter": "Kabla / baada",
+    "video": "Video",
+    "openItem": "Fungua kipengee {n}",
+    "browse": "Tumia vitufe vya mshale kuvinjari",
+    "bookThis": "Weka miadi ya hii",
+    "bookThisService": "Weka miadi ya hii — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Chapisho",
+    "reel": "Reel",
+    "track": "Wimbo",
+    "album": "Albamu",
+    "artist": "Msanii",
+    "playlist": "Orodha ya nyimbo",
+    "episode": "Kipindi",
+    "show": "Podikasti"
+  },
+  "links": {
+    "label": "Vitufe vya viungo"
+  }
+}
