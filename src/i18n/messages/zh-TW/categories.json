@@ -84,5 +84,66 @@
   "other": {
     "name": "其他",
     "description": "其他所有可預約的服務。"
+  },
+  "music-audio": {
+    "name": "音樂與音訊",
+    "description": "音樂製作人、錄音室、混音與聲樂指導。"
+  },
+  "music-production": {
+    "name": "音樂製作"
+  },
+  "recording-studio": {
+    "name": "錄音室"
+  },
+  "vocal-coaching": {
+    "name": "聲樂指導"
+  },
+  "creators": {
+    "name": "創作者與內容",
+    "description": "內容創作者、UGC、社群媒體與影片剪輯。"
+  },
+  "content-creation": {
+    "name": "內容創作"
+  },
+  "video-editing": {
+    "name": "影片剪輯"
+  },
+  "social-media": {
+    "name": "社群媒體經營"
+  },
+  "design": {
+    "name": "設計與創意",
+    "description": "平面、品牌、網頁與室內設計。"
+  },
+  "graphic-design": {
+    "name": "平面與品牌設計"
+  },
+  "web-design": {
+    "name": "網頁設計"
+  },
+  "interior-design": {
+    "name": "室內設計"
+  },
+  "health": {
+    "name": "健康與照護",
+    "description": "物理治療、營養、心理治療與整體照護。"
+  },
+  "physio": {
+    "name": "物理治療與整脊"
+  },
+  "nutrition": {
+    "name": "營養諮詢"
+  },
+  "therapy": {
+    "name": "心理治療與諮商"
+  },
+  "cleaning": {
+    "name": "清潔服務"
+  },
+  "handyman": {
+    "name": "修繕與雜工"
+  },
+  "gardening": {
+    "name": "園藝"
   }
 }

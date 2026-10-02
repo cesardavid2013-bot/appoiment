@@ -84,5 +84,66 @@
   "other": {
     "name": "其他",
     "description": "其他一切可预约的服务。"
+  },
+  "music-audio": {
+    "name": "音乐与音频",
+    "description": "音乐制作人、录音棚、混音与声乐指导。"
+  },
+  "music-production": {
+    "name": "音乐制作"
+  },
+  "recording-studio": {
+    "name": "录音棚"
+  },
+  "vocal-coaching": {
+    "name": "声乐指导"
+  },
+  "creators": {
+    "name": "创作者与内容",
+    "description": "内容创作者、UGC、社交媒体与视频剪辑。"
+  },
+  "content-creation": {
+    "name": "内容创作"
+  },
+  "video-editing": {
+    "name": "视频剪辑"
+  },
+  "social-media": {
+    "name": "社交媒体运营"
+  },
+  "design": {
+    "name": "设计与创意",
+    "description": "平面、品牌、网页与室内设计。"
+  },
+  "graphic-design": {
+    "name": "平面与品牌设计"
+  },
+  "web-design": {
+    "name": "网页设计"
+  },
+  "interior-design": {
+    "name": "室内设计"
+  },
+  "health": {
+    "name": "健康与护理",
+    "description": "理疗、营养、心理治疗与整体养护。"
+  },
+  "physio": {
+    "name": "理疗与脊椎护理"
+  },
+  "nutrition": {
+    "name": "营养咨询"
+  },
+  "therapy": {
+    "name": "心理治疗与咨询"
+  },
+  "cleaning": {
+    "name": "清洁服务"
+  },
+  "handyman": {
+    "name": "维修与杂工"
+  },
+  "gardening": {
+    "name": "园艺"
   }
 }

@@ -84,5 +84,66 @@
   "other": {
     "name": "その他",
     "description": "予約できるその他すべて。"
+  },
+  "music-audio": {
+    "name": "音楽・オーディオ",
+    "description": "プロデューサー、レコーディングスタジオ、ミキシング、ボーカルコーチング。"
+  },
+  "music-production": {
+    "name": "音楽制作"
+  },
+  "recording-studio": {
+    "name": "レコーディングスタジオ"
+  },
+  "vocal-coaching": {
+    "name": "ボイストレーニング"
+  },
+  "creators": {
+    "name": "クリエイター・コンテンツ",
+    "description": "コンテンツクリエイター、UGC、SNS、動画編集。"
+  },
+  "content-creation": {
+    "name": "コンテンツ制作"
+  },
+  "video-editing": {
+    "name": "動画編集"
+  },
+  "social-media": {
+    "name": "SNS運用代行"
+  },
+  "design": {
+    "name": "デザイン・クリエイティブ",
+    "description": "グラフィック、ブランド、Web、インテリアデザイン。"
+  },
+  "graphic-design": {
+    "name": "グラフィック・ブランドデザイン"
+  },
+  "web-design": {
+    "name": "Webデザイン"
+  },
+  "interior-design": {
+    "name": "インテリアデザイン"
+  },
+  "health": {
+    "name": "ヘルス・ケア",
+    "description": "理学療法、栄養、セラピー、ホリスティックケア。"
+  },
+  "physio": {
+    "name": "理学療法・カイロプラクティック"
+  },
+  "nutrition": {
+    "name": "栄養指導"
+  },
+  "therapy": {
+    "name": "セラピー・カウンセリング"
+  },
+  "cleaning": {
+    "name": "クリーニング"
+  },
+  "handyman": {
+    "name": "便利屋・修理"
+  },
+  "gardening": {
+    "name": "ガーデニング"
   }
 }
