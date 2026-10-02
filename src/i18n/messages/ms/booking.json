@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Tempah dengan {name}",
+    "fallbackTitle": "Tempah"
+  },
+  "steps": {
+    "service": "Pilih perkhidmatan",
+    "options": "Sesuaikan",
+    "who": "Siapa & di mana",
+    "time": "Pilih masa",
+    "details": "Beberapa butiran",
+    "review": "Semak & sahkan"
+  },
+  "header": {
+    "backTo": "Kembali ke {name}",
+    "previousStep": "Langkah sebelumnya",
+    "stepOf": "Langkah {current} daripada {total}",
+    "exit": "Keluar dari tempahan"
+  },
+  "service": {
+    "optionsAvailable": "Pilihan tersedia",
+    "group": "Kumpulan · sehingga {count}"
+  },
+  "options": {
+    "required": "Wajib",
+    "upTo": "Pilih sehingga {count}",
+    "optionalAny": "Pilihan · pilih mana-mana",
+    "optional": "Pilihan",
+    "included": "Termasuk",
+    "errorRequired": "Pilih satu pilihan untuk “{name}”.",
+    "errorOnlyOne": "Pilih satu pilihan sahaja untuk “{name}”.",
+    "errorUpTo": "Pilih sehingga {count} untuk “{name}”.",
+    "errorUnavailable": "Salah satu pilihan yang dipilih tidak lagi tersedia."
+  },
+  "who": {
+    "where": "Di mana",
+    "with": "Bersama",
+    "comesToYou": "Datang ke tempat anda · dalam lingkungan {km} km dari {city}",
+    "online": "Sesi dalam talian",
+    "anyPro": "Mana-mana profesional yang tersedia",
+    "anyProHint": "Slot paling banyak — kami akan padankan anda dengan sesiapa yang lapang."
+  },
+  "details": {
+    "addressLabel": "Ke mana kami perlu datang?",
+    "addressHint": "Dalam lingkungan {km} km dari {city}. Dikongsi dengan perniagaan sahaja.",
+    "addressPlaceholder": "Alamat jalan, pangsapuri, bandar",
+    "consent": "Saya telah membaca dan bersetuju dengan perkara di atas",
+    "age": "Saya mengesahkan bahawa saya berumur sekurang-kurangnya {age} tahun",
+    "noteLabel": "Ada apa-apa lagi yang mereka perlu tahu?",
+    "notePlaceholder": "Alahan, keutamaan, nota tempat letak kereta…"
+  },
+  "review": {
+    "changeTime": "Tukar masa",
+    "with": "Bersama",
+    "where": "Di mana",
+    "yourAddress": "Alamat anda",
+    "online": "Dalam talian",
+    "noteLabel": "Ada apa-apa yang mereka perlu tahu?",
+    "notePlaceholder": "Keutamaan, soalan, keperluan kebolehcapaian…",
+    "promoApplied": "{code} digunakan",
+    "promoRemove": "Buang",
+    "promoPlaceholder": "Kod promosi",
+    "promoApply": "Guna",
+    "beforeYouBook": "Sebelum anda menempah",
+    "bookingAs": "Menempah sebagai {name}"
+  },
+  "confirm": {
+    "request": "Hantar permohonan tempahan",
+    "requestShort": "Hantar permohonan",
+    "pay": "Sahkan dan bayar {amount}",
+    "payShort": "Bayar {amount}",
+    "confirm": "Sahkan tempahan",
+    "confirmShort": "Sahkan"
+  },
+  "summary": {
+    "label": "Ringkasan tempahan",
+    "instant": "Pengesahan segera",
+    "request": "Disahkan oleh perniagaan",
+    "total": "Jumlah",
+    "estimatedTotal": "Anggaran jumlah",
+    "estimated": "Anggaran",
+    "comesToYou": "Datang ke tempat anda",
+    "online": "Dalam talian",
+    "empty": "Pilih perkhidmatan untuk melihat masa dan harga.",
+    "continue": "Teruskan",
+    "signInToBook": "Log masuk untuk menempah"
+  },
+  "time": {
+    "preselectMissed": "Masa yang anda pilih tidak lagi tersedia dengan pilihan ini. Berikut ialah slot terdekat.",
+    "previousWeeks": "Dua minggu sebelumnya",
+    "nextWeeks": "Dua minggu seterusnya",
+    "chooseDate": "Pilih tarikh",
+    "today": "Hari ini",
+    "timesAvailable": "{count, plural, other {# masa tersedia}}",
+    "noAvailability": "Tiada ketersediaan",
+    "noOpeningsOn": "Tiada slot kosong pada {date}",
+    "noOpeningsThisDay": "Tiada slot kosong pada hari ini",
+    "nextOpening": "Slot seterusnya: {date}.",
+    "tryLater": "Cuba dua minggu seterusnya, atau sertai senarai menunggu dan kami akan maklumkan jika ada slot kosong.",
+    "joinWaitlist": "Sertai senarai menunggu untuk hari ini",
+    "morning": "Pagi",
+    "afternoon": "Tengah hari",
+    "evening": "Petang",
+    "morningTimes": "Masa pagi",
+    "afternoonTimes": "Masa tengah hari",
+    "eveningTimes": "Masa petang",
+    "spotsLeft": "{count, plural, other {# lagi}}",
+    "timesIn": "Masa dalam {abbr} ({zone}).",
+    "timesInLocal": "Masa dalam {abbr} ({zone}) — iaitu {time} di tempat anda."
+  },
+  "waitlist": {
+    "title": "Sertai senarai menunggu",
+    "description": "Jika ada masa kosong pada {date}, kami akan memaklumkan anda segera. Slot kosong diberikan kepada sesiapa yang menempah dahulu.",
+    "cancel": "Batal",
+    "notify": "Maklumkan saya",
+    "windowLabel": "Masa yang sesuai untuk anda",
+    "any": "Mana-mana masa pada hari itu",
+    "morning": "Pagi (sebelum tengah hari)",
+    "afternoon": "Tengah hari (12 tengah hari – 5 petang)",
+    "evening": "Petang (selepas 5 petang)",
+    "joined": "Anda berada dalam senarai menunggu",
+    "joinedBody": "Kami akan maklumkan anda serta-merta jika ada masa kosong."
+  },
+  "price": {
+    "label": "Pecahan harga",
+    "total": "Jumlah",
+    "estimatedTotal": "Anggaran jumlah",
+    "payNow": "Bayar sekarang",
+    "depositNow": "Deposit perlu dibayar sekarang",
+    "remaining": "Baki semasa janji temu",
+    "nothingNow": "Tiada bayaran sekarang — bayar semasa janji temu anda.",
+    "estimateNote": "Harga akhir disahkan oleh perniagaan dan mungkin berbeza mengikut kerja yang diperlukan.",
+    "tax": "Cukai",
+    "serviceFee": "Yuran perkhidmatan"
+  },
+  "checkout": {
+    "title": "Pembayaran",
+    "description": "Lengkapkan pembayaran untuk mengesahkan tempahan anda.",
+    "pay": "Bayar {amount}",
+    "secured": "Dilindungi oleh Stripe. Masa anda ditahan semasa anda membayar.",
+    "declined": "Kad anda ditolak.",
+    "failed": "Kami tidak dapat melengkapkan pembayaran. Kad anda tidak dicaj — sila cuba lagi."
+  },
+  "intake": {
+    "optional": "(pilihan)",
+    "yes": "Ya",
+    "no": "Tidak"
+  }
+}
