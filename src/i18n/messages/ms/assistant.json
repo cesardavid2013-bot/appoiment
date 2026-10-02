@@ -1,0 +1,22 @@
+{
+  "title": "Tanya Kept",
+  "description": "Beritahu apa yang anda perlukan dan bila. Saya semak slot sebenar.",
+  "newConversation": "Perbualan baharu",
+  "close": "Tutup",
+  "forExample": "Contohnya:",
+  "starters": {
+    "one": "Barber esok petang",
+    "two": "Kuku gel hujung minggu ini bawah $60",
+    "three": "Urut berhampiran saya malam ini",
+    "four": "Tutor matematik dalam talian"
+  },
+  "searching": "Sedang mencari",
+  "listening": "Sedang mendengar…",
+  "placeholder": "Barber pagi Sabtu…",
+  "yourMessage": "Mesej anda",
+  "stopListening": "Berhenti mendengar",
+  "speak": "Bercakap",
+  "send": "Hantar",
+  "verified": "Disahkan",
+  "online": "Dalam talian"
+}
