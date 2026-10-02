@@ -1,0 +1,213 @@
+{
+  "governingVersion": "Ikiwa tafsiri zitatofautiana, toleo la Kiingereza ndilo litakalotumika.",
+  "nav": {
+    "label": "Hati za kisheria",
+    "terms": "Masharti ya huduma",
+    "privacy": "Sera ya faragha"
+  },
+  "doc": {
+    "lastUpdated": "Ilisasishwa mwisho {date}",
+    "counselNote": "Hii ni hati ya kuanzia iliyoandikwa kwa lugha rahisi. Itapitiwa na mshauri wa kisheria kabla Kept haijazinduliwa kwa umma, na inaweza kubadilika kutokana na hilo. Tutakujulisha kabla ya mabadiliko yoyote yanayoathiri haki zako kuanza kutumika.",
+    "contents": "Yaliyomo"
+  },
+  "terms": {
+    "meta": {
+      "title": "Masharti ya huduma",
+      "description": "Masharti kwa lugha rahisi ya kutumia Kept kuweka miadi na wataalamu au kuendesha biashara yako."
+    },
+    "title": "Masharti ya huduma",
+    "intro": "Masharti haya yanaeleza jinsi Kept inavyofanya kazi na tunachotarajia kutoka kwa kila anayeitumia. Tumeyaweka mafupi na yanayosomeka kwa urahisi. Kama kuna kitu hakieleweki hapa, <support>tuulize</support>.",
+    "sections": {
+      "whatKeptIs": {
+        "title": "Kept ni nini",
+        "body": {
+          "p1": "Kept ni soko na zana ya kuweka miadi. Wateja huitumia kutafuta na kuweka miadi na wataalamu — vinyozi, wasusi, wakufunzi, walimu, wasafishaji wa magari na wengine wengi. Wataalamu na biashara huitumia kuchapisha huduma zao, kusimamia kalenda yao na kulipwa.",
+          "p2": "<b>Mtaalamu au biashara unayoweka miadi nayo ndiye anayetoa huduma, si Kept.</b> Unapoweka miadi, makubaliano yako ya huduma ni na biashara hiyo. Sisi tunaendesha jukwaa linalowaunganisha, linalokuonyesha bei na sera zao, na kuwasaidia pande zote mbili kuheshimu miadi."
+        }
+      },
+      "account": {
+        "title": "Akaunti yako",
+        "body": {
+          "li1": "Unahitaji kuwa na umri wa angalau miaka 18 (au umri wa utu uzima mahali unapoishi) ili kufungua akaunti. Unaweza kuweka miadi kwa ajili ya mtu mwingine, kama mtoto wako, ikiwa unawajibika kwake.",
+          "li2": "Toa taarifa sahihi na uziweke za kisasa — biashara zinazitegemea ili kukufikia kuhusu miadi yako.",
+          "li3": "Weka nenosiri lako siri. Unawajibika kwa yanayotokea kwenye akaunti yako. Ukifikiri mtu mwingine ameipata, badilisha nenosiri lako na utoe vifaa vingine kwenye Kuingia na usalama.",
+          "li4": "Mtu mmoja kwa kila akaunti. Biashara huongeza wanatimu kama watu tofauti badala ya kushiriki akaunti moja ya kuingia."
+        }
+      },
+      "booking": {
+        "title": "Kuweka miadi kama mteja",
+        "body": {
+          "p1": "Kabla ya kuthibitisha miadi utaona bei (au jinsi inavyokadiriwa), muda inaochukua, amana yoyote, na sera ya biashara ya kughairi na kutofika. Kwa kuweka miadi, unakubali masharti hayo.",
+          "li1": "<b>Miadi ya papo hapo</b> huthibitishwa mara moja. <b>Maombi</b> huthibitishwa tu biashara inapoyakubali; hadi hapo wakati wako unashikiliwa, na maombi yasiyojibiwa huisha muda.",
+          "li2": "Unaweza kughairi au kupanga upya kutoka ukurasa wako wa miadi ndani ya kanuni za biashara. Kughairi kwa kuchelewa na kutofika kunaweza kukugharimu sehemu au amana yote, au ada, kama ilivyoonyeshwa ulipoweka miadi.",
+          "li3": "Ikiwa huduma imepangiwa bei ya makadirio (kwa mfano “kuanzia” au kiwango), bei ya mwisho inakubaliwa na biashara wakati wa miadi yako.",
+          "li4": "Ikiwa Kept inatoza ada ya huduma kwa miadi, inaonyeshwa kabla ya kuthibitisha. Hatuongezi makato baadaye."
+        }
+      },
+      "payments": {
+        "title": "Malipo na marejesho",
+        "body": {
+          "p1": "Malipo ya mtandaoni huchakatwa na Stripe. Kept haioni wala kuhifadhi nambari yako kamili ya kadi. Baadhi ya biashara hupokea malipo ana kwa ana; katika hali hiyo, unawalipa moja kwa moja.",
+          "li1": "Marejesho hufuata sera ya biashara iliyoonyeshwa wakati wa kuweka miadi, na hutolewa kwenye kadi uliyolipia. Benki yako inaweza kuchukua siku kadhaa za kazi kuyaonyesha.",
+          "li2": "Ikiwa biashara itaghairi au kukataa miadi yako, kila ulichokilipa mtandaoni kwa ajili yake kinarejeshwa.",
+          "li3": "Kama kuna tatizo na malipo, <supportPayment>wasiliana nasi</supportPayment> kabla ya kufungua mgogoro na benki yako — kwa kawaida ni haraka zaidi."
+        }
+      },
+      "businesses": {
+        "title": "Kwa wataalamu na biashara",
+        "body": {
+          "li1": "Tangazo lako lazima liwe sahihi: wewe ni nani, unachotoa, bei zako, unakofanyia kazi na sera zako. Picha na video lazima ziwe za kazi yako mwenyewe, au zitumike kwa ruhusa.",
+          "li2": "Unawajibika kushikilia leseni, vibali, bima na sifa zozote ambazo kazi yako inahitaji, na kutimiza wajibu wako wa kodi.",
+          "li3": "Heshimu miadi unayokubali na sera unazochapisha. Kughairi mara kwa mara dakika za mwisho, kutofika au matangazo ya kupotosha kunaweza kusababisha wasifu wako kusimamishwa.",
+          "li4": "Mipango, vikomo na ada vimeorodheshwa kwenye <pricing>ukurasa wetu wa bei</pricing>. Ada ya jukwaa inatumika tu kwa malipo ambayo wateja hufanya mtandaoni kupitia Kept. Malipo kwako hufanywa na Stripe kwenye akaunti yako mwenyewe na pia yanategemea masharti ya Stripe.",
+          "li5": "Taarifa za wateja unazopokea kupitia Kept zinaweza kutumika kutoa na kufuatilia huduma zako. Tuma matangazo kwa wateja waliokubali kuyapokea pekee.",
+          "li6": "Unabaki mmiliki wa unachopakia, na unaipa Kept ruhusa ya kukionyesha kwenye Kept na katika kutangaza wasifu wako wakati tangazo lako lipo hai.",
+          "li7": "Nafasi za Spotlight huwa na lebo ya kutangazwa kila wakati. Ni za bure wakati wa uzinduzi; hilo likibadilika tutakuambia kabla ya kutoza chochote."
+        }
+      },
+      "reviews": {
+        "title": "Maoni",
+        "body": {
+          "p1": "Ni wateja walio na miadi iliyokamilika tu wanaoweza kutoa maoni, mara moja kwa kila miadi. Maoni lazima yawe ya kweli na kuhusu uzoefu wako mwenyewe. Biashara zinaweza kujibu hadharani.",
+          "p2": "Kutoa chochote kwa kubadilishana na maoni, au kwa kuondoa moja, hakuruhusiwi. Tunaweza kuficha au kuondoa maoni yanayokiuka masharti haya — kwa mfano barua taka, chuki, taarifa binafsi au mgongano wa maslahi — lakini hatuondoi maoni kwa sababu tu ni mabaya."
+        }
+      },
+      "conduct": {
+        "title": "Mambo usiyoweza kufanya kwenye Kept",
+        "body": {
+          "li1": "Kutoa au kuweka miadi ya kitu chochote kinyume cha sheria, huduma za ngono, au chochote kinachohatarisha watu.",
+          "li2": "Kumnyanyasa, kumtisha au kumbagua mtu yeyote — wateja, wataalamu au timu yetu.",
+          "li3": "Kuunda akaunti, matangazo, miadi au maoni bandia, au kujifanya mtu mwingine.",
+          "li4": "Kupakia maudhui ambayo huna haki ya kushiriki, au yanayojumuisha taarifa binafsi za watu wengine bila ruhusa.",
+          "li5": "Kuvuna data kwa wingi, kuipakia kupita kiasi, kuipeleleza au kuingilia huduma, au kujaribu kukwepa usalama wake au ada zake."
+        }
+      },
+      "ourRole": {
+        "title": "Nafasi yetu na mipaka yake",
+        "body": {
+          "p1": "Tunafanya kazi kuiweka Kept salama na ya kuaminika, na tunachukua hatua kwa ripoti. Lakini biashara kwenye Kept ni huru — si wafanyakazi wetu wala mawakala, na hatuhakikishii ubora, usalama au uhalali wa huduma zao. Beji ya “imethibitishwa” inamaanisha tulipitia hati ambazo biashara ilitoa; si uidhinishaji.",
+          "p2": "Kept inatolewa “kama ilivyo”. Kwa kadiri sheria inavyoruhusu, hatuwajibiki kwa hasara zisizo za moja kwa moja au zinazofuata, au kwa kinachotokea wakati wa huduma kati yako na biashara. Hakuna kitu katika masharti haya kinachopunguza haki ulizo nazo chini ya sheria ya ulinzi wa mlaji ambazo haziwezi kuondolewa."
+        }
+      },
+      "ending": {
+        "title": "Kusimamishwa na kufunga akaunti yako",
+        "body": {
+          "p1": "Unaweza kufuta akaunti yako wakati wowote kwenye <privacyData>Faragha na data</privacyData>. Miadi ijayo inaghairiwa kulingana na sera ya kila biashara, na rekodi ambazo biashara zinahitaji — kama miadi iliyopita na malipo — zinahifadhiwa kwa umbo lisilomtambulisha mtu.",
+          "p2": "Tunaweza kusimamisha au kufunga akaunti zinazokiuka masharti haya au kuhatarisha wengine. Inapowezekana, tutakueleza sababu na kukupa nafasi ya kujibu."
+        }
+      },
+      "changes": {
+        "title": "Mabadiliko, migogoro na mawasiliano",
+        "body": {
+          "p1": "Tunapobadilisha masharti haya kwa njia inayojalisha, tutakujulisha mapema kwa barua pepe au ndani ya programu. Kuendelea kutumia Kept baada ya mabadiliko kuanza kunamaanisha unayakubali.",
+          "p2": "Sheria inayotawala na utaratibu wa kutatua migogoro vitaongezwa hapa baada ya mapitio ya kisheria, kabla Kept haijazinduliwa kwa umma.",
+          "p3": "Una maswali kuhusu masharti haya? <support>Wasiliana nasi</support>."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Sera ya faragha",
+      "description": "Data binafsi gani Kept inakusanya, kwa nini, nani anaiona, na jinsi ya kuipakua au kuifuta."
+    },
+    "title": "Sera ya faragha",
+    "intro": "Sera hii inaeleza data binafsi gani Kept inakusanya, kwa nini tunaihitaji, nani anaweza kuiona, na chaguo ulizo nazo — kwa wateja na wataalamu kwa pamoja.",
+    "sections": {
+      "summary": {
+        "title": "Toleo fupi",
+        "body": {
+          "li1": "Tunakusanya tunachohitaji kuendesha miadi: wewe ni nani, unachoweka miadi yake, na jinsi ya kukufikia.",
+          "li2": "Biashara unazoweka miadi nazo huona maelezo wanayohitaji kukuhudumia. Hakuna mwingine anayeyaona, isipokuwa watoa huduma wanaotusaidia kuendesha Kept.",
+          "li3": "Hatuuzi data yako binafsi, na hatutumii vifuatiliaji vya matangazo.",
+          "li4": "Unaweza kupakua nakala ya data yako au kufuta akaunti yako mwenyewe, wakati wowote, kwenye <privacyData>Faragha na data</privacyData>."
+        }
+      },
+      "youGive": {
+        "title": "Taarifa unazotupa",
+        "body": {
+          "li1": "<b>Akaunti:</b> jina lako, barua pepe, nenosiri (huhifadhiwa tu kama hash ya njia moja), na hiari nambari yako ya simu, picha na saa za eneo. Ukiingia kwa Google, tunapokea jina lako na barua pepe kutoka Google.",
+          "li2": "<b>Miadi:</b> huduma, wakati, biashara na bei; madokezo unayoongeza; majibu ya maswali ya awali ya biashara; na anwani ikiwa mtaalamu anakuja kwako.",
+          "li3": "<b>Malipo:</b> kiasi, hali na marejesho. Maelezo ya kadi huenda moja kwa moja kwa Stripe — hatupokei nambari yako kamili ya kadi.",
+          "li4": "<b>Ujumbe, maoni na maombi ya usaidizi</b>, ikiwemo picha zozote unazoambatisha, na anwani unazohifadhi.",
+          "li5": "<b>Biashara</b> pia hutupa maelezo ya biashara, wanatimu, huduma, ratiba, picha na video za jalada la kazi, maelezo ya malipo kwao (yanayoshikiliwa na Stripe) na rekodi za wateja wanazohifadhi."
+        }
+      },
+      "automatic": {
+        "title": "Taarifa zinazokusanywa kiotomatiki",
+        "body": {
+          "li1": "<b>Vipindi vya kuingia:</b> kuki hukuweka umeingia. Tunahifadhi kipindi pamoja na aina ya kivinjari chako ili vifaa vyako viweze kutolewa kwa usalama.",
+          "li2": "<b>Usalama:</b> tunahifadhi hash ya njia moja yenye ufunguo ya anwani yako ya IP — si anwani yenyewe — ili kudhibiti matumizi mabaya na kuchunguza shughuli za kutiliwa shaka.",
+          "li3": "<b>Mahali:</b> ukichagua mahali au kushiriki mahali ulipo ili kutafuta karibu, huhifadhiwa kwenye kuki kwenye kifaa chako ili kukumbuka chaguo lako. Hatufuatilii mahali ulipo chinichini.",
+          "li4": "<b>Shughuli kwenye Kept:</b> wataalamu unaowatazama na kuwahifadhi, ili tuweze kukuonyesha tena; na idadi ya mitazamo na mibofyo kwenye matangazo, inayoripotiwa kwa biashara kama jumla tu."
+        }
+      },
+      "use": {
+        "title": "Jinsi tunavyoitumia",
+        "body": {
+          "li1": "Kuweka, kubadilisha na kukukumbusha kuhusu miadi, na kuchakata malipo na marejesho.",
+          "li2": "Kutuma arifa ulizochagua. Uthibitisho na mabadiliko ya miadi hutumwa kila wakati; vingine vyote vinaweza kuzimwa kwenye Mipangilio ya arifa.",
+          "li3": "Kukuonyesha wataalamu na nafasi zinazofaa karibu nawe.",
+          "li4": "Kuiweka Kept salama: kuzuia ulaghai, barua taka na matumizi mabaya, na kuchukua hatua kwa ripoti.",
+          "li5": "Kujibu maombi ya usaidizi na kuboresha Kept.",
+          "li6": "Kutimiza wajibu wa kisheria, kama rekodi za kodi na uhasibu."
+        }
+      },
+      "businesses": {
+        "title": "Biashara huona nini",
+        "body": {
+          "p1": "Unapoweka miadi, biashara huona jina lako, barua pepe na nambari ya simu (ikiwa uliongeza), miadi na chochote ulichoshiriki nao — madokezo, majibu ya awali, anwani ya huduma — pamoja na ziara zako za awali nao. Wanaweza kuongeza madokezo ya faragha kwenye rekodi yao ya mteja.",
+          "p2": "Kila biashara inawajibika kwa jinsi inavyotumia rekodi zake za wateja, na inaweza kukutumia matangazo tu ikiwa ulikubali. Maoni ni ya umma na huonyesha jina lako la kwanza na herufi ya kwanza ya jina la mwisho."
+        }
+      },
+      "sharing": {
+        "title": "Tunaishiriki na nani mwingine",
+        "body": {
+          "p1": "Tunatumia idadi ndogo ya watoa huduma wanaochakata data kwa niaba yetu, chini ya mikataba inayopunguza wanachoweza kufanya nayo:",
+          "li1": "Stripe, kwa malipo na kulipa wahusika.",
+          "li2": "Mtoa huduma wetu wa barua pepe, na mtoa huduma wa SMS ikiwa ujumbe mfupi umewashwa.",
+          "li3": "Google, tu ukichagua kuingia kwa Google.",
+          "li4": "Huduma za ramani na kutafuta anwani, kuonyesha ramani na kupata mahali unapotafuta.",
+          "li5": "Watoa huduma wetu wa kuhifadhi na miundombinu.",
+          "p2": "Tunaweza pia kufichua taarifa sheria inapohitaji, kulinda usalama wa mtu, au kama sehemu ya muungano au ununuzi wa kampuni — ambapo sera hii ingeendelea kutumika. Hatuuzi kamwe data binafsi."
+        }
+      },
+      "rights": {
+        "title": "Chaguo na haki zako",
+        "body": {
+          "li1": "<b>Kufikia:</b> pakua nakala ya data yako kutoka <privacyData>Faragha na data</privacyData>.",
+          "li2": "<b>Kusahihisha:</b> sasisha maelezo yako kwenye <profile>Wasifu</profile>, au utuombe tufanye hivyo.",
+          "li3": "<b>Kufuta:</b> futa akaunti yako kwenye Faragha na data. Tazama hapa chini tunachohifadhi.",
+          "li4": "<b>Arifa:</b> chagua tunachotuma kwenye <notifications>Mipangilio ya arifa</notifications>.",
+          "li5": "Kulingana na unakoishi unaweza kuwa na haki zaidi, kama kupinga matumizi fulani au kuwasilisha malalamiko kwa mamlaka ya ulinzi wa data. <supportAccount>Wasiliana nasi</supportAccount> nasi tutakusaidia."
+        }
+      },
+      "retention": {
+        "title": "Tunaihifadhi kwa muda gani",
+        "body": {
+          "p1": "Tunahifadhi taarifa zako wakati akaunti yako ni hai.",
+          "p2": "Unapofuta akaunti yako, tunafuta mara moja jina lako, barua pepe, simu, picha, anwani zilizohifadhiwa, wataalamu uliowahifadhi, arifa na njia za kuingia. Rekodi ambazo biashara na uhasibu zinazitegemea — miadi iliyopita, malipo na maoni — zinahifadhiwa, zikiunganishwa na “Mtumiaji aliyefutwa” badala ya wewe. Ujumbe uliobadilishana na biashara hubaki kwenye historia ya mazungumzo ya biashara hiyo."
+        }
+      },
+      "security": {
+        "title": "Usalama",
+        "body": {
+          "p1": "Manenosiri hufanywa hash kwa Argon2, vipindi huhifadhiwa upande wa seva na vinaweza kufutwa, miunganisho imesimbwa kwa njia fiche, na picha zilizopakiwa husimbwa upya ili data ya mahali iliyofichwa iondolewe. Hakuna mfumo ulio salama kabisa; tukigundua uvunjaji unaokuathiri, tutakujulisha haraka."
+        }
+      },
+      "children": {
+        "title": "Watoto",
+        "body": {
+          "p1": "Akaunti za Kept ni za watu wazima. Mzazi au mlezi anaweza kuweka miadi ya huduma kwa ajili ya mtoto wake; hatukusanyi kwa kujua data binafsi moja kwa moja kutoka kwa watoto."
+        }
+      },
+      "changes": {
+        "title": "Mabadiliko na mawasiliano",
+        "body": {
+          "p1": "Tukibadilisha sera hii kwa njia inayojalisha, tutakujulisha kabla haijaanza kutumika.",
+          "p2": "Una maswali au maombi kuhusu data yako? <supportAccount>Wasiliana nasi</supportAccount>."
+        }
+      }
+    }
+  }
+}

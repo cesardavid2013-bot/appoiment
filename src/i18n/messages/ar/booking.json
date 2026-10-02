@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "احجز لدى {name}",
+    "fallbackTitle": "احجز"
+  },
+  "steps": {
+    "service": "اختر خدمة",
+    "options": "خصّص",
+    "who": "مع من وأين",
+    "time": "اختر وقتًا",
+    "details": "بعض التفاصيل",
+    "review": "راجع وأكّد"
+  },
+  "header": {
+    "backTo": "العودة إلى {name}",
+    "previousStep": "الخطوة السابقة",
+    "stepOf": "الخطوة {current} من {total}",
+    "exit": "الخروج من الحجز"
+  },
+  "service": {
+    "optionsAvailable": "خيارات متاحة",
+    "group": "جماعي · حتى {count}"
+  },
+  "options": {
+    "required": "مطلوب",
+    "upTo": "اختر حتى {count}",
+    "optionalAny": "اختياري · اختر ما شئت",
+    "optional": "اختياري",
+    "included": "مشمول",
+    "errorRequired": "اختر خيارًا لـ «{name}».",
+    "errorOnlyOne": "اختر خيارًا واحدًا فقط لـ «{name}».",
+    "errorUpTo": "اختر حتى {count} لـ «{name}».",
+    "errorUnavailable": "أحد الخيارات المحددة لم يعد متاحًا."
+  },
+  "who": {
+    "where": "أين",
+    "with": "مع",
+    "comesToYou": "يأتي إليك · ضمن {km} كم من {city}",
+    "online": "جلسة عبر الإنترنت",
+    "anyPro": "أي محترف متاح",
+    "anyProHint": "أكبر عدد من الأوقات — سنختار لك من هو متاح."
+  },
+  "details": {
+    "addressLabel": "إلى أين نأتي؟",
+    "addressHint": "ضمن {km} كم من {city}. يُشارَك مع النشاط التجاري فقط.",
+    "addressPlaceholder": "عنوان الشارع، الشقة، المدينة",
+    "consent": "قرأت ما سبق وأوافق عليه",
+    "age": "أؤكد أن عمري {age} عامًا على الأقل",
+    "noteLabel": "هل هناك شيء آخر يجب أن يعرفوه؟",
+    "notePlaceholder": "حساسية، تفضيلات، ملاحظات حول مواقف السيارات…"
+  },
+  "review": {
+    "changeTime": "تغيير الوقت",
+    "with": "مع",
+    "where": "أين",
+    "yourAddress": "عنوانك",
+    "online": "عبر الإنترنت",
+    "noteLabel": "هل هناك ما يجب أن يعرفوه؟",
+    "notePlaceholder": "تفضيلات، أسئلة، احتياجات الوصول…",
+    "promoApplied": "تم تطبيق {code}",
+    "promoRemove": "إزالة",
+    "promoPlaceholder": "رمز العرض",
+    "promoApply": "تطبيق",
+    "beforeYouBook": "قبل أن تحجز",
+    "bookingAs": "الحجز باسم {name}"
+  },
+  "confirm": {
+    "request": "إرسال طلب الحجز",
+    "requestShort": "إرسال الطلب",
+    "pay": "أكّد وادفع {amount}",
+    "payShort": "ادفع {amount}",
+    "confirm": "تأكيد الحجز",
+    "confirmShort": "تأكيد"
+  },
+  "summary": {
+    "label": "ملخص الحجز",
+    "instant": "تأكيد فوري",
+    "request": "يؤكده النشاط التجاري",
+    "total": "الإجمالي",
+    "estimatedTotal": "الإجمالي التقديري",
+    "estimated": "تقديري",
+    "comesToYou": "يأتي إليك",
+    "online": "عبر الإنترنت",
+    "empty": "اختر خدمة لعرض الأوقات والأسعار.",
+    "continue": "متابعة",
+    "signInToBook": "سجّل الدخول للحجز"
+  },
+  "time": {
+    "preselectMissed": "الوقت الذي اخترته لم يعد متاحًا بهذه الخيارات. إليك أقرب الأوقات المتاحة.",
+    "previousWeeks": "الأسبوعان السابقان",
+    "nextWeeks": "الأسبوعان القادمان",
+    "chooseDate": "اختر تاريخًا",
+    "today": "اليوم",
+    "timesAvailable": "{count, plural, zero {لا توجد أوقات متاحة} one {وقت واحد متاح} two {وقتان متاحان} few {# أوقات متاحة} many {# وقتًا متاحًا} other {# وقت متاح}}",
+    "noAvailability": "لا توجد أوقات متاحة",
+    "noOpeningsOn": "لا توجد أوقات متاحة في {date}",
+    "noOpeningsThisDay": "لا توجد أوقات متاحة في هذا اليوم",
+    "nextOpening": "أقرب وقت متاح: {date}.",
+    "tryLater": "جرّب الأسبوعين القادمين، أو انضم إلى قائمة الانتظار وسنُعلمك إن توفر وقت.",
+    "joinWaitlist": "انضم إلى قائمة الانتظار لهذا اليوم",
+    "morning": "صباحًا",
+    "afternoon": "بعد الظهر",
+    "evening": "مساءً",
+    "morningTimes": "أوقات الصباح",
+    "afternoonTimes": "أوقات ما بعد الظهر",
+    "eveningTimes": "أوقات المساء",
+    "spotsLeft": "{count, plural, zero {لا يتبقى شيء} one {تبقّى واحد} two {تبقّى اثنان} few {تبقّى #} many {تبقّى #} other {تبقّى #}}",
+    "timesIn": "الأوقات بتوقيت {abbr} ({zone}).",
+    "timesInLocal": "الأوقات بتوقيت {abbr} ({zone}) — أي {time} في مكانك."
+  },
+  "waitlist": {
+    "title": "الانضمام إلى قائمة الانتظار",
+    "description": "إذا توفر وقت في {date}، فسنُعلمك فورًا. تُمنح الأوقات لمن يحجز أولًا.",
+    "cancel": "إلغاء",
+    "notify": "أعلمني",
+    "windowLabel": "الأوقات المناسبة لك",
+    "any": "أي وقت في ذلك اليوم",
+    "morning": "صباحًا (قبل الظهر)",
+    "afternoon": "بعد الظهر (من الظهر حتى 5 م)",
+    "evening": "مساءً (بعد 5 م)",
+    "joined": "أنت في قائمة الانتظار",
+    "joinedBody": "سنُعلمك فورًا إذا توفر وقت."
+  },
+  "price": {
+    "label": "تفاصيل السعر",
+    "total": "الإجمالي",
+    "estimatedTotal": "الإجمالي التقديري",
+    "payNow": "ادفع الآن",
+    "depositNow": "العربون المستحق الآن",
+    "remaining": "المتبقي عند الموعد",
+    "nothingNow": "لا شيء للدفع الآن — ادفع عند موعدك.",
+    "estimateNote": "يؤكد النشاط التجاري السعر النهائي وقد يختلف بحسب العمل المطلوب.",
+    "tax": "الضريبة",
+    "serviceFee": "رسوم الخدمة"
+  },
+  "checkout": {
+    "title": "الدفع",
+    "description": "أكمل الدفع لتأكيد حجزك.",
+    "pay": "ادفع {amount}",
+    "secured": "مؤمَّن بواسطة Stripe. يُحجز وقتك أثناء الدفع.",
+    "declined": "تم رفض بطاقتك.",
+    "failed": "تعذّر إتمام الدفع. لم يتم خصم أي مبلغ من بطاقتك — يرجى المحاولة مرة أخرى."
+  },
+  "intake": {
+    "optional": "(اختياري)",
+    "yes": "نعم",
+    "no": "لا"
+  }
+}

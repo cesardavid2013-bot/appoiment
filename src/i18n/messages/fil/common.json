@@ -1,0 +1,117 @@
+{
+  "language": "Wika",
+  "meta": {
+    "title": "Kept — Mag-book ng mapagkakatiwalaang lokal na propesyonal",
+    "description": "Maghanap at mag-book ng barbero, stylist, trainer, photographer, tutor at iba pang lokal na propesyonal — at pamahalaan nang madali ang sarili mong mga appointment."
+  },
+  "skipToContent": "Lumaktaw sa nilalaman",
+  "logoHome": "Home ng Kept",
+  "header": {
+    "mainNav": "Pangunahin",
+    "search": "Maghanap ng serbisyo o propesyonal",
+    "ask": "Magtanong",
+    "askKept": "Magtanong kay Kept",
+    "explore": "Mag-explore",
+    "myBusiness": "Aking negosyo",
+    "forPros": "Para sa mga propesyonal",
+    "bookings": "Mga booking",
+    "messages": "Mga mensahe",
+    "notifications": "Mga abiso",
+    "unread": "hindi pa nababasa",
+    "accountMenu": "Menu ng account",
+    "logIn": "Mag-log in",
+    "signUp": "Mag-sign up"
+  },
+  "accountMenu": {
+    "bookings": "Mga booking",
+    "saved": "Mga naka-save",
+    "messages": "Mga mensahe",
+    "settings": "Mga setting ng account",
+    "help": "Tulong at suporta",
+    "switchToBusiness": "Lumipat sa negosyo",
+    "offerServices": "Ialok ang iyong serbisyo",
+    "admin": "Admin console",
+    "signOut": "Mag-sign out"
+  },
+  "tabs": {
+    "label": "Pangunahin",
+    "home": "Home",
+    "explore": "Explore",
+    "bookings": "Mga booking",
+    "inbox": "Inbox",
+    "account": "Account"
+  },
+  "footer": {
+    "tagline": "Mag-book ng mapagkakatiwalaang propesyonal. Pamahalaan ang iyong mga appointment nang mas magaan.",
+    "discover": "Tuklasin",
+    "explore": "Mag-explore",
+    "hair": "Buhok at barbero",
+    "wellness": "Wellness",
+    "fitness": "Fitness",
+    "forPros": "Para sa mga propesyonal",
+    "howItWorks": "Paano ito gumagana",
+    "listServices": "I-list ang iyong serbisyo",
+    "dashboard": "Dashboard ng negosyo",
+    "help": "Tulong",
+    "support": "Suporta",
+    "terms": "Mga Tuntunin",
+    "privacy": "Privacy",
+    "copyright": "© {year} Kept. Lahat ng karapatan ay nakalaan."
+  },
+  "price": {
+    "free": "Libre",
+    "quote": "Presyo sa konsultasyon",
+    "from": "Simula {price}"
+  },
+  "rating": {
+    "new": "Bago",
+    "summary": "may rating na {avg} mula sa {count, plural, one {# review} other {# review}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Naghihintay ng bayad",
+    "requested": "Naipadala ang kahilingan",
+    "confirmed": "Kumpirmado",
+    "checked_in": "Naka-check in",
+    "in_progress": "Kasalukuyan",
+    "completed": "Tapos na",
+    "cancelled": "Kinansela",
+    "declined": "Tinanggihan",
+    "no_show": "Hindi sumipot",
+    "expired": "Nag-expire"
+  },
+  "policy": {
+    "freeUntil": "Libreng pagkansela hanggang {hours} oras bago ang appointment. Ang mas huling pagkansela ay sisingilin ng {percent}% ng kabuuan.",
+    "cancelAhead": "Pakikansela nang hindi bababa sa {hours} oras bago ang iyong appointment.",
+    "freeAnyTime": "Libreng pagkansela anumang oras bago ang iyong appointment.",
+    "depositRefundable": "Maibabalik ang deposito kung makakansela ka sa tamang oras.",
+    "depositNonRefundable": "Hindi maibabalik ang deposito.",
+    "reschedule": "Mag-reschedule online hanggang {hours} oras bago ang appointment."
+  },
+  "ui": {
+    "close": "Isara",
+    "keepIt": "Panatilihin",
+    "optional": "Opsyonal",
+    "stars": "{value} sa 5 bituin",
+    "notifications": "Mga abiso"
+  },
+  "notFound": {
+    "eyebrow": "Hindi nahanap ang pahina",
+    "title": "Lumipat na ang pahinang iyon.",
+    "body": "Maaaring luma na ang link, o nagbago na ng address ang propesyonal.",
+    "home": "Bumalik sa home",
+    "explore": "Mag-explore ng mga propesyonal"
+  },
+  "error": {
+    "eyebrow": "May nangyaring mali",
+    "title": "Hindi namin ma-load ang pahinang ito.",
+    "body": "Problema ito sa panig namin, hindi sa iyo. Subukan muli sa ilang sandali — kung patuloy itong mangyari, ipaalam sa amin.",
+    "retry": "Subukan muli",
+    "support": "Makipag-ugnayan sa suporta",
+    "ref": "Sanggunian {id}"
+  },
+  "offline": {
+    "eyebrow": "Offline ka",
+    "title": "Walang koneksyon ngayon.",
+    "body": "Ligtas ang iyong mga booking. Kumonekta muli at itutuloy ng Kept kung saan ka huminto."
+  }
+}

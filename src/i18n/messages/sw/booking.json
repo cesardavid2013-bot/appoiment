@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Weka miadi na {name}",
+    "fallbackTitle": "Weka miadi"
+  },
+  "steps": {
+    "service": "Chagua huduma",
+    "options": "Rekebisha",
+    "who": "Nani na wapi",
+    "time": "Chagua wakati",
+    "details": "Maelezo machache",
+    "review": "Kagua na thibitisha"
+  },
+  "header": {
+    "backTo": "Rudi kwa {name}",
+    "previousStep": "Hatua iliyotangulia",
+    "stepOf": "Hatua {current} kati ya {total}",
+    "exit": "Toka kwenye kuweka miadi"
+  },
+  "service": {
+    "optionsAvailable": "Chaguo zinapatikana",
+    "group": "Kikundi · hadi {count}"
+  },
+  "options": {
+    "required": "Lazima",
+    "upTo": "Chagua hadi {count}",
+    "optionalAny": "Hiari · chagua yoyote",
+    "optional": "Hiari",
+    "included": "Imejumuishwa",
+    "errorRequired": "Chagua chaguo la “{name}”.",
+    "errorOnlyOne": "Chagua chaguo moja tu la “{name}”.",
+    "errorUpTo": "Chagua hadi {count} kwa “{name}”.",
+    "errorUnavailable": "Mojawapo ya chaguo ulizochagua halipatikani tena."
+  },
+  "who": {
+    "where": "Wapi",
+    "with": "Na",
+    "comesToYou": "Anakuja kwako · ndani ya km {km} kutoka {city}",
+    "online": "Kikao cha mtandaoni",
+    "anyPro": "Mtaalamu yeyote anayepatikana",
+    "anyProHint": "Nafasi nyingi zaidi — tutakulinganisha na yeyote aliye huru."
+  },
+  "details": {
+    "addressLabel": "Tuje wapi?",
+    "addressHint": "Ndani ya km {km} kutoka {city}. Inashirikiwa na biashara pekee.",
+    "addressPlaceholder": "Anwani ya barabara, nyumba, jiji",
+    "consent": "Nimesoma na ninakubali yaliyo hapo juu",
+    "age": "Ninathibitisha kuwa nina umri wa angalau miaka {age}",
+    "noteLabel": "Kuna jambo lingine wanalopaswa kujua?",
+    "notePlaceholder": "Mzio, mapendeleo, maelezo ya maegesho…"
+  },
+  "review": {
+    "changeTime": "Badilisha wakati",
+    "with": "Na",
+    "where": "Wapi",
+    "yourAddress": "Anwani yako",
+    "online": "Mtandaoni",
+    "noteLabel": "Kuna jambo wanalopaswa kujua?",
+    "notePlaceholder": "Mapendeleo, maswali, mahitaji ya ufikiaji…",
+    "promoApplied": "{code} imetumika",
+    "promoRemove": "Ondoa",
+    "promoPlaceholder": "Msimbo wa punguzo",
+    "promoApply": "Tumia",
+    "beforeYouBook": "Kabla ya kuweka miadi",
+    "bookingAs": "Unaweka miadi kama {name}"
+  },
+  "confirm": {
+    "request": "Tuma ombi la miadi",
+    "requestShort": "Tuma ombi",
+    "pay": "Thibitisha na ulipe {amount}",
+    "payShort": "Lipa {amount}",
+    "confirm": "Thibitisha miadi",
+    "confirmShort": "Thibitisha"
+  },
+  "summary": {
+    "label": "Muhtasari wa miadi",
+    "instant": "Uthibitisho wa papo hapo",
+    "request": "Huthibitishwa na biashara",
+    "total": "Jumla",
+    "estimatedTotal": "Jumla inayokadiriwa",
+    "estimated": "Inakadiriwa",
+    "comesToYou": "Anakuja kwako",
+    "online": "Mtandaoni",
+    "empty": "Chagua huduma ili uone nyakati na bei.",
+    "continue": "Endelea",
+    "signInToBook": "Ingia ili uweke miadi"
+  },
+  "time": {
+    "preselectMissed": "Wakati uliochagua haupatikani tena kwa chaguo hizi. Hizi hapa nafasi zilizo karibu zaidi.",
+    "previousWeeks": "Wiki mbili zilizopita",
+    "nextWeeks": "Wiki mbili zijazo",
+    "chooseDate": "Chagua tarehe",
+    "today": "Leo",
+    "timesAvailable": "{count, plural, one {wakati # unapatikana} other {nyakati # zinapatikana}}",
+    "noAvailability": "Hakuna nafasi",
+    "noOpeningsOn": "Hakuna nafasi tarehe {date}",
+    "noOpeningsThisDay": "Hakuna nafasi siku hii",
+    "nextOpening": "Nafasi ijayo: {date}.",
+    "tryLater": "Jaribu wiki mbili zijazo, au ujiunge na orodha ya kusubiri nasi tutakuarifu nafasi ikipatikana.",
+    "joinWaitlist": "Jiunge na orodha ya kusubiri ya siku hii",
+    "morning": "Asubuhi",
+    "afternoon": "Alasiri",
+    "evening": "Jioni",
+    "morningTimes": "Nyakati za asubuhi",
+    "afternoonTimes": "Nyakati za alasiri",
+    "eveningTimes": "Nyakati za jioni",
+    "spotsLeft": "{count, plural, one {# imebaki} other {# zimebaki}}",
+    "timesIn": "Nyakati kwa {abbr} ({zone}).",
+    "timesInLocal": "Nyakati kwa {abbr} ({zone}) — hiyo ni {time} mahali ulipo."
+  },
+  "waitlist": {
+    "title": "Jiunge na orodha ya kusubiri",
+    "description": "Ikiwa nafasi itapatikana tarehe {date}, tutakuarifu mara moja. Nafasi huenda kwa atakayeweka miadi kwanza.",
+    "cancel": "Ghairi",
+    "notify": "Niarifu",
+    "windowLabel": "Nyakati zinazokufaa",
+    "any": "Wakati wowote siku hiyo",
+    "morning": "Asubuhi (kabla ya adhuhuri)",
+    "afternoon": "Alasiri (adhuhuri – saa 11 jioni)",
+    "evening": "Jioni (baada ya saa 11 jioni)",
+    "joined": "Uko kwenye orodha ya kusubiri",
+    "joinedBody": "Tutakuarifu mara moja ikiwa nafasi itapatikana."
+  },
+  "price": {
+    "label": "Mchanganuo wa bei",
+    "total": "Jumla",
+    "estimatedTotal": "Jumla inayokadiriwa",
+    "payNow": "Lipa sasa",
+    "depositNow": "Amana inayodaiwa sasa",
+    "remaining": "Inayobaki wakati wa miadi",
+    "nothingNow": "Hakuna cha kulipa sasa — lipa wakati wa miadi yako.",
+    "estimateNote": "Bei ya mwisho huthibitishwa na biashara na inaweza kutofautiana kulingana na kazi inayohitajika.",
+    "tax": "Kodi",
+    "serviceFee": "Ada ya huduma"
+  },
+  "checkout": {
+    "title": "Malipo",
+    "description": "Kamilisha malipo ili kuthibitisha miadi yako.",
+    "pay": "Lipa {amount}",
+    "secured": "Inalindwa na Stripe. Wakati wako unashikiliwa unapolipa.",
+    "declined": "Kadi yako imekataliwa.",
+    "failed": "Hatukuweza kukamilisha malipo. Kadi yako haikutozwa — tafadhali jaribu tena."
+  },
+  "intake": {
+    "optional": "(hiari)",
+    "yes": "Ndiyo",
+    "no": "Hapana"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Booking", "hint": "Mga pagbabago, pagkansela o problema sa isang appointment." },
+    "payment": { "label": "Pagbabayad", "hint": "Mga singil, deposito, refund o tip." },
+    "account": { "label": "Account", "hint": "Pag-sign in, iyong profile o iyong data." },
+    "report": { "label": "Mag-ulat ng negosyo", "hint": "Mga alalahanin sa kaligtasan, mapanlinlang na listing o maling asal." },
+    "other": { "label": "Iba pa", "hint": "Anupamang maitutulong namin." }
+  },
+  "status": {
+    "open": "Naghihintay sa suporta",
+    "awaiting_customer": "Nasagot na",
+    "resolved": "Naresolba",
+    "closed": "Sarado"
+  },
+  "home": {
+    "title": "Tulong at suporta",
+    "description": "Humingi ng tulong sa booking, bayad o iyong account.",
+    "newRequest": "Bagong kahilingan",
+    "yourRequests": "Ang iyong mga kahilingan",
+    "emptyTitle": "Wala pang kahilingan",
+    "emptyBody": "Kung may hindi maayos sa isang booking, bayad o iyong account, sabihin sa amin at tutulungan ka naming ayusin ito.",
+    "contact": "Makipag-ugnayan sa suporta",
+    "ticketLine": "{category} · Na-update noong {date} · {count, plural, one {# mensahe} other {# mensahe}}",
+    "quickAnswers": "Mabilis na sagot",
+    "stillStuck": "Nahihirapan pa rin? <link>Makipag-ugnayan sa suporta</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Paano ako magkakansela o mag-re-reschedule ng appointment?",
+      "a": "Buksan ang <link>Mga booking</link>, piliin ang appointment at i-tap ang Reschedule o Kanselahin. May sariling palugit sa pagkansela ang bawat negosyo — makikita mo mismo kung ano ang naaangkop, kasama ang anumang singil o refund, bago ka kumpirmahin."
+    },
+    "refund": {
+      "q": "Kailan ko matatanggap ang aking refund?",
+      "a": "Ibinabalik ang refund sa card na ginamit mo sa pagbabayad sa sandaling makumpirma ang pagkansela. Depende sa iyong bangko, karaniwang inaabot ito ng 5–10 araw ng trabaho bago lumabas. Nakadepende sa patakaran ng negosyo kung maibabalik ang deposito, na ipinapakita kapag nag-book ka."
+    },
+    "contactPro": {
+      "q": "Paano ko makokontak ang isang propesyonal?",
+      "a": "Gamitin ang Mensahe sa kanilang profile o sa iyong booking. Makikita ang iyong mga usapan sa <link>Mga mensahe</link>. Para sa anumang tungkol sa serbisyo mismo — direksyon, paghahanda, dadalhin — pinakamabilis na makakasagot ang negosyo."
+    },
+    "report": {
+      "q": "May nangyaring mali sa isang negosyo. Ano ang magagawa ko?",
+      "a": "Magbukas ng kahilingan sa ibaba at piliin ang “Mag-ulat ng negosyo”. I-link ang appointment kung mayroon. Binabasa namin ang bawat ulat, at maaari kaming makialam sa mga refund at, kung kinakailangan, alisin ang mga negosyo sa Kept."
+    },
+    "account": {
+      "q": "Paano ko papalitan ang aking email o buburahin ang aking account?",
+      "a": "Dumadaan sa suporta ang pagpapalit ng email para makumpirma naming ikaw ito. Maaari mong i-download ang iyong data o burahin mismo ang iyong account sa <link>Privacy at data</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Kahilingan sa suporta",
+    "allRequests": "Lahat ng kahilingan",
+    "opened": "{category} · Binuksan noong <date></date>",
+    "appointmentLine": "{date} nang {time} · Ref {reference}",
+    "conversation": "Usapan",
+    "keptSupport": "Suporta ng Kept",
+    "openImage": "Buksan ang nakalakip na larawan",
+    "attachedImage": "Nakalakip na larawan",
+    "closed": "Sarado na ang kahilingang ito. <link>Magbukas ng bagong kahilingan</link> kung kailangan mo pa rin ng tulong.",
+    "willReply": "Sasagot kami rito at aabisuhan ka namin kapag nagawa na namin.",
+    "sorted": "Naayos na ba? Ipaalam sa amin."
+  },
+  "new": {
+    "title": "Makipag-ugnayan sa suporta",
+    "intro": "Sabihin sa amin ang nangyayari at isang tunay na tao mula sa team ng Kept ang sasagot dito. Para sa mga tanong tungkol sa serbisyo mismo, karaniwang pinakamabilis ang pagmensahe sa negosyo.",
+    "notFound": "Hindi namin mahanap ang appointment na iyon sa iyong account kaya hindi ito nailakip. Maaari ka pa ring pumili ng isa sa ibaba."
+  },
+  "form": {
+    "topic": "Saan ka namin matutulungan?",
+    "chooseTopic": "Pumili ng paksa",
+    "addSubject": "Magdagdag ng maikling paksa",
+    "moreDetail": "Ikuwento pa ang kaunti — nakakatulong ang kahit isang pangungusap",
+    "sent": "Naipadala ang kahilingan",
+    "checkFields": "Pakisuri ang mga naka-highlight na field.",
+    "related": "Kaugnay na appointment",
+    "refHint": "Ref {reference} · {business}",
+    "linkHint": "Kapag naka-link ang booking, agad namin itong masisiyasat.",
+    "none": "Wala",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Paksa",
+    "subjectPlaceholder": "hal. Dalawang beses akong siningil para sa deposito ko",
+    "details": "Mga detalye",
+    "detailsHint": "Ano ang nangyari, kailan, at ano ang gusto mong gawin namin. Huwag maglagay ng numero ng card o password.",
+    "images": "Mga larawan",
+    "optional": "Opsyonal",
+    "cancel": "Kanselahin",
+    "uploadingImages": "Ina-upload ang mga larawan…",
+    "send": "Ipadala ang kahilingan"
+  },
+  "reply": {
+    "writeFirst": "Sumulat muna ng sagot.",
+    "sent": "Naipadala ang sagot",
+    "label": "Sagot",
+    "reopens": "Muling mabubuksan ang kahilingang ito kapag sumagot ka.",
+    "placeholder": "Magdagdag ng detalye o sagutin ang aming tanong…",
+    "send": "Ipadala ang sagot"
+  },
+  "resolve": {
+    "button": "Markahan bilang naresolba",
+    "done": "Namarkahan bilang naresolba",
+    "doneBody": "Masaya kaming naayos na. Puwede ka pa ring sumagot kung may lumitaw.",
+    "confirmTitle": "Markahan ang kahilingang ito bilang naresolba?",
+    "confirmBody": "Ipaalam sa amin na naayos na ito. Kung may lumitaw pa, sumagot lang dito at ipagpapatuloy namin."
+  },
+  "attach": {
+    "tooMany": "Maaari kang maglakip ng hanggang {max} larawan.",
+    "alt": "Kalakip sa suporta",
+    "label": "Mga kalakip",
+    "uploadingName": "Ina-upload ang {name}",
+    "remove": "Alisin ang {name}",
+    "add": "Magdagdag ng larawan",
+    "uploading": "{count, plural, one {Ina-upload ang # larawan…} other {Ina-upload ang # larawan…}}",
+    "hint": "Nakakatulong ang mga screenshot o larawan. Hanggang {max} larawan, 15 MB bawat isa."
+  }
+}

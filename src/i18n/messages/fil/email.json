@@ -1,0 +1,147 @@
+{
+  "footer": "Natatanggap mo ito dahil sa aktibidad sa iyong Kept account. Pamahalaan ang mga abiso sa Account → Mga abiso.",
+  "details": {
+    "service": "Serbisyo",
+    "when": "Kailan",
+    "with": "Kasama si",
+    "where": "Saan",
+    "online": "Online — ibabahagi ng negosyo ang link",
+    "reference": "Sanggunian",
+    "paid": "Nabayaran",
+    "balanceDue": "Balanseng dapat bayaran"
+  },
+  "cta": {
+    "viewAppointment": "Tingnan ang appointment",
+    "viewRequest": "Tingnan ang kahilingan",
+    "reviewRequest": "Suriin ang kahilingan",
+    "openAppointment": "Buksan ang appointment",
+    "openCalendar": "Buksan ang kalendaryo",
+    "findAnotherTime": "Maghanap ng ibang oras",
+    "payDeposit": "Bayaran ang deposito",
+    "leaveReview": "Mag-iwan ng review",
+    "bookThisTime": "I-book ang oras na ito"
+  },
+  "booked": {
+    "title": "Naka-book ka na kay {business}",
+    "subject": "Kumpirmado: {service} kasama ang {business}",
+    "heading": "Kumpirmado na ang iyong appointment",
+    "footnote": "Kailangan bang baguhin ang plano? Maaari kang mag-reschedule o magkansela mula sa pahina ng appointment, ayon sa patakaran ng negosyo.",
+    "sms": "Kept: Kumpirmado na ang {service} kasama ang {business} sa {when}. Ref {reference}"
+  },
+  "requested": {
+    "title": "Naipadala ang kahilingan sa {business}",
+    "body": "Ipapaalam namin sa iyo sa sandaling sumagot sila.",
+    "subject": "Naipadala ang kahilingan: {service} kasama ang {business}",
+    "heading": "Naipadala na ang iyong kahilingan",
+    "paragraph": "Sinusuri ng {business} ang mga kahilingan bago kumpirmahin. Mag-i-email kami sa iyo sa sandaling sumagot sila."
+  },
+  "bizBooked": {
+    "title": "Bagong booking",
+    "requestTitle": "Bagong kahilingan sa booking",
+    "subject": "Bagong booking: {service}",
+    "requestSubject": "Bagong kahilingan: {service}",
+    "heading": "May bago kang booking",
+    "requestHeading": "May bago kang kahilingan sa booking",
+    "requestParagraph": "Aprubahan o tanggihan ito mula sa iyong kalendaryo. Awtomatikong nag-e-expire ang mga kahilingang hindi nasagot."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "Hindi natanggap ng {business} ang iyong kahilingan",
+      "subject": "Tinanggihan ang kahilingan: {service}",
+      "heading": "Hindi tinanggap ang iyong kahilingan"
+    },
+    "expired": {
+      "title": "Nag-expire ang iyong booking",
+      "subject": "Nag-expire ang iyong booking",
+      "heading": "Nag-expire ang iyong booking"
+    },
+    "cancelled": {
+      "title": "Kinansela ng {business} ang iyong appointment",
+      "subject": "Kinansela: {service}",
+      "heading": "Kinansela ang iyong appointment"
+    },
+    "note": "Tala mula sa negosyo: “{note}”",
+    "refund": "Papunta na ang refund na {amount} sa iyong orihinal na paraan ng pagbabayad.",
+    "bookAgain": "Maaari kang mag-book ng ibang oras kapag handa ka na."
+  },
+  "bizCancelled": {
+    "title": "May customer na nagkansela",
+    "expiredTitle": "May booking na nag-expire",
+    "subject": "Kinansela: {service} · {when}",
+    "heading": "May appointment na kinansela",
+    "reason": "Dahilan: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "Inilipat ng {business} ang iyong appointment",
+    "body": "Ngayon ay {when}",
+    "subject": "Bagong oras: {service} kasama ang {business}",
+    "heading": "May bagong oras ang iyong appointment",
+    "previously": "Dati ay {when}.",
+    "changeIt": "Kung hindi pwede ang bagong oras, maaari kang mag-reschedule o magkansela mula sa pahina ng appointment."
+  },
+  "bizRescheduled": {
+    "title": "May customer na nag-reschedule",
+    "subject": "Na-reschedule: {service}",
+    "heading": "May appointment na na-reschedule"
+  },
+  "approvedPay": {
+    "title": "Tinanggap ng {business} ang iyong kahilingan",
+    "body": "Bayaran ang depositong {amount} para makumpirma.",
+    "subject": "Tinanggap — kumpirmahin ang iyong {service}",
+    "heading": "Tinanggap ang iyong kahilingan",
+    "paragraph": "Bayaran ang depositong {amount} para masiguro ang iyong oras. Awtomatikong ilalabas ang mga booking na hindi nabayaran."
+  },
+  "reminder": {
+    "title": "Paalala: {service} {lead}",
+    "body": "{when} kasama ang {business}",
+    "subject": "Paalala: {service} {lead} nang {time}",
+    "heading": "Kita-kita {lead}",
+    "footnote": "Mahuhuli ka ba o hindi makakarating? Ipaalam sa negosyo mula sa pahina ng appointment.",
+    "sms": "Paalala: {service} kasama ang {business} {when}."
+  },
+  "review": {
+    "title": "Kumusta ang {service}?",
+    "body": "Magbahagi ng mabilis na review tungkol sa {business}.",
+    "subject": "Kumusta ang pagbisita mo sa {business}?",
+    "heading": "Kumusta ang naging karanasan?",
+    "paragraph": "Nakakatulong ang iyong review sa {business} at sa iba pang pumipili ng propesyonal. Wala pang isang minuto ang kailangan."
+  },
+  "waitlist": {
+    "title": "May nabakante sa {business}",
+    "body": "Available na ang {when}. Mag-book agad — unang dumating, unang pagsisilbihan.",
+    "subject": "May nabakanteng oras sa {business}",
+    "heading": "Magandang balita — may nabakanteng oras",
+    "paragraph": "Naging available na ang {when}. Unang dumating, unang pagsisilbihan, kaya mag-book agad kung pwede sa iyo."
+  },
+  "thread": {
+    "confirmed": "Kumpirmado ang appointment: {service}, {when}.",
+    "declined": "Tinanggihan ang appointment: {service}, {when}.",
+    "expired": "Nag-expire ang appointment: {service}, {when}.",
+    "cancelled": "Kinansela ang appointment: {service}, {when}.",
+    "moved": "Inilipat ang appointment mula {from} patungong {to}."
+  },
+  "verify": {
+    "subject": "Kumpirmahin ang iyong email",
+    "preheader": "Isang tap para kumpirmahin ang iyong email address.",
+    "heading": "Welcome, {name}",
+    "paragraph": "Kumpirmahin ang iyong email para makontak ka ng mga negosyo tungkol sa iyong mga appointment.",
+    "cta": "Kumpirmahin ang email",
+    "footnote": "Mag-e-expire ang link na ito sa loob ng 3 araw. Kung hindi ikaw ang gumawa ng account, maaari mong balewalain ang email na ito."
+  },
+  "reset": {
+    "subject": "I-reset ang iyong password",
+    "heading": "I-reset ang iyong password",
+    "paragraph": "May humiling (sana ikaw) na i-reset ang password ng iyong Kept account.",
+    "cta": "Pumili ng bagong password",
+    "footnote": "Mag-e-expire ang link na ito sa loob ng 1 oras. Kung hindi ikaw ang humiling nito, ligtas mong balewalain ang email na ito — hindi magbabago ang iyong password."
+  },
+  "invite": {
+    "subject": "Inimbitahan ka ni {inviter} na sumali sa {business} sa Kept",
+    "reminderSubject": "Paalala: sumali sa {business} sa Kept",
+    "heading": "Sumali sa {business}",
+    "paragraph": "Inimbitahan ka ni {inviter} na sumali sa team ng {business}. Makikita mo ang iyong iskedyul at mapapamahalaan ang iyong mga appointment.",
+    "cta": "Tanggapin ang imbitasyon",
+    "footnote": "Mag-e-expire ang imbitasyong ito sa loob ng {days} araw.",
+    "reminderFootnote": "Mag-e-expire ang imbitasyong ito sa loob ng {days} araw. Hindi na gumagana ang mga naunang link ng imbitasyon."
+  }
+}

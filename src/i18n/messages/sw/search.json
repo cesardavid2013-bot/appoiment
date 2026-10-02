@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Gundua wataalamu",
+    "category": "Weka miadi ya {category}",
+    "query": "{q} — tafuta",
+    "description": "Linganisha wataalamu kwa upatikanaji halisi, bei na maoni yaliyothibitishwa."
+  },
+  "bar": {
+    "placeholder": "Tafuta huduma au wataalamu",
+    "label": "Tafuta",
+    "clear": "Futa utafutaji"
+  },
+  "location": {
+    "placeholder": "Popote",
+    "label": "Mahali",
+    "clear": "Futa mahali",
+    "useMine": "Tumia mahali nilipo sasa",
+    "finding": "Tunakutafuta…",
+    "current": "Mahali ulipo sasa",
+    "selectedArea": "Eneo lililochaguliwa",
+    "unsupported": "Kivinjari chako hakiwezi kushiriki mahali. Andika jina la jiji badala yake.",
+    "denied": "Mahali pamezimwa kwa tovuti hii. Andika jina la jiji — au ruhusu mahali kwenye mipangilio ya kivinjari chako.",
+    "failed": "Hatukuweza kupata mahali ulipo. Andika jina la jiji badala yake."
+  },
+  "quick": {
+    "availableToday": "Wanapatikana leo",
+    "instant": "Miadi ya papo hapo",
+    "mobile": "Anakuja kwako",
+    "virtual": "Mtandaoni"
+  },
+  "view": {
+    "label": "Mwonekano",
+    "list": "Orodha",
+    "map": "Ramani"
+  },
+  "heading": {
+    "explore": "Gundua",
+    "results": "Matokeo",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Inasasisha…",
+    "count": "{count, plural, one {mtaalamu #} other {wataalamu #}}",
+    "countMore": "wataalamu {count}+",
+    "near": "{results} karibu na {place}",
+    "nearYou": "{results} karibu nawe"
+  },
+  "sort": {
+    "label": "Panga kwa",
+    "relevance": "Inayolingana zaidi",
+    "rating": "Alama za juu zaidi",
+    "price": "Bei ya chini zaidi",
+    "distance": "Aliye karibu zaidi"
+  },
+  "categories": {
+    "label": "Kategoria",
+    "all": "Zote"
+  },
+  "empty": {
+    "title": "Hakuna kinacholingana bado",
+    "query": "Jaribu neno pana zaidi, tahajia tofauti, au ondoa vichujio vingine.",
+    "filters": "Jaribu kuondoa kichujio au kutafuta eneo pana zaidi.",
+    "clear": "Futa vichujio vyote",
+    "categoryTitle": "Hakuna wataalamu wa {category} walioorodheshwa hapa bado",
+    "categoryBody": "Kept inakua jiji kwa jiji. Unatoa huduma hii? Ukurasa wako wa miadi unaweza kuwa hai leo.",
+    "listServices": "Orodhesha huduma zako",
+    "seeAll": "Tazama wataalamu wote"
+  },
+  "showMore": "Onyesha zaidi",
+  "filters": {
+    "button": "Vichujio",
+    "buttonCount": "Vichujio · {count}",
+    "title": "Vichujio",
+    "clearAll": "Futa vyote",
+    "show": "Onyesha matokeo",
+    "availability": "Upatikanaji na miadi",
+    "rating": "Alama",
+    "minRating": "Alama ya chini kabisa",
+    "any": "Yoyote",
+    "price": "Bei ya kuanzia hadi",
+    "maxPrice": "Bei ya juu zaidi ya kuanzia",
+    "distance": "Umbali",
+    "provider": "Mtoa huduma",
+    "providerType": "Aina ya mtoa huduma",
+    "individual": "Wataalamu huru",
+    "business": "Biashara na timu"
+  }
+}

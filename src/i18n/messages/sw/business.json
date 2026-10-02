@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Mtandaoni",
+    "comesToYou": "Anakuja kwako",
+    "comesToYouIn": "Anakuja kwako · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Imetangazwa",
+    "verified": "Biashara iliyothibitishwa",
+    "instant": "Uthibitisho wa papo hapo",
+    "request": "Omba kuweka miadi",
+    "bookAt": "Weka miadi {day} saa {time}",
+    "moreTimes": "Nyakati zaidi",
+    "freeConsultation": "Mashauriano ya bure yanapatikana",
+    "priceOnRequest": "Bei kwa ombi",
+    "viewTimes": "Tazama nyakati"
+  },
+  "rail": {
+    "seeAll": "Tazama zote"
+  },
+  "favorite": {
+    "save": "Hifadhi",
+    "saved": "Imehifadhiwa",
+    "remove": "Ondoa kwenye zilizohifadhiwa",
+    "savedToast": "Imehifadhiwa",
+    "savedToastHint": "Ipate wakati wowote kwenye Zilizohifadhiwa."
+  }
+}

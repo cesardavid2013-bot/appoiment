@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept para sa mga propesyonal — online booking at kalendaryong para sa iyo",
+    "description": "Tumanggap ng booking online, iwasan ang double-booking at no-show, at mapansin ng mga lokal na customer. Libre sa simula para sa mga independiyenteng propesyonal."
+  },
+  "cta": {
+    "dashboard": "Pumunta sa iyong negosyo",
+    "setup": "I-set up ang iyong negosyo",
+    "start": "Magsimula — libre ito"
+  },
+  "hero": {
+    "eyebrow": "Kept para sa mga propesyonal",
+    "title": "Punuin ang iyong iskedyul. Panatilihin ang iyong gabi.",
+    "lede": "Online booking, kalendaryong hindi nagkakaroon ng double-booking, mga paalalang nagpapababa ng no-show, at profile na nasa harap ng mga taong malapit sa iyo na naghahanap ng eksaktong ginagawa mo. Libre sa simula.",
+    "howItWorks": "Paano ito gumagana",
+    "note": "Hindi kailangan ng card. Mananatiling pribado ang iyong profile hangga't hindi mo ito pina-publish."
+  },
+  "sides": {
+    "heading": "Paano gumagana ang Kept para sa mga kliyente at para sa iyo",
+    "clients": {
+      "eyebrow": "Para sa iyong mga kliyente",
+      "title": "Tuklasin at i-book ang mahuhusay na propesyonal.",
+      "points": {
+        "search": "Maghanap ayon sa serbisyo, lugar at oras, at makita ang totoong bakante — hindi contact form.",
+        "prices": "Malinaw na presyo, iyong mga patakaran at beripikadong review bago sila mag-book.",
+        "reminders": "Mga paalala, direksyon, at pag-reschedule nang hindi na kailangang tumawag."
+      }
+    },
+    "you": {
+      "eyebrow": "Para sa iyo",
+      "title": "Pamahalaan ang iyong mga appointment at palaguin ang iyong negosyo.",
+      "points": {
+        "calendar": "Iisang kalendaryo para sa mga booking, break at day off — sa iyong telepono.",
+        "deposits": "Mga deposito at patakaran sa pagkansela na ipinapatupad para sa iyo.",
+        "clients": "Kasaysayan ng kliyente, mga tala at review na nagpapabalik sa mga tao."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Live sa tatlong hakbang",
+    "profile": {
+      "title": "I-set up ang iyong profile",
+      "body": "Idagdag ang iyong mga serbisyo kasama ang presyo at tagal, ang iyong oras, kung saan ka nagtatrabaho at ilang larawan ng iyong gawa. Gagabayan ka namin."
+    },
+    "share": {
+      "title": "Ibahagi ang iyong link",
+      "body": "Ilagay ang {host}/your-name sa iyong bio at sa iyong mga card. Kapag na-publish mo na, lalabas ka rin sa paghahanap ng mga taong malapit."
+    },
+    "book": {
+      "title": "Tumanggap ng booking",
+      "body": "Pumipili ang mga kliyente ng totoong bakante at nagbu-book sa loob ng ilang segundo. Aabisuhan ka, makakatanggap sila ng mga paalala, at mananatiling tama ang iyong kalendaryo."
+    }
+  },
+  "industries": {
+    "heading": "Ginawa para sa anumang serbisyong ibinu-book kada oras",
+    "lede": "Kung nagbu-book ng oras sa iyo ang mga kliyente, bagay ang Kept — nagtatrabaho ka man nang mag-isa mula sa isang upuan o namamahala ng team sa iba't ibang lokasyon."
+  },
+  "features": {
+    "heading": "Lahat ng kailangan ng araw mo",
+    "booking": {
+      "title": "Online booking na may totoong availability",
+      "p1": "Ang nakikita lang ng mga kliyente ay mga oras na talagang magagawa mo — ang iyong oras, bawas ang mga kasalukuyang booking, break, buffer at day off, kasama ang minimum na abiso at kung gaano kaaga sila makakapag-book.",
+      "p2": "Sinusuri muli ang bawat booking sa mismong sandali ng pag-book, kaya hindi kailanman magkakasabay ang dalawang tao sa iisang slot, kahit pareho silang mag-tap sa parehong segundo."
+    },
+    "services": {
+      "title": "Mga serbisyong akma sa paraan mo ng pagpepresyo",
+      "p1": "Takda, simula sa, saklaw, libre o ayon sa konsultasyon. Magdagdag ng mga opsyon tulad ng haba, laki o add-on, at bawat isa ay nag-aayos ng presyo at ng oras na nakalaan sa iyong kalendaryo.",
+      "p2": "Magdagdag ng buffer bago o pagkatapos, limitahan ang mga serbisyo sa ilang miyembro ng team o lokasyon, at magtanong ng intake questions bago ang unang pagbisita."
+    },
+    "policies": {
+      "title": "Mga deposito at patakaran, ipinapatupad para sa iyo",
+      "p1": "Humingi ng deposito o buong bayad nang maaga, magtakda ng palugit sa pagkansela at singil sa huling pagkansela o no-show. Nakikita ng mga kliyente ang mga patakaran bago sila mag-book, at awtomatikong sinusunod ng mga refund ang mga ito."
+    },
+    "reminders": {
+      "title": "Mga paalalang nagpapababa ng no-show",
+      "p1": "Kusang ipinapadala ang mga kumpirmasyon at paalala — bilang default, isang araw at dalawang oras bago — kasama ang link para mag-reschedule ayon sa iyong mga patakaran sa halip na hindi na lang sumipot.",
+      "p2": "Kapag may nagkansela, nalalaman ng mga kliyenteng nasa waitlist mo para sa araw na iyon ang nabakanteng oras."
+    },
+    "clients": {
+      "title": "Kilalanin ang iyong mga kliyente",
+      "p1": "Bawat kliyente ay may rekord ng mga pagbisita, gastos, pagkansela at no-show, kasama ang mga pribadong tala na makikita lang ng iyong team. Magmensahe sa mga kliyente mula sa parehong lugar."
+    },
+    "team": {
+      "title": "Mula sa solong upuan hanggang team at maraming lokasyon",
+      "p1": "Magdagdag ng mga miyembro ng team na may sariling oras at serbisyo, at mga tungkuling nagkokontrol sa kung ano ang nakikita at nagagawa ng bawat isa. Pamahalaan ang ilang lokasyon, bawat isa ay may sariling time zone at oras."
+    },
+    "portfolio": {
+      "title": "Portfolio na nagdudulot ng booking",
+      "p1": "Ipakita ang mga larawan at maiikling video ng iyong gawa. I-link ang bawat isa sa isang serbisyo, at maaaring i-tap ng mga kliyente ang “I-book ito” para i-book mismo ang nakita nila."
+    },
+    "spotlight": {
+      "title": "Spotlight — libre habang naglulunsad",
+      "p1": "I-promote ang iyong profile sa paghahanap at mga pahina ng kategorya malapit sa iyo. Palaging may label ang mga pino-promote na resulta, hanggang dalawa lang bawat pahina, at ipinapakita pa rin ang iyong totoong rating at bakante.",
+      "p2": "Walang bayad ang Spotlight habang naglulunsad ang Kept. Kung magbago ito, sasabihan ka namin bago may singilin — hindi ito kusang magiging bayad."
+    }
+  },
+  "plans": {
+    "heading": "Mga plano",
+    "lede": "Habang naglulunsad ang Kept, nagsisimula ang bawat bagong negosyo sa {plan} nang walang buwanang bayad. Ihahayag nang maaga ang presyo ng mga bayad na plano bago ito ipatupad, at walang sisingilin nang hindi pumipili ng plano.",
+    "badge": {
+      "launch": "Libre habang naglulunsad",
+      "available": "Available na ngayon",
+      "unavailable": "Hindi pa available"
+    },
+    "period": {
+      "launch": "kada buwan habang naglulunsad kami",
+      "available": "kada buwan",
+      "unavailable": "Iaanunsyo pa ang presyo"
+    },
+    "rows": {
+      "members": "Mga miyembro ng team na maaaring i-book",
+      "locations": "Mga lokasyon",
+      "fee": "Singil sa mga online na bayad",
+      "roles": "Custom na tungkulin sa team",
+      "analytics": "Advanced na analytics"
+    },
+    "justYou": "1 (ikaw lang)",
+    "upTo": "Hanggang {n}",
+    "included": "Kasama",
+    "notIncluded": "Hindi kasama",
+    "summary": {
+      "free": "Kasama ang online booking, kalendaryo, mga paalala, deposito, rekord ng kliyente, intake form, portfolio at Spotlight.",
+      "launch": "Lahat ng nasa {base}, dagdag ang team na hanggang {members}, mas maraming lokasyon, custom na tungkulin at mas mababang singil. Ito ang natatanggap ng mga bagong negosyo ngayon.",
+      "other": "Para sa mas malalaking team at negosyong may maraming lokasyon."
+    },
+    "footnote": "Naaangkop lang ang singil sa mga bayad na ginagawa ng mga kliyente online sa pamamagitan ng Kept. Walang singil ang Kept sa mga appointment na binabayaran nang personal. Kailangan ng mas maraming tao o lokasyon kaysa sa pinapayagan ng iyong plano? <link>Sabihin sa amin</link>."
+  },
+  "faq": {
+    "heading": "Mga tanong",
+    "cost": {
+      "q": "Magkano ang Kept?",
+      "a": "Walang buwanang bayad: habang naglulunsad ang Kept, libre ang planong {plan} para sa mga bagong negosyo. Kapag nagbayad online ang kliyente — deposito man o buong presyo — {fee} ng bayad na iyon ang kinukuha ng Kept. Walang singil ang Kept sa mga appointment na binabayaran nang personal."
+    },
+    "clientFee": {
+      "q": "Nagbabayad ba ang mga kliyente ko para mag-book?",
+      "aFee": "Nakikita ng mga kliyente ang {fee} na bayad sa serbisyo sa checkout, ipinapakita bago sila kumpirmahin. Walang idinadagdag pagkatapos.",
+      "aFree": "Hindi. Libre ang pag-book ng mga kliyente at nakikita nila ang eksaktong presyo mo bago kumpirmahin."
+    },
+    "payments": {
+      "q": "Kailangan ko bang tumanggap ng bayad online?",
+      "a": "Hindi. Maaari mong hayaang magbayad nang personal ang mga kliyente, o hingin ang deposito o buong bayad kapag nag-book sila. Pinoproseso ng Stripe ang mga online na bayad at ibinabayad sa sarili mong bank account."
+    },
+    "approve": {
+      "q": "Maaari ko bang aprubahan ang mga booking bago makumpirma?",
+      "a": "Oo. Piliin ang agarang booking, o request mode kung saan naghihintay ng iyong pag-apruba ang bawat booking. Nakareserba ang oras habang nagpapasya ka, at kusang nag-e-expire ang mga kahilingang hindi mo nasagot."
+    },
+    "where": {
+      "q": "Nagtatrabaho ako sa bahay, pumupunta sa mga kliyente, o nagtuturo online. Puwede ba iyon?",
+      "a": "Oo. Ang bawat lokasyon ay maaaring pisikal na address, mobile na service area kung saan ibinibigay ng kliyente ang kanilang address, o virtual na session. Maaari mong ialok ang anumang kumbinasyon."
+    },
+    "spotlight": {
+      "q": "Paano gumagana ang Spotlight?",
+      "a": "Ipinapakita ng Spotlight ang iyong profile bilang malinaw na may label na “Promoted” na resulta sa paghahanap at mga pahina ng kategorya, hanggang dalawa lang bawat pahina. Libre ito habang naglulunsad — simulan o ihinto anumang oras mula sa iyong dashboard."
+    },
+    "link": {
+      "q": "Magagamit ko ba ang sarili kong link?",
+      "a": "Oo. Bawat negosyo ay may profile sa {host}/your-name na maibabahagi mo sa Instagram, sa iyong bio o sa QR code. Hindi na kailangang hanapin ka ng mga kliyenteng nagbu-book gamit ito."
+    }
+  },
+  "closing": {
+    "title": "Naghahanap na ang iyong susunod na kliyente.",
+    "body": "I-set up ang iyong mga serbisyo at oras, i-publish ang iyong profile, at magsimulang tumanggap ng booking ngayon."
+  },
+  "demo": {
+    "example": "Halimbawa",
+    "today": {
+      "label": "Halimbawa ng iskedyul ng Ngayon na nakikita ng isang propesyonal",
+      "title": "Ngayon",
+      "summary": "{count, plural, one {# appointment} other {# appointment}} · {amount} ang na-book",
+      "skinFade": "Skin fade",
+      "beardTrim": "Beard trim at line-up",
+      "lunch": "Tanghalian",
+      "signatureCut": "Signature cut",
+      "kidsCut": "Gupit pambata",
+      "firstVisit": "{name} · unang pagbisita",
+      "confirmed": "Kumpirmado",
+      "depositPaid": "Bayad na ang deposito",
+      "needsApproval": "Kailangan ng pag-apruba",
+      "checkedIn": "Naka-check in"
+    },
+    "reminder": {
+      "label": "Halimbawa ng awtomatikong paalala na natatanggap ng kliyente",
+      "when": "24 oras bago",
+      "title": "Paalala: {service} bukas",
+      "body": "{time} kasama si Dre sa North Fade Studio. Kailangan bang baguhin? Mag-reschedule hanggang 24 oras bago."
+    },
+    "grid": {
+      "label": "Halimbawa ng time picker na pinagbu-bookan ng mga customer, na bakanteng oras lang ang ipinapakita",
+      "title": "Pumili ng oras",
+      "instant": "Agarang kumpirmasyon",
+      "note": "Nawawala ang mga oras na kinuha na sa sandaling may mag-book. Hindi kailanman makakakuha ng parehong slot ang dalawang tao."
+    },
+    "policy": {
+      "label": "Halimbawa ng patakaran sa deposito at pagkansela",
+      "title": "Patakaran sa booking",
+      "deposit": "Deposito",
+      "depositValue": "{pct} sa pag-book",
+      "freeCancel": "Libreng pagkansela",
+      "freeCancelValue": "Hanggang 24 oras bago",
+      "lateCancel": "Huling pagkansela",
+      "lateCancelValue": "{pct} ng kabuuan",
+      "noShow": "Hindi sumipot",
+      "noShowValue": "Itinatago ang deposito",
+      "dueNow": "Babayaran ngayon",
+      "dueValue": "{due} sa {total}"
+    },
+    "client": {
+      "label": "Halimbawa ng rekord ng kliyente",
+      "since": "Kliyente mula {month} · {visits, plural, one {# pagbisita} other {# pagbisita}}",
+      "spent": "Nagastos",
+      "noShows": "Hindi sumipot",
+      "gap": "Karaniwang pagitan",
+      "gapValue": "{weeks} linggo",
+      "note": "Pribadong tala: sensitibong anit — gamitin ang banayad na shampoo."
+    },
+    "team": {
+      "label": "Halimbawa ng team sa dalawang lokasyon",
+      "title": "Team",
+      "senior": "Senior barbero",
+      "barber": "Barbero",
+      "frontDesk": "Front desk"
+    },
+    "portfolio": {
+      "label": "Halimbawa ng mga post sa portfolio na naka-link sa isang serbisyong maaaring i-book",
+      "skinFade": "Skin fade",
+      "taper": "Taper at balbas",
+      "bookThis": "I-book ito",
+      "note": "Lalabas dito ang iyong mga larawan at video — i-tap ang isa para i-book ang eksaktong serbisyong iyon."
+    },
+    "spotlight": {
+      "label": "Halimbawa ng pino-promote na listing sa mga resulta ng paghahanap",
+      "category": "Barbero",
+      "promoted": "Pino-promote"
+    },
+    "options": {
+      "service": "Knotless braids",
+      "hint": "Halimbawang serbisyo · subukan ang mga opsyon",
+      "length": "Haba",
+      "shoulder": "Hanggang balikat",
+      "mid": "Hanggang gitna ng likod",
+      "waist": "Hanggang baywang",
+      "addons": "Mga add-on",
+      "wash": "Hugas at blow-dry",
+      "beads": "Beads at cuffs",
+      "included": "Kasama",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

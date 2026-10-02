@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Ikaw:",
+  "unread": "Hindi pa nababasa",
+  "apptLine": "{service} · {date} nang {time}",
+  "list": {
+    "title": "Mga mensahe",
+    "unread": "{count, plural, one {# hindi pa nababasang usapan.} other {# hindi pa nababasang usapan.}}",
+    "caughtUp": "Nabasa mo na lahat.",
+    "emptyTitle": "Wala pang mensahe",
+    "emptyBody": "May tanong tungkol sa serbisyo, presyo o oras? Buksan ang pahina ng isang propesyonal at i-tap ang “Magtanong”. Dito lalabas ang kanilang mga sagot.",
+    "findPro": "Maghanap ng propesyonal"
+  },
+  "thread": {
+    "metaTitle": "Usapan",
+    "placeholder": "Magmensahe sa {business}"
+  },
+  "new": {
+    "metaTitle": "Bagong mensahe",
+    "ownTitle": "Ito ang iyong negosyo",
+    "ownBody": "Dumarating sa inbox ng iyong negosyo ang mga mensahe ng customer para sa {business}.",
+    "ownButton": "Buksan ang inbox ng negosyo",
+    "placeholderBooking": "Magtanong tungkol sa booking na ito",
+    "placeholderQuestion": "Magtanong",
+    "emptyBookingTitle": "Magmensahe sa {business} tungkol sa iyong booking",
+    "emptyQuestionTitle": "Magtanong sa {business} bago mag-book",
+    "emptyBookingBody": "Mahuhuli ka ba, may babaguhin, o may tanong? Diretso sa kanilang team ang iyong mensahe.",
+    "emptyQuestionBody": "Presyo, oras, kung ano ang dadalhin — sasagot ang {business} dito at aabisuhan ka namin. Mananatiling pribado ang iyong numero ng telepono at email."
+  },
+  "shell": {
+    "allMessages": "Lahat ng mensahe",
+    "viewProfile": "Tingnan ang profile",
+    "book": "Mag-book"
+  },
+  "pro": {
+    "backToInbox": "Bumalik sa inbox"
+  },
+  "view": {
+    "label": "Mga mensahe",
+    "you": "Ikaw",
+    "loadingEarlier": "Nilo-load ang mas naunang mga mensahe",
+    "showEarlier": "Ipakita ang mas naunang mga mensahe",
+    "seen": "Nakita",
+    "sending": "Ipinapadala…",
+    "notSent": "Hindi naipadala.",
+    "retry": "Subukan muli",
+    "discard": "Itapon",
+    "newMessages": "{count, plural, one {# bagong mensahe} other {# bagong mensahe}}",
+    "openPhoto": "Buksan ang larawan sa bagong tab",
+    "photo": "Larawan"
+  },
+  "composer": {
+    "about": "Tungkol sa {appointment}",
+    "unlink": "Huwag i-link ang appointment na ito",
+    "processingPhoto": "Pinoproseso ang larawan",
+    "removePhoto": "Alisin ang larawan",
+    "attachPhoto": "Mag-attach ng larawan",
+    "label": "Mensahe",
+    "send": "Ipadala ang mensahe",
+    "hint": "Pindutin ang Enter para magpadala, Shift at Enter para sa bagong linya."
+  },
+  "inbox": {
+    "title": "Inbox",
+    "conversations": "Mga usapan",
+    "unread": "{count} hindi pa nababasa",
+    "allCaughtUp": "Nabasa mo na lahat",
+    "searchLabel": "Maghanap ng usapan ayon sa pangalan ng kliyente",
+    "searchPlaceholder": "Maghanap ng kliyente",
+    "clearSearch": "I-clear ang paghahanap",
+    "show": "Ipakita",
+    "all": "Lahat",
+    "unreadFilter": "Hindi pa nababasa",
+    "noClientsNamed": "Walang kliyenteng may pangalang “{term}”",
+    "nothingUnread": "Walang hindi pa nababasa",
+    "noMessages": "Wala pang mensahe",
+    "tryDifferent": "Subukan ang ibang paghahanap o ipakita ang lahat ng usapan.",
+    "emptyBody": "Kapag nagtanong ang mga kliyente mula sa iyong pahina o tungkol sa isang booking, lalabas ito rito."
+  },
+  "clientPanel": {
+    "client": "Kliyente",
+    "visits": "Mga pagbisita",
+    "noShows": "Hindi sumipot",
+    "cancelled": "Kinansela",
+    "clientSince": "Kliyente mula {date}",
+    "noVisits": "Wala pang natapos na pagbisita",
+    "lastIn": "huli noong {date}",
+    "tags": "Mga tag",
+    "clientProfile": "Profile ng kliyente",
+    "notBooked": "Hindi pa nagbu-book sa iyo — nagsimula ang usapang ito mula sa iyong pampublikong pahina.",
+    "upcoming": "Paparating",
+    "nothingBooked": "Walang naka-book.",
+    "recent": "Kamakailan"
+  }
+}

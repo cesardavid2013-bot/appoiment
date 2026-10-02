@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "Naghihintay ng bayad",
+    "requested": "Naipadala ang kahilingan",
+    "confirmed": "Kumpirmado",
+    "checked_in": "Naka-check in",
+    "in_progress": "Kasalukuyan",
+    "completed": "Tapos na",
+    "cancelled": "Kinansela",
+    "declined": "Tinanggihan",
+    "no_show": "Hindi sumipot",
+    "expired": "Nag-expire"
+  },
+  "list": {
+    "title": "Mga booking",
+    "filters": "Mga filter ng booking",
+    "tabs": {
+      "upcoming": "Paparating",
+      "past": "Nakaraan",
+      "cancelled": "Kinansela"
+    },
+    "howDidItGo": "Kumusta ang naging karanasan?",
+    "review": "Mag-review",
+    "empty": {
+      "upcoming": "Walang paparating na appointment",
+      "past": "Wala pang nakaraang appointment",
+      "cancelled": "Walang kinansela",
+      "upcomingBody": "Kapag nag-book ka, lalabas dito ang iyong mga appointment — kasama ang direksyon, mga paalala at madaling pag-reschedule.",
+      "findPro": "Maghanap ng propesyonal"
+    },
+    "nextUp": "Susunod · {when}",
+    "nextUpOn": "Susunod · {day}",
+    "details": "Mga detalye",
+    "directions": "Direksyon"
+  },
+  "detail": {
+    "metaTitle": "Appointment",
+    "allBookings": "Lahat ng booking",
+    "hero": {
+      "confirmedTitle": "Naka-book ka na",
+      "confirmedBody": "Nagpadala kami ng kumpirmasyon at paaalalahanan ka namin bago ang iyong appointment.",
+      "requestedTitle": "Naipadala ang kahilingan",
+      "requestedBody": "Rerepasuhin ng {business} ang iyong kahilingan. Aabisuhan ka namin sa sandaling sumagot sila — nakareserba ang iyong oras sa ngayon.",
+      "paymentTitle": "Tinatapos ang iyong bayad",
+      "paymentBody": "Kung kababayad mo lang, awtomatikong mag-a-update ito sa loob ng ilang segundo. Nakareserba ang iyong oras habang kinukumpleto ang bayad."
+    },
+    "calendarDetails": "Sanggunian {reference}",
+    "ref": "Ref",
+    "when": "Kailan",
+    "with": "Kasama si",
+    "where": "Saan",
+    "atYourAddress": "Sa iyong address",
+    "online": "Online",
+    "virtualLink": "Ipapadala ng negosyo ang link bago ang iyong session.",
+    "yourReview": "Ang iyong review",
+    "payment": {
+      "title": "Pagbabayad",
+      "serviceFee": "Bayad sa serbisyo",
+      "tax": "Buwis",
+      "estimatedTotal": "Tinatayang kabuuan",
+      "total": "Kabuuan",
+      "paid": "Nabayaran",
+      "refunded": "Naibalik",
+      "balance": "Balanse",
+      "dueAtAppointment": "Babayaran sa appointment",
+      "tip": "Tip"
+    },
+    "policy": {
+      "title": "Patakaran sa pagkansela",
+      "freeUntil": "Libreng pagkansela hanggang {hours, plural, one {# oras} other {# oras}} bago ang appointment.",
+      "freeAnytime": "Libreng pagkansela anumang oras bago ang appointment.",
+      "lateFee": "Mas huling pagkansela: {percent}% ng kabuuan.",
+      "depositNonRefundable": "Hindi maibabalik ang deposito.",
+      "cannotCancel": "Hindi na maaaring kanselahin ang appointment na ito.",
+      "alreadyStarted": "Nagsimula na ang appointment na ito.",
+      "cannotReschedule": "Hindi maaaring i-reschedule ang appointment na ito.",
+      "maxReschedules": "Naabot na ng appointment na ito ang pinakamaraming beses ng pag-reschedule. Pakikontak ang negosyo.",
+      "rescheduleWindow": "Dapat gawin ang mga pagbabago nang hindi bababa sa {hours, plural, one {# oras} other {# oras}} bago ang appointment. Pakikontak ang negosyo."
+    },
+    "refund": {
+      "noCharge": "Walang singil.",
+      "full": "Makakatanggap ka ng buong refund.",
+      "none": "Hindi maibabalik ang iyong bayad ayon sa patakaran ng negosyong ito.",
+      "partial": "Makakatanggap ka ng bahagyang refund ayon sa patakaran ng negosyong ito."
+    },
+    "note": "Tala: {reason}",
+    "problem": "May problema sa booking na ito? <link>Makipag-ugnayan sa suporta</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} nang {time}",
+    "cancelledToast": "Kinansela ang appointment",
+    "refundOnWay": "Papunta na ang refund na {amount}.",
+    "rescheduledToast": "Na-reschedule",
+    "payToConfirm": "Bayaran ang {amount} para makumpirma",
+    "addToCalendar": "Idagdag sa kalendaryo",
+    "directions": "Direksyon",
+    "message": "Mensahe",
+    "bookAgain": "Mag-book muli",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "Mag-iwan ng review",
+    "reschedule": "I-reschedule",
+    "cancelAppointment": "Kanselahin ang appointment",
+    "cancelTitle": "Kanselahin ang appointment na ito?",
+    "insideWindow": "Nasa loob ka na ng palugit ng pagkansela ng negosyo.",
+    "refundAmount": "Refund: {amount}.",
+    "keptAmount": "Mananatili sa negosyo: {amount}.",
+    "reason": "Dahilan",
+    "reasonHint": "Ibabahagi sa negosyo.",
+    "chooseNewTime": "Pumili ng bagong oras",
+    "currently": "Kasalukuyang {when}",
+    "keepCurrentTime": "Panatilihin ang kasalukuyang oras",
+    "moveTo": "Ilipat sa {time}",
+    "chooseTime": "Pumili ng oras"
+  },
+  "review": {
+    "ratings": {
+      "1": "Mahina",
+      "2": "Katamtaman",
+      "3": "Maganda",
+      "4": "Napakaganda",
+      "5": "Napakahusay"
+    },
+    "thanks": "Salamat sa iyong review",
+    "title": "Kumusta ang {business}?",
+    "subtitle": "Pampubliko ang iyong review at minarkahan bilang beripikadong booking.",
+    "rating": "Rating",
+    "stars": "{n, plural, one {# bituin} other {# bituin}}",
+    "bodyLabel": "Ikuwento sa iba ang iyong pagbisita",
+    "bodyPlaceholder": "Ano ang tumatak sa iyo? Irerekomenda mo ba sila?",
+    "post": "I-post ang review"
+  },
+  "slotPicker": {
+    "previousWeek": "Nakaraang linggo",
+    "nextWeek": "Susunod na linggo",
+    "noOpenings": "Walang bakante sa araw na ito.",
+    "selected": "Napili ang {time}"
+  }
+}

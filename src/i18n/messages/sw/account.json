@@ -1,0 +1,311 @@
+{
+  "loading": "Inapakia…",
+  "noEmail": "Hakuna barua pepe iliyohifadhiwa",
+  "saveChanges": "Hifadhi mabadiliko",
+  "cancel": "Ghairi",
+  "checkFields": "Tafadhali angalia sehemu zilizoangaziwa.",
+  "nav": {
+    "label": "Mipangilio ya akaunti",
+    "account": "Akaunti"
+  },
+  "sections": {
+    "profile": {
+      "label": "Wasifu",
+      "description": "Jina, picha, simu na saa za eneo"
+    },
+    "security": {
+      "label": "Kuingia na usalama",
+      "description": "Nenosiri, uthibitisho wa barua pepe na vifaa"
+    },
+    "notifications": {
+      "label": "Mipangilio ya arifa",
+      "description": "Chagua tunachokutumia kwa barua pepe au ujumbe mfupi"
+    },
+    "addresses": {
+      "label": "Anwani zilizohifadhiwa",
+      "description": "Kwa wataalamu wanaokuja kwako"
+    },
+    "privacy": {
+      "label": "Faragha na data",
+      "description": "Pakua data yako au futa akaunti yako"
+    }
+  },
+  "home": {
+    "memberSince": "Mwanachama tangu {date}",
+    "confirmEmail": "<b>Thibitisha barua pepe yako.</b> Tumetuma kiungo kwa {email} ili biashara ziweze kukufikia kuhusu miadi.",
+    "activity": "Shughuli zako",
+    "settings": "Mipangilio",
+    "more": "Zaidi",
+    "signOut": "Toka",
+    "rows": {
+      "bookings": {
+        "label": "Miadi",
+        "description": "Miadi ijayo na iliyopita"
+      },
+      "saved": {
+        "label": "Zilizohifadhiwa",
+        "description": "Wataalamu ulio wahifadhi"
+      },
+      "messages": {
+        "label": "Ujumbe",
+        "description": "Mazungumzo na biashara"
+      },
+      "notifications": {
+        "label": "Arifa",
+        "description": "Taarifa kuhusu miadi yako"
+      },
+      "business": {
+        "label": "Badilisha uende kwenye biashara yako",
+        "description": "Kalenda, huduma na wateja"
+      },
+      "offer": {
+        "label": "Toa huduma zako kwenye Kept",
+        "description": "Pokea miadi na ukuze biashara yako — bure kuanza"
+      },
+      "support": {
+        "label": "Msaada na usaidizi",
+        "description": "Pata msaada kuhusu miadi, malipo au akaunti yako"
+      },
+      "legal": {
+        "label": "Masharti na faragha",
+        "description": "Jinsi Kept inavyofanya kazi na jinsi tunavyoshughulikia data yako"
+      }
+    }
+  },
+  "verify": {
+    "sentToast": "Barua pepe ya uthibitisho imetumwa",
+    "sentBody": "Angalia {email} — kiungo kinafanya kazi kwa siku 3.",
+    "sent": "Barua pepe imetumwa",
+    "resend": "Tuma kiungo tena"
+  },
+  "profile": {
+    "description": "Jinsi unavyoonekana kwa wataalamu unaoweka miadi nao.",
+    "saved": "Wasifu umehifadhiwa",
+    "details": "Maelezo binafsi",
+    "name": "Jina",
+    "email": "Barua pepe",
+    "changeEmail": "Ili kubadilisha barua pepe yako ya kuingia, <link>wasiliana na usaidizi</link> ili tuthibitishe kuwa ni wewe.",
+    "phone": "Simu",
+    "phoneHintSms": "Biashara unazoweka miadi nazo zinaweza kukupigia simu kuhusu miadi, na tunaweza kukutumia vikumbusho kwa ujumbe mfupi ukiviwasha.",
+    "phoneHint": "Biashara unazoweka miadi nazo zinaweza kuitumia kukufikia kuhusu miadi.",
+    "photo": {
+      "title": "Picha",
+      "description": "Huonyeshwa kwa wataalamu unaoweka miadi nao, karibu na jina lako.",
+      "updated": "Picha imesasishwa",
+      "removed": "Picha imeondolewa",
+      "change": "Badilisha picha",
+      "upload": "Pakia picha",
+      "remove": "Ondoa",
+      "hint": "JPG, PNG au WebP, hadi MB 15. Tunaondoa data ya mahali kwenye picha."
+    },
+    "timezone": {
+      "label": "Saa za eneo",
+      "hint": "Saa za eneo la nyumbani kwako. Nyakati za miadi huonyeshwa kila mara kwa saa za mahali biashara ilipo.",
+      "notSet": "Haijawekwa",
+      "detect": "Gundua kiotomatiki",
+      "detectFailed": "Hatukuweza kugundua saa za eneo lako. Chagua kutoka kwenye orodha."
+    },
+    "language": {
+      "title": "Lugha",
+      "description": "Hutumika kwa menyu, vitufe na tarehe kote kwenye Kept. Majina ya biashara, huduma na maoni huonekana kama biashara ilivyoyaandika."
+    }
+  },
+  "security": {
+    "description": "Weka akaunti yako salama na mikononi mwako.",
+    "password": {
+      "title": "Nenosiri",
+      "setTitle": "Weka nenosiri",
+      "description": "Kubadilisha nenosiri lako kunakutoa kwenye kila kifaa kingine.",
+      "setDescription": "Unaingia kwa Google. Ongeza nenosiri ili uweze pia kuingia kwa barua pepe yako.",
+      "change": "Badilisha nenosiri",
+      "setButton": "Weka nenosiri",
+      "current": "Nenosiri la sasa",
+      "new": "Nenosiri jipya",
+      "newHint": "Angalau herufi 8. Epuka maneno ya kawaida na barua pepe yako.",
+      "confirm": "Thibitisha nenosiri jipya",
+      "tooShort": "Tumia angalau herufi 8.",
+      "mismatch": "Manenosiri haya hayalingani.",
+      "changed": "Nenosiri limebadilishwa",
+      "set": "Nenosiri limewekwa",
+      "othersSignedOut": "Vifaa vingine vyovyote vimetolewa."
+    },
+    "email": {
+      "title": "Barua pepe",
+      "description": "Tunatumia barua pepe yako kukuingiza na kutuma uthibitisho wa miadi.",
+      "confirmed": "Imethibitishwa",
+      "notConfirmed": "Haijathibitishwa bado",
+      "none": "Hakuna barua pepe kwenye akaunti hii."
+    },
+    "devices": {
+      "title": "Vifaa",
+      "description": "Ikiwa uliingia kwenye kifaa cha pamoja au kilichopotea, kitoe hapa. Kifaa hiki kitaendelea kuwa kimeingia.",
+      "status": "{count, plural, =0 {Kifaa hiki pekee ndicho kimeingia} one {Umeingia kwenye kifaa # kingine} other {Umeingia kwenye vifaa # vingine}}",
+      "signOutOthers": "Toka kwenye vifaa vingine",
+      "confirmTitle": "Toka kwenye vifaa vingine?",
+      "confirmBody": "Yeyote anayetumia akaunti yako kwenye simu, tableti au kompyuta nyingine atahitaji kuingia tena.",
+      "confirm": "Watoe",
+      "signedOutToast": "{count, plural, one {Umetoka kwenye kifaa # kingine} other {Umetoka kwenye vifaa # vingine}}"
+    }
+  },
+  "notifications": {
+    "description": "Chagua jinsi tunavyokupa taarifa. Hatutumi zaidi ya inavyohitajika.",
+    "saved": "Imehifadhiwa",
+    "emailAndText": "Arifa za barua pepe na ujumbe mfupi",
+    "emailOnly": "Arifa za barua pepe",
+    "inboxNote": "Kila kitu pia huonekana kwenye kikasha chako cha Arifa kwenye Kept, bila kujali unachochagua hapa.",
+    "addPhone": "Ongeza nambari ya simu kwenye <link>wasifu</link> wako ili upokee ujumbe mfupi.",
+    "email": "Barua pepe",
+    "sms": "Ujumbe mfupi",
+    "forTopic": "kwa {topic}",
+    "alwaysOn": {
+      "bookings": "Barua pepe huwa imewashwa kila wakati, ili tukufikie miadi ikibadilika.",
+      "business": "Barua pepe huwa imewashwa kila wakati, ili usikose miadi au ombi jipya."
+    },
+    "topics": {
+      "bookings": {
+        "label": "Taarifa za miadi",
+        "description": "Uthibitisho, mabadiliko na kughairi."
+      },
+      "reminders": {
+        "label": "Vikumbusho",
+        "description": "Kabla ya miadi ijayo."
+      },
+      "messages": {
+        "label": "Ujumbe",
+        "description": "Biashara au mteja anapokutumia ujumbe."
+      },
+      "waitlist": {
+        "label": "Nafasi za orodha ya kusubiri",
+        "description": "Wakati uliotaka unapopatikana."
+      },
+      "reviews": {
+        "label": "Maombi ya maoni",
+        "description": "Ujumbe mfupi baada ya miadi iliyokamilika."
+      },
+      "business": {
+        "label": "Shughuli za biashara",
+        "description": "Miadi mipya, maombi na maoni kwa biashara yako."
+      },
+      "marketing": {
+        "label": "Habari na ofa",
+        "description": "Taarifa za mara kwa mara kutoka kwa biashara ulizoweka miadi nazo."
+      }
+    }
+  },
+  "addresses": {
+    "description": "Kwa wataalamu wanaokuja kwako — vinyozi, wasafishaji wa magari, wakufunzi na zaidi.",
+    "defaultLabel": "Nyumbani",
+    "saved": "Anwani imehifadhiwa",
+    "removed": "Anwani imeondolewa",
+    "emptyTitle": "Hakuna anwani zilizohifadhiwa",
+    "emptyBody": "Weka mahali unapoweka miadi ya huduma zinazokuja kwako — kama nyumbani au ofisini — kwa urahisi mahali pamoja.",
+    "add": "Ongeza anwani",
+    "removeLabel": "Ondoa {label}",
+    "count": "{count} kati ya {max} zimehifadhiwa",
+    "limit": "Umefikia kikomo. Ondoa anwani ili kuongeza nyingine.",
+    "dialogBody": "Ni ya faragha kwako. Mtaalamu huona anwani tu unapoweka miadi ya huduma huko.",
+    "save": "Hifadhi anwani",
+    "fields": {
+      "name": "Jina",
+      "nameHint": "Kwa mfano Nyumbani, Kazini au Gym.",
+      "line1": "Anwani ya barabara",
+      "line2": "Ghorofa, jengo au sakafu",
+      "city": "Jiji",
+      "region": "Mkoa / eneo",
+      "postalCode": "Msimbo wa posta",
+      "country": "Nchi"
+    },
+    "removeTitle": "Ondoa “{label}”?",
+    "removeBody": "Miadi ambayo tayari umeweka kwenye anwani hii haiathiriwi.",
+    "remove": "Ondoa anwani"
+  },
+  "privacy": {
+    "description": "Data yako ni yako. Soma jinsi tunavyoitumia kwenye <link>sera yetu ya faragha</link>.",
+    "export": {
+      "title": "Pakua data yako",
+      "description": "Pata nakala ya wasifu wako, anwani zilizohifadhiwa, miadi, maoni, ujumbe, wataalamu uliowahifadhi na maombi ya usaidizi kama faili ya JSON.",
+      "button": "Pakua data yangu",
+      "hint": "Huandaliwa papo hapo. Hifadhi faili mahali salama — ina taarifa binafsi."
+    },
+    "delete": {
+      "title": "Futa akaunti yako",
+      "intro": "Hii inafunga kabisa akaunti yako ya Kept. Haya ndiyo yatakayotokea:",
+      "erased": "Jina lako, barua pepe, simu, picha, anwani zilizohifadhiwa na wataalamu uliowahifadhi vinafutwa, na unatolewa kila mahali.",
+      "upcoming": "{count, plural, one {Miadi yako ijayo inaghairiwa kulingana na sera ya kughairi ya kila biashara, ikiwemo marejesho yoyote inayoruhusu.} other {Miadi yako # ijayo inaghairiwa kulingana na sera ya kughairi ya kila biashara, ikiwemo marejesho yoyote inayoruhusu.}}",
+      "upcomingNone": "Miadi yoyote ijayo inaghairiwa kulingana na sera ya kughairi ya kila biashara.",
+      "records": "Rekodi ambazo biashara na kanuni za kodi zinazitegemea — miadi iliyopita, malipo na maoni — zinahifadhiwa, lakini zinaonyeshwa kama kutoka kwa “Mtumiaji aliyefutwa”.",
+      "permanent": "Hili haliwezi kutenduliwa. Unaweza kujisajili tena baadaye kwa barua pepe ile ile, ukianza upya.",
+      "blocked": "Unamiliki {businesses}. Funga biashara au uikabidhi kwa mtu mwingine kutoka <link>mipangilio ya biashara</link> yako kabla ya kufuta akaunti yako, ili wateja wake wasiachwe bila majibu.",
+      "copyFirst": "Unapendelea nakala kwanza? Pakua data yako hapo juu.",
+      "open": "Futa akaunti…",
+      "confirmTitle": "Futa akaunti yako?",
+      "confirmBody": "Hili haliwezi kutenduliwa.",
+      "keep": "Weka akaunti yangu",
+      "confirm": "Futa akaunti yangu",
+      "willCancel": "{count, plural, one {Miadi # ijayo itaghairiwa.} other {Miadi # ijayo itaghairiwa.}}",
+      "password": "Nenosiri lako",
+      "typeToConfirm": "Andika <word>{word}</word> ili kuthibitisha",
+      "deletedToast": "Akaunti yako imefutwa",
+      "deletedBody": "Asante kwa kutumia Kept."
+    }
+  },
+  "saved": {
+    "title": "Zilizohifadhiwa",
+    "description": "{count, plural, one {Mtaalamu # uliyemhifadhi.} other {Wataalamu # ulio wahifadhi.}} Nafasi zilizo hapa chini ni za moja kwa moja kutoka kalenda zao.",
+    "emptyTitle": "Hakuna kilichohifadhiwa bado",
+    "emptyBody": "Gusa moyo kwenye mtaalamu yeyote ili kumweka hapa — rahisi kuweka miadi tena na wateja wako wa kawaida au kulinganisha wachache kabla ya kuamua.",
+    "explore": "Gundua wataalamu",
+    "loading": "Inapakia wataalamu waliohifadhiwa…"
+  },
+  "notificationList": {
+    "title": "Arifa",
+    "today": "Leo",
+    "earlier": "Awali",
+    "emptyTitle": "Hakuna arifa bado",
+    "emptyBody": "Uthibitisho wa miadi, vikumbusho, majibu na nafasi za orodha ya kusubiri vitaonekana hapa.",
+    "unread": "{count} hazijasomwa",
+    "caughtUp": "Umesoma yote",
+    "allCaughtUpToast": "Umesoma yote",
+    "markAll": "Weka zote kama zimesomwa",
+    "unreadItem": "Haijasomwa",
+    "loadOlder": "Pakia za zamani",
+    "end": "Hiyo ndiyo yote."
+  },
+  "invite": {
+    "eyebrow": "Mwaliko wa timu",
+    "invalidTitle": "Mwaliko huu hauwezi kutumika",
+    "invalidBody": "Huenda umeisha muda, umeghairiwa, au tayari umekubaliwa. Mwombe aliyekualika atume kiungo kipya.",
+    "goHome": "Nenda kwenye Kept",
+    "join": "Jiunge na {business}",
+    "invitedAs": "Umealikwa kama <b>{role}</b>.",
+    "signInWith": "Ingia au fungua akaunti kwa <b>{email}</b> ili ukubali.",
+    "createAccount": "Fungua akaunti",
+    "signIn": "Ingia",
+    "wrongAccount": "Umeingia kama <b>{email}</b>, lakini mwaliko huu ulitumwa kwa {invited}.",
+    "wrongAccountHint": "Toka kisha uingie kwa anwani hiyo, au uombe mwaliko kwa {email}.",
+    "acceptingAs": "Unakubali kama <b>{email}</b>.",
+    "accept": "Kubali na ufungue ratiba yangu",
+    "roles": {
+      "owner": {
+        "label": "Mmiliki",
+        "description": "Udhibiti kamili, ikiwemo malipo na timu."
+      },
+      "manager": {
+        "label": "Meneja",
+        "description": "Huendesha shughuli za kila siku. Hawezi kubadilisha timu wala mipangilio ya biashara."
+      },
+      "receptionist": {
+        "label": "Mapokezi",
+        "description": "Huweka na kusimamia miadi ya kila mtu."
+      },
+      "provider": {
+        "label": "Mtaalamu",
+        "description": "Huona na kusimamia miadi na ratiba yake mwenyewe."
+      },
+      "custom": {
+        "label": "Maalum",
+        "description": "Chagua hasa mtu huyu anaweza kufanya nini."
+      }
+    }
+  }
+}

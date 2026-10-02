@@ -1,0 +1,22 @@
+{
+  "title": "Magtanong kay Kept",
+  "description": "Sabihin kung ano ang kailangan mo at kailan. Sinusuri ko ang totoong bakante.",
+  "newConversation": "Bagong usapan",
+  "close": "Isara",
+  "forExample": "Halimbawa:",
+  "starters": {
+    "one": "Barbero bukas ng hapon",
+    "two": "Gel nails ngayong weekend sa ilalim ng $60",
+    "three": "Masahe malapit sa akin ngayong gabi",
+    "four": "Math tutor online"
+  },
+  "searching": "Naghahanap",
+  "listening": "Nakikinig…",
+  "placeholder": "Barbero sa Sabado ng umaga…",
+  "yourMessage": "Ang iyong mensahe",
+  "stopListening": "Itigil ang pakikinig",
+  "speak": "Magsalita",
+  "send": "Ipadala",
+  "verified": "Beripikado",
+  "online": "Online"
+}

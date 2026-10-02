@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "Inasubiri malipo",
+    "requested": "Ombi limetumwa",
+    "confirmed": "Imethibitishwa",
+    "checked_in": "Amewasili",
+    "in_progress": "Inaendelea",
+    "completed": "Imekamilika",
+    "cancelled": "Imeghairiwa",
+    "declined": "Imekataliwa",
+    "no_show": "Hakufika",
+    "expired": "Imeisha muda"
+  },
+  "list": {
+    "title": "Miadi",
+    "filters": "Vichujio vya miadi",
+    "tabs": {
+      "upcoming": "Ijayo",
+      "past": "Iliyopita",
+      "cancelled": "Iliyoghairiwa"
+    },
+    "howDidItGo": "Ilikuwaje?",
+    "review": "Toa maoni",
+    "empty": {
+      "upcoming": "Hakuna miadi ijayo",
+      "past": "Hakuna miadi iliyopita bado",
+      "cancelled": "Hakuna iliyoghairiwa",
+      "upcomingBody": "Ukiweka miadi, itaonekana hapa — pamoja na maelekezo, vikumbusho na kupanga upya kwa urahisi.",
+      "findPro": "Tafuta mtaalamu"
+    },
+    "nextUp": "Inayofuata · {when}",
+    "nextUpOn": "Inayofuata · {day}",
+    "details": "Maelezo",
+    "directions": "Maelekezo"
+  },
+  "detail": {
+    "metaTitle": "Miadi",
+    "allBookings": "Miadi yote",
+    "hero": {
+      "confirmedTitle": "Miadi yako imewekwa",
+      "confirmedBody": "Tumetuma uthibitisho na tutakukumbusha kabla ya miadi yako.",
+      "requestedTitle": "Ombi limetumwa",
+      "requestedBody": "{business} atapitia ombi lako. Tutakuarifu mara tu watakapojibu — wakati wako unashikiliwa kwa sasa.",
+      "paymentTitle": "Tunamalizia malipo yako",
+      "paymentBody": "Ikiwa umelipa sasa hivi, hii itasasishwa kiotomatiki baada ya sekunde chache. Wakati wako unashikiliwa malipo yanapokamilika."
+    },
+    "calendarDetails": "Marejeo {reference}",
+    "ref": "Rej",
+    "when": "Lini",
+    "with": "Na",
+    "where": "Wapi",
+    "atYourAddress": "Kwenye anwani yako",
+    "online": "Mtandaoni",
+    "virtualLink": "Biashara itatuma kiungo kabla ya kikao chako.",
+    "yourReview": "Maoni yako",
+    "payment": {
+      "title": "Malipo",
+      "serviceFee": "Ada ya huduma",
+      "tax": "Kodi",
+      "estimatedTotal": "Jumla inayokadiriwa",
+      "total": "Jumla",
+      "paid": "Imelipwa",
+      "refunded": "Imerejeshwa",
+      "balance": "Salio",
+      "dueAtAppointment": "Inadaiwa wakati wa miadi",
+      "tip": "Bakshishi"
+    },
+    "policy": {
+      "title": "Sera ya kughairi",
+      "freeUntil": "Kughairi bila malipo hadi {hours, plural, one {saa #} other {saa #}} kabla.",
+      "freeAnytime": "Kughairi bila malipo wakati wowote kabla ya miadi.",
+      "lateFee": "Kughairi baadaye: {percent}% ya jumla.",
+      "depositNonRefundable": "Amana hairejeshwi.",
+      "cannotCancel": "Miadi hii haiwezi kughairiwa tena.",
+      "alreadyStarted": "Miadi hii tayari imeanza.",
+      "cannotReschedule": "Miadi hii haiwezi kupangwa upya.",
+      "maxReschedules": "Miadi hii imepangwa upya mara nyingi zaidi inavyoruhusiwa. Tafadhali wasiliana na biashara.",
+      "rescheduleWindow": "Mabadiliko lazima yafanywe angalau {hours, plural, one {saa #} other {saa #}} kabla ya miadi. Tafadhali wasiliana na biashara."
+    },
+    "refund": {
+      "noCharge": "Hakuna malipo.",
+      "full": "Utarejeshewa pesa zote.",
+      "none": "Malipo yako hayarejeshwi chini ya sera ya biashara hii.",
+      "partial": "Utarejeshewa sehemu ya pesa chini ya sera ya biashara hii."
+    },
+    "note": "Dokezo: {reason}",
+    "problem": "Una tatizo na miadi hii? <link>Wasiliana na usaidizi</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} saa {time}",
+    "cancelledToast": "Miadi imeghairiwa",
+    "refundOnWay": "Marejesho ya {amount} yako njiani.",
+    "rescheduledToast": "Imepangwa upya",
+    "payToConfirm": "Lipa {amount} ili kuthibitisha",
+    "addToCalendar": "Ongeza kwenye kalenda",
+    "directions": "Maelekezo",
+    "message": "Ujumbe",
+    "bookAgain": "Weka miadi tena",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "Toa maoni",
+    "reschedule": "Panga upya",
+    "cancelAppointment": "Ghairi miadi",
+    "cancelTitle": "Ghairi miadi hii?",
+    "insideWindow": "Uko ndani ya muda wa kughairi wa biashara.",
+    "refundAmount": "Marejesho: {amount}.",
+    "keptAmount": "Inabaki kwa biashara: {amount}.",
+    "reason": "Sababu",
+    "reasonHint": "Inashirikiwa na biashara.",
+    "chooseNewTime": "Chagua wakati mpya",
+    "currently": "Kwa sasa {when}",
+    "keepCurrentTime": "Acha wakati wa sasa",
+    "moveTo": "Hamishia {time}",
+    "chooseTime": "Chagua wakati"
+  },
+  "review": {
+    "ratings": {
+      "1": "Mbaya",
+      "2": "Wastani",
+      "3": "Nzuri",
+      "4": "Nzuri sana",
+      "5": "Bora kabisa"
+    },
+    "thanks": "Asante kwa maoni yako",
+    "title": "{business} ilikuwaje?",
+    "subtitle": "Maoni yako ni ya umma na yamewekwa alama kama miadi iliyothibitishwa.",
+    "rating": "Alama",
+    "stars": "{n, plural, one {nyota #} other {nyota #}}",
+    "bodyLabel": "Waambie wengine kuhusu ziara yako",
+    "bodyPlaceholder": "Nini kilikuvutia? Je, ungewapendekeza?",
+    "post": "Chapisha maoni"
+  },
+  "slotPicker": {
+    "previousWeek": "Wiki iliyopita",
+    "nextWeek": "Wiki ijayo",
+    "noOpenings": "Hakuna nafasi siku hii.",
+    "selected": "Umechagua {time}"
+  }
+}

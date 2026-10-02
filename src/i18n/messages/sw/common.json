@@ -1,0 +1,117 @@
+{
+  "language": "Lugha",
+  "meta": {
+    "title": "Kept — Weka miadi na wataalamu wa karibu unaowaamini",
+    "description": "Gundua na uweke miadi na vinyozi, wasusi, wakufunzi, wapigapicha, walimu na kila aina ya mtaalamu wa karibu — na uendeshe miadi yako mwenyewe kwa urahisi."
+  },
+  "skipToContent": "Ruka hadi maudhui",
+  "logoHome": "Mwanzo wa Kept",
+  "header": {
+    "mainNav": "Kuu",
+    "search": "Tafuta huduma au wataalamu",
+    "ask": "Uliza",
+    "askKept": "Uliza Kept",
+    "explore": "Gundua",
+    "myBusiness": "Biashara yangu",
+    "forPros": "Kwa wataalamu",
+    "bookings": "Miadi",
+    "messages": "Ujumbe",
+    "notifications": "Arifa",
+    "unread": "haijasomwa",
+    "accountMenu": "Menyu ya akaunti",
+    "logIn": "Ingia",
+    "signUp": "Jisajili"
+  },
+  "accountMenu": {
+    "bookings": "Miadi",
+    "saved": "Zilizohifadhiwa",
+    "messages": "Ujumbe",
+    "settings": "Mipangilio ya akaunti",
+    "help": "Msaada na usaidizi",
+    "switchToBusiness": "Badilisha uende kwenye biashara",
+    "offerServices": "Toa huduma zako",
+    "admin": "Dashibodi ya msimamizi",
+    "signOut": "Toka"
+  },
+  "tabs": {
+    "label": "Msingi",
+    "home": "Mwanzo",
+    "explore": "Gundua",
+    "bookings": "Miadi",
+    "inbox": "Kikasha",
+    "account": "Akaunti"
+  },
+  "footer": {
+    "tagline": "Weka miadi na wataalamu unaowaamini. Endesha miadi yako kwa juhudi kidogo.",
+    "discover": "Gundua",
+    "explore": "Chunguza",
+    "hair": "Nywele na vinyozi",
+    "wellness": "Afya njema",
+    "fitness": "Mazoezi",
+    "forPros": "Kwa wataalamu",
+    "howItWorks": "Inavyofanya kazi",
+    "listServices": "Orodhesha huduma zako",
+    "dashboard": "Dashibodi ya biashara",
+    "help": "Msaada",
+    "support": "Usaidizi",
+    "terms": "Masharti",
+    "privacy": "Faragha",
+    "copyright": "© {year} Kept. Haki zote zimehifadhiwa."
+  },
+  "price": {
+    "free": "Bure",
+    "quote": "Bei kwa mashauriano",
+    "from": "Kuanzia {price}"
+  },
+  "rating": {
+    "new": "Mpya",
+    "summary": "imepewa alama {avg} kutoka {count, plural, one {maoni #} other {maoni #}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Inasubiri malipo",
+    "requested": "Ombi limetumwa",
+    "confirmed": "Imethibitishwa",
+    "checked_in": "Amewasili",
+    "in_progress": "Inaendelea",
+    "completed": "Imekamilika",
+    "cancelled": "Imeghairiwa",
+    "declined": "Imekataliwa",
+    "no_show": "Hakufika",
+    "expired": "Imeisha muda"
+  },
+  "policy": {
+    "freeUntil": "Kughairi bila malipo hadi saa {hours} kabla. Kughairi baadaye kunatozwa {percent}% ya jumla.",
+    "cancelAhead": "Tafadhali ghairi angalau saa {hours} kabla ya miadi yako.",
+    "freeAnyTime": "Kughairi bila malipo wakati wowote kabla ya miadi yako.",
+    "depositRefundable": "Amana hurejeshwa ukighairi kwa wakati.",
+    "depositNonRefundable": "Amana hairejeshwi.",
+    "reschedule": "Panga upya mtandaoni hadi saa {hours} kabla."
+  },
+  "ui": {
+    "close": "Funga",
+    "keepIt": "Iache",
+    "optional": "Hiari",
+    "stars": "Nyota {value} kati ya 5",
+    "notifications": "Arifa"
+  },
+  "notFound": {
+    "eyebrow": "Ukurasa haujapatikana",
+    "title": "Ukurasa huo umehama.",
+    "body": "Kiungo kinaweza kuwa cha zamani, au mtaalamu amebadilisha anwani yake.",
+    "home": "Rudi mwanzo",
+    "explore": "Gundua wataalamu"
+  },
+  "error": {
+    "eyebrow": "Hitilafu imetokea",
+    "title": "Hatukuweza kupakia ukurasa huu.",
+    "body": "Tatizo liko upande wetu, si wako. Jaribu tena baada ya muda mfupi — likiendelea, tuambie.",
+    "retry": "Jaribu tena",
+    "support": "Wasiliana na usaidizi",
+    "ref": "Marejeo {id}"
+  },
+  "offline": {
+    "eyebrow": "Uko nje ya mtandao",
+    "title": "Hakuna muunganisho kwa sasa.",
+    "body": "Miadi yako iko salama. Unganisha tena na Kept itaendelea ulipoishia."
+  }
+}

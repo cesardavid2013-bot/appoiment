@@ -1,0 +1,782 @@
+{
+  "title": "Mipangilio",
+  "home": {
+    "description": "Jinsi {name} inavyoonekana, kupokea miadi na kulipwa."
+  },
+  "nav": {
+    "label": "Mipangilio",
+    "back": "Mipangilio",
+    "sections": {
+      "profile": {
+        "label": "Wasifu wa biashara",
+        "description": "Jina, picha, kuhusu, mawasiliano na viungo vya mitandao ya kijamii."
+      },
+      "locations": {
+        "label": "Maeneo",
+        "description": "Unapofanyia kazi: duka, kwa mteja, au mtandaoni."
+      },
+      "booking": {
+        "label": "Kanuni za miadi",
+        "description": "Miadi ya papo hapo au iliyoidhinishwa, taarifa, vikumbusho."
+      },
+      "policies": {
+        "label": "Kughairi na ada",
+        "description": "Muda wa kughairi, ada ya kutofika, kodi."
+      },
+      "payments": {
+        "label": "Malipo",
+        "description": "Pokea amana na malipo ya kadi mtandaoni."
+      },
+      "forms": {
+        "label": "Maswali ya wateja",
+        "description": "Fomu za awali ambazo wateja hujaza wanapoweka miadi."
+      },
+      "link": {
+        "label": "Kiungo cha miadi",
+        "description": "Anwani yako ya wavuti, msimbo wa QR na kuanza kuonekana."
+      },
+      "verification": {
+        "label": "Uthibitisho",
+        "description": "Pata beji ya kuthibitishwa kwenye wasifu wako."
+      },
+      "appearance": {
+        "label": "Mwonekano wa ukurasa",
+        "description": "Kichwa, rangi, mpangilio wa sehemu na vitufe vya viungo."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Inahifadhi…",
+    "unsaved": "Mabadiliko yasiyohifadhiwa",
+    "allSaved": "Mabadiliko yote yamehifadhiwa",
+    "discard": "Tupa",
+    "save": "Hifadhi",
+    "saved": "Imehifadhiwa",
+    "checkFields": "Angalia sehemu zilizoangaziwa."
+  },
+  "shareLink": {
+    "copy": "Nakili",
+    "copied": "Imenakiliwa"
+  },
+  "profile": {
+    "title": "Wasifu wa biashara",
+    "description": "Wateja wanachokiona kwenye ukurasa wako na kwenye utafutaji.",
+    "toastUpdated": "Wasifu umesasishwa",
+    "toastLive": "Mabadiliko yanaonekana kwenye ukurasa wako.",
+    "logoAlt": "Nembo ya {name}",
+    "viewPage": "Tazama ukurasa wako",
+    "photos": {
+      "title": "Picha",
+      "description": "Nembo yako inaonekana kwenye kadi na ujumbe; picha ya jalada inaongoza ukurasa wako. Tumia kazi au nafasi yako mwenyewe — si picha za kuazima.",
+      "noCover": "Hakuna picha ya jalada",
+      "remove": "Ondoa",
+      "uploading": "Inapakia…",
+      "changeCover": "Badilisha jalada",
+      "addCover": "Ongeza jalada",
+      "changeLogo": "Badilisha nembo",
+      "addLogo": "Ongeza nembo",
+      "logoHint": "Mraba hufanya kazi vizuri zaidi. Bila nembo tunaonyesha herufi zako za kwanza."
+    },
+    "basics": {
+      "title": "Msingi",
+      "nameIndividual": "Jina lako au jina la biashara",
+      "nameBusiness": "Jina la biashara",
+      "tagline": "Kauli mbiu",
+      "taglineHint": "Mstari mmoja chini ya jina lako. {count, plural, one {Herufi # imebaki.} other {Herufi # zimebaki.}}",
+      "taglinePlaceholder": "mf. Fade sahihi na kazi ya ndevu huko Bed-Stuy",
+      "category": "Kategoria kuu",
+      "categoryHint": "Unapoonekana watu wanapovinjari.",
+      "choose": "Chagua…",
+      "years": "Miaka ya uzoefu"
+    },
+    "about": {
+      "title": "Kuhusu",
+      "description": "Unachofanya, jinsi unavyofanya kazi, kinachofanya ziara kwako kuwa tofauti. Maneno rahisi yanashinda maneno ya kuvutia tu.",
+      "label": "Kuhusu",
+      "languages": "Lugha unazozungumza",
+      "amenities": "Huduma za ziada"
+    },
+    "tags": {
+      "optional": "Hiari",
+      "placeholder": "Andika kisha bonyeza Enter",
+      "remove": "Ondoa {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "Kiingereza",
+        "spanish": "Kihispania",
+        "french": "Kifaransa",
+        "portuguese": "Kireno",
+        "mandarin": "Kimandarini",
+        "cantonese": "Kikantoni",
+        "arabic": "Kiarabu",
+        "russian": "Kirusi",
+        "haitianCreole": "Kikrioli cha Haiti",
+        "korean": "Kikorea",
+        "vietnamese": "Kivietinamu",
+        "hindi": "Kihindi",
+        "italian": "Kiitaliano",
+        "german": "Kijerumani",
+        "polish": "Kipolandi",
+        "tagalog": "Kitagalogi"
+      },
+      "amenities": {
+        "wheelchair": "Inafikika kwa kiti cha magurudumu",
+        "streetParking": "Maegesho barabarani",
+        "freeParking": "Maegesho ya bure",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Malipo ya kadi",
+        "walkIns": "Wanaojitokeza wanakaribishwa",
+        "kidFriendly": "Rafiki kwa watoto",
+        "restroom": "Choo",
+        "airConditioning": "Kiyoyozi",
+        "drinks": "Vinywaji vinatolewa",
+        "genderNeutral": "Kwa jinsia zote",
+        "petFriendly": "Rafiki kwa wanyama kipenzi"
+      }
+    },
+    "contact": {
+      "title": "Mawasiliano na viungo",
+      "description": "Vinaonyeshwa kwenye ukurasa wako. Wateja wanaweza kukutumia ujumbe kupitia Kept kila wakati, kwa hiyo hivi ni hiari.",
+      "email": "Barua pepe ya umma",
+      "phone": "Simu ya umma",
+      "website": "Tovuti",
+      "websitePlaceholder": "kikoa-chako.com"
+    },
+    "social": {
+      "legend": "Wasifu wa mitandao ya kijamii",
+      "hint": "Andika jina lako la mtumiaji au ubandike kiungo cha wasifu wako. Ili kuangazia video, machapisho au nyimbo mahususi kwenye ukurasa wako, ziongeze kwenye <link>Jalada la kazi</link>.",
+      "placeholders": {
+        "instagram": "@jinalako",
+        "tiktok": "@jinalako",
+        "youtube": "@chaneliyako",
+        "facebook": "ukurasawako",
+        "x": "@jinalako",
+        "linkedin": "in/jinalako",
+        "spotify": "Kiungo cha msanii",
+        "soundcloud": "jinalako",
+        "behance": "jinalako",
+        "pinterest": "jinalako",
+        "twitch": "chaneliyako",
+        "threads": "@jinalako"
+      },
+      "errors": {
+        "wrongNetwork": "Hicho si kiungo cha {network}.",
+        "useProfile": "Tumia kiungo cha wasifu wako wa {network}.",
+        "badHandle": "Hilo halionekani kama jina la mtumiaji la {network}.",
+        "badArtist": "Hicho hakionekani kama kiungo cha msanii wa {network}."
+      }
+    },
+    "timezone": {
+      "title": "Saa za eneo",
+      "description": "Saa zako na kila wakati wa miadi viko katika eneo hili. Libadilishe tu ikiwa kweli umehama — miadi iliyopo inabaki na wakati wake kamili.",
+      "label": "Saa za eneo"
+    }
+  },
+  "booking": {
+    "title": "Kanuni za miadi",
+    "description": "Jinsi na lini wateja wanaweza kuweka miadi nawe. Huduma mojamoja zinaweza kubatilisha taarifa na idhini.",
+    "toastUpdated": "Kanuni za miadi zimesasishwa",
+    "mode": {
+      "title": "Uthibitisho",
+      "description": "Bado unaweza kuhitaji idhini kwa huduma mahususi kwenye kihariri cha huduma.",
+      "instantTitle": "Miadi ya papo hapo",
+      "instantDescription": "Wateja huchagua wakati ulio wazi nao wanawekewa miadi. Bora kwa biashara nyingi — ndivyo wateja wanavyotarajia.",
+      "requestTitle": "Idhinisha kila ombi",
+      "requestDescription": "Wateja hutuma ombi; wewe unakubali au unakataa. Maombi yasiyojibiwa huisha muda kiotomatiki ili mtu asisubiri milele."
+    },
+    "window": {
+      "title": "Wateja wanapoweza kuweka miadi",
+      "minNotice": "Taarifa ya chini kabisa",
+      "minNoticeHint": "Wakati wa mwisho ambao mteja anaweza kuweka miadi kabla ya muda wa kuanza.",
+      "noMinimum": "Hakuna kiwango cha chini — weka miadi hadi wakati wa kuanza",
+      "advance": "Weka miadi hadi",
+      "advanceHint": "Kalenda yako inafunguka mbele kwa umbali gani.",
+      "daysAhead": "{count, plural, one {siku # mbele} other {siku # mbele}}",
+      "yearAhead": "Mwaka 1 mbele",
+      "interval": "Nyakati za kuanza kila",
+      "intervalHint": "Vipindi vifupi huwapa wateja chaguo zaidi; virefu huweka siku yako nadhifu.",
+      "anyStaff": "Toa “Mtaalamu yeyote anayepatikana”",
+      "anyStaffDescription": "Huonyesha nyakati nyingi zaidi na kusambaza miadi kwa timu yako. Zima ikiwa wateja lazima wachague mtu."
+    },
+    "durations": {
+      "minutes": "{count, plural, one {dakika #} other {dakika #}}",
+      "hours": "{count, plural, one {saa #} other {saa #}}",
+      "days": "{count, plural, one {siku #} other {siku #}}",
+      "weeks": "{count, plural, one {wiki #} other {wiki #}}"
+    },
+    "reminders": {
+      "title": "Vikumbusho",
+      "description": "Hutumwa kwa barua pepe kabla ya kila miadi. Wateja wanaoweka miadi karibu zaidi kuliko wakati wa kikumbusho hawapati kikumbusho hicho.",
+      "descriptionSms": "Hutumwa kwa barua pepe na ujumbe mfupi (ikiwa mteja anaruhusu) kabla ya kila miadi. Wateja wanaoweka miadi karibu zaidi kuliko wakati wa kikumbusho hawapati kikumbusho hicho.",
+      "none": "Hakuna vikumbusho. Wateja wanapata uthibitisho wa miadi yao tu.",
+      "add": "Ongeza kikumbusho",
+      "addPlaceholder": "Ongeza kikumbusho…",
+      "upTo": "Hadi 3",
+      "remove": "Ondoa kikumbusho {label}",
+      "minutesBefore": "{count, plural, one {dakika # kabla} other {dakika # kabla}}",
+      "hoursBefore": "{count, plural, one {saa # kabla} other {saa # kabla}}",
+      "daysBefore": "{count, plural, one {siku # kabla} other {siku # kabla}}"
+    }
+  },
+  "policies": {
+    "title": "Kughairi na ada",
+    "description": "Wateja wanaona haya kabla ya kuweka miadi na tena kabla ya kughairi.",
+    "toastUpdated": "Sera zimesasishwa",
+    "cancel": {
+      "title": "Kughairi na kupanga upya",
+      "freeUntil": "Kughairi bila malipo hadi",
+      "rescheduleUntil": "Kupanga upya mtandaoni hadi",
+      "anyTime": "Wakati wowote kabla",
+      "oneDay": "Saa 24 (siku 1) kabla",
+      "hoursBefore": "{count, plural, one {saa # kabla} other {saa # kabla}}",
+      "daysBefore": "{count, plural, one {siku # kabla} other {siku # kabla}}",
+      "lateFee": "Ada ya kughairi kwa kuchelewa",
+      "lateFeeHintPaid": "Inakatwa kutoka kile mteja alicholipa mtandaoni. Hatutozi kamwe zaidi ya alichokilipa.",
+      "lateFeeHintUnpaid": "Inatumika tu kwa pesa zilizolipwa mtandaoni. Unganisha malipo na upokee amana ili kuitekeleza.",
+      "none": "Hakuna",
+      "ofTotal": "ya jumla",
+      "noShowFee": "Ada ya kutofika",
+      "noShowHint": "Sehemu ya sera yako ili wateja wajue mapema. Ukiweka alama ya kutofika, chochote walicholipa mtandaoni kinabaki kwako; ada iliyokusanywa ana kwa ana inaweza kurekodiwa kwenye miadi.",
+      "refundDeposits": "Rejesha amana kwa kughairi kwa wakati",
+      "refundDepositsDescription": "Ikizimwa, amana huhifadhiwa mteja anapoghairi wakati wowote."
+    },
+    "words": {
+      "title": "Kwa maneno yako mwenyewe",
+      "description": "Madokezo ya hiari yanayoonyeshwa pamoja na sera yako.",
+      "late": "Kuchelewa",
+      "lateHint": "mf. “Baada ya kuchelewa dakika 15 huenda tukahitaji kufupisha au kuweka upya huduma yako.”",
+      "before": "Kabla ya ziara yako",
+      "beforeHint": "Inaonyeshwa kwa kila mteja kabla hajathibitisha — maelekezo, cha kuleta, jinsi ya kujiandaa."
+    },
+    "tax": {
+      "title": "Kodi ya mauzo",
+      "description": "Inaongezwa juu ya bei zako wakati wa kulipa na kuonyeshwa kama mstari wake. Iache kwenye 0 ikiwa bei zako tayari zinajumuisha kodi.",
+      "rate": "Kiwango",
+      "rateError": "Weka kiwango kati ya 0 na 30%",
+      "label": "Lebo",
+      "labelPlaceholder": "Kodi ya mauzo"
+    },
+    "preview": {
+      "title": "Wateja wanachokiona kabla ya kuweka miadi"
+    }
+  },
+  "payments": {
+    "title": "Malipo",
+    "description": "Pokea amana au malipo kamili wateja wanapoweka miadi. Kulipa ana kwa ana pia kunafanya kazi kila wakati.",
+    "online": {
+      "title": "Malipo ya mtandaoni",
+      "description": "Malipo huchakatwa na Stripe na kulipwa kwenye akaunti yako ya benki. Kept haioni nambari za kadi kamwe."
+    },
+    "unavailable": {
+      "badge": "Haipatikani bado",
+      "body": "Malipo ya kadi hayajawashwa kwa Kept bado. Hadi yatakapowashwa, wateja wanakulipa wakati wa miadi, na unaweza kurekodi kila malipo — fedha taslimu, kisoma kadi au uhamisho — kutoka ukurasa wa miadi ili rekodi zako na Uchambuzi ziwe sahihi.",
+      "note": "Hakuna cha kufanya hapa kwa sasa. Amana na sera ulizoweka zitaanza kutumika malipo ya mtandaoni yatakapofunguliwa."
+    },
+    "none": {
+      "deposits": "Hitaji amana au malipo kamili kwa kila huduma",
+      "fees": "Weka ada za kughairi kwa kuchelewa kutoka kwenye amana kiotomatiki",
+      "tips": "Waruhusu wateja kuongeza bakshishi baada ya ziara",
+      "connect": "Andaa malipo kwa Stripe",
+      "time": "Huchukua takriban dakika 5. Utahitaji maelezo yako ya benki na kitambulisho."
+    },
+    "incomplete": {
+      "badge": "Maandalizi hayajakamilika",
+      "body": "Stripe bado inahitaji maelezo machache kabla ya kupokea malipo.",
+      "continue": "Endelea na maandalizi"
+    },
+    "connected": {
+      "badge": "Imeunganishwa",
+      "body": "Unaweza kupokea amana na malipo mtandaoni.",
+      "services": "Chagua cha kukusanya kwa kila huduma kwenye <link>Huduma</link>."
+    },
+    "fees": {
+      "title": "Ada",
+      "kept": "Ada ya Kept kwenye malipo ya mtandaoni",
+      "inPerson": "Malipo yaliyopokelewa ana kwa ana",
+      "noFee": "Hakuna ada ya Kept",
+      "processing": "Uchakataji wa kadi",
+      "stripeRate": "Kiwango cha kawaida cha Stripe"
+    }
+  },
+  "link": {
+    "title": "Kiungo cha miadi",
+    "description": "Ukurasa wako kwenye Kept. Uweke kwenye wasifu wako, kwenye kadi yako, kwenye kioo.",
+    "checklist": {
+      "location": "Ongeza unapofanyia kazi",
+      "services": "Unda angalau huduma moja",
+      "availability": "Weka saa zako za kazi",
+      "done": "Imekamilika",
+      "todo": "Ya kufanya"
+    },
+    "status": {
+      "liveTitle": "Ukurasa wako unaonekana",
+      "draftTitle": "Ukurasa wako haujaanza kuonekana",
+      "liveDescription": "Wateja wanaweza kukupata kwenye utafutaji na kuweka miadi mtandaoni.",
+      "draftDescription": "Ni wewe tu unayeuona. Anza kuonekana orodha ikikamilika.",
+      "live": "Hai",
+      "hide": "Ficha ukurasa wangu",
+      "goLive": "Anza kuonekana",
+      "viewPage": "Tazama ukurasa",
+      "preview": "Hakikisho"
+    },
+    "toasts": {
+      "live": "Unaonekana — wateja wanaweza kukupata na kuweka miadi",
+      "hidden": "Ukurasa wako umefichwa",
+      "hiddenDescription": "Miadi iliyopo haiathiriwi.",
+      "slugUpdated": "Anwani imesasishwa",
+      "slugUpdatedDescription": "Kiungo chako cha zamani hakifanyi kazi tena — kisasishe popote ulipokishiriki.",
+      "copied": "Imenakiliwa"
+    },
+    "share": {
+      "title": "Shiriki",
+      "qrLabel": "Msimbo wa QR wa {address}",
+      "qrHint": "Uchapishe mapokezini, kwenye kadi za biashara au kwenye kioo chako. Kuuchanganua kunafungua ukurasa wako wa miadi moja kwa moja.",
+      "png": "PNG ya kuchapisha",
+      "svg": "SVG",
+      "embedSummary": "Ongeza kitufe cha “Weka miadi sasa” kwenye tovuti yako",
+      "embedHint": "Bandika hii unapotaka kitufe kiwe.",
+      "copyCode": "Nakili msimbo",
+      "buttonText": "Weka miadi na {name}"
+    },
+    "slug": {
+      "title": "Anwani ya wavuti",
+      "description": "Herufi ndogo, nambari na vistari. Kuibadilisha kunavunja viungo ulivyokwisha shiriki.",
+      "change": "Badilisha anwani",
+      "label": "Anwani"
+    },
+    "hideDialog": {
+      "title": "Ficha ukurasa wako?",
+      "description": "Utatoweka kwenye utafutaji na hakuna anayeweza kuweka miadi mtandaoni. Miadi iliyopo inabaki kama ilivyo. Unaweza kuanza kuonekana tena wakati wowote.",
+      "confirm": "Ficha ukurasa"
+    }
+  },
+  "locations": {
+    "title": "Maeneo",
+    "description": "Wateja wanapoweka miadi nawe: duka lako, eneo unalosafiria, au mtandaoni. Kila huduma na mwanatimu anaweza kuwekewa kikomo kwa baadhi yake.",
+    "privacy": {
+      "title": "Wateja wanachoweza kuona",
+      "atPlace": "Kwako",
+      "atPlaceBody": "Anwani kamili na ramani, ili wateja wakupate.",
+      "travel": "Kusafiri kwa wateja",
+      "travelBody": "Jiji lako tu na umbali unaosafiri. Ukifanya kazi nyumbani, anwani ya nyumbani kwako na mahali kamili havionyeshwi kamwe — utafutaji unakuweka ndani ya takriban km 5. Wateja wanakupa anwani zao wanapoweka miadi.",
+      "online": "Mtandaoni",
+      "onlineBody": "Hakuna anwani kabisa, ni kwamba vikao vinafanyika mtandaoni tu."
+    },
+    "kinds": {
+      "physical": {
+        "label": "Kwangu",
+        "description": "Duka, studio, ofisi"
+      },
+      "mobile": {
+        "label": "Ninaenda kwa wateja",
+        "description": "Nyumba, ofisi, matukio"
+      },
+      "virtual": {
+        "label": "Mtandaoni",
+        "description": "Vikao vya video au simu"
+      }
+    },
+    "summary": {
+      "mobile": "Husafiri hadi km {km} kutoka {place}",
+      "virtual": "Vikao vya mtandaoni"
+    },
+    "list": {
+      "title": "Maeneo yako",
+      "count": "{count} kati ya {max} kwenye mpango wa {plan}",
+      "emptyTitle": "Hakuna maeneo bado",
+      "emptyBody": "Wateja hawawezi kuweka miadi hadi wajue miadi inafanyikia wapi. Ongeza duka lako, eneo unalosafiria, au vikao vya mtandaoni.",
+      "add": "Ongeza eneo",
+      "primary": "Kuu",
+      "upcoming": "{count, plural, one {miadi # ijayo} other {miadi # ijayo}}",
+      "notPinned": "Halijabandikwa kwenye ramani",
+      "actions": "Vitendo vya {name}",
+      "edit": "Hariri",
+      "makePrimary": "Lifanye kuu",
+      "remove": "Ondoa eneo",
+      "atLimit": "{count, plural, one {Mpango wako wa {plan} unajumuisha eneo #. Ondoa moja ili kuongeza lingine.} other {Mpango wako wa {plan} unajumuisha maeneo #. Ondoa moja ili kuongeza lingine.}}",
+      "primaryHint": "Eneo kuu ndilo linaloonyeshwa kwanza kwenye wasifu wako na kwenye utafutaji."
+    },
+    "toasts": {
+      "primary": "{name} sasa ni eneo lako kuu",
+      "removed": "{name} limeondolewa",
+      "saved": "Eneo limehifadhiwa",
+      "added": "Eneo limeongezwa"
+    },
+    "remove": {
+      "blockedTitle": "{name} haliwezi kuondolewa bado",
+      "ok": "Sawa",
+      "title": "Ondoa {name}?",
+      "confirm": "Ondoa eneo",
+      "description": "Wateja hawataweza kuweka miadi hapo tena. Miadi iliyopita inabaki na maelezo yake.",
+      "primaryNote": "Eneo lako kongwe zaidi lililobaki litakuwa kuu.",
+      "membersNote": "{count, plural, one {Mwanatimu # amepangiwa hapa. Yeyote aliyepangiwa hapa pekee ataweza kuwekewa miadi katika maeneo yako yote.} other {Wanatimu # wamepangiwa hapa. Yeyote aliyepangiwa hapa pekee ataweza kuwekewa miadi katika maeneo yako yote.}}",
+      "servicesNote": "Huduma zinazotolewa hapa zinabaki na maeneo yake mengine.",
+      "onlyLocation": "Ndilo eneo lako pekee. Ongeza lingine kwanza ili wateja bado wawe na mahali pa kuweka miadi.",
+      "upcoming": "{count, plural, one {Lina miadi # ijayo. Ihamishe au uighairi kutoka kwenye <link>kalenda</link> yako kwanza.} other {Lina miadi # ijayo. Ihamishe au uighairi kutoka kwenye <link>kalenda</link> yako kwanza.}}",
+      "exclusive": "{count, plural, one {{names} inatolewa hapa pekee. Itoe mahali pengine au uifiche kwenye <link>Huduma</link>.} other {{names} zinatolewa hapa pekee. Zitoe mahali pengine au uzifiche kwenye <link>Huduma</link>.}}",
+      "quoted": "“{name}”"
+    },
+    "dialog": {
+      "editTitle": "Hariri {name}",
+      "addTitle": "Ongeza eneo",
+      "cancel": "Ghairi",
+      "save": "Hifadhi eneo",
+      "add": "Ongeza eneo",
+      "where": "Miadi hufanyikia wapi?",
+      "name": "Jina",
+      "nameHintPhysical": "Linaonyeshwa kwa wateja, mf. jina la duka au mtaa.",
+      "nameHintOther": "Linaonyeshwa kwa wateja wanapochagua mahali pa kuweka miadi.",
+      "namePlaceholderPhysical": "mf. Studio ya katikati ya jiji",
+      "defaultMobile": "Huduma ya kuhama",
+      "defaultVirtual": "Mtandaoni",
+      "street": "Anwani ya barabara",
+      "line2": "Ghorofa, jengo, sakafu",
+      "cityBased": "Jiji unalokaa",
+      "city": "Jiji",
+      "region": "Mkoa / eneo",
+      "postalCode": "Msimbo wa posta",
+      "country": "Msimbo wa nchi",
+      "countryHint": "Herufi mbili, mf. US, MX, ES",
+      "radius": "Utasafiri umbali gani?",
+      "radiusOption": "Hadi km {km}",
+      "timezone": "Saa za eneo",
+      "timezoneHint": "Saa na miadi hapa hutumia eneo hili.",
+      "phone": "Simu",
+      "phoneHint": "Ikiwa wateja wanapaswa kupiga eneo hili moja kwa moja.",
+      "primary": "Lifanye eneo langu kuu",
+      "primaryDescription": "Linaonyeshwa kwanza kwenye wasifu wako na hutumika kwa utafutaji."
+    },
+    "pin": {
+      "title": "Alama kwenye ramani",
+      "physical": "Huweka duka lako kwenye ramani na kwenye utafutaji wa “karibu nami”. Wateja wanaona anwani uliyoweka hapo juu.",
+      "mobile": "Hutumika tu kukulinganisha na wateja walio karibu. Alama yako kamili na anwani ya barabara haziwahi kuonyeshwa — wasifu wako unaonyesha jiji, na utafutaji unakuweka ndani ya takriban km 5.",
+      "find": "Tafuta anwani hii",
+      "useMine": "Tumia mahali nilipo sasa",
+      "remove": "Ondoa alama",
+      "removed": "Alama imeondolewa.",
+      "matches": "Anwani zinazolingana",
+      "pinnedTo": "Imebandikwa {place}.",
+      "pinned": "Imebandikwa.",
+      "notPinned": "Haijabandikwa bado. Bado utaonekana wateja wanapotafuta jiji lako.",
+      "noGeolocation": "Kivinjari hiki hakiwezi kushiriki mahali kilipo.",
+      "here": "Imebandikwa mahali ulipo sasa.",
+      "denied": "Hatukuweza kupata mahali ulipo. Angalia ruhusa ya mahali ya kivinjari chako.",
+      "enterAddress": "Weka anwani kwanza.",
+      "noMatch": "Hakuna kinacholingana. Angalia anwani, au tumia mahali ulipo sasa."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Maelekezo ya kufika",
+        "placeholder": "mf. Egesha Elm St. Bonyeza kengele ya nyumba 2B kisha upande hadi ghorofa ya pili.",
+        "hint": "Maegesho, mlango, msimbo wa kengele. Wateja wanaona haya kwenye wasifu wako na kwenye miadi yao."
+      },
+      "mobile": {
+        "label": "Madokezo kwa wateja",
+        "placeholder": "mf. Nitahitaji nafasi ya maegesho ndani ya m 50 na ufikiaji wa soketi ya umeme.",
+        "hint": "Wateja wanachopaswa kuwa nacho tayari. Linaonyeshwa kwenye miadi yao."
+      },
+      "virtual": {
+        "label": "Jinsi vikao vinavyofanya kazi",
+        "placeholder": "mf. Utapata kiungo cha video kwa ujumbe saa moja kabla ya kikao chako.",
+        "hint": "Linaonyeshwa kwenye miadi yao. Usibandike kiungo cha mkutano cha faragha hapa — tuma viungo kwenye Ujumbe."
+      }
+    }
+  },
+  "verification": {
+    "title": "Uthibitisho",
+    "description": "Waonyeshe wateja kwamba biashara halisi, yenye leseni iko nyuma ya wasifu wako. Timu yetu hukagua hati unazotuma kwa mkono.",
+    "status": {
+      "title": "Hali",
+      "not_submitted": "Haijathibitishwa",
+      "pending": "Inakaguliwa",
+      "verified": "Imethibitishwa",
+      "rejected": "Haijakubaliwa",
+      "needs_info": "Taarifa zaidi zinahitajika"
+    },
+    "body": {
+      "notSubmitted": "Hujaomba kuthibitishwa bado. Tuma maelezo na hati chache hapa chini.",
+      "pending": "Imetumwa {date}. Mtu kwenye timu yetu hukagua kila ombi kwa mkono; utapata arifa mara tu uamuzi utakapofanywa. Huwezi kubadilisha ombi likiwa linakaguliwa.",
+      "pendingNoDate": "Imetumwa. Mtu kwenye timu yetu hukagua kila ombi kwa mkono; utapata arifa mara tu uamuzi utakapofanywa. Huwezi kubadilisha ombi likiwa linakaguliwa.",
+      "verified": "{name} imethibitishwa tangu {date}. Beji inaonekana kwenye <link>wasifu wako wa umma</link> na kwenye matokeo ya utafutaji.",
+      "verifiedNoDate": "{name} imethibitishwa. Beji inaonekana kwenye <link>wasifu wako wa umma</link> na kwenye matokeo ya utafutaji.",
+      "rejected": "Hatukuweza kuthibitisha {name} kwa kilichotumwa {date}. Unaweza kutuma maelezo na hati mpya hapa chini.",
+      "rejectedNoDate": "Hatukuweza kuthibitisha {name} kwa kilichotumwa. Unaweza kutuma maelezo na hati mpya hapa chini.",
+      "needsInfo": "Timu yetu inahitaji kitu kidogo zaidi kabla ya kuamua. Jibu hapa chini na ombi lako litarudi kwenye ukaguzi."
+    },
+    "note": "Dokezo kutoka Kept",
+    "noteDate": "Dokezo kutoka Kept · {date}",
+    "submit": {
+      "replyTitle": "Jibu timu yetu",
+      "retryTitle": "Jaribu tena",
+      "requestTitle": "Omba uthibitisho",
+      "firstDescription": "Tuambie kuhusu biashara na uambatishe uthibitisho. Biashara nyingi hutuma leseni moja au hati moja ya usajili.",
+      "againDescription": "Tumehifadhi ulichotuma mara ya mwisho. Kibadilishe au ukiongeze."
+    },
+    "sent": {
+      "title": "Ulichotuma",
+      "description": "Tarehe {date}.",
+      "noDescription": "Hakuna maelezo.",
+      "documents": "Hati",
+      "open": "Fungua hati {n}",
+      "removed": "Baadhi ya hati ziliondolewa na haziwezi kufunguliwa tena."
+    },
+    "meaning": {
+      "title": "Wateja wanachokiona",
+      "example": "Mfano wa beji ya kuthibitishwa",
+      "checkMark": "Alama ya tiki karibu na jina lako kwenye wasifu wako na matokeo ya utafutaji, yenye lebo “Biashara iliyothibitishwa”.",
+      "notEndorsement": "Inamaanisha Kept ilipitia hati ulizotoa. Si tathmini ya kazi yako wala uidhinishaji — alama zako bado zinatoka kwa wateja.",
+      "private": "Hati zinabaki za faragha. Ni watu wanaosimamia biashara hii na timu ya ukaguzi ya Kept pekee wanaoweza kuzifungua.",
+      "removable": "Timu yetu inaweza kuondoa beji baadaye, kwa mfano ikiwa leseni itagundulika kuwa batili."
+    },
+    "form": {
+      "documentN": "Hati {n}",
+      "tooMany": "{count, plural, one {Unaweza kuambatisha hati # tu.} other {Unaweza kuambatisha hadi hati #.}}",
+      "needSomething": "Ongeza maelezo mafupi au angalau hati moja.",
+      "sentReply": "Imetumwa. Ombi lako limerudi kwenye ukaguzi.",
+      "submitted": "Imewasilishwa kwa ukaguzi",
+      "replyLabel": "Jibu lako",
+      "aboutLabel": "Kuhusu biashara yako",
+      "hint": "Nambari za leseni au usajili, nani alizitoa, na umefanya kazi kwa muda gani. Chochote kinachotusaidia kuthibitisha kuwa biashara ni halisi na ni yako.",
+      "placeholder": "mf. Kinyozi mwenye leseni, leseni ya Jimbo la NY #12345678, ilitolewa 2019. Duka limesajiliwa kama North Fade LLC.",
+      "documents": "Hati",
+      "documentsHint": "Picha au skani (JPG, PNG au WebP, hadi MB 15 kila moja) za leseni, cheti cha usajili au cheti cha uthibitisho. Hadi {max}.",
+      "attachedList": "Hati zilizoambatishwa",
+      "open": "Fungua hati {n}",
+      "uploading": "Inapakia {name}",
+      "fromLast": "Kutoka kwa ombi lako la mwisho",
+      "attached": "Imeambatishwa",
+      "remove": "Ondoa {name}",
+      "addAnother": "Ongeza hati nyingine",
+      "add": "Ongeza hati",
+      "uploadingAll": "Inapakia hati",
+      "attachedCount": "{count, plural, one {hati # imeambatishwa} other {hati # zimeambatishwa}}",
+      "privacy": "Ni watu wanaosimamia biashara hii na timu ya ukaguzi ya Kept pekee wanaoweza kufungua faili hizi. Hazionyeshwi kamwe kwenye wasifu wako.",
+      "waiting": "Inasubiri upakiaji…",
+      "sendReply": "Tuma jibu",
+      "submitAgain": "Wasilisha tena",
+      "submit": "Wasilisha kwa ukaguzi"
+    }
+  },
+  "forms": {
+    "title": "Maswali ya wateja",
+    "description": "Maswali ambayo wateja hujibu wanapoweka miadi: mizio, malengo, gari wanaloleta. Unda fomu mara moja, kisha uchague kwenye kila huduma inayoihitaji.",
+    "newForm": "Fomu mpya",
+    "editForm": "Hariri fomu",
+    "notIncludedTitle": "Haijajumuishwa kwenye mpango wako",
+    "notIncludedBody": "Maswali ya awali si sehemu ya mpango wa {plan}. Huduma bado zinapokea miadi bila hayo.",
+    "emptyTitle": "Hakuna fomu bado",
+    "emptyBody": "Uliza unachohitaji kujua kabla ya miadi, ili usije kugundua ukiwa kazini. Majibu huhifadhiwa kwenye miadi na kuonyeshwa kwa atakayefanya miadi.",
+    "create": "Unda fomu",
+    "listLabel": "Fomu",
+    "noQuestions": "Hakuna maswali bado",
+    "questions": "{count, plural, one {swali #} other {maswali #}}",
+    "required": "{count, plural, one {# ni lazima} other {# ni lazima}}",
+    "edited": "Ilihaririwa {date}",
+    "footer": "Ili kuuliza fomu kwenye huduma, fungua huduma kisha uichague chini ya <b>Maswali na mahitaji</b>. Kila huduma huuliza fomu moja tu.",
+    "notUsed": "Haitumiki na huduma yoyote bado",
+    "askedOn": "Inaulizwa kwenye <list></list>",
+    "hidden": "(imefichwa)",
+    "more": "{count, plural, one {# zaidi} other {# zaidi}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "Jibu fupi",
+        "hint": "Jina, nambari, maneno machache.",
+        "placeholder": "mf. Gari lako ni la chapa na modeli gani?"
+      },
+      "long_text": {
+        "label": "Aya",
+        "hint": "Nafasi ya sentensi chache.",
+        "placeholder": "mf. Tuambie kuhusu majeraha yoyote tunayopaswa kujua."
+      },
+      "yes_no": {
+        "label": "Ndiyo / Hapana",
+        "hint": "Vitufe viwili: Ndiyo na Hapana.",
+        "placeholder": "mf. Hii ni ziara yako ya kwanza?"
+      },
+      "single_choice": {
+        "label": "Chaguo nyingi",
+        "hint": "Wateja huchagua chaguo moja.",
+        "placeholder": "mf. Nywele zako ni ndefu kiasi gani sasa?"
+      },
+      "multi_choice": {
+        "label": "Visanduku vya kuteua",
+        "hint": "Wateja huteua vyovyote vinavyohusika.",
+        "placeholder": "mf. Ni maeneo gani ungependa tuyazingatie?"
+      },
+      "date": {
+        "label": "Tarehe",
+        "hint": "Kichagua tarehe, mf. tarehe ya kuzaliwa au tarehe ya tukio.",
+        "placeholder": "mf. Tukio ni lini?"
+      },
+      "acknowledgement": {
+        "label": "Kukiri",
+        "hint": "Kauli ambayo wateja huiteua kuthibitisha kuwa wameisoma.",
+        "placeholder": "mf. Ninaelewa kwamba kipimo cha ngozi kinahitajika saa 48 kabla ya huduma ya rangi."
+      }
+    },
+    "errors": {
+      "name": "Ipe fomu jina",
+      "statement": "Andika kauli ambayo wateja wanakubali",
+      "question": "Andika swali",
+      "twoChoices": "Ongeza angalau chaguo mbili",
+      "distinct": "Kila chaguo lazima liwe tofauti"
+    },
+    "leaveConfirm": "Una mabadiliko yasiyohifadhiwa kwenye fomu hii. Utoke bila kuyahifadhi?",
+    "toasts": {
+      "saved": "Fomu imehifadhiwa",
+      "created": "Fomu imeundwa",
+      "archived": "Fomu imehifadhiwa kwenye kumbukumbu",
+      "archivedFrom": "{count, plural, one {Fomu imehifadhiwa kwenye kumbukumbu na kuondolewa kwenye huduma #} other {Fomu imehifadhiwa kwenye kumbukumbu na kuondolewa kwenye huduma #}}"
+    },
+    "untitled": "Swali lisilo na kichwa",
+    "archive": "Hifadhi fomu kwenye kumbukumbu",
+    "show": "Onyesha",
+    "questionsTab": "{count, plural, one {Maswali (#)} other {Maswali (#)}}",
+    "previewTab": "Hakikisho la mteja",
+    "details": "Maelezo ya fomu",
+    "nameLabel": "Jina la fomu",
+    "nameHint": "Timu yako pekee ndiyo inaliona. Wateja wanaona maswali tu.",
+    "namePlaceholder": "mf. Mashauriano ya mteja mpya",
+    "questions": "Maswali",
+    "questionCount": "{count} kati ya {max}",
+    "emptyTitle": "Hakuna maswali bado",
+    "emptyBody": "Yaweke mafupi. Maswali mawili au matatu hujibiwa; kumi huruka.",
+    "saveBar": {
+      "saving": "Inahifadhi…",
+      "fix": "{count, plural, one {Rekebisha jambo # kabla ya kuhifadhi} other {Rekebisha mambo # kabla ya kuhifadhi}}",
+      "unsaved": "Mabadiliko yasiyohifadhiwa",
+      "allSaved": "Mabadiliko yote yamehifadhiwa",
+      "newForm": "Fomu mpya",
+      "discard": "Tupa",
+      "cancel": "Ghairi",
+      "save": "Hifadhi mabadiliko",
+      "create": "Unda fomu"
+    },
+    "archiveDialog": {
+      "title": "Hifadhi “{name}” kwenye kumbukumbu?",
+      "confirm": "Hifadhi fomu kwenye kumbukumbu",
+      "confirmUsed": "{count, plural, one {Hifadhi kwenye kumbukumbu na uondoe kwenye huduma #} other {Hifadhi kwenye kumbukumbu na uondoe kwenye huduma #}}",
+      "descriptionUsed": "Huduma hizi zitaacha kuuliza maswali haya kwenye miadi mipya hadi uchague fomu nyingine:",
+      "descriptionUnused": "Hakuna huduma inayouliza fomu hii, kwa hiyo hakuna kinachobadilika kwa wateja.",
+      "keep": "Majibu yaliyokwisha tolewa kwenye miadi iliyopita na ijayo yanabaki kwenye miadi hiyo.",
+      "lost": "Mabadiliko yasiyohifadhiwa ya fomu hii yatapotea."
+    },
+    "usage": {
+      "none": "Hakuna huduma inayouliza fomu hii bado. Fungua huduma kwenye <link>Huduma</link> kisha uichague chini ya Maswali na mahitaji.",
+      "title": "Inaulizwa wateja wanapoweka miadi",
+      "hidden": "imefichwa",
+      "note": "Mabadiliko yanatumika kwa miadi mipya ya huduma hizi mara tu unapohifadhi."
+    },
+    "add": {
+      "label": "Ongeza swali",
+      "limit": "Kikomo cha maswali {max} kimefikiwa",
+      "type": "Aina ya swali"
+    },
+    "card": {
+      "required": "Lazima",
+      "attention": "Inahitaji uangalizi",
+      "moveUp": "Hamisha swali {n} juu",
+      "moveDown": "Hamisha swali {n} chini",
+      "type": "Aina",
+      "statement": "Kauli",
+      "question": "Swali",
+      "helpText": "Maandishi ya msaada",
+      "helpAck": "Yanaonyeshwa chini ya kauli, mf. mahali pa kusoma sera kamili.",
+      "helpQuestion": "Yanaonyeshwa chini ya swali.",
+      "mustTick": "Lazima iteuliwe ili kuweka miadi",
+      "ackRequired": "Wateja hawawezi kuweka miadi hadi waiteue.",
+      "questionRequired": "Wateja hawawezi kuweka miadi bila kujibu.",
+      "optional": "Wateja wanaweza kuliruka.",
+      "duplicate": "Nakili",
+      "delete": "Futa",
+      "done": "Imekamilika"
+    },
+    "options": {
+      "legend": "Chaguo",
+      "choice": "Chaguo {n}",
+      "remove": "Ondoa chaguo {n}",
+      "max": "Chaguo {max} kwa kiwango cha juu",
+      "add": "Ongeza chaguo"
+    },
+    "preview": {
+      "title": "Hakikisho la mteja",
+      "description": "Hatua ya “Maelezo machache” ya kuweka miadi. Ijaribu; hakuna kinachohifadhiwa.",
+      "empty": "Maswali unayoongeza yanaonekana hapa kama wateja watakavyoyaona.",
+      "noteLabel": "Kuna jambo lingine wanalopaswa kujua?",
+      "noteHint": "Kila miadi huishia na kisanduku hiki. Si sehemu ya fomu yako.",
+      "notePlaceholder": "Mzio, mapendeleo, maelezo ya maegesho…",
+      "invalid": "{count, plural, one {jibu # halipo au si sahihi} other {majibu # hayapo au si sahihi}}",
+      "allGood": "Yote sawa — hii ingekubaliwa.",
+      "clear": "Futa",
+      "tryContinue": "Jaribu kuendelea",
+      "errors": {
+        "confirm": "Tafadhali thibitisha ili kuendelea.",
+        "required": "Swali hili ni lazima.",
+        "invalid": "Jibu si sahihi.",
+        "tooLong": "Liweke chini ya herufi {max}.",
+        "choose": "Chagua mojawapo ya chaguo.",
+        "invalidChoice": "Chaguo si sahihi.",
+        "date": "Weka tarehe sahihi."
+      }
+    }
+  },
+  "appearance": {
+    "title": "Mwonekano wa ukurasa",
+    "description": "Fanya ukurasa wako wa umma uonekane kama wewe: kichwa chake, rangi ya msisitizo, mpangilio wa sehemu, tangazo na vitufe vyako vya viungo.",
+    "saved": "Ukurasa wako umesasishwa",
+    "masthead": {
+      "title": "Kichwa",
+      "body": "Cheusi na cha kisinema, au chepesi na cha hewa. Picha yako ya jalada inaonekana kwa vyovyote vile.",
+      "sample": "Ukurasa wako",
+      "noir": "Noir — kichwa cheusi",
+      "ivory": "Ivory — kichwa chepesi"
+    },
+    "accent": {
+      "title": "Rangi ya msisitizo",
+      "body": "Hutumika kwa maelezo madogo: lebo, mistari, nyota na vimulimuli.",
+      "names": {
+        "brass": "Shaba ya manjano",
+        "emerald": "Zumaridi",
+        "rose": "Waridi",
+        "sapphire": "Yakuti samawati",
+        "copper": "Shaba nyekundu"
+      }
+    },
+    "sections": {
+      "title": "Sehemu",
+      "body": "Chagua wageni wanachoona na kwa mpangilio gani. Huduma huja kwanza na maoni hubaki yakionekana kila wakati — ndiyo yanayofanya ukurasa wako kuaminika.",
+      "alwaysFirst": "Daima ya kwanza",
+      "always": "Daima inaonyeshwa",
+      "hide": "Ficha {name}",
+      "show": "Onyesha {name}",
+      "up": "Hamisha {name} juu",
+      "down": "Hamisha {name} chini",
+      "names": {
+        "services": "Huduma",
+        "work": "Kazi",
+        "featured": "Zilizoangaziwa",
+        "team": "Timu",
+        "reviews": "Maoni",
+        "about": "Kuhusu"
+      }
+    },
+    "notice": {
+      "title": "Tangazo",
+      "body": "Ujumbe mfupi juu ya ukurasa wako — saa za likizo, orodha ya kusubiri, eneo jipya.",
+      "label": "Ujumbe",
+      "placeholder": "Tumefungwa Desemba 24–26. Tunarudi tarehe 27."
+    },
+    "links": {
+      "title": "Vitufe vya viungo",
+      "body": "Menyu yako, kadi za zawadi, duka au orodha ya nyimbo: hadi vitufe 8 vinavyoonyeshwa kwenye ukurasa wako.",
+      "label": "Maandishi ya kitufe",
+      "url": "Anwani",
+      "labelPlaceholder": "Kadi za zawadi",
+      "remove": "Ondoa kiungo",
+      "add": "Ongeza kiungo"
+    }
+  }
+}

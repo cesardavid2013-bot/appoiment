@@ -1,0 +1,99 @@
+{
+  "barber": { "name": "Kinyozi" },
+  "hair": {
+    "name": "Nywele na vinyozi",
+    "description": "Kukata, kupaka rangi, mitindo, kusuka na urembo wa kunyoa."
+  },
+  "lashes-brows": { "name": "Kope na nyusi" },
+  "massage": { "name": "Masaji" },
+  "personal-training": { "name": "Mafunzo ya kibinafsi" },
+  "hair-salon": { "name": "Saluni ya nywele" },
+  "makeup": { "name": "Vipodozi" },
+  "nails": {
+    "name": "Kucha",
+    "description": "Manicure, pedicure, kucha bandia na sanaa ya kucha."
+  },
+  "spa": { "name": "Spa" },
+  "yoga-pilates": { "name": "Yoga na pilates" },
+  "beauty": {
+    "name": "Urembo",
+    "description": "Kope, nyusi, vipodozi na ngozi."
+  },
+  "braids-locs": { "name": "Msuko na dreadlocks" },
+  "skincare": { "name": "Ngozi na urembo wa ngozi" },
+  "wellness": {
+    "name": "Afya njema",
+    "description": "Masaji, spa na huduma za mwili."
+  },
+  "fitness": {
+    "name": "Mazoezi",
+    "description": "Mafunzo ya kibinafsi, yoga, pilates na ukocha."
+  },
+  "tattoo-piercing": {
+    "name": "Tatoo na kutoboa",
+    "description": "Tatoo maalum, miundo tayari na kutoboa."
+  },
+  "photography": {
+    "name": "Picha na video",
+    "description": "Picha za wasifu, matukio, bidhaa na video."
+  },
+  "education": {
+    "name": "Masomo na ufundishaji",
+    "description": "Walimu wa ziada, walimu wa muziki na masomo ya lugha."
+  },
+  "home-services": {
+    "name": "Nyumba na bustani",
+    "description": "Usafi, ukarabati, mafundi wa nyumbani na bustani."
+  },
+  "automotive": {
+    "name": "Magari",
+    "description": "Usafi wa kina wa gari, kuosha gari na mafundi wanaokuja kwako."
+  },
+  "pets": {
+    "name": "Wanyama kipenzi",
+    "description": "Urembo, kuwatunza na kuwafunza."
+  },
+  "events": {
+    "name": "Matukio",
+    "description": "DJ, wapangaji na wataalamu wa matukio."
+  },
+  "professional": {
+    "name": "Huduma za kitaalamu",
+    "description": "Washauri, makocha na wataalamu wa ushauri."
+  },
+  "other": {
+    "name": "Nyingine",
+    "description": "Kila kitu kingine unachoweza kuweka miadi."
+  },
+  "music-audio": {
+    "name": "Muziki na sauti",
+    "description": "Maprodyuza, studio za kurekodi, mixing na mafunzo ya sauti."
+  },
+  "music-production": { "name": "Utayarishaji wa muziki" },
+  "recording-studio": { "name": "Studio za kurekodi" },
+  "vocal-coaching": { "name": "Mafunzo ya sauti" },
+  "creators": {
+    "name": "Waundaji na maudhui",
+    "description": "Waundaji wa maudhui, UGC, mitandao ya kijamii na uhariri wa video."
+  },
+  "content-creation": { "name": "Uundaji wa maudhui" },
+  "video-editing": { "name": "Uhariri wa video" },
+  "social-media": { "name": "Usimamizi wa mitandao ya kijamii" },
+  "design": {
+    "name": "Usanifu na ubunifu",
+    "description": "Usanifu wa picha, chapa, tovuti na mambo ya ndani."
+  },
+  "graphic-design": { "name": "Usanifu wa picha na chapa" },
+  "web-design": { "name": "Usanifu wa tovuti" },
+  "interior-design": { "name": "Usanifu wa mambo ya ndani" },
+  "health": {
+    "name": "Afya na utunzaji",
+    "description": "Tiba ya viungo, lishe, tiba ya kisaikolojia na utunzaji kamili."
+  },
+  "physio": { "name": "Tiba ya viungo na tiba ya mgongo" },
+  "nutrition": { "name": "Lishe" },
+  "therapy": { "name": "Tiba ya kisaikolojia na ushauri nasaha" },
+  "cleaning": { "name": "Usafi" },
+  "handyman": { "name": "Fundi na ukarabati" },
+  "gardening": { "name": "Bustani" }
+}

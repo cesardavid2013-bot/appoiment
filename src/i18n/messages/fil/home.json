@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Welcome back, {name}",
+    "eyebrow": "Ang appointment, panatag",
+    "title": "I-book ang mga taong nagpapaganda ng iyong <em>linggo.</em>",
+    "lead": "Mga barbero, stylist, trainer, tutor, photographer at marami pa — may totoong bakanteng oras, malinaw na presyo at mga review mula lang sa beripikadong pagbisita.",
+    "points": {
+      "verified": "Beripikadong review lang",
+      "prices": "Alam ang presyo bago mag-book",
+      "instant": "Agarang kumpirmasyon"
+    }
+  },
+  "search": {
+    "placeholder": "Gupit, masahe, photographer…",
+    "label": "Ano ang gusto mong i-book?",
+    "category": "Kategorya",
+    "submit": "Hanapin",
+    "sayIt": "O sabihin mo na lang —",
+    "sayItExample": "“barbero bukas pagkalipas ng 5”"
+  },
+  "openings": {
+    "title": "Malapit nang magbukas",
+    "live": "Live mula sa mga kalendaryo",
+    "appointment": "Appointment"
+  },
+  "index": {
+    "eyebrow": "Ang indeks",
+    "title": "Lahat ng uri ng appointment",
+    "exploreAll": "Tingnan lahat",
+    "pros": "{count, plural, one {# propesyonal} other {# propesyonal}}"
+  },
+  "next": {
+    "title": "Ang susunod mong appointment",
+    "details": "Mga detalye"
+  },
+  "again": {
+    "title": "Mag-book muli",
+    "rebook": "I-rebook"
+  },
+  "rails": {
+    "availableSoon": "Available na sa lalong madaling panahon",
+    "availableSoonNear": "Malapit nang maging available sa {place}",
+    "availableSoonNearYou": "Malapit nang maging available malapit sa iyo",
+    "availableSoonSub": "Live na bakanteng oras mula sa kalendaryo ng bawat propesyonal.",
+    "recent": "Kamakailang tiningnan",
+    "topRated": "Mataas ang rating",
+    "topRatedSub": "Ang mga rating ay galing lang sa natapos at beripikadong booking.",
+    "newcomers": "Bago sa Kept"
+  },
+  "how": {
+    "eyebrow": "Paano ito gumagana",
+    "title": "Tatlong hakbang, walang paulit-ulit na tawag",
+    "find": {
+      "title": "Hanapin ang tamang tao",
+      "body": "Maghanap ayon sa kailangan mo, kailan at saan — o magtanong sa sarili mong salita. Bawat profile ay may totoong presyo at beripikadong review."
+    },
+    "choose": {
+      "title": "Pumili ng totoong oras",
+      "body": "Ang mga oras na nakikita mo ay bakante ngayon sa kanilang kalendaryo. Pumili ng isa, magdagdag ng opsyon, at kumpirmahin."
+    },
+    "kept": {
+      "title": "Kept na iyan",
+      "body": "Makakatanggap ka ng kumpirmasyon, paalala bago ang araw, at iisang lugar para mag-reschedule, mag-message o mag-rebook."
+    }
+  },
+  "pros": {
+    "eyebrow": "Para sa mga propesyonal",
+    "title": "Karapat-dapat ang iyong galing sa <em>mas magandang</em> front desk.",
+    "body": "Online booking, kalendaryong hindi nagkakaroon ng double-booking, mga paalalang nagpapababa ng no-show, at pahinang nagpapakita ng iyong gawa nang karapat-dapat. Libre habang naglulunsad kami.",
+    "cta": "Ialok ang iyong serbisyo",
+    "howItWorks": "Tingnan kung paano ito gumagana",
+    "features": {
+      "any": {
+        "title": "Anumang serbisyo",
+        "body": "Awtomatikong nagbabago ang presyo at oras ayon sa mga opsyon."
+      },
+      "noDouble": {
+        "title": "Walang double-booking",
+        "body": "Sinusuri ang bawat oras sa mismong sandali ng pag-book."
+      },
+      "noShows": {
+        "title": "Mas kaunting no-show",
+        "body": "Mga paalala, deposito at malinaw na patakaran."
+      },
+      "discovered": {
+        "title": "Mapansin",
+        "body": "Portfolio, beripikadong review at Spotlight."
+      }
+    }
+  }
+}
