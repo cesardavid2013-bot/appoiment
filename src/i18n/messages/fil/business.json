@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Pumupunta sa iyo",
+    "comesToYouIn": "Pumupunta sa iyo · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Pino-promote",
+    "verified": "Beripikadong negosyo",
+    "instant": "Agarang kumpirmasyon",
+    "request": "Humiling mag-book",
+    "bookAt": "Mag-book sa {day} nang {time}",
+    "moreTimes": "Iba pang oras",
+    "freeConsultation": "May libreng konsultasyon",
+    "priceOnRequest": "Presyo kapag hiniling",
+    "viewTimes": "Tingnan ang mga oras"
+  },
+  "rail": {
+    "seeAll": "Tingnan lahat"
+  },
+  "favorite": {
+    "save": "I-save",
+    "saved": "Naka-save",
+    "remove": "Alisin sa mga naka-save",
+    "savedToast": "Na-save",
+    "savedToastHint": "Hanapin ito anumang oras sa Mga naka-save."
+  }
+}
