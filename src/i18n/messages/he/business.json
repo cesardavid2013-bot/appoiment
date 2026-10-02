@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "אונליין",
+    "comesToYou": "מגיע אליכם",
+    "comesToYouIn": "מגיע אליכם · {city}",
+    "lessThanOneKm": "פחות מ-1 ק״מ",
+    "promoted": "ממומן",
+    "verified": "עסק מאומת",
+    "instant": "אישור מיידי",
+    "request": "בקשת הזמנה",
+    "bookAt": "הזמנה ל-{day} בשעה {time}",
+    "moreTimes": "עוד שעות",
+    "freeConsultation": "זמינה פגישת ייעוץ חינם",
+    "priceOnRequest": "מחיר לפי בקשה",
+    "viewTimes": "לצפייה בשעות"
+  },
+  "rail": {
+    "seeAll": "הצגת הכול"
+  },
+  "favorite": {
+    "save": "שמירה",
+    "saved": "נשמר",
+    "remove": "הסרה מהשמורים",
+    "savedToast": "נשמר",
+    "savedToastHint": "אפשר למצוא את זה בכל עת בשמורים."
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "לא נמצא",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} ב{city}",
+    "bookOnline": "הזמינו תור אונליין אצל {name}."
+  },
+  "preview": {
+    "notice": "תצוגה מקדימה — רק אתם רואים את הדף הזה עד שתפרסמו אותו.",
+    "goLive": "פרסום"
+  },
+  "verified": "מאומת על ידי Kept",
+  "verifiedLabel": "עסק מאומת",
+  "reviewsCount": "{count, plural, one {חוות דעת מאומתת אחת} two {# חוות דעת מאומתות} other {# חוות דעת מאומתות}}",
+  "newOnKept": "חדש ב-Kept",
+  "travels": "{city} · מגיע עד {km} ק״מ",
+  "status": {
+    "openUntil": "פתוח · עד {time}",
+    "opensAt": "נפתח בשעה {time}",
+    "opensTomorrow": "נפתח מחר בשעה {time}",
+    "opensDay": "נפתח ב{day} בשעה {time}",
+    "notSet": "שעות הפעילות לא הוגדרו",
+    "closed": "סגור"
+  },
+  "nav": {
+    "label": "חלקי הפרופיל",
+    "services": "שירותים",
+    "work": "עבודות",
+    "featured": "מומלצים",
+    "reviews": "חוות דעת",
+    "about": "אודות"
+  },
+  "services": {
+    "eyebrow": "התפריט",
+    "title": "שירותים",
+    "empty": "העסק הזה עדיין לא פרסם שירותים.",
+    "sale": "מבצע",
+    "group": "קבוצה · עד {count}",
+    "request": "בקשת הזמנה",
+    "options": "אפשרויות זמינות",
+    "deposit": "מקדמה בעת ההזמנה",
+    "book": "הזמנה",
+    "bookService": "הזמנת {name}"
+  },
+  "work": {
+    "eyebrow": "תיק עבודות",
+    "title": "עבודות אחרונות"
+  },
+  "featured": {
+    "eyebrow": "ברשתות",
+    "title": "מומלצים",
+    "allProfiles": "כל הפרופילים ברשתות",
+    "bookThis": "הזמינו את זה · {service}",
+    "newTab": "(נפתח בלשונית חדשה)",
+    "footnote": "הנגנים נטענים מכל פלטפורמה רק כשלוחצים על ניגון.",
+    "play": "ניגון: {title}",
+    "loadsFrom": "נטען מ-{host}"
+  },
+  "team": {
+    "eyebrow": "האנשים",
+    "title": "צוות"
+  },
+  "reviews": {
+    "eyebrow": "מפה לאוזן",
+    "title": "חוות דעת",
+    "empty": "עדיין אין חוות דעת. רק לקוחות יכולים להשאיר חוות דעת, לאחר ביקור שהושלם.",
+    "distribution": "התפלגות הדירוגים",
+    "onlyCustomers": "רק לקוחות עם הזמנה שהושלמה יכולים להשאיר חוות דעת.",
+    "response": "תגובה מאת {name}",
+    "stars": "{value} מתוך 5 כוכבים"
+  },
+  "about": {
+    "eyebrow": "הבית",
+    "title": "אודות",
+    "hours": "שעות פעילות",
+    "timesIn": "השעות מוצגות לפי אזור הזמן {zone}.",
+    "policies": "מדיניות",
+    "noShow": "על תורים שהוחמצו עשויים לחייב {percent}% מהסכום הכולל.",
+    "experience": "{years}+ שנות ניסיון",
+    "amenities": "מתקנים",
+    "online": "אונליין",
+    "directions": "הוראות הגעה",
+    "comesToYou": "מגיע אליכם",
+    "mobileBody": "ממוקם ב{city}. מגיע עד {km} ק״מ — את הכתובת שלכם תוסיפו בזמן ההזמנה.",
+    "onlineSessions": "מפגשים אונליין",
+    "onlineBody": "מתחברים מכל מקום. הקישור נשלח לאחר ההזמנה."
+  },
+  "panel": {
+    "label": "הזמנה",
+    "eyebrow": "שריינו",
+    "freeOptions": "אפשרויות חינם זמינות",
+    "from": "שירותים החל מ-{price}",
+    "onConsultation": "מחירים בהתאם לייעוץ",
+    "nextToday": "הזמן הפנוי הקרוב: היום",
+    "nextTomorrow": "הזמן הפנוי הקרוב: מחר",
+    "nextOn": "הזמן הפנוי הקרוב: {day}",
+    "none": "אין זמנים פנויים בשבועיים הקרובים",
+    "bookNow": "הזמינו עכשיו",
+    "requestToBook": "בקשת הזמנה",
+    "instant": "אישור מיידי",
+    "confirms": "העסק מאשר את הבקשה שלכם",
+    "notTaking": "העסק הזה עדיין לא מקבל הזמנות.",
+    "mobileFrom": "החל מ-{price}",
+    "mobileNext": "הקרוב: {day} {time}",
+    "seeAvailability": "לצפייה בזמינות",
+    "request": "בקשה"
+  },
+  "actions": {
+    "share": "שיתוף",
+    "shareTitle": "שיתוף של {name}",
+    "shareBody": "שלחו את הקישור, או סרקו את הקוד כדי לפתוח את עמוד ההזמנות.",
+    "copy": "העתקה",
+    "copied": "הועתק",
+    "downloadQr": "הורדת קוד QR",
+    "ask": "שאלו שאלה",
+    "messageTitle": "הודעה ל{name}",
+    "messageBody": "שאלו על שירותים, זמינות או כל דבר אחר לפני ההזמנה. מספר הטלפון והאימייל שלכם נשארים פרטיים.",
+    "cancel": "ביטול",
+    "send": "שליחת הודעה",
+    "yourMessage": "ההודעה שלכם",
+    "placeholder": "היי! יש לך זמן לסקין פייד ביום שבת אחר הצהריים?",
+    "sent": "ההודעה נשלחה",
+    "sentBody": "{name} ישיב בתיבת ההודעות שלכם."
+  },
+  "portfolio": {
+    "compare": "השוואה לפני ואחרי",
+    "portfolio": "תיק עבודות",
+    "close": "סגירה",
+    "previous": "הקודם",
+    "next": "הבא",
+    "before": "לפני",
+    "after": "אחרי",
+    "beforeAfter": "לפני / אחרי",
+    "video": "וידאו",
+    "openItem": "פתיחת פריט {n}",
+    "browse": "השתמשו בחצים כדי לדפדף",
+    "bookThis": "הזמינו את זה",
+    "bookThisService": "הזמינו את זה — {service}"
+  },
+  "kind": {
+    "video": "וידאו",
+    "short": "Short",
+    "post": "פוסט",
+    "reel": "Reel",
+    "track": "רצועה",
+    "album": "אלבום",
+    "artist": "אמן",
+    "playlist": "פלייליסט",
+    "episode": "פרק",
+    "show": "פודקאסט"
+  },
+  "links": {
+    "label": "כפתורי קישור"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Έρχεται σε εσάς",
+    "comesToYouIn": "Έρχεται σε εσάς · {city}",
+    "lessThanOneKm": "<1 χλμ.",
+    "promoted": "Προωθούμενο",
+    "verified": "Επαληθευμένη επιχείρηση",
+    "instant": "Άμεση επιβεβαίωση",
+    "request": "Αίτημα κράτησης",
+    "bookAt": "Κλείστε {day} στις {time}",
+    "moreTimes": "Περισσότερες ώρες",
+    "freeConsultation": "Διαθέσιμη δωρεάν διαβούλευση",
+    "priceOnRequest": "Τιμή κατόπιν αιτήματος",
+    "viewTimes": "Δείτε ώρες"
+  },
+  "rail": {
+    "seeAll": "Δείτε όλα"
+  },
+  "favorite": {
+    "save": "Αποθήκευση",
+    "saved": "Αποθηκεύτηκε",
+    "remove": "Αφαίρεση από τα αποθηκευμένα",
+    "savedToast": "Αποθηκεύτηκε",
+    "savedToastHint": "Θα το βρείτε ανά πάσα στιγμή στα Αποθηκευμένα."
+  }
+}

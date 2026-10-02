@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "در انتظار پرداخت",
+    "requested": "درخواست ارسال شد",
+    "confirmed": "تأییدشده",
+    "checked_in": "حضور ثبت شد",
+    "in_progress": "در حال انجام",
+    "completed": "انجام‌شده",
+    "cancelled": "لغوشده",
+    "declined": "ردشده",
+    "no_show": "عدم حضور",
+    "expired": "منقضی‌شده"
+  },
+  "list": {
+    "title": "رزروها",
+    "filters": "فیلترهای رزرو",
+    "tabs": {
+      "upcoming": "پیش رو",
+      "past": "گذشته",
+      "cancelled": "لغوشده"
+    },
+    "howDidItGo": "چطور بود؟",
+    "review": "ثبت نظر",
+    "empty": {
+      "upcoming": "نوبت پیش رو ندارید",
+      "past": "هنوز نوبت گذشته‌ای ندارید",
+      "cancelled": "چیزی لغو نشده است",
+      "upcomingBody": "وقتی رزرو کنید، نوبت‌هایتان اینجا نشان داده می‌شوند — همراه با مسیریابی، یادآوری و تغییر آسان زمان.",
+      "findPro": "یافتن متخصص"
+    },
+    "nextUp": "نوبت بعدی · {when}",
+    "nextUpOn": "نوبت بعدی · {day}",
+    "details": "جزئیات",
+    "directions": "مسیریابی"
+  },
+  "detail": {
+    "metaTitle": "نوبت",
+    "allBookings": "همهٔ رزروها",
+    "hero": {
+      "confirmedTitle": "رزرو شما ثبت شد",
+      "confirmedBody": "تأییدیه فرستاده‌ایم و پیش از نوبت یادآوری می‌کنیم.",
+      "requestedTitle": "درخواست ارسال شد",
+      "requestedBody": "{business} درخواست شما را بررسی می‌کند. به‌محض پاسخ به شما اطلاع می‌دهیم — تا آن زمان وقت شما نگه داشته می‌شود.",
+      "paymentTitle": "در حال نهایی‌کردن پرداخت",
+      "paymentBody": "اگر همین الان پرداخت کرده‌اید، این صفحه طی چند ثانیه خودکار به‌روز می‌شود. تا تکمیل پرداخت وقت شما نگه داشته می‌شود."
+    },
+    "calendarDetails": "شناسه {reference}",
+    "ref": "شناسه",
+    "when": "زمان",
+    "with": "با",
+    "where": "کجا",
+    "atYourAddress": "در نشانی شما",
+    "online": "آنلاین",
+    "virtualLink": "کسب‌وکار پیوند را پیش از جلسه می‌فرستد.",
+    "yourReview": "نظر شما",
+    "payment": {
+      "title": "پرداخت",
+      "serviceFee": "کارمزد خدمات",
+      "tax": "مالیات",
+      "estimatedTotal": "جمع کل تخمینی",
+      "total": "جمع کل",
+      "paid": "پرداخت‌شده",
+      "refunded": "بازگردانده‌شده",
+      "balance": "مانده",
+      "dueAtAppointment": "قابل پرداخت در زمان نوبت",
+      "tip": "انعام"
+    },
+    "policy": {
+      "title": "قوانین لغو",
+      "freeUntil": "لغو رایگان تا {hours, plural, one {# ساعت} other {# ساعت}} قبل.",
+      "freeAnytime": "لغو رایگان در هر زمان پیش از نوبت.",
+      "lateFee": "لغوهای دیرتر: {percent}٪ از مبلغ کل.",
+      "depositNonRefundable": "پیش‌پرداخت قابل بازگشت نیست.",
+      "cannotCancel": "این نوبت دیگر قابل لغو نیست.",
+      "alreadyStarted": "این نوبت از قبل شروع شده است.",
+      "cannotReschedule": "زمان این نوبت قابل تغییر نیست.",
+      "maxReschedules": "زمان این نوبت به بیشترین دفعات مجاز تغییر کرده است. لطفاً با کسب‌وکار تماس بگیرید.",
+      "rescheduleWindow": "تغییرات باید دست‌کم {hours, plural, one {# ساعت} other {# ساعت}} پیش از نوبت انجام شود. لطفاً با کسب‌وکار تماس بگیرید."
+    },
+    "refund": {
+      "noCharge": "بدون هزینه.",
+      "full": "مبلغ به‌طور کامل بازگردانده می‌شود.",
+      "none": "طبق قوانین این کسب‌وکار، پرداخت شما قابل بازگشت نیست.",
+      "partial": "طبق قوانین این کسب‌وکار، بخشی از مبلغ بازگردانده می‌شود."
+    },
+    "note": "یادداشت: {reason}",
+    "problem": "مشکلی در این رزرو دارید؟ <link>با پشتیبانی تماس بگیرید</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} ساعت {time}",
+    "cancelledToast": "نوبت لغو شد",
+    "refundOnWay": "بازپرداخت {amount} در راه است.",
+    "rescheduledToast": "زمان تغییر کرد",
+    "payToConfirm": "برای تأیید {amount} بپردازید",
+    "addToCalendar": "افزودن به تقویم",
+    "directions": "مسیریابی",
+    "message": "پیام",
+    "bookAgain": "رزرو دوباره",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "ثبت نظر",
+    "reschedule": "تغییر زمان",
+    "cancelAppointment": "لغو نوبت",
+    "cancelTitle": "این نوبت لغو شود؟",
+    "insideWindow": "در بازهٔ لغو این کسب‌وکار قرار دارید.",
+    "refundAmount": "بازپرداخت: {amount}.",
+    "keptAmount": "نزد کسب‌وکار می‌ماند: {amount}.",
+    "reason": "دلیل",
+    "reasonHint": "با کسب‌وکار به اشتراک گذاشته می‌شود.",
+    "chooseNewTime": "انتخاب زمان جدید",
+    "currently": "فعلاً {when}",
+    "keepCurrentTime": "حفظ زمان فعلی",
+    "moveTo": "انتقال به {time}",
+    "chooseTime": "انتخاب زمان"
+  },
+  "review": {
+    "ratings": {
+      "1": "ضعیف",
+      "2": "متوسط",
+      "3": "خوب",
+      "4": "عالی",
+      "5": "بی‌نظیر"
+    },
+    "thanks": "از نظر شما سپاسگزاریم",
+    "title": "{business} چطور بود؟",
+    "subtitle": "نظر شما عمومی است و به‌عنوان رزرو تأییدشده نشان داده می‌شود.",
+    "rating": "امتیاز",
+    "stars": "{n, plural, one {# ستاره} other {# ستاره}}",
+    "bodyLabel": "دیگران را از تجربهٔ خود باخبر کنید",
+    "bodyPlaceholder": "چه چیزی برجسته بود؟ آن‌ها را توصیه می‌کنید؟",
+    "post": "ثبت نظر"
+  },
+  "slotPicker": {
+    "previousWeek": "هفتهٔ قبل",
+    "nextWeek": "هفتهٔ بعد",
+    "noOpenings": "در این روز زمان خالی نیست.",
+    "selected": "{time} انتخاب شد"
+  }
+}

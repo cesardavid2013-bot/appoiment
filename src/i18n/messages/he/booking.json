@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "הזמנת תור אצל {name}",
+    "fallbackTitle": "הזמנה"
+  },
+  "steps": {
+    "service": "בחירת שירות",
+    "options": "התאמה אישית",
+    "who": "מי ואיפה",
+    "time": "בחירת שעה",
+    "details": "כמה פרטים",
+    "review": "סקירה ואישור"
+  },
+  "header": {
+    "backTo": "חזרה אל {name}",
+    "previousStep": "השלב הקודם",
+    "stepOf": "שלב {current} מתוך {total}",
+    "exit": "יציאה מההזמנה"
+  },
+  "service": {
+    "optionsAvailable": "אפשרויות זמינות",
+    "group": "קבוצה · עד {count}"
+  },
+  "options": {
+    "required": "חובה",
+    "upTo": "בחרו עד {count}",
+    "optionalAny": "אופציונלי · אפשר לבחור כמה",
+    "optional": "אופציונלי",
+    "included": "כלול",
+    "errorRequired": "בחרו אפשרות עבור “{name}”.",
+    "errorOnlyOne": "בחרו אפשרות אחת בלבד עבור “{name}”.",
+    "errorUpTo": "בחרו עד {count} עבור “{name}”.",
+    "errorUnavailable": "אחת האפשרויות שנבחרו כבר אינה זמינה."
+  },
+  "who": {
+    "where": "איפה",
+    "with": "עם",
+    "comesToYou": "מגיע אליכם · עד {km} ק״מ מ{city}",
+    "online": "מפגש אונליין",
+    "anyPro": "כל איש מקצוע פנוי",
+    "anyProHint": "הכי הרבה זמנים — נתאים לכם את מי שפנוי."
+  },
+  "details": {
+    "addressLabel": "לאן להגיע?",
+    "addressHint": "עד {km} ק״מ מ{city}. מועבר לעסק בלבד.",
+    "addressPlaceholder": "רחוב ומספר, דירה, עיר",
+    "consent": "קראתי ואני מסכים/ה לאמור לעיל",
+    "age": "אני מאשר/ת שאני בן/בת {age} לפחות",
+    "noteLabel": "יש עוד משהו שחשוב שידעו?",
+    "notePlaceholder": "אלרגיות, העדפות, הערות על חניה…"
+  },
+  "review": {
+    "changeTime": "שינוי שעה",
+    "with": "עם",
+    "where": "איפה",
+    "yourAddress": "הכתובת שלכם",
+    "online": "אונליין",
+    "noteLabel": "יש משהו שחשוב שידעו?",
+    "notePlaceholder": "העדפות, שאלות, צרכי נגישות…",
+    "promoApplied": "הקוד {code} הופעל",
+    "promoRemove": "הסרה",
+    "promoPlaceholder": "קוד קופון",
+    "promoApply": "הפעלה",
+    "beforeYouBook": "לפני שמזמינים",
+    "bookingAs": "הזמנה בשם {name}"
+  },
+  "confirm": {
+    "request": "שליחת בקשת הזמנה",
+    "requestShort": "שליחת בקשה",
+    "pay": "אישור ותשלום של {amount}",
+    "payShort": "תשלום {amount}",
+    "confirm": "אישור ההזמנה",
+    "confirmShort": "אישור"
+  },
+  "summary": {
+    "label": "סיכום ההזמנה",
+    "instant": "אישור מיידי",
+    "request": "מאושר על ידי העסק",
+    "total": "סה״כ",
+    "estimatedTotal": "סה״כ משוער",
+    "estimated": "משוער",
+    "comesToYou": "מגיע אליכם",
+    "online": "אונליין",
+    "empty": "בחרו שירות כדי לראות זמנים ומחירים.",
+    "continue": "המשך",
+    "signInToBook": "התחברו כדי להזמין"
+  },
+  "time": {
+    "preselectMissed": "השעה שבחרתם כבר אינה זמינה עם הבחירות האלה. הנה הזמנים הקרובים ביותר.",
+    "previousWeeks": "שבועיים אחורה",
+    "nextWeeks": "שבועיים קדימה",
+    "chooseDate": "בחירת תאריך",
+    "today": "היום",
+    "timesAvailable": "{count, plural, one {זמן פנוי אחד} two {# זמנים פנויים} other {# זמנים פנויים}}",
+    "noAvailability": "אין זמינות",
+    "noOpeningsOn": "אין זמנים פנויים ב-{date}",
+    "noOpeningsThisDay": "אין זמנים פנויים ביום הזה",
+    "nextOpening": "הזמן הפנוי הקרוב: {date}.",
+    "tryLater": "נסו את השבועיים הקרובים, או הצטרפו לרשימת ההמתנה ונעדכן אתכם אם יתפנה משהו.",
+    "joinWaitlist": "הצטרפות לרשימת ההמתנה ליום הזה",
+    "morning": "בוקר",
+    "afternoon": "אחר הצהריים",
+    "evening": "ערב",
+    "morningTimes": "שעות הבוקר",
+    "afternoonTimes": "שעות אחר הצהריים",
+    "eveningTimes": "שעות הערב",
+    "spotsLeft": "{count, plural, one {נותר אחד} two {נותרו #} other {נותרו #}}",
+    "timesIn": "השעות מוצגות לפי {abbr} ({zone}).",
+    "timesInLocal": "השעות מוצגות לפי {abbr} ({zone}) — אצלכם זה {time}."
+  },
+  "waitlist": {
+    "title": "הצטרפות לרשימת ההמתנה",
+    "description": "אם יתפנה זמן ב-{date}, נעדכן אתכם מיד. הזמנים הפנויים הולכים למי שמזמין ראשון.",
+    "cancel": "ביטול",
+    "notify": "עדכנו אותי",
+    "windowLabel": "זמנים שמתאימים לכם",
+    "any": "כל שעה באותו יום",
+    "morning": "בוקר (לפני הצהריים)",
+    "afternoon": "אחר הצהריים (12:00–17:00)",
+    "evening": "ערב (אחרי 17:00)",
+    "joined": "אתם ברשימת ההמתנה",
+    "joinedBody": "נעדכן אתכם מיד אם יתפנה זמן."
+  },
+  "price": {
+    "label": "פירוט המחיר",
+    "total": "סה״כ",
+    "estimatedTotal": "סה״כ משוער",
+    "payNow": "לתשלום עכשיו",
+    "depositNow": "מקדמה לתשלום עכשיו",
+    "remaining": "יתרה לתשלום בתור",
+    "nothingNow": "אין צורך לשלם עכשיו — משלמים בתור.",
+    "estimateNote": "המחיר הסופי מאושר על ידי העסק ועשוי להשתנות בהתאם לעבודה הנדרשת.",
+    "tax": "מס",
+    "serviceFee": "דמי שירות"
+  },
+  "checkout": {
+    "title": "תשלום",
+    "description": "השלימו את התשלום כדי לאשר את ההזמנה.",
+    "pay": "תשלום {amount}",
+    "secured": "מאובטח על ידי Stripe. השעה שלכם נשמרת בזמן התשלום.",
+    "declined": "הכרטיס שלכם נדחה.",
+    "failed": "לא הצלחנו להשלים את התשלום. הכרטיס לא חויב — נסו שוב."
+  },
+  "intake": {
+    "optional": "(אופציונלי)",
+    "yes": "כן",
+    "no": "לא"
+  }
+}

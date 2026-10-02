@@ -1,0 +1,93 @@
+{
+  "youPrefix": "شما:",
+  "unread": "خوانده‌نشده",
+  "apptLine": "{service} · {date} ساعت {time}",
+  "list": {
+    "title": "پیام‌ها",
+    "unread": "{count, plural, one {# گفتگوی خوانده‌نشده.} other {# گفتگوی خوانده‌نشده.}}",
+    "caughtUp": "همه‌چیز خوانده شده.",
+    "emptyTitle": "هنوز پیامی ندارید",
+    "emptyBody": "دربارهٔ خدمت، قیمت یا زمان سؤال دارید؟ صفحهٔ متخصص را باز کنید و «پرسیدن سؤال» را بزنید. پاسخ‌های او اینجا می‌آید.",
+    "findPro": "یافتن متخصص"
+  },
+  "thread": {
+    "metaTitle": "گفتگو",
+    "placeholder": "پیام به {business}"
+  },
+  "new": {
+    "metaTitle": "پیام جدید",
+    "ownTitle": "این کسب‌وکار خود شماست",
+    "ownBody": "پیام‌های مشتریان به {business} در صندوق پیام کسب‌وکار شما می‌رسد.",
+    "ownButton": "باز کردن صندوق پیام کسب‌وکار",
+    "placeholderBooking": "دربارهٔ این رزرو بپرسید",
+    "placeholderQuestion": "سؤال بپرسید",
+    "emptyBookingTitle": "دربارهٔ رزرو خود به {business} پیام دهید",
+    "emptyQuestionTitle": "پیش از رزرو از {business} بپرسید",
+    "emptyBookingBody": "دیرتان شده، می‌خواهید چیزی را تغییر دهید یا سؤالی دارید؟ پیام شما مستقیم به تیم آن‌ها می‌رسد.",
+    "emptyQuestionBody": "قیمت‌ها، زمان‌بندی، چه چیزی همراه بیاورید — {business} همین‌جا پاسخ می‌دهد و ما به شما خبر می‌دهیم. شمارهٔ تلفن و ایمیل شما محرمانه می‌ماند."
+  },
+  "shell": {
+    "allMessages": "همهٔ پیام‌ها",
+    "viewProfile": "مشاهدهٔ پروفایل",
+    "book": "رزرو"
+  },
+  "pro": {
+    "backToInbox": "بازگشت به صندوق پیام"
+  },
+  "view": {
+    "label": "پیام‌ها",
+    "you": "شما",
+    "loadingEarlier": "در حال بارگذاری پیام‌های قبلی",
+    "showEarlier": "نمایش پیام‌های قبلی",
+    "seen": "دیده شد",
+    "sending": "در حال ارسال…",
+    "notSent": "ارسال نشد.",
+    "retry": "تلاش دوباره",
+    "discard": "حذف",
+    "newMessages": "{count, plural, one {# پیام جدید} other {# پیام جدید}}",
+    "openPhoto": "باز کردن عکس در برگهٔ جدید",
+    "photo": "عکس"
+  },
+  "composer": {
+    "about": "دربارهٔ {appointment}",
+    "unlink": "این نوبت پیوند نشود",
+    "processingPhoto": "در حال پردازش عکس",
+    "removePhoto": "حذف عکس",
+    "attachPhoto": "پیوست عکس",
+    "label": "پیام",
+    "send": "ارسال پیام",
+    "hint": "برای ارسال Enter و برای خط جدید Shift و Enter را بزنید."
+  },
+  "inbox": {
+    "title": "صندوق پیام",
+    "conversations": "گفتگوها",
+    "unread": "{count} خوانده‌نشده",
+    "allCaughtUp": "همه‌چیز خوانده شده",
+    "searchLabel": "جستجوی گفتگوها بر اساس نام مشتری",
+    "searchPlaceholder": "جستجوی مشتریان",
+    "clearSearch": "پاک‌کردن جستجو",
+    "show": "نمایش",
+    "all": "همه",
+    "unreadFilter": "خوانده‌نشده",
+    "noClientsNamed": "مشتری‌ای با نام «{term}» نیست",
+    "nothingUnread": "چیزی خوانده‌نشده نیست",
+    "noMessages": "هنوز پیامی نیست",
+    "tryDifferent": "جستجوی دیگری امتحان کنید یا همهٔ گفتگوها را نشان دهید.",
+    "emptyBody": "وقتی مشتریان از صفحهٔ شما یا دربارهٔ رزرو سؤال بپرسند، اینجا نشان داده می‌شود."
+  },
+  "clientPanel": {
+    "client": "مشتری",
+    "visits": "مراجعه‌ها",
+    "noShows": "عدم حضور",
+    "cancelled": "لغوها",
+    "clientSince": "مشتری از {date}",
+    "noVisits": "هنوز مراجعهٔ انجام‌شده‌ای نیست",
+    "lastIn": "آخرین در {date}",
+    "tags": "برچسب‌ها",
+    "clientProfile": "پروفایل مشتری",
+    "notBooked": "هنوز نزد شما رزرو نکرده — این گفتگو از صفحهٔ عمومی شما شروع شده است.",
+    "upcoming": "پیش رو",
+    "nothingBooked": "رزروی نیست.",
+    "recent": "اخیر"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "ממתין לתשלום",
+    "requested": "הבקשה נשלחה",
+    "confirmed": "מאושר",
+    "checked_in": "נרשמה הגעה",
+    "in_progress": "מתבצע",
+    "completed": "הושלם",
+    "cancelled": "בוטל",
+    "declined": "נדחה",
+    "no_show": "לא הגיע",
+    "expired": "פג תוקף"
+  },
+  "list": {
+    "title": "הזמנות",
+    "filters": "מסנני הזמנות",
+    "tabs": {
+      "upcoming": "קרובים",
+      "past": "קודמים",
+      "cancelled": "מבוטלים"
+    },
+    "howDidItGo": "איך היה?",
+    "review": "חוות דעת",
+    "empty": {
+      "upcoming": "אין תורים קרובים",
+      "past": "עדיין אין תורים קודמים",
+      "cancelled": "אין ביטולים",
+      "upcomingBody": "כשתזמינו, התורים שלכם יופיעו כאן — עם הוראות הגעה, תזכורות ושינוי מועד בקלות.",
+      "findPro": "מצאו איש מקצוע"
+    },
+    "nextUp": "התור הבא · {when}",
+    "nextUpOn": "התור הבא · {day}",
+    "details": "פרטים",
+    "directions": "הוראות הגעה"
+  },
+  "detail": {
+    "metaTitle": "תור",
+    "allBookings": "כל ההזמנות",
+    "hero": {
+      "confirmedTitle": "התור שלכם נקבע",
+      "confirmedBody": "שלחנו אישור ונזכיר לכם לפני התור.",
+      "requestedTitle": "הבקשה נשלחה",
+      "requestedBody": "{business} יבדוק את הבקשה שלכם. נעדכן אתכם ברגע שיגיבו — בינתיים הזמן שלכם שמור.",
+      "paymentTitle": "משלימים את התשלום",
+      "paymentBody": "אם בדיוק שילמתם, העמוד יתעדכן אוטומטית בעוד כמה שניות. הזמן שלכם שמור עד להשלמת התשלום."
+    },
+    "calendarDetails": "מזהה {reference}",
+    "ref": "מזהה",
+    "when": "מתי",
+    "with": "עם",
+    "where": "איפה",
+    "atYourAddress": "בכתובת שלכם",
+    "online": "אונליין",
+    "virtualLink": "העסק ישלח את הקישור לפני המפגש.",
+    "yourReview": "חוות הדעת שלכם",
+    "payment": {
+      "title": "תשלום",
+      "serviceFee": "דמי שירות",
+      "tax": "מס",
+      "estimatedTotal": "סה״כ משוער",
+      "total": "סה״כ",
+      "paid": "שולם",
+      "refunded": "הוחזר",
+      "balance": "יתרה",
+      "dueAtAppointment": "לתשלום בתור",
+      "tip": "טיפ"
+    },
+    "policy": {
+      "title": "מדיניות ביטולים",
+      "freeUntil": "ביטול ללא עלות עד {hours, plural, one {שעה אחת} two {שעתיים} other {# שעות}} לפני.",
+      "freeAnytime": "ביטול ללא עלות בכל עת לפני התור.",
+      "lateFee": "ביטולים מאוחרים יותר: {percent}% מהסכום הכולל.",
+      "depositNonRefundable": "המקדמה אינה ניתנת להחזר.",
+      "cannotCancel": "כבר אי אפשר לבטל את התור הזה.",
+      "alreadyStarted": "התור הזה כבר התחיל.",
+      "cannotReschedule": "אי אפשר לשנות את מועד התור הזה.",
+      "maxReschedules": "מועד התור הזה שונה כבר המספר המרבי של פעמים. אנא פנו לעסק.",
+      "rescheduleWindow": "שינויים יש לבצע לפחות {hours, plural, one {שעה אחת} two {שעתיים} other {# שעות}} לפני התור. אנא פנו לעסק."
+    },
+    "refund": {
+      "noCharge": "ללא חיוב.",
+      "full": "תקבלו החזר מלא.",
+      "none": "התשלום שלכם אינו ניתן להחזר לפי מדיניות העסק.",
+      "partial": "תקבלו החזר חלקי לפי מדיניות העסק."
+    },
+    "note": "הערה: {reason}",
+    "problem": "בעיה בהזמנה הזו? <link>פנו לתמיכה</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} בשעה {time}",
+    "cancelledToast": "התור בוטל",
+    "refundOnWay": "החזר של {amount} בדרך אליכם.",
+    "rescheduledToast": "מועד התור שונה",
+    "payToConfirm": "לתשלום {amount} לאישור",
+    "addToCalendar": "הוספה ליומן",
+    "directions": "הוראות הגעה",
+    "message": "הודעה",
+    "bookAgain": "הזמנה חוזרת",
+    "googleCalendar": "Google Calendar",
+    "leaveReview": "כתבו חוות דעת",
+    "reschedule": "שינוי מועד",
+    "cancelAppointment": "ביטול התור",
+    "cancelTitle": "לבטל את התור?",
+    "insideWindow": "אתם בתוך חלון הביטול של העסק.",
+    "refundAmount": "החזר: {amount}.",
+    "keptAmount": "נשאר אצל העסק: {amount}.",
+    "reason": "סיבה",
+    "reasonHint": "משותף עם העסק.",
+    "chooseNewTime": "בחירת זמן חדש",
+    "currently": "כרגע {when}",
+    "keepCurrentTime": "להשאיר את השעה הנוכחית",
+    "moveTo": "מעבר ל-{time}",
+    "chooseTime": "בחירת זמן"
+  },
+  "review": {
+    "ratings": {
+      "1": "גרוע",
+      "2": "סביר",
+      "3": "טוב",
+      "4": "מצוין",
+      "5": "מעולה"
+    },
+    "thanks": "תודה על חוות הדעת",
+    "title": "איך היה ב-{business}?",
+    "subtitle": "חוות הדעת שלכם פומבית ומסומנת כהזמנה מאומתת.",
+    "rating": "דירוג",
+    "stars": "{n, plural, one {כוכב אחד} two {# כוכבים} other {# כוכבים}}",
+    "bodyLabel": "ספרו לאחרים על הביקור שלכם",
+    "bodyPlaceholder": "מה בלט לכם? האם תמליצו עליהם?",
+    "post": "פרסום חוות דעת"
+  },
+  "slotPicker": {
+    "previousWeek": "השבוע הקודם",
+    "nextWeek": "השבוע הבא",
+    "noOpenings": "אין זמנים פנויים ביום הזה.",
+    "selected": "נבחר {time}"
+  }
+}

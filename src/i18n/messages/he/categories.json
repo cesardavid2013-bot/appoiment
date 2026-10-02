@@ -1,0 +1,149 @@
+{
+  "barber": {
+    "name": "ספר"
+  },
+  "hair": {
+    "name": "שיער וספרים",
+    "description": "תספורות, צבע, עיצוב, צמות וטיפוח."
+  },
+  "lashes-brows": {
+    "name": "ריסים וגבות"
+  },
+  "massage": {
+    "name": "עיסוי"
+  },
+  "personal-training": {
+    "name": "אימון אישי"
+  },
+  "hair-salon": {
+    "name": "מספרה"
+  },
+  "makeup": {
+    "name": "איפור"
+  },
+  "nails": {
+    "name": "ציפורניים",
+    "description": "מניקור, פדיקור, בניית ציפורניים ואמנות ציפורניים."
+  },
+  "spa": {
+    "name": "ספא"
+  },
+  "yoga-pilates": {
+    "name": "יוגה ופילאטיס"
+  },
+  "beauty": {
+    "name": "יופי",
+    "description": "ריסים, גבות, איפור וטיפוח העור."
+  },
+  "braids-locs": {
+    "name": "צמות ודרדלוקס"
+  },
+  "skincare": {
+    "name": "קוסמטיקה וטיפוח העור"
+  },
+  "wellness": {
+    "name": "רווחה",
+    "description": "עיסוי, ספא וטיפולי גוף."
+  },
+  "fitness": {
+    "name": "כושר",
+    "description": "אימון אישי, יוגה, פילאטיס וקואצ'ינג."
+  },
+  "tattoo-piercing": {
+    "name": "קעקועים ופירסינג",
+    "description": "קעקועים בעיצוב אישי, פלאש ופירסינג."
+  },
+  "photography": {
+    "name": "צילום ווידאו",
+    "description": "פורטרטים, אירועים, מוצרים ווידאו."
+  },
+  "education": {
+    "name": "שיעורים והוראה פרטית",
+    "description": "מורים פרטיים, מורים למוזיקה ושיעורי שפה."
+  },
+  "home-services": {
+    "name": "בית וגינה",
+    "description": "ניקיון, תיקונים, הנדימנים וגינון."
+  },
+  "automotive": {
+    "name": "רכב",
+    "description": "פולישינג, שטיפת רכב ומכונאים ניידים."
+  },
+  "pets": {
+    "name": "חיות מחמד",
+    "description": "טיפוח, פנסיון ואילוף."
+  },
+  "events": {
+    "name": "אירועים",
+    "description": "תקליטנים, מפיקים ואנשי מקצוע לאירועים."
+  },
+  "professional": {
+    "name": "שירותים מקצועיים",
+    "description": "יועצים, מאמנים ויועצים עסקיים."
+  },
+  "other": {
+    "name": "אחר",
+    "description": "כל מה שאפשר להזמין ולא מצאתם."
+  },
+  "music-audio": {
+    "name": "מוזיקה ואודיו",
+    "description": "מפיקים, אולפני הקלטות, מיקס ואימון קולי."
+  },
+  "music-production": {
+    "name": "הפקה מוזיקלית"
+  },
+  "recording-studio": {
+    "name": "אולפני הקלטות"
+  },
+  "vocal-coaching": {
+    "name": "אימון קולי"
+  },
+  "creators": {
+    "name": "יוצרים ותוכן",
+    "description": "יוצרי תוכן, UGC, רשתות חברתיות ועריכת וידאו."
+  },
+  "content-creation": {
+    "name": "יצירת תוכן"
+  },
+  "video-editing": {
+    "name": "עריכת וידאו"
+  },
+  "social-media": {
+    "name": "ניהול רשתות חברתיות"
+  },
+  "design": {
+    "name": "עיצוב ויצירה",
+    "description": "עיצוב גרפי, מיתוג, עיצוב אתרים ועיצוב פנים."
+  },
+  "graphic-design": {
+    "name": "עיצוב גרפי ומיתוג"
+  },
+  "web-design": {
+    "name": "עיצוב אתרים"
+  },
+  "interior-design": {
+    "name": "עיצוב פנים"
+  },
+  "health": {
+    "name": "בריאות וטיפול",
+    "description": "פיזיותרפיה, תזונה, טיפול רגשי וטיפול הוליסטי."
+  },
+  "physio": {
+    "name": "פיזיותרפיה וכירופרקטיקה"
+  },
+  "nutrition": {
+    "name": "תזונה"
+  },
+  "therapy": {
+    "name": "טיפול וייעוץ"
+  },
+  "cleaning": {
+    "name": "ניקיון"
+  },
+  "handyman": {
+    "name": "הנדימן ותיקונים"
+  },
+  "gardening": {
+    "name": "גינון"
+  }
+}

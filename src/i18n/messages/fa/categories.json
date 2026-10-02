@@ -1,0 +1,149 @@
+{
+  "barber": {
+    "name": "آرایشگر مردانه"
+  },
+  "hair": {
+    "name": "مو و آرایشگری",
+    "description": "کوتاهی، رنگ، حالت‌دهی، بافت مو و آراستگی."
+  },
+  "lashes-brows": {
+    "name": "مژه و ابرو"
+  },
+  "massage": {
+    "name": "ماساژ"
+  },
+  "personal-training": {
+    "name": "مربی شخصی"
+  },
+  "hair-salon": {
+    "name": "سالن مو"
+  },
+  "makeup": {
+    "name": "آرایش"
+  },
+  "nails": {
+    "name": "ناخن",
+    "description": "مانیکور، پدیکور، کاشت ناخن و طراحی ناخن."
+  },
+  "spa": {
+    "name": "اسپا"
+  },
+  "yoga-pilates": {
+    "name": "یوگا و پیلاتس"
+  },
+  "beauty": {
+    "name": "زیبایی",
+    "description": "مژه، ابرو، آرایش و مراقبت از پوست."
+  },
+  "braids-locs": {
+    "name": "بافت مو و لاکس"
+  },
+  "skincare": {
+    "name": "پوست و زیبایی"
+  },
+  "wellness": {
+    "name": "تندرستی",
+    "description": "ماساژ، اسپا و درمان‌های بدنی."
+  },
+  "fitness": {
+    "name": "تناسب اندام",
+    "description": "مربی شخصی، یوگا، پیلاتس و کوچینگ."
+  },
+  "tattoo-piercing": {
+    "name": "تتو و پیرسینگ",
+    "description": "تتوی سفارشی، فلش و پیرسینگ."
+  },
+  "photography": {
+    "name": "عکاسی و فیلم‌برداری",
+    "description": "پرتره، مراسم، محصول و ویدیو."
+  },
+  "education": {
+    "name": "آموزش و تدریس خصوصی",
+    "description": "مدرس خصوصی، مدرس موسیقی و آموزش زبان."
+  },
+  "home-services": {
+    "name": "خانه و باغ",
+    "description": "نظافت، تعمیرات، تعمیرکار و باغبانی."
+  },
+  "automotive": {
+    "name": "خودرو",
+    "description": "دیتیلینگ، کارواش و مکانیک سیار."
+  },
+  "pets": {
+    "name": "حیوانات خانگی",
+    "description": "آراستن، نگهداری و آموزش."
+  },
+  "events": {
+    "name": "مراسم و رویداد",
+    "description": "دی‌جی، برنامه‌ریز و متخصصان مراسم."
+  },
+  "professional": {
+    "name": "خدمات تخصصی",
+    "description": "مشاور، کوچ و مشاور کسب‌وکار."
+  },
+  "other": {
+    "name": "سایر",
+    "description": "هر چیز دیگری که بتوان رزرو کرد."
+  },
+  "music-audio": {
+    "name": "موسیقی و صدا",
+    "description": "تهیه‌کننده، استودیوی ضبط، میکس و آموزش آواز."
+  },
+  "music-production": {
+    "name": "تهیهٔ موسیقی"
+  },
+  "recording-studio": {
+    "name": "استودیوی ضبط"
+  },
+  "vocal-coaching": {
+    "name": "آموزش آواز"
+  },
+  "creators": {
+    "name": "تولیدکنندگان محتوا",
+    "description": "تولیدکنندگان محتوا، UGC، شبکه‌های اجتماعی و تدوین ویدیو."
+  },
+  "content-creation": {
+    "name": "تولید محتوا"
+  },
+  "video-editing": {
+    "name": "تدوین ویدیو"
+  },
+  "social-media": {
+    "name": "مدیریت شبکه‌های اجتماعی"
+  },
+  "design": {
+    "name": "طراحی و خلاقیت",
+    "description": "طراحی گرافیک، برند، وب و دکوراسیون داخلی."
+  },
+  "graphic-design": {
+    "name": "طراحی گرافیک و برند"
+  },
+  "web-design": {
+    "name": "طراحی وب"
+  },
+  "interior-design": {
+    "name": "طراحی داخلی"
+  },
+  "health": {
+    "name": "سلامت و مراقبت",
+    "description": "فیزیوتراپی، تغذیه، رواندرمانی و مراقبت کل‌نگر."
+  },
+  "physio": {
+    "name": "فیزیوتراپی و کایروپراکتیک"
+  },
+  "nutrition": {
+    "name": "تغذیه"
+  },
+  "therapy": {
+    "name": "رواندرمانی و مشاوره"
+  },
+  "cleaning": {
+    "name": "نظافت"
+  },
+  "handyman": {
+    "name": "تعمیرکار و تعمیرات"
+  },
+  "gardening": {
+    "name": "باغبانی"
+  }
+}
