@@ -1,0 +1,117 @@
+{
+  "language": "שפה",
+  "meta": {
+    "title": "Kept — הזמנת תורים אצל אנשי מקצוע מקומיים מהימנים",
+    "description": "גלו והזמינו ספרים, מעצבי שיער, מאמני כושר, צלמים, מורים פרטיים וכל סוג של איש מקצוע מקומי — ונהלו את התורים שלכם בקלות."
+  },
+  "skipToContent": "דילוג לתוכן",
+  "logoHome": "דף הבית של Kept",
+  "header": {
+    "mainNav": "ראשי",
+    "search": "חיפוש שירותים או אנשי מקצוע",
+    "ask": "שאלו",
+    "askKept": "שאלו את Kept",
+    "explore": "גילוי",
+    "myBusiness": "העסק שלי",
+    "forPros": "לאנשי מקצוע",
+    "bookings": "הזמנות",
+    "messages": "הודעות",
+    "notifications": "התראות",
+    "unread": "שלא נקראו",
+    "accountMenu": "תפריט החשבון",
+    "logIn": "התחברות",
+    "signUp": "הרשמה"
+  },
+  "accountMenu": {
+    "bookings": "הזמנות",
+    "saved": "שמורים",
+    "messages": "הודעות",
+    "settings": "הגדרות חשבון",
+    "help": "עזרה ותמיכה",
+    "switchToBusiness": "מעבר לעסק",
+    "offerServices": "הציעו את השירותים שלכם",
+    "admin": "מסוף ניהול",
+    "signOut": "התנתקות"
+  },
+  "tabs": {
+    "label": "ראשי",
+    "home": "בית",
+    "explore": "גילוי",
+    "bookings": "הזמנות",
+    "inbox": "הודעות",
+    "account": "חשבון"
+  },
+  "footer": {
+    "tagline": "הזמינו אנשי מקצוע מהימנים. נהלו את התורים שלכם במאמץ קטן יותר.",
+    "discover": "גלו",
+    "explore": "גילוי",
+    "hair": "שיער וספרים",
+    "wellness": "ספא ורווחה",
+    "fitness": "כושר",
+    "forPros": "לאנשי מקצוע",
+    "howItWorks": "איך זה עובד",
+    "listServices": "פרסמו את השירותים שלכם",
+    "dashboard": "לוח בקרה לעסק",
+    "help": "עזרה",
+    "support": "תמיכה",
+    "terms": "תנאים",
+    "privacy": "פרטיות",
+    "copyright": "© {year} Kept. כל הזכויות שמורות."
+  },
+  "price": {
+    "free": "חינם",
+    "quote": "מחיר בהתאם לייעוץ",
+    "from": "החל מ-{price}"
+  },
+  "rating": {
+    "new": "חדש",
+    "summary": "דורג {avg} מתוך {count, plural, one {חוות דעת אחת} two {# חוות דעת} other {# חוות דעת}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "ממתין לתשלום",
+    "requested": "הבקשה נשלחה",
+    "confirmed": "מאושר",
+    "checked_in": "נרשמה הגעה",
+    "in_progress": "מתבצע",
+    "completed": "הושלם",
+    "cancelled": "בוטל",
+    "declined": "נדחה",
+    "no_show": "לא הגיע",
+    "expired": "פג תוקף"
+  },
+  "policy": {
+    "freeUntil": "ביטול ללא עלות עד {hours} שעות מראש. ביטולים מאוחרים יותר יחויבו ב-{percent}% מהסכום הכולל.",
+    "cancelAhead": "אנא בטלו לפחות {hours} שעות לפני התור.",
+    "freeAnyTime": "ביטול ללא עלות בכל עת לפני התור.",
+    "depositRefundable": "המקדמה מוחזרת כשמבטלים בזמן.",
+    "depositNonRefundable": "המקדמה אינה ניתנת להחזר.",
+    "reschedule": "אפשר לשנות מועד אונליין עד {hours} שעות מראש."
+  },
+  "ui": {
+    "close": "סגירה",
+    "keepIt": "להשאיר",
+    "optional": "אופציונלי",
+    "stars": "{value} מתוך 5 כוכבים",
+    "notifications": "התראות"
+  },
+  "notFound": {
+    "eyebrow": "הדף לא נמצא",
+    "title": "הדף הזה עבר למקום אחר.",
+    "body": "ייתכן שהקישור ישן, או שאיש המקצוע שינה את כתובתו.",
+    "home": "חזרה לדף הבית",
+    "explore": "גילוי אנשי מקצוע"
+  },
+  "error": {
+    "eyebrow": "משהו השתבש",
+    "title": "לא הצלחנו לטעון את הדף הזה.",
+    "body": "התקלה אצלנו, לא אצלכם. נסו שוב בעוד רגע — ואם זה ממשיך לקרות, ספרו לנו.",
+    "retry": "נסו שוב",
+    "support": "פנייה לתמיכה",
+    "ref": "מזהה {id}"
+  },
+  "offline": {
+    "eyebrow": "אין חיבור לאינטרנט",
+    "title": "אין חיבור כרגע.",
+    "body": "ההזמנות שלכם שמורות. התחברו מחדש ו-Kept ממשיך מאיפה שהפסקתם."
+  }
+}
