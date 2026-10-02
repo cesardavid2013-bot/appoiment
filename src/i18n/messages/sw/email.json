@@ -1,0 +1,147 @@
+{
+  "footer": "Unapokea hii kwa sababu ya shughuli kwenye akaunti yako ya Kept. Simamia arifa kwenye Akaunti → Arifa.",
+  "details": {
+    "service": "Huduma",
+    "when": "Lini",
+    "with": "Na",
+    "where": "Wapi",
+    "online": "Mtandaoni — kiungo kitashirikiwa na biashara",
+    "reference": "Marejeo",
+    "paid": "Imelipwa",
+    "balanceDue": "Salio linalodaiwa"
+  },
+  "cta": {
+    "viewAppointment": "Tazama miadi",
+    "viewRequest": "Tazama ombi",
+    "reviewRequest": "Pitia ombi",
+    "openAppointment": "Fungua miadi",
+    "openCalendar": "Fungua kalenda",
+    "findAnotherTime": "Tafuta wakati mwingine",
+    "payDeposit": "Lipa amana",
+    "leaveReview": "Toa maoni",
+    "bookThisTime": "Weka miadi wakati huu"
+  },
+  "booked": {
+    "title": "Umeweka miadi na {business}",
+    "subject": "Imethibitishwa: {service} na {business}",
+    "heading": "Miadi yako imethibitishwa",
+    "footnote": "Unahitaji kubadilisha mipango? Unaweza kupanga upya au kughairi kutoka ukurasa wa miadi, kulingana na sera ya biashara.",
+    "sms": "Kept: {service} na {business} imethibitishwa kwa {when}. Rej {reference}"
+  },
+  "requested": {
+    "title": "Ombi limetumwa kwa {business}",
+    "body": "Tutakujulisha mara tu watakapojibu.",
+    "subject": "Ombi limetumwa: {service} na {business}",
+    "heading": "Ombi lako limetumwa",
+    "paragraph": "{business} hupitia maombi kabla ya kuthibitisha. Tutakutumia barua pepe mara tu watakapojibu."
+  },
+  "bizBooked": {
+    "title": "Miadi mpya",
+    "requestTitle": "Ombi jipya la miadi",
+    "subject": "Miadi mpya: {service}",
+    "requestSubject": "Ombi jipya: {service}",
+    "heading": "Una miadi mpya",
+    "requestHeading": "Una ombi jipya la miadi",
+    "requestParagraph": "Liidhinishe au ulikatae kutoka kwenye kalenda yako. Maombi yasiyojibiwa huisha muda kiotomatiki."
+  },
+  "cancelled": {
+    "declined": {
+      "title": "{business} hakuweza kupokea ombi lako",
+      "subject": "Ombi limekataliwa: {service}",
+      "heading": "Ombi lako halikukubaliwa"
+    },
+    "expired": {
+      "title": "Miadi yako imeisha muda",
+      "subject": "Miadi yako imeisha muda",
+      "heading": "Miadi yako imeisha muda"
+    },
+    "cancelled": {
+      "title": "{business} ameghairi miadi yako",
+      "subject": "Imeghairiwa: {service}",
+      "heading": "Miadi yako imeghairiwa"
+    },
+    "note": "Dokezo kutoka kwa biashara: “{note}”",
+    "refund": "Marejesho ya {amount} yako njiani kwenda kwenye njia yako ya awali ya malipo.",
+    "bookAgain": "Unaweza kuweka miadi wakati mwingine utakapokuwa tayari."
+  },
+  "bizCancelled": {
+    "title": "Mteja ameghairi",
+    "expiredTitle": "Miadi imeisha muda",
+    "subject": "Imeghairiwa: {service} · {when}",
+    "heading": "Miadi imeghairiwa",
+    "reason": "Sababu: “{reason}”"
+  },
+  "rescheduled": {
+    "title": "{business} amehamisha miadi yako",
+    "body": "Sasa ni {when}",
+    "subject": "Wakati mpya: {service} na {business}",
+    "heading": "Miadi yako ina wakati mpya",
+    "previously": "Awali ilikuwa {when}.",
+    "changeIt": "Ikiwa wakati mpya haukufai, unaweza kupanga upya au kughairi kutoka ukurasa wa miadi."
+  },
+  "bizRescheduled": {
+    "title": "Mteja amepanga upya",
+    "subject": "Imepangwa upya: {service}",
+    "heading": "Miadi imepangwa upya"
+  },
+  "approvedPay": {
+    "title": "{business} amekubali ombi lako",
+    "body": "Lipa amana ya {amount} ili kuthibitisha.",
+    "subject": "Imekubaliwa — thibitisha {service} yako",
+    "heading": "Ombi lako limekubaliwa",
+    "paragraph": "Lipa amana ya {amount} ili kuhakikisha wakati wako. Miadi isiyolipiwa huachiliwa kiotomatiki."
+  },
+  "reminder": {
+    "title": "Kikumbusho: {service} {lead}",
+    "body": "{when} na {business}",
+    "subject": "Kikumbusho: {service} {lead} saa {time}",
+    "heading": "Tuonane {lead}",
+    "footnote": "Unachelewa au huwezi kufika? Mjulishe biashara kutoka ukurasa wa miadi.",
+    "sms": "Kikumbusho: {service} na {business} {when}."
+  },
+  "review": {
+    "title": "{service} ilikuwaje?",
+    "body": "Toa maoni mafupi kuhusu {business}.",
+    "subject": "Ziara yako kwa {business} ilikuwaje?",
+    "heading": "Ilikuwaje?",
+    "paragraph": "Maoni yako yanasaidia {business} na wengine wanaochagua mtaalamu. Huchukua chini ya dakika moja."
+  },
+  "waitlist": {
+    "title": "Nafasi imefunguka {business}",
+    "body": "{when} sasa inapatikana. Weka miadi haraka — anayewahi ndiye anayepata.",
+    "subject": "Wakati umefunguka {business}",
+    "heading": "Habari njema — wakati umefunguka",
+    "paragraph": "{when} imepatikana sasa hivi. Nafasi huenda kwa anayewahi, kwa hiyo weka miadi haraka ikiwa inakufaa."
+  },
+  "thread": {
+    "confirmed": "Miadi imethibitishwa: {service}, {when}.",
+    "declined": "Miadi imekataliwa: {service}, {when}.",
+    "expired": "Miadi imeisha muda: {service}, {when}.",
+    "cancelled": "Miadi imeghairiwa: {service}, {when}.",
+    "moved": "Miadi imehamishwa kutoka {from} hadi {to}."
+  },
+  "verify": {
+    "subject": "Thibitisha barua pepe yako",
+    "preheader": "Mguso mmoja kuthibitisha anwani yako ya barua pepe.",
+    "heading": "Karibu, {name}",
+    "paragraph": "Thibitisha barua pepe yako ili biashara ziweze kukufikia kuhusu miadi yako.",
+    "cta": "Thibitisha barua pepe",
+    "footnote": "Kiungo hiki kinaisha muda baada ya siku 3. Ikiwa hukufungua akaunti, unaweza kupuuza barua pepe hii."
+  },
+  "reset": {
+    "subject": "Weka upya nenosiri lako",
+    "heading": "Weka upya nenosiri lako",
+    "paragraph": "Mtu (tunatumaini ni wewe) ameomba kuweka upya nenosiri la akaunti yako ya Kept.",
+    "cta": "Chagua nenosiri jipya",
+    "footnote": "Kiungo hiki kinaisha muda baada ya saa 1. Ikiwa hukuomba hili, unaweza kupuuza barua pepe hii kwa usalama — nenosiri lako halitabadilika."
+  },
+  "invite": {
+    "subject": "{inviter} amekualika ujiunge na {business} kwenye Kept",
+    "reminderSubject": "Kikumbusho: jiunge na {business} kwenye Kept",
+    "heading": "Jiunge na {business}",
+    "paragraph": "{inviter} amekualika ujiunge na timu ya {business}. Utaweza kuona ratiba yako na kusimamia miadi yako.",
+    "cta": "Kubali mwaliko",
+    "footnote": "Mwaliko huu unaisha muda baada ya siku {days}.",
+    "reminderFootnote": "Mwaliko huu unaisha muda baada ya siku {days}. Viungo vya mialiko ya awali havifanyi kazi tena."
+  }
+}
