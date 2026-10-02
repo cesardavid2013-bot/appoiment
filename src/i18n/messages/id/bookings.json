@@ -27,7 +27,11 @@
       "cancelled": "Tidak ada yang dibatalkan",
       "upcomingBody": "Saat Anda memesan, janji temu akan muncul di sini — lengkap dengan petunjuk arah, pengingat, dan penjadwalan ulang yang mudah.",
       "findPro": "Cari profesional"
-    }
+    },
+    "nextUp": "Berikutnya · {when}",
+    "nextUpOn": "Berikutnya · {day}",
+    "details": "Detail",
+    "directions": "Petunjuk arah"
   },
   "detail": {
     "metaTitle": "Janji temu",

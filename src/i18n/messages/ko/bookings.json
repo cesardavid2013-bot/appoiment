@@ -27,7 +27,11 @@
       "cancelled": "취소된 예약이 없어요",
       "upcomingBody": "예약하면 여기에 표시돼요 — 길 안내, 리마인더, 간편한 일정 변경까지.",
       "findPro": "전문가 찾기"
-    }
+    },
+    "nextUp": "다음 일정 · {when}",
+    "nextUpOn": "다음 일정 · {day}",
+    "details": "상세 보기",
+    "directions": "길 찾기"
   },
   "detail": {
     "metaTitle": "예약",
