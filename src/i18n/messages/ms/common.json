@@ -1,0 +1,117 @@
+{
+  "language": "Bahasa",
+  "meta": {
+    "title": "Kept — Tempah profesional tempatan yang dipercayai",
+    "description": "Temui dan tempah tukang gunting rambut, penata gaya, jurulatih, jurugambar, tutor dan segala jenis profesional tempatan — serta urus janji temu anda dengan mudah."
+  },
+  "skipToContent": "Langkau ke kandungan",
+  "logoHome": "Laman utama Kept",
+  "header": {
+    "mainNav": "Utama",
+    "search": "Cari perkhidmatan atau profesional",
+    "ask": "Tanya",
+    "askKept": "Tanya Kept",
+    "explore": "Terokai",
+    "myBusiness": "Perniagaan saya",
+    "forPros": "Untuk profesional",
+    "bookings": "Tempahan",
+    "messages": "Mesej",
+    "notifications": "Pemberitahuan",
+    "unread": "belum dibaca",
+    "accountMenu": "Menu akaun",
+    "logIn": "Log masuk",
+    "signUp": "Daftar"
+  },
+  "accountMenu": {
+    "bookings": "Tempahan",
+    "saved": "Disimpan",
+    "messages": "Mesej",
+    "settings": "Tetapan akaun",
+    "help": "Bantuan & sokongan",
+    "switchToBusiness": "Tukar ke perniagaan",
+    "offerServices": "Tawarkan perkhidmatan anda",
+    "admin": "Konsol admin",
+    "signOut": "Log keluar"
+  },
+  "tabs": {
+    "label": "Utama",
+    "home": "Utama",
+    "explore": "Terokai",
+    "bookings": "Tempahan",
+    "inbox": "Peti masuk",
+    "account": "Akaun"
+  },
+  "footer": {
+    "tagline": "Tempah profesional yang dipercayai. Urus janji temu anda dengan lebih mudah.",
+    "discover": "Temui",
+    "explore": "Terokai",
+    "hair": "Rambut & pangkas",
+    "wellness": "Kesejahteraan",
+    "fitness": "Kecergasan",
+    "forPros": "Untuk profesional",
+    "howItWorks": "Cara ia berfungsi",
+    "listServices": "Senaraikan perkhidmatan anda",
+    "dashboard": "Papan pemuka perniagaan",
+    "help": "Bantuan",
+    "support": "Sokongan",
+    "terms": "Terma",
+    "privacy": "Privasi",
+    "copyright": "© {year} Kept. Hak cipta terpelihara."
+  },
+  "price": {
+    "free": "Percuma",
+    "quote": "Harga selepas perundingan",
+    "from": "Bermula {price}"
+  },
+  "rating": {
+    "new": "Baharu",
+    "summary": "dinilai {avg} daripada {count, plural, other {# ulasan}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Menunggu bayaran",
+    "requested": "Permintaan dihantar",
+    "confirmed": "Disahkan",
+    "checked_in": "Telah daftar masuk",
+    "in_progress": "Sedang berlangsung",
+    "completed": "Selesai",
+    "cancelled": "Dibatalkan",
+    "declined": "Ditolak",
+    "no_show": "Tidak hadir",
+    "expired": "Tamat tempoh"
+  },
+  "policy": {
+    "freeUntil": "Pembatalan percuma sehingga {hours} jam sebelum janji temu. Pembatalan selepas itu dikenakan {percent}% daripada jumlah keseluruhan.",
+    "cancelAhead": "Sila batalkan sekurang-kurangnya {hours} jam sebelum janji temu anda.",
+    "freeAnyTime": "Pembatalan percuma pada bila-bila masa sebelum janji temu anda.",
+    "depositRefundable": "Deposit dikembalikan jika anda membatalkan tepat pada masanya.",
+    "depositNonRefundable": "Deposit tidak boleh dikembalikan.",
+    "reschedule": "Jadual semula dalam talian sehingga {hours} jam sebelum janji temu."
+  },
+  "ui": {
+    "close": "Tutup",
+    "keepIt": "Kekalkan",
+    "optional": "Pilihan",
+    "stars": "{value} daripada 5 bintang",
+    "notifications": "Pemberitahuan"
+  },
+  "notFound": {
+    "eyebrow": "Halaman tidak ditemui",
+    "title": "Halaman itu sudah tiada.",
+    "body": "Pautan mungkin sudah lama, atau profesional itu telah menukar alamatnya.",
+    "home": "Kembali ke laman utama",
+    "explore": "Terokai profesional"
+  },
+  "error": {
+    "eyebrow": "Sesuatu telah berlaku",
+    "title": "Kami tidak dapat memuatkan halaman ini.",
+    "body": "Masalah ini di pihak kami, bukan anda. Cuba lagi sebentar nanti — jika berterusan, maklumkan kepada kami.",
+    "retry": "Cuba lagi",
+    "support": "Hubungi sokongan",
+    "ref": "Rujukan {id}"
+  },
+  "offline": {
+    "eyebrow": "Anda di luar talian",
+    "title": "Tiada sambungan buat masa ini.",
+    "body": "Tempahan anda selamat. Sambung semula dan Kept akan menyambung dari tempat anda berhenti."
+  }
+}
