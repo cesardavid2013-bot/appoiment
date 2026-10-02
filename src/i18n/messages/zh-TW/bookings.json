@@ -27,7 +27,11 @@
       "cancelled": "沒有已取消的預約",
       "upcomingBody": "預約後，您的預約會顯示在這裡，並附上路線、提醒和簡單的改期功能。",
       "findPro": "尋找專業人士"
-    }
+    },
+    "nextUp": "即將開始 · {when}",
+    "nextUpOn": "即將開始 · {day}",
+    "details": "詳情",
+    "directions": "路線"
   },
   "detail": {
     "metaTitle": "預約",

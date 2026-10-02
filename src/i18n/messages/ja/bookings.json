@@ -27,7 +27,11 @@
       "cancelled": "キャンセルした予約はありません",
       "upcomingBody": "予約すると、ここに表示されます。道順、リマインダー、かんたんな日時変更もこちらから。",
       "findPro": "プロを探す"
-    }
+    },
+    "nextUp": "次の予約 · {when}",
+    "nextUpOn": "次の予約 · {day}",
+    "details": "詳細",
+    "directions": "道順"
   },
   "detail": {
     "metaTitle": "予約",

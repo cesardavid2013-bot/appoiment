@@ -27,7 +27,11 @@
       "cancelled": "没有已取消的预约",
       "upcomingBody": "预约后，您的预约会显示在这里，并附有路线、提醒和便捷的改约功能。",
       "findPro": "寻找专业人士"
-    }
+    },
+    "nextUp": "即将开始 · {when}",
+    "nextUpOn": "即将开始 · {day}",
+    "details": "详情",
+    "directions": "路线"
   },
   "detail": {
     "metaTitle": "预约",
