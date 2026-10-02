@@ -1,0 +1,782 @@
+{
+  "title": "設定",
+  "home": {
+    "description": "管理 {name} 的展示、預約與收款方式。"
+  },
+  "nav": {
+    "label": "設定",
+    "back": "設定",
+    "sections": {
+      "profile": {
+        "label": "店家資料",
+        "description": "名稱、照片、簡介、聯絡方式與社群連結。"
+      },
+      "locations": {
+        "label": "地點",
+        "description": "您的工作地點：店鋪、客戶所在地或線上。"
+      },
+      "booking": {
+        "label": "預約規則",
+        "description": "即時預約或需審核、提前量、提醒。"
+      },
+      "policies": {
+        "label": "取消與費用",
+        "description": "取消時限、爽約費、稅費。"
+      },
+      "payments": {
+        "label": "收款",
+        "description": "線上收取訂金與刷卡付款。"
+      },
+      "forms": {
+        "label": "客戶問題",
+        "description": "客戶預約時填寫的問卷。"
+      },
+      "link": {
+        "label": "預約連結",
+        "description": "您的網址、QR Code 與上線設定。"
+      },
+      "verification": {
+        "label": "認證",
+        "description": "為您的頁面取得認證標章。"
+      },
+      "appearance": {
+        "label": "頁面外觀",
+        "description": "頁首、配色、區塊順序與連結按鈕。"
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "儲存中……",
+    "unsaved": "有未儲存的變更",
+    "allSaved": "所有變更已儲存",
+    "discard": "捨棄",
+    "save": "儲存",
+    "saved": "已儲存",
+    "checkFields": "請檢查標出的欄位。"
+  },
+  "shareLink": {
+    "copy": "複製",
+    "copied": "已複製"
+  },
+  "profile": {
+    "title": "店家資料",
+    "description": "客戶在您的頁面和搜尋結果中看到的內容。",
+    "toastUpdated": "資料已更新",
+    "toastLive": "變更已在您的頁面生效。",
+    "logoAlt": "{name} 的標誌",
+    "viewPage": "查看您的頁面",
+    "photos": {
+      "title": "照片",
+      "description": "您的標誌會顯示在卡片和訊息中；封面則是頁面的門面。請使用您自己的作品或場地照片，而非圖庫圖片。",
+      "noCover": "暫無封面照片",
+      "remove": "移除",
+      "uploading": "上傳中……",
+      "changeCover": "更換封面",
+      "addCover": "新增封面",
+      "changeLogo": "更換標誌",
+      "addLogo": "新增標誌",
+      "logoHint": "建議使用正方形。沒有標誌時，我們會顯示您名稱的首字母。"
+    },
+    "basics": {
+      "title": "基本資訊",
+      "nameIndividual": "您的姓名或店家名稱",
+      "nameBusiness": "店家名稱",
+      "tagline": "一句話簡介",
+      "taglineHint": "顯示在名稱下方的一句話。{count, plural, other {還可輸入 # 個字。}}",
+      "taglinePlaceholder": "例如：Bed-Stuy 的精準漸層與鬍鬚造型",
+      "category": "主要類別",
+      "categoryHint": "顧客瀏覽時，您會出現在這個類別中。",
+      "choose": "請選擇……",
+      "years": "從業年數"
+    },
+    "about": {
+      "title": "關於",
+      "description": "您做什麼、如何工作，以及與您合作的體驗有何不同。樸實的語言勝過華麗的辭藻。",
+      "label": "關於",
+      "languages": "使用語言",
+      "amenities": "設施與服務"
+    },
+    "tags": {
+      "optional": "選填",
+      "placeholder": "輸入後按 Enter",
+      "remove": "移除 {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "英語",
+        "spanish": "西班牙語",
+        "french": "法語",
+        "portuguese": "葡萄牙語",
+        "mandarin": "華語",
+        "cantonese": "粵語",
+        "arabic": "阿拉伯語",
+        "russian": "俄語",
+        "haitianCreole": "海地克里奧爾語",
+        "korean": "韓語",
+        "vietnamese": "越南語",
+        "hindi": "印地語",
+        "italian": "義大利語",
+        "german": "德語",
+        "polish": "波蘭語",
+        "tagalog": "他加祿語"
+      },
+      "amenities": {
+        "wheelchair": "無障礙通行（輪椅）",
+        "streetParking": "路邊停車",
+        "freeParking": "免費停車",
+        "wifi": "Wi-Fi",
+        "cardPayments": "支援刷卡",
+        "walkIns": "歡迎現場候位",
+        "kidFriendly": "適合兒童",
+        "restroom": "洗手間",
+        "airConditioning": "空調",
+        "drinks": "提供飲品",
+        "genderNeutral": "性別友善",
+        "petFriendly": "可攜帶寵物"
+      }
+    },
+    "contact": {
+      "title": "聯絡方式與連結",
+      "description": "會顯示在您的頁面上。客戶始終可以透過 Kept 傳訊息給您，所以這些都是選填項。",
+      "email": "公開電子郵件",
+      "phone": "公開電話",
+      "website": "網站",
+      "websitePlaceholder": "yourdomain.com"
+    },
+    "social": {
+      "legend": "社群帳號",
+      "hint": "輸入您的帳號名稱或貼上個人檔案連結。若要在頁面上展示特定影片、貼文或音軌，請在<link>作品集</link>中新增。",
+      "placeholders": {
+        "instagram": "@yourname",
+        "tiktok": "@yourname",
+        "youtube": "@yourchannel",
+        "facebook": "yourpage",
+        "x": "@yourname",
+        "linkedin": "in/yourname",
+        "spotify": "藝人連結",
+        "soundcloud": "yourname",
+        "behance": "yourname",
+        "pinterest": "yourname",
+        "twitch": "yourchannel",
+        "threads": "@yourname"
+      },
+      "errors": {
+        "wrongNetwork": "這不是 {network} 的連結。",
+        "useProfile": "請使用您的 {network} 個人檔案連結。",
+        "badHandle": "這看起來不像 {network} 的帳號名稱。",
+        "badArtist": "這看起來不像 {network} 的藝人連結。"
+      }
+    },
+    "timezone": {
+      "title": "時區",
+      "description": "您的營業時間和每個預約時間都以此時區為準。只有在您確實搬遷後才需更改——現有預約會保持其準確時間。",
+      "label": "時區"
+    }
+  },
+  "booking": {
+    "title": "預約規則",
+    "description": "客戶如何、何時可以預約您。單項服務可以單獨覆蓋提前量與審核設定。",
+    "toastUpdated": "預約規則已更新",
+    "mode": {
+      "title": "確認方式",
+      "description": "您仍然可以在服務編輯器中，為特定服務要求審核。",
+      "instantTitle": "即時預約",
+      "instantDescription": "客戶選擇空閒時間即完成預約。適合大多數店家——這也是客戶所期待的。",
+      "requestTitle": "逐一審核申請",
+      "requestDescription": "客戶提交申請，由您接受或拒絕。未回覆的申請會自動失效，不讓任何人無限等待。"
+    },
+    "window": {
+      "title": "客戶可預約的時間範圍",
+      "minNotice": "最短提前預約時間",
+      "minNoticeHint": "客戶最晚可在開始前多久預約。",
+      "noMinimum": "不設限——開始前一刻仍可預約",
+      "advance": "最遠可預約",
+      "advanceHint": "行事曆向後開放多遠。",
+      "daysAhead": "{count, plural, other {提前 # 天}}",
+      "yearAhead": "提前 1 年",
+      "interval": "開始時間間隔",
+      "intervalHint": "間隔越短，客戶可選的時間越多；間隔越長，您的一天越規整。",
+      "anyStaff": "提供「任何可預約的專業人士」選項",
+      "anyStaffDescription": "顯示最多的可約時段，並把預約分散到整個團隊。如果客戶必須指定某位成員，請關閉。"
+    },
+    "durations": {
+      "minutes": "{count, plural, other {# 分鐘}}",
+      "hours": "{count, plural, other {# 小時}}",
+      "days": "{count, plural, other {# 天}}",
+      "weeks": "{count, plural, other {# 週}}"
+    },
+    "reminders": {
+      "title": "提醒",
+      "description": "每個預約開始前透過電子郵件發送。若客戶預約時距開始已短於某則提醒的時間，則不會收到該則提醒。",
+      "descriptionSms": "每個預約開始前透過電子郵件和簡訊（若客戶允許簡訊）發送。若客戶預約時距開始已短於某則提醒的時間，則不會收到該則提醒。",
+      "none": "暫無提醒，客戶只會收到預約確認。",
+      "add": "新增提醒",
+      "addPlaceholder": "新增提醒……",
+      "upTo": "最多 3 則",
+      "remove": "移除提醒 {label}",
+      "minutesBefore": "{count, plural, other {提前 # 分鐘}}",
+      "hoursBefore": "{count, plural, other {提前 # 小時}}",
+      "daysBefore": "{count, plural, other {提前 # 天}}"
+    }
+  },
+  "policies": {
+    "title": "取消與費用",
+    "description": "客戶在預約前和取消前都會看到這些內容。",
+    "toastUpdated": "政策已更新",
+    "cancel": {
+      "title": "取消與改期",
+      "freeUntil": "免費取消截止時間",
+      "rescheduleUntil": "線上改期截止時間",
+      "anyTime": "開始前任何時間",
+      "oneDay": "提前 24 小時（1 天）",
+      "hoursBefore": "{count, plural, other {提前 # 小時}}",
+      "daysBefore": "{count, plural, other {提前 # 天}}",
+      "lateFee": "臨時取消費",
+      "lateFeeHintPaid": "從客戶已線上支付的款項中扣留，絕不會超過其已付金額。",
+      "lateFeeHintUnpaid": "僅適用於線上支付的金額。請連接收款並收取訂金以執行此規則。",
+      "none": "無",
+      "ofTotal": "占總計的",
+      "noShowFee": "爽約費",
+      "noShowHint": "屬於您的政策，讓客戶事先知情。當您標記爽約時，對方線上支付的款項歸您所有；當面收取的費用可記錄在該預約上。",
+      "refundDeposits": "準時取消時退還訂金",
+      "refundDepositsDescription": "關閉後，只要客戶取消，訂金一律不退。"
+    },
+    "words": {
+      "title": "用您自己的話說明",
+      "description": "隨政策一同顯示的選填說明。",
+      "late": "遲到須知",
+      "lateHint": "例如：「遲到超過 15 分鐘，我們可能需要縮短服務或重新預約。」",
+      "before": "到訪前須知",
+      "beforeHint": "每位客戶確認前都會看到——路線指引、需攜帶的物品、如何準備。"
+    },
+    "tax": {
+      "title": "銷售稅",
+      "description": "在結帳時加在您的價格之上，並單獨列出。如果您的價格已含稅，請保持為 0。",
+      "rate": "稅率",
+      "rateError": "請輸入 0 到 30% 之間的稅率",
+      "label": "名稱",
+      "labelPlaceholder": "銷售稅"
+    },
+    "preview": {
+      "title": "客戶在預約前看到的內容"
+    }
+  },
+  "payments": {
+    "title": "收款",
+    "description": "在客戶預約時收取訂金或全額付款。當面付款始終可用。",
+    "online": {
+      "title": "線上支付",
+      "description": "付款由 Stripe 處理，並匯入您的銀行帳戶。Kept 不會接觸到卡號。"
+    },
+    "unavailable": {
+      "badge": "暫未開放",
+      "body": "Kept 的刷卡支付尚未開通。在此之前，客戶將在預約時當面付款，您可以在預約頁面記錄每筆付款（現金、刷卡機或轉帳），讓您的紀錄與數據洞察保持準確。",
+      "note": "目前無需任何操作。線上支付開放後，您設定的訂金和政策將自動生效。"
+    },
+    "none": {
+      "deposits": "為每項服務要求訂金或全額付款",
+      "fees": "自動從訂金中扣留臨時取消費",
+      "tips": "允許客戶在到訪後新增小費",
+      "connect": "透過 Stripe 設定收款",
+      "time": "大約需要 5 分鐘。您需要準備銀行帳戶資訊和一份身分證件。"
+    },
+    "incomplete": {
+      "badge": "設定未完成",
+      "body": "在開始收款前，Stripe 還需要您補充一些資訊。",
+      "continue": "繼續設定"
+    },
+    "connected": {
+      "badge": "已連接",
+      "body": "您可以線上收取訂金和付款。",
+      "services": "在<link>服務</link>中為每項服務選擇收款方式。"
+    },
+    "fees": {
+      "title": "費用",
+      "kept": "線上支付的 Kept 手續費",
+      "inPerson": "當面收款",
+      "noFee": "無 Kept 手續費",
+      "processing": "刷卡處理費",
+      "stripeRate": "Stripe 標準費率"
+    }
+  },
+  "link": {
+    "title": "預約連結",
+    "description": "您在 Kept 上的頁面。放進您的簡介、名片，甚至貼在鏡子上。",
+    "checklist": {
+      "location": "新增您的工作地點",
+      "services": "建立至少一項服務",
+      "availability": "設定您的工作時間",
+      "done": "已完成",
+      "todo": "待完成"
+    },
+    "status": {
+      "liveTitle": "您的頁面已上線",
+      "draftTitle": "您的頁面尚未上線",
+      "liveDescription": "客戶可以在搜尋中找到您並線上預約。",
+      "draftDescription": "目前只有您能看到。完成清單後即可上線。",
+      "live": "已上線",
+      "hide": "隱藏我的頁面",
+      "goLive": "立即上線",
+      "viewPage": "查看頁面",
+      "preview": "預覽"
+    },
+    "toasts": {
+      "live": "您已上線——客戶可以找到並預約您",
+      "hidden": "您的頁面已隱藏",
+      "hiddenDescription": "現有的預約不受影響。",
+      "slugUpdated": "網址已更新",
+      "slugUpdatedDescription": "舊連結已失效——請在您分享過的地方更新。",
+      "copied": "已複製"
+    },
+    "share": {
+      "title": "分享",
+      "qrLabel": "{address} 的 QR Code",
+      "qrHint": "可印出放在櫃檯、名片或鏡子上。掃描即可直接開啟您的預約頁面。",
+      "png": "用於列印的 PNG",
+      "svg": "SVG",
+      "embedSummary": "在您的網站上新增「立即預約」按鈕",
+      "embedHint": "將此程式碼貼到您希望顯示按鈕的位置。",
+      "copyCode": "複製程式碼",
+      "buttonText": "預約 {name}"
+    },
+    "slug": {
+      "title": "網址",
+      "description": "小寫字母、數字和連字號。更改後，您已分享的連結將失效。",
+      "change": "更改網址",
+      "label": "網址"
+    },
+    "hideDialog": {
+      "title": "隱藏您的頁面？",
+      "description": "您將從搜尋中消失，也無人能線上預約。現有的預約保持不變。您隨時可以重新上線。",
+      "confirm": "隱藏頁面"
+    }
+  },
+  "locations": {
+    "title": "地點",
+    "description": "客戶在哪裡預約您：您的店鋪、到府服務區域，或線上。每項服務和每位團隊成員都可限定在其中部分地點。",
+    "privacy": {
+      "title": "客戶可見的內容",
+      "atPlace": "在您的場所",
+      "atPlaceBody": "完整地址和地圖，方便客戶找到您。",
+      "travel": "到府服務",
+      "travelBody": "僅顯示您所在的城市和服務範圍。如果您在家工作，家庭地址和精確定位絕不會顯示——搜尋中的位置會模糊至約 5 公里範圍。客戶會在預約時提供他們的地址。",
+      "online": "線上",
+      "onlineBody": "完全不顯示地址，僅說明服務在線上進行。"
+    },
+    "kinds": {
+      "physical": {
+        "label": "在我的場所",
+        "description": "店鋪、工作室、辦公室"
+      },
+      "mobile": {
+        "label": "我到府服務",
+        "description": "住宅、辦公室、活動現場"
+      },
+      "virtual": {
+        "label": "線上",
+        "description": "視訊或電話服務"
+      }
+    },
+    "summary": {
+      "mobile": "從 {place} 出發，最遠 {km} 公里到府",
+      "virtual": "線上服務"
+    },
+    "list": {
+      "title": "您的地點",
+      "count": "{plan} 方案：已用 {count}/{max}",
+      "emptyTitle": "尚無地點",
+      "emptyBody": "客戶在知道預約地點之前無法下單。請新增您的店鋪、到府服務區域或線上服務。",
+      "add": "新增地點",
+      "primary": "主要",
+      "upcoming": "{count, plural, other {# 筆即將到來的預約}}",
+      "notPinned": "未在地圖上標記",
+      "actions": "{name} 的操作",
+      "edit": "編輯",
+      "makePrimary": "設為主要地點",
+      "remove": "移除地點",
+      "atLimit": "{count, plural, other {您的 {plan} 方案包含 # 個地點。如需新增，請先移除一個。}}",
+      "primaryHint": "主要地點會優先顯示在您的頁面和搜尋結果中。"
+    },
+    "toasts": {
+      "primary": "{name} 已設為主要地點",
+      "removed": "已移除 {name}",
+      "saved": "地點已儲存",
+      "added": "地點已新增"
+    },
+    "remove": {
+      "blockedTitle": "暫時無法移除 {name}",
+      "ok": "好",
+      "title": "移除 {name}？",
+      "confirm": "移除地點",
+      "description": "客戶將無法再預約此地點。過往預約的資訊會保留。",
+      "primaryNote": "剩餘地點中最早新增的將成為主要地點。",
+      "membersNote": "{count, plural, other {有 # 位團隊成員被分配到此處。僅分配在此處的成員，將可在您的所有地點被預約。}}",
+      "servicesNote": "在此提供的服務仍保留其他地點。",
+      "onlyLocation": "這是您唯一的地點。請先新增另一個，客戶才仍有可預約的地方。",
+      "upcoming": "{count, plural, other {此處有 # 筆即將到來的預約。請先在<link>行事曆</link>中移動或取消它們。}}",
+      "exclusive": "{count, plural, other {{names}僅在此處提供。請先設為在其他地點提供，或在<link>服務</link>中將其隱藏。}}",
+      "quoted": "「{name}」"
+    },
+    "dialog": {
+      "editTitle": "編輯 {name}",
+      "addTitle": "新增地點",
+      "cancel": "取消",
+      "save": "儲存地點",
+      "add": "新增地點",
+      "where": "預約在哪裡進行？",
+      "name": "名稱",
+      "nameHintPhysical": "會向客戶顯示，例如店名或所在街區。",
+      "nameHintOther": "客戶選擇預約地點時會看到。",
+      "namePlaceholderPhysical": "例如：市中心工作室",
+      "defaultMobile": "到府服務",
+      "defaultVirtual": "線上",
+      "street": "街道地址",
+      "line2": "公寓、套房、樓層",
+      "cityBased": "您所在的城市",
+      "city": "城市",
+      "region": "省 / 地區",
+      "postalCode": "郵遞區號",
+      "country": "國家代碼",
+      "countryHint": "兩位字母，例如 US、MX、ES",
+      "radius": "您的服務範圍有多遠？",
+      "radiusOption": "最遠 {km} 公里",
+      "timezone": "時區",
+      "timezoneHint": "此地點的營業時間與預約都使用該時區。",
+      "phone": "電話",
+      "phoneHint": "適用於客戶應直接致電此地點的情況。",
+      "primary": "設為我的主要地點",
+      "primaryDescription": "優先顯示在您的頁面上，並用於搜尋。"
+    },
+    "pin": {
+      "title": "地圖定位",
+      "physical": "讓您的店鋪出現在地圖和「附近」搜尋中。客戶看到的是您在上方填寫的地址。",
+      "mobile": "僅用於配對附近的客戶。您的精確定位和街道地址絕不會顯示——頁面上只顯示城市，搜尋中的位置會模糊至約 5 公里範圍。",
+      "find": "查找此地址",
+      "useMine": "使用我目前的位置",
+      "remove": "移除定位",
+      "removed": "定位已移除。",
+      "matches": "地址相符",
+      "pinnedTo": "已定位到 {place}。",
+      "pinned": "已定位。",
+      "notPinned": "尚未定位。客戶搜尋您所在的城市時，您仍會出現。",
+      "noGeolocation": "此瀏覽器無法分享位置資訊。",
+      "here": "已定位到您目前所在的位置。",
+      "denied": "無法取得您的位置。請檢查瀏覽器的位置權限。",
+      "enterAddress": "請先輸入地址。",
+      "noMatch": "未找到相符結果。請檢查地址，或使用您目前的位置。"
+    },
+    "instructions": {
+      "physical": {
+        "label": "抵達指引",
+        "placeholder": "例如：請將車停在 Elm St。按 2B 門鈴，然後上二樓。",
+        "hint": "停車、入口、門鈴密碼。客戶會在您的頁面和他們的預約中看到。"
+      },
+      "mobile": {
+        "label": "給客戶的備註",
+        "placeholder": "例如：我需要 50 公尺內有停車位，並且能使用電源插座。",
+        "hint": "客戶需要提前準備的事項，會顯示在他們的預約中。"
+      },
+      "virtual": {
+        "label": "服務如何進行",
+        "placeholder": "例如：開始前一小時，您會透過訊息收到視訊連結。",
+        "hint": "會顯示在他們的預約中。請勿在此貼上私人會議連結——請透過訊息傳送連結。"
+      }
+    }
+  },
+  "verification": {
+    "title": "認證",
+    "description": "向客戶表明，您的頁面背後是真實且持證經營的店家。我們的團隊會人工審核您提交的文件。",
+    "status": {
+      "title": "狀態",
+      "not_submitted": "未認證",
+      "pending": "審核中",
+      "verified": "已認證",
+      "rejected": "未通過",
+      "needs_info": "需要補充資訊"
+    },
+    "body": {
+      "notSubmitted": "您尚未申請認證。請在下方提交一些資訊和文件。",
+      "pending": "已於 {date} 提交。我們的團隊會人工審核每一份申請，有結果後會第一時間通知您。審核期間無法修改申請。",
+      "pendingNoDate": "已提交。我們的團隊會人工審核每一份申請，有結果後會第一時間通知您。審核期間無法修改申請。",
+      "verified": "{name} 自 {date} 起已通過認證。認證標章會顯示在您的<link>公開頁面</link>和搜尋結果中。",
+      "verifiedNoDate": "{name} 已通過認證。認證標章會顯示在您的<link>公開頁面</link>和搜尋結果中。",
+      "rejected": "根據 {date} 提交的資料，我們未能認證 {name}。您可以在下方重新提交資訊和文件。",
+      "rejectedNoDate": "根據已提交的資料，我們未能認證 {name}。您可以在下方重新提交資訊和文件。",
+      "needsInfo": "我們的團隊在作出決定前還需要一些補充資訊。請在下方回覆，您的申請將重新進入審核。"
+    },
+    "note": "來自 Kept 的留言",
+    "noteDate": "來自 Kept 的留言 · {date}",
+    "submit": {
+      "replyTitle": "回覆我們的團隊",
+      "retryTitle": "重新提交",
+      "requestTitle": "申請認證",
+      "firstDescription": "請介紹您的店家並附上證明。大多數店家只需提供一份執照或登記文件。",
+      "againDescription": "我們保留了您上次提交的內容，您可以修改或補充。"
+    },
+    "sent": {
+      "title": "您提交的內容",
+      "description": "提交於 {date}。",
+      "noDescription": "無說明。",
+      "documents": "文件",
+      "open": "開啟文件 {n}",
+      "removed": "部分文件已被刪除，無法再開啟。"
+    },
+    "meaning": {
+      "title": "客戶看到的內容",
+      "example": "認證標章範例",
+      "checkMark": "在您的頁面和搜尋結果中，名稱旁會顯示一個勾號，標示「已認證店家」。",
+      "notEndorsement": "這表示 Kept 已審核您提供的文件，並不代表對您工作的評價或背書——您的評分仍來自客戶。",
+      "private": "文件保持私密，只有管理此店家的人員和 Kept 審核團隊可以開啟。",
+      "removable": "我們的團隊日後可能撤銷認證標章，例如發現執照無效時。"
+    },
+    "form": {
+      "documentN": "文件 {n}",
+      "tooMany": "{count, plural, other {最多可附上 # 份文件。}}",
+      "needSomething": "請新增簡短說明，或至少上傳一份文件。",
+      "sentReply": "已提交，您的申請已重新進入審核。",
+      "submitted": "已提交審核",
+      "replyLabel": "您的回覆",
+      "aboutLabel": "關於您的店家",
+      "hint": "執照或登記編號、核發機關，以及您已從業多久。任何有助於我們確認店家真實且屬於您的資訊均可。",
+      "placeholder": "例如：持證理髮師，紐約州執照編號 #12345678，2019 年核發。店鋪登記名稱為 North Fade LLC。",
+      "documents": "文件",
+      "documentsHint": "執照、登記證書或資格證書的照片或掃描檔（JPG、PNG 或 WebP，每個最大 15 MB）。最多 {max} 份。",
+      "attachedList": "已附加的文件",
+      "open": "開啟文件 {n}",
+      "uploading": "正在上傳 {name}",
+      "fromLast": "來自您上次的申請",
+      "attached": "已附加",
+      "remove": "移除 {name}",
+      "addAnother": "再新增一份文件",
+      "add": "新增文件",
+      "uploadingAll": "正在上傳文件",
+      "attachedCount": "{count, plural, other {已附加 # 份文件}}",
+      "privacy": "只有管理此店家的人員和 Kept 審核團隊可以開啟這些檔案，它們絕不會顯示在您的頁面上。",
+      "waiting": "等待上傳完成……",
+      "sendReply": "送出回覆",
+      "submitAgain": "重新提交",
+      "submit": "提交審核"
+    }
+  },
+  "forms": {
+    "title": "客戶問題",
+    "description": "客戶預約時需要回答的問題：過敏情況、目標、要帶來的車輛等。建立一次表單，之後在需要的每項服務中選用即可。",
+    "newForm": "新增表單",
+    "editForm": "編輯表單",
+    "notIncludedTitle": "您的方案不包含此功能",
+    "notIncludedBody": "{plan} 方案不包含預約問卷。沒有問卷，各項服務仍可正常接受預約。",
+    "emptyTitle": "尚無表單",
+    "emptyBody": "在預約前就問清您需要了解的事，不必等到服務當場才發現。答案會儲存在預約中，並顯示給負責服務的人員。",
+    "create": "建立表單",
+    "listLabel": "表單",
+    "noQuestions": "尚無問題",
+    "questions": "{count, plural, other {# 個問題}}",
+    "required": "{count, plural, other {# 個必填}}",
+    "edited": "{date} 編輯",
+    "footer": "要在某項服務中使用表單，請開啟該服務，並在<b>問題與要求</b>下選擇它。每項服務最多使用一份表單。",
+    "notUsed": "尚未被任何服務使用",
+    "askedOn": "用於：<list></list>",
+    "hidden": "（已隱藏）",
+    "more": "{count, plural, other {另外 # 項}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "簡短回答",
+        "hint": "一個名稱、數字或幾個詞。",
+        "placeholder": "例如：您的車是什麼品牌和型號？"
+      },
+      "long_text": {
+        "label": "長文字",
+        "hint": "可以寫幾句話。",
+        "placeholder": "例如：請告訴我們需要了解的任何傷病情況。"
+      },
+      "yes_no": {
+        "label": "是 / 否",
+        "hint": "兩個按鈕：是和否。",
+        "placeholder": "例如：這是您第一次到訪嗎？"
+      },
+      "single_choice": {
+        "label": "單選",
+        "hint": "客戶只能選擇一項。",
+        "placeholder": "例如：您現在的頭髮有多長？"
+      },
+      "multi_choice": {
+        "label": "複選",
+        "hint": "客戶可勾選所有適用的選項。",
+        "placeholder": "例如：您希望我們重點關注哪些部位？"
+      },
+      "date": {
+        "label": "日期",
+        "hint": "日期選擇器，例如出生日期或活動日期。",
+        "placeholder": "例如：活動是哪一天？"
+      },
+      "acknowledgement": {
+        "label": "確認聲明",
+        "hint": "客戶勾選以確認已閱讀的一段聲明。",
+        "placeholder": "例如：我了解染髮服務前 48 小時需要先做皮膚測試。"
+      }
+    },
+    "errors": {
+      "name": "請為表單命名",
+      "statement": "請填寫客戶需要同意的聲明",
+      "question": "請填寫問題",
+      "twoChoices": "請至少新增兩個選項",
+      "distinct": "每個選項必須各不相同"
+    },
+    "leaveConfirm": "此表單有未儲存的變更。確定不儲存就離開嗎？",
+    "toasts": {
+      "saved": "表單已儲存",
+      "created": "表單已建立",
+      "archived": "表單已封存",
+      "archivedFrom": "{count, plural, other {表單已封存，並已從 # 項服務中移除}}"
+    },
+    "untitled": "未命名問題",
+    "archive": "封存表單",
+    "show": "顯示",
+    "questionsTab": "{count, plural, other {問題（#）}}",
+    "previewTab": "客戶視角預覽",
+    "details": "表單詳情",
+    "nameLabel": "表單名稱",
+    "nameHint": "僅您的團隊可見，客戶只會看到問題本身。",
+    "namePlaceholder": "例如：新客戶諮詢",
+    "questions": "問題",
+    "questionCount": "{count}/{max}",
+    "emptyTitle": "尚無問題",
+    "emptyBody": "保持簡短。兩三個問題會被認真回答，十個問題則會被跳過。",
+    "saveBar": {
+      "saving": "儲存中……",
+      "fix": "{count, plural, other {儲存前請修正 # 處問題}}",
+      "unsaved": "有未儲存的變更",
+      "allSaved": "所有變更已儲存",
+      "newForm": "新增表單",
+      "discard": "捨棄",
+      "cancel": "取消",
+      "save": "儲存變更",
+      "create": "建立表單"
+    },
+    "archiveDialog": {
+      "title": "封存「{name}」？",
+      "confirm": "封存表單",
+      "confirmUsed": "{count, plural, other {封存並從 # 項服務中移除}}",
+      "descriptionUsed": "在您選擇其他表單之前，以下服務在新預約中將不再詢問這些問題：",
+      "descriptionUnused": "沒有任何服務使用此表單，因此客戶端不會有任何變化。",
+      "keep": "過往及即將到來的預約中已提交的答案會保留在這些預約上。",
+      "lost": "此表單中未儲存的修改將會遺失。"
+    },
+    "usage": {
+      "none": "目前沒有服務使用此表單。請在<link>服務</link>中開啟某項服務，並在「問題與要求」下選擇它。",
+      "title": "客戶預約時會被詢問",
+      "hidden": "已隱藏",
+      "note": "儲存後，變更會立即套用於這些服務的新預約。"
+    },
+    "add": {
+      "label": "新增問題",
+      "limit": "已達到 {max} 個問題的上限",
+      "type": "問題類型"
+    },
+    "card": {
+      "required": "必填",
+      "attention": "需要處理",
+      "moveUp": "上移問題 {n}",
+      "moveDown": "下移問題 {n}",
+      "type": "類型",
+      "statement": "聲明",
+      "question": "問題",
+      "helpText": "說明文字",
+      "helpAck": "顯示在聲明下方，例如在哪裡閱讀完整政策。",
+      "helpQuestion": "顯示在問題下方。",
+      "mustTick": "必須勾選才能預約",
+      "ackRequired": "客戶未勾選就無法預約。",
+      "questionRequired": "客戶不回答就無法預約。",
+      "optional": "客戶可以跳過。",
+      "duplicate": "複製",
+      "delete": "刪除",
+      "done": "完成"
+    },
+    "options": {
+      "legend": "選項",
+      "choice": "選項 {n}",
+      "remove": "移除選項 {n}",
+      "max": "最多 {max} 個選項",
+      "add": "新增選項"
+    },
+    "preview": {
+      "title": "客戶視角預覽",
+      "description": "預約流程中的「填寫資料」步驟。可以試用，不會儲存任何內容。",
+      "empty": "您新增的問題會依客戶看到的樣子顯示在這裡。",
+      "noteLabel": "還有什麼需要告知對方的嗎？",
+      "noteHint": "每次預約的最後都有這個輸入框，它不屬於您的表單。",
+      "notePlaceholder": "過敏情況、偏好、停車說明……",
+      "invalid": "{count, plural, other {有 # 項答案缺漏或無效}}",
+      "allGood": "一切正常——這樣可以順利提交。",
+      "clear": "清除",
+      "tryContinue": "試著繼續",
+      "errors": {
+        "confirm": "請確認後再繼續。",
+        "required": "此問題為必填項。",
+        "invalid": "答案無效。",
+        "tooLong": "請控制在 {max} 個字以內。",
+        "choose": "請選擇其中一個選項。",
+        "invalidChoice": "選項無效。",
+        "date": "請輸入有效日期。"
+      }
+    }
+  },
+  "appearance": {
+    "title": "頁面外觀",
+    "description": "讓您的公開頁面更有個人特色：頁首、強調色、區塊順序、公告和您自己的連結按鈕。",
+    "saved": "您的頁面已更新",
+    "masthead": {
+      "title": "頁首",
+      "body": "深邃而有電影感，或明亮而通透。無論哪種，您的封面照片都會透出來。",
+      "sample": "您的頁面",
+      "noir": "Noir——深色頁首",
+      "ivory": "Ivory——淺色頁首"
+    },
+    "accent": {
+      "title": "強調色",
+      "body": "用於細節點綴：標籤、分隔線、星級和強調。",
+      "names": {
+        "brass": "黃銅",
+        "emerald": "祖母綠",
+        "rose": "玫瑰",
+        "sapphire": "藍寶石",
+        "copper": "紫銅"
+      }
+    },
+    "sections": {
+      "title": "區塊",
+      "body": "選擇訪客看到的內容及其順序。服務始終排在最前，評價始終可見——它們是您頁面可信度的來源。",
+      "alwaysFirst": "始終置頂",
+      "always": "始終顯示",
+      "hide": "隱藏{name}",
+      "show": "顯示{name}",
+      "up": "上移{name}",
+      "down": "下移{name}",
+      "names": {
+        "services": "服務",
+        "work": "作品",
+        "featured": "精選",
+        "team": "團隊",
+        "reviews": "評價",
+        "about": "關於"
+      }
+    },
+    "notice": {
+      "title": "公告",
+      "body": "顯示在頁面頂部的一則簡短訊息——假日營業時間、候補名單、新地點等。",
+      "label": "訊息內容",
+      "placeholder": "12 月 24–26 日休息，27 日恢復營業。"
+    },
+    "links": {
+      "title": "連結按鈕",
+      "body": "您的菜單、禮物卡、商店或歌單：頁面上最多可顯示 8 個按鈕。",
+      "label": "按鈕文字",
+      "url": "網址",
+      "labelPlaceholder": "禮物卡",
+      "remove": "移除連結",
+      "add": "新增連結"
+    }
+  }
+}

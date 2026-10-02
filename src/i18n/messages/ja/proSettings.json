@@ -1,0 +1,782 @@
+{
+  "title": "設定",
+  "home": {
+    "description": "{name}の見え方、予約の受け付け方、お支払いの受け取り方を管理します。"
+  },
+  "nav": {
+    "label": "設定",
+    "back": "設定",
+    "sections": {
+      "profile": {
+        "label": "ビジネスプロフィール",
+        "description": "名前、写真、紹介文、連絡先、SNSリンク。"
+      },
+      "locations": {
+        "label": "拠点",
+        "description": "勤務地：店舗、お客様の自宅など、またはオンライン。"
+      },
+      "booking": {
+        "label": "予約ルール",
+        "description": "即時確定か承認制か、受付期限、リマインダー。"
+      },
+      "policies": {
+        "label": "キャンセルと料金",
+        "description": "キャンセル期限、無断キャンセル料、税。"
+      },
+      "payments": {
+        "label": "お支払い",
+        "description": "オンラインで予約金やカード決済を受け付けます。"
+      },
+      "forms": {
+        "label": "顧客への質問",
+        "description": "予約時にお客様が記入する事前フォーム。"
+      },
+      "link": {
+        "label": "予約リンク",
+        "description": "あなたのURL、QRコード、公開設定。"
+      },
+      "verification": {
+        "label": "認証",
+        "description": "プロフィールに認証バッジを表示します。"
+      },
+      "appearance": {
+        "label": "ページの外観",
+        "description": "ヘッダー、色、セクションの順序、リンクボタン。"
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "保存中…",
+    "unsaved": "未保存の変更があります",
+    "allSaved": "すべての変更を保存しました",
+    "discard": "破棄",
+    "save": "保存",
+    "saved": "保存しました",
+    "checkFields": "強調表示された項目を確認してください。"
+  },
+  "shareLink": {
+    "copy": "コピー",
+    "copied": "コピーしました"
+  },
+  "profile": {
+    "title": "ビジネスプロフィール",
+    "description": "お客様がページや検索結果で目にする内容です。",
+    "toastUpdated": "プロフィールを更新しました",
+    "toastLive": "変更はページに反映されました。",
+    "logoAlt": "{name}のロゴ",
+    "viewPage": "ページを見る",
+    "photos": {
+      "title": "写真",
+      "description": "ロゴはカードやメッセージに、カバー写真はページの冒頭に表示されます。ストック写真ではなく、ご自身の仕事や空間の写真をお使いください。",
+      "noCover": "カバー写真なし",
+      "remove": "削除",
+      "uploading": "アップロード中…",
+      "changeCover": "カバーを変更",
+      "addCover": "カバーを追加",
+      "changeLogo": "ロゴを変更",
+      "addLogo": "ロゴを追加",
+      "logoHint": "正方形が最適です。未設定の場合はイニシャルを表示します。"
+    },
+    "basics": {
+      "title": "基本情報",
+      "nameIndividual": "お名前またはビジネス名",
+      "nameBusiness": "ビジネス名",
+      "tagline": "キャッチコピー",
+      "taglineHint": "お名前の下に表示される一文です。{count, plural, other {あと#文字入力できます。}}",
+      "taglinePlaceholder": "例：ベッドスタイで、精密なフェードとひげのケアを",
+      "category": "メインカテゴリ",
+      "categoryHint": "お客様がカテゴリから探したときに表示される場所です。",
+      "choose": "選択…",
+      "years": "経験年数"
+    },
+    "about": {
+      "title": "紹介",
+      "description": "どんな仕事をしているか、どのように施術するか、あなたならではの魅力を。飾らない言葉のほうが伝わります。",
+      "label": "紹介",
+      "languages": "対応言語",
+      "amenities": "設備・サービス"
+    },
+    "tags": {
+      "optional": "任意",
+      "placeholder": "入力して Enter を押す",
+      "remove": "{tag}を削除"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "英語",
+        "spanish": "スペイン語",
+        "french": "フランス語",
+        "portuguese": "ポルトガル語",
+        "mandarin": "中国語（北京語）",
+        "cantonese": "広東語",
+        "arabic": "アラビア語",
+        "russian": "ロシア語",
+        "haitianCreole": "ハイチ・クレオール語",
+        "korean": "韓国語",
+        "vietnamese": "ベトナム語",
+        "hindi": "ヒンディー語",
+        "italian": "イタリア語",
+        "german": "ドイツ語",
+        "polish": "ポーランド語",
+        "tagalog": "タガログ語"
+      },
+      "amenities": {
+        "wheelchair": "車椅子対応",
+        "streetParking": "路上駐車可",
+        "freeParking": "無料駐車場",
+        "wifi": "Wi-Fi",
+        "cardPayments": "カード決済可",
+        "walkIns": "飛び込み歓迎",
+        "kidFriendly": "お子様連れ歓迎",
+        "restroom": "お手洗い",
+        "airConditioning": "冷暖房完備",
+        "drinks": "ドリンクサービス",
+        "genderNeutral": "ジェンダーニュートラル",
+        "petFriendly": "ペット同伴可"
+      }
+    },
+    "contact": {
+      "title": "連絡先・リンク",
+      "description": "ページに表示されます。お客様は Kept からいつでもメッセージを送れるため、これらは任意です。",
+      "email": "公開メールアドレス",
+      "phone": "公開電話番号",
+      "website": "ウェブサイト",
+      "websitePlaceholder": "yourdomain.com"
+    },
+    "social": {
+      "legend": "SNSプロフィール",
+      "hint": "ハンドル名を入力するか、プロフィールのリンクを貼り付けてください。特定の動画・投稿・トラックをページに掲載したい場合は、<link>ポートフォリオ</link>で追加できます。",
+      "placeholders": {
+        "instagram": "@yourname",
+        "tiktok": "@yourname",
+        "youtube": "@yourchannel",
+        "facebook": "yourpage",
+        "x": "@yourname",
+        "linkedin": "in/yourname",
+        "spotify": "アーティストのリンク",
+        "soundcloud": "yourname",
+        "behance": "yourname",
+        "pinterest": "yourname",
+        "twitch": "yourchannel",
+        "threads": "@yourname"
+      },
+      "errors": {
+        "wrongNetwork": "これは{network}のリンクではありません。",
+        "useProfile": "{network}のプロフィールのリンクを入力してください。",
+        "badHandle": "{network}のハンドル名の形式ではありません。",
+        "badArtist": "{network}のアーティストリンクの形式ではありません。"
+      }
+    },
+    "timezone": {
+      "title": "タイムゾーン",
+      "description": "営業時間とすべての予約時間はこのタイムゾーンで管理されます。実際に移転した場合のみ変更してください。既存の予約は正確な時刻のまま維持されます。",
+      "label": "タイムゾーン"
+    }
+  },
+  "booking": {
+    "title": "予約ルール",
+    "description": "お客様がいつ、どのように予約できるかを設定します。サービスごとに受付期限や承認の設定を上書きできます。",
+    "toastUpdated": "予約ルールを更新しました",
+    "mode": {
+      "title": "確定方法",
+      "description": "サービスの編集画面で、特定のサービスだけ承認制にすることもできます。",
+      "instantTitle": "即時予約",
+      "instantDescription": "お客様が空き時間を選ぶとそのまま予約が確定します。多くのビジネスに最適で、お客様の期待にも沿った方法です。",
+      "requestTitle": "リクエストを1件ずつ承認",
+      "requestDescription": "お客様がリクエストを送り、あなたが承認または辞退します。未回答のリクエストは自動的に期限切れとなるため、お客様を待たせ続けることはありません。"
+    },
+    "window": {
+      "title": "予約を受け付ける期間",
+      "minNotice": "最短予約受付時間",
+      "minNoticeHint": "開始時刻の何時間前まで予約を受け付けるかを設定します。",
+      "noMinimum": "制限なし（開始直前まで予約可）",
+      "advance": "予約可能な期間",
+      "advanceHint": "カレンダーを何日先まで開放するかを設定します。",
+      "daysAhead": "{count, plural, other {#日先まで}}",
+      "yearAhead": "1年先まで",
+      "interval": "開始時刻の間隔",
+      "intervalHint": "間隔が短いほどお客様の選択肢が増え、長いほど1日のスケジュールが整います。",
+      "anyStaff": "「指名なし」を選べるようにする",
+      "anyStaffDescription": "空き枠が最も多く表示され、予約がチームに分散されます。お客様に担当者を必ず選んでもらいたい場合はオフにしてください。"
+    },
+    "durations": {
+      "minutes": "{count, plural, other {#分}}",
+      "hours": "{count, plural, other {#時間}}",
+      "days": "{count, plural, other {#日}}",
+      "weeks": "{count, plural, other {#週間}}"
+    },
+    "reminders": {
+      "title": "リマインダー",
+      "description": "各予約の前にメールで送信されます。リマインダーの時刻よりも直前に予約したお客様には、そのリマインダーは送られません。",
+      "descriptionSms": "各予約の前にメールとSMS（お客様がSMSを許可している場合）で送信されます。リマインダーの時刻よりも直前に予約したお客様には、そのリマインダーは送られません。",
+      "none": "リマインダーなし。お客様には予約確認のみ届きます。",
+      "add": "リマインダーを追加",
+      "addPlaceholder": "リマインダーを追加…",
+      "upTo": "最大3件",
+      "remove": "リマインダー「{label}」を削除",
+      "minutesBefore": "{count, plural, other {#分前}}",
+      "hoursBefore": "{count, plural, other {#時間前}}",
+      "daysBefore": "{count, plural, other {#日前}}"
+    }
+  },
+  "policies": {
+    "title": "キャンセルと料金",
+    "description": "お客様は、予約の前とキャンセルの前にこれらを確認します。",
+    "toastUpdated": "ポリシーを更新しました",
+    "cancel": {
+      "title": "キャンセルと日時変更",
+      "freeUntil": "無料キャンセルの期限",
+      "rescheduleUntil": "オンライン日時変更の期限",
+      "anyTime": "開始前ならいつでも",
+      "oneDay": "24時間（1日）前まで",
+      "hoursBefore": "{count, plural, other {#時間前まで}}",
+      "daysBefore": "{count, plural, other {#日前まで}}",
+      "lateFee": "直前キャンセル料",
+      "lateFeeHintPaid": "お客様がオンラインで支払った金額から差し引きます。支払い済みの金額を超えて請求することはありません。",
+      "lateFeeHintUnpaid": "オンラインで支払われた金額にのみ適用されます。適用するには、決済を接続して予約金を受け付けてください。",
+      "none": "なし",
+      "ofTotal": "（合計に対して）",
+      "noShowFee": "無断キャンセル料",
+      "noShowHint": "お客様が事前にわかるよう、ポリシーの一部として表示されます。無断キャンセルに設定した場合、オンラインで支払われた金額はそのまま受け取れます。対面で受け取った料金は、予約に記録できます。",
+      "refundDeposits": "期限内のキャンセルは予約金を返金",
+      "refundDepositsDescription": "オフにすると、お客様がキャンセルした場合は常に予約金を返金しません。"
+    },
+    "words": {
+      "title": "ご自身の言葉で",
+      "description": "ポリシーと一緒に表示される任意のメモです。",
+      "late": "遅刻について",
+      "lateHint": "例：「15分以上遅れた場合、施術時間の短縮または再予約をお願いすることがあります。」",
+      "before": "ご来店前に",
+      "beforeHint": "確定の前にすべてのお客様に表示されます。道順、持ち物、事前の準備など。"
+    },
+    "tax": {
+      "title": "消費税",
+      "description": "決済時に料金へ上乗せされ、別行で表示されます。料金がすでに税込の場合は0のままにしてください。",
+      "rate": "税率",
+      "rateError": "0〜30%の範囲で税率を入力してください",
+      "label": "表示名",
+      "labelPlaceholder": "消費税"
+    },
+    "preview": {
+      "title": "予約前にお客様に表示される内容"
+    }
+  },
+  "payments": {
+    "title": "お支払い",
+    "description": "予約時に予約金または全額を受け取れます。対面でのお支払いも常にご利用いただけます。",
+    "online": {
+      "title": "オンライン決済",
+      "description": "お支払いは Stripe が処理し、ご登録の銀行口座に入金されます。Kept がカード番号を目にすることはありません。"
+    },
+    "unavailable": {
+      "badge": "まだ利用できません",
+      "body": "Kept のカード決済はまだ有効になっていません。それまでは、お客様は来店時にお支払いします。現金・カードリーダー・振込など各支払いを予約ページから記録すれば、記録とインサイトを正確に保てます。",
+      "note": "現時点で必要な操作はありません。オンライン決済が始まると、設定した予約金とポリシーが適用されます。"
+    },
+    "none": {
+      "deposits": "サービスごとに予約金または全額前払いを設定",
+      "fees": "予約金から直前キャンセル料を自動で差し引く",
+      "tips": "来店後にお客様がチップを追加できる",
+      "connect": "Stripe で決済を設定",
+      "time": "所要時間は約5分です。銀行口座の情報と本人確認書類をご用意ください。"
+    },
+    "incomplete": {
+      "badge": "セットアップ未完了",
+      "body": "お支払いを受け付けるには、Stripe でいくつかの情報の入力が必要です。",
+      "continue": "設定を続ける"
+    },
+    "connected": {
+      "badge": "接続済み",
+      "body": "オンラインで予約金やお支払いを受け付けられます。",
+      "services": "サービスごとに受け取る内容は、<link>サービス</link>で選択できます。"
+    },
+    "fees": {
+      "title": "手数料",
+      "kept": "オンライン決済の Kept 手数料",
+      "inPerson": "対面でのお支払い",
+      "noFee": "Kept 手数料なし",
+      "processing": "カード決済手数料",
+      "stripeRate": "Stripe の標準料率"
+    }
+  },
+  "link": {
+    "title": "予約リンク",
+    "description": "Kept 上のあなたのページです。プロフィール、名刺、お店の鏡などに載せましょう。",
+    "checklist": {
+      "location": "勤務地を追加",
+      "services": "サービスを1つ以上作成",
+      "availability": "営業時間を設定",
+      "done": "完了",
+      "todo": "未完了"
+    },
+    "status": {
+      "liveTitle": "ページは公開中です",
+      "draftTitle": "ページはまだ公開されていません",
+      "liveDescription": "お客様は検索であなたを見つけ、オンラインで予約できます。",
+      "draftDescription": "あなただけに表示されています。チェックリストが完了したら公開しましょう。",
+      "live": "公開中",
+      "hide": "ページを非公開にする",
+      "goLive": "公開する",
+      "viewPage": "ページを見る",
+      "preview": "プレビュー"
+    },
+    "toasts": {
+      "live": "公開しました。お客様があなたを見つけて予約できます",
+      "hidden": "ページを非公開にしました",
+      "hiddenDescription": "既存の予約には影響しません。",
+      "slugUpdated": "URLを更新しました",
+      "slugUpdatedDescription": "以前のリンクは使えなくなりました。共有した場所のリンクを更新してください。",
+      "copied": "コピーしました"
+    },
+    "share": {
+      "title": "共有",
+      "qrLabel": "{address}のQRコード",
+      "qrHint": "受付、名刺、鏡などに印刷してお使いください。スキャンすると予約ページが直接開きます。",
+      "png": "印刷用PNG",
+      "svg": "SVG",
+      "embedSummary": "ウェブサイトに「今すぐ予約」ボタンを設置",
+      "embedHint": "ボタンを表示したい場所に貼り付けてください。",
+      "copyCode": "コードをコピー",
+      "buttonText": "{name}を予約"
+    },
+    "slug": {
+      "title": "ウェブアドレス",
+      "description": "小文字の英字、数字、ハイフンが使えます。変更すると、すでに共有したリンクが使えなくなります。",
+      "change": "アドレスを変更",
+      "label": "アドレス"
+    },
+    "hideDialog": {
+      "title": "ページを非公開にしますか？",
+      "description": "検索に表示されなくなり、オンライン予約もできなくなります。既存の予約はそのままです。いつでも再び公開できます。",
+      "confirm": "非公開にする"
+    }
+  },
+  "locations": {
+    "title": "拠点",
+    "description": "お客様が予約する場所（店舗、出張エリア、オンライン）です。サービスやメンバーごとに、対応する拠点を限定できます。",
+    "privacy": {
+      "title": "お客様に表示される内容",
+      "atPlace": "ご自身の拠点で",
+      "atPlaceBody": "住所と地図をすべて表示し、お客様が迷わず来店できます。",
+      "travel": "お客様のもとへ出張",
+      "travelBody": "表示されるのは市区町村と出張可能な範囲のみです。ご自宅で活動している場合も、住所や正確な位置が表示されることはなく、検索では約5km圏内として扱われます。お客様は予約時にご自身の住所を入力します。",
+      "online": "オンライン",
+      "onlineBody": "住所は一切表示されず、オンラインで実施することのみが伝わります。"
+    },
+    "kinds": {
+      "physical": {
+        "label": "自分の拠点で",
+        "description": "店舗・スタジオ・オフィス"
+      },
+      "mobile": {
+        "label": "お客様のもとへ伺う",
+        "description": "ご自宅・オフィス・イベント会場"
+      },
+      "virtual": {
+        "label": "オンライン",
+        "description": "ビデオ・電話セッション"
+      }
+    },
+    "summary": {
+      "mobile": "{place}から最大{km}kmまで出張",
+      "virtual": "オンラインセッション"
+    },
+    "list": {
+      "title": "あなたの拠点",
+      "count": "{plan}プラン：{max}件中{count}件",
+      "emptyTitle": "拠点はまだありません",
+      "emptyBody": "お客様は予約の場所がわからないと予約できません。店舗、出張エリア、オンラインセッションのいずれかを追加してください。",
+      "add": "拠点を追加",
+      "primary": "メイン",
+      "upcoming": "{count, plural, other {今後の予約#件}}",
+      "notPinned": "地図に位置が登録されていません",
+      "actions": "{name}の操作",
+      "edit": "編集",
+      "makePrimary": "メインに設定",
+      "remove": "拠点を削除",
+      "atLimit": "{count, plural, other {{plan}プランで登録できる拠点は#件です。追加するには、いずれか1件を削除してください。}}",
+      "primaryHint": "メインの拠点は、プロフィールと検索結果で最初に表示されます。"
+    },
+    "toasts": {
+      "primary": "{name}をメインの拠点にしました",
+      "removed": "{name}を削除しました",
+      "saved": "拠点を保存しました",
+      "added": "拠点を追加しました"
+    },
+    "remove": {
+      "blockedTitle": "{name}はまだ削除できません",
+      "ok": "OK",
+      "title": "{name}を削除しますか？",
+      "confirm": "拠点を削除",
+      "description": "お客様はこの拠点を予約できなくなります。過去の予約の内容は保持されます。",
+      "primaryNote": "残っている拠点のうち、最も古いものがメインになります。",
+      "membersNote": "{count, plural, other {この拠点に割り当てられているメンバーが#名います。この拠点のみに割り当てられているメンバーは、すべての拠点で予約できるようになります。}}",
+      "servicesNote": "この拠点で提供しているサービスは、ほかの拠点での提供設定が維持されます。",
+      "onlyLocation": "これが唯一の拠点です。お客様が予約できる場所を残すため、先に別の拠点を追加してください。",
+      "upcoming": "{count, plural, other {この拠点には今後の予約が#件あります。先に<link>カレンダー</link>で移動またはキャンセルしてください。}}",
+      "exclusive": "{count, plural, other {{names}はこの拠点でのみ提供されています。別の拠点でも提供するか、<link>サービス</link>で非表示にしてください。}}",
+      "quoted": "「{name}」"
+    },
+    "dialog": {
+      "editTitle": "{name}を編集",
+      "addTitle": "拠点を追加",
+      "cancel": "キャンセル",
+      "save": "拠点を保存",
+      "add": "拠点を追加",
+      "where": "予約はどこで行いますか？",
+      "name": "名前",
+      "nameHintPhysical": "お客様に表示されます（例：店舗名やエリア名）。",
+      "nameHintOther": "お客様が予約する場所を選ぶときに表示されます。",
+      "namePlaceholderPhysical": "例：ダウンタウンスタジオ",
+      "defaultMobile": "出張サービス",
+      "defaultVirtual": "オンライン",
+      "street": "番地",
+      "line2": "建物名・部屋番号・階",
+      "cityBased": "拠点のある市区町村",
+      "city": "市区町村",
+      "region": "都道府県・州",
+      "postalCode": "郵便番号",
+      "country": "国コード",
+      "countryHint": "2文字（例：US、MX、ES）",
+      "radius": "どこまで出張できますか？",
+      "radiusOption": "最大{km}km",
+      "timezone": "タイムゾーン",
+      "timezoneHint": "この拠点の営業時間と予約は、このタイムゾーンで管理されます。",
+      "phone": "電話番号",
+      "phoneHint": "お客様がこの拠点に直接電話できるようにする場合に入力します。",
+      "primary": "メインの拠点にする",
+      "primaryDescription": "プロフィールで最初に表示され、検索にも使われます。"
+    },
+    "pin": {
+      "title": "地図の位置",
+      "physical": "店舗を地図と「近くを探す」検索に表示します。お客様には、上で入力した住所が表示されます。",
+      "mobile": "近くのお客様とのマッチングにのみ使用します。正確な位置や番地が表示されることはなく、プロフィールには市区町村のみ、検索では約5km圏内として扱われます。",
+      "find": "この住所を検索",
+      "useMine": "現在地を使用",
+      "remove": "位置を削除",
+      "removed": "位置を削除しました。",
+      "matches": "住所が一致しました",
+      "pinnedTo": "{place}に位置を登録しました。",
+      "pinned": "位置を登録しました。",
+      "notPinned": "まだ位置が登録されていません。お客様が市区町村で検索したときには引き続き表示されます。",
+      "noGeolocation": "このブラウザでは位置情報を共有できません。",
+      "here": "現在地に位置を登録しました。",
+      "denied": "位置情報を取得できませんでした。ブラウザの位置情報の許可を確認してください。",
+      "enterAddress": "先に住所を入力してください。",
+      "noMatch": "一致する場所が見つかりませんでした。住所を確認するか、現在地を使用してください。"
+    },
+    "instructions": {
+      "physical": {
+        "label": "ご来店方法",
+        "placeholder": "例：Elm St に駐車してください。2Bのインターホンを押して、2階へお上がりください。",
+        "hint": "駐車場、入口、インターホンの番号など。プロフィールとお客様の予約内容に表示されます。"
+      },
+      "mobile": {
+        "label": "お客様へのメモ",
+        "placeholder": "例：50m以内の駐車スペースと、電源コンセントをご用意ください。",
+        "hint": "お客様に準備していただくことです。予約内容に表示されます。"
+      },
+      "virtual": {
+        "label": "セッションの進め方",
+        "placeholder": "例：セッションの1時間前に、メッセージでビデオ通話のリンクをお送りします。",
+        "hint": "お客様の予約内容に表示されます。非公開の会議リンクはここに貼らず、メッセージで送ってください。"
+      }
+    }
+  },
+  "verification": {
+    "title": "認証",
+    "description": "プロフィールの背後に、実在し、資格や許可を持つビジネスがあることをお客様に示せます。提出された書類は担当チームが目視で確認します。",
+    "status": {
+      "title": "ステータス",
+      "not_submitted": "未認証",
+      "pending": "審査中",
+      "verified": "認証済み",
+      "rejected": "承認されませんでした",
+      "needs_info": "追加情報が必要です"
+    },
+    "body": {
+      "notSubmitted": "まだ認証を申請していません。下から情報と書類を送信してください。",
+      "pending": "{date}に送信済みです。担当チームがすべての申請を目視で確認し、結果が出たらすぐに通知します。審査中は申請内容を変更できません。",
+      "pendingNoDate": "送信済みです。担当チームがすべての申請を目視で確認し、結果が出たらすぐに通知します。審査中は申請内容を変更できません。",
+      "verified": "{name}は{date}から認証済みです。バッジは<link>公開プロフィール</link>と検索結果に表示されます。",
+      "verifiedNoDate": "{name}は認証済みです。バッジは<link>公開プロフィール</link>と検索結果に表示されます。",
+      "rejected": "{date}に送信された内容では{name}を認証できませんでした。下から新しい情報や書類を送信できます。",
+      "rejectedNoDate": "送信された内容では{name}を認証できませんでした。下から新しい情報や書類を送信できます。",
+      "needsInfo": "判断するために、担当チームがもう少し情報を必要としています。下からご回答いただくと、申請が再び審査に戻ります。"
+    },
+    "note": "Kept からのメモ",
+    "noteDate": "Kept からのメモ · {date}",
+    "submit": {
+      "replyTitle": "担当チームに返信",
+      "retryTitle": "もう一度申請",
+      "requestTitle": "認証を申請",
+      "firstDescription": "ビジネスについて説明し、証明書類を添付してください。多くの場合、許可証または登録書類を1点ご提出いただきます。",
+      "againDescription": "前回送信した内容は保持されています。変更や追加ができます。"
+    },
+    "sent": {
+      "title": "送信した内容",
+      "description": "{date}に送信。",
+      "noDescription": "説明なし。",
+      "documents": "書類",
+      "open": "書類{n}を開く",
+      "removed": "一部の書類は削除されたため、開けなくなりました。"
+    },
+    "meaning": {
+      "title": "お客様に表示される内容",
+      "example": "認証バッジの例",
+      "checkMark": "プロフィールと検索結果のお名前の横に、「認証済みビジネス」と表示されたチェックマークが付きます。",
+      "notEndorsement": "Kept が提出された書類を確認したことを示すもので、仕事の品質を評価・保証するものではありません。評価は引き続きお客様によるものです。",
+      "private": "書類は非公開です。このビジネスを管理するメンバーと Kept の審査チームだけが閲覧できます。",
+      "removable": "許可証が無効だと判明した場合などには、担当チームが後からバッジを削除することがあります。"
+    },
+    "form": {
+      "documentN": "書類{n}",
+      "tooMany": "{count, plural, other {添付できる書類は最大#点です。}}",
+      "needSomething": "簡単な説明を入力するか、書類を1点以上追加してください。",
+      "sentReply": "送信しました。申請が再び審査に戻りました。",
+      "submitted": "審査に送信しました",
+      "replyLabel": "ご返信",
+      "aboutLabel": "ビジネスについて",
+      "hint": "許可証や登録の番号、発行元、活動年数など。ビジネスが実在し、あなたのものであることの確認に役立つ情報をご記入ください。",
+      "placeholder": "例：理容師免許保持。ニューヨーク州ライセンス #12345678（2019年発行）。店舗は North Fade LLC として登録。",
+      "documents": "書類",
+      "documentsHint": "許可証・登録証明書・資格証明書の写真またはスキャン（JPG、PNG、WebP、各15MBまで）。最大{max}点。",
+      "attachedList": "添付済みの書類",
+      "open": "書類{n}を開く",
+      "uploading": "{name}をアップロード中",
+      "fromLast": "前回の申請から",
+      "attached": "添付済み",
+      "remove": "{name}を削除",
+      "addAnother": "書類をもう1点追加",
+      "add": "書類を追加",
+      "uploadingAll": "書類をアップロード中",
+      "attachedCount": "{count, plural, other {#点の書類を添付済み}}",
+      "privacy": "これらのファイルは、このビジネスを管理するメンバーと Kept の審査チームだけが開けます。プロフィールに表示されることはありません。",
+      "waiting": "アップロード完了を待っています…",
+      "sendReply": "返信を送信",
+      "submitAgain": "再申請する",
+      "submit": "審査に送信"
+    }
+  },
+  "forms": {
+    "title": "顧客への質問",
+    "description": "予約時にお客様が回答する質問です（アレルギー、ご希望、お持ち込みの車など）。フォームを一度作れば、必要なサービスごとに選ぶだけで使えます。",
+    "newForm": "新しいフォーム",
+    "editForm": "フォームを編集",
+    "notIncludedTitle": "ご利用のプランには含まれていません",
+    "notIncludedBody": "事前質問は{plan}プランには含まれていません。質問がなくても、サービスは通常どおり予約を受け付けます。",
+    "emptyTitle": "フォームはまだありません",
+    "emptyBody": "施術の前に知っておきたいことを事前に確認しておけば、当日に慌てずにすみます。回答は予約に保存され、担当者に表示されます。",
+    "create": "フォームを作成",
+    "listLabel": "フォーム",
+    "noQuestions": "質問はまだありません",
+    "questions": "{count, plural, other {#件の質問}}",
+    "required": "{count, plural, other {必須#件}}",
+    "edited": "{date}に編集",
+    "footer": "サービスでフォームを使うには、サービスを開き、<b>質問・ご案内事項</b>で選択してください。1つのサービスで使えるフォームは1つまでです。",
+    "notUsed": "どのサービスでも使用されていません",
+    "askedOn": "使用中のサービス：<list></list>",
+    "hidden": "（非表示）",
+    "more": "{count, plural, other {ほか#件}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "短文回答",
+        "hint": "名前、数字、数語など。",
+        "placeholder": "例：お車のメーカーと車種を教えてください。"
+      },
+      "long_text": {
+        "label": "長文回答",
+        "hint": "数文ほど書ける入力欄です。",
+        "placeholder": "例：把握しておくべきお怪我があれば教えてください。"
+      },
+      "yes_no": {
+        "label": "はい／いいえ",
+        "hint": "「はい」と「いいえ」の2つのボタン。",
+        "placeholder": "例：今回が初めてのご来店ですか？"
+      },
+      "single_choice": {
+        "label": "単一選択",
+        "hint": "お客様が1つだけ選びます。",
+        "placeholder": "例：現在の髪の長さはどのくらいですか？"
+      },
+      "multi_choice": {
+        "label": "複数選択",
+        "hint": "当てはまるものをすべて選べます。",
+        "placeholder": "例：重点的にケアしてほしい部位はどこですか？"
+      },
+      "date": {
+        "label": "日付",
+        "hint": "日付の選択欄です（例：生年月日、イベントの日付）。",
+        "placeholder": "例：イベントはいつですか？"
+      },
+      "acknowledgement": {
+        "label": "同意確認",
+        "hint": "お客様がチェックして、内容を読んだことを確認する文言です。",
+        "placeholder": "例：カラーの48時間前にパッチテストが必要なことを理解しました。"
+      }
+    },
+    "errors": {
+      "name": "フォーム名を入力してください",
+      "statement": "お客様が同意する文言を入力してください",
+      "question": "質問を入力してください",
+      "twoChoices": "選択肢を2つ以上追加してください",
+      "distinct": "選択肢が重複しないようにしてください"
+    },
+    "leaveConfirm": "このフォームには未保存の変更があります。保存せずに移動しますか？",
+    "toasts": {
+      "saved": "フォームを保存しました",
+      "created": "フォームを作成しました",
+      "archived": "フォームをアーカイブしました",
+      "archivedFrom": "{count, plural, other {フォームをアーカイブし、#件のサービスから外しました}}"
+    },
+    "untitled": "無題の質問",
+    "archive": "フォームをアーカイブ",
+    "show": "表示",
+    "questionsTab": "{count, plural, other {質問（#）}}",
+    "previewTab": "お客様向けプレビュー",
+    "details": "フォームの詳細",
+    "nameLabel": "フォーム名",
+    "nameHint": "チームのメンバーにのみ表示されます。お客様には質問だけが表示されます。",
+    "namePlaceholder": "例：新規のお客様向けカウンセリング",
+    "questions": "質問",
+    "questionCount": "{count}/{max}",
+    "emptyTitle": "質問はまだありません",
+    "emptyBody": "短くまとめましょう。2〜3問なら回答してもらえますが、10問になると飛ばされてしまいます。",
+    "saveBar": {
+      "saving": "保存中…",
+      "fix": "{count, plural, other {保存前に#件の問題を修正してください}}",
+      "unsaved": "未保存の変更があります",
+      "allSaved": "すべての変更を保存しました",
+      "newForm": "新しいフォーム",
+      "discard": "破棄",
+      "cancel": "キャンセル",
+      "save": "変更を保存",
+      "create": "フォームを作成"
+    },
+    "archiveDialog": {
+      "title": "「{name}」をアーカイブしますか？",
+      "confirm": "フォームをアーカイブ",
+      "confirmUsed": "{count, plural, other {アーカイブして#件のサービスから外す}}",
+      "descriptionUsed": "別のフォームを選ぶまで、次のサービスでは新しい予約でこれらの質問が表示されなくなります：",
+      "descriptionUnused": "このフォームを使っているサービスはないため、お客様への影響はありません。",
+      "keep": "過去および今後の予約にすでに記入された回答は、その予約に残ります。",
+      "lost": "このフォームの未保存の編集内容は失われます。"
+    },
+    "usage": {
+      "none": "このフォームを使っているサービスはまだありません。<link>サービス</link>で対象のサービスを開き、「質問・ご案内事項」で選択してください。",
+      "title": "予約時に表示",
+      "hidden": "非表示",
+      "note": "保存すると、これらのサービスの新規予約にすぐ反映されます。"
+    },
+    "add": {
+      "label": "質問を追加",
+      "limit": "上限の{max}件に達しました",
+      "type": "質問の種類"
+    },
+    "card": {
+      "required": "必須",
+      "attention": "要確認",
+      "moveUp": "質問{n}を上へ",
+      "moveDown": "質問{n}を下へ",
+      "type": "種類",
+      "statement": "文言",
+      "question": "質問",
+      "helpText": "補足テキスト",
+      "helpAck": "文言の下に表示されます（例：ポリシー全文の確認先）。",
+      "helpQuestion": "質問の下に表示されます。",
+      "mustTick": "予約にはチェックが必要",
+      "ackRequired": "チェックしないと予約できません。",
+      "questionRequired": "回答しないと予約できません。",
+      "optional": "お客様は回答を省略できます。",
+      "duplicate": "複製",
+      "delete": "削除",
+      "done": "完了"
+    },
+    "options": {
+      "legend": "選択肢",
+      "choice": "選択肢{n}",
+      "remove": "選択肢{n}を削除",
+      "max": "最大{max}個の選択肢",
+      "add": "選択肢を追加"
+    },
+    "preview": {
+      "title": "お客様向けプレビュー",
+      "description": "予約の「詳細情報」ステップです。試してみても、内容は保存されません。",
+      "empty": "追加した質問が、お客様に表示されるとおりにここへ表示されます。",
+      "noteLabel": "ほかにお伝えしたいことはありますか？",
+      "noteHint": "すべての予約の最後にこの入力欄が表示されます。フォームの一部ではありません。",
+      "notePlaceholder": "アレルギー、ご希望、駐車場のメモなど…",
+      "invalid": "{count, plural, other {未回答または無効な回答が#件あります}}",
+      "allGood": "問題ありません。このまま次へ進めます。",
+      "clear": "クリア",
+      "tryContinue": "次へ進んで試す",
+      "errors": {
+        "confirm": "続けるには確認にチェックしてください。",
+        "required": "この質問は必須です。",
+        "invalid": "回答が正しくありません。",
+        "tooLong": "{max}文字以内で入力してください。",
+        "choose": "選択肢の中から1つ選んでください。",
+        "invalidChoice": "選択肢が正しくありません。",
+        "date": "有効な日付を入力してください。"
+      }
+    }
+  },
+  "appearance": {
+    "title": "ページの外観",
+    "description": "公開ページをあなたらしく整えましょう。ヘッダー、アクセントカラー、セクションの順序、お知らせ、オリジナルのリンクボタンを設定できます。",
+    "saved": "ページを更新しました",
+    "masthead": {
+      "title": "ヘッダー",
+      "body": "ダークで映画のような雰囲気か、明るく軽やかな雰囲気か。どちらもカバー写真が透けて見えます。",
+      "sample": "あなたのページ",
+      "noir": "Noir：ダークヘッダー",
+      "ivory": "Ivory：ライトヘッダー"
+    },
+    "accent": {
+      "title": "アクセントカラー",
+      "body": "ラベル、罫線、星、ハイライトなど、細かな部分に使われます。",
+      "names": {
+        "brass": "ブラス",
+        "emerald": "エメラルド",
+        "rose": "ローズ",
+        "sapphire": "サファイア",
+        "copper": "カッパー"
+      }
+    },
+    "sections": {
+      "title": "セクション",
+      "body": "訪問者に見せる内容と順番を選びます。サービスは常に先頭、レビューは常に表示されます。ページの信頼感を支える要素だからです。",
+      "alwaysFirst": "常に先頭",
+      "always": "常に表示",
+      "hide": "{name}を非表示",
+      "show": "{name}を表示",
+      "up": "{name}を上へ",
+      "down": "{name}を下へ",
+      "names": {
+        "services": "サービス",
+        "work": "作品",
+        "featured": "注目",
+        "team": "チーム",
+        "reviews": "レビュー",
+        "about": "紹介"
+      }
+    },
+    "notice": {
+      "title": "お知らせ",
+      "body": "ページの先頭に表示される短いメッセージです（休業日、キャンセル待ち、新店舗のご案内など）。",
+      "label": "メッセージ",
+      "placeholder": "12月24〜26日は休業いたします。27日から通常営業です。"
+    },
+    "links": {
+      "title": "リンクボタン",
+      "body": "メニュー、ギフトカード、ショップ、プレイリストなど、ページに最大8個のボタンを表示できます。",
+      "label": "ボタンの文言",
+      "url": "URL",
+      "labelPlaceholder": "ギフトカード",
+      "remove": "リンクを削除",
+      "add": "リンクを追加"
+    }
+  }
+}
