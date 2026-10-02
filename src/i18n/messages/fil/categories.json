@@ -1,0 +1,99 @@
+{
+  "barber": { "name": "Barbero" },
+  "hair": {
+    "name": "Buhok at barbero",
+    "description": "Gupit, kulay, styling, tirintas at grooming."
+  },
+  "lashes-brows": { "name": "Pilikmata at kilay" },
+  "massage": { "name": "Masahe" },
+  "personal-training": { "name": "Personal training" },
+  "hair-salon": { "name": "Salon" },
+  "makeup": { "name": "Makeup" },
+  "nails": {
+    "name": "Kuko",
+    "description": "Manicure, pedicure, extension at nail art."
+  },
+  "spa": { "name": "Spa" },
+  "yoga-pilates": { "name": "Yoga at pilates" },
+  "beauty": {
+    "name": "Kagandahan",
+    "description": "Pilikmata, kilay, makeup at pangangalaga sa balat."
+  },
+  "braids-locs": { "name": "Tirintas at locs" },
+  "skincare": { "name": "Balat at esthetics" },
+  "wellness": {
+    "name": "Wellness",
+    "description": "Masahe, spa at bodywork."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Personal training, yoga, pilates at coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tattoo at piercing",
+    "description": "Custom na tattoo, flash at piercing."
+  },
+  "photography": {
+    "name": "Photo at video",
+    "description": "Portrait, event, produkto at video."
+  },
+  "education": {
+    "name": "Aralin at tutoring",
+    "description": "Mga tutor, guro sa musika at aralin sa wika."
+  },
+  "home-services": {
+    "name": "Bahay at hardin",
+    "description": "Paglilinis, pagkukumpuni, karpintero at paghahalaman."
+  },
+  "automotive": {
+    "name": "Automotive",
+    "description": "Detailing, car wash at mobile mechanic."
+  },
+  "pets": {
+    "name": "Alagang hayop",
+    "description": "Grooming, pet sitting at training."
+  },
+  "events": {
+    "name": "Mga event",
+    "description": "Mga DJ, planner at propesyonal sa event."
+  },
+  "professional": {
+    "name": "Propesyonal na serbisyo",
+    "description": "Mga consultant, coach at tagapayo."
+  },
+  "other": {
+    "name": "Iba pa",
+    "description": "Lahat ng iba pang puwede mong i-book."
+  },
+  "music-audio": {
+    "name": "Musika at audio",
+    "description": "Mga producer, recording studio, mixing at vocal coaching."
+  },
+  "music-production": { "name": "Music production" },
+  "recording-studio": { "name": "Mga recording studio" },
+  "vocal-coaching": { "name": "Vocal coaching" },
+  "creators": {
+    "name": "Creators at content",
+    "description": "Mga content creator, UGC, social media at video editing."
+  },
+  "content-creation": { "name": "Paggawa ng content" },
+  "video-editing": { "name": "Video editing" },
+  "social-media": { "name": "Pamamahala ng social media" },
+  "design": {
+    "name": "Disenyo at malikhaing gawa",
+    "description": "Graphic, brand, web at interior design."
+  },
+  "graphic-design": { "name": "Graphic at brand design" },
+  "web-design": { "name": "Web design" },
+  "interior-design": { "name": "Interior design" },
+  "health": {
+    "name": "Kalusugan at pangangalaga",
+    "description": "Physio, nutrisyon, therapy at holistic na pangangalaga."
+  },
+  "physio": { "name": "Physio at chiropractic" },
+  "nutrition": { "name": "Nutrisyon" },
+  "therapy": { "name": "Therapy at counseling" },
+  "cleaning": { "name": "Paglilinis" },
+  "handyman": { "name": "Karpintero at pagkukumpuni" },
+  "gardening": { "name": "Paghahalaman" }
+}
