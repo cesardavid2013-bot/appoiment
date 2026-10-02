@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Jij:",
+  "unread": "Ongelezen",
+  "apptLine": "{service} · {date} om {time}",
+  "list": {
+    "title": "Berichten",
+    "unread": "{count, plural, one {# ongelezen gesprek.} other {# ongelezen gesprekken.}}",
+    "caughtUp": "Je bent helemaal bij.",
+    "emptyTitle": "Nog geen berichten",
+    "emptyBody": "Vragen over een dienst, een prijs of een tijdstip? Open de pagina van een professional en tik op “Stel een vraag”. Hun antwoorden verschijnen hier.",
+    "findPro": "Vind een professional"
+  },
+  "thread": {
+    "metaTitle": "Gesprek",
+    "placeholder": "Bericht aan {business}"
+  },
+  "new": {
+    "metaTitle": "Nieuw bericht",
+    "ownTitle": "Dit is jouw bedrijf",
+    "ownBody": "Berichten van klanten aan {business} komen binnen in je zakelijke inbox.",
+    "ownButton": "Zakelijke inbox openen",
+    "placeholderBooking": "Stel een vraag over deze boeking",
+    "placeholderQuestion": "Stel een vraag",
+    "emptyBookingTitle": "Stuur {business} een bericht over je boeking",
+    "emptyQuestionTitle": "Vraag het {business} voordat je boekt",
+    "emptyBookingBody": "Ben je te laat, wil je iets wijzigen of heb je een vraag? Je bericht gaat rechtstreeks naar het team.",
+    "emptyQuestionBody": "Prijzen, timing, wat je mee moet nemen — {business} antwoordt hier en wij laten het je weten. Je telefoonnummer en e-mailadres blijven privé."
+  },
+  "shell": {
+    "allMessages": "Alle berichten",
+    "viewProfile": "Profiel bekijken",
+    "book": "Boeken"
+  },
+  "pro": {
+    "backToInbox": "Terug naar inbox"
+  },
+  "view": {
+    "label": "Berichten",
+    "you": "Jij",
+    "loadingEarlier": "Eerdere berichten laden",
+    "showEarlier": "Eerdere berichten tonen",
+    "seen": "Gezien",
+    "sending": "Versturen…",
+    "notSent": "Niet verstuurd.",
+    "retry": "Opnieuw proberen",
+    "discard": "Weggooien",
+    "newMessages": "{count, plural, one {# nieuw bericht} other {# nieuwe berichten}}",
+    "openPhoto": "Foto openen in een nieuw tabblad",
+    "photo": "Foto"
+  },
+  "composer": {
+    "about": "Over {appointment}",
+    "unlink": "Deze afspraak niet koppelen",
+    "processingPhoto": "Foto verwerken",
+    "removePhoto": "Foto verwijderen",
+    "attachPhoto": "Foto toevoegen",
+    "label": "Bericht",
+    "send": "Bericht versturen",
+    "hint": "Druk op Enter om te versturen, Shift en Enter voor een nieuwe regel."
+  },
+  "inbox": {
+    "title": "Inbox",
+    "conversations": "Gesprekken",
+    "unread": "{count} ongelezen",
+    "allCaughtUp": "Helemaal bij",
+    "searchLabel": "Zoek gesprekken op naam van de klant",
+    "searchPlaceholder": "Klanten zoeken",
+    "clearSearch": "Zoekopdracht wissen",
+    "show": "Tonen",
+    "all": "Alle",
+    "unreadFilter": "Ongelezen",
+    "noClientsNamed": "Geen klanten met de naam “{term}”",
+    "nothingUnread": "Niets ongelezen",
+    "noMessages": "Nog geen berichten",
+    "tryDifferent": "Probeer een andere zoekopdracht of toon alle gesprekken.",
+    "emptyBody": "Wanneer klanten een vraag stellen vanaf je pagina of over een boeking, verschijnt die hier."
+  },
+  "clientPanel": {
+    "client": "Klant",
+    "visits": "Bezoeken",
+    "noShows": "Niet verschenen",
+    "cancelled": "Geannuleerd",
+    "clientSince": "Klant sinds {date}",
+    "noVisits": "Nog geen afgeronde bezoeken",
+    "lastIn": "laatst in {date}",
+    "tags": "Tags",
+    "clientProfile": "Klantprofiel",
+    "notBooked": "Heeft nog niet bij je geboekt — dit gesprek begon via je openbare pagina.",
+    "upcoming": "Aankomend",
+    "nothingBooked": "Niets geboekt.",
+    "recent": "Recent"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Ty:",
+  "unread": "Nieprzeczytane",
+  "apptLine": "{service} · {date}, {time}",
+  "list": {
+    "title": "Wiadomości",
+    "unread": "{count, plural, one {# nieprzeczytana rozmowa.} few {# nieprzeczytane rozmowy.} many {# nieprzeczytanych rozmów.} other {# nieprzeczytanej rozmowy.}}",
+    "caughtUp": "Jesteś na bieżąco.",
+    "emptyTitle": "Brak wiadomości",
+    "emptyBody": "Pytania o usługę, cenę lub termin? Otwórz stronę specjalisty i stuknij „Zadaj pytanie”. Odpowiedzi pojawią się tutaj.",
+    "findPro": "Znajdź specjalistę"
+  },
+  "thread": {
+    "metaTitle": "Rozmowa",
+    "placeholder": "Napisz do: {business}"
+  },
+  "new": {
+    "metaTitle": "Nowa wiadomość",
+    "ownTitle": "To Twoja firma",
+    "ownBody": "Wiadomości od klientów do firmy {business} trafiają do skrzynki Twojej firmy.",
+    "ownButton": "Otwórz skrzynkę firmy",
+    "placeholderBooking": "Zapytaj o tę rezerwację",
+    "placeholderQuestion": "Zadaj pytanie",
+    "emptyBookingTitle": "Napisz do firmy {business} w sprawie rezerwacji",
+    "emptyQuestionTitle": "Zapytaj firmę {business} przed rezerwacją",
+    "emptyBookingBody": "Spóźniasz się, chcesz coś zmienić albo masz pytanie? Wiadomość trafi prosto do ich zespołu.",
+    "emptyQuestionBody": "Ceny, czas, co zabrać ze sobą — {business} odpowie tutaj, a my damy Ci znać. Twój numer telefonu i e-mail pozostają prywatne."
+  },
+  "shell": {
+    "allMessages": "Wszystkie wiadomości",
+    "viewProfile": "Zobacz profil",
+    "book": "Zarezerwuj"
+  },
+  "pro": {
+    "backToInbox": "Wróć do skrzynki"
+  },
+  "view": {
+    "label": "Wiadomości",
+    "you": "Ty",
+    "loadingEarlier": "Wczytywanie wcześniejszych wiadomości",
+    "showEarlier": "Pokaż wcześniejsze wiadomości",
+    "seen": "Wyświetlono",
+    "sending": "Wysyłanie…",
+    "notSent": "Nie wysłano.",
+    "retry": "Spróbuj ponownie",
+    "discard": "Odrzuć",
+    "newMessages": "{count, plural, one {# nowa wiadomość} few {# nowe wiadomości} many {# nowych wiadomości} other {# nowej wiadomości}}",
+    "openPhoto": "Otwórz zdjęcie w nowej karcie",
+    "photo": "Zdjęcie"
+  },
+  "composer": {
+    "about": "Dotyczy: {appointment}",
+    "unlink": "Nie łącz z tą wizytą",
+    "processingPhoto": "Przetwarzanie zdjęcia",
+    "removePhoto": "Usuń zdjęcie",
+    "attachPhoto": "Dołącz zdjęcie",
+    "label": "Wiadomość",
+    "send": "Wyślij wiadomość",
+    "hint": "Naciśnij Enter, aby wysłać, Shift i Enter dla nowej linii."
+  },
+  "inbox": {
+    "title": "Skrzynka",
+    "conversations": "Rozmowy",
+    "unread": "Nieprzeczytane: {count}",
+    "allCaughtUp": "Wszystko przeczytane",
+    "searchLabel": "Szukaj rozmów według nazwy klienta",
+    "searchPlaceholder": "Szukaj klientów",
+    "clearSearch": "Wyczyść wyszukiwanie",
+    "show": "Pokaż",
+    "all": "Wszystkie",
+    "unreadFilter": "Nieprzeczytane",
+    "noClientsNamed": "Brak klientów o nazwie „{term}”",
+    "nothingUnread": "Brak nieprzeczytanych",
+    "noMessages": "Brak wiadomości",
+    "tryDifferent": "Spróbuj innego wyszukiwania albo pokaż wszystkie rozmowy.",
+    "emptyBody": "Gdy klienci zadadzą pytanie ze strony Twojej firmy lub w sprawie rezerwacji, pojawi się ono tutaj."
+  },
+  "clientPanel": {
+    "client": "Klient",
+    "visits": "Wizyty",
+    "noShows": "Nieobecności",
+    "cancelled": "Anulowane",
+    "clientSince": "Klient od {date}",
+    "noVisits": "Brak zakończonych wizyt",
+    "lastIn": "ostatnio: {date}",
+    "tags": "Tagi",
+    "clientProfile": "Profil klienta",
+    "notBooked": "Nie rezerwował(-a) jeszcze u Ciebie — ta rozmowa zaczęła się na Twojej publicznej stronie.",
+    "upcoming": "Nadchodzące",
+    "nothingBooked": "Nic nie zarezerwowano.",
+    "recent": "Ostatnie"
+  }
+}

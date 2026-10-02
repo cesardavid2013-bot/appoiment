@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Du:",
+  "unread": "Oläst",
+  "apptLine": "{service} · {date} kl. {time}",
+  "list": {
+    "title": "Meddelanden",
+    "unread": "{count, plural, one {# oläst konversation.} other {# olästa konversationer.}}",
+    "caughtUp": "Du är helt i fas.",
+    "emptyTitle": "Inga meddelanden ännu",
+    "emptyBody": "Frågor om en tjänst, ett pris eller en tid? Öppna en yrkesverksams sida och tryck på ”Ställ en fråga”. Svaren landar här.",
+    "findPro": "Hitta en yrkesverksam"
+  },
+  "thread": {
+    "metaTitle": "Konversation",
+    "placeholder": "Skriv till {business}"
+  },
+  "new": {
+    "metaTitle": "Nytt meddelande",
+    "ownTitle": "Det här är ditt företag",
+    "ownBody": "Kundmeddelanden till {business} kommer till din företagsinkorg.",
+    "ownButton": "Öppna företagsinkorgen",
+    "placeholderBooking": "Fråga om den här bokningen",
+    "placeholderQuestion": "Ställ en fråga",
+    "emptyBookingTitle": "Skriv till {business} om din bokning",
+    "emptyQuestionTitle": "Fråga {business} innan du bokar",
+    "emptyBookingBody": "Blir du sen, behöver ändra något eller har en fråga? Ditt meddelande går direkt till deras team.",
+    "emptyQuestionBody": "Priser, tider, vad du ska ta med — {business} svarar här och vi meddelar dig. Ditt telefonnummer och din e-post förblir privata."
+  },
+  "shell": {
+    "allMessages": "Alla meddelanden",
+    "viewProfile": "Visa profil",
+    "book": "Boka"
+  },
+  "pro": {
+    "backToInbox": "Tillbaka till inkorgen"
+  },
+  "view": {
+    "label": "Meddelanden",
+    "you": "Du",
+    "loadingEarlier": "Laddar tidigare meddelanden",
+    "showEarlier": "Visa tidigare meddelanden",
+    "seen": "Sedd",
+    "sending": "Skickar…",
+    "notSent": "Skickades inte.",
+    "retry": "Försök igen",
+    "discard": "Släng",
+    "newMessages": "{count, plural, one {# nytt meddelande} other {# nya meddelanden}}",
+    "openPhoto": "Öppna fotot i en ny flik",
+    "photo": "Foto"
+  },
+  "composer": {
+    "about": "Om {appointment}",
+    "unlink": "Länka inte den här bokningen",
+    "processingPhoto": "Bearbetar foto",
+    "removePhoto": "Ta bort foto",
+    "attachPhoto": "Bifoga ett foto",
+    "label": "Meddelande",
+    "send": "Skicka meddelande",
+    "hint": "Tryck på Enter för att skicka, Skift och Enter för ny rad."
+  },
+  "inbox": {
+    "title": "Inkorg",
+    "conversations": "Konversationer",
+    "unread": "{count} olästa",
+    "allCaughtUp": "Helt i fas",
+    "searchLabel": "Sök konversationer efter kundens namn",
+    "searchPlaceholder": "Sök kunder",
+    "clearSearch": "Rensa sökning",
+    "show": "Visa",
+    "all": "Alla",
+    "unreadFilter": "Olästa",
+    "noClientsNamed": "Inga kunder med namnet ”{term}”",
+    "nothingUnread": "Inget oläst",
+    "noMessages": "Inga meddelanden ännu",
+    "tryDifferent": "Prova en annan sökning eller visa alla konversationer.",
+    "emptyBody": "När kunder ställer en fråga från din sida eller om en bokning visas den här."
+  },
+  "clientPanel": {
+    "client": "Kund",
+    "visits": "Besök",
+    "noShows": "Uteblivna",
+    "cancelled": "Avbokade",
+    "clientSince": "Kund sedan {date}",
+    "noVisits": "Inga genomförda besök ännu",
+    "lastIn": "senast i {date}",
+    "tags": "Taggar",
+    "clientProfile": "Kundprofil",
+    "notBooked": "Har inte bokat hos dig ännu — den här konversationen startade från din publika sida.",
+    "upcoming": "Kommande",
+    "nothingBooked": "Inget bokat.",
+    "recent": "Senaste"
+  }
+}
