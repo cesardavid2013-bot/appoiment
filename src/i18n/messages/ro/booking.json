@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Rezervare la {name}",
+    "fallbackTitle": "Rezervare"
+  },
+  "steps": {
+    "service": "Alegeți serviciul",
+    "options": "Personalizare",
+    "who": "Cine și unde",
+    "time": "Alegeți ora",
+    "details": "Câteva detalii",
+    "review": "Verificare și confirmare"
+  },
+  "header": {
+    "backTo": "Înapoi la {name}",
+    "previousStep": "Pasul anterior",
+    "stepOf": "Pasul {current} din {total}",
+    "exit": "Părăsiți rezervarea"
+  },
+  "service": {
+    "optionsAvailable": "Opțiuni disponibile",
+    "group": "Grup · până la {count}"
+  },
+  "options": {
+    "required": "Obligatoriu",
+    "upTo": "Alegeți până la {count}",
+    "optionalAny": "Opțional · alegeți oricâte",
+    "optional": "Opțional",
+    "included": "Inclus",
+    "errorRequired": "Alegeți o opțiune pentru „{name}”.",
+    "errorOnlyOne": "Pentru „{name}” puteți alege o singură opțiune.",
+    "errorUpTo": "Pentru „{name}” puteți alege cel mult {count}.",
+    "errorUnavailable": "Una dintre opțiunile selectate nu mai este disponibilă."
+  },
+  "who": {
+    "where": "Unde",
+    "with": "Cu cine",
+    "comesToYou": "Se deplasează la dumneavoastră · în raza de {km} km față de {city}",
+    "online": "Sesiune online",
+    "anyPro": "Orice profesionist disponibil",
+    "anyProHint": "Cele mai multe intervale — vă alocăm pe oricine este liber."
+  },
+  "details": {
+    "addressLabel": "Unde să venim?",
+    "addressHint": "În raza de {km} km față de {city}. Se transmite doar firmei.",
+    "addressPlaceholder": "Stradă, apartament, oraș",
+    "consent": "Am citit și sunt de acord cu cele de mai sus",
+    "age": "Confirm că am cel puțin {age} ani",
+    "noteLabel": "Altceva ce ar trebui să știe?",
+    "notePlaceholder": "Alergii, preferințe, indicații de parcare…"
+  },
+  "review": {
+    "changeTime": "Schimbați ora",
+    "with": "Cu cine",
+    "where": "Unde",
+    "yourAddress": "Adresa dumneavoastră",
+    "online": "Online",
+    "noteLabel": "Ce ar trebui să știe?",
+    "notePlaceholder": "Preferințe, întrebări, nevoi de accesibilitate…",
+    "promoApplied": "{code} a fost aplicat",
+    "promoRemove": "Eliminați",
+    "promoPlaceholder": "Cod promoțional",
+    "promoApply": "Aplicați",
+    "beforeYouBook": "Înainte de rezervare",
+    "bookingAs": "Rezervare ca {name}"
+  },
+  "confirm": {
+    "request": "Trimiteți cererea de rezervare",
+    "requestShort": "Trimiteți cererea",
+    "pay": "Confirmați și plătiți {amount}",
+    "payShort": "Plătiți {amount}",
+    "confirm": "Confirmați rezervarea",
+    "confirmShort": "Confirmați"
+  },
+  "summary": {
+    "label": "Rezumatul rezervării",
+    "instant": "Confirmare instantanee",
+    "request": "Confirmată de firmă",
+    "total": "Total",
+    "estimatedTotal": "Total estimat",
+    "estimated": "Estimat",
+    "comesToYou": "Se deplasează la dumneavoastră",
+    "online": "Online",
+    "empty": "Alegeți un serviciu pentru a vedea orele și prețurile.",
+    "continue": "Continuați",
+    "signInToBook": "Autentificați-vă pentru a rezerva"
+  },
+  "time": {
+    "preselectMissed": "Ora aleasă nu mai este disponibilă cu aceste opțiuni. Iată cele mai apropiate intervale libere.",
+    "previousWeeks": "Ultimele două săptămâni",
+    "nextWeeks": "Următoarele două săptămâni",
+    "chooseDate": "Alegeți data",
+    "today": "Astăzi",
+    "timesAvailable": "{count, plural, one {# interval disponibil} few {# intervale disponibile} other {# de intervale disponibile}}",
+    "noAvailability": "Fără disponibilitate",
+    "noOpeningsOn": "Niciun interval liber pe {date}",
+    "noOpeningsThisDay": "Niciun interval liber în această zi",
+    "nextOpening": "Următorul interval liber: {date}.",
+    "tryLater": "Încercați următoarele două săptămâni sau înscrieți-vă pe lista de așteptare și vă anunțăm dacă se eliberează ceva.",
+    "joinWaitlist": "Înscrieți-vă pe lista de așteptare pentru această zi",
+    "morning": "Dimineața",
+    "afternoon": "După-amiaza",
+    "evening": "Seara",
+    "morningTimes": "Intervale de dimineață",
+    "afternoonTimes": "Intervale de după-amiază",
+    "eveningTimes": "Intervale de seară",
+    "spotsLeft": "{count, plural, one {A rămas # loc} few {Au rămas # locuri} other {Au rămas # de locuri}}",
+    "timesIn": "Orele sunt afișate în {abbr} ({zone}).",
+    "timesInLocal": "Orele sunt afișate în {abbr} ({zone}) — la dumneavoastră este {time}."
+  },
+  "waitlist": {
+    "title": "Înscrieți-vă pe lista de așteptare",
+    "description": "Dacă se eliberează un interval pe {date}, vă anunțăm imediat. Intervalul revine celui care rezervă primul.",
+    "cancel": "Anulați",
+    "notify": "Anunțați-mă",
+    "windowLabel": "Intervale care vă convin",
+    "any": "Orice oră în acea zi",
+    "morning": "Dimineața (înainte de prânz)",
+    "afternoon": "După-amiaza (12:00 – 17:00)",
+    "evening": "Seara (după 17:00)",
+    "joined": "Sunteți pe lista de așteptare",
+    "joinedBody": "Vă anunțăm imediat dacă se eliberează un interval."
+  },
+  "price": {
+    "label": "Detalii preț",
+    "total": "Total",
+    "estimatedTotal": "Total estimat",
+    "payNow": "De plată acum",
+    "depositNow": "Avans de plată acum",
+    "remaining": "Rest de plată la programare",
+    "nothingNow": "Nu aveți nimic de plată acum — plătiți la programare.",
+    "estimateNote": "Prețul final este confirmat de firmă și poate varia în funcție de lucrarea necesară.",
+    "tax": "Taxe",
+    "serviceFee": "Taxă de serviciu"
+  },
+  "checkout": {
+    "title": "Plată",
+    "description": "Finalizați plata pentru a confirma rezervarea.",
+    "pay": "Plătiți {amount}",
+    "secured": "Securizat de Stripe. Ora vă este rezervată cât timp plătiți.",
+    "declined": "Cardul a fost respins.",
+    "failed": "Nu am putut finaliza plata. Cardul nu a fost debitat — încercați din nou."
+  },
+  "intake": {
+    "optional": "(opțional)",
+    "yes": "Da",
+    "no": "Nu"
+  }
+}
