@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept för yrkesverksamma — onlinebokning och en kalender som jobbar för dig",
+    "description": "Ta emot bokningar online, slipp dubbelbokningar och uteblivna kunder och bli upptäckt av lokala kunder. Gratis att komma igång för egenföretagare."
+  },
+  "cta": {
+    "dashboard": "Gå till ditt företag",
+    "setup": "Konfigurera ditt företag",
+    "start": "Kom igång — det är gratis"
+  },
+  "hero": {
+    "eyebrow": "Kept för yrkesverksamma",
+    "title": "Fyll boken. Behåll dina kvällar.",
+    "lede": "Onlinebokning, en kalender som aldrig dubbelbokar, påminnelser som minskar uteblivna kunder och en profil framför människor i närheten som söker precis det du gör. Gratis att komma igång.",
+    "howItWorks": "Så fungerar det",
+    "note": "Inget kort krävs. Din profil förblir privat tills du publicerar den."
+  },
+  "sides": {
+    "heading": "Så fungerar Kept för kunder och för dig",
+    "clients": {
+      "eyebrow": "För dina kunder",
+      "title": "Hitta och boka fantastiska yrkesverksamma.",
+      "points": {
+        "search": "Sök efter tjänst, plats och tid och se verkliga lediga tider — inte ett kontaktformulär.",
+        "prices": "Priser i förväg, dina villkor och verifierade omdömen innan de bokar.",
+        "reminders": "Påminnelser, vägbeskrivning och ombokning utan telefonsamtal."
+      }
+    },
+    "you": {
+      "eyebrow": "För dig",
+      "title": "Sköt dina bokningar och väx som företagare.",
+      "points": {
+        "calendar": "En kalender för bokningar, raster och ledighet — i mobilen.",
+        "deposits": "Depositioner och avbokningsregler som tillämpas åt dig.",
+        "clients": "Kundhistorik, anteckningar och omdömen som får folk att komma tillbaka."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Live i tre steg",
+    "profile": {
+      "title": "Skapa din profil",
+      "body": "Lägg till dina tjänster med priser och längd, dina öppettider, var du arbetar och några bilder på ditt arbete. Vi guidar dig genom det."
+    },
+    "share": {
+      "title": "Dela din länk",
+      "body": "Lägg {host}/ditt-namn i din bio och på dina kort. När du har publicerat dyker du också upp i sökningar för människor i närheten."
+    },
+    "book": {
+      "title": "Ta emot bokningar",
+      "body": "Kunder väljer en verklig ledig tid och bokar på några sekunder. Du får en avisering, de får påminnelser och din kalender stämmer alltid."
+    }
+  },
+  "industries": {
+    "heading": "Byggt för alla tjänster du bokar per timme",
+    "lede": "Om kunder bokar tid hos dig passar Kept — oavsett om du jobbar ensam vid en stol eller driver ett team på flera platser."
+  },
+  "features": {
+    "heading": "Allt dagen behöver",
+    "booking": {
+      "title": "Onlinebokning med verklig tillgänglighet",
+      "p1": "Kunder ser bara tider du faktiskt kan ta — dina öppettider minus befintliga bokningar, raster, marginaler och ledighet, med minsta varsel och hur långt i förväg de kan boka.",
+      "p2": "Varje bokning kontrolleras på nytt i samma stund som den görs, så två personer kan aldrig hamna på samma tid, inte ens om de trycker på samma sekund."
+    },
+    "services": {
+      "title": "Tjänster som fungerar som du prissätter",
+      "p1": "Fast pris, från-pris, ett spann, gratis eller enligt konsultation. Lägg till tillval som längd, storlek eller extra, så justerar varje tillval både priset och tiden som reserveras i din kalender.",
+      "p2": "Lägg till marginaler före eller efter, begränsa tjänster till vissa teammedlemmar eller platser och ställ frågor före första besöket."
+    },
+    "policies": {
+      "title": "Depositioner och villkor, tillämpade åt dig",
+      "p1": "Be om deposition eller full betalning i förväg, ange en avbokningstid och avgifter för sen avbokning eller uteblivet besök. Kunder ser reglerna innan de bokar, och återbetalningar följer dem automatiskt."
+    },
+    "reminders": {
+      "title": "Påminnelser som minskar uteblivna kunder",
+      "p1": "Bekräftelser och påminnelser skickas av sig själva — som standard en dag och två timmar innan — med en länk för att boka om inom dina regler i stället för att bara utebli.",
+      "p2": "När någon avbokar får kunder på din väntelista för den dagen veta att en tid blivit ledig."
+    },
+    "clients": {
+      "title": "Lär känna dina kunder",
+      "p1": "Varje kund får en historik över besök, utgifter, avbokningar och uteblivna besök, plus privata anteckningar som bara ditt team ser. Skriv till kunder från samma ställe."
+    },
+    "team": {
+      "title": "Från egen stol till team och flera platser",
+      "p1": "Lägg till teammedlemmar med egna öppettider och tjänster, och roller som styr vad var och en kan se och göra. Driv flera platser, var och en med egen tidszon och egna öppettider."
+    },
+    "portfolio": {
+      "title": "En portfölj som ger bokningar",
+      "p1": "Visa foton och korta videor av ditt arbete. Länka var och en till en tjänst, så kan kunder trycka på ”Boka detta” för att boka precis det de såg."
+    },
+    "spotlight": {
+      "title": "Spotlight — gratis under lanseringen",
+      "p1": "Marknadsför din profil i sökningar och kategorisidor nära dig. Sponsrade resultat är alltid märkta, begränsade till två per sida och visar fortfarande dina verkliga betyg och lediga tider.",
+      "p2": "Spotlight kostar ingenting medan Kept lanseras. Om det någonsin ändras berättar vi det innan något debiteras — det blir aldrig betalt av sig självt."
+    }
+  },
+  "plans": {
+    "heading": "Abonnemang",
+    "lede": "Medan Kept lanseras börjar varje nytt företag på {plan} utan månadsavgift. Priser för betalda abonnemang meddelas i god tid innan de gäller, och ingen debiteras utan att ha valt ett abonnemang.",
+    "badge": {
+      "launch": "Gratis under lanseringen",
+      "available": "Tillgängligt nu",
+      "unavailable": "Inte tillgängligt än"
+    },
+    "period": {
+      "launch": "per månad under lanseringen",
+      "available": "per månad",
+      "unavailable": "Pris meddelas senare"
+    },
+    "rows": {
+      "members": "Bokningsbara teammedlemmar",
+      "locations": "Platser",
+      "fee": "Avgift på onlinebetalningar",
+      "roles": "Anpassade teamroller",
+      "analytics": "Avancerad analys"
+    },
+    "justYou": "1 (bara du)",
+    "upTo": "Upp till {n}",
+    "included": "Ingår",
+    "notIncluded": "Ingår inte",
+    "summary": {
+      "free": "Onlinebokning, kalender, påminnelser, depositioner, kundregister, förfrågningsformulär, portfölj och Spotlight ingår.",
+      "launch": "Allt i {base}, plus ett team på upp till {members}, fler platser, anpassade roller och lägre avgifter. Det nya företag får idag.",
+      "other": "För större team och företag med flera platser."
+    },
+    "footnote": "Avgiften gäller bara betalningar som kunder gör online via Kept. Bokningar som betalas på plats har ingen avgift från Kept. Behöver du fler personer eller platser än ditt abonnemang tillåter? <link>Berätta för oss</link>."
+  },
+  "faq": {
+    "heading": "Frågor",
+    "cost": {
+      "q": "Vad kostar Kept?",
+      "a": "Det finns ingen månadsavgift: medan Kept lanseras får nya företag abonnemanget {plan} gratis. När en kund betalar online — en deposition eller hela priset — behåller Kept {fee} av betalningen. Bokningar som betalas på plats har ingen avgift alls från Kept."
+    },
+    "clientFee": {
+      "q": "Betalar mina kunder för att boka?",
+      "aFee": "Kunder ser en serviceavgift på {fee} i kassan, som visas innan de bekräftar. Inget läggs någonsin till i efterhand.",
+      "aFree": "Nej. Kunder bokar gratis och ser ditt exakta pris innan de bekräftar."
+    },
+    "payments": {
+      "q": "Måste jag ta emot betalningar online?",
+      "a": "Nej. Du kan låta kunder betala på plats, eller kräva deposition eller full betalning vid bokning. Onlinebetalningar hanteras av Stripe och betalas ut till ditt eget bankkonto."
+    },
+    "approve": {
+      "q": "Kan jag godkänna bokningar innan de bekräftas?",
+      "a": "Ja. Välj direktbokning, eller förfrågningsläge där varje bokning väntar på ditt godkännande. Tiden är reserverad medan du bestämmer dig, och förfrågningar du inte svarar på går ut av sig själva."
+    },
+    "where": {
+      "q": "Jag arbetar hemifrån, reser till kunder eller undervisar online. Fungerar det?",
+      "a": "Ja. Varje plats kan vara en fysisk adress, ett mobilt serviceområde där kunder anger sin adress, eller en virtuell session. Du kan erbjuda vilken kombination som helst."
+    },
+    "spotlight": {
+      "q": "Hur fungerar Spotlight?",
+      "a": "Spotlight visar din profil som ett tydligt märkt ”Sponsrat” resultat i sökningar och kategorisidor, högst två per sida. Det är gratis under lanseringen — starta eller stoppa när som helst från din panel."
+    },
+    "link": {
+      "q": "Kan jag använda min egen länk?",
+      "a": "Ja. Varje företag får en profil på {host}/ditt-namn som du kan dela på Instagram, i din bio eller på en QR-kod. Kunder som bokar via den behöver inte söka efter dig."
+    }
+  },
+  "closing": {
+    "title": "Din nästa kund letar redan.",
+    "body": "Ställ in dina tjänster och öppettider, publicera din profil och börja ta emot bokningar redan idag."
+  },
+  "demo": {
+    "example": "Exempel",
+    "today": {
+      "label": "Exempel på dagens schema som en yrkesverksam ser",
+      "title": "Idag",
+      "summary": "{count, plural, one {# bokning} other {# bokningar}} · {amount} bokat",
+      "skinFade": "Skin fade",
+      "beardTrim": "Skäggtrimning & kantning",
+      "lunch": "Lunch",
+      "signatureCut": "Signature cut",
+      "kidsCut": "Barnklippning",
+      "firstVisit": "{name} · första besöket",
+      "confirmed": "Bekräftad",
+      "depositPaid": "Deposition betald",
+      "needsApproval": "Behöver godkännas",
+      "checkedIn": "Incheckad"
+    },
+    "reminder": {
+      "label": "Exempel på en automatisk påminnelse som en kund får",
+      "when": "24 tim innan",
+      "title": "Påminnelse: {service} i morgon",
+      "body": "{time} hos Dre på North Fade Studio. Behöver du ändra? Du kan boka om upp till 24 tim innan."
+    },
+    "grid": {
+      "label": "Exempel på tidsväljaren som kunder bokar från, med bara lediga tider",
+      "title": "Välj en tid",
+      "instant": "Direkt bekräftelse",
+      "note": "Upptagna tider försvinner i samma stund som någon bokar. Två personer kan aldrig få samma tid."
+    },
+    "policy": {
+      "label": "Exempel på villkor för deposition och avbokning",
+      "title": "Bokningsvillkor",
+      "deposit": "Deposition",
+      "depositValue": "{pct} vid bokning",
+      "freeCancel": "Gratis avbokning",
+      "freeCancelValue": "Upp till 24 tim innan",
+      "lateCancel": "Sen avbokning",
+      "lateCancelValue": "{pct} av totalen",
+      "noShow": "Uteblivet besök",
+      "noShowValue": "Depositionen behålls",
+      "dueNow": "Att betala nu",
+      "dueValue": "{due} av {total}"
+    },
+    "client": {
+      "label": "Exempel på ett kundkort",
+      "since": "Kund sedan {month} · {visits, plural, one {# besök} other {# besök}}",
+      "spent": "Spenderat",
+      "noShows": "Uteblivna",
+      "gap": "Vanligt intervall",
+      "gapValue": "{weeks} v",
+      "note": "Privat anteckning: känslig hårbotten — använd den milda schampot."
+    },
+    "team": {
+      "label": "Exempel på ett team på två platser",
+      "title": "Team",
+      "senior": "Senior barberare",
+      "barber": "Barberare",
+      "frontDesk": "Reception"
+    },
+    "portfolio": {
+      "label": "Exempel på portföljinlägg kopplade till en bokningsbar tjänst",
+      "skinFade": "Skin fade",
+      "taper": "Taper & skägg",
+      "bookThis": "Boka detta",
+      "note": "Dina foton och videor visas här — tryck på ett för att boka exakt den tjänsten."
+    },
+    "spotlight": {
+      "label": "Exempel på en sponsrad annons i sökresultat",
+      "category": "Barberare",
+      "promoted": "Sponsrad"
+    },
+    "options": {
+      "service": "Knotless braids",
+      "hint": "Exempeltjänst · prova tillvalen",
+      "length": "Längd",
+      "shoulder": "Axellängd",
+      "mid": "Mitt på ryggen",
+      "waist": "Midjelängd",
+      "addons": "Tillägg",
+      "wash": "Tvätt & föning",
+      "beads": "Pärlor & hylsor",
+      "included": "Ingår",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

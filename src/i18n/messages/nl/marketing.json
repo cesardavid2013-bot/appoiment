@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept voor professionals — online boeken en een agenda die voor je werkt",
+    "description": "Ontvang online boekingen, voorkom dubbele boekingen en no-shows en word gevonden door klanten in de buurt. Gratis om te starten voor zelfstandige professionals."
+  },
+  "cta": {
+    "dashboard": "Naar je bedrijf",
+    "setup": "Stel je bedrijf in",
+    "start": "Aan de slag — het is gratis"
+  },
+  "hero": {
+    "eyebrow": "Kept voor professionals",
+    "title": "Vul je agenda. Houd je avonden vrij.",
+    "lede": "Online boeken, een agenda die nooit dubbel boekt, herinneringen die no-shows verminderen en een profiel dat zichtbaar is voor mensen in de buurt die precies zoeken wat jij doet. Gratis om te starten.",
+    "howItWorks": "Hoe het werkt",
+    "note": "Geen creditcard nodig. Je profiel blijft privé totdat je het publiceert."
+  },
+  "sides": {
+    "heading": "Zo werkt Kept voor klanten en voor jou",
+    "clients": {
+      "eyebrow": "Voor je klanten",
+      "title": "Ontdek en boek geweldige professionals.",
+      "points": {
+        "search": "Zoek op dienst, plaats en tijd en zie echte beschikbaarheid — geen contactformulier.",
+        "prices": "Prijzen vooraf, jouw voorwaarden en geverifieerde reviews voordat ze boeken.",
+        "reminders": "Herinneringen, routebeschrijving en verplaatsen zonder te bellen."
+      }
+    },
+    "you": {
+      "eyebrow": "Voor jou",
+      "title": "Beheer je afspraken en laat je bedrijf groeien.",
+      "points": {
+        "calendar": "Eén agenda voor boekingen, pauzes en vrije tijd — op je telefoon.",
+        "deposits": "Aanbetalingen en annuleringsregels die voor je worden gehandhaafd.",
+        "clients": "Klantgeschiedenis, notities en reviews die mensen terugbrengen."
+      }
+    }
+  },
+  "steps": {
+    "heading": "In drie stappen live",
+    "profile": {
+      "title": "Stel je profiel in",
+      "body": "Voeg je diensten toe met prijzen en duur, je openingstijden, waar je werkt en een paar foto’s van je werk. We lopen je er stap voor stap doorheen."
+    },
+    "share": {
+      "title": "Deel je link",
+      "body": "Zet {host}/jouw-naam in je bio en op je kaartjes. Zodra je publiceert, verschijn je ook in de zoekresultaten voor mensen in de buurt."
+    },
+    "book": {
+      "title": "Ontvang boekingen",
+      "body": "Klanten kiezen een echt tijdstip en boeken in een paar seconden. Jij krijgt een melding, zij krijgen herinneringen en je agenda blijft kloppen."
+    }
+  },
+  "industries": {
+    "heading": "Gemaakt voor elke dienst die je per uur boekt",
+    "lede": "Als klanten tijd bij je boeken, past Kept bij je — of je nu alleen vanuit je stoel werkt of een team op meerdere locaties runt."
+  },
+  "features": {
+    "heading": "Alles wat de dag nodig heeft",
+    "booking": {
+      "title": "Online boeken met echte beschikbaarheid",
+      "p1": "Klanten zien alleen tijden die jij ook echt kunt doen — je openingstijden min bestaande boekingen, pauzes, buffers en vrije tijd, met een minimale aanlooptijd en hoe ver vooruit ze kunnen boeken.",
+      "p2": "Elke boeking wordt opnieuw gecontroleerd op het moment dat hij wordt gemaakt, zodat twee mensen nooit in hetzelfde tijdslot terechtkomen, zelfs niet als ze op dezelfde seconde tikken."
+    },
+    "services": {
+      "title": "Diensten die werken zoals jij je prijzen bepaalt",
+      "p1": "Vast, vanaf-prijs, een bandbreedte, gratis of na overleg. Voeg opties toe zoals lengte, formaat of extra’s, en elke optie past zowel de prijs als de tijd in je agenda aan.",
+      "p2": "Voeg buffers voor of na toe, beperk diensten tot bepaalde teamleden of locaties en stel intakevragen vóór het eerste bezoek."
+    },
+    "policies": {
+      "title": "Aanbetalingen en voorwaarden, voor je gehandhaafd",
+      "p1": "Vraag vooraf een aanbetaling of volledige betaling, stel een annuleringstermijn in en kosten voor te late annulering of niet verschijnen. Klanten zien de regels voordat ze boeken en terugbetalingen volgen ze automatisch."
+    },
+    "reminders": {
+      "title": "Herinneringen die no-shows verminderen",
+      "p1": "Bevestigingen en herinneringen gaan vanzelf de deur uit — standaard een dag en twee uur van tevoren — met een link om binnen jouw regels te verplaatsen in plaats van gewoon niet te komen.",
+      "p2": "Als iemand annuleert, hoort je wachtlijst voor die dag over de vrijgekomen plek."
+    },
+    "clients": {
+      "title": "Ken je klanten",
+      "p1": "Elke klant krijgt een dossier met bezoeken, uitgaven, annuleringen en no-shows, plus privénotities die alleen je team ziet. Stuur klanten berichten vanaf dezelfde plek."
+    },
+    "team": {
+      "title": "Van solostoel tot team en meerdere locaties",
+      "p1": "Voeg teamleden toe met eigen openingstijden en diensten, en rollen die bepalen wat iedereen kan zien en doen. Beheer meerdere locaties, elk met een eigen tijdzone en openingstijden."
+    },
+    "portfolio": {
+      "title": "Een portfolio dat boekt",
+      "p1": "Toon foto’s en korte video’s van je werk. Koppel ze aan een dienst, en klanten tikken op “Boek dit” om precies te boeken wat ze zagen."
+    },
+    "spotlight": {
+      "title": "Spotlight — gratis tijdens de lancering",
+      "p1": "Promoot je profiel in zoekresultaten en categoriepagina’s in je buurt. Gepromote resultaten zijn altijd gelabeld, beperkt tot twee per pagina en tonen nog steeds je echte beoordelingen en beschikbaarheid.",
+      "p2": "Spotlight kost niets zolang Kept wordt gelanceerd. Als dat ooit verandert, laten we het je weten voordat er iets in rekening wordt gebracht — het wordt nooit uit zichzelf betaald."
+    }
+  },
+  "plans": {
+    "heading": "Abonnementen",
+    "lede": "Zolang Kept wordt gelanceerd, begint elk nieuw bedrijf op {plan} zonder maandelijkse kosten. Prijzen van betaalde abonnementen worden ruim van tevoren aangekondigd en niemand betaalt zonder een abonnement te kiezen.",
+    "badge": {
+      "launch": "Gratis tijdens de lancering",
+      "available": "Nu beschikbaar",
+      "unavailable": "Nog niet beschikbaar"
+    },
+    "period": {
+      "launch": "per maand tijdens onze lancering",
+      "available": "per maand",
+      "unavailable": "Prijzen worden nog bekendgemaakt"
+    },
+    "rows": {
+      "members": "Boekbare teamleden",
+      "locations": "Locaties",
+      "fee": "Kosten op online betalingen",
+      "roles": "Aangepaste teamrollen",
+      "analytics": "Geavanceerde analyses"
+    },
+    "justYou": "1 (alleen jij)",
+    "upTo": "Tot {n}",
+    "included": "Inbegrepen",
+    "notIncluded": "Niet inbegrepen",
+    "summary": {
+      "free": "Online boeken, agenda, herinneringen, aanbetalingen, klantdossiers, intakeformulieren, portfolio en Spotlight zijn allemaal inbegrepen.",
+      "launch": "Alles uit {base}, plus een team van maximaal {members}, meer locaties, aangepaste rollen en lagere kosten. Wat nieuwe bedrijven nu krijgen.",
+      "other": "Voor grotere teams en bedrijven met meerdere locaties."
+    },
+    "footnote": "De kosten gelden alleen voor betalingen die klanten online via Kept doen. Voor afspraken die ter plekke worden betaald, rekent Kept niets. Heb je meer mensen of locaties nodig dan je abonnement toestaat? <link>Laat het ons weten</link>."
+  },
+  "faq": {
+    "heading": "Vragen",
+    "cost": {
+      "q": "Wat kost Kept?",
+      "a": "Er zijn geen maandelijkse kosten: zolang Kept wordt gelanceerd, krijgen nieuwe bedrijven het abonnement {plan} gratis. Wanneer een klant online betaalt — een aanbetaling of de volledige prijs — houdt Kept {fee} van die betaling in. Afspraken die ter plekke worden betaald, kennen geen kosten van Kept."
+    },
+    "clientFee": {
+      "q": "Betalen mijn klanten om te boeken?",
+      "aFee": "Klanten zien bij het afrekenen {fee} servicekosten, getoond voordat ze bevestigen. Er wordt achteraf nooit iets bijgeteld.",
+      "aFree": "Nee. Klanten boeken gratis en zien je exacte prijs voordat ze bevestigen."
+    },
+    "payments": {
+      "q": "Moet ik online betalingen accepteren?",
+      "a": "Nee. Je kunt klanten ter plekke laten betalen, of een aanbetaling of volledige betaling vragen bij het boeken. Online betalingen worden verwerkt door Stripe en uitbetaald op je eigen bankrekening."
+    },
+    "approve": {
+      "q": "Kan ik boekingen goedkeuren voordat ze worden bevestigd?",
+      "a": "Ja. Kies voor direct boeken, of voor de aanvraagmodus waarbij elke boeking op jouw goedkeuring wacht. Het tijdstip blijft vastgehouden terwijl jij beslist, en aanvragen die je niet beantwoordt, verlopen vanzelf."
+    },
+    "where": {
+      "q": "Ik werk vanuit huis, reis naar klanten of geef online les. Kan dat?",
+      "a": "Ja. Elke locatie kan een fysiek adres zijn, een mobiel werkgebied waarbij klanten je hun adres geven, of een virtuele sessie. Je kunt elke combinatie aanbieden."
+    },
+    "spotlight": {
+      "q": "Hoe werkt Spotlight?",
+      "a": "Spotlight toont je profiel als duidelijk gelabeld “Uitgelicht” resultaat in zoek- en categoriepagina’s, maximaal twee per pagina. Het is gratis tijdens de lancering — start of stop het op elk moment via je dashboard."
+    },
+    "link": {
+      "q": "Kan ik mijn eigen link gebruiken?",
+      "a": "Ja. Elk bedrijf krijgt een profiel op {host}/jouw-naam dat je kunt delen op Instagram, in je bio of op een QR-code. Klanten die zo boeken, hoeven je niet te zoeken."
+    }
+  },
+  "closing": {
+    "title": "Je volgende klant is al aan het zoeken.",
+    "body": "Stel je diensten en openingstijden in, publiceer je profiel en begin vandaag met boekingen ontvangen."
+  },
+  "demo": {
+    "example": "Voorbeeld",
+    "today": {
+      "label": "Voorbeeld van het rooster van vandaag dat een professional ziet",
+      "title": "Vandaag",
+      "summary": "{count, plural, one {# afspraak} other {# afspraken}} · {amount} geboekt",
+      "skinFade": "Skin fade",
+      "beardTrim": "Baard trimmen & lijnen",
+      "lunch": "Lunch",
+      "signatureCut": "Signature cut",
+      "kidsCut": "Kinderknipbeurt",
+      "firstVisit": "{name} · eerste bezoek",
+      "confirmed": "Bevestigd",
+      "depositPaid": "Aanbetaling voldaan",
+      "needsApproval": "Wacht op goedkeuring",
+      "checkedIn": "Ingecheckt"
+    },
+    "reminder": {
+      "label": "Voorbeeld van een automatische herinnering die een klant ontvangt",
+      "when": "24 uur van tevoren",
+      "title": "Herinnering: {service} morgen",
+      "body": "{time} bij Dre in North Fade Studio. Wil je iets wijzigen? Verplaatsen kan tot 24 uur van tevoren."
+    },
+    "grid": {
+      "label": "Voorbeeld van de tijdkiezer waarmee klanten boeken, met alleen beschikbare tijden",
+      "title": "Kies een tijdstip",
+      "instant": "Direct bevestigd",
+      "note": "Bezette tijden verdwijnen zodra iemand boekt. Twee mensen kunnen nooit hetzelfde tijdslot krijgen."
+    },
+    "policy": {
+      "label": "Voorbeeld van een aanbetalings- en annuleringsbeleid",
+      "title": "Boekingsvoorwaarden",
+      "deposit": "Aanbetaling",
+      "depositValue": "{pct} bij het boeken",
+      "freeCancel": "Gratis annuleren",
+      "freeCancelValue": "Tot 24 uur van tevoren",
+      "lateCancel": "Te late annulering",
+      "lateCancelValue": "{pct} van het totaal",
+      "noShow": "Niet verschenen",
+      "noShowValue": "Aanbetaling blijft behouden",
+      "dueNow": "Nu te betalen",
+      "dueValue": "{due} van {total}"
+    },
+    "client": {
+      "label": "Voorbeeld van een klantdossier",
+      "since": "Klant sinds {month} · {visits, plural, one {# bezoek} other {# bezoeken}}",
+      "spent": "Uitgegeven",
+      "noShows": "Niet verschenen",
+      "gap": "Gebruikelijk interval",
+      "gapValue": "{weeks} wkn",
+      "note": "Privénotitie: gevoelige hoofdhuid — gebruik de milde shampoo."
+    },
+    "team": {
+      "label": "Voorbeeld van een team op twee locaties",
+      "title": "Team",
+      "senior": "Senior barber",
+      "barber": "Barber",
+      "frontDesk": "Receptie"
+    },
+    "portfolio": {
+      "label": "Voorbeeld van portfolioposts gekoppeld aan een boekbare dienst",
+      "skinFade": "Skin fade",
+      "taper": "Taper & baard",
+      "bookThis": "Boek dit",
+      "note": "Je foto’s en video’s verschijnen hier — tik op een foto om precies die dienst te boeken."
+    },
+    "spotlight": {
+      "label": "Voorbeeld van een gepromote vermelding in zoekresultaten",
+      "category": "Barbier",
+      "promoted": "Uitgelicht"
+    },
+    "options": {
+      "service": "Knotless braids",
+      "hint": "Voorbeelddienst · probeer de opties",
+      "length": "Lengte",
+      "shoulder": "Schouderlengte",
+      "mid": "Halverwege de rug",
+      "waist": "Tot in de taille",
+      "addons": "Extra’s",
+      "wash": "Wassen & föhnen",
+      "beads": "Kralen & manchetten",
+      "included": "Inbegrepen",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}

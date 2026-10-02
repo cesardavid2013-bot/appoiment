@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kept dla specjalistów — rezerwacje online i kalendarz, który pracuje dla Ciebie",
+    "description": "Przyjmuj rezerwacje online, unikaj podwójnych rezerwacji i nieobecności oraz daj się odkryć lokalnym klientom. Na start bezpłatnie dla niezależnych specjalistów."
+  },
+  "cta": {
+    "dashboard": "Przejdź do swojej firmy",
+    "setup": "Skonfiguruj swoją firmę",
+    "start": "Zacznij — to bezpłatne"
+  },
+  "hero": {
+    "eyebrow": "Kept dla specjalistów",
+    "title": "Zapełnij grafik. Zachowaj wieczory.",
+    "lede": "Rezerwacje online, kalendarz, który nie dopuści do podwójnych rezerwacji, przypomnienia ograniczające nieobecności i profil na oczach osób z okolicy, które szukają dokładnie tego, co robisz. Na start bezpłatnie.",
+    "howItWorks": "Jak to działa",
+    "note": "Karta nie jest wymagana. Twój profil pozostaje prywatny, dopóki go nie opublikujesz."
+  },
+  "sides": {
+    "heading": "Jak Kept działa dla klientów i dla Ciebie",
+    "clients": {
+      "eyebrow": "Dla Twoich klientów",
+      "title": "Odkrywaj i rezerwuj świetnych specjalistów.",
+      "points": {
+        "search": "Szukaj według usługi, miejsca i godziny i zobacz prawdziwe wolne terminy — zamiast formularza kontaktowego.",
+        "prices": "Ceny z góry, Twoje zasady i zweryfikowane opinie, zanim zarezerwują.",
+        "reminders": "Przypomnienia, dojazd i zmiana terminu bez telefonu."
+      }
+    },
+    "you": {
+      "eyebrow": "Dla Ciebie",
+      "title": "Zarządzaj wizytami i rozwijaj firmę.",
+      "points": {
+        "calendar": "Jeden kalendarz na rezerwacje, przerwy i wolne — w telefonie.",
+        "deposits": "Zadatki i zasady anulowania, które egzekwujemy za Ciebie.",
+        "clients": "Historia klientów, notatki i opinie, które sprawiają, że wracają."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Start w trzech krokach",
+    "profile": {
+      "title": "Skonfiguruj profil",
+      "body": "Dodaj swoje usługi z cenami i czasem trwania, godziny pracy, miejsce, w którym pracujesz, i kilka zdjęć swoich prac. Przeprowadzimy Cię przez wszystko."
+    },
+    "share": {
+      "title": "Udostępnij swój link",
+      "body": "Wstaw {host}/twoje-imie do swojego bio i na wizytówki. Po publikacji pojawisz się też w wyszukiwarce dla osób z okolicy."
+    },
+    "book": {
+      "title": "Przyjmuj rezerwacje",
+      "body": "Klienci wybierają prawdziwy wolny termin i rezerwują w kilka sekund. Ty dostajesz powiadomienie, oni przypomnienia, a Twój kalendarz zawsze się zgadza."
+    }
+  },
+  "industries": {
+    "heading": "Stworzony dla każdej usługi rezerwowanej na godziny",
+    "lede": "Jeśli klienci rezerwują u Ciebie czas, Kept będzie pasować — niezależnie od tego, czy pracujesz sam przy jednym fotelu, czy prowadzisz zespół w kilku lokalizacjach."
+  },
+  "features": {
+    "heading": "Wszystko, czego potrzebuje dzień pracy",
+    "booking": {
+      "title": "Rezerwacje online z prawdziwą dostępnością",
+      "p1": "Klienci widzą tylko terminy, które naprawdę możesz przyjąć — Twoje godziny pracy pomniejszone o istniejące rezerwacje, przerwy, bufory i wolne, z uwzględnieniem minimalnego wyprzedzenia i tego, jak daleko naprzód można rezerwować.",
+      "p2": "Każda rezerwacja jest sprawdzana ponownie w chwili jej dokonania, więc dwie osoby nigdy nie trafią na ten sam termin, nawet jeśli klikną w tej samej sekundzie."
+    },
+    "services": {
+      "title": "Usługi wyceniane tak, jak chcesz",
+      "p1": "Cena stała, „od”, przedział, bezpłatnie albo po konsultacji. Dodaj opcje, takie jak długość, rozmiar czy dodatki, a każda z nich zmienia zarówno cenę, jak i czas zajęty w kalendarzu.",
+      "p2": "Dodaj bufory przed lub po wizycie, ogranicz usługi do wybranych członków zespołu lub lokalizacji i zadawaj pytania wstępne przed pierwszą wizytą."
+    },
+    "policies": {
+      "title": "Zadatki i zasady egzekwowane za Ciebie",
+      "p1": "Poproś o zadatek lub pełną płatność z góry, ustal okres anulowania oraz opłaty za późne anulowanie lub nieobecność. Klienci widzą zasady przed rezerwacją, a zwroty automatycznie się do nich stosują."
+    },
+    "reminders": {
+      "title": "Przypomnienia ograniczające nieobecności",
+      "p1": "Potwierdzenia i przypomnienia wysyłają się same — domyślnie dzień i dwie godziny przed wizytą — z linkiem do zmiany terminu w ramach Twoich zasad, zamiast po prostu się nie pojawić.",
+      "p2": "Gdy ktoś anuluje, klienci z Twojej listy oczekujących na ten dzień dowiadują się o wolnym terminie."
+    },
+    "clients": {
+      "title": "Poznaj swoich klientów",
+      "p1": "Każdy klient ma kartę z wizytami, wydatkami, anulowaniami i nieobecnościami oraz prywatne notatki widoczne tylko dla Twojego zespołu. Pisz do klientów z tego samego miejsca."
+    },
+    "team": {
+      "title": "Od jednego fotela po zespół i wiele lokalizacji",
+      "p1": "Dodawaj członków zespołu z własnymi godzinami i usługami oraz rolami określającymi, co każdy może widzieć i robić. Prowadź kilka lokalizacji, każdą z własną strefą czasową i godzinami."
+    },
+    "portfolio": {
+      "title": "Portfolio, które przynosi rezerwacje",
+      "p1": "Pokaż zdjęcia i krótkie filmy ze swojej pracy. Powiąż każde z usługą, a klienci stukną „Zarezerwuj to”, aby zarezerwować dokładnie to, co zobaczyli."
+    },
+    "spotlight": {
+      "title": "Spotlight — bezpłatnie na czas startu",
+      "p1": "Promuj swój profil w wyszukiwarce i na stronach kategorii w okolicy. Promowane wyniki są zawsze oznaczone, ograniczone do dwóch na stronę i nadal pokazują Twoje prawdziwe oceny oraz wolne terminy.",
+      "p2": "Spotlight nic nie kosztuje, dopóki Kept startuje. Jeśli to się kiedyś zmieni, powiadomimy Cię, zanim cokolwiek zostanie pobrane — nigdy nie przechodzi na płatny samodzielnie."
+    }
+  },
+  "plans": {
+    "heading": "Plany",
+    "lede": "Dopóki Kept startuje, każda nowa firma zaczyna w planie {plan} bez opłaty miesięcznej. Ceny planów płatnych ogłosimy z dużym wyprzedzeniem i nikt nie jest obciążany bez wyboru planu.",
+    "badge": {
+      "launch": "Bezpłatnie na czas startu",
+      "available": "Dostępne teraz",
+      "unavailable": "Jeszcze niedostępne"
+    },
+    "period": {
+      "launch": "miesięcznie na czas startu",
+      "available": "miesięcznie",
+      "unavailable": "Cena zostanie ogłoszona"
+    },
+    "rows": {
+      "members": "Członkowie zespołu dostępni do rezerwacji",
+      "locations": "Lokalizacje",
+      "fee": "Opłata od płatności online",
+      "roles": "Własne role w zespole",
+      "analytics": "Zaawansowana analityka"
+    },
+    "justYou": "1 (tylko Ty)",
+    "upTo": "Do {n}",
+    "included": "W cenie",
+    "notIncluded": "Niedostępne",
+    "summary": {
+      "free": "Rezerwacje online, kalendarz, przypomnienia, zadatki, kartoteki klientów, formularze wstępne, portfolio i Spotlight są w cenie.",
+      "launch": "Wszystko z planu {base}, a do tego zespół do {members} osób, więcej lokalizacji, własne role i niższe opłaty. To, co dziś dostają nowe firmy.",
+      "other": "Dla większych zespołów i firm z wieloma lokalizacjami."
+    },
+    "footnote": "Opłata dotyczy wyłącznie płatności, które klienci wnoszą online przez Kept. Wizyty opłacane na miejscu nie podlegają opłacie Kept. Potrzebujesz więcej osób lub lokalizacji, niż pozwala plan? <link>Daj nam znać</link>."
+  },
+  "faq": {
+    "heading": "Pytania",
+    "cost": {
+      "q": "Ile kosztuje Kept?",
+      "a": "Nie ma opłaty miesięcznej: dopóki Kept startuje, nowe firmy dostają plan {plan} bezpłatnie. Gdy klient płaci online — zadatek lub pełną cenę — Kept zatrzymuje {fee} tej płatności. Wizyty opłacane na miejscu w ogóle nie podlegają opłacie Kept."
+    },
+    "clientFee": {
+      "q": "Czy moi klienci płacą za rezerwację?",
+      "aFee": "Klienci widzą w kasie opłatę serwisową w wysokości {fee}, pokazaną przed potwierdzeniem. Nic nie jest dodawane po fakcie.",
+      "aFree": "Nie. Klienci rezerwują bezpłatnie i widzą Twoją dokładną cenę przed potwierdzeniem."
+    },
+    "payments": {
+      "q": "Czy muszę przyjmować płatności online?",
+      "a": "Nie. Możesz pozwolić klientom płacić na miejscu albo wymagać zadatku lub pełnej płatności przy rezerwacji. Płatności online obsługuje Stripe, a środki trafiają na Twoje konto bankowe."
+    },
+    "approve": {
+      "q": "Czy mogę zatwierdzać rezerwacje przed ich potwierdzeniem?",
+      "a": "Tak. Wybierz rezerwację natychmiastową albo tryb próśb, w którym każda rezerwacja czeka na Twoje zatwierdzenie. Termin jest zatrzymany na czas Twojej decyzji, a prośby bez odpowiedzi wygasają same."
+    },
+    "where": {
+      "q": "Pracuję z domu, dojeżdżam do klientów albo uczę online. Czy to zadziała?",
+      "a": "Tak. Każda lokalizacja może być adresem stacjonarnym, mobilnym obszarem usług, w którym klienci podają swój adres, lub sesją wirtualną. Możesz oferować dowolną kombinację."
+    },
+    "spotlight": {
+      "q": "Jak działa Spotlight?",
+      "a": "Spotlight pokazuje Twój profil jako wyraźnie oznaczony wynik „Promowane” w wyszukiwarce i na stronach kategorii, maksymalnie dwa na stronę. Na czas startu jest bezpłatny — włącz lub wyłącz go w każdej chwili w panelu."
+    },
+    "link": {
+      "q": "Czy mogę używać własnego linku?",
+      "a": "Tak. Każda firma ma profil pod adresem {host}/twoje-imie, który możesz udostępniać na Instagramie, w bio lub na kodzie QR. Klienci rezerwujący przez niego nie muszą Cię szukać."
+    }
+  },
+  "closing": {
+    "title": "Twój następny klient już Cię szuka.",
+    "body": "Ustaw swoje usługi i godziny, opublikuj profil i zacznij przyjmować rezerwacje już dziś."
+  },
+  "demo": {
+    "example": "Przykład",
+    "today": {
+      "label": "Przykład grafiku na dziś, który widzi specjalista",
+      "title": "Dziś",
+      "summary": "{count, plural, one {# wizyta} few {# wizyty} many {# wizyt} other {# wizyty}} · zarezerwowano {amount}",
+      "skinFade": "Skin fade",
+      "beardTrim": "Przycinanie brody i konturówka",
+      "lunch": "Lunch",
+      "signatureCut": "Strzyżenie Signature",
+      "kidsCut": "Strzyżenie dziecięce",
+      "firstVisit": "{name} · pierwsza wizyta",
+      "confirmed": "Potwierdzona",
+      "depositPaid": "Zadatek wpłacony",
+      "needsApproval": "Wymaga zatwierdzenia",
+      "checkedIn": "Zameldowano"
+    },
+    "reminder": {
+      "label": "Przykład automatycznego przypomnienia, które otrzymuje klient",
+      "when": "24 godz. przed",
+      "title": "Przypomnienie: {service} jutro",
+      "body": "{time} u Dre w North Fade Studio. Chcesz coś zmienić? Termin możesz zmienić do 24 godz. przed wizytą."
+    },
+    "grid": {
+      "label": "Przykład wyboru terminu, z którego rezerwują klienci, pokazujący tylko wolne godziny",
+      "title": "Wybierz termin",
+      "instant": "Natychmiastowe potwierdzenie",
+      "note": "Zajęte terminy znikają w chwili, gdy ktoś zarezerwuje. Dwie osoby nigdy nie dostaną tego samego terminu."
+    },
+    "policy": {
+      "label": "Przykład zasad dotyczących zadatku i anulowania",
+      "title": "Zasady rezerwacji",
+      "deposit": "Zadatek",
+      "depositValue": "{pct} przy rezerwacji",
+      "freeCancel": "Bezpłatne anulowanie",
+      "freeCancelValue": "Do 24 godz. przed",
+      "lateCancel": "Późne anulowanie",
+      "lateCancelValue": "{pct} całości",
+      "noShow": "Nieobecność",
+      "noShowValue": "Zadatek zostaje zatrzymany",
+      "dueNow": "Do zapłaty teraz",
+      "dueValue": "{due} z {total}"
+    },
+    "client": {
+      "label": "Przykład karty klienta",
+      "since": "Klient od {month} · {visits, plural, one {# wizyta} few {# wizyty} many {# wizyt} other {# wizyty}}",
+      "spent": "Wydano",
+      "noShows": "Nieobecności",
+      "gap": "Zwykły odstęp",
+      "gapValue": "{weeks} tyg.",
+      "note": "Notatka prywatna: wrażliwa skóra głowy — użyj łagodnego szamponu."
+    },
+    "team": {
+      "label": "Przykład zespołu w dwóch lokalizacjach",
+      "title": "Zespół",
+      "senior": "Starszy barber",
+      "barber": "Barber",
+      "frontDesk": "Recepcja"
+    },
+    "portfolio": {
+      "label": "Przykład wpisów w portfolio powiązanych z usługą dostępną do rezerwacji",
+      "skinFade": "Skin fade",
+      "taper": "Taper i broda",
+      "bookThis": "Zarezerwuj to",
+      "note": "Tutaj pojawią się Twoje zdjęcia i filmy — stuknij jedno, aby zarezerwować dokładnie tę usługę."
+    },
+    "spotlight": {
+      "label": "Przykład promowanego wpisu w wynikach wyszukiwania",
+      "category": "Barber",
+      "promoted": "Promowane"
+    },
+    "options": {
+      "service": "Knotless braids",
+      "hint": "Przykładowa usługa · wypróbuj opcje",
+      "length": "Długość",
+      "shoulder": "Do ramion",
+      "mid": "Do połowy pleców",
+      "waist": "Do talii",
+      "addons": "Dodatki",
+      "wash": "Mycie i modelowanie",
+      "beads": "Koraliki i opaski",
+      "included": "W cenie",
+      "extra": "+{price} · +{duration}"
+    }
+  }
+}
