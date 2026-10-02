@@ -1,0 +1,356 @@
+{
+  "title": "Ayarlar",
+  "home": {
+    "description": "{name} nasıl görünür, rezervasyon alır ve ödeme tahsil eder."
+  },
+  "nav": {
+    "label": "Ayarlar",
+    "back": "Ayarlar",
+    "sections": {
+      "profile": {
+        "label": "İşletme profili",
+        "description": "Ad, fotoğraflar, hakkında, iletişim ve sosyal medya bağlantıları."
+      },
+      "locations": {
+        "label": "Konumlar",
+        "description": "Nerede çalıştığınız: dükkân, müşterinin yeri veya online."
+      },
+      "booking": {
+        "label": "Rezervasyon kuralları",
+        "description": "Anında veya onaylı rezervasyon, bildirim süresi, hatırlatmalar."
+      },
+      "policies": {
+        "label": "İptaller ve ücretler",
+        "description": "İptal süresi, gelmeme ücretleri, vergi."
+      },
+      "payments": {
+        "label": "Ödemeler",
+        "description": "Online depozito ve kart ödemesi alın."
+      },
+      "forms": {
+        "label": "Müşteri soruları",
+        "description": "Müşterilerin rezervasyon yaparken doldurduğu formlar."
+      },
+      "link": {
+        "label": "Rezervasyon bağlantısı",
+        "description": "Web adresiniz, QR kodunuz ve yayına alma."
+      },
+      "verification": {
+        "label": "Doğrulama",
+        "description": "Profilinizde doğrulanmış rozeti alın."
+      },
+      "appearance": {
+        "label": "Sayfa görünümü",
+        "description": "Üst bölüm, renkler, bölüm sırası ve bağlantı düğmeleri."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Kaydediliyor…",
+    "unsaved": "Kaydedilmemiş değişiklikler",
+    "allSaved": "Tüm değişiklikler kaydedildi",
+    "discard": "Vazgeç",
+    "save": "Kaydet",
+    "saved": "Kaydedildi",
+    "checkFields": "Vurgulanan alanları kontrol edin."
+  },
+  "shareLink": {
+    "copy": "Kopyala",
+    "copied": "Kopyalandı"
+  },
+  "profile": {
+    "title": "İşletme profili",
+    "description": "Müşterilerin sayfanızda ve aramada gördükleri.",
+    "toastUpdated": "Profil güncellendi",
+    "toastLive": "Değişiklikler sayfanızda yayında.",
+    "logoAlt": "{name} logosu",
+    "viewPage": "Sayfanızı görüntüleyin",
+    "photos": {
+      "title": "Fotoğraflar",
+      "description": "Logonuz kartlarda ve mesajlarda görünür; kapak sayfanızı açar. Stok fotoğraflar değil, kendi çalışmalarınızı veya mekânınızı kullanın.",
+      "noCover": "Kapak fotoğrafı yok",
+      "remove": "Kaldır",
+      "uploading": "Yükleniyor…",
+      "changeCover": "Kapağı değiştir",
+      "addCover": "Kapak ekle",
+      "changeLogo": "Logoyu değiştir",
+      "addLogo": "Logo ekle",
+      "logoHint": "Kare en iyisidir. Logo yoksa baş harflerinizi gösteririz."
+    },
+    "basics": {
+      "title": "Temel bilgiler",
+      "nameIndividual": "Adınız veya işletme adınız",
+      "nameBusiness": "İşletme adı",
+      "tagline": "Slogan",
+      "taglineHint": "Adınızın altında tek satır. {count, plural, one {# karakter kaldı.} other {# karakter kaldı.}}",
+      "taglinePlaceholder": "örn. Bed-Stuy’de hassas fade’ler ve sakal bakımı",
+      "category": "Ana kategori",
+      "categoryHint": "İnsanlar göz attığında nerede görüneceğiniz.",
+      "choose": "Seçin…",
+      "years": "Deneyim yılı"
+    },
+    "about": {
+      "title": "Hakkında",
+      "description": "Ne yaptığınız, nasıl çalıştığınız, sizinle bir ziyareti neyin farklı kıldığı. Sade sözler, gösterişli kelimelerden iyidir.",
+      "label": "Hakkında",
+      "languages": "Konuşulan diller",
+      "amenities": "Olanaklar"
+    },
+    "tags": {
+      "optional": "İsteğe bağlı",
+      "placeholder": "Yazıp Enter’a basın",
+      "remove": "{tag} öğesini kaldır"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "İngilizce",
+        "spanish": "İspanyolca",
+        "french": "Fransızca",
+        "portuguese": "Portekizce",
+        "mandarin": "Mandarin",
+        "cantonese": "Kantonca",
+        "arabic": "Arapça",
+        "russian": "Rusça",
+        "haitianCreole": "Haiti Kreolü",
+        "korean": "Korece",
+        "vietnamese": "Vietnamca",
+        "hindi": "Hintçe",
+        "italian": "İtalyanca",
+        "german": "Almanca",
+        "polish": "Lehçe",
+        "tagalog": "Tagalogca"
+      },
+      "amenities": {
+        "wheelchair": "Tekerlekli sandalye erişimi",
+        "streetParking": "Sokak otoparkı",
+        "freeParking": "Ücretsiz otopark",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Kart ile ödeme",
+        "walkIns": "Randevusuz müşteri kabul edilir",
+        "kidFriendly": "Çocuk dostu",
+        "restroom": "Tuvalet",
+        "airConditioning": "Klima",
+        "drinks": "İkram edilen içecekler",
+        "genderNeutral": "Cinsiyet ayrımı gözetmez",
+        "petFriendly": "Evcil hayvan dostu"
+      }
+    },
+    "contact": {
+      "title": "İletişim ve bağlantılar",
+      "description": "Sayfanızda gösterilir. Müşteriler size her zaman Kept üzerinden yazabilir; bu yüzden isteğe bağlıdır.",
+      "email": "Herkese açık e-posta",
+      "phone": "Herkese açık telefon",
+      "website": "Web sitesi",
+      "websitePlaceholder": "alanadiniz.com"
+    },
+    "social": {
+      "legend": "Sosyal medya profilleri",
+      "hint": "Kullanıcı adınızı yazın veya profil bağlantınızı yapıştırın. Sayfanızda belirli videoları, gönderileri veya parçaları öne çıkarmak için <link>Portfolyo</link>’ya ekleyin.",
+      "placeholders": {
+        "instagram": "@adınız",
+        "tiktok": "@adınız",
+        "youtube": "@kanalınız",
+        "facebook": "sayfanız",
+        "x": "@adınız",
+        "linkedin": "in/adınız",
+        "spotify": "Sanatçı bağlantısı",
+        "soundcloud": "adınız",
+        "behance": "adınız",
+        "pinterest": "adınız",
+        "twitch": "kanalınız",
+        "threads": "@adınız"
+      },
+      "errors": {
+        "wrongNetwork": "Bu bir {network} bağlantısı değil.",
+        "useProfile": "{network} profilinizin bağlantısını kullanın.",
+        "badHandle": "Bu bir {network} kullanıcı adına benzemiyor.",
+        "badArtist": "Bu bir {network} sanatçı bağlantısına benzemiyor."
+      }
+    },
+    "timezone": {
+      "title": "Saat dilimi",
+      "description": "Saatleriniz ve her randevu saati bu dilimdedir. Yalnızca gerçekten taşındıysanız değiştirin; mevcut rezervasyonlar tam saatlerini korur.",
+      "label": "Saat dilimi"
+    }
+  },
+  "booking": {
+    "title": "Rezervasyon kuralları",
+    "description": "Müşterilerin sizden nasıl ve ne zaman randevu alabileceği. Tek tek hizmetler bildirim süresini ve onayı geçersiz kılabilir.",
+    "toastUpdated": "Rezervasyon kuralları güncellendi",
+    "mode": {
+      "title": "Onay",
+      "description": "Belirli hizmetler için hizmet düzenleyicide yine onay isteyebilirsiniz.",
+      "instantTitle": "Anında rezervasyon",
+      "instantDescription": "Müşteri boş bir saat seçer ve rezervasyon tamamdır. Çoğu işletme için en iyisi; müşterilerin beklediği de bu.",
+      "requestTitle": "Her talebi onayla",
+      "requestDescription": "Müşteri talep gönderir; siz kabul eder veya reddedersiniz. Yanıtsız talepler kimse sonsuza dek beklemesin diye otomatik sona erer."
+    },
+    "window": {
+      "title": "Müşteriler ne zaman rezervasyon yapabilir",
+      "minNotice": "Minimum bildirim süresi",
+      "minNoticeHint": "Bir müşterinin başlangıç saatinden en geç ne zaman rezervasyon yapabileceği.",
+      "noMinimum": "Minimum yok; başlangıca kadar rezervasyon yapılabilir",
+      "advance": "En fazla şu kadar önceden",
+      "advanceHint": "Takviminizin ne kadar ileriye açık olduğu.",
+      "daysAhead": "{count, plural, one {# gün önceden} other {# gün önceden}}",
+      "yearAhead": "1 yıl önceden",
+      "interval": "Başlangıç saatleri her",
+      "intervalHint": "Kısa aralıklar müşterilere daha fazla seçenek sunar; uzun aralıklar gününüzü düzenli tutar.",
+      "anyStaff": "“Müsait herhangi bir profesyonel” seçeneğini sun",
+      "anyStaffDescription": "En çok boş saati gösterir ve rezervasyonları ekibe dağıtır. Müşteriler bir kişi seçmek zorundaysa kapatın."
+    },
+    "durations": {
+      "minutes": "{count, plural, one {# dakika} other {# dakika}}",
+      "hours": "{count, plural, one {# saat} other {# saat}}",
+      "days": "{count, plural, one {# gün} other {# gün}}",
+      "weeks": "{count, plural, one {# hafta} other {# hafta}}"
+    },
+    "reminders": {
+      "title": "Hatırlatmalar",
+      "description": "Her randevudan önce e-postayla gönderilir. Bir hatırlatma zamanından daha yakın bir zamana rezervasyon yapan müşteriler o hatırlatmayı almaz.",
+      "descriptionSms": "Her randevudan önce e-posta ve kısa mesajla (müşteri mesajlara izin veriyorsa) gönderilir. Bir hatırlatma zamanından daha yakın bir zamana rezervasyon yapan müşteriler o hatırlatmayı almaz.",
+      "none": "Hatırlatma yok. Müşteriler yalnızca rezervasyon onayını alır.",
+      "add": "Hatırlatma ekle",
+      "addPlaceholder": "Hatırlatma ekle…",
+      "upTo": "En fazla 3",
+      "remove": "{label} hatırlatmasını kaldır",
+      "minutesBefore": "{count, plural, one {# dakika önce} other {# dakika önce}}",
+      "hoursBefore": "{count, plural, one {# saat önce} other {# saat önce}}",
+      "daysBefore": "{count, plural, one {# gün önce} other {# gün önce}}"
+    }
+  },
+  "policies": {
+    "title": "İptaller ve ücretler",
+    "description": "Müşteriler bunları rezervasyondan önce ve iptal etmeden önce tekrar görür.",
+    "toastUpdated": "Politikalar güncellendi",
+    "cancel": {
+      "title": "İptal ve erteleme",
+      "freeUntil": "Ücretsiz iptal süresi",
+      "rescheduleUntil": "Online erteleme süresi",
+      "anyTime": "Her zaman, başlangıçtan önce",
+      "oneDay": "24 saat (1 gün) önce",
+      "hoursBefore": "{count, plural, one {# saat önce} other {# saat önce}}",
+      "daysBefore": "{count, plural, one {# gün önce} other {# gün önce}}",
+      "lateFee": "Geç iptal ücreti",
+      "lateFeeHintPaid": "Müşterinin online ödediği tutardan alıkonur. Ödediğinden fazlasını asla tahsil etmeyiz.",
+      "lateFeeHintUnpaid": "Yalnızca online ödenen paraya uygulanır. Uygulamak için ödemeleri bağlayın ve depozito alın.",
+      "none": "Yok",
+      "ofTotal": "toplamın",
+      "noShowFee": "Gelmeme ücreti",
+      "noShowHint": "Müşteriler baştan bilsin diye politikanızın bir parçasıdır. Gelmedi olarak işaretlediğinizde online ödenen her şey sizde kalır; yüz yüze alınan ücret randevuya kaydedilebilir.",
+      "refundDeposits": "Zamanında iptallerde depozitoyu iade et",
+      "refundDepositsDescription": "Kapalıysa, müşteri ne zaman iptal ederse etsin depozito alıkonur."
+    },
+    "words": {
+      "title": "Kendi sözlerinizle",
+      "description": "Politikanızla birlikte gösterilen isteğe bağlı notlar.",
+      "late": "Geç kalma",
+      "lateHint": "örn. “15 dakikadan fazla geç kalırsanız hizmetinizi kısaltmamız veya yeniden planlamamız gerekebilir.”",
+      "before": "Ziyaretinizden önce",
+      "beforeHint": "Onaylamadan önce her müşteriye gösterilir: yol tarifi, yanında getirmesi gerekenler, nasıl hazırlanacağı."
+    },
+    "tax": {
+      "title": "Satış vergisi",
+      "description": "Ödeme sırasında fiyatlarınızın üzerine eklenir ve ayrı bir satırda gösterilir. Fiyatlarınız vergiyi zaten içeriyorsa 0 bırakın.",
+      "rate": "Oran",
+      "rateError": "%0 ile %30 arasında bir oran girin",
+      "label": "Etiket",
+      "labelPlaceholder": "Satış vergisi"
+    },
+    "preview": {
+      "title": "Müşterilerin rezervasyondan önce gördüğü"
+    }
+  },
+  "payments": {
+    "title": "Ödemeler",
+    "description": "Rezervasyon sırasında depozito veya tam ödeme alın. Yüz yüze ödeme her zaman geçerlidir.",
+    "online": {
+      "title": "Online ödemeler",
+      "description": "Ödemeleri Stripe işler ve banka hesabınıza aktarır. Kept kart numaralarını asla görmez."
+    },
+    "unavailable": {
+      "badge": "Henüz kullanılamıyor",
+      "body": "Kart ödemeleri Kept’te henüz açık değil. Açılana kadar müşteriler randevuda size öder ve kayıtlarınız ile analizleriniz doğru kalsın diye her ödemeyi (nakit, kart okuyucu veya havale) randevu sayfasından kaydedebilirsiniz.",
+      "note": "Şimdilik burada yapılacak bir şey yok. Belirlediğiniz depozitolar ve politikalar online ödemeler açıldığında geçerli olacak."
+    },
+    "none": {
+      "deposits": "Hizmet başına depozito veya tam ödeme isteyin",
+      "fees": "Geç iptal ücretlerini depozitodan otomatik alıkoyun",
+      "tips": "Müşterilerin ziyaretten sonra bahşiş eklemesine izin verin",
+      "connect": "Ödemeleri Stripe ile kurun",
+      "time": "Yaklaşık 5 dakika sürer. Banka bilgilerinize ve bir kimliğe ihtiyacınız olacak."
+    },
+    "incomplete": {},
+    "connected": {},
+    "fees": {}
+  },
+  "link": {
+    "checklist": {},
+    "status": {},
+    "toasts": {},
+    "share": {},
+    "slug": {},
+    "hideDialog": {}
+  },
+  "locations": {
+    "privacy": {},
+    "kinds": {
+      "physical": {},
+      "mobile": {},
+      "virtual": {}
+    },
+    "summary": {},
+    "list": {},
+    "toasts": {},
+    "remove": {},
+    "dialog": {},
+    "pin": {},
+    "instructions": {
+      "physical": {},
+      "mobile": {},
+      "virtual": {}
+    }
+  },
+  "verification": {
+    "status": {},
+    "body": {},
+    "submit": {},
+    "sent": {},
+    "meaning": {},
+    "form": {}
+  },
+  "forms": {},
+  "builder": {
+    "types": {
+      "short_text": {},
+      "long_text": {},
+      "yes_no": {},
+      "single_choice": {},
+      "multi_choice": {},
+      "date": {},
+      "acknowledgement": {}
+    },
+    "errors": {},
+    "toasts": {},
+    "saveBar": {},
+    "archiveDialog": {},
+    "usage": {},
+    "add": {},
+    "card": {},
+    "options": {},
+    "preview": {
+      "errors": {}
+    }
+  },
+  "appearance": {
+    "masthead": {},
+    "accent": {
+      "names": {}
+    },
+    "sections": {
+      "names": {}
+    },
+    "notice": {},
+    "links": {}
+  }
+}
