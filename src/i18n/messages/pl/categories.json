@@ -1,0 +1,149 @@
+{
+  "barber": {
+    "name": "Barber"
+  },
+  "hair": {
+    "name": "Fryzjerzy i barberzy",
+    "description": "Strzyżenie, koloryzacja, stylizacja, warkocze i pielęgnacja."
+  },
+  "lashes-brows": {
+    "name": "Rzęsy i brwi"
+  },
+  "massage": {
+    "name": "Masaż"
+  },
+  "personal-training": {
+    "name": "Trening personalny"
+  },
+  "hair-salon": {
+    "name": "Salon fryzjerski"
+  },
+  "makeup": {
+    "name": "Makijaż"
+  },
+  "nails": {
+    "name": "Paznokcie",
+    "description": "Manicure, pedicure, przedłużanie i zdobienie paznokci."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Joga i pilates"
+  },
+  "beauty": {
+    "name": "Uroda",
+    "description": "Rzęsy, brwi, makijaż i pielęgnacja skóry."
+  },
+  "braids-locs": {
+    "name": "Warkocze i dready"
+  },
+  "skincare": {
+    "name": "Skóra i kosmetologia"
+  },
+  "wellness": {
+    "name": "Wellness",
+    "description": "Masaż, spa i zabiegi na ciało."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Trening personalny, joga, pilates i coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tatuaże i piercing",
+    "description": "Tatuaże na zamówienie, flashe i piercing."
+  },
+  "photography": {
+    "name": "Foto i wideo",
+    "description": "Portrety, eventy, zdjęcia produktowe i wideo."
+  },
+  "education": {
+    "name": "Lekcje i korepetycje",
+    "description": "Korepetytorzy, nauczyciele muzyki i lekcje języków."
+  },
+  "home-services": {
+    "name": "Dom i ogród",
+    "description": "Sprzątanie, naprawy, złote rączki i prace ogrodowe."
+  },
+  "automotive": {
+    "name": "Motoryzacja",
+    "description": "Detailing, myjnia i mobilni mechanicy."
+  },
+  "pets": {
+    "name": "Zwierzaki",
+    "description": "Pielęgnacja, opieka i tresura."
+  },
+  "events": {
+    "name": "Wydarzenia",
+    "description": "DJ-e, organizatorzy i specjaliści od eventów."
+  },
+  "professional": {
+    "name": "Usługi profesjonalne",
+    "description": "Konsultanci, coachowie i doradcy."
+  },
+  "other": {
+    "name": "Inne",
+    "description": "Wszystko inne, co można zarezerwować."
+  },
+  "music-audio": {
+    "name": "Muzyka i audio",
+    "description": "Producenci, studia nagrań, miks i nauka śpiewu."
+  },
+  "music-production": {
+    "name": "Produkcja muzyczna"
+  },
+  "recording-studio": {
+    "name": "Studia nagrań"
+  },
+  "vocal-coaching": {
+    "name": "Nauka śpiewu"
+  },
+  "creators": {
+    "name": "Twórcy i treści",
+    "description": "Twórcy treści, UGC, media społecznościowe i montaż wideo."
+  },
+  "content-creation": {
+    "name": "Tworzenie treści"
+  },
+  "video-editing": {
+    "name": "Montaż wideo"
+  },
+  "social-media": {
+    "name": "Prowadzenie social mediów"
+  },
+  "design": {
+    "name": "Design i kreacja",
+    "description": "Projektowanie graficzne, identyfikacja marki, stron www i wnętrz."
+  },
+  "graphic-design": {
+    "name": "Grafika i identyfikacja marki"
+  },
+  "web-design": {
+    "name": "Projektowanie stron www"
+  },
+  "interior-design": {
+    "name": "Projektowanie wnętrz"
+  },
+  "health": {
+    "name": "Zdrowie i opieka",
+    "description": "Fizjoterapia, dietetyka, terapia i opieka holistyczna."
+  },
+  "physio": {
+    "name": "Fizjoterapia i chiropraktyka"
+  },
+  "nutrition": {
+    "name": "Dietetyka"
+  },
+  "therapy": {
+    "name": "Terapia i poradnictwo"
+  },
+  "cleaning": {
+    "name": "Sprzątanie"
+  },
+  "handyman": {
+    "name": "Złota rączka i naprawy"
+  },
+  "gardening": {
+    "name": "Ogrodnictwo"
+  }
+}

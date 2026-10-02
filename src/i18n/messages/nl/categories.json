@@ -1,0 +1,149 @@
+{
+  "barber": {
+    "name": "Barbier"
+  },
+  "hair": {
+    "name": "Haar & barbers",
+    "description": "Knippen, kleuren, stylen, vlechten en verzorging."
+  },
+  "lashes-brows": {
+    "name": "Wimpers & wenkbrauwen"
+  },
+  "massage": {
+    "name": "Massage"
+  },
+  "personal-training": {
+    "name": "Personal training"
+  },
+  "hair-salon": {
+    "name": "Kapsalon"
+  },
+  "makeup": {
+    "name": "Make-up"
+  },
+  "nails": {
+    "name": "Nagels",
+    "description": "Manicure, pedicure, nagelverlenging en nailart."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga & pilates"
+  },
+  "beauty": {
+    "name": "Beauty",
+    "description": "Wimpers, wenkbrauwen, make-up en huid."
+  },
+  "braids-locs": {
+    "name": "Vlechten & locs"
+  },
+  "skincare": {
+    "name": "Huid & schoonheidsbehandelingen"
+  },
+  "wellness": {
+    "name": "Wellness",
+    "description": "Massage, spa en lichaamsbehandelingen."
+  },
+  "fitness": {
+    "name": "Fitness",
+    "description": "Personal training, yoga, pilates en coaching."
+  },
+  "tattoo-piercing": {
+    "name": "Tatoeage & piercing",
+    "description": "Tatoeages op maat, flash en piercings."
+  },
+  "photography": {
+    "name": "Foto & video",
+    "description": "Portretten, evenementen, producten en video."
+  },
+  "education": {
+    "name": "Lessen & bijles",
+    "description": "Bijlesdocenten, muziekleraren en taallessen."
+  },
+  "home-services": {
+    "name": "Huis & tuin",
+    "description": "Schoonmaak, reparaties, klusjesmannen en tuinonderhoud."
+  },
+  "automotive": {
+    "name": "Auto",
+    "description": "Detailing, autowas en mobiele monteurs."
+  },
+  "pets": {
+    "name": "Huisdieren",
+    "description": "Trimmen, oppas en training."
+  },
+  "events": {
+    "name": "Evenementen",
+    "description": "DJ's, planners en evenementenprofessionals."
+  },
+  "professional": {
+    "name": "Zakelijke dienstverlening",
+    "description": "Consultants, coaches en adviseurs."
+  },
+  "other": {
+    "name": "Overig",
+    "description": "Alles wat je verder kunt boeken."
+  },
+  "music-audio": {
+    "name": "Muziek & audio",
+    "description": "Producers, opnamestudio's, mixing en zangcoaching."
+  },
+  "music-production": {
+    "name": "Muziekproductie"
+  },
+  "recording-studio": {
+    "name": "Opnamestudio's"
+  },
+  "vocal-coaching": {
+    "name": "Zangcoaching"
+  },
+  "creators": {
+    "name": "Creators & content",
+    "description": "Contentcreators, UGC, social media en videobewerking."
+  },
+  "content-creation": {
+    "name": "Contentcreatie"
+  },
+  "video-editing": {
+    "name": "Videobewerking"
+  },
+  "social-media": {
+    "name": "Socialmediabeheer"
+  },
+  "design": {
+    "name": "Design & creatief",
+    "description": "Grafisch ontwerp, huisstijl, webdesign en interieurontwerp."
+  },
+  "graphic-design": {
+    "name": "Grafisch ontwerp & huisstijl"
+  },
+  "web-design": {
+    "name": "Webdesign"
+  },
+  "interior-design": {
+    "name": "Interieurontwerp"
+  },
+  "health": {
+    "name": "Gezondheid & zorg",
+    "description": "Fysiotherapie, voeding, therapie en holistische zorg."
+  },
+  "physio": {
+    "name": "Fysiotherapie & chiropractie"
+  },
+  "nutrition": {
+    "name": "Voeding"
+  },
+  "therapy": {
+    "name": "Therapie & begeleiding"
+  },
+  "cleaning": {
+    "name": "Schoonmaak"
+  },
+  "handyman": {
+    "name": "Klusjesman & reparaties"
+  },
+  "gardening": {
+    "name": "Tuinonderhoud"
+  }
+}

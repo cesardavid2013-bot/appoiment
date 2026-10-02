@@ -1,0 +1,149 @@
+{
+  "barber": {
+    "name": "Barberare"
+  },
+  "hair": {
+    "name": "Hår & barberare",
+    "description": "Klippning, färg, styling, flätor och grooming."
+  },
+  "lashes-brows": {
+    "name": "Fransar & bryn"
+  },
+  "massage": {
+    "name": "Massage"
+  },
+  "personal-training": {
+    "name": "Personlig träning"
+  },
+  "hair-salon": {
+    "name": "Frisörsalong"
+  },
+  "makeup": {
+    "name": "Makeup"
+  },
+  "nails": {
+    "name": "Naglar",
+    "description": "Manikyr, pedikyr, nagelförlängning och nail art."
+  },
+  "spa": {
+    "name": "Spa"
+  },
+  "yoga-pilates": {
+    "name": "Yoga & pilates"
+  },
+  "beauty": {
+    "name": "Skönhet",
+    "description": "Fransar, bryn, makeup och hud."
+  },
+  "braids-locs": {
+    "name": "Flätor & locs"
+  },
+  "skincare": {
+    "name": "Hud & hudvård"
+  },
+  "wellness": {
+    "name": "Välmående",
+    "description": "Massage, spa och kroppsbehandlingar."
+  },
+  "fitness": {
+    "name": "Träning",
+    "description": "Personlig träning, yoga, pilates och coachning."
+  },
+  "tattoo-piercing": {
+    "name": "Tatuering & piercing",
+    "description": "Skräddarsydda tatueringar, flash och piercingar."
+  },
+  "photography": {
+    "name": "Foto & video",
+    "description": "Porträtt, event, produkter och video."
+  },
+  "education": {
+    "name": "Lektioner & privatlärare",
+    "description": "Läxhjälp, musiklärare och språklektioner."
+  },
+  "home-services": {
+    "name": "Hem & trädgård",
+    "description": "Städning, reparationer, hantverkare och trädgårdsskötsel."
+  },
+  "automotive": {
+    "name": "Bil",
+    "description": "Bilvård, biltvätt och mobila mekaniker."
+  },
+  "pets": {
+    "name": "Husdjur",
+    "description": "Trimning, djurpassning och träning."
+  },
+  "events": {
+    "name": "Event",
+    "description": "DJ:s, planerare och eventproffs."
+  },
+  "professional": {
+    "name": "Professionella tjänster",
+    "description": "Konsulter, coacher och rådgivare."
+  },
+  "other": {
+    "name": "Övrigt",
+    "description": "Allt annat du kan boka."
+  },
+  "music-audio": {
+    "name": "Musik & ljud",
+    "description": "Producenter, inspelningsstudior, mixning och sångcoachning."
+  },
+  "music-production": {
+    "name": "Musikproduktion"
+  },
+  "recording-studio": {
+    "name": "Inspelningsstudior"
+  },
+  "vocal-coaching": {
+    "name": "Sångcoachning"
+  },
+  "creators": {
+    "name": "Creators & innehåll",
+    "description": "Innehållsskapare, UGC, sociala medier och videoredigering."
+  },
+  "content-creation": {
+    "name": "Innehållsskapande"
+  },
+  "video-editing": {
+    "name": "Videoredigering"
+  },
+  "social-media": {
+    "name": "Hantering av sociala medier"
+  },
+  "design": {
+    "name": "Design & kreativt",
+    "description": "Grafisk design, varumärke, webb och inredning."
+  },
+  "graphic-design": {
+    "name": "Grafisk design & varumärke"
+  },
+  "web-design": {
+    "name": "Webbdesign"
+  },
+  "interior-design": {
+    "name": "Inredningsdesign"
+  },
+  "health": {
+    "name": "Hälsa & vård",
+    "description": "Fysioterapi, kost, terapi och helhetsvård."
+  },
+  "physio": {
+    "name": "Fysioterapi & kiropraktik"
+  },
+  "nutrition": {
+    "name": "Kost & nutrition"
+  },
+  "therapy": {
+    "name": "Terapi & samtalsstöd"
+  },
+  "cleaning": {
+    "name": "Städning"
+  },
+  "handyman": {
+    "name": "Hantverkare & reparationer"
+  },
+  "gardening": {
+    "name": "Trädgårdsskötsel"
+  }
+}
