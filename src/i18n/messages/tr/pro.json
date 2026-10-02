@@ -1,0 +1,310 @@
+{
+  "nav": {
+    "today": "Bugün",
+    "calendar": "Takvim",
+    "clients": "Müşteriler",
+    "inbox": "Gelen kutusu",
+    "services": "Hizmetler",
+    "availability": "Çalışma saatleri ve izinler",
+    "team": "Ekip",
+    "portfolio": "Portfolyo",
+    "reviews": "Yorumlar",
+    "promote": "Tanıtım",
+    "insights": "Analizler",
+    "settings": "Ayarlar",
+    "business": "İşletme",
+    "groups": {
+      "main": "",
+      "business": "İşletmeniz",
+      "growth": "Büyüme",
+      "settings": ""
+    }
+  },
+  "shell": {
+    "businessNav": "İşletme gezintisi",
+    "mobileNav": "İşletme",
+    "live": "Yayında",
+    "notLiveYet": "Henüz yayında değil",
+    "yourBusinesses": "İşletmeleriniz",
+    "addBusiness": "Başka bir işletme ekle",
+    "viewPublicPage": "Herkese açık sayfayı gör",
+    "switchToBooking": "Rezervasyon moduna geç",
+    "personalAccount": "Kişisel hesap",
+    "signOut": "Çıkış yap",
+    "notifications": "Bildirimler"
+  },
+  "hub": {
+    "liveBookable": "Yayında — müşteriler sizden randevu alabilir",
+    "sections": "İşletme bölümleri",
+    "business": "İşletme",
+    "currentBusiness": "Mevcut işletme",
+    "switching": "Geçiş yapılıyor…",
+    "signedInAs": "{name} olarak giriş yapıldı",
+    "blurbs": {
+      "services": "Müşterilerin alabileceği hizmetler, fiyatlar ve süreler",
+      "availability": "Çalışma saatleri, molalar ve izinler",
+      "team": "Kişiler, roller ve kimin ne yaptığı",
+      "portfolio": "Çalışmalarınızın fotoğrafları ve videoları",
+      "reviews": "Müşteri yorumlarını okuyun ve yanıtlayın",
+      "promote": "Promosyon kodları ve Kept’te görünür olma",
+      "insights": "Rezervasyonlar, gelir ve geri dönen müşteriler",
+      "settings": "Profil, konumlar, rezervasyon kuralları, ödemeler"
+    }
+  },
+  "suspended": {
+    "title": "{name} askıya alındı",
+    "body": "Kept bu işletmeyi askıya aldı. İşletme aramalarda görünmez, rezervasyon alamaz ve askı kaldırılana kadar işletme araçları kullanılamaz. Mevcut randevusu olan müşteriler randevularını görmeye ve iptal etmeye devam edebilir.",
+    "contactSupport": "Destekle iletişime geç",
+    "goToKept": "Kept’e git",
+    "otherBusinesses": "Diğer işletmeleriniz",
+    "open": "{name} işletmesini aç"
+  },
+  "today": {
+    "greeting": {
+      "morning": "Günaydın, {name}",
+      "afternoon": "İyi günler, {name}",
+      "evening": "İyi akşamlar, {name}"
+    },
+    "nothingBooked": "Bugün için randevu yok.",
+    "remaining": "{count, plural, one {Bugün # randevu daha var.} other {Bugün # randevu daha var.}}",
+    "allDone": "Bugünlük hepsi bu kadar.",
+    "requestsNeedReply": "{count, plural, one {# talep yanıt bekliyor.} other {# talep yanıt bekliyor.}}",
+    "blockTime": "Zaman engelle",
+    "newAppointment": "Yeni randevu",
+    "setup": {
+      "ready": "Sayfanız yayına hazır",
+      "finish": "Rezervasyon almak için kurulumu tamamlayın",
+      "progress": "{total} adımdan {done} tamamlandı",
+      "progressNext": "{total} adımdan {done} tamamlandı — sıradaki: {step}",
+      "steps": {
+        "location": "çalıştığınız yeri ekleyin",
+        "services": "en az bir hizmet oluşturun",
+        "availability": "çalışma saatlerinizi belirleyin"
+      },
+      "goLive": "Yayına al",
+      "continue": "Kuruluma devam et"
+    },
+    "happeningNow": "Şu anda devam eden",
+    "nextUp": "Sıradaki",
+    "schedule": "Program",
+    "emptyTitle": "Bugün randevu yok",
+    "emptyLive": "Bağlantınızı paylaşın; yeni rezervasyonlar burada anında görünür.",
+    "emptyNotLive": "Yayına girdiğinizde rezervasyonlar burada anında görünür.",
+    "waiting": "Sizi bekleyenler",
+    "last30": "Son 30 gün",
+    "stats": {
+      "completed": "Tamamlanan",
+      "revenue": "Gelir",
+      "upcoming": "Yaklaşan",
+      "noShows": "Gelmeyenler"
+    },
+    "unpaid": "{count, plural, one {Tamamlanan # ziyaretin kaydedilmemiş bakiyesi var.} other {Tamamlanan # ziyaretin kaydedilmemiş bakiyesi var.}}",
+    "bookingLink": "Rezervasyon bağlantınız",
+    "bookingLinkHint": "Instagram biyografinize, Google profilinize veya mesajlarınıza ekleyin."
+  },
+  "dayList": {
+    "new": "Yeni",
+    "hasNote": "Notu var"
+  },
+  "controls": {
+    "done": {
+      "approve": "Talep onaylandı",
+      "check_in": "Giriş yapıldı",
+      "start": "Başlatıldı",
+      "complete": "Tamamlandı olarak işaretlendi",
+      "no_show": "Gelmedi olarak işaretlendi",
+      "undo_no_show": "Tamamlandı olarak işaretlendi"
+    },
+    "declined": "Talep reddedildi",
+    "cancelled": "Randevu iptal edildi",
+    "refunding": "Müşterinin ödemesi tam olarak iade ediliyor.",
+    "notified": "Müşteriye bildirildi.",
+    "approve": "Onayla",
+    "complete": "Tamamla",
+    "checkIn": "Giriş yap",
+    "start": "Başlat",
+    "decline": "Reddet",
+    "more": "Diğer işlemler",
+    "startNow": "Şimdi başlat",
+    "markNoShow": "Gelmedi olarak işaretle",
+    "undoNoShow": "Geldi — tamamlandı olarak işaretle",
+    "cancelAppointment": "Randevuyu iptal et",
+    "declineTitle": "Bu talep reddedilsin mi?",
+    "cancelTitle": "Bu randevu iptal edilsin mi?",
+    "cancelDescription": "Müşteriye hemen bildirilir. Online ödediği her şey tam olarak iade edilir.",
+    "declineRequest": "Talebi reddet",
+    "messageToCustomer": "Müşteriye mesaj",
+    "declinePlaceholder": "Üzgünüm, o gün tamamen doluyum; perşembe gününü dener misiniz?",
+    "cancelPlaceholder": "Bir şey çıktı; lütfen istediğiniz zaman yeniden randevu alın."
+  },
+  "calendar": {
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "updating": "Güncelleniyor",
+    "view": "Takvim görünümü",
+    "views": {
+      "day": "Gün",
+      "week": "Hafta",
+      "month": "Ay",
+      "agenda": "Liste"
+    },
+    "block": "Engelle",
+    "new": "Yeni",
+    "showTeam": "Ekip üyelerini göster",
+    "with": "Kiminle",
+    "price": "Fiyat",
+    "paid": "{amount} ödendi",
+    "booked": "Rezerve edildi",
+    "source": {
+      "manual": "Ekibiniz tarafından",
+      "walkIn": "Randevusuz",
+      "online": "Online"
+    },
+    "open": "Aç",
+    "schedule": "Program",
+    "more": "+{count} daha",
+    "agendaEmpty": "Bu iki haftada planlanmış bir şey yok",
+    "agendaEmptyHint": "Yeni rezervasyonlar geldikçe burada görünür.",
+    "todayDate": "Bugün · {date}",
+    "agendaFooter": "İki hafta gösteriliyor · <month>Ay görünümü</month>"
+  },
+  "blockReasons": {
+    "break": "Mola",
+    "personal": "Kişisel",
+    "vacation": "Tatil",
+    "sick": "Hastalık izni",
+    "holiday": "Resmi tatil",
+    "other": "Diğer"
+  },
+  "dialogs": {
+    "cancel": "Vazgeç",
+    "date": "Tarih",
+    "note": "Not"
+  },
+  "newAppt": {
+    "title": "Yeni randevu",
+    "submit": "Randevu ekle",
+    "added": "Randevu eklendi",
+    "errorInvalidTime": "Geçerli bir tarih ve saat seçin.",
+    "errorNoTime": "Bir saat seçin.",
+    "client": "Müşteri",
+    "visits": "{count, plural, one {# ziyaret} other {# ziyaret}}",
+    "change": "Değiştir",
+    "name": "Ad",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "searchInstead": "Mevcut müşterilerde ara",
+    "searchPlaceholder": "Ad, telefon veya e-posta ile ara",
+    "searchLabel": "Müşteri ara",
+    "noMatch": "“{query}” ile eşleşen müşteri yok.",
+    "newClient": "Yeni müşteri",
+    "service": "Hizmet",
+    "with": "Kiminle",
+    "choose": "Seçin…",
+    "none": "Yok",
+    "when": "Ne zaman",
+    "timeMode": "Saat seçim şekli",
+    "openTimes": "Boş saatler",
+    "custom": "Özel",
+    "optionsFirst": "Önce hizmet seçeneklerini belirleyin.",
+    "startTime": "Başlangıç saati",
+    "outsideHours": "Çalışma saatleri dışında randevu ver",
+    "outsideHoursHint": "Yine de başka bir randevuyla çakışmaz."
+  },
+  "block": {
+    "title": "Zaman engelle",
+    "description": "Engellenen zamana rezervasyon yapılamaz. Mevcut randevulara dokunulmaz.",
+    "errorRange": "Başlangıç ve bitişi kontrol edin.",
+    "conflictsTitle": "Zaman engellendi ancak o saatlerde randevularınız var",
+    "conflictsBody": "{count, plural, one {# mevcut randevu hâlâ ilginizi bekliyor.} other {# mevcut randevu hâlâ ilginizi bekliyor.}}",
+    "done": "Zaman engellendi",
+    "length": "Süre",
+    "partOfDay": "Günün bir kısmı",
+    "wholeDays": "Tam günler",
+    "for": "Kim için",
+    "everyone": "Herkes için (işletme kapalı)",
+    "from": "Başlangıç",
+    "to": "Bitiş",
+    "firstDay": "İlk gün",
+    "lastDay": "Son gün",
+    "reason": "Neden",
+    "noteHint": "Bunu yalnızca ekibiniz görür."
+  },
+  "reschedule": {
+    "button": "Ertele",
+    "title": "Randevuyu taşı",
+    "current": "Şu anda {date}, saat {time}",
+    "done": "Randevu taşındı",
+    "time": "Saat",
+    "ignoreHours": "Çalışma saatlerini yoksay"
+  },
+  "payments": {
+    "record": "Ödeme kaydet",
+    "title": "Ödeme kaydı",
+    "description": "Kept dışında alınan ödemeler için: nakit, kendi kart okuyucunuz veya havale.",
+    "errorAmount": "Bir tutar girin.",
+    "recorded": "{amount} kaydedildi",
+    "amount": "Tutar ({currency})",
+    "method": "Yöntem",
+    "methods": {
+      "card_terminal": "Kart okuyucu",
+      "cash": "Nakit",
+      "bank_transfer": "Banka havalesi",
+      "other": "Diğer"
+    },
+    "for": "Ne için",
+    "kinds": {
+      "balance": "Hizmet",
+      "tip": "Bahşiş",
+      "no_show_fee": "Gelmeme ücreti",
+      "cancellation_fee": "İptal ücreti"
+    }
+  },
+  "notes": {
+    "saved": "Not kaydedildi",
+    "placeholder": "Formüller, tercihler, bir sonraki sefer için hatırlatmalar…",
+    "add": "Dahili not ekle",
+    "save": "Notu kaydet"
+  },
+  "appointment": {
+    "paymentKind": {},
+    "paymentStatus": {},
+    "events": {},
+    "actor": {}
+  },
+  "clients": {
+    "segments": {},
+    "columns": {}
+  },
+  "clientsToolbar": {
+    "sorts": {}
+  },
+  "client": {},
+  "inbox": {},
+  "reviews": {
+    "reasons": {}
+  },
+  "insights": {
+    "kpi": {},
+    "cols": {},
+    "defs": {},
+    "chart": {}
+  },
+  "promote": {
+    "blocked": {},
+    "how": {
+      "where": {},
+      "labelled": {},
+      "rotation": {},
+      "cost": {}
+    }
+  },
+  "spotlight": {
+    "done": {}
+  },
+  "promos": {
+    "status": {},
+    "errors": {},
+    "fields": {}
+  }
+}

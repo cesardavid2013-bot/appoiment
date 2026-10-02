@@ -1,0 +1,310 @@
+{
+  "nav": {
+    "today": "Astăzi",
+    "calendar": "Calendar",
+    "clients": "Clienți",
+    "inbox": "Mesaje",
+    "services": "Servicii",
+    "availability": "Program și zile libere",
+    "team": "Echipă",
+    "portfolio": "Portofoliu",
+    "reviews": "Recenzii",
+    "promote": "Promovare",
+    "insights": "Statistici",
+    "settings": "Setări",
+    "business": "Firmă",
+    "groups": {
+      "main": "",
+      "business": "Firma dumneavoastră",
+      "growth": "Creștere",
+      "settings": ""
+    }
+  },
+  "shell": {
+    "businessNav": "Navigarea firmei",
+    "mobileNav": "Firmă",
+    "live": "Activ",
+    "notLiveYet": "Încă inactiv",
+    "yourBusinesses": "Firmele dumneavoastră",
+    "addBusiness": "Adăugați altă firmă",
+    "viewPublicPage": "Vedeți pagina publică",
+    "switchToBooking": "Treceți la rezervări",
+    "personalAccount": "Cont personal",
+    "signOut": "Deconectare",
+    "notifications": "Notificări"
+  },
+  "hub": {
+    "liveBookable": "Activ — clienții vă pot rezerva",
+    "sections": "Secțiunile firmei",
+    "business": "Firmă",
+    "currentBusiness": "Firma curentă",
+    "switching": "Se comută…",
+    "signedInAs": "Autentificat ca {name}",
+    "blurbs": {
+      "services": "Ce pot rezerva clienții, prețuri și durate",
+      "availability": "Program de lucru, pauze și zile libere",
+      "team": "Persoane, roluri și cine ce face",
+      "portfolio": "Fotografii și videoclipuri cu lucrările dumneavoastră",
+      "reviews": "Citiți recenziile clienților și răspundeți",
+      "promote": "Coduri promoționale și vizibilitate pe Kept",
+      "insights": "Rezervări, venituri și clienți fideli",
+      "settings": "Profil, locații, reguli de rezervare, plăți"
+    }
+  },
+  "suspended": {
+    "title": "{name} este suspendată",
+    "body": "Kept a suspendat această firmă. Nu apare în căutări, nu poate primi rezervări, iar instrumentele pentru firmă nu sunt disponibile până la ridicarea suspendării. Clienții cu programări existente le pot vedea și anula în continuare.",
+    "contactSupport": "Contactați asistența",
+    "goToKept": "Mergeți la Kept",
+    "otherBusinesses": "Celelalte firme ale dumneavoastră",
+    "open": "Deschideți {name}"
+  },
+  "today": {
+    "greeting": {
+      "morning": "Bună dimineața, {name}",
+      "afternoon": "Bună ziua, {name}",
+      "evening": "Bună seara, {name}"
+    },
+    "nothingBooked": "Nicio programare pentru astăzi.",
+    "remaining": "{count, plural, one {Încă # programare astăzi.} few {Încă # programări astăzi.} other {Încă # de programări astăzi.}}",
+    "allDone": "Asta e tot pentru astăzi.",
+    "requestsNeedReply": "{count, plural, one {O cerere așteaptă răspuns.} few {# cereri așteaptă răspuns.} other {# de cereri așteaptă răspuns.}}",
+    "blockTime": "Blocați timp",
+    "newAppointment": "Programare nouă",
+    "setup": {
+      "ready": "Pagina este gata de publicare",
+      "finish": "Finalizați configurarea pentru a primi rezervări",
+      "progress": "{done} din {total} finalizate",
+      "progressNext": "{done} din {total} finalizate — urmează: {step}",
+      "steps": {
+        "location": "adăugați locul unde lucrați",
+        "services": "creați cel puțin un serviciu",
+        "availability": "stabiliți programul de lucru"
+      },
+      "goLive": "Activați",
+      "continue": "Continuați configurarea"
+    },
+    "happeningNow": "În desfășurare acum",
+    "nextUp": "Urmează",
+    "schedule": "Program",
+    "emptyTitle": "Nicio programare astăzi",
+    "emptyLive": "Distribuiți linkul — rezervările noi apar aici imediat.",
+    "emptyNotLive": "După activare, rezervările apar aici imediat.",
+    "waiting": "Vă așteaptă",
+    "last30": "Ultimele 30 de zile",
+    "stats": {
+      "completed": "Finalizate",
+      "revenue": "Venituri",
+      "upcoming": "Viitoare",
+      "noShows": "Neprezentări"
+    },
+    "unpaid": "{count, plural, one {O vizită finalizată are un sold neînregistrat.} few {# vizite finalizate au un sold neînregistrat.} other {# de vizite finalizate au un sold neînregistrat.}}",
+    "bookingLink": "Linkul dumneavoastră de rezervare",
+    "bookingLinkHint": "Adăugați-l în biografia Instagram, în profilul Google sau în mesaje."
+  },
+  "dayList": {
+    "new": "Nou",
+    "hasNote": "Are notă"
+  },
+  "controls": {
+    "done": {
+      "approve": "Cererea a fost aprobată",
+      "check_in": "Sosire înregistrată",
+      "start": "Început",
+      "complete": "Marcată ca finalizată",
+      "no_show": "Marcată ca neprezentare",
+      "undo_no_show": "Marcată ca finalizată"
+    },
+    "declined": "Cererea a fost refuzată",
+    "cancelled": "Programarea a fost anulată",
+    "refunding": "Plata clientului este rambursată integral.",
+    "notified": "Clientul a fost anunțat.",
+    "approve": "Aprobați",
+    "complete": "Finalizați",
+    "checkIn": "Înregistrați sosirea",
+    "start": "Începeți",
+    "decline": "Refuzați",
+    "more": "Mai multe acțiuni",
+    "startNow": "Începeți acum",
+    "markNoShow": "Marcați ca neprezentare",
+    "undoNoShow": "A venit — marcați ca finalizată",
+    "cancelAppointment": "Anulați programarea",
+    "declineTitle": "Refuzați această cerere?",
+    "cancelTitle": "Anulați această programare?",
+    "cancelDescription": "Clientul este anunțat imediat. Tot ce a plătit online este rambursat integral.",
+    "declineRequest": "Refuzați cererea",
+    "messageToCustomer": "Mesaj pentru client",
+    "declinePlaceholder": "Îmi pare rău, în ziua aceea sunt complet rezervat — ați putea încerca joi?",
+    "cancelPlaceholder": "A intervenit ceva — vă rog să reprogramați oricând."
+  },
+  "calendar": {
+    "previous": "Anterior",
+    "next": "Următor",
+    "updating": "Se actualizează",
+    "view": "Mod de afișare calendar",
+    "views": {
+      "day": "Zi",
+      "week": "Săptămână",
+      "month": "Lună",
+      "agenda": "Listă"
+    },
+    "block": "Blocare",
+    "new": "Nou",
+    "showTeam": "Afișați membrii echipei",
+    "with": "Cu",
+    "price": "Preț",
+    "paid": "Plătit {amount}",
+    "booked": "Rezervat",
+    "source": {
+      "manual": "De echipa dumneavoastră",
+      "walkIn": "Fără programare",
+      "online": "Online"
+    },
+    "open": "Deschideți",
+    "schedule": "Program",
+    "more": "+încă {count}",
+    "agendaEmpty": "Nimic programat în aceste două săptămâni",
+    "agendaEmptyHint": "Rezervările noi apar aici pe măsură ce sosesc.",
+    "todayDate": "Astăzi · {date}",
+    "agendaFooter": "Se afișează două săptămâni · <month>Vizualizare lunară</month>"
+  },
+  "blockReasons": {
+    "break": "Pauză",
+    "personal": "Personal",
+    "vacation": "Concediu",
+    "sick": "Zi de boală",
+    "holiday": "Sărbătoare",
+    "other": "Altele"
+  },
+  "dialogs": {
+    "cancel": "Anulați",
+    "date": "Data",
+    "note": "Notă"
+  },
+  "newAppt": {
+    "title": "Programare nouă",
+    "submit": "Adăugați programarea",
+    "added": "Programare adăugată",
+    "errorInvalidTime": "Alegeți o dată și o oră valide.",
+    "errorNoTime": "Alegeți o oră.",
+    "client": "Client",
+    "visits": "{count, plural, one {# vizită} few {# vizite} other {# de vizite}}",
+    "change": "Schimbați",
+    "name": "Nume",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "searchInstead": "Căutați printre clienții existenți",
+    "searchPlaceholder": "Căutați după nume, telefon sau e-mail",
+    "searchLabel": "Căutare clienți",
+    "noMatch": "Niciun client nu corespunde cu „{query}”.",
+    "newClient": "Client nou",
+    "service": "Serviciu",
+    "with": "Cu",
+    "choose": "Alegeți…",
+    "none": "Niciunul",
+    "when": "Când",
+    "timeMode": "Mod de selectare a orei",
+    "openTimes": "Intervale libere",
+    "custom": "Personalizat",
+    "optionsFirst": "Alegeți mai întâi opțiunile serviciului.",
+    "startTime": "Ora de începere",
+    "outsideHours": "Rezervați în afara programului",
+    "outsideHoursHint": "Tot nu se poate suprapune cu altă programare."
+  },
+  "block": {
+    "title": "Blocați timp",
+    "description": "Timpul blocat nu poate fi rezervat. Programările existente nu sunt afectate.",
+    "errorRange": "Verificați începutul și sfârșitul.",
+    "conflictsTitle": "Timp blocat, dar aveți programări în acel interval",
+    "conflictsBody": "{count, plural, one {O programare existentă necesită încă atenția dumneavoastră.} few {# programări existente necesită încă atenția dumneavoastră.} other {# de programări existente necesită încă atenția dumneavoastră.}}",
+    "done": "Timp blocat",
+    "length": "Durată",
+    "partOfDay": "O parte din zi",
+    "wholeDays": "Zile întregi",
+    "for": "Pentru",
+    "everyone": "Toți (firma e închisă)",
+    "from": "De la",
+    "to": "Până la",
+    "firstDay": "Prima zi",
+    "lastDay": "Ultima zi",
+    "reason": "Motiv",
+    "noteHint": "Doar echipa dumneavoastră vede acest lucru."
+  },
+  "reschedule": {
+    "button": "Reprogramați",
+    "title": "Mutați programarea",
+    "current": "În prezent: {date}, ora {time}",
+    "done": "Programarea a fost mutată",
+    "time": "Ora",
+    "ignoreHours": "Ignorați programul de lucru"
+  },
+  "payments": {
+    "record": "Înregistrați plata",
+    "title": "Înregistrați o plată",
+    "description": "Pentru plăți primite în afara Kept — numerar, terminalul dumneavoastră sau transfer.",
+    "errorAmount": "Introduceți o sumă.",
+    "recorded": "Înregistrat: {amount}",
+    "amount": "Sumă ({currency})",
+    "method": "Metodă",
+    "methods": {
+      "card_terminal": "Terminal de card",
+      "cash": "Numerar",
+      "bank_transfer": "Transfer bancar",
+      "other": "Altele"
+    },
+    "for": "Pentru",
+    "kinds": {
+      "balance": "Serviciu",
+      "tip": "Bacșiș",
+      "no_show_fee": "Taxă de neprezentare",
+      "cancellation_fee": "Taxă de anulare"
+    }
+  },
+  "notes": {
+    "saved": "Notă salvată",
+    "placeholder": "Formule, preferințe, mementouri pentru data viitoare…",
+    "add": "Adăugați o notă internă",
+    "save": "Salvați nota"
+  },
+  "appointment": {
+    "paymentKind": {},
+    "paymentStatus": {},
+    "events": {},
+    "actor": {}
+  },
+  "clients": {
+    "segments": {},
+    "columns": {}
+  },
+  "clientsToolbar": {
+    "sorts": {}
+  },
+  "client": {},
+  "inbox": {},
+  "reviews": {
+    "reasons": {}
+  },
+  "insights": {
+    "kpi": {},
+    "cols": {},
+    "defs": {},
+    "chart": {}
+  },
+  "promote": {
+    "blocked": {},
+    "how": {
+      "where": {},
+      "labelled": {},
+      "rotation": {},
+      "cost": {}
+    }
+  },
+  "spotlight": {
+    "done": {}
+  },
+  "promos": {
+    "status": {},
+    "errors": {},
+    "fields": {}
+  }
+}
