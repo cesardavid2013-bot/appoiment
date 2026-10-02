@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Karibu tena, {name}",
+    "eyebrow": "Miadi, imehifadhiwa",
+    "title": "Weka miadi na watu wanaofanya wiki yako kuwa <em>bora zaidi.</em>",
+    "lead": "Vinyozi, wasusi, wakufunzi, walimu, wapigapicha na zaidi — wenye nafasi halisi, bei za wazi na maoni kutoka kwa ziara zilizothibitishwa pekee.",
+    "points": {
+      "verified": "Maoni yaliyothibitishwa pekee",
+      "prices": "Bei kabla ya kuweka miadi",
+      "instant": "Uthibitisho wa papo hapo"
+    }
+  },
+  "search": {
+    "placeholder": "Kunyoa, masaji, mpigapicha…",
+    "label": "Unataka kuweka miadi ya nini?",
+    "category": "Kategoria",
+    "submit": "Tafuta",
+    "sayIt": "Au sema tu —",
+    "sayItExample": "“kinyozi kesho baada ya saa 11 jioni”"
+  },
+  "openings": {
+    "title": "Nafasi zinazokuja hivi karibuni",
+    "live": "Moja kwa moja kutoka kalenda",
+    "appointment": "Miadi"
+  },
+  "index": {
+    "eyebrow": "Orodha",
+    "title": "Kila aina ya miadi",
+    "exploreAll": "Chunguza zote",
+    "pros": "{count, plural, one {mtaalamu #} other {wataalamu #}}"
+  },
+  "next": {
+    "title": "Miadi yako inayofuata",
+    "details": "Maelezo"
+  },
+  "again": {
+    "title": "Weka miadi tena",
+    "rebook": "Weka tena"
+  },
+  "rails": {
+    "availableSoon": "Wanapatikana hivi karibuni",
+    "availableSoonNear": "Wanapatikana hivi karibuni karibu na {place}",
+    "availableSoonNearYou": "Wanapatikana hivi karibuni karibu nawe",
+    "availableSoonSub": "Nafasi za moja kwa moja kutoka kalenda ya kila mtaalamu.",
+    "recent": "Zilizotazamwa hivi karibuni",
+    "topRated": "Wenye alama za juu",
+    "topRatedSub": "Alama hutoka tu kwenye miadi iliyokamilika na kuthibitishwa.",
+    "newcomers": "Wapya kwenye Kept"
+  },
+  "how": {
+    "eyebrow": "Inavyofanya kazi",
+    "title": "Hatua tatu, bila kupigiana simu",
+    "find": {
+      "title": "Mpate mtu wako",
+      "body": "Tafuta kwa unachohitaji, lini na wapi — au uliza kwa maneno yako mwenyewe. Kila wasifu unaonyesha bei halisi na maoni yaliyothibitishwa."
+    },
+    "choose": {
+      "title": "Chagua wakati halisi",
+      "body": "Nyakati unazoziona ni wazi sasa hivi kwenye kalenda yao. Chagua moja, ongeza chaguo zozote, kisha thibitisha."
+    },
+    "kept": {
+      "title": "Chukulia imehifadhiwa",
+      "body": "Unapata uthibitisho, vikumbusho kabla ya siku, na mahali pamoja pa kupanga upya, kutuma ujumbe au kuweka miadi tena."
+    }
+  },
+  "pros": {
+    "eyebrow": "Kwa wataalamu",
+    "title": "Ufundi wako unastahili mapokezi <em>bora zaidi.</em>",
+    "body": "Miadi mtandaoni, kalenda isiyoweza kuweka miadi miwili kwa wakati mmoja, vikumbusho vinavyopunguza wasiofika, na ukurasa unaoonyesha kazi yako kama inavyostahili. Bure wakati tunazindua.",
+    "cta": "Toa huduma zako",
+    "howItWorks": "Tazama inavyofanya kazi",
+    "features": {
+      "any": {
+        "title": "Huduma yoyote",
+        "body": "Chaguo hubadilisha bei na muda kiotomatiki."
+      },
+      "noDouble": {
+        "title": "Hakuna miadi mara mbili",
+        "body": "Kila wakati hukaguliwa wakati wa kuweka miadi."
+      },
+      "noShows": {
+        "title": "Wasiofika wachache",
+        "body": "Vikumbusho, amana na sera zilizo wazi."
+      },
+      "discovered": {
+        "title": "Gunduliwa",
+        "body": "Jalada la kazi, maoni yaliyothibitishwa na Spotlight."
+      }
+    }
+  }
+}
