@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Välkommen tillbaka, {name}",
+    "eyebrow": "Bokningen, i goda händer",
+    "title": "Boka dem som gör din vecka <em>bättre.</em>",
+    "lead": "Barberare, frisörer, tränare, lärare, fotografer och mer — med verkliga lediga tider, tydliga priser i förväg och omdömen enbart från verifierade besök.",
+    "points": {
+      "verified": "Endast verifierade omdömen",
+      "prices": "Pris innan du bokar",
+      "instant": "Direkt bekräftelse"
+    }
+  },
+  "search": {
+    "placeholder": "Klippning, massage, fotograf…",
+    "label": "Vad vill du boka?",
+    "category": "Kategori",
+    "submit": "Sök",
+    "sayIt": "Eller säg det rakt ut —",
+    "sayItExample": "”en barberare i morgon efter fem”"
+  },
+  "openings": {
+    "title": "Lediga snart",
+    "live": "Live från kalendrarna",
+    "appointment": "Tid"
+  },
+  "index": {
+    "eyebrow": "Översikten",
+    "title": "Alla sorters bokningar",
+    "exploreAll": "Utforska alla",
+    "pros": "{count, plural, one {# proffs} other {# proffs}}"
+  },
+  "next": {
+    "title": "Din nästa tid",
+    "details": "Detaljer"
+  },
+  "again": {
+    "title": "Boka igen",
+    "rebook": "Boka om"
+  },
+  "rails": {
+    "availableSoon": "Lediga snart",
+    "availableSoonNear": "Lediga snart nära {place}",
+    "availableSoonNearYou": "Lediga snart nära dig",
+    "availableSoonSub": "Lediga tider live från varje yrkesverksams kalender.",
+    "recent": "Nyligen visade",
+    "topRated": "Högt betygsatta",
+    "topRatedSub": "Betyg kommer endast från genomförda, verifierade bokningar.",
+    "newcomers": "Nya på Kept"
+  },
+  "how": {
+    "eyebrow": "Så fungerar det",
+    "title": "Tre steg, inget telefonjagande",
+    "find": {
+      "title": "Hitta rätt person",
+      "body": "Sök efter vad du behöver, när och var — eller fråga med dina egna ord. Varje profil visar verkliga priser och verifierade omdömen."
+    },
+    "choose": {
+      "title": "Välj en verklig tid",
+      "body": "Tiderna du ser är lediga i kalendern just nu. Välj en, lägg till eventuella tillval och bekräfta."
+    },
+    "kept": {
+      "title": "Det är ordnat",
+      "body": "Du får en bekräftelse, påminnelser innan dagen och ett ställe där du kan boka om, skriva eller boka igen."
+    }
+  },
+  "pros": {
+    "eyebrow": "För yrkesverksamma",
+    "title": "Ditt hantverk förtjänar en <em>bättre</em> reception.",
+    "body": "Onlinebokning, en kalender som aldrig dubbelbokar, påminnelser som minskar uteblivna kunder och en sida som visar ditt arbete som det förtjänar. Gratis under lanseringen.",
+    "cta": "Erbjud dina tjänster",
+    "howItWorks": "Se hur det fungerar",
+    "features": {
+      "any": {
+        "title": "Alla tjänster",
+        "body": "Tillval ändrar pris och tid automatiskt."
+      },
+      "noDouble": {
+        "title": "Aldrig dubbelbokad",
+        "body": "Varje tid kontrolleras i samma stund som bokningen görs."
+      },
+      "noShows": {
+        "title": "Färre uteblivna kunder",
+        "body": "Påminnelser, deposition och tydliga villkor."
+      },
+      "discovered": {
+        "title": "Bli upptäckt",
+        "body": "Portfölj, verifierade omdömen och Spotlight."
+      }
+    }
+  }
+}

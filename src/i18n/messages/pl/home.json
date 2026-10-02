@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Witaj ponownie, {name}",
+    "eyebrow": "Wizyta, o którą zadbano",
+    "title": "Rezerwuj ludzi, którzy sprawiają, że Twój tydzień jest <em>lepszy.</em>",
+    "lead": "Barberzy, fryzjerzy, trenerzy, korepetytorzy, fotografowie i nie tylko — z prawdziwymi wolnymi terminami, cenami podanymi z góry i opiniami wyłącznie ze zweryfikowanych wizyt.",
+    "points": {
+      "verified": "Tylko zweryfikowane opinie",
+      "prices": "Ceny przed rezerwacją",
+      "instant": "Natychmiastowe potwierdzenie"
+    }
+  },
+  "search": {
+    "placeholder": "Strzyżenie, masaż, fotograf…",
+    "label": "Co chcesz zarezerwować?",
+    "category": "Kategoria",
+    "submit": "Szukaj",
+    "sayIt": "Albo po prostu powiedz —",
+    "sayItExample": "„barber jutro po 17”"
+  },
+  "openings": {
+    "title": "Wkrótce wolne terminy",
+    "live": "Na żywo z kalendarzy",
+    "appointment": "Wizyta"
+  },
+  "index": {
+    "eyebrow": "Przegląd",
+    "title": "Każdy rodzaj wizyty",
+    "exploreAll": "Zobacz wszystko",
+    "pros": "{count, plural, one {# specjalista} few {# specjalistów} many {# specjalistów} other {# specjalisty}}"
+  },
+  "next": {
+    "title": "Twoja najbliższa wizyta",
+    "details": "Szczegóły"
+  },
+  "again": {
+    "title": "Zarezerwuj ponownie",
+    "rebook": "Zarezerwuj znowu"
+  },
+  "rails": {
+    "availableSoon": "Wkrótce dostępni",
+    "availableSoonNear": "Wkrótce dostępni w okolicy: {place}",
+    "availableSoonNearYou": "Wkrótce dostępni w Twojej okolicy",
+    "availableSoonSub": "Wolne terminy na żywo z kalendarza każdego specjalisty.",
+    "recent": "Ostatnio oglądane",
+    "topRated": "Wysoko oceniani",
+    "topRatedSub": "Oceny pochodzą wyłącznie z zakończonych, zweryfikowanych rezerwacji.",
+    "newcomers": "Nowi w Kept"
+  },
+  "how": {
+    "eyebrow": "Jak to działa",
+    "title": "Trzy kroki, bez przerzucania się telefonami",
+    "find": {
+      "title": "Znajdź swojego specjalistę",
+      "body": "Szukaj według tego, czego potrzebujesz, kiedy i gdzie — albo po prostu zapytaj własnymi słowami. Każdy profil pokazuje prawdziwe ceny i zweryfikowane opinie."
+    },
+    "choose": {
+      "title": "Wybierz prawdziwy termin",
+      "body": "Widoczne terminy są teraz wolne w kalendarzu. Wybierz jeden, dodaj opcje i potwierdź."
+    },
+    "kept": {
+      "title": "Uznaj to za załatwione",
+      "body": "Dostajesz potwierdzenie, przypomnienia przed wizytą i jedno miejsce do zmiany terminu, pisania wiadomości lub ponownej rezerwacji."
+    }
+  },
+  "pros": {
+    "eyebrow": "Dla specjalistów",
+    "title": "Twoje rzemiosło zasługuje na <em>lepszą</em> recepcję.",
+    "body": "Rezerwacje online, kalendarz, który nie dopuści do podwójnych rezerwacji, przypomnienia ograniczające nieobecności i strona, która pokazuje Twoją pracę tak, jak na to zasługuje. Bezpłatnie na czas startu.",
+    "cta": "Zaoferuj swoje usługi",
+    "howItWorks": "Zobacz, jak to działa",
+    "features": {
+      "any": {
+        "title": "Każda usługa",
+        "body": "Opcje automatycznie zmieniają cenę i czas."
+      },
+      "noDouble": {
+        "title": "Zero podwójnych rezerwacji",
+        "body": "Każdy termin jest sprawdzany w chwili rezerwacji."
+      },
+      "noShows": {
+        "title": "Mniej nieobecności",
+        "body": "Przypomnienia, zadatki i jasne zasady."
+      },
+      "discovered": {
+        "title": "Daj się odkryć",
+        "body": "Portfolio, zweryfikowane opinie i Spotlight."
+      }
+    }
+  }
+}

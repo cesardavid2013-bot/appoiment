@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "welcomeBack": "Welkom terug, {name}",
+    "eyebrow": "De afspraak, bewaard",
+    "title": "Boek de mensen die je week <em>beter maken.</em>",
+    "lead": "Barbers, kappers, trainers, docenten, fotografen en meer — met echte beschikbaarheid, vooraf duidelijke prijzen en alleen reviews van geverifieerde bezoeken.",
+    "points": {
+      "verified": "Alleen geverifieerde reviews",
+      "prices": "Prijs vooraf bekend",
+      "instant": "Direct bevestigd"
+    }
+  },
+  "search": {
+    "placeholder": "Knipbeurt, massage, fotograaf…",
+    "label": "Wat wil je boeken?",
+    "category": "Categorie",
+    "submit": "Zoeken",
+    "sayIt": "Of zeg het gewoon —",
+    "sayItExample": "“een barber morgen na vijven”"
+  },
+  "openings": {
+    "title": "Binnenkort beschikbaar",
+    "live": "Live uit de agenda’s",
+    "appointment": "Afspraak"
+  },
+  "index": {
+    "eyebrow": "De index",
+    "title": "Elke soort afspraak",
+    "exploreAll": "Alles ontdekken",
+    "pros": "{count, plural, one {# pro} other {# pro’s}}"
+  },
+  "next": {
+    "title": "Je volgende afspraak",
+    "details": "Details"
+  },
+  "again": {
+    "title": "Opnieuw boeken",
+    "rebook": "Opnieuw boeken"
+  },
+  "rails": {
+    "availableSoon": "Binnenkort beschikbaar",
+    "availableSoonNear": "Binnenkort beschikbaar in {place}",
+    "availableSoonNearYou": "Binnenkort beschikbaar bij jou in de buurt",
+    "availableSoonSub": "Live beschikbaarheid uit de agenda van elke professional.",
+    "recent": "Recent bekeken",
+    "topRated": "Hoog beoordeeld",
+    "topRatedSub": "Beoordelingen komen alleen van afgeronde, geverifieerde boekingen.",
+    "newcomers": "Nieuw op Kept"
+  },
+  "how": {
+    "eyebrow": "Hoe het werkt",
+    "title": "Drie stappen, geen heen-en-weergebel",
+    "find": {
+      "title": "Vind jouw professional",
+      "body": "Zoek op wat je nodig hebt, wanneer en waar — of vraag het gewoon in je eigen woorden. Elk profiel toont echte prijzen en geverifieerde reviews."
+    },
+    "choose": {
+      "title": "Kies een echt tijdstip",
+      "body": "De tijden die je ziet zijn nu vrij in de agenda. Kies er een, voeg eventuele opties toe en bevestig."
+    },
+    "kept": {
+      "title": "Zie het als geregeld",
+      "body": "Je krijgt een bevestiging, herinneringen voor de dag zelf en één plek om te verplaatsen, te appen of opnieuw te boeken."
+    }
+  },
+  "pros": {
+    "eyebrow": "Voor professionals",
+    "title": "Jouw vak verdient een <em>betere</em> balie.",
+    "body": "Online boeken, een agenda die nooit dubbel boekt, herinneringen die no-shows verminderen en een pagina die je werk laat zien zoals het hoort. Gratis tijdens onze lancering.",
+    "cta": "Bied je diensten aan",
+    "howItWorks": "Bekijk hoe het werkt",
+    "features": {
+      "any": {
+        "title": "Elke dienst",
+        "body": "Opties passen prijs en duur automatisch aan."
+      },
+      "noDouble": {
+        "title": "Nooit dubbel geboekt",
+        "body": "Elk tijdstip wordt gecontroleerd op het moment van boeken."
+      },
+      "noShows": {
+        "title": "Minder no-shows",
+        "body": "Herinneringen, aanbetalingen en duidelijke voorwaarden."
+      },
+      "discovered": {
+        "title": "Word gevonden",
+        "body": "Portfolio, geverifieerde reviews en Spotlight."
+      }
+    }
+  }
+}
