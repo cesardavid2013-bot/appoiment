@@ -1,0 +1,93 @@
+{
+  "youPrefix": "Wewe:",
+  "unread": "Haijasomwa",
+  "apptLine": "{service} · {date} saa {time}",
+  "list": {
+    "title": "Ujumbe",
+    "unread": "{count, plural, one {Mazungumzo # hayajasomwa.} other {Mazungumzo # hayajasomwa.}}",
+    "caughtUp": "Umesoma yote.",
+    "emptyTitle": "Hakuna ujumbe bado",
+    "emptyBody": "Una swali kuhusu huduma, bei au wakati? Fungua ukurasa wa mtaalamu na ugonge “Uliza swali”. Majibu yao yatafika hapa.",
+    "findPro": "Tafuta mtaalamu"
+  },
+  "thread": {
+    "metaTitle": "Mazungumzo",
+    "placeholder": "Tuma ujumbe kwa {business}"
+  },
+  "new": {
+    "metaTitle": "Ujumbe mpya",
+    "ownTitle": "Hii ni biashara yako",
+    "ownBody": "Ujumbe wa wateja kwa {business} unafika kwenye kikasha cha biashara yako.",
+    "ownButton": "Fungua kikasha cha biashara",
+    "placeholderBooking": "Uliza kuhusu miadi hii",
+    "placeholderQuestion": "Uliza swali",
+    "emptyBookingTitle": "Tuma ujumbe kwa {business} kuhusu miadi yako",
+    "emptyQuestionTitle": "Uliza {business} kabla ya kuweka miadi",
+    "emptyBookingBody": "Unachelewa, unahitaji kubadilisha kitu, au una swali? Ujumbe wako unaenda moja kwa moja kwa timu yao.",
+    "emptyQuestionBody": "Bei, muda, cha kuleta — {business} atajibu hapa nasi tutakujulisha. Nambari yako ya simu na barua pepe hubaki za faragha."
+  },
+  "shell": {
+    "allMessages": "Ujumbe wote",
+    "viewProfile": "Tazama wasifu",
+    "book": "Weka miadi"
+  },
+  "pro": {
+    "backToInbox": "Rudi kwenye kikasha"
+  },
+  "view": {
+    "label": "Ujumbe",
+    "you": "Wewe",
+    "loadingEarlier": "Inapakia ujumbe wa awali",
+    "showEarlier": "Onyesha ujumbe wa awali",
+    "seen": "Imeonekana",
+    "sending": "Inatuma…",
+    "notSent": "Haikutumwa.",
+    "retry": "Jaribu tena",
+    "discard": "Tupa",
+    "newMessages": "{count, plural, one {ujumbe # mpya} other {jumbe # mpya}}",
+    "openPhoto": "Fungua picha kwenye kichupo kipya",
+    "photo": "Picha"
+  },
+  "composer": {
+    "about": "Kuhusu {appointment}",
+    "unlink": "Usiunganishe miadi hii",
+    "processingPhoto": "Inachakata picha",
+    "removePhoto": "Ondoa picha",
+    "attachPhoto": "Ambatisha picha",
+    "label": "Ujumbe",
+    "send": "Tuma ujumbe",
+    "hint": "Bonyeza Enter kutuma, Shift na Enter kwa mstari mpya."
+  },
+  "inbox": {
+    "title": "Kikasha",
+    "conversations": "Mazungumzo",
+    "unread": "{count} hazijasomwa",
+    "allCaughtUp": "Umesoma yote",
+    "searchLabel": "Tafuta mazungumzo kwa jina la mteja",
+    "searchPlaceholder": "Tafuta wateja",
+    "clearSearch": "Futa utafutaji",
+    "show": "Onyesha",
+    "all": "Yote",
+    "unreadFilter": "Hayajasomwa",
+    "noClientsNamed": "Hakuna wateja wanaoitwa “{term}”",
+    "nothingUnread": "Hakuna ambacho hakijasomwa",
+    "noMessages": "Hakuna ujumbe bado",
+    "tryDifferent": "Jaribu utafutaji tofauti au onyesha mazungumzo yote.",
+    "emptyBody": "Wateja wakiuliza swali kutoka ukurasa wako au kuhusu miadi, litaonekana hapa."
+  },
+  "clientPanel": {
+    "client": "Mteja",
+    "visits": "Ziara",
+    "noShows": "Wasiofika",
+    "cancelled": "Zilizoghairiwa",
+    "clientSince": "Mteja tangu {date}",
+    "noVisits": "Hakuna ziara zilizokamilika bado",
+    "lastIn": "mara ya mwisho {date}",
+    "tags": "Lebo",
+    "clientProfile": "Wasifu wa mteja",
+    "notBooked": "Hajaweka miadi nawe bado — mazungumzo haya yalianzia kwenye ukurasa wako wa umma.",
+    "upcoming": "Ijayo",
+    "nothingBooked": "Hakuna miadi.",
+    "recent": "Za hivi karibuni"
+  }
+}
