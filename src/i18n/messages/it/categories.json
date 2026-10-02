@@ -84,5 +84,66 @@
   "other": {
     "name": "Altro",
     "description": "Tutto il resto che puoi prenotare."
+  },
+  "music-audio": {
+    "name": "Musica e audio",
+    "description": "Produttori, studi di registrazione, mixaggio e coaching vocale."
+  },
+  "music-production": {
+    "name": "Produzione musicale"
+  },
+  "recording-studio": {
+    "name": "Studi di registrazione"
+  },
+  "vocal-coaching": {
+    "name": "Coaching vocale"
+  },
+  "creators": {
+    "name": "Creator e contenuti",
+    "description": "Content creator, UGC, social media e montaggio video."
+  },
+  "content-creation": {
+    "name": "Creazione di contenuti"
+  },
+  "video-editing": {
+    "name": "Montaggio video"
+  },
+  "social-media": {
+    "name": "Gestione dei social media"
+  },
+  "design": {
+    "name": "Design e creatività",
+    "description": "Graphic design, brand design, web design e interior design."
+  },
+  "graphic-design": {
+    "name": "Graphic e brand design"
+  },
+  "web-design": {
+    "name": "Web design"
+  },
+  "interior-design": {
+    "name": "Interior design"
+  },
+  "health": {
+    "name": "Salute e cura",
+    "description": "Fisioterapia, nutrizione, terapia e cura olistica."
+  },
+  "physio": {
+    "name": "Fisioterapia e chiropratica"
+  },
+  "nutrition": {
+    "name": "Nutrizione"
+  },
+  "therapy": {
+    "name": "Terapia e consulenza"
+  },
+  "cleaning": {
+    "name": "Pulizie"
+  },
+  "handyman": {
+    "name": "Tuttofare e riparazioni"
+  },
+  "gardening": {
+    "name": "Giardinaggio"
   }
 }
