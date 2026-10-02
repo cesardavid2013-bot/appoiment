@@ -1,0 +1,114 @@
+{
+  "categories": {
+    "booking": { "label": "Miadi", "hint": "Mabadiliko, kughairi au matatizo na miadi." },
+    "payment": { "label": "Malipo", "hint": "Makato, amana, marejesho au bakshishi." },
+    "account": { "label": "Akaunti", "hint": "Kuingia, wasifu wako au data yako." },
+    "report": { "label": "Ripoti biashara", "hint": "Wasiwasi wa usalama, matangazo ya kupotosha au mwenendo mbaya." },
+    "other": { "label": "Nyingine", "hint": "Jambo lingine lolote tunaloweza kusaidia." }
+  },
+  "status": {
+    "open": "Inasubiri usaidizi",
+    "awaiting_customer": "Imejibiwa",
+    "resolved": "Imetatuliwa",
+    "closed": "Imefungwa"
+  },
+  "home": {
+    "title": "Msaada na usaidizi",
+    "description": "Pata msaada kuhusu miadi, malipo au akaunti yako.",
+    "newRequest": "Ombi jipya",
+    "yourRequests": "Maombi yako",
+    "emptyTitle": "Hakuna maombi bado",
+    "emptyBody": "Ikiwa kuna jambo si sawa na miadi, malipo au akaunti yako, tuambie nasi tutasaidia kulitatua.",
+    "contact": "Wasiliana na usaidizi",
+    "ticketLine": "{category} · Imesasishwa {date} · {count, plural, one {ujumbe #} other {jumbe #}}",
+    "quickAnswers": "Majibu ya haraka",
+    "stillStuck": "Bado umekwama? <link>Wasiliana na usaidizi</link>."
+  },
+  "faq": {
+    "reschedule": {
+      "q": "Ninawezaje kughairi au kupanga upya miadi?",
+      "a": "Fungua <link>Miadi</link>, chagua miadi kisha ugonge Panga upya au Ghairi. Kila biashara huweka muda wake wa kughairi — utaona hasa kinachohusika, ikiwemo ada au marejesho yoyote, kabla ya kuthibitisha."
+    },
+    "refund": {
+      "q": "Nitapata marejesho yangu lini?",
+      "a": "Marejesho hurudi kwenye kadi uliyolipia mara tu kughairi kunapothibitishwa. Kulingana na benki yako, kwa kawaida huchukua siku 5–10 za kazi kuonekana. Kama amana inarejeshwa inategemea sera ya biashara, inayoonyeshwa unapoweka miadi."
+    },
+    "contactPro": {
+      "q": "Ninawezaje kuwasiliana na mtaalamu?",
+      "a": "Tumia Ujumbe kwenye wasifu wao au kwenye miadi yako. Mazungumzo yako yako kwenye <link>Ujumbe</link>. Kwa jambo lolote kuhusu huduma yenyewe — maelekezo, maandalizi, cha kuleta — biashara inaweza kujibu haraka zaidi."
+    },
+    "report": {
+      "q": "Kuna tatizo limetokea na biashara. Naweza kufanya nini?",
+      "a": "Fungua ombi hapa chini na uchague “Ripoti biashara”. Unganisha miadi ikiwa ipo. Tunasoma kila ripoti, na tunaweza kuingilia kati kuhusu marejesho na, inapobidi, kuondoa biashara kwenye Kept."
+    },
+    "account": {
+      "q": "Ninawezaje kubadilisha barua pepe yangu au kufuta akaunti yangu?",
+      "a": "Mabadiliko ya barua pepe hupitia usaidizi ili tuthibitishe kuwa ni wewe. Unaweza kupakua data yako au kufuta akaunti yako mwenyewe kwenye <link>Faragha na data</link>."
+    }
+  },
+  "ticket": {
+    "metaTitle": "Ombi la usaidizi",
+    "allRequests": "Maombi yote",
+    "opened": "{category} · Lilifunguliwa <date></date>",
+    "appointmentLine": "{date} saa {time} · Rej {reference}",
+    "conversation": "Mazungumzo",
+    "keptSupport": "Usaidizi wa Kept",
+    "openImage": "Fungua picha iliyoambatishwa",
+    "attachedImage": "Picha iliyoambatishwa",
+    "closed": "Ombi hili limefungwa. <link>Fungua ombi jipya</link> ikiwa bado unahitaji msaada.",
+    "willReply": "Tutajibu hapa na kukujulisha tutakapofanya hivyo.",
+    "sorted": "Imetatuliwa? Tujulishe."
+  },
+  "new": {
+    "title": "Wasiliana na usaidizi",
+    "intro": "Tuambie kinachoendelea na mtu halisi kutoka timu ya Kept atajibu hapa. Kwa maswali kuhusu huduma yenyewe, kutuma ujumbe kwa biashara kwa kawaida ndiko kwa haraka zaidi.",
+    "notFound": "Hatukuweza kupata miadi hiyo kwenye akaunti yako, kwa hiyo haijaambatishwa. Bado unaweza kuchagua moja hapa chini."
+  },
+  "form": {
+    "topic": "Unahitaji msaada kuhusu nini?",
+    "chooseTopic": "Chagua mada",
+    "addSubject": "Ongeza kichwa kifupi",
+    "moreDetail": "Tuambie kidogo zaidi — sentensi moja inatusaidia kukusaidia",
+    "sent": "Ombi limetumwa",
+    "checkFields": "Tafadhali angalia sehemu zilizoangaziwa.",
+    "related": "Miadi inayohusika",
+    "refHint": "Rej {reference} · {business}",
+    "linkHint": "Kuunganisha miadi hutuwezesha kuchunguza mara moja.",
+    "none": "Hakuna",
+    "appointmentOption": "{date}, {time} — {service} · {business}",
+    "subject": "Kichwa",
+    "subjectPlaceholder": "mf. Nilitozwa mara mbili kwa amana yangu",
+    "details": "Maelezo",
+    "detailsHint": "Nini kilitokea, lini, na unataka tufanye nini. Tafadhali usiweke nambari za kadi wala manenosiri.",
+    "images": "Picha",
+    "optional": "Hiari",
+    "cancel": "Ghairi",
+    "uploadingImages": "Inapakia picha…",
+    "send": "Tuma ombi"
+  },
+  "reply": {
+    "writeFirst": "Andika jibu kwanza.",
+    "sent": "Jibu limetumwa",
+    "label": "Jibu",
+    "reopens": "Kujibu kunafungua tena ombi hili.",
+    "placeholder": "Ongeza maelezo zaidi au jibu swali letu…",
+    "send": "Tuma jibu"
+  },
+  "resolve": {
+    "button": "Weka kama imetatuliwa",
+    "done": "Imewekwa kama imetatuliwa",
+    "doneBody": "Tunafurahi imetatuliwa. Bado unaweza kujibu ikiwa kuna jambo litatokea.",
+    "confirmTitle": "Weka ombi hili kama limetatuliwa?",
+    "confirmBody": "Tujulishe kuwa limetatuliwa. Likitokea jambo lingine, jibu hapa nasi tutaendelea."
+  },
+  "attach": {
+    "tooMany": "Unaweza kuambatisha hadi picha {max}.",
+    "alt": "Kiambatisho cha usaidizi",
+    "label": "Viambatisho",
+    "uploadingName": "Inapakia {name}",
+    "remove": "Ondoa {name}",
+    "add": "Ongeza picha",
+    "uploading": "{count, plural, one {Inapakia picha #…} other {Inapakia picha #…}}",
+    "hint": "Picha za skrini au picha husaidia. Hadi picha {max}, MB 15 kila moja."
+  }
+}
