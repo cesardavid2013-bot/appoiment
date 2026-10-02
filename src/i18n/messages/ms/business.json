@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Dalam talian",
+    "comesToYou": "Datang ke tempat anda",
+    "comesToYouIn": "Datang ke tempat anda · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Dipromosikan",
+    "verified": "Perniagaan disahkan",
+    "instant": "Pengesahan segera",
+    "request": "Mohon tempahan",
+    "bookAt": "Tempah {day} pada {time}",
+    "moreTimes": "Lagi masa",
+    "freeConsultation": "Perundingan percuma tersedia",
+    "priceOnRequest": "Harga atas permintaan",
+    "viewTimes": "Lihat masa"
+  },
+  "rail": {
+    "seeAll": "Lihat semua"
+  },
+  "favorite": {
+    "save": "Simpan",
+    "saved": "Disimpan",
+    "remove": "Buang daripada simpanan",
+    "savedToast": "Disimpan",
+    "savedToastHint": "Cari ia pada bila-bila masa di bahagian Disimpan."
+  }
+}
