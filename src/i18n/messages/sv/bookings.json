@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "Väntar på betalning",
+    "requested": "Förfrågan skickad",
+    "confirmed": "Bekräftad",
+    "checked_in": "Incheckad",
+    "in_progress": "Pågår",
+    "completed": "Genomförd",
+    "cancelled": "Avbokad",
+    "declined": "Avböjd",
+    "no_show": "Uteblev",
+    "expired": "Utgången"
+  },
+  "list": {
+    "title": "Bokningar",
+    "filters": "Bokningsfilter",
+    "tabs": {
+      "upcoming": "Kommande",
+      "past": "Tidigare",
+      "cancelled": "Avbokade"
+    },
+    "howDidItGo": "Hur gick det?",
+    "review": "Betygsätt",
+    "empty": {
+      "upcoming": "Inga kommande bokningar",
+      "past": "Inga tidigare bokningar ännu",
+      "cancelled": "Inget avbokat",
+      "upcomingBody": "När du bokar visas dina tider här — med vägbeskrivning, påminnelser och enkel ombokning.",
+      "findPro": "Hitta en yrkesverksam"
+    },
+    "nextUp": "Nästa · {when}",
+    "nextUpOn": "Nästa · {day}",
+    "details": "Detaljer",
+    "directions": "Vägbeskrivning"
+  },
+  "detail": {
+    "metaTitle": "Bokning",
+    "allBookings": "Alla bokningar",
+    "hero": {
+      "confirmedTitle": "Du är bokad",
+      "confirmedBody": "Vi har skickat en bekräftelse och påminner dig innan din tid.",
+      "requestedTitle": "Förfrågan skickad",
+      "requestedBody": "{business} granskar din förfrågan. Vi meddelar dig så fort de svarar — din tid är reserverad under tiden.",
+      "paymentTitle": "Din betalning slutförs",
+      "paymentBody": "Om du nyss har betalat uppdateras det här automatiskt inom några sekunder. Din tid är reserverad medan betalningen slutförs."
+    },
+    "calendarDetails": "Referens {reference}",
+    "ref": "Ref.",
+    "when": "När",
+    "with": "Hos",
+    "where": "Var",
+    "atYourAddress": "På din adress",
+    "online": "Online",
+    "virtualLink": "Företaget skickar länken före din session.",
+    "yourReview": "Ditt omdöme",
+    "payment": {
+      "title": "Betalning",
+      "serviceFee": "Serviceavgift",
+      "tax": "Moms",
+      "estimatedTotal": "Beräknat totalbelopp",
+      "total": "Totalt",
+      "paid": "Betalt",
+      "refunded": "Återbetalt",
+      "balance": "Återstår",
+      "dueAtAppointment": "Betalas vid besöket",
+      "tip": "Dricks"
+    },
+    "policy": {
+      "title": "Avbokningsvillkor",
+      "freeUntil": "Gratis avbokning upp till {hours, plural, one {# timme} other {# timmar}} innan.",
+      "freeAnytime": "Gratis avbokning när som helst före tiden.",
+      "lateFee": "Senare avbokningar: {percent} % av totalen.",
+      "depositNonRefundable": "Depositionen återbetalas inte.",
+      "cannotCancel": "Den här bokningen kan inte längre avbokas.",
+      "alreadyStarted": "Den här bokningen har redan börjat.",
+      "cannotReschedule": "Den här bokningen kan inte bokas om.",
+      "maxReschedules": "Den här bokningen har ändrats det maximala antalet gånger. Kontakta företaget.",
+      "rescheduleWindow": "Ändringar måste göras minst {hours, plural, one {# timme} other {# timmar}} före tiden. Kontakta företaget."
+    },
+    "refund": {
+      "noCharge": "Ingen avgift.",
+      "full": "Du får full återbetalning.",
+      "none": "Din betalning återbetalas inte enligt företagets villkor.",
+      "partial": "Du får en delvis återbetalning enligt företagets villkor."
+    },
+    "note": "Notering: {reason}",
+    "problem": "Problem med den här bokningen? <link>Kontakta support</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} kl. {time}",
+    "cancelledToast": "Bokningen avbokades",
+    "refundOnWay": "En återbetalning på {amount} är på väg.",
+    "rescheduledToast": "Ombokad",
+    "payToConfirm": "Betala {amount} för att bekräfta",
+    "addToCalendar": "Lägg till i kalendern",
+    "directions": "Vägbeskrivning",
+    "message": "Meddelande",
+    "bookAgain": "Boka igen",
+    "googleCalendar": "Google Kalender",
+    "leaveReview": "Skriv ett omdöme",
+    "reschedule": "Boka om",
+    "cancelAppointment": "Avboka",
+    "cancelTitle": "Avboka den här tiden?",
+    "insideWindow": "Du är inom företagets avbokningsperiod.",
+    "refundAmount": "Återbetalning: {amount}.",
+    "keptAmount": "Behålls av företaget: {amount}.",
+    "reason": "Orsak",
+    "reasonHint": "Delas med företaget.",
+    "chooseNewTime": "Välj en ny tid",
+    "currently": "Just nu {when}",
+    "keepCurrentTime": "Behåll nuvarande tid",
+    "moveTo": "Flytta till {time}",
+    "chooseTime": "Välj en tid"
+  },
+  "review": {
+    "ratings": {
+      "1": "Dåligt",
+      "2": "Okej",
+      "3": "Bra",
+      "4": "Mycket bra",
+      "5": "Utmärkt"
+    },
+    "thanks": "Tack för ditt omdöme",
+    "title": "Hur var {business}?",
+    "subtitle": "Ditt omdöme är offentligt och markeras som en verifierad bokning.",
+    "rating": "Betyg",
+    "stars": "{n, plural, one {# stjärna} other {# stjärnor}}",
+    "bodyLabel": "Berätta för andra om ditt besök",
+    "bodyPlaceholder": "Vad stack ut? Skulle du rekommendera dem?",
+    "post": "Publicera omdöme"
+  },
+  "slotPicker": {
+    "previousWeek": "Föregående vecka",
+    "nextWeek": "Nästa vecka",
+    "noOpenings": "Inga lediga tider den här dagen.",
+    "selected": "Vald tid {time}"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "Oczekuje na płatność",
+    "requested": "Prośba wysłana",
+    "confirmed": "Potwierdzona",
+    "checked_in": "Zameldowano",
+    "in_progress": "W trakcie",
+    "completed": "Zakończona",
+    "cancelled": "Anulowana",
+    "declined": "Odrzucona",
+    "no_show": "Nieobecność",
+    "expired": "Wygasła"
+  },
+  "list": {
+    "title": "Rezerwacje",
+    "filters": "Filtry rezerwacji",
+    "tabs": {
+      "upcoming": "Nadchodzące",
+      "past": "Minione",
+      "cancelled": "Anulowane"
+    },
+    "howDidItGo": "Jak było?",
+    "review": "Oceń",
+    "empty": {
+      "upcoming": "Brak nadchodzących wizyt",
+      "past": "Brak minionych wizyt",
+      "cancelled": "Nic nie zostało anulowane",
+      "upcomingBody": "Po rezerwacji Twoje wizyty pojawią się tutaj — razem z dojazdem, przypomnieniami i łatwą zmianą terminu.",
+      "findPro": "Znajdź specjalistę"
+    },
+    "nextUp": "Najbliższa · {when}",
+    "nextUpOn": "Najbliższa · {day}",
+    "details": "Szczegóły",
+    "directions": "Dojazd"
+  },
+  "detail": {
+    "metaTitle": "Wizyta",
+    "allBookings": "Wszystkie rezerwacje",
+    "hero": {
+      "confirmedTitle": "Masz rezerwację",
+      "confirmedBody": "Wysłaliśmy potwierdzenie i przypomnimy Ci o wizycie.",
+      "requestedTitle": "Prośba wysłana",
+      "requestedBody": "{business} rozpatrzy Twoją prośbę. Powiadomimy Cię, gdy tylko odpowiedzą — w międzyczasie Twój termin jest zatrzymany.",
+      "paymentTitle": "Kończymy Twoją płatność",
+      "paymentBody": "Jeśli płatność właśnie przeszła, strona zaktualizuje się automatycznie w kilka sekund. Termin jest zatrzymany do czasu zakończenia płatności."
+    },
+    "calendarDetails": "Numer referencyjny {reference}",
+    "ref": "Nr ref.",
+    "when": "Kiedy",
+    "with": "U kogo",
+    "where": "Gdzie",
+    "atYourAddress": "Pod Twoim adresem",
+    "online": "Online",
+    "virtualLink": "Firma wyśle link przed sesją.",
+    "yourReview": "Twoja opinia",
+    "payment": {
+      "title": "Płatność",
+      "serviceFee": "Opłata serwisowa",
+      "tax": "Podatek",
+      "estimatedTotal": "Szacowana suma",
+      "total": "Razem",
+      "paid": "Zapłacono",
+      "refunded": "Zwrócono",
+      "balance": "Do zapłaty",
+      "dueAtAppointment": "Płatne na wizycie",
+      "tip": "Napiwek"
+    },
+    "policy": {
+      "title": "Zasady anulowania",
+      "freeUntil": "Bezpłatne anulowanie do {hours, plural, one {# godziny} few {# godzin} many {# godzin} other {# godziny}} przed wizytą.",
+      "freeAnytime": "Bezpłatne anulowanie w dowolnym momencie przed wizytą.",
+      "lateFee": "Późniejsze anulowanie: {percent}% całości.",
+      "depositNonRefundable": "Zadatek nie podlega zwrotowi.",
+      "cannotCancel": "Tej wizyty nie można już anulować.",
+      "alreadyStarted": "Ta wizyta już się rozpoczęła.",
+      "cannotReschedule": "Terminu tej wizyty nie można zmienić.",
+      "maxReschedules": "Termin tej wizyty zmieniono maksymalną liczbę razy. Skontaktuj się z firmą.",
+      "rescheduleWindow": "Zmiany trzeba zgłosić co najmniej {hours, plural, one {# godzinę} few {# godziny} many {# godzin} other {# godziny}} przed wizytą. Skontaktuj się z firmą."
+    },
+    "refund": {
+      "noCharge": "Bez opłat.",
+      "full": "Otrzymasz pełny zwrot.",
+      "none": "Zgodnie z zasadami tej firmy płatność nie podlega zwrotowi.",
+      "partial": "Zgodnie z zasadami tej firmy otrzymasz częściowy zwrot."
+    },
+    "note": "Uwaga: {reason}",
+    "problem": "Problem z tą rezerwacją? <link>Skontaktuj się z pomocą</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date}, {time}",
+    "cancelledToast": "Wizyta anulowana",
+    "refundOnWay": "Zwrot w kwocie {amount} jest w drodze.",
+    "rescheduledToast": "Termin zmieniony",
+    "payToConfirm": "Zapłać {amount}, aby potwierdzić",
+    "addToCalendar": "Dodaj do kalendarza",
+    "directions": "Dojazd",
+    "message": "Wiadomość",
+    "bookAgain": "Zarezerwuj ponownie",
+    "googleCalendar": "Kalendarz Google",
+    "leaveReview": "Wystaw opinię",
+    "reschedule": "Zmień termin",
+    "cancelAppointment": "Anuluj wizytę",
+    "cancelTitle": "Anulować tę wizytę?",
+    "insideWindow": "Jesteś w okresie, w którym obowiązują zasady anulowania firmy.",
+    "refundAmount": "Zwrot: {amount}.",
+    "keptAmount": "Zatrzymane przez firmę: {amount}.",
+    "reason": "Powód",
+    "reasonHint": "Widoczny dla firmy.",
+    "chooseNewTime": "Wybierz nowy termin",
+    "currently": "Obecnie: {when}",
+    "keepCurrentTime": "Zostaw obecny termin",
+    "moveTo": "Przenieś na {time}",
+    "chooseTime": "Wybierz termin"
+  },
+  "review": {
+    "ratings": {
+      "1": "Słabo",
+      "2": "Średnio",
+      "3": "Dobrze",
+      "4": "Bardzo dobrze",
+      "5": "Doskonale"
+    },
+    "thanks": "Dziękujemy za opinię",
+    "title": "Jak było: {business}?",
+    "subtitle": "Twoja opinia jest publiczna i oznaczona jako zweryfikowana rezerwacja.",
+    "rating": "Ocena",
+    "stars": "{n, plural, one {# gwiazdka} few {# gwiazdki} many {# gwiazdek} other {# gwiazdki}}",
+    "bodyLabel": "Opowiedz innym o swojej wizycie",
+    "bodyPlaceholder": "Co zrobiło wrażenie? Czy polecasz ich innym?",
+    "post": "Opublikuj opinię"
+  },
+  "slotPicker": {
+    "previousWeek": "Poprzedni tydzień",
+    "nextWeek": "Następny tydzień",
+    "noOpenings": "Brak wolnych terminów tego dnia.",
+    "selected": "Wybrano {time}"
+  }
+}

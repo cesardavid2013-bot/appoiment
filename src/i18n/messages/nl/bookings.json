@@ -1,0 +1,138 @@
+{
+  "status": {
+    "pending_payment": "Wacht op betaling",
+    "requested": "Aanvraag verstuurd",
+    "confirmed": "Bevestigd",
+    "checked_in": "Ingecheckt",
+    "in_progress": "Bezig",
+    "completed": "Afgerond",
+    "cancelled": "Geannuleerd",
+    "declined": "Afgewezen",
+    "no_show": "Niet verschenen",
+    "expired": "Verlopen"
+  },
+  "list": {
+    "title": "Boekingen",
+    "filters": "Boekingsfilters",
+    "tabs": {
+      "upcoming": "Aankomend",
+      "past": "Afgelopen",
+      "cancelled": "Geannuleerd"
+    },
+    "howDidItGo": "Hoe was het?",
+    "review": "Beoordelen",
+    "empty": {
+      "upcoming": "Geen aankomende afspraken",
+      "past": "Nog geen afgelopen afspraken",
+      "cancelled": "Niets geannuleerd",
+      "upcomingBody": "Wanneer je boekt, verschijnen je afspraken hier — met route, herinneringen en eenvoudig verplaatsen.",
+      "findPro": "Vind een professional"
+    },
+    "nextUp": "Eerstvolgende · {when}",
+    "nextUpOn": "Eerstvolgende · {day}",
+    "details": "Details",
+    "directions": "Route"
+  },
+  "detail": {
+    "metaTitle": "Afspraak",
+    "allBookings": "Alle boekingen",
+    "hero": {
+      "confirmedTitle": "Je staat ingepland",
+      "confirmedBody": "We hebben een bevestiging gestuurd en herinneren je voor je afspraak.",
+      "requestedTitle": "Aanvraag verstuurd",
+      "requestedBody": "{business} bekijkt je aanvraag. We laten het je weten zodra er een reactie is — je tijdstip blijft intussen vastgehouden.",
+      "paymentTitle": "We ronden je betaling af",
+      "paymentBody": "Als je net hebt betaald, wordt dit binnen een paar seconden automatisch bijgewerkt. Je tijdstip blijft vastgehouden tot de betaling is voltooid."
+    },
+    "calendarDetails": "Referentie {reference}",
+    "ref": "Ref.",
+    "when": "Wanneer",
+    "with": "Bij wie",
+    "where": "Waar",
+    "atYourAddress": "Op jouw adres",
+    "online": "Online",
+    "virtualLink": "Het bedrijf stuurt de link vóór je sessie.",
+    "yourReview": "Jouw review",
+    "payment": {
+      "title": "Betaling",
+      "serviceFee": "Servicekosten",
+      "tax": "Btw",
+      "estimatedTotal": "Geschat totaal",
+      "total": "Totaal",
+      "paid": "Betaald",
+      "refunded": "Terugbetaald",
+      "balance": "Openstaand saldo",
+      "dueAtAppointment": "Te betalen bij de afspraak",
+      "tip": "Fooi"
+    },
+    "policy": {
+      "title": "Annuleringsbeleid",
+      "freeUntil": "Gratis annuleren tot {hours, plural, one {# uur} other {# uur}} van tevoren.",
+      "freeAnytime": "Gratis annuleren tot het moment van de afspraak.",
+      "lateFee": "Latere annuleringen: {percent}% van het totaal.",
+      "depositNonRefundable": "Aanbetalingen zijn niet terugbetaalbaar.",
+      "cannotCancel": "Deze afspraak kan niet meer worden geannuleerd.",
+      "alreadyStarted": "Deze afspraak is al begonnen.",
+      "cannotReschedule": "Deze afspraak kan niet worden verplaatst.",
+      "maxReschedules": "Deze afspraak is het maximale aantal keren verplaatst. Neem contact op met het bedrijf.",
+      "rescheduleWindow": "Wijzigingen moeten minstens {hours, plural, one {# uur} other {# uur}} voor de afspraak worden doorgegeven. Neem contact op met het bedrijf."
+    },
+    "refund": {
+      "noCharge": "Geen kosten.",
+      "full": "Je krijgt het volledige bedrag terug.",
+      "none": "Je betaling wordt volgens het beleid van dit bedrijf niet terugbetaald.",
+      "partial": "Je krijgt volgens het beleid van dit bedrijf een deel van het bedrag terug."
+    },
+    "note": "Opmerking: {reason}",
+    "problem": "Een probleem met deze boeking? <link>Neem contact op met support</link>"
+  },
+  "actions": {
+    "dateAtTime": "{date} om {time}",
+    "cancelledToast": "Afspraak geannuleerd",
+    "refundOnWay": "Een terugbetaling van {amount} is onderweg.",
+    "rescheduledToast": "Verplaatst",
+    "payToConfirm": "Betaal {amount} om te bevestigen",
+    "addToCalendar": "Toevoegen aan agenda",
+    "directions": "Route",
+    "message": "Bericht",
+    "bookAgain": "Opnieuw boeken",
+    "googleCalendar": "Google Agenda",
+    "leaveReview": "Review schrijven",
+    "reschedule": "Verplaatsen",
+    "cancelAppointment": "Afspraak annuleren",
+    "cancelTitle": "Deze afspraak annuleren?",
+    "insideWindow": "Je zit binnen de annuleringstermijn van het bedrijf.",
+    "refundAmount": "Terugbetaling: {amount}.",
+    "keptAmount": "Behouden door het bedrijf: {amount}.",
+    "reason": "Reden",
+    "reasonHint": "Gedeeld met het bedrijf.",
+    "chooseNewTime": "Kies een nieuw tijdstip",
+    "currently": "Nu {when}",
+    "keepCurrentTime": "Huidig tijdstip behouden",
+    "moveTo": "Verplaats naar {time}",
+    "chooseTime": "Kies een tijdstip"
+  },
+  "review": {
+    "ratings": {
+      "1": "Slecht",
+      "2": "Matig",
+      "3": "Goed",
+      "4": "Heel goed",
+      "5": "Uitstekend"
+    },
+    "thanks": "Bedankt voor je review",
+    "title": "Hoe was {business}?",
+    "subtitle": "Je review is openbaar en gemarkeerd als geverifieerde boeking.",
+    "rating": "Beoordeling",
+    "stars": "{n, plural, one {# ster} other {# sterren}}",
+    "bodyLabel": "Vertel anderen over je bezoek",
+    "bodyPlaceholder": "Wat viel je op? Zou je ze aanraden?",
+    "post": "Review plaatsen"
+  },
+  "slotPicker": {
+    "previousWeek": "Vorige week",
+    "nextWeek": "Volgende week",
+    "noOpenings": "Geen plek op deze dag.",
+    "selected": "{time} gekozen"
+  }
+}
