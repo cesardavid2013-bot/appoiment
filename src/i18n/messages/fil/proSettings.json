@@ -1,0 +1,782 @@
+{
+  "title": "Mga setting",
+  "home": {
+    "description": "Kung paano nagmumukha, nagbu-book at binabayaran ang {name}."
+  },
+  "nav": {
+    "label": "Mga setting",
+    "back": "Mga setting",
+    "sections": {
+      "profile": {
+        "label": "Profile ng negosyo",
+        "description": "Pangalan, mga larawan, tungkol, kontak at social link."
+      },
+      "locations": {
+        "label": "Mga lokasyon",
+        "description": "Kung saan ka nagtatrabaho: shop, lugar ng kliyente, o online."
+      },
+      "booking": {
+        "label": "Mga patakaran sa booking",
+        "description": "Agaran o inaprubahang booking, abiso, mga paalala."
+      },
+      "policies": {
+        "label": "Pagkansela at mga singil",
+        "description": "Palugit sa pagkansela, singil sa hindi pagsipot, buwis."
+      },
+      "payments": {
+        "label": "Mga bayad",
+        "description": "Tumanggap ng deposito at bayad gamit ang card online."
+      },
+      "forms": {
+        "label": "Mga tanong sa kliyente",
+        "description": "Mga intake form na sinasagutan ng kliyente kapag nag-book."
+      },
+      "link": {
+        "label": "Booking link",
+        "description": "Ang iyong web address, QR code at pag-live."
+      },
+      "verification": {
+        "label": "Beripikasyon",
+        "description": "Kunin ang verified badge sa iyong profile."
+      },
+      "appearance": {
+        "label": "Hitsura ng pahina",
+        "description": "Header, mga kulay, pagkakasunod ng seksyon at link button."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Sine-save…",
+    "unsaved": "Mga hindi pa na-save na pagbabago",
+    "allSaved": "Na-save na ang lahat ng pagbabago",
+    "discard": "Itapon",
+    "save": "I-save",
+    "saved": "Na-save",
+    "checkFields": "Suriin ang mga naka-highlight na field."
+  },
+  "shareLink": {
+    "copy": "Kopyahin",
+    "copied": "Nakopya"
+  },
+  "profile": {
+    "title": "Profile ng negosyo",
+    "description": "Ang nakikita ng mga kliyente sa iyong pahina at sa paghahanap.",
+    "toastUpdated": "Na-update ang profile",
+    "toastLive": "Live na sa iyong pahina ang mga pagbabago.",
+    "logoAlt": "Logo ng {name}",
+    "viewPage": "Tingnan ang iyong pahina",
+    "photos": {
+      "title": "Mga larawan",
+      "description": "Lumalabas ang iyong logo sa mga card at mensahe; ang cover ang nangunguna sa iyong pahina. Gamitin ang sarili mong gawa o lugar — hindi mga stock photo.",
+      "noCover": "Walang cover photo",
+      "remove": "Alisin",
+      "uploading": "Nag-a-upload…",
+      "changeCover": "Palitan ang cover",
+      "addCover": "Magdagdag ng cover",
+      "changeLogo": "Palitan ang logo",
+      "addLogo": "Magdagdag ng logo",
+      "logoHint": "Pinakamainam ang parisukat. Kung wala, ipapakita namin ang iyong mga inisyal."
+    },
+    "basics": {
+      "title": "Mga batayan",
+      "nameIndividual": "Ang iyong pangalan o pangalan ng negosyo",
+      "nameBusiness": "Pangalan ng negosyo",
+      "tagline": "Tagline",
+      "taglineHint": "Isang linya sa ilalim ng iyong pangalan. {count, plural, one {# karakter na lang.} other {# karakter na lang.}}",
+      "taglinePlaceholder": "hal. Mga tumpak na fade at beard work sa Bed-Stuy",
+      "category": "Pangunahing kategorya",
+      "categoryHint": "Kung saan ka lumalabas kapag nag-browse ang mga tao.",
+      "choose": "Pumili…",
+      "years": "Taon ng karanasan"
+    },
+    "about": {
+      "title": "Tungkol",
+      "description": "Ang ginagawa mo, kung paano ka magtrabaho, kung ano ang nagpapaiba sa pagbisita sa iyo. Mas epektibo ang payak na salita kaysa sa buzzword.",
+      "label": "Tungkol",
+      "languages": "Mga wikang sinasalita",
+      "amenities": "Mga amenity"
+    },
+    "tags": {
+      "optional": "Opsyonal",
+      "placeholder": "Mag-type at pindutin ang Enter",
+      "remove": "Alisin ang {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "Ingles",
+        "spanish": "Espanyol",
+        "french": "Pranses",
+        "portuguese": "Portuges",
+        "mandarin": "Mandarin",
+        "cantonese": "Cantonese",
+        "arabic": "Arabe",
+        "russian": "Ruso",
+        "haitianCreole": "Haitian Creole",
+        "korean": "Koreano",
+        "vietnamese": "Vietnamese",
+        "hindi": "Hindi",
+        "italian": "Italyano",
+        "german": "Aleman",
+        "polish": "Polako",
+        "tagalog": "Tagalog"
+      },
+      "amenities": {
+        "wheelchair": "Accessible sa wheelchair",
+        "streetParking": "Paradahan sa kalye",
+        "freeParking": "Libreng paradahan",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Bayad gamit ang card",
+        "walkIns": "Tinatanggap ang walk-in",
+        "kidFriendly": "Angkop sa bata",
+        "restroom": "Banyo",
+        "airConditioning": "Air conditioning",
+        "drinks": "May inumin",
+        "genderNeutral": "Gender-neutral",
+        "petFriendly": "Pet friendly"
+      }
+    },
+    "contact": {
+      "title": "Kontak at mga link",
+      "description": "Ipinapakita sa iyong pahina. Palaging makakapagmensahe sa iyo ang mga kliyente sa pamamagitan ng Kept, kaya opsyonal ang mga ito.",
+      "email": "Pampublikong email",
+      "phone": "Pampublikong telepono",
+      "website": "Website",
+      "websitePlaceholder": "yourdomain.com"
+    },
+    "social": {
+      "legend": "Mga social profile",
+      "hint": "I-type ang iyong handle o i-paste ang link ng iyong profile. Para itampok ang mga partikular na video, post o track sa iyong pahina, idagdag ang mga ito sa <link>Portfolio</link>.",
+      "placeholders": {
+        "instagram": "@yourname",
+        "tiktok": "@yourname",
+        "youtube": "@yourchannel",
+        "facebook": "yourpage",
+        "x": "@yourname",
+        "linkedin": "in/yourname",
+        "spotify": "Link ng artist",
+        "soundcloud": "yourname",
+        "behance": "yourname",
+        "pinterest": "yourname",
+        "twitch": "yourchannel",
+        "threads": "@yourname"
+      },
+      "errors": {
+        "wrongNetwork": "Hindi iyan link ng {network}.",
+        "useProfile": "Gamitin ang link ng iyong profile sa {network}.",
+        "badHandle": "Mukhang hindi iyan handle ng {network}.",
+        "badArtist": "Mukhang hindi iyan link ng artist sa {network}."
+      }
+    },
+    "timezone": {
+      "title": "Time zone",
+      "description": "Nasa zone na ito ang iyong oras at bawat oras ng appointment. Baguhin lamang ito kung talagang lumipat ka — pananatilihin ng mga kasalukuyang booking ang eksaktong oras nila.",
+      "label": "Time zone"
+    }
+  },
+  "booking": {
+    "title": "Mga patakaran sa booking",
+    "description": "Paano at kailan ka maibu-book ng mga kliyente. Maaaring palitan ng mga indibidwal na serbisyo ang abiso at pag-apruba.",
+    "toastUpdated": "Na-update ang mga patakaran sa booking",
+    "mode": {
+      "title": "Kumpirmasyon",
+      "description": "Maaari ka pa ring mag-require ng pag-apruba para sa mga partikular na serbisyo sa editor ng serbisyo.",
+      "instantTitle": "Agarang booking",
+      "instantDescription": "Pumipili ang mga kliyente ng bakanteng oras at naka-book na sila. Pinakamainam para sa karamihan ng negosyo — ito ang inaasahan ng mga kliyente.",
+      "requestTitle": "Aprubahan ang bawat kahilingan",
+      "requestDescription": "Nagpapadala ng kahilingan ang mga kliyente; ikaw ang tatanggap o tatanggi. Awtomatikong nag-e-expire ang mga kahilingang hindi nasagot para walang naghihintay nang walang katapusan."
+    },
+    "window": {
+      "title": "Kailan makakapag-book ang mga kliyente",
+      "minNotice": "Minimum na abiso",
+      "minNoticeHint": "Ang pinakahuling oras na maaaring mag-book ang kliyente bago ang oras ng simula.",
+      "noMinimum": "Walang minimum — makakapag-book hanggang sa mismong simula",
+      "advance": "Mag-book hanggang",
+      "advanceHint": "Gaano kaaga bumubukas ang iyong kalendaryo.",
+      "daysAhead": "{count, plural, one {# araw nang maaga} other {# araw nang maaga}}",
+      "yearAhead": "1 taon nang maaga",
+      "interval": "Mga oras ng simula tuwing",
+      "intervalHint": "Mas maraming mapagpipilian ang mga kliyente sa mas maiikling pagitan; mas maayos ang iyong araw sa mas mahahaba.",
+      "anyStaff": "Ialok ang “Sinumang available na propesyonal”",
+      "anyStaffDescription": "Ipinapakita ang pinakamaraming bakanteng oras at ipinapamahagi ang mga booking sa iyong team. I-off kung kailangang pumili ng tao ang mga kliyente."
+    },
+    "durations": {
+      "minutes": "{count, plural, one {# minuto} other {# minuto}}",
+      "hours": "{count, plural, one {# oras} other {# oras}}",
+      "days": "{count, plural, one {# araw} other {# araw}}",
+      "weeks": "{count, plural, one {# linggo} other {# linggo}}"
+    },
+    "reminders": {
+      "title": "Mga paalala",
+      "description": "Ipinapadala sa email bago ang bawat appointment. Hindi makakatanggap ng paalalang iyon ang mga kliyenteng nag-book nang mas malapit kaysa sa oras nito.",
+      "descriptionSms": "Ipinapadala sa email at text message (kung pinapayagan ng kliyente ang text) bago ang bawat appointment. Hindi makakatanggap ng paalalang iyon ang mga kliyenteng nag-book nang mas malapit kaysa sa oras nito.",
+      "none": "Walang paalala. Kumpirmasyon lang ng booking ang matatanggap ng mga kliyente.",
+      "add": "Magdagdag ng paalala",
+      "addPlaceholder": "Magdagdag ng paalala…",
+      "upTo": "Hanggang 3",
+      "remove": "Alisin ang paalalang {label}",
+      "minutesBefore": "{count, plural, one {# minuto bago} other {# minuto bago}}",
+      "hoursBefore": "{count, plural, one {# oras bago} other {# oras bago}}",
+      "daysBefore": "{count, plural, one {# araw bago} other {# araw bago}}"
+    }
+  },
+  "policies": {
+    "title": "Pagkansela at mga singil",
+    "description": "Nakikita ito ng mga kliyente bago sila mag-book at muli bago sila magkansela.",
+    "toastUpdated": "Na-update ang mga patakaran",
+    "cancel": {
+      "title": "Pagkansela at pag-reschedule",
+      "freeUntil": "Libreng pagkansela hanggang",
+      "rescheduleUntil": "Online na pag-reschedule hanggang",
+      "anyTime": "Anumang oras bago",
+      "oneDay": "24 oras (1 araw) bago",
+      "hoursBefore": "{count, plural, one {# oras bago} other {# oras bago}}",
+      "daysBefore": "{count, plural, one {# araw bago} other {# araw bago}}",
+      "lateFee": "Singil sa huling pagkansela",
+      "lateFeeHintPaid": "Kinukuha mula sa binayaran ng kliyente online. Hindi kami kailanman naniningil nang higit sa nabayaran nila.",
+      "lateFeeHintUnpaid": "Nalalapat lang sa perang binayaran online. Ikonekta ang mga bayad at tumanggap ng deposito para maipatupad ito.",
+      "none": "Wala",
+      "ofTotal": "ng kabuuan",
+      "noShowFee": "Singil sa hindi pagsipot",
+      "noShowHint": "Bahagi ng iyong patakaran para alam na ng mga kliyente nang maaga. Kapag minarkahan mo ang hindi pagsipot, mananatili sa iyo ang anumang binayaran nila online; maaaring itala sa appointment ang singil na nakolekta nang personal.",
+      "refundDeposits": "Ibalik ang deposito sa mga pagkanselang nasa oras",
+      "refundDepositsDescription": "Kapag naka-off, mananatili sa iyo ang deposito tuwing magkakansela ang kliyente."
+    },
+    "words": {
+      "title": "Sa sarili mong salita",
+      "description": "Mga opsyonal na tala na ipinapakita kasama ng iyong patakaran.",
+      "late": "Mahuhuli",
+      "lateHint": "hal. “Pagkalipas ng 15 minutong pagkahuli, maaaring kailanganin naming paikliin o i-rebook ang iyong serbisyo.”",
+      "before": "Bago ang iyong pagbisita",
+      "beforeHint": "Ipinapakita sa bawat kliyente bago sila kumpirmahin — direksyon, dadalhin, paano maghanda."
+    },
+    "tax": {
+      "title": "Buwis sa benta",
+      "description": "Idinadagdag sa ibabaw ng iyong mga presyo sa checkout at ipinapakita bilang hiwalay na linya. Iwanan sa 0 kung kasama na ng iyong mga presyo ang buwis.",
+      "rate": "Rate",
+      "rateError": "Maglagay ng rate sa pagitan ng 0 at 30%",
+      "label": "Label",
+      "labelPlaceholder": "Buwis sa benta"
+    },
+    "preview": {
+      "title": "Ang nakikita ng mga kliyente bago mag-book"
+    }
+  },
+  "payments": {
+    "title": "Mga bayad",
+    "description": "Tumanggap ng deposito o buong bayad kapag nag-book ang mga kliyente. Gumagana pa rin palagi ang pagbabayad nang personal.",
+    "online": {
+      "title": "Mga online na bayad",
+      "description": "Pinoproseso ng Stripe ang mga bayad at ibinabayad sa iyong bank account. Hindi kailanman nakikita ng Kept ang mga numero ng card."
+    },
+    "unavailable": {
+      "badge": "Hindi pa available",
+      "body": "Hindi pa naka-on ang mga bayad gamit ang card para sa Kept. Hangga't hindi pa ito naka-on, magbabayad sa iyo ang mga kliyente sa appointment, at maitatala mo ang bawat bayad — cash, card reader o transfer — mula sa pahina ng appointment para manatiling tumpak ang iyong mga rekord at Mga insight.",
+      "note": "Wala kang kailangang gawin dito sa ngayon. Magsisimulang umepekto ang mga deposito at patakarang itinakda mo kapag nagbukas na ang mga online na bayad."
+    },
+    "none": {
+      "deposits": "Mag-require ng deposito o buong bayad kada serbisyo",
+      "fees": "Awtomatikong kunin ang singil sa huling pagkansela mula sa mga deposito",
+      "tips": "Hayaang magdagdag ng tip ang mga kliyente pagkatapos ng pagbisita",
+      "connect": "I-set up ang mga bayad gamit ang Stripe",
+      "time": "Tumatagal ng mga 5 minuto. Kakailanganin mo ang iyong detalye sa bangko at isang ID."
+    },
+    "incomplete": {
+      "badge": "Hindi pa tapos ang pag-set up",
+      "body": "Kailangan pa ng Stripe ng ilang detalye bago ka makatanggap ng bayad.",
+      "continue": "Ipagpatuloy ang pag-set up"
+    },
+    "connected": {
+      "badge": "Nakakonekta",
+      "body": "Maaari kang tumanggap ng deposito at bayad online.",
+      "services": "Piliin kung ano ang kokolektahin para sa bawat serbisyo sa <link>Mga serbisyo</link>."
+    },
+    "fees": {
+      "title": "Mga singil",
+      "kept": "Singil ng Kept sa mga online na bayad",
+      "inPerson": "Mga bayad na tinanggap nang personal",
+      "noFee": "Walang singil ang Kept",
+      "processing": "Pagproseso ng card",
+      "stripeRate": "Karaniwang rate ng Stripe"
+    }
+  },
+  "link": {
+    "title": "Booking link",
+    "description": "Ang iyong pahina sa Kept. Ilagay ito sa iyong bio, sa iyong card, sa salamin.",
+    "checklist": {
+      "location": "Idagdag kung saan ka nagtatrabaho",
+      "services": "Gumawa ng kahit isang serbisyo",
+      "availability": "Itakda ang iyong oras ng trabaho",
+      "done": "Tapos na",
+      "todo": "Gagawin pa"
+    },
+    "status": {
+      "liveTitle": "Live na ang iyong pahina",
+      "draftTitle": "Hindi pa live ang iyong pahina",
+      "liveDescription": "Mahahanap ka na ng mga kliyente sa paghahanap at makakapag-book online.",
+      "draftDescription": "Ikaw lang ang makakakita nito. Mag-live kapag tapos na ang checklist.",
+      "live": "Live",
+      "hide": "Itago ang aking pahina",
+      "goLive": "Mag-live",
+      "viewPage": "Tingnan ang pahina",
+      "preview": "Preview"
+    },
+    "toasts": {
+      "live": "Live ka na — mahahanap at maibu-book ka na ng mga kliyente",
+      "hidden": "Nakatago ang iyong pahina",
+      "hiddenDescription": "Hindi naaapektuhan ang mga kasalukuyang appointment.",
+      "slugUpdated": "Na-update ang address",
+      "slugUpdatedDescription": "Hindi na gumagana ang dati mong link — i-update ito saanman mo ito ibinahagi.",
+      "copied": "Nakopya"
+    },
+    "share": {
+      "title": "Ibahagi",
+      "qrLabel": "QR code para sa {address}",
+      "qrHint": "I-print ito sa front desk, sa mga business card o sa iyong salamin. Diretsong bubuksan ng pag-scan ang iyong booking page.",
+      "png": "PNG para sa print",
+      "svg": "SVG",
+      "embedSummary": "Magdagdag ng button na “Mag-book na” sa iyong website",
+      "embedHint": "I-paste ito kung saan mo gustong ilagay ang button.",
+      "copyCode": "Kopyahin ang code",
+      "buttonText": "Mag-book kay {name}"
+    },
+    "slug": {
+      "title": "Web address",
+      "description": "Maliliit na titik, numero at gitling. Masisira ng pagpapalit nito ang mga link na naibahagi mo na.",
+      "change": "Palitan ang address",
+      "label": "Address"
+    },
+    "hideDialog": {
+      "title": "Itago ang iyong pahina?",
+      "description": "Mawawala ka sa paghahanap at walang makakapag-book online. Mananatili ang mga kasalukuyang appointment. Maaari kang mag-live muli anumang oras.",
+      "confirm": "Itago ang pahina"
+    }
+  },
+  "locations": {
+    "title": "Mga lokasyon",
+    "description": "Kung saan ka ibinu-book ng mga kliyente: ang iyong shop, ang lugar na pinupuntahan mo, o online. Maaaring limitahan ang bawat serbisyo at miyembro ng team sa ilan sa mga ito.",
+    "privacy": {
+      "title": "Ang nakikita ng mga kliyente",
+      "atPlace": "Sa iyong lugar",
+      "atPlaceBody": "Ang buong address at mapa, para mahanap ka ng mga kliyente.",
+      "travel": "Pumupunta sa mga kliyente",
+      "travelBody": "Ang iyong lungsod at kung gaano ka kalayo bumibiyahe lang. Kung sa bahay ka nagtatrabaho, hindi kailanman ipinapakita ang address ng iyong bahay at eksaktong pin — inilalagay ka ng paghahanap sa loob ng mga 5 km. Ibinibigay ng mga kliyente ang kanilang address kapag nag-book sila.",
+      "online": "Online",
+      "onlineBody": "Walang address, kundi online lang nagaganap ang mga session."
+    },
+    "kinds": {
+      "physical": {
+        "label": "Sa aking lugar",
+        "description": "Shop, studio, opisina"
+      },
+      "mobile": {
+        "label": "Pumupunta ako sa mga kliyente",
+        "description": "Bahay, opisina, event"
+      },
+      "virtual": {
+        "label": "Online",
+        "description": "Mga video o phone session"
+      }
+    },
+    "summary": {
+      "mobile": "Bumibiyahe hanggang {km} km mula sa {place}",
+      "virtual": "Mga online session"
+    },
+    "list": {
+      "title": "Ang iyong mga lokasyon",
+      "count": "{count} sa {max} sa planong {plan}",
+      "emptyTitle": "Wala pang lokasyon",
+      "emptyBody": "Hindi makakapag-book ang mga kliyente hangga't hindi nila alam kung saan nagaganap ang appointment. Idagdag ang iyong shop, ang lugar na pinupuntahan mo, o mga online session.",
+      "add": "Magdagdag ng lokasyon",
+      "primary": "Pangunahin",
+      "upcoming": "{count, plural, one {# paparating na appointment} other {# paparating na appointment}}",
+      "notPinned": "Hindi naka-pin sa mapa",
+      "actions": "Mga aksyon para sa {name}",
+      "edit": "I-edit",
+      "makePrimary": "Gawing pangunahin",
+      "remove": "Alisin ang lokasyon",
+      "atLimit": "{count, plural, one {Kasama sa iyong planong {plan} ang # lokasyon. Mag-alis ng isa para makapagdagdag ng iba.} other {Kasama sa iyong planong {plan} ang # lokasyon. Mag-alis ng isa para makapagdagdag ng iba.}}",
+      "primaryHint": "Ang pangunahing lokasyon ang unang ipinapakita sa iyong profile at sa paghahanap."
+    },
+    "toasts": {
+      "primary": "Ang {name} na ang iyong pangunahing lokasyon",
+      "removed": "Naalis ang {name}",
+      "saved": "Na-save ang lokasyon",
+      "added": "Naidagdag ang lokasyon"
+    },
+    "remove": {
+      "blockedTitle": "Hindi pa maaalis ang {name}",
+      "ok": "OK",
+      "title": "Alisin ang {name}?",
+      "confirm": "Alisin ang lokasyon",
+      "description": "Hindi na ito maibu-book ng mga kliyente. Mananatili ang detalye ng mga nakaraang appointment.",
+      "primaryNote": "Ang pinakamatanda sa mga natitirang lokasyon ang magiging pangunahin.",
+      "membersNote": "{count, plural, one {# miyembro ng team ang nakatalaga rito. Sinumang nakatalaga lamang dito ay maibu-book sa lahat ng iyong lokasyon.} other {# miyembro ng team ang nakatalaga rito. Sinumang nakatalaga lamang dito ay maibu-book sa lahat ng iyong lokasyon.}}",
+      "servicesNote": "Pananatilihin ng mga serbisyong iniaalok dito ang kanilang iba pang lokasyon.",
+      "onlyLocation": "Ito lang ang iyong lokasyon. Magdagdag muna ng isa pa para may mapag-bookan pa rin ang mga kliyente.",
+      "upcoming": "{count, plural, one {May # paparating na appointment ito. Ilipat o kanselahin muna ito mula sa iyong <link>kalendaryo</link>.} other {May # paparating na appointment ito. Ilipat o kanselahin muna ang mga ito mula sa iyong <link>kalendaryo</link>.}}",
+      "exclusive": "{count, plural, one {Dito lang iniaalok ang {names}. Ialok ito sa ibang lugar o itago sa <link>Mga serbisyo</link>.} other {Dito lang iniaalok ang {names}. Ialok ang mga ito sa ibang lugar o itago sa <link>Mga serbisyo</link>.}}",
+      "quoted": "“{name}”"
+    },
+    "dialog": {
+      "editTitle": "I-edit ang {name}",
+      "addTitle": "Magdagdag ng lokasyon",
+      "cancel": "Kanselahin",
+      "save": "I-save ang lokasyon",
+      "add": "Magdagdag ng lokasyon",
+      "where": "Saan nagaganap ang mga appointment?",
+      "name": "Pangalan",
+      "nameHintPhysical": "Ipinapakita sa mga kliyente, hal. ang pangalan ng shop o ng kapitbahayan.",
+      "nameHintOther": "Ipinapakita sa mga kliyente kapag pumipili sila kung saan mag-book.",
+      "namePlaceholderPhysical": "hal. Downtown studio",
+      "defaultMobile": "Mobile na serbisyo",
+      "defaultVirtual": "Online",
+      "street": "Address ng kalye",
+      "line2": "Apartment, suite, palapag",
+      "cityBased": "Lungsod kung saan ka nakabase",
+      "city": "Lungsod",
+      "region": "Estado / rehiyon",
+      "postalCode": "Postal code",
+      "country": "Code ng bansa",
+      "countryHint": "Dalawang titik, hal. US, MX, ES",
+      "radius": "Gaano kalayo ang bibiyahehin mo?",
+      "radiusOption": "Hanggang {km} km",
+      "timezone": "Time zone",
+      "timezoneHint": "Ginagamit ng mga oras at booking dito ang zone na ito.",
+      "phone": "Telepono",
+      "phoneHint": "Kung dapat direktang tawagan ng mga kliyente ang lokasyong ito.",
+      "primary": "Gawing pangunahin kong lokasyon ito",
+      "primaryDescription": "Ipinapakita muna sa iyong profile at ginagamit para sa paghahanap."
+    },
+    "pin": {
+      "title": "Pin sa mapa",
+      "physical": "Inilalagay ang iyong shop sa mapa at sa mga paghahanap na “malapit sa akin”. Nakikita ng mga kliyente ang address na inilagay mo sa itaas.",
+      "mobile": "Ginagamit lang para itugma ka sa mga kliyenteng malapit. Hindi kailanman ipinapakita ang eksaktong pin at address ng kalye — ipinapakita ng iyong profile ang lungsod, at inilalagay ka ng paghahanap sa loob ng mga 5 km.",
+      "find": "Hanapin ang address na ito",
+      "useMine": "Gamitin ang kasalukuyan kong lokasyon",
+      "remove": "Alisin ang pin",
+      "removed": "Naalis ang pin.",
+      "matches": "Mga tugmang address",
+      "pinnedTo": "Naka-pin sa {place}.",
+      "pinned": "Naka-pin.",
+      "notPinned": "Hindi pa naka-pin. Lalabas ka pa rin kapag hinanap ng mga kliyente ang iyong lungsod.",
+      "noGeolocation": "Hindi maibabahagi ng browser na ito ang lokasyon nito.",
+      "here": "Naka-pin sa kinaroroonan mo ngayon.",
+      "denied": "Hindi namin makuha ang iyong lokasyon. Suriin ang pahintulot sa lokasyon ng iyong browser.",
+      "enterAddress": "Ilagay muna ang address.",
+      "noMatch": "Walang nakitang tugma. Suriin ang address, o gamitin ang kasalukuyan mong lokasyon."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Mga tagubilin sa pagdating",
+        "placeholder": "hal. Pumarada sa Elm St. Pindutin ang buzzer ng unit 2B at umakyat sa ikalawang palapag.",
+        "hint": "Paradahan, pasukan, code ng buzzer. Nakikita ito ng mga kliyente sa iyong profile at sa kanilang booking."
+      },
+      "mobile": {
+        "label": "Mga tala para sa mga kliyente",
+        "placeholder": "hal. Kakailanganin ko ng paradahan sa loob ng 50 m at saksakan ng kuryente.",
+        "hint": "Ang dapat ihanda ng mga kliyente. Ipinapakita sa kanilang booking."
+      },
+      "virtual": {
+        "label": "Paano gumagana ang mga session",
+        "placeholder": "hal. Makakatanggap ka ng video link sa mensahe isang oras bago ang iyong session.",
+        "hint": "Ipinapakita sa kanilang booking. Huwag mag-paste ng pribadong meeting link dito — magpadala ng mga link sa Mga mensahe."
+      }
+    }
+  },
+  "verification": {
+    "title": "Beripikasyon",
+    "description": "Ipakita sa mga kliyente na may totoo at lisensyadong negosyo sa likod ng iyong profile. Mano-manong sinusuri ng aming team ang mga dokumentong ipinapadala mo.",
+    "status": {
+      "title": "Katayuan",
+      "not_submitted": "Hindi beripikado",
+      "pending": "Sinusuri",
+      "verified": "Beripikado",
+      "rejected": "Hindi naaprubahan",
+      "needs_info": "Kailangan ng karagdagang impormasyon"
+    },
+    "body": {
+      "notSubmitted": "Hindi ka pa humihiling na maberipika. Magpadala ng ilang detalye at dokumento sa ibaba.",
+      "pending": "Ipinadala noong {date}. Mano-manong sinusuri ng isang tao sa aming team ang bawat kahilingan; aabisuhan ka sa sandaling may desisyon. Hindi mo mababago ang kahilingan habang sinusuri ito.",
+      "pendingNoDate": "Naipadala. Mano-manong sinusuri ng isang tao sa aming team ang bawat kahilingan; aabisuhan ka sa sandaling may desisyon. Hindi mo mababago ang kahilingan habang sinusuri ito.",
+      "verified": "Beripikado ang {name} mula {date}. Lumalabas ang badge sa iyong <link>pampublikong profile</link> at sa mga resulta ng paghahanap.",
+      "verifiedNoDate": "Beripikado ang {name}. Lumalabas ang badge sa iyong <link>pampublikong profile</link> at sa mga resulta ng paghahanap.",
+      "rejected": "Hindi namin naberipika ang {name} gamit ang ipinadala noong {date}. Maaari kang magpadala ng bagong detalye at dokumento sa ibaba.",
+      "rejectedNoDate": "Hindi namin naberipika ang {name} gamit ang ipinadala. Maaari kang magpadala ng bagong detalye at dokumento sa ibaba.",
+      "needsInfo": "Kailangan pa ng kaunti ng aming team bago magpasya. Sumagot sa ibaba at babalik sa pagsusuri ang iyong kahilingan."
+    },
+    "note": "Tala mula sa Kept",
+    "noteDate": "Tala mula sa Kept · {date}",
+    "submit": {
+      "replyTitle": "Sagutin ang aming team",
+      "retryTitle": "Subukan muli",
+      "requestTitle": "Humiling ng beripikasyon",
+      "firstDescription": "Ikuwento sa amin ang tungkol sa negosyo at magkabit ng patunay. Karamihan ng negosyo ay nagpapadala ng isang lisensya o dokumento ng rehistrasyon.",
+      "againDescription": "Itinabi namin ang ipinadala mo noong nakaraan. Baguhin ito o dagdagan."
+    },
+    "sent": {
+      "title": "Ang ipinadala mo",
+      "description": "Noong {date}.",
+      "noDescription": "Walang paglalarawan.",
+      "documents": "Mga dokumento",
+      "open": "Buksan ang dokumento {n}",
+      "removed": "May mga dokumentong inalis at hindi na mabubuksan."
+    },
+    "meaning": {
+      "title": "Ang nakikita ng mga kliyente",
+      "example": "Halimbawa ng verified badge",
+      "checkMark": "Isang check mark sa tabi ng iyong pangalan sa iyong profile at sa mga resulta ng paghahanap, may label na “Beripikadong negosyo”.",
+      "notEndorsement": "Ibig sabihin nito ay sinuri ng Kept ang mga dokumentong ibinigay mo. Hindi ito pagsusuri ng iyong gawa o pag-endorso — mula pa rin sa mga kliyente ang iyong mga rating.",
+      "private": "Nananatiling pribado ang mga dokumento. Ang mga namamahala lang ng negosyong ito at ang review team ng Kept ang makakabukas ng mga ito.",
+      "removable": "Maaaring alisin ng aming team ang badge sa kalaunan, halimbawa kung lumabas na hindi wasto ang isang lisensya."
+    },
+    "form": {
+      "documentN": "Dokumento {n}",
+      "tooMany": "{count, plural, one {Maaari kang magkabit ng hanggang # dokumento.} other {Maaari kang magkabit ng hanggang # dokumento.}}",
+      "needSomething": "Magdagdag ng maikling paglalarawan o kahit isang dokumento.",
+      "sentReply": "Naipadala. Bumalik sa pagsusuri ang iyong kahilingan.",
+      "submitted": "Naisumite para sa pagsusuri",
+      "replyLabel": "Ang iyong sagot",
+      "aboutLabel": "Tungkol sa iyong negosyo",
+      "hint": "Mga numero ng lisensya o rehistrasyon, kung sino ang nag-isyu, at gaano ka na katagal nagtatrabaho. Anumang makakatulong sa aming makumpirmang totoo at sa iyo ang negosyo.",
+      "placeholder": "hal. Lisensyadong barbero, lisensya ng NY State #12345678, inisyu noong 2019. Rehistrado ang shop bilang North Fade LLC.",
+      "documents": "Mga dokumento",
+      "documentsHint": "Mga larawan o scan (JPG, PNG o WebP, hanggang 15 MB bawat isa) ng lisensya, sertipiko ng rehistrasyon o sertipikasyon. Hanggang {max}.",
+      "attachedList": "Mga nakakabit na dokumento",
+      "open": "Buksan ang dokumento {n}",
+      "uploading": "Ina-upload ang {name}",
+      "fromLast": "Mula sa huli mong kahilingan",
+      "attached": "Nakakabit",
+      "remove": "Alisin ang {name}",
+      "addAnother": "Magdagdag ng isa pang dokumento",
+      "add": "Magdagdag ng mga dokumento",
+      "uploadingAll": "Ina-upload ang mga dokumento",
+      "attachedCount": "{count, plural, one {# dokumento ang nakakabit} other {# dokumento ang nakakabit}}",
+      "privacy": "Ang mga namamahala lang ng negosyong ito at ang review team ng Kept ang makakabukas ng mga file na ito. Hindi kailanman ipinapakita ang mga ito sa iyong profile.",
+      "waiting": "Naghihintay ng mga upload…",
+      "sendReply": "Ipadala ang sagot",
+      "submitAgain": "Isumite muli",
+      "submit": "Isumite para sa pagsusuri"
+    }
+  },
+  "forms": {
+    "title": "Mga tanong sa kliyente",
+    "description": "Mga tanong na sinasagot ng kliyente habang nagbu-book: mga allergy, layunin, ang sasakyang dadalhin. Gumawa ng form nang minsan, saka piliin ito sa bawat serbisyong nangangailangan nito.",
+    "newForm": "Bagong form",
+    "editForm": "I-edit ang form",
+    "notIncludedTitle": "Hindi kasama sa iyong plano",
+    "notIncludedBody": "Hindi bahagi ng planong {plan} ang mga intake question. Tumatanggap pa rin ng booking ang mga serbisyo kahit wala ang mga ito.",
+    "emptyTitle": "Wala pang form",
+    "emptyBody": "Itanong ang kailangan mong malaman bago ang appointment, para hindi mo na ito malaman sa mismong upuan. Sine-save ang mga sagot sa booking at ipinapakita sa gagawa ng appointment.",
+    "create": "Gumawa ng form",
+    "listLabel": "Mga form",
+    "noQuestions": "Wala pang tanong",
+    "questions": "{count, plural, one {# tanong} other {# tanong}}",
+    "required": "{count, plural, one {# kinakailangan} other {# kinakailangan}}",
+    "edited": "Na-edit noong {date}",
+    "footer": "Para itanong ang isang form sa isang serbisyo, buksan ang serbisyo at piliin ito sa ilalim ng <b>Mga tanong at kinakailangan</b>. Isang form lang ang itinatanong ng bawat serbisyo.",
+    "notUsed": "Hindi pa ginagamit ng anumang serbisyo",
+    "askedOn": "Itinatanong sa <list></list>",
+    "hidden": "(nakatago)",
+    "more": "{count, plural, one {# pa} other {# pa}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "Maikling sagot",
+        "hint": "Pangalan, numero, ilang salita.",
+        "placeholder": "hal. Ano ang tatak at modelo ng iyong sasakyan?"
+      },
+      "long_text": {
+        "label": "Talata",
+        "hint": "May espasyo para sa ilang pangungusap.",
+        "placeholder": "hal. Sabihin sa amin ang anumang pinsala na dapat naming malaman."
+      },
+      "yes_no": {
+        "label": "Oo / Hindi",
+        "hint": "Dalawang button: Oo at Hindi.",
+        "placeholder": "hal. Ito ba ang unang pagbisita mo?"
+      },
+      "single_choice": {
+        "label": "Maraming pagpipilian",
+        "hint": "Pumipili ang mga kliyente ng isang opsyon.",
+        "placeholder": "hal. Gaano kahaba ang buhok mo ngayon?"
+      },
+      "multi_choice": {
+        "label": "Mga checkbox",
+        "hint": "Nagtsetsek ang mga kliyente ng anumang naaangkop.",
+        "placeholder": "hal. Aling mga bahagi ang gusto mong pagtuunan namin?"
+      },
+      "date": {
+        "label": "Petsa",
+        "hint": "Isang date picker, hal. petsa ng kapanganakan o petsa ng event.",
+        "placeholder": "hal. Kailan ang event?"
+      },
+      "acknowledgement": {
+        "label": "Pagkilala",
+        "hint": "Isang pahayag na tinsetsekan ng mga kliyente para kumpirmahing nabasa nila ito.",
+        "placeholder": "hal. Naiintindihan kong kailangan ng patch test 48 oras bago ang serbisyo sa kulay."
+      }
+    },
+    "errors": {
+      "name": "Bigyan ng pangalan ang form",
+      "statement": "Isulat ang pahayag na sinasang-ayunan ng mga kliyente",
+      "question": "Isulat ang tanong",
+      "twoChoices": "Magdagdag ng kahit dalawang pagpipilian",
+      "distinct": "Dapat magkakaiba ang bawat pagpipilian"
+    },
+    "leaveConfirm": "May mga hindi pa na-save na pagbabago sa form na ito. Aalis nang hindi sine-save ang mga ito?",
+    "toasts": {
+      "saved": "Na-save ang form",
+      "created": "Nagawa ang form",
+      "archived": "Na-archive ang form",
+      "archivedFrom": "{count, plural, one {Na-archive ang form at inalis sa # serbisyo} other {Na-archive ang form at inalis sa # serbisyo}}"
+    },
+    "untitled": "Tanong na walang pamagat",
+    "archive": "I-archive ang form",
+    "show": "Ipakita",
+    "questionsTab": "{count, plural, one {Mga tanong (#)} other {Mga tanong (#)}}",
+    "previewTab": "Preview ng kliyente",
+    "details": "Mga detalye ng form",
+    "nameLabel": "Pangalan ng form",
+    "nameHint": "Ang iyong team lang ang makakakita nito. Mga tanong lang ang nakikita ng mga kliyente.",
+    "namePlaceholder": "hal. Konsultasyon para sa bagong kliyente",
+    "questions": "Mga tanong",
+    "questionCount": "{count} sa {max}",
+    "emptyTitle": "Wala pang tanong",
+    "emptyBody": "Panatilihing maikli. Nasasagot ang dalawa o tatlong tanong; nilalaktawan ang sampu.",
+    "saveBar": {
+      "saving": "Sine-save…",
+      "fix": "{count, plural, one {Ayusin ang # bagay bago mag-save} other {Ayusin ang # bagay bago mag-save}}",
+      "unsaved": "Mga hindi pa na-save na pagbabago",
+      "allSaved": "Na-save na ang lahat ng pagbabago",
+      "newForm": "Bagong form",
+      "discard": "Itapon",
+      "cancel": "Kanselahin",
+      "save": "I-save ang mga pagbabago",
+      "create": "Gumawa ng form"
+    },
+    "archiveDialog": {
+      "title": "I-archive ang “{name}”?",
+      "confirm": "I-archive ang form",
+      "confirmUsed": "{count, plural, one {I-archive at alisin sa # serbisyo} other {I-archive at alisin sa # serbisyo}}",
+      "descriptionUsed": "Titigil sa pagtatanong ng mga tanong na ito sa mga bagong booking ang mga serbisyong ito hangga't hindi ka pumipili ng ibang form:",
+      "descriptionUnused": "Walang serbisyong nagtatanong ng form na ito, kaya walang magbabago para sa mga kliyente.",
+      "keep": "Mananatili sa mga booking na iyon ang mga sagot na naibigay na sa mga nakaraan at paparating na booking.",
+      "lost": "Mawawala ang mga hindi pa na-save na pagbabago sa form na ito."
+    },
+    "usage": {
+      "none": "Walang serbisyong nagtatanong ng form na ito. Buksan ang isang serbisyo sa <link>Mga serbisyo</link> at piliin ito sa ilalim ng Mga tanong at kinakailangan.",
+      "title": "Itinatanong kapag nag-book ang mga kliyente",
+      "hidden": "nakatago",
+      "note": "Nalalapat ang mga pagbabago sa mga bagong booking para sa mga serbisyong ito sa sandaling i-save mo."
+    },
+    "add": {
+      "label": "Magdagdag ng tanong",
+      "limit": "Naabot na ang limitasyong {max} tanong",
+      "type": "Uri ng tanong"
+    },
+    "card": {
+      "required": "Kinakailangan",
+      "attention": "Kailangang ayusin",
+      "moveUp": "Ilipat pataas ang tanong {n}",
+      "moveDown": "Ilipat pababa ang tanong {n}",
+      "type": "Uri",
+      "statement": "Pahayag",
+      "question": "Tanong",
+      "helpText": "Tekstong pantulong",
+      "helpAck": "Ipinapakita sa ilalim ng pahayag, hal. kung saan mababasa ang buong patakaran.",
+      "helpQuestion": "Ipinapakita sa ilalim ng tanong.",
+      "mustTick": "Dapat lagyan ng tsek para makapag-book",
+      "ackRequired": "Hindi makakapag-book ang mga kliyente hangga't hindi nila ito nilalagyan ng tsek.",
+      "questionRequired": "Hindi makakapag-book ang mga kliyente nang hindi sumasagot.",
+      "optional": "Maaaring laktawan ito ng mga kliyente.",
+      "duplicate": "I-duplicate",
+      "delete": "Burahin",
+      "done": "Tapos"
+    },
+    "options": {
+      "legend": "Mga pagpipilian",
+      "choice": "Pagpipilian {n}",
+      "remove": "Alisin ang pagpipilian {n}",
+      "max": "Hanggang {max} pagpipilian",
+      "add": "Magdagdag ng pagpipilian"
+    },
+    "preview": {
+      "title": "Preview ng kliyente",
+      "description": "Ang hakbang na “Ilang detalye” ng pag-book. Subukan ito; walang sine-save.",
+      "empty": "Lalabas dito ang mga tanong na idinagdag mo ayon sa makikita ng mga kliyente.",
+      "noteLabel": "May iba pa bang dapat nilang malaman?",
+      "noteHint": "Nagtatapos ang bawat booking sa kahong ito. Hindi ito bahagi ng iyong form.",
+      "notePlaceholder": "Allergy, kagustuhan, paalala sa paradahan…",
+      "invalid": "{count, plural, one {# sagot ang kulang o hindi wasto} other {# sagot ang kulang o hindi wasto}}",
+      "allGood": "Maayos ang lahat — tatanggapin ito.",
+      "clear": "I-clear",
+      "tryContinue": "Subukang magpatuloy",
+      "errors": {
+        "confirm": "Pakikumpirma para magpatuloy.",
+        "required": "Kinakailangan ang tanong na ito.",
+        "invalid": "Hindi wastong sagot.",
+        "tooLong": "Panatilihing wala pang {max} karakter.",
+        "choose": "Pumili ng isa sa mga opsyon.",
+        "invalidChoice": "Hindi wastong pagpipilian.",
+        "date": "Maglagay ng wastong petsa."
+      }
+    }
+  },
+  "appearance": {
+    "title": "Hitsura ng pahina",
+    "description": "Gawing kamukha mo ang iyong pampublikong pahina: ang header, kulay ng accent, pagkakasunod ng mga seksyon, isang abiso at sarili mong mga link button.",
+    "saved": "Na-update ang iyong pahina",
+    "masthead": {
+      "title": "Header",
+      "body": "Madilim at sinematiko, o maliwanag at magaan. Lumilitaw pa rin ang iyong cover photo sa alinman.",
+      "sample": "Ang iyong pahina",
+      "noir": "Noir — madilim na header",
+      "ivory": "Ivory — maliwanag na header"
+    },
+    "accent": {
+      "title": "Kulay ng accent",
+      "body": "Ginagamit para sa maliliit na detalye: mga label, guhit, bituin at highlight.",
+      "names": {
+        "brass": "Tanso",
+        "emerald": "Esmeralda",
+        "rose": "Rosas",
+        "sapphire": "Safiro",
+        "copper": "Kobre"
+      }
+    },
+    "sections": {
+      "title": "Mga seksyon",
+      "body": "Piliin kung ano ang nakikita ng mga bisita at sa anong pagkakasunod. Nangunguna ang mga serbisyo at laging nakikita ang mga review — ang mga ito ang nagpapaging mapagkakatiwalaan sa iyong pahina.",
+      "alwaysFirst": "Laging nauuna",
+      "always": "Laging ipinapakita",
+      "hide": "Itago ang {name}",
+      "show": "Ipakita ang {name}",
+      "up": "Ilipat pataas ang {name}",
+      "down": "Ilipat pababa ang {name}",
+      "names": {
+        "services": "Mga serbisyo",
+        "work": "Mga gawa",
+        "featured": "Itinampok",
+        "team": "Team",
+        "reviews": "Mga review",
+        "about": "Tungkol"
+      }
+    },
+    "notice": {
+      "title": "Abiso",
+      "body": "Isang maikling mensahe sa itaas ng iyong pahina — oras sa holiday, waitlist, bagong lokasyon.",
+      "label": "Mensahe",
+      "placeholder": "Sarado sa Disyembre 24–26. Balik sa ika-27."
+    },
+    "links": {
+      "title": "Mga link button",
+      "body": "Ang iyong menu, gift card, isang shop o playlist: hanggang 8 button na ipinapakita sa iyong pahina.",
+      "label": "Teksto ng button",
+      "url": "Address",
+      "labelPlaceholder": "Mga gift card",
+      "remove": "Alisin ang link",
+      "add": "Magdagdag ng link"
+    }
+  }
+}
