@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "预约 {name}",
+    "fallbackTitle": "预约"
+  },
+  "steps": {
+    "service": "选择服务",
+    "options": "个性化选项",
+    "who": "人员与地点",
+    "time": "选择时间",
+    "details": "填写信息",
+    "review": "核对并确认"
+  },
+  "header": {
+    "backTo": "返回 {name}",
+    "previousStep": "上一步",
+    "stepOf": "第 {current} 步，共 {total} 步",
+    "exit": "退出预约"
+  },
+  "service": {
+    "optionsAvailable": "可选配置",
+    "group": "团体 · 最多 {count} 人"
+  },
+  "options": {
+    "required": "必选",
+    "upTo": "最多可选 {count} 项",
+    "optionalAny": "选填 · 可多选",
+    "optional": "选填",
+    "included": "已包含",
+    "errorRequired": "请为“{name}”选择一个选项。",
+    "errorOnlyOne": "“{name}”只能选择一个选项。",
+    "errorUpTo": "“{name}”最多可选 {count} 项。",
+    "errorUnavailable": "所选的某个选项已不再可用。"
+  },
+  "who": {
+    "where": "地点",
+    "with": "服务人员",
+    "comesToYou": "上门服务 · {city} {km} 公里范围内",
+    "online": "线上服务",
+    "anyPro": "任意可预约的专业人士",
+    "anyProHint": "可选时段最多——我们会为您匹配当时有空的人选。"
+  },
+  "details": {
+    "addressLabel": "请问到哪里为您服务？",
+    "addressHint": "须在 {city} {km} 公里范围内。仅向商家展示。",
+    "addressPlaceholder": "街道地址、门牌号、城市",
+    "consent": "我已阅读并同意以上内容",
+    "age": "我确认我已年满 {age} 岁",
+    "noteLabel": "还有什么需要告知对方的吗？",
+    "notePlaceholder": "过敏情况、偏好、停车说明……"
+  },
+  "review": {
+    "changeTime": "更改时间",
+    "with": "服务人员",
+    "where": "地点",
+    "yourAddress": "您的地址",
+    "online": "线上",
+    "noteLabel": "有什么需要告知对方的吗？",
+    "notePlaceholder": "偏好、问题、无障碍需求……",
+    "promoApplied": "已使用 {code}",
+    "promoRemove": "移除",
+    "promoPlaceholder": "优惠码",
+    "promoApply": "使用",
+    "beforeYouBook": "预约须知",
+    "bookingAs": "以 {name} 的身份预约"
+  },
+  "confirm": {
+    "request": "发送预约申请",
+    "requestShort": "发送申请",
+    "pay": "确认并支付 {amount}",
+    "payShort": "支付 {amount}",
+    "confirm": "确认预约",
+    "confirmShort": "确认"
+  },
+  "summary": {
+    "label": "预约摘要",
+    "instant": "即时确认",
+    "request": "由商家确认",
+    "total": "合计",
+    "estimatedTotal": "预计合计",
+    "estimated": "预估",
+    "comesToYou": "上门服务",
+    "online": "线上",
+    "empty": "选择服务后即可查看时间和价格。",
+    "continue": "继续",
+    "signInToBook": "登录后预约"
+  },
+  "time": {
+    "preselectMissed": "您选的时间在当前选项下已无法预约。以下是最接近的可约时段。",
+    "previousWeeks": "前两周",
+    "nextWeeks": "后两周",
+    "chooseDate": "选择日期",
+    "today": "今天",
+    "timesAvailable": "{count, plural, other {# 个时段可约}}",
+    "noAvailability": "暂无可约时段",
+    "noOpeningsOn": "{date} 没有可约时段",
+    "noOpeningsThisDay": "当天没有可约时段",
+    "nextOpening": "最近的可约时间：{date}。",
+    "tryLater": "请查看后两周，或加入候补名单——一旦有空位，我们会通知您。",
+    "joinWaitlist": "加入当天的候补名单",
+    "morning": "上午",
+    "afternoon": "下午",
+    "evening": "晚上",
+    "morningTimes": "上午时段",
+    "afternoonTimes": "下午时段",
+    "eveningTimes": "晚间时段",
+    "spotsLeft": "{count, plural, other {剩余 # 个}}",
+    "timesIn": "时间为 {abbr}（{zone}）。",
+    "timesInLocal": "时间为 {abbr}（{zone}），即您所在地的 {time}。"
+  },
+  "waitlist": {
+    "title": "加入候补名单",
+    "description": "如果 {date} 有时段空出，我们会立即通知您。空位先到先得。",
+    "cancel": "取消",
+    "notify": "通知我",
+    "windowLabel": "您方便的时间",
+    "any": "当天任意时间",
+    "morning": "上午（中午前）",
+    "afternoon": "下午（中午至 17 点）",
+    "evening": "晚上（17 点后）",
+    "joined": "您已加入候补名单",
+    "joinedBody": "一旦有时段空出，我们会立即通知您。"
+  },
+  "price": {
+    "label": "价格明细",
+    "total": "合计",
+    "estimatedTotal": "预计合计",
+    "payNow": "现在支付",
+    "depositNow": "需立即支付的订金",
+    "remaining": "到店支付的余款",
+    "nothingNow": "现在无需付款——到时当面支付即可。",
+    "estimateNote": "最终价格由商家确认，可能会因实际工作量而有所不同。",
+    "tax": "税费",
+    "serviceFee": "服务费"
+  },
+  "checkout": {
+    "title": "付款",
+    "description": "完成付款即可确认预约。",
+    "pay": "支付 {amount}",
+    "secured": "由 Stripe 提供安全保障。您付款期间，时段会为您保留。",
+    "declined": "您的银行卡被拒绝。",
+    "failed": "我们未能完成付款，您的银行卡未被扣款，请重试。"
+  },
+  "intake": {
+    "optional": "（选填）",
+    "yes": "是",
+    "no": "否"
+  }
+}

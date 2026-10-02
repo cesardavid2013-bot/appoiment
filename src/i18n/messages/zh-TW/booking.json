@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "預約 {name}",
+    "fallbackTitle": "預約"
+  },
+  "steps": {
+    "service": "選擇服務",
+    "options": "個人化選項",
+    "who": "人員與地點",
+    "time": "選擇時間",
+    "details": "填寫資料",
+    "review": "核對並確認"
+  },
+  "header": {
+    "backTo": "返回 {name}",
+    "previousStep": "上一步",
+    "stepOf": "第 {current} 步，共 {total} 步",
+    "exit": "退出預約"
+  },
+  "service": {
+    "optionsAvailable": "可選配置",
+    "group": "團體 · 最多 {count} 人"
+  },
+  "options": {
+    "required": "必選",
+    "upTo": "最多可選 {count} 項",
+    "optionalAny": "選填 · 可複選",
+    "optional": "選填",
+    "included": "已包含",
+    "errorRequired": "請為「{name}」選擇一個選項。",
+    "errorOnlyOne": "「{name}」只能選擇一個選項。",
+    "errorUpTo": "「{name}」最多可選 {count} 項。",
+    "errorUnavailable": "所選的其中一個選項已不再提供。"
+  },
+  "who": {
+    "where": "地點",
+    "with": "服務人員",
+    "comesToYou": "到府服務 · {city} {km} 公里範圍內",
+    "online": "線上服務",
+    "anyPro": "任何可預約的專業人士",
+    "anyProHint": "可選時段最多——我們會為您配對當時有空的人選。"
+  },
+  "details": {
+    "addressLabel": "請問到哪裡為您服務？",
+    "addressHint": "須在 {city} {km} 公里範圍內。僅提供給店家。",
+    "addressPlaceholder": "街道地址、門牌號碼、城市",
+    "consent": "我已閱讀並同意以上內容",
+    "age": "我確認我已年滿 {age} 歲",
+    "noteLabel": "還有什麼需要告知對方的嗎？",
+    "notePlaceholder": "過敏情況、偏好、停車說明……"
+  },
+  "review": {
+    "changeTime": "更改時間",
+    "with": "服務人員",
+    "where": "地點",
+    "yourAddress": "您的地址",
+    "online": "線上",
+    "noteLabel": "有什麼需要告知對方的嗎？",
+    "notePlaceholder": "偏好、問題、無障礙需求……",
+    "promoApplied": "已套用 {code}",
+    "promoRemove": "移除",
+    "promoPlaceholder": "優惠碼",
+    "promoApply": "套用",
+    "beforeYouBook": "預約須知",
+    "bookingAs": "以 {name} 的身分預約"
+  },
+  "confirm": {
+    "request": "送出預約申請",
+    "requestShort": "送出申請",
+    "pay": "確認並支付 {amount}",
+    "payShort": "支付 {amount}",
+    "confirm": "確認預約",
+    "confirmShort": "確認"
+  },
+  "summary": {
+    "label": "預約摘要",
+    "instant": "即時確認",
+    "request": "由店家確認",
+    "total": "總計",
+    "estimatedTotal": "預估總計",
+    "estimated": "預估",
+    "comesToYou": "到府服務",
+    "online": "線上",
+    "empty": "選擇服務後即可查看時間與價格。",
+    "continue": "繼續",
+    "signInToBook": "登入後預約"
+  },
+  "time": {
+    "preselectMissed": "您選的時間在目前選項下已無法預約。以下是最接近的可約時段。",
+    "previousWeeks": "前兩週",
+    "nextWeeks": "後兩週",
+    "chooseDate": "選擇日期",
+    "today": "今天",
+    "timesAvailable": "{count, plural, other {# 個時段可約}}",
+    "noAvailability": "暫無可約時段",
+    "noOpeningsOn": "{date} 沒有可約時段",
+    "noOpeningsThisDay": "當天沒有可約時段",
+    "nextOpening": "最近的可約時間：{date}。",
+    "tryLater": "請查看後兩週，或加入候補名單——一旦有空位，我們會通知您。",
+    "joinWaitlist": "加入當天的候補名單",
+    "morning": "上午",
+    "afternoon": "下午",
+    "evening": "晚上",
+    "morningTimes": "上午時段",
+    "afternoonTimes": "下午時段",
+    "eveningTimes": "晚間時段",
+    "spotsLeft": "{count, plural, other {剩餘 # 個}}",
+    "timesIn": "時間為 {abbr}（{zone}）。",
+    "timesInLocal": "時間為 {abbr}（{zone}），即您所在地的 {time}。"
+  },
+  "waitlist": {
+    "title": "加入候補名單",
+    "description": "如果 {date} 有時段空出，我們會立即通知您。空位先搶先得。",
+    "cancel": "取消",
+    "notify": "通知我",
+    "windowLabel": "您方便的時間",
+    "any": "當天任何時間",
+    "morning": "上午（中午前）",
+    "afternoon": "下午（中午至 17 點）",
+    "evening": "晚上（17 點後）",
+    "joined": "您已加入候補名單",
+    "joinedBody": "一旦有時段空出，我們會立即通知您。"
+  },
+  "price": {
+    "label": "價格明細",
+    "total": "總計",
+    "estimatedTotal": "預估總計",
+    "payNow": "現在支付",
+    "depositNow": "需立即支付的訂金",
+    "remaining": "到店支付的餘款",
+    "nothingNow": "現在無需付款——屆時當面支付即可。",
+    "estimateNote": "最終價格由店家確認，可能會因實際工作內容而有所不同。",
+    "tax": "稅費",
+    "serviceFee": "服務費"
+  },
+  "checkout": {
+    "title": "付款",
+    "description": "完成付款即可確認預約。",
+    "pay": "支付 {amount}",
+    "secured": "由 Stripe 提供安全保障。您付款期間，時段會為您保留。",
+    "declined": "您的信用卡遭拒。",
+    "failed": "我們未能完成付款，您的信用卡未被扣款，請重試。"
+  },
+  "intake": {
+    "optional": "（選填）",
+    "yes": "是",
+    "no": "否"
+  }
+}

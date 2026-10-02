@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "{name}を予約",
+    "fallbackTitle": "予約"
+  },
+  "steps": {
+    "service": "サービスを選ぶ",
+    "options": "オプション",
+    "who": "担当と場所",
+    "time": "日時を選ぶ",
+    "details": "詳細情報",
+    "review": "確認して確定"
+  },
+  "header": {
+    "backTo": "{name}に戻る",
+    "previousStep": "前のステップ",
+    "stepOf": "ステップ {current}/{total}",
+    "exit": "予約を終了"
+  },
+  "service": {
+    "optionsAvailable": "オプションあり",
+    "group": "グループ · 最大{count}名"
+  },
+  "options": {
+    "required": "必須",
+    "upTo": "最大{count}件まで選択",
+    "optionalAny": "任意 · 複数選択可",
+    "optional": "任意",
+    "included": "含まれています",
+    "errorRequired": "「{name}」のオプションを選んでください。",
+    "errorOnlyOne": "「{name}」は1つだけ選べます。",
+    "errorUpTo": "「{name}」は最大{count}件まで選べます。",
+    "errorUnavailable": "選択したオプションのひとつが利用できなくなりました。"
+  },
+  "who": {
+    "where": "場所",
+    "with": "担当",
+    "comesToYou": "出張対応 · {city}から{km}km圏内",
+    "online": "オンラインセッション",
+    "anyPro": "指名なし（空いている担当者）",
+    "anyProHint": "空き枠が最も多く、空いている担当者をこちらで割り当てます。"
+  },
+  "details": {
+    "addressLabel": "お伺いする住所をご入力ください",
+    "addressHint": "{city}から{km}km圏内。事業者にのみ共有されます。",
+    "addressPlaceholder": "番地、建物名、市区町村",
+    "consent": "上記の内容を読み、同意します",
+    "age": "{age}歳以上であることを確認します",
+    "noteLabel": "ほかにお伝えしたいことはありますか？",
+    "notePlaceholder": "アレルギー、ご希望、駐車場のメモなど…"
+  },
+  "review": {
+    "changeTime": "日時を変更",
+    "with": "担当",
+    "where": "場所",
+    "yourAddress": "ご住所",
+    "online": "オンライン",
+    "noteLabel": "お伝えしたいことはありますか？",
+    "notePlaceholder": "ご希望、ご質問、バリアフリーのご要望など…",
+    "promoApplied": "{code}を適用しました",
+    "promoRemove": "削除",
+    "promoPlaceholder": "プロモーションコード",
+    "promoApply": "適用",
+    "beforeYouBook": "ご予約の前に",
+    "bookingAs": "{name}として予約"
+  },
+  "confirm": {
+    "request": "予約リクエストを送信",
+    "requestShort": "リクエスト送信",
+    "pay": "確定して{amount}を支払う",
+    "payShort": "{amount}を支払う",
+    "confirm": "予約を確定",
+    "confirmShort": "確定"
+  },
+  "summary": {
+    "label": "予約内容",
+    "instant": "即時確定",
+    "request": "事業者が確認",
+    "total": "合計",
+    "estimatedTotal": "合計（目安）",
+    "estimated": "目安",
+    "comesToYou": "出張対応",
+    "online": "オンライン",
+    "empty": "サービスを選ぶと、日時と料金が表示されます。",
+    "continue": "次へ",
+    "signInToBook": "ログインして予約"
+  },
+  "time": {
+    "preselectMissed": "選択した日時は、現在の内容では予約できなくなりました。近い空き枠をご案内します。",
+    "previousWeeks": "前の2週間",
+    "nextWeeks": "次の2週間",
+    "chooseDate": "日付を選ぶ",
+    "today": "今日",
+    "timesAvailable": "{count, plural, other {#枠が空いています}}",
+    "noAvailability": "空きなし",
+    "noOpeningsOn": "{date}は空きがありません",
+    "noOpeningsThisDay": "この日は空きがありません",
+    "nextOpening": "次の空き：{date}。",
+    "tryLater": "次の2週間をご確認いただくか、キャンセル待ちに登録してください。空きが出たらお知らせします。",
+    "joinWaitlist": "この日のキャンセル待ちに登録",
+    "morning": "午前",
+    "afternoon": "午後",
+    "evening": "夕方・夜",
+    "morningTimes": "午前の時間帯",
+    "afternoonTimes": "午後の時間帯",
+    "eveningTimes": "夕方・夜の時間帯",
+    "spotsLeft": "{count, plural, other {残り#枠}}",
+    "timesIn": "時間は{abbr}（{zone}）で表示しています。",
+    "timesInLocal": "時間は{abbr}（{zone}）表示です。現地時間では{time}にあたります。"
+  },
+  "waitlist": {
+    "title": "キャンセル待ちに登録",
+    "description": "{date}に空きが出た場合は、すぐにお知らせします。空き枠は先着順です。",
+    "cancel": "キャンセル",
+    "notify": "通知を受け取る",
+    "windowLabel": "ご希望の時間帯",
+    "any": "その日のいつでも",
+    "morning": "午前（正午まで）",
+    "afternoon": "午後（正午〜17時）",
+    "evening": "夕方・夜（17時以降）",
+    "joined": "キャンセル待ちに登録しました",
+    "joinedBody": "空きが出たらすぐにお知らせします。"
+  },
+  "price": {
+    "label": "料金の内訳",
+    "total": "合計",
+    "estimatedTotal": "合計（目安）",
+    "payNow": "今回のお支払い",
+    "depositNow": "今回お支払いの予約金",
+    "remaining": "当日お支払いの残額",
+    "nothingNow": "今回のお支払いはありません。当日にお支払いください。",
+    "estimateNote": "最終料金は事業者が確定し、作業内容により変わる場合があります。",
+    "tax": "税",
+    "serviceFee": "サービス手数料"
+  },
+  "checkout": {
+    "title": "お支払い",
+    "description": "お支払いを完了すると予約が確定します。",
+    "pay": "{amount}を支払う",
+    "secured": "Stripe により保護されています。お支払い中は枠を確保します。",
+    "declined": "カードが承認されませんでした。",
+    "failed": "お支払いを完了できませんでした。カードへの請求は発生していません。もう一度お試しください。"
+  },
+  "intake": {
+    "optional": "（任意）",
+    "yes": "はい",
+    "no": "いいえ"
+  }
+}
