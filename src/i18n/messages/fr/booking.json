@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Réserver avec {name}",
+    "fallbackTitle": "Réserver"
+  },
+  "steps": {
+    "service": "Choisissez un service",
+    "options": "Personnaliser",
+    "who": "Qui et où",
+    "time": "Choisissez un créneau",
+    "details": "Quelques détails",
+    "review": "Vérifier et confirmer"
+  },
+  "header": {
+    "backTo": "Retour à {name}",
+    "previousStep": "Étape précédente",
+    "stepOf": "Étape {current} sur {total}",
+    "exit": "Quitter la réservation"
+  },
+  "service": {
+    "optionsAvailable": "Options disponibles",
+    "group": "Groupe · jusqu'à {count}"
+  },
+  "options": {
+    "required": "Obligatoire",
+    "upTo": "Choisissez jusqu'à {count}",
+    "optionalAny": "Facultatif · choisissez-en autant que vous voulez",
+    "optional": "Facultatif",
+    "included": "Inclus",
+    "errorRequired": "Choisissez une option pour « {name} ».",
+    "errorOnlyOne": "Choisissez une seule option pour « {name} ».",
+    "errorUpTo": "Choisissez jusqu'à {count} pour « {name} ».",
+    "errorUnavailable": "L'une des options sélectionnées n'est plus disponible."
+  },
+  "who": {
+    "where": "Où",
+    "with": "Avec",
+    "comesToYou": "Se déplace chez vous · dans un rayon de {km} km autour de {city}",
+    "online": "Séance en ligne",
+    "anyPro": "N'importe quel professionnel disponible",
+    "anyProHint": "Plus de disponibilités — nous vous associons à la personne libre."
+  },
+  "details": {
+    "addressLabel": "Où devons-nous nous rendre ?",
+    "addressHint": "Dans un rayon de {km} km autour de {city}. Communiqué uniquement à l'établissement.",
+    "addressPlaceholder": "Adresse, appartement, ville",
+    "consent": "J'ai lu et j'accepte ce qui précède",
+    "age": "Je confirme avoir au moins {age} ans",
+    "noteLabel": "Autre chose à leur signaler ?",
+    "notePlaceholder": "Allergies, préférences, indications de stationnement…"
+  },
+  "review": {
+    "changeTime": "Modifier l'horaire",
+    "with": "Avec",
+    "where": "Où",
+    "yourAddress": "Votre adresse",
+    "online": "En ligne",
+    "noteLabel": "Quelque chose à leur signaler ?",
+    "notePlaceholder": "Préférences, questions, besoins d'accessibilité…",
+    "promoApplied": "{code} appliqué",
+    "promoRemove": "Retirer",
+    "promoPlaceholder": "Code promo",
+    "promoApply": "Appliquer",
+    "beforeYouBook": "Avant de réserver",
+    "bookingAs": "Réservation au nom de {name}"
+  },
+  "confirm": {
+    "request": "Envoyer la demande de réservation",
+    "requestShort": "Envoyer la demande",
+    "pay": "Confirmer et payer {amount}",
+    "payShort": "Payer {amount}",
+    "confirm": "Confirmer la réservation",
+    "confirmShort": "Confirmer"
+  },
+  "summary": {
+    "label": "Récapitulatif de la réservation",
+    "instant": "Confirmation immédiate",
+    "request": "Confirmé par l'établissement",
+    "total": "Total",
+    "estimatedTotal": "Total estimé",
+    "estimated": "Estimé",
+    "comesToYou": "Se déplace chez vous",
+    "online": "En ligne",
+    "empty": "Choisissez un service pour voir les horaires et les tarifs.",
+    "continue": "Continuer",
+    "signInToBook": "Connectez-vous pour réserver"
+  },
+  "time": {
+    "preselectMissed": "Le créneau choisi n'est plus disponible avec ces options. Voici les disponibilités les plus proches.",
+    "previousWeeks": "Deux semaines précédentes",
+    "nextWeeks": "Deux semaines suivantes",
+    "chooseDate": "Choisissez une date",
+    "today": "Aujourd'hui",
+    "timesAvailable": "{count, plural, one {# créneau disponible} other {# créneaux disponibles}}",
+    "noAvailability": "Aucune disponibilité",
+    "noOpeningsOn": "Aucune disponibilité le {date}",
+    "noOpeningsThisDay": "Aucune disponibilité ce jour-là",
+    "nextOpening": "Prochaine disponibilité : {date}.",
+    "tryLater": "Essayez les deux semaines suivantes, ou rejoignez la liste d'attente et nous vous préviendrons si un créneau se libère.",
+    "joinWaitlist": "Rejoindre la liste d'attente pour ce jour",
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "evening": "Soir",
+    "morningTimes": "Créneaux du matin",
+    "afternoonTimes": "Créneaux de l'après-midi",
+    "eveningTimes": "Créneaux du soir",
+    "spotsLeft": "{count, plural, one {# restant} other {# restants}}",
+    "timesIn": "Horaires en {abbr} ({zone}).",
+    "timesInLocal": "Horaires en {abbr} ({zone}) — soit {time} chez vous."
+  },
+  "waitlist": {
+    "title": "Rejoindre la liste d'attente",
+    "description": "Si un créneau se libère le {date}, nous vous préviendrons immédiatement. Les créneaux sont attribués au premier qui réserve.",
+    "cancel": "Annuler",
+    "notify": "Me prévenir",
+    "windowLabel": "Horaires qui vous conviennent",
+    "any": "N'importe quelle heure de la journée",
+    "morning": "Matin (avant midi)",
+    "afternoon": "Après-midi (de midi à 17 h)",
+    "evening": "Soir (après 17 h)",
+    "joined": "Vous êtes sur la liste d'attente",
+    "joinedBody": "Nous vous préviendrons aussitôt qu'un créneau se libère."
+  },
+  "price": {
+    "label": "Détail du prix",
+    "total": "Total",
+    "estimatedTotal": "Total estimé",
+    "payNow": "À payer maintenant",
+    "depositNow": "Acompte à régler maintenant",
+    "remaining": "Reste à payer sur place",
+    "nothingNow": "Rien à payer maintenant — réglez sur place.",
+    "estimateNote": "Le prix final est confirmé par l'établissement et peut varier selon le travail nécessaire.",
+    "tax": "Taxes",
+    "serviceFee": "Frais de service"
+  },
+  "checkout": {
+    "title": "Paiement",
+    "description": "Finalisez le paiement pour confirmer votre réservation.",
+    "pay": "Payer {amount}",
+    "secured": "Sécurisé par Stripe. Votre créneau est réservé pendant que vous payez.",
+    "declined": "Votre carte a été refusée.",
+    "failed": "Nous n'avons pas pu finaliser le paiement. Votre carte n'a pas été débitée — veuillez réessayer."
+  },
+  "intake": {
+    "optional": "(facultatif)",
+    "yes": "Oui",
+    "no": "Non"
+  }
+}
