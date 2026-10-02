@@ -127,22 +127,22 @@ export function BusinessCard({ b, favorite, signedIn, priority, className }: { b
 
         <div className="relative z-10 mt-auto pt-4">
           {slots.length > 0 ? (
-            <div className="border-t border-line pt-3.5">
-              <p className="mb-2.5 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-3">
+            <div className="@container border-t border-line pt-3.5">
+              <p className="mb-2.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-3">
                 {b.instant && <Zap className="size-3 text-accent" aria-hidden />}
                 {dayLabel(slots[0], b.timezone, intl, now)}
                 <span aria-hidden>·</span>
-                <span className="min-w-0 truncate">{b.instant ? t("card.instant") : t("card.request")}</span>
+                <span>{b.instant ? t("card.instant") : t("card.request")}</span>
               </p>
               <div className="flex items-center gap-1.5">
-                {slots.slice(0, 3).map((s) => (
+                {slots.slice(0, 3).map((s, i) => (
                   <Link
                     key={s}
                     href={bookHref(s)}
-                    className="flex h-9 min-w-0 flex-1 items-center justify-center rounded-md border border-accent/30 text-[13px] font-semibold text-accent-text tabular transition-colors hover:border-accent hover:bg-accent hover:text-accent-ink"
+                    className={cn(i === 2 && "hidden @[25rem]:flex", "flex h-9 min-w-0 flex-1 items-center justify-center rounded-md border border-accent/30 text-[13px] font-semibold text-accent-text tabular transition-colors hover:border-accent hover:bg-accent hover:text-accent-ink")}
                     aria-label={t("card.bookAt", { day: dayLabel(s, b.timezone, intl, now), time: fmtTime(s, b.timezone, intl) })}
                   >
-                    <span className="truncate px-1">{shortTime(s, b.timezone, intl)}</span>
+                    <span className="whitespace-nowrap px-1">{shortTime(s, b.timezone, intl)}</span>
                   </Link>
                 ))}
                 <Link href={bookHref()} className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-line text-ink-3 hover:border-line-strong hover:text-ink" aria-label={t("card.moreTimes")}>
