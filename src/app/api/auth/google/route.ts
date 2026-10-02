@@ -2,7 +2,7 @@ import { cookies } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
 import { generateCodeVerifier, generateState, googleClient } from "@/server/auth/google";
 import { safeNext } from "@/server/auth/redirect";
-import { env } from "@/server/env";
+import { env, secureCookies } from "@/server/env";
 
 export async function GET(req: NextRequest) {
   const google = googleClient();
@@ -11,7 +11,7 @@ export async function GET(req: NextRequest) {
   const verifier = generateCodeVerifier();
   const url = google.createAuthorizationURL(state, verifier, ["openid", "profile", "email"]);
   const jar = await cookies();
-  const opts = { httpOnly: true, secure: env.NODE_ENV === "production", sameSite: "lax" as const, path: "/", maxAge: 600 };
+  const opts = { httpOnly: true, secure: secureCookies, sameSite: "lax" as const, path: "/", maxAge: 600 };
   jar.set("kept_oauth_state", state, opts);
   jar.set("kept_oauth_verifier", verifier, opts);
   jar.set("kept_oauth_next", safeNext(req.nextUrl.searchParams.get("next")), opts);

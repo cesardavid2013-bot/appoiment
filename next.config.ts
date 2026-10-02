@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const dev = process.env.NODE_ENV !== "production";
+/** Production build on your own computer over http://localhost: no forced https, no HSTS. */
+const localHttp = Boolean(process.env.LOCAL_HTTP);
 
 /**
  * Player origins for featured social posts — exactly the hosts that
@@ -39,7 +41,7 @@ const csp = [
   "base-uri 'self'",
   "form-action 'self'",
   "frame-ancestors 'none'",
-  ...(dev ? [] : ["upgrade-insecure-requests"]),
+  ...(dev || localHttp ? [] : ["upgrade-insecure-requests"]),
 ].join("; ");
 
 const securityHeaders = [
@@ -49,7 +51,7 @@ const securityHeaders = [
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   { key: "Permissions-Policy", value: "camera=(), microphone=(self), geolocation=(self), payment=(self)" },
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
-  ...(!dev ? [{ key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }] : []),
+  ...(!dev && !localHttp ? [{ key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }] : []),
 ];
 
 const nextConfig: NextConfig = {

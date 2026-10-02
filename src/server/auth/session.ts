@@ -4,11 +4,11 @@ import { cookies } from "next/headers";
 import { cache } from "react";
 import { db } from "../db/client";
 import { sessions, users } from "../db/schema";
-import { env } from "../env";
+import { secureCookies } from "../env";
 import { randomToken, sha256 } from "../crypto";
 import { ipHash, userAgent } from "../request";
 
-export const SESSION_COOKIE = env.NODE_ENV === "production" ? "__Host-kept_session" : "kept_session";
+export const SESSION_COOKIE = secureCookies ? "__Host-kept_session" : "kept_session";
 const SESSION_DAYS = 30;
 const DAY = 86_400_000;
 
@@ -37,7 +37,7 @@ export async function createSession(userId: string): Promise<void> {
   const jar = await cookies();
   jar.set(SESSION_COOKIE, token, {
     httpOnly: true,
-    secure: env.NODE_ENV === "production",
+    secure: secureCookies,
     sameSite: "lax",
     path: "/",
     expires: expiresAt,

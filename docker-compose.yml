@@ -18,7 +18,10 @@ services:
       retries: 10
 
   web:
-    build: .
+    build:
+      context: .
+      args:
+        LOCAL_HTTP: ${LOCAL_HTTP:-}
     restart: unless-stopped
     depends_on:
       db:
@@ -27,13 +30,18 @@ services:
     environment:
       DATABASE_URL: postgres://kept:${DB_PASSWORD:-kept-change-me}@db:5432/kept
       STORAGE_DIR: /app/storage
+      # Set to 1 by start-local to run on http://localhost (cookies and https upgrades are relaxed only for localhost).
+      LOCAL_HTTP: ${LOCAL_HTTP:-}
     ports:
       - "3000:3000"
     volumes:
       - files:/app/storage
 
   worker:
-    build: .
+    build:
+      context: .
+      args:
+        LOCAL_HTTP: ${LOCAL_HTTP:-}
     restart: unless-stopped
     depends_on:
       - web
@@ -41,6 +49,7 @@ services:
     environment:
       DATABASE_URL: postgres://kept:${DB_PASSWORD:-kept-change-me}@db:5432/kept
       STORAGE_DIR: /app/storage
+      LOCAL_HTTP: ${LOCAL_HTTP:-}
     command: ["npm", "run", "worker"]
     volumes:
       - files:/app/storage

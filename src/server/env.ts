@@ -39,12 +39,18 @@ const schema = z.object({
   CLIENT_IP_HEADER: optional,
   /** Number of reverse proxies in front of the app that append to X-Forwarded-For. */
   TRUSTED_PROXY_HOPS: z.coerce.number().int().min(0).max(5).default(1),
+  /** Run the production build on your own computer over plain http://localhost. Refused for any other address. */
+  LOCAL_HTTP: optional,
 });
 
 export type Env = z.infer<typeof schema>;
 
 function load(): Env {
   const parsed = schema
+    .refine((e) => !e.LOCAL_HTTP || /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\/?$/.test(e.APP_URL), {
+      message: "LOCAL_HTTP only works with APP_URL=http://localhost:<port>",
+      path: ["LOCAL_HTTP"],
+    })
     .refine((e) => e.STORAGE_DRIVER !== "s3" || Boolean(e.S3_BUCKET && e.S3_ACCESS_KEY_ID && e.S3_SECRET_ACCESS_KEY), {
       message: "STORAGE_DRIVER=s3 needs S3_BUCKET, S3_ACCESS_KEY_ID and S3_SECRET_ACCESS_KEY",
       path: ["STORAGE_DRIVER"],
@@ -58,6 +64,9 @@ function load(): Env {
 }
 
 export const env = load();
+
+/** Cookies are Secure (and __Host- prefixed) in production, except in the explicit local-computer mode. */
+export const secureCookies = env.NODE_ENV === "production" && !env.LOCAL_HTTP;
 
 /** Feature availability derived from configuration — the UI must only offer what is configured. */
 export const features = {
