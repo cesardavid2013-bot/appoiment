@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Komt naar je toe",
+    "comesToYouIn": "Komt naar je toe · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Uitgelicht",
+    "verified": "Geverifieerd bedrijf",
+    "instant": "Direct bevestigd",
+    "request": "Aanvraag indienen",
+    "bookAt": "Boek {day} om {time}",
+    "moreTimes": "Meer tijden",
+    "freeConsultation": "Gratis consult mogelijk",
+    "priceOnRequest": "Prijs op aanvraag",
+    "viewTimes": "Tijden bekijken"
+  },
+  "rail": {
+    "seeAll": "Alles bekijken"
+  },
+  "favorite": {
+    "save": "Bewaren",
+    "saved": "Bewaard",
+    "remove": "Verwijderen uit bewaard",
+    "savedToast": "Bewaard",
+    "savedToastHint": "Je vindt het altijd terug onder Bewaard."
+  }
+}

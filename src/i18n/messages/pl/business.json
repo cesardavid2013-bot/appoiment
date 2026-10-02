@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Dojeżdża do Ciebie",
+    "comesToYouIn": "Dojeżdża do Ciebie · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Promowane",
+    "verified": "Zweryfikowana firma",
+    "instant": "Natychmiastowe potwierdzenie",
+    "request": "Wyślij prośbę o rezerwację",
+    "bookAt": "Zarezerwuj: {day}, {time}",
+    "moreTimes": "Więcej terminów",
+    "freeConsultation": "Dostępna bezpłatna konsultacja",
+    "priceOnRequest": "Cena na zapytanie",
+    "viewTimes": "Zobacz terminy"
+  },
+  "rail": {
+    "seeAll": "Zobacz wszystkie"
+  },
+  "favorite": {
+    "save": "Zapisz",
+    "saved": "Zapisano",
+    "remove": "Usuń z zapisanych",
+    "savedToast": "Zapisano",
+    "savedToastHint": "Znajdziesz to w każdej chwili w Zapisanych."
+  }
+}

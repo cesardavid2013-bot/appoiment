@@ -1,0 +1,27 @@
+{
+  "card": {
+    "online": "Online",
+    "comesToYou": "Kommer till dig",
+    "comesToYouIn": "Kommer till dig · {city}",
+    "lessThanOneKm": "<1 km",
+    "promoted": "Sponsrad",
+    "verified": "Verifierat företag",
+    "instant": "Direkt bekräftelse",
+    "request": "Skicka förfrågan",
+    "bookAt": "Boka {day} kl. {time}",
+    "moreTimes": "Fler tider",
+    "freeConsultation": "Gratis konsultation finns",
+    "priceOnRequest": "Pris på förfrågan",
+    "viewTimes": "Visa tider"
+  },
+  "rail": {
+    "seeAll": "Visa alla"
+  },
+  "favorite": {
+    "save": "Spara",
+    "saved": "Sparad",
+    "remove": "Ta bort från sparade",
+    "savedToast": "Sparad",
+    "savedToastHint": "Hitta den när som helst under Sparade."
+  }
+}
