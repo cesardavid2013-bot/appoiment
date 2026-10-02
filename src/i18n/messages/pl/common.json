@@ -1,0 +1,117 @@
+{
+  "language": "Język",
+  "meta": {
+    "title": "Kept — Rezerwuj sprawdzonych specjalistów w okolicy",
+    "description": "Odkrywaj i rezerwuj barberów, fryzjerów, trenerów, fotografów, korepetytorów i każdego rodzaju lokalnych specjalistów — a własnymi wizytami zarządzaj bez wysiłku."
+  },
+  "skipToContent": "Przejdź do treści",
+  "logoHome": "Strona główna Kept",
+  "header": {
+    "mainNav": "Główna",
+    "search": "Szukaj usług lub specjalistów",
+    "ask": "Zapytaj",
+    "askKept": "Zapytaj Kept",
+    "explore": "Odkrywaj",
+    "myBusiness": "Moja firma",
+    "forPros": "Dla specjalistów",
+    "bookings": "Rezerwacje",
+    "messages": "Wiadomości",
+    "notifications": "Powiadomienia",
+    "unread": "nieprzeczytane",
+    "accountMenu": "Menu konta",
+    "logIn": "Zaloguj się",
+    "signUp": "Załóż konto"
+  },
+  "accountMenu": {
+    "bookings": "Rezerwacje",
+    "saved": "Zapisane",
+    "messages": "Wiadomości",
+    "settings": "Ustawienia konta",
+    "help": "Pomoc i wsparcie",
+    "switchToBusiness": "Przełącz na firmę",
+    "offerServices": "Zaoferuj swoje usługi",
+    "admin": "Konsola administratora",
+    "signOut": "Wyloguj się"
+  },
+  "tabs": {
+    "label": "Główna nawigacja",
+    "home": "Start",
+    "explore": "Odkrywaj",
+    "bookings": "Rezerwacje",
+    "inbox": "Skrzynka",
+    "account": "Konto"
+  },
+  "footer": {
+    "tagline": "Rezerwuj sprawdzonych specjalistów. Zarządzaj wizytami z mniejszym wysiłkiem.",
+    "discover": "Odkrywaj",
+    "explore": "Przeglądaj",
+    "hair": "Fryzjerzy i barberzy",
+    "wellness": "Wellness",
+    "fitness": "Fitness",
+    "forPros": "Dla specjalistów",
+    "howItWorks": "Jak to działa",
+    "listServices": "Dodaj swoje usługi",
+    "dashboard": "Panel firmy",
+    "help": "Pomoc",
+    "support": "Wsparcie",
+    "terms": "Regulamin",
+    "privacy": "Prywatność",
+    "copyright": "© {year} Kept. Wszelkie prawa zastrzeżone."
+  },
+  "price": {
+    "free": "Bezpłatnie",
+    "quote": "Cena po konsultacji",
+    "from": "Od {price}"
+  },
+  "rating": {
+    "new": "Nowy",
+    "summary": "ocena {avg} na podstawie {count, plural, one {# opinii} few {# opinii} many {# opinii} other {# opinii}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Oczekuje na płatność",
+    "requested": "Prośba wysłana",
+    "confirmed": "Potwierdzona",
+    "checked_in": "Zameldowano",
+    "in_progress": "W trakcie",
+    "completed": "Zakończona",
+    "cancelled": "Anulowana",
+    "declined": "Odrzucona",
+    "no_show": "Nieobecność",
+    "expired": "Wygasła"
+  },
+  "policy": {
+    "freeUntil": "Bezpłatne anulowanie do {hours} godz. przed wizytą. Późniejsze anulowanie wiąże się z opłatą w wysokości {percent}% całości.",
+    "cancelAhead": "Anuluj wizytę najpóźniej {hours} godz. wcześniej.",
+    "freeAnyTime": "Bezpłatne anulowanie w dowolnym momencie przed wizytą.",
+    "depositRefundable": "Zadatek jest zwracany, jeśli anulujesz na czas.",
+    "depositNonRefundable": "Zadatek nie podlega zwrotowi.",
+    "reschedule": "Termin możesz zmienić online do {hours} godz. przed wizytą."
+  },
+  "ui": {
+    "close": "Zamknij",
+    "keepIt": "Zostaw",
+    "optional": "Opcjonalnie",
+    "stars": "{value} na 5 gwiazdek",
+    "notifications": "Powiadomienia"
+  },
+  "notFound": {
+    "eyebrow": "Nie znaleziono strony",
+    "title": "Ta strona się przeniosła.",
+    "body": "Link mógł się zdezaktualizować albo specjalista zmienił adres.",
+    "home": "Wróć na start",
+    "explore": "Odkrywaj specjalistów"
+  },
+  "error": {
+    "eyebrow": "Coś poszło nie tak",
+    "title": "Nie udało się wczytać tej strony.",
+    "body": "To po naszej stronie, nie po Twojej. Spróbuj za chwilę — jeśli problem się powtarza, daj nam znać.",
+    "retry": "Spróbuj ponownie",
+    "support": "Skontaktuj się z pomocą",
+    "ref": "Numer referencyjny {id}"
+  },
+  "offline": {
+    "eyebrow": "Jesteś offline",
+    "title": "Brak połączenia.",
+    "body": "Twoje rezerwacje są bezpieczne. Połącz się ponownie, a Kept kontynuuje tam, gdzie przerwano."
+  }
+}

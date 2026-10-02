@@ -1,0 +1,117 @@
+{
+  "language": "Språk",
+  "meta": {
+    "title": "Kept — Boka pålitliga yrkesverksamma nära dig",
+    "description": "Hitta och boka barberare, frisörer, tränare, fotografer, lärare och alla slags lokala yrkesverksamma — och hantera dina egna bokningar med lätthet."
+  },
+  "skipToContent": "Hoppa till innehållet",
+  "logoHome": "Kept startsida",
+  "header": {
+    "mainNav": "Huvudmeny",
+    "search": "Sök tjänster eller yrkesverksamma",
+    "ask": "Fråga",
+    "askKept": "Fråga Kept",
+    "explore": "Utforska",
+    "myBusiness": "Mitt företag",
+    "forPros": "För yrkesverksamma",
+    "bookings": "Bokningar",
+    "messages": "Meddelanden",
+    "notifications": "Aviseringar",
+    "unread": "olästa",
+    "accountMenu": "Kontomeny",
+    "logIn": "Logga in",
+    "signUp": "Skapa konto"
+  },
+  "accountMenu": {
+    "bookings": "Bokningar",
+    "saved": "Sparade",
+    "messages": "Meddelanden",
+    "settings": "Kontoinställningar",
+    "help": "Hjälp & support",
+    "switchToBusiness": "Byt till företag",
+    "offerServices": "Erbjud dina tjänster",
+    "admin": "Adminkonsol",
+    "signOut": "Logga ut"
+  },
+  "tabs": {
+    "label": "Huvudnavigering",
+    "home": "Hem",
+    "explore": "Utforska",
+    "bookings": "Bokningar",
+    "inbox": "Inkorg",
+    "account": "Konto"
+  },
+  "footer": {
+    "tagline": "Boka pålitliga yrkesverksamma. Hantera dina bokningar med mindre ansträngning.",
+    "discover": "Upptäck",
+    "explore": "Utforska",
+    "hair": "Hår & barberare",
+    "wellness": "Välmående",
+    "fitness": "Träning",
+    "forPros": "För yrkesverksamma",
+    "howItWorks": "Så fungerar det",
+    "listServices": "Lägg upp dina tjänster",
+    "dashboard": "Företagspanel",
+    "help": "Hjälp",
+    "support": "Support",
+    "terms": "Villkor",
+    "privacy": "Integritet",
+    "copyright": "© {year} Kept. Alla rättigheter förbehållna."
+  },
+  "price": {
+    "free": "Gratis",
+    "quote": "Pris enligt överenskommelse",
+    "from": "Från {price}"
+  },
+  "rating": {
+    "new": "Ny",
+    "summary": "betyg {avg} baserat på {count, plural, one {# omdöme} other {# omdömen}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Väntar på betalning",
+    "requested": "Förfrågan skickad",
+    "confirmed": "Bekräftad",
+    "checked_in": "Incheckad",
+    "in_progress": "Pågår",
+    "completed": "Genomförd",
+    "cancelled": "Avbokad",
+    "declined": "Avböjd",
+    "no_show": "Uteblev",
+    "expired": "Utgången"
+  },
+  "policy": {
+    "freeUntil": "Gratis avbokning upp till {hours} timmar innan. Senare avbokningar debiteras med {percent} % av totalen.",
+    "cancelAhead": "Avboka minst {hours} timmar före din tid.",
+    "freeAnyTime": "Gratis avbokning när som helst före din tid.",
+    "depositRefundable": "Depositionen återbetalas om du avbokar i tid.",
+    "depositNonRefundable": "Depositionen återbetalas inte.",
+    "reschedule": "Du kan boka om online upp till {hours} timmar innan."
+  },
+  "ui": {
+    "close": "Stäng",
+    "keepIt": "Behåll",
+    "optional": "Valfritt",
+    "stars": "{value} av 5 stjärnor",
+    "notifications": "Aviseringar"
+  },
+  "notFound": {
+    "eyebrow": "Sidan hittades inte",
+    "title": "Den sidan har flyttat.",
+    "body": "Länken kan vara gammal, eller så har den yrkesverksamma bytt adress.",
+    "home": "Tillbaka till startsidan",
+    "explore": "Utforska yrkesverksamma"
+  },
+  "error": {
+    "eyebrow": "Något gick fel",
+    "title": "Vi kunde inte ladda sidan.",
+    "body": "Felet ligger hos oss, inte hos dig. Försök igen om en stund — fortsätter det, hör av dig till oss.",
+    "retry": "Försök igen",
+    "support": "Kontakta support",
+    "ref": "Referens {id}"
+  },
+  "offline": {
+    "eyebrow": "Du är offline",
+    "title": "Ingen anslutning just nu.",
+    "body": "Dina bokningar är säkra. Anslut igen så fortsätter Kept där du slutade."
+  }
+}

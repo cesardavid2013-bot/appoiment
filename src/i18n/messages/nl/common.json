@@ -1,0 +1,117 @@
+{
+  "language": "Taal",
+  "meta": {
+    "title": "Kept — Boek betrouwbare professionals bij jou in de buurt",
+    "description": "Ontdek en boek barbers, kappers, trainers, fotografen, bijlesdocenten en elke andere lokale professional — en beheer je eigen afspraken moeiteloos."
+  },
+  "skipToContent": "Ga naar de inhoud",
+  "logoHome": "Kept startpagina",
+  "header": {
+    "mainNav": "Hoofdmenu",
+    "search": "Zoek diensten of professionals",
+    "ask": "Vraag",
+    "askKept": "Vraag Kept",
+    "explore": "Ontdekken",
+    "myBusiness": "Mijn bedrijf",
+    "forPros": "Voor professionals",
+    "bookings": "Boekingen",
+    "messages": "Berichten",
+    "notifications": "Meldingen",
+    "unread": "ongelezen",
+    "accountMenu": "Accountmenu",
+    "logIn": "Inloggen",
+    "signUp": "Aanmelden"
+  },
+  "accountMenu": {
+    "bookings": "Boekingen",
+    "saved": "Bewaard",
+    "messages": "Berichten",
+    "settings": "Accountinstellingen",
+    "help": "Hulp & support",
+    "switchToBusiness": "Wissel naar zakelijk",
+    "offerServices": "Bied je diensten aan",
+    "admin": "Beheerconsole",
+    "signOut": "Uitloggen"
+  },
+  "tabs": {
+    "label": "Hoofdnavigatie",
+    "home": "Home",
+    "explore": "Ontdekken",
+    "bookings": "Boekingen",
+    "inbox": "Inbox",
+    "account": "Account"
+  },
+  "footer": {
+    "tagline": "Boek betrouwbare professionals. Beheer je afspraken met minder moeite.",
+    "discover": "Ontdekken",
+    "explore": "Ontdekken",
+    "hair": "Haar & barbers",
+    "wellness": "Wellness",
+    "fitness": "Fitness",
+    "forPros": "Voor professionals",
+    "howItWorks": "Hoe het werkt",
+    "listServices": "Plaats je diensten",
+    "dashboard": "Zakelijk dashboard",
+    "help": "Hulp",
+    "support": "Support",
+    "terms": "Voorwaarden",
+    "privacy": "Privacy",
+    "copyright": "© {year} Kept. Alle rechten voorbehouden."
+  },
+  "price": {
+    "free": "Gratis",
+    "quote": "Prijs op aanvraag",
+    "from": "Vanaf {price}"
+  },
+  "rating": {
+    "new": "Nieuw",
+    "summary": "beoordeeld met {avg} op basis van {count, plural, one {# review} other {# reviews}}"
+  },
+  "appointmentStatus": {
+    "pending_payment": "Wacht op betaling",
+    "requested": "Aanvraag verstuurd",
+    "confirmed": "Bevestigd",
+    "checked_in": "Ingecheckt",
+    "in_progress": "Bezig",
+    "completed": "Afgerond",
+    "cancelled": "Geannuleerd",
+    "declined": "Afgewezen",
+    "no_show": "Niet verschenen",
+    "expired": "Verlopen"
+  },
+  "policy": {
+    "freeUntil": "Gratis annuleren tot {hours} uur van tevoren. Latere annuleringen worden voor {percent}% van het totaal in rekening gebracht.",
+    "cancelAhead": "Annuleer alsjeblieft minstens {hours} uur voor je afspraak.",
+    "freeAnyTime": "Gratis annuleren tot het moment van je afspraak.",
+    "depositRefundable": "Aanbetalingen worden terugbetaald als je op tijd annuleert.",
+    "depositNonRefundable": "Aanbetalingen zijn niet terugbetaalbaar.",
+    "reschedule": "Online verplaatsen kan tot {hours} uur van tevoren."
+  },
+  "ui": {
+    "close": "Sluiten",
+    "keepIt": "Behouden",
+    "optional": "Optioneel",
+    "stars": "{value} van de 5 sterren",
+    "notifications": "Meldingen"
+  },
+  "notFound": {
+    "eyebrow": "Pagina niet gevonden",
+    "title": "Deze pagina is verhuisd.",
+    "body": "De link is misschien verouderd, of de professional heeft een nieuw adres.",
+    "home": "Terug naar home",
+    "explore": "Ontdek professionals"
+  },
+  "error": {
+    "eyebrow": "Er ging iets mis",
+    "title": "We konden deze pagina niet laden.",
+    "body": "Het ligt aan ons, niet aan jou. Probeer het zo opnieuw — blijft het gebeuren, laat het ons dan weten.",
+    "retry": "Opnieuw proberen",
+    "support": "Contact met support",
+    "ref": "Referentie {id}"
+  },
+  "offline": {
+    "eyebrow": "Je bent offline",
+    "title": "Op dit moment geen verbinding.",
+    "body": "Je boekingen zijn veilig. Maak weer verbinding en Kept gaat verder waar je gebleven was."
+  }
+}
