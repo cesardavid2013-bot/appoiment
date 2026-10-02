@@ -280,44 +280,283 @@
       "connect": "Ödemeleri Stripe ile kurun",
       "time": "Yaklaşık 5 dakika sürer. Banka bilgilerinize ve bir kimliğe ihtiyacınız olacak."
     },
-    "incomplete": {},
-    "connected": {},
-    "fees": {}
+    "incomplete": {
+      "badge": "Kurulum tamamlanmadı",
+      "body": "Ödeme alabilmeniz için Stripe’ın birkaç bilgiye daha ihtiyacı var.",
+      "continue": "Kuruluma devam et"
+    },
+    "connected": {
+      "badge": "Bağlandı",
+      "body": "Online depozito ve ödeme alabilirsiniz.",
+      "services": "Her hizmet için neyin tahsil edileceğini <link>Hizmetler</link>’de seçin."
+    },
+    "fees": {
+      "title": "Ücretler",
+      "kept": "Online ödemelerde Kept ücreti",
+      "inPerson": "Yüz yüze alınan ödemeler",
+      "noFee": "Kept ücreti yok",
+      "processing": "Kart işleme",
+      "stripeRate": "Stripe’ın standart oranı"
+    }
   },
   "link": {
-    "checklist": {},
-    "status": {},
-    "toasts": {},
-    "share": {},
-    "slug": {},
-    "hideDialog": {}
+    "title": "Rezervasyon bağlantısı",
+    "description": "Kept’teki sayfanız. Biyografinize, kartvizitinize, aynanıza koyun.",
+    "checklist": {
+      "location": "Çalıştığınız yeri ekleyin",
+      "services": "En az bir hizmet oluşturun",
+      "availability": "Çalışma saatlerinizi belirleyin",
+      "done": "Tamamlandı",
+      "todo": "Yapılacak"
+    },
+    "status": {
+      "liveTitle": "Sayfanız yayında",
+      "draftTitle": "Sayfanız henüz yayında değil",
+      "liveDescription": "Müşteriler sizi aramada bulur ve online rezervasyon yapabilir.",
+      "draftDescription": "Yalnızca siz görürsünüz. Liste tamamlandığında yayına alın.",
+      "live": "Yayında",
+      "hide": "Sayfamı gizle",
+      "goLive": "Yayına al",
+      "viewPage": "Sayfayı gör",
+      "preview": "Önizleme"
+    },
+    "toasts": {
+      "live": "Yayındasınız; müşteriler sizi bulup rezervasyon yapabilir",
+      "hidden": "Sayfanız gizlendi",
+      "hiddenDescription": "Mevcut randevular etkilenmez.",
+      "slugUpdated": "Adres güncellendi",
+      "slugUpdatedDescription": "Eski bağlantınız artık çalışmıyor; paylaştığınız her yerde güncelleyin.",
+      "copied": "Kopyalandı"
+    },
+    "share": {
+      "title": "Paylaş",
+      "qrLabel": "{address} için QR kodu",
+      "qrHint": "Resepsiyonda, kartvizitlerde veya aynanızda kullanmak için yazdırın. Taranınca doğrudan rezervasyon sayfanız açılır.",
+      "png": "Baskı için PNG",
+      "svg": "SVG",
+      "embedSummary": "Web sitenize “Rezervasyon yap” düğmesi ekleyin",
+      "embedHint": "Bunu düğmenin görünmesini istediğiniz yere yapıştırın.",
+      "copyCode": "Kodu kopyala",
+      "buttonText": "{name} için rezervasyon"
+    },
+    "slug": {
+      "title": "Web adresi",
+      "description": "Küçük harf, rakam ve tire. Değiştirirseniz daha önce paylaştığınız bağlantılar bozulur.",
+      "change": "Adresi değiştir",
+      "label": "Adres"
+    },
+    "hideDialog": {
+      "title": "Sayfanız gizlensin mi?",
+      "description": "Aramadan kaybolursunuz ve kimse online rezervasyon yapamaz. Mevcut randevular olduğu gibi kalır. İstediğiniz zaman yeniden yayına alabilirsiniz.",
+      "confirm": "Sayfayı gizle"
+    }
   },
   "locations": {
-    "privacy": {},
-    "kinds": {
-      "physical": {},
-      "mobile": {},
-      "virtual": {}
+    "title": "Konumlar",
+    "description": "Müşterilerin sizden nerede randevu aldığı: dükkânınız, gittiğiniz bölge veya online. Her hizmet ve ekip üyesi bunlardan bazılarıyla sınırlanabilir.",
+    "privacy": {
+      "title": "Müşterilerin gördükleri",
+      "atPlace": "Sizin yerinizde",
+      "atPlaceBody": "Müşteriler sizi bulabilsin diye tam adres ve harita.",
+      "travel": "Müşterilere gitme",
+      "travelBody": "Yalnızca şehriniz ve ne kadar uzağa gittiğiniz. Evden çalışıyorsanız ev adresiniz ve tam konumunuz asla gösterilmez; arama sizi yaklaşık 5 km içinde konumlandırır. Müşteriler adreslerini rezervasyon sırasında verir.",
+      "online": "Online",
+      "onlineBody": "Hiç adres yok; yalnızca seansların online yapıldığı bilgisi."
     },
-    "summary": {},
-    "list": {},
-    "toasts": {},
-    "remove": {},
-    "dialog": {},
-    "pin": {},
+    "kinds": {
+      "physical": {
+        "label": "Benim yerimde",
+        "description": "Dükkân, stüdyo, ofis"
+      },
+      "mobile": {
+        "label": "Müşterilere giderim",
+        "description": "Evler, ofisler, etkinlikler"
+      },
+      "virtual": {
+        "label": "Online",
+        "description": "Görüntülü veya telefon seansları"
+      }
+    },
+    "summary": {
+      "mobile": "{place} noktasından {km} km’ye kadar gider",
+      "virtual": "Online seanslar"
+    },
+    "list": {
+      "title": "Konumlarınız",
+      "count": "{plan} planında {max} konumdan {count}",
+      "emptyTitle": "Henüz konum yok",
+      "emptyBody": "Müşteriler randevunun nerede olacağını bilmeden rezervasyon yapamaz. Dükkânınızı, gittiğiniz bölgeyi veya online seansları ekleyin.",
+      "add": "Konum ekle",
+      "primary": "Ana konum",
+      "upcoming": "{count, plural, one {# yaklaşan randevu} other {# yaklaşan randevu}}",
+      "notPinned": "Haritada sabitlenmedi",
+      "actions": "{name} için işlemler",
+      "edit": "Düzenle",
+      "makePrimary": "Ana konum yap",
+      "remove": "Konumu kaldır",
+      "atLimit": "{count, plural, one {{plan} planınız # konum içerir. Başka eklemek için birini kaldırın.} other {{plan} planınız # konum içerir. Başka eklemek için birini kaldırın.}}",
+      "primaryHint": "Ana konum, profilinizde ve aramada ilk gösterilendir."
+    },
+    "toasts": {
+      "primary": "{name} artık ana konumunuz",
+      "removed": "{name} kaldırıldı",
+      "saved": "Konum kaydedildi",
+      "added": "Konum eklendi"
+    },
+    "remove": {
+      "blockedTitle": "{name} henüz kaldırılamıyor",
+      "ok": "Tamam",
+      "title": "{name} kaldırılsın mı?",
+      "confirm": "Konumu kaldır",
+      "description": "Müşteriler artık burası için rezervasyon yapamaz. Geçmiş randevular ayrıntılarını korur.",
+      "primaryNote": "Kalan en eski konum ana konum olur.",
+      "membersNote": "{count, plural, one {Buraya # ekip üyesi atanmış. Yalnızca buraya atanan herkes tüm konumlarınızda rezerve edilebilir olacak.} other {Buraya # ekip üyesi atanmış. Yalnızca buraya atananlar tüm konumlarınızda rezerve edilebilir olacak.}}",
+      "servicesNote": "Burada sunulan hizmetler diğer konumlarını korur.",
+      "onlyLocation": "Bu tek konumunuz. Müşterilerin yine rezervasyon yapabileceği bir yer olması için önce başka bir konum ekleyin.",
+      "upcoming": "{count, plural, one {# yaklaşan randevusu var. Önce <link>takvimden</link> taşıyın veya iptal edin.} other {# yaklaşan randevusu var. Önce <link>takvimden</link> taşıyın veya iptal edin.}}",
+      "exclusive": "{count, plural, one {{names} yalnızca burada sunuluyor. Başka bir yerde sunun veya <link>Hizmetler</link>’de gizleyin.} other {{names} yalnızca burada sunuluyor. Başka bir yerde sunun veya <link>Hizmetler</link>’de gizleyin.}}",
+      "quoted": "“{name}”"
+    },
+    "dialog": {
+      "editTitle": "{name} konumunu düzenle",
+      "addTitle": "Konum ekle",
+      "cancel": "Vazgeç",
+      "save": "Konumu kaydet",
+      "add": "Konum ekle",
+      "where": "Randevular nerede gerçekleşiyor?",
+      "name": "Ad",
+      "nameHintPhysical": "Müşterilere gösterilir, örn. dükkânın veya semtin adı.",
+      "nameHintOther": "Müşteriler nerede rezervasyon yapacaklarını seçerken gösterilir.",
+      "namePlaceholderPhysical": "örn. Şehir merkezi stüdyosu",
+      "defaultMobile": "Mobil hizmet",
+      "defaultVirtual": "Online",
+      "street": "Sokak adresi",
+      "line2": "Daire, ofis, kat",
+      "cityBased": "Bulunduğunuz şehir",
+      "city": "Şehir",
+      "region": "İl / bölge",
+      "postalCode": "Posta kodu",
+      "country": "Ülke kodu",
+      "countryHint": "İki harf, örn. US, MX, ES",
+      "radius": "Ne kadar uzağa gidersiniz?",
+      "radiusOption": "En fazla {km} km",
+      "timezone": "Saat dilimi",
+      "timezoneHint": "Buradaki saatler ve rezervasyonlar bu dilimi kullanır.",
+      "phone": "Telefon",
+      "phoneHint": "Müşteriler bu konumu doğrudan arayacaksa.",
+      "primary": "Bunu ana konumum yap",
+      "primaryDescription": "Profilinizde ilk gösterilir ve arama için kullanılır."
+    },
+    "pin": {
+      "title": "Harita işareti",
+      "physical": "Dükkânınızı haritaya ve “yakınımda” aramalarına koyar. Müşteriler yukarıda girdiğiniz adresi görür.",
+      "mobile": "Yalnızca sizi yakındaki müşterilerle eşleştirmek için kullanılır. Tam konumunuz ve sokak adresiniz asla gösterilmez; profilinizde şehir görünür ve arama sizi yaklaşık 5 km içinde konumlandırır.",
+      "find": "Bu adresi bul",
+      "useMine": "Mevcut konumumu kullan",
+      "remove": "İşareti kaldır",
+      "removed": "İşaret kaldırıldı.",
+      "matches": "Adres eşleşti",
+      "pinnedTo": "{place} konumuna sabitlendi.",
+      "pinned": "Sabitlendi.",
+      "notPinned": "Henüz sabitlenmedi. Müşteriler şehrinizde arama yaptığında yine de görünürsünüz.",
+      "noGeolocation": "Bu tarayıcı konumunu paylaşamıyor.",
+      "here": "Şu an bulunduğunuz yere sabitlendi.",
+      "denied": "Konumunuzu alamadık. Tarayıcınızın konum iznini kontrol edin.",
+      "enterAddress": "Önce adresi girin.",
+      "noMatch": "Eşleşme bulunamadı. Adresi kontrol edin veya mevcut konumunuzu kullanın."
+    },
     "instructions": {
-      "physical": {},
-      "mobile": {},
-      "virtual": {}
+      "physical": {
+        "label": "Varış talimatları",
+        "placeholder": "örn. Elm St.’ye park edin. 2B için zili çalın ve ikinci kata çıkın.",
+        "hint": "Otopark, giriş, zil kodu. Müşteriler bunu profilinizde ve rezervasyonlarında görür."
+      },
+      "mobile": {
+        "label": "Müşteriler için notlar",
+        "placeholder": "örn. 50 m içinde bir park yerine ve prize erişime ihtiyacım olacak.",
+        "hint": "Müşterilerin hazırlaması gerekenler. Rezervasyonlarında gösterilir."
+      },
+      "virtual": {
+        "label": "Seanslar nasıl işler",
+        "placeholder": "örn. Seanstan bir saat önce mesajla bir görüntülü görüşme bağlantısı alacaksınız.",
+        "hint": "Rezervasyonda gösterilir. Buraya özel bir toplantı bağlantısı yapıştırmayın; bağlantıları Mesajlar’dan gönderin."
+      }
     }
   },
   "verification": {
-    "status": {},
-    "body": {},
-    "submit": {},
-    "sent": {},
-    "meaning": {},
-    "form": {}
+    "title": "Doğrulama",
+    "description": "Müşterilere profilinizin arkasında gerçek, lisanslı bir işletme olduğunu gösterin. Ekibimiz gönderdiğiniz belgeleri elle kontrol eder.",
+    "status": {
+      "title": "Durum",
+      "not_submitted": "Doğrulanmadı",
+      "pending": "İnceleniyor",
+      "verified": "Doğrulandı",
+      "rejected": "Onaylanmadı",
+      "needs_info": "Daha fazla bilgi gerekiyor"
+    },
+    "body": {
+      "notSubmitted": "Henüz doğrulama istemediniz. Aşağıdan birkaç bilgi ve belge gönderin.",
+      "pending": "{date} tarihinde gönderildi. Ekibimizden biri her talebi elle inceler; karar çıkar çıkmaz bildirim alırsınız. İncelenirken talebi değiştiremezsiniz.",
+      "pendingNoDate": "Gönderildi. Ekibimizden biri her talebi elle inceler; karar çıkar çıkmaz bildirim alırsınız. İncelenirken talebi değiştiremezsiniz.",
+      "verified": "{name}, {date} tarihinden beri doğrulanmış durumda. Rozet <link>herkese açık profilinizde</link> ve arama sonuçlarında görünür.",
+      "verifiedNoDate": "{name} doğrulandı. Rozet <link>herkese açık profilinizde</link> ve arama sonuçlarında görünür.",
+      "rejected": "{date} tarihinde gönderilenlerle {name} doğrulanamadı. Aşağıdan yeni bilgi ve belge gönderebilirsiniz.",
+      "rejectedNoDate": "Gönderilenlerle {name} doğrulanamadı. Aşağıdan yeni bilgi ve belge gönderebilirsiniz.",
+      "needsInfo": "Karar vermeden önce ekibimizin biraz daha bilgiye ihtiyacı var. Aşağıda yanıtlayın, talebiniz yeniden incelemeye gider."
+    },
+    "note": "Kept’ten not",
+    "noteDate": "Kept’ten not · {date}",
+    "submit": {
+      "replyTitle": "Ekibimize yanıt verin",
+      "retryTitle": "Tekrar deneyin",
+      "requestTitle": "Doğrulama isteyin",
+      "firstDescription": "İşletmenizi anlatın ve bir kanıt ekleyin. Çoğu işletme bir lisans veya tescil belgesi gönderir.",
+      "againDescription": "Geçen sefer gönderdiklerinizi sakladık. Değiştirin veya ekleme yapın."
+    },
+    "sent": {
+      "title": "Gönderdikleriniz",
+      "description": "{date} tarihinde.",
+      "noDescription": "Açıklama yok.",
+      "documents": "Belgeler",
+      "open": "{n}. belgeyi aç",
+      "removed": "Bazı belgeler kaldırıldı ve artık açılamıyor."
+    },
+    "meaning": {
+      "title": "Müşterilerin gördükleri",
+      "example": "Doğrulama rozeti örneği",
+      "checkMark": "Profilinizde ve arama sonuçlarında adınızın yanında “Doğrulanmış işletme” etiketli bir onay işareti.",
+      "notEndorsement": "Kept’in sağladığınız belgeleri incelediği anlamına gelir. İşinizin değerlendirmesi veya tavsiyesi değildir; puanlarınız yine müşterilerden gelir.",
+      "private": "Belgeler gizli kalır. Yalnızca bu işletmeyi yönetenler ve Kept inceleme ekibi açabilir.",
+      "removable": "Ekibimiz rozeti daha sonra, örneğin bir lisansın geçersiz çıkması hâlinde kaldırabilir."
+    },
+    "form": {
+      "documentN": "{n}. belge",
+      "tooMany": "{count, plural, one {En fazla # belge ekleyebilirsiniz.} other {En fazla # belge ekleyebilirsiniz.}}",
+      "needSomething": "Kısa bir açıklama veya en az bir belge ekleyin.",
+      "sentReply": "Gönderildi. Talebiniz yeniden incelemede.",
+      "submitted": "İncelemeye gönderildi",
+      "replyLabel": "Yanıtınız",
+      "aboutLabel": "İşletmeniz hakkında",
+      "hint": "Lisans veya tescil numaraları, bunları kimin verdiği ve ne kadardır çalıştığınız. İşletmenin gerçek ve size ait olduğunu doğrulamamıza yardımcı olan her şey.",
+      "placeholder": "örn. Lisanslı berber, NY Eyaleti lisansı #12345678, 2019’da verildi. Dükkân North Fade LLC adıyla kayıtlı.",
+      "documents": "Belgeler",
+      "documentsHint": "Bir lisansın, tescil belgesinin veya sertifikanın fotoğrafları ya da taramaları (JPG, PNG veya WebP, her biri en fazla 15 MB). En fazla {max}.",
+      "attachedList": "Eklenen belgeler",
+      "open": "{n}. belgeyi aç",
+      "uploading": "{name} yükleniyor",
+      "fromLast": "Önceki talebinizden",
+      "attached": "Eklendi",
+      "remove": "{name} dosyasını kaldır",
+      "addAnother": "Başka bir belge ekle",
+      "add": "Belge ekle",
+      "uploadingAll": "Belgeler yükleniyor",
+      "attachedCount": "{count, plural, one {# belge eklendi} other {# belge eklendi}}",
+      "privacy": "Bu dosyaları yalnızca bu işletmeyi yönetenler ve Kept inceleme ekibi açabilir. Profilinizde asla gösterilmezler.",
+      "waiting": "Yüklemeler bekleniyor…",
+      "sendReply": "Yanıtı gönder",
+      "submitAgain": "Tekrar gönder",
+      "submit": "İncelemeye gönder"
+    }
   },
   "forms": {},
   "builder": {

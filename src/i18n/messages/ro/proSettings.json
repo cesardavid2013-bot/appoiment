@@ -280,44 +280,283 @@
       "connect": "Configurați plățile cu Stripe",
       "time": "Durează aproximativ 5 minute. Veți avea nevoie de datele bancare și de un act de identitate."
     },
-    "incomplete": {},
-    "connected": {},
-    "fees": {}
+    "incomplete": {
+      "badge": "Configurare neterminată",
+      "body": "Stripe mai are nevoie de câteva detalii înainte să puteți încasa plăți.",
+      "continue": "Continuați configurarea"
+    },
+    "connected": {
+      "badge": "Conectat",
+      "body": "Puteți încasa avansuri și plăți online.",
+      "services": "Alegeți ce încasați pentru fiecare serviciu în <link>Servicii</link>."
+    },
+    "fees": {
+      "title": "Taxe",
+      "kept": "Comisionul Kept pentru plățile online",
+      "inPerson": "Plăți primite în persoană",
+      "noFee": "Fără comision Kept",
+      "processing": "Procesarea cardurilor",
+      "stripeRate": "Tariful standard Stripe"
+    }
   },
   "link": {
-    "checklist": {},
-    "status": {},
-    "toasts": {},
-    "share": {},
-    "slug": {},
-    "hideDialog": {}
+    "title": "Link de rezervare",
+    "description": "Pagina dumneavoastră pe Kept. Puneți-o în biografie, pe cartea de vizită, pe oglindă.",
+    "checklist": {
+      "location": "Adăugați locul unde lucrați",
+      "services": "Creați cel puțin un serviciu",
+      "availability": "Stabiliți programul de lucru",
+      "done": "Făcut",
+      "todo": "De făcut"
+    },
+    "status": {
+      "liveTitle": "Pagina dumneavoastră este activă",
+      "draftTitle": "Pagina dumneavoastră nu este încă activă",
+      "liveDescription": "Clienții vă pot găsi în căutare și rezerva online.",
+      "draftDescription": "O vedeți doar dumneavoastră. Activați-o după ce terminați lista.",
+      "live": "Activ",
+      "hide": "Ascundeți pagina mea",
+      "goLive": "Activați",
+      "viewPage": "Vedeți pagina",
+      "preview": "Previzualizare"
+    },
+    "toasts": {
+      "live": "Sunteți activ — clienții vă pot găsi și rezerva",
+      "hidden": "Pagina dumneavoastră este ascunsă",
+      "hiddenDescription": "Programările existente nu sunt afectate.",
+      "slugUpdated": "Adresa a fost actualizată",
+      "slugUpdatedDescription": "Vechiul link nu mai funcționează — actualizați-l oriunde l-ați distribuit.",
+      "copied": "Copiat"
+    },
+    "share": {
+      "title": "Distribuiți",
+      "qrLabel": "Cod QR pentru {address}",
+      "qrHint": "Tipăriți-l la recepție, pe cărțile de vizită sau pe oglindă. Scanarea deschide direct pagina de rezervare.",
+      "png": "PNG pentru tipar",
+      "svg": "SVG",
+      "embedSummary": "Adăugați un buton „Rezervă acum” pe site-ul dumneavoastră",
+      "embedHint": "Lipiți codul unde doriți butonul.",
+      "copyCode": "Copiați codul",
+      "buttonText": "Rezervă la {name}"
+    },
+    "slug": {
+      "title": "Adresă web",
+      "description": "Litere mici, cifre și cratime. Schimbarea strică linkurile pe care le-ați distribuit deja.",
+      "change": "Schimbați adresa",
+      "label": "Adresă"
+    },
+    "hideDialog": {
+      "title": "Ascundeți pagina?",
+      "description": "Veți dispărea din căutări și nimeni nu va mai putea rezerva online. Programările existente rămân neschimbate. Puteți reactiva pagina oricând.",
+      "confirm": "Ascundeți pagina"
+    }
   },
   "locations": {
-    "privacy": {},
-    "kinds": {
-      "physical": {},
-      "mobile": {},
-      "virtual": {}
+    "title": "Locații",
+    "description": "Unde vă rezervă clienții: sediul, zona în care vă deplasați sau online. Fiecare serviciu și membru al echipei poate fi limitat la unele dintre ele.",
+    "privacy": {
+      "title": "Ce pot vedea clienții",
+      "atPlace": "La sediul dumneavoastră",
+      "atPlaceBody": "Adresa completă și o hartă, ca să vă găsească clienții.",
+      "travel": "Deplasare la clienți",
+      "travelBody": "Doar orașul dumneavoastră și cât de departe vă deplasați. Dacă lucrați de acasă, adresa și locația exactă nu sunt afișate niciodată — căutarea vă plasează în limita a aproximativ 5 km. Clienții vă dau adresa lor la rezervare.",
+      "online": "Online",
+      "onlineBody": "Fără adresă — doar faptul că sesiunile au loc online."
     },
-    "summary": {},
-    "list": {},
-    "toasts": {},
-    "remove": {},
-    "dialog": {},
-    "pin": {},
+    "kinds": {
+      "physical": {
+        "label": "La sediul meu",
+        "description": "Magazin, studio, birou"
+      },
+      "mobile": {
+        "label": "Mă deplasez la clienți",
+        "description": "Acasă, birouri, evenimente"
+      },
+      "virtual": {
+        "label": "Online",
+        "description": "Sesiuni video sau telefonice"
+      }
+    },
+    "summary": {
+      "mobile": "Se deplasează până la {km} km de la {place}",
+      "virtual": "Sesiuni online"
+    },
+    "list": {
+      "title": "Locațiile dumneavoastră",
+      "count": "{count} din {max} în planul {plan}",
+      "emptyTitle": "Încă nu există locații",
+      "emptyBody": "Clienții nu pot rezerva până nu știu unde are loc programarea. Adăugați sediul, zona în care vă deplasați sau sesiuni online.",
+      "add": "Adăugați o locație",
+      "primary": "Principală",
+      "upcoming": "{count, plural, one {# programare viitoare} few {# programări viitoare} other {# de programări viitoare}}",
+      "notPinned": "Nefixată pe hartă",
+      "actions": "Acțiuni pentru {name}",
+      "edit": "Editare",
+      "makePrimary": "Setați ca principală",
+      "remove": "Eliminați locația",
+      "atLimit": "{count, plural, one {Planul {plan} include # locație. Eliminați una pentru a adăuga alta.} few {Planul {plan} include # locații. Eliminați una pentru a adăuga alta.} other {Planul {plan} include # de locații. Eliminați una pentru a adăuga alta.}}",
+      "primaryHint": "Locația principală este cea afișată prima pe profil și în căutare."
+    },
+    "toasts": {
+      "primary": "{name} este acum locația dumneavoastră principală",
+      "removed": "{name} a fost eliminată",
+      "saved": "Locație salvată",
+      "added": "Locație adăugată"
+    },
+    "remove": {
+      "blockedTitle": "{name} nu poate fi eliminată încă",
+      "ok": "OK",
+      "title": "Eliminați {name}?",
+      "confirm": "Eliminați locația",
+      "description": "Clienții nu vor mai putea rezerva aici. Programările trecute își păstrează detaliile.",
+      "primaryNote": "Cea mai veche locație rămasă devine principală.",
+      "membersNote": "{count, plural, one {# membru al echipei este alocat aici. Cine este alocat doar aici va putea fi rezervat la toate locațiile dumneavoastră.} few {# membri ai echipei sunt alocați aici. Cei alocați doar aici vor putea fi rezervați la toate locațiile dumneavoastră.} other {# de membri ai echipei sunt alocați aici. Cei alocați doar aici vor putea fi rezervați la toate locațiile dumneavoastră.}}",
+      "servicesNote": "Serviciile oferite aici își păstrează celelalte locații.",
+      "onlyLocation": "Este singura dumneavoastră locație. Adăugați mai întâi alta, ca clienții să aibă unde rezerva.",
+      "upcoming": "{count, plural, one {Are # programare viitoare. Mutați-o sau anulați-o mai întâi din <link>calendar</link>.} few {Are # programări viitoare. Mutați-le sau anulați-le mai întâi din <link>calendar</link>.} other {Are # de programări viitoare. Mutați-le sau anulați-le mai întâi din <link>calendar</link>.}}",
+      "exclusive": "{count, plural, one {{names} este oferit doar aici. Oferiți-l în altă parte sau ascundeți-l în <link>Servicii</link>.} few {{names} sunt oferite doar aici. Oferiți-le în altă parte sau ascundeți-le în <link>Servicii</link>.} other {{names} sunt oferite doar aici. Oferiți-le în altă parte sau ascundeți-le în <link>Servicii</link>.}}",
+      "quoted": "„{name}”"
+    },
+    "dialog": {
+      "editTitle": "Editați {name}",
+      "addTitle": "Adăugați o locație",
+      "cancel": "Anulați",
+      "save": "Salvați locația",
+      "add": "Adăugați locația",
+      "where": "Unde au loc programările?",
+      "name": "Nume",
+      "nameHintPhysical": "Se afișează clienților, de ex. numele magazinului sau al cartierului.",
+      "nameHintOther": "Se afișează clienților când aleg unde să rezerve.",
+      "namePlaceholderPhysical": "de ex. Studioul din centru",
+      "defaultMobile": "Serviciu la domiciliu",
+      "defaultVirtual": "Online",
+      "street": "Adresa",
+      "line2": "Apartament, sediu, etaj",
+      "cityBased": "Orașul în care vă aflați",
+      "city": "Oraș",
+      "region": "Județ / regiune",
+      "postalCode": "Cod poștal",
+      "country": "Codul țării",
+      "countryHint": "Două litere, de ex. US, MX, ES",
+      "radius": "Cât de departe vă deplasați?",
+      "radiusOption": "Până la {km} km",
+      "timezone": "Fus orar",
+      "timezoneHint": "Programul și rezervările de aici folosesc acest fus orar.",
+      "phone": "Telefon",
+      "phoneHint": "Dacă clienții ar trebui să sune direct la această locație.",
+      "primary": "Setați ca locație principală",
+      "primaryDescription": "Se afișează prima pe profil și este folosită în căutare."
+    },
+    "pin": {
+      "title": "Marcaj pe hartă",
+      "physical": "Vă plasează magazinul pe hartă și în căutările „în apropierea mea”. Clienții văd adresa introdusă mai sus.",
+      "mobile": "Folosit doar pentru a vă potrivi cu clienții din apropiere. Locația exactă și adresa nu sunt afișate niciodată — profilul arată orașul, iar căutarea vă plasează în limita a aproximativ 5 km.",
+      "find": "Găsiți această adresă",
+      "useMine": "Folosiți locația mea curentă",
+      "remove": "Eliminați marcajul",
+      "removed": "Marcaj eliminat.",
+      "matches": "Adresa corespunde",
+      "pinnedTo": "Fixat la {place}.",
+      "pinned": "Fixat.",
+      "notPinned": "Încă nu este fixată. Veți apărea totuși când clienții caută în orașul dumneavoastră.",
+      "noGeolocation": "Acest browser nu își poate partaja locația.",
+      "here": "Fixat unde vă aflați acum.",
+      "denied": "Nu am putut obține locația. Verificați permisiunea de localizare din browser.",
+      "enterAddress": "Introduceți mai întâi adresa.",
+      "noMatch": "Nu s-a găsit nicio potrivire. Verificați adresa sau folosiți locația curentă."
+    },
     "instructions": {
-      "physical": {},
-      "mobile": {},
-      "virtual": {}
+      "physical": {
+        "label": "Instrucțiuni de sosire",
+        "placeholder": "de ex. Parcați pe Elm St. Sunați la interfon la 2B și urcați la etajul doi.",
+        "hint": "Parcare, intrare, codul interfonului. Clienții văd acestea pe profil și în rezervarea lor."
+      },
+      "mobile": {
+        "label": "Note pentru clienți",
+        "placeholder": "de ex. Am nevoie de un loc de parcare la maximum 50 m și de acces la o priză.",
+        "hint": "Ce ar trebui să pregătească clienții. Se afișează în rezervarea lor."
+      },
+      "virtual": {
+        "label": "Cum funcționează sesiunile",
+        "placeholder": "de ex. Veți primi un link video prin mesaj cu o oră înainte de sesiune.",
+        "hint": "Se afișează în rezervare. Nu lipiți aici un link privat de întâlnire — trimiteți linkurile în Mesaje."
+      }
     }
   },
   "verification": {
-    "status": {},
-    "body": {},
-    "submit": {},
-    "sent": {},
-    "meaning": {},
-    "form": {}
+    "title": "Verificare",
+    "description": "Arătați clienților că în spatele profilului dumneavoastră se află o firmă reală și autorizată. Echipa noastră verifică manual documentele trimise.",
+    "status": {
+      "title": "Stare",
+      "not_submitted": "Neverificat",
+      "pending": "În verificare",
+      "verified": "Verificat",
+      "rejected": "Neaprobat",
+      "needs_info": "Sunt necesare mai multe informații"
+    },
+    "body": {
+      "notSubmitted": "Nu ați solicitat încă verificarea. Trimiteți mai jos câteva detalii și documente.",
+      "pending": "Trimis pe {date}. Un membru al echipei noastre analizează manual fiecare cerere; veți primi o notificare imediat ce există o decizie. Nu puteți modifica cererea cât timp este în verificare.",
+      "pendingNoDate": "Trimis. Un membru al echipei noastre analizează manual fiecare cerere; veți primi o notificare imediat ce există o decizie. Nu puteți modifica cererea cât timp este în verificare.",
+      "verified": "{name} este verificat din {date}. Insigna apare pe <link>profilul public</link> și în rezultatele căutării.",
+      "verifiedNoDate": "{name} este verificat. Insigna apare pe <link>profilul public</link> și în rezultatele căutării.",
+      "rejected": "Nu am putut verifica {name} pe baza celor trimise pe {date}. Puteți trimite mai jos detalii și documente noi.",
+      "rejectedNoDate": "Nu am putut verifica {name} pe baza celor trimise. Puteți trimite mai jos detalii și documente noi.",
+      "needsInfo": "Echipa noastră are nevoie de ceva mai multe informații înainte de a decide. Răspundeți mai jos și cererea revine în verificare."
+    },
+    "note": "Notă de la Kept",
+    "noteDate": "Notă de la Kept · {date}",
+    "submit": {
+      "replyTitle": "Răspundeți echipei noastre",
+      "retryTitle": "Încercați din nou",
+      "requestTitle": "Solicitați verificarea",
+      "firstDescription": "Spuneți-ne despre firmă și atașați o dovadă. Majoritatea firmelor trimit o licență sau un document de înregistrare.",
+      "againDescription": "Am păstrat ce ați trimis data trecută. Modificați sau completați."
+    },
+    "sent": {
+      "title": "Ce ați trimis",
+      "description": "Pe {date}.",
+      "noDescription": "Fără descriere.",
+      "documents": "Documente",
+      "open": "Deschideți documentul {n}",
+      "removed": "Unele documente au fost eliminate și nu mai pot fi deschise."
+    },
+    "meaning": {
+      "title": "Ce văd clienții",
+      "example": "Exemplu de insignă de verificare",
+      "checkMark": "O bifă lângă numele dumneavoastră pe profil și în rezultatele căutării, cu eticheta „Firmă verificată”.",
+      "notEndorsement": "Înseamnă că Kept a analizat documentele furnizate de dumneavoastră. Nu este o evaluare a muncii dumneavoastră și nici o recomandare — evaluările vin în continuare de la clienți.",
+      "private": "Documentele rămân private. Le pot deschide doar persoanele care gestionează această firmă și echipa de verificare Kept.",
+      "removable": "Echipa noastră poate elimina ulterior insigna, de exemplu dacă o licență se dovedește invalidă."
+    },
+    "form": {
+      "documentN": "Documentul {n}",
+      "tooMany": "{count, plural, one {Puteți atașa cel mult # document.} few {Puteți atașa cel mult # documente.} other {Puteți atașa cel mult # de documente.}}",
+      "needSomething": "Adăugați o scurtă descriere sau cel puțin un document.",
+      "sentReply": "Trimis. Cererea dumneavoastră este din nou în verificare.",
+      "submitted": "Trimis spre verificare",
+      "replyLabel": "Răspunsul dumneavoastră",
+      "aboutLabel": "Despre firma dumneavoastră",
+      "hint": "Numere de licență sau de înregistrare, cine le-a emis și de cât timp lucrați. Orice ne ajută să confirmăm că firma este reală și a dumneavoastră.",
+      "placeholder": "de ex. Frizer autorizat, licență NY State #12345678, emisă în 2019. Magazin înregistrat ca North Fade LLC.",
+      "documents": "Documente",
+      "documentsHint": "Fotografii sau scanări (JPG, PNG sau WebP, până la 15 MB fiecare) ale unei licențe, certificat de înregistrare sau certificări. Cel mult {max}.",
+      "attachedList": "Documente atașate",
+      "open": "Deschideți documentul {n}",
+      "uploading": "Se încarcă {name}",
+      "fromLast": "Din cererea dumneavoastră anterioară",
+      "attached": "Atașat",
+      "remove": "Eliminați {name}",
+      "addAnother": "Adăugați alt document",
+      "add": "Adăugați documente",
+      "uploadingAll": "Se încarcă documentele",
+      "attachedCount": "{count, plural, one {# document atașat} few {# documente atașate} other {# de documente atașate}}",
+      "privacy": "Aceste fișiere pot fi deschise doar de persoanele care gestionează firma și de echipa de verificare Kept. Nu sunt afișate niciodată pe profil.",
+      "waiting": "Se așteaptă încărcările…",
+      "sendReply": "Trimiteți răspunsul",
+      "submitAgain": "Trimiteți din nou",
+      "submit": "Trimiteți spre verificare"
+    }
   },
   "forms": {},
   "builder": {
