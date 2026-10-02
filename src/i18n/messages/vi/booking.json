@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Đặt lịch với {name}",
+    "fallbackTitle": "Đặt lịch"
+  },
+  "steps": {
+    "service": "Chọn dịch vụ",
+    "options": "Tùy chỉnh",
+    "who": "Ai & ở đâu",
+    "time": "Chọn giờ",
+    "details": "Vài thông tin",
+    "review": "Xem lại & xác nhận"
+  },
+  "header": {
+    "backTo": "Quay lại {name}",
+    "previousStep": "Bước trước",
+    "stepOf": "Bước {current}/{total}",
+    "exit": "Thoát đặt lịch"
+  },
+  "service": {
+    "optionsAvailable": "Có tùy chọn",
+    "group": "Nhóm · tối đa {count}"
+  },
+  "options": {
+    "required": "Bắt buộc",
+    "upTo": "Chọn tối đa {count}",
+    "optionalAny": "Tùy chọn · chọn bao nhiêu cũng được",
+    "optional": "Tùy chọn",
+    "included": "Đã bao gồm",
+    "errorRequired": "Hãy chọn một tùy chọn cho “{name}”.",
+    "errorOnlyOne": "Chỉ chọn một tùy chọn cho “{name}”.",
+    "errorUpTo": "Chọn tối đa {count} cho “{name}”.",
+    "errorUnavailable": "Một trong các tùy chọn đã chọn hiện không còn khả dụng."
+  },
+  "who": {
+    "where": "Địa điểm",
+    "with": "Với",
+    "comesToYou": "Đến tận nơi · trong vòng {km} km quanh {city}",
+    "online": "Buổi học trực tuyến",
+    "anyPro": "Bất kỳ chuyên gia nào còn trống",
+    "anyProHint": "Nhiều khung giờ nhất — chúng tôi sẽ xếp bạn với người đang rảnh."
+  },
+  "details": {
+    "addressLabel": "Chúng tôi nên đến đâu?",
+    "addressHint": "Trong vòng {km} km quanh {city}. Chỉ chia sẻ với doanh nghiệp.",
+    "addressPlaceholder": "Địa chỉ, căn hộ, thành phố",
+    "consent": "Tôi đã đọc và đồng ý với nội dung trên",
+    "age": "Tôi xác nhận mình từ {age} tuổi trở lên",
+    "noteLabel": "Bạn có điều gì cần họ biết thêm không?",
+    "notePlaceholder": "Dị ứng, sở thích, ghi chú về chỗ đậu xe…"
+  },
+  "review": {
+    "changeTime": "Đổi giờ",
+    "with": "Với",
+    "where": "Địa điểm",
+    "yourAddress": "Địa chỉ của bạn",
+    "online": "Trực tuyến",
+    "noteLabel": "Bạn có điều gì cần họ biết không?",
+    "notePlaceholder": "Sở thích, câu hỏi, nhu cầu hỗ trợ tiếp cận…",
+    "promoApplied": "Đã áp dụng {code}",
+    "promoRemove": "Xóa",
+    "promoPlaceholder": "Mã khuyến mãi",
+    "promoApply": "Áp dụng",
+    "beforeYouBook": "Trước khi đặt lịch",
+    "bookingAs": "Đặt lịch với tên {name}"
+  },
+  "confirm": {
+    "request": "Gửi yêu cầu đặt lịch",
+    "requestShort": "Gửi yêu cầu",
+    "pay": "Xác nhận và thanh toán {amount}",
+    "payShort": "Thanh toán {amount}",
+    "confirm": "Xác nhận đặt lịch",
+    "confirmShort": "Xác nhận"
+  },
+  "summary": {
+    "label": "Tóm tắt đặt lịch",
+    "instant": "Xác nhận tức thì",
+    "request": "Doanh nghiệp xác nhận",
+    "total": "Tổng cộng",
+    "estimatedTotal": "Tổng ước tính",
+    "estimated": "Ước tính",
+    "comesToYou": "Đến tận nơi",
+    "online": "Trực tuyến",
+    "empty": "Chọn một dịch vụ để xem giờ và giá.",
+    "continue": "Tiếp tục",
+    "signInToBook": "Đăng nhập để đặt lịch"
+  },
+  "time": {
+    "preselectMissed": "Giờ bạn chọn không còn khả dụng với các lựa chọn này. Dưới đây là các khung giờ gần nhất.",
+    "previousWeeks": "Hai tuần trước",
+    "nextWeeks": "Hai tuần sau",
+    "chooseDate": "Chọn ngày",
+    "today": "Hôm nay",
+    "timesAvailable": "{count, plural, other {# khung giờ trống}}",
+    "noAvailability": "Không còn chỗ trống",
+    "noOpeningsOn": "Không còn chỗ trống vào {date}",
+    "noOpeningsThisDay": "Không còn chỗ trống trong ngày này",
+    "nextOpening": "Lịch trống gần nhất: {date}.",
+    "tryLater": "Hãy xem hai tuần tiếp theo, hoặc vào danh sách chờ và chúng tôi sẽ báo khi có chỗ trống.",
+    "joinWaitlist": "Vào danh sách chờ cho ngày này",
+    "morning": "Buổi sáng",
+    "afternoon": "Buổi chiều",
+    "evening": "Buổi tối",
+    "morningTimes": "Giờ buổi sáng",
+    "afternoonTimes": "Giờ buổi chiều",
+    "eveningTimes": "Giờ buổi tối",
+    "spotsLeft": "{count, plural, other {Còn #}}",
+    "timesIn": "Giờ theo {abbr} ({zone}).",
+    "timesInLocal": "Giờ theo {abbr} ({zone}) — tức {time} tại nơi bạn ở."
+  },
+  "waitlist": {
+    "title": "Vào danh sách chờ",
+    "description": "Nếu có giờ trống vào {date}, chúng tôi sẽ báo cho bạn ngay. Chỗ trống thuộc về người đặt trước.",
+    "cancel": "Hủy",
+    "notify": "Báo cho tôi",
+    "windowLabel": "Khung giờ phù hợp với bạn",
+    "any": "Bất kỳ giờ nào trong ngày",
+    "morning": "Buổi sáng (trước 12 giờ trưa)",
+    "afternoon": "Buổi chiều (12 giờ trưa – 5 giờ chiều)",
+    "evening": "Buổi tối (sau 5 giờ chiều)",
+    "joined": "Bạn đã vào danh sách chờ",
+    "joinedBody": "Chúng tôi sẽ báo ngay nếu có giờ trống."
+  },
+  "price": {
+    "label": "Chi tiết giá",
+    "total": "Tổng cộng",
+    "estimatedTotal": "Tổng ước tính",
+    "payNow": "Thanh toán ngay",
+    "depositNow": "Tiền đặt cọc cần trả ngay",
+    "remaining": "Còn lại thanh toán tại buổi hẹn",
+    "nothingNow": "Không cần thanh toán lúc này — thanh toán tại buổi hẹn.",
+    "estimateNote": "Giá cuối cùng do doanh nghiệp xác nhận và có thể thay đổi tùy theo công việc cần thực hiện.",
+    "tax": "Thuế",
+    "serviceFee": "Phí dịch vụ"
+  },
+  "checkout": {
+    "title": "Thanh toán",
+    "description": "Hoàn tất thanh toán để xác nhận đặt lịch.",
+    "pay": "Thanh toán {amount}",
+    "secured": "Được bảo mật bởi Stripe. Giờ hẹn được giữ trong lúc bạn thanh toán.",
+    "declined": "Thẻ của bạn đã bị từ chối.",
+    "failed": "Chúng tôi không thể hoàn tất thanh toán. Thẻ của bạn chưa bị trừ tiền — vui lòng thử lại."
+  },
+  "intake": {
+    "optional": "(không bắt buộc)",
+    "yes": "Có",
+    "no": "Không"
+  }
+}
