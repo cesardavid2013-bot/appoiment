@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "Hindi nahanap",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} sa {city}",
+    "bookOnline": "Mag-book kay {name} online."
+  },
+  "preview": {
+    "notice": "Preview — ikaw lang ang makakakita sa pahinang ito hangga't hindi mo ito pinapa-publish.",
+    "goLive": "Mag-live"
+  },
+  "verified": "Beripikado ng Kept",
+  "verifiedLabel": "Beripikadong negosyo",
+  "reviewsCount": "{count, plural, one {# beripikadong review} other {# beripikadong review}}",
+  "newOnKept": "Bago sa Kept",
+  "travels": "{city} · bumibiyahe hanggang {km} km",
+  "status": {
+    "openUntil": "Bukas · hanggang {time}",
+    "opensAt": "Magbubukas ng {time}",
+    "opensTomorrow": "Magbubukas bukas ng {time}",
+    "opensDay": "Magbubukas sa {day} ng {time}",
+    "notSet": "Hindi pa naitakda ang oras",
+    "closed": "Sarado"
+  },
+  "nav": {
+    "label": "Mga seksyon ng profile",
+    "services": "Mga serbisyo",
+    "work": "Mga gawa",
+    "featured": "Itinampok",
+    "reviews": "Mga review",
+    "about": "Tungkol"
+  },
+  "services": {
+    "eyebrow": "Ang menu",
+    "title": "Mga serbisyo",
+    "empty": "Wala pang na-publish na serbisyo ang negosyong ito.",
+    "sale": "Sale",
+    "group": "Grupo · hanggang {count}",
+    "request": "Humiling mag-book",
+    "options": "May mga opsyon",
+    "deposit": "Deposito sa pag-book",
+    "book": "Mag-book",
+    "bookService": "Mag-book ng {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Mga kamakailang gawa"
+  },
+  "featured": {
+    "eyebrow": "Sa social",
+    "title": "Itinampok",
+    "allProfiles": "Lahat ng social profile",
+    "bookThis": "I-book ito · {service}",
+    "newTab": "(magbubukas sa bagong tab)",
+    "footnote": "Naglo-load lang ang mga player mula sa bawat platform kapag pinindot mo ang play.",
+    "play": "I-play ang {title}",
+    "loadsFrom": "Naglo-load mula sa {host}"
+  },
+  "team": {
+    "eyebrow": "Ang mga tao",
+    "title": "Team"
+  },
+  "reviews": {
+    "eyebrow": "Salita ng mga customer",
+    "title": "Mga review",
+    "empty": "Wala pang review. Makakapag-iwan lang ng review ang mga customer pagkatapos ng natapos na pagbisita.",
+    "distribution": "Distribusyon ng rating",
+    "onlyCustomers": "Mga customer lang na may natapos na booking ang makakapag-iwan ng review.",
+    "response": "Tugon mula kay {name}",
+    "stars": "{value} sa 5 bituin"
+  },
+  "about": {
+    "eyebrow": "Ang tahanan",
+    "title": "Tungkol",
+    "hours": "Oras ng pagbubukas",
+    "timesIn": "Ang mga oras ay nasa {zone}.",
+    "policies": "Mga patakaran",
+    "noShow": "Ang hindi pagsipot sa appointment ay maaaring singilin ng {percent}% ng kabuuan.",
+    "experience": "{years}+ taong karanasan",
+    "amenities": "Mga amenity",
+    "online": "Online",
+    "directions": "Mga direksyon",
+    "comesToYou": "Pumupunta sa iyo",
+    "mobileBody": "Nakabase sa {city}. Bumibiyahe hanggang {km} km — idadagdag mo ang iyong address sa pag-book.",
+    "onlineSessions": "Mga online session",
+    "onlineBody": "Sumali mula saanman. Ibabahagi ang link pagkatapos mag-book."
+  },
+  "panel": {
+    "label": "Mag-book",
+    "eyebrow": "Magreserba",
+    "freeOptions": "May mga libreng opsyon",
+    "from": "Mga serbisyo simula {price}",
+    "onConsultation": "Presyo sa konsultasyon",
+    "nextToday": "Susunod na bakante ngayon",
+    "nextTomorrow": "Susunod na bakante bukas",
+    "nextOn": "Susunod na bakante sa {day}",
+    "none": "Walang bakante sa susunod na dalawang linggo",
+    "bookNow": "Mag-book na",
+    "requestToBook": "Humiling mag-book",
+    "instant": "Agarang kumpirmasyon",
+    "confirms": "Kukumpirmahin ng negosyo ang iyong kahilingan",
+    "notTaking": "Hindi pa tumatanggap ng booking ang negosyong ito.",
+    "mobileFrom": "Simula {price}",
+    "mobileNext": "Susunod: {day} {time}",
+    "seeAvailability": "Tingnan ang availability",
+    "request": "Humiling"
+  },
+  "actions": {
+    "share": "Ibahagi",
+    "shareTitle": "Ibahagi si {name}",
+    "shareBody": "Ipadala ang link, o i-scan ang code para buksan ang booking page.",
+    "copy": "Kopyahin",
+    "copied": "Nakopya",
+    "downloadQr": "I-download ang QR code",
+    "ask": "Magtanong",
+    "messageTitle": "Magpadala ng mensahe kay {name}",
+    "messageBody": "Magtanong tungkol sa mga serbisyo, availability o anupaman bago mag-book. Mananatiling pribado ang iyong numero ng telepono at email.",
+    "cancel": "Kanselahin",
+    "send": "Ipadala ang mensahe",
+    "yourMessage": "Ang iyong mensahe",
+    "placeholder": "Hi! May oras ba kayo para sa skin fade ngayong Sabado ng hapon?",
+    "sent": "Naipadala ang mensahe",
+    "sentBody": "Sasagot si {name} sa iyong inbox."
+  },
+  "portfolio": {
+    "compare": "Ihambing ang bago at pagkatapos",
+    "portfolio": "Portfolio",
+    "close": "Isara",
+    "previous": "Nakaraan",
+    "next": "Susunod",
+    "before": "Bago",
+    "after": "Pagkatapos",
+    "beforeAfter": "Bago / pagkatapos",
+    "video": "Video",
+    "openItem": "Buksan ang item {n}",
+    "browse": "Gamitin ang arrow keys para mag-browse",
+    "bookThis": "I-book ito",
+    "bookThisService": "I-book ito — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Post",
+    "reel": "Reel",
+    "track": "Track",
+    "album": "Album",
+    "artist": "Artist",
+    "playlist": "Playlist",
+    "episode": "Episode",
+    "show": "Podcast"
+  },
+  "links": {
+    "label": "Mga link button"
+  }
+}
