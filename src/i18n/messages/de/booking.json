@@ -42,7 +42,7 @@
   },
   "details": {
     "addressLabel": "Wohin sollen wir kommen?",
-    "addressHint": "Im Umkreis von {km} km um {city}. Wird nur mit dem Business geteilt.",
+    "addressHint": "Im Umkreis von {km} km um {city}. Wird nur mit dem Unternehmen geteilt.",
     "addressPlaceholder": "Straße, Wohnung, Stadt",
     "consent": "Ich habe das Obige gelesen und stimme zu",
     "age": "Ich bestätige, dass ich mindestens {age} Jahre alt bin",
@@ -75,7 +75,7 @@
   "summary": {
     "label": "Buchungsübersicht",
     "instant": "Sofortbestätigung",
-    "request": "Wird vom Business bestätigt",
+    "request": "Wird vom Unternehmen bestätigt",
     "total": "Gesamt",
     "estimatedTotal": "Geschätzter Gesamtbetrag",
     "estimated": "Geschätzt",
@@ -129,7 +129,7 @@
     "depositNow": "Jetzt fällige Anzahlung",
     "remaining": "Restbetrag vor Ort",
     "nothingNow": "Jetzt ist nichts zu zahlen – bezahle vor Ort.",
-    "estimateNote": "Der Endpreis wird vom Business bestätigt und kann je nach Aufwand abweichen.",
+    "estimateNote": "Der Endpreis wird vom Unternehmen bestätigt und kann je nach Aufwand abweichen.",
     "tax": "Steuern",
     "serviceFee": "Servicegebühr"
   },
