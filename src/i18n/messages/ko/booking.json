@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "{name}님께 예약하기",
+    "fallbackTitle": "예약하기"
+  },
+  "steps": {
+    "service": "서비스 선택",
+    "options": "옵션 설정",
+    "who": "담당자 & 장소",
+    "time": "시간 선택",
+    "details": "추가 정보",
+    "review": "확인 & 예약 확정"
+  },
+  "header": {
+    "backTo": "{name}(으)로 돌아가기",
+    "previousStep": "이전 단계",
+    "stepOf": "{total}단계 중 {current}단계",
+    "exit": "예약 나가기"
+  },
+  "service": {
+    "optionsAvailable": "선택 가능한 옵션 있음",
+    "group": "그룹 · 최대 {count}명"
+  },
+  "options": {
+    "required": "필수",
+    "upTo": "최대 {count}개 선택",
+    "optionalAny": "선택 사항 · 원하는 만큼 선택",
+    "optional": "선택 사항",
+    "included": "포함",
+    "errorRequired": "“{name}” 옵션을 선택해 주세요.",
+    "errorOnlyOne": "“{name}”은(는) 하나만 선택할 수 있어요.",
+    "errorUpTo": "“{name}”은(는) 최대 {count}개까지 선택할 수 있어요.",
+    "errorUnavailable": "선택한 옵션 중 하나를 더 이상 이용할 수 없어요."
+  },
+  "who": {
+    "where": "장소",
+    "with": "담당자",
+    "comesToYou": "방문 서비스 · {city} 기준 {km}km 이내",
+    "online": "온라인 세션",
+    "anyPro": "가능한 아무 전문가",
+    "anyProHint": "가장 많은 시간대를 볼 수 있어요. 비어 있는 분으로 배정해 드릴게요."
+  },
+  "details": {
+    "addressLabel": "어디로 방문하면 될까요?",
+    "addressHint": "{city} 기준 {km}km 이내. 업체에만 공유돼요.",
+    "addressPlaceholder": "도로명 주소, 동·호수, 도시",
+    "consent": "위 내용을 읽고 동의합니다",
+    "age": "만 {age}세 이상임을 확인합니다",
+    "noteLabel": "미리 알려야 할 내용이 있나요?",
+    "notePlaceholder": "알레르기, 선호 사항, 주차 안내 등"
+  },
+  "review": {
+    "changeTime": "시간 변경",
+    "with": "담당자",
+    "where": "장소",
+    "yourAddress": "내 주소",
+    "online": "온라인",
+    "noteLabel": "미리 알려야 할 내용이 있나요?",
+    "notePlaceholder": "선호 사항, 문의, 접근성 요청 등",
+    "promoApplied": "{code} 적용됨",
+    "promoRemove": "삭제",
+    "promoPlaceholder": "프로모션 코드",
+    "promoApply": "적용",
+    "beforeYouBook": "예약 전 확인하세요",
+    "bookingAs": "{name}님으로 예약 중"
+  },
+  "confirm": {
+    "request": "예약 요청 보내기",
+    "requestShort": "요청 보내기",
+    "pay": "확인하고 {amount} 결제",
+    "payShort": "{amount} 결제",
+    "confirm": "예약 확정",
+    "confirmShort": "확정"
+  },
+  "summary": {
+    "label": "예약 요약",
+    "instant": "즉시 확정",
+    "request": "업체가 확정",
+    "total": "합계",
+    "estimatedTotal": "예상 합계",
+    "estimated": "예상",
+    "comesToYou": "방문 서비스",
+    "online": "온라인",
+    "empty": "서비스를 선택하면 시간과 가격을 볼 수 있어요.",
+    "continue": "계속",
+    "signInToBook": "로그인하고 예약하기"
+  },
+  "time": {
+    "preselectMissed": "선택하신 시간은 이 조건에서는 더 이상 이용할 수 없어요. 가장 가까운 시간대를 보여 드릴게요.",
+    "previousWeeks": "이전 2주",
+    "nextWeeks": "다음 2주",
+    "chooseDate": "날짜 선택",
+    "today": "오늘",
+    "timesAvailable": "{count, plural, other {예약 가능 시간 #개}}",
+    "noAvailability": "예약 가능한 시간 없음",
+    "noOpeningsOn": "{date}에는 빈 시간이 없어요",
+    "noOpeningsThisDay": "이 날은 빈 시간이 없어요",
+    "nextOpening": "가장 빠른 예약 가능일: {date}.",
+    "tryLater": "다음 2주를 확인하거나 대기 명단에 등록해 보세요. 자리가 나면 알려 드릴게요.",
+    "joinWaitlist": "이 날짜 대기 명단에 등록",
+    "morning": "오전",
+    "afternoon": "오후",
+    "evening": "저녁",
+    "morningTimes": "오전 시간대",
+    "afternoonTimes": "오후 시간대",
+    "eveningTimes": "저녁 시간대",
+    "spotsLeft": "{count, plural, other {#자리 남음}}",
+    "timesIn": "{abbr}({zone}) 기준 시간입니다.",
+    "timesInLocal": "{abbr}({zone}) 기준 시간이며, 현재 계신 곳에서는 {time}이에요."
+  },
+  "waitlist": {
+    "title": "대기 명단 등록",
+    "description": "{date}에 자리가 나면 바로 알려 드려요. 먼저 예약하는 분께 배정돼요.",
+    "cancel": "취소",
+    "notify": "알림 받기",
+    "windowLabel": "가능한 시간대",
+    "any": "그날 아무 때나",
+    "morning": "오전 (정오 이전)",
+    "afternoon": "오후 (정오 – 오후 5시)",
+    "evening": "저녁 (오후 5시 이후)",
+    "joined": "대기 명단에 등록되었어요",
+    "joinedBody": "자리가 나면 바로 알려 드릴게요."
+  },
+  "price": {
+    "label": "가격 내역",
+    "total": "합계",
+    "estimatedTotal": "예상 합계",
+    "payNow": "지금 결제",
+    "depositNow": "지금 내야 하는 예약금",
+    "remaining": "방문 시 결제할 잔액",
+    "nothingNow": "지금 결제할 금액은 없어요. 방문 시 결제하세요.",
+    "estimateNote": "최종 가격은 업체가 확정하며, 작업 내용에 따라 달라질 수 있어요.",
+    "tax": "세금",
+    "serviceFee": "서비스 수수료"
+  },
+  "checkout": {
+    "title": "결제",
+    "description": "결제를 완료하면 예약이 확정돼요.",
+    "pay": "{amount} 결제",
+    "secured": "Stripe가 안전하게 보호합니다. 결제하는 동안 시간은 확보돼요.",
+    "declined": "카드가 거절되었어요.",
+    "failed": "결제를 완료하지 못했어요. 카드에서 요금이 청구되지 않았으니 다시 시도해 주세요."
+  },
+  "intake": {
+    "optional": "(선택)",
+    "yes": "예",
+    "no": "아니요"
+  }
+}

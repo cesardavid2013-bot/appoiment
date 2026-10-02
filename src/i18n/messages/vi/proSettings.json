@@ -1,0 +1,782 @@
+{
+  "title": "Cài đặt",
+  "home": {
+    "description": "Cách {name} hiển thị, nhận lịch hẹn và nhận thanh toán."
+  },
+  "nav": {
+    "label": "Cài đặt",
+    "back": "Cài đặt",
+    "sections": {
+      "profile": {
+        "label": "Hồ sơ doanh nghiệp",
+        "description": "Tên, ảnh, giới thiệu, liên hệ và liên kết mạng xã hội."
+      },
+      "locations": {
+        "label": "Địa điểm",
+        "description": "Nơi bạn làm việc: cửa hàng, chỗ khách hàng hoặc trực tuyến."
+      },
+      "booking": {
+        "label": "Quy tắc đặt lịch",
+        "description": "Đặt lịch tức thì hoặc cần duyệt, thời gian báo trước, nhắc hẹn."
+      },
+      "policies": {
+        "label": "Hủy lịch & phí",
+        "description": "Thời hạn hủy, phí vắng mặt, thuế."
+      },
+      "payments": {
+        "label": "Thanh toán",
+        "description": "Nhận đặt cọc và thanh toán thẻ trực tuyến."
+      },
+      "forms": {
+        "label": "Câu hỏi cho khách hàng",
+        "description": "Biểu mẫu khách hàng điền khi đặt lịch."
+      },
+      "link": {
+        "label": "Liên kết đặt lịch",
+        "description": "Địa chỉ web, mã QR và bắt đầu hoạt động."
+      },
+      "verification": {
+        "label": "Xác minh",
+        "description": "Nhận huy hiệu đã xác minh trên hồ sơ."
+      },
+      "appearance": {
+        "label": "Giao diện trang",
+        "description": "Đầu trang, màu sắc, thứ tự mục và nút liên kết."
+      }
+    }
+  },
+  "saveBar": {
+    "saving": "Đang lưu…",
+    "unsaved": "Thay đổi chưa lưu",
+    "allSaved": "Đã lưu mọi thay đổi",
+    "discard": "Hủy bỏ",
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "checkFields": "Hãy kiểm tra các trường được đánh dấu."
+  },
+  "shareLink": {
+    "copy": "Sao chép",
+    "copied": "Đã sao chép"
+  },
+  "profile": {
+    "title": "Hồ sơ doanh nghiệp",
+    "description": "Những gì khách hàng thấy trên trang của bạn và trong tìm kiếm.",
+    "toastUpdated": "Đã cập nhật hồ sơ",
+    "toastLive": "Thay đổi đã hiển thị trên trang của bạn.",
+    "logoAlt": "Logo {name}",
+    "viewPage": "Xem trang của bạn",
+    "photos": {
+      "title": "Ảnh",
+      "description": "Logo xuất hiện trên thẻ và tin nhắn; ảnh bìa mở đầu trang của bạn. Hãy dùng công việc hoặc không gian thật của bạn — không dùng ảnh stock.",
+      "noCover": "Chưa có ảnh bìa",
+      "remove": "Xóa",
+      "uploading": "Đang tải lên…",
+      "changeCover": "Đổi ảnh bìa",
+      "addCover": "Thêm ảnh bìa",
+      "changeLogo": "Đổi logo",
+      "addLogo": "Thêm logo",
+      "logoHint": "Ảnh vuông là tốt nhất. Nếu không có, chúng tôi hiển thị chữ cái đầu của bạn."
+    },
+    "basics": {
+      "title": "Cơ bản",
+      "nameIndividual": "Tên của bạn hoặc tên doanh nghiệp",
+      "nameBusiness": "Tên doanh nghiệp",
+      "tagline": "Khẩu hiệu",
+      "taglineHint": "Một dòng dưới tên của bạn. {count, plural, other {Còn # ký tự.}}",
+      "taglinePlaceholder": "VD: Fade chuẩn xác và tạo kiểu râu ở Bed-Stuy",
+      "category": "Danh mục chính",
+      "categoryHint": "Nơi bạn xuất hiện khi mọi người duyệt tìm.",
+      "choose": "Chọn…",
+      "years": "Số năm kinh nghiệm"
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "description": "Bạn làm gì, làm việc thế nào, điều gì khiến buổi hẹn với bạn khác biệt. Lời lẽ giản dị hay hơn từ ngữ hoa mỹ.",
+      "label": "Giới thiệu",
+      "languages": "Ngôn ngữ sử dụng",
+      "amenities": "Tiện ích"
+    },
+    "tags": {
+      "optional": "Tùy chọn",
+      "placeholder": "Nhập rồi nhấn Enter",
+      "remove": "Xóa {tag}"
+    },
+    "suggestions": {
+      "languages": {
+        "english": "Tiếng Anh",
+        "spanish": "Tiếng Tây Ban Nha",
+        "french": "Tiếng Pháp",
+        "portuguese": "Tiếng Bồ Đào Nha",
+        "mandarin": "Tiếng Quan Thoại",
+        "cantonese": "Tiếng Quảng Đông",
+        "arabic": "Tiếng Ả Rập",
+        "russian": "Tiếng Nga",
+        "haitianCreole": "Tiếng Creole Haiti",
+        "korean": "Tiếng Hàn",
+        "vietnamese": "Tiếng Việt",
+        "hindi": "Tiếng Hindi",
+        "italian": "Tiếng Ý",
+        "german": "Tiếng Đức",
+        "polish": "Tiếng Ba Lan",
+        "tagalog": "Tiếng Tagalog"
+      },
+      "amenities": {
+        "wheelchair": "Lối đi cho xe lăn",
+        "streetParking": "Đỗ xe ven đường",
+        "freeParking": "Đỗ xe miễn phí",
+        "wifi": "Wi-Fi",
+        "cardPayments": "Thanh toán thẻ",
+        "walkIns": "Chào đón khách vãng lai",
+        "kidFriendly": "Thân thiện với trẻ em",
+        "restroom": "Nhà vệ sinh",
+        "airConditioning": "Điều hòa",
+        "drinks": "Có phục vụ đồ uống",
+        "genderNeutral": "Không phân biệt giới tính",
+        "petFriendly": "Thân thiện với thú cưng"
+      }
+    },
+    "contact": {
+      "title": "Liên hệ & liên kết",
+      "description": "Hiển thị trên trang của bạn. Khách hàng luôn có thể nhắn tin cho bạn qua Kept nên các mục này không bắt buộc.",
+      "email": "Email công khai",
+      "phone": "Điện thoại công khai",
+      "website": "Website",
+      "websitePlaceholder": "yourdomain.com"
+    },
+    "social": {
+      "legend": "Hồ sơ mạng xã hội",
+      "hint": "Nhập tên tài khoản hoặc dán liên kết hồ sơ. Để giới thiệu video, bài đăng hoặc bản nhạc cụ thể trên trang, hãy thêm chúng trong <link>Portfolio</link>.",
+      "placeholders": {
+        "instagram": "@yourname",
+        "tiktok": "@yourname",
+        "youtube": "@yourchannel",
+        "facebook": "yourpage",
+        "x": "@yourname",
+        "linkedin": "in/yourname",
+        "spotify": "Liên kết nghệ sĩ",
+        "soundcloud": "yourname",
+        "behance": "yourname",
+        "pinterest": "yourname",
+        "twitch": "yourchannel",
+        "threads": "@yourname"
+      },
+      "errors": {
+        "wrongNetwork": "Đó không phải liên kết {network}.",
+        "useProfile": "Hãy dùng liên kết đến hồ sơ {network} của bạn.",
+        "badHandle": "Có vẻ đó không phải tên tài khoản {network}.",
+        "badArtist": "Có vẻ đó không phải liên kết nghệ sĩ {network}."
+      }
+    },
+    "timezone": {
+      "title": "Múi giờ",
+      "description": "Giờ làm việc và mọi giờ hẹn đều theo múi giờ này. Chỉ đổi nếu bạn thực sự chuyển nơi ở — các lịch hẹn hiện có giữ nguyên thời điểm chính xác.",
+      "label": "Múi giờ"
+    }
+  },
+  "booking": {
+    "title": "Quy tắc đặt lịch",
+    "description": "Cách thức và thời điểm khách hàng có thể đặt lịch với bạn. Từng dịch vụ có thể ghi đè thời gian báo trước và việc duyệt.",
+    "toastUpdated": "Đã cập nhật quy tắc đặt lịch",
+    "mode": {
+      "title": "Xác nhận",
+      "description": "Bạn vẫn có thể yêu cầu duyệt cho từng dịch vụ trong trình chỉnh sửa dịch vụ.",
+      "instantTitle": "Đặt lịch tức thì",
+      "instantDescription": "Khách hàng chọn giờ trống là được đặt ngay. Tốt nhất cho hầu hết doanh nghiệp — đó là điều khách hàng mong đợi.",
+      "requestTitle": "Duyệt từng yêu cầu",
+      "requestDescription": "Khách hàng gửi yêu cầu; bạn chấp nhận hoặc từ chối. Yêu cầu không được trả lời sẽ tự hết hạn để không ai phải chờ mãi."
+    },
+    "window": {
+      "title": "Khi nào khách có thể đặt lịch",
+      "minNotice": "Báo trước tối thiểu",
+      "minNoticeHint": "Thời điểm muộn nhất khách có thể đặt trước giờ bắt đầu.",
+      "noMinimum": "Không giới hạn — đặt sát giờ bắt đầu",
+      "advance": "Đặt trước tối đa",
+      "advanceHint": "Lịch của bạn mở trước bao xa.",
+      "daysAhead": "{count, plural, other {trước # ngày}}",
+      "yearAhead": "Trước 1 năm",
+      "interval": "Giờ bắt đầu mỗi",
+      "intervalHint": "Khoảng ngắn cho khách nhiều lựa chọn hơn; khoảng dài giữ ngày làm việc gọn gàng.",
+      "anyStaff": "Cung cấp “Bất kỳ chuyên gia nào còn trống”",
+      "anyStaffDescription": "Hiển thị nhiều khung giờ trống nhất và phân bổ lịch hẹn cho cả nhóm. Tắt nếu khách hàng phải chọn một người."
+    },
+    "durations": {
+      "minutes": "{count, plural, other {# phút}}",
+      "hours": "{count, plural, other {# giờ}}",
+      "days": "{count, plural, other {# ngày}}",
+      "weeks": "{count, plural, other {# tuần}}"
+    },
+    "reminders": {
+      "title": "Nhắc hẹn",
+      "description": "Gửi qua email trước mỗi lịch hẹn. Khách đặt sát hơn thời điểm nhắc sẽ không nhận lời nhắc đó.",
+      "descriptionSms": "Gửi qua email và tin nhắn văn bản (nếu khách cho phép nhận tin nhắn) trước mỗi lịch hẹn. Khách đặt sát hơn thời điểm nhắc sẽ không nhận lời nhắc đó.",
+      "none": "Không có lời nhắc. Khách hàng chỉ nhận xác nhận đặt lịch.",
+      "add": "Thêm lời nhắc",
+      "addPlaceholder": "Thêm lời nhắc…",
+      "upTo": "Tối đa 3",
+      "remove": "Xóa lời nhắc {label}",
+      "minutesBefore": "{count, plural, other {Trước # phút}}",
+      "hoursBefore": "{count, plural, other {Trước # giờ}}",
+      "daysBefore": "{count, plural, other {Trước # ngày}}"
+    }
+  },
+  "policies": {
+    "title": "Hủy lịch & phí",
+    "description": "Khách hàng thấy các nội dung này trước khi đặt lịch và một lần nữa trước khi hủy.",
+    "toastUpdated": "Đã cập nhật chính sách",
+    "cancel": {
+      "title": "Hủy và đổi lịch",
+      "freeUntil": "Hủy miễn phí đến",
+      "rescheduleUntil": "Đổi lịch trực tuyến đến",
+      "anyTime": "Bất cứ lúc nào trước giờ hẹn",
+      "oneDay": "Trước 24 giờ (1 ngày)",
+      "hoursBefore": "{count, plural, other {Trước # giờ}}",
+      "daysBefore": "{count, plural, other {Trước # ngày}}",
+      "lateFee": "Phí hủy muộn",
+      "lateFeeHintPaid": "Được giữ lại từ số tiền khách đã thanh toán trực tuyến. Chúng tôi không bao giờ tính nhiều hơn số họ đã trả.",
+      "lateFeeHintUnpaid": "Chỉ áp dụng cho tiền thanh toán trực tuyến. Hãy kết nối thanh toán và nhận đặt cọc để áp dụng.",
+      "none": "Không có",
+      "ofTotal": "tổng",
+      "noShowFee": "Phí vắng mặt",
+      "noShowHint": "Là một phần chính sách để khách hàng biết trước. Khi bạn đánh dấu vắng mặt, mọi khoản đã thanh toán trực tuyến sẽ thuộc về bạn; phí thu trực tiếp có thể ghi nhận vào lịch hẹn.",
+      "refundDeposits": "Hoàn tiền đặt cọc khi hủy đúng hạn",
+      "refundDepositsDescription": "Tắt nghĩa là tiền đặt cọc được giữ lại mỗi khi khách hủy."
+    },
+    "words": {
+      "title": "Bằng lời của riêng bạn",
+      "description": "Ghi chú tùy chọn hiển thị cùng chính sách.",
+      "late": "Khi đến muộn",
+      "lateHint": "VD: “Nếu trễ quá 15 phút, chúng tôi có thể phải rút ngắn hoặc đặt lại dịch vụ của bạn.”",
+      "before": "Trước buổi hẹn",
+      "beforeHint": "Hiển thị cho mọi khách hàng trước khi xác nhận — chỉ đường, cần mang gì, cách chuẩn bị."
+    },
+    "tax": {
+      "title": "Thuế bán hàng",
+      "description": "Được cộng thêm vào giá khi thanh toán và hiển thị thành dòng riêng. Để 0 nếu giá của bạn đã bao gồm thuế.",
+      "rate": "Thuế suất",
+      "rateError": "Nhập thuế suất từ 0 đến 30%",
+      "label": "Nhãn",
+      "labelPlaceholder": "Thuế bán hàng"
+    },
+    "preview": {
+      "title": "Khách hàng thấy gì trước khi đặt lịch"
+    }
+  },
+  "payments": {
+    "title": "Thanh toán",
+    "description": "Nhận đặt cọc hoặc thanh toán toàn bộ khi khách đặt lịch. Thanh toán trực tiếp luôn dùng được.",
+    "online": {
+      "title": "Thanh toán trực tuyến",
+      "description": "Thanh toán được Stripe xử lý và chuyển vào tài khoản ngân hàng của bạn. Kept không bao giờ thấy số thẻ."
+    },
+    "unavailable": {
+      "badge": "Chưa khả dụng",
+      "body": "Thanh toán thẻ chưa được bật cho Kept. Cho đến khi bật, khách hàng thanh toán tại buổi hẹn và bạn có thể ghi nhận từng khoản — tiền mặt, máy quẹt thẻ hay chuyển khoản — từ trang lịch hẹn để hồ sơ và Thống kê luôn chính xác.",
+      "note": "Hiện chưa cần làm gì ở đây. Đặt cọc và chính sách bạn đã thiết lập sẽ bắt đầu áp dụng khi thanh toán trực tuyến mở."
+    },
+    "none": {
+      "deposits": "Yêu cầu đặt cọc hoặc thanh toán toàn bộ cho từng dịch vụ",
+      "fees": "Tự động giữ phí hủy muộn từ tiền đặt cọc",
+      "tips": "Cho phép khách hàng thêm tiền boa sau buổi hẹn",
+      "connect": "Thiết lập thanh toán với Stripe",
+      "time": "Mất khoảng 5 phút. Bạn cần thông tin ngân hàng và giấy tờ tùy thân."
+    },
+    "incomplete": {
+      "badge": "Chưa hoàn tất thiết lập",
+      "body": "Stripe vẫn cần thêm vài thông tin trước khi bạn có thể nhận thanh toán.",
+      "continue": "Tiếp tục thiết lập"
+    },
+    "connected": {
+      "badge": "Đã kết nối",
+      "body": "Bạn có thể nhận đặt cọc và thanh toán trực tuyến.",
+      "services": "Chọn khoản thu cho từng dịch vụ trong <link>Dịch vụ</link>."
+    },
+    "fees": {
+      "title": "Phí",
+      "kept": "Phí Kept cho thanh toán trực tuyến",
+      "inPerson": "Thanh toán trực tiếp",
+      "noFee": "Không có phí Kept",
+      "processing": "Xử lý thẻ",
+      "stripeRate": "Mức phí tiêu chuẩn của Stripe"
+    }
+  },
+  "link": {
+    "title": "Liên kết đặt lịch",
+    "description": "Trang của bạn trên Kept. Đặt nó vào tiểu sử, danh thiếp, hay dán lên gương.",
+    "checklist": {
+      "location": "Thêm nơi bạn làm việc",
+      "services": "Tạo ít nhất một dịch vụ",
+      "availability": "Đặt giờ làm việc",
+      "done": "Xong",
+      "todo": "Cần làm"
+    },
+    "status": {
+      "liveTitle": "Trang của bạn đang hoạt động",
+      "draftTitle": "Trang của bạn chưa hoạt động",
+      "liveDescription": "Khách hàng có thể tìm thấy bạn trong tìm kiếm và đặt lịch trực tuyến.",
+      "draftDescription": "Chỉ bạn thấy được. Hãy bắt đầu hoạt động khi hoàn tất danh sách kiểm tra.",
+      "live": "Đang hoạt động",
+      "hide": "Ẩn trang của tôi",
+      "goLive": "Bắt đầu hoạt động",
+      "viewPage": "Xem trang",
+      "preview": "Xem trước"
+    },
+    "toasts": {
+      "live": "Đã hoạt động — khách hàng có thể tìm và đặt lịch với bạn",
+      "hidden": "Trang của bạn đã được ẩn",
+      "hiddenDescription": "Các lịch hẹn hiện có không bị ảnh hưởng.",
+      "slugUpdated": "Đã cập nhật địa chỉ",
+      "slugUpdatedDescription": "Liên kết cũ không còn hoạt động — hãy cập nhật ở mọi nơi bạn đã chia sẻ.",
+      "copied": "Đã sao chép"
+    },
+    "share": {
+      "title": "Chia sẻ",
+      "qrLabel": "Mã QR cho {address}",
+      "qrHint": "In ra đặt ở quầy lễ tân, trên danh thiếp hoặc gương. Quét mã sẽ mở thẳng trang đặt lịch của bạn.",
+      "png": "PNG để in",
+      "svg": "SVG",
+      "embedSummary": "Thêm nút “Đặt lịch ngay” vào website của bạn",
+      "embedHint": "Dán đoạn mã này vào nơi bạn muốn đặt nút.",
+      "copyCode": "Sao chép mã",
+      "buttonText": "Đặt lịch với {name}"
+    },
+    "slug": {
+      "title": "Địa chỉ web",
+      "description": "Chữ thường, số và dấu gạch ngang. Đổi địa chỉ sẽ làm hỏng các liên kết bạn đã chia sẻ.",
+      "change": "Đổi địa chỉ",
+      "label": "Địa chỉ"
+    },
+    "hideDialog": {
+      "title": "Ẩn trang của bạn?",
+      "description": "Bạn sẽ biến mất khỏi tìm kiếm và không ai đặt lịch trực tuyến được. Các lịch hẹn hiện có vẫn giữ nguyên. Bạn có thể hoạt động trở lại bất cứ lúc nào.",
+      "confirm": "Ẩn trang"
+    }
+  },
+  "locations": {
+    "title": "Địa điểm",
+    "description": "Nơi khách hàng đặt lịch với bạn: cửa hàng, khu vực bạn di chuyển đến hoặc trực tuyến. Mỗi dịch vụ và thành viên nhóm có thể được giới hạn ở một số địa điểm.",
+    "privacy": {
+      "title": "Khách hàng có thể thấy gì",
+      "atPlace": "Tại chỗ của bạn",
+      "atPlaceBody": "Địa chỉ đầy đủ và bản đồ để khách hàng tìm đến.",
+      "travel": "Di chuyển đến chỗ khách hàng",
+      "travelBody": "Chỉ hiển thị thành phố và quãng đường bạn di chuyển. Nếu làm việc tại nhà, địa chỉ nhà và ghim chính xác của bạn không bao giờ được hiển thị — tìm kiếm chỉ định vị bạn trong phạm vi khoảng 5 km. Khách hàng cung cấp địa chỉ của họ khi đặt lịch.",
+      "online": "Trực tuyến",
+      "onlineBody": "Không có địa chỉ nào, chỉ cho biết buổi hẹn diễn ra trực tuyến."
+    },
+    "kinds": {
+      "physical": {
+        "label": "Tại chỗ của tôi",
+        "description": "Cửa hàng, studio, văn phòng"
+      },
+      "mobile": {
+        "label": "Tôi đến chỗ khách hàng",
+        "description": "Nhà riêng, văn phòng, sự kiện"
+      },
+      "virtual": {
+        "label": "Trực tuyến",
+        "description": "Buổi học qua video hoặc điện thoại"
+      }
+    },
+    "summary": {
+      "mobile": "Di chuyển tối đa {km} km từ {place}",
+      "virtual": "Buổi học trực tuyến"
+    },
+    "list": {
+      "title": "Địa điểm của bạn",
+      "count": "{count}/{max} trong gói {plan}",
+      "emptyTitle": "Chưa có địa điểm nào",
+      "emptyBody": "Khách hàng không thể đặt lịch cho đến khi biết buổi hẹn diễn ra ở đâu. Hãy thêm cửa hàng, khu vực bạn di chuyển đến hoặc buổi trực tuyến.",
+      "add": "Thêm địa điểm",
+      "primary": "Chính",
+      "upcoming": "{count, plural, other {# lịch hẹn sắp tới}}",
+      "notPinned": "Chưa ghim trên bản đồ",
+      "actions": "Thao tác cho {name}",
+      "edit": "Chỉnh sửa",
+      "makePrimary": "Đặt làm địa điểm chính",
+      "remove": "Xóa địa điểm",
+      "atLimit": "{count, plural, other {Gói {plan} của bạn bao gồm # địa điểm. Hãy xóa một địa điểm để thêm địa điểm khác.}}",
+      "primaryHint": "Địa điểm chính là địa điểm hiển thị đầu tiên trên hồ sơ và trong tìm kiếm."
+    },
+    "toasts": {
+      "primary": "{name} hiện là địa điểm chính của bạn",
+      "removed": "Đã xóa {name}",
+      "saved": "Đã lưu địa điểm",
+      "added": "Đã thêm địa điểm"
+    },
+    "remove": {
+      "blockedTitle": "Chưa thể xóa {name}",
+      "ok": "OK",
+      "title": "Xóa {name}?",
+      "confirm": "Xóa địa điểm",
+      "description": "Khách hàng sẽ không thể đặt lịch tại đây nữa. Các lịch hẹn cũ giữ nguyên chi tiết.",
+      "primaryNote": "Địa điểm cũ nhất còn lại sẽ trở thành địa điểm chính.",
+      "membersNote": "{count, plural, other {# thành viên nhóm được phân công tại đây. Ai chỉ được phân công ở đây sẽ có thể được đặt lịch ở tất cả địa điểm của bạn.}}",
+      "servicesNote": "Các dịch vụ được cung cấp tại đây vẫn giữ các địa điểm khác.",
+      "onlyLocation": "Đây là địa điểm duy nhất của bạn. Hãy thêm một địa điểm khác trước để khách hàng vẫn có nơi đặt lịch.",
+      "upcoming": "{count, plural, other {Có # lịch hẹn sắp tới. Hãy dời hoặc hủy từ <link>lịch</link> của bạn trước.}}",
+      "exclusive": "{count, plural, other {{names} chỉ được cung cấp tại đây. Hãy cung cấp ở nơi khác hoặc ẩn trong <link>Dịch vụ</link>.}}",
+      "quoted": "“{name}”"
+    },
+    "dialog": {
+      "editTitle": "Chỉnh sửa {name}",
+      "addTitle": "Thêm địa điểm",
+      "cancel": "Hủy",
+      "save": "Lưu địa điểm",
+      "add": "Thêm địa điểm",
+      "where": "Lịch hẹn diễn ra ở đâu?",
+      "name": "Tên",
+      "nameHintPhysical": "Hiển thị cho khách hàng, ví dụ tên cửa hàng hoặc khu phố.",
+      "nameHintOther": "Hiển thị cho khách hàng khi họ chọn nơi đặt lịch.",
+      "namePlaceholderPhysical": "VD: Studio trung tâm",
+      "defaultMobile": "Dịch vụ tận nơi",
+      "defaultVirtual": "Trực tuyến",
+      "street": "Địa chỉ",
+      "line2": "Căn hộ, phòng, tầng",
+      "cityBased": "Thành phố bạn đặt trụ sở",
+      "city": "Thành phố",
+      "region": "Tỉnh / bang",
+      "postalCode": "Mã bưu chính",
+      "country": "Mã quốc gia",
+      "countryHint": "Hai chữ cái, ví dụ US, MX, ES",
+      "radius": "Bạn sẵn sàng di chuyển bao xa?",
+      "radiusOption": "Tối đa {km} km",
+      "timezone": "Múi giờ",
+      "timezoneHint": "Giờ làm việc và lịch hẹn tại đây dùng múi giờ này.",
+      "phone": "Điện thoại",
+      "phoneHint": "Nếu khách hàng nên gọi trực tiếp đến địa điểm này.",
+      "primary": "Đặt làm địa điểm chính của tôi",
+      "primaryDescription": "Hiển thị đầu tiên trên hồ sơ và dùng cho tìm kiếm."
+    },
+    "pin": {
+      "title": "Ghim bản đồ",
+      "physical": "Đặt cửa hàng của bạn lên bản đồ và trong tìm kiếm “gần tôi”. Khách hàng thấy địa chỉ bạn đã nhập ở trên.",
+      "mobile": "Chỉ dùng để ghép bạn với khách hàng ở gần. Ghim chính xác và địa chỉ của bạn không bao giờ được hiển thị — hồ sơ chỉ hiện thành phố và tìm kiếm định vị bạn trong phạm vi khoảng 5 km.",
+      "find": "Tìm địa chỉ này",
+      "useMine": "Dùng vị trí hiện tại của tôi",
+      "remove": "Xóa ghim",
+      "removed": "Đã xóa ghim.",
+      "matches": "Địa chỉ khớp",
+      "pinnedTo": "Đã ghim tại {place}.",
+      "pinned": "Đã ghim.",
+      "notPinned": "Chưa ghim. Bạn vẫn xuất hiện khi khách hàng tìm kiếm thành phố của bạn.",
+      "noGeolocation": "Trình duyệt này không thể chia sẻ vị trí.",
+      "here": "Đã ghim tại nơi bạn đang ở.",
+      "denied": "Chúng tôi không lấy được vị trí của bạn. Hãy kiểm tra quyền vị trí của trình duyệt.",
+      "enterAddress": "Hãy nhập địa chỉ trước.",
+      "noMatch": "Không tìm thấy kết quả. Hãy kiểm tra địa chỉ hoặc dùng vị trí hiện tại."
+    },
+    "instructions": {
+      "physical": {
+        "label": "Hướng dẫn đến nơi",
+        "placeholder": "VD: Đỗ xe trên đường Elm. Bấm chuông phòng 2B rồi lên tầng hai.",
+        "hint": "Chỗ đỗ xe, lối vào, mã chuông cửa. Khách hàng thấy trên hồ sơ của bạn và trong lịch hẹn của họ."
+      },
+      "mobile": {
+        "label": "Ghi chú cho khách hàng",
+        "placeholder": "VD: Tôi cần chỗ đỗ xe trong vòng 50 m và ổ cắm điện.",
+        "hint": "Những gì khách hàng nên chuẩn bị sẵn. Hiển thị trong lịch hẹn của họ."
+      },
+      "virtual": {
+        "label": "Cách buổi học diễn ra",
+        "placeholder": "VD: Bạn sẽ nhận liên kết video qua tin nhắn một giờ trước buổi học.",
+        "hint": "Hiển thị trong lịch hẹn của họ. Đừng dán liên kết họp riêng tư ở đây — hãy gửi liên kết trong Tin nhắn."
+      }
+    }
+  },
+  "verification": {
+    "title": "Xác minh",
+    "description": "Cho khách hàng thấy một doanh nghiệp thật, có giấy phép đứng sau hồ sơ của bạn. Đội ngũ của chúng tôi kiểm tra thủ công các tài liệu bạn gửi.",
+    "status": {
+      "title": "Trạng thái",
+      "not_submitted": "Chưa xác minh",
+      "pending": "Đang xem xét",
+      "verified": "Đã xác minh",
+      "rejected": "Không được chấp thuận",
+      "needs_info": "Cần thêm thông tin"
+    },
+    "body": {
+      "notSubmitted": "Bạn chưa yêu cầu xác minh. Hãy gửi một vài thông tin và tài liệu bên dưới.",
+      "pending": "Đã gửi ngày {date}. Một thành viên trong đội ngũ của chúng tôi xem xét thủ công mọi yêu cầu; bạn sẽ nhận thông báo ngay khi có quyết định. Bạn không thể thay đổi yêu cầu khi đang xem xét.",
+      "pendingNoDate": "Đã gửi. Một thành viên trong đội ngũ của chúng tôi xem xét thủ công mọi yêu cầu; bạn sẽ nhận thông báo ngay khi có quyết định. Bạn không thể thay đổi yêu cầu khi đang xem xét.",
+      "verified": "{name} đã được xác minh từ {date}. Huy hiệu hiển thị trên <link>hồ sơ công khai</link> của bạn và trong kết quả tìm kiếm.",
+      "verifiedNoDate": "{name} đã được xác minh. Huy hiệu hiển thị trên <link>hồ sơ công khai</link> của bạn và trong kết quả tìm kiếm.",
+      "rejected": "Chúng tôi không thể xác minh {name} với những gì được gửi ngày {date}. Bạn có thể gửi thông tin và tài liệu mới bên dưới.",
+      "rejectedNoDate": "Chúng tôi không thể xác minh {name} với những gì được gửi. Bạn có thể gửi thông tin và tài liệu mới bên dưới.",
+      "needsInfo": "Đội ngũ của chúng tôi cần thêm một chút thông tin trước khi quyết định. Hãy trả lời bên dưới và yêu cầu của bạn sẽ được xem xét lại."
+    },
+    "note": "Ghi chú từ Kept",
+    "noteDate": "Ghi chú từ Kept · {date}",
+    "submit": {
+      "replyTitle": "Trả lời đội ngũ của chúng tôi",
+      "retryTitle": "Thử lại",
+      "requestTitle": "Yêu cầu xác minh",
+      "firstDescription": "Hãy cho chúng tôi biết về doanh nghiệp và đính kèm bằng chứng. Hầu hết doanh nghiệp gửi một giấy phép hoặc giấy đăng ký.",
+      "againDescription": "Chúng tôi đã giữ những gì bạn gửi lần trước. Hãy thay đổi hoặc bổ sung."
+    },
+    "sent": {
+      "title": "Những gì bạn đã gửi",
+      "description": "Vào ngày {date}.",
+      "noDescription": "Không có mô tả.",
+      "documents": "Tài liệu",
+      "open": "Mở tài liệu {n}",
+      "removed": "Một số tài liệu đã bị xóa và không thể mở nữa."
+    },
+    "meaning": {
+      "title": "Khách hàng thấy gì",
+      "example": "Ví dụ về huy hiệu đã xác minh",
+      "checkMark": "Một dấu kiểm cạnh tên bạn trên hồ sơ và trong kết quả tìm kiếm, gắn nhãn “Doanh nghiệp đã xác minh”.",
+      "notEndorsement": "Điều này có nghĩa là Kept đã xem xét các tài liệu bạn cung cấp. Đây không phải đánh giá công việc hay sự bảo chứng — điểm đánh giá vẫn đến từ khách hàng.",
+      "private": "Tài liệu được giữ riêng tư. Chỉ những người quản lý doanh nghiệp này và đội ngũ xem xét của Kept mới mở được.",
+      "removable": "Đội ngũ của chúng tôi có thể gỡ huy hiệu sau này, ví dụ nếu giấy phép hóa ra không hợp lệ."
+    },
+    "form": {
+      "documentN": "Tài liệu {n}",
+      "tooMany": "{count, plural, other {Bạn có thể đính kèm tối đa # tài liệu.}}",
+      "needSomething": "Hãy thêm mô tả ngắn hoặc ít nhất một tài liệu.",
+      "sentReply": "Đã gửi. Yêu cầu của bạn được xem xét lại.",
+      "submitted": "Đã gửi để xem xét",
+      "replyLabel": "Phản hồi của bạn",
+      "aboutLabel": "Về doanh nghiệp của bạn",
+      "hint": "Số giấy phép hoặc đăng ký, đơn vị cấp và thời gian bạn đã hành nghề. Bất cứ điều gì giúp chúng tôi xác nhận doanh nghiệp là thật và thuộc về bạn.",
+      "placeholder": "VD: Thợ cắt tóc nam có giấy phép, giấy phép bang NY #12345678, cấp năm 2019. Cửa hàng đăng ký là North Fade LLC.",
+      "documents": "Tài liệu",
+      "documentsHint": "Ảnh hoặc bản quét (JPG, PNG hoặc WebP, tối đa 15 MB mỗi tệp) của giấy phép, giấy chứng nhận đăng ký hoặc chứng chỉ. Tối đa {max}.",
+      "attachedList": "Tài liệu đã đính kèm",
+      "open": "Mở tài liệu {n}",
+      "uploading": "Đang tải lên {name}",
+      "fromLast": "Từ yêu cầu trước",
+      "attached": "Đã đính kèm",
+      "remove": "Xóa {name}",
+      "addAnother": "Thêm tài liệu khác",
+      "add": "Thêm tài liệu",
+      "uploadingAll": "Đang tải tài liệu lên",
+      "attachedCount": "{count, plural, other {Đã đính kèm # tài liệu}}",
+      "privacy": "Chỉ những người quản lý doanh nghiệp này và đội ngũ xem xét của Kept mới mở được các tệp này. Chúng không bao giờ hiển thị trên hồ sơ của bạn.",
+      "waiting": "Đang chờ tải lên…",
+      "sendReply": "Gửi phản hồi",
+      "submitAgain": "Gửi lại",
+      "submit": "Gửi để xem xét"
+    }
+  },
+  "forms": {
+    "title": "Câu hỏi cho khách hàng",
+    "description": "Những câu hỏi khách hàng trả lời khi đặt lịch: dị ứng, mục tiêu, chiếc xe họ mang đến. Tạo biểu mẫu một lần rồi chọn cho từng dịch vụ cần.",
+    "newForm": "Biểu mẫu mới",
+    "editForm": "Chỉnh sửa biểu mẫu",
+    "notIncludedTitle": "Không có trong gói của bạn",
+    "notIncludedBody": "Câu hỏi tiếp nhận không nằm trong gói {plan}. Các dịch vụ vẫn nhận lịch hẹn mà không cần chúng.",
+    "emptyTitle": "Chưa có biểu mẫu",
+    "emptyBody": "Hỏi những gì bạn cần biết trước buổi hẹn, để không phải phát hiện khi đã ngồi vào ghế. Câu trả lời được lưu vào lịch hẹn và hiển thị cho người thực hiện.",
+    "create": "Tạo biểu mẫu",
+    "listLabel": "Biểu mẫu",
+    "noQuestions": "Chưa có câu hỏi",
+    "questions": "{count, plural, other {# câu hỏi}}",
+    "required": "{count, plural, other {# bắt buộc}}",
+    "edited": "Chỉnh sửa {date}",
+    "footer": "Để dùng biểu mẫu cho một dịch vụ, hãy mở dịch vụ và chọn nó trong <b>Câu hỏi & yêu cầu</b>. Mỗi dịch vụ chỉ hỏi tối đa một biểu mẫu.",
+    "notUsed": "Chưa có dịch vụ nào dùng",
+    "askedOn": "Được hỏi ở <list></list>",
+    "hidden": "(ẩn)",
+    "more": "{count, plural, other {và # nữa}}"
+  },
+  "builder": {
+    "types": {
+      "short_text": {
+        "label": "Trả lời ngắn",
+        "hint": "Một cái tên, một con số, vài từ.",
+        "placeholder": "VD: Hãng và mẫu xe của bạn là gì?"
+      },
+      "long_text": {
+        "label": "Đoạn văn",
+        "hint": "Đủ chỗ cho vài câu.",
+        "placeholder": "VD: Hãy cho chúng tôi biết về bất kỳ chấn thương nào cần lưu ý."
+      },
+      "yes_no": {
+        "label": "Có / Không",
+        "hint": "Hai nút: Có và Không.",
+        "placeholder": "VD: Đây là lần đầu bạn đến?"
+      },
+      "single_choice": {
+        "label": "Trắc nghiệm",
+        "hint": "Khách hàng chọn một tùy chọn.",
+        "placeholder": "VD: Tóc bạn hiện dài bao nhiêu?"
+      },
+      "multi_choice": {
+        "label": "Hộp kiểm",
+        "hint": "Khách hàng đánh dấu tất cả mục phù hợp.",
+        "placeholder": "VD: Bạn muốn chúng tôi tập trung vào vùng nào?"
+      },
+      "date": {
+        "label": "Ngày",
+        "hint": "Bộ chọn ngày, ví dụ ngày sinh hoặc ngày sự kiện.",
+        "placeholder": "VD: Sự kiện diễn ra khi nào?"
+      },
+      "acknowledgement": {
+        "label": "Xác nhận đã đọc",
+        "hint": "Một tuyên bố mà khách hàng đánh dấu để xác nhận đã đọc.",
+        "placeholder": "VD: Tôi hiểu rằng cần thử dị ứng 48 giờ trước dịch vụ nhuộm."
+      }
+    },
+    "errors": {
+      "name": "Hãy đặt tên cho biểu mẫu",
+      "statement": "Viết nội dung khách hàng đồng ý",
+      "question": "Viết câu hỏi",
+      "twoChoices": "Thêm ít nhất hai lựa chọn",
+      "distinct": "Mỗi lựa chọn phải khác nhau"
+    },
+    "leaveConfirm": "Bạn có thay đổi chưa lưu trong biểu mẫu này. Rời đi mà không lưu?",
+    "toasts": {
+      "saved": "Đã lưu biểu mẫu",
+      "created": "Đã tạo biểu mẫu",
+      "archived": "Đã lưu trữ biểu mẫu",
+      "archivedFrom": "{count, plural, other {Đã lưu trữ biểu mẫu và gỡ khỏi # dịch vụ}}"
+    },
+    "untitled": "Câu hỏi chưa đặt tên",
+    "archive": "Lưu trữ biểu mẫu",
+    "show": "Hiện",
+    "questionsTab": "{count, plural, other {Câu hỏi (#)}}",
+    "previewTab": "Xem trước của khách hàng",
+    "details": "Chi tiết biểu mẫu",
+    "nameLabel": "Tên biểu mẫu",
+    "nameHint": "Chỉ nhóm của bạn thấy. Khách hàng chỉ thấy các câu hỏi.",
+    "namePlaceholder": "VD: Tư vấn khách hàng mới",
+    "questions": "Câu hỏi",
+    "questionCount": "{count}/{max}",
+    "emptyTitle": "Chưa có câu hỏi",
+    "emptyBody": "Hãy giữ ngắn gọn. Hai ba câu sẽ được trả lời; mười câu sẽ bị bỏ qua.",
+    "saveBar": {
+      "saving": "Đang lưu…",
+      "fix": "{count, plural, other {Hãy sửa # mục trước khi lưu}}",
+      "unsaved": "Thay đổi chưa lưu",
+      "allSaved": "Đã lưu mọi thay đổi",
+      "newForm": "Biểu mẫu mới",
+      "discard": "Hủy bỏ",
+      "cancel": "Hủy",
+      "save": "Lưu thay đổi",
+      "create": "Tạo biểu mẫu"
+    },
+    "archiveDialog": {
+      "title": "Lưu trữ “{name}”?",
+      "confirm": "Lưu trữ biểu mẫu",
+      "confirmUsed": "{count, plural, other {Lưu trữ và gỡ khỏi # dịch vụ}}",
+      "descriptionUsed": "Các dịch vụ này sẽ ngừng hỏi những câu hỏi này ở lịch hẹn mới cho đến khi bạn chọn biểu mẫu khác:",
+      "descriptionUnused": "Không có dịch vụ nào hỏi biểu mẫu này nên khách hàng không có gì thay đổi.",
+      "keep": "Các câu trả lời đã có ở lịch hẹn cũ và sắp tới vẫn giữ nguyên ở các lịch hẹn đó.",
+      "lost": "Các chỉnh sửa chưa lưu của biểu mẫu này sẽ bị mất."
+    },
+    "usage": {
+      "none": "Chưa có dịch vụ nào hỏi biểu mẫu này. Mở một dịch vụ trong <link>Dịch vụ</link> và chọn nó trong Câu hỏi & yêu cầu.",
+      "title": "Được hỏi khi khách đặt lịch",
+      "hidden": "ẩn",
+      "note": "Thay đổi áp dụng cho lịch hẹn mới của các dịch vụ này ngay khi bạn lưu."
+    },
+    "add": {
+      "label": "Thêm câu hỏi",
+      "limit": "Đã đạt giới hạn {max} câu hỏi",
+      "type": "Loại câu hỏi"
+    },
+    "card": {
+      "required": "Bắt buộc",
+      "attention": "Cần chú ý",
+      "moveUp": "Di chuyển câu hỏi {n} lên",
+      "moveDown": "Di chuyển câu hỏi {n} xuống",
+      "type": "Loại",
+      "statement": "Nội dung cam kết",
+      "question": "Câu hỏi",
+      "helpText": "Văn bản trợ giúp",
+      "helpAck": "Hiển thị dưới nội dung, ví dụ nơi đọc toàn bộ chính sách.",
+      "helpQuestion": "Hiển thị dưới câu hỏi.",
+      "mustTick": "Phải đánh dấu mới đặt được",
+      "ackRequired": "Khách hàng không thể đặt lịch cho đến khi đánh dấu.",
+      "questionRequired": "Khách hàng không thể đặt lịch nếu không trả lời.",
+      "optional": "Khách hàng có thể bỏ qua.",
+      "duplicate": "Nhân bản",
+      "delete": "Xóa",
+      "done": "Xong"
+    },
+    "options": {
+      "legend": "Lựa chọn",
+      "choice": "Lựa chọn {n}",
+      "remove": "Xóa lựa chọn {n}",
+      "max": "Tối đa {max} lựa chọn",
+      "add": "Thêm lựa chọn"
+    },
+    "preview": {
+      "title": "Xem trước của khách hàng",
+      "description": "Bước “Vài thông tin” trong quá trình đặt lịch. Cứ thử đi; không có gì được lưu.",
+      "empty": "Các câu hỏi bạn thêm sẽ xuất hiện ở đây đúng như khách hàng thấy.",
+      "noteLabel": "Bạn có điều gì cần họ biết thêm không?",
+      "noteHint": "Mọi lịch hẹn đều kết thúc bằng ô này. Nó không thuộc biểu mẫu của bạn.",
+      "notePlaceholder": "Dị ứng, sở thích, ghi chú về chỗ đậu xe…",
+      "invalid": "{count, plural, other {# câu trả lời thiếu hoặc không hợp lệ}}",
+      "allGood": "Mọi thứ ổn — đặt lịch sẽ thành công.",
+      "clear": "Xóa",
+      "tryContinue": "Thử tiếp tục",
+      "errors": {
+        "confirm": "Vui lòng xác nhận để tiếp tục.",
+        "required": "Câu hỏi này là bắt buộc.",
+        "invalid": "Câu trả lời không hợp lệ.",
+        "tooLong": "Giữ dưới {max} ký tự.",
+        "choose": "Hãy chọn một trong các tùy chọn.",
+        "invalidChoice": "Lựa chọn không hợp lệ.",
+        "date": "Nhập ngày hợp lệ."
+      }
+    }
+  },
+  "appearance": {
+    "title": "Giao diện trang",
+    "description": "Làm cho trang công khai của bạn mang dấu ấn riêng: đầu trang, màu nhấn, thứ tự các mục, thông báo và nút liên kết riêng.",
+    "saved": "Đã cập nhật trang của bạn",
+    "masthead": {
+      "title": "Đầu trang",
+      "body": "Tối và điện ảnh, hoặc sáng và thoáng. Ảnh bìa vẫn hiện qua cả hai.",
+      "sample": "Trang của bạn",
+      "noir": "Noir — đầu trang tối",
+      "ivory": "Ivory — đầu trang sáng"
+    },
+    "accent": {
+      "title": "Màu nhấn",
+      "body": "Dùng cho các chi tiết nhỏ: nhãn, đường kẻ, ngôi sao và điểm nhấn.",
+      "names": {
+        "brass": "Đồng thau",
+        "emerald": "Ngọc lục bảo",
+        "rose": "Hồng",
+        "sapphire": "Sapphire",
+        "copper": "Đồng"
+      }
+    },
+    "sections": {
+      "title": "Các mục",
+      "body": "Chọn những gì khách truy cập thấy và theo thứ tự nào. Dịch vụ luôn đứng đầu và đánh giá luôn hiển thị — chúng làm trang của bạn đáng tin cậy.",
+      "alwaysFirst": "Luôn đứng đầu",
+      "always": "Luôn hiển thị",
+      "hide": "Ẩn {name}",
+      "show": "Hiện {name}",
+      "up": "Di chuyển {name} lên",
+      "down": "Di chuyển {name} xuống",
+      "names": {
+        "services": "Dịch vụ",
+        "work": "Công việc",
+        "featured": "Nổi bật",
+        "team": "Nhóm",
+        "reviews": "Đánh giá",
+        "about": "Giới thiệu"
+      }
+    },
+    "notice": {
+      "title": "Thông báo",
+      "body": "Một thông điệp ngắn ở đầu trang — giờ nghỉ lễ, danh sách chờ, địa điểm mới.",
+      "label": "Thông điệp",
+      "placeholder": "Đóng cửa 24–26/12. Mở lại ngày 27."
+    },
+    "links": {
+      "title": "Nút liên kết",
+      "body": "Thực đơn, thẻ quà tặng, cửa hàng hay danh sách phát: tối đa 8 nút hiển thị trên trang của bạn.",
+      "label": "Chữ trên nút",
+      "url": "Địa chỉ",
+      "labelPlaceholder": "Thẻ quà tặng",
+      "remove": "Xóa liên kết",
+      "add": "Thêm liên kết"
+    }
+  }
+}

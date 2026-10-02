@@ -84,5 +84,66 @@
   "other": {
     "name": "Lainnya",
     "description": "Semua hal lain yang bisa Anda pesan."
+  },
+  "music-audio": {
+    "name": "Musik & audio",
+    "description": "Produser, studio rekaman, mixing, dan pelatihan vokal."
+  },
+  "music-production": {
+    "name": "Produksi musik"
+  },
+  "recording-studio": {
+    "name": "Studio rekaman"
+  },
+  "vocal-coaching": {
+    "name": "Pelatihan vokal"
+  },
+  "creators": {
+    "name": "Kreator & konten",
+    "description": "Kreator konten, UGC, media sosial, dan penyuntingan video."
+  },
+  "content-creation": {
+    "name": "Pembuatan konten"
+  },
+  "video-editing": {
+    "name": "Penyuntingan video"
+  },
+  "social-media": {
+    "name": "Pengelolaan media sosial"
+  },
+  "design": {
+    "name": "Desain & kreatif",
+    "description": "Desain grafis, merek, web, dan interior."
+  },
+  "graphic-design": {
+    "name": "Desain grafis & merek"
+  },
+  "web-design": {
+    "name": "Desain web"
+  },
+  "interior-design": {
+    "name": "Desain interior"
+  },
+  "health": {
+    "name": "Kesehatan & perawatan",
+    "description": "Fisioterapi, nutrisi, terapi, dan perawatan holistik."
+  },
+  "physio": {
+    "name": "Fisioterapi & kiropraktik"
+  },
+  "nutrition": {
+    "name": "Nutrisi"
+  },
+  "therapy": {
+    "name": "Terapi & konseling"
+  },
+  "cleaning": {
+    "name": "Kebersihan"
+  },
+  "handyman": {
+    "name": "Tukang & perbaikan"
+  },
+  "gardening": {
+    "name": "Berkebun"
   }
 }

@@ -60,7 +60,11 @@
     "title": "Belum ada yang cocok",
     "query": "Coba kata yang lebih umum, ejaan lain, atau hapus beberapa filter.",
     "filters": "Coba hapus filter atau cari di area yang lebih luas.",
-    "clear": "Hapus semua filter"
+    "clear": "Hapus semua filter",
+    "categoryTitle": "Belum ada profesional {category} di sini",
+    "categoryBody": "Kept tumbuh dari kota ke kota. Menawarkan layanan ini? Halaman pemesanan Anda bisa aktif hari ini.",
+    "listServices": "Daftarkan layanan Anda",
+    "seeAll": "Lihat semua profesional"
   },
   "showMore": "Tampilkan lainnya",
   "filters": {

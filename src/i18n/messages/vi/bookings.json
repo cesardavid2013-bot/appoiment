@@ -27,7 +27,11 @@
       "cancelled": "Không có lịch hẹn bị hủy",
       "upcomingBody": "Khi bạn đặt lịch, lịch hẹn sẽ hiển thị tại đây — kèm chỉ đường, nhắc lịch và đổi lịch dễ dàng.",
       "findPro": "Tìm chuyên gia"
-    }
+    },
+    "nextUp": "Sắp tới · {when}",
+    "nextUpOn": "Sắp tới · {day}",
+    "details": "Chi tiết",
+    "directions": "Chỉ đường"
   },
   "detail": {
     "metaTitle": "Lịch hẹn",

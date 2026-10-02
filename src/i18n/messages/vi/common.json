@@ -86,5 +86,32 @@
     "depositRefundable": "Tiền cọc được hoàn lại khi bạn hủy đúng hạn.",
     "depositNonRefundable": "Tiền cọc không được hoàn lại.",
     "reschedule": "Đổi lịch trực tuyến trước tối đa {hours} giờ."
+  },
+  "ui": {
+    "close": "Đóng",
+    "keepIt": "Giữ lại",
+    "optional": "Không bắt buộc",
+    "stars": "{value}/5 sao",
+    "notifications": "Thông báo"
+  },
+  "notFound": {
+    "eyebrow": "Không tìm thấy trang",
+    "title": "Trang này đã chuyển đi nơi khác.",
+    "body": "Liên kết có thể đã cũ, hoặc chuyên gia đã đổi địa chỉ.",
+    "home": "Về trang chủ",
+    "explore": "Khám phá chuyên gia"
+  },
+  "error": {
+    "eyebrow": "Đã xảy ra sự cố",
+    "title": "Chúng tôi không thể tải trang này.",
+    "body": "Lỗi nằm ở phía chúng tôi, không phải ở bạn. Hãy thử lại sau giây lát — nếu vẫn tiếp diễn, hãy báo cho chúng tôi.",
+    "retry": "Thử lại",
+    "support": "Liên hệ hỗ trợ",
+    "ref": "Mã tham chiếu {id}"
+  },
+  "offline": {
+    "eyebrow": "Bạn đang ngoại tuyến",
+    "title": "Hiện chưa có kết nối.",
+    "body": "Lịch hẹn của bạn vẫn an toàn. Kết nối lại và Kept sẽ tiếp tục từ nơi bạn đã dừng."
   }
 }

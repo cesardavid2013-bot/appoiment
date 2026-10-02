@@ -86,5 +86,32 @@
     "depositRefundable": "Uang muka dapat dikembalikan jika Anda membatalkan tepat waktu.",
     "depositNonRefundable": "Uang muka tidak dapat dikembalikan.",
     "reschedule": "Jadwalkan ulang secara online hingga {hours} jam sebelumnya."
+  },
+  "ui": {
+    "close": "Tutup",
+    "keepIt": "Tetap simpan",
+    "optional": "Opsional",
+    "stars": "{value} dari 5 bintang",
+    "notifications": "Notifikasi"
+  },
+  "notFound": {
+    "eyebrow": "Halaman tidak ditemukan",
+    "title": "Halaman ini sudah pindah.",
+    "body": "Tautan mungkin sudah lama, atau profesional tersebut telah mengganti alamatnya.",
+    "home": "Kembali ke beranda",
+    "explore": "Jelajahi profesional"
+  },
+  "error": {
+    "eyebrow": "Terjadi kesalahan",
+    "title": "Kami tidak dapat memuat halaman ini.",
+    "body": "Ini masalah di pihak kami, bukan Anda. Coba lagi sebentar lagi — jika terus terjadi, beri tahu kami.",
+    "retry": "Coba lagi",
+    "support": "Hubungi dukungan",
+    "ref": "Referensi {id}"
+  },
+  "offline": {
+    "eyebrow": "Anda sedang offline",
+    "title": "Saat ini tidak ada koneksi.",
+    "body": "Pemesanan Anda aman. Sambungkan kembali dan Kept akan melanjutkan dari tempat Anda berhenti."
   }
 }
