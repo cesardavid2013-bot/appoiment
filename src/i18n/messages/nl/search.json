@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Professionals ontdekken",
+    "category": "Boek {category}",
+    "query": "{q} — zoeken",
+    "description": "Vergelijk professionals op echte beschikbaarheid, prijzen en geverifieerde reviews."
+  },
+  "bar": {
+    "placeholder": "Zoek diensten of professionals",
+    "label": "Zoeken",
+    "clear": "Zoekopdracht wissen"
+  },
+  "location": {
+    "placeholder": "Overal",
+    "label": "Locatie",
+    "clear": "Locatie wissen",
+    "useMine": "Mijn huidige locatie gebruiken",
+    "finding": "Locatie bepalen…",
+    "current": "Huidige locatie",
+    "selectedArea": "Gekozen gebied",
+    "unsupported": "Je browser kan je locatie niet delen. Typ in plaats daarvan een stad.",
+    "denied": "Locatie staat uit voor deze site. Typ een stad — of sta locatie toe in je browserinstellingen.",
+    "failed": "We konden je locatie niet ophalen. Typ in plaats daarvan een stad."
+  },
+  "quick": {
+    "availableToday": "Vandaag beschikbaar",
+    "instant": "Direct boeken",
+    "mobile": "Komt naar je toe",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Weergave",
+    "list": "Lijst",
+    "map": "Kaart"
+  },
+  "heading": {
+    "explore": "Ontdekken",
+    "results": "Resultaten",
+    "query": "“{q}”"
+  },
+  "summary": {
+    "updating": "Bijwerken…",
+    "count": "{count, plural, one {# professional} other {# professionals}}",
+    "countMore": "{count}+ professionals",
+    "near": "{results} in {place}",
+    "nearYou": "{results} bij jou in de buurt"
+  },
+  "sort": {
+    "label": "Sorteren op",
+    "relevance": "Beste match",
+    "rating": "Hoogst beoordeeld",
+    "price": "Laagste prijs",
+    "distance": "Dichtstbij"
+  },
+  "categories": {
+    "label": "Categorieën",
+    "all": "Alle"
+  },
+  "empty": {
+    "title": "Nog geen resultaten",
+    "query": "Probeer een ruimere zoekterm, een andere spelling of haal enkele filters weg.",
+    "filters": "Haal een filter weg of zoek in een groter gebied.",
+    "clear": "Alle filters wissen",
+    "categoryTitle": "Hier staan nog geen professionals in {category}",
+    "categoryBody": "Kept groeit stad voor stad. Bied je deze dienst aan? Je boekingspagina kan vandaag nog live.",
+    "listServices": "Plaats je diensten",
+    "seeAll": "Alle professionals bekijken"
+  },
+  "showMore": "Meer tonen",
+  "filters": {
+    "button": "Filters",
+    "buttonCount": "Filters · {count}",
+    "title": "Filters",
+    "clearAll": "Alles wissen",
+    "show": "Resultaten tonen",
+    "availability": "Beschikbaarheid & boeken",
+    "rating": "Beoordeling",
+    "minRating": "Minimale beoordeling",
+    "any": "Alle",
+    "price": "Vanafprijs tot maximaal",
+    "maxPrice": "Maximale vanafprijs",
+    "distance": "Afstand",
+    "provider": "Aanbieder",
+    "providerType": "Type aanbieder",
+    "individual": "Zelfstandige professionals",
+    "business": "Bedrijven & teams"
+  }
+}

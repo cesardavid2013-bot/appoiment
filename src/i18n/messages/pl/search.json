@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Odkrywaj specjalistów",
+    "category": "Zarezerwuj: {category}",
+    "query": "{q} — wyszukiwanie",
+    "description": "Porównuj specjalistów według prawdziwej dostępności, cen i zweryfikowanych opinii."
+  },
+  "bar": {
+    "placeholder": "Szukaj usług lub specjalistów",
+    "label": "Szukaj",
+    "clear": "Wyczyść wyszukiwanie"
+  },
+  "location": {
+    "placeholder": "Gdziekolwiek",
+    "label": "Lokalizacja",
+    "clear": "Wyczyść lokalizację",
+    "useMine": "Użyj mojej bieżącej lokalizacji",
+    "finding": "Ustalamy, gdzie jesteś…",
+    "current": "Bieżąca lokalizacja",
+    "selectedArea": "Wybrany obszar",
+    "unsupported": "Twoja przeglądarka nie może udostępnić lokalizacji. Wpisz miasto.",
+    "denied": "Lokalizacja jest wyłączona dla tej witryny. Wpisz miasto — albo zezwól na lokalizację w ustawieniach przeglądarki.",
+    "failed": "Nie udało się ustalić Twojej lokalizacji. Wpisz miasto."
+  },
+  "quick": {
+    "availableToday": "Dostępni dziś",
+    "instant": "Rezerwacja natychmiastowa",
+    "mobile": "Dojeżdża do Ciebie",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Widok",
+    "list": "Lista",
+    "map": "Mapa"
+  },
+  "heading": {
+    "explore": "Odkrywaj",
+    "results": "Wyniki",
+    "query": "„{q}”"
+  },
+  "summary": {
+    "updating": "Aktualizowanie…",
+    "count": "{count, plural, one {# specjalista} few {# specjalistów} many {# specjalistów} other {# specjalisty}}",
+    "countMore": "{count}+ specjalistów",
+    "near": "{results} w okolicy: {place}",
+    "nearYou": "{results} w Twojej okolicy"
+  },
+  "sort": {
+    "label": "Sortuj według",
+    "relevance": "Najlepsze dopasowanie",
+    "rating": "Najwyżej oceniane",
+    "price": "Najniższa cena",
+    "distance": "Najbliżej"
+  },
+  "categories": {
+    "label": "Kategorie",
+    "all": "Wszystkie"
+  },
+  "empty": {
+    "title": "Na razie brak wyników",
+    "query": "Spróbuj szerszego hasła, innej pisowni albo usuń część filtrów.",
+    "filters": "Usuń któryś filtr lub poszukaj na większym obszarze.",
+    "clear": "Wyczyść wszystkie filtry",
+    "categoryTitle": "Nie ma tu jeszcze specjalistów w kategorii: {category}",
+    "categoryBody": "Kept rozwija się miasto po mieście. Oferujesz tę usługę? Twoja strona rezerwacji może działać już dziś.",
+    "listServices": "Dodaj swoje usługi",
+    "seeAll": "Zobacz wszystkich specjalistów"
+  },
+  "showMore": "Pokaż więcej",
+  "filters": {
+    "button": "Filtry",
+    "buttonCount": "Filtry · {count}",
+    "title": "Filtry",
+    "clearAll": "Wyczyść wszystko",
+    "show": "Pokaż wyniki",
+    "availability": "Dostępność i rezerwacja",
+    "rating": "Ocena",
+    "minRating": "Minimalna ocena",
+    "any": "Dowolna",
+    "price": "Cena początkowa do",
+    "maxPrice": "Maksymalna cena początkowa",
+    "distance": "Odległość",
+    "provider": "Usługodawca",
+    "providerType": "Typ usługodawcy",
+    "individual": "Niezależni specjaliści",
+    "business": "Firmy i zespoły"
+  }
+}

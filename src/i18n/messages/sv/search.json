@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Utforska yrkesverksamma",
+    "category": "Boka {category}",
+    "query": "{q} — sökning",
+    "description": "Jämför yrkesverksamma utifrån verklig tillgänglighet, priser och verifierade omdömen."
+  },
+  "bar": {
+    "placeholder": "Sök tjänster eller yrkesverksamma",
+    "label": "Sök",
+    "clear": "Rensa sökning"
+  },
+  "location": {
+    "placeholder": "Var som helst",
+    "label": "Plats",
+    "clear": "Rensa plats",
+    "useMine": "Använd min nuvarande plats",
+    "finding": "Hittar dig…",
+    "current": "Nuvarande plats",
+    "selectedArea": "Valt område",
+    "unsupported": "Din webbläsare kan inte dela plats. Skriv en stad i stället.",
+    "denied": "Platsåtkomst är avstängd för den här webbplatsen. Skriv en stad — eller tillåt plats i webbläsarens inställningar.",
+    "failed": "Vi kunde inte hämta din plats. Skriv en stad i stället."
+  },
+  "quick": {
+    "availableToday": "Ledig idag",
+    "instant": "Direktbokning",
+    "mobile": "Kommer till dig",
+    "virtual": "Online"
+  },
+  "view": {
+    "label": "Vy",
+    "list": "Lista",
+    "map": "Karta"
+  },
+  "heading": {
+    "explore": "Utforska",
+    "results": "Resultat",
+    "query": "”{q}”"
+  },
+  "summary": {
+    "updating": "Uppdaterar…",
+    "count": "{count, plural, one {# yrkesverksam} other {# yrkesverksamma}}",
+    "countMore": "{count}+ yrkesverksamma",
+    "near": "{results} nära {place}",
+    "nearYou": "{results} nära dig"
+  },
+  "sort": {
+    "label": "Sortera efter",
+    "relevance": "Bästa träff",
+    "rating": "Högst betyg",
+    "price": "Lägst pris",
+    "distance": "Närmast"
+  },
+  "categories": {
+    "label": "Kategorier",
+    "all": "Alla"
+  },
+  "empty": {
+    "title": "Inga träffar ännu",
+    "query": "Prova en bredare term, en annan stavning eller ta bort några filter.",
+    "filters": "Ta bort ett filter eller sök i ett större område.",
+    "clear": "Rensa alla filter",
+    "categoryTitle": "Inga yrkesverksamma inom {category} har listats här ännu",
+    "categoryBody": "Kept växer stad för stad. Erbjuder du den här tjänsten? Din bokningssida kan vara live redan idag.",
+    "listServices": "Lägg upp dina tjänster",
+    "seeAll": "Visa alla yrkesverksamma"
+  },
+  "showMore": "Visa fler",
+  "filters": {
+    "button": "Filter",
+    "buttonCount": "Filter · {count}",
+    "title": "Filter",
+    "clearAll": "Rensa alla",
+    "show": "Visa resultat",
+    "availability": "Tillgänglighet & bokning",
+    "rating": "Betyg",
+    "minRating": "Lägsta betyg",
+    "any": "Alla",
+    "price": "Pris från och med upp till",
+    "maxPrice": "Högsta startpris",
+    "distance": "Avstånd",
+    "provider": "Utförare",
+    "providerType": "Typ av utförare",
+    "individual": "Egenföretagare",
+    "business": "Företag & team"
+  }
+}
