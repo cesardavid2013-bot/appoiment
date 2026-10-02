@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "Hittades inte",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} i {city}",
+    "bookOnline": "Boka {name} online."
+  },
+  "preview": {
+    "notice": "Förhandsvisning — bara du kan se den här sidan tills du publicerar den.",
+    "goLive": "Publicera"
+  },
+  "verified": "Verifierad av Kept",
+  "verifiedLabel": "Verifierat företag",
+  "reviewsCount": "{count, plural, one {# verifierat omdöme} other {# verifierade omdömen}}",
+  "newOnKept": "Ny på Kept",
+  "travels": "{city} · reser upp till {km} km",
+  "status": {
+    "openUntil": "Öppet · till kl. {time}",
+    "opensAt": "Öppnar kl. {time}",
+    "opensTomorrow": "Öppnar i morgon kl. {time}",
+    "opensDay": "Öppnar {day} kl. {time}",
+    "notSet": "Öppettider saknas",
+    "closed": "Stängt"
+  },
+  "nav": {
+    "label": "Profilavsnitt",
+    "services": "Tjänster",
+    "work": "Arbeten",
+    "featured": "Utvalt",
+    "reviews": "Omdömen",
+    "about": "Om"
+  },
+  "services": {
+    "eyebrow": "Menyn",
+    "title": "Tjänster",
+    "empty": "Det här företaget har inte publicerat några tjänster ännu.",
+    "sale": "Rea",
+    "group": "Grupp · upp till {count}",
+    "request": "Skicka förfrågan",
+    "options": "Tillval finns",
+    "deposit": "Deposition vid bokning",
+    "book": "Boka",
+    "bookService": "Boka {name}"
+  },
+  "work": {
+    "eyebrow": "Portfölj",
+    "title": "Senaste arbeten"
+  },
+  "featured": {
+    "eyebrow": "På sociala medier",
+    "title": "Utvalt",
+    "allProfiles": "Alla sociala profiler",
+    "bookThis": "Boka detta · {service}",
+    "newTab": "(öppnas i en ny flik)",
+    "footnote": "Spelare laddas från respektive plattform först när du trycker på play.",
+    "play": "Spela {title}",
+    "loadsFrom": "Laddas från {host}"
+  },
+  "team": {
+    "eyebrow": "Människorna",
+    "title": "Team"
+  },
+  "reviews": {
+    "eyebrow": "Mun till mun",
+    "title": "Omdömen",
+    "empty": "Inga omdömen ännu. Omdömen kan bara lämnas av kunder efter ett genomfört besök.",
+    "distribution": "Betygsfördelning",
+    "onlyCustomers": "Bara kunder med en genomförd bokning kan lämna ett omdöme.",
+    "response": "Svar från {name}",
+    "stars": "{value} av 5 stjärnor"
+  },
+  "about": {
+    "eyebrow": "Huset",
+    "title": "Om",
+    "hours": "Öppettider",
+    "timesIn": "Tider visas i {zone}.",
+    "policies": "Villkor",
+    "noShow": "Uteblivna besök kan debiteras med {percent} % av totalen.",
+    "experience": "{years}+ års erfarenhet",
+    "amenities": "Bekvämligheter",
+    "online": "Online",
+    "directions": "Vägbeskrivning",
+    "comesToYou": "Kommer till dig",
+    "mobileBody": "Baserad i {city}. Reser upp till {km} km — du anger din adress när du bokar.",
+    "onlineSessions": "Onlinesessioner",
+    "onlineBody": "Delta varifrån du vill. Länken delas efter bokning."
+  },
+  "panel": {
+    "label": "Boka",
+    "eyebrow": "Reservera",
+    "freeOptions": "Kostnadsfria tillval finns",
+    "from": "Tjänster från {price}",
+    "onConsultation": "Priser enligt överenskommelse",
+    "nextToday": "Nästa lediga tid i dag",
+    "nextTomorrow": "Nästa lediga tid i morgon",
+    "nextOn": "Nästa lediga tid {day}",
+    "none": "Inga lediga tider de kommande två veckorna",
+    "bookNow": "Boka nu",
+    "requestToBook": "Skicka förfrågan",
+    "instant": "Direkt bekräftelse",
+    "confirms": "Företaget bekräftar din förfrågan",
+    "notTaking": "Det här företaget tar inte emot bokningar ännu.",
+    "mobileFrom": "Från {price}",
+    "mobileNext": "Nästa: {day} {time}",
+    "seeAvailability": "Visa lediga tider",
+    "request": "Förfråga"
+  },
+  "actions": {
+    "share": "Dela",
+    "shareTitle": "Dela {name}",
+    "shareBody": "Skicka länken, eller skanna koden för att öppna bokningssidan.",
+    "copy": "Kopiera",
+    "copied": "Kopierad",
+    "downloadQr": "Ladda ner QR-kod",
+    "ask": "Ställ en fråga",
+    "messageTitle": "Skriv till {name}",
+    "messageBody": "Fråga om tjänster, lediga tider eller något annat innan du bokar. Ditt telefonnummer och din e-post förblir privata.",
+    "cancel": "Avbryt",
+    "send": "Skicka meddelande",
+    "yourMessage": "Ditt meddelande",
+    "placeholder": "Hej! Har du tid för en skin fade på lördag eftermiddag?",
+    "sent": "Meddelandet skickades",
+    "sentBody": "{name} svarar i din inkorg."
+  },
+  "portfolio": {
+    "compare": "Jämför före och efter",
+    "portfolio": "Portfölj",
+    "close": "Stäng",
+    "previous": "Föregående",
+    "next": "Nästa",
+    "before": "Före",
+    "after": "Efter",
+    "beforeAfter": "Före / efter",
+    "video": "Video",
+    "openItem": "Öppna objekt {n}",
+    "browse": "Bläddra med piltangenterna",
+    "bookThis": "Boka detta",
+    "bookThisService": "Boka detta — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Inlägg",
+    "reel": "Reel",
+    "track": "Låt",
+    "album": "Album",
+    "artist": "Artist",
+    "playlist": "Spellista",
+    "episode": "Avsnitt",
+    "show": "Podd"
+  },
+  "links": {
+    "label": "Länkknappar"
+  }
+}

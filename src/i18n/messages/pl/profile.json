@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "Nie znaleziono",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} — {city}",
+    "bookOnline": "Zarezerwuj wizytę: {name} online."
+  },
+  "preview": {
+    "notice": "Podgląd — tę stronę widzisz tylko Ty, dopóki jej nie opublikujesz.",
+    "goLive": "Opublikuj"
+  },
+  "verified": "Zweryfikowane przez Kept",
+  "verifiedLabel": "Zweryfikowana firma",
+  "reviewsCount": "{count, plural, one {# zweryfikowana opinia} few {# zweryfikowane opinie} many {# zweryfikowanych opinii} other {# zweryfikowanej opinii}}",
+  "newOnKept": "Nowość w Kept",
+  "travels": "{city} · dojazd do {km} km",
+  "status": {
+    "openUntil": "Otwarte · do {time}",
+    "opensAt": "Otwiera się o {time}",
+    "opensTomorrow": "Otwiera się jutro o {time}",
+    "opensDay": "Otwiera się: {day}, {time}",
+    "notSet": "Nie ustawiono godzin",
+    "closed": "Zamknięte"
+  },
+  "nav": {
+    "label": "Sekcje profilu",
+    "services": "Usługi",
+    "work": "Prace",
+    "featured": "Polecane",
+    "reviews": "Opinie",
+    "about": "O nas"
+  },
+  "services": {
+    "eyebrow": "Menu",
+    "title": "Usługi",
+    "empty": "Ta firma nie opublikowała jeszcze usług.",
+    "sale": "Promocja",
+    "group": "Grupa · do {count} osób",
+    "request": "Wyślij prośbę o rezerwację",
+    "options": "Dostępne opcje",
+    "deposit": "Zadatek przy rezerwacji",
+    "book": "Zarezerwuj",
+    "bookService": "Zarezerwuj: {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Ostatnie prace"
+  },
+  "featured": {
+    "eyebrow": "W mediach społecznościowych",
+    "title": "Polecane",
+    "allProfiles": "Wszystkie profile społecznościowe",
+    "bookThis": "Zarezerwuj to · {service}",
+    "newTab": "(otwiera się w nowej karcie)",
+    "footnote": "Odtwarzacze ładują się z danej platformy dopiero po naciśnięciu przycisku odtwarzania.",
+    "play": "Odtwórz: {title}",
+    "loadsFrom": "Ładowane z {host}"
+  },
+  "team": {
+    "eyebrow": "Ludzie",
+    "title": "Zespół"
+  },
+  "reviews": {
+    "eyebrow": "Poczta pantoflowa",
+    "title": "Opinie",
+    "empty": "Brak opinii. Opinie mogą wystawiać tylko klienci po zakończonej wizycie.",
+    "distribution": "Rozkład ocen",
+    "onlyCustomers": "Opinię może wystawić tylko klient z zakończoną rezerwacją.",
+    "response": "Odpowiedź od: {name}",
+    "stars": "{value} na 5 gwiazdek"
+  },
+  "about": {
+    "eyebrow": "Miejsce",
+    "title": "O nas",
+    "hours": "Godziny otwarcia",
+    "timesIn": "Godziny podane w strefie: {zone}.",
+    "policies": "Zasady",
+    "noShow": "Za niestawienie się na wizytę może zostać pobrane {percent}% całości.",
+    "experience": "{years}+ lat doświadczenia",
+    "amenities": "Udogodnienia",
+    "online": "Online",
+    "directions": "Dojazd",
+    "comesToYou": "Dojeżdża do Ciebie",
+    "mobileBody": "Siedziba: {city}. Dojazd do {km} km — adres podasz przy rezerwacji.",
+    "onlineSessions": "Sesje online",
+    "onlineBody": "Dołącz z dowolnego miejsca. Link otrzymasz po rezerwacji."
+  },
+  "panel": {
+    "label": "Rezerwacja",
+    "eyebrow": "Zarezerwuj",
+    "freeOptions": "Dostępne bezpłatne opcje",
+    "from": "Usługi od {price}",
+    "onConsultation": "Ceny po konsultacji",
+    "nextToday": "Najbliższy termin dziś",
+    "nextTomorrow": "Najbliższy termin jutro",
+    "nextOn": "Najbliższy termin: {day}",
+    "none": "Brak terminów w ciągu najbliższych dwóch tygodni",
+    "bookNow": "Zarezerwuj teraz",
+    "requestToBook": "Wyślij prośbę o rezerwację",
+    "instant": "Natychmiastowe potwierdzenie",
+    "confirms": "Firma potwierdza Twoją prośbę",
+    "notTaking": "Ta firma nie przyjmuje jeszcze rezerwacji.",
+    "mobileFrom": "Od {price}",
+    "mobileNext": "Najbliższy: {day} {time}",
+    "seeAvailability": "Zobacz dostępność",
+    "request": "Wyślij prośbę"
+  },
+  "actions": {
+    "share": "Udostępnij",
+    "shareTitle": "Udostępnij: {name}",
+    "shareBody": "Wyślij link albo zeskanuj kod, aby otworzyć stronę rezerwacji.",
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "downloadQr": "Pobierz kod QR",
+    "ask": "Zadaj pytanie",
+    "messageTitle": "Napisz do: {name}",
+    "messageBody": "Zapytaj o usługi, dostępność lub cokolwiek innego przed rezerwacją. Twój numer telefonu i e-mail pozostają prywatne.",
+    "cancel": "Anuluj",
+    "send": "Wyślij wiadomość",
+    "yourMessage": "Twoja wiadomość",
+    "placeholder": "Cześć! Masz czas na skin fade w tę sobotę po południu?",
+    "sent": "Wiadomość wysłana",
+    "sentBody": "{name} odpowie w Twojej skrzynce."
+  },
+  "portfolio": {
+    "compare": "Porównaj przed i po",
+    "portfolio": "Portfolio",
+    "close": "Zamknij",
+    "previous": "Poprzednie",
+    "next": "Następne",
+    "before": "Przed",
+    "after": "Po",
+    "beforeAfter": "Przed / po",
+    "video": "Wideo",
+    "openItem": "Otwórz element {n}",
+    "browse": "Przeglądaj strzałkami na klawiaturze",
+    "bookThis": "Zarezerwuj to",
+    "bookThisService": "Zarezerwuj to — {service}"
+  },
+  "kind": {
+    "video": "Wideo",
+    "short": "Short",
+    "post": "Post",
+    "reel": "Reel",
+    "track": "Utwór",
+    "album": "Album",
+    "artist": "Artysta",
+    "playlist": "Playlista",
+    "episode": "Odcinek",
+    "show": "Podcast"
+  },
+  "links": {
+    "label": "Przyciski z linkami"
+  }
+}

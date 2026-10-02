@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "notFound": "Niet gevonden",
+    "titleCategory": "{name} — {category}",
+    "titleCity": "{title} in {city}",
+    "bookOnline": "Boek {name} online."
+  },
+  "preview": {
+    "notice": "Voorbeeld — alleen jij ziet deze pagina totdat je hem publiceert.",
+    "goLive": "Live zetten"
+  },
+  "verified": "Geverifieerd door Kept",
+  "verifiedLabel": "Geverifieerd bedrijf",
+  "reviewsCount": "{count, plural, one {# geverifieerde review} other {# geverifieerde reviews}}",
+  "newOnKept": "Nieuw op Kept",
+  "travels": "{city} · reist tot {km} km",
+  "status": {
+    "openUntil": "Open · tot {time}",
+    "opensAt": "Opent om {time}",
+    "opensTomorrow": "Opent morgen om {time}",
+    "opensDay": "Opent {day} om {time}",
+    "notSet": "Openingstijden niet ingesteld",
+    "closed": "Gesloten"
+  },
+  "nav": {
+    "label": "Profielonderdelen",
+    "services": "Diensten",
+    "work": "Werk",
+    "featured": "Uitgelicht",
+    "reviews": "Reviews",
+    "about": "Over"
+  },
+  "services": {
+    "eyebrow": "Het menu",
+    "title": "Diensten",
+    "empty": "Dit bedrijf heeft nog geen diensten gepubliceerd.",
+    "sale": "Aanbieding",
+    "group": "Groep · tot {count}",
+    "request": "Aanvraag indienen",
+    "options": "Opties beschikbaar",
+    "deposit": "Aanbetaling bij boeken",
+    "book": "Boeken",
+    "bookService": "Boek {name}"
+  },
+  "work": {
+    "eyebrow": "Portfolio",
+    "title": "Recent werk"
+  },
+  "featured": {
+    "eyebrow": "Op social",
+    "title": "Uitgelicht",
+    "allProfiles": "Alle socialmediaprofielen",
+    "bookThis": "Boek dit · {service}",
+    "newTab": "(opent in een nieuw tabblad)",
+    "footnote": "Spelers worden pas van het platform geladen als je op afspelen drukt.",
+    "play": "Speel {title} af",
+    "loadsFrom": "Wordt geladen van {host}"
+  },
+  "team": {
+    "eyebrow": "De mensen",
+    "title": "Team"
+  },
+  "reviews": {
+    "eyebrow": "Mond-tot-mondreclame",
+    "title": "Reviews",
+    "empty": "Nog geen reviews. Reviews kunnen alleen door klanten worden geschreven na een afgerond bezoek.",
+    "distribution": "Verdeling van beoordelingen",
+    "onlyCustomers": "Alleen klanten met een afgeronde boeking kunnen een review plaatsen.",
+    "response": "Reactie van {name}",
+    "stars": "{value} van de 5 sterren"
+  },
+  "about": {
+    "eyebrow": "Het huis",
+    "title": "Over",
+    "hours": "Openingstijden",
+    "timesIn": "Tijden weergegeven in {zone}.",
+    "policies": "Voorwaarden",
+    "noShow": "Gemiste afspraken kunnen voor {percent}% van het totaal in rekening worden gebracht.",
+    "experience": "{years}+ jaar ervaring",
+    "amenities": "Voorzieningen",
+    "online": "Online",
+    "directions": "Routebeschrijving",
+    "comesToYou": "Komt naar je toe",
+    "mobileBody": "Gevestigd in {city}. Reist tot {km} km — je vult je adres in bij het boeken.",
+    "onlineSessions": "Online sessies",
+    "onlineBody": "Doe mee vanaf elke plek. De link ontvang je na het boeken."
+  },
+  "panel": {
+    "label": "Boeken",
+    "eyebrow": "Reserveren",
+    "freeOptions": "Gratis opties beschikbaar",
+    "from": "Diensten vanaf {price}",
+    "onConsultation": "Prijzen na overleg",
+    "nextToday": "Eerstvolgende plek vandaag",
+    "nextTomorrow": "Eerstvolgende plek morgen",
+    "nextOn": "Eerstvolgende plek op {day}",
+    "none": "Geen plek in de komende twee weken",
+    "bookNow": "Nu boeken",
+    "requestToBook": "Aanvraag indienen",
+    "instant": "Direct bevestigd",
+    "confirms": "Het bedrijf bevestigt je aanvraag",
+    "notTaking": "Dit bedrijf neemt nog geen boekingen aan.",
+    "mobileFrom": "Vanaf {price}",
+    "mobileNext": "Eerstvolgende: {day} {time}",
+    "seeAvailability": "Beschikbaarheid bekijken",
+    "request": "Aanvragen"
+  },
+  "actions": {
+    "share": "Delen",
+    "shareTitle": "Deel {name}",
+    "shareBody": "Stuur de link door, of scan de code om de boekingspagina te openen.",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd",
+    "downloadQr": "QR-code downloaden",
+    "ask": "Stel een vraag",
+    "messageTitle": "Stuur {name} een bericht",
+    "messageBody": "Vraag naar diensten, beschikbaarheid of iets anders voordat je boekt. Je telefoonnummer en e-mailadres blijven privé.",
+    "cancel": "Annuleren",
+    "send": "Bericht versturen",
+    "yourMessage": "Je bericht",
+    "placeholder": "Hoi! Heb je aanstaande zaterdagmiddag tijd voor een skin fade?",
+    "sent": "Bericht verstuurd",
+    "sentBody": "{name} antwoordt in je inbox."
+  },
+  "portfolio": {
+    "compare": "Voor en na vergelijken",
+    "portfolio": "Portfolio",
+    "close": "Sluiten",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "before": "Voor",
+    "after": "Na",
+    "beforeAfter": "Voor / na",
+    "video": "Video",
+    "openItem": "Open item {n}",
+    "browse": "Blader met de pijltjestoetsen",
+    "bookThis": "Boek dit",
+    "bookThisService": "Boek dit — {service}"
+  },
+  "kind": {
+    "video": "Video",
+    "short": "Short",
+    "post": "Post",
+    "reel": "Reel",
+    "track": "Nummer",
+    "album": "Album",
+    "artist": "Artiest",
+    "playlist": "Afspeellijst",
+    "episode": "Aflevering",
+    "show": "Podcast"
+  },
+  "links": {
+    "label": "Linkknoppen"
+  }
+}
